@@ -12,10 +12,17 @@ Takes the Forbes Real-Time Billionaires list and enriches each person with:
 - Stock gifts to foundations (from SEC Form 4 filings)
 - Giving Pledge status and fulfillment (from IPS dataset)
 - Red flags for concerning patterns (low payout rates, unfulfilled pledges)
-- **Dark giving estimates** (DAF transfers, LLC giving, board seat inference)
-- **Opacity score** (0-100 rating of how opaque giving practices are)
+- Dark giving estimates (DAF transfers, LLC giving, board seat inference)
+- Opacity score (0-100 rating of how opaque giving practices are)
+- **Wealth accumulation analysis** (THE key signal)
 
-Output: A CSV/JSON ranking billionaires by observable charitable deployment, with the least generous at the top.
+## The Key Insight
+
+**If money goes down, it's going somewhere. If wealth is growing at or above market rates, the billionaire is NOT giving.**
+
+The wealth accumulation rate IS the inverse of the giving rate. If Elon Musk's net worth went from $27B (2020) to $400B (2025) while the S&P 500 returned ~60%, he mathematically cannot be giving away significant amounts. His wealth grew 15x while the market grew 1.6x.
+
+Output: A CSV/JSON ranking billionaires by excess wealth growth—those accumulating fastest (and therefore giving least) appear first.
 
 ## The Formula
 
@@ -108,10 +115,21 @@ flowchart LR
 │   - Gala/benefit committee giving inference                        │
 │   - Noncash gifts (art donations, real estate)                     │
 │   Returns: dark estimate, opacity score, confidence level          │
+├─────────────────────────────────────────────────────────────────────┤
+│ STAGE 8: Wealth Accumulation Analysis ⭐ KEY SIGNAL ⭐         [✅] │
+│   Compares wealth growth to S&P 500 returns over 5 years           │
+│   If wealth grows >= market rate, giving is mathematically ~0%     │
+│   Calculates:                                                       │
+│   - Annual wealth growth rate                                       │
+│   - Excess growth over market (positive = NOT giving)              │
+│   - Giving ceiling (max possible based on wealth change)           │
+│   - Verdict: ACCUMULATING, FLAT, or DEPLOYING                      │
+│   Example: Jensen Huang grew from $4B to $117B (95%/yr vs 10% mkt) │
+│   → Giving ceiling = $0 (mathematically impossible to be giving)   │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-**Status: All 7 stages implemented.**
+**Status: All 8 stages implemented.**
 
 ## Usage
 
@@ -150,6 +168,11 @@ CSV and JSON files saved to `output/` with columns:
 | `llc_name` | Name of LLC (if any) |
 | `opacity_score` | 0-100 (higher = more opaque practices) |
 | `opacity_flags` | Explanation of opacity score |
+| `wealth_growth_rate` | Annual wealth growth rate over ~5 years |
+| `excess_growth_over_market` | Growth above S&P 500 (positive = NOT giving) |
+| `giving_ceiling_billions` | Max possible giving based on wealth change |
+| `giving_ceiling_pct` | Ceiling as % of expected wealth |
+| `accumulation_verdict` | ACCUMULATING, FLAT, or DEPLOYING |
 | `total_estimated_giving_rate` | Includes dark giving estimate |
 
 ## Red Flags
@@ -196,7 +219,8 @@ scrooge-list/
 │   ├── stage4_securities.py        # ✅ SEC EDGAR Form 4
 │   ├── stage5_red_flags.py         # ✅ Flag calculation
 │   ├── stage6_giving_pledge.py     # ✅ IPS cross-reference
-│   └── stage7_dark_giving.py       # ✅ Opaque channel estimation
+│   ├── stage7_dark_giving.py       # ✅ Opaque channel estimation
+│   └── stage8_wealth_accumulation.py # ✅ THE key signal
 ├── giving_pledge_data.xlsx         # IPS pledger dataset
 ├── estimation_model.md             # Methodology docs
 ├── scrooge_data_sources.md         # Research notes

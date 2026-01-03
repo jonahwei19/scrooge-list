@@ -12,15 +12,13 @@ Pipeline Stages:
 5. Red Flags        - Pattern detection (✅ implemented)
 6. Giving Pledge    - IPS cross-reference (✅ implemented)
 7. Dark Giving      - Opaque channel estimation (✅ implemented)
+8. Wealth Accumulation - THE key signal (✅ implemented)
 
-Dark Giving covers estimation of opaque channels:
-- DAF transfers from foundations
-- Philanthropic LLC giving (CZI, Ballmer Group, etc.)
-- Split-interest trust signals
-- Anonymous gift inference (board seats, galas)
-- Noncash gifts (art, real estate)
-- Foreign giving (Schedule F)
-- Religious institution giving
+KEY INSIGHT (Stage 8):
+If money goes down, it's going somewhere. If wealth is growing at or above
+market rates, the billionaire is mathematically NOT giving significantly.
+
+The wealth accumulation rate IS the inverse of the giving rate.
 """
 
 import argparse
@@ -39,6 +37,7 @@ from stages.stage4_securities import search_sec_form4_gifts
 from stages.stage5_red_flags import calculate_red_flags, BillionaireRecord
 from stages.stage6_giving_pledge import load_giving_pledge_data, check_giving_pledge
 from stages.stage7_dark_giving import estimate_dark_giving, calculate_opacity_score
+from stages.stage8_wealth_accumulation import get_accumulation_analysis
 
 
 OUTPUT_DIR = "output"
@@ -79,6 +78,13 @@ class PipelineResult:
     llc_name: str
     opacity_score: int
     opacity_flags: str
+
+    # Stage 8: Wealth Accumulation (THE key signal)
+    wealth_growth_rate: float           # Annual growth rate
+    excess_growth_over_market: float    # Growth above S&P 500
+    giving_ceiling_billions: float      # Max possible giving based on wealth change
+    giving_ceiling_pct: float           # As percentage
+    accumulation_verdict: str           # ACCUMULATING, FLAT, DEPLOYING
 
     # Derived
     observable_giving_rate: float
@@ -178,6 +184,10 @@ def run_pipeline(
             name, net_worth, total_assets, dark_giving
         )
 
+        # Stage 8: Wealth Accumulation Analysis (THE key signal)
+        # If wealth is growing >= market rate, giving is mathematically impossible
+        accumulation = get_accumulation_analysis(name, net_worth)
+
         # Build record for Stage 5
         record = BillionaireRecord(
             name=name,
@@ -238,6 +248,11 @@ def run_pipeline(
             llc_name=dark_giving.llc_name,
             opacity_score=opacity_score,
             opacity_flags="; ".join(all_opacity_flags),
+            wealth_growth_rate=accumulation["wealth_growth_rate"],
+            excess_growth_over_market=accumulation["excess_growth"],
+            giving_ceiling_billions=accumulation["implied_giving_ceiling_billions"],
+            giving_ceiling_pct=accumulation["implied_giving_ceiling_pct"],
+            accumulation_verdict=accumulation["verdict"],
             observable_giving_rate=giving_rate,
             total_estimated_giving_rate=total_giving_rate,
             confidence=confidence,
@@ -270,19 +285,32 @@ def run_pipeline(
     if verbose:
         print(f"  Saved: {json_path}")
 
-    # Print summary
+    # Print summary - sorted by wealth growth (accumulators first)
     if verbose:
-        print("\n" + "=" * 80)
-        print("TOP CONCERNS (lowest foundation/net-worth ratio)")
-        print("=" * 80)
-        print(f"\n{'Name':<25} {'Net Worth':>10} {'Fdn Assets':>10} {'Dark Est':>10} {'Opacity':>8} {'Flags':>6}")
-        print("-" * 80)
-        for _, row in df.head(20).iterrows():
-            print(f"{row['name'][:25]:<25} ${row['net_worth_billions']:>8.1f}B "
-                  f"${row['foundation_assets_billions']:>8.2f}B "
-                  f"${row['dark_giving_estimate_millions']:>8.1f}M "
-                  f"{row['opacity_score']:>7} "
-                  f"{row['red_flag_count']:>6}")
+        print("\n" + "=" * 100)
+        print("TOP SCROOGES (sorted by excess wealth growth - accumulators at top)")
+        print("If wealth grows faster than market, they're NOT giving.")
+        print("=" * 100)
+        print(f"\n{'Name':<22} {'Net Worth':>9} {'Growth':>7} {'vs Mkt':>7} {'Ceiling':>9} {'Verdict':<12} {'Flags':>5}")
+        print("-" * 100)
+
+        # Sort by excess growth (highest first = worst scrooges)
+        df_sorted = df.sort_values("excess_growth_over_market", ascending=False)
+
+        for _, row in df_sorted.head(20).iterrows():
+            print(f"{row['name'][:22]:<22} ${row['net_worth_billions']:>7.0f}B "
+                  f"{row['wealth_growth_rate']:>6.0%} "
+                  f"{row['excess_growth_over_market']:>+6.0%} "
+                  f"${row['giving_ceiling_billions']:>7.1f}B "
+                  f"{row['accumulation_verdict']:<12} "
+                  f"{row['red_flag_count']:>5}")
+
+        print("\n" + "-" * 100)
+        print("INTERPRETATION:")
+        print("  - Growth: Annual wealth growth rate over ~5 years")
+        print("  - vs Mkt: Growth above S&P 500 (positive = outpacing market = NOT giving)")
+        print("  - Ceiling: Maximum possible giving based on wealth change (0 if accumulating)")
+        print("  - ACCUMULATING = wealth grew faster than market = giving is mathematically ~0%")
 
     return df
 
