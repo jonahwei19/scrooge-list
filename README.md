@@ -6,7 +6,7 @@ An inverse Forbes list — ranks billionaires by how little of their fortune the
 
 ## What This Does
 
-Takes the Forbes Real-Time Billionaires list (3,000+ people) and calculates a **Scrooge Score** (0-100) based on:
+Takes the Forbes Real-Time Billionaires list and calculates a **Scrooge Score** (0-100) based on:
 
 1. **Observable giving** relative to liquid wealth
 2. **Tenure as billionaire** (longer = higher expectation)
@@ -14,6 +14,48 @@ Takes the Forbes Real-Time Billionaires list (3,000+ people) and calculates a **
 4. **Red flags** (low payout rates, DAF transfers, high compensation)
 
 Higher score = more Scrooge-like behavior.
+
+## v2 Architecture: Taxonomy-Driven Research
+
+The pipeline researches giving by **category** across 16 data source modules:
+
+| Category | What We Search For | Confidence |
+|----------|-------------------|------------|
+| **Foundations** | 990-PF filings via ProPublica | HIGH |
+| **Direct Gifts** | Announced gifts, major donations | MEDIUM-HIGH |
+| **Securities** | Stock gifts via SEC Form 4 | MEDIUM |
+| **DAFs** | Donor-advised fund contributions | LOW |
+| **Philanthropic LLCs** | CZI, Ballmer Group, etc. | MEDIUM |
+| **Split-Interest Trusts** | CRTs, CLTs | LOW |
+| **Political** | FEC political contributions | HIGH |
+| **University Gifts** | Major endowment gifts ($1M+) | MEDIUM-HIGH |
+| **Noncash Contributions** | Stock, art, real estate, conservation | MEDIUM |
+| **Giving Pledge** | Pledge status and fulfillment rate | HIGH |
+| **State Charities** | CA, NY registration databases | MEDIUM |
+| **Offshore** | ICIJ leaks, UK Charity Commission | LOW |
+| **Candid/GuideStar** | Foundation 990 data | MEDIUM |
+| **OSINT Sources** | 30+ open source intelligence sources | VARIES |
+
+### Key Improvements over v1
+
+- **No hardcoding**: Every finding has a source URL
+- **Web search**: Uses Brave Search API for each billionaire
+- **Deduplication**: Avoids double-counting pledges vs disbursements
+- **BS_checker**: Automated verification that data isn't fabricated
+
+### Sample Results (Latest Pipeline)
+
+| Billionaire | Net Worth | Observable Giving | Scrooge Score | Pledge Status |
+|-------------|-----------|-------------------|---------------|---------------|
+| Larry Ellison | $245B | $0.94B | 99.6 | MINIMAL |
+| Mark Zuckerberg | $215B | $2.0B | 99.1 | FULFILLED |
+| Steve Ballmer | $121B | $2.1B | 98.3 | N/A |
+| Elon Musk | $277B | $6.3B | 97.7 | FULFILLED |
+| Jeff Bezos | $211B | $10.9B | 94.8 | N/A |
+| Warren Buffett | $147B | $61.2B | 58.3 | FULFILLED |
+| MacKenzie Scott | $36B | $17.1B | 52.5 | ON_TRACK |
+| Bill Gates | $129B | $137.2B | 0.0 | FULFILLED |
+| George Soros | $7.2B | $32.2B | 0.0 | FULFILLED |
 
 ## The Formula
 
@@ -206,36 +248,94 @@ cd docs && python3 -m http.server 8000
 - **Foreign giving** — no country discloses donor names
 - **Religious giving** — churches exempt from 990
 
-## Data Sources
+## Data Sources (16 Modules)
 
-| Stage | Source | URL |
-|-------|--------|-----|
-| 1 | Forbes RTB API | forbes.com |
-| 2 | ProPublica Nonprofit Explorer | projects.propublica.org/nonprofits |
-| 3 | Wikipedia API + DuckDuckGo | en.wikipedia.org |
-| 4 | SEC EDGAR | data.sec.gov |
-| 6 | IPS Giving Pledge Dataset | inequality.org |
-| 7 | FEC OpenData | api.open.fec.gov |
+| Module | Source | URL |
+|--------|--------|-----|
+| Foundations | ProPublica Nonprofit Explorer | projects.propublica.org/nonprofits |
+| Direct Gifts | News/Wikipedia | en.wikipedia.org |
+| Securities | SEC EDGAR Form 4 | data.sec.gov |
+| DAFs | Foundation transfers + proxies | N/A |
+| LLCs | Media coverage | N/A |
+| Trusts | Form 5227 (limited) | irs.gov |
+| Political | FEC OpenData | api.open.fec.gov |
+| Deduplication | Internal cross-reference | N/A |
+| State Charities | CA Registry, NY Charities Bureau | oag.ca.gov, charitiesnys.com |
+| University Gifts | Chronicle of Philanthropy | philanthropy.com |
+| Noncash | SEC Form 4, news | data.sec.gov |
+| Giving Pledge | Official pledge database | givingpledge.org |
+| Offshore | ICIJ, UK Charity Commission | icij.org, register-of-charities.gov.uk |
+| Candid | GuideStar 990 data | candid.org |
+| OSINT | 30+ sources (FINRA, state DBs, etc.) | Various |
+| Estimator | Aggregation layer | N/A |
 
-## Sample Output
+## Sample Output (Latest Pipeline)
 
-Top Scrooge scores from test run:
+Full rankings from 16-billionaire test run:
 
-| Name | Net Worth | Observable | Scrooge Score | Flags |
-|------|-----------|------------|---------------|-------|
-| Larry Ellison | $245B | $0M | 90.0 | 2 |
-| Mark Zuckerberg | $223B | $186M | 89.0 | 2 |
-| Elon Musk | $718B | $300M | 81.5 | 1 |
-| Bernard Arnault | $194B | $1.4M | 64.0 | 1 |
-| Amancio Ortega | $146B | $2.1M | 64.0 | 1 |
+| Rank | Name | Net Worth | Observable | Rate | Score |
+|------|------|-----------|------------|------|-------|
+| 1 | Larry Ellison | $245B | $940M | 0.4% | 99.6 |
+| 2 | Mark Zuckerberg | $215B | $2.0B | 0.9% | 99.1 |
+| 3 | Stephen Schwarzman | $42B | $600M | 1.4% | 98.6 |
+| 4 | Steve Ballmer | $121B | $2.1B | 1.7% | 98.3 |
+| 5 | Elon Musk | $277B | $6.3B | 2.3% | 97.7 |
+| 6 | Phil Knight | $47B | $1.8B | 3.8% | 96.2 |
+| 7 | Jeff Bezos | $211B | $10.9B | 5.2% | 94.8 |
+| 8 | Ray Dalio | $19B | $2.2B | 11.7% | 88.3 |
+| 9 | Dustin Moskovitz | $11B | $1.7B | 14.5% | 85.5 |
+| 10 | Michael Bloomberg | $96B | $24.0B | 25.0% | 75.0 |
+| 11 | Laurene Powell Jobs | $14B | $3.6B | 25.3% | 74.7 |
+| 12 | Jim Simons | $31B | $8.5B | 27.1% | 72.9 |
+| 13 | Warren Buffett | $147B | $61.2B | 41.7% | 58.3 |
+| 14 | MacKenzie Scott | $36B | $17.1B | 47.5% | 52.5 |
+| 15 | Bill Gates | $129B | $137.2B | 106.4% | 0.0 |
+| 16 | George Soros | $7.2B | $32.2B | 447.4% | 0.0 |
 
 ## Files
 
 ```
 projects/scrooge/
-├── main.py                         # Pipeline entry point
+├── run_research.py                 # v2 Pipeline entry point
+├── pipeline_v2.py                  # Taxonomy-driven pipeline
+├── bs_checker.py                   # Verification script
+├── research_billionaire.py         # Single billionaire research
+├── main.py                         # v1 Pipeline (deprecated)
 ├── README.md                       # This file
-├── stages/
+├── COMPARISON.md                   # v1 vs v2 comparison
+│
+├── agents/                         # Agent definitions
+│   ├── research_agent.md           # Web research agent
+│   ├── bs_checker.md               # BS verification agent
+│   └── deduplication_checker.md    # Duplicate detection agent
+│
+├── categories/                     # 16 giving category modules
+│   ├── __init__.py                 # Category data structures
+│   ├── foundations.py              # 990-PF foundation data
+│   ├── direct_gifts.py             # Announced major gifts
+│   ├── securities.py               # SEC Form 4 stock gifts
+│   ├── dafs.py                     # Donor-advised funds
+│   ├── llcs.py                     # Philanthropic LLCs (CZI, etc.)
+│   ├── trusts.py                   # Split-interest trusts
+│   ├── political.py                # FEC political contributions
+│   ├── deduplication.py            # Cross-category deduplication
+│   ├── estimator.py                # Aggregation and scoring
+│   ├── state_charities.py          # CA/NY registration databases
+│   ├── university_gifts.py         # Major endowment gifts
+│   ├── noncash_contributions.py    # Stock, art, conservation
+│   ├── giving_pledge.py            # Pledge status/fulfillment
+│   ├── offshore.py                 # ICIJ, UK Charity Commission
+│   ├── candid.py                   # GuideStar 990 data
+│   └── osint_sources.py            # 30+ OSINT sources
+│
+├── data/                           # Individual research files
+│   ├── larry_ellison.json
+│   ├── mark_zuckerberg.json
+│   ├── elon_musk.json
+│   ├── jeff_bezos.json
+│   └── warren_buffett.json
+│
+├── stages/                         # v1 stage modules (deprecated)
 │   ├── stage1_forbes.py            # Forbes API
 │   ├── stage2_foundations.py       # ProPublica 990-PF
 │   ├── stage3_announced_gifts.py   # Wikipedia + MDL + News
