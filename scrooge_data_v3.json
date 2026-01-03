@@ -23426,11 +23426,11 @@
     "country": "India",
     "source_of_wealth": "Biocon (biotech)",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 500,
+    "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
-      "healthcare": 400,
-      "cancer": 100,
-      "notes": "Mazumdar Shaw Foundation. Affordable cancer care. Major philanthropist."
+      "mazumdar_shaw_foundation": 150,
+      "cancer_care": 50,
+      "notes": "Biocon founder. Mazumdar Shaw Medical Foundation. Cancer care philanthropy. Signed Giving Pledge. India's richest self-made woman."
     },
     "sources": [
       "Forbes",
@@ -23493,9 +23493,9 @@
     "liquidity_factor": 0.5,
     "total_lifetime_giving_millions": 500,
     "giving_breakdown": {
-      "foundations": 300,
-      "social_enterprise": 200,
-      "notes": "Aadhaar architect. EkStep Foundation. Major social impact."
+      "ekstep_foundation": 200,
+      "rohini_and_nandan_nilekani_philanthropies": 300,
+      "notes": "Infosys co-founder. EkStep Foundation for education. Rohini and Nandan Nilekani Philanthropies. Signed Giving Pledge. Co-architect of Aadhaar system."
     },
     "sources": [
       "Forbes",
@@ -47194,12 +47194,17 @@
     "country": "India",
     "source_of_wealth": "Infrastructure",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 500,
     "giving_breakdown": {
-      "notes": "Adani Foundation, Indian philanthropy."
+      "adani_foundation_fy24": 40,
+      "cumulative_actual": 500,
+      "pledged_60th_birthday": 7700,
+      "notes": "PLEDGED \u20b960,000 crore ($7.7B) in 2022 for 60th birthday - NOT YET FULLY DEPLOYED. Adani Foundation is CSR arm. Actual giving ~Rs 330 crore ($40M) in FY2024. Ranked 5th in EdelGive-Hurun 2024. Important: pledge vs actual giving distinction."
     },
     "sources": [
-      "Forbes"
+      "https://www.adanifoundation.org/",
+      "https://www.forbes.com/sites/gloriaharaito/2022/06/24/asias-richest-billionaire-gautam-adani-pledges-77-billion-for-charity/",
+      "https://yourstory.com/2025/03/gautam-adani-steering-social-transformations"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 10,
@@ -47651,9 +47656,14 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 100,
     "giving_breakdown": {
-      "notes": "Chanel, French philanthropy."
+      "wertheimer_foundation": 50,
+      "game_conservancy_trust": 10,
+      "action_innocence": 10,
+      "other": 30,
+      "notes": "Extremely private. Mousse Partners family office handles philanthropy. Wertheimer Foundation supports health, education, youth, Jewish causes. Very limited public disclosure for $45B+ wealth. Chanel co-owner."
     },
     "sources": [
+      "https://weeklysiliconvalley.com/gerard-wertheimer-the-silent-billionaire-behind-chanels-timeless-legacy/",
       "Forbes"
     ],
     "giving_pledge_signed": false,
@@ -47669,9 +47679,15 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 100,
     "giving_breakdown": {
-      "notes": "Chanel, French philanthropy."
+      "wertheimer_foundation": 50,
+      "game_conservancy_trust": 10,
+      "action_innocence": 10,
+      "other": 30,
+      "notes": "Extremely private. Mousse Partners family office handles philanthropy. Wertheimer Foundation (Santa Monica) supports health, education, youth, Jewish causes. Very limited public disclosure for $45B+ wealth. Chanel co-owner."
     },
     "sources": [
+      "https://weeklysiliconvalley.com/gerard-wertheimer-the-silent-billionaire-behind-chanels-timeless-legacy/",
+      "https://wealthygorilla.com/gerard-wertheimer-net-worth/",
       "Forbes"
     ],
     "giving_pledge_signed": false,
@@ -47831,10 +47847,15 @@
     "liquidity_factor": 0.4,
     "total_lifetime_giving_millions": 21000,
     "giving_breakdown": {
-      "notes": "$21B donated, Azim Premji Foundation, Indian education."
+      "azim_premji_foundation": 21000,
+      "wipro_shares_2019": 7500,
+      "wipro_shares_2015": 5000,
+      "notes": "INDIA'S GREATEST philanthropist. $21 billion total donated to Azim Premji Foundation. Foundation holds 66% of Wipro's economic ownership (\u20b91,45,000 crore). Signed Giving Pledge. One of world's largest philanthropic endowments. Focus on transforming education in India."
     },
     "sources": [
-      "Forbes"
+      "https://en.wikipedia.org/wiki/Azim_Premji",
+      "https://philanthropynewsdigest.org/news/azim-premji-donates-wipro-shares-worth-7.5-billion-to-foundation",
+      "https://www.givingpledge.org/pledger/azim-premji/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 25,
@@ -47901,12 +47922,17 @@
     "country": "India",
     "source_of_wealth": "Technology",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 3000,
     "giving_breakdown": {
-      "notes": "Shiv Nadar Foundation, Indian education."
+      "shiv_nadar_foundation": 1100,
+      "annual_giving_fy25": 324,
+      "annual_giving_fy24": 258,
+      "notes": "India's most generous 4 of last 5 years. \u20b92,708 crore (~$324M) in FY2025. ~\u20b97.4 crore per day. Forbes: $1.1B donated to Shiv Nadar Foundation. Padma Bhushan recipient. Focus on education, particularly for disadvantaged students."
     },
     "sources": [
-      "Forbes"
+      "https://www.shivnadarfoundation.org/",
+      "https://www.forbes.com/profile/shiv-nadar/",
+      "https://www.indiatoday.in/business/story/top-philanthropist-india-hurun-list-shiv-nadar-mukesh-ambani-adani-how-much-donation-per-day-2815263-2025-11-07"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 20,
@@ -50978,9 +51004,12 @@
     "country": "Germany",
     "source_of_wealth": "Automotive",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 300,
     "giving_breakdown": {
-      "notes": "German philanthropy."
+      "skala_initiative": 100,
+      "johanna_quandt_foundation": 100,
+      "quandt_stiftung": 100,
+      "notes": "BMW heiress (Stefan Quandt's sister). SKala Initiative supports social entrepreneurs. Johanna Quandt Foundation. Quandt Stiftung. Germany's richest woman."
     },
     "sources": [
       "Forbes"
@@ -50998,7 +51027,9 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
-      "notes": "German philanthropy."
+      "johanna_quandt_foundation": 100,
+      "quandt_foundation": 100,
+      "notes": "BMW heir. Johanna Quandt Foundation (named after mother). Family foundations support education and science. Very private German billionaire family."
     },
     "sources": [
       "Forbes"
@@ -51034,7 +51065,9 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 100,
     "giving_breakdown": {
-      "notes": "Aldi S\u00fcd."
+      "aldi_sud_foundation": 80,
+      "other": 20,
+      "notes": "Aldi S\u00fcd heir (Karl Albrecht's daughter). Siemens Stiftung and family foundations. Very private German family. Limited public disclosure."
     },
     "sources": [
       "Forbes"
@@ -51052,7 +51085,9 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 100,
     "giving_breakdown": {
-      "notes": "Aldi S\u00fcd."
+      "aldi_sud_foundation": 80,
+      "other": 20,
+      "notes": "Aldi S\u00fcd heir (Karl Albrecht's son). Family foundations. Very private German family. Father Karl Albrecht Sr. was famously reclusive."
     },
     "sources": [
       "Forbes"
@@ -54449,12 +54484,14 @@
     "country": "Japan",
     "source_of_wealth": "Sensors",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 100,
+    "total_lifetime_giving_millions": 2600,
     "giving_breakdown": {
-      "notes": "Keyence philanthropy."
+      "keyence_foundation_2022": 2600,
+      "notes": "MAJOR philanthropist. Donated 7.45 million Keyence shares worth \u00a5390 billion ($2.6 billion) to Keyence Foundation in 2022. Forbes Asia Heroes of Philanthropy. Foundation supports scholarships for financially disadvantaged Japanese university students."
     },
     "sources": [
-      "Forbes"
+      "https://www.forbes.com/profile/takemitsu-takizaki/",
+      "https://www.forbes.com/sites/forbespr/2023/11/29/forbes-asia-recognizes-15-top-donors-in-17th-annual-heroes-of-philanthropy-list/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -55695,9 +55732,13 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 50,
     "giving_breakdown": {
-      "notes": "Red Bull."
+      "wings_for_life_foundation": 40,
+      "other": 10,
+      "notes": "Red Bull heir (father Dietrich died 2022). Wings for Life Foundation supports spinal cord research - inherited foundation. Limited personal giving disclosures. Young billionaire (b. 1992), limited philanthropic track record. Owns 49% of Red Bull."
     },
     "sources": [
+      "https://en.wikipedia.org/wiki/Mark_Mateschitz",
+      "https://facts.net/celebrity/19-intriguing-facts-about-mark-mateschitz/",
       "Forbes"
     ],
     "giving_pledge_signed": false,
