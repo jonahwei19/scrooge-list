@@ -4028,18 +4028,22 @@
   {
     "rank": 489,
     "name": "Nassef Sawiris",
-    "net_worth_billions": 9.0,
+    "net_worth_billions": 9.74,
     "country": "Egypt",
     "source_of_wealth": "OCI (fertilizers), Adidas",
     "liquidity_factor": 0.45,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 250,
     "giving_breakdown": {
-      "sawiris_foundation": 200,
-      "notes": "Sawiris Foundation for Social Development. Aston Villa co-owner. OCI fertilizers."
+      "auc_family_gift_share": 10,
+      "chicago_booth_grant": 6,
+      "sawiris_foundation_contributions": 200,
+      "other_education": 34,
+      "notes": "Part of Egypt's wealthiest family. Family gave $30M to AUC (largest in its history). $6M to Chicago Booth for Executive Education in El Gouna. Co-funds Sawiris Foundation for Social Development. Focus: education, poverty alleviation."
     },
     "sources": [
-      "Forbes",
-      "Sawiris Foundation"
+      "https://www.alliancemagazine.org/blog/egypts-wealthiest-family-gift-30-million-to-106-year-old-university/",
+      "https://www.chicagobooth.edu/alumni/stories/sawiris-grant",
+      "https://sawirisfoundation.org/about-us/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -4052,16 +4056,16 @@
     "country": "Saudi Arabia",
     "source_of_wealth": "Kingdom Holding Company",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 4000,
+    "total_lifetime_giving_millions": 3500,
     "giving_breakdown": {
-      "foundation_grants": 3500,
-      "direct_gifts": 500,
-      "notes": "Alwaleed Philanthropies has donated $4B+ over 35 years. 2015 pledge to donate entire $32B fortune to charity. Focus on disaster relief, women's empowerment, disease eradication."
+      "alwaleed_philanthropies_disbursed": 3500,
+      "pledged_remaining": 28500,
+      "notes": "MAJOR PHILANTHROPIST - Pledged entire $32B fortune in 2015. $3.5B+ disbursed through Alwaleed Philanthropies over 35+ years. Focus: humanitarian, educational, cultural initiatives across 60+ countries. One of the most generous living philanthropists."
     },
     "sources": [
-      "Forbes",
-      "BBC",
-      "Alwaleed Philanthropies"
+      "https://alwaleedphilanthropies.org/en/who-we-are",
+      "https://www.bbc.com/news/world-middle-east-33353370",
+      "https://houseofsaud.com/prince-alwaleed-bin-talal-bin-abdulaziz-al-saud/philanthropy/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 30,
@@ -4070,20 +4074,19 @@
   {
     "rank": 182,
     "name": "Abdulla Al Ghurair",
-    "net_worth_billions": 5.5,
+    "net_worth_billions": 3.1,
     "country": "UAE",
     "source_of_wealth": "Banking, construction",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 1143,
     "giving_breakdown": {
-      "foundation_grants": 1100,
-      "direct_gifts": 400,
-      "notes": "Abdulla Al Ghurair Foundation for Education (2015) - donated 1/3 of assets (~$1.1B). Abdul Aziz Al Ghurair Refugee Education Fund ($32.6M). Focus on education for Arab youth."
+      "al_ghurair_foundation_pledge": 1143,
+      "notes": "MAJOR PHILANTHROPIST - Pledged 1/3 of wealth (AED 4.2B / $1.14B) to Abdulla Al Ghurair Foundation for Education in 2015. Focus: educating 15,000+ Arab youth. Foundation active in UAE and Arab region."
     },
     "sources": [
-      "Forbes",
-      "TIME100 Philanthropy",
-      "AGF website"
+      "https://www.alghurairfoundation.org/about-us/",
+      "https://www.the-founders.org/abdulla-bin-ahmad-al-ghurair/strong-foundation/",
+      "https://en.wikipedia.org/wiki/Abdulla_Al_Ghurair"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -4752,16 +4755,19 @@
     "country": "Saudi Arabia",
     "source_of_wealth": "Oil, construction, agriculture",
     "liquidity_factor": 0.25,
-    "total_lifetime_giving_millions": 300,
+    "total_lifetime_giving_millions": 400,
     "giving_breakdown": {
-      "foundation_grants": 150,
-      "direct_gifts": 150,
-      "notes": "$3.6M COVID donation to Addis Ababa. Cancer treatment facilities in Saudi. Hospitals in Ethiopia. Partners with Clinton Foundation on HIV/AIDS, Gates Foundation on agriculture."
+      "ethiopia_dam_pledge": 88,
+      "healthcare_kaust_endowments": 100,
+      "breast_cancer_center_kau": 50,
+      "addis_ababa_covid": 3.6,
+      "other_ethiopia_saudi": 158,
+      "notes": "Major philanthropist focused on Saudi Arabia and Ethiopia. $88M pledged to Ethiopian Renaissance Dam. Endowed Sheikh Mohammed Al Amoudi Center for Breast Cancer at KAU. Healthcare and education focus in both countries. Business-like approach to giving."
     },
     "sources": [
-      "Forbes",
-      "Alliance Magazine",
-      "Official website"
+      "https://www.forbes.com/sites/tatianaserafin/2013/06/05/sheikh-mohammed-al-amoudi-on-philanthropy",
+      "https://en.wikipedia.org/wiki/Mohammed_Hussein_Al_Amoudi",
+      "https://www.alliancemagazine.org/blog/al-amoudi-donates-3-6-million-addis-ababa/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -7109,19 +7115,25 @@
   {
     "rank": 818,
     "name": "Naguib Sawiris",
-    "net_worth_billions": 3.5,
+    "net_worth_billions": 9.74,
     "country": "Egypt",
     "source_of_wealth": "Orascom TMT",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 300,
+    "total_lifetime_giving_millions": 500,
     "giving_breakdown": {
-      "sawiris_foundation": 300,
-      "notes": "Orascom telecom. Film festival founder."
+      "pledged_to_egypt": 1000,
+      "sawiris_foundation": 200,
+      "auc_family_gift_share": 10,
+      "free_egyptians_party_funding": 50,
+      "other_causes": 240,
+      "notes": "Pledged $1B in 2015 to help Egypt's economy and entrepreneurs. Co-founded Free Egyptians Party. Family gave $30M to AUC. Net worth surged to $9.74B in 2025 due to gold investments. Focus: entrepreneurship, Egyptian development."
     },
     "sources": [
-      "Forbes"
+      "https://blog.estatebook.com/naguib-sawiris/",
+      "https://www.billionaires.africa/2025/10/07/naguib-sawiris-egypt-first-10-billionaire/",
+      "https://www.forbesmiddleeast.com/lists/the-worlds-richest-arabs-2025/naguib-sawiris/"
     ],
-    "giving_pledge_signed": true,
+    "giving_pledge_signed": false,
     "years_as_billionaire": 15,
     "notes": "Orascom TMT. El Gouna Film Festival. Giving Pledge."
   },
@@ -8073,14 +8085,17 @@
     "country": "UAE",
     "source_of_wealth": "Banking, food",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 100,
+    "total_lifetime_giving_millions": 143,
     "giving_breakdown": {
-      "al_ghurair_foundation": 100,
-      "notes": "Al Ghurair Foundation for Education. Arab youth education."
+      "refugee_education_fund": 32.6,
+      "global_muslim_philanthropy_fund": 10,
+      "other_education": 100,
+      "notes": "Created $32.6M Abdul Aziz Al Ghurair Refugee Education Fund in 2018 supporting 20,000 refugees in Jordan/Lebanon. $10M lead donor to Global Muslim Philanthropy Fund for Children (UNICEF). Focus: refugee and vulnerable youth education."
     },
     "sources": [
-      "Forbes",
-      "Al Ghurair Foundation"
+      "https://refugee-educationfund.org/en/about-us/",
+      "https://www.unicef.org/gulf/press-releases/emirati-philanthropist-abdul-aziz-al-ghurair-signs-agreement-islamic-development",
+      "https://www.alghurairfoundation.org/strategic-philanthropy/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -8168,13 +8183,13 @@
     "country": "Saudi Arabia",
     "source_of_wealth": "Al Rajhi Bank",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 8000,
+    "total_lifetime_giving_millions": 5900,
     "giving_breakdown": {
-      "sulaiman_al_rajhi_endowment": 8000,
-      "notes": "Gave away ~$8B - majority of fortune. Major Islamic philanthropist."
+      "alrajhi_humanitarian_foundation": 5900,
+      "notes": "LEGENDARY PHILANTHROPIST - One of the most generous people ever. Gave away nearly $6B to charity over lifetime through Al-Rajhi Humanitarian Foundation. Founded Al Rajhi Bank (world's largest Islamic bank). Retired from business to focus entirely on philanthropy. 'I am not a wealthy man. I am a messenger.'"
     },
     "sources": [
-      "Forbes"
+      "https://en.wikipedia.org/wiki/Sulaiman_Al_Rajhi"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -10094,17 +10109,20 @@
   {
     "rank": 719,
     "name": "Stef Wertheimer",
-    "net_worth_billions": 3.6,
+    "net_worth_billions": 7.6,
     "country": "Israel",
     "source_of_wealth": "Iscar (sold to Berkshire)",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 300,
+    "total_lifetime_giving_millions": 150,
     "giving_breakdown": {
-      "industrial_parks": 300,
-      "notes": "Iscar sold to Berkshire. Industrial parks in Galilee."
+      "industrial_parks_investment": 100,
+      "education_peace_initiatives": 50,
+      "notes": "PASSED AWAY March 2025 (age 98). LEGENDARY PHILANTHROPIST - $100M+ to build six industrial parks providing rent-free workspaces in economically disadvantaged Arab areas. Vision: peace through economic development. Oslo Business for Peace Award 2010. Sold ISCAR to Buffett for $7B."
     },
     "sources": [
-      "Forbes"
+      "https://israeled.org/stef-wertheimer/",
+      "https://www.forbes.com/profile/stef-wertheimer/",
+      "https://www.timesofisrael.com/billionaire-industrialist-and-philanthropist-stef-wertheimer-dies-at-98/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -11232,17 +11250,22 @@
   {
     "rank": 870,
     "name": "Eyal Ofer",
-    "net_worth_billions": 3.4,
+    "net_worth_billions": 28.2,
     "country": "Monaco",
     "source_of_wealth": "Ofer Global (shipping, real estate)",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 30,
     "giving_breakdown": {
-      "ofer_foundation": 200,
-      "notes": "Ofer Global shipping. Real estate."
+      "tate_modern": 13,
+      "national_maritime_museum": 2,
+      "tel_aviv_museum": 5,
+      "other_arts_education": 10,
+      "notes": "Israel's richest person ($28.2B in 2025). Eyal & Marilyn Ofer Family Foundation supports arts/education. \u00a310M to Tate Modern, \u00a31.5M to National Maritime Museum, $5M to Tel Aviv Museum of Art. MODEST GIVING for wealth level - giving rate ~0.1%."
     },
     "sources": [
-      "Forbes"
+      "https://en.wikipedia.org/wiki/Eyal_Ofer",
+      "https://www.bloomberg.com/billionaires/profiles/eyal-m-ofer/",
+      "https://www.ynetnews.com/business/article/r1tcxtfake"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -11251,16 +11274,20 @@
   {
     "rank": 871,
     "name": "Idan Ofer",
-    "net_worth_billions": 3.4,
+    "net_worth_billions": 22.5,
     "country": "United Kingdom",
     "source_of_wealth": "Quantum Pacific Group",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 100,
+    "total_lifetime_giving_millions": 60,
     "giving_breakdown": {
-      "notes": "Quantum Pacific. Shipping, energy."
+      "london_business_school": 40,
+      "other_through_foundation": 20,
+      "notes": "Israel's 2nd richest ($22.5B in 2025). \u00a325M ($40M) to London Business School in 2013 - largest private donation LBS ever received. Sammy Ofer Centre built in father's honor. Idan & Batia Ofer Foundation supports health, education, welfare, art. MODEST GIVING for wealth level."
     },
     "sources": [
-      "Forbes"
+      "https://en.wikipedia.org/wiki/Idan_Ofer",
+      "https://www.superyachtfan.com/yacht/better-place/owner/",
+      "https://ejewishphilanthropy.com/philanthropist-batia-ofer-is-using-art-to-benefit-critically-ill-children/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -19382,16 +19409,19 @@
   {
     "rank": 1779,
     "name": "Teddy Sagi",
-    "net_worth_billions": 1.0,
+    "net_worth_billions": 7.1,
     "country": "Israel",
     "source_of_wealth": "Gambling software",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 30,
+    "total_lifetime_giving_millions": 50,
     "giving_breakdown": {
-      "notes": "Playtech founder."
+      "israeli_causes": 30,
+      "uk_camden_community": 20,
+      "notes": "Founder of Playtech gambling software. Net worth $7.1B (2025), not $1B as previously listed. Based in London, maintains ties to Israel. Donates to Israeli universities and hospitals. MODEST GIVING for wealth level."
     },
     "sources": [
-      "Forbes"
+      "https://www.timesofisrael.com/41-israelis-are-in-the-billionaires-club-with-wiz-founders-doubling-their-fortunes/",
+      "https://fineducke.com/articles/981/richest-people-in-israel"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 10,
