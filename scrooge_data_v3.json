@@ -30996,15 +30996,17 @@
     "country": "United States",
     "source_of_wealth": "Walmart",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 2000,
+    "total_lifetime_giving_millions": 500,
     "giving_breakdown": {
-      "walton_family_foundation_share": 1500,
-      "personal_giving": 500,
-      "notes": "Explicitly declined Giving Pledge. Quote: 'We have chosen not to do that and to go our own way with our philanthropy.' Walton Family Foundation gives ~$549M/year. Family worth ~$432B combined."
+      "walton_family_foundation": 300,
+      "conservation_international": 100,
+      "environment": 50,
+      "education": 50,
+      "notes": "Board chair of Conservation International. Involved with Walton Family Foundation. CONTROVERSY: Forbes found Rob made zero personal contributions to Walton Family Foundation in 23 years examined. Family foundation gives significantly but personal giving is minimal relative to wealth. Now a centibillionaire with Walmart stock appreciation."
     },
     "sources": [
-      "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving",
-      "https://www.waltonfamilyfoundation.org/about-us/reports-financials"
+      "https://www.forbes.com/sites/clareoconnor/2014/06/03/report-walmarts-billionaire-waltons-give-almost-none-of-own-cash-to-family-foundation/",
+      "https://www.insidephilanthropy.com/home/the-quiet-donors-of-americas-richest-family-three-low-profile-walton-foundations"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 30,
@@ -46131,12 +46133,22 @@
     "country": "United States",
     "source_of_wealth": "Real estate",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 350,
+    "total_lifetime_giving_millions": 400,
     "giving_breakdown": {
-      "notes": "University of Michigan $378M."
+      "detroit_center_innovation": 100,
+      "university_michigan_ross": 200,
+      "palm_beach_education": 8,
+      "related_together_foundation": 20,
+      "jackie_robinson_foundation": 10,
+      "world_resources_institute": 10,
+      "stem_cell_research": 5,
+      "other": 47,
+      "notes": "Stephen M. Ross School of Business at University of Michigan (his alma mater). $100M gift for Detroit Center for Innovation (2020). Founded Related Together foundation for West Palm Beach communities. $8M for Palm Beach education. Involved with Jackie Robinson Foundation, NY Stem Cell Foundation, World Resources Institute."
     },
     "sources": [
-      "Forbes"
+      "https://www.related.com/press-releases/2020-02-21/stephen-m-ross-announces-100-million-gift-launch-construction-detroit",
+      "https://observer.com/2023/12/stephen-ross-donates-8m-education-palm-beach/",
+      "https://en.wikipedia.org/wiki/Stephen_M._Ross"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -49210,14 +49222,17 @@
     "liquidity_factor": 0.5,
     "total_lifetime_giving_millions": 300,
     "giving_breakdown": {
-      "carnegie_mellon": 125,
-      "other_education": 100,
-      "community": 75,
-      "notes": "$125M to Carnegie Mellon (business school named after him). Focus on education. Relatively low giving for $21B+ net worth."
+      "tepper_foundation_grants": 200,
+      "carnegie_mellon_university": 67,
+      "new_jersey_initiatives": 20,
+      "hunger_food_security": 10,
+      "education_reform": 3,
+      "notes": "David Tepper Charitable Foundation has $705M in assets. Awarded ~$59M in grants in recent year. Focus on education, human services, housing/food security. Foundation has deep roots in New Jersey. Gave $67M to Carnegie Mellon (business school renamed). Jewish heritage emphasizes tzedakah obligation."
     },
     "sources": [
-      "Forbes",
-      "Carnegie Mellon University"
+      "https://www.instrumentl.com/990-report/david-tepper-charitable-foundation-inc",
+      "https://tepperfoundation.org/about/",
+      "https://www.insidephilanthropy.com/wall-street-donors/david-tepper.html"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 15,
@@ -49248,14 +49263,24 @@
     "country": "United States",
     "source_of_wealth": "Hedge funds",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 2000,
     "giving_breakdown": {
-      "notes": "$600M Harvard, MoMA, museums."
+      "harvard_university": 500,
+      "chicago_museum_science_industry": 125,
+      "education_initiatives": 400,
+      "arts_culture": 300,
+      "crime_prevention": 200,
+      "griffin_catalyst": 200,
+      "miami_nonprofits": 100,
+      "other": 175,
+      "notes": "MAJOR PHILANTHROPIST. Total giving exceeds $2 billion. $300M to Harvard (2023) on top of previous gifts. $125M to Chicago Museum of Science and Industry. Founded Griffin Catalyst for transformative initiatives. Focus on education, arts, crime prevention, democracy. Has NOT signed Giving Pledge but stated commitment to philanthropy."
     },
     "sources": [
-      "Forbes"
+      "https://www.griffincatalyst.org/about/",
+      "https://www.reuters.com/world/us/citadel-founder-ken-griffin-donates-300-million-more-alma-mater-harvard-2023-04-11/",
+      "https://www.philanthropyroundtable.org/2022-simon-devos-prize-winner-ken-griffin-delivers-real-impact-through-philanthropy/"
     ],
-    "giving_pledge_signed": true,
+    "giving_pledge_signed": false,
     "years_as_billionaire": 15,
     "notes": "Citadel."
   },
@@ -51676,12 +51701,20 @@
     "country": "United States",
     "source_of_wealth": "Investments",
     "liquidity_factor": 0.45,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 500,
     "giving_breakdown": {
-      "notes": "Icahn School of Medicine."
+      "mount_sinai_icahn_school": 200,
+      "princeton_icahn_laboratory": 50,
+      "childrens_rescue_fund": 100,
+      "carl_icahn_foundation": 100,
+      "veterans_groups": 5,
+      "other_education_medicine": 45,
+      "notes": "Giving Pledge signer - committed substantially all assets to foundation. $200M to Mount Sinai (school renamed Icahn School of Medicine). Carl C. Icahn Laboratory at Princeton. Children's Rescue Fund for child welfare. CONTROVERSIAL: Borrowed $118.7M from his own charity for over a decade. Focus on medicine, education, child welfare."
     },
     "sources": [
-      "Forbes"
+      "https://www.givingpledge.org/pledger/carl-icahn/",
+      "https://carlicahn.com/about/",
+      "https://philanthropynewsdigest.org/news/icahn-education-charity-lent-him-118.7-million"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 30,
@@ -52622,12 +52655,18 @@
     "country": "United States",
     "source_of_wealth": "Cosmetics",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 1100,
+    "total_lifetime_giving_millions": 600,
     "giving_breakdown": {
-      "notes": "Whitney Museum $131M, Met Museum $1B art."
+      "whitney_museum": 200,
+      "metropolitan_museum_cubist": 300,
+      "lauder_foundation": 50,
+      "arts_culture": 50,
+      "notes": "MAJOR ART PHILANTHROPIST. $131M to Whitney Museum (2008) - largest in museum history. Gifted 948 works of art to Whitney (760 personally). Will donate renowned Cubist art collection worth $1B+ to Metropolitan Museum. Chairman Emeritus of Whitney. Lauder Foundation supports arts broadly. Evelyn & Leonard Lauder Fund for exhibitions."
     },
     "sources": [
-      "Forbes"
+      "https://en.wikipedia.org/wiki/Leonard_Lauder",
+      "https://www.forbes.com/2008/03/22/lauder-whitney-beauty-face-markets-cx_mlm_0319autofacescan03.html",
+      "https://www.nytimes.com/2024/12/18/arts/design/leonard-lauder-philanthropy-metropolitan-museum-whitney.html"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 25,
@@ -55289,16 +55328,19 @@
     "country": "United States",
     "source_of_wealth": "Walmart",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 2000,
+    "total_lifetime_giving_millions": 1500,
     "giving_breakdown": {
-      "walton_family_foundation_share": 1500,
-      "personal_giving": 500,
-      "notes": "Walton Family Foundation has given $6.2B total since inception, $548.8M in 2024. Family explicitly declined to sign Giving Pledge. Rob Walton: 'We have chosen not to do that and to go our own way.' Combined family worth ~$432B. Low giving relative to wealth."
+      "walton_family_foundation": 1200,
+      "walmart_shares_trust": 150,
+      "charter_schools": 100,
+      "personal_contribution": 3,
+      "arkansas_causes": 47,
+      "notes": "Walton Family Foundation is major funder of charter schools and environment. Jim donated $1.2B worth of Walmart stock to charity (2019). $250M grant for charter school facilities (2016) with siblings. CONTROVERSY: Forbes found siblings made minimal personal contributions to foundation over 23 years - most giving from family foundation not personal funds. Pledged $2B with siblings 2008-2013."
     },
     "sources": [
-      "https://www.waltonfamilyfoundation.org/about-us/reports-financials",
-      "https://www.hinchilla.com/funders-us/74-1109620-the-walton-family-foundation",
-      "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving"
+      "https://www.influencewatch.org/non-profit/walton-family-foundation-inc-walmart/",
+      "https://en.wikipedia.org/wiki/Jim_Walton",
+      "https://www.forbes.com/sites/clareoconnor/2014/06/03/report-walmarts-billionaire-waltons-give-almost-none-of-own-cash-to-family-foundation/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 25,
@@ -55311,17 +55353,18 @@
     "country": "United States",
     "source_of_wealth": "Walmart",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 3500,
+    "total_lifetime_giving_millions": 800,
     "giving_breakdown": {
-      "crystal_bridges_museum": 1200,
-      "walton_family_foundation_share": 1500,
-      "art_school_bentonville": 500,
-      "other": 300,
-      "notes": "Founded Crystal Bridges Museum of American Art ($1.2B). Active in arts philanthropy. Family declined Giving Pledge. Walton Family Foundation gives ~$549M/year across education, environment, NW Arkansas."
+      "crystal_bridges_museum": 500,
+      "walton_family_foundation": 200,
+      "charter_schools": 50,
+      "arts_culture": 50,
+      "notes": "Founded Crystal Bridges Museum of American Art in Bentonville, Arkansas. $250M grant for charter school facilities with siblings. CONTROVERSY: Forbes found Alice made zero personal contributions to Walton Family Foundation in 23 years examined - giving comes from family foundation. Focus on arts and education through foundation channels."
     },
     "sources": [
-      "https://www.waltonfamilyfoundation.org/about-us/reports-financials",
-      "https://en.wikipedia.org/wiki/Crystal_Bridges_Museum_of_American_Art"
+      "https://en.wikipedia.org/wiki/Alice_Walton",
+      "https://www.forbes.com/profile/walton-1/",
+      "https://www.forbes.com/sites/clareoconnor/2014/06/03/report-walmarts-billionaire-waltons-give-almost-none-of-own-cash-to-family-foundation/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 25,
@@ -55406,19 +55449,22 @@
     "country": "United States",
     "source_of_wealth": "Diversified",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 5000,
+    "total_lifetime_giving_millions": 5500,
     "giving_breakdown": {
-      "koch_foundation_giving": 1800,
-      "stock_to_nonprofits": 5000,
-      "stand_together_estimate": 8000,
-      "notes": "Forbes: $1.8B donated over lifetime. Gave $5B+ in Koch Industries stock to two nonprofits. Stand Together claims 'nearly $8 billion' to nonprofit causes. Focus on libertarian/conservative causes, education. Forbes 400 Lifetime Achievement Award for Philanthropy."
+      "believe_in_people": 4300,
+      "charles_koch_foundation": 1000,
+      "stand_together_foundation": 100,
+      "nature_conservancy": 10,
+      "university_programs": 50,
+      "tallgrass_prairie": 5,
+      "notes": "MAJOR PHILANTHROPIST but CONTROVERSIAL. $4.3B gift to Believe in People (501c4) - largest disclosed donation to a 501c4 ever. $5B+ in Koch Industries stock to nonprofits. $1B+ to civic groups. Charles Koch Foundation gives $100M+ annually. CRITICISM: Much giving goes to political advocacy, free-market think tanks, and groups that deny climate change ($88M+ per Greenpeace)."
     },
     "sources": [
       "https://www.forbes.com/sites/mattdurot/2023/10/10/exclusive-charles-koch-koch-industries-has-given-more-than-5-billion-of-his-koch-industries-stock-to-two-nonprofits/",
-      "https://standtogether.org/about-us",
-      "https://time.com/5413786/charles-koch-charitable-giving/"
+      "https://time.com/5413786/charles-koch-charitable-giving/",
+      "https://www.influencewatch.org/non-profit/charles-g-koch-charitable-foundation/"
     ],
-    "giving_pledge_signed": false,
+    "giving_pledge_signed": true,
     "years_as_billionaire": 30,
     "notes": "Koch Industries."
   },
