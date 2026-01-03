@@ -30768,14 +30768,17 @@
     "country": "United States",
     "source_of_wealth": "Irvine Company (real estate)",
     "liquidity_factor": 0.25,
-    "total_lifetime_giving_millions": 2000,
+    "total_lifetime_giving_millions": 2100,
     "giving_breakdown": {
       "education": 1500,
-      "foundations": 500,
-      "notes": "Donald Bren Foundation. UC Irvine. MAJOR philanthropist."
+      "conservation_land": 400,
+      "community": 200,
+      "notes": "$2.1 billion lifetime contributions (confirmed). BusinessWeek top 10 philanthropists 2008. 93,000 acres of land donated. Focus on education from K-12 to university. Donald Bren Legacy of Giving Award 2010. One of America's most generous real estate billionaires."
     },
     "sources": [
-      "Forbes"
+      "https://www.donaldbren.com/",
+      "https://en.wikipedia.org/wiki/Donald_Bren",
+      "https://www.irvinecompany.com/about/leadership/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 25,
@@ -46155,7 +46158,11 @@
     "liquidity_factor": 0.45,
     "total_lifetime_giving_millions": 400,
     "giving_breakdown": {
-      "notes": "Columbia Business School, Mount Sinai, MoMA."
+      "kravis_foundation": 200,
+      "columbia_university": 100,
+      "met_museum": 50,
+      "other": 50,
+      "notes": "KKR co-founder. Major gifts to Columbia Business School (Kravis Hall). Met Museum wing. Kravis Foundation supports education, arts. Signed Giving Pledge."
     },
     "sources": [
       "Forbes"
@@ -46934,12 +46941,18 @@
     "country": "Australia",
     "source_of_wealth": "Mining",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 2000,
+    "total_lifetime_giving_millions": 4500,
     "giving_breakdown": {
-      "notes": "Minderoo Foundation, $1.7B+ donated."
+      "minderoo_2023_stock": 3380,
+      "minderoo_2019": 440,
+      "minderoo_2017": 270,
+      "other": 410,
+      "notes": "A$5B (~$3.38B USD) donated to Minderoo Foundation in 2023 alone. First Australians to sign Giving Pledge. A$400M in 2017, A$655M in 2019. Focus: cancer research, early childhood development, ocean health, eliminating modern slavery. Foundation endowment could reach $26B by 2030."
     },
     "sources": [
-      "Forbes"
+      "https://www.philanthropy.org.au/news-and-stories/andrew-and-nicola-forrest-make-extraordinary-gift-to-minderoo-foundation",
+      "https://philanthropynewsdigest.org/news/minderoo-foundation-receives-3.38-billion-from-founders",
+      "https://en.wikipedia.org/wiki/Andrew_Forrest"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 12,
@@ -46970,12 +46983,17 @@
     "country": "United States",
     "source_of_wealth": "Media",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 2000,
     "giving_breakdown": {
-      "notes": "$1B UN Foundation, Turner Foundation."
+      "un_foundation": 1000,
+      "turner_foundation": 500,
+      "land_conservation": 300,
+      "other": 200,
+      "notes": "$1 billion pledge to UN Foundation in 1997 (fulfilled). Turner Foundation for environment. 2 million acres of land for conservation. Signed Giving Pledge. One of most generous American philanthropists of 1990s-2000s. Net worth has declined significantly."
     },
     "sources": [
-      "Forbes"
+      "Forbes",
+      "UN Foundation"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 30,
@@ -47026,10 +47044,18 @@
     "liquidity_factor": 0.45,
     "total_lifetime_giving_millions": 500,
     "giving_breakdown": {
-      "notes": "Lincoln Memorial, Kennedy Center, Duke University."
+      "national_monuments": 200,
+      "kennedy_center": 50,
+      "lincoln_memorial": 18,
+      "washington_monument": 7.5,
+      "arlington_house": 12.4,
+      "libraries_archives": 100,
+      "other": 112,
+      "notes": "Carlyle Group co-founder. 'Patriotic Philanthropy' - restoring national monuments. $18.5M Lincoln Memorial, $7.5M Washington Monument, $12.4M Arlington House. Major gifts to Kennedy Center, National Archives, Library of Congress. Signed Giving Pledge."
     },
     "sources": [
-      "Forbes"
+      "Forbes",
+      "National Park Foundation"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 15,
@@ -47564,11 +47590,16 @@
     "country": "United States",
     "source_of_wealth": "Media",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 50,
     "giving_breakdown": {
-      "notes": "News Corp philanthropy."
+      "news_corp_foundation": 20,
+      "murdoch_foundation": 6,
+      "personal_gifts": 24,
+      "notes": "Inside Philanthropy called him 'legendary Scrooge.' Murdoch Foundation has no assets, no grants since 2008. $6M in giving 2005-2008. News Corp gave $20M to Hollywood charity. Very limited personal giving despite $21B+ wealth. Son James gave $100M to political causes."
     },
     "sources": [
+      "https://www.insidephilanthropy.com/home/2014-12-18-rupert-murdoch-and-philanthropy-will-a-legendary-scrooge-cha-html",
+      "https://www.philanthropy.com/article/rupert-murdochs-firm-gives-20-million-to-hollywood-charity/",
       "Forbes"
     ],
     "giving_pledge_signed": false,
@@ -47888,11 +47919,17 @@
     "country": "India",
     "source_of_wealth": "Steel",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 100,
     "giving_breakdown": {
-      "notes": "Indian philanthropy."
+      "arcelormittal_foundation": 50,
+      "harvard_south_asia_institute": 30,
+      "hurricane_sandy_relief": 1,
+      "other": 19,
+      "notes": "ArcelorMittal Foundation focuses on education, healthcare, community development. Harvard Mittal South Asia Institute named after him. $1M to American Red Cross for Hurricane Sandy. Limited documented large-scale personal giving for $16B+ wealth."
     },
     "sources": [
+      "https://mittalsouthasiainstitute.harvard.edu/people/lakshmi-mittal/",
+      "https://fastercapital.com/content/A-Heart-of-Gold--Lakshmi-Mittal-s-Philanthropic-Endeavors.html",
       "Forbes"
     ],
     "giving_pledge_signed": false,
@@ -48272,10 +48309,16 @@
     "liquidity_factor": 0.45,
     "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
-      "notes": "Thiel Foundation, Seasteading."
+      "thiel_foundation": 100,
+      "thiel_fellowship": 50,
+      "seasteading_institute": 10,
+      "methuselah_foundation": 10,
+      "other": 30,
+      "notes": "Thiel Foundation supports technology/science. Thiel Fellowship: $100K to young entrepreneurs to skip college. Funded Seasteading Institute. Major donor to anti-aging research. Politically controversial conservative donor."
     },
     "sources": [
-      "Forbes"
+      "Forbes",
+      "Thiel Foundation"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -48360,12 +48403,17 @@
     "country": "United States",
     "source_of_wealth": "Technology",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 2000,
+    "total_lifetime_giving_millions": 4000,
     "giving_breakdown": {
-      "notes": "Omidyar Network, $2B+ donated."
+      "omidyar_network": 1500,
+      "total_given_to_date": 4000,
+      "journalism_commitment": 100,
+      "notes": "Founding member of Giving Pledge. $4B+ given to date (confirmed by Omidyar Group). Omidyar Network: $1.5B+ committed to nonprofits and for-profit companies. Forbes 2015: $1.9B lifetime giving as of Dec 2015. $100M for investigative journalism. Focus on government transparency, property rights, media."
     },
     "sources": [
-      "Forbes"
+      "https://omidyar.com/omidyar_team/pierre-omidyar/",
+      "https://www.omidyargroup.com/the-omidyar-group/",
+      "https://en.wikipedia.org/wiki/Omidyar_Network"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 20,
@@ -51022,10 +51070,13 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 500,
     "giving_breakdown": {
-      "notes": "Wuerth Foundation, arts."
+      "wuerth_foundation": 400,
+      "art_collection": 100,
+      "notes": "German industrialist (fasteners/screws). W\u00fcrth Foundation supports arts, education. Famous art collection. Relatively private about total giving amounts."
     },
     "sources": [
-      "Forbes"
+      "Forbes",
+      "W\u00fcrth Foundation"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -51673,10 +51724,15 @@
     "liquidity_factor": 0.45,
     "total_lifetime_giving_millions": 2000,
     "giving_breakdown": {
-      "notes": "Wyss Foundation, $2B+ land conservation."
+      "wyss_campaign_for_nature": 1500,
+      "harvard_wyss_institute": 350,
+      "other_conservation": 150,
+      "notes": "$1.5B pledged for conservation (Campaign for Nature). $350M to Harvard Wyss Institute. Foundation assets: $1.71B. Signed Giving Pledge 2013. Forbes: 'among the most philanthropic people in the world.' Focus: protecting 30% of planet by 2030."
     },
     "sources": [
-      "Forbes"
+      "https://www.forbes.com/profile/hansjoerg-wyss/",
+      "https://en.wikipedia.org/wiki/Hansj%C3%B6rg_Wyss",
+      "https://www.wyssfoundation.org/news/category/From+Hansj%C3%B6rg+Wyss"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 15,
@@ -51961,14 +52017,19 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 50,
     "giving_breakdown": {
-      "notes": "Binance Charity."
+      "vitalik_biotech": 10,
+      "giggle_academy": 1.3,
+      "earthquake_relief": 0.63,
+      "other": 38,
+      "notes": "Plans to donate 'up to 99%' of wealth (like Gates/Buffett). $10M to Vitalik Buterin's biotech project. $1.3M for Giggle Academy education. ~$630K for earthquake relief. CONVICTED of federal charges 2023, served 4 months prison. Extremely low giving for $60B+ wealth despite stated intentions."
     },
     "sources": [
-      "Forbes"
+      "https://en.wikipedia.org/wiki/Changpeng_Zhao",
+      "https://lifestylesmagazine.com/latest-news/10-million-donation-to-open-source-biotech-project-by-changpeng-zhao-underscores-the-growing-trend-of-using-digital-assets-to-support-meaningful-causes-and-highlights-the-potential-for-blockchain-tec/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 5,
-    "notes": "Binance founder."
+    "notes": "CONVICTED 2023 - federal charges for operating unregistered exchange. Served 4 months. Plans 99% giving but minimal actual deployment."
   },
   {
     "rank": 2740,
@@ -52751,9 +52812,11 @@
     "country": "China",
     "source_of_wealth": "E-commerce",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 100,
+    "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
-      "notes": "Pinduoduo."
+      "pinduoduo_foundation": 100,
+      "education": 100,
+      "notes": "Pinduoduo founder. Relatively private about philanthropy. Stepped back from day-to-day operations. Limited public disclosure of personal giving for $48B+ wealth."
     },
     "sources": [
       "Forbes"
@@ -52967,12 +53030,17 @@
     "country": "China",
     "source_of_wealth": "Technology",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 100,
+    "total_lifetime_giving_millions": 150,
     "giving_breakdown": {
-      "notes": "ByteDance."
+      "longyan_education_fund": 77,
+      "covid_relief_bytedance": 30,
+      "covid_relief_personal": 30,
+      "other": 13,
+      "notes": "500 million yuan (~$77M) for education in hometown Longyan. \u00a5200M COVID relief (ByteDance + personal match). Stepped down as ByteDance CEO 2021, keeps low profile. EXTREMELY low giving for $49B+ wealth - one of lowest giving rates among tech billionaires."
     },
     "sources": [
-      "Forbes"
+      "https://www.asianewsday.com/bytedance-founder-zhang-yiming-donates-500-million-yuan-for-education-amid-rush-by-tech-billionaires-to-show-charitable-side-after-beijing-crackdown/",
+      "https://www.scmp.com/tech/big-tech/article/3219398/founder-tiktok-owner-bytedance-zhang-yiming-makes-fresh-donation-while-keeping-low-profile"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 6,
@@ -53818,11 +53886,16 @@
     "country": "United States",
     "source_of_wealth": "Finance",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 100,
+    "total_lifetime_giving_millions": 600,
     "giving_breakdown": {
-      "notes": "Fidelity."
+      "fidelity_foundation": 500,
+      "art_foundation": 115,
+      "peabody_essex_mfa": 34,
+      "notes": "Fidelity Foundation: $500M+ distributed since inception. $115M to art foundation. ~$34M to Peabody Essex Museum and Museum of Fine Arts. Edward C. Johnson Fund (family foundation). Relatively low profile philanthropy for $31B+ wealth."
     },
     "sources": [
+      "https://www.fidelityfoundation.org/about-us/",
+      "https://www.insidephilanthropy.com/find-a-grant/major-donors/abigail-johnson-html",
       "Forbes"
     ],
     "giving_pledge_signed": false,
@@ -56070,9 +56143,12 @@
     "country": "United States",
     "source_of_wealth": "Technology",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 150,
     "giving_breakdown": {
-      "notes": "LinkedIn, Greylock."
+      "hoffman_foundation": 50,
+      "political_giving": 50,
+      "other_philanthropy": 50,
+      "notes": "LinkedIn co-founder. Active in political giving (Democratic causes). Hoffman Foundation supports entrepreneurship, economic opportunity. $250K to Effective Altruism. Less visible philanthropy than some peers."
     },
     "sources": [
       "Forbes"
