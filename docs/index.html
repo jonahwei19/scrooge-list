@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrooge List - Billionaire Philanthropy Tracker</title>
+    <style>
+        :root {
+            --bg-primary: #0f0f0f;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #232323;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-red: #e74c3c;
+            --accent-green: #27ae60;
+            --accent-yellow: #f1c40f;
+            --accent-blue: #3498db;
+            --border-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .controls {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .controls h3 {
+            margin-bottom: 15px;
+            color: var(--accent-blue);
+        }
+
+        .factor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        .factor-item {
+            background: var(--bg-card);
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .factor-item label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .factor-item input[type="range"] {
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .factor-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .factor-value {
+            font-weight: bold;
+            color: var(--accent-yellow);
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .filter-row select, .filter-row input {
+            padding: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background: var(--bg-card);
+            font-weight: 600;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: #2a2a2a;
+        }
+
+        th.sorted-asc::after { content: ' ▲'; }
+        th.sorted-desc::after { content: ' ▼'; }
+
+        tr:hover {
+            background: var(--bg-card);
+        }
+
+        .score-cell {
+            font-weight: bold;
+        }
+
+        .score-high { color: var(--accent-red); }
+        .score-medium { color: var(--accent-yellow); }
+        .score-low { color: var(--accent-green); }
+
+        .flag-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            background: var(--accent-red);
+            color: white;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 4px;
+        }
+
+        .pledge-yes { color: var(--accent-green); }
+        .pledge-no { color: var(--text-secondary); }
+
+        .money {
+            font-family: 'SF Mono', Monaco, monospace;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stat-card {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent-blue);
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .methodology {
+            background: var(--bg-secondary);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .methodology h3 {
+            margin-bottom: 15px;
+            color: var(--accent-blue);
+        }
+
+        .methodology p {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .channel-legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .channel-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            background: var(--bg-card);
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        .channel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .dot-high { background: var(--accent-green); }
+        .dot-medium { background: var(--accent-yellow); }
+        .dot-low { background: var(--accent-red); }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8rem; }
+            th, td { padding: 8px 10px; font-size: 0.9rem; }
+            .hide-mobile { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Scrooge List</h1>
+            <p class="subtitle">An inverse Forbes list - ranking billionaires by how little they've deployed for charity</p>
+        </header>
+
+        <div class="stats-row" id="stats">
+            <!-- Stats populated by JS -->
+        </div>
+
+        <div class="controls">
+            <h3>Adjust Scrooge Score Weights</h3>
+            <div class="factor-grid">
+                <div class="factor-item">
+                    <label>
+                        <span>Observable Giving Weight</span>
+                        <span class="factor-value" id="weight-observable-val">40%</span>
+                    </label>
+                    <input type="range" id="weight-observable" min="0" max="100" value="40" oninput="recalculateScores()">
+                </div>
+                <div class="factor-item">
+                    <label>
+                        <span>Tenure Penalty Weight</span>
+                        <span class="factor-value" id="weight-tenure-val">20%</span>
+                    </label>
+                    <input type="range" id="weight-tenure" min="0" max="100" value="20" oninput="recalculateScores()">
+                </div>
+                <div class="factor-item">
+                    <label>
+                        <span>Pledge Breach Penalty</span>
+                        <span class="factor-value" id="weight-pledge-val">20%</span>
+                    </label>
+                    <input type="range" id="weight-pledge" min="0" max="100" value="20" oninput="recalculateScores()">
+                </div>
+                <div class="factor-item">
+                    <label>
+                        <span>Red Flag Penalty</span>
+                        <span class="factor-value" id="weight-flags-val">20%</span>
+                    </label>
+                    <input type="range" id="weight-flags" min="0" max="100" value="20" oninput="recalculateScores()">
+                </div>
+                <div class="factor-item">
+                    <label>
+                        <span>Include Dark Estimates</span>
+                        <input type="checkbox" id="include-dark" onchange="recalculateScores()">
+                    </label>
+                    <small style="color: var(--text-secondary)">Add estimated DAF/LLC/anonymous giving to observable total</small>
+                </div>
+                <div class="factor-item">
+                    <label>
+                        <span>Apply Liquidity Discount</span>
+                        <input type="checkbox" id="apply-liquidity" checked onchange="recalculateScores()">
+                    </label>
+                    <small style="color: var(--text-secondary)">Adjust expectations for illiquid wealth</small>
+                </div>
+            </div>
+            <div class="filter-row">
+                <select id="country-filter" onchange="filterData()">
+                    <option value="">All Countries</option>
+                </select>
+                <select id="pledge-filter" onchange="filterData()">
+                    <option value="">All Pledge Status</option>
+                    <option value="signed">Signed Pledge</option>
+                    <option value="not-signed">Not Signed</option>
+                </select>
+                <input type="text" id="search" placeholder="Search by name..." oninput="filterData()">
+            </div>
+        </div>
+
+        <table id="scrooge-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable('rank')">Rank</th>
+                    <th onclick="sortTable('name')">Name</th>
+                    <th onclick="sortTable('net_worth_billions')">Net Worth</th>
+                    <th onclick="sortTable('total_observable_millions')" class="hide-mobile">Observable</th>
+                    <th onclick="sortTable('dark_estimate_millions')" class="hide-mobile">Est. Dark</th>
+                    <th onclick="sortTable('scrooge_score')">Scrooge Score</th>
+                    <th onclick="sortTable('giving_pledge_signed')" class="hide-mobile">Pledge</th>
+                    <th class="hide-mobile">Flags</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Populated by JS -->
+            </tbody>
+        </table>
+
+        <div class="methodology">
+            <h3>Methodology</h3>
+            <p>The Scrooge Score (0-100) measures how much a billionaire is undergiving relative to their capacity. Higher scores indicate more Scrooge-like behavior.</p>
+            <p><strong>Score Components:</strong></p>
+            <ul style="margin-left: 20px; color: var(--text-secondary);">
+                <li><strong>Observable Giving:</strong> Foundation grants + announced gifts + securities transfers vs liquid wealth</li>
+                <li><strong>Tenure Penalty:</strong> Longer wealth tenure = higher expectation to have given</li>
+                <li><strong>Pledge Breach:</strong> Giving Pledge signers who haven't met targets</li>
+                <li><strong>Red Flags:</strong> Low payout rates, DAF transfers, high compensation</li>
+            </ul>
+
+            <h3 style="margin-top: 20px;">Data Confidence</h3>
+            <div class="channel-legend">
+                <div class="channel-item"><span class="channel-dot dot-high"></span> HIGH: 990-PF, SEC Form 4, FEC</div>
+                <div class="channel-item"><span class="channel-dot dot-medium"></span> MEDIUM: Announced gifts, Wikipedia</div>
+                <div class="channel-item"><span class="channel-dot dot-low"></span> LOW: DAF estimates, LLC estimates</div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Data sources: Forbes RTB API, ProPublica Nonprofit Explorer, SEC EDGAR, FEC OpenData, IPS Giving Pledge Dataset</p>
+            <p>Last updated: <span id="last-updated"></span></p>
+        </footer>
+    </div>
+
+    <script>
+        let rawData = [];
+        let filteredData = [];
+        let currentSort = { column: 'scrooge_score', direction: 'desc' };
+
+        // Load data from JSON
+        async function loadData() {
+            try {
+                // Try loading from output folder (local dev) or same folder (GitHub Pages)
+                let response;
+                try {
+                    response = await fetch('../output/scrooge_latest.json');
+                } catch (e) {
+                    response = await fetch('scrooge_latest.json');
+                }
+                rawData = await response.json();
+
+                // Populate country filter
+                const countries = [...new Set(rawData.map(d => d.country))].sort();
+                const countrySelect = document.getElementById('country-filter');
+                countries.forEach(c => {
+                    const opt = document.createElement('option');
+                    opt.value = c;
+                    opt.textContent = c;
+                    countrySelect.appendChild(opt);
+                });
+
+                recalculateScores();
+                updateStats();
+                document.getElementById('last-updated').textContent = new Date().toLocaleDateString();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('table-body').innerHTML = '<tr><td colspan="8">Error loading data. Run the pipeline first.</td></tr>';
+            }
+        }
+
+        function recalculateScores() {
+            const weights = {
+                observable: parseInt(document.getElementById('weight-observable').value),
+                tenure: parseInt(document.getElementById('weight-tenure').value),
+                pledge: parseInt(document.getElementById('weight-pledge').value),
+                flags: parseInt(document.getElementById('weight-flags').value),
+            };
+            const includeDark = document.getElementById('include-dark').checked;
+            const applyLiquidity = document.getElementById('apply-liquidity').checked;
+
+            // Update weight displays
+            document.getElementById('weight-observable-val').textContent = weights.observable + '%';
+            document.getElementById('weight-tenure-val').textContent = weights.tenure + '%';
+            document.getElementById('weight-pledge-val').textContent = weights.pledge + '%';
+            document.getElementById('weight-flags-val').textContent = weights.flags + '%';
+
+            // Recalculate scores
+            const totalWeight = weights.observable + weights.tenure + weights.pledge + weights.flags;
+
+            rawData.forEach(d => {
+                const liquidity = applyLiquidity ? d.liquidity_pct : 1.0;
+                const deployable = d.net_worth_billions * 1e9 * liquidity;
+                const observable = includeDark
+                    ? (d.total_observable_millions + d.dark_estimate_millions) * 1e6
+                    : d.total_observable_millions * 1e6;
+
+                // Component 1: Observable giving ratio
+                let comp1 = 0;
+                if (deployable > 0) {
+                    const ratio = observable / deployable;
+                    const expected = 0.10;
+                    comp1 = Math.max(0, Math.min(1, 1 - ratio / expected));
+                }
+
+                // Component 2: Tenure
+                let comp2 = 0;
+                if (d.years_as_billionaire > 3) {
+                    comp2 = Math.min(1, (d.years_as_billionaire - 3) / 17);
+                }
+
+                // Component 3: Pledge breach
+                let comp3 = 0;
+                if (d.giving_pledge_signed) {
+                    if (observable < deployable * 0.10) comp3 = 1;
+                    else if (observable < deployable * 0.25) comp3 = 0.5;
+                } else {
+                    comp3 = 0.25;
+                }
+
+                // Component 4: Red flags
+                const comp4 = Math.min(1, d.red_flag_count / 4);
+
+                // Weighted score
+                d.adjusted_score = totalWeight > 0
+                    ? ((comp1 * weights.observable + comp2 * weights.tenure +
+                        comp3 * weights.pledge + comp4 * weights.flags) / totalWeight) * 100
+                    : 0;
+            });
+
+            filterData();
+        }
+
+        function filterData() {
+            const country = document.getElementById('country-filter').value;
+            const pledge = document.getElementById('pledge-filter').value;
+            const search = document.getElementById('search').value.toLowerCase();
+
+            filteredData = rawData.filter(d => {
+                if (country && d.country !== country) return false;
+                if (pledge === 'signed' && !d.giving_pledge_signed) return false;
+                if (pledge === 'not-signed' && d.giving_pledge_signed) return false;
+                if (search && !d.name.toLowerCase().includes(search)) return false;
+                return true;
+            });
+
+            sortAndRender();
+        }
+
+        function sortTable(column) {
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = column === 'name' ? 'asc' : 'desc';
+            }
+            sortAndRender();
+        }
+
+        function sortAndRender() {
+            const col = currentSort.column === 'scrooge_score' ? 'adjusted_score' : currentSort.column;
+
+            filteredData.sort((a, b) => {
+                let valA = a[col];
+                let valB = b[col];
+                if (typeof valA === 'string') valA = valA.toLowerCase();
+                if (typeof valB === 'string') valB = valB.toLowerCase();
+                if (currentSort.direction === 'asc') {
+                    return valA > valB ? 1 : -1;
+                }
+                return valA < valB ? 1 : -1;
+            });
+
+            renderTable();
+            updateStats();
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('table-body');
+            tbody.innerHTML = '';
+
+            filteredData.forEach((d, i) => {
+                const score = d.adjusted_score || d.scrooge_score;
+                const scoreClass = score >= 70 ? 'score-high' : score >= 40 ? 'score-medium' : 'score-low';
+
+                const flagsHtml = d.red_flags
+                    ? d.red_flags.split(';').map(f => `<span class="flag-badge">${f.split(':')[0]}</span>`).join('')
+                    : '';
+
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${i + 1}</td>
+                    <td><strong>${d.name}</strong><br><small style="color:var(--text-secondary)">${d.country}</small></td>
+                    <td class="money">$${d.net_worth_billions.toFixed(1)}B</td>
+                    <td class="money hide-mobile">$${(d.total_observable_millions || 0).toFixed(1)}M</td>
+                    <td class="money hide-mobile">$${(d.dark_estimate_millions || 0).toFixed(1)}M</td>
+                    <td class="score-cell ${scoreClass}">${score.toFixed(1)}</td>
+                    <td class="hide-mobile ${d.giving_pledge_signed ? 'pledge-yes' : 'pledge-no'}">${d.giving_pledge_signed ? 'Yes' : 'No'}</td>
+                    <td class="hide-mobile">${flagsHtml || '-'}</td>
+                `;
+                tbody.appendChild(row);
+            });
+
+            // Update header sort indicators
+            document.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sorted-asc', 'sorted-desc');
+            });
+        }
+
+        function updateStats() {
+            const stats = document.getElementById('stats');
+            const data = filteredData.length > 0 ? filteredData : rawData;
+
+            const totalWealth = data.reduce((sum, d) => sum + d.net_worth_billions, 0);
+            const totalObservable = data.reduce((sum, d) => sum + (d.total_observable_millions || 0), 0);
+            const avgScore = data.reduce((sum, d) => sum + (d.adjusted_score || d.scrooge_score), 0) / data.length;
+            const pledgers = data.filter(d => d.giving_pledge_signed).length;
+
+            stats.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-value">${data.length}</div>
+                    <div class="stat-label">Billionaires</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$${(totalWealth / 1000).toFixed(1)}T</div>
+                    <div class="stat-label">Total Net Worth</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">$${(totalObservable / 1000).toFixed(1)}B</div>
+                    <div class="stat-label">Observable Giving</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${avgScore.toFixed(1)}</div>
+                    <div class="stat-label">Avg Scrooge Score</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${pledgers}</div>
+                    <div class="stat-label">Signed Giving Pledge</div>
+                </div>
+            `;
+        }
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>

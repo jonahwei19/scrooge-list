@@ -126,45 +126,49 @@ def search_wikipedia_philanthropy(name: str) -> List[Dict]:
     headers = {"User-Agent": "Mozilla/5.0 (research project)"}
 
     try:
-        # Wikipedia API
-        api_url = "https://en.wikipedia.org/api/rest_v1/page/summary/"
+        # Wikipedia API - get philanthropy section specifically
         clean_name = name.replace(" ", "_")
 
-        resp = requests.get(f"{api_url}{clean_name}", headers=headers, timeout=10)
+        # Try to get the philanthropy section from the full article
+        # First get the section list
+        sections_url = f"https://en.wikipedia.org/w/api.php?action=parse&page={clean_name}&prop=sections&format=json"
+        resp = requests.get(sections_url, headers=headers, timeout=10)
+
+        philanthropy_section = None
         if resp.status_code == 200:
             data = resp.json()
-            extract = data.get("extract", "")
+            sections = data.get("parse", {}).get("sections", [])
+            for sec in sections:
+                if "philanthrop" in sec.get("line", "").lower() or "charit" in sec.get("line", "").lower():
+                    philanthropy_section = sec.get("index")
+                    break
 
-            # Look for dollar amounts in the extract
-            amounts = _extract_all_dollar_amounts(extract)
-            for amount in amounts:
-                if amount >= 1_000_000:  # Only $1M+
-                    gifts.append({
-                        "amount": amount,
-                        "recipient": "Unknown (from Wikipedia)",
-                        "year": "Unknown",
-                        "source": "Wikipedia"
-                    })
+        # If we found a philanthropy section, parse it
+        if philanthropy_section:
+            section_url = f"https://en.wikipedia.org/w/api.php?action=parse&page={clean_name}&prop=text&section={philanthropy_section}&format=json"
+            resp = requests.get(section_url, headers=headers, timeout=10)
+            if resp.status_code == 200:
+                data = resp.json()
+                html = data.get("parse", {}).get("text", {}).get("*", "")
+                soup = BeautifulSoup(html, "html.parser")
 
-        # Try to get full article for philanthropy section
-        full_url = f"https://en.wikipedia.org/w/api.php?action=parse&page={clean_name}&prop=text&section=0&format=json"
-        resp = requests.get(full_url, headers=headers, timeout=10)
-        if resp.status_code == 200:
-            data = resp.json()
-            html = data.get("parse", {}).get("text", {}).get("*", "")
-            soup = BeautifulSoup(html, "html.parser")
-
-            # Find philanthropy-related text
-            for text in soup.get_text().split("."):
-                if any(word in text.lower() for word in ["donated", "gave", "pledged", "gift"]):
-                    amount = _extract_dollar_amount(text)
-                    if amount >= 1_000_000:
-                        gifts.append({
-                            "amount": amount,
-                            "recipient": _extract_recipient(text),
-                            "year": _extract_year(text),
-                            "source": "Wikipedia"
-                        })
+                # Find donation-related text with dollar amounts
+                for text in soup.get_text().split("."):
+                    text_lower = text.lower()
+                    # Only extract if it mentions donation-related words
+                    if any(word in text_lower for word in ["donated", "gave", "pledged", "gift", "contribution", "grant"]):
+                        # Skip if it mentions net worth, wealth, or fortune
+                        if any(skip in text_lower for skip in ["net worth", "fortune", "wealth", "richest", "billionaire"]):
+                            continue
+                        amount = _extract_dollar_amount(text)
+                        # Reasonable donation range: $1M - $50B
+                        if 1_000_000 <= amount <= 50_000_000_000:
+                            gifts.append({
+                                "amount": amount,
+                                "recipient": _extract_recipient(text),
+                                "year": _extract_year(text),
+                                "source": "Wikipedia"
+                            })
 
     except Exception:
         pass

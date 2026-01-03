@@ -1,19 +1,19 @@
-# Scrooge List Pipeline
+# Scrooge List
 
-An inverse Forbes Billionaire List—ranks the world's wealthiest by how little of their fortune they've actually deployed for charitable purposes.
+An inverse Forbes list — ranks billionaires by how little of their fortune they've deployed for charity.
 
-The Forbes list celebrates wealth accumulation. This pipeline asks the opposite question: **who's hoarding it?**
+**[View the live Scrooge List](https://jonahwei19.github.io/scrooge-list/)** (GitHub Pages)
 
-## What It Does
+## What This Does
 
-Takes the Forbes Real-Time Billionaires list and enriches each person with:
-- Foundation assets and annual grants (from IRS 990-PF filings via ProPublica)
-- Announced major gifts (from Wikipedia and news)
-- Stock gifts to foundations (from SEC Form 4 filings)
-- Giving Pledge status and fulfillment (from IPS dataset)
-- Red flags for concerning patterns (low payout rates, unfulfilled pledges)
+Takes the Forbes Real-Time Billionaires list (3,000+ people) and calculates a **Scrooge Score** (0-100) based on:
 
-Output: A CSV/JSON ranking billionaires by observable charitable deployment, with the least generous at the top.
+1. **Observable giving** relative to liquid wealth
+2. **Tenure as billionaire** (longer = higher expectation)
+3. **Giving Pledge compliance** (signed but not delivered)
+4. **Red flags** (low payout rates, DAF transfers, high compensation)
+
+Higher score = more Scrooge-like behavior.
 
 ## The Formula
 
@@ -56,50 +56,84 @@ flowchart LR
     REL --> ZERO
 ```
 
-## How the Pipeline Estimates Each Channel
-
-| Channel | Method | Data Source | Confidence |
-|---------|--------|-------------|------------|
-| **Foundation** | Query ProPublica for 990-PF filings matching billionaire name. Pull assets, grants paid, payout rate. | ProPublica Nonprofit Explorer API | HIGH |
-| **Direct/Announced** | Scrape Wikipedia philanthropy sections for dollar amounts. Search DuckDuckGo for donation news. | Wikipedia API, DuckDuckGo | MEDIUM |
-| **Securities** | Parse SEC EDGAR Form 4 XML for transaction code "G" (bona fide gift). Sum gift values by insider name. | SEC data.sec.gov API | MEDIUM |
-| **DAF** | Cannot observe individual accounts. Can only see foundation→DAF transfers in 990-PF Part XV. | 990-PF Part XV | LOW |
-| **Split-Interest** | Form 5227 is public but no searchable database. Must know trust name to request. | IRS Form 5227 | LOW |
-| **Dynasty/LLC/Foreign/Religious** | No disclosure mechanism exists. | None | ZERO |
-
-## Pipeline Stages
+## Data Pipeline
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│ STAGE 1: Forbes Pull                                          [✅] │
-│   Fetches 3,163 billionaires from Forbes RTB API                   │
-│   Returns: name, net_worth, source, country                        │
+│ STAGE 1: Forbes Pull                                                │
+│   Fetches 3,163 billionaires from Forbes RTB API                    │
 ├─────────────────────────────────────────────────────────────────────┤
-│ STAGE 2: Foundation Match                                     [✅] │
-│   Searches ProPublica for 990-PF filings matching name             │
-│   Returns: foundation assets, grants paid, payout rate             │
+│ STAGE 2: Foundation Match                                           │
+│   Searches ProPublica for 990-PF filings matching name              │
+│   Returns: foundation assets, grants paid, payout rate              │
 ├─────────────────────────────────────────────────────────────────────┤
-│ STAGE 3: Announced Gifts                                      [✅] │
-│   Scrapes Wikipedia for philanthropy mentions with $ amounts       │
-│   Searches DuckDuckGo for "name donation million" headlines        │
-│   Returns: total announced, gift count, sources                    │
+│ STAGE 3: Announced Gifts                                            │
+│   Scrapes Wikipedia + Million Dollar List + DuckDuckGo              │
+│   Returns: total announced giving, gift count                       │
 ├─────────────────────────────────────────────────────────────────────┤
-│ STAGE 4: Securities Gifts                                     [✅] │
-│   Parses SEC EDGAR Form 4 XML for transaction code "G" (gift)      │
-│   Matches insider name to billionaire, sums gift values            │
-│   Returns: total stock gifts, gift count, individual transactions  │
+│ STAGE 4: Securities Gifts                                           │
+│   Parses SEC EDGAR Form 4 XML for transaction code "G"              │
+│   Returns: total stock gifts                                        │
 ├─────────────────────────────────────────────────────────────────────┤
-│ STAGE 5: Red Flags                                            [✅] │
-│   Flags: LOW_PAYOUT, NO_OBSERVABLE_GIVING, PLEDGE_UNFULFILLED      │
-│   Flags: DAF_TRANSFERS, HIGH_COMP                                  │
+│ STAGE 5: Red Flags                                                  │
+│   Flags: LOW_PAYOUT, NO_OBSERVABLE_GIVING, PLEDGE_UNFULFILLED       │
+│   Flags: DAF_TRANSFERS, HIGH_COMP                                   │
 ├─────────────────────────────────────────────────────────────────────┤
-│ STAGE 6: Giving Pledge                                        [✅] │
-│   Cross-references 401 pledgers from IPS dataset                   │
-│   Per IPS: only 9 of 256 have fulfilled their pledge               │
+│ STAGE 6: Giving Pledge                                              │
+│   Cross-references 401 pledgers from IPS dataset                    │
+│   Key finding: only 9 of 256 have fulfilled their pledge            │
+├─────────────────────────────────────────────────────────────────────┤
+│ STAGE 7: Political Giving                                           │
+│   FEC/OpenSecrets data for political donations                      │
+│   Used as substitution signal (political replaces charitable)       │
+├─────────────────────────────────────────────────────────────────────┤
+│ STAGE 8: Wealth Factors                                             │
+│   Estimates liquidity (20-70% based on wealth source)               │
+│   Tracks tenure as billionaire (affects expectations)               │
+├─────────────────────────────────────────────────────────────────────┤
+│ STAGE 9: Dark Estimates                                             │
+│   Estimates giving through opaque channels:                         │
+│   - DAFs (via foundation→DAF transfers + net worth proxy)           │
+│   - LLCs (CZI, Ballmer Group, etc.)                                 │
+│   - Anonymous giving (board seats, gala attendance)                 │
+│   - Religious giving (tithing norms by affiliation)                 │
+│   - Estate commitments (Giving Pledge + UHNW averages)              │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-**Status: All 6 stages implemented.**
+## Scrooge Score Formula
+
+```
+Score = (Observable Weight × Giving Gap) +
+        (Tenure Weight × Years Penalty) +
+        (Pledge Weight × Breach Penalty) +
+        (Flags Weight × Red Flag Penalty)
+```
+
+Default weights: 40% / 20% / 20% / 20%
+
+**Components:**
+
+| Component | Calculation |
+|-----------|------------|
+| Giving Gap | 1 - (observable / expected), where expected = 10% of liquid wealth |
+| Years Penalty | 0 for <3 years, scales to max at 20+ years |
+| Breach Penalty | 20 points if pledge signer giving <10% of liquid wealth |
+| Red Flag Penalty | 5 points per flag (max 20) |
+
+## Estimation Methods by Channel
+
+| Channel | Method | Confidence |
+|---------|--------|------------|
+| **Foundation Giving** | 990-PF Part XV via ProPublica | HIGH |
+| **Announced Gifts** | Wikipedia + Million Dollar List + News | MEDIUM |
+| **Securities Gifts** | SEC Form 4 transaction code "G" | MEDIUM |
+| **Political Giving** | FEC bulk data | HIGH |
+| **DAF Contributions** | Foundation→DAF transfers + NW proxy (0.3%) | LOW |
+| **Philanthropic LLCs** | Media coverage only (CZI, Ballmer Group tracked) | VERY LOW |
+| **Anonymous Giving** | Board seats ($75K/seat/year) + gala committees | LOW |
+| **Religious Giving** | Tithing norms by affiliation (2-10%) | VERY LOW |
+| **Estate Plans** | Giving Pledge commitment + UHNW average (20%) | VERY LOW |
 
 ## Usage
 
@@ -114,55 +148,86 @@ python3 main.py --limit 50 --country "United States"
 python3 main.py
 ```
 
-## Output
+## Web App
 
-CSV and JSON files saved to `output/` with columns:
+The `docs/` folder contains a GitHub Pages-compatible web app with:
 
-| Column | Description |
-|--------|-------------|
-| `name` | Billionaire name |
+- **Toggleable score weights** — adjust how much each factor matters
+- **Dark estimate toggle** — include/exclude estimated DAF/LLC/anonymous giving
+- **Liquidity discount** — adjust for illiquid wealth
+- **Filters** — by country, pledge status, search by name
+- **Sortable columns** — rank by any metric
+
+Deploy to GitHub Pages:
+
+```bash
+# Enable GitHub Pages in repo settings, set source to /docs
+# Or run locally:
+cd docs && python3 -m http.server 8000
+```
+
+## Output Fields
+
+| Field | Description |
+|-------|-------------|
+| `scrooge_score` | 0-100, higher = more Scrooge-like |
 | `net_worth_billions` | Forbes net worth |
-| `foundation_count` | Number of matched foundations |
-| `foundation_assets_billions` | Total foundation assets |
-| `annual_grants_millions` | Annual grants paid |
-| `foundation_pct_of_net_worth` | Key metric: assets/net_worth |
-| `announced_gifts_millions` | From Wikipedia/news |
-| `securities_gifts_millions` | From SEC Form 4 |
+| `total_observable_millions` | Foundation grants + announced + securities |
+| `dark_estimate_millions` | Estimated DAF + LLC + anonymous + religious + estate |
+| `liquidity_pct` | Estimated liquid portion (0-1) |
+| `years_as_billionaire` | Tenure (affects expectations) |
 | `giving_pledge_signed` | From IPS dataset |
-| `giving_pledge_fulfilled` | From IPS dataset (usually False) |
-| `red_flag_count` | Number of flags |
-| `red_flags` | Semicolon-separated flag descriptions |
+| `red_flag_count` | Number of concerning patterns |
 
 ## Red Flags
 
 | Flag | Meaning |
 |------|---------|
-| `NO_OBSERVABLE_GIVING` | $10B+ net worth, <$100M in foundations |
-| `PLEDGE_UNFULFILLED` | Signed Giving Pledge, hasn't fulfilled |
-| `LOW_PAYOUT` | Foundation payout rate <5% (legal minimum) |
+| `NO_OBSERVABLE_GIVING` | $10B+ net worth, <$100M observable |
+| `PLEDGE_UNFULFILLED` | Signed Giving Pledge but not on track |
+| `LOW_PAYOUT` | Foundation payout <5% (legal minimum) |
 | `DAF_TRANSFERS` | >50% of grants go to DAFs (opacity) |
 | `HIGH_COMP` | Officer compensation >10% of grants |
 
-## What We Cannot See
+## Limitations
 
-The pipeline produces a **lower bound** on giving. We cannot observe:
+1. **Announced gifts** depend on media coverage — smaller billionaires underrepresented
+2. **Form 4 gifts** only capture foundation-bound stock — direct charity gifts exempt
+3. **Name matching** is fuzzy — may miss some foundations or include false positives
+4. **Data lag** — 990-PF filings are 6-12 months behind
+5. **LLC opacity** — CZI, Ballmer Group, Emerson Collective don't file 990s
+6. **Dark estimates** are approximations — included for directional signal only
 
-- **DAF balances/grants**: $251B sits in DAFs with zero individual disclosure
-- **LLCs**: CZI, Ballmer Group, Lost Horse don't file 990s
-- **Dynasty trusts**: No public registry (SD alone has $360B+)
-- **Foreign giving**: No country discloses donor names
-- **Religious giving**: Churches exempt from 990
+## What Remains Unknowable
+
+- **DAF individual accounts** — $251B with zero disclosure
+- **Dynasty trusts** — South Dakota alone has $360B+, no public registry
+- **Philanthropic LLCs** — no filing requirement
+- **Foreign giving** — no country discloses donor names
+- **Religious giving** — churches exempt from 990
 
 ## Data Sources
 
-| Stage | Source | URL | Auth |
-|-------|--------|-----|------|
-| 1 | Forbes RTB API | forbes.com/forbesapi/person/rtb/0/position/true.json | None |
-| 2 | ProPublica | projects.propublica.org/nonprofits/api/v2 | None |
-| 3 | Wikipedia | en.wikipedia.org/api/rest_v1 | None |
-| 3 | DuckDuckGo | api.duckduckgo.com | None |
-| 4 | SEC EDGAR | data.sec.gov/submissions | User-Agent |
-| 6 | IPS Dataset | giving_pledge_data.xlsx (bundled) | N/A |
+| Stage | Source | URL |
+|-------|--------|-----|
+| 1 | Forbes RTB API | forbes.com |
+| 2 | ProPublica Nonprofit Explorer | projects.propublica.org/nonprofits |
+| 3 | Wikipedia API + DuckDuckGo | en.wikipedia.org |
+| 4 | SEC EDGAR | data.sec.gov |
+| 6 | IPS Giving Pledge Dataset | inequality.org |
+| 7 | FEC OpenData | api.open.fec.gov |
+
+## Sample Output
+
+Top Scrooge scores from test run:
+
+| Name | Net Worth | Observable | Scrooge Score | Flags |
+|------|-----------|------------|---------------|-------|
+| Larry Ellison | $245B | $0M | 90.0 | 2 |
+| Mark Zuckerberg | $223B | $186M | 89.0 | 2 |
+| Elon Musk | $718B | $300M | 81.5 | 1 |
+| Bernard Arnault | $194B | $1.4M | 64.0 | 1 |
+| Amancio Ortega | $146B | $2.1M | 64.0 | 1 |
 
 ## Files
 
@@ -171,37 +236,36 @@ projects/scrooge/
 ├── main.py                         # Pipeline entry point
 ├── README.md                       # This file
 ├── stages/
-│   ├── stage1_forbes.py            # ✅ Forbes API
-│   ├── stage2_foundations.py       # ✅ ProPublica 990-PF
-│   ├── stage3_announced_gifts.py   # ✅ Wikipedia + News
-│   ├── stage4_securities.py        # ✅ SEC EDGAR Form 4
-│   ├── stage5_red_flags.py         # ✅ Flag calculation
-│   └── stage6_giving_pledge.py     # ✅ IPS cross-reference
+│   ├── stage1_forbes.py            # Forbes API
+│   ├── stage2_foundations.py       # ProPublica 990-PF
+│   ├── stage3_announced_gifts.py   # Wikipedia + MDL + News
+│   ├── stage4_securities.py        # SEC EDGAR Form 4
+│   ├── stage5_red_flags.py         # Flag calculation
+│   ├── stage6_giving_pledge.py     # IPS cross-reference
+│   ├── stage7_political.py         # FEC political giving
+│   ├── stage8_wealth_factors.py    # Liquidity + tenure
+│   └── stage9_dark_estimates.py    # DAF/LLC/Anonymous/Religious
+├── docs/
+│   ├── index.html                  # GitHub Pages web app
+│   └── scrooge_latest.json         # Latest data for web app
+├── output/                         # Pipeline outputs
 ├── giving_pledge_data.xlsx         # IPS pledger dataset
-├── estimation_model.md             # Methodology docs
-├── scrooge_data_sources.md         # Research notes
-└── output/                         # Results
+├── estimation_model.md             # Methodology notes
+└── scrooge_data_sources.md         # Research notes
 ```
 
-## Example Output
+## Academic Background
 
-From running `python3 main.py --test` (top 10 billionaires):
+- **Political/charitable substitution:** NBER 26616 finds $1 increase in political giving → $0.33 decrease in charitable
+- **DAF opacity:** 68% of Giving Pledge signers funnel through DAFs (IPS study)
+- **Pledge fulfillment:** Only 9 of 256 pledgers have fulfilled commitment
+- **Dynasty trusts:** $360B+ in South Dakota alone with zero disclosure (Pandora Papers)
 
-| Name | Net Worth | Fdn Assets | Announced | Form 4 | Flags |
-|------|-----------|------------|-----------|--------|-------|
-| Bernard Arnault | $194B | $0.03B | $0M | $0M | 1 |
-| Sergey Brin | $238B | $4.94B | $0M | $356M | 0 |
-| Mark Zuckerberg | $223B | $6.32B | $0M | $128M | 2 |
-| Jensen Huang | $164B | $3.41B | $152B | $127M | 1 |
-| Warren Buffett | $147B | $2.69B | $149B | $1.7B | 1 |
-| Elon Musk | $718B | $0.54B | $754B | $53M | 1 |
+## Contributing
 
-Sorted by `foundation_pct_of_net_worth` ascending—those with the smallest foundation footprint relative to wealth appear first.
+Pull requests welcome. Priority areas:
 
-## Limitations
-
-1. **Announced gifts** depend on Wikipedia coverage - smaller billionaires may have no philanthropy section
-2. **Form 4 gifts** only capture foundation-bound stock - DAF/charity gifts are exempt from SEC filing
-3. **Name matching** is fuzzy - may miss some foundations or include false positives
-4. **Data lag** - 990-PF filings are 6-12 months behind, Form 4 is real-time
-5. **LLC opacity** - CZI, Ballmer Group, Emerson Collective etc. don't file 990s
+1. Better name matching for foundations
+2. Additional OSINT sources for announced gifts
+3. More sophisticated dark channel estimation
+4. Historical trend tracking
