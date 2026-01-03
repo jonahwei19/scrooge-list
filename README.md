@@ -33,7 +33,7 @@ flowchart LR
         S[Securities Gifts]
     end
 
-    subgraph Partially Observable
+    subgraph Partially_Observable[Partially Observable]
         DAF[DAF Contributions]
         SI[Split-Interest Trusts]
     end
