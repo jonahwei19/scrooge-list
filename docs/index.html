@@ -380,13 +380,30 @@
         // Load data from JSON
         async function loadData() {
             try {
-                // Try loading from output folder (local dev) or same folder (GitHub Pages)
-                let response;
-                try {
-                    response = await fetch('../output/scrooge_latest.json');
-                } catch (e) {
-                    response = await fetch('scrooge_latest.json');
+                // Try multiple paths for different environments
+                const paths = [
+                    'scrooge_latest.json',           // GitHub Pages (same folder)
+                    './scrooge_latest.json',         // Relative
+                    '../output/scrooge_latest.json', // Local dev
+                ];
+
+                let response = null;
+                for (const path of paths) {
+                    try {
+                        const r = await fetch(path);
+                        if (r.ok) {
+                            response = r;
+                            break;
+                        }
+                    } catch (e) {
+                        continue;
+                    }
                 }
+
+                if (!response) {
+                    throw new Error('Could not load data from any path');
+                }
+
                 rawData = await response.json();
 
                 // Populate country filter
