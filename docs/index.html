@@ -350,20 +350,16 @@
         <div class="methodology">
             <h3>Methodology</h3>
             <p>The Scrooge Score (0-100) measures how much a billionaire is undergiving relative to their capacity. Higher scores indicate more Scrooge-like behavior.</p>
-            <p><strong>Score Components:</strong></p>
-            <ul style="margin-left: 20px; color: var(--text-secondary);">
-                <li><strong>Observable Giving:</strong> Foundation grants + announced gifts + securities transfers vs liquid wealth</li>
-                <li><strong>Tenure Penalty:</strong> Longer wealth tenure = higher expectation to have given</li>
-                <li><strong>Pledge Breach:</strong> Giving Pledge signers who haven't met targets</li>
-                <li><strong>Red Flags:</strong> Low payout rates, DAF transfers, high compensation</li>
-            </ul>
+            <p><strong>Simple Formula:</strong> <code style="background: var(--bg-card); padding: 3px 8px; border-radius: 4px;">Score = 100 x (1 - Giving Ratio)</code></p>
+            <p>Where Giving Ratio = Total Lifetime Giving / (Net Worth x Liquidity Factor)</p>
 
             <h3 style="margin-top: 20px;">Data Confidence</h3>
             <div class="channel-legend">
-                <div class="channel-item"><span class="channel-dot dot-high"></span> HIGH: 990-PF, SEC Form 4, FEC</div>
-                <div class="channel-item"><span class="channel-dot dot-medium"></span> MEDIUM: Announced gifts, Wikipedia</div>
+                <div class="channel-item"><span class="channel-dot dot-high"></span> HIGH: 990-PF, SEC Form 4</div>
+                <div class="channel-item"><span class="channel-dot dot-medium"></span> MEDIUM: Announced gifts, Foundation reports</div>
                 <div class="channel-item"><span class="channel-dot dot-low"></span> LOW: DAF estimates, LLC estimates</div>
             </div>
+            <p style="margin-top: 15px;"><a href="methodology.html" style="color: var(--accent-blue);">Read the full methodology &rarr;</a></p>
         </div>
 
         <footer>

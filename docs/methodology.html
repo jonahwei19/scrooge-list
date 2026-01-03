@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology - The Scrooge List</title>
+    <style>
+        :root {
+            --bg-primary: #0f0f0f;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #232323;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-red: #e74c3c;
+            --accent-green: #27ae60;
+            --accent-yellow: #f1c40f;
+            --accent-blue: #3498db;
+            --border-color: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .back-link {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 25px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--accent-blue);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h3 {
+            color: var(--accent-yellow);
+            margin: 25px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text-primary);
+        }
+
+        .formula-box {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'SF Mono', Monaco, monospace;
+            margin: 20px 0;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .formula-box code {
+            display: block;
+            color: var(--accent-green);
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background: var(--bg-card);
+            color: var(--accent-blue);
+        }
+
+        tr:hover {
+            background: var(--bg-card);
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .confidence-high { color: var(--accent-green); }
+        .confidence-medium { color: var(--accent-yellow); }
+        .confidence-low { color: var(--accent-red); }
+
+        .example-box {
+            background: var(--bg-card);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .example-box .name {
+            font-weight: bold;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+        }
+
+        .caveat {
+            background: rgba(231, 76, 60, 0.1);
+            border: 1px solid var(--accent-red);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .caveat-title {
+            color: var(--accent-red);
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Methodology</h1>
+            <p><a href="index.html" class="back-link">&larr; Back to The Scrooge List</a></p>
+        </header>
+
+        <section>
+            <h2>What is the Scrooge Score?</h2>
+            <p>The Scrooge Score measures how little of their wealth billionaires have deployed for charitable purposes. It's an <strong>inverse philanthropy ranking</strong> - higher scores indicate less giving relative to capacity.</p>
+            <p>The score ranges from 0-100:</p>
+            <ul>
+                <li><strong>90-100:</strong> Extreme Scrooge - giving less than 1% of deployable wealth</li>
+                <li><strong>70-89:</strong> High Scrooge - giving 1-3% of deployable wealth</li>
+                <li><strong>40-69:</strong> Moderate Scrooge - giving 3-6% of deployable wealth</li>
+                <li><strong>0-39:</strong> Low Scrooge - giving more than 6% of deployable wealth</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>The Formula</h2>
+            <div class="formula-box">
+                <code>Scrooge Score = 100 x (1 - Giving Ratio)</code>
+                <code>Giving Ratio = Total Lifetime Giving / (Net Worth x Liquidity Factor)</code>
+                <code>Capped at 0-100</code>
+            </div>
+            <p>The formula is intentionally simple: what percentage of your deployable wealth have you actually given away?</p>
+
+            <h3>Why Liquidity Factor?</h3>
+            <p>Not all wealth is equally accessible. A tech founder with 90% of their net worth in concentrated company stock faces real constraints on giving that someone with diversified investments does not. The liquidity factor adjusts for this reality.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wealth Source</th>
+                        <th>Liquidity Factor</th>
+                        <th>Rationale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Diversified investments</td>
+                        <td>0.70</td>
+                        <td>Can sell most holdings without market impact</td>
+                    </tr>
+                    <tr>
+                        <td>Public founder (diversified)</td>
+                        <td>0.50</td>
+                        <td>Has sold down significantly, more liquid</td>
+                    </tr>
+                    <tr>
+                        <td>Public founder (concentrated)</td>
+                        <td>0.30</td>
+                        <td>Still holds large stake, sales move market</td>
+                    </tr>
+                    <tr>
+                        <td>Private company</td>
+                        <td>0.20</td>
+                        <td>No public market, limited exit options</td>
+                    </tr>
+                    <tr>
+                        <td>Real estate heavy</td>
+                        <td>0.25</td>
+                        <td>Illiquid, sales take time</td>
+                    </tr>
+                    <tr>
+                        <td>Inherited/mixed</td>
+                        <td>0.40</td>
+                        <td>Typically more diversified over time</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Data Sources & Confidence Levels</h2>
+            <p>We use multiple sources to triangulate giving estimates. Each source has different reliability:</p>
+
+            <h3 class="confidence-high">HIGH Confidence Sources</h3>
+            <ul>
+                <li><strong>IRS Form 990-PF:</strong> Private foundation tax returns filed with the IRS, available via ProPublica Nonprofit Explorer. Shows actual grants made (not pledges).</li>
+                <li><strong>SEC Form 4:</strong> Insider transactions including stock donations to charities. Public record.</li>
+                <li><strong>University gift announcements:</strong> Major universities publicly report large gifts with donor approval.</li>
+                <li><strong>Hospital/medical center records:</strong> Named buildings and major health philanthropy announcements.</li>
+            </ul>
+
+            <h3 class="confidence-medium">MEDIUM Confidence Sources</h3>
+            <ul>
+                <li><strong>Chronicle of Philanthropy:</strong> Tracks major announced gifts, relies on public announcements.</li>
+                <li><strong>Giving Pledge letters:</strong> Self-reported intentions, not verified giving.</li>
+                <li><strong>Foundation annual reports:</strong> Published by the foundations themselves, may include multi-year commitments.</li>
+                <li><strong>Forbes/Bloomberg profiles:</strong> Aggregated from multiple sources, varying accuracy.</li>
+                <li><strong>News coverage:</strong> Major gift announcements, subject to PR timing.</li>
+            </ul>
+
+            <h3 class="confidence-low">LOW Confidence Sources</h3>
+            <ul>
+                <li><strong>Donor-Advised Fund estimates:</strong> DAFs are opaque; we can only observe transfers in, not grants out. Estimated at 0.3% of NW as a floor.</li>
+                <li><strong>Philanthropic LLC estimates:</strong> Like CZI, LLCs aren't required to report. We use available data from annual reports when published.</li>
+                <li><strong>Anonymous giving estimates:</strong> Some billionaires give anonymously. We don't guess at this.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What We Count</h2>
+            <p>We count <strong>actual charitable disbursements</strong>, not pledges or asset transfers:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Counted</th>
+                        <th>Not Counted</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Foundation grants to external charities</td>
+                        <td>Foundation assets (until granted out)</td>
+                    </tr>
+                    <tr>
+                        <td>Direct gifts to nonprofits</td>
+                        <td>Pledges (until disbursed)</td>
+                    </tr>
+                    <tr>
+                        <td>Stock donations (at time of transfer)</td>
+                        <td>Political donations</td>
+                    </tr>
+                    <tr>
+                        <td>University endowment gifts</td>
+                        <td>For-profit impact investments</td>
+                    </tr>
+                    <tr>
+                        <td>DAF grants to charities (when observable)</td>
+                        <td>DAF contributions (warehoused)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="caveat">
+                <div class="caveat-title">The Foundation Asset Problem</div>
+                <p>Many billionaires have transferred huge sums to private foundations that pay out at the legal minimum (5% of assets). We count foundation grants, not assets. A billionaire with $10B in a foundation making $500M/year in grants gets credit for $500M/year - not the $10B sitting in the foundation.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>What We Don't Count</h2>
+            <ul>
+                <li><strong>Political donations:</strong> Different purpose, not charitable.</li>
+                <li><strong>Pledges:</strong> Only count when money actually moves.</li>
+                <li><strong>Foundation assets:</strong> Only count grants out, not assets in.</li>
+                <li><strong>Philanthropic LLCs:</strong> Counted only when they make actual grants.</li>
+                <li><strong>Self-dealing:</strong> Grants to organizations the billionaire controls for personal benefit.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Deduplication</h2>
+            <p>A major challenge is avoiding double-counting. Money can flow through multiple channels:</p>
+            <ol>
+                <li>Billionaire gives stock to their private foundation</li>
+                <li>Foundation transfers to their DAF</li>
+                <li>DAF grants to operating charity</li>
+            </ol>
+            <p>We try to count at the final destination (the operating charity) when possible. When tracing is impossible, we use the most reliable data point available.</p>
+        </section>
+
+        <section>
+            <h2>Worked Examples</h2>
+
+            <div class="example-box">
+                <div class="name">Bill Gates</div>
+                <p><strong>Net Worth:</strong> $129B | <strong>Liquidity:</strong> 0.30 (concentrated founder) | <strong>Deployable:</strong> $38.7B</p>
+                <p><strong>Lifetime Giving:</strong> $59B personal + $78B foundation grants = ~$137B</p>
+                <p><strong>Giving Ratio:</strong> $137B / $38.7B = 3.54 (exceeds 100%)</p>
+                <p><strong>Scrooge Score:</strong> 0 (capped at 0)</p>
+                <p><em>Gates has given more than his theoretical "deployable" wealth because he's been giving for 30+ years while his wealth has grown.</em></p>
+            </div>
+
+            <div class="example-box">
+                <div class="name">Larry Ellison</div>
+                <p><strong>Net Worth:</strong> $245B | <strong>Liquidity:</strong> 0.35 | <strong>Deployable:</strong> $85.75B</p>
+                <p><strong>Lifetime Giving:</strong> ~$1.5B</p>
+                <p><strong>Giving Ratio:</strong> $1.5B / $85.75B = 0.0175 (1.75%)</p>
+                <p><strong>Scrooge Score:</strong> 100 x (1 - 0.0175) = 98.25</p>
+                <p><em>Despite signing the Giving Pledge and recently pledging 95% of his fortune, actual disbursements remain low.</em></p>
+            </div>
+
+            <div class="example-box">
+                <div class="name">Michael Bloomberg</div>
+                <p><strong>Net Worth:</strong> $106B | <strong>Liquidity:</strong> 0.50 (diversified) | <strong>Deployable:</strong> $53B</p>
+                <p><strong>Lifetime Giving:</strong> $21.1B</p>
+                <p><strong>Giving Ratio:</strong> $21.1B / $53B = 0.398 (39.8%)</p>
+                <p><strong>Scrooge Score:</strong> 100 x (1 - 0.398) = 60.2</p>
+                <p><em>America's top individual donor in 2023 and 2024, with $3.7B given in 2024 alone.</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Limitations & Caveats</h2>
+
+            <div class="caveat">
+                <div class="caveat-title">This is an estimate, not a verdict</div>
+                <p>Philanthropy is notoriously opaque. We do our best with available data, but some billionaires give anonymously, through structures we can't see, or in ways that aren't captured by public records. A high Scrooge Score might mean someone doesn't give much - or it might mean their giving is invisible to us.</p>
+            </div>
+
+            <h3>Known Blind Spots</h3>
+            <ul>
+                <li><strong>Anonymous giving:</strong> Some billionaires deliberately avoid publicity.</li>
+                <li><strong>International giving:</strong> Non-US charities are harder to track.</li>
+                <li><strong>Private foundations abroad:</strong> No 990-PF equivalent in most countries.</li>
+                <li><strong>Family attribution:</strong> Hard to separate individual vs. family giving.</li>
+                <li><strong>Timing:</strong> Data lags by 1-2 years for tax filings.</li>
+            </ul>
+
+            <h3>What This Doesn't Measure</h3>
+            <ul>
+                <li><strong>Effectiveness:</strong> We count dollars, not impact.</li>
+                <li><strong>Intent:</strong> Some giving is strategic, some is generous.</li>
+                <li><strong>Taxes:</strong> We don't adjust for tax benefits received.</li>
+                <li><strong>Future pledges:</strong> Promises don't count until fulfilled.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Updates & Corrections</h2>
+            <p>This dataset is updated periodically. If you have corrections or additional verified data:</p>
+            <ul>
+                <li>Open an issue on the <a href="https://github.com/jonahwei19/scrooge-list" style="color: var(--accent-blue);">GitHub repository</a></li>
+                <li>Include source documentation (990s, news articles, official announcements)</li>
+            </ul>
+            <p>We prioritize corrections that include primary source documentation.</p>
+        </section>
+
+        <footer>
+            <p>The Scrooge List - An inverse Forbes list</p>
+            <p><a href="index.html" class="back-link">Back to main list</a></p>
+        </footer>
+    </div>
+</body>
+</html>
