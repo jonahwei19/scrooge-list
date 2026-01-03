@@ -149,32 +149,109 @@ For ~40% of giving channels, we have no estimation method. The Goodheart List wi
 
 ## Implementation Status
 
-**Working pipeline:** `pipeline.py` processes the full Forbes list (3,163 billionaires, 939 US).
+**Working pipeline:** `main.py` processes the full Forbes list (3,163 billionaires, 939 US).
 
 **Run commands:**
 ```bash
 # Test with 10 billionaires
-python3 pipeline.py --test
+python3 main.py --test
 
 # Top 50 US billionaires
-python3 pipeline.py --limit 50 --country "United States"
+python3 main.py --limit 50 --country "United States"
 
 # Full Forbes list
-python3 pipeline.py
+python3 main.py
 ```
 
 **Output:** CSV and JSON files in `output/` with:
 - Foundation assets and grants (from 990-PF)
 - Foundation/net-worth ratio
-- Giving Pledge status (from IPS dataset, 401 pledgers)
+- Giving Pledge status (from IPS dataset, 256 pledgers)
 - Red flags (low payout, pledge unfulfilled, no observable giving)
+- Dark giving estimates (DAF transfers, LLC giving, inferred giving)
+- Opacity score (0-100 based on giving channel choices)
 
 **Preliminary findings (top 50 US):**
 - 11 billionaires with zero observable foundation giving despite $10B+ net worth
 - Multiple Giving Pledge signers flagged as unfulfilled
 - Several foundations below 5% payout minimum (CZI at 0.9%, Huang at 1.7%)
 
-**Data gaps requiring manual fill:**
-- Chronicle Big Gifts / Million Dollar List (no public API)
-- SEC Form 4 gift transactions (needs EDGAR parsing)
-- Known LLCs (CZI, Ballmer Group, Lost Horse) not in 990 database
+---
+
+## Stage 7: Dark Giving Estimation
+
+The pipeline now includes estimation of opaque/dark giving channels. These are
+**lower-bound estimates** with varying confidence levels.
+
+### Channels Estimated
+
+| Channel | Method | Confidence |
+|---------|--------|------------|
+| DAF Transfers | Track 990-PF grants to known DAF sponsors | LOW |
+| Philanthropic LLCs | Announced grants from CZI, Ballmer Group, etc. | VERY LOW |
+| Split-Interest Trusts | News mentions, SEC filings for trust signals | LOW |
+| Anonymous Gifts | Board seat inference ($10K-100K per seat) | LOW-MEDIUM |
+| Noncash Gifts | Art donation tracking, deed records | MEDIUM |
+| Foreign Giving | 990-PF Schedule F (US foundations only) | LOW |
+| Religious Giving | Religious school/charity 990s | VERY LOW |
+
+### Channels NOT Estimable (Zero Visibility)
+
+| Channel | Why Opaque | Scale |
+|---------|------------|-------|
+| Dynasty Trusts | No public registry in any US state | $360B+ (SD alone) |
+| Philanthropic LLCs | No 990 filing requirement | Unknown |
+| Direct Foreign Giving | No country discloses donor names | Unknown |
+| Religious Giving | Churches exempt from 990 | Unknown |
+
+### Opacity Score
+
+Each billionaire receives an opacity score (0-100) based on giving channel choices:
+
+- **+30 points**: Uses philanthropic LLC (no disclosure requirement)
+- **+20 points**: >50% of foundation grants go to DAFs
+- **+10 points**: 20-50% of foundation grants go to DAFs
+- **+25 points**: $10B+ net worth with <$100M in foundations
+- **+15 points**: Split-interest trust signals detected
+
+Higher score = more opaque giving practices.
+
+### Known Philanthropic LLCs Tracked
+
+| Billionaire | LLC | Notes |
+|-------------|-----|-------|
+| Mark Zuckerberg | Chan Zuckerberg Initiative | Chose LLC to avoid 5% payout |
+| Steve Ballmer | Ballmer Group | Economic mobility focus |
+| Laurene Powell Jobs | Emerson Collective | Education, immigration |
+| MacKenzie Scott | Lost Horse LLC | Rapid trust-based giving |
+| Pierre Omidyar | Omidyar Network | Hybrid philanthropy/investing |
+
+### DAF Sponsor EINs for Tracking
+
+The pipeline tracks foundation grants to these known DAF sponsors:
+- Fidelity Charitable (11-0303001)
+- Schwab Charitable (31-1640316)
+- Vanguard Charitable (23-2888152)
+- National Philanthropic Trust (52-1658827)
+- Silicon Valley Community Foundation (20-5205488)
+
+### Board Seat Giving Inference
+
+68% of nonprofit governing boards require minimum annual giving:
+
+| Board Type | Typical Minimum |
+|------------|-----------------|
+| Major Museum (Met, MoMA) | $25,000 - $100,000 |
+| Hospital Board | $10,000 - $50,000 |
+| University Trustee | $25,000 - $100,000 |
+| Symphony Board | $5,000 - $25,000 |
+
+Pipeline searches for board memberships and applies conservative (low-end) estimates.
+
+### Limitations
+
+1. **Dynasty trusts are invisible**: $360B+ in South Dakota alone with zero disclosure
+2. **LLCs self-report**: We only see what they announce
+3. **DAF individual accounts private**: Only aggregate sponsor data available
+4. **Religious giving completely opaque**: Churches exempt from 990 filing
+5. **Board seat data incomplete**: Wikipedia/LittleSis don't capture all boards

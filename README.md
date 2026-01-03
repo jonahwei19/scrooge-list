@@ -12,6 +12,8 @@ Takes the Forbes Real-Time Billionaires list and enriches each person with:
 - Stock gifts to foundations (from SEC Form 4 filings)
 - Giving Pledge status and fulfillment (from IPS dataset)
 - Red flags for concerning patterns (low payout rates, unfulfilled pledges)
+- **Dark giving estimates** (DAF transfers, LLC giving, board seat inference)
+- **Opacity score** (0-100 rating of how opaque giving practices are)
 
 Output: A CSV/JSON ranking billionaires by observable charitable deployment, with the least generous at the top.
 
@@ -94,12 +96,22 @@ flowchart LR
 │   Flags: DAF_TRANSFERS, HIGH_COMP                                  │
 ├─────────────────────────────────────────────────────────────────────┤
 │ STAGE 6: Giving Pledge                                        [✅] │
-│   Cross-references 401 pledgers from IPS dataset                   │
+│   Cross-references 256 pledgers from IPS dataset                    │
 │   Per IPS: only 9 of 256 have fulfilled their pledge               │
+├─────────────────────────────────────────────────────────────────────┤
+│ STAGE 7: Dark Giving Estimation                               [✅] │
+│   Estimates opaque giving channels:                                 │
+│   - DAF transfers from 990-PF grants to known sponsors             │
+│   - LLC giving (CZI, Ballmer Group, Emerson Collective, etc.)      │
+│   - Split-interest trust signals (CRT/CLT news mentions)           │
+│   - Board seat inference ($10K-100K per nonprofit board seat)      │
+│   - Gala/benefit committee giving inference                        │
+│   - Noncash gifts (art donations, real estate)                     │
+│   Returns: dark estimate, opacity score, confidence level          │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-**Status: All 6 stages implemented.**
+**Status: All 7 stages implemented.**
 
 ## Usage
 
@@ -132,6 +144,13 @@ CSV and JSON files saved to `output/` with columns:
 | `giving_pledge_fulfilled` | From IPS dataset (usually False) |
 | `red_flag_count` | Number of flags |
 | `red_flags` | Semicolon-separated flag descriptions |
+| `dark_giving_estimate_millions` | Estimated opaque channel giving |
+| `dark_giving_confidence` | NO_DATA, VERY_LOW, LOW, MEDIUM |
+| `uses_llc` | True if uses philanthropic LLC |
+| `llc_name` | Name of LLC (if any) |
+| `opacity_score` | 0-100 (higher = more opaque practices) |
+| `opacity_flags` | Explanation of opacity score |
+| `total_estimated_giving_rate` | Includes dark giving estimate |
 
 ## Red Flags
 
@@ -167,7 +186,7 @@ The pipeline produces a **lower bound** on giving. We cannot observe:
 ## Files
 
 ```
-projects/scrooge/
+scrooge-list/
 ├── main.py                         # Pipeline entry point
 ├── README.md                       # This file
 ├── stages/
@@ -176,7 +195,8 @@ projects/scrooge/
 │   ├── stage3_announced_gifts.py   # ✅ Wikipedia + News
 │   ├── stage4_securities.py        # ✅ SEC EDGAR Form 4
 │   ├── stage5_red_flags.py         # ✅ Flag calculation
-│   └── stage6_giving_pledge.py     # ✅ IPS cross-reference
+│   ├── stage6_giving_pledge.py     # ✅ IPS cross-reference
+│   └── stage7_dark_giving.py       # ✅ Opaque channel estimation
 ├── giving_pledge_data.xlsx         # IPS pledger dataset
 ├── estimation_model.md             # Methodology docs
 ├── scrooge_data_sources.md         # Research notes

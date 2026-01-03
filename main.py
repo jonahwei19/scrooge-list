@@ -7,10 +7,20 @@ Estimates charitable deployment for Forbes billionaires.
 Pipeline Stages:
 1. Forbes Pull      - Fetch billionaire list (✅ implemented)
 2. Foundation Match - ProPublica 990-PF (✅ implemented)
-3. Announced Gifts  - Chronicle/MDL (❌ stub)
-4. Securities Gifts - SEC Form 4 (❌ stub)
+3. Announced Gifts  - Chronicle/MDL (✅ implemented)
+4. Securities Gifts - SEC Form 4 (✅ implemented)
 5. Red Flags        - Pattern detection (✅ implemented)
 6. Giving Pledge    - IPS cross-reference (✅ implemented)
+7. Dark Giving      - Opaque channel estimation (✅ implemented)
+
+Dark Giving covers estimation of opaque channels:
+- DAF transfers from foundations
+- Philanthropic LLC giving (CZI, Ballmer Group, etc.)
+- Split-interest trust signals
+- Anonymous gift inference (board seats, galas)
+- Noncash gifts (art, real estate)
+- Foreign giving (Schedule F)
+- Religious institution giving
 """
 
 import argparse
@@ -28,6 +38,7 @@ from stages.stage3_announced_gifts import search_announced_gifts
 from stages.stage4_securities import search_sec_form4_gifts
 from stages.stage5_red_flags import calculate_red_flags, BillionaireRecord
 from stages.stage6_giving_pledge import load_giving_pledge_data, check_giving_pledge
+from stages.stage7_dark_giving import estimate_dark_giving, calculate_opacity_score
 
 
 OUTPUT_DIR = "output"
@@ -47,10 +58,10 @@ class PipelineResult:
     annual_grants_millions: float
     foundation_pct_of_net_worth: float
 
-    # Stage 3: Announced (stub)
+    # Stage 3: Announced
     announced_gifts_millions: float
 
-    # Stage 4: Securities (stub)
+    # Stage 4: Securities
     securities_gifts_millions: float
 
     # Stage 5: Red flags
@@ -61,8 +72,17 @@ class PipelineResult:
     giving_pledge_signed: bool
     giving_pledge_fulfilled: bool
 
+    # Stage 7: Dark Giving
+    dark_giving_estimate_millions: float
+    dark_giving_confidence: str
+    uses_llc: bool
+    llc_name: str
+    opacity_score: int
+    opacity_flags: str
+
     # Derived
     observable_giving_rate: float
+    total_estimated_giving_rate: float  # Includes dark giving
     confidence: str
 
 
@@ -151,6 +171,13 @@ def run_pipeline(
         # Stage 6: Giving Pledge
         signed, fulfilled = check_giving_pledge(name, pledgers)
 
+        # Stage 7: Dark Giving Estimation
+        dark_giving = estimate_dark_giving(name, foundations)
+        dark_total = dark_giving.total_dark_estimate
+        opacity_score, opacity_explanations = calculate_opacity_score(
+            name, net_worth, total_assets, dark_giving
+        )
+
         # Build record for Stage 5
         record = BillionaireRecord(
             name=name,
@@ -172,13 +199,22 @@ def run_pipeline(
         observable = annual_grants + announced_total
         giving_rate = observable / (net_worth * 1e9) if net_worth > 0 else 0
 
+        # Total estimated giving includes dark giving estimate
+        total_estimated = observable + dark_total
+        total_giving_rate = total_estimated / (net_worth * 1e9) if net_worth > 0 else 0
+
         # Confidence based on data availability
         if len(foundations) > 0 and total_assets > 100_000_000:
             confidence = "MEDIUM"
         elif announced_total > 0 or securities_total > 0:
             confidence = "MEDIUM-HIGH"
+        elif dark_total > 0:
+            confidence = "LOW"  # Dark giving adds uncertainty
         else:
             confidence = "LOW"
+
+        # Combine all opacity flags
+        all_opacity_flags = dark_giving.opacity_flags + opacity_explanations
 
         # Build result
         result = PipelineResult(
@@ -196,7 +232,14 @@ def run_pipeline(
             red_flags="; ".join(red_flags),
             giving_pledge_signed=signed,
             giving_pledge_fulfilled=fulfilled,
+            dark_giving_estimate_millions=dark_total / 1e6,
+            dark_giving_confidence=dark_giving.overall_confidence,
+            uses_llc=bool(dark_giving.llc_name),
+            llc_name=dark_giving.llc_name,
+            opacity_score=opacity_score,
+            opacity_flags="; ".join(all_opacity_flags),
             observable_giving_rate=giving_rate,
+            total_estimated_giving_rate=total_giving_rate,
             confidence=confidence,
         )
         results.append(result)
@@ -229,15 +272,16 @@ def run_pipeline(
 
     # Print summary
     if verbose:
-        print("\n" + "=" * 70)
+        print("\n" + "=" * 80)
         print("TOP CONCERNS (lowest foundation/net-worth ratio)")
-        print("=" * 70)
-        print(f"\n{'Name':<30} {'Net Worth':>12} {'Fdn Assets':>12} {'Ratio':>8} {'Flags':>6}")
-        print("-" * 75)
+        print("=" * 80)
+        print(f"\n{'Name':<25} {'Net Worth':>10} {'Fdn Assets':>10} {'Dark Est':>10} {'Opacity':>8} {'Flags':>6}")
+        print("-" * 80)
         for _, row in df.head(20).iterrows():
-            print(f"{row['name'][:30]:<30} ${row['net_worth_billions']:>10.1f}B "
-                  f"${row['foundation_assets_billions']:>10.2f}B "
-                  f"{row['foundation_pct_of_net_worth']:>7.1%} "
+            print(f"{row['name'][:25]:<25} ${row['net_worth_billions']:>8.1f}B "
+                  f"${row['foundation_assets_billions']:>8.2f}B "
+                  f"${row['dark_giving_estimate_millions']:>8.1f}M "
+                  f"{row['opacity_score']:>7} "
                   f"{row['red_flag_count']:>6}")
 
     return df
