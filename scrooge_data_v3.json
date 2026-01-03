@@ -72,13 +72,20 @@
     "country": "United States",
     "source_of_wealth": "Meta",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 7220,
+    "total_lifetime_giving_millions": 3500,
     "giving_breakdown": {
-      "chan_zuckerberg_initiative": 7220,
-      "notes": "CZI has committed over $7.22B in grants since 2015. This is an LLC, not a foundation, so has no mandatory payout. CZI Foundation and CZI DAF make grants."
+      "chan_zuckerberg_foundation_transfers": 2100,
+      "newark_schools": 100,
+      "sf_general_hospital": 75,
+      "czi_education_grants": 200,
+      "czi_science_grants": 500,
+      "other_czi_grants": 525,
+      "notes": "CZI is an LLC, not a foundation - pledged 99% of wealth but actual disbursements to charitable causes ~$3.5B. Much still in CZI as LLC investments."
     },
     "sources": [
-      "https://chanzuckerberg.com/grants-ventures/grants/"
+      "https://www.philanthropy.com/article/chan-zuckerberg-donate-facebook-shares-worth-2-billion",
+      "https://en.wikipedia.org/wiki/Chan_Zuckerberg_Initiative",
+      "https://www.influencewatch.org/for-profit/chan-zuckerberg-initiative/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 16,
@@ -91,15 +98,21 @@
     "country": "France",
     "source_of_wealth": "LVMH",
     "liquidity_factor": 0.25,
-    "total_lifetime_giving_millions": 1000,
+    "total_lifetime_giving_millions": 350,
     "giving_breakdown": {
-      "louis_vuitton_foundation": 800,
-      "notre_dame": 200,
-      "notes": "Louis Vuitton Foundation ($800M+ museum). \u20ac200M Notre-Dame pledge. Art patronage. Fondation d'entreprise."
+      "notre_dame_restoration": 220,
+      "restos_du_coeur_food_bank": 11,
+      "palace_of_versailles": 11,
+      "louvre_chardin_acquisition": 16,
+      "amazon_wildfires": 11,
+      "louis_vuitton_foundation": 50,
+      "other_french_culture": 31,
+      "notes": "NOTABLE SCROOGE relative to wealth - $200B+ fortune but ~$350M lifetime giving. Focus on French cultural heritage. \u20ac200M Notre-Dame pledge was criticized as tax-deductible PR."
     },
     "sources": [
-      "Forbes",
-      "Fondation Louis Vuitton"
+      "https://www.lvmh.com/en/commitment-in-action/for-philanthropy/lvmh-corporate-philanthropy",
+      "https://flaglerlive.com/bernard-arnault/",
+      "https://philanthropynewsdigest.org/news/lvmh-s-arnault-donates-16-million-to-louvre-for-chardin-acquisition"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 30,
@@ -158,16 +171,21 @@
     "country": "United States",
     "source_of_wealth": "Google",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 800,
     "giving_breakdown": {
-      "carl_victor_page_memorial_foundation": 1000,
-      "family_foundation": 500,
-      "notes": "Carl Victor Page Memorial Foundation (named after father). Very private about giving. Estimated $1.5B in foundations. Low profile despite $145B wealth."
+      "carl_victor_page_foundation_to_dafs": 600,
+      "schwab_charitable_2023": 218,
+      "national_philanthropic_trust_2022": 275,
+      "american_cancer_society": 5,
+      "new_venture_fund": 10,
+      "notes": "MASSIVE SCROOGE - $6.7B foundation sends 97.8% to DAFs (Schwab, NPT). Actual charitable disbursement unknown. Most opaque major billionaire."
     },
     "sources": [
-      "https://www.forbes.com/profile/larry-page/"
+      "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor",
+      "https://philanthropynewsdigest.org/news/larry-page-s-6.7-billion-foundation-directs-almost-all-grants-to-dafs",
+      "https://www.vox.com/recode/2019/12/18/21010108/larry-page-philanthropy-foundation-donor-advised-fund-christmas"
     ],
-    "giving_pledge_signed": true,
+    "giving_pledge_signed": false,
     "years_as_billionaire": 20,
     "notes": "Signed Giving Pledge 2010. Google co-founder. Extremely private. Low philanthropy relative to wealth despite pledge."
   },
@@ -268,14 +286,19 @@
     "country": "Spain",
     "source_of_wealth": "Zara/Inditex",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 600,
     "giving_breakdown": {
-      "healthcare": 1000,
-      "foundations": 500,
-      "notes": "Amancio Ortega Foundation. Major healthcare donor in Spain."
+      "spanish_cancer_equipment_2017": 344,
+      "valencia_flood_relief_2024": 108,
+      "caritas_internationalis_2012": 22,
+      "amancio_ortega_foundation_2023": 90,
+      "other": 36,
+      "notes": "Amancio Ortega Foundation founded 2021, invested \u20ac81.1M in 2023. Major focus on Spanish healthcare system. \u20ac344M for cancer screening was controversial (some said billionaires should pay more taxes instead)."
     },
     "sources": [
-      "Forbes"
+      "https://philanthropynewsdigest.org/news/amancio-ortega-foundation-commits-108-million-in-flood-aid-in-spain",
+      "https://www.investopedia.com/terms/a/amancio-ortega.asp",
+      "https://fee.org/articles/zara-billionaires-cheap-philanthropy-360-million-for-cancer-treatment/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 25,
@@ -310,15 +333,17 @@
     "country": "United States",
     "source_of_wealth": "Walmart",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 800,
     "giving_breakdown": {
-      "walton_family_foundation_share": 1500,
-      "notes": "Walton Family Foundation collective giving. Conservation focus."
+      "walton_family_foundation_share": 500,
+      "personal_gifts": 300,
+      "notes": "Walton Family Foundation gave $587M in 2023, $548.8M in 2024. Individual Walton giving hard to separate from family foundation."
     },
     "sources": [
-      "https://www.waltonfamilyfoundation.org/"
+      "https://www.waltonfamilyfoundation.org/about-us/reports-financials",
+      "https://www.instrumentl.com/990-report/walton-family-foundation-inc-f4b4ae04-9bda-48eb-9644-957a022e60e2"
     ],
-    "giving_pledge_signed": false,
+    "giving_pledge_signed": true,
     "years_as_billionaire": 30,
     "notes": "Walton family collective giving. Has not signed Giving Pledge."
   },
@@ -331,15 +356,17 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 2500,
     "giving_breakdown": {
-      "crystal_bridges_museum": 1500,
-      "alice_walton_foundation": 500,
+      "crystal_bridges_museum": 1200,
       "walton_family_foundation_share": 500,
-      "notes": "Founded Crystal Bridges Museum of American Art. Alice Walton Foundation focuses on healthcare, mental health. Whole Health Institute."
+      "art_foundation": 500,
+      "heartland_whole_health_institute": 300,
+      "notes": "Founded Crystal Bridges Museum (invested $1.2B+). Active in arts and holistic health."
     },
     "sources": [
-      "https://en.wikipedia.org/wiki/Alice_Walton"
+      "https://www.insidephilanthropy.com/home/the-quiet-donors-of-americas-richest-family-three-low-profile-walton-foundations",
+      "https://en.wikipedia.org/wiki/Crystal_Bridges_Museum_of_American_Art"
     ],
-    "giving_pledge_signed": false,
+    "giving_pledge_signed": true,
     "years_as_billionaire": 30,
     "notes": "Major arts philanthropist. Crystal Bridges is significant. Has not signed Giving Pledge."
   },
@@ -472,18 +499,19 @@
     "country": "United States",
     "source_of_wealth": "Nike",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 6700,
+    "total_lifetime_giving_millions": 5000,
     "giving_breakdown": {
-      "ohsu_knight_cancer": 2500,
-      "university_of_oregon": 1500,
-      "stanford": 400,
-      "knight_foundation": 2200,
-      "other": 100,
-      "notes": "Aug 2025: $2B to OHSU Knight Cancer Institute (largest single gift to US university ever). Previous $500M to OHSU. Two $500M gifts to U of Oregon. $400M to Stanford. Total lifetime giving over $6.7B."
+      "ohsu_knight_cancer_institute_2025": 2000,
+      "knight_foundation_grants_2023": 212,
+      "stanford_university": 400,
+      "university_of_oregon": 500,
+      "previous_stock_donations": 1700,
+      "notes": "At least $3B documented. $2B OHSU gift in 2025 is largest single donation to US university. Chronicle Philanthropy 50 seven times."
     },
     "sources": [
-      "https://www.philanthropy.com/news/and-2-billion-more-phil-and-penny-knight-strike-again-with-mega-gift/",
-      "https://www.forbes.com/sites/michaeltnietzel/2025/08/14/phil-knight-commits-a-record-2-billion-to-oregon-health--science-university/"
+      "https://www.philanthropy.com/article/and-2-billion-more-phil-and-penny-knight-strike-again-with-mega-gift",
+      "https://www.cnbc.com/2025/08/14/nike-phil-knight-ohsu-cancer-institute-donation.html",
+      "https://www.philanthropy.com/news/nike-co-founder-phil-knight-gives-900-million-to-his-foundation/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 30,
@@ -563,14 +591,18 @@
     "country": "United States",
     "source_of_wealth": "Facebook, Asana",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 4000,
+    "total_lifetime_giving_millions": 3000,
     "giving_breakdown": {
-      "good_ventures_open_philanthropy": 4000,
-      "notes": "Good Ventures Foundation has $10B in assets. Open Philanthropy (now Coefficient Giving) has granted $4B+ total. Focus on global health, AI safety, effective altruism causes."
+      "good_ventures_grants": 2000,
+      "open_philanthropy_grants": 800,
+      "political_donations": 50,
+      "other": 150,
+      "notes": "Good Ventures has $5.9B in assets. Youngest Giving Pledge signatory. Open Philanthropy (now Coefficient Giving) directed $100M+ in 2024. Very effective altruist focused."
     },
     "sources": [
-      "https://www.insidephilanthropy.com/home/open-philanthropy-is-now-coefficient-giving-heres-what-has-and-hasnt-changed",
-      "https://www.forbes.com/sites/phoebeliu/2025/11/07/cari-tuna-billionaire-open-philanthropy-facebook/"
+      "https://www.insidephilanthropy.com/home/2024-8-5-what-a-facebook-cofounders-latest-19-billion-for-his-foundation-says-about-philanthropys-future",
+      "https://en.wikipedia.org/wiki/Open_Philanthropy",
+      "https://www.openphilanthropy.org/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 14,
@@ -606,17 +638,22 @@
     "country": "United States",
     "source_of_wealth": "Blackstone",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 1200,
     "giving_breakdown": {
-      "schwarzman_scholars": 500,
-      "yale": 400,
-      "oxford": 150,
-      "mit": 350,
-      "nypl": 100,
-      "notes": "Schwarzman Scholars program ($500M+). Major gifts to Yale, Oxford, MIT. NYPL. Lincoln Center."
+      "mit_ai_college": 350,
+      "yale_schwarzman_center": 150,
+      "schwarzman_scholars_tsinghua": 200,
+      "ny_public_library": 100,
+      "inner_city_scholarship_fund": 50,
+      "abington_high_school": 25,
+      "animal_medical_center": 25,
+      "other_gifts": 300,
+      "notes": "At least $797.5M documented over past decade per Chronicle of Philanthropy. Has no personal foundation."
     },
     "sources": [
-      "https://en.wikipedia.org/wiki/Stephen_A._Schwarzman"
+      "https://www.philanthropy.com/article/the-path-to-a-better-life/",
+      "https://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015",
+      "https://news.yale.edu/2015/05/11/150-million-gift-stephen-schwarzman-establish-first-its-kind-campus-center-yale-universit"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 15,
@@ -782,15 +819,16 @@
     "country": "France",
     "source_of_wealth": "L'Oreal",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 800,
+    "total_lifetime_giving_millions": 500,
     "giving_breakdown": {
-      "foundations": 500,
-      "science": 200,
-      "Notre Dame": 100,
-      "notes": "Bettencourt Schueller Foundation. Major French philanthropist."
+      "notre_dame_restoration": 226,
+      "bettencourt_schueller_foundation": 200,
+      "other_french_causes": 74,
+      "notes": "President of Bettencourt Schueller Foundation since 1987. \u20ac200M ($226M) to Notre-Dame. Foundation supports life sciences research and arts. Relatively modest for $100B fortune."
     },
     "sources": [
-      "Forbes"
+      "https://en.wikipedia.org/wiki/Fran%C3%A7oise_Bettencourt_Meyers",
+      "https://www.businessinsider.com/meet-richest-woman-world-francoise-bettencourt-meyers-loreal-2023-9"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -928,14 +966,16 @@
     "country": "Italy",
     "source_of_wealth": "Ferrero (Nutella)",
     "liquidity_factor": 0.25,
-    "total_lifetime_giving_millions": 500,
+    "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
-      "foundations": 400,
-      "education": 100,
-      "notes": "Ferrero Foundation. Social enterprises in Italy."
+      "ferrero_foundation": 100,
+      "michele_ferrero_entrepreneurial_project": 50,
+      "social_enterprises_africa": 30,
+      "education_italy": 20,
+      "notes": "Ferrero Foundation supports education and social causes. Michele Ferrero Entrepreneurial Project creates jobs in developing countries. Relatively private family."
     },
     "sources": [
-      "Forbes"
+      "https://www.fondazioneferrero.it/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -1148,14 +1188,18 @@
     "country": "United States",
     "source_of_wealth": "News Corp, Fox",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 500,
+    "total_lifetime_giving_millions": 25,
     "giving_breakdown": {
-      "education": 300,
-      "foundations": 200,
-      "notes": "News Corp. Fox. Australian-American."
+      "milly_dowler_family_charities": 1,
+      "tony_blair_faith_foundation": 0.1,
+      "chelsea_pensioners_appeal": 0.015,
+      "news_corp_motion_picture_fund": 20,
+      "other": 3.9,
+      "notes": "LEGENDARY SCROOGE per Inside Philanthropy. 'Largest donation on record appears to be $1M gift that would never have been made had one of Murdoch's papers not hacked a murdered girl's phone.' Virtually no personal philanthropy."
     },
     "sources": [
-      "Forbes"
+      "https://www.insidephilanthropy.com/home/2014-12-18-rupert-murdoch-and-philanthropy-will-a-legendary-scrooge-cha-html",
+      "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 35,
@@ -1399,19 +1443,20 @@
     "country": "United States",
     "source_of_wealth": "DreamWorks, music",
     "liquidity_factor": 0.7,
-    "total_lifetime_giving_millions": 1500,
+    "total_lifetime_giving_millions": 650,
     "giving_breakdown": {
-      "ucla_medical_school": 250,
-      "ucla_scholarship_fund": 146,
-      "geffen_academy": 100,
-      "david_geffen_hall_lincoln_center": 100,
-      "moma": 100,
-      "other": 804,
-      "notes": "$200M to UCLA Medical School (renamed in his honor). Additional $46M in 2019. $100M for Geffen Academy. Total UCLA giving exceeds $450M. David Geffen Hall at Lincoln Center. Major MoMA donor."
+      "ucla_medical_school_2002": 200,
+      "ucla_scholarships_2012": 100,
+      "ucla_scholarships_2019": 46,
+      "ucla_k12_school": 100,
+      "aids_research": 50,
+      "other_arts_music": 154,
+      "notes": "Over $450M to UCLA alone. Largest individual UCLA donor. $200M unrestricted gift to UCLA medical school was largest to US medical school at the time."
     },
     "sources": [
       "https://newsroom.ucla.edu/releases/david-geffen-gift-expands-medical-scholarships",
-      "https://www.forbes.com/sites/kristinstoller/2019/12/03/billionaire-dreamworks-cofounder-david-geffen-donates-46-million-to-ucla-medical-school/"
+      "https://newsroom.ucla.edu/releases/david-geffen-donates-100-million-to-launch-innovative-ucla-school-for-grades-6-through-12",
+      "https://philanthropynewsdigest.org/news/dreamworks-co-founder-david-geffen-gives-200-million-to-ucla-medical-school"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 25,
@@ -1536,16 +1581,21 @@
     "country": "United States",
     "source_of_wealth": "KKR",
     "liquidity_factor": 0.6,
-    "total_lifetime_giving_millions": 500,
+    "total_lifetime_giving_millions": 400,
     "giving_breakdown": {
-      "columbia_business_school": 100,
-      "claremont_mckenna": 100,
-      "moma": 100,
-      "other": 200,
-      "notes": "Major Columbia Business School donor (Kravis Hall). Claremont McKenna Kravis Center. MoMA trustee. Health and education focus."
+      "columbia_business_school_2010": 100,
+      "columbia_business_school_2015": 25,
+      "columbia_previous": 24,
+      "rockefeller_university": 50,
+      "claremont_mckenna": 30,
+      "met_museum": 50,
+      "other": 121,
+      "notes": "Marie-Josee and Henry R. Kravis Foundation has made three $100M donations. Signed Giving Pledge. Focus on higher education."
     },
     "sources": [
-      "https://en.wikipedia.org/wiki/Henry_Kravis"
+      "https://www.influencewatch.org/non-profit/marie-josee-and-henry-r-kravis-foundation-inc/",
+      "https://www.forbes.com/profile/henry-kravis/",
+      "https://achievement.org/achiever/henry-r-kravis/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 25,
@@ -1688,18 +1738,23 @@
     "country": "Germany",
     "source_of_wealth": "SAP",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 1000,
+    "total_lifetime_giving_millions": 700,
     "giving_breakdown": {
-      "hasso_plattner_foundation": 500,
-      "stanford_dschool": 150,
-      "potsdam_hpi": 200,
-      "other": 150,
-      "notes": "Hasso Plattner Foundation. Stanford d.school major donor. Hasso Plattner Institute in Potsdam. Focus on design thinking, education, technology."
+      "hasso_plattner_institute_stanford": 200,
+      "hasso_plattner_institute_potsdam": 150,
+      "south_africa_hiv_aids_education": 100,
+      "university_cape_town": 10,
+      "african_conservation": 50,
+      "museums_art_culture": 100,
+      "other": 90,
+      "notes": "Signed Giving Pledge 2013. Hasso Plattner Foundation established 2015. Major focus on design thinking education, African healthcare, and art museums. Very active philanthropist."
     },
     "sources": [
-      "https://en.wikipedia.org/wiki/Hasso_Plattner"
+      "https://en.wikipedia.org/wiki/Hasso_Plattner",
+      "https://www.plattnerfoundation.org/en/",
+      "https://glasspockets.org/philanthropy-in-focus/eye-on-the-giving-pledge/profiles/hasso-plattner"
     ],
-    "giving_pledge_signed": false,
+    "giving_pledge_signed": true,
     "years_as_billionaire": 25,
     "notes": "Has NOT signed Giving Pledge. German billionaire. Design thinking and education focus."
   },
@@ -1863,17 +1918,19 @@
     "country": "United States",
     "source_of_wealth": "Charles Schwab Corp",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 500,
+    "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
-      "charles_schwab_foundation": 300,
-      "schwab_charitable": 0,
-      "other": 200,
-      "notes": "Charles Schwab Foundation gives to education and financial literacy. Schwab Charitable is DAF platform (not his personal giving - donors gave $6.1B in 2023). Personal philanthropy lower profile."
+      "stanford_university": 50,
+      "charles_schwab_foundation": 100,
+      "other_education": 30,
+      "food_banks_community": 20,
+      "notes": "Founded Schwab Charitable (DAF platform handling $6B+ annually from donors). Personal giving harder to track vs company foundation. Signed Giving Pledge."
     },
     "sources": [
-      "https://www.aboutschwab.com/giving-back"
+      "https://www.aboutschwab.com/giving-back",
+      "https://fconline.foundationcenter.org/fdo-grantmaker-profile?key=SCHW181"
     ],
-    "giving_pledge_signed": false,
+    "giving_pledge_signed": true,
     "years_as_billionaire": 25,
     "notes": "Has NOT signed Giving Pledge. Created major DAF platform but personal giving lower profile."
   },
@@ -2112,14 +2169,16 @@
     "country": "United States",
     "source_of_wealth": "Ubiquiti Networks",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 20,
+    "total_lifetime_giving_millions": 25,
     "giving_breakdown": {
-      "memphis_grizzlies_community": 15,
-      "technology_access": 5,
-      "notes": "Very limited public philanthropy. Some tech equipment donations to Memphis area schools. $1M basketball challenge charity pledge. Minimal giving."
+      "memphis_grizzlies_community_programs": 15,
+      "technology_equipment_donations": 5,
+      "robert_j_pera_foundation": 5,
+      "notes": "NOTABLE SCROOGE - $24B net worth, minimal documented philanthropy. Has foundation but no significant grants found. Focus on Memphis community via Grizzlies ownership."
     },
     "sources": [
-      "https://www.insidephilanthropy.com/guide-to-individual-donors/robert-pera"
+      "https://www.insidephilanthropy.com/guide-to-individual-donors/robert-pera",
+      "https://projects.propublica.org/nonprofits/organizations/871254834"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 12,
@@ -2415,17 +2474,18 @@
     "country": "United States",
     "source_of_wealth": "Walmart (inherited)",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 2150,
+    "total_lifetime_giving_millions": 800,
     "giving_breakdown": {
-      "builders_initiative": 2000,
-      "walton_family_foundation": 150,
-      "environmental_causes": 500,
-      "notes": "Builders Vision (his philanthropy) is billion-dollar operation. $2B committed to philanthropy 2019-2021. Focus on environment, sustainability. Most active 3rd-gen Walton philanthropist."
+      "walton_family_foundation_share": 400,
+      "builders_initiative": 300,
+      "environment_climate": 100,
+      "notes": "Grandson of Sam Walton. Runs Builders Initiative focusing on environment. Part of family foundation giving."
     },
     "sources": [
-      "https://www.insidephilanthropy.com/home/2021-10-25-in-rarity-for-walton-family-a-third-generation-walton-takes-philanthropy-public"
+      "https://www.waltonfamilyfoundation.org/",
+      "https://www.insidephilanthropy.com/home/the-quiet-donors-of-americas-richest-family-three-low-profile-walton-foundations"
     ],
-    "giving_pledge_signed": false,
+    "giving_pledge_signed": true,
     "years_as_billionaire": 15,
     "notes": "Did NOT sign Giving Pledge. Son of John Walton (died 2005). Most philanthropically active of 3rd generation Waltons. Focus on environment/climate."
   },
@@ -2687,15 +2747,16 @@
     "country": "United States",
     "source_of_wealth": "KKR (private equity)",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 350,
+    "total_lifetime_giving_millions": 300,
     "giving_breakdown": {
-      "roberts_foundation": 350,
-      "claremont_mckenna": 50,
-      "stanford": 30,
-      "notes": "Roberts Foundation. Major Claremont McKenna donor (Roberts Center). Conservative causes. KKR co-founder."
+      "roberts_enterprise_development_fund": 100,
+      "claremont_mckenna_college": 50,
+      "other_education": 100,
+      "social_enterprise": 50,
+      "notes": "KKR co-founder. Roberts Enterprise Development Fund focuses on social enterprise investing. Less public than cousin Henry Kravis."
     },
     "sources": [
-      "https://www.forbes.com/profile/george-roberts/"
+      "https://www.redf.org/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 30,
@@ -2726,15 +2787,21 @@
     "country": "United States",
     "source_of_wealth": "Pershing Square (hedge fund)",
     "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 500,
+    "total_lifetime_giving_millions": 1500,
     "giving_breakdown": {
-      "pershing_square_foundation": 400,
-      "center_effective_philanthropy": 50,
-      "harvard": 50,
-      "notes": "Pershing Square Foundation with wife Neri Oxman. Effective philanthropy advocate. Major Harvard donor. Activist investor."
+      "pershing_square_foundation_stock_2021": 1340,
+      "harvard_university": 26,
+      "innocence_project": 2,
+      "centurion_ministries": 1,
+      "psscra_cancer_research": 50,
+      "mind_neuroscience_prizes": 30,
+      "other": 51,
+      "notes": "Pershing Square Foundation committed $930M+ in grants and social investments. $1.34B stock donation in 2021 was to his DAF. Signed Giving Pledge."
     },
     "sources": [
-      "https://www.forbes.com/profile/bill-ackman/"
+      "https://philanthropynewsdigest.org/news/bill-ackman-donates-stock-worth-1.34-billion-to-charity",
+      "https://prizeapplication.smapply.io/",
+      "https://www.philanthropy.com/news/with-william-ackmans-1-billion-gift-2021-is-getting-off-to-a-good-start-for-philanthropy/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 10,
@@ -4699,14 +4766,15 @@
     "country": "Germany",
     "source_of_wealth": "BMW",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 300,
+    "total_lifetime_giving_millions": 150,
     "giving_breakdown": {
-      "johanna_quandt_foundation": 200,
-      "research": 100,
-      "notes": "Johanna Quandt Foundation (named for mother). Research funding. BMW board. Private."
+      "johanna_quandt_foundation": 80,
+      "bad_homburg_culture": 30,
+      "education_germany": 40,
+      "notes": "BMW heir. Johanna Quandt Foundation (named for mother). Family relatively private. Susanne Klatten (sister) also major philanthropist."
     },
     "sources": [
-      "Forbes"
+      "https://www.forbes.com/profile/stefan-quandt/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -5827,15 +5895,20 @@
     "country": "Germany",
     "source_of_wealth": "Kuehne + Nagel (logistics)",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 500,
+    "total_lifetime_giving_millions": 300,
     "giving_breakdown": {
-      "kuhne_foundation": 400,
-      "lufthansa": 100,
-      "notes": "Kuehne Foundation for logistics research and education. HSV Hamburg supporter. Lufthansa investor."
+      "kuehne_logistics_university": 80,
+      "hamburg_philharmonic": 30,
+      "medical_research": 50,
+      "kuehne_foundation_annual": 50,
+      "culture_hamburg": 50,
+      "other": 40,
+      "notes": "K\u00fchne Foundation (Swiss non-profit). Plans to fund 75% of new Hamburg opera house. Family fortune has Nazi-era history (Vanity Fair investigation). 5M CHF annually to foundation."
     },
     "sources": [
-      "Forbes",
-      "Kuehne Foundation"
+      "https://en.wikipedia.org/wiki/Klaus-Michael_K%C3%BChne",
+      "https://www.vanityfair.com/news/story/richest-german-nazi-billions",
+      "https://www.kuehne-stiftung.org/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -7220,13 +7293,18 @@
     "country": "United States",
     "source_of_wealth": "Real estate, sports",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 100,
+    "total_lifetime_giving_millions": 5,
     "giving_breakdown": {
-      "kroenke_foundation": 100,
-      "notes": "Sports empire (Arsenal, Rams, Nuggets). Limited philanthropy relative to wealth."
+      "lafd_foundation_wildfires": 1,
+      "university_of_missouri": 2,
+      "trump_inauguration": 1,
+      "kroenke_sports_charities": 1,
+      "notes": "EXTREME SCROOGE - Forbes 2018: Only $1M donated over ENTIRE LIFETIME when worth $8.5B. Now worth $15B. Named 'one of stingiest billionaires in world.' Arsenal fans particularly critical."
     },
     "sources": [
-      "Forbes"
+      "https://dailycannon.com/2021/04/arsenal-owner-named-as-one-of-stingiest-billionaires-in-world/",
+      "https://www.si.com/nfl/rams/news/breaking-nfl-and-stan-kroenke-donate-to-wildfire-relief-rams-to-bus-fans-to-phoenix-01jh8pna9ppe",
+      "https://dailycannon.com/2020/04/what-is-stan-kroenke-doing-to-help-stop-covid-19/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -9387,14 +9465,19 @@
     "country": "United States",
     "source_of_wealth": "Dallas Cowboys, oil",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 300,
+    "total_lifetime_giving_millions": 50,
     "giving_breakdown": {
-      "foundations": 200,
-      "community": 100,
-      "notes": "Gene and Jerry Jones Family Foundation."
+      "arlington_youth_pledge": 16.5,
+      "hope_lodge_cancer_facility": 7.5,
+      "salvation_army_partnership": 10,
+      "el_paso_victims": 0.05,
+      "other_cowboys_charities": 16,
+      "notes": "Gene and Jerry Jones Family Foundation is philanthropic arm of Dallas Cowboys. $16.5M pledged over 33 years to Arlington. Modest for $14.5B fortune."
     },
     "sources": [
-      "Forbes"
+      "https://www.dallascowboys.com/community/the-foundations",
+      "https://www.profootballhof.com/news/2019/05/gold-jacket-jerry-and-gene-jones-donate-75m-to-create-cancer-care-facility-in-dallas/",
+      "https://www.insidephilanthropy.com/find-a-grant/grants-j/gene-jerry-jones-family-foundation"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -13422,12 +13505,20 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
-      "notes": "Ineos chemicals. Manchester United stake."
+      "oxford_antimicrobial_research": 125,
+      "london_business_school": 31,
+      "wounded_soldiers_rehab": 31,
+      "forgotten_40_childhood_poverty": 5,
+      "go_run_for_fun": 5,
+      "other": 3,
+      "notes": "Jim Ratcliffe Foundation established 2019. Major gifts to Oxford and LBS. Focus on antimicrobial resistance research, childhood poverty, and veterans. Signed Giving Pledge."
     },
     "sources": [
-      "Forbes"
+      "https://www.ox.ac.uk/news/2025-02-06-sir-jim-ratcliffe-receives-university-oxford-s-highest-recognition-award",
+      "https://www.ineos.com/charities/education/london-business-school/",
+      "https://www.telegraph.co.uk/business/2021/01/19/sir-jim-ratcliffes-ineos-donates-100m-fight-superbugs/"
     ],
-    "giving_pledge_signed": false,
+    "giving_pledge_signed": true,
     "years_as_billionaire": 12,
     "notes": "Ineos. Man United."
   },
@@ -17395,14 +17486,19 @@
     "country": "United States",
     "source_of_wealth": "Epic Games",
     "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 200,
+    "total_lifetime_giving_millions": 150,
     "giving_breakdown": {
-      "conservation": 150,
-      "foundations": 50,
-      "notes": "Fortnite. Land conservation. Folly Beach."
+      "southern_appalachian_highlands_conservancy_7500_acres": 40,
+      "virginia_conservation_7300_acres": 35,
+      "us_government_land_2016_7000_acres": 30,
+      "piedmont_land_conservancy": 20,
+      "other_conservation": 25,
+      "notes": "Major land conservationist. 50,000+ acres purchased, holds to sell to conservation orgs at discount. Largest private conservation donation in NC history."
     },
     "sources": [
-      "Forbes"
+      "https://www.insidephilanthropy.com/glitzy-giving/tim-sweeney-glitzy-giving",
+      "https://www.newsobserver.com/news/business/article254466338.html",
+      "https://en.wikipedia.org/wiki/Tim_Sweeney"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 10,
