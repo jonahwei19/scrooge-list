@@ -149,32 +149,159 @@ For ~40% of giving channels, we have no estimation method. The Goodheart List wi
 
 ## Implementation Status
 
-**Working pipeline:** `pipeline.py` processes the full Forbes list (3,163 billionaires, 939 US).
+**Working pipeline:** `main.py` processes the full Forbes list (3,163 billionaires, 939 US).
 
 **Run commands:**
 ```bash
 # Test with 10 billionaires
-python3 pipeline.py --test
+python3 main.py --test
 
 # Top 50 US billionaires
-python3 pipeline.py --limit 50 --country "United States"
+python3 main.py --limit 50 --country "United States"
 
 # Full Forbes list
-python3 pipeline.py
+python3 main.py
 ```
 
 **Output:** CSV and JSON files in `output/` with:
 - Foundation assets and grants (from 990-PF)
 - Foundation/net-worth ratio
-- Giving Pledge status (from IPS dataset, 401 pledgers)
-- Red flags (low payout, pledge unfulfilled, no observable giving)
+- Giving Pledge status (from IPS dataset, 256 pledgers)
+- DAF contribution estimates and opacity scores
+- Split-interest trust estimates (CLATs/CRATs)
+- Red flags (low payout, pledge unfulfilled, DAF opacity, CLAT wealth transfer, etc.)
+- Overall opacity score (0-1)
 
 **Preliminary findings (top 50 US):**
 - 11 billionaires with zero observable foundation giving despite $10B+ net worth
 - Multiple Giving Pledge signers flagged as unfulfilled
 - Several foundations below 5% payout minimum (CZI at 0.9%, Huang at 1.7%)
+- High DAF opacity detected for several billionaires (>50% of grants to DAFs)
+- Known CLAT wealth transfer patterns identified (Walton family)
 
 **Data gaps requiring manual fill:**
 - Chronicle Big Gifts / Million Dollar List (no public API)
-- SEC Form 4 gift transactions (needs EDGAR parsing)
 - Known LLCs (CZI, Ballmer Group, Lost Horse) not in 990 database
+
+---
+
+## Stage 7: DAF Contribution Estimation
+
+DAFs represent a $251B+ black box with no individual-level disclosure. We estimate DAF contributions through multiple indirect methods:
+
+### Observable Data
+- **Foundation→DAF transfers**: 990-PF Part XV shows grants to DAF sponsors (Fidelity Charitable, Schwab Charitable, etc.)
+- **Known DAF sponsor EINs**: We track grants to 15+ major commercial DAF sponsors
+
+### Estimation Methods
+1. **DAF percentage of grants**: Calculate what fraction of foundation grants go to known DAF sponsors
+2. **SEC Form 4 gap analysis**: If stock gifts exceed foundation inflows, the gap may indicate DAF contributions
+3. **Known personal DAFs**: Track documented DAF accounts from media reports (e.g., Jensen Huang's "GeForce Fund")
+
+### Opacity Score (0-1)
+We calculate a DAF opacity score based on:
+- Percentage of grants going to DAFs (>50% = high opacity)
+- Known personal DAFs with unknown balances
+- Large gap between SEC stock gifts and observable giving
+- Foundation near minimum 5% payout
+
+### Key DAF Sponsors Tracked
+| EIN | Sponsor |
+|-----|---------|
+| 11-0303001 | Fidelity Charitable Gift Fund |
+| 31-1640316 | Schwab Charitable Fund |
+| 23-2888152 | Vanguard Charitable |
+| 23-2844706 | National Philanthropic Trust |
+| 20-5205488 | Silicon Valley Community Foundation |
+
+### Confidence Level: LOW
+We can only observe foundation→DAF transfers. Individual DAF account balances and grant recommendations remain invisible.
+
+---
+
+## Stage 8: Split-Interest Trust Estimation (CRTs/CLTs)
+
+Split-interest trusts are vehicles where charitable and non-charitable beneficiaries share trust income or principal.
+
+### Trust Types
+| Type | How It Works | Charitable Impact |
+|------|--------------|-------------------|
+| CRT (Charitable Remainder Trust) | Donor gets income, charity gets remainder | Charity benefits at termination |
+| CLT (Charitable Lead Trust) | Charity gets income, heirs get remainder | Annual charitable payments |
+| CRAT/CRUT | Annuity/Unitrust versions of CRTs | Fixed vs. variable payments |
+| CLAT/CLUT | Annuity/Unitrust versions of CLTs | Tax-efficient wealth transfer |
+
+### The Walton Pattern
+CLATs are often structured so 95%+ goes to heirs, with minimal charity:
+- 30-year term with 2% annual charitable payments
+- Charity receives small annual payments
+- Heirs receive the appreciated remainder
+- **This is legal tax minimization, not philanthropy**
+
+### Data Sources
+1. **Form 5227**: Filed annually, "open to public inspection" BUT no searchable database exists
+2. **Media reports**: Investigative journalism has documented specific trusts (e.g., Walton CLATs)
+3. **IRS Statistics of Income**: ~$121B in CRT assets, 70,000+ annual returns
+
+### Estimation Methods
+1. **Known trust database**: We track documented trusts from media reports
+2. **Foundation correlation**: Large foundation assets correlate with CLAT activity
+3. **News search**: Search for trust mentions in news coverage
+
+### Red Flags for Split-Interest Trusts
+- **CLAT_WEALTH_TRANSFER**: Trust structured primarily for heir benefit
+- **LOW_CHARITABLE_RATE**: Less than 3% going to charity annually
+- **FOUNDATION_RECYCLING**: CLAT payments going to grantor's own foundation
+
+### Confidence Level: MEDIUM for known trusts, NEAR ZERO for discovery
+
+---
+
+## Overall Opacity Score
+
+We calculate an overall opacity score (0-1) for each billionaire:
+
+| Factor | Weight | Trigger |
+|--------|--------|---------|
+| Low observable giving ratio | 0.30 | <1% of net worth observable |
+| High DAF usage | 0.25 | >50% of grants to DAFs |
+| CLAT wealth transfer | 0.20 | Known wealth transfer pattern |
+| Foundation at minimum payout | 0.10 | 4-5.5% payout rate |
+| Unfulfilled pledge | 0.15 | Signed but not fulfilled |
+
+**Interpretation:**
+- 0.0-0.2: Low opacity (relatively transparent)
+- 0.2-0.4: Moderate opacity
+- 0.4-0.6: High opacity (significant non-disclosure)
+- 0.6+: Very high opacity (maximizing non-disclosure)
+
+---
+
+## Taxonomy Analysis: Is This Complete?
+
+### What This Pipeline Captures Well
+1. **Foundation giving** (HIGH confidence) - 990-PF Part XV
+2. **Securities gifts** (HIGH confidence for foundations) - SEC Form 4
+3. **Announced gifts** (MEDIUM confidence) - Chronicle, MDL, news
+4. **DAF transfers** (LOW confidence) - Foundation→DAF flows
+5. **Split-interest trusts** (MEDIUM for known, LOW for discovery)
+
+### What Remains Invisible
+1. **Dynasty trusts** - No public registry in any US state
+2. **Philanthropic LLCs** - No 990 filing (CZI model)
+3. **Foreign giving** - No country discloses donor names
+4. **Religious giving** - Churches are 990-exempt
+5. **Direct DAF contributions** - Bypasses foundation entirely
+6. **Anonymous gifts below $1M** - Not tracked in major databases
+
+### Missing from Current Taxonomy
+1. **Corporate philanthropy** - Billionaires control corporate giving programs
+2. **Conservation easements** - Real estate donations with tax benefits
+3. **Impact investing** - Not strictly charity but deploys capital for good
+4. **Board seat giving** - Implied minimum giving for nonprofit governance
+
+### Fundamental Limitation
+For ~40% of giving channels, we have no estimation method. The Scrooge List is necessarily a **lower bound on giving**, not an upper bound on non-giving. Silence on the list might mean:
+- Genuinely low giving, OR
+- Very successful opacity, OR
+- Giving through untraceable channels
