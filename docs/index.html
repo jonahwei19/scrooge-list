@@ -1283,6 +1283,7 @@
 
         // Open profile modal
         function openProfile(d) {
+            try {
             const modal = document.getElementById('profile-modal');
             const score = d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score;
             const giving = d.total_lifetime_giving_millions || 0;
@@ -1521,6 +1522,10 @@
 
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
+            } catch (error) {
+                console.error('Error opening profile:', error);
+                alert('Error opening profile: ' + error.message);
+            }
         }
 
         // Close modal
