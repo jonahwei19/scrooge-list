@@ -6,13 +6,11 @@
     "country": "United States",
     "source_of_wealth": "Ubiquiti Networks",
     "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 2,
+    "total_lifetime_giving_millions": 0.6,
     "giving_breakdown": {
-      "st_jude": 0.1,
-      "grizzlies_matching": 1,
-      "food_bank": 0.1,
-      "other": 0.8,
-      "notes": "VERIFIED Jan 2026: Robert J Pera Foundation (EIN 87-1254834) has $0 assets and $0 grants since 2022. Personal verified giving ~$1-2M. Grizzlies Foundation ($54M since 2001) is team-funded, not personal. Ubiquiti equipment donations unquantified."
+      "food_bank_meals": 0.5,
+      "st_jude_pledge": 0.1,
+      "notes": "VERIFIED Jan 2026: Robert J Pera Foundation (EIN 87-1254834) has $0 assets and $0 grants since 2022. Documented giving: 300K meals to food bank (~$500K value), St. Jude pledge ($100K). Grizzlies Foundation is team-funded, not personal. Previously overstated at $2M."
     },
     "sources": [
       "https://projects.propublica.org/nonprofits/organizations/871254834",
@@ -21,8 +19,8 @@
     "giving_pledge_signed": false,
     "years_as_billionaire": 12,
     "notes": "Did NOT sign Giving Pledge. Extremely low philanthropy. One of least generous tech billionaires.",
-    "scrooge_score": 99.97222222222221,
-    "giving_rate_pct": 0.008333333333333333,
+    "scrooge_score": 99.99166666666667,
+    "giving_rate_pct": 0.0024999999999999996,
     "scrooge_rank": 1,
     "forbes_rank": 95,
     "verification": {
@@ -49,17 +47,16 @@
       },
       "news_verified": {
         "status": "found",
-        "amount_millions": 2,
+        "amount_millions": 0.6,
         "sources": [
-          "NBA.com",
-          "ESPN",
+          "Mid-South Food Bank 2020",
           "Commercial Appeal"
         ],
         "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/robert-pera"
       }
     },
     "verifiable_giving_millions": 0,
-    "unverifiable_giving_millions": 2
+    "unverifiable_giving_millions": 0.6
   },
   {
     "rank": 8,
@@ -257,15 +254,16 @@
     "country": "United States",
     "source_of_wealth": "Nvidia",
     "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 115,
+    "total_lifetime_giving_millions": 125,
     "giving_breakdown": {
       "oregon_state": 55,
       "stanford": 30,
       "california_college_arts": 22.5,
+      "crisis_text_line": 9,
       "oneida_baptist": 2,
-      "johns_hopkins": 1,
-      "other": 4.5,
-      "notes": "VERIFIED Jan 2026: Foundation has $9.2B assets but 2/3 goes to DAFs. Actual non-DAF grants ~$115M. OSU $55M, Stanford $30M, CCA $22.5M."
+      "mental_health_innovations": 2.7,
+      "other": 3.8,
+      "notes": "VERIFIED Jan 2026: Foundation has $9.2B assets, cumulative disbursements ~$252M, but ~2/3 goes to DAFs (Schwab Charitable/GeForce Fund). Actual non-DAF grants ~$125M. OSU $55M+, Stanford $30M, CCA $22.5M, Crisis Text Line $9M."
     },
     "sources": [
       "https://projects.propublica.org/nonprofits/organizations/261551239",
@@ -274,16 +272,16 @@
     "giving_pledge_signed": false,
     "years_as_billionaire": 10,
     "notes": "Foundation has $10B in assets but most disbursements go to DAFs. Actual charity ~$250M. Has not signed Giving Pledge.",
-    "scrooge_score": 99.82253086419753,
-    "giving_rate_pct": 0.07098765432098765,
+    "scrooge_score": 99.8070987654321,
+    "giving_rate_pct": 0.07716049382716049,
     "scrooge_rank": 5,
     "forbes_rank": 1496,
     "verification": {
       "990_pf": {
         "status": "found",
-        "amount_millions": 335,
+        "amount_millions": 252,
         "ein": "26-1551239",
-        "note": "Jen-Hsun & Lori Huang Foundation: $335M disbursed but ~$220M to DAFs",
+        "note": "Jen-Hsun & Lori Huang Foundation: ~$252M cumulative disbursed, ~2/3 to DAFs",
         "url": "https://projects.propublica.org/nonprofits/organizations/261551239"
       },
       "sec_form4": {
@@ -293,26 +291,28 @@
       },
       "foundation_reports": {
         "status": "found",
-        "amount_millions": 115,
+        "amount_millions": 125,
         "sources": [
-          "ProPublica 990-PF"
+          "ProPublica 990-PF",
+          "Grantmakers.io"
         ],
-        "note": "Non-DAF grants only ~$115M (2007-2024)",
+        "note": "Non-DAF grants ~$125M (2007-2024). ~$140-160M to DAFs (GeForce Fund at Schwab Charitable)",
         "url": "https://projects.propublica.org/nonprofits/organizations/261551239"
       },
       "news_verified": {
         "status": "found",
-        "amount_millions": 115,
+        "amount_millions": 125,
         "sources": [
           "Bloomberg",
           "OSU",
           "Stanford",
-          "CCA"
+          "CCA",
+          "Crisis Text Line"
         ],
         "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/jensen-huang"
       }
     },
-    "verifiable_giving_millions": 335,
+    "verifiable_giving_millions": 252,
     "unverifiable_giving_millions": 0
   },
   {

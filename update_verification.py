@@ -301,21 +301,22 @@ VERIFICATION_DATA = {
         ]
     },
     "Jensen Huang": {
-        "total_lifetime_giving_millions": 115,
+        "total_lifetime_giving_millions": 125,
         "giving_breakdown": {
             "oregon_state": 55,
             "stanford": 30,
             "california_college_arts": 22.5,
+            "crisis_text_line": 9,
             "oneida_baptist": 2,
-            "johns_hopkins": 1,
-            "other": 4.5,
-            "notes": "VERIFIED Jan 2026: Foundation has $9.2B assets but 2/3 goes to DAFs. Actual non-DAF grants ~$115M. OSU $55M, Stanford $30M, CCA $22.5M."
+            "mental_health_innovations": 2.7,
+            "other": 3.8,
+            "notes": "VERIFIED Jan 2026: Foundation has $9.2B assets, cumulative disbursements ~$252M, but ~2/3 goes to DAFs (Schwab Charitable/GeForce Fund). Actual non-DAF grants ~$125M. OSU $55M+, Stanford $30M, CCA $22.5M, Crisis Text Line $9M."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 335, "ein": "26-1551239", "note": "Jen-Hsun & Lori Huang Foundation: $335M disbursed but ~$220M to DAFs", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
+            "990_pf": {"status": "found", "amount_millions": 252, "ein": "26-1551239", "note": "Jen-Hsun & Lori Huang Foundation: ~$252M cumulative disbursed, ~2/3 to DAFs", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
             "sec_form4": {"status": "found", "note": "Nvidia stock gifts to foundation tracked", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001341439&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 115, "sources": ["ProPublica 990-PF"], "note": "Non-DAF grants only ~$115M (2007-2024)", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
-            "news_verified": {"status": "found", "amount_millions": 115, "sources": ["Bloomberg", "OSU", "Stanford", "CCA"], "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/jensen-huang"}
+            "foundation_reports": {"status": "found", "amount_millions": 125, "sources": ["ProPublica 990-PF", "Grantmakers.io"], "note": "Non-DAF grants ~$125M (2007-2024). ~$140-160M to DAFs (GeForce Fund at Schwab Charitable)", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
+            "news_verified": {"status": "found", "amount_millions": 125, "sources": ["Bloomberg", "OSU", "Stanford", "CCA", "Crisis Text Line"], "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/jensen-huang"}
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/261551239",
@@ -390,19 +391,17 @@ VERIFICATION_DATA = {
         ]
     },
     "Robert Pera": {
-        "total_lifetime_giving_millions": 2,
+        "total_lifetime_giving_millions": 0.6,
         "giving_breakdown": {
-            "st_jude": 0.1,
-            "grizzlies_matching": 1,
-            "food_bank": 0.1,
-            "other": 0.8,
-            "notes": "VERIFIED Jan 2026: Robert J Pera Foundation (EIN 87-1254834) has $0 assets and $0 grants since 2022. Personal verified giving ~$1-2M. Grizzlies Foundation ($54M since 2001) is team-funded, not personal. Ubiquiti equipment donations unquantified."
+            "food_bank_meals": 0.5,
+            "st_jude_pledge": 0.1,
+            "notes": "VERIFIED Jan 2026: Robert J Pera Foundation (EIN 87-1254834) has $0 assets and $0 grants since 2022. Documented giving: 300K meals to food bank (~$500K value), St. Jude pledge ($100K). Grizzlies Foundation is team-funded, not personal. Previously overstated at $2M."
         },
         "verification": {
             "990_pf": {"status": "found", "amount_millions": 0, "ein": "87-1254834", "note": "Robert J Pera Foundation: $0 assets, $0 grants since 2022 founding", "url": "https://projects.propublica.org/nonprofits/organizations/871254834"},
             "sec_form4": {"status": "not_found", "note": "No charitable stock gifts found", "url": None},
             "foundation_reports": {"status": "found", "amount_millions": 0, "sources": ["ProPublica 990-PF"], "note": "Foundation is empty shell - $0 activity", "url": "https://projects.propublica.org/nonprofits/organizations/871254834"},
-            "news_verified": {"status": "found", "amount_millions": 2, "sources": ["NBA.com", "ESPN", "Commercial Appeal"], "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/robert-pera"}
+            "news_verified": {"status": "found", "amount_millions": 0.6, "sources": ["Mid-South Food Bank 2020", "Commercial Appeal"], "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/robert-pera"}
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/871254834",

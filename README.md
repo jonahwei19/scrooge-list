@@ -102,8 +102,25 @@ python3 verify_billionaire.py --batch          # All suspicious entries
 
 - **Liquidity discount toggle** — adjust for illiquid wealth
 - **Size-adjusted ranking** — weight by absolute wealth
+- **Verifiable vs. unverifiable toggle** — show only hard-documented giving or include news estimates
 - **Filters** — by country, pledge status, search by name
 - **Sortable columns** — rank by any metric
+- **Giving pipeline UI** — click any billionaire to see giving breakdown by type with source verification
+
+### Verifiable vs. Unverifiable Giving
+
+Each billionaire's giving is now split into two categories:
+
+| Category | Sources | Display |
+|----------|---------|---------|
+| **Verifiable** | 990-PF filings, SEC Form 4 | Green column |
+| **Unverifiable** | News/announcements only | Yellow column |
+
+Toggle "Include Unverifiable Giving" to switch between:
+- **ON (default)**: Total giving = verifiable + unverifiable
+- **OFF**: Only count hard-documented giving from 990-PF and SEC filings
+
+This helps distinguish between billionaires with well-documented philanthropy vs. those relying on news coverage.
 
 ## Running Locally
 
