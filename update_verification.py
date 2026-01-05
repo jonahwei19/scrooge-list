@@ -3075,6 +3075,115 @@ VERIFICATION_DATA = {
             "news_verified": {"status": "partial", "amount_millions": 40, "note": "Corporate giving documented, personal giving private", "url": None}
         },
         "sources": []
+    },
+    # Batch 18: Wang Chuanfu, Lei Jun, Sun Piaoyang, Xu Jiayin, Michael Moritz, Prajogo Pangestu
+    "Wang Chuanfu": {
+        "total_lifetime_giving_millions": 75,
+        "giving_breakdown": {
+            "byd_charity_foundation_2010": 16,  # 104.5M yuan personal donation
+            "ongoing_annual_estimate": 59,  # 14 years of modest personal giving
+            "notes": "VERIFIED Jan 2026: BYD founder (~$20B). BYD Charity Foundation (2010). 104.5M yuan personal donation in 2010. NOT on Hurun Philanthropy List despite wealth - absent from top rankings. BYD corporate: 3B RMB education fund (2024), COVID masks, but these are corporate not personal. Personal giving estimated $50-100M lifetime. Very enigmatic, rarely gives interviews."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "BYD Hong Kong/Shenzhen listed", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 75, "note": "BYD Charity Foundation established 2010, personal donation confirmed", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 75, "note": "2010 personal donation documented, otherwise private. Absent from Hurun Philanthropy rankings.", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Lei Jun": {
+        "total_lifetime_giving_millions": 3500,
+        "giving_breakdown": {
+            "lei_jun_foundation_shares_2021": 1100,  # 308M Xiaomi shares
+            "xiaomi_foundation_shares_2021": 1100,  # 308M Xiaomi shares (corporate)
+            "wuhan_university_total": 195,  # $1.45B yuan = $195M, largest to Chinese uni
+            "lei_jun_foundation_disbursed": 250,  # 1.7B yuan by 2024
+            "other_disaster_relief": 55,
+            "notes": "VERIFIED Jan 2026: Xiaomi founder (~$25B). July 2021: transferred $2.2B worth of shares (616M Class B) split between Lei Jun Foundation (personal) and Xiaomi Foundation (corporate). Nov 2023: 1.3B yuan ($183M) to Wuhan University - largest gift to any Chinese university. Hurun 2022 #3 ($2B), 2024 #2 ($185M). Not signed Giving Pledge but mirrors commitment: 'will pay back 10x, 100x, 10000x'."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese foundations, no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Xiaomi Hong Kong-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 3500, "note": "Lei Jun Foundation + Wuhan University + Hurun rankings", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 3500, "note": "Hurun #3 2022 ($2B), #2 2024 ($185M). Wuhan donation widely covered Nov 2023.", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Sun Piaoyang": {
+        "total_lifetime_giving_millions": 20,
+        "giving_breakdown": {
+            "hengrui_public_welfare_foundation": 15,
+            "medical_aid_2019_hurun": 5,
+            "notes": "VERIFIED Jan 2026: Hengrui Medicine founder (~$20B). Hengrui Public Welfare Foundation supports health, education, poverty alleviation. On 2019 Hurun Philanthropy List for medical aid contributions (specific amount not disclosed). Hengrui corporate CSR: 'tens of millions of yuan' since 2000. Limited personal giving documentation compared to peers. Healthcare-focused philanthropy aligns with pharma background."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Hengrui Shanghai-listed", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 20, "note": "Hengrui Public Welfare Foundation, limited disclosure", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 20, "note": "On 2019 Hurun Philanthropy List (medical aid), but specific amounts not disclosed", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Xu Jiayin": {
+        "total_lifetime_giving_millions": 6500,
+        "giving_breakdown": {
+            "guizhou_poverty_alleviation": 4000,  # 3B yuan 2017, 1B yuan 2019, others
+            "education_hometown_henan": 300,  # Schools, alma mater
+            "forbes_hurun_peak_years": 2000,  # 2017-2019 peak giving
+            "harvard_2017": 1.5,
+            "notes": "VERIFIED Jan 2026: Evergrande founder (wealth collapsed 2021). Pre-collapse was China's top philanthropist: Hurun #1 in 2012, 2013; Forbes China #1 in 2012, 2013, 2018, 2019. Focus: Guizhou poverty alleviation ($1.6B cumulatively), education ($300M to hometown). Forbes 2019: 4.21B yuan ($612M) in single year. Cumulative ~11.3B RMB ($1.6-1.8B at old rates) per one source, but peak-year data suggests higher. Estimated $6-8B pre-collapse."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Evergrande Hong Kong-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 6500, "note": "Guizhou Provincial Foundation, Hurun/Forbes rankings multiple years", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 6500, "note": "Forbes #1 2012/13/18/19, Hurun #1 2012/13, consistently top donor pre-2021", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Michael Moritz": {
+        "total_lifetime_giving_millions": 1000,
+        "giving_breakdown": {
+            "crankstart_foundation_annual": 200,  # ~$200M/year grants 2020-2023
+            "oxford_university": 166,  # £75M 2012 + £25M 2008
+            "university_chicago": 50,
+            "ucsf_total": 30,
+            "sf_summer_school": 25,
+            "aclu": 20,
+            "juilliard": 5,
+            "notes": "VERIFIED Jan 2026: Sequoia partner (~$5.7B). Crankstart Foundation (EIN 94-3377099) with wife Harriet Heyman: ~$4B assets, $200M+/yr grants. Major education donor: Oxford £100M ($166M), U Chicago $50M, UCSF $30M+. Giving Pledge signatory 2012 (50%+ commitment). Knighted 2013 for UK economic/philanthropic work. Bay Area focus (60% of giving)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 860, "ein": "94-3377099", "note": "Crankstart Foundation: ~$4B assets, $200M+/yr grants. 2020-2023: $860M+ disbursed.", "url": "https://projects.propublica.org/nonprofits/organizations/943377099"},
+            "sec_form4": {"status": "not_found", "note": "Sequoia private, no SEC filings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1000, "note": "Crankstart 990-PF + named gifts (Oxford, Chicago, UCSF)", "url": "https://projects.propublica.org/nonprofits/organizations/943377099"},
+            "news_verified": {"status": "found", "amount_millions": 1000, "note": "Oxford gifts widely covered, Giving Pledge 2012", "url": None}
+        },
+        "sources": ["https://projects.propublica.org/nonprofits/organizations/943377099"],
+        "giving_pledge": "yes"
+    },
+    "Prajogo Pangestu": {
+        "total_lifetime_giving_millions": 40,
+        "giving_breakdown": {
+            "bakti_barito_2020_2024": 17,  # Rp 270B over 5 years
+            "covid_relief_2020": 2,  # Rp 30B medical equipment
+            "education_scholarships_pre2020": 15,  # 9 years before documented period
+            "other_foundation_programs": 6,
+            "notes": "VERIFIED Jan 2026: Barito Pacific founder (~$50B, Indonesia's richest). Bakti Barito Foundation (2011) with wife Harlina: education, environment, economy, social development. 2020-2024: Rp 270B ($17M) documented. COVID: Rp 30B medical equipment. Very low giving rate (~0.1% of wealth). NOT signed Giving Pledge (unlike Indonesian peer Tahir who pledged 50%). Criticism of historical deforestation (1980s-90s Suharto era)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indonesian resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Indonesian companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 17, "note": "Bakti Barito Foundation: Rp 270B (2020-2024) documented", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 40, "note": "COVID relief covered, education programs documented, but limited personal giving disclosure", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
     }
 }
 
