@@ -923,7 +923,7 @@ NET_WORTH_UPDATES = {
     "Sergey Brin": 250.0,  # Bloomberg Jan 2026
     "Mark Zuckerberg": 233.0,  # Bloomberg Jan 2026
     "Jensen Huang": 162.0,  # Forbes Jan 2026
-    "Larry Ellison": 247.0,  # Bloomberg Jan 2026
+    "Larry Ellison": 370.0,  # Forbes/Bloomberg Jan 2026 (major Oracle stock appreciation)
     "Warren Buffett": 145.0,  # Forbes Jan 2026
     "Bill Gates": 160.0,  # Forbes estimate
     "Steve Ballmer": 135.0,  # Forbes estimate

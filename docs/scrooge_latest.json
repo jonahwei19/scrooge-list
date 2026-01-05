@@ -948,6 +948,71 @@
     "unverifiable_giving_millions": 85
   },
   {
+    "rank": 3,
+    "name": "Larry Ellison",
+    "net_worth_billions": 370.0,
+    "country": "United States",
+    "source_of_wealth": "Oracle",
+    "liquidity_factor": 0.35,
+    "total_lifetime_giving_millions": 1150,
+    "giving_breakdown": {
+      "ellison_medical_foundation": 430,
+      "larry_ellison_foundation": 450,
+      "usc_cancer_center": 200,
+      "friends_of_idf": 27,
+      "wildlife_conservation": 50,
+      "other": 43,
+      "notes": "VERIFIED Jan 2026: Ellison Medical Foundation $430M (closed 2013). Larry Ellison Foundation ~$450M cumulative. USC $200M. IDF $27M. Wildlife $50M."
+    },
+    "sources": [
+      "https://projects.propublica.org/nonprofits/organizations/943269827",
+      "https://keck.usc.edu/ellison-institute/"
+    ],
+    "giving_pledge_signed": true,
+    "years_as_billionaire": 37,
+    "notes": "Signed Giving Pledge. Recently pledged 95% of fortune. Current giving low relative to wealth but accelerating.",
+    "scrooge_score": 99.11196911196912,
+    "giving_rate_pct": 0.3108108108108108,
+    "scrooge_rank": 25,
+    "forbes_rank": 3,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 450,
+        "ein": "94-3269827",
+        "note": "Larry Ellison Foundation: $70M/year recent, $450M cumulative",
+        "url": "https://projects.propublica.org/nonprofits/organizations/943269827"
+      },
+      "sec_form4": {
+        "status": "partial",
+        "note": "Some stock gifts to foundation",
+        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000930545&type=4&dateb=&owner=include&count=40"
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 880,
+        "sources": [
+          "ProPublica 990-PF",
+          "Ellison Medical Foundation"
+        ],
+        "note": "EMF $430M + LEF $450M",
+        "url": "https://projects.propublica.org/nonprofits/organizations/943269827"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 270,
+        "sources": [
+          "USC $200M",
+          "IDF $27M",
+          "Wildlife $50M"
+        ],
+        "url": "https://keck.usc.edu/ellison-institute/"
+      }
+    },
+    "verifiable_giving_millions": 450,
+    "unverifiable_giving_millions": 700
+  },
+  {
     "rank": 170,
     "name": "Ernest Garcia II",
     "net_worth_billions": 11.0,
@@ -970,7 +1035,7 @@
     "notes": "1990 felony bank fraud conviction (Lincoln S&L). Son founded Carvana. Low-profile philanthropy through family foundation.",
     "scrooge_score": 99.0909090909091,
     "giving_rate_pct": 0.2727,
-    "scrooge_rank": 25,
+    "scrooge_rank": 26,
     "forbes_rank": 170
   },
   {
@@ -997,7 +1062,7 @@
     "notes": "In-kind donations significant. Baby2Baby board member since 2013. Criminal justice reform advocacy (not counted as charity).",
     "scrooge_score": 99.05882352941177,
     "giving_rate_pct": 0.4706,
-    "scrooge_rank": 26,
+    "scrooge_rank": 27,
     "forbes_rank": 168
   },
   {
@@ -1026,7 +1091,7 @@
     "notes": "Has NOT signed Giving Pledge. Known for tight control of business and limited philanthropy relative to wealth.",
     "scrooge_score": 99.02173913043478,
     "giving_rate_pct": 0.1956521739130435,
-    "scrooge_rank": 27,
+    "scrooge_rank": 28,
     "forbes_rank": 56,
     "verification": {
       "990_pf": {
@@ -1077,7 +1142,7 @@
     "notes": "Tchibo.",
     "scrooge_score": 98.99598393574297,
     "giving_rate_pct": 0.3012,
-    "scrooge_rank": 28,
+    "scrooge_rank": 29,
     "forbes_rank": 1623
   },
   {
@@ -1105,7 +1170,7 @@
     "notes": "Uniqlo/Fast Retailing.",
     "scrooge_score": 98.95833333333334,
     "giving_rate_pct": 0.3125,
-    "scrooge_rank": 29,
+    "scrooge_rank": 30,
     "forbes_rank": 2872
   },
   {
@@ -1128,7 +1193,7 @@
     "notes": "Livestream seller. Tax evasion scandal destroyed career. Fined $210M. Minimal philanthropy.",
     "scrooge_score": 98.95833333333334,
     "giving_rate_pct": 0.4167,
-    "scrooge_rank": 30,
+    "scrooge_rank": 31,
     "forbes_rank": 455
   },
   {
@@ -1150,7 +1215,7 @@
     "notes": "Auchan founder.",
     "scrooge_score": 98.88888888888889,
     "giving_rate_pct": 0.3333,
-    "scrooge_rank": 31,
+    "scrooge_rank": 32,
     "forbes_rank": 2680
   },
   {
@@ -1179,7 +1244,7 @@
     "notes": "Dallas Cowboys owner.",
     "scrooge_score": 98.85057471264368,
     "giving_rate_pct": 0.3448,
-    "scrooge_rank": 32,
+    "scrooge_rank": 33,
     "forbes_rank": 1224
   },
   {
@@ -1205,7 +1270,7 @@
     "notes": "Chairman of Foshan Haitian - China's largest soy sauce maker. Over 300 food products. Named Outstanding Entrepreneur of Guangdong Province.",
     "scrooge_score": 98.82352941176471,
     "giving_rate_pct": 0.2941,
-    "scrooge_rank": 33,
+    "scrooge_rank": 34,
     "forbes_rank": 202
   },
   {
@@ -1227,7 +1292,7 @@
     "notes": "Former IBM CEO.",
     "scrooge_score": 98.82352941176471,
     "giving_rate_pct": 0.5882,
-    "scrooge_rank": 34,
+    "scrooge_rank": 35,
     "forbes_rank": 865
   },
   {
@@ -1253,7 +1318,7 @@
     "notes": "Did NOT sign Giving Pledge. Large pledges but actual disbursement lower. 2025 Hurun: Rs 386 crore annual giving.",
     "scrooge_score": 98.80952380952381,
     "giving_rate_pct": 0.2976190476190476,
-    "scrooge_rank": 35,
+    "scrooge_rank": 36,
     "forbes_rank": 36,
     "verification": {
       "990_pf": {
@@ -1312,7 +1377,7 @@
     "notes": "Aldi Nord and Trader Joe's owner. Son of Aldi co-founder. Extremely private. Father was kidnapped 1971. Family avoids publicity entirely.",
     "scrooge_score": 98.7864077669903,
     "giving_rate_pct": 0.2427,
-    "scrooge_rank": 36,
+    "scrooge_rank": 37,
     "forbes_rank": 203
   },
   {
@@ -1337,7 +1402,7 @@
     "notes": "Did NOT sign Giving Pledge. Canada's richest person. Major art collector. Philanthropy modest relative to $71B wealth.",
     "scrooge_score": 98.76760563380282,
     "giving_rate_pct": 0.493,
-    "scrooge_rank": 37,
+    "scrooge_rank": 38,
     "forbes_rank": 110
   },
   {
@@ -1359,7 +1424,7 @@
     "notes": "Roivant Sciences. Political figure.",
     "scrooge_score": 98.75,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 38,
+    "scrooge_rank": 39,
     "forbes_rank": 643
   },
   {
@@ -1384,73 +1449,8 @@
     "notes": "Aldi S\u00fcd heirs. Legendary privacy like Aldi Nord family. Father Karl Sr. died 2014.",
     "scrooge_score": 98.68421052631578,
     "giving_rate_pct": 0.2632,
-    "scrooge_rank": 39,
-    "forbes_rank": 317
-  },
-  {
-    "rank": 3,
-    "name": "Larry Ellison",
-    "net_worth_billions": 247.0,
-    "country": "United States",
-    "source_of_wealth": "Oracle",
-    "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 1150,
-    "giving_breakdown": {
-      "ellison_medical_foundation": 430,
-      "larry_ellison_foundation": 450,
-      "usc_cancer_center": 200,
-      "friends_of_idf": 27,
-      "wildlife_conservation": 50,
-      "other": 43,
-      "notes": "VERIFIED Jan 2026: Ellison Medical Foundation $430M (closed 2013). Larry Ellison Foundation ~$450M cumulative. USC $200M. IDF $27M. Wildlife $50M."
-    },
-    "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/943269827",
-      "https://keck.usc.edu/ellison-institute/"
-    ],
-    "giving_pledge_signed": true,
-    "years_as_billionaire": 37,
-    "notes": "Signed Giving Pledge. Recently pledged 95% of fortune. Current giving low relative to wealth but accelerating.",
-    "scrooge_score": 98.66975130133025,
-    "giving_rate_pct": 0.465587044534413,
     "scrooge_rank": 40,
-    "forbes_rank": 3,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 450,
-        "ein": "94-3269827",
-        "note": "Larry Ellison Foundation: $70M/year recent, $450M cumulative",
-        "url": "https://projects.propublica.org/nonprofits/organizations/943269827"
-      },
-      "sec_form4": {
-        "status": "partial",
-        "note": "Some stock gifts to foundation",
-        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000930545&type=4&dateb=&owner=include&count=40"
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 880,
-        "sources": [
-          "ProPublica 990-PF",
-          "Ellison Medical Foundation"
-        ],
-        "note": "EMF $430M + LEF $450M",
-        "url": "https://projects.propublica.org/nonprofits/organizations/943269827"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 270,
-        "sources": [
-          "USC $200M",
-          "IDF $27M",
-          "Wildlife $50M"
-        ],
-        "url": "https://keck.usc.edu/ellison-institute/"
-      }
-    },
-    "verifiable_giving_millions": 450,
-    "unverifiable_giving_millions": 700
+    "forbes_rank": 317
   },
   {
     "rank": 43,
