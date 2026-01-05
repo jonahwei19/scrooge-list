@@ -240,7 +240,35 @@ The v3 methodology makes key distinctions:
 2. **EXTERNAL vs SELF-CONTROLLED** — DAF transfers to the billionaire's own DAF don't count as charity
 3. **FOUNDATION ASSETS vs GRANTS** — A $10B foundation that grants $50M/year isn't $10B of giving
 
-Example: Elon Musk's foundation has $14B in assets but grants 78% to entities he controls. Actual external giving: ~$150M.
+Example: Elon Musk's foundation has $14B in assets but grants 78% to entities he controls. Actual external giving: ~$270M.
+
+## Cross-Validation Methods
+
+To catch placeholder estimates and verify accuracy, we use multiple approaches:
+
+### 1. Multi-Source Triangulation
+Each estimate should be verifiable from 2+ independent sources:
+- **990-PF filings** (ProPublica) — foundation grants, highly reliable
+- **News coverage** (Chronicle of Philanthropy, Forbes, news sites) — announced gifts
+- **Foundation websites** — self-reported totals
+- **SEC filings** — stock donations via Form 4
+
+### 2. Red Flags for Fake Estimates
+- Round numbers ($100M, $500M) often indicate placeholders
+- No source URLs in the data
+- Giving rate that doesn't match peer comparisons
+- Foundation assets cited instead of grants disbursed
+
+### 3. Peer Comparison
+Compare giving rates within wealth brackets:
+- **$100B+ club**: Gates (106%), Buffett (41%), Zuckerberg (3.4%), Bezos (1.7%), Musk (0.06%)
+- **Giving Pledge signers** should average higher than non-signers
+
+### 4. Foundation-Level Verification
+For US billionaires, we can verify via 990-PF:
+- Total grants paid (not assets)
+- Grant recipients (DAFs vs operating charities)
+- Payout rate (should be ≥5%)
 
 ## Limitations
 
