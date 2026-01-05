@@ -3184,6 +3184,167 @@ VERIFICATION_DATA = {
         },
         "sources": [],
         "giving_pledge": "no"
+    },
+    # Batch 19: Robin Zeng, Israel Englander, Jerry Jones, Tadashi Yanai, Zhang Yiming, Zhong Shanshan, Lukas Walton, Eric Schmidt
+    "Robin Zeng": {
+        "total_lifetime_giving_millions": 200,
+        "giving_breakdown": {
+            "sjtu_stock_donation_2021": 206,  # CNY 1.37B = $206M, largest SJTU gift ever
+            "ningde_cdc_2022": 7,  # CNY 50M medical infrastructure
+            "henan_flood_2021": 4,  # CNY 25M
+            "notes": "VERIFIED Jan 2026: CATL founder (~$50B). Dec 2021: 2M CATL shares ($206M) to Shanghai Jiao Tong University - 3rd largest to any Chinese university. Robin Zeng Educational Foundation (2021) at SJTU. Hurun 2022 #6 (CNY 1.39B). No major donations 2023-2024. Honorary Dean of SJTU Puyuan Future Technology Institute."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "CATL Shenzhen-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 200, "note": "SJTU announcement + Hurun 2022 #6 ranking", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 200, "note": "SJTU stock donation widely covered Dec 2021, Hurun 2022 #6", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Israel Englander": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "weill_cornell_medicine": 50,  # Named institute, two departments, transformational 2023 gift
+            "jewish_orgs_2006": 20,  # Major giving year
+            "fidelity_daf": 12,  # DAF deposits
+            "arts_icp_museums": 10,
+            "other_ongoing": 8,
+            "notes": "VERIFIED Jan 2026: Millennium Management founder (~$19B). Englander Foundation (EIN 13-3640833) since 1992 - modest assets. Heavy DAF use (Fidelity, 138 Foundation). Major Weill Cornell donor: Englander Institute for Precision Medicine (2015), two named departments (2023 'transformational' gift). Met Council board. ICP chair (wife Caryl). Forbes philanthropy score 1/5 - lowest. NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 0.4, "ein": "13-3640833", "note": "Englander Foundation Inc: tiny ($114K assets, $423K disbursements 2024). Main giving via DAFs.", "url": "https://projects.propublica.org/nonprofits/organizations/133640833"},
+            "sec_form4": {"status": "not_found", "note": "Millennium private", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 100, "note": "Named gifts (Weill Cornell, Jewish orgs), but DAF opacity limits verification", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 100, "note": "Weill Cornell gifts covered, but amounts undisclosed. Forbes 1/5 philanthropy score.", "url": None}
+        },
+        "sources": ["https://projects.propublica.org/nonprofits/organizations/133640833"],
+        "giving_pledge": "no"
+    },
+    "Jerry Jones": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "medal_of_honor_museum": 20,
+            "arkansas_university": 11,  # $10.65M + land
+            "catholic_high_school": 10,
+            "hope_lodge_cancer": 7.5,
+            "smu_arts": 5,
+            "arlington_youth_33yr": 16.5,  # $500K/yr commitment
+            "salvation_army_annual": 15,  # ~$500K/yr for 30 years
+            "disaster_relief": 1,
+            "notes": "VERIFIED Jan 2026: Dallas Cowboys owner (~$15B). Gene and Jerry Jones Family-Dallas Cowboys Charities (EIN 75-2808490) ~$9M/yr disbursements. 29-year Salvation Army partnership (helped raise $3B nationally). Medal of Honor Museum $20M (2021). Arkansas: $10.65M to alma mater. Arlington Youth: $16.5M over 33 years. Order of Distinguished Auxiliary Service (2025) - Salvation Army's highest award."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 9, "ein": "75-2808490", "note": "Gene and Jerry Jones Family-Dallas Cowboys Charities: $9M charitable disbursements (2024)", "url": "https://projects.propublica.org/nonprofits/organizations/752808490"},
+            "sec_form4": {"status": "not_applicable", "note": "Cowboys privately held", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 100, "note": "Named gifts documented: Medal of Honor $20M, Arkansas $11M, Hope Lodge $7.5M", "url": "https://projects.propublica.org/nonprofits/organizations/752808490"},
+            "news_verified": {"status": "found", "amount_millions": 100, "note": "Salvation Army partnership, university gifts widely covered", "url": None}
+        },
+        "sources": ["https://projects.propublica.org/nonprofits/organizations/752808490"],
+        "giving_pledge": "no"
+    },
+    "Tadashi Yanai": {
+        "total_lifetime_giving_millions": 340,
+        "giving_breakdown": {
+            "yanai_foundation_scholarships": 160,  # Since 2015, 310 students
+            "kyoto_university_medical": 94,  # 10B yen over 10 years (Nobel laureates Honjo, Yamanaka)
+            "ucla_yanai_initiative": 59,
+            "waseda_murakami_library": 11,
+            "tohoku_tsunami_2011": 12,
+            "waseda_other": 5.5,
+            "unhcr_rohingya": 1,
+            "notes": "VERIFIED Jan 2026: Fast Retailing/Uniqlo founder (~$40B). Yanai Tadashi Foundation (2015): full scholarships to top US/UK universities, 310 students funded. Kyoto U: $94M for Nobel laureates' research (cancer immunotherapy, iPS cells). UCLA: $59M for Japanese humanities. Forbes Asia Heroes of Philanthropy 2020, 2024. Distinguish from UNIQLO corporate giving (UNHCR, MoMA)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Japanese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Fast Retailing Tokyo-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 340, "note": "Yanai Foundation + university announcements + Forbes Asia lists", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 340, "note": "Forbes Asia Heroes 2020/2024, UCLA/Kyoto/Waseda gifts documented", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Zhang Yiming": {
+        "total_lifetime_giving_millions": 200,
+        "giving_breakdown": {
+            "fangmei_education_fund": 106,  # 500M + 200M yuan
+            "nankai_university": 42,  # 100M + 200M yuan
+            "covid_relief_personal": 24,  # 100M yuan + $10M therapeutics accelerator
+            "minerva_schools": 10,
+            "hometown_high_school": 1.4,
+            "notes": "VERIFIED Jan 2026: ByteDance founder (~$49B, China's richest). Fangmei Education Development Fund (2021) named after grandmothers - $106M for Longyan education. Nankai University: $42M total (with co-founder Liang Rubo). COVID: $24M personal (distinct from ByteDance $60M+ corporate). Hurun 2021 #8, 2024 #6. Private, low-profile giving style."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "ByteDance private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 200, "note": "Fangmei Fund announcements, Hurun rankings", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 200, "note": "Hurun 2021 #8, 2024 #6. Fangmei Fund and Nankai gifts covered.", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Zhong Shanshan": {
+        "total_lifetime_giving_millions": 10,
+        "giving_breakdown": {
+            "nongfu_spring_disaster_relief": 5,  # Wenchuan 2008 + various
+            "other_corporate_csr": 5,
+            "notes": "VERIFIED Jan 2026: Nongfu Spring founder (~$60B, was China's richest 2021). ABSENT from Hurun Philanthropy List despite being China's richest for 4+ years - remarkable. 2024: Pledged 40B yuan ($5.5B) for Qiantang University over 10 years - but this is a PLEDGE not completed giving. Only documented actual giving: Nongfu corporate donations (2008 Wenchuan earthquake 17M yuan goods). 'Lone Wolf' nickname extends to philanthropy - minimal or private giving."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Nongfu Spring Hong Kong-listed", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": 0, "note": "No foundation found, absent from Hurun Philanthropy rankings", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 10, "note": "Qiantang U pledge (2024) is future commitment. Historical giving minimal.", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Lukas Walton": {
+        "total_lifetime_giving_millions": 500,
+        "giving_breakdown": {
+            "builders_initiative_grants": 300,  # ~$100M/yr for several years
+            "breakthrough_energy_catalyst": 150,  # 5-year $150M commitment
+            "climate_imperative": 100,  # 5-year $100M commitment
+            "crystal_bridges": 10,
+            "notes": "VERIFIED Jan 2026: Walmart heir (~$40B). Builders Initiative (EIN 82-1503941): ~$1.65B assets, $99M disbursements 2024. Environment Committee Chair at Walton Family Foundation. $15B commitment to Builders Vision (family office). Major climate philanthropist: $150M to Breakthrough Energy, $100M to Climate Imperative. NOT Giving Pledge - no Walton has signed."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 99, "ein": "82-1503941", "note": "Builders Initiative: $1.65B assets, $99M disbursements (2024)", "url": "https://projects.propublica.org/nonprofits/organizations/821503941/202513009349100326/full"},
+            "sec_form4": {"status": "found", "note": "Walmart stock gifts to Builders Initiative tracked", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 500, "note": "Builders Initiative 990-PF + named commitments (Breakthrough, Climate Imperative)", "url": "https://projects.propublica.org/nonprofits/organizations/821503941/202513009349100326/full"},
+            "news_verified": {"status": "found", "amount_millions": 500, "note": "$15B Builders Vision commitment, Breakthrough Energy widely covered", "url": None}
+        },
+        "sources": ["https://projects.propublica.org/nonprofits/organizations/821503941/202513009349100326/full"],
+        "giving_pledge": "no"
+    },
+    "Eric Schmidt": {
+        "total_lifetime_giving_millions": 2000,
+        "giving_breakdown": {
+            "schmidt_fund_strategic_innovation": 600,  # $195M/yr grants
+            "schmidt_family_foundation": 400,  # Ongoing, 11th Hour Project
+            "broad_institute": 150,  # Endowment gift 2021
+            "schmidt_futures_ai": 400,  # $125M + $148M + other AI
+            "princeton": 30,  # Multiple gifts
+            "yale": 15,
+            "uc_berkeley": 13,
+            "schmidt_ocean_institute": 100,  # Operating foundation
+            "rise_program": 100,  # $1B commitment with Rhodes Trust
+            "other_universities": 50,
+            "notes": "VERIFIED Jan 2026: Former Google CEO (~$30B). Three foundations: Schmidt Family Foundation (EIN 20-4170342), Schmidt Fund for Strategic Innovation (EIN 46-3460261), Schmidt Ocean Institute (EIN 26-4562328). Pre-2019: ~$1B given. 2019: $1.3B (#2 US philanthropist that year). $1B Rise program with Rhodes Trust. Broad Institute $150M. Major AI/science funder. NOT Giving Pledge despite peer pressure."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 195, "ein": "46-3460261", "note": "Schmidt Fund for Strategic Innovation: $195M grants (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full"},
+            "sec_form4": {"status": "not_found", "note": "No longer at Google, most giving from prior wealth", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2000, "note": "Three foundations + named gifts. $1B pre-2019, $1.3B in 2019.", "url": "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full"},
+            "news_verified": {"status": "found", "amount_millions": 2000, "note": "2019 #2 US philanthropist, Broad/Rise/AI gifts widely covered", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full",
+            "https://projects.propublica.org/nonprofits/organizations/204170342/202513219349104316/full",
+            "https://projects.propublica.org/nonprofits/organizations/264562328/202513199349101171/full"
+        ],
+        "giving_pledge": "no"
     }
 }
 
