@@ -367,6 +367,66 @@ VERIFICATION_DATA = {
             "https://time.com/collections/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/",
             "https://www.insidephilanthropy.com/find-a-grant/grants-b/ballmer-group"
         ]
+    },
+    "Changpeng Zhao": {
+        "total_lifetime_giving_millions": 35,
+        "giving_breakdown": {
+            "binance_charity": 30,
+            "vitalik_biotech": 10,
+            "earthquake_relief": 0.6,
+            "covid_supplies": 2.4,
+            "notes": "VERIFIED Jan 2026: Binance Charity $23M through 2022 + ~$7M since. Personal donations: $10M Vitalik biotech (2025), $2.4M COVID (2020), misc. Plans '99% pledge' but not signed Giving Pledge. Actual giving ~0.05% of $65B wealth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Crypto billionaire - no US foundation or 990-PF"},
+            "sec_form4": {"status": "not_applicable", "note": "Binance not US-listed"},
+            "foundation_reports": {"status": "found", "amount_millions": 30, "sources": ["Binance Charity Foundation"], "note": "Binance Charity $30M+ cumulative (pools user/corporate donations)"},
+            "news_verified": {"status": "found", "amount_millions": 15, "sources": ["CoinDesk", "CryptoNews", "Benzinga"]}
+        },
+        "sources": [
+            "https://www.binance.charity/",
+            "https://www.coindesk.com/"
+        ]
+    },
+    "Robert Pera": {
+        "total_lifetime_giving_millions": 2,
+        "giving_breakdown": {
+            "st_jude": 0.1,
+            "grizzlies_matching": 1,
+            "food_bank": 0.1,
+            "other": 0.8,
+            "notes": "VERIFIED Jan 2026: Robert J Pera Foundation (EIN 87-1254834) has $0 assets and $0 grants since 2022. Personal verified giving ~$1-2M. Grizzlies Foundation ($54M since 2001) is team-funded, not personal. Ubiquiti equipment donations unquantified."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 0, "ein": "87-1254834", "note": "Robert J Pera Foundation: $0 assets, $0 grants since 2022 founding"},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts found"},
+            "foundation_reports": {"status": "found", "amount_millions": 0, "sources": ["ProPublica 990-PF"], "note": "Foundation is empty shell - $0 activity"},
+            "news_verified": {"status": "found", "amount_millions": 2, "sources": ["NBA.com", "ESPN", "Commercial Appeal"]}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/871254834",
+            "https://www.insidephilanthropy.com/guide-to-individual-donors/robert-pera"
+        ]
+    },
+    "Ken Fisher": {
+        "total_lifetime_giving_millions": 12,
+        "giving_breakdown": {
+            "johns_hopkins": 7.5,
+            "humboldt_state": 3.5,
+            "san_mateo_library": 0.5,
+            "other": 0.5,
+            "notes": "VERIFIED Jan 2026: No foundation exists - Forbes score 1 (lowest). Hopkins $7.5M, Humboldt $3.5M, library $500K. Plans posthumous giving (within 20 years of death) but rejected Giving Pledge. Called himself 'not a fan of philanthropy'."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Fisher foundation exists - no 990-PF filings"},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts found"},
+            "foundation_reports": {"status": "not_applicable", "note": "Does not have formal charitable vehicle"},
+            "news_verified": {"status": "found", "amount_millions": 12, "sources": ["Forbes", "Inside Philanthropy", "Cal Poly Humboldt"]}
+        },
+        "sources": [
+            "https://www.insidephilanthropy.com/guide-to-individual-donors/ken-fisher",
+            "https://www.forbes.com/profile/ken-fisher/"
+        ]
     }
 }
 
