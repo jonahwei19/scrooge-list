@@ -1350,46 +1350,66 @@
         function openProfile(d) {
             try {
             const modal = document.getElementById('profile-modal');
-            const score = d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score;
+            if (!modal) {
+                console.error('Modal element not found');
+                return;
+            }
+            const score = d.adjusted_score !== undefined ? d.adjusted_score : (d.scrooge_score || 0);
             const giving = d.total_lifetime_giving_millions || 0;
 
-            // Set header info
-            document.getElementById('modal-name').textContent = d.name;
-            document.getElementById('modal-country').textContent = d.country;
-            document.getElementById('modal-source').textContent = d.source_of_wealth || 'Various';
-            document.getElementById('modal-networth').textContent = `$${d.net_worth_billions.toFixed(1)}B`;
-            document.getElementById('modal-giving').textContent = giving >= 1000 ? `$${(giving/1000).toFixed(1)}B` : `$${giving.toFixed(0)}M`;
-            document.getElementById('modal-score').textContent = score.toFixed(1);
+            // Set header info - with null checks
+            const nameEl = document.getElementById('modal-name');
+            const countryEl = document.getElementById('modal-country');
+            const sourceEl = document.getElementById('modal-source');
+            const networthEl = document.getElementById('modal-networth');
+            const givingEl = document.getElementById('modal-giving');
+            const scoreEl = document.getElementById('modal-score');
+
+            if (nameEl) nameEl.textContent = d.name || 'Unknown';
+            if (countryEl) countryEl.textContent = d.country || '';
+            if (sourceEl) sourceEl.textContent = d.source_of_wealth || 'Various';
+            if (networthEl) networthEl.textContent = `$${(d.net_worth_billions || 0).toFixed(1)}B`;
+            if (givingEl) givingEl.textContent = giving >= 1000 ? `$${(giving/1000).toFixed(1)}B` : `$${giving.toFixed(0)}M`;
+            if (scoreEl) scoreEl.textContent = score.toFixed(1);
 
             // Data confidence
             const confidence = getDataConfidence(d);
             const confLabel = getConfidenceLabel(confidence);
             const confEl = document.getElementById('modal-confidence');
-            confEl.textContent = confLabel.label;
-            confEl.style.color = confLabel.color;
+            if (confEl) {
+                confEl.textContent = confLabel.label;
+                confEl.style.color = confLabel.color;
+            }
 
             // Forbes link and image
-            const forbesUrl = getForbesUrl(d.name);
-            document.getElementById('modal-forbes-link').href = forbesUrl;
+            const forbesUrl = getForbesUrl(d.name || '');
+            const forbesLinkEl = document.getElementById('modal-forbes-link');
+            if (forbesLinkEl) forbesLinkEl.href = forbesUrl;
 
             // Use Forbes image, custom image, or placeholder
             const photoEl = document.getElementById('modal-photo');
-            const placeholderUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(d.name)}&size=120&background=232323&color=fff`;
+            const placeholderUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(d.name || 'Unknown')}&size=120&background=232323&color=fff`;
 
-            if (d.image_url) {
-                // Use custom image URL if provided
-                photoEl.src = d.image_url;
-            } else {
-                // Try Forbes image (pattern: first-last or first-middle-last)
-                const forbesImageUrl = getForbesImageUrl(d.name);
-                photoEl.src = forbesImageUrl;
+            if (photoEl) {
+                if (d.image_url) {
+                    // Use custom image URL if provided
+                    photoEl.src = d.image_url;
+                } else {
+                    // Try Forbes image (pattern: first-last or first-middle-last)
+                    const forbesImageUrl = getForbesImageUrl(d.name || '');
+                    photoEl.src = forbesImageUrl;
+                }
+                photoEl.onerror = function() {
+                    this.src = placeholderUrl;
+                };
             }
-            photoEl.onerror = function() {
-                this.src = placeholderUrl;
-            };
 
             // Build giving pipeline by type
             const pipelineEl = document.getElementById('modal-giving-pipeline');
+            if (!pipelineEl) {
+                console.error('Pipeline element not found');
+                return;
+            }
             const breakdown = d.giving_breakdown || {};
             const verification = d.verification || {};
 
@@ -1447,8 +1467,12 @@
 
             // Build data source summary
             const verificationEl = document.getElementById('modal-verification');
+            if (!verificationEl) {
+                console.error('Verification element not found');
+                return;
+            }
 
-            if (verification) {
+            if (verification && Object.keys(verification).length > 0) {
                 const sourceLabels = {
                     '990_pf': '990-PF Filings',
                     'sec_form4': 'SEC Form 4',
@@ -1546,31 +1570,35 @@
             const notesSection = document.getElementById('modal-notes-section');
             const notesEl = document.getElementById('modal-notes');
             const notes = d.notes || (d.giving_breakdown && d.giving_breakdown.notes) || '';
-            if (notes) {
-                notesSection.style.display = 'block';
-                notesEl.textContent = notes;
-            } else {
-                notesSection.style.display = 'none';
+            if (notesSection && notesEl) {
+                if (notes) {
+                    notesSection.style.display = 'block';
+                    notesEl.textContent = notes;
+                } else {
+                    notesSection.style.display = 'none';
+                }
             }
 
             // Sources
             const sourcesEl = document.getElementById('modal-sources');
             const sources = d.sources || [];
-            if (sources.length > 0) {
-                sourcesEl.innerHTML = sources.map(url => {
-                    const type = getSourceType(url);
-                    const displayUrl = url.length > 60 ? url.substring(0, 60) + '...' : url;
-                    return `<li><span class="source-type">${type}</span><a href="${url}" target="_blank">${displayUrl}</a></li>`;
-                }).join('');
-            } else {
-                sourcesEl.innerHTML = '<li style="color: var(--text-secondary)">No source URLs available - estimate may be placeholder</li>';
+            if (sourcesEl) {
+                if (sources.length > 0) {
+                    sourcesEl.innerHTML = sources.map(url => {
+                        const type = getSourceType(url);
+                        const displayUrl = url.length > 60 ? url.substring(0, 60) + '...' : url;
+                        return `<li><span class="source-type">${type}</span><a href="${url}" target="_blank">${displayUrl}</a></li>`;
+                    }).join('');
+                } else {
+                    sourcesEl.innerHTML = '<li style="color: var(--text-secondary)">No source URLs available - estimate may be placeholder</li>';
+                }
             }
 
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
             } catch (error) {
                 console.error('Error opening profile:', error);
-                alert('Error opening profile: ' + error.message);
+                alert('Error opening profile: ' + error.message + '\n\nData: ' + JSON.stringify(d, null, 2).substring(0, 500));
             }
         }
 
