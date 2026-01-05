@@ -280,6 +280,13 @@
                     </label>
                     <small style="color: var(--text-secondary)">Adjust expectations for illiquid wealth (founders with concentrated stock)</small>
                 </div>
+                <div class="factor-item">
+                    <label>
+                        <span>Size-Adjusted Ranking</span>
+                        <input type="checkbox" id="size-adjusted" onchange="recalculateScores()">
+                    </label>
+                    <small style="color: var(--text-secondary)">Weight by absolute wealth — a $200B billionaire giving 1% is worse than a $2B billionaire giving 1%</small>
+                </div>
             </div>
             <div class="filter-row">
                 <select id="country-filter" onchange="filterData()">
@@ -316,6 +323,9 @@
             <p>The Scrooge Score (0-100) measures how much a billionaire is undergiving relative to their capacity. Higher scores indicate more Scrooge-like behavior.</p>
             <p><strong>Formula:</strong> <code style="background: var(--bg-card); padding: 3px 8px; border-radius: 4px;">Score = 100 × (1 - Giving Ratio)</code></p>
             <p>Where Giving Ratio = Total Lifetime Giving / (Net Worth × Liquidity Factor)</p>
+
+            <h3 style="margin-top: 20px;">Size-Adjusted Ranking</h3>
+            <p>When enabled, scores are weighted by absolute wealth using log₁₀(net worth). This surfaces mega-billionaires who give a low percentage — someone with $200B giving 1% appears worse than someone with $2B giving 1%, because the absolute "missing" philanthropy is vastly larger.</p>
 
             <h3 style="margin-top: 20px;">Key Distinctions</h3>
             <ul style="color: var(--text-secondary); margin-left: 20px; margin-top: 10px;">
@@ -396,7 +406,9 @@
             // Score = 100 × (1 - Giving Ratio)
             // Giving Ratio = Total Lifetime Giving / (Net Worth × Liquidity Factor)
             const applyLiquidity = document.getElementById('apply-liquidity').checked;
+            const sizeAdjusted = document.getElementById('size-adjusted').checked;
 
+            // First pass: calculate base scores
             rawData.forEach(d => {
                 const liquidity = applyLiquidity ? (d.liquidity_factor || 0.3) : 1.0;
                 const liquidWealth = d.net_worth_billions * 1000; // Convert to millions
@@ -405,11 +417,32 @@
 
                 if (adjustedWealth > 0) {
                     const givingRatio = giving / adjustedWealth;
-                    d.adjusted_score = Math.max(0, Math.min(100, (1 - givingRatio) * 100));
+                    d.base_score = Math.max(0, Math.min(100, (1 - givingRatio) * 100));
                 } else {
-                    d.adjusted_score = d.scrooge_score || 50;
+                    d.base_score = d.scrooge_score || 50;
                 }
             });
+
+            // Second pass: apply size adjustment if enabled
+            if (sizeAdjusted) {
+                // Size-adjusted score: base_score × log10(net_worth_billions + 1)
+                // This means someone with $200B wealth gets ~2.3x multiplier vs someone with $2B (~0.5x)
+                rawData.forEach(d => {
+                    const sizeMultiplier = Math.log10(d.net_worth_billions + 1);
+                    d.adjusted_score = d.base_score * sizeMultiplier;
+                });
+                // Normalize to 0-100 scale
+                const maxScore = Math.max(...rawData.map(d => d.adjusted_score));
+                if (maxScore > 0) {
+                    rawData.forEach(d => {
+                        d.adjusted_score = (d.adjusted_score / maxScore) * 100;
+                    });
+                }
+            } else {
+                rawData.forEach(d => {
+                    d.adjusted_score = d.base_score;
+                });
+            }
 
             filterData();
         }
