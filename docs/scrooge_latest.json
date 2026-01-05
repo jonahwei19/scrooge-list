@@ -145,6 +145,65 @@
     }
   },
   {
+    "rank": 1496,
+    "name": "Jensen Huang",
+    "net_worth_billions": 127.0,
+    "country": "United States",
+    "source_of_wealth": "Nvidia",
+    "liquidity_factor": 0.4,
+    "total_lifetime_giving_millions": 115,
+    "giving_breakdown": {
+      "oregon_state": 55,
+      "stanford": 30,
+      "california_college_arts": 22.5,
+      "oneida_baptist": 2,
+      "johns_hopkins": 1,
+      "other": 4.5,
+      "notes": "VERIFIED Jan 2026: Foundation has $10B assets but 2/3 goes to DAFs. Actual non-DAF grants ~$115M. OSU $55M, Stanford $30M, CCA $22.5M."
+    },
+    "sources": [
+      "https://projects.propublica.org/nonprofits/organizations/203605916",
+      "https://www.bloomberg.com/news/articles/2024-06-12/nvidia-ceo-huang-charity-foundation"
+    ],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 10,
+    "notes": "Foundation has $10B in assets but most disbursements go to DAFs. Actual charity ~$250M. Has not signed Giving Pledge.",
+    "scrooge_score": 99.77362204724409,
+    "giving_rate_pct": 0.09055118110236221,
+    "scrooge_rank": 4,
+    "forbes_rank": 1496,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 335,
+        "ein": "20-3605916",
+        "note": "Jen-Hsun & Lori Huang Foundation: $335M disbursed but ~$220M to DAFs"
+      },
+      "sec_form4": {
+        "status": "found",
+        "note": "Nvidia stock gifts to foundation tracked"
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 115,
+        "sources": [
+          "ProPublica 990-PF"
+        ],
+        "note": "Non-DAF grants only ~$115M (2007-2024)"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 115,
+        "sources": [
+          "Bloomberg",
+          "OSU",
+          "Stanford",
+          "CCA"
+        ]
+      }
+    }
+  },
+  {
     "rank": 164,
     "name": "Vlad Tenev",
     "net_worth_billions": 2.1,
@@ -167,7 +226,7 @@
     "notes": "Bulgarian-American. Co-founder with Baiju Bhatt. GameStop saga controversy. Young billionaire with minimal philanthropy track record.",
     "scrooge_score": 99.72789115646259,
     "giving_rate_pct": 0.0952,
-    "scrooge_rank": 4,
+    "scrooge_rank": 5,
     "forbes_rank": 164
   },
   {
@@ -195,7 +254,7 @@
     "notes": "Ofer Global. Israeli-born. Monaco.",
     "scrooge_score": 99.69604863221885,
     "giving_rate_pct": 0.1064,
-    "scrooge_rank": 5,
+    "scrooge_rank": 6,
     "forbes_rank": 870
   },
   {
@@ -221,7 +280,7 @@
     "notes": "Renounced US citizenship 2011. Singapore richest person. Brazilian-born",
     "scrooge_score": 99.672131147541,
     "giving_rate_pct": 0.1639,
-    "scrooge_rank": 6,
+    "scrooge_rank": 7,
     "forbes_rank": 149
   },
   {
@@ -247,7 +306,7 @@
     "notes": "Did NOT sign Giving Pledge. Extremely low philanthropy. One of least generous tech billionaires.",
     "scrooge_score": 99.65277777777779,
     "giving_rate_pct": 0.1042,
-    "scrooge_rank": 7,
+    "scrooge_rank": 8,
     "forbes_rank": 95
   },
   {
@@ -277,7 +336,7 @@
     "notes": "VERIFIED Jan 2026: Inside Philanthropy calls him 'legendary Scrooge'. Foundation has $0 assets since 2015. Documented giving ~$25-35M. Dead last on Forbes Generosity Index.",
     "scrooge_score": 99.64285714285714,
     "giving_rate_pct": 0.14285714285714285,
-    "scrooge_rank": 8,
+    "scrooge_rank": 9,
     "forbes_rank": 1313,
     "verification": {
       "990_pf": {
@@ -331,7 +390,7 @@
     "notes": "Red Bull heir.",
     "scrooge_score": 99.63924963924964,
     "giving_rate_pct": 0.1263,
-    "scrooge_rank": 9,
+    "scrooge_rank": 10,
     "forbes_rank": 2941
   },
   {
@@ -357,7 +416,7 @@
     "notes": "CEO of Grupo M\u00e9xico, Mexico's largest mining corporation. Third largest copper producer globally. Extremely private.",
     "scrooge_score": 99.61661341853035,
     "giving_rate_pct": 0.0958,
-    "scrooge_rank": 10,
+    "scrooge_rank": 11,
     "forbes_rank": 179
   },
   {
@@ -382,7 +441,7 @@
     "notes": "Stanford engineer. Spun Carvana out of father's DriveTime. Very volatile wealth (stock swings).",
     "scrooge_score": 99.55555555555556,
     "giving_rate_pct": 0.1111,
-    "scrooge_rank": 11,
+    "scrooge_rank": 12,
     "forbes_rank": 171
   },
   {
@@ -408,7 +467,7 @@
     "notes": "Fisher Investments founder. Forbes columnist for 32 years. Known for frugality (drives same car 25+ years). Plans posthumous giving, minimal lifetime giving.",
     "scrooge_score": 99.55357142857143,
     "giving_rate_pct": 0.2232,
-    "scrooge_rank": 12,
+    "scrooge_rank": 13,
     "forbes_rank": 175
   },
   {
@@ -434,37 +493,8 @@
     "notes": "Sports mogul. Arsenal FC, LA Rams, Denver Nuggets. Real estate fortune.",
     "scrooge_score": 99.52380952380952,
     "giving_rate_pct": 0.1667,
-    "scrooge_rank": 13,
-    "forbes_rank": 504
-  },
-  {
-    "rank": 1496,
-    "name": "Jensen Huang",
-    "net_worth_billions": 127.0,
-    "country": "United States",
-    "source_of_wealth": "Nvidia",
-    "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 250,
-    "giving_breakdown": {
-      "oregon_state_university": 50,
-      "california_college_arts": 22.5,
-      "ucsf_ai_biomedical": 100,
-      "other_non_daf_grants": 77.5,
-      "daf_transfers_not_counted": 0,
-      "notes": "CORRECTED: Foundation has $9-10B in ASSETS but 2/3 to 3/4 of disbursements go to DAFs. 2024: $123M disbursed but ~$80M to DAFs. 2023: $46M disbursed, 75%+ to DAFs. Verifiable non-DAF grants: Oregon State $50M, CCA $22.5M, UCSF $100M. DAF transfers not counted as actual charity."
-    },
-    "sources": [
-      "https://www.cnbc.com/2025/06/12/nvidia-stock-jensen-huang-charitable-foundation.html",
-      "https://philanthropynewsdigest.org/news/nvidia-ceo-s-8-billion-foundation-awards-two-thirds-of-giving-to-dafs",
-      "https://fortune.com/2024/11/22/nvidia-stock-ceo-jensen-huang-charity-foundation-annual-giving-irs-rules/"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 10,
-    "notes": "Foundation has $10B in assets but most disbursements go to DAFs. Actual charity ~$250M. Has not signed Giving Pledge.",
-    "scrooge_score": 99.50787401574803,
-    "giving_rate_pct": 0.1969,
     "scrooge_rank": 14,
-    "forbes_rank": 1496
+    "forbes_rank": 504
   },
   {
     "rank": 51,
@@ -10574,21 +10604,56 @@
     "liquidity_factor": 0.4,
     "total_lifetime_giving_millions": 2800,
     "giving_breakdown": {
-      "dell_foundation_990pf_cumulative": 1497,
-      "direct_gifts": 1303,
-      "notes": "VERIFIED: 990-PF shows $1.497B cumulative from Michael & Susan Dell Foundation (2014-2023). Additional direct gifts."
+      "dell_foundation_cumulative": 2800,
+      "ut_austin_total": 200,
+      "dell_medical_school": 50,
+      "dell_childrens_medical": 90,
+      "charter_schools": 120,
+      "homelessness": 38,
+      "notes": "VERIFIED Jan 2026: Michael & Susan Dell Foundation 990-PF shows $2.8B cumulative grants (1999-2024). ~$175-220M/year recent. UT Austin $200M, Dell Medical School $50M."
     },
     "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/752653323",
-      "https://www.forbes.com/profile/michael-dell/"
+      "https://projects.propublica.org/nonprofits/organizations/364336415",
+      "https://www.dell.org/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 25,
     "notes": "Signed Giving Pledge 2010. $6.25B Trump Accounts pledge (Dec 2025) not yet disbursed. Actual lifetime giving ~$2.8B.",
     "scrooge_score": 93.51851851851852,
-    "giving_rate_pct": 2.5926,
+    "giving_rate_pct": 2.5925925925925926,
     "scrooge_rank": 441,
-    "forbes_rank": 18
+    "forbes_rank": 18,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 2800,
+        "ein": "36-4336415",
+        "note": "Michael & Susan Dell Foundation: $219M (2024), $172M (2023), $184M (2022)"
+      },
+      "sec_form4": {
+        "status": "found",
+        "note": "$3.6B stock gift to foundation in Dec 2023"
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 2800,
+        "sources": [
+          "ProPublica 990-PF",
+          "Dell Foundation"
+        ],
+        "note": "Foundation assets $7.77B, grants $2.8B cumulative"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 2800,
+        "sources": [
+          "TIME",
+          "Forbes",
+          "UT Austin",
+          "Inside Philanthropy"
+        ]
+      }
+    }
   },
   {
     "rank": 665,
@@ -16436,22 +16501,56 @@
     "liquidity_factor": 0.5,
     "total_lifetime_giving_millions": 5700,
     "giving_breakdown": {
-      "ballmer_group_philanthropy": 4000,
-      "personal_direct": 1700,
-      "notes": "Forbes: Ballmers have given $5.7B+. Chronicle of Philanthropy: $3B in last 5 years, $767M in 2024. #8 on Forbes top philanthropists."
+      "ballmer_group": 4000,
+      "university_of_oregon": 475,
+      "university_of_washington": 80,
+      "harvard": 85,
+      "blue_meridian_partners": 500,
+      "strivetogether": 175,
+      "la_clippers_community": 150,
+      "other": 235,
+      "notes": "VERIFIED Jan 2026: Ballmer Group (LLC, no 990-PF) has disbursed $4B+ since 2015. UO $475M (Ballmer Institute $425M), UW $80M, Harvard $85M. Forbes estimate $5.7B."
     },
     "sources": [
-      "https://www.forbes.com/profile/steve-ballmer/",
-      "https://www.philanthropy.com/news/power-couple-giving-the-10-year-journey-of-steve-and-connie-ballmer/",
+      "https://time.com/collections/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/",
       "https://www.insidephilanthropy.com/find-a-grant/grants-b/ballmer-group"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 20,
     "notes": "Signed Giving Pledge. One of fastest-growing philanthropies. Very active giver.",
     "scrooge_score": 90.57851239669421,
-    "giving_rate_pct": 4.7107,
+    "giving_rate_pct": 4.710743801652892,
     "scrooge_rank": 698,
-    "forbes_rank": 10
+    "forbes_rank": 10,
+    "verification": {
+      "990_pf": {
+        "status": "not_applicable",
+        "note": "Ballmer Group is LLC, not foundation - no 990-PF filings required"
+      },
+      "sec_form4": {
+        "status": "partial",
+        "note": "Some Microsoft stock gifts tracked"
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 4000,
+        "sources": [
+          "Ballmer Group",
+          "Inside Philanthropy"
+        ],
+        "note": "LLC structure - $4B+ disbursed since 2015"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 5700,
+        "sources": [
+          "TIME",
+          "Forbes",
+          "Chronicle of Philanthropy",
+          "60 Minutes"
+        ]
+      }
+    }
   },
   {
     "rank": 1516,

@@ -299,6 +299,74 @@ VERIFICATION_DATA = {
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/276598127"
         ]
+    },
+    "Jensen Huang": {
+        "total_lifetime_giving_millions": 115,
+        "giving_breakdown": {
+            "oregon_state": 55,
+            "stanford": 30,
+            "california_college_arts": 22.5,
+            "oneida_baptist": 2,
+            "johns_hopkins": 1,
+            "other": 4.5,
+            "notes": "VERIFIED Jan 2026: Foundation has $10B assets but 2/3 goes to DAFs. Actual non-DAF grants ~$115M. OSU $55M, Stanford $30M, CCA $22.5M."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 335, "ein": "20-3605916", "note": "Jen-Hsun & Lori Huang Foundation: $335M disbursed but ~$220M to DAFs"},
+            "sec_form4": {"status": "found", "note": "Nvidia stock gifts to foundation tracked"},
+            "foundation_reports": {"status": "found", "amount_millions": 115, "sources": ["ProPublica 990-PF"], "note": "Non-DAF grants only ~$115M (2007-2024)"},
+            "news_verified": {"status": "found", "amount_millions": 115, "sources": ["Bloomberg", "OSU", "Stanford", "CCA"]}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/203605916",
+            "https://www.bloomberg.com/news/articles/2024-06-12/nvidia-ceo-huang-charity-foundation"
+        ]
+    },
+    "Michael Dell": {
+        "total_lifetime_giving_millions": 2800,
+        "giving_breakdown": {
+            "dell_foundation_cumulative": 2800,
+            "ut_austin_total": 200,
+            "dell_medical_school": 50,
+            "dell_childrens_medical": 90,
+            "charter_schools": 120,
+            "homelessness": 38,
+            "notes": "VERIFIED Jan 2026: Michael & Susan Dell Foundation 990-PF shows $2.8B cumulative grants (1999-2024). ~$175-220M/year recent. UT Austin $200M, Dell Medical School $50M."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 2800, "ein": "36-4336415", "note": "Michael & Susan Dell Foundation: $219M (2024), $172M (2023), $184M (2022)"},
+            "sec_form4": {"status": "found", "note": "$3.6B stock gift to foundation in Dec 2023"},
+            "foundation_reports": {"status": "found", "amount_millions": 2800, "sources": ["ProPublica 990-PF", "Dell Foundation"], "note": "Foundation assets $7.77B, grants $2.8B cumulative"},
+            "news_verified": {"status": "found", "amount_millions": 2800, "sources": ["TIME", "Forbes", "UT Austin", "Inside Philanthropy"]}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/364336415",
+            "https://www.dell.org/"
+        ]
+    },
+    "Steve Ballmer": {
+        "total_lifetime_giving_millions": 5700,
+        "giving_breakdown": {
+            "ballmer_group": 4000,
+            "university_of_oregon": 475,
+            "university_of_washington": 80,
+            "harvard": 85,
+            "blue_meridian_partners": 500,
+            "strivetogether": 175,
+            "la_clippers_community": 150,
+            "other": 235,
+            "notes": "VERIFIED Jan 2026: Ballmer Group (LLC, no 990-PF) has disbursed $4B+ since 2015. UO $475M (Ballmer Institute $425M), UW $80M, Harvard $85M. Forbes estimate $5.7B."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Ballmer Group is LLC, not foundation - no 990-PF filings required"},
+            "sec_form4": {"status": "partial", "note": "Some Microsoft stock gifts tracked"},
+            "foundation_reports": {"status": "found", "amount_millions": 4000, "sources": ["Ballmer Group", "Inside Philanthropy"], "note": "LLC structure - $4B+ disbursed since 2015"},
+            "news_verified": {"status": "found", "amount_millions": 5700, "sources": ["TIME", "Forbes", "Chronicle of Philanthropy", "60 Minutes"]}
+        },
+        "sources": [
+            "https://time.com/collections/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/",
+            "https://www.insidephilanthropy.com/find-a-grant/grants-b/ballmer-group"
+        ]
     }
 }
 
