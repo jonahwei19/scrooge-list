@@ -271,49 +271,14 @@
         </div>
 
         <div class="controls">
-            <h3>Adjust Scrooge Score Weights</h3>
+            <h3>Filters &amp; Options</h3>
             <div class="factor-grid">
-                <div class="factor-item">
-                    <label>
-                        <span>Observable Giving Weight</span>
-                        <span class="factor-value" id="weight-observable-val">40%</span>
-                    </label>
-                    <input type="range" id="weight-observable" min="0" max="100" value="40" oninput="recalculateScores()">
-                </div>
-                <div class="factor-item">
-                    <label>
-                        <span>Tenure Penalty Weight</span>
-                        <span class="factor-value" id="weight-tenure-val">20%</span>
-                    </label>
-                    <input type="range" id="weight-tenure" min="0" max="100" value="20" oninput="recalculateScores()">
-                </div>
-                <div class="factor-item">
-                    <label>
-                        <span>Pledge Breach Penalty</span>
-                        <span class="factor-value" id="weight-pledge-val">20%</span>
-                    </label>
-                    <input type="range" id="weight-pledge" min="0" max="100" value="20" oninput="recalculateScores()">
-                </div>
-                <div class="factor-item">
-                    <label>
-                        <span>Red Flag Penalty</span>
-                        <span class="factor-value" id="weight-flags-val">20%</span>
-                    </label>
-                    <input type="range" id="weight-flags" min="0" max="100" value="20" oninput="recalculateScores()">
-                </div>
-                <div class="factor-item">
-                    <label>
-                        <span>Include Dark Estimates</span>
-                        <input type="checkbox" id="include-dark" onchange="recalculateScores()">
-                    </label>
-                    <small style="color: var(--text-secondary)">Add estimated DAF/LLC/anonymous giving to observable total</small>
-                </div>
                 <div class="factor-item">
                     <label>
                         <span>Apply Liquidity Discount</span>
                         <input type="checkbox" id="apply-liquidity" checked onchange="recalculateScores()">
                     </label>
-                    <small style="color: var(--text-secondary)">Adjust expectations for illiquid wealth</small>
+                    <small style="color: var(--text-secondary)">Adjust expectations for illiquid wealth (founders with concentrated stock)</small>
                 </div>
             </div>
             <div class="filter-row">
@@ -332,14 +297,13 @@
         <table id="scrooge-table">
             <thead>
                 <tr>
-                    <th onclick="sortTable('rank')">Rank</th>
+                    <th onclick="sortTable('scrooge_rank')">Rank</th>
                     <th onclick="sortTable('name')">Name</th>
                     <th onclick="sortTable('net_worth_billions')">Net Worth</th>
-                    <th onclick="sortTable('total_observable_millions')" class="hide-mobile">Observable</th>
-                    <th onclick="sortTable('dark_estimate_millions')" class="hide-mobile">Est. Dark</th>
+                    <th onclick="sortTable('total_lifetime_giving_millions')" class="hide-mobile">Lifetime Giving</th>
+                    <th onclick="sortTable('giving_rate_pct')" class="hide-mobile">Giving %</th>
                     <th onclick="sortTable('scrooge_score')">Scrooge Score</th>
                     <th onclick="sortTable('giving_pledge_signed')" class="hide-mobile">Pledge</th>
-                    <th class="hide-mobile">Flags</th>
                 </tr>
             </thead>
             <tbody id="table-body">
@@ -348,18 +312,25 @@
         </table>
 
         <div class="methodology">
-            <h3>Methodology</h3>
+            <h3>Methodology (v3)</h3>
             <p>The Scrooge Score (0-100) measures how much a billionaire is undergiving relative to their capacity. Higher scores indicate more Scrooge-like behavior.</p>
-            <p><strong>Simple Formula:</strong> <code style="background: var(--bg-card); padding: 3px 8px; border-radius: 4px;">Score = 100 x (1 - Giving Ratio)</code></p>
-            <p>Where Giving Ratio = Total Lifetime Giving / (Net Worth x Liquidity Factor)</p>
+            <p><strong>Formula:</strong> <code style="background: var(--bg-card); padding: 3px 8px; border-radius: 4px;">Score = 100 × (1 - Giving Ratio)</code></p>
+            <p>Where Giving Ratio = Total Lifetime Giving / (Net Worth × Liquidity Factor)</p>
+
+            <h3 style="margin-top: 20px;">Key Distinctions</h3>
+            <ul style="color: var(--text-secondary); margin-left: 20px; margin-top: 10px;">
+                <li><strong>DISBURSED, not pledged</strong> — Only money that has actually left their control</li>
+                <li><strong>EXTERNAL, not self-controlled</strong> — DAF transfers to their own DAF don't count</li>
+                <li><strong>GRANTS, not assets</strong> — A $10B foundation that grants $50M/year is $50M of giving</li>
+            </ul>
 
             <h3 style="margin-top: 20px;">Data Confidence</h3>
             <div class="channel-legend">
-                <div class="channel-item"><span class="channel-dot dot-high"></span> HIGH: 990-PF, SEC Form 4</div>
-                <div class="channel-item"><span class="channel-dot dot-medium"></span> MEDIUM: Announced gifts, Foundation reports</div>
-                <div class="channel-item"><span class="channel-dot dot-low"></span> LOW: DAF estimates, LLC estimates</div>
+                <div class="channel-item"><span class="channel-dot dot-high"></span> HIGH: 990-PF filings, Foundation reports</div>
+                <div class="channel-item"><span class="channel-dot dot-medium"></span> MEDIUM: News coverage, University announcements</div>
+                <div class="channel-item"><span class="channel-dot dot-low"></span> LOW: Estimates, incomplete data</div>
             </div>
-            <p style="margin-top: 15px;"><a href="methodology.html" style="color: var(--accent-blue);">Read the full methodology &rarr;</a></p>
+            <p style="margin-top: 15px;"><a href="https://github.com/jonahwei19/scrooge-list" style="color: var(--accent-blue);">View methodology on GitHub &rarr;</a></p>
         </div>
 
         <footer>
@@ -376,11 +347,10 @@
         // Load data from JSON
         async function loadData() {
             try {
-                // Try multiple paths for different environments
                 const paths = [
-                    'scrooge_latest.json',           // GitHub Pages (same folder)
-                    './scrooge_latest.json',         // Relative
-                    '../output/scrooge_latest.json', // Local dev
+                    'scrooge_latest.json',
+                    './scrooge_latest.json',
+                    '../output/scrooge_latest.json',
                 ];
 
                 let response = null;
@@ -417,67 +387,28 @@
                 document.getElementById('last-updated').textContent = new Date().toLocaleDateString();
             } catch (error) {
                 console.error('Error loading data:', error);
-                document.getElementById('table-body').innerHTML = '<tr><td colspan="8">Error loading data. Run the pipeline first.</td></tr>';
+                document.getElementById('table-body').innerHTML = '<tr><td colspan="7">Error loading data. Run the pipeline first.</td></tr>';
             }
         }
 
         function recalculateScores() {
-            const weights = {
-                observable: parseInt(document.getElementById('weight-observable').value),
-                tenure: parseInt(document.getElementById('weight-tenure').value),
-                pledge: parseInt(document.getElementById('weight-pledge').value),
-                flags: parseInt(document.getElementById('weight-flags').value),
-            };
-            const includeDark = document.getElementById('include-dark').checked;
+            // v3 Methodology: Simple giving ratio
+            // Score = 100 × (1 - Giving Ratio)
+            // Giving Ratio = Total Lifetime Giving / (Net Worth × Liquidity Factor)
             const applyLiquidity = document.getElementById('apply-liquidity').checked;
 
-            // Update weight displays
-            document.getElementById('weight-observable-val').textContent = weights.observable + '%';
-            document.getElementById('weight-tenure-val').textContent = weights.tenure + '%';
-            document.getElementById('weight-pledge-val').textContent = weights.pledge + '%';
-            document.getElementById('weight-flags-val').textContent = weights.flags + '%';
-
-            // Recalculate scores
-            const totalWeight = weights.observable + weights.tenure + weights.pledge + weights.flags;
-
             rawData.forEach(d => {
-                const liquidity = applyLiquidity ? d.liquidity_pct : 1.0;
-                const deployable = d.net_worth_billions * 1e9 * liquidity;
-                const observable = includeDark
-                    ? (d.total_observable_millions + d.dark_estimate_millions) * 1e6
-                    : d.total_observable_millions * 1e6;
+                const liquidity = applyLiquidity ? (d.liquidity_factor || 0.3) : 1.0;
+                const liquidWealth = d.net_worth_billions * 1000; // Convert to millions
+                const adjustedWealth = liquidWealth * liquidity;
+                const giving = d.total_lifetime_giving_millions || 0;
 
-                // Component 1: Observable giving ratio
-                let comp1 = 0;
-                if (deployable > 0) {
-                    const ratio = observable / deployable;
-                    const expected = 0.10;
-                    comp1 = Math.max(0, Math.min(1, 1 - ratio / expected));
-                }
-
-                // Component 2: Tenure
-                let comp2 = 0;
-                if (d.years_as_billionaire > 3) {
-                    comp2 = Math.min(1, (d.years_as_billionaire - 3) / 17);
-                }
-
-                // Component 3: Pledge breach
-                let comp3 = 0;
-                if (d.giving_pledge_signed) {
-                    if (observable < deployable * 0.10) comp3 = 1;
-                    else if (observable < deployable * 0.25) comp3 = 0.5;
+                if (adjustedWealth > 0) {
+                    const givingRatio = giving / adjustedWealth;
+                    d.adjusted_score = Math.max(0, Math.min(100, (1 - givingRatio) * 100));
                 } else {
-                    comp3 = 0.25;
+                    d.adjusted_score = d.scrooge_score || 50;
                 }
-
-                // Component 4: Red flags
-                const comp4 = Math.min(1, d.red_flag_count / 4);
-
-                // Weighted score
-                d.adjusted_score = totalWeight > 0
-                    ? ((comp1 * weights.observable + comp2 * weights.tenure +
-                        comp3 * weights.pledge + comp4 * weights.flags) / totalWeight) * 100
-                    : 0;
             });
 
             filterData();
@@ -515,6 +446,8 @@
             filteredData.sort((a, b) => {
                 let valA = a[col];
                 let valB = b[col];
+                if (valA === undefined || valA === null) valA = 0;
+                if (valB === undefined || valB === null) valB = 0;
                 if (typeof valA === 'string') valA = valA.toLowerCase();
                 if (typeof valB === 'string') valB = valB.toLowerCase();
                 if (currentSort.direction === 'asc') {
@@ -532,23 +465,20 @@
             tbody.innerHTML = '';
 
             filteredData.forEach((d, i) => {
-                const score = d.adjusted_score || d.scrooge_score;
+                const score = d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score;
                 const scoreClass = score >= 70 ? 'score-high' : score >= 40 ? 'score-medium' : 'score-low';
-
-                const flagsHtml = d.red_flags
-                    ? d.red_flags.split(';').map(f => `<span class="flag-badge">${f.split(':')[0]}</span>`).join('')
-                    : '';
+                const giving = d.total_lifetime_giving_millions || 0;
+                const givingRate = d.giving_rate_pct || 0;
 
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${i + 1}</td>
+                    <td>${d.scrooge_rank || i + 1}</td>
                     <td><strong>${d.name}</strong><br><small style="color:var(--text-secondary)">${d.country}</small></td>
                     <td class="money">$${d.net_worth_billions.toFixed(1)}B</td>
-                    <td class="money hide-mobile">$${(d.total_observable_millions || 0).toFixed(1)}M</td>
-                    <td class="money hide-mobile">$${(d.dark_estimate_millions || 0).toFixed(1)}M</td>
+                    <td class="money hide-mobile">$${giving >= 1000 ? (giving/1000).toFixed(1) + 'B' : giving.toFixed(0) + 'M'}</td>
+                    <td class="hide-mobile">${givingRate.toFixed(2)}%</td>
                     <td class="score-cell ${scoreClass}">${score.toFixed(1)}</td>
                     <td class="hide-mobile ${d.giving_pledge_signed ? 'pledge-yes' : 'pledge-no'}">${d.giving_pledge_signed ? 'Yes' : 'No'}</td>
-                    <td class="hide-mobile">${flagsHtml || '-'}</td>
                 `;
                 tbody.appendChild(row);
             });
@@ -564,8 +494,8 @@
             const data = filteredData.length > 0 ? filteredData : rawData;
 
             const totalWealth = data.reduce((sum, d) => sum + d.net_worth_billions, 0);
-            const totalObservable = data.reduce((sum, d) => sum + (d.total_observable_millions || 0), 0);
-            const avgScore = data.reduce((sum, d) => sum + (d.adjusted_score || d.scrooge_score), 0) / data.length;
+            const totalGiving = data.reduce((sum, d) => sum + (d.total_lifetime_giving_millions || 0), 0);
+            const avgScore = data.reduce((sum, d) => sum + (d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score), 0) / data.length;
             const pledgers = data.filter(d => d.giving_pledge_signed).length;
 
             stats.innerHTML = `
@@ -578,8 +508,8 @@
                     <div class="stat-label">Total Net Worth</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-value">$${(totalObservable / 1000).toFixed(1)}B</div>
-                    <div class="stat-label">Observable Giving</div>
+                    <div class="stat-value">$${(totalGiving / 1000).toFixed(1)}B</div>
+                    <div class="stat-label">Total Lifetime Giving</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-value">${avgScore.toFixed(1)}</div>

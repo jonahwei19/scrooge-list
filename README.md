@@ -143,25 +143,35 @@ flowchart LR
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-## Scrooge Score Formula
+## Scrooge Score Formula (v3)
+
+The v3 methodology uses a simple, transparent formula:
 
 ```
-Score = (Observable Weight × Giving Gap) +
-        (Tenure Weight × Years Penalty) +
-        (Pledge Weight × Breach Penalty) +
-        (Flags Weight × Red Flag Penalty)
+Scrooge Score = 100 × (1 - Giving Ratio)
+
+Where:
+  Giving Ratio = Total Lifetime Giving / (Net Worth × Liquidity Factor)
 ```
 
-Default weights: 40% / 20% / 20% / 20%
+A score of 100 means 0% giving. A score of 0 means giving ≥ 100% of liquid wealth.
 
-**Components:**
+**Liquidity Factors:**
 
-| Component | Calculation |
-|-----------|------------|
-| Giving Gap | 1 - (observable / expected), where expected = 10% of liquid wealth |
-| Years Penalty | 0 for <3 years, scales to max at 20+ years |
-| Breach Penalty | 20 points if pledge signer giving <10% of liquid wealth |
-| Red Flag Penalty | 5 points per flag (max 20) |
+| Wealth Type | Factor | Rationale |
+|-------------|--------|-----------|
+| Diversified investments | 0.70 | Highly liquid |
+| Public company (diversified) | 0.50 | Some stock sales needed |
+| Public company (concentrated) | 0.30 | Major founder, stock sales = control loss |
+| Private company | 0.20 | Hard to liquidate |
+| Real estate heavy | 0.25 | Illiquid assets |
+| Inherited/mixed | 0.40 | Typically more diversified |
+
+**Key Changes from v2:**
+- Removed red flag penalties (confusing, arbitrary)
+- Removed pledge breach penalties (not relevant to core measurement)
+- Simplified to pure giving ratio (cleaner, more defensible)
+- Focus on DISBURSED giving, not pledges or foundation assets
 
 ## Estimation Methods by Channel
 
@@ -208,28 +218,29 @@ Deploy to GitHub Pages:
 cd docs && python3 -m http.server 8000
 ```
 
-## Output Fields
+## Output Fields (v3)
 
 | Field | Description |
 |-------|-------------|
 | `scrooge_score` | 0-100, higher = more Scrooge-like |
+| `scrooge_rank` | Rank by Scrooge Score (1 = worst philanthropist) |
 | `net_worth_billions` | Forbes net worth |
-| `total_observable_millions` | Foundation grants + announced + securities |
-| `dark_estimate_millions` | Estimated DAF + LLC + anonymous + religious + estate |
-| `liquidity_pct` | Estimated liquid portion (0-1) |
-| `years_as_billionaire` | Tenure (affects expectations) |
+| `total_lifetime_giving_millions` | Total verifiable giving to date |
+| `giving_rate_pct` | Giving as % of net worth |
+| `liquidity_factor` | Estimated liquid portion (0-1) |
+| `giving_breakdown` | Itemized sources of giving estimate |
+| `sources` | URLs for verification |
 | `giving_pledge_signed` | From IPS dataset |
-| `red_flag_count` | Number of concerning patterns |
 
-## Red Flags
+## Important Distinctions
 
-| Flag | Meaning |
-|------|---------|
-| `NO_OBSERVABLE_GIVING` | $10B+ net worth, <$100M observable |
-| `PLEDGE_UNFULFILLED` | Signed Giving Pledge but not on track |
-| `LOW_PAYOUT` | Foundation payout <5% (legal minimum) |
-| `DAF_TRANSFERS` | >50% of grants go to DAFs (opacity) |
-| `HIGH_COMP` | Officer compensation >10% of grants |
+The v3 methodology makes key distinctions:
+
+1. **DISBURSED vs PLEDGED** — Only count money that has left the billionaire's control
+2. **EXTERNAL vs SELF-CONTROLLED** — DAF transfers to the billionaire's own DAF don't count as charity
+3. **FOUNDATION ASSETS vs GRANTS** — A $10B foundation that grants $50M/year isn't $10B of giving
+
+Example: Elon Musk's foundation has $14B in assets but grants 78% to entities he controls. Actual external giving: ~$150M.
 
 ## Limitations
 
