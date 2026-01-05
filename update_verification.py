@@ -2008,6 +2008,520 @@ VERIFICATION_DATA = {
             "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth",
             "https://www.wuerth.de/web/en/wuerthgroup/unternehmen/soziales_engagement/stiftung_wuerth/stiftung_wuerth.php"
         ]
+    },
+    # Batch 11-12: Additional verifications from agent research (Jan 2026)
+    "Charles Ergen": {
+        "total_lifetime_giving_millions": 200,
+        "giving_breakdown": {
+            "telluray_foundation_capitalization_2015": 200,
+            "foundation_distributions_2020_2024": 30.8,
+            "ut_foundation_gift": 5,
+            "notes": "VERIFIED Jan 2026: Telluray Foundation (EIN 20-1090247) received $200M in 2015 (likely DISH/EchoStar stock). 990-PF shows $72.6M assets (2024), annual distributions $3.5-7.8M. Top recipients: Children's Hospital Colorado ($500K), Denver Botanic Gardens ($500K). Giving Pledge signed 2018. UT Knoxville 'seven-figure' gift. SEC Form 4 stock transfers are primarily to GRATs, not charity."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 200, "ein": "20-1090247", "note": "Telluray Foundation (formerly Ergen Family Foundation)", "url": "https://projects.propublica.org/nonprofits/organizations/201090247"},
+            "sec_form4": {"status": "found", "amount_millions": 0, "note": "Massive stock transfers but primarily to family GRATs, not charity", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 31, "sources": ["990-PF", "Grantmakers.io"], "note": "Distributions $30.8M (2020-2024)", "url": "https://www.grantmakers.io/profiles/v0/201090247-the-telluray-foundation/"},
+            "news_verified": {"status": "found", "amount_millions": 200, "sources": ["Inside Philanthropy", "Giving Pledge"], "url": "https://givingpledge.org/pledger?pledgerId=355"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/201090247",
+            "https://givingpledge.org/pledger?pledgerId=355",
+            "https://www.insidephilanthropy.com/glitzy-giving/charles-and-cantey-ergen"
+        ]
+    },
+    "Nathan Blecharczyk": {
+        "total_lifetime_giving_millions": 5,
+        "giving_breakdown": {
+            "boston_latin_academy": 1,
+            "boston_latin_matching": 1,
+            "ukraine_matching_share": 2.5,
+            "notes": "VERIFIED Jan 2026: No personal foundation found. Giving Pledge signed 2016. $1M to Boston Latin Academy (2019) + $1M matching commitment. Shared $10M Ukraine matching commitment (2022) = ~$2.5M share. SEC Form 4 shows 10.4M share 'gift' Aug 2025 but this was trust-to-trust transfer per Rule 16a-13, NOT charity. Other stock gifts (460K shares 2023-24, ~$66M) have unknown recipients - may be DAF."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No personal foundation in ProPublica database", "url": None},
+            "sec_form4": {"status": "found", "amount_millions": 0, "note": "2025 10M share 'gift' was intra-trust transfer, not charitable", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Airbnb.org is separate nonprofit (EIN 83-3135259) but not his personal vehicle", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 5, "sources": ["Boston Public Schools", "Airbnb Newsroom"], "url": "https://news.airbnb.com/a-10-million-matching-donation-to-support-refugees-fleeing-ukraine/"}
+        },
+        "sources": [
+            "https://givingpledge.org/pledger?pledgerId=171",
+            "https://www.bostonpublicschools.org/"
+        ]
+    },
+    "Kim Kardashian": {
+        "total_lifetime_giving_millions": 4,
+        "giving_breakdown": {
+            "baby2baby_cash": 1.5,
+            "baby2baby_in_kind": 5,
+            "armenia_fund": 1,
+            "wildfire_relief_2018": 0.5,
+            "covid_cash_app": 0.5,
+            "dream_foundation_wedding": 0.2,
+            "notes": "VERIFIED Jan 2026: ~$3.7M verifiable cash giving + ~$5M in-kind to Baby2Baby. Baby2Baby gala $1M (2022), Armenia Fund $1M (2020), CA wildfires $500K (2018), COVID Cash App $500K (2020). Criminal justice work (90 Days of Freedom, 17+ freed) is advocacy + legal fees, amounts undisclosed. Kardashian Jenner Family Foundation (EIN 81-3878924) is essentially dormant - $560K assets, ~$60K annual grants."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 0.5, "ein": "81-3878924", "note": "Kardashian Jenner Family Foundation is dormant - $560K assets, negligible grants", "url": "https://projects.propublica.org/nonprofits/organizations/813878924"},
+            "sec_form4": {"status": "not_applicable", "note": "Private companies (SKIMS, SKKN)", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 0.06, "sources": ["990 filings"], "note": "Family foundation distributed $60K in 2024", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 4, "sources": ["Variety", "People", "Forbes"], "url": "https://variety.com/2022/scene/news/kim-kardashian-baby2baby-gala-million-donation-1235432265/"}
+        },
+        "sources": [
+            "https://variety.com/2022/scene/news/kim-kardashian-baby2baby-gala-million-donation-1235432265/",
+            "https://projects.propublica.org/nonprofits/organizations/813878924"
+        ]
+    },
+    "William Ding": {
+        "total_lifetime_giving_millions": 25,
+        "giving_breakdown": {
+            "zhejiang_university_2006": 10,
+            "tsunami_relief_2005": 1.2,
+            "yau_foundation_2021": 9.5,
+            "future_science_prize_10yr": 2.5,
+            "xian_covid_2021": 1.5,
+            "notes": "VERIFIED Jan 2026: $10M to Zhejiang University (2006, joint with Duan Yongping). $1.2M tsunami relief (2005). 66M RMB (~$9.5M) to Beijing Yau Mathematical Sciences Foundation (2021 via NetEase). Future Science Prize founding donor ($250K/yr for 10 years). 10M RMB Xi'an COVID relief (2021). Philosophy: 'Best charity = quality products' - explains modest giving vs $38B net worth. No personal foundation - gives via NetEase Charity Foundation."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "NetEase Charity Foundation is Chinese entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "NetEase ADR not used for charitable gifts", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 25, "sources": ["Zhejiang University", "Future Science Prize", "Yau Foundation"], "note": "Multiple verified donations through corporate foundation", "url": "http://www.futureprize.org/en/donors/detail/17.html"},
+            "news_verified": {"status": "found", "amount_millions": 25, "sources": ["Chinese Wikipedia", "Zhihu", "The Paper"], "url": "https://zh.wikipedia.org/zh-hans/%E4%B8%81%E7%A3%8A"}
+        },
+        "sources": [
+            "http://www.futureprize.org/en/donors/detail/17.html",
+            "http://www.news.zju.edu.cn/2006/0922/c775a72574/pagem.htm"
+        ]
+    },
+    "Ryan Graves": {
+        "total_lifetime_giving_millions": 14,
+        "giving_breakdown": {
+            "charity_water_pool_pledge": 14,
+            "notes": "VERIFIED Jan 2026: Founding member of charity: water 'The Pool' program - pledged 1%+ of net worth (~$14M minimum at 2019 IPO). Board member/Treasurer of charity: water. NO personal foundation found in ProPublica. NO Form 4 charitable stock gifts located. Climate investments via Saltwater (Pachama, Emitwise, Metromile $50M+) are commercial, not charitable. No Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Graves Foundation or Saltwater Foundation found", "url": None},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts in Form 4 filings", "url": None},
+            "foundation_reports": {"status": "not_applicable", "note": "Gives through charity: water partnership, not own foundation", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 14, "sources": ["Business Insider", "charity: water"], "url": "https://www.charitywater.org/the-pool"}
+        },
+        "sources": [
+            "https://www.businessinsider.com/uber-first-employee-ryan-graves-to-make-over-1-billion-ipo-donate-14-million-charity-2019-5",
+            "https://www.charitywater.org/the-pool"
+        ]
+    },
+    "Vivek Ramaswamy": {
+        "total_lifetime_giving_millions": 0.3,
+        "giving_breakdown": {
+            "american_identity_scholarship": 0.25,
+            "trump_rally_victims_gofundme": 0.03,
+            "notes": "VERIFIED Jan 2026: No personal foundation found. $250K American Identity Scholarship (July 2023, 10 recipients during presidential campaign). $30K Trump rally victims GoFundMe (July 2024). Roivant Social Ventures (EIN 83-3947490) is corporate foundation with ~$627K assets - he's no longer involved. Political donations ($30K+ Ohio GOP, $26M self-funding campaigns) exceed charitable giving. No Form 4 stock gifts found."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Ramaswamy personal foundation. Ramaswamy Bansal Foundation is unrelated (different family)", "url": None},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts - only sales and family transfers", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 0.06, "sources": ["Roivant Social Ventures 990"], "ein": "83-3947490", "note": "Corporate foundation, not personal", "url": "https://projects.propublica.org/nonprofits/organizations/833947490"},
+            "news_verified": {"status": "found", "amount_millions": 0.3, "sources": ["Washington Examiner", "Cincinnati Enquirer"], "url": "https://washingtonexaminer.com/news/campaigns/ramaswamy-launches-patriotism-scholarship"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/833947490",
+            "https://washingtonexaminer.com/news/campaigns/ramaswamy-launches-patriotism-scholarship"
+        ]
+    },
+    "Mark Mateschitz": {
+        "total_lifetime_giving_millions": 5,
+        "giving_breakdown": {
+            "austria_flood_relief_2024": 5,
+            "wings_for_life_board": "Board member (not personal donations)",
+            "notes": "VERIFIED Jan 2026: Inherited 49% Red Bull in Oct 2022, maintains very low profile. Only documented personal gift: €5M to Austrian flood relief (2024). Wings for Life Foundation board member (joined 2022) but foundation is funded by Red Bull corporate + World Run participants (€60.5M cumulative), not Mark personally. Father Dietrich's legacy: €70M to Paracelsus Medical University, Wings for Life co-founder. No personal foundation identified."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "Wings for Life is Austrian entity, no US foundation found", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Red Bull is private Austrian company", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 5, "sources": ["Krone.at"], "note": "Only flood relief donation verified as personal", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 5, "sources": ["Krone.at"], "url": "https://www.krone.at/3537993"}
+        },
+        "sources": [
+            "https://www.krone.at/3537993",
+            "https://en.wikipedia.org/wiki/Mark_Mateschitz"
+        ]
+    },
+    "Gerard Wertheimer": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "personal_giving": 0,
+            "chanel_corporate_giving_annual": 20,
+            "notes": "VERIFIED Jan 2026: NO verifiable personal giving. All philanthropy flows through Chanel corporate: Fondation Chanel (UK) has £157M assets, distributes £15.6M/year (~$20M). Pierre J Wertheimer Foundation (EIN 13-6161226) is DORMANT - $0 assets. Alain Wertheimer's documented personal giving: ~$7,500 total (Carnegie Hall, MoMA). Wertheimers notably ABSENT from Notre-Dame reconstruction pledges (2019). Extreme privacy - no personal foundations, no public giving announcements."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 0, "ein": "13-6161226", "note": "Pierre J Wertheimer Foundation is dormant - $0 assets", "url": "https://projects.propublica.org/nonprofits/organizations/136161226"},
+            "sec_form4": {"status": "not_applicable", "note": "Chanel is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 0, "sources": ["UK Charity Commission - Fondation Chanel"], "note": "All giving is Chanel corporate (£156.9M assets), not personal", "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "note": "No verifiable personal donations found", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/136161226",
+            "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"
+        ]
+    },
+    "Emmanuel Besnier": {
+        "total_lifetime_giving_millions": 0.5,
+        "giving_breakdown": {
+            "fondation_lactel_annual": 0.15,
+            "laval_stadium_annual": 0.2,
+            "lactalis_usa_food_donations": 0.15,
+            "notes": "VERIFIED Jan 2026: No personal foundation - all giving is corporate. Fondation d'Entreprise Lactel: €750K over 5 years (€150K/yr). Francis-Le-Basser stadium: €200K/year. Lactalis USA: 1.5M meals pledged via Feeding America (2024). Restos du Coeur partnership since 2020 (trucks, food drives). Total ~€500-700K/year = ~0.003% of $24B net worth. Never given interview. Belgian holding (BSA International) provides no disclosure."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "French/Belgian structure, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Lactalis is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 0.5, "sources": ["LSA Conso", "Les Echos", "Fondation Lactel"], "note": "Corporate foundation only, €750K/5yr budget", "url": "https://www.fondationlactel.org/"},
+            "news_verified": {"status": "found", "amount_millions": 0.5, "sources": ["Globe Newswire - Feeding America", "Restos du Coeur"], "url": "https://www.globenewswire.com/news-release/2024/06/10/2896104/0/en/Lactalis-USA-Announces-Partnership-with-Feeding-America-Pledges-to-Help-Provide-1-5-Million-Meals.html"}
+        },
+        "sources": [
+            "https://www.fondationlactel.org/",
+            "https://www.globenewswire.com/news-release/2024/06/10/2896104/0/en/Lactalis-USA-Announces-Partnership-with-Feeding-America-Pledges-to-Help-Provide-1-5-Million-Meals.html"
+        ]
+    },
+    "Iris Fontbona": {
+        "total_lifetime_giving_millions": 46,
+        "giving_breakdown": {
+            "teleton_cumulative": 33,
+            "university_donations": 13,
+            "notes": "VERIFIED Jan 2026: Philanthropy primarily through Luksic family foundations - Fundación Luksic, Fundación Educacional Oportunidad, etc. Teletón donations documented: $15M Antofagasta Institute (2014), $3.9M-$5.5M annual (2015-2023). Universities: $12M cumulative to Harvard DRCLAS, MIT Sloan, Columbia, Tsinghua + ZJU. No US foundation (ProPublica search negative). Luksic Scholars supports 18 scholarship programs globally."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Luksic foundation in US - Chile-based entities", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Antofagasta PLC is UK-listed, holdings via Chilean structures", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 46, "sources": ["Teletón", "Harvard DRCLAS", "Fundación Luksic"], "note": "Foundation budgets not publicly disclosed", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 46, "sources": ["BioBioChile", "Times of Israel", "Harvard"], "url": None}
+        },
+        "sources": [
+            "https://fundacionluksic.cl/",
+            "https://drclas.harvard.edu/"
+        ]
+    },
+    "Idan Ofer": {
+        "total_lifetime_giving_millions": 52,
+        "giving_breakdown": {
+            "london_business_school": 40,
+            "make_a_wish_cumulative": 12,
+            "bezalel_academy": "Undisclosed",
+            "harvard_kennedy_fellowship": "Multi-year (terminated 2023)",
+            "notes": "VERIFIED Jan 2026: £25M (~$40M) to LBS for Sammy Ofer Centre (2013) - largest to UK business school. Make-A-Wish: $12M+ via Art of Wishes charity auctions. Bezalel Academy: 'major donation' for Idan & Batia Ofer Arts Wing (2025). Harvard Kennedy fellowship (terminated Oct 2023 after Israel-Gaza). IMPORTANT: Brother Eyal Ofer has separate foundation - Tate Modern £10M, Tel Aviv Museum $5M are his, not Idan's."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "Idan & Batia Ofer Family Foundation operates from Israel/UK, no US 990-PF", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Holdings through Israeli/BVI structures", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 52, "sources": ["Financial Times", "eJewishPhilanthropy"], "note": "Foundation doesn't publish annual reports", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 52, "sources": ["Financial Times", "Times of Israel"], "url": "https://www.ft.com/content/cdae22a6-21dc-11e3-9b55-00144feab7de"}
+        },
+        "sources": [
+            "https://www.ft.com/content/cdae22a6-21dc-11e3-9b55-00144feab7de",
+            "https://www.timesofisrael.com/harvard-launches-scholarship-honoring-israeli-businessman/"
+        ]
+    },
+    "Theo Albrecht Jr.": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "notes": "VERIFIED Jan 2026: EXTREME SECRECY. Aldi Nord controlled through Markus-Stiftung (61%), Jakobus-Stiftung (19.5%), Lukas-Stiftung (19.5%) - primarily wealth preservation vehicles. Irish Times noted foundations make 'huge donations, particularly to medical research, but with STRICT NON-DISCLOSURE CLAUSES'. Theo Sr was devout Catholic with unreported giving. Zero documented recipients, amounts, or grants. Compare to Aldi Süd branch which has named charitable foundations (Elisen-Stiftung for culture, Oertl-Stiftung for cardiovascular research)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German Stiftungen, no US presence", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Private German company", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Strict non-disclosure clauses on all donations per Irish Times", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "note": "Cannot verify any specific donations due to family secrecy", "url": None}
+        },
+        "sources": [
+            "https://www.irishtimes.com/news/world/europe/karl-albrecht-discount-billionaire-and-germany-s-richest-man-dies-at-94-1.1878074"
+        ]
+    },
+    "Colin Huang": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "zhejiang_university_pledge": 100,
+            "starry_night_trust_shares": "2.37% PDD shares (~$2.6B at 2020 valuation)",
+            "notes": "VERIFIED Jan 2026: $2.6B in shares transferred to Starry Night Charitable Trust (July 2020) - BUT shares held in trust, not liquidated. Only confirmed CASH commitment: $100M to Zhejiang University over 3-5 years (2021-2026) for Starry Night Science Fund. US entity (EIN 93-1924982) shows $12M disbursements (2023-24). Hurun's '$1.85B' figure = share value, NOT cash given. NO Tsinghua donation found. Gap between headline ($2.5B) and verified deployment (~$100M) is enormous."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 12, "ein": "93-1924982", "note": "Starry Night Charitable Foundation (US) - $12M disbursed 2023-24", "url": "https://projects.propublica.org/nonprofits/organizations/931924982"},
+            "sec_form4": {"status": "not_applicable", "note": "PDD is Cayman-listed, no US stock gifts", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 100, "sources": ["Zhejiang University"], "note": "$100M pledge disbursing over 3-5 years", "url": "https://en.zuef.zju.edu.cn/2022/0415/c56746a2519930/page.htm"},
+            "news_verified": {"status": "found", "amount_millions": 100, "sources": ["Wikipedia - Starry Night Foundation"], "url": "https://en.wikipedia.org/wiki/The_Starry_Night_Foundation"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/931924982",
+            "https://en.wikipedia.org/wiki/The_Starry_Night_Foundation"
+        ]
+    },
+    "Alisher Usmanov": {
+        "total_lifetime_giving_millions": 280,
+        "giving_breakdown": {
+            "fencing_fie_cumulative": 100,
+            "covid_relief": 56,
+            "art_museums_cultural": 100,
+            "watson_medal_return": 4.8,
+            "rome_restorations": 2.5,
+            "notes": "VERIFIED Jan 2026: $7.3B lifetime claim unverifiable. Documented: FIE fencing CHF80M ($100M) 2008-2020, COVID relief $56M (Uzbekistan $30M, Russia $26M), Rostropovich collection $50-100M (2007), Olympic Manifesto $8.8M (2020), Watson Nobel medal $4.76M (2014). Art Science and Sport Foundation (Russia, 2006) has no US filings. Post-2022 sanctions: assets frozen, stepped aside from FIE (re-elected Nov 2024), €10M German settlement 2024-25."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No US foundation - Art Science and Sport is Russian entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Arsenal stake held through BVI entities", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 280, "sources": ["Inside the Games (FIE)", "bne IntelliNews", "Reuters"], "note": "Russian foundation financials not public", "url": "https://artscienceandsport.com/"},
+            "news_verified": {"status": "found", "amount_millions": 280, "sources": ["Inside the Games", "Reuters", "BBC", "Guardian"], "url": "https://www.insidethegames.biz/"}
+        },
+        "sources": [
+            "https://www.insidethegames.biz/",
+            "https://artscienceandsport.com/"
+        ]
+    },
+    "Masayoshi Son": {
+        "total_lifetime_giving_millions": 170,
+        "giving_breakdown": {
+            "fukushima_2011": 120,
+            "salary_donations_2011_present": 15,
+            "tomodachi_program": 15,
+            "japan_renewable_energy_foundation": 12,
+            "schwarzman_scholars": 15,
+            "hurricane_sandy": 0.5,
+            "notes": "VERIFIED Jan 2026: 10B yen ($120M) 2011 Fukushima disaster donation documented with full allocation (Red Cross 1B, UNICEF 600M, 4 prefectures, Recovery Fund 4B). Pledged salary until retirement for orphans (~$1-2M/yr). TOMODACHI SoftBank Leadership Program: 1000+ students, 12 years, estimated $10-20M. Masason Foundation (Japan, 2016) scholarships. NO US 990-PF found - all vehicles are Japanese entities."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "Masason Foundation is Japanese public interest foundation, no US entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "SoftBank ADR not used for charitable gifts", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 120, "sources": ["SoftBank press releases"], "note": "2011 donation fully documented with allocations", "url": "https://group.softbank/en/news/press/20110516"},
+            "news_verified": {"status": "found", "amount_millions": 170, "sources": ["CBS News", "Philanthropy News Digest", "SoftBank"], "url": "https://group.softbank/en/news/press/20110403"}
+        },
+        "sources": [
+            "https://group.softbank/en/news/press/20110516",
+            "https://usjapantomodachi.org/about-us/donors/masayoshi-son/"
+        ]
+    },
+    "Jim Koch": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "personal_foundation": 0,
+            "corporate_brewing_american_dream_loans": 109,
+            "corporate_restaurant_strong": 2.2,
+            "corporate_annual_charitable": 2.3,
+            "notes": "VERIFIED Jan 2026: NO PERSONAL FOUNDATION found (different from Koch Industries Charles Koch). All giving is CORPORATE through Boston Beer Company. Brewing the American Dream: $109M in LOANS (not grants) facilitated since 2008. Restaurant Strong Fund: $2.2M corporate donation (2020). Annual corporate charitable: $2.34M (2021 ESG). No Form 4 stock gifts to charity found. Koch Family Foundation (EIN 48-6113560) is WICHITA Koch Industries family, NOT Jim Koch."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Jim Koch/Charles James Koch personal foundation - not related to Koch Industries", "url": None},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts found in Boston Beer Form 4s", "url": None},
+            "foundation_reports": {"status": "not_applicable", "note": "All giving is Boston Beer Company corporate programs", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 0, "sources": ["Boston Beer ESG", "Brewbound"], "note": "Personal philanthropy unverified - corporate only", "url": "https://www.bostonbeer.com/news/2022/11/boston-beer-company-releases-inaugural-esg-report"}
+        },
+        "sources": [
+            "https://www.bostonbeer.com/news/2022/11/boston-beer-company-releases-inaugural-esg-report",
+            "https://www.brewbound.com/"
+        ]
+    },
+    "Yang Huiyan": {
+        "total_lifetime_giving_millions": 826,
+        "giving_breakdown": {
+            "stock_transfer_2023": 826,
+            "family_cumulative": 1300,
+            "notes": "VERIFIED Jan 2026: $826M personal stock gift (Aug 2023) - 675M Country Garden Services shares to Guoqiang Foundation HK. This is HER personal contribution. Family cumulative (father Yang Guoqiang): 9B RMB (~$1.3B) over 24+ years including Tsinghua $310M pledge (2018), Guohua Memorial School $39M (2002). Hurun 2023 #1: 5.9B RMB jointly with father. Guoqiang Foundation (2013) co-founded with father. Key: Most infrastructure was built by father, her main contribution is 2023 share transfer."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Guoqiang Foundation is Chinese/HK entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Country Garden is HK-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 826, "sources": ["Fortune", "SCMP", "Philanthropy News Digest"], "note": "2023 stock transfer verified by multiple outlets", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 826, "sources": ["Fortune", "Hurun", "SCMP"], "url": "https://fortune.com/2023/08/01/asia-former-richest-woman-property-mogul-yang-huiyan-given-country-garden-charity-payout-826-million/"}
+        },
+        "sources": [
+            "https://fortune.com/2023/08/01/asia-former-richest-woman-property-mogul-yang-huiyan-given-country-garden-charity-payout-826-million/",
+            "https://www.hurun.net/en-US/Info/Detail?num=WIWVJLUHGIU1"
+        ]
+    },
+    "Hasso Plattner": {
+        "total_lifetime_giving_millions": 400,
+        "giving_breakdown": {
+            "hpi_potsdam": 200,
+            "stanford_dschool": 35,
+            "museum_barberini": 60,
+            "stadtschloss_potsdam": 20,
+            "hiv_aids_south_africa": 6,
+            "ukraine_relief": 2,
+            "art_collection": "100+ works including $110.7M Monet",
+            "notes": "VERIFIED Jan 2026: Giving Pledge 2013. Hasso Plattner Foundation endowed with 'double-digit billion euros' (~3.2% SAP). HPI Potsdam: €200M+ since 1998. Stanford d.school: $35M (2005). Museum Barberini construction: €60M + art collection (115 Impressionists including record $110.7M Monet). Stadtschloss: €20M+ (largest German individual donation at time). Oxford vaccinology: £3.5M. d.school Afrika at UCT."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German Stiftung, no US entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "SAP is German company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 400, "sources": ["Hasso Plattner Foundation", "HPI", "Stanford"], "note": "Foundation endowment 'double-digit billions' per foundation website", "url": "https://www.plattnerfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 400, "sources": ["Bloomberg", "Forbes", "Wikipedia"], "url": "https://en.wikipedia.org/wiki/Hasso_Plattner"}
+        },
+        "sources": [
+            "https://www.plattnerfoundation.org/",
+            "https://en.wikipedia.org/wiki/Hasso_Plattner"
+        ]
+    },
+    "Roman Abramovich": {
+        "total_lifetime_giving_millions": 3000,
+        "giving_breakdown": {
+            "chukotka_infrastructure": 2500,
+            "jewish_causes_cumulative": 500,
+            "elad_organization": 100,
+            "yad_vashem": 10,
+            "jewish_agency": 5,
+            "chelsea_foundation_annual": 8,
+            "notes": "VERIFIED Jan 2026: $2.5B Chukotka (2000-2012, least verifiable). $500M+ Jewish causes claimed by recipients. Elad (Jerusalem settlement): $100M+ per FinCEN/BBC investigation. Yad Vashem: $10M+ (suspended ties 2022). Chelsea Foundation: £7-8M/yr during ownership (UK Charity Commission verified). £2.5B Chelsea sale proceeds FROZEN - UK ultimatum Dec 2025 to transfer to Ukraine fund. NO US 990-PF found."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No US foundation - giving through direct donations and BVI entities", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities holdings", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 8, "sources": ["UK Charity Commission - Chelsea FC Foundation"], "ein": "UK Charity 1129723", "note": "Chelsea Foundation verified £7-8M/yr", "url": "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1129723"},
+            "news_verified": {"status": "found", "amount_millions": 3000, "sources": ["BBC FinCEN Files", "Bloomberg", "Times of Israel"], "url": "https://www.bbc.com/news/uk-54125356"}
+        },
+        "sources": [
+            "https://www.bbc.com/news/uk-54125356",
+            "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1129723"
+        ]
+    },
+    "Len Blavatnik": {
+        "total_lifetime_giving_millions": 1300,
+        "giving_breakdown": {
+            "harvard_total": 270,
+            "oxford_bsg": 117,
+            "yale_innovation": 80,
+            "tel_aviv_university": 65,
+            "tate_modern": 63,
+            "courtauld": 13,
+            "npg": 13,
+            "va_museum": 19,
+            "stanford": 10,
+            "notes": "VERIFIED Jan 2026: Foundation claims $1.3B to 250+ institutions. 990-PF (EIN 81-2444350) shows $44-158M annual disbursements. Harvard: $270M total ($200M HMS 2018). Oxford BSG: £75M (2010). Yale: $80M. Tate Modern: £50M (largest in Tate history). Tel Aviv U: $65M. Multiple US and UK EINs: 81-2444350, 85-1345780 (2020), 68-0610651 (Archive)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 158, "ein": "81-2444350", "note": "Blavatnik Family Foundation - peak $158M disbursement (2019)", "url": "https://projects.propublica.org/nonprofits/organizations/812444350"},
+            "sec_form4": {"status": "not_applicable", "note": "Private holdings through Access Industries", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1300, "sources": ["BFF website", "990-PF"], "note": "Foundation claims $1.3B cumulative", "url": "https://blavatnikfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 1300, "sources": ["Harvard Gazette", "Oxford", "Art Newspaper", "Guardian"], "url": "https://blavatnikfoundation.org/"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/812444350",
+            "https://blavatnikfoundation.org/"
+        ]
+    },
+    "Richard Liu": {
+        "total_lifetime_giving_millions": 2400,
+        "giving_breakdown": {
+            "stock_donation_2022": 2340,
+            "renmin_university_2017": 43,
+            "hong_kong_covid_2022": 14,
+            "employee_welfare_fund": 14,
+            "notes": "VERIFIED Jan 2026: Hurun 2022 #1 via 62.4M JD.com Class B shares ($2.05-2.34B). Renmin University: 300M RMB ($43M, 2017). Hong Kong COVID: 100M RMB ($14M). Employee welfare: 100M RMB personal. COVID supplies to UK/Switzerland/Chile (masks, ventilators - in-kind). JD Foundation (2014) runs education, disaster relief, poverty alleviation. 2018 Forbes China: $76M annual."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "JD Foundation is Chinese entity", "url": None},
+            "sec_form4": {"status": "found", "amount_millions": 2340, "note": "SEC 6-K Feb 2022 disclosed 62.4M share donation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2400, "sources": ["Hurun 2022", "SEC 6-K"], "note": "Stock donation to unnamed third-party foundation", "url": "https://corporate.jd.com/foundation"},
+            "news_verified": {"status": "found", "amount_millions": 2400, "sources": ["Hurun", "SCMP", "Bloomberg"], "url": "https://www.hurun.net/en-us/info/detail?num=WIWVJLUHGIU1"}
+        },
+        "sources": [
+            "https://www.hurun.net/en-us/info/detail?num=WIWVJLUHGIU1",
+            "https://corporate.jd.com/foundation"
+        ]
+    },
+    "Lakshmi Mittal": {
+        "total_lifetime_giving_millions": 85,
+        "giving_breakdown": {
+            "harvard_south_asia_institute": 25,
+            "arcelormittal_orbit": 31,
+            "great_ormond_street": 24,
+            "mittal_champions_trust": 9,
+            "oxford_vaccinology": 4.5,
+            "pm_cares_covid": 13,
+            "american_red_cross": 1,
+            "notes": "VERIFIED Jan 2026: Harvard $25M (2017). ArcelorMittal Orbit: £19.6M (~$31M, 2012 Olympics). GOSH: £15M ($24M, via son Aditya 2008). Mittal Champions Trust: $9M (2005-2014, supported 40 athletes). Oxford: £3.5M for vaccinology professorship. PM CARES: Rs 100 crore ($13M). UK Mittal Foundation (Charity 1146604): £7.4M charitable spending 2024. LNMIIT Jaipur: co-founder, amount undisclosed."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "LNM Foundation not found in ProPublica - may be UK/India entity only", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "ArcelorMittal is Luxembourg-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 7.4, "sources": ["UK Charity Commission - Mittal Foundation"], "ein": "UK Charity 1146604", "note": "UK foundation £7.4M spending 2024", "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5027245/"},
+            "news_verified": {"status": "found", "amount_millions": 85, "sources": ["Harvard", "Evening Standard", "Economic Times"], "url": "https://www.harvard.edu/"}
+        },
+        "sources": [
+            "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5027245/",
+            "https://www.harvard.edu/"
+        ]
+    },
+    "Dietmar Hopp": {
+        "total_lifetime_giving_millions": 1100,
+        "giving_breakdown": {
+            "dietmar_hopp_stiftung_distributed": 1000,
+            "tsg_hoffenheim": 350,
+            "heidelberg_heart_center": 100,
+            "kitz_cancer_center": 64,
+            "hi_stem": 22.5,
+            "alla_hopp_facilities": 45,
+            "notes": "VERIFIED Jan 2026: Dietmar Hopp Stiftung (1995) endowed with 70% SAP shares, distributed €1B+ total. TSG Hoffenheim: €350M+ investment. Heidelberg Heart Center: €100M (2018). KiTZ children's cancer: €64M total. HI-STEM: €22.5M. Biotech investing via dievini: €1.5B deployed (CureVac €400M+) - mission-driven but not pure philanthropy. Giving Pledge not signed but among Europe's largest givers."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German Stiftung, no US entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "SAP is German company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1000, "sources": ["Forbes", "Bloomberg", "Heidelberg University"], "note": "Foundation distributed €1B+", "url": "https://www.dietmar-hopp-stiftung.de/"},
+            "news_verified": {"status": "found", "amount_millions": 1100, "sources": ["BBC", "DW", "Forbes", "Bloomberg"], "url": "https://www.bbc.com/sport/football/51800444"}
+        },
+        "sources": [
+            "https://www.dietmar-hopp-stiftung.de/",
+            "https://www.bbc.com/sport/football/51800444"
+        ]
+    },
+    "Savitri Jindal": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "jindal_family_csr_annual": 50,
+            "personal_giving": 0,
+            "notes": "VERIFIED Jan 2026: Does NOT appear on EdelGive-Hurun India Philanthropy List (21 women, Rs 724 crore - Rohini Nilekani #1 at Rs 154 crore). Jindal family CSR is corporate: JSPL (Naveen) Rs 267 crore (2024-25), JSW (Sajjan) Rs 235 crore (2023-24). Sitaram Jindal Foundation (Bangalore, separate branch): Rs 1.25 crore/year. Savitri is involved in medical college, foundations - but NO verifiable personal donations found. Family wealth flows through corporate CSR, not personal philanthropy."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Indian listed companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 50, "sources": ["JSPL CSR reports", "JSW CSR reports"], "note": "Corporate CSR only - Rs 200+ crore/year family total", "url": "https://www.jindalfoundation.com/"},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "note": "No personal donations verifiable - not on Hurun India list", "url": None}
+        },
+        "sources": [
+            "https://www.jindalfoundation.com/",
+            "https://hurunindia.com/blog/edelgive-hurun-india-philanthropy-list-2024/"
+        ]
+    },
+    "Rafaela Aponte": {
+        "total_lifetime_giving_millions": 17,
+        "giving_breakdown": {
+            "unicef_cumulative": 17,
+            "mercy_ships_anchor_donation": "Significant (undisclosed)",
+            "ukraine_relief_in_kind": "100K blankets, 100K sleeping bags, 50K beds",
+            "notes": "VERIFIED Jan 2026: MSC Foundation (2018) - Rafaela on board with husband Gianluigi and son Diego. UNICEF 'Get on Board for Children': $17M cumulative (2009-2025). Malawi malnutrition: reduced SAM from 4.1% to 1%. Cote d'Ivoire: 152 classrooms from recycled plastic, 8K children. Mercy Ships: 'significant anchor donation' for Atlantic Mercy hospital ship (undisclosed). Super Coral Reefs at Ocean Cay. 2.6M lives touched, 72 countries."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "MSC Foundation is Swiss entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "MSC is private Swiss company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 17, "sources": ["MSC Foundation", "UNICEF"], "note": "UNICEF cumulative verified at $17M", "url": "https://mscfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 17, "sources": ["UNICEF", "MSC Foundation"], "url": "https://www.unicef.ch/en/our-work/programmes/get-on-board-for-children"}
+        },
+        "sources": [
+            "https://mscfoundation.org/",
+            "https://www.unicef.ch/en/our-work/programmes/get-on-board-for-children"
+        ]
+    },
+    "Ginni Rometty": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "personal_donations": 0,
+            "ibm_gift_in_her_honor": 5,
+            "notes": "VERIFIED Jan 2026: NET WORTH ~$90-95M (NOT a billionaire). No personal foundation found. IBM donated $5M to Northwestern (her alma mater) in 2021 to name professorships after her - this is corporate giving, not hers. P-TECH (6-year STEM schools) and OneTen (1M Black Americans into jobs) are INITIATIVES she created at IBM, not personal philanthropy. OneTen co-chair with Ken Frazier. Multiple boards (JPMorgan, MSK, Northwestern, Cargill)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Rometty Foundation found", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No longer IBM insider", "url": None},
+            "foundation_reports": {"status": "not_applicable", "note": "No personal foundation", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "note": "No personal charitable donations documented", "url": None}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Ginni_Rometty"
+        ]
     }
 }
 
