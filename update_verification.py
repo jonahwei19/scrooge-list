@@ -3878,6 +3878,212 @@ VERIFICATION_DATA = {
             "https://projects.propublica.org/nonprofits/organizations/943374170/202312849349100117/full"
         ],
         "giving_pledge": "no"
+    },
+    # Batch 23: Brian Chesky, Robin Li, Wang Jianlin, George Roberts, Bill Ackman, Ziff brothers, Barry Diller, Oprah Winfrey
+    "Brian Chesky": {
+        "total_lifetime_giving_millions": 140,
+        "giving_breakdown": {
+            "obama_foundation_voyager_2022": 100,
+            "covid_frontline_workers_2020": 10,
+            "airbnb_org_founding": 2,
+            "ukraine_refugee_match": 2.5,
+            "frontline_stays_program": 5,
+            "notes": "VERIFIED Jan 2026: Airbnb co-founder/CEO (~$13.5B). No personal foundation (gives directly). Obama Foundation $100M (2022) for Voyager Scholarship - #20 on Chronicle Philanthropy 50. COVID frontline $10M. Airbnb.org (EIN 83-3135259) co-founded but is corporate charity. Signed Giving Pledge June 2016 at age 34."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No personal foundation; gives directly to operating nonprofits", "url": None},
+            "sec_form4": {"status": "not_searched", "note": "Airbnb stock gifts not tracked separately", "url": None},
+            "foundation_reports": {"status": "not_applicable", "note": "No foundation structure", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 140, "note": "Obama Foundation $100M, COVID $10M widely covered", "url": None}
+        },
+        "sources": [
+            "https://givingpledge.org/pledger?pledgerId=180",
+            "https://www.philanthropy.com/article/airbnb-co-founder-brian-chesky-gives-100-million-to-help-students-who-want-public-service-careers"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Robin Li": {
+        "total_lifetime_giving_millions": 130,
+        "giving_breakdown": {
+            "peking_university_2018": 104,
+            "baidu_covid_fund_2020": 43,
+            "esophageal_cancer_research_2015": 5,
+            "peking_university_2009": 1.5,
+            "hometown_yangquan_2014": 1.6,
+            "notes": "VERIFIED Jan 2026: Baidu co-founder/CEO (~$13.5B). PKU 660M RMB ($104M, 2018) largest single PKU donation - AI research with wife Melissa Ma. COVID fund 300M RMB via Baidu (corporate). Forbes China Philanthropy #6 (2019). Below Hurun 200M RMB threshold individually. Future Science Prize donor. NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese billionaire, no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Baidu ADR but no US charity gifts", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 130, "note": "PKU donation well documented, corporate giving harder to attribute", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 130, "note": "PKU 660M RMB (2018), Forbes China rankings", "url": None}
+        },
+        "sources": [
+            "https://english.pku.edu.cn/news_events/news/focus/7209.html"
+        ],
+        "giving_pledge": "no"
+    },
+    "Wang Jianlin": {
+        "total_lifetime_giving_millions": 700,
+        "giving_breakdown": {
+            "bao_en_temple_nanjing_2010": 150,
+            "academy_motion_picture_arts_2013": 20,
+            "disaster_relief_cumulative": 75,
+            "wanda_corporate_cumulative": 550,
+            "notes": "VERIFIED Jan 2026: Dalian Wanda founder. Hurun Philanthropy List 7 times, 4.6B RMB (~$700M) total. #1 Forbes China Philanthropy 2011 (1.28B RMB). Bao'en Temple 1B RMB ($150M, 2010) was largest single personal donation in Chinese philanthropy at time. NOTE: Net worth crashed from $35B (2015) to ~$4B (2025), debt issues, luxury spending ban Sept 2025. NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese billionaire, no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 700, "note": "Hurun tracked 4.6B RMB over 7 list appearances", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 700, "note": "Hurun #1 multiple years, Bao'en Temple widely covered", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "George Roberts": {
+        "total_lifetime_giving_millions": 500,
+        "giving_breakdown": {
+            "roberts_foundation_cumulative": 455,
+            "claremont_mckenna_total": 250,
+            "redf_venture_philanthropy": 50,
+            "kkr_covid_relief_2020": 50,
+            "notes": "VERIFIED Jan 2026: KKR co-founder (~$8B). Roberts Foundation (EIN 94-2967074): $324M assets, $50M annual disbursements. CMC Class of 1966, largest donor: $140M (2022), $50M (2012), $60M+ matching. Founded REDF (1997) for employment social enterprises. $50M COVID relief with Kravis. NOT Giving Pledge (neither KKR founder signed)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "94-2967074", "note": "Roberts Foundation: $324M assets, $50M disbursements 2024", "url": "https://projects.propublica.org/nonprofits/organizations/942967074/202503219349107215/full"},
+            "sec_form4": {"status": "not_searched", "note": "KKR stock gifts via foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 500, "note": "CMC $250M+, REDF founding, annual $50M grants", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 500, "note": "Bloomberg covered $140M CMC gift (2022)", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/942967074/202503219349107215/full"
+        ],
+        "giving_pledge": "no"
+    },
+    "Bill Ackman": {
+        "total_lifetime_giving_millions": 700,
+        "giving_breakdown": {
+            "coupang_stock_2021": 1340,
+            "harvard_university": 26,
+            "ovarian_cancer_research": 5,
+            "innocence_project": 1,
+            "psf_grants_cumulative": 307,
+            "notes": "VERIFIED Jan 2026: Pershing Square founder (~$9B). Pershing Square Foundation (EIN 20-8068401): $414M assets. $1.34B Coupang stock donation (2021, split PSF/DAF/nonprofit). PSF claims $700M+ grants made, $930M committed. Harvard $26M. Signed Giving Pledge April 2012."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "20-8068401", "note": "Pershing Square Foundation: $414M assets", "url": "https://projects.propublica.org/nonprofits/organizations/208068401/202131169349100403/full"},
+            "sec_form4": {"status": "found", "amount_millions": 1340, "note": "$1.34B Coupang stock to charity (2021)", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 700, "note": "PSF claims $700M+ in grants", "url": "https://pershingsquarephilanthropies.org/about/mission"},
+            "news_verified": {"status": "found", "amount_millions": 700, "note": "Forbes, Chronicle of Philanthropy covered $1.34B donation", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/208068401/202131169349100403/full",
+            "https://givingpledge.org/pledger?pledgerId=157"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Daniel Ziff": {
+        "total_lifetime_giving_millions": 7,
+        "giving_breakdown": {
+            "leslie_daniel_ziff_foundation": 2,
+            "columbia_climate_2018": 1,
+            "other": 4,
+            "notes": "VERIFIED Jan 2026: Ziff Brothers heir (~$5.5B). Leslie & Daniel Ziff Foundation (EIN 13-4083253): $887K assets, $200K annual grants - extremely low. Joint $2M to Columbia Climate Center with Dirk (2018). Combined Ziff family giving ~$20M lifetime on $16.5B combined wealth = 0.12%. NOT Giving Pledge. One of lowest giving rates among billionaires."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "13-4083253", "note": "Leslie & Daniel Ziff Foundation: minimal assets/grants", "url": "https://projects.propublica.org/nonprofits/organizations/134083253/202411279349101816/full"},
+            "sec_form4": {"status": "not_searched", "note": "Private investments", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 7, "note": "Extremely low foundation activity", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 7, "note": "Columbia Climate gift confirmed", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/134083253/202411279349101816/full"
+        ],
+        "giving_pledge": "no"
+    },
+    "Dirk Ziff": {
+        "total_lifetime_giving_millions": 7,
+        "giving_breakdown": {
+            "natasha_dirk_ziff_foundation": 3,
+            "vere_initiatives_pledged": 5,
+            "columbia_climate_2018": 1,
+            "robin_hood_foundation": 1,
+            "notes": "VERIFIED Jan 2026: Ziff Brothers heir (~$5.5B). Natasha & Dirk Ziff Foundation (EIN 13-4083748): $719K assets, $500K grants 2024. Vere Initiatives (2022, LLC) $5M pledged for 30x30 conservation. Robin Hood founding board. Combined Ziff family giving ~$20M lifetime on $16.5B = 0.12%. NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "13-4083748", "note": "Natasha & Dirk Ziff Foundation: minimal assets", "url": "https://projects.propublica.org/nonprofits/organizations/134083748/202441319349101239/full"},
+            "sec_form4": {"status": "not_searched", "note": "Private investments", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 7, "note": "Low foundation activity, Vere Initiatives newer", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 7, "note": "Inside Philanthropy notes low giving", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/134083748/202441319349101239/full"
+        ],
+        "giving_pledge": "no"
+    },
+    "Robert Ziff": {
+        "total_lifetime_giving_millions": 8,
+        "giving_breakdown": {
+            "robert_d_ziff_foundation": 6,
+            "harvard_hockey_1998": 2,
+            "cornell_law_professorship": 1,
+            "notes": "VERIFIED Jan 2026: Ziff Brothers heir (~$5.5B). Robert D Ziff Foundation (EIN 13-4083712): $1.6M assets, $200K annual grants except $5M single grant (2018). Harvard hockey $2M (1998) for endowed coach. Cornell Law professorship. Combined Ziff family giving ~$20M lifetime on $16.5B = 0.12%. NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "13-4083712", "note": "Robert D Ziff Foundation: minimal except 2018 $5M grant", "url": "https://projects.propublica.org/nonprofits/organizations/134083712/202411279349101416/full"},
+            "sec_form4": {"status": "not_searched", "note": "Private investments", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 8, "note": "Sparse foundation activity", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 8, "note": "Harvard hockey documented", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/134083712/202411279349101416/full"
+        ],
+        "giving_pledge": "no"
+    },
+    "Barry Diller": {
+        "total_lifetime_giving_millions": 500,
+        "giving_breakdown": {
+            "little_island_pier55": 380,
+            "high_line_park": 35,
+            "motion_picture_television_fund_2012": 30,
+            "foundation_annual": 55,
+            "notes": "VERIFIED Jan 2026: IAC/Expedia founder (~$4.6B). Diller Von Furstenberg Family Foundation (EIN 46-1581956): $113M assets, $10M annual. Little Island $380M ($260M construction + $120M 20yr maintenance). High Line $35M (largest NYC park gift at time). MPTF $30M (2012, largest-ever personal MPTF gift). Signed Giving Pledge 2010 with wife Diane von Furstenberg."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "46-1581956", "note": "Diller Von Furstenberg Foundation: $113M assets, $10M/yr", "url": "https://projects.propublica.org/nonprofits/organizations/461581956/202523209349100707/full"},
+            "sec_form4": {"status": "not_searched", "note": "Stock gifts via foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 500, "note": "Little Island $380M, High Line $35M documented", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 500, "note": "NYT, Variety covered major gifts", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/461581956/202523209349100707/full",
+            "https://www.givingpledge.org/pledger/barry-diller-and-diane-von-furstenberg/"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Oprah Winfrey": {
+        "total_lifetime_giving_millions": 500,
+        "giving_breakdown": {
+            "leadership_academy_south_africa": 40,
+            "morehouse_college": 25,
+            "smithsonian_nmaahc": 16,
+            "covid_relief_2020": 13,
+            "angel_network_raised": 80,
+            "education_cumulative": 400,
+            "notes": "VERIFIED Jan 2026: Media mogul (~$3B). TIME100 Philanthropy 2025 says $500M+ lifetime. Oprah Winfrey Charitable Foundation (EIN 26-6908382): $172M assets, $38M grants 2023. Leadership Academy $40M+ (South Africa, 2007). Morehouse $25M. NMAAHC largest individual donor $16M. Angel Network $80M raised (Oprah paid admin). Attended 2009 Giving Pledge dinner but NOT signed. Will reportedly leaves $1B to charity."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "26-6908382", "note": "Oprah Winfrey Charitable Foundation: $172M assets, $38M grants 2023", "url": "https://projects.propublica.org/nonprofits/organizations/266908382/202422899349101327/full"},
+            "sec_form4": {"status": "not_searched", "note": "WeightWatchers stock gifts", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 500, "note": "TIME100 confirms $500M+ lifetime", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 500, "note": "Leadership Academy, Morehouse, NMAAHC all confirmed", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/266908382/202422899349101327/full",
+            "https://time.com/collections/time100-philanthropy-2025/7286085/oprah-winfrey/"
+        ],
+        "giving_pledge": "no"
     }
 }
 
