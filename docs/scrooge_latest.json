@@ -4321,17 +4321,15 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
-      "carmen_wurth_forum_complex": 100,
-      "holbein_madonna_acquisition": 45,
-      "freie_schule_anne_sophie": 10,
+      "carmen_wurth_forum": 100,
+      "holbein_madonna_2011": 50,
+      "freie_schule_anne_sophie": 20,
       "unicef_annual": 0.4,
-      "regional_donations": 5,
-      "art_collection_value": "18,000-20,000 works (hundreds of millions in value)",
-      "notes": "VERIFIED Jan 2026: Stiftung W\u00fcrth (\u20ac12.6M capital). Infrastructure philanthropy: Carmen W\u00fcrth Forum \u20ac100M (museum + concert halls), Holbein Madonna ~\u20ac45M (2011), Freie Schule Anne-Sophie. 15 museums (free admission) with 18K+ artwork. UNICEF \u20ac400K/yr. Foundation focus: Hohenlohe region. Art collection built since 1964 = major cultural contribution, publicly accessible."
+      "other_education_regional": 30,
+      "notes": "VERIFIED Jan 2026: Stiftung W\u00fcrth founded 1987, EUR 12.6M capital. 18,000-20,000 art works in 15 free museums. Carmen W\u00fcrth Forum ~EUR 100M. Schools (Anne-Sophie), regional culture. Art collection hundreds of millions in value but NOT donated - held by foundation. ~$200M in infrastructure/programs."
     },
     "sources": [
-      "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth",
-      "https://www.wuerth.de/web/en/wuerthgroup/unternehmen/soziales_engagement/stiftung_wuerth/stiftung_wuerth.php"
+      "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -4343,31 +4341,24 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "German Stiftung W\u00fcrth, no US foundation",
+        "note": "German resident, no US foundation",
         "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "W\u00fcrth Group is private German company",
+        "note": "W\u00fcrth Group is private",
         "url": null
       },
       "foundation_reports": {
         "status": "found",
         "amount_millions": 200,
-        "sources": [
-          "Stiftung W\u00fcrth",
-          "Wikipedia"
-        ],
-        "note": "Foundation capital \u20ac12.6M but infrastructure investments (museums, schools, art) worth \u20ac200M+",
-        "url": "https://www.wuerth.de/web/en/wuerthgroup/unternehmen/soziales_engagement/stiftung_wuerth/stiftung_wuerth.php"
+        "note": "Stiftung W\u00fcrth - EUR 12.6M capital, museums, schools documented",
+        "url": null
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 200,
-        "sources": [
-          "Wikipedia",
-          "Deutsche Welle"
-        ],
+        "note": "Carmen W\u00fcrth Forum, Holbein Madonna, schools verified",
         "url": "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth"
       }
     },
@@ -7719,68 +7710,6 @@
     "unverifiable_giving_millions": 1100
   },
   {
-    "rank": 391,
-    "name": "Masayoshi Son",
-    "net_worth_billions": 13.0,
-    "country": "Japan",
-    "source_of_wealth": "SoftBank",
-    "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 170,
-    "giving_breakdown": {
-      "fukushima_2011": 120,
-      "salary_donations_2011_present": 15,
-      "tomodachi_program": 15,
-      "japan_renewable_energy_foundation": 12,
-      "schwarzman_scholars": 15,
-      "hurricane_sandy": 0.5,
-      "notes": "VERIFIED Jan 2026: 10B yen ($120M) 2011 Fukushima disaster donation documented with full allocation (Red Cross 1B, UNICEF 600M, 4 prefectures, Recovery Fund 4B). Pledged salary until retirement for orphans (~$1-2M/yr). TOMODACHI SoftBank Leadership Program: 1000+ students, 12 years, estimated $10-20M. Masason Foundation (Japan, 2016) scholarships. NO US 990-PF found - all vehicles are Japanese entities."
-    },
-    "sources": [
-      "https://group.softbank/en/news/press/20110516",
-      "https://usjapantomodachi.org/about-us/donors/masayoshi-son/"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 20,
-    "notes": "SoftBank founder. Vision Fund. Wealth highly volatile. Korean heritage. Fukushima response admired.",
-    "scrooge_score": 95.64102564102565,
-    "giving_rate_pct": 1.3076923076923077,
-    "scrooge_rank": 232,
-    "forbes_rank": 391,
-    "verification": {
-      "990_pf": {
-        "status": "not_found",
-        "note": "Masason Foundation is Japanese public interest foundation, no US entity",
-        "url": null
-      },
-      "sec_form4": {
-        "status": "not_applicable",
-        "note": "SoftBank ADR not used for charitable gifts",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 120,
-        "sources": [
-          "SoftBank press releases"
-        ],
-        "note": "2011 donation fully documented with allocations",
-        "url": "https://group.softbank/en/news/press/20110516"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 170,
-        "sources": [
-          "CBS News",
-          "Philanthropy News Digest",
-          "SoftBank"
-        ],
-        "url": "https://group.softbank/en/news/press/20110403"
-      }
-    },
-    "verifiable_giving_millions": 120,
-    "unverifiable_giving_millions": 50
-  },
-  {
     "rank": 692,
     "name": "Frank Fertitta III",
     "net_worth_billions": 3.8,
@@ -7799,7 +7728,7 @@
     "notes": "Station Casinos. UFC sold to Endeavor. Red Rock Resorts.",
     "scrooge_score": 95.6140350877193,
     "giving_rate_pct": 1.3158,
-    "scrooge_rank": 233,
+    "scrooge_rank": 232,
     "forbes_rank": 692
   },
   {
@@ -7821,7 +7750,7 @@
     "notes": "Station Casinos. UFC sold for $4B. Red Rock Resorts.",
     "scrooge_score": 95.6140350877193,
     "giving_rate_pct": 1.3158,
-    "scrooge_rank": 234,
+    "scrooge_rank": 233,
     "forbes_rank": 693
   },
   {
@@ -7846,7 +7775,7 @@
     "notes": "Philippines' richest. Vista Land real estate. Former politician. Housing for poor focus.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 1.1111,
-    "scrooge_rank": 235,
+    "scrooge_rank": 234,
     "forbes_rank": 334
   },
   {
@@ -7868,7 +7797,7 @@
     "notes": "Glencore. Swiss-South African.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.2222,
-    "scrooge_rank": 236,
+    "scrooge_rank": 235,
     "forbes_rank": 1205
   },
   {
@@ -7890,7 +7819,7 @@
     "notes": "Mail.ru.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 237,
+    "scrooge_rank": 236,
     "forbes_rank": 2143
   },
   {
@@ -7912,7 +7841,7 @@
     "notes": "Private equity.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 238,
+    "scrooge_rank": 237,
     "forbes_rank": 2196
   },
   {
@@ -7934,7 +7863,7 @@
     "notes": "UBS.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 239,
+    "scrooge_rank": 238,
     "forbes_rank": 2246
   },
   {
@@ -7956,7 +7885,7 @@
     "notes": "Finance.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 240,
+    "scrooge_rank": 239,
     "forbes_rank": 2257
   },
   {
@@ -7978,7 +7907,7 @@
     "notes": "Banking.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 241,
+    "scrooge_rank": 240,
     "forbes_rank": 2275
   },
   {
@@ -8000,7 +7929,7 @@
     "notes": "Tech.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 242,
+    "scrooge_rank": 241,
     "forbes_rank": 2297
   },
   {
@@ -8022,7 +7951,7 @@
     "notes": "Former Credit Suisse CEO.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 243,
+    "scrooge_rank": 242,
     "forbes_rank": 2339
   },
   {
@@ -8044,7 +7973,7 @@
     "notes": "Twitter, Olo.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 244,
+    "scrooge_rank": 243,
     "forbes_rank": 2970
   },
   {
@@ -8066,7 +7995,7 @@
     "notes": "Eventbrite co-founder.",
     "scrooge_score": 95.55555555555556,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 245,
+    "scrooge_rank": 244,
     "forbes_rank": 2988
   },
   {
@@ -8088,7 +8017,7 @@
     "notes": "CAMAC Energy. Houston-based.",
     "scrooge_score": 95.53571428571429,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 246,
+    "scrooge_rank": 245,
     "forbes_rank": 989
   },
   {
@@ -8110,8 +8039,64 @@
     "notes": "Hartalega gloves. Peak wealth during COVID.",
     "scrooge_score": 95.53571428571429,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 247,
+    "scrooge_rank": 246,
     "forbes_rank": 1104
+  },
+  {
+    "rank": 391,
+    "name": "Masayoshi Son",
+    "net_worth_billions": 13.0,
+    "country": "Japan",
+    "source_of_wealth": "SoftBank",
+    "liquidity_factor": 0.3,
+    "total_lifetime_giving_millions": 175,
+    "giving_breakdown": {
+      "fukushima_2011": 120,
+      "salary_donations_ongoing": 15,
+      "tomodachi_program": 15,
+      "japan_renewable_energy_foundation": 12,
+      "schwarzman_scholars": 15,
+      "hurricane_sandy": 0.5,
+      "notes": "VERIFIED Jan 2026: 10B yen ($120M) for 2011 Fukushima verified via SoftBank press release. Pledged entire salary to orphans. TOMODACHI ~$15M over 12 years. No US foundation (all Japanese entities). Masason Foundation scholarships ongoing."
+    },
+    "sources": [
+      "https://group.softbank/en/news/press/20110516",
+      "https://usjapantomodachi.org/about-us/donors/masayoshi-son/",
+      "https://www.schwarzmanscholars.org/events-and-news/softbank-group-corp-chairman-ceo-masayoshi-son-announces-support-for-schwarzman-scholars-from-japan/"
+    ],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 20,
+    "notes": "SoftBank founder. Vision Fund. Wealth highly volatile. Korean heritage. Fukushima response admired.",
+    "scrooge_score": 95.51282051282051,
+    "giving_rate_pct": 1.3461538461538463,
+    "scrooge_rank": 247,
+    "forbes_rank": 391,
+    "verification": {
+      "990_pf": {
+        "status": "not_applicable",
+        "note": "Japanese resident, no US foundation. Masason Foundation is Japanese entity.",
+        "url": null
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "SoftBank TSE-listed, no US SEC filings for stock gifts",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 135,
+        "note": "2011 Fukushima: 10B yen documented in SoftBank press release",
+        "url": "https://group.softbank/en/news/press/20110516"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 175,
+        "note": "TOMODACHI program, Schwarzman Scholars verified",
+        "url": "https://usjapantomodachi.org/about-us/donors/masayoshi-son/"
+      }
+    },
+    "verifiable_giving_millions": 135,
+    "unverifiable_giving_millions": 40
   },
   {
     "rank": 2919,
@@ -22237,19 +22222,21 @@
     "total_lifetime_giving_millions": 1300,
     "giving_breakdown": {
       "harvard_total": 270,
-      "oxford_bsg": 117,
+      "oxford_bsg": 95,
       "yale_innovation": 80,
       "tel_aviv_university": 65,
       "tate_modern": 63,
+      "stanford_medicine": 10,
+      "national_portrait_gallery": 13,
       "courtauld": 13,
-      "npg": 13,
       "va_museum": 19,
-      "stanford": 10,
-      "notes": "VERIFIED Jan 2026: Foundation claims $1.3B to 250+ institutions. 990-PF (EIN 81-2444350) shows $44-158M annual disbursements. Harvard: $270M total ($200M HMS 2018). Oxford BSG: \u00a375M (2010). Yale: $80M. Tate Modern: \u00a350M (largest in Tate history). Tel Aviv U: $65M. Multiple US and UK EINs: 81-2444350, 85-1345780 (2020), 68-0610651 (Archive)."
+      "other_arts_science": 672,
+      "notes": "VERIFIED Jan 2026: BFF 990-PF (EIN 81-2444350) shows $556M disbursed 2017-2024. Second foundation (EIN 85-1345780) $62M in 2022. Claims $1.3B+ to 250+ institutions. Major: Harvard $270M, Oxford \u00a375M, Yale $80M, Tate \u00a350M."
     },
     "sources": [
       "https://projects.propublica.org/nonprofits/organizations/812444350",
-      "https://blavatnikfoundation.org/"
+      "https://blavatnikfoundation.org/",
+      "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -22261,36 +22248,27 @@
     "verification": {
       "990_pf": {
         "status": "found",
-        "amount_millions": 158,
+        "amount_millions": 556,
         "ein": "81-2444350",
-        "note": "Blavatnik Family Foundation - peak $158M disbursement (2019)",
+        "note": "Blavatnik Family Foundation: $556M disbursed 2017-2024",
         "url": "https://projects.propublica.org/nonprofits/organizations/812444350"
       },
       "sec_form4": {
-        "status": "not_applicable",
-        "note": "Private holdings through Access Industries",
+        "status": "not_found",
+        "note": "Access Industries private; no stock gifts found",
         "url": null
       },
       "foundation_reports": {
         "status": "found",
         "amount_millions": 1300,
-        "sources": [
-          "BFF website",
-          "990-PF"
-        ],
-        "note": "Foundation claims $1.3B cumulative",
+        "note": "Foundation claims $1.3B+ to 250+ institutions",
         "url": "https://blavatnikfoundation.org/"
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 1300,
-        "sources": [
-          "Harvard Gazette",
-          "Oxford",
-          "Art Newspaper",
-          "Guardian"
-        ],
-        "url": "https://blavatnikfoundation.org/"
+        "note": "Harvard, Oxford, Yale, Tate, NPG gifts verified",
+        "url": "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/"
       }
     },
     "verifiable_giving_millions": 1300,
