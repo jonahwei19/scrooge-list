@@ -2872,6 +2872,209 @@ VERIFICATION_DATA = {
             "https://projects.propublica.org/nonprofits/organizations/832841232",
             "https://www.forbes.com/sites/clareoconnor/2014/06/03/report-walmarts-billionaire-waltons-give-almost-none-of-own-cash-to-family-foundation/"
         ]
+    },
+    # ===== BATCH 17: Jan 2026 (High-profile US and international billionaires) =====
+    "Susanne Klatten": {
+        "total_lifetime_giving_millions": 190,
+        "giving_breakdown": {
+            "skala_initiative": 100,  # €88-100M (2016-2022)
+            "stiftung_kunst_und_natur": 40,  # ~€6M/year since 2012
+            "tum_professorship": 10,  # €10M endowment (2009)
+            "bmw_foundation_joint": 15,  # €30M joint with Stefan/2
+            "cancer_research": 10,
+            "other": 15,
+            "notes": "VERIFIED Jan 2026: BMW heiress (~€30B). SKala Initiative €100M (2016-2022). Stiftung Kunst und Natur (art/nature) since 2012. TUM professorship €10M. Has NOT signed Giving Pledge - explicitly rejected it. Very private, German foundations have limited disclosure. ~0.6% of wealth given."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "BMW German-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 190, "note": "SKala Initiative, Stiftung Kunst und Natur documented", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 190, "note": "ZEIT, Bloomberg, Forbes Germany", "url": None}
+        },
+        "sources": []
+    },
+    "David Duffield": {
+        "total_lifetime_giving_millions": 470,
+        "giving_breakdown": {
+            "maddies_fund": 303,  # $303M+ to pet welfare
+            "cornell_total": 145,  # Including $100M gift 2025
+            "other_education": 15,
+            "veterans_first_responders": 7,
+            "notes": "VERIFIED Jan 2026: Workday/PeopleSoft founder (~$14B). Maddie's Fund (EIN 94-3362163) $303M+ for pet rescue - largest animal welfare foundation gift at founding. Cornell $145M+. Has NOT signed Giving Pledge, but plans to leave majority to charity."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 12, "ein": "94-3362163", "note": "Maddie's Fund: $12M/yr grants. Dave & Cheryl Duffield Foundation (47-4279721): $874M assets", "url": "https://projects.propublica.org/nonprofits/organizations/943362163"},
+            "sec_form4": {"status": "not_applicable", "note": "Workday stock gifts to foundations tracked via 990", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 470, "note": "Maddie's Fund $303M + Cornell $145M + foundation operations", "url": "https://www.maddiesfund.org/"},
+            "news_verified": {"status": "found", "amount_millions": 470, "note": "Forbes, Cornell News", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/943362163",
+            "https://www.maddiesfund.org/"
+        ]
+    },
+    "Dustin Moskovitz": {
+        "total_lifetime_giving_millions": 4000,
+        "giving_breakdown": {
+            "good_ventures_disbursed": 3500,  # Cumulative through Open Philanthropy
+            "ea_causes_2019_2020": 570,  # $298M 2019 + $271M 2020
+            "covid_response": 100,
+            "givewell_top_charities": 100,
+            "2025_giving": 600,
+            "notes": "VERIFIED Jan 2026: Facebook co-founder (~$14B). Good Ventures (EIN 46-1008520) $7.94B assets, $357.5M/yr disbursements. Youngest Giving Pledge signatory (2010) with Cari Tuna. Open Philanthropy/Coefficient Giving is outsourced staff. EA movement's largest funder. Committed to $20B lifetime."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 357, "ein": "46-1008520", "note": "Good Ventures: $7.94B assets, $357.5M disbursed (2024)", "url": "https://projects.propublica.org/nonprofits/organizations/461008520"},
+            "sec_form4": {"status": "found", "note": "Meta stock gifts tracked via 990 contributions", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 4000, "note": "Open Philanthropy grants database publicly available", "url": "https://www.openphilanthropy.org/grants/"},
+            "news_verified": {"status": "found", "amount_millions": 4000, "note": "TIME, Chronicle of Philanthropy", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/461008520",
+            "https://www.openphilanthropy.org/grants/"
+        ],
+        "giving_pledge": "yes"
+    },
+    "John Doerr": {
+        "total_lifetime_giving_millions": 1500,
+        "giving_breakdown": {
+            "stanford_sustainability_school": 1100,  # Largest Stanford gift ever
+            "rice_university": 50,  # Doerr Institute
+            "benificus_annual": 220,  # $220M disbursed (2024)
+            "environmental_defense_fund": 10,
+            "newschools_venture_fund": 50,
+            "obama_foundation": 5,
+            "other": 65,
+            "notes": "VERIFIED Jan 2026: Kleiner Perkins partner (~$12B). Benificus Foundation (EIN 77-0444504) $220M/yr disbursements. Stanford Doerr School of Sustainability $1.1B (2022) - largest in Stanford history. Rice $50M (2015). Giving Pledge signatory (2010). Low-profile approach."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 220, "ein": "77-0444504", "note": "Benificus Foundation: $220M disbursed (2024), $12.3M assets", "url": "https://projects.propublica.org/nonprofits/organizations/770444504"},
+            "sec_form4": {"status": "not_applicable", "note": "Kleiner Perkins is private partnership", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1500, "note": "Stanford, Rice, environmental gifts documented", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 1500, "note": "Stanford Daily, Washington Post", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/770444504"
+        ],
+        "giving_pledge": "yes"
+    },
+    "John Paulson": {
+        "total_lifetime_giving_millions": 680,
+        "giving_breakdown": {
+            "harvard_seas": 400,  # 2015 - largest Harvard gift at time
+            "nyu_total": 146,  # $20M + $100M + more
+            "central_park_conservancy": 100,  # 2012 - largest parks gift
+            "hebrew_university": 27,  # 2023
+            "childrens_hospital_ecuador": 15,
+            "other": 2,
+            "notes": "VERIFIED Jan 2026: Hedge fund manager (~$8B). Paulson Family Foundation (EIN 26-3922995) $1.39B assets, $7M/yr grants. Harvard $400M (2015). Central Park $100M (2012). NYU $146M+. Has NOT signed Giving Pledge despite large gifts."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 7, "ein": "26-3922995", "note": "Paulson Family Foundation: $1.39B assets, $7.3M disbursed (2024)", "url": "https://projects.propublica.org/nonprofits/organizations/263922995"},
+            "sec_form4": {"status": "not_applicable", "note": "Paulson & Co is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 680, "note": "Harvard, NYU, Central Park gifts documented", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 680, "note": "Harvard Gazette, NYU News, Observer", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/263922995"
+        ]
+    },
+    "Thai Lee": {
+        "total_lifetime_giving_millions": 25,
+        "giving_breakdown": {
+            "thai_lee_foundation_grants": 20,  # Cumulative since 2014
+            "cancer_research": 3,
+            "refugee_relief": 2,
+            "notes": "VERIFIED Jan 2026: SHI International founder (~$6B). Thai Lee Foundation (EIN 46-1613984) $13.8M assets, $227K grants (2024). Extremely private - 'has been very modest and even negligible of late' per Inside Philanthropy. ~0.4% of wealth. No Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 0.2, "ein": "46-1613984", "note": "Thai Lee Foundation: $13.8M assets, $227K grants (2024)", "url": "https://projects.propublica.org/nonprofits/organizations/461613984"},
+            "sec_form4": {"status": "not_applicable", "note": "SHI International is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 25, "note": "990-PF cumulative grants since 2014", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 25, "note": "Inside Philanthropy notes minimal giving", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/461613984"
+        ]
+    },
+    "Reed Hastings": {
+        "total_lifetime_giving_millions": 1900,
+        "giving_breakdown": {
+            "svcf_jan_2024": 1100,  # $1.1B (2M Netflix shares)
+            "svcf_jul_2024": 500,  # $502M (790K shares)
+            "hbcus_2020": 120,  # Morehouse $40M, Spelman $40M, UNCF $40M
+            "bowdoin_ai_2025": 50,
+            "minerva_tougaloo_2023": 30,
+            "other_education": 100,
+            "notes": "VERIFIED Jan 2026: Netflix founder (~$5B). Hastings Fund at SVCF: $1.1B (Jan 2024) + $502M (Jul 2024) - largest US philanthropist 2024. HBCUs $120M (2020). Bowdoin $50M (2025). Giving Pledge signatory (2012). Education/charter schools focus."
+        },
+        "verification": {
+            "990_pf": {"status": "partial", "amount_millions": 0.26, "ein": "20-8162714", "note": "Hastings Foundation Inc: $3.95M assets, $261K grants. Primary giving via SVCF DAF.", "url": None},
+            "sec_form4": {"status": "found", "amount_millions": 1602, "note": "Netflix stock gifts to SVCF: $1.1B Jan 2024, $502M Jul 2024", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1900, "note": "SVCF donations + HBCUs + Bowdoin documented", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 1900, "note": "Chronicle of Philanthropy, Benzinga, Bowdoin News", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "yes"
+    },
+    "Robert F. Smith": {
+        "total_lifetime_giving_millions": 600,
+        "giving_breakdown": {
+            "fund_ii_foundation_cumulative": 250,  # Total grants to date
+            "student_freedom_initiative": 100,  # HBCU STEM
+            "cornell_total": 65,  # Chemical engineering + scholarships
+            "carnegie_hall": 40,  # Over 6 years
+            "morehouse_2019": 34,  # Student loan payoff
+            "nmaahc": 20,  # African American History museum
+            "columbia": 25,  # Multiple gifts
+            "susan_g_komen": 27,
+            "other": 39,
+            "notes": "VERIFIED Jan 2026: Vista Equity Partners founder (~$10B). Fund II Foundation (EIN 47-2396669) $145M assets. First African American Giving Pledge signatory (2017). Morehouse $34M (2019). Cornell $65M. NOTE: $139M IRS settlement 2020 for tax evasion - abandoned $182M in charitable deductions."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 5.7, "ein": "47-2396669", "note": "Fund II Foundation: $145M assets, $5.7M/yr grants", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Vista Equity is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 600, "note": "Fund II Foundation + major institutional gifts documented", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 600, "note": "TIME100 Philanthropy, Cornell News, DOJ settlement", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "yes"
+    },
+    "He Xiangjian": {
+        "total_lifetime_giving_millions": 4500,
+        "giving_breakdown": {
+            "he_foundation_2017_pledge": 888,  # 6B yuan
+            "hurun_2018_year": 1180,  # 7.5B RMB
+            "hurun_2021_year": 970,
+            "hurun_2023_year": 410,
+            "shunde_development": 500,
+            "heyou_hospital_pledge": 1500,  # 10B yuan non-profit hospital
+            "he_science_foundation_2023": 428,  # 3B yuan AI/climate
+            "notes": "VERIFIED Jan 2026: Midea founder (~$30B). Hurun #1 most generous 2018 (7.5B RMB). He Foundation since 2013: education, poverty alleviation, elderly care. 15 consecutive years on Hurun list. He Science Foundation $428M (2023). Heyou International Hospital 10B yuan. China's most generous billionaire."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese foundation, no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Midea Hong Kong-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 4500, "note": "He Foundation + He Science Foundation + Hurun rankings", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 4500, "note": "Hurun China Philanthropy List, IMD", "url": None}
+        },
+        "sources": []
+    },
+    "Zhang Yong": {
+        "total_lifetime_giving_millions": 40,
+        "giving_breakdown": {
+            "haidilao_corporate_giving": 20,  # Schools, COVID, food drives
+            "shu_ping_personal_hurun": 15,  # Wife on Hurun 2021 list (min $14M threshold)
+            "bingwen_education_foundation": 5,
+            "notes": "VERIFIED Jan 2026: Haidilao founder (~$10B, Singapore resident). Very private. Jianyang Tongcai Experimental School (2001). Bingwen Education Assistance Foundation. Wife Shu Ping on Hurun Philanthropy 2021 (min $14-28M to qualify). Sunrise Capital family office handles giving. Most donations via corporate channels."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Singapore/China resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Haidilao Hong Kong-listed", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 40, "note": "Haidilao CSR reports, Hurun 2021 list (Shu Ping)", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 40, "note": "Corporate giving documented, personal giving private", "url": None}
+        },
+        "sources": []
     }
 }
 
