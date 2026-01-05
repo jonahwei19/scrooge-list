@@ -498,6 +498,112 @@
             transition: opacity 0.2s;
         }
 
+        /* Giving Type Pipeline Boxes */
+        .giving-pipeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .giving-type-box {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 16px;
+            border: 1px solid var(--border-color);
+        }
+
+        .giving-type-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .giving-type-name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-primary);
+        }
+
+        .giving-type-total {
+            font-size: 1.1rem;
+            font-weight: bold;
+            font-family: 'SF Mono', Monaco, monospace;
+            color: var(--accent-blue);
+        }
+
+        .pipeline-sources {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .pipeline-source {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.8rem;
+        }
+
+        .pipeline-source-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        .pipeline-source-icon.found { background: rgba(39, 174, 96, 0.3); color: var(--accent-green); }
+        .pipeline-source-icon.partial { background: rgba(241, 196, 15, 0.3); color: var(--accent-yellow); }
+        .pipeline-source-icon.not_found { background: rgba(231, 76, 60, 0.3); color: var(--accent-red); }
+        .pipeline-source-icon.not_applicable, .pipeline-source-icon.na { background: rgba(149, 165, 166, 0.3); color: var(--text-secondary); }
+
+        .pipeline-source-name {
+            color: var(--text-secondary);
+            flex: 1;
+        }
+
+        .pipeline-source-value {
+            font-family: 'SF Mono', Monaco, monospace;
+            color: var(--text-primary);
+        }
+
+        .pipeline-source-note {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .pipeline-source-link {
+            opacity: 0.6;
+            text-decoration: none;
+        }
+
+        .pipeline-source-link:hover { opacity: 1; }
+
+        .giving-type-items {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px dashed var(--border-color);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .giving-type-items ul {
+            margin: 0;
+            padding-left: 16px;
+        }
+
+        .giving-type-items li {
+            margin: 2px 0;
+        }
+
         .verification-link:hover {
             opacity: 1;
         }
@@ -710,19 +816,19 @@
             </div>
             <div class="modal-body">
                 <div class="modal-section">
-                    <h3>Verification Pipeline</h3>
-                    <div class="verification-grid" id="modal-verification"></div>
+                    <h3>Giving Estimates by Type (with Source Pipeline)</h3>
+                    <div class="giving-pipeline" id="modal-giving-pipeline"></div>
                 </div>
                 <div class="modal-section">
-                    <h3>Giving Breakdown by Category</h3>
-                    <div class="category-chart" id="modal-chart"></div>
+                    <h3>Data Source Summary</h3>
+                    <div class="verification-grid" id="modal-verification"></div>
                 </div>
                 <div class="modal-section" id="modal-notes-section">
                     <h3>Notes</h3>
                     <div class="notes-box" id="modal-notes"></div>
                 </div>
                 <div class="modal-section">
-                    <h3>Data Sources (click to verify)</h3>
+                    <h3>Source URLs (click to verify)</h3>
                     <ul class="sources-list" id="modal-sources"></ul>
                 </div>
             </div>
@@ -960,6 +1066,126 @@
             return categories;
         }
 
+        // Categorize breakdown items into pipeline-friendly format with items list
+        function categorizeForPipeline(breakdown) {
+            const categories = {
+                foundation: { label: 'Foundation/990-PF', value: 0, items: [] },
+                education: { label: 'Education', value: 0, items: [] },
+                healthcare: { label: 'Healthcare/Medical', value: 0, items: [] },
+                environment: { label: 'Environment/Climate', value: 0, items: [] },
+                direct: { label: 'Direct Gifts', value: 0, items: [] },
+                other: { label: 'Other/Misc', value: 0, items: [] }
+            };
+
+            if (!breakdown) return categories;
+
+            for (const [key, value] of Object.entries(breakdown)) {
+                if (key === 'notes' || typeof value !== 'number') continue;
+
+                const keyLower = key.toLowerCase();
+                const displayValue = value >= 1000 ? `$${(value/1000).toFixed(1)}B` : `$${value.toFixed(0)}M`;
+                const itemText = `${key}: ${displayValue}`;
+
+                if (keyLower.includes('foundation') || keyLower.includes('990') || keyLower.includes('grants')) {
+                    categories.foundation.value += value;
+                    categories.foundation.items.push(itemText);
+                } else if (keyLower.includes('education') || keyLower.includes('university') || keyLower.includes('school') || keyLower.includes('college') || keyLower.includes('scholarship')) {
+                    categories.education.value += value;
+                    categories.education.items.push(itemText);
+                } else if (keyLower.includes('health') || keyLower.includes('medical') || keyLower.includes('hospital') || keyLower.includes('cancer') || keyLower.includes('research')) {
+                    categories.healthcare.value += value;
+                    categories.healthcare.items.push(itemText);
+                } else if (keyLower.includes('environment') || keyLower.includes('climate') || keyLower.includes('conservation') || keyLower.includes('carbon') || keyLower.includes('ocean')) {
+                    categories.environment.value += value;
+                    categories.environment.items.push(itemText);
+                } else if (keyLower.includes('direct') || keyLower.includes('personal') || keyLower.includes('announced') || keyLower.includes('gift')) {
+                    categories.direct.value += value;
+                    categories.direct.items.push(itemText);
+                } else {
+                    categories.other.value += value;
+                    categories.other.items.push(itemText);
+                }
+            }
+
+            return categories;
+        }
+
+        // Build source pipeline HTML for a giving type
+        function buildSourcePipeline(typeKey, typeData, verification) {
+            // Define which data sources are relevant for each giving type
+            const sourceRelevance = {
+                foundation: ['990_pf', 'foundation_reports'],
+                education: ['990_pf', 'news_verified', 'foundation_reports'],
+                healthcare: ['990_pf', 'news_verified', 'foundation_reports'],
+                environment: ['990_pf', 'news_verified', 'foundation_reports'],
+                direct: ['sec_form4', 'news_verified'],
+                other: ['990_pf', 'sec_form4', 'news_verified']
+            };
+
+            const sourceLabels = {
+                '990_pf': '990-PF',
+                'sec_form4': 'SEC Form 4',
+                'foundation_reports': 'Foundation Reports',
+                'news_verified': 'News'
+            };
+
+            const sourceIcons = {
+                '990_pf': '📋',
+                'sec_form4': '📈',
+                'foundation_reports': '🏛️',
+                'news_verified': '📰'
+            };
+
+            const relevantSources = sourceRelevance[typeKey] || ['990_pf', 'news_verified'];
+            let html = '';
+
+            for (const sourceKey of relevantSources) {
+                const sourceData = verification ? verification[sourceKey] : null;
+                const label = sourceLabels[sourceKey];
+                const icon = sourceIcons[sourceKey];
+
+                if (sourceData && sourceData.status === 'found') {
+                    const amount = sourceData.amount_millions;
+                    const amountDisplay = amount >= 1000 ? `$${(amount/1000).toFixed(1)}B` : `$${amount.toFixed(0)}M`;
+                    html += `
+                        <div class="pipeline-source">
+                            <span class="pipeline-source-icon found">${icon}</span>
+                            <span class="pipeline-source-name">${label}</span>
+                            <span class="pipeline-source-value">${amountDisplay}</span>
+                        </div>
+                    `;
+                } else if (sourceData && sourceData.status === 'partial') {
+                    const note = sourceData.note || 'Partial data';
+                    html += `
+                        <div class="pipeline-source">
+                            <span class="pipeline-source-icon partial">${icon}</span>
+                            <span class="pipeline-source-name">${label}</span>
+                            <span class="pipeline-source-note">Partial</span>
+                        </div>
+                    `;
+                } else if (sourceData && sourceData.status === 'not_applicable') {
+                    html += `
+                        <div class="pipeline-source">
+                            <span class="pipeline-source-icon na">${icon}</span>
+                            <span class="pipeline-source-name">${label}</span>
+                            <span class="pipeline-source-note">N/A</span>
+                        </div>
+                    `;
+                } else {
+                    // Not found or not checked
+                    html += `
+                        <div class="pipeline-source">
+                            <span class="pipeline-source-icon not_found">${icon}</span>
+                            <span class="pipeline-source-name">${label}</span>
+                            <span class="pipeline-source-note">Not found</span>
+                        </div>
+                    `;
+                }
+            }
+
+            return html;
+        }
+
         // Get source type from URL
         function getSourceType(url) {
             if (url.includes('propublica')) return '990-PF';
@@ -1077,9 +1303,65 @@
                 this.src = placeholderUrl;
             };
 
-            // Build verification pipeline
+            // Build giving pipeline by type
+            const pipelineEl = document.getElementById('modal-giving-pipeline');
+            const breakdown = d.giving_breakdown || {};
+            const verification = d.verification || {};
+
+            // Categorize breakdown items into giving types
+            const givingTypes = categorizeForPipeline(breakdown);
+
+            let pipelineHtml = '';
+            for (const [typeKey, typeData] of Object.entries(givingTypes)) {
+                if (typeData.value <= 0) continue;
+
+                const valueDisplay = typeData.value >= 1000
+                    ? `$${(typeData.value/1000).toFixed(1)}B`
+                    : `$${typeData.value.toFixed(0)}M`;
+
+                // Build source pipeline for this type
+                let sourcesHtml = buildSourcePipeline(typeKey, typeData, verification);
+
+                pipelineHtml += `
+                    <div class="giving-type-box">
+                        <div class="giving-type-header">
+                            <span class="giving-type-name">${typeData.label}</span>
+                            <span class="giving-type-total">${valueDisplay}</span>
+                        </div>
+                        <div class="pipeline-sources">
+                            ${sourcesHtml}
+                        </div>
+                        ${typeData.items.length > 0 ? `
+                        <div class="giving-type-items">
+                            <ul>${typeData.items.map(i => `<li>${i}</li>`).join('')}</ul>
+                        </div>
+                        ` : ''}
+                    </div>
+                `;
+            }
+
+            if (!pipelineHtml) {
+                pipelineHtml = `
+                    <div class="giving-type-box">
+                        <div class="giving-type-header">
+                            <span class="giving-type-name">Total Giving</span>
+                            <span class="giving-type-total">${d.total_lifetime_giving_millions >= 1000
+                                ? `$${(d.total_lifetime_giving_millions/1000).toFixed(1)}B`
+                                : `$${d.total_lifetime_giving_millions}M`}</span>
+                        </div>
+                        <div class="pipeline-sources">
+                            <div class="pipeline-source">
+                                <span class="pipeline-source-icon not_found">?</span>
+                                <span class="pipeline-source-name">Breakdown not available</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+            pipelineEl.innerHTML = pipelineHtml;
+
+            // Build data source summary
             const verificationEl = document.getElementById('modal-verification');
-            const verification = d.verification || null;
 
             if (verification) {
                 const sourceLabels = {
