@@ -252,10 +252,237 @@
             margin-top: 40px;
         }
 
+        /* Modal styles */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        .modal {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            max-width: 800px;
+            width: 100%;
+            border: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .modal-close:hover {
+            color: var(--text-primary);
+        }
+
+        .modal-header {
+            display: flex;
+            gap: 20px;
+            padding: 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .modal-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+            background: var(--bg-card);
+        }
+
+        .modal-title-section {
+            flex: 1;
+        }
+
+        .modal-title-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .modal-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .modal-stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .modal-stat {
+            text-align: center;
+        }
+
+        .modal-stat-value {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--accent-blue);
+        }
+
+        .modal-stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        .modal-body {
+            padding: 25px;
+        }
+
+        .modal-section {
+            margin-bottom: 25px;
+        }
+
+        .modal-section h3 {
+            color: var(--accent-blue);
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        /* Category bar chart */
+        .category-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .category-bar {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-label {
+            width: 140px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .category-bar-track {
+            flex: 1;
+            height: 20px;
+            background: var(--bg-card);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .category-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .category-value {
+            width: 80px;
+            text-align: right;
+            font-size: 0.85rem;
+            font-family: 'SF Mono', Monaco, monospace;
+        }
+
+        .bar-foundation { background: #3498db; }
+        .bar-direct { background: #27ae60; }
+        .bar-securities { background: #9b59b6; }
+        .bar-education { background: #f1c40f; }
+        .bar-healthcare { background: #e74c3c; }
+        .bar-other { background: #95a5a6; }
+
+        /* Sources list */
+        .sources-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sources-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sources-list li:last-child {
+            border-bottom: none;
+        }
+
+        .sources-list a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            word-break: break-all;
+            font-size: 0.9rem;
+        }
+
+        .sources-list a:hover {
+            text-decoration: underline;
+        }
+
+        .source-type {
+            display: inline-block;
+            padding: 2px 6px;
+            background: var(--bg-card);
+            border-radius: 3px;
+            font-size: 0.7rem;
+            margin-right: 8px;
+            color: var(--text-secondary);
+        }
+
+        .notes-box {
+            background: var(--bg-card);
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .forbes-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background: var(--accent-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .forbes-link:hover {
+            opacity: 0.9;
+        }
+
+        tr.clickable {
+            cursor: pointer;
+        }
+
+        tr.clickable:hover {
+            background: var(--bg-card) !important;
+        }
+
         @media (max-width: 768px) {
             h1 { font-size: 1.8rem; }
             th, td { padding: 8px 10px; font-size: 0.9rem; }
             .hide-mobile { display: none; }
+            .modal-header { flex-direction: column; align-items: center; text-align: center; }
+            .modal-stats { justify-content: center; }
         }
     </style>
 </head>
@@ -347,6 +574,55 @@
             <p>Data sources: Forbes RTB API, ProPublica Nonprofit Explorer, SEC EDGAR, FEC OpenData, IPS Giving Pledge Dataset</p>
             <p>Last updated: <span id="last-updated"></span></p>
         </footer>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="modal-overlay" id="profile-modal" onclick="closeModal(event)">
+        <div class="modal" onclick="event.stopPropagation()">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <img class="modal-photo" id="modal-photo" src="" alt="Photo">
+                <div class="modal-title-section">
+                    <h2 id="modal-name"></h2>
+                    <div class="modal-meta">
+                        <span id="modal-country"></span> &bull; <span id="modal-source"></span>
+                    </div>
+                    <div class="modal-stats">
+                        <div class="modal-stat">
+                            <div class="modal-stat-value" id="modal-networth"></div>
+                            <div class="modal-stat-label">Net Worth</div>
+                        </div>
+                        <div class="modal-stat">
+                            <div class="modal-stat-value" id="modal-giving"></div>
+                            <div class="modal-stat-label">Lifetime Giving</div>
+                        </div>
+                        <div class="modal-stat">
+                            <div class="modal-stat-value" id="modal-score"></div>
+                            <div class="modal-stat-label">Scrooge Score</div>
+                        </div>
+                        <div class="modal-stat">
+                            <div class="modal-stat-value" id="modal-confidence"></div>
+                            <div class="modal-stat-label">Data Confidence</div>
+                        </div>
+                    </div>
+                    <a class="forbes-link" id="modal-forbes-link" href="#" target="_blank">View on Forbes &rarr;</a>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Giving Breakdown by Category</h3>
+                    <div class="category-chart" id="modal-chart"></div>
+                </div>
+                <div class="modal-section" id="modal-notes-section">
+                    <h3>Notes</h3>
+                    <div class="notes-box" id="modal-notes"></div>
+                </div>
+                <div class="modal-section">
+                    <h3>Data Sources (click to verify)</h3>
+                    <ul class="sources-list" id="modal-sources"></ul>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -504,6 +780,8 @@
                 const givingRate = d.giving_rate_pct || 0;
 
                 const row = document.createElement('tr');
+                row.className = 'clickable';
+                row.onclick = () => openProfile(d);
                 row.innerHTML = `
                     <td>${d.scrooge_rank || i + 1}</td>
                     <td><strong>${d.name}</strong><br><small style="color:var(--text-secondary)">${d.country}</small></td>
@@ -521,6 +799,202 @@
                 th.classList.remove('sorted-asc', 'sorted-desc');
             });
         }
+
+        // Generate Forbes URL from name
+        function getForbesUrl(name) {
+            const slug = name.toLowerCase()
+                .replace(/[^a-z0-9\s-]/g, '')
+                .replace(/\s+/g, '-');
+            return `https://www.forbes.com/profile/${slug}/`;
+        }
+
+        // Generate Forbes image URL
+        function getForbesImageUrl(name, forbesRank) {
+            // Forbes uses a specific image CDN pattern
+            const slug = name.toLowerCase()
+                .replace(/[^a-z0-9\s-]/g, '')
+                .replace(/\s+/g, '-');
+            return `https://specials-images.forbesimg.com/imageserve/${slug}/416x416.jpg`;
+        }
+
+        // Categorize breakdown items into 6 standard categories
+        function categorizeBreakdown(breakdown) {
+            const categories = {
+                foundation: { label: 'Foundation Grants', value: 0, class: 'bar-foundation' },
+                direct: { label: 'Direct Gifts', value: 0, class: 'bar-direct' },
+                education: { label: 'Education', value: 0, class: 'bar-education' },
+                healthcare: { label: 'Healthcare/Medical', value: 0, class: 'bar-healthcare' },
+                environment: { label: 'Environment/Climate', value: 0, class: 'bar-securities' },
+                other: { label: 'Other/Misc', value: 0, class: 'bar-other' }
+            };
+
+            if (!breakdown) return categories;
+
+            for (const [key, value] of Object.entries(breakdown)) {
+                if (key === 'notes' || typeof value !== 'number') continue;
+
+                const keyLower = key.toLowerCase();
+
+                if (keyLower.includes('foundation') || keyLower.includes('990') || keyLower.includes('grants')) {
+                    categories.foundation.value += value;
+                } else if (keyLower.includes('education') || keyLower.includes('university') || keyLower.includes('school') || keyLower.includes('college') || keyLower.includes('scholarship')) {
+                    categories.education.value += value;
+                } else if (keyLower.includes('health') || keyLower.includes('medical') || keyLower.includes('hospital') || keyLower.includes('cancer') || keyLower.includes('research')) {
+                    categories.healthcare.value += value;
+                } else if (keyLower.includes('environment') || keyLower.includes('climate') || keyLower.includes('conservation') || keyLower.includes('carbon') || keyLower.includes('ocean')) {
+                    categories.environment.value += value;
+                } else if (keyLower.includes('direct') || keyLower.includes('personal') || keyLower.includes('announced')) {
+                    categories.direct.value += value;
+                } else {
+                    categories.other.value += value;
+                }
+            }
+
+            return categories;
+        }
+
+        // Get source type from URL
+        function getSourceType(url) {
+            if (url.includes('propublica')) return '990-PF';
+            if (url.includes('sec.gov')) return 'SEC';
+            if (url.includes('forbes')) return 'Forbes';
+            if (url.includes('wikipedia')) return 'Wikipedia';
+            if (url.includes('philanthropy')) return 'Philanthropy';
+            if (url.includes('nytimes') || url.includes('wsj') || url.includes('bloomberg')) return 'News';
+            if (url.includes('foundation') || url.includes('.org')) return 'Foundation';
+            return 'Source';
+        }
+
+        // Calculate data confidence score
+        function getDataConfidence(d) {
+            let score = 0;
+            const giving = d.total_lifetime_giving_millions || 0;
+            const sources = d.sources || [];
+            const breakdown = d.giving_breakdown || {};
+            const breakdownItems = Object.keys(breakdown).filter(k => k !== 'notes').length;
+
+            // Points for sources
+            if (sources.length >= 3) score += 30;
+            else if (sources.length >= 2) score += 20;
+            else if (sources.length >= 1) score += 10;
+
+            // Points for breakdown detail
+            if (breakdownItems >= 5) score += 30;
+            else if (breakdownItems >= 3) score += 20;
+            else if (breakdownItems >= 1) score += 10;
+
+            // Penalty for round numbers (likely placeholder)
+            if (giving > 0 && giving % 100 === 0) score -= 15;
+            else if (giving > 0 && giving % 50 === 0) score -= 10;
+
+            // Points for 990-PF or SEC sources (high confidence)
+            const hasHighConfidence = sources.some(s => s.includes('propublica') || s.includes('sec.gov'));
+            if (hasHighConfidence) score += 25;
+
+            // Points for notes explaining methodology
+            if (breakdown.notes && breakdown.notes.length > 50) score += 15;
+
+            return Math.max(0, Math.min(100, score));
+        }
+
+        function getConfidenceLabel(score) {
+            if (score >= 70) return { label: 'HIGH', color: 'var(--accent-green)' };
+            if (score >= 40) return { label: 'MEDIUM', color: 'var(--accent-yellow)' };
+            return { label: 'LOW', color: 'var(--accent-red)' };
+        }
+
+        // Open profile modal
+        function openProfile(d) {
+            const modal = document.getElementById('profile-modal');
+            const score = d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score;
+            const giving = d.total_lifetime_giving_millions || 0;
+
+            // Set header info
+            document.getElementById('modal-name').textContent = d.name;
+            document.getElementById('modal-country').textContent = d.country;
+            document.getElementById('modal-source').textContent = d.source_of_wealth || 'Various';
+            document.getElementById('modal-networth').textContent = `$${d.net_worth_billions.toFixed(1)}B`;
+            document.getElementById('modal-giving').textContent = giving >= 1000 ? `$${(giving/1000).toFixed(1)}B` : `$${giving.toFixed(0)}M`;
+            document.getElementById('modal-score').textContent = score.toFixed(1);
+
+            // Data confidence
+            const confidence = getDataConfidence(d);
+            const confLabel = getConfidenceLabel(confidence);
+            const confEl = document.getElementById('modal-confidence');
+            confEl.textContent = confLabel.label;
+            confEl.style.color = confLabel.color;
+
+            // Forbes link and image
+            const forbesUrl = getForbesUrl(d.name);
+            document.getElementById('modal-forbes-link').href = forbesUrl;
+
+            // Use Forbes image or placeholder
+            const photoEl = document.getElementById('modal-photo');
+            photoEl.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(d.name)}&size=120&background=232323&color=fff`;
+            photoEl.onerror = function() {
+                this.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(d.name)}&size=120&background=232323&color=fff`;
+            };
+
+            // Build category chart
+            const categories = categorizeBreakdown(d.giving_breakdown);
+            const maxValue = Math.max(...Object.values(categories).map(c => c.value), 1);
+            const chartEl = document.getElementById('modal-chart');
+
+            let chartHtml = '';
+            for (const [key, cat] of Object.entries(categories)) {
+                const pct = (cat.value / maxValue) * 100;
+                const displayValue = cat.value >= 1000 ? `$${(cat.value/1000).toFixed(1)}B` : `$${cat.value.toFixed(0)}M`;
+                chartHtml += `
+                    <div class="category-bar">
+                        <span class="category-label">${cat.label}</span>
+                        <div class="category-bar-track">
+                            <div class="category-bar-fill ${cat.class}" style="width: ${pct}%"></div>
+                        </div>
+                        <span class="category-value">${cat.value > 0 ? displayValue : '-'}</span>
+                    </div>
+                `;
+            }
+            chartEl.innerHTML = chartHtml;
+
+            // Notes
+            const notesSection = document.getElementById('modal-notes-section');
+            const notesEl = document.getElementById('modal-notes');
+            const notes = d.notes || (d.giving_breakdown && d.giving_breakdown.notes) || '';
+            if (notes) {
+                notesSection.style.display = 'block';
+                notesEl.textContent = notes;
+            } else {
+                notesSection.style.display = 'none';
+            }
+
+            // Sources
+            const sourcesEl = document.getElementById('modal-sources');
+            const sources = d.sources || [];
+            if (sources.length > 0) {
+                sourcesEl.innerHTML = sources.map(url => {
+                    const type = getSourceType(url);
+                    const displayUrl = url.length > 60 ? url.substring(0, 60) + '...' : url;
+                    return `<li><span class="source-type">${type}</span><a href="${url}" target="_blank">${displayUrl}</a></li>`;
+                }).join('');
+            } else {
+                sourcesEl.innerHTML = '<li style="color: var(--text-secondary)">No source URLs available - estimate may be placeholder</li>';
+            }
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function closeModal(event) {
+            if (event && event.target !== event.currentTarget) return;
+            document.getElementById('profile-modal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
 
         function updateStats() {
             const stats = document.getElementById('stats');
