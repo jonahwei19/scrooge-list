@@ -969,6 +969,48 @@ def update_json():
             if 'image_url' in vdata:
                 entry['image_url'] = vdata['image_url']
 
+            # Calculate verifiable vs unverifiable giving
+            # Verifiable: 990-PF + SEC Form 4 (hard documentation)
+            # Unverifiable: news/announcements (soft documentation)
+            verification = vdata.get('verification', {})
+
+            verifiable = 0
+            unverifiable = 0
+
+            # 990-PF is verifiable
+            if verification.get('990_pf', {}).get('status') == 'found':
+                amt = verification['990_pf'].get('amount_millions', 0)
+                if amt and amt > 0:
+                    verifiable += amt
+
+            # SEC Form 4 is verifiable
+            if verification.get('sec_form4', {}).get('status') == 'found':
+                amt = verification['sec_form4'].get('amount_millions', 0)
+                if amt and amt > 0:
+                    verifiable += amt
+
+            # Foundation reports - verifiable if from 990
+            if verification.get('foundation_reports', {}).get('status') == 'found':
+                amt = verification['foundation_reports'].get('amount_millions', 0)
+                # Only add if not already counted in 990_pf
+                if amt and amt > 0 and verification.get('990_pf', {}).get('status') != 'found':
+                    verifiable += amt
+
+            # News is unverifiable (soft evidence)
+            if verification.get('news_verified', {}).get('status') == 'found':
+                amt = verification['news_verified'].get('amount_millions', 0)
+                if amt and amt > 0:
+                    # Unverifiable = max of (news amount, total - verifiable)
+                    # This captures announced giving not in documents
+                    unverifiable = max(0, vdata['total_lifetime_giving_millions'] - verifiable)
+
+            # If no verifiable sources but we have a total, it's all unverifiable
+            if verifiable == 0:
+                unverifiable = vdata['total_lifetime_giving_millions']
+
+            entry['verifiable_giving_millions'] = verifiable
+            entry['unverifiable_giving_millions'] = unverifiable
+
             # Recalculate scores
             liquidity = entry.get('liquidity_factor', 0.3)
             net_worth_millions = entry['net_worth_billions'] * 1000

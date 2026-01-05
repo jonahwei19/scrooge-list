@@ -719,6 +719,13 @@
                     </label>
                     <small style="color: var(--text-secondary)">Weight by absolute wealth — a $200B billionaire giving 1% is worse than a $2B billionaire giving 1%</small>
                 </div>
+                <div class="factor-item">
+                    <label>
+                        <span>Include Unverifiable Giving</span>
+                        <input type="checkbox" id="include-unverifiable" checked onchange="recalculateScores()">
+                    </label>
+                    <small style="color: var(--text-secondary)">Include news/announcements (unverifiable). Uncheck for 990-PF/SEC only (verifiable)</small>
+                </div>
             </div>
             <div class="filter-row">
                 <select id="country-filter" onchange="filterData()">
@@ -740,8 +747,9 @@
                     <th onclick="sortTable('scrooge_rank')">Rank</th>
                     <th onclick="sortTable('name')">Name</th>
                     <th onclick="sortTable('net_worth_billions')">Net Worth</th>
-                    <th onclick="sortTable('total_lifetime_giving_millions')" class="hide-mobile">Lifetime Giving</th>
-                    <th onclick="sortTable('giving_rate_pct')" class="hide-mobile">Giving %</th>
+                    <th onclick="sortTable('verifiable_giving_millions')" class="hide-mobile" title="Verified via 990-PF or SEC Form 4">Verified</th>
+                    <th onclick="sortTable('unverifiable_giving_millions')" class="hide-mobile" title="From news/announcements only">Unverified</th>
+                    <th onclick="sortTable('total_lifetime_giving_millions')" class="hide-mobile">Total</th>
                     <th onclick="sortTable('scrooge_score')">Scrooge Score</th>
                     <th onclick="sortTable('giving_pledge_signed')" class="hide-mobile">Pledge</th>
                 </tr>
@@ -893,13 +901,21 @@
             // Giving Ratio = Total Lifetime Giving / (Net Worth × Liquidity Factor)
             const applyLiquidity = document.getElementById('apply-liquidity').checked;
             const sizeAdjusted = document.getElementById('size-adjusted').checked;
+            const includeUnverifiable = document.getElementById('include-unverifiable').checked;
 
             // First pass: calculate base scores
             rawData.forEach(d => {
                 const liquidity = applyLiquidity ? (d.liquidity_factor || 0.3) : 1.0;
                 const liquidWealth = d.net_worth_billions * 1000; // Convert to millions
                 const adjustedWealth = liquidWealth * liquidity;
-                const giving = d.total_lifetime_giving_millions || 0;
+
+                // Use verifiable only or total based on toggle
+                const verifiable = d.verifiable_giving_millions || 0;
+                const unverifiable = d.unverifiable_giving_millions || 0;
+                const giving = includeUnverifiable ? (d.total_lifetime_giving_millions || 0) : verifiable;
+
+                // Store effective giving for display
+                d.effective_giving = giving;
 
                 if (adjustedWealth > 0) {
                     const givingRatio = giving / adjustedWealth;
@@ -990,7 +1006,11 @@
                 const score = d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score;
                 const scoreClass = score >= 70 ? 'score-high' : score >= 40 ? 'score-medium' : 'score-low';
                 const giving = d.total_lifetime_giving_millions || 0;
-                const givingRate = d.giving_rate_pct || 0;
+                const verifiable = d.verifiable_giving_millions || 0;
+                const unverifiable = d.unverifiable_giving_millions || 0;
+
+                // Format amounts
+                const formatAmount = (amt) => amt >= 1000 ? `$${(amt/1000).toFixed(1)}B` : `$${amt.toFixed(0)}M`;
 
                 const row = document.createElement('tr');
                 row.className = 'clickable';
@@ -999,8 +1019,9 @@
                     <td>${d.scrooge_rank || i + 1}</td>
                     <td><strong>${d.name}</strong><br><small style="color:var(--text-secondary)">${d.country}</small></td>
                     <td class="money">$${d.net_worth_billions.toFixed(1)}B</td>
-                    <td class="money hide-mobile">$${giving >= 1000 ? (giving/1000).toFixed(1) + 'B' : giving.toFixed(0) + 'M'}</td>
-                    <td class="hide-mobile">${givingRate.toFixed(2)}%</td>
+                    <td class="money hide-mobile" style="color: var(--accent-green)">${formatAmount(verifiable)}</td>
+                    <td class="money hide-mobile" style="color: var(--accent-yellow)">${formatAmount(unverifiable)}</td>
+                    <td class="money hide-mobile">${formatAmount(giving)}</td>
                     <td class="score-cell ${scoreClass}">${score.toFixed(1)}</td>
                     <td class="hide-mobile ${getPledgeDisplay(d).class}">${getPledgeDisplay(d).text}</td>
                 `;
@@ -1339,13 +1360,13 @@
             }
 
             if (!pipelineHtml) {
+                const totalGiving = d.total_lifetime_giving_millions || 0;
+                const totalDisplay = totalGiving >= 1000 ? `$${(totalGiving/1000).toFixed(1)}B` : `$${totalGiving}M`;
                 pipelineHtml = `
                     <div class="giving-type-box">
                         <div class="giving-type-header">
                             <span class="giving-type-name">Total Giving</span>
-                            <span class="giving-type-total">${d.total_lifetime_giving_millions >= 1000
-                                ? `$${(d.total_lifetime_giving_millions/1000).toFixed(1)}B`
-                                : `$${d.total_lifetime_giving_millions}M`}</span>
+                            <span class="giving-type-total">${totalDisplay}</span>
                         </div>
                         <div class="pipeline-sources">
                             <div class="pipeline-source">
