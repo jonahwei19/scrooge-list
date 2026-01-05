@@ -4257,6 +4257,177 @@ VERIFICATION_DATA = {
             "https://news.mit.edu/2021/dropbox-ceo-drew-houston-accelerated-shift-distributed-work-1122"
         ],
         "giving_pledge": "yes"
+    },
+    # Batch 25: James Goodnight, Bruce Kovner, Chase Coleman III, Leon Cooperman, Travis Kalanick, Ronald Perelman, Bobby Murphy, John Sall
+    "James Goodnight": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "goodnight_educational_foundation_cumulative": 80,
+            "nc_state_various": 50,
+            "friday_institute": 5,
+            "western_carolina_professorship": 1.5,
+            "notes": "VERIFIED Jan 2026: SAS Institute co-founder/CEO (~$18.5B). Goodnight Educational Foundation (EIN 56-6533546): $144M assets, $8.6M annual grants. NC State: Goodnight Scholars (1,000+ students since 2008), SAS Hall, professorships. Cary Academy co-founded 1996. SAS corporate: ~$95M/yr (cash + in-kind + matching) but that's company money. NOT Giving Pledge (confirmed)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "56-6533546", "note": "Goodnight Educational Foundation: $144M assets, $8.6M grants 2023", "url": "https://projects.propublica.org/nonprofits/organizations/566533546/202512669349101121/full"},
+            "sec_form4": {"status": "not_applicable", "note": "SAS is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 100, "note": "20+ years of foundation grants plus major NC State gifts", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 100, "note": "NC State announcements, Inside Philanthropy profile", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/566533546/202512669349101121/full"
+        ],
+        "giving_pledge": "no"
+    },
+    "Bruce Kovner": {
+        "total_lifetime_giving_millions": 400,
+        "giving_breakdown": {
+            "juilliard_school": 200,
+            "nyc_cultural_institutions": 100,
+            "think_tanks_policy": 40,
+            "charter_schools_education": 30,
+            "foundation_annual": 30,
+            "notes": "VERIFIED Jan 2026: Caxton Associates founder (~$7.6B). Kovner Foundation (EIN 22-3468030): $335M assets, $18-25M annual grants. Juilliard $200M+ (chairman since 2001): $60M Kovner Fellowship (2013), $20M Historical Performance (2012), $25M new wing (2005). Lincoln Center $1B Bravo Campaign leader. AEI chairman (2002-2008). NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "22-3468030", "note": "Kovner Foundation: $335M assets, $18M grants 2023", "url": "https://projects.propublica.org/nonprofits/organizations/223468030/202433209349103758/full"},
+            "sec_form4": {"status": "not_searched", "note": "Stock gifts via foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 400, "note": "Chronicle Philanthropy confirmed $400M+ giving", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 400, "note": "Juilliard, Lincoln Center widely documented", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/223468030/202433209349103758/full"
+        ],
+        "giving_pledge": "no"
+    },
+    "Chase Coleman III": {
+        "total_lifetime_giving_millions": 180,
+        "giving_breakdown": {
+            "chase_stephanie_coleman_foundation": 141,
+            "tiger_global_philanthropic_ventures": 40,
+            "notes": "VERIFIED Jan 2026: Tiger Global founder (~$8.5B). Chase and Stephanie Coleman Foundation (EIN 83-0451634): $374M assets, $22M grants 2024. Tiger Global Philanthropic Ventures (EIN 85-4007593): $220M committed, ~$40M disbursed. Focus: education (KIPP, Teach for America), healthcare (HSS, MSK), Blue Meridian Partners. NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "83-0451634", "note": "Chase & Stephanie Coleman Foundation: $374M assets, $22M grants 2024", "url": "https://projects.propublica.org/nonprofits/organizations/830451634/202444669349100832/full"},
+            "sec_form4": {"status": "not_searched", "note": "Stock gifts via foundations", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 180, "note": "Two foundations with combined $140M+ cumulative grants", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 180, "note": "Inside Philanthropy, Institutional Investor covered", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/830451634/202444669349100832/full",
+            "https://projects.propublica.org/nonprofits/organizations/854007593"
+        ],
+        "giving_pledge": "no"
+    },
+    "Leon Cooperman": {
+        "total_lifetime_giving_millions": 350,
+        "giving_breakdown": {
+            "cooperman_barnabas_medical_center": 125,
+            "columbia_business_school": 50,
+            "cooperman_college_scholars": 50,
+            "hunter_college": 25,
+            "njpac": 20,
+            "boca_raton_regional_hospital": 25,
+            "jewish_community_foundation": 20,
+            "jespy_house": 13,
+            "other": 22,
+            "notes": "VERIFIED Jan 2026: Omega Advisors founder (~$2.5B). Leon and Toby Cooperman Family Foundation (EIN 13-3102941): $434M assets, $19M grants 2024. Cooperman Barnabas $125M ($100M 2021 renamed hospital). Columbia $50M. Hunter $25M (largest ever). Cooperman College Scholars 1,000+ students. Signed Giving Pledge Sept 2010 (inaugural year)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "13-3102941", "note": "Leon and Toby Cooperman Family Foundation: $434M assets, $19M grants 2024", "url": "https://projects.propublica.org/nonprofits/organizations/133102941/202413519349100756/full"},
+            "sec_form4": {"status": "not_searched", "note": "Stock gifts via foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 350, "note": "Forbes: $250M+ as of 2023, plus subsequent gifts", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 350, "note": "Saint Barnabas, Columbia, Hunter all confirmed", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/133102941/202413519349100756/full",
+            "https://givingpledge.org/pledger?pledgerId=182"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Travis Kalanick": {
+        "total_lifetime_giving_millions": 20,
+        "giving_breakdown": {
+            "10100_growth_foundation_2024": 5.5,
+            "uc_riverside_medical_2020": 10,
+            "uber_driver_legal_fund_2017": 3,
+            "other": 1.5,
+            "notes": "VERIFIED Jan 2026: Uber co-founder (~$2.9B). 10100 Growth Foundation (EIN 35-7353943): $115M assets, $5.5M grants 2024. UC Riverside medical school $10M (2020, news only). IMPORTANT: NOT Giving Pledge - common confusion with co-founder Garrett Camp who signed in 2017. Modest giving relative to wealth."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "35-7353943", "note": "10100 Growth Foundation: $115M assets, $5.5M grants 2024", "url": "https://projects.propublica.org/nonprofits/organizations/357353943/202501359349105225/full"},
+            "sec_form4": {"status": "not_searched", "note": "Stock sales not tracked for charity", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 20, "note": "Foundation active but modest disbursements", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 20, "note": "UC Riverside claim not independently verified", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/357353943/202501359349105225/full"
+        ],
+        "giving_pledge": "no"
+    },
+    "Ronald Perelman": {
+        "total_lifetime_giving_millions": 500,
+        "giving_breakdown": {
+            "higher_education": 215,
+            "healthcare": 150,
+            "arts_culture": 100,
+            "jewish_causes": 20,
+            "other": 15,
+            "notes": "VERIFIED Jan 2026: MacAndrews & Forbes (~$3.8B). Perelman Family Foundation (EIN 13-4008528) + Perelman Family Charitable Trust I (EIN 82-6501838): $396M assets. Columbia Business School $100M. Princeton $65M. NYU Langone $50M. NY Presbyterian $50M. Perelman Performing Arts Center $75M+. Carnegie Hall $20M. Brown $25M. Signed Giving Pledge 2010."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "13-4008528", "note": "Two foundations: Perelman Family Foundation + Trust I with $396M combined", "url": "https://projects.propublica.org/nonprofits/organizations/134008528/201913199349102026/full"},
+            "sec_form4": {"status": "not_searched", "note": "Stock gifts via foundations", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 500, "note": "Major named gifts totaling $335M+ documented", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 500, "note": "NYU, Columbia, Princeton, Carnegie Hall confirmed", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/134008528",
+            "https://givingpledge.org/pledger?pledgerId=262"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Bobby Murphy": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "snap_foundation_stock_donations": 35,
+            "la_fire_relief_2025": 2,
+            "department_of_angels_2025": 2.5,
+            "other": 10,
+            "notes": "VERIFIED Jan 2026: Snap co-founder (~$4.5B). No personal foundation - gives via Snap Foundation (EIN 61-1817014, shared with Spiegel): $140M assets, $8M grants 2023. Murphy donated 287K shares ($17.4M) in 2021. LA fire relief $5M joint (Jan 2025). Maintains low philanthropic profile vs Spiegel. NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "partial", "ein": "61-1817014", "note": "Snap Foundation (corporate/joint) - hard to isolate Murphy's share", "url": "https://projects.propublica.org/nonprofits/organizations/611817014/202523189349101647/full"},
+            "sec_form4": {"status": "found", "amount_millions": 35, "note": "Snap stock donations documented", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 50, "note": "Joint with Spiegel, attribution difficult", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 50, "note": "LA fire relief, stock donations documented", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/611817014/202523189349101647/full"
+        ],
+        "giving_pledge": "no"
+    },
+    "John Sall": {
+        "total_lifetime_giving_millions": 240,
+        "giving_breakdown": {
+            "sall_family_foundation_cumulative": 240,
+            "environment_conservation": 100,
+            "public_health": 60,
+            "science": 50,
+            "other": 30,
+            "notes": "VERIFIED Jan 2026: SAS Institute co-founder (~$4-5B). Sall Family Foundation (EIN 58-2016050): $136M assets, $32M grants 2023. Forbes: 'given over $240 million to their Sall Family Foundation.' Focus: environment, public health, science, conservation. Cary Academy co-founded. Signed Giving Pledge April 2012."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "ein": "58-2016050", "note": "Sall Family Foundation: $136M assets, $32M grants 2023", "url": "https://projects.propublica.org/nonprofits/organizations/582016050/202533219349101718/full"},
+            "sec_form4": {"status": "not_applicable", "note": "SAS is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 240, "note": "Forbes confirmed $240M+ given to foundation", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 240, "note": "Giving Pledge, Forbes profile confirmed", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/582016050/202533219349101718/full",
+            "https://givingpledge.org/pressrelease?date=04.19.2012"
+        ],
+        "giving_pledge": "yes"
     }
 }
 
