@@ -370,7 +370,7 @@ VERIFICATION_DATA = {
     },
     "Changpeng Zhao": {
         "total_lifetime_giving_millions": 35,
-        "giving_pledge": "99% pledge",  # Personal pledge, not official Giving Pledge
+        "giving_pledge": "Unofficially",  # Personal pledge, not official Giving Pledge
         "giving_breakdown": {
             "binance_charity": 30,
             "vitalik_biotech": 10,
