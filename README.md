@@ -80,15 +80,23 @@ python3 verify_billionaire.py --batch          # All suspicious entries
 
 ## Data Sources
 
-| Category | Source | Confidence |
-|----------|--------|------------|
-| Foundation giving | 990-PF filings (ProPublica) | HIGH |
-| Announced gifts | Chronicle of Philanthropy, news, Wikipedia | MEDIUM |
-| Securities gifts | SEC Form 4 (transaction code "G") | MEDIUM |
-| Giving Pledge status | Official pledge database | HIGH |
-| Political giving | FEC OpenData | HIGH |
-| DAF contributions | Foundation→DAF transfers + estimates | LOW |
-| Philanthropic LLCs | Media coverage only | LOW |
+| Category | Source | Confidence | API/Access |
+|----------|--------|------------|------------|
+| Foundation giving | 990-PF filings (ProPublica) | HIGH | [API](https://projects.propublica.org/nonprofits/api) |
+| Grants data | Candid/GuideStar | HIGH | [API](https://developer.candid.org/) |
+| University mega-gifts | Chronicle of Higher Education | MEDIUM | Manual |
+| Announced gifts | Chronicle of Philanthropy, news | MEDIUM | Manual |
+| Securities gifts | SEC Form 4 (code "G") | MEDIUM | [EDGAR](https://www.sec.gov/cgi-bin/browse-edgar) |
+| Giving Pledge status | Official pledge database | HIGH | Manual |
+| DAF contributions | Foundation→DAF transfers | LOW | 990-PF only |
+| Philanthropic LLCs | Media coverage only | LOW | Manual |
+
+### Potential Future Data Sources
+
+- **GivingTuesday 990 Data Infrastructure** — centralized 990 data with better search
+- **CASE Voluntary Support of Education** — university donation tracking ($58B/year)
+- **Foundation Maps (Candid)** — grant flow visualization
+- **Inside Philanthropy** — donor profiles and giving estimates
 
 ## What Remains Unknowable
 
