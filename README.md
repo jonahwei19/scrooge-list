@@ -43,6 +43,41 @@ The methodology makes three critical distinctions:
 
 Example: Elon Musk's foundation has $14B in assets but grants 78% to entities he controls. Actual external giving: ~$270M.
 
+## Verification Pipeline
+
+Each estimate goes through a multi-stage verification process:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│ Stage 1: ProPublica 990-PF API                              │
+│   - Search for foundations by billionaire name              │
+│   - Pull cumulative grants across all available years       │
+│   - Confidence: HIGH                                        │
+├─────────────────────────────────────────────────────────────┤
+│ Stage 2: SEC EDGAR Form 4                                   │
+│   - Search for stock gifts (transaction code "G")           │
+│   - Aggregate gift values                                   │
+│   - Confidence: MEDIUM                                      │
+├─────────────────────────────────────────────────────────────┤
+│ Stage 3: Web Search (News/Announcements)                    │
+│   - Chronicle of Philanthropy, Forbes, major news           │
+│   - Direct gift announcements                               │
+│   - Confidence: MEDIUM                                      │
+├─────────────────────────────────────────────────────────────┤
+│ Stage 4: Cross-Validation                                   │
+│   - Compare sources, flag discrepancies > 2x                │
+│   - Weighted average (990-PF: 3x, SEC: 2x, Web: 1x)         │
+│   - Calculate confidence score                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+Run the verification script:
+
+```bash
+python3 verify_billionaire.py "Larry Ellison"  # Single billionaire
+python3 verify_billionaire.py --batch          # All suspicious entries
+```
+
 ## Data Sources
 
 | Category | Source | Confidence |

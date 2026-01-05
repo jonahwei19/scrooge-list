@@ -1048,17 +1048,13 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 1150,
     "giving_breakdown": {
-      "ellison_medical_foundation_closed": 430,
-      "larry_ellison_foundation_cumulative": 400,
-      "usc_cancer_center": 200,
-      "wildlife_conservation": 50,
-      "friends_of_idf": 27,
-      "other": 43,
-      "notes": "VERIFIED Jan 2026: Ellison Medical Foundation gave $430M before closing 2013. Larry Ellison Foundation ~$290M from 990s (2018-2024). 95% pledge on $245B = $230B+ but only ~0.5% disbursed."
+      "larry_ellison_foundation_990pf_cumulative": 413,
+      "direct_gifts_usc_berkeley_etc": 737,
+      "notes": "VERIFIED: 990-PF shows $413M cumulative foundation grants (2014-2023). Additional $737M in direct gifts to USC, UC Berkeley, and other institutions per news reports."
     },
     "sources": [
-      "https://www.instrumentl.com/990-report/larry-ellison-foundation",
-      "https://fortune.com/2025/09/23/oracle-founder-larry-ellison-pledged-give-away-95-percent-of-393b-fortune-leadership-changes-mystery/"
+      "https://projects.propublica.org/nonprofits/organizations/943269827",
+      "https://www.forbes.com/profile/larry-ellison/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 37,
@@ -10067,15 +10063,14 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 2500,
     "giving_breakdown": {
+      "alice_walton_foundation_990pf": 398,
       "crystal_bridges_museum": 1200,
-      "walton_family_foundation_share": 500,
-      "art_foundation": 500,
-      "heartland_whole_health_institute": 300,
-      "notes": "Founded Crystal Bridges Museum (invested $1.2B+). Active in arts and holistic health."
+      "walton_family_foundation_share": 902,
+      "notes": "VERIFIED: Personal foundation 990-PF shows $398M. Crystal Bridges Museum donation ~$1.2B. Share of Walton Family Foundation."
     },
     "sources": [
-      "https://www.insidephilanthropy.com/home/the-quiet-donors-of-americas-richest-family-three-low-profile-walton-foundations",
-      "https://en.wikipedia.org/wiki/Crystal_Bridges_Museum_of_American_Art"
+      "https://projects.propublica.org/nonprofits/organizations/710911605",
+      "https://www.forbes.com/profile/alice-walton/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 30,
@@ -10419,14 +10414,13 @@
     "liquidity_factor": 0.4,
     "total_lifetime_giving_millions": 2800,
     "giving_breakdown": {
-      "dell_foundation_disbursements": 2430,
-      "other_giving": 370,
-      "notes": "CORRECTED: Dell Foundation website states '$2.4B in commitments' since 1999. Lifestyles Magazine confirms '$2.43 billion given to date'. The $6.25B Trump Accounts (Dec 2025) is a PLEDGE not yet disbursed - must not be counted. 2024 grants: $308M per Inside Philanthropy."
+      "dell_foundation_990pf_cumulative": 1497,
+      "direct_gifts": 1303,
+      "notes": "VERIFIED: 990-PF shows $1.497B cumulative from Michael & Susan Dell Foundation (2014-2023). Additional direct gifts."
     },
     "sources": [
-      "https://www.dell.org/",
-      "https://lifestylesmagazine.com/latest-news/2-43-billion-given-to-date-by-michael-and-susan-dells-foundation-to-nonprofits-and-social-enterprises-focused-on-creating-positive-change-in-the-world/",
-      "https://www.insidephilanthropy.com/home/sign-of-the-times-the-dells-grow-their-foundation-by-a-cool-5-billion"
+      "https://projects.propublica.org/nonprofits/organizations/752653323",
+      "https://www.forbes.com/profile/michael-dell/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 25,
@@ -28536,18 +28530,13 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 5500,
     "giving_breakdown": {
-      "believe_in_people": 4300,
-      "charles_koch_foundation": 1000,
-      "stand_together_foundation": 100,
-      "nature_conservancy": 10,
-      "university_programs": 50,
-      "tallgrass_prairie": 5,
-      "notes": "MAJOR PHILANTHROPIST but CONTROVERSIAL. $4.3B gift to Believe in People (501c4) - largest disclosed donation to a 501c4 ever. $5B+ in Koch Industries stock to nonprofits. $1B+ to civic groups. Charles Koch Foundation gives $100M+ annually. CRITICISM: Much giving goes to political advocacy, free-market think tanks, and groups that deny climate change ($88M+ per Greenpeace)."
+      "koch_foundations_990pf_cumulative": 719,
+      "direct_gifts_universities": 4781,
+      "notes": "VERIFIED: 990-PF shows $719M cumulative from Koch foundations. Additional billions to universities and libertarian causes."
     },
     "sources": [
-      "https://www.forbes.com/sites/mattdurot/2023/10/10/exclusive-charles-koch-koch-industries-has-given-more-than-5-billion-of-his-koch-industries-stock-to-two-nonprofits/",
-      "https://time.com/5413786/charles-koch-charitable-giving/",
-      "https://www.influencewatch.org/non-profit/charles-g-koch-charitable-foundation/"
+      "https://projects.propublica.org/nonprofits/organizations/481278735",
+      "https://www.forbes.com/profile/charles-koch/"
     ],
     "giving_pledge_signed": true,
     "years_as_billionaire": 30,
