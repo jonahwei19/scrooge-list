@@ -1053,10 +1053,29 @@
                 if (valB === undefined || valB === null) valB = 0;
                 if (typeof valA === 'string') valA = valA.toLowerCase();
                 if (typeof valB === 'string') valB = valB.toLowerCase();
+
+                // Primary comparison
+                let result;
                 if (currentSort.direction === 'asc') {
-                    return valA > valB ? 1 : -1;
+                    result = valA > valB ? 1 : valA < valB ? -1 : 0;
+                } else {
+                    result = valA < valB ? 1 : valA > valB ? -1 : 0;
                 }
-                return valA < valB ? 1 : -1;
+
+                // Tie-breaker: when sorting by scrooge score and values are equal,
+                // rank by net worth (higher net worth = higher Scrooge rank when tied)
+                if (result === 0 && (col === 'adjusted_score' || col === 'scrooge_score')) {
+                    const nwA = a.net_worth_billions || 0;
+                    const nwB = b.net_worth_billions || 0;
+                    // For descending order (default for scores), higher net worth comes first
+                    if (currentSort.direction === 'desc') {
+                        result = nwB - nwA;
+                    } else {
+                        result = nwA - nwB;
+                    }
+                }
+
+                return result;
             });
 
             renderTable();
