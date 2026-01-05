@@ -370,6 +370,7 @@ VERIFICATION_DATA = {
     },
     "Changpeng Zhao": {
         "total_lifetime_giving_millions": 35,
+        "giving_pledge": "99% pledge",  # Personal pledge, not official Giving Pledge
         "giving_breakdown": {
             "binance_charity": 30,
             "vitalik_biotech": 10,
@@ -551,6 +552,367 @@ VERIFICATION_DATA = {
             "https://fundacioncarlosslim.org/",
             "https://time.com/collection/time100-philanthropy-2025/"
         ]
+    },
+    # === BATCH 2: ADDITIONAL VERIFIED BILLIONAIRES ===
+    "Amancio Ortega": {
+        "total_lifetime_giving_millions": 1500,
+        "giving_breakdown": {
+            "cancer_equipment_2017": 336,
+            "proton_therapy_2021": 294,
+            "valencia_flood_2024": 105,
+            "caritas_cumulative": 58,
+            "foundation_2019_2023": 471,
+            "education_scholarships": 50,
+            "other": 186,
+            "notes": "VERIFIED Jan 2026: Fundación Amancio Ortega (Spain) + Ortega Charitable Foundation (US). €320M cancer equipment, €280M proton therapy, €100M Valencia flood. Foundation published €449M (2019-2023) + €682.5M committed (2024-2028)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 38, "ein": "65-0014714", "note": "Ortega Charitable Foundation (US): $38M assets, ~$2M/year grants. Separate from main Spanish foundation.", "url": "https://projects.propublica.org/nonprofits/organizations/650014714"},
+            "sec_form4": {"status": "not_applicable", "note": "Inditex is Spanish-listed, not US SEC", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1500, "sources": ["Fundación Amancio Ortega", "FAO Annual Reports"], "note": "€1.1B+ executed + €682M committed (2024-2028)", "url": "https://www.faortega.org/en/institution/figures/"},
+            "news_verified": {"status": "found", "amount_millions": 1500, "sources": ["Reuters", "El Pais", "Forbes", "Philanthropy News Digest"], "url": "https://www.reuters.com/article/us-inditex-ortega-donation-idUSKBN17025F/"}
+        },
+        "sources": [
+            "https://www.faortega.org/en/institution/figures/",
+            "https://projects.propublica.org/nonprofits/organizations/650014714"
+        ]
+    },
+    "Ray Dalio": {
+        "total_lifetime_giving_millions": 7000,
+        "giving_breakdown": {
+            "dalio_philanthropies_total": 7000,
+            "connecticut_total": 280,
+            "ct_youth_trump_accounts": 75,
+            "nyp_health_justice": 50,
+            "robin_hood": 20,
+            "david_lynch_foundation": 20,
+            "covid_relief": 4,
+            "notes": "VERIFIED Jan 2026: Dalio Philanthropies reports $7B+ total contributed. Giving Pledge signatory (2011). Foundation 990-PF shows $59M/year distributions. Major focus: Connecticut, ocean exploration (OceanX), education."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 59, "ein": "43-1965846", "note": "Dalio Foundation: $1.67B assets, $59M/year charitable disbursements", "url": "https://projects.propublica.org/nonprofits/organizations/431965846"},
+            "sec_form4": {"status": "not_applicable", "note": "Bridgewater is private LP, no SEC filings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 7000, "sources": ["Dalio Philanthropies"], "note": "$7B+ total contributed per official website", "url": "https://www.daliophilanthropies.org/"},
+            "news_verified": {"status": "found", "amount_millions": 7000, "sources": ["Giving Pledge", "BusinessWire", "NYP"], "url": "https://givingpledge.org/pledger?pledgerId=185"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/431965846",
+            "https://www.daliophilanthropies.org/"
+        ]
+    },
+    "Jim Simons": {
+        "total_lifetime_giving_millions": 6000,
+        "giving_breakdown": {
+            "stony_brook_cumulative": 1540,
+            "sfari_autism_research": 725,
+            "math_for_america": 50,
+            "simons_foundation_other": 3685,
+            "notes": "VERIFIED Jan 2026: $6B lifetime giving (Forbes/PND). Stony Brook $1.54B (incl $500M 2023). Simons Foundation 990-PF: $482M/year. SFARI $725M+ since 2003. Giving Pledge signatory (2010). Deceased May 2024."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 482, "ein": "13-3794889", "note": "Simons Foundation: $4.48B assets, $482M/year disbursements, 1,904 grants (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/133794889"},
+            "sec_form4": {"status": "not_applicable", "note": "Renaissance Technologies is private hedge fund", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 6000, "sources": ["Simons Foundation", "Forbes"], "note": "$6B lifetime per Forbes obituary", "url": "https://www.simonsfoundation.org/annual-reports/"},
+            "news_verified": {"status": "found", "amount_millions": 6000, "sources": ["Forbes", "AP News", "Chronicle of Philanthropy"], "url": "https://philanthropynewsdigest.org/news/jim-simons-mathematician-investor-philanthropist-dies-at-86"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/133794889",
+            "https://www.simonsfoundation.org/annual-reports/"
+        ]
+    },
+    "Charles Koch": {
+        "total_lifetime_giving_millions": 1800,
+        "giving_breakdown": {
+            "ckf_cumulative_2011_2024": 1040,
+            "higher_education_2018_2022": 459,
+            "george_mason_cumulative": 129,
+            "cato_institute": 30,
+            "stand_together_trust": 176,
+            "notes": "VERIFIED Jan 2026: Forbes estimates $1.8B lifetime giving. Charles Koch Foundation 990-PF: $1.04B distributions (2011-2024). $459M to 656 universities (2018-2022). NOT Giving Pledge signatory. Forbes 2025 Lifetime Achievement Award."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 68, "ein": "48-0918408", "note": "Charles Koch Foundation: $759M assets, $68M/year grants", "url": "https://projects.propublica.org/nonprofits/organizations/480918408"},
+            "sec_form4": {"status": "not_applicable", "note": "Koch Industries is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1800, "sources": ["ProPublica 990-PF", "Stand Together", "Forbes"], "note": "$1.8B per Forbes, $8B per Stand Together (includes undisbursed)", "url": "https://charleskochfoundation.org/who-we-support/990-forms/"},
+            "news_verified": {"status": "found", "amount_millions": 1800, "sources": ["Forbes", "TIME", "CMD"], "url": "https://time.com/5413786/charles-koch-charitable-giving/"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/480918408",
+            "https://charleskochfoundation.org/who-we-support/990-forms/"
+        ]
+    },
+    "Michael Milken": {
+        "total_lifetime_giving_millions": 1200,
+        "giving_breakdown": {
+            "medical_research_personal": 1200,
+            "george_washington_university": 80,
+            "milken_educator_awards": 76,
+            "museum_tolerance_jerusalem": 10,
+            "center_advancing_american_dream": 500,
+            "prostate_cancer_foundation": 500,
+            "notes": "VERIFIED Jan 2026: $1.2B personal donations to medical research (California Healthline). PCF raised $1B+ since 1993. Center for Advancing American Dream: $500M personal. Giving Pledge signatory (2010). Forbes score 3/5."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 27, "ein": "82-1927087", "note": "Michael and Lori Milken Family Foundation: $402M assets, $27M/year grants", "url": "https://projects.propublica.org/nonprofits/organizations/821927087"},
+            "sec_form4": {"status": "not_applicable", "note": "No longer active in public markets", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1200, "sources": ["PCF", "Milken Family Foundation"], "note": "$1.2B per California Healthline (2023)", "url": "https://www.pcf.org/annual-report-and-financials/"},
+            "news_verified": {"status": "found", "amount_millions": 1200, "sources": ["California Healthline", "Forbes", "Washington Post"], "url": "https://californiahealthline.org/news/article/michael-milken-faster-cures-cancer-philanthropy/"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/821927087",
+            "https://givingpledge.org/pledger?pledgerId=245"
+        ]
+    },
+    "Li Ka-shing": {
+        "total_lifetime_giving_millions": 3850,
+        "giving_breakdown": {
+            "shantou_university": 1540,
+            "guangdong_technion": 130,
+            "stanford": 37,
+            "uc_berkeley": 50,
+            "university_alberta": 21,
+            "cambridge": 15,
+            "disaster_relief_cumulative": 200,
+            "other_education_healthcare": 1857,
+            "notes": "VERIFIED Jan 2026: HK$30B+ (~$3.85B) total giving. Shantou University alone HK$12B. One-third wealth pledge (2006). TIME100 Philanthropy 2025. Foundation holds ~$7B endowment for future giving."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Hong Kong billionaire - Li Ka Shing Foundation is HK-registered. Canada arm files T3010.", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "CK Hutchison is HK-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 3850, "sources": ["Li Ka Shing Foundation", "TIME", "Forbes"], "note": "HK$30B+ total giving per foundation timeline", "url": "https://www.lksf.org/?lang=en"},
+            "news_verified": {"status": "found", "amount_millions": 3850, "sources": ["TIME100 Philanthropy", "Forbes", "Stanford News", "UC Berkeley"], "url": "https://time.com/collections/time100-philanthropy-2025/7286079/li-ka-shing/"}
+        },
+        "sources": [
+            "https://www.lksf.org/timeline/?lang=en",
+            "https://time.com/collections/time100-philanthropy-2025/7286079/li-ka-shing/"
+        ]
+    },
+    "Len Blavatnik": {
+        "total_lifetime_giving_millions": 1300,
+        "giving_breakdown": {
+            "harvard_medical": 200,
+            "oxford_bsg": 115,
+            "tate_modern": 65,
+            "tel_aviv_university": 65,
+            "yale_innovation": 50,
+            "carnegie_hall": 25,
+            "stanford_medicine": 12,
+            "va_museum": 19,
+            "blavatnik_awards": 14,
+            "other": 735,
+            "notes": "VERIFIED Jan 2026: $1.3B to 250+ institutions (per Foundation). 990-PF: $618M cumulative grants (2017-2024). Major gifts: Harvard $200M, Oxford £75M, Tate £50M, Yale $50M. Knighted 2017."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 69, "ein": "81-2444350", "note": "Blavatnik Family Foundation: $58M assets, $69M/year grants (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/812444350"},
+            "sec_form4": {"status": "not_applicable", "note": "Access Industries is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1300, "sources": ["Blavatnik Family Foundation"], "note": "$1.3B per official website", "url": "https://blavatnikfoundation.org/about-us/"},
+            "news_verified": {"status": "found", "amount_millions": 1300, "sources": ["Harvard Gazette", "Guardian", "Yale Ventures"], "url": "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/812444350",
+            "https://blavatnikfoundation.org/about-us/"
+        ]
+    },
+    "Thomas Peterffy": {
+        "total_lifetime_giving_millions": 40,
+        "giving_breakdown": {
+            "peterffy_foundation_2014_2023": 26,
+            "vanderbilt_fmrc_2003": 3,
+            "environmental_indigenous": 15,
+            "education_other": 6,
+            "notes": "VERIFIED Jan 2026: Foundation 990-PF shows $26M grants (2014-2023). Vanderbilt $3M (2003). Focus: Amazon rainforest, indigenous rights, environmental conservation. ~$15-20M political donations (NOT charitable) excluded."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 7, "ein": "47-2351448", "note": "Peterffy Foundation: $111M assets, $7.4M/year grants (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/472351448"},
+            "sec_form4": {"status": "not_found", "note": "No gift transactions found. $3M Vanderbilt gift predates 2007 IPO.", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 26, "sources": ["ProPublica 990-PF"], "note": "$26M cumulative grants (2014-2023)", "url": "https://projects.propublica.org/nonprofits/organizations/472351448"},
+            "news_verified": {"status": "found", "amount_millions": 3, "sources": ["Stamford Advocate", "Vanderbilt News"], "url": "https://news.vanderbilt.edu/2021/04/22/financial-markets-research-center-renamed-for-hans-stoll/"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/472351448",
+            "https://www.instrumentl.com/990-report/peterffy-foundation-inc"
+        ]
+    },
+    "Larry Fink": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "ucla_fink_center": 10,
+            "nyu_langone_naming_gifts": 15,
+            "stock_gifts_sec_form4": 86,
+            "moma_robin_hood_other": 5,
+            "notes": "VERIFIED Jan 2026: No personal 990-PF foundation found. SEC Form 4 shows ~$86M in BlackRock stock gifts (2021-2025). UCLA $10M (2008). NYU Langone naming gifts estimated $10-20M. NOT Giving Pledge signatory. Net worth ~$1.3B."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No personal foundation 990-PF filing found for Larry/Lori Fink. BlackRock Charitable Foundation is corporate.", "url": None},
+            "sec_form4": {"status": "found", "amount_millions": 86, "note": "100,751 BLK shares gifted 2021-2025 (~$86M est)", "url": "https://www.secform4.com/insider-trading/1059245.htm"},
+            "foundation_reports": {"status": "partial", "amount_millions": 39, "sources": ["BlackRock Charitable Foundation (corporate)"], "note": "Corporate foundation: $212M assets, $39M/year grants. Not personal.", "url": "https://projects.propublica.org/nonprofits/organizations/842144591"},
+            "news_verified": {"status": "found", "amount_millions": 25, "sources": ["UCLA Newsroom", "NYU Langone"], "url": "https://newsroom.ucla.edu/releases/blackrock-chairman-laurence-fink-receives-ucla-medal"}
+        },
+        "sources": [
+            "https://www.secform4.com/insider-trading/1059245.htm",
+            "https://newsroom.ucla.edu/releases/blackrock-chairman-laurence-fink-receives-ucla-medal"
+        ]
+    },
+    # === BATCH 3: ADDITIONAL BILLIONAIRES FROM AGENT RESEARCH ===
+    "Jack Ma": {
+        "total_lifetime_giving_millions": 1000,
+        "giving_breakdown": {
+            "covid_response_2020": 494,
+            "zhejiang_university": 80,
+            "newcastle_australia": 20,
+            "xixi_wetland": 14,
+            "hong_kong_fire_2025": 4,
+            "earthshot_prize": 4,
+            "africa_netpreneur": 10,
+            "rural_education": 80,
+            "other": 294,
+            "notes": "VERIFIED Jan 2026: Jack Ma Foundation (China-registered, no US 990-PF). Forbes China 2020: $494M. University gifts verified. $3B charitable trust (2014) with Alibaba equity - ongoing disbursement."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "Jack Ma Foundation registered in Zhejiang Province, China - not US nonprofit", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Alibaba listed in Hong Kong and NYSE, but charitable trust is offshore", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 1000, "sources": ["Jack Ma Foundation", "Forbes China"], "note": "Chinese foundation reports not public. Forbes China Philanthropy List 2020: #1 with $494M that year.", "url": "https://www.jackmafoundation.org.cn/"},
+            "news_verified": {"status": "found", "amount_millions": 1000, "sources": ["Forbes", "Reuters", "TIME100 Philanthropy 2025", "SCMP"], "url": "https://time.com/collections/time100-philanthropy-2025/7286036/jack-ma/"}
+        },
+        "sources": [
+            "https://time.com/collections/time100-philanthropy-2025/7286036/jack-ma/",
+            "https://www.jackmafoundation.org.cn/",
+            "https://www.caixinglobal.com/2021-07-26/out-of-favor-jack-ma-tops-forbes-china-philanthropy-list-with-494-million-in-donations-101745791.html"
+        ]
+    },
+    "Azim Premji": {
+        "total_lifetime_giving_millions": 29000,  # Endowment value - actual annual disbursement lower
+        "giving_breakdown": {
+            "foundation_endowment": 29000,  # Total endowment in Wipro shares
+            "annual_grants_fy24": 109,  # Actual disbursement
+            "covid_relief_2020": 140,
+            "girls_education_2025": 270,
+            "school_meals_2024": 175,
+            "notes": "VERIFIED Jan 2026: $29B endowment (TIME100). DISTINCTION: Endowment value vs actual disbursement (~$109-183M/year). First Indian Giving Pledge signatory (2013). Foundation registered in India, no US 990-PF."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "Indian entity - files under Indian law, not IRS. Registered in Karnataka (CIN: U93090KA2001NPL028740)", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Wipro listed on BSE/NSE India", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 29000, "sources": ["Azim Premji Foundation", "TIME100"], "note": "Endowment: $29B. Annual disbursement: Rs 1,528 crore (~$183M) in 2024", "url": "https://azimpremjifoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 29000, "sources": ["TIME", "Giving Pledge", "Livemint", "EdelGive Hurun"], "url": "https://time.com/collections/time100-philanthropy-2025/7286073/azim-premji/"}
+        },
+        "sources": [
+            "https://time.com/collections/time100-philanthropy-2025/7286073/azim-premji/",
+            "https://www.givingpledge.org/pledger/azim-premji/"
+        ]
+    },
+    "George Soros": {
+        "total_lifetime_giving_millions": 32000,
+        "giving_breakdown": {
+            "open_society_cumulative": 32000,
+            "ceu_endowment": 450,
+            "bard_college": 660,
+            "osun_network": 1000,
+            "annual_expenditure": 1200,
+            "notes": "VERIFIED Jan 2026: $32B to Open Society since 1984. $24.2B cumulative expenditures. $18B transfer in 2017. EIN 13-7029285 (OSI) + EIN 26-3753801 (FTPOS). Combined 2024 assets ~$16.2B."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 770, "ein": "13-7029285", "note": "Open Society Institute + Foundation To Promote Open Society (26-3753801). Combined 2024 disbursements ~$770M", "url": "https://projects.propublica.org/nonprofits/organizations/137029285"},
+            "sec_form4": {"status": "not_applicable", "note": "Soros Fund Management is private hedge fund", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 32000, "sources": ["Open Society Foundations"], "note": "$32B since 1984. $24.2B cumulative expenditures.", "url": "https://www.opensocietyfoundations.org/who-we-are/financials"},
+            "news_verified": {"status": "found", "amount_millions": 32000, "sources": ["NYT", "WSJ", "CNN"], "url": "https://www.nytimes.com/2017/10/17/business/george-soros-open-society-foundations.html"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/137029285",
+            "https://projects.propublica.org/nonprofits/organizations/263753801",
+            "https://www.opensocietyfoundations.org/who-we-are/financials"
+        ]
+    },
+    "Gordon Moore": {
+        "total_lifetime_giving_millions": 5500,
+        "giving_breakdown": {
+            "caltech_total": 700,
+            "conservation_international": 395,
+            "foundation_grants_cumulative": 5100,
+            "stonybrook_other": 305,
+            "notes": "VERIFIED Jan 2026: $5.1B+ cumulative foundation grants since 2000. Foundation holds $11.5B. EIN 94-3397785. Caltech $600M (2001) + $100M (2014). Giving Pledge signatory (2012). Deceased March 2023."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 440, "ein": "94-3397785", "note": "Gordon E and Betty I Moore Foundation: $11.5B assets, $440M/year disbursements (2024)", "url": "https://projects.propublica.org/nonprofits/organizations/943397785"},
+            "sec_form4": {"status": "not_applicable", "note": "Intel shares donated decades ago to foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 5100, "sources": ["Moore Foundation", "Annual Reports"], "note": "$5.1B+ cumulative grants since founding", "url": "https://www.moore.org/about/our-finances"},
+            "news_verified": {"status": "found", "amount_millions": 5500, "sources": ["Intel", "NYT", "Forbes", "NPR"], "url": "https://www.intc.com/news-events/press-releases/detail/1611/gordon-moore-intel-co-founder-dies-at-94"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/943397785",
+            "https://www.moore.org/about/our-finances"
+        ]
+    },
+    "Peter Thiel": {
+        "total_lifetime_giving_millions": 75,  # Charitable (excludes political)
+        "giving_breakdown": {
+            "thiel_foundation_annual": 4,
+            "methuselah_foundation": 3.5,
+            "sens_research": 6,
+            "miri": 1.6,
+            "seasteading": 1.25,
+            "cpj": 1,
+            "thiel_fellowship": 15,
+            "political_donations": 45,  # Counted separately
+            "other": 43,
+            "notes": "VERIFIED Jan 2026: Thiel Foundation EIN 20-3846597 disbursements ~$3-5M/year. Anti-aging (SENS, Methuselah) $9.5M. MIRI $1.6M. Political: $45M+ lifetime (2022: $35M to Vance/Masters PACs). Fellowship ~$2-3M/year."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 4, "ein": "20-3846597", "note": "Thiel Foundation: $45M assets, $3.4M disbursements (2024)", "url": "https://projects.propublica.org/nonprofits/organizations/203846597"},
+            "sec_form4": {"status": "partial", "note": "Form 4 filings exist but charitable gifts not clearly separated", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001211060&type=4"},
+            "foundation_reports": {"status": "found", "amount_millions": 50, "sources": ["Thiel Foundation", "Instrumentl"], "note": "Cumulative foundation grants ~$50-70M", "url": "https://www.instrumentl.com/990-report/the-thiel-foundation"},
+            "news_verified": {"status": "found", "amount_millions": 120, "sources": ["Wikipedia", "Ballotpedia", "Forbes"], "url": "https://ballotpedia.org/Peter_Thiel"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/203846597",
+            "https://ballotpedia.org/Peter_Thiel"
+        ]
+    },
+    "Eric Schmidt": {
+        "total_lifetime_giving_millions": 2500,
+        "giving_breakdown": {
+            "schmidt_fund_innovation_annual": 313,
+            "schmidt_family_foundation_annual": 200,
+            "broad_institute": 150,
+            "princeton_total": 30,
+            "rise_commitment": 1000,
+            "ai2050": 125,
+            "other": 682,
+            "notes": "VERIFIED Jan 2026: Two foundations EIN 46-3460261 + EIN 20-4170342. Combined assets ~$3.5B. $1B+ given by 2019 + $1B Rise commitment. Broad $150M. Annual disbursements ~$500M combined."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 513, "ein": "46-3460261", "note": "Schmidt Fund for Strategic Innovation ($313M) + Schmidt Family Foundation ($200M) = $513M/year combined", "url": "https://projects.propublica.org/nonprofits/organizations/463460261"},
+            "sec_form4": {"status": "partial", "note": "Google stock gifts to foundations tracked via 990 contributions received", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2500, "sources": ["Schmidt Futures", "Instrumentl"], "note": "$1B+ by 2019, $1B Rise commitment announced", "url": "https://www.schmidtfutures.org/"},
+            "news_verified": {"status": "found", "amount_millions": 2500, "sources": ["Broad Institute", "Princeton", "Rise"], "url": "https://www.risefortheworld.org/news/eric-and-wendy-schmidt-announce-new-usd1-billion-philanthropic-commitment-to/"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/463460261",
+            "https://projects.propublica.org/nonprofits/organizations/204170342",
+            "https://www.schmidtfutures.org/"
+        ]
+    },
+    "John Menard Jr": {
+        "total_lifetime_giving_millions": 45,
+        "giving_breakdown": {
+            "mayo_menard_center": 15,
+            "ymca_tennis": 10,
+            "osu_law_center": 5,
+            "ndsu_challey": 5.5,
+            "uw_system_total": 8.3,
+            "other": 1.2,
+            "notes": "VERIFIED Jan 2026: No 990-PF (no personal foundation). Direct giving only. Mayo/Eau Claire $15M. YMCA Tennis $10M. UW-Stout $2.36M, UW-La Crosse $2.1M, UW-Eau Claire $3M, UW-Madison $880K. Forbes philanthropy score: N/A (very low)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No personal foundation. 'Menard Family Foundation' in ProPublica is different family (San Diego). Gives directly.", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Menards is private company", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "No foundation - all direct gifts", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 45, "sources": ["Madison.com", "Moritz College", "Philanthropy News Digest"], "url": "https://moritzlaw.osu.edu/drug-enforcement-and-policy-center-receives-5m-gift-menard-family"}
+        },
+        "sources": [
+            "https://moritzlaw.osu.edu/drug-enforcement-and-policy-center-receives-5m-gift-menard-family",
+            "https://philanthropynewsdigest.org/news/north-dakota-state-receives-5.5-million-from-menard-family"
+        ]
     }
 }
 
@@ -598,6 +960,14 @@ def update_json():
             entry['giving_breakdown'] = vdata['giving_breakdown']
             entry['verification'] = vdata['verification']
             entry['sources'] = vdata['sources']
+
+            # Update giving_pledge if specified (supports "partial", "99% pledge", etc.)
+            if 'giving_pledge' in vdata:
+                entry['giving_pledge'] = vdata['giving_pledge']
+
+            # Update image_url if specified
+            if 'image_url' in vdata:
+                entry['image_url'] = vdata['image_url']
 
             # Recalculate scores
             liquidity = entry.get('liquidity_factor', 0.3)

@@ -168,6 +168,7 @@
         }
 
         .pledge-yes { color: var(--accent-green); }
+        .pledge-partial { color: var(--accent-yellow); }
         .pledge-no { color: var(--text-secondary); }
 
         .money {
@@ -619,7 +620,8 @@
                 </select>
                 <select id="pledge-filter" onchange="filterData()">
                     <option value="">All Pledge Status</option>
-                    <option value="signed">Signed Pledge</option>
+                    <option value="signed">Signed Giving Pledge</option>
+                    <option value="partial">Partial/Other Pledge</option>
                     <option value="not-signed">Not Signed</option>
                 </select>
                 <input type="text" id="search" placeholder="Search by name..." oninput="filterData()">
@@ -832,8 +834,11 @@
 
             filteredData = rawData.filter(d => {
                 if (country && d.country !== country) return false;
-                if (pledge === 'signed' && !d.giving_pledge_signed) return false;
-                if (pledge === 'not-signed' && d.giving_pledge_signed) return false;
+                // Handle pledge filter - supports boolean (legacy) or string ("yes"/"partial"/"no")
+                const pledgeStatus = getPledgeStatus(d);
+                if (pledge === 'signed' && pledgeStatus !== 'yes') return false;
+                if (pledge === 'partial' && pledgeStatus !== 'partial') return false;
+                if (pledge === 'not-signed' && pledgeStatus !== 'no') return false;
                 if (search && !d.name.toLowerCase().includes(search)) return false;
                 return true;
             });
@@ -891,7 +896,7 @@
                     <td class="money hide-mobile">$${giving >= 1000 ? (giving/1000).toFixed(1) + 'B' : giving.toFixed(0) + 'M'}</td>
                     <td class="hide-mobile">${givingRate.toFixed(2)}%</td>
                     <td class="score-cell ${scoreClass}">${score.toFixed(1)}</td>
-                    <td class="hide-mobile ${d.giving_pledge_signed ? 'pledge-yes' : 'pledge-no'}">${d.giving_pledge_signed ? 'Yes' : 'No'}</td>
+                    <td class="hide-mobile ${getPledgeDisplay(d).class}">${getPledgeDisplay(d).text}</td>
                 `;
                 tbody.appendChild(row);
             });
@@ -1005,6 +1010,32 @@
             return { label: 'LOW', color: 'var(--accent-red)' };
         }
 
+        // Get pledge status - supports legacy boolean and new string format
+        function getPledgeStatus(d) {
+            // New format: giving_pledge can be "yes", "partial", "no", or a string like "99% pledge"
+            if (d.giving_pledge !== undefined) {
+                if (d.giving_pledge === true || d.giving_pledge === 'yes') return 'yes';
+                if (d.giving_pledge === false || d.giving_pledge === 'no') return 'no';
+                if (d.giving_pledge === 'partial') return 'partial';
+                if (typeof d.giving_pledge === 'string') return 'partial'; // Any custom string = partial
+            }
+            // Legacy format: giving_pledge_signed boolean
+            if (d.giving_pledge_signed === true) return 'yes';
+            return 'no';
+        }
+
+        // Get pledge display text and class
+        function getPledgeDisplay(d) {
+            const status = getPledgeStatus(d);
+            if (status === 'yes') return { text: 'Yes', class: 'pledge-yes' };
+            if (status === 'partial') {
+                const customText = typeof d.giving_pledge === 'string' && d.giving_pledge !== 'partial'
+                    ? d.giving_pledge : 'Partial';
+                return { text: customText, class: 'pledge-partial' };
+            }
+            return { text: 'No', class: 'pledge-no' };
+        }
+
         // Open profile modal
         function openProfile(d) {
             const modal = document.getElementById('profile-modal');
@@ -1030,11 +1061,20 @@
             const forbesUrl = getForbesUrl(d.name);
             document.getElementById('modal-forbes-link').href = forbesUrl;
 
-            // Use Forbes image or placeholder
+            // Use Forbes image, custom image, or placeholder
             const photoEl = document.getElementById('modal-photo');
-            photoEl.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(d.name)}&size=120&background=232323&color=fff`;
+            const placeholderUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(d.name)}&size=120&background=232323&color=fff`;
+
+            if (d.image_url) {
+                // Use custom image URL if provided
+                photoEl.src = d.image_url;
+            } else {
+                // Try Forbes image (pattern: first-last or first-middle-last)
+                const forbesImageUrl = getForbesImageUrl(d.name);
+                photoEl.src = forbesImageUrl;
+            }
             photoEl.onerror = function() {
-                this.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(d.name)}&size=120&background=232323&color=fff`;
+                this.src = placeholderUrl;
             };
 
             // Build verification pipeline
@@ -1201,7 +1241,8 @@
             const totalWealth = data.reduce((sum, d) => sum + d.net_worth_billions, 0);
             const totalGiving = data.reduce((sum, d) => sum + (d.total_lifetime_giving_millions || 0), 0);
             const avgScore = data.reduce((sum, d) => sum + (d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score), 0) / data.length;
-            const pledgers = data.filter(d => d.giving_pledge_signed).length;
+            const pledgers = data.filter(d => getPledgeStatus(d) === 'yes').length;
+            const partialPledgers = data.filter(d => getPledgeStatus(d) === 'partial').length;
 
             stats.innerHTML = `
                 <div class="stat-card">
