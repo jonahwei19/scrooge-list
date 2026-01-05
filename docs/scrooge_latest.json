@@ -2255,68 +2255,6 @@
     "unverifiable_giving_millions": 100
   },
   {
-    "rank": 2910,
-    "name": "S. Robson Walton",
-    "net_worth_billions": 115.3,
-    "country": "United States",
-    "source_of_wealth": "Walmart",
-    "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 400,
-    "giving_breakdown": {
-      "rob_melani_walton_foundation": 300,
-      "african_parks": 100,
-      "asu_conservation": 115,
-      "walton_family_foundation_share": 0,
-      "notes": "VERIFIED Jan 2026: Rob and Melani Walton Foundation 990-PF shows ~$78M/year. Personal contribution to WFF: $0 over 23 years. African Parks $100M pledge (2021), ASU $115M (2025). Forbes Philanthropy Score: 1/5 (lowest)."
-    },
-    "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/474259772",
-      "https://www.africanparks.org/newsroom/press-releases/rob-and-melani-walton-donate-100-million-african-parks"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 25,
-    "notes": "VERIFIED: Walton Family Foundation share ~$2B. S. Robson = Rob Walton.",
-    "scrooge_score": 99.13269731136167,
-    "giving_rate_pct": 0.3469210754553339,
-    "scrooge_rank": 40,
-    "forbes_rank": 2910,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 300,
-        "ein": "47-4259772",
-        "note": "Rob and Melani Walton Foundation: ~$78M/year grants",
-        "url": "https://projects.propublica.org/nonprofits/organizations/474259772"
-      },
-      "sec_form4": {
-        "status": "found",
-        "amount_millions": 15,
-        "note": "June 2019: 135,000 Walmart shares (~$15M) donated",
-        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000903166&type=4&dateb=&owner=include&count=40"
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 300,
-        "sources": [
-          "ProPublica 990-PF"
-        ],
-        "note": "Foundation cumulative grants ~$300M",
-        "url": "https://projects.propublica.org/nonprofits/organizations/474259772"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 215,
-        "sources": [
-          "African Parks $100M",
-          "ASU $115M"
-        ],
-        "url": "https://www.africanparks.org/newsroom/press-releases/rob-and-melani-walton-donate-100-million-african-parks"
-      }
-    },
-    "verifiable_giving_millions": 300,
-    "unverifiable_giving_millions": 100
-  },
-  {
     "rank": 3,
     "name": "Larry Ellison",
     "net_worth_billions": 370.0,
@@ -2342,7 +2280,7 @@
     "notes": "Signed Giving Pledge. Recently pledged 95% of fortune. Current giving low relative to wealth but accelerating.",
     "scrooge_score": 99.11196911196912,
     "giving_rate_pct": 0.3108108108108108,
-    "scrooge_rank": 41,
+    "scrooge_rank": 40,
     "forbes_rank": 3,
     "verification": {
       "990_pf": {
@@ -2407,7 +2345,7 @@
     "notes": "PayPal co-founder. Contrarian philanthropist - anti-college, pro-life extension. Major political donor.",
     "scrooge_score": 99.10714285714286,
     "giving_rate_pct": 0.4464285714285714,
-    "scrooge_rank": 42,
+    "scrooge_rank": 41,
     "forbes_rank": 250,
     "verification": {
       "990_pf": {
@@ -2460,7 +2398,7 @@
     "notes": "Uber early employee.",
     "scrooge_score": 99.06666666666666,
     "giving_rate_pct": 0.46666666666666673,
-    "scrooge_rank": 43,
+    "scrooge_rank": 42,
     "forbes_rank": 1036,
     "verification": {
       "990_pf": {
@@ -2515,7 +2453,7 @@
     "notes": "Kering founder. Major art collector - Pinault Collection. Notre-Dame donor. Son Fran\u00e7ois-Henri now runs Kering.",
     "scrooge_score": 99.05967450271248,
     "giving_rate_pct": 0.3291139240506329,
-    "scrooge_rank": 44,
+    "scrooge_rank": 43,
     "forbes_rank": 277,
     "verification": {
       "990_pf": {
@@ -2574,7 +2512,7 @@
     "notes": "Has NOT signed Giving Pledge. Known for tight control of business and limited philanthropy relative to wealth.",
     "scrooge_score": 99.02173913043478,
     "giving_rate_pct": 0.1956521739130435,
-    "scrooge_rank": 45,
+    "scrooge_rank": 44,
     "forbes_rank": 56,
     "verification": {
       "990_pf": {
@@ -2626,8 +2564,66 @@
     "notes": "Livestream seller. Tax evasion scandal destroyed career. Fined $210M. Minimal philanthropy.",
     "scrooge_score": 98.95833333333334,
     "giving_rate_pct": 0.4167,
-    "scrooge_rank": 46,
+    "scrooge_rank": 45,
     "forbes_rank": 455
+  },
+  {
+    "rank": 2910,
+    "name": "S. Robson Walton",
+    "net_worth_billions": 115.3,
+    "country": "United States",
+    "source_of_wealth": "Walmart",
+    "liquidity_factor": 0.4,
+    "total_lifetime_giving_millions": 500,
+    "giving_breakdown": {
+      "asu_conservation_2025": 115,
+      "african_parks_2021": 100,
+      "rob_melani_foundation_annual": 108,
+      "georgetown": 10,
+      "asu_sustainability_2012": 27.5,
+      "walton_family_foundation_pledge": 100,
+      "other": 39.5,
+      "notes": "VERIFIED Jan 2026: Walmart heir (~$80B), former WMT chairman. Rob and Melani Walton Foundation (EIN 47-4259772): $441M assets, $108M disbursements (2024). ASU $115M (2025, conservation school naming). African Parks $100M (2021, Rob is board chair). Conservation focus via WFF environment committee. Explicitly DECLINED Giving Pledge: 'We have chosen to do our own way.'"
+    },
+    "sources": [
+      "https://projects.propublica.org/nonprofits/organizations/474259772/202523189349103457/full"
+    ],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 25,
+    "notes": "VERIFIED: Walton Family Foundation share ~$2B. S. Robson = Rob Walton.",
+    "scrooge_score": 98.91587163920208,
+    "giving_rate_pct": 0.43365134431916735,
+    "scrooge_rank": 46,
+    "forbes_rank": 2910,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 108,
+        "ein": "47-4259772",
+        "note": "Rob and Melani Walton Foundation: $441M assets, $108M disbursements (2024)",
+        "url": "https://projects.propublica.org/nonprofits/organizations/474259772/202523189349103457/full"
+      },
+      "sec_form4": {
+        "status": "found",
+        "note": "Walmart stock gifts to foundation tracked",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 500,
+        "note": "Foundation + ASU + African Parks",
+        "url": "https://projects.propublica.org/nonprofits/organizations/474259772/202523189349103457/full"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 500,
+        "note": "ASU $115M 2025, African Parks $100M 2021 widely covered",
+        "url": null
+      }
+    },
+    "verifiable_giving_millions": 500,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 110,
@@ -2947,66 +2943,6 @@
     "unverifiable_giving_millions": 0
   },
   {
-    "rank": 664,
-    "name": "Mukesh Ambani",
-    "net_worth_billions": 115.0,
-    "country": "India",
-    "source_of_wealth": "Reliance Industries",
-    "liquidity_factor": 0.25,
-    "total_lifetime_giving_millions": 400,
-    "giving_breakdown": {
-      "reliance_foundation_personal": 350,
-      "hurun_tracked_2018_2025": 350,
-      "corporate_csr_not_counted": 0,
-      "notes": "VERIFIED Jan 2026: Personal/family philanthropy ~$45-75M/year (Hurun India). Cumulative personal giving ~$350-400M. Corporate CSR ($1.2B+) is legally mandated 2% of profits, not personal. Ranks 2nd-3rd among Indian philanthropists."
-    },
-    "sources": [
-      "https://www.reliancefoundation.org/",
-      "https://www.hurun.net/en-us/info/detail?num=India-Philanthropy-List"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 15,
-    "notes": "DUPLICATE ENTRY - Counted elsewhere.",
-    "scrooge_score": 98.60869565217392,
-    "giving_rate_pct": 0.34782608695652173,
-    "scrooge_rank": 53,
-    "forbes_rank": 664,
-    "verification": {
-      "990_pf": {
-        "status": "not_applicable",
-        "note": "Indian billionaire - Reliance Foundation is India-registered",
-        "url": null
-      },
-      "sec_form4": {
-        "status": "not_applicable",
-        "note": "Not US-listed",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 400,
-        "sources": [
-          "Reliance Foundation",
-          "Hurun India Philanthropy List"
-        ],
-        "note": "Personal giving ~$45-75M/year, cumulative ~$400M",
-        "url": "https://www.reliancefoundation.org/"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 400,
-        "sources": [
-          "Hurun India",
-          "TIME100 Philanthropy",
-          "Business Standard"
-        ],
-        "url": "https://www.hurun.net/en-us/info/detail?num=India-Philanthropy-List"
-      }
-    },
-    "verifiable_giving_millions": 400,
-    "unverifiable_giving_millions": 0
-  },
-  {
     "rank": 141,
     "name": "Israel Englander",
     "net_worth_billions": 13.0,
@@ -3030,7 +2966,7 @@
     "notes": "Low profile philanthropist. Millennium manages $70B+",
     "scrooge_score": 98.6013986013986,
     "giving_rate_pct": 0.7692307692307693,
-    "scrooge_rank": 54,
+    "scrooge_rank": 53,
     "forbes_rank": 141,
     "verification": {
       "990_pf": {
@@ -3082,7 +3018,7 @@
     "notes": "Gulf Energy founder. Thailand's richest (sometimes). Power generation.",
     "scrooge_score": 98.57142857142858,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 55,
+    "scrooge_rank": 54,
     "forbes_rank": 473
   },
   {
@@ -3102,7 +3038,7 @@
     "notes": "Tencent founder.",
     "scrooge_score": 98.57142857142858,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 56,
+    "scrooge_rank": 55,
     "forbes_rank": 2522,
     "verification": {
       "990_pf": {
@@ -3152,7 +3088,7 @@
     "notes": "Tencent founder (Pony Ma).",
     "scrooge_score": 98.57142857142858,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 57,
+    "scrooge_rank": 56,
     "forbes_rank": 2782,
     "verification": {
       "990_pf": {
@@ -3200,7 +3136,7 @@
     "notes": "Rocket Lab. NZ space entrepreneur.",
     "scrooge_score": 98.52941176470588,
     "giving_rate_pct": 0.5882,
-    "scrooge_rank": 58,
+    "scrooge_rank": 57,
     "forbes_rank": 866
   },
   {
@@ -3222,7 +3158,7 @@
     "notes": "JCDecaux. DECEASED 2016.",
     "scrooge_score": 98.46153846153847,
     "giving_rate_pct": 0.4615,
-    "scrooge_rank": 59,
+    "scrooge_rank": 58,
     "forbes_rank": 1636
   },
   {
@@ -3244,7 +3180,7 @@
     "notes": "Afiniti. Align Technology/Invisalign founder.",
     "scrooge_score": 98.4375,
     "giving_rate_pct": 0.625,
-    "scrooge_rank": 60,
+    "scrooge_rank": 59,
     "forbes_rank": 961
   },
   {
@@ -3274,7 +3210,7 @@
     "notes": "Steel magnate. UK resident. Was world's 5th richest in 2005. Indian sports philanthropy.",
     "scrooge_score": 98.42592592592592,
     "giving_rate_pct": 0.4722222222222222,
-    "scrooge_rank": 61,
+    "scrooge_rank": 60,
     "forbes_rank": 411,
     "verification": {
       "990_pf": {
@@ -3335,7 +3271,7 @@
     "notes": "Richest in Indonesia. Djarum clove cigarettes. BCA bank.",
     "scrooge_score": 98.41269841269842,
     "giving_rate_pct": 0.4762,
-    "scrooge_rank": 62,
+    "scrooge_rank": 61,
     "forbes_rank": 1146
   },
   {
@@ -3359,7 +3295,7 @@
     "notes": "Barito Pacific. Petrochemicals. Past palm oil controversies. Private.",
     "scrooge_score": 98.4,
     "giving_rate_pct": 0.4,
-    "scrooge_rank": 63,
+    "scrooge_rank": 62,
     "forbes_rank": 339,
     "verification": {
       "990_pf": {
@@ -3408,7 +3344,7 @@
     "notes": "Telegram. Dubai-based.",
     "scrooge_score": 98.38709677419355,
     "giving_rate_pct": 0.6452,
-    "scrooge_rank": 64,
+    "scrooge_rank": 63,
     "forbes_rank": 1454
   },
   {
@@ -3434,7 +3370,7 @@
     "notes": "Djarum Group.",
     "scrooge_score": 98.3739837398374,
     "giving_rate_pct": 0.4878,
-    "scrooge_rank": 65,
+    "scrooge_rank": 64,
     "forbes_rank": 1147
   },
   {
@@ -3461,7 +3397,7 @@
     "notes": "Swedish. Signed Giving Pledge 2013. Focus on education, sustainability, tech access. Note: $1B deeptech investment is venture, not charity.",
     "scrooge_score": 98.35796387520526,
     "giving_rate_pct": 0.5747,
-    "scrooge_rank": 66,
+    "scrooge_rank": 65,
     "forbes_rank": 160
   },
   {
@@ -3488,7 +3424,7 @@
     "notes": "1990 felony bank fraud conviction (Lincoln S&L). Son founded Carvana. Low-profile philanthropy through family foundation.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 67,
+    "scrooge_rank": 66,
     "forbes_rank": 170,
     "verification": {
       "990_pf": {
@@ -3549,7 +3485,7 @@
     "notes": "BMW major shareholder (25%). Very private. Delphine Software. Foundation philanthropy.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 68,
+    "scrooge_rank": 67,
     "forbes_rank": 408
   },
   {
@@ -3573,7 +3509,7 @@
     "notes": "UK's richest person. Chemical industry. Sports teams owner. Monaco resident for tax. Limited philanthropy.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 69,
+    "scrooge_rank": 68,
     "forbes_rank": 360
   },
   {
@@ -3595,7 +3531,7 @@
     "notes": "LVMH.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 70,
+    "scrooge_rank": 69,
     "forbes_rank": 1646
   },
   {
@@ -3624,7 +3560,7 @@
     "notes": "WFF share + John Walton's legacy giving.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 71,
+    "scrooge_rank": 70,
     "forbes_rank": 501,
     "verification": {
       "990_pf": {
@@ -3679,8 +3615,61 @@
     "notes": "ABC Supply co-founder/chair. Richest self-made woman in US (Forbes). Widowed 2007. Focus on revitalizing hometown Beloit. Large political donor.",
     "scrooge_score": 98.29545454545455,
     "giving_rate_pct": 0.3409,
-    "scrooge_rank": 72,
+    "scrooge_rank": 71,
     "forbes_rank": 191
+  },
+  {
+    "rank": 664,
+    "name": "Mukesh Ambani",
+    "net_worth_billions": 115.0,
+    "country": "India",
+    "source_of_wealth": "Reliance Industries",
+    "liquidity_factor": 0.25,
+    "total_lifetime_giving_millions": 500,
+    "giving_breakdown": {
+      "fy2025_edelgive": 75,
+      "fy2024_edelgive": 49,
+      "fy2023_edelgive": 45,
+      "covid_relief_2020": 60,
+      "reliance_hospital": 100,
+      "other_cumulative": 171,
+      "notes": "VERIFIED Jan 2026: Reliance Industries chairman (~$115B). Reliance Foundation (2010, led by wife Nita) reaches 76M+ lives. EdelGive-Hurun 2025 #2 (Rs 626 crore). COVID: Rs 500 crore to PM-CARES + first Mumbai COVID hospital. TIME100 Philanthropy 2025. NOT Giving Pledge. Note: Corporate CSR (Rs 1,592 crore/yr) separate from personal giving. Giving ~0.4% of wealth vs Azim Premji's 14-15%."
+    },
+    "sources": [],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 15,
+    "notes": "DUPLICATE ENTRY - Counted elsewhere.",
+    "scrooge_score": 98.26086956521739,
+    "giving_rate_pct": 0.43478260869565216,
+    "scrooge_rank": 72,
+    "forbes_rank": 664,
+    "verification": {
+      "990_pf": {
+        "status": "not_applicable",
+        "note": "Indian foundation, no US filings",
+        "url": null
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "Reliance India-listed",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 500,
+        "note": "Reliance Foundation reports + EdelGive-Hurun rankings",
+        "url": null
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 500,
+        "note": "EdelGive-Hurun #2 2025, COVID response widely covered, TIME100 2025",
+        "url": null
+      }
+    },
+    "verifiable_giving_millions": 500,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 1779,
@@ -4058,6 +4047,59 @@
     "unverifiable_giving_millions": 0
   },
   {
+    "rank": 1411,
+    "name": "Francoise Bettencourt Meyers",
+    "net_worth_billions": 100.0,
+    "country": "France",
+    "source_of_wealth": "L'Oreal",
+    "liquidity_factor": 0.35,
+    "total_lifetime_giving_millions": 700,
+    "giving_breakdown": {
+      "notre_dame_2019": 226,
+      "bettencourt_schueller_life_sciences": 290,
+      "bettencourt_schueller_arts": 100,
+      "institut_france_brain": 100,
+      "fondation_audition": 30,
+      "annual_foundation_giving": 65,
+      "notes": "VERIFIED Jan 2026: L'Oreal heiress (~$100B, world's richest woman). Bettencourt Schueller Foundation (1987): \u20ac900M assets, \u20ac57M/yr giving. Notre-Dame \u20ac200M (2019, one of largest single gifts). \u20ac257M cumulative to life sciences since 1990. Fondation pour l'Audition (2015). France's largest private foundation. No formal Giving Pledge equivalent in France."
+    },
+    "sources": [],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 20,
+    "notes": "Richest woman in world. L'Oreal.",
+    "scrooge_score": 98.0,
+    "giving_rate_pct": 0.7000000000000001,
+    "scrooge_rank": 87,
+    "forbes_rank": 1411,
+    "verification": {
+      "990_pf": {
+        "status": "not_applicable",
+        "note": "French foundation, no US filings",
+        "url": null
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "L'Oreal Paris-listed",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 700,
+        "note": "Bettencourt Schueller Foundation reports + Notre-Dame",
+        "url": null
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 700,
+        "note": "Notre-Dame \u20ac200M widely covered. France's largest foundation.",
+        "url": null
+      }
+    },
+    "verifiable_giving_millions": 700,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
+  },
+  {
     "rank": 196,
     "name": "Jeff Yass",
     "net_worth_billions": 28.5,
@@ -4080,7 +4122,7 @@
     "notes": "Co-founder of Susquehanna trading. Registered Libertarian. Major political donor. School choice advocate. Holds large TikTok stake.",
     "scrooge_score": 97.99498746867168,
     "giving_rate_pct": 0.7018,
-    "scrooge_rank": 87,
+    "scrooge_rank": 88,
     "forbes_rank": 196
   },
   {
@@ -4106,7 +4148,7 @@
     "notes": "Tchibo.",
     "scrooge_score": 97.99196787148594,
     "giving_rate_pct": 0.6024096385542169,
-    "scrooge_rank": 88,
+    "scrooge_rank": 89,
     "forbes_rank": 1623,
     "verification": {
       "990_pf": {
@@ -4159,7 +4201,7 @@
     "notes": "Tchibo.",
     "scrooge_score": 97.99196787148594,
     "giving_rate_pct": 0.6024,
-    "scrooge_rank": 89,
+    "scrooge_rank": 90,
     "forbes_rank": 2695
   },
   {
@@ -4186,7 +4228,7 @@
     "notes": "3G Capital. Jorge Paulo Lemann partner.",
     "scrooge_score": 97.97979797979798,
     "giving_rate_pct": 1.0101,
-    "scrooge_rank": 90,
+    "scrooge_rank": 91,
     "forbes_rank": 1134
   },
   {
@@ -4212,7 +4254,7 @@
     "notes": "Chinese-born Singaporean tech entrepreneur. Founded Sea Limited which became Singapore's most valuable listed company. Appointed to NUS Board of Trustees 2021.",
     "scrooge_score": 97.91666666666666,
     "giving_rate_pct": 0.625,
-    "scrooge_rank": 91,
+    "scrooge_rank": 92,
     "forbes_rank": 231
   },
   {
@@ -4234,7 +4276,7 @@
     "notes": "Shein. Identity kept very private.",
     "scrooge_score": 97.91666666666666,
     "giving_rate_pct": 0.625,
-    "scrooge_rank": 92,
+    "scrooge_rank": 93,
     "forbes_rank": 1364
   },
   {
@@ -4256,7 +4298,7 @@
     "notes": "BYD founder.",
     "scrooge_score": 97.91666666666666,
     "giving_rate_pct": 0.625,
-    "scrooge_rank": 93,
+    "scrooge_rank": 94,
     "forbes_rank": 2797,
     "verification": {
       "990_pf": {
@@ -4308,7 +4350,7 @@
     "notes": "Honorary chairman of Keyence. One of Japans most generous philanthropists.",
     "scrooge_score": 97.89473684210527,
     "giving_rate_pct": 0.5263157894736842,
-    "scrooge_rank": 94,
+    "scrooge_rank": 95,
     "forbes_rank": 209,
     "verification": {
       "990_pf": {
@@ -4356,7 +4398,7 @@
     "notes": "Google investor.",
     "scrooge_score": 97.87234042553192,
     "giving_rate_pct": 1.0638,
-    "scrooge_rank": 95,
+    "scrooge_rank": 96,
     "forbes_rank": 1602
   },
   {
@@ -4378,7 +4420,7 @@
     "notes": "Workday.",
     "scrooge_score": 97.84482758620689,
     "giving_rate_pct": 0.8621,
-    "scrooge_rank": 96,
+    "scrooge_rank": 97,
     "forbes_rank": 1601
   },
   {
@@ -4401,7 +4443,7 @@
     "notes": "Lodha Group real estate. BJP MLA. Mumbai developer.",
     "scrooge_score": 97.77777777777777,
     "giving_rate_pct": 0.5556,
-    "scrooge_rank": 97,
+    "scrooge_rank": 98,
     "forbes_rank": 543
   },
   {
@@ -4423,7 +4465,7 @@
     "notes": "SMP Bank. Sanctioned.",
     "scrooge_score": 97.77777777777777,
     "giving_rate_pct": 0.6667,
-    "scrooge_rank": 98,
+    "scrooge_rank": 99,
     "forbes_rank": 1052
   },
   {
@@ -4445,7 +4487,7 @@
     "notes": "Brookfield.",
     "scrooge_score": 97.77777777777777,
     "giving_rate_pct": 1.0,
-    "scrooge_rank": 99,
+    "scrooge_rank": 100,
     "forbes_rank": 1244
   },
   {
@@ -4467,7 +4509,7 @@
     "notes": "JCDecaux.",
     "scrooge_score": 97.77777777777777,
     "giving_rate_pct": 0.6667,
-    "scrooge_rank": 100,
+    "scrooge_rank": 101,
     "forbes_rank": 1637
   },
   {
@@ -4489,7 +4531,7 @@
     "notes": "JCDecaux.",
     "scrooge_score": 97.77777777777777,
     "giving_rate_pct": 0.6667,
-    "scrooge_rank": 101,
+    "scrooge_rank": 102,
     "forbes_rank": 1638
   },
   {
@@ -4511,66 +4553,8 @@
     "notes": "SalMar heir.",
     "scrooge_score": 97.74436090225565,
     "giving_rate_pct": 0.7895,
-    "scrooge_rank": 102,
-    "forbes_rank": 2713
-  },
-  {
-    "rank": 1411,
-    "name": "Francoise Bettencourt Meyers",
-    "net_worth_billions": 100.0,
-    "country": "France",
-    "source_of_wealth": "L'Oreal",
-    "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 800,
-    "giving_breakdown": {
-      "bettencourt_schueller_foundation": 700,
-      "notre_dame": 112,
-      "fondation_pour_audition": 20,
-      "notes": "VERIFIED Jan 2026: Foundation has \u20ac900M endowment, ~\u20ac15-20M/year for 37 years = \u20ac600-750M cumulative. Notre Dame \u20ac100M (family share)."
-    },
-    "sources": [
-      "https://www.fondationbs.org/",
-      "https://www.forbes.com/sites/kerryadolan/2019/04/17/french-billionaires-pledge-more-than-600-million-to-rebuild-notre-dame/"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 20,
-    "notes": "Richest woman in world. L'Oreal.",
-    "scrooge_score": 97.71428571428571,
-    "giving_rate_pct": 0.8,
     "scrooge_rank": 103,
-    "forbes_rank": 1411,
-    "verification": {
-      "990_pf": {
-        "status": "not_applicable",
-        "note": "French billionaire - see French foundation filings",
-        "url": null
-      },
-      "sec_form4": {
-        "status": "not_applicable",
-        "note": "Not US-listed",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 800,
-        "sources": [
-          "Fondation Bettencourt Schueller"
-        ],
-        "note": "\u20ac900M endowment, 37 years operation",
-        "url": "https://www.fondationbs.org/"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 112,
-        "sources": [
-          "Notre Dame \u20ac100M",
-          "Institut de l'Audition"
-        ],
-        "url": "https://www.forbes.com/sites/kerryadolan/2019/04/17/french-billionaires-pledge-more-than-600-million-to-rebuild-notre-dame/"
-      }
-    },
-    "verifiable_giving_millions": 800,
-    "unverifiable_giving_millions": 0
+    "forbes_rank": 2713
   },
   {
     "rank": 1224,
@@ -6863,16 +6847,17 @@
     "liquidity_factor": 0.35,
     "total_lifetime_giving_millions": 1500,
     "giving_breakdown": {
-      "alice_walton_foundation": 1200,
-      "crystal_bridges_museum": 317,
-      "art_bridges": 200,
-      "walton_school_medicine": 100,
-      "heartland_whole_health": 50,
-      "notes": "VERIFIED Jan 2026: Alice L. Walton Foundation (EIN 82-3700633) has $3.78B assets, ~$95M/year grants. Crystal Bridges $317M+ personal. Forbes lists $1.5B lifetime. Contribution to WFF: $0 over 23 years."
+      "crystal_bridges_construction": 317,
+      "crystal_bridges_endowment": 800,
+      "art_bridges": 400,
+      "awsom_medical_school": 249,
+      "heartland_whole_health": 600,
+      "art_acquisitions": 223,
+      "mercy_cleveland_clinic": 700,
+      "notes": "VERIFIED Jan 2026: Walmart heir (~$101B, world's richest woman). Alice L. Walton Foundation (EIN 82-3700633): $4.7B assets, $52M disbursements (2024). Crystal Bridges Museum $317M+ construction + $800M family endowment. Art Bridges $400M+ for art access. AWSOM medical school $249M. Heartland Whole Health $600M. TIME100 Philanthropy 2025. Forbes: $1.5B lifetime. NOT Giving Pledge - no Waltons have signed."
     },
     "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/823700633",
-      "https://crystalbridges.org/"
+      "https://projects.propublica.org/nonprofits/organizations/823700633"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 30,
@@ -6884,40 +6869,32 @@
     "verification": {
       "990_pf": {
         "status": "found",
-        "amount_millions": 500,
+        "amount_millions": 52,
         "ein": "82-3700633",
-        "note": "Alice L. Walton Foundation: $3.78B assets, ~$95M/year grants",
+        "note": "Alice L. Walton Foundation: $4.7B assets, $52M disbursements (2024)",
         "url": "https://projects.propublica.org/nonprofits/organizations/823700633"
       },
       "sec_form4": {
         "status": "found",
-        "amount_millions": 225,
-        "note": "2016: $225M Walmart shares to Walton Family Holdings Trust",
-        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000903179&type=4&dateb=&owner=include&count=40"
+        "note": "Walmart stock gifts to foundations tracked",
+        "url": null
       },
       "foundation_reports": {
         "status": "found",
-        "amount_millions": 1200,
-        "sources": [
-          "ProPublica 990-PF",
-          "Art Bridges"
-        ],
-        "note": "Foundation + Crystal Bridges cumulative",
+        "amount_millions": 1500,
+        "note": "Multiple foundations + Crystal Bridges + AWSOM + Heartland",
         "url": "https://projects.propublica.org/nonprofits/organizations/823700633"
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 1500,
-        "sources": [
-          "Forbes",
-          "Crystal Bridges",
-          "Art Bridges"
-        ],
-        "url": "https://crystalbridges.org/"
+        "note": "Crystal Bridges, AWSOM, Mercy partnership widely covered. TIME100 2025.",
+        "url": null
       }
     },
-    "verifiable_giving_millions": 1200,
-    "unverifiable_giving_millions": 300
+    "verifiable_giving_millions": 1500,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 2138,
@@ -8083,14 +8060,15 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 1500,
     "giving_breakdown": {
-      "walton_charitable_support": 400,
-      "june_2019_stock_gift": 1200,
-      "walton_family_foundation": 3,
-      "notes": "VERIFIED Jan 2026: Walton Family Charitable Support Foundation (EIN 58-1766770) grants ~$59M/year. June 2019: $1.2B stock gift (largest by any Walton heir). Contribution to WFF: only $3M over 23 years."
+      "walmart_stock_2019": 1200,
+      "town_branch_foundation": 150,
+      "walton_family_foundation_pledge": 2000,
+      "university_arkansas": 300,
+      "other": 50,
+      "notes": "VERIFIED Jan 2026: Walmart heir (~$120B). Town Branch Foundation (EIN 82-3575662): $500M assets, $38M grants (2023). June 2019: $1.2B Walmart stock gift (largest of 2019). Walton Family Foundation board (now led by daughter Annie Proietti). U of Arkansas $300M family gift. NOT Giving Pledge - no Waltons have signed. Note: 2014 report found Jim made only $3M personal contribution to WFF over 15 years."
     },
     "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/581766770",
-      "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000903205&type=4"
+      "https://projects.propublica.org/nonprofits/organizations/823575662"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 30,
@@ -8102,37 +8080,32 @@
     "verification": {
       "990_pf": {
         "status": "found",
-        "amount_millions": 400,
-        "ein": "58-1766770",
-        "note": "Walton Family Charitable Support Foundation: ~$59M/year, $562M assets (2019)",
-        "url": "https://projects.propublica.org/nonprofits/organizations/581766770"
+        "amount_millions": 38,
+        "ein": "82-3575662",
+        "note": "Town Branch Foundation: $500M assets, $38M grants (2023)",
+        "url": "https://projects.propublica.org/nonprofits/organizations/823575662"
       },
       "sec_form4": {
         "status": "found",
-        "amount_millions": 1200,
-        "note": "June 27, 2019: 11.2M Walmart shares (~$1.2B) donated",
-        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000903205&type=4&dateb=&owner=include&count=40"
+        "note": "$1.2B Walmart stock gift June 2019 (SEC filing)",
+        "url": null
       },
       "foundation_reports": {
         "status": "found",
-        "amount_millions": 400,
-        "sources": [
-          "ProPublica 990-PF"
-        ],
-        "note": "Foundation cumulative grants ~$400M",
-        "url": "https://projects.propublica.org/nonprofits/organizations/581766770"
+        "amount_millions": 1500,
+        "note": "Town Branch + WFF + 2019 stock gift",
+        "url": "https://projects.propublica.org/nonprofits/organizations/823575662"
       },
       "news_verified": {
         "status": "found",
-        "amount_millions": 1200,
-        "sources": [
-          "SEC Form 4"
-        ],
-        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000903205&type=4"
+        "amount_millions": 1500,
+        "note": "$1.2B 2019 gift widely covered (Chronicle: largest gift of 2019)",
+        "url": null
       }
     },
-    "verifiable_giving_millions": 400,
-    "unverifiable_giving_millions": 1100
+    "verifiable_giving_millions": 1500,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 692,
@@ -9357,6 +9330,70 @@
     "forbes_rank": 895
   },
   {
+    "rank": 2920,
+    "name": "Julia Koch",
+    "net_worth_billions": 75.0,
+    "country": "United States",
+    "source_of_wealth": "Diversified",
+    "liquidity_factor": 0.35,
+    "total_lifetime_giving_millions": 1300,
+    "giving_breakdown": {
+      "msk_cancer_center": 180,
+      "lincoln_center": 100,
+      "nyp_hospital": 100,
+      "mit": 100,
+      "met_museum": 65,
+      "smithsonian": 70,
+      "nyu_langone_2024": 75,
+      "columbia_kidney_2024": 20,
+      "stanford_kidney_2025": 15,
+      "md_anderson": 25,
+      "johns_hopkins": 20,
+      "cold_spring_harbor": 10,
+      "other_medical_arts": 520,
+      "notes": "VERIFIED Jan 2026: Koch Industries co-owner (~$63B), widow of David Koch. David H. Koch Charitable Foundation (EIN 48-0926946): tiny ($1.5M assets). Julia Koch Family Foundation (EIN 92-1599313) 501(c)(4) established 2023. Multiple newer 501(c)(4)s for children. Combined with David: $1.3B+ to arts/medical. Lincoln Center $100M, MSK $150M, NYP $100M. NOT Giving Pledge."
+    },
+    "sources": [
+      "https://projects.propublica.org/nonprofits/organizations/480926946"
+    ],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 10,
+    "notes": "Koch Industries heir.",
+    "scrooge_score": 95.04761904761905,
+    "giving_rate_pct": 1.7333333333333332,
+    "scrooge_rank": 284,
+    "forbes_rank": 2920,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 2,
+        "ein": "48-0926946",
+        "note": "David H. Koch Charitable Foundation: tiny ($2M disbursements). Most giving via 501(c)(4)s and named gifts.",
+        "url": "https://projects.propublica.org/nonprofits/organizations/480926946"
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "Koch Industries private",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "partial",
+        "amount_millions": 1300,
+        "note": "Named gifts documented. New 501(c)(4) structure limits transparency.",
+        "url": "https://projects.propublica.org/nonprofits/organizations/480926946"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 1300,
+        "note": "MSK, Lincoln Center, NYP, Met named gifts covered",
+        "url": null
+      }
+    },
+    "verifiable_giving_millions": 2,
+    "unverifiable_giving_millions": 1298,
+    "giving_pledge": "no"
+  },
+  {
     "rank": 62,
     "name": "Leon Black",
     "net_worth_billions": 10.0,
@@ -9377,7 +9414,7 @@
     "notes": "Signed Giving Pledge. Foundation has paused grantmaking. Reputation damaged by Epstein ties.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 3.0,
-    "scrooge_rank": 284,
+    "scrooge_rank": 285,
     "forbes_rank": 62
   },
   {
@@ -9400,7 +9437,7 @@
     "notes": "Lukoil.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 285,
+    "scrooge_rank": 286,
     "forbes_rank": 1394
   },
   {
@@ -9423,7 +9460,7 @@
     "notes": "Smilegate founder. CrossFire online game. Gaming fortune. Korean tech.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 286,
+    "scrooge_rank": 287,
     "forbes_rank": 439
   },
   {
@@ -9447,7 +9484,7 @@
     "notes": "Olympic gymnast. Li-Ning brand. Chinese sportswear. National icon.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 287,
+    "scrooge_rank": 288,
     "forbes_rank": 456
   },
   {
@@ -9470,7 +9507,7 @@
     "notes": "Hans Rausing's son. Tetra Pak. More private than sister Lisbet.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 288,
+    "scrooge_rank": 289,
     "forbes_rank": 466
   },
   {
@@ -9493,7 +9530,7 @@
     "notes": "Chaleo died 2012. Family owns 51% of Red Bull. Thai operations.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.0,
-    "scrooge_rank": 289,
+    "scrooge_rank": 290,
     "forbes_rank": 474
   },
   {
@@ -9516,7 +9553,7 @@
     "notes": "Carlyle Group. Giving Pledge. Less visible than Rubenstein.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 290,
+    "scrooge_rank": 291,
     "forbes_rank": 511
   },
   {
@@ -9539,7 +9576,7 @@
     "notes": "DLF real estate. Built Gurgaon. Healthcare philanthropy.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 291,
+    "scrooge_rank": 292,
     "forbes_rank": 545
   },
   {
@@ -9562,7 +9599,7 @@
     "notes": "Emaar Properties. Built Burj Khalifa. Dubai Mall.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 292,
+    "scrooge_rank": 293,
     "forbes_rank": 558
   },
   {
@@ -9585,7 +9622,7 @@
     "notes": "Cox Enterprises heir. Lives in Australia.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 293,
+    "scrooge_rank": 294,
     "forbes_rank": 606
   },
   {
@@ -9607,7 +9644,7 @@
     "notes": "Meituan.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 294,
+    "scrooge_rank": 295,
     "forbes_rank": 1348
   },
   {
@@ -9629,7 +9666,7 @@
     "notes": "SANCTIONED. Severstal.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 295,
+    "scrooge_rank": 296,
     "forbes_rank": 1393
   },
   {
@@ -9651,7 +9688,7 @@
     "notes": "Banking.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 296,
+    "scrooge_rank": 297,
     "forbes_rank": 1437
   },
   {
@@ -9673,7 +9710,7 @@
     "notes": "Central American retail.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 297,
+    "scrooge_rank": 298,
     "forbes_rank": 1445
   },
   {
@@ -9697,7 +9734,7 @@
     "notes": "Onexim Group. Former Nets owner.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 298,
+    "scrooge_rank": 299,
     "forbes_rank": 1458
   },
   {
@@ -9719,7 +9756,7 @@
     "notes": "Musk family.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 299,
+    "scrooge_rank": 300,
     "forbes_rank": 1520
   },
   {
@@ -9741,7 +9778,7 @@
     "notes": "Mars Inc.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 300,
+    "scrooge_rank": 301,
     "forbes_rank": 1523
   },
   {
@@ -9763,7 +9800,7 @@
     "notes": "Bouygues.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 301,
+    "scrooge_rank": 302,
     "forbes_rank": 1640
   },
   {
@@ -9785,7 +9822,7 @@
     "notes": "Flipkart.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 302,
+    "scrooge_rank": 303,
     "forbes_rank": 1747
   },
   {
@@ -9807,7 +9844,7 @@
     "notes": "WeWork.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 303,
+    "scrooge_rank": 304,
     "forbes_rank": 1782
   },
   {
@@ -9829,7 +9866,7 @@
     "notes": "Cosmetics.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 304,
+    "scrooge_rank": 305,
     "forbes_rank": 1937
   },
   {
@@ -9851,7 +9888,7 @@
     "notes": "Fisco.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 305,
+    "scrooge_rank": 306,
     "forbes_rank": 2117
   },
   {
@@ -9873,7 +9910,7 @@
     "notes": "M&A.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 306,
+    "scrooge_rank": 307,
     "forbes_rank": 2121
   },
   {
@@ -9895,7 +9932,7 @@
     "notes": "Gree.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 307,
+    "scrooge_rank": 308,
     "forbes_rank": 2125
   },
   {
@@ -9917,7 +9954,7 @@
     "notes": "Rakus.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 308,
+    "scrooge_rank": 309,
     "forbes_rank": 2127
   },
   {
@@ -9939,7 +9976,7 @@
     "notes": "GMO.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 309,
+    "scrooge_rank": 310,
     "forbes_rank": 2128
   },
   {
@@ -9961,7 +9998,7 @@
     "notes": "Pokemon.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 310,
+    "scrooge_rank": 311,
     "forbes_rank": 2139
   },
   {
@@ -9983,7 +10020,7 @@
     "notes": "Banking.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 311,
+    "scrooge_rank": 312,
     "forbes_rank": 2169
   },
   {
@@ -10005,7 +10042,7 @@
     "notes": "KAMAZ.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 312,
+    "scrooge_rank": 313,
     "forbes_rank": 2170
   },
   {
@@ -10027,7 +10064,7 @@
     "notes": "dm.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 313,
+    "scrooge_rank": 314,
     "forbes_rank": 2233
   },
   {
@@ -10049,7 +10086,7 @@
     "notes": "Biotech.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 314,
+    "scrooge_rank": 315,
     "forbes_rank": 2298
   },
   {
@@ -10071,7 +10108,7 @@
     "notes": "Offcn Education.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 315,
+    "scrooge_rank": 316,
     "forbes_rank": 2311
   },
   {
@@ -10093,7 +10130,7 @@
     "notes": "CrowdStrike co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 316,
+    "scrooge_rank": 317,
     "forbes_rank": 2586
   },
   {
@@ -10115,7 +10152,7 @@
     "notes": "CHARGED. Terra Luna collapsed.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.0,
-    "scrooge_rank": 317,
+    "scrooge_rank": 318,
     "forbes_rank": 2746
   },
   {
@@ -10137,7 +10174,7 @@
     "notes": "CONVICTED. FTX co-founder, cooperated.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.0,
-    "scrooge_rank": 318,
+    "scrooge_rank": 319,
     "forbes_rank": 2748
   },
   {
@@ -10159,7 +10196,7 @@
     "notes": "Dell Foundation.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 319,
+    "scrooge_rank": 320,
     "forbes_rank": 2948
   },
   {
@@ -10181,7 +10218,7 @@
     "notes": "Calendly founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 320,
+    "scrooge_rank": 321,
     "forbes_rank": 2978
   },
   {
@@ -10203,7 +10240,7 @@
     "notes": "Canva co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 321,
+    "scrooge_rank": 322,
     "forbes_rank": 2983
   },
   {
@@ -10225,7 +10262,7 @@
     "notes": "Bumble founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 322,
+    "scrooge_rank": 323,
     "forbes_rank": 2986
   },
   {
@@ -10247,7 +10284,7 @@
     "notes": "Eventbrite co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 323,
+    "scrooge_rank": 324,
     "forbes_rank": 2987
   },
   {
@@ -10269,7 +10306,7 @@
     "notes": "Glossier founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 324,
+    "scrooge_rank": 325,
     "forbes_rank": 2989
   },
   {
@@ -10291,7 +10328,7 @@
     "notes": "VaynerMedia.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 325,
+    "scrooge_rank": 326,
     "forbes_rank": 2990
   },
   {
@@ -10313,7 +10350,7 @@
     "notes": "Stitch Fix founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 326,
+    "scrooge_rank": 327,
     "forbes_rank": 2991
   },
   {
@@ -10335,7 +10372,7 @@
     "notes": "Rent the Runway co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 327,
+    "scrooge_rank": 328,
     "forbes_rank": 2992
   },
   {
@@ -10357,7 +10394,7 @@
     "notes": "Rent the Runway co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 328,
+    "scrooge_rank": 329,
     "forbes_rank": 2993
   },
   {
@@ -10379,7 +10416,7 @@
     "notes": "Security Bank. Philippines banking.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 329,
+    "scrooge_rank": 330,
     "forbes_rank": 905
   },
   {
@@ -10401,7 +10438,7 @@
     "notes": "HPL. Brought F1 to Singapore.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 330,
+    "scrooge_rank": 331,
     "forbes_rank": 910
   },
   {
@@ -10423,7 +10460,7 @@
     "notes": "Ace Hardware Indonesia. Retail.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 331,
+    "scrooge_rank": 332,
     "forbes_rank": 921
   },
   {
@@ -10445,7 +10482,7 @@
     "notes": "Press Metal. Malaysia aluminum.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 332,
+    "scrooge_rank": 333,
     "forbes_rank": 924
   },
   {
@@ -10467,7 +10504,7 @@
     "notes": "SCG Packaging. Thailand.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 333,
+    "scrooge_rank": 334,
     "forbes_rank": 929
   },
   {
@@ -10489,7 +10526,7 @@
     "notes": "Indorama Ventures. PET recycling.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 334,
+    "scrooge_rank": 335,
     "forbes_rank": 930
   },
   {
@@ -10511,7 +10548,7 @@
     "notes": "Hoa Phat. Vietnam's largest steelmaker.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 335,
+    "scrooge_rank": 336,
     "forbes_rank": 932
   },
   {
@@ -10533,7 +10570,7 @@
     "notes": "Masan Group. VinCommerce.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 336,
+    "scrooge_rank": 337,
     "forbes_rank": 933
   },
   {
@@ -10555,7 +10592,7 @@
     "notes": "Kroenke Sports. Arsenal.",
     "scrooge_score": 94.87179487179486,
     "giving_rate_pct": 1.5385,
-    "scrooge_rank": 337,
+    "scrooge_rank": 338,
     "forbes_rank": 1225
   },
   {
@@ -10577,7 +10614,7 @@
     "notes": "DECEASED 2019. Jysk.",
     "scrooge_score": 94.87179487179486,
     "giving_rate_pct": 1.5385,
-    "scrooge_rank": 338,
+    "scrooge_rank": 339,
     "forbes_rank": 1270
   },
   {
@@ -10599,7 +10636,7 @@
     "notes": "Valve. Steam. New Zealand resident.",
     "scrooge_score": 94.87179487179486,
     "giving_rate_pct": 1.5385,
-    "scrooge_rank": 339,
+    "scrooge_rank": 340,
     "forbes_rank": 1507
   },
   {
@@ -10621,7 +10658,7 @@
     "notes": "Tetra Pak. Swiss resident.",
     "scrooge_score": 94.8051948051948,
     "giving_rate_pct": 1.8182,
-    "scrooge_rank": 340,
+    "scrooge_rank": 341,
     "forbes_rank": 1265
   },
   {
@@ -10643,7 +10680,7 @@
     "notes": "Descon Group. Former commerce adviser.",
     "scrooge_score": 94.79166666666666,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 341,
+    "scrooge_rank": 342,
     "forbes_rank": 966
   },
   {
@@ -10665,7 +10702,7 @@
     "notes": "Current Pakistan president. Bhutto widower.",
     "scrooge_score": 94.79166666666666,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 342,
+    "scrooge_rank": 343,
     "forbes_rank": 967
   },
   {
@@ -10687,7 +10724,7 @@
     "notes": "Fielmann heir. Took over as CEO.",
     "scrooge_score": 94.79166666666666,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 343,
+    "scrooge_rank": 344,
     "forbes_rank": 1000
   },
   {
@@ -10709,7 +10746,7 @@
     "notes": "E*Trade Financial. Florida.",
     "scrooge_score": 94.73684210526316,
     "giving_rate_pct": 2.6316,
-    "scrooge_rank": 344,
+    "scrooge_rank": 345,
     "forbes_rank": 707
   },
   {
@@ -10737,7 +10774,7 @@
     "notes": "Norilsk Nickel. Giving Pledge. Major philanthropist.",
     "scrooge_score": 94.72222222222221,
     "giving_rate_pct": 1.5833333333333335,
-    "scrooge_rank": 345,
+    "scrooge_rank": 346,
     "forbes_rank": 1392,
     "verification": {
       "990_pf": {
@@ -10791,75 +10828,8 @@
     "notes": "Has NOT signed Giving Pledge. Frist Foundation active in Nashville. Arts and healthcare focus.",
     "scrooge_score": 94.70899470899471,
     "giving_rate_pct": 1.8519,
-    "scrooge_rank": 346,
-    "forbes_rank": 54
-  },
-  {
-    "rank": 2920,
-    "name": "Julia Koch",
-    "net_worth_billions": 75.0,
-    "country": "United States",
-    "source_of_wealth": "Diversified",
-    "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 1400,
-    "giving_breakdown": {
-      "joint_with_david_pre_2019": 1300,
-      "nyu_langone_2024": 75,
-      "julia_koch_family_philanthropy_fund_2023": 91,
-      "david_koch_foundation_post_2019": 10,
-      "notes": "VERIFIED Jan 2026: $1.3B joint with David Koch (1980-2019). Post-2019 Julia's vehicles: Julia Koch Family Philanthropy Fund $90.6M (2023), NYU Langone $75M (2024). David H. Koch Charitable Foundation being wound down ($1.5M assets 2024)."
-    },
-    "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/873659591",
-      "https://projects.propublica.org/nonprofits/organizations/480926946",
-      "https://nyulangone.org/news/julia-koch-family-foundation-gives-transformative-75-million-gift"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 10,
-    "notes": "Koch Industries heir.",
-    "scrooge_score": 94.66666666666667,
-    "giving_rate_pct": 1.866666666666667,
     "scrooge_rank": 347,
-    "forbes_rank": 2920,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 91,
-        "ein": "87-3659591",
-        "note": "Julia Koch Family Philanthropy Fund: $90.6M grants (2023), $92M assets (2024)",
-        "url": "https://projects.propublica.org/nonprofits/organizations/873659591"
-      },
-      "sec_form4": {
-        "status": "not_applicable",
-        "note": "Koch Industries is private - no SEC filings",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 1400,
-        "sources": [
-          "ProPublica 990-PF",
-          "MSK",
-          "MIT",
-          "Lincoln Center"
-        ],
-        "note": "$1.3B joint pre-2019 + ~$100M post-2019",
-        "url": "https://projects.propublica.org/nonprofits/organizations/480926946"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 1400,
-        "sources": [
-          "NYU Langone $75M",
-          "MSK $150M",
-          "MIT $100M",
-          "Lincoln Center $100M"
-        ],
-        "url": "https://nyulangone.org/news/julia-koch-family-foundation-gives-transformative-75-million-gift"
-      }
-    },
-    "verifiable_giving_millions": 1400,
-    "unverifiable_giving_millions": 0
+    "forbes_rank": 54
   },
   {
     "rank": 1391,
@@ -12906,72 +12876,6 @@
     "forbes_rank": 1508
   },
   {
-    "rank": 18,
-    "name": "Michael Dell",
-    "net_worth_billions": 115.0,
-    "country": "United States",
-    "source_of_wealth": "Dell Technologies",
-    "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 2800,
-    "giving_breakdown": {
-      "dell_foundation_cumulative": 2800,
-      "ut_austin_total": 200,
-      "dell_medical_school": 50,
-      "dell_childrens_medical": 90,
-      "charter_schools": 120,
-      "homelessness": 38,
-      "notes": "VERIFIED Jan 2026: Michael & Susan Dell Foundation 990-PF shows $2.8B cumulative grants (1999-2024). ~$175-220M/year recent. UT Austin $200M, Dell Medical School $50M."
-    },
-    "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/364336415",
-      "https://www.dell.org/"
-    ],
-    "giving_pledge_signed": true,
-    "years_as_billionaire": 25,
-    "notes": "Signed Giving Pledge 2010. $6.25B Trump Accounts pledge (Dec 2025) not yet disbursed. Actual lifetime giving ~$2.8B.",
-    "scrooge_score": 93.91304347826087,
-    "giving_rate_pct": 2.4347826086956523,
-    "scrooge_rank": 437,
-    "forbes_rank": 18,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 2800,
-        "ein": "36-4336415",
-        "note": "Michael & Susan Dell Foundation: $219M (2024), $172M (2023), $184M (2022)",
-        "url": "https://projects.propublica.org/nonprofits/organizations/364336415"
-      },
-      "sec_form4": {
-        "status": "found",
-        "note": "$3.6B stock gift to foundation in Dec 2023",
-        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045520&type=4&dateb=&owner=include&count=40"
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 2800,
-        "sources": [
-          "ProPublica 990-PF",
-          "Dell Foundation"
-        ],
-        "note": "Foundation assets $7.77B, grants $2.8B cumulative",
-        "url": "https://www.dell.org/"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 2800,
-        "sources": [
-          "TIME",
-          "Forbes",
-          "UT Austin",
-          "Inside Philanthropy"
-        ],
-        "url": "https://time.com/collection/time100-philanthropy-2024/6990877/michael-susan-dell/"
-      }
-    },
-    "verifiable_giving_millions": 2800,
-    "unverifiable_giving_millions": 0
-  },
-  {
     "rank": 4,
     "name": "Mark Zuckerberg",
     "net_worth_billions": 233.0,
@@ -12993,7 +12897,7 @@
     "notes": "Signed Giving Pledge 2010. CZI has disbursed $7.22B in grants since 2015 per their website. One of the more active tech philanthropists.",
     "scrooge_score": 93.86879215205396,
     "giving_rate_pct": 2.1459227467811157,
-    "scrooge_rank": 438,
+    "scrooge_rank": 437,
     "forbes_rank": 4,
     "verification": {
       "990_pf": {
@@ -13057,7 +12961,7 @@
     "notes": "Has NOT signed Giving Pledge. Major Russian philanthropist. Under sanctions since 2022.",
     "scrooge_score": 93.77777777777779,
     "giving_rate_pct": 1.866666666666667,
-    "scrooge_rank": 439,
+    "scrooge_rank": 438,
     "forbes_rank": 82,
     "verification": {
       "990_pf": {
@@ -13115,7 +13019,7 @@
     "notes": "Third Point.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 3.75,
-    "scrooge_rank": 440,
+    "scrooge_rank": 439,
     "forbes_rank": 1228
   },
   {
@@ -13140,7 +13044,7 @@
     "notes": "Houston Rockets owner. Restaurant/casino empire. University of Houston supporter. Houston civic leader.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 1.875,
-    "scrooge_rank": 441,
+    "scrooge_rank": 440,
     "forbes_rank": 312
   },
   {
@@ -13164,7 +13068,7 @@
     "notes": "TPG Capital. Giving Pledge. Environmental focus.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 442,
+    "scrooge_rank": 441,
     "forbes_rank": 607
   },
   {
@@ -13187,7 +13091,7 @@
     "notes": "Stryker Corp heir. Kalamazoo area philanthropy.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 443,
+    "scrooge_rank": 442,
     "forbes_rank": 611
   },
   {
@@ -13211,7 +13115,7 @@
     "notes": "Guggenheim Partners. LA Dodgers. Giving Pledge.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 444,
+    "scrooge_rank": 443,
     "forbes_rank": 628
   },
   {
@@ -13234,7 +13138,7 @@
     "notes": "Ashley Furniture Industries. Second generation.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 445,
+    "scrooge_rank": 444,
     "forbes_rank": 629
   },
   {
@@ -13257,7 +13161,7 @@
     "notes": "TPG Capital co-founder. Giving Pledge.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 446,
+    "scrooge_rank": 445,
     "forbes_rank": 641
   },
   {
@@ -13281,7 +13185,7 @@
     "notes": "Former Sequoia. Warriors incident 2019.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 447,
+    "scrooge_rank": 446,
     "forbes_rank": 646
   },
   {
@@ -13303,7 +13207,7 @@
     "notes": "Addoha Group. Morocco real estate.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 448,
+    "scrooge_rank": 447,
     "forbes_rank": 978
   },
   {
@@ -13325,7 +13229,7 @@
     "notes": "Yandex. Left Russia.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 449,
+    "scrooge_rank": 448,
     "forbes_rank": 1455
   },
   {
@@ -13347,7 +13251,7 @@
     "notes": "MDM Bank.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 450,
+    "scrooge_rank": 449,
     "forbes_rank": 1465
   },
   {
@@ -13369,7 +13273,7 @@
     "notes": "Estee Lauder.",
     "scrooge_score": 93.75,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 451,
+    "scrooge_rank": 450,
     "forbes_rank": 1561
   },
   {
@@ -13391,8 +13295,63 @@
     "notes": "Cosan Group.",
     "scrooge_score": 93.65079365079364,
     "giving_rate_pct": 2.2222,
-    "scrooge_rank": 452,
+    "scrooge_rank": 451,
     "forbes_rank": 1141
+  },
+  {
+    "rank": 18,
+    "name": "Michael Dell",
+    "net_worth_billions": 115.0,
+    "country": "United States",
+    "source_of_wealth": "Dell Technologies",
+    "liquidity_factor": 0.4,
+    "total_lifetime_giving_millions": 3000,
+    "giving_breakdown": {
+      "dell_foundation_cumulative": 2800,
+      "dell_scholars": 300,
+      "dell_childrens_hospital": 55,
+      "ukraine_relief": 15,
+      "notes": "VERIFIED Jan 2026: Dell Technologies founder (~$115B). Michael & Susan Dell Foundation (EIN 36-4336415): $7.77B assets, $219M disbursements (2024). ~$3B cumulative since 1999. Dell Scholars $300M (6,000+ students). Dec 2025: $6.25B 'Trump Accounts' pledge for 25M children's investment accounts - largest single gift to Americans. TIME100 Philanthropy 2024. NOT Giving Pledge despite peer pressure."
+    },
+    "sources": [
+      "https://projects.propublica.org/nonprofits/organizations/364336415/202543189349104239/full"
+    ],
+    "giving_pledge_signed": true,
+    "years_as_billionaire": 25,
+    "notes": "Signed Giving Pledge 2010. $6.25B Trump Accounts pledge (Dec 2025) not yet disbursed. Actual lifetime giving ~$2.8B.",
+    "scrooge_score": 93.47826086956522,
+    "giving_rate_pct": 2.608695652173913,
+    "scrooge_rank": 452,
+    "forbes_rank": 18,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 219,
+        "ein": "36-4336415",
+        "note": "Michael & Susan Dell Foundation: $7.77B assets, $219M disbursements (2024)",
+        "url": "https://projects.propublica.org/nonprofits/organizations/364336415/202543189349104239/full"
+      },
+      "sec_form4": {
+        "status": "found",
+        "note": "Dell stock gifts to foundation tracked",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 3000,
+        "note": "Foundation 990-PF + named programs (Dell Scholars, children's hospital)",
+        "url": "https://projects.propublica.org/nonprofits/organizations/364336415/202543189349104239/full"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 3000,
+        "note": "Dec 2025 $6.25B pledge widely covered. TIME100 2024.",
+        "url": null
+      }
+    },
+    "verifiable_giving_millions": 3000,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 665,
@@ -17951,20 +17910,19 @@
     "liquidity_factor": 0.5,
     "total_lifetime_giving_millions": 5700,
     "giving_breakdown": {
-      "ballmer_group": 4000,
-      "university_of_oregon": 475,
-      "university_of_washington": 80,
-      "harvard": 85,
-      "blue_meridian_partners": 500,
-      "strivetogether": 175,
-      "la_clippers_community": 150,
-      "other": 235,
-      "notes": "VERIFIED Jan 2026: Ballmer Group (LLC, no 990-PF) has disbursed $4B+ since 2015. UO $475M (Ballmer Institute $425M), UW $80M, Harvard $85M. Forbes estimate $5.7B."
+      "university_oregon": 425,
+      "washington_eceap_10yr": 1000,
+      "strivetogether": 235,
+      "communities_in_schools": 165,
+      "blue_meridian": 500,
+      "usafacts": 100,
+      "climate_giving": 772,
+      "detroit_michigan": 260,
+      "covid_relief": 25,
+      "other": 2218,
+      "notes": "VERIFIED Jan 2026: Former Microsoft CEO (~$135B). Ballmer Group (LLC, no 990-PF). USAFacts $100M+. UO $425M (behavioral health). Washington ECEAP $1B+ (10yr). StriveTogether $235M. Climate via Rainier Climate Group $772M+. TIME100 Philanthropy 2025. $5.7B+ lifetime (Forbes). NOT Giving Pledge despite Gates friendship."
     },
-    "sources": [
-      "https://time.com/collection/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/",
-      "https://www.insidephilanthropy.com/find-a-grant/grants-b/ballmer-group"
-    ],
+    "sources": [],
     "giving_pledge_signed": true,
     "years_as_billionaire": 20,
     "notes": "Signed Giving Pledge. One of fastest-growing philanthropies. Very active giver.",
@@ -17975,38 +17933,30 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "Ballmer Group is LLC, not foundation - no 990-PF filings required",
+        "note": "Ballmer Group is LLC (like CZI), no 990-PF filings",
         "url": null
       },
       "sec_form4": {
-        "status": "partial",
-        "note": "Some Microsoft stock gifts tracked",
-        "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000908063&type=4&dateb=&owner=include&count=40"
+        "status": "found",
+        "note": "Microsoft stock gifts tracked",
+        "url": null
       },
       "foundation_reports": {
-        "status": "found",
-        "amount_millions": 4000,
-        "sources": [
-          "Ballmer Group",
-          "Inside Philanthropy"
-        ],
-        "note": "LLC structure - $4B+ disbursed since 2015",
-        "url": "https://www.ballmergroup.org/"
+        "status": "partial",
+        "amount_millions": 5700,
+        "note": "LLC opacity limits verification. Named gifts documented.",
+        "url": null
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 5700,
-        "sources": [
-          "TIME",
-          "Forbes",
-          "Chronicle of Philanthropy",
-          "60 Minutes"
-        ],
-        "url": "https://time.com/collection/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/"
+        "note": "UO $425M, Washington ECEAP, climate widely covered. 60 Minutes Oct 2024.",
+        "url": null
       }
     },
-    "verifiable_giving_millions": 4000,
-    "unverifiable_giving_millions": 1700
+    "verifiable_giving_millions": 0,
+    "unverifiable_giving_millions": 5700,
+    "giving_pledge": "no"
   },
   {
     "rank": 1399,
