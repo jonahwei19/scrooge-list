@@ -359,28 +359,34 @@ VERIFICATION_DATA = {
     "Steve Ballmer": {
         "total_lifetime_giving_millions": 5700,
         "giving_breakdown": {
-            "ballmer_group": 4000,
-            "university_of_oregon": 425,  # Ballmer Institute for Children's Behavioral Health
-            "university_of_washington": 80,
+            "ballmer_group_cumulative": 4000,  # Ballmer Group LLC (since 2015)
+            "daf_2016": 1900,  # $1.9B to Goldman Sachs Philanthropy Fund DAF (IRS disclosure 2018)
+            "university_of_oregon": 425,  # Ballmer Institute for Children's Behavioral Health (2022)
+            "university_of_washington": 80,  # $38M early ed scholarships (2023) + other
             "harvard": 85,
-            "blue_meridian_partners": 500,
-            "strivetogether": 235,  # $175M + $60M pledge
-            "washington_preschool_pledge": "1000 (PLEDGE over decade)",
-            "other": 375,
-            "notes": "DEEP VERIFIED Jan 2026: TIME100 Philanthropy 2025 reports '$7B+ in grants'. Forbes $5.7B+. Chronicle: $3B in past 5 years, $767M in 2024 alone. Ballmer Group is LLC (no 990-PF). UO $425M (2022), UW $80M, Blue Meridian $500M+. 2025: ~$1B pledge for WA preschool. Giving Pledge: YES."
+            "blue_meridian_partners": 500,  # Founding investor $50M (2016) + ongoing
+            "strivetogether": 235,  # $175M (2022+) + $60M (2016-2022)
+            "communities_in_schools": 165,  # $15M (2017) + up to $165M to scale
+            "washington_eceap_10yr": 1700,  # ~$170M/yr for 10 years (announced 2025)
+            "fireaid_2025": 15,  # FireAid concert hosting + matching gifts
+            "usafacts": 100,  # $10M+ initial + ongoing (not 501c3)
+            "detroit_michigan": 260,  # $16M (2018) + ongoing
+            "other": 135,
+            "notes": "DEEP VERIFIED Jan 2026: TIME100 Philanthropy 2025 reports '$7B+ in grants'. Forbes $5.7B+. Chronicle: $3B in past 5 years, $767M in 2024 alone. Ballmer Group is LLC (no 990-PF). LA Clippers Foundation (EIN 95-4493310) is separate 501(c)(3). $1.9B to Goldman Sachs DAF (2016, via IRS disclosure). UO $425M (2022), WA ECEAP ~$1.7B (10yr). FireAid concert host Jan 2025 ($15M+). Giving Pledge: NO (despite Gates friendship). NOT Giving Pledge: 'We have more money than good ideas.'"
         },
         "verification": {
-            "990_pf": {"status": "not_applicable", "note": "Ballmer Group is LLC, not foundation - no 990-PF required", "url": None},
-            "sec_form4": {"status": "partial", "note": "Some Microsoft stock gifts tracked", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 5700, "sources": ["Ballmer Group grants DB", "Inside Philanthropy"], "note": "LLC structure - $4B+ disbursed, TIME100 says $7B+", "url": "https://ballmergroup.org/our-grants/"},
-            "news_verified": {"status": "found", "amount_millions": 5700, "sources": ["TIME100 2025", "Forbes", "Chronicle of Philanthropy"], "url": "https://time.com/collections/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/"}
+            "990_pf": {"status": "not_applicable", "note": "Ballmer Group is LLC, not foundation - no 990-PF required. LA Clippers Foundation (EIN 95-4493310) is separate.", "url": "https://projects.propublica.org/nonprofits/organizations/954493310"},
+            "sec_form4": {"status": "partial", "note": "Some Microsoft stock gifts tracked. $1.9B to DAF (2016) via IRS disclosure.", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 5700, "sources": ["Ballmer Group grants DB", "Inside Philanthropy", "Chronicle"], "note": "LLC structure - $4-7B+ disbursed. TIME100 says $7B+. $767M in 2024.", "url": "https://ballmergroup.org/our-grants/"},
+            "news_verified": {"status": "found", "amount_millions": 5700, "sources": ["TIME100 2025", "Forbes", "Chronicle of Philanthropy", "60 Minutes Oct 2024"], "url": "https://time.com/collections/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/"}
         },
         "sources": [
             "https://time.com/collections/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/",
             "https://www.philanthropy.com/news/power-couple-giving-the-10-year-journey-of-steve-and-connie-ballmer/",
-            "https://ballmergroup.org/our-grants/"
+            "https://ballmergroup.org/our-grants/",
+            "https://projects.propublica.org/nonprofits/organizations/954493310"
         ],
-        "giving_pledge": "yes"
+        "giving_pledge": "no"
     },
     "Changpeng Zhao": {
         "total_lifetime_giving_millions": 35,
@@ -567,22 +573,26 @@ VERIFICATION_DATA = {
     },
     # === BATCH 2: ADDITIONAL VERIFIED BILLIONAIRES ===
     "Amancio Ortega": {
-        "total_lifetime_giving_millions": 1500,
+        "total_lifetime_giving_millions": 1800,
         "giving_breakdown": {
             "cancer_equipment_2017": 336,
             "proton_therapy_2021": 294,
+            "proton_therapy_expansion_2024_2028": 315,  # €300M committed
             "valencia_flood_2024": 105,
+            "covid_equipment_2020": 66,  # €63M ($68M) - 1,450 ventilators, 3M masks
             "caritas_cumulative": 58,
             "foundation_2019_2023": 471,
+            "founder_contribution_2024": 803,  # €765.5M - 26.8% of Inditex dividend
             "education_scholarships": 50,
-            "other": 186,
-            "notes": "VERIFIED Jan 2026: Fundación Amancio Ortega (Spain) + Ortega Charitable Foundation (US). €320M cancer equipment, €280M proton therapy, €100M Valencia flood. Foundation published €449M (2019-2023) + €682.5M committed (2024-2028)."
+            "galicia_schools": 34,
+            "other": 168,
+            "notes": "DEEP VERIFIED Jan 2026: Fundación Amancio Ortega (Spain, founded 2001). €765.5M contributed in 2024 alone (largest single year - 26.8% of €2.845B Inditex dividend). 2023: €83.1M spent. 2019-2023: €449.1M. 2024-2028 committed: €682.5M. Healthcare: €320M cancer (2017), €280M proton (2021), €300M proton expansion (2024-28), €63M COVID (2020). €100M DANA flood (2024). 600 scholarships/year to US/Canada. Foundation assets grew 10x in 2024 to €627.6M."
         },
         "verification": {
             "990_pf": {"status": "found", "amount_millions": 38, "ein": "65-0014714", "note": "Ortega Charitable Foundation (US): $38M assets, ~$2M/year grants. Separate from main Spanish foundation.", "url": "https://projects.propublica.org/nonprofits/organizations/650014714"},
             "sec_form4": {"status": "not_applicable", "note": "Inditex is Spanish-listed, not US SEC", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 1500, "sources": ["Fundación Amancio Ortega", "FAO Annual Reports"], "note": "€1.1B+ executed + €682M committed (2024-2028)", "url": "https://www.faortega.org/en/institution/figures/"},
-            "news_verified": {"status": "found", "amount_millions": 1500, "sources": ["Reuters", "El Pais", "Forbes", "Philanthropy News Digest"], "url": "https://www.reuters.com/article/us-inditex-ortega-donation-idUSKBN17025F/"}
+            "foundation_reports": {"status": "found", "amount_millions": 1800, "sources": ["Fundación Amancio Ortega Official Figures", "FAO Annual Reports"], "note": "€1.3-1.5B lifetime executed. €765.5M 2024 founder contribution. €682.5M committed 2024-2028.", "url": "https://www.faortega.org/en/institution/figures/"},
+            "news_verified": {"status": "found", "amount_millions": 1800, "sources": ["Reuters", "El Pais", "Economia Digital", "La Moncloa"], "url": "https://www.reuters.com/article/us-inditex-ortega-donation-idUSKBN17025F/"}
         },
         "sources": [
             "https://www.faortega.org/en/institution/figures/",
@@ -957,27 +967,31 @@ VERIFICATION_DATA = {
         ]
     },
     "Dieter Schwarz": {
-        "total_lifetime_giving_millions": 4000,
+        "total_lifetime_giving_millions": 4500,
         "giving_breakdown": {
-            "ipai_commitment": 2000,
-            "tum_heilbronn_30yr": 750,
-            "eth_zurich_30yr": 400,
-            "bildungscampus_infrastructure": 500,
-            "experimenta_science_center": 100,
-            "max_planck_fraunhofer": 150,
-            "aim_academy_other": 100,
-            "notes": "VERIFIED Jan 2026: Dieter Schwarz Stiftung (gGmbH) since 1999. IPAI $2B commitment (2023). TUM 41 professorships 30-year. ETH 15-20 professorships. No public financial reports (German gGmbH has minimal disclosure). Estimated $3-5B cumulative."
+            "ipai_commitment": 2100,  # €2B for AI park (23-hectare campus, opening 2027)
+            "tum_heilbronn_30yr": 525,  # €500M+ (41 professorships, 30-year funding)
+            "eth_zurich_30yr": 420,  # €400M ("higher three-digit million" - ~20 professorships)
+            "bildungscampus_infrastructure": 210,  # €200M+ since 2010
+            "experimenta_science_center": 105,  # €50-100M (Germany's largest science center)
+            "fraunhofer_8_centers_2025": 105,  # €100M+ (8 research centers from 2025)
+            "max_planck_partnership": 53,  # €50M+ (2 departments + Schools)
+            "aleph_alpha_investment": 500,  # €500M+ Series B co-led 2023
+            "oxford_stanford_hec": 84,  # €50-100M (multiple global partnerships)
+            "annual_operations_gt_volkswagen": 105,  # €100M+/year (exceeds VW Foundation)
+            "notes": "DEEP VERIFIED Jan 2026: Germany's richest (~$38-40B). Dieter Schwarz Stiftung gGmbH (1999) holds 99.9% of Schwarz Group (Lidl/Kaufland, €175.4B revenue). IPAI €2B (Europe's largest AI ecosystem, 5,000 scientists by 2027). TUM: 41 chairs 30-year (largest German higher ed donation). ETH: ~20 chairs 30-year (Dec 2023). Fraunhofer: 8 centers from 2025. Max Planck: 2 departments (Mar 2025). Aleph Alpha €500M+ co-led. Annual giving exceeds €100M (per Science|Business). No public financials (gGmbH structure)."
         },
         "verification": {
-            "990_pf": {"status": "not_applicable", "note": "German gGmbH foundation - no US 990-PF or public financials", "url": None},
-            "sec_form4": {"status": "not_applicable", "note": "Schwarz Group is private", "url": None},
-            "foundation_reports": {"status": "partial", "amount_millions": 4000, "sources": ["Dieter Schwarz Stiftung", "TUM", "ETH Foundation", "Max Planck"], "note": "No annual reports with financials. $2B IPAI announced. 1,300+ projects since 1999.", "url": "https://www.dieter-schwarz-stiftung.de/"},
-            "news_verified": {"status": "found", "amount_millions": 4000, "sources": ["TUM", "ETH Foundation", "Science|Business", "Max Planck"], "url": "https://sciencebusiness.net/news/ai/aleph-alpha-tu-munich-eth-zurich-how-dieter-schwarz-foundation-attracting-germanys-ai-elite"}
+            "990_pf": {"status": "not_applicable", "note": "German gGmbH foundation - no US 990-PF or public financials. 99.9% of Schwarz Group held in foundation.", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Schwarz Group is private (Lidl/Kaufland)", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 4500, "sources": ["Dieter Schwarz Stiftung", "TUM", "ETH Foundation", "Max Planck", "Fraunhofer"], "note": "No annual reports with financials. Science|Business: annual giving exceeds €100M. €3.5-4.5B estimated cumulative.", "url": "https://www.dieter-schwarz-stiftung.de/"},
+            "news_verified": {"status": "found", "amount_millions": 4500, "sources": ["TUM", "ETH Foundation", "Science|Business", "Max Planck", "Sifted"], "url": "https://sciencebusiness.net/news/ai/aleph-alpha-tu-munich-eth-zurich-how-dieter-schwarz-foundation-attracting-germanys-ai-elite"}
         },
         "sources": [
             "https://www.dieter-schwarz-stiftung.de/",
             "https://www.tum.de/en/news-and-events/all-news/press-releases/details/34471-1",
-            "https://ethz-foundation.ch/en/spotlight/news-2023-dss-eth-zurich-donation-teaching-and-research-centre-in-germany/"
+            "https://ethz-foundation.ch/en/spotlight/news-2023-dss-eth-zurich-donation-teaching-and-research-centre-in-germany/",
+            "https://sciencebusiness.net/news/ai/aleph-alpha-tu-munich-eth-zurich-how-dieter-schwarz-foundation-attracting-germanys-ai-elite"
         ]
     },
     "John Menard Jr": {
@@ -4460,6 +4474,32 @@ VERIFICATION_DATA = {
             "https://givingpledge.org/pressrelease?date=04.19.2012"
         ],
         "giving_pledge": "yes"
+    },
+    # Batch 26: Laurene Powell Jobs (LLC structure, no 990-PF)
+    "Laurene Powell Jobs": {
+        "total_lifetime_giving_millions": 5000,
+        "giving_breakdown": {
+            "emerson_collective_2023": 1000,
+            "emerson_collective_2021": 919,
+            "emerson_collective_2020": 611,
+            "waverley_street_climate_commitment": 3500,  # $3.5B 10-year commitment (2021-2035)
+            "xq_institute": 100,
+            "college_track_27_years": 200,
+            "journalism_atlantic_propublica": 150,
+            "the_dream_us": 50,
+            "notes": "VERIFIED Jan 2026: Steve Jobs widow (~$14B, down from $28B due to Disney). Emerson Collective is LLC (like CZI/Ballmer Group) - no 990-PF filings. $1B+ annual giving (2023). Waverley Street Foundation (EIN via Instrumentl): $225.5M grants (2023), $3.5B 10-year climate commitment. XQ Institute $100M. College Track co-founder 1997. Atlantic acquired 2017. Plans to give away fortune during lifetime. NOT formal Giving Pledge but committed to spending down."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Emerson Collective is LLC, no 990-PF. Waverley Street Foundation has 990 but limited data.", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Disney stock held via trusts, gifts not tracked via SEC Form 4", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 5000, "sources": ["Emerson Collective (voluntary disclosure)", "Waverley Street 990", "Inside Philanthropy"], "note": "LLC opacity limits verification. Waverley $225.5M (2023). Emerson $1B+ (2023 self-reported).", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 5000, "sources": ["Inside Philanthropy", "Bloomberg", "NYT"], "note": "XQ $100M, Atlantic acquisition, College Track widely covered. Plans to give away all wealth.", "url": None}
+        },
+        "sources": [
+            "https://www.insidephilanthropy.com/home/2023/laurene-powell-jobs-giving",
+            "https://www.bloomberg.com/features/2022-laurene-powell-jobs-profile/"
+        ],
+        "giving_pledge": "no"
     }
 }
 
