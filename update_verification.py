@@ -43,14 +43,14 @@ VERIFICATION_DATA = {
             "notes": "VERIFIED Jan 2026: Foundation has $14B assets but 78% goes to self-controlled entities. This counts only external giving."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 14000, "ein": "20-2897102", "note": "Foundation ASSETS $14B, but 78% of grants to self-controlled entities. External grants only ~$270M", "url": "https://projects.propublica.org/nonprofits/organizations/202897102"},
+            "990_pf": {"status": "found", "amount_millions": 14000, "ein": "77-0587507", "note": "Foundation ASSETS $14B, but 78% of grants to self-controlled entities. External grants only ~$270M", "url": "https://projects.propublica.org/nonprofits/organizations/770587507"},
             "sec_form4": {"status": "found", "amount_millions": 5700, "note": "$5.7B stock donation 2021 - went to own foundation, not external charity", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 270, "sources": ["Musk Foundation 990-PF"], "note": "Only ~$270M to external charities since 2002", "url": "https://projects.propublica.org/nonprofits/organizations/202897102"},
+            "foundation_reports": {"status": "found", "amount_millions": 270, "sources": ["Musk Foundation 990-PF"], "note": "Only ~$270M to external charities since 2002", "url": "https://projects.propublica.org/nonprofits/organizations/770587507"},
             "news_verified": {"status": "found", "amount_millions": 270, "sources": ["NYT 2025", "Forbes 2024", "Wikipedia"], "url": "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html"}
         },
         "sources": [
             "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html",
-            "https://projects.propublica.org/nonprofits/organizations/202897102"
+            "https://projects.propublica.org/nonprofits/organizations/770587507"
         ]
     },
     "Larry Page": {
@@ -192,9 +192,9 @@ VERIFICATION_DATA = {
             "notes": "VERIFIED Jan 2026: Chronicle reports $7.8B over 20 years. OHSU $2.6B (incl $2B Aug 2025), UO $2.2B, Stanford $580M, 1803 Fund $400M."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 1000, "ein": "65-0298093", "note": "Knight Foundation ~$200M+/year, $1B cumulative", "url": "https://projects.propublica.org/nonprofits/organizations/650298093"},
+            "990_pf": {"status": "found", "amount_millions": 1000, "ein": "91-1791788", "note": "Knight Foundation ~$200M+/year, $1B cumulative", "url": "https://projects.propublica.org/nonprofits/organizations/911791788"},
             "sec_form4": {"status": "found", "amount_millions": 7800, "note": "Nike stock gifts to universities tracked", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001091528&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 1000, "sources": ["Knight Foundation 990-PF"], "note": "$226M (2024), $190M (2023), $212M (2022)", "url": "https://projects.propublica.org/nonprofits/organizations/650298093"},
+            "foundation_reports": {"status": "found", "amount_millions": 1000, "sources": ["Knight Foundation 990-PF"], "note": "$226M (2024), $190M (2023), $212M (2022)", "url": "https://projects.propublica.org/nonprofits/organizations/911791788"},
             "news_verified": {"status": "found", "amount_millions": 6800, "sources": ["Chronicle of Philanthropy", "OHSU", "Oregon", "Stanford"], "url": "https://www.philanthropy.com/article/phil-knight-7-8-billion-giving/"}
         },
         "sources": [
@@ -291,13 +291,13 @@ VERIFICATION_DATA = {
             "notes": "VERIFIED Jan 2026: Brin Wojcicki Foundation 990-PF shows $1.87B cumulative grants (6 years). Additional direct giving ~$830M."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 1870, "ein": "27-6598127", "note": "Brin Wojcicki Foundation cumulative grants", "url": "https://projects.propublica.org/nonprofits/organizations/276598127"},
+            "990_pf": {"status": "found", "amount_millions": 1870, "ein": "20-1922947", "note": "Brin Wojcicki Foundation cumulative grants", "url": "https://projects.propublica.org/nonprofits/organizations/201922947"},
             "sec_form4": {"status": "partial", "note": "Some stock gifts to foundation tracked", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001113296&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 1870, "sources": ["ProPublica 990-PF"], "note": "Foundation grants verified", "url": "https://projects.propublica.org/nonprofits/organizations/276598127"},
+            "foundation_reports": {"status": "found", "amount_millions": 1870, "sources": ["ProPublica 990-PF"], "note": "Foundation grants verified", "url": "https://projects.propublica.org/nonprofits/organizations/201922947"},
             "news_verified": {"status": "found", "amount_millions": 830, "sources": ["Various news sources"], "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/sergey-brin"}
         },
         "sources": [
-            "https://projects.propublica.org/nonprofits/organizations/276598127"
+            "https://projects.propublica.org/nonprofits/organizations/201922947"
         ]
     },
     "Jensen Huang": {
@@ -309,17 +309,17 @@ VERIFICATION_DATA = {
             "oneida_baptist": 2,
             "johns_hopkins": 1,
             "other": 4.5,
-            "notes": "VERIFIED Jan 2026: Foundation has $10B assets but 2/3 goes to DAFs. Actual non-DAF grants ~$115M. OSU $55M, Stanford $30M, CCA $22.5M."
+            "notes": "VERIFIED Jan 2026: Foundation has $9.2B assets but 2/3 goes to DAFs. Actual non-DAF grants ~$115M. OSU $55M, Stanford $30M, CCA $22.5M."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 335, "ein": "20-3605916", "note": "Jen-Hsun & Lori Huang Foundation: $335M disbursed but ~$220M to DAFs", "url": "https://projects.propublica.org/nonprofits/organizations/203605916"},
+            "990_pf": {"status": "found", "amount_millions": 335, "ein": "26-1551239", "note": "Jen-Hsun & Lori Huang Foundation: $335M disbursed but ~$220M to DAFs", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
             "sec_form4": {"status": "found", "note": "Nvidia stock gifts to foundation tracked", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001341439&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 115, "sources": ["ProPublica 990-PF"], "note": "Non-DAF grants only ~$115M (2007-2024)", "url": "https://projects.propublica.org/nonprofits/organizations/203605916"},
-            "news_verified": {"status": "found", "amount_millions": 115, "sources": ["Bloomberg", "OSU", "Stanford", "CCA"], "url": "https://www.bloomberg.com/news/articles/2024-06-12/nvidia-ceo-huang-charity-foundation"}
+            "foundation_reports": {"status": "found", "amount_millions": 115, "sources": ["ProPublica 990-PF"], "note": "Non-DAF grants only ~$115M (2007-2024)", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
+            "news_verified": {"status": "found", "amount_millions": 115, "sources": ["Bloomberg", "OSU", "Stanford", "CCA"], "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/jensen-huang"}
         },
         "sources": [
-            "https://projects.propublica.org/nonprofits/organizations/203605916",
-            "https://www.bloomberg.com/news/articles/2024-06-12/nvidia-ceo-huang-charity-foundation"
+            "https://projects.propublica.org/nonprofits/organizations/261551239",
+            "https://www.insidephilanthropy.com/guide-to-individual-donors/jensen-huang"
         ]
     },
     "Michael Dell": {
@@ -554,6 +554,22 @@ VERIFICATION_DATA = {
     }
 }
 
+# Net worth updates from Forbes/Bloomberg January 2026
+NET_WORTH_UPDATES = {
+    "Elon Musk": 726.0,  # Forbes Jan 2026
+    "Jeff Bezos": 239.0,  # Forbes Jan 2026
+    "Larry Page": 249.0,  # Bloomberg Jan 2026
+    "Sergey Brin": 250.0,  # Bloomberg Jan 2026
+    "Mark Zuckerberg": 233.0,  # Bloomberg Jan 2026
+    "Jensen Huang": 162.0,  # Forbes Jan 2026
+    "Larry Ellison": 247.0,  # Bloomberg Jan 2026
+    "Warren Buffett": 145.0,  # Forbes Jan 2026
+    "Bill Gates": 160.0,  # Forbes estimate
+    "Steve Ballmer": 135.0,  # Forbes estimate
+    "Michael Dell": 115.0,  # Forbes estimate
+    "MacKenzie Scott": 35.0,  # After giving away $26B+
+}
+
 
 def update_json():
     """Update the JSON file with verification data."""
@@ -561,8 +577,19 @@ def update_json():
         data = json.load(f)
 
     updated = 0
+    nw_updated = 0
     for entry in data:
         name = entry['name']
+
+        # Update net worth if we have new data
+        if name in NET_WORTH_UPDATES:
+            old_nw = entry.get('net_worth_billions', 0)
+            new_nw = NET_WORTH_UPDATES[name]
+            if abs(old_nw - new_nw) > 1:  # Only update if significant change
+                entry['net_worth_billions'] = new_nw
+                nw_updated += 1
+                print(f"Net worth updated: {name} ${old_nw}B -> ${new_nw}B")
+
         if name in VERIFICATION_DATA:
             vdata = VERIFICATION_DATA[name]
 
@@ -584,7 +611,7 @@ def update_json():
                 entry['giving_rate_pct'] = (giving / net_worth_millions) * 100
 
             updated += 1
-            print(f"Updated: {name}")
+            print(f"Verified: {name}")
 
     # Sort by scrooge_score descending and update ranks
     data.sort(key=lambda x: x.get('scrooge_score', 0), reverse=True)
