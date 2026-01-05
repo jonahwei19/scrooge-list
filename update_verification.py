@@ -286,21 +286,26 @@ VERIFICATION_DATA = {
         ]
     },
     "Sergey Brin": {
-        "total_lifetime_giving_millions": 2700,
+        "total_lifetime_giving_millions": 3900,
         "giving_breakdown": {
-            "brin_wojcicki_foundation": 1870,
-            "direct_gifts": 830,
-            "notes": "VERIFIED Jan 2026: Brin Wojcicki Foundation 990-PF shows $1.87B cumulative grants (6 years). Additional direct giving ~$830M."
+            "sergey_brin_family_foundation_cumulative": 2200,  # $722M in 2024 alone
+            "brin_wojcicki_foundation_2004_2015": 115,
+            "parkinsons_research_total": 1500,  # Largest individual donor
+            "climate_climateWorks": 400,
+            "notes": "DEEP VERIFIED Jan 2026: Forbes (Feb 2025) reports $3.9B lifetime, $900M in 2024 alone. Sergey Brin Family Foundation (EIN 47-2107200): $4.31B assets, $722M disbursements 2024. Parkinson's: $1.5B+ (largest individual donor). Climate: $400M+ via ClimateWorks. NOT Giving Pledge signatory."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 1870, "ein": "20-1922947", "note": "Brin Wojcicki Foundation cumulative grants", "url": "https://projects.propublica.org/nonprofits/organizations/201922947"},
-            "sec_form4": {"status": "partial", "note": "Some stock gifts to foundation tracked", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001113296&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 1870, "sources": ["ProPublica 990-PF"], "note": "Foundation grants verified", "url": "https://projects.propublica.org/nonprofits/organizations/201922947"},
-            "news_verified": {"status": "found", "amount_millions": 830, "sources": ["Various news sources"], "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/sergey-brin"}
+            "990_pf": {"status": "found", "amount_millions": 722, "ein": "47-2107200", "note": "Sergey Brin Family Foundation: $4.31B assets, $722M disbursed 2024", "url": "https://projects.propublica.org/nonprofits/organizations/472107200"},
+            "sec_form4": {"status": "partial", "note": "Some stock gifts to foundation tracked", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 3900, "sources": ["Forbes $3.9B lifetime", "ProPublica 990-PF"], "note": "Also Catalyst4 (501c4) with $1.1B", "url": "https://projects.propublica.org/nonprofits/organizations/472107200"},
+            "news_verified": {"status": "found", "amount_millions": 3900, "sources": ["Forbes Feb 2025", "Inside Philanthropy", "Chronicle of Philanthropy"], "url": "https://www.forbes.com/sites/phoebeliu/2025/02/06/sergey-brins-2-billion-quest-to-tackle-parkinsons-bipolar-disorder-and-now-autism/"}
         },
         "sources": [
-            "https://projects.propublica.org/nonprofits/organizations/201922947"
-        ]
+            "https://projects.propublica.org/nonprofits/organizations/472107200",
+            "https://www.forbes.com/sites/phoebeliu/2025/02/06/sergey-brins-2-billion-quest-to-tackle-parkinsons-bipolar-disorder-and-now-autism/",
+            "https://www.insidephilanthropy.com/home/sergey-brin-emerges-as-a-climate-megafunder"
+        ],
+        "giving_pledge": "no"
     },
     "Jensen Huang": {
         "total_lifetime_giving_millions": 333,
@@ -349,25 +354,27 @@ VERIFICATION_DATA = {
         "total_lifetime_giving_millions": 5700,
         "giving_breakdown": {
             "ballmer_group": 4000,
-            "university_of_oregon": 475,
+            "university_of_oregon": 425,  # Ballmer Institute for Children's Behavioral Health
             "university_of_washington": 80,
             "harvard": 85,
             "blue_meridian_partners": 500,
-            "strivetogether": 175,
-            "la_clippers_community": 150,
-            "other": 235,
-            "notes": "VERIFIED Jan 2026: Ballmer Group (LLC, no 990-PF) has disbursed $4B+ since 2015. UO $475M (Ballmer Institute $425M), UW $80M, Harvard $85M. Forbes estimate $5.7B."
+            "strivetogether": 235,  # $175M + $60M pledge
+            "washington_preschool_pledge": "1000 (PLEDGE over decade)",
+            "other": 375,
+            "notes": "DEEP VERIFIED Jan 2026: TIME100 Philanthropy 2025 reports '$7B+ in grants'. Forbes $5.7B+. Chronicle: $3B in past 5 years, $767M in 2024 alone. Ballmer Group is LLC (no 990-PF). UO $425M (2022), UW $80M, Blue Meridian $500M+. 2025: ~$1B pledge for WA preschool. Giving Pledge: YES."
         },
         "verification": {
-            "990_pf": {"status": "not_applicable", "note": "Ballmer Group is LLC, not foundation - no 990-PF filings required", "url": None},
-            "sec_form4": {"status": "partial", "note": "Some Microsoft stock gifts tracked", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000908063&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 4000, "sources": ["Ballmer Group", "Inside Philanthropy"], "note": "LLC structure - $4B+ disbursed since 2015", "url": "https://www.ballmergroup.org/"},
-            "news_verified": {"status": "found", "amount_millions": 5700, "sources": ["TIME", "Forbes", "Chronicle of Philanthropy", "60 Minutes"], "url": "https://time.com/collection/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/"}
+            "990_pf": {"status": "not_applicable", "note": "Ballmer Group is LLC, not foundation - no 990-PF required", "url": None},
+            "sec_form4": {"status": "partial", "note": "Some Microsoft stock gifts tracked", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 5700, "sources": ["Ballmer Group grants DB", "Inside Philanthropy"], "note": "LLC structure - $4B+ disbursed, TIME100 says $7B+", "url": "https://ballmergroup.org/our-grants/"},
+            "news_verified": {"status": "found", "amount_millions": 5700, "sources": ["TIME100 2025", "Forbes", "Chronicle of Philanthropy"], "url": "https://time.com/collections/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/"}
         },
         "sources": [
-            "https://time.com/collection/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/",
-            "https://www.insidephilanthropy.com/find-a-grant/grants-b/ballmer-group"
-        ]
+            "https://time.com/collections/time100-philanthropy-2025/7286089/steve-ballmer-connie-ballmer/",
+            "https://www.philanthropy.com/news/power-couple-giving-the-10-year-journey-of-steve-and-connie-ballmer/",
+            "https://ballmergroup.org/our-grants/"
+        ],
+        "giving_pledge": "yes"
     },
     "Changpeng Zhao": {
         "total_lifetime_giving_millions": 35,
@@ -1012,26 +1019,27 @@ VERIFICATION_DATA = {
         ]
     },
     "Zhang Yiming": {
-        "total_lifetime_giving_millions": 280,
+        "total_lifetime_giving_millions": 350,
         "giving_breakdown": {
-            "fangmei_education_fund": 106,
-            "nankai_university_cumulative": 50,
-            "covid_relief_2020": 39,
-            "minerva_schools": 10,
+            "fangmei_education_fund_cumulative": 100,  # 500M + 200M RMB
+            "nankai_university_cumulative": 60,  # $28M (2024) + earlier gifts
+            "covid_relief_2020": 25,  # 101M RMB BRCF + $10M therapeutics
+            "hurun_2024_annual": 280,  # Joint with Liang Rubo
             "middle_school_hometown": 1.5,
-            "other": 73,
-            "notes": "VERIFIED Jan 2026: Hurun China Philanthropy 2024: $280M joint with Liang Rubo (6th place). Fangmei Foundation for hometown education: $106M+. Nankai University: $50M. COVID relief: $39M. Minerva: $10M."
+            "notes": "DEEP VERIFIED Jan 2026: Hurun 2024: $280M (joint with Liang Rubo), ranked 6th. Fangmei Education Fund: 700M RMB (~$100M) total. Nankai: 200M RMB ($28M, 2024). COVID: 101M RMB + $10M therapeutics. Post-CEO (2021) giving accelerated substantially. Cumulative likely exceeds $400M."
         },
         "verification": {
             "990_pf": {"status": "not_applicable", "note": "Chinese billionaire - foundations registered in China", "url": None},
             "sec_form4": {"status": "not_applicable", "note": "ByteDance is private", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 280, "sources": ["Hurun China Philanthropy List 2024", "Fangmei Foundation"], "note": "$280M total per Hurun (joint with co-founder)", "url": "https://www.hurun.net/en-us/info/detail?num=L393N9W9VG5M"},
-            "news_verified": {"status": "found", "amount_millions": 280, "sources": ["Reuters", "SCMP", "Forbes"], "url": "https://www.reuters.com/world/asia-pacific/bytedance-founder-donates-77-million-amid-china-billionaires-charity-rush-2021-06-22/"}
+            "foundation_reports": {"status": "found", "amount_millions": 350, "sources": ["Hurun 2024", "Fangmei Foundation", "Harvard China Philanthropy DB"], "note": "$280M in 2024 alone (Hurun), cumulative $350M+", "url": "https://www.hurun.net/en-us/info/detail?num=L393N9W9VG5M"},
+            "news_verified": {"status": "found", "amount_millions": 350, "sources": ["Reuters", "SCMP Aug 2024", "SCMP May 2023"], "url": "https://www.scmp.com/tech/big-tech/article/3275281/bytedances-low-profile-founders-donate-us28-million-alma-mater-nankai-university"}
         },
         "sources": [
             "https://www.hurun.net/en-us/info/detail?num=L393N9W9VG5M",
-            "https://www.reuters.com/world/asia-pacific/bytedance-founder-donates-77-million-amid-china-billionaires-charity-rush-2021-06-22/"
-        ]
+            "https://www.scmp.com/tech/big-tech/article/3275281/bytedances-low-profile-founders-donate-us28-million-alma-mater-nankai-university",
+            "https://chinaphilanthropy.ash.harvard.edu/en/philanthropists/2587"
+        ],
+        "giving_pledge": "no"
     },
     "Zhong Shanshan": {
         "total_lifetime_giving_millions": 140,
