@@ -1021,13 +1021,11 @@
             return `https://www.forbes.com/profile/${slug}/`;
         }
 
-        // Generate Forbes image URL
+        // Generate image URL - try Wikipedia first, fall back to placeholder
         function getForbesImageUrl(name, forbesRank) {
-            // Forbes uses a specific image CDN pattern
-            const slug = name.toLowerCase()
-                .replace(/[^a-z0-9\s-]/g, '')
-                .replace(/\s+/g, '-');
-            return `https://specials-images.forbesimg.com/imageserve/${slug}/416x416.jpg`;
+            // Use Wikipedia image API - more reliable than Forbes
+            const wikiName = name.replace(/\s+/g, '_');
+            return `https://en.wikipedia.org/wiki/Special:FilePath/${wikiName}.jpg?width=200`;
         }
 
         // Categorize breakdown items into 6 standard categories
@@ -1145,8 +1143,8 @@
                 const icon = sourceIcons[sourceKey];
 
                 if (sourceData && sourceData.status === 'found') {
-                    const amount = sourceData.amount_millions;
-                    const amountDisplay = amount >= 1000 ? `$${(amount/1000).toFixed(1)}B` : `$${amount.toFixed(0)}M`;
+                    const amount = sourceData.amount_millions || 0;
+                    const amountDisplay = amount > 0 ? (amount >= 1000 ? `$${(amount/1000).toFixed(1)}B` : `$${amount.toFixed(0)}M`) : '✓';
                     html += `
                         <div class="pipeline-source">
                             <span class="pipeline-source-icon found">${icon}</span>
