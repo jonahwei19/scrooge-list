@@ -1602,6 +1602,180 @@ VERIFICATION_DATA = {
             "https://projects.propublica.org/nonprofits/organizations/47023433",
             "https://www.timesofisrael.com/birthright-celebrates-70-million-in-donations-from-the-adelsons-this-year/"
         ]
+    },
+    # ===== BATCH 9: Jan 2026 (Kim Kardashian, William Ding, Nathan Blecharczyk, Vivek Ramaswamy, etc.) =====
+    "Kim Kardashian": {
+        "total_lifetime_giving_millions": 9,
+        "giving_breakdown": {
+            "baby2baby_cash": 1.5,
+            "baby2baby_in_kind": 5,
+            "armenia_fund_2020": 1,
+            "wildfire_relief_2018": 0.5,
+            "cash_app_giveaway_2020": 0.5,
+            "dream_foundation_2011": 0.2,
+            "other_misc": 0.3,
+            "notes": "VERIFIED Jan 2026: ~$3.7M cash + ~$5M in-kind to Baby2Baby. Criminal justice work is primarily advocacy/legal fees, amounts not disclosed. Kardashian Jenner Family Foundation (EIN 81-3878924) is essentially dormant (~$60K/yr grants). 0.5% of $1.7B net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 0.06, "ein": "81-3878924", "note": "Kardashian Jenner Family Foundation: $61K grants (2024), essentially dormant", "url": "https://projects.propublica.org/nonprofits/organizations/813878924"},
+            "sec_form4": {"status": "not_applicable", "note": "No public company holdings", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 3.7, "sources": ["Baby2Baby reports", "Variety"], "note": "Cash gifts documented; most giving is reactive/situational", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 9, "sources": ["Variety", "Forbes", "Hollywood Reporter"], "url": "https://variety.com/2022/scene/news/kim-kardashian-baby2baby-gala-million-donation-1235432265/"}
+        },
+        "sources": [
+            "https://variety.com/2022/scene/news/kim-kardashian-baby2baby-gala-million-donation-1235432265/",
+            "https://projects.propublica.org/nonprofits/organizations/813878924",
+            "https://www.forbes.com/sites/valentinadidonato/2022/09/20/kim-kardashian-quietly-gave-millions-in-aid-to-baby2baby-to-support-underserved-children-during-the-pandemic/"
+        ]
+    },
+    "William Ding": {
+        "total_lifetime_giving_millions": 25,
+        "giving_breakdown": {
+            "zhejiang_university_2006": 10,
+            "yau_foundation_2021": 9.5,
+            "future_science_prize": 2.5,
+            "tsunami_relief_2005": 1.2,
+            "xian_covid_2021": 1.5,
+            "notes": "VERIFIED Jan 2026: Limited documented giving relative to ~$38B net worth (0.07%). Ding's philosophy: 'best charity is quality products.' Education-focused: ZJU, Yau Foundation (math), Future Science Prize. NetEase Charity Foundation handles corporate giving. No personal foundation."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "NetEase ADR, no US stock gifts found", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 25, "sources": ["Chinese media", "Zhejiang University", "Future Science Prize"], "note": "Chinese foundations less transparent than US", "url": "http://www.futureprize.org/en/donors/detail/17.html"},
+            "news_verified": {"status": "found", "amount_millions": 25, "sources": ["Zhejiang University", "The Paper", "Sohu"], "url": "http://www.news.zju.edu.cn/2006/0922/c775a72574/pagem.htm"}
+        },
+        "sources": [
+            "http://www.futureprize.org/en/donors/detail/17.html",
+            "http://www.news.zju.edu.cn/2006/0922/c775a72574/pagem.htm"
+        ]
+    },
+    "Nathan Blecharczyk": {
+        "total_lifetime_giving_millions": 5,
+        "giving_breakdown": {
+            "boston_latin_academy_2019": 1,
+            "bla_matching_2019": 1,
+            "ukraine_matching_2022": 2.5,
+            "airbnb_org_governance": 0,
+            "notes": "VERIFIED Jan 2026: Giving Pledge signatory (2016). No personal foundation found. SEC Form 4 shows ~460K shares gifted 2023-2024 (~$66M) - recipients unknown (likely DAF). Public giving minimal relative to ~$9B net worth. Verified: $4.5M personal + share of $10M Ukraine matching."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Blecharczyk Foundation found on ProPublica", "url": None},
+            "sec_form4": {"status": "partial", "amount_millions": 66, "note": "460K ABNB shares gifted 2023-2024 - recipients unknown, may be DAF or trust transfers", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "No foundation structure; uses direct giving or DAF", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 5, "sources": ["BPS Press Release", "Chronicle of Philanthropy", "Airbnb Newsroom"], "url": "https://givingpledge.org/pledger?pledgerId=171"}
+        },
+        "sources": [
+            "https://givingpledge.org/pledger?pledgerId=171",
+            "https://news.airbnb.com/a-10-million-matching-donation-to-support-refugees-fleeing-ukraine/"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Vivek Ramaswamy": {
+        "total_lifetime_giving_millions": 0.3,
+        "giving_breakdown": {
+            "american_identity_scholarship_2023": 0.25,
+            "trump_rally_victims_2024": 0.03,
+            "notes": "VERIFIED Jan 2026: LIMITED documented personal giving. No personal foundation. Roivant Social Ventures (EIN 83-3947490) is corporate foundation with ~$600K assets. $280K verifiable personal giving = 0.04% of ~$700M net worth. Political donations ($30K+) exceed charitable giving."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No personal Ramaswamy foundation found", "url": None},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts of Roivant shares found", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 0.1, "sources": ["Roivant Social Ventures"], "note": "Corporate foundation (~$600K assets), declining activity", "url": "https://projects.propublica.org/nonprofits/organizations/833947490"},
+            "news_verified": {"status": "found", "amount_millions": 0.3, "sources": ["LinkedIn", "Cincinnati Enquirer", "Fox Business"], "url": "https://www.linkedin.com/posts/vivekgramaswamy_launching-new-scholarship-fund-activity-7082331282566778880-Xcrn"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/833947490"
+        ]
+    },
+    "Mark Mateschitz": {
+        "total_lifetime_giving_millions": 5,
+        "giving_breakdown": {
+            "austria_flood_relief_2024": 5,
+            "wings_for_life_board": 0,
+            "notes": "VERIFIED Jan 2026: Very limited personal track record - inherited Red Bull Oct 2022. €5M flood relief is only documented personal gift. Wings for Life board seat (father's foundation) is governance, not personal donations. Foundation funded by World Run (~€60M total) and Red Bull corporate."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Austrian resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Red Bull is private", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 0, "sources": ["Wings for Life"], "note": "Board member but foundation funded by event/corporate, not personal gifts", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 5, "sources": ["Krone.at"], "url": "https://www.krone.at/3537993"}
+        },
+        "sources": [
+            "https://www.krone.at/3537993"
+        ]
+    },
+    "Gerard Wertheimer": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "personal_giving_verified": 0,
+            "notes": "VERIFIED Jan 2026: NO documented personal charitable giving. All philanthropy flows through Chanel corporate: Fondation Chanel (UK, £156M assets, £15.6M/yr grants), Chanel Culture Fund. Pierre J Wertheimer Foundation (US) dormant ($0 assets). Notable: Absent from Notre-Dame pledges 2019. Alain has ~$7.5K documented (trivial). Extreme privacy."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 0, "ein": "13-6161226", "note": "Pierre J Wertheimer Foundation: Dormant, $0 assets (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/136161226"},
+            "sec_form4": {"status": "not_applicable", "note": "Chanel is private", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Corporate giving through Fondation Chanel, not personal foundation", "url": None},
+            "news_verified": {"status": "not_found", "note": "No documented personal giving; extreme privacy", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/136161226"
+        ]
+    },
+    "Emmanuel Besnier": {
+        "total_lifetime_giving_millions": 1,
+        "giving_breakdown": {
+            "lactel_foundation_annual": 0.15,
+            "laval_stadium_annual": 0.2,
+            "lactalis_usa_feeding_america": 0.15,
+            "restos_du_coeur_programs": 0.1,
+            "notes": "VERIFIED Jan 2026: Extreme opacity - Besnier never gives interviews. No personal foundation. All giving is corporate through Lactalis: Lactel Foundation (€750K over 5 years), stadium sponsorship, food donations. ~€500-700K/year total = 0.003% of ~$24B net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "French resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Lactalis is private", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 0.75, "sources": ["Fondation Lactel", "LSA Conso"], "note": "Corporate foundation only, €750K/5yr", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 1, "sources": ["LSA Conso", "Les Echos", "Globe Newswire"], "url": "https://www.globenewswire.com/news-release/2024/06/10/2896104/0/en/Lactalis-USA-Announces-Partnership-with-Feeding-America-Pledges-to-Help-Provide-1-5-Million-Meals.html"}
+        },
+        "sources": [
+            "https://www.globenewswire.com/news-release/2024/06/10/2896104/0/en/Lactalis-USA-Announces-Partnership-with-Feeding-America-Pledges-to-Help-Provide-1-5-Million-Meals.html"
+        ]
+    },
+    "Charles Ergen": {
+        "total_lifetime_giving_millions": 230,
+        "giving_breakdown": {
+            "telluray_foundation_capitalization": 200,
+            "telluray_distributions_2020_2024": 30,
+            "ut_foundation": 5,
+            "notes": "VERIFIED Jan 2026: Giving Pledge signatory (2018). Telluray Foundation (EIN 20-1090247) received ~$200M (2015), now $72.6M assets. $30.8M distributed 2020-2024. Colorado-focused: Children's Hospital, Denver Botanic, Littleton schools. Wife Cantey active on boards."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 72.6, "ein": "20-1090247", "note": "Telluray Foundation: $72.6M assets (2024), $3.5M grants/yr", "url": "https://projects.propublica.org/nonprofits/organizations/201090247"},
+            "sec_form4": {"status": "partial", "note": "Massive stock gifts to GRATs/trusts (estate planning), not direct charity", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 230, "sources": ["ProPublica 990-PF", "Grantmakers.io"], "note": "~$200M contributed, ~$30M distributed 2020-2024", "url": "https://www.grantmakers.io/profiles/v0/201090247-the-telluray-foundation/"},
+            "news_verified": {"status": "found", "amount_millions": 230, "sources": ["Inside Philanthropy", "Giving Pledge"], "url": "https://www.insidephilanthropy.com/glitzy-giving/charles-and-cantey-ergen"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/201090247",
+            "https://www.grantmakers.io/profiles/v0/201090247-the-telluray-foundation/",
+            "https://www.insidephilanthropy.com/glitzy-giving/charles-and-cantey-ergen"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Ryan Graves": {
+        "total_lifetime_giving_millions": 14,
+        "giving_breakdown": {
+            "charity_water_pool_pledge": 14,
+            "notes": "VERIFIED Jan 2026: charity: water 'The Pool' founding member - pledged 1% of net worth (~$14M at 2019 IPO). Board member. No personal foundation found (searched ProPublica). No SEC Form 4 charitable gifts found. Climate investments (Pachama, Emitwise) are for-profit, not philanthropy. No Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Graves Foundation found in Hawaii or California", "url": None},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts found in Form 4 filings", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "charity: water donation amounts not disclosed publicly", "url": "https://www.charitywater.org/the-pool"},
+            "news_verified": {"status": "found", "amount_millions": 14, "sources": ["Business Insider", "charity: water"], "url": "https://www.businessinsider.com/uber-first-employee-ryan-graves-to-make-over-1-billion-ipo-donate-14-million-charity-2019-5"}
+        },
+        "sources": [
+            "https://www.businessinsider.com/uber-first-employee-ryan-graves-to-make-over-1-billion-ipo-donate-14-million-charity-2019-5",
+            "https://www.charitywater.org/the-pool"
+        ]
     }
 }
 
