@@ -9,7 +9,10 @@
     "total_lifetime_giving_millions": 0,
     "giving_breakdown": {
       "personal_giving_verified": 0,
-      "notes": "UNABLE TO VERIFY Jan 2026: Same as Beate Heister. Albrecht heirs have made no public charitable announcements. Aldi corporate community giving (e.g. \u20ac500 to children's cancer) is trivial. Multiple sources say family 'kept charitable efforts private' but provide no specifics. Effectively no documented philanthropy."
+      "oertl_stiftung": "unknown",
+      "elisen_stiftung": "unknown",
+      "aldi_sud_corporate": 10,
+      "notes": "DEEP VERIFIED Jan 2026: Aldi S\u00fcd heir (~$25B). Same structure as sister Beate Heister. Controls Siepmann-Stiftung (family wealth, 75% Aldi S\u00fcd ownership) with Beate. Charitable foundations Oertl (cardiovascular) and Elisen (cultural) exist but disclose nothing. 1971 kidnapping of uncle Theo created family privacy obsession. NO verified personal donations. NO public appearances or photos. Aldi S\u00fcd corporate giving (Auridis \u20ac10.5M/yr) is company CSR, not personal. NO Giving Pledge."
     },
     "sources": [
       "https://www.mashed.com/171899/the-untold-truth-of-the-brothers-who-started-aldi/"
@@ -24,7 +27,7 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "German resident, no US foundation",
+        "note": "German resident, no US foundation with public data",
         "url": null
       },
       "sec_form4": {
@@ -34,17 +37,18 @@
       },
       "foundation_reports": {
         "status": "not_found",
-        "note": "No public charitable foundation filings",
+        "note": "Charitable foundations (Oertl, Elisen) exist but no grants, amounts, or recipients disclosed. German gGmbH structure has minimal reporting.",
         "url": null
       },
       "news_verified": {
         "status": "not_found",
-        "note": "No documented personal charitable giving",
+        "note": "Generic claims of 'quietly supporting' causes but zero specifics in German or English sources",
         "url": null
       }
     },
     "verifiable_giving_millions": 0,
-    "unverifiable_giving_millions": 0
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 1291,
@@ -56,7 +60,10 @@
     "total_lifetime_giving_millions": 0,
     "giving_breakdown": {
       "personal_giving_verified": 0,
-      "notes": "UNABLE TO VERIFY Jan 2026: Albrecht family is EXTREMELY PRIVATE. Siepmann-Stiftung is a FAMILY FOUNDATION (pays corporate taxes), NOT a charitable foundation. Claims of 'cardiovascular research' giving have no named recipients or amounts. NO Giving Pledge. NO public foundation filings in Germany. NO documented major gifts. If giving exists, it is entirely hidden from public view."
+      "oertl_stiftung": "unknown",
+      "elisen_stiftung": "unknown",
+      "aldi_sud_corporate": 10,
+      "notes": "DEEP VERIFIED Jan 2026: Aldi S\u00fcd heiress (~$20B). Extreme family privacy since 1971 kidnapping of uncle Theo. Doppelstiftungsmodell (1973): Siepmann-Stiftung (75% Aldi S\u00fcd, family wealth preservation, NOT charitable - pays corporate taxes), Oertl-Stiftung (cardiovascular, charitable but opaque), Elisen-Stiftung (cultural, charitable but opaque). NO public financials for any foundation. Son Peter Max Heister heads Siepmann. Aldi S\u00fcd corporate: Auridis Stiftung \u20ac10.5M/yr for children (corporate, not personal). NO documented personal donations. NO Giving Pledge or equivalent."
     },
     "sources": [
       "https://littlesis.org/person/185122-Beate_Heister",
@@ -72,27 +79,28 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "German resident, no US foundation. Siepmann-Stiftung is family trust, not charitable.",
+        "note": "German foundations under b\u00fcrgerliches Recht - minimal disclosure. US Siepmann Foundation (501c3) cannot be evaluated by Charity Navigator.",
         "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "Aldi is private",
+        "note": "Aldi is private German company",
         "url": null
       },
       "foundation_reports": {
         "status": "not_found",
-        "note": "Germany's Stiftungsregister has limited transparency. No charitable giving documented.",
+        "note": "No public financials. Oertl (cardiovascular) and Elisen (cultural) are charitable but disclose nothing. Multiple German sources confirm: 'wenig \u00f6ffentliche Informationen \u00fcber ihre Wohlt\u00e4tigkeit'",
         "url": null
       },
       "news_verified": {
         "status": "not_found",
-        "note": "No specific gifts, amounts, or recipients found in English or German sources.",
+        "note": "No named donations, no amounts, no recipients documented. Scam emails impersonate her for fraud.",
         "url": null
       }
     },
     "verifiable_giving_millions": 0,
-    "unverifiable_giving_millions": 0
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 1405,
@@ -789,6 +797,68 @@
     "unverifiable_giving_millions": 0
   },
   {
+    "rank": 455,
+    "name": "Huang Wei",
+    "net_worth_billions": 12.0,
+    "country": "China",
+    "source_of_wealth": "Viya (livestream commerce)",
+    "liquidity_factor": 0.4,
+    "total_lifetime_giving_millions": 7,
+    "giving_breakdown": {
+      "hope_schools_18": 1.3,
+      "disaster_relief_cumulative": 4,
+      "wuhan_covid_2020": 0.6,
+      "other_poverty_alleviation": 1.1,
+      "livestream_sales_for_farmers": 85,
+      "notes": "DEEP VERIFIED Jan 2026: Viya (\u8587\u5a05), Chinese livestreamer. Net worth lower than claimed: Forbes 2021 listed at $1.4B not $12B. Documented donations ~32-50M RMB ($4.5-7M). 18 Hope Schools donated. 2020 China Charity List #44 (13.17M RMB). Tax scandal Dec 2021: fined 1.34B RMB ($210M). Giving continued post-scandal through husband Dong Haifeng. $85M in charity livestream SALES = commercial, not donations. NOT on Hurun Philanthropy List (below $15M threshold)."
+    },
+    "sources": [],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 2,
+    "notes": "Livestream seller. Tax evasion scandal destroyed career. Fined $210M. Minimal philanthropy.",
+    "scrooge_score": 99.85416666666667,
+    "giving_rate_pct": 0.05833333333333334,
+    "scrooge_rank": 15,
+    "forbes_rank": 455,
+    "verification": {
+      "990_pf": {
+        "status": "not_applicable",
+        "note": "Chinese resident, no US foundation",
+        "url": null
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "Chinese companies",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "partial",
+        "amount_millions": 7,
+        "sources": [
+          "China Youth Development Foundation",
+          "Baidu Baike",
+          "Chinese media"
+        ],
+        "note": "Donates through existing charities (Hope Foundation, Red Cross), no personal foundation",
+        "url": null
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 7,
+        "sources": [
+          "2020 China Charity List",
+          "Xinhua",
+          "Chinese media"
+        ],
+        "note": "18 Hope Schools, disaster relief documented. NOT on Hurun list.",
+        "url": null
+      }
+    },
+    "giving_pledge": "no",
+    "verifiable_giving_millions": 0,
+    "unverifiable_giving_millions": 7
+  },
+  {
     "rank": 2739,
     "name": "Changpeng Zhao",
     "net_worth_billions": 65.0,
@@ -812,7 +882,7 @@
     "notes": "CONVICTED 2023 - federal charges for operating unregistered exchange. Served 4 months. Plans 99% giving but minimal actual deployment.",
     "scrooge_score": 99.84615384615385,
     "giving_rate_pct": 0.05384615384615384,
-    "scrooge_rank": 15,
+    "scrooge_rank": 16,
     "forbes_rank": 2739,
     "verification": {
       "990_pf": {
@@ -875,7 +945,7 @@
     "notes": "Chairman of Foshan Haitian - China's largest soy sauce maker. Over 300 food products. Named Outstanding Entrepreneur of Guangdong Province.",
     "scrooge_score": 99.81176470588235,
     "giving_rate_pct": 0.047058823529411764,
-    "scrooge_rank": 16,
+    "scrooge_rank": 17,
     "forbes_rank": 202,
     "verification": {
       "990_pf": {
@@ -934,7 +1004,7 @@
     "notes": "Did NOT sign Giving Pledge. Inherited publishing fortune. Environmental focus. Major Democratic donor.",
     "scrooge_score": 99.7878787878788,
     "giving_rate_pct": 0.1272727272727273,
-    "scrooge_rank": 17,
+    "scrooge_rank": 18,
     "forbes_rank": 129,
     "verification": {
       "990_pf": {
@@ -988,7 +1058,7 @@
     "notes": "Did NOT sign Giving Pledge. Ziff publishing heir. Environment/climate focus.",
     "scrooge_score": 99.7878787878788,
     "giving_rate_pct": 0.1272727272727273,
-    "scrooge_rank": 18,
+    "scrooge_rank": 19,
     "forbes_rank": 130,
     "verification": {
       "990_pf": {
@@ -1047,7 +1117,7 @@
     "notes": "Very private. Owns 1/3 of Mars Inc. Family notoriously secretive. Modest documented philanthropy relative to wealth.",
     "scrooge_score": 99.7872340425532,
     "giving_rate_pct": 0.0425531914893617,
-    "scrooge_rank": 19,
+    "scrooge_rank": 20,
     "forbes_rank": 348,
     "verification": {
       "990_pf": {
@@ -1110,7 +1180,7 @@
     "notes": "Fisher Investments founder. Forbes columnist for 32 years. Known for frugality (drives same car 25+ years). Plans posthumous giving, minimal lifetime giving.",
     "scrooge_score": 99.78571428571429,
     "giving_rate_pct": 0.10714285714285715,
-    "scrooge_rank": 20,
+    "scrooge_rank": 21,
     "forbes_rank": 175,
     "verification": {
       "990_pf": {
@@ -1166,7 +1236,7 @@
     "notes": "Has NOT signed Giving Pledge. Prefers direct giving over foundation structure. Limited public philanthropy record.",
     "scrooge_score": 99.77142857142857,
     "giving_rate_pct": 0.1142857142857143,
-    "scrooge_rank": 21,
+    "scrooge_rank": 22,
     "forbes_rank": 51,
     "verification": {
       "990_pf": {
@@ -1225,7 +1295,7 @@
     "notes": "Did NOT sign Giving Pledge. Ziff publishing heir. Third of three brothers.",
     "scrooge_score": 99.75757575757575,
     "giving_rate_pct": 0.14545454545454545,
-    "scrooge_rank": 22,
+    "scrooge_rank": 23,
     "forbes_rank": 131,
     "verification": {
       "990_pf": {
@@ -1279,7 +1349,7 @@
     "notes": "Co-founder MSC with husband Gianluigi. Worlds richest self-made woman. Israeli-Italian.",
     "scrooge_score": 99.75714285714285,
     "giving_rate_pct": 0.04857142857142857,
-    "scrooge_rank": 23,
+    "scrooge_rank": 24,
     "forbes_rank": 229,
     "verification": {
       "990_pf": {
@@ -1335,7 +1405,7 @@
     "notes": "Ofer Global. Israeli-born. Monaco.",
     "scrooge_score": 99.69604863221885,
     "giving_rate_pct": 0.10638297872340426,
-    "scrooge_rank": 24,
+    "scrooge_rank": 25,
     "forbes_rank": 870,
     "verification": {
       "990_pf": {
@@ -1398,7 +1468,7 @@
     "notes": "Foundation has $10B in assets but most disbursements go to DAFs. Actual charity ~$250M. Has not signed Giving Pledge.",
     "scrooge_score": 99.69135802469135,
     "giving_rate_pct": 0.12345679012345678,
-    "scrooge_rank": 25,
+    "scrooge_rank": 26,
     "forbes_rank": 1496,
     "verification": {
       "990_pf": {
@@ -1455,7 +1525,7 @@
     "notes": "Has NOT signed Giving Pledge. Low philanthropy profile.",
     "scrooge_score": 99.66666666666667,
     "giving_rate_pct": 0.1,
-    "scrooge_rank": 26,
+    "scrooge_rank": 27,
     "forbes_rank": 43,
     "verification": {
       "990_pf": {
@@ -1520,7 +1590,7 @@
     "notes": "VERIFIED Jan 2026: Inside Philanthropy calls him 'legendary Scrooge'. Foundation has $0 assets since 2015. Documented giving ~$25-35M. Dead last on Forbes Generosity Index.",
     "scrooge_score": 99.64285714285714,
     "giving_rate_pct": 0.14285714285714285,
-    "scrooge_rank": 27,
+    "scrooge_rank": 28,
     "forbes_rank": 1313,
     "verification": {
       "990_pf": {
@@ -1582,7 +1652,7 @@
     "notes": "Auchan founder.",
     "scrooge_score": 99.6111111111111,
     "giving_rate_pct": 0.11666666666666668,
-    "scrooge_rank": 28,
+    "scrooge_rank": 29,
     "forbes_rank": 2680,
     "verification": {
       "990_pf": {
@@ -1645,7 +1715,7 @@
     "notes": "Renounced US citizenship 2011. Singapore richest person. Brazilian-born",
     "scrooge_score": 99.60655737704917,
     "giving_rate_pct": 0.19672131147540983,
-    "scrooge_rank": 29,
+    "scrooge_rank": 30,
     "forbes_rank": 149,
     "verification": {
       "990_pf": {
@@ -1704,7 +1774,7 @@
     "notes": "Stanford engineer. Spun Carvana out of father's DriveTime. Very volatile wealth (stock swings).",
     "scrooge_score": 99.55555555555556,
     "giving_rate_pct": 0.1111111111111111,
-    "scrooge_rank": 30,
+    "scrooge_rank": 31,
     "forbes_rank": 171,
     "verification": {
       "990_pf": {
@@ -1767,7 +1837,7 @@
     "notes": "In-kind donations significant. Baby2Baby board member since 2013. Criminal justice reform advocacy (not counted as charity).",
     "scrooge_score": 99.52941176470588,
     "giving_rate_pct": 0.2352941176470588,
-    "scrooge_rank": 31,
+    "scrooge_rank": 32,
     "forbes_rank": 168,
     "verification": {
       "990_pf": {
@@ -1829,7 +1899,7 @@
     "notes": "MSC. Largest container shipping.",
     "scrooge_score": 99.4949494949495,
     "giving_rate_pct": 0.15151515151515152,
-    "scrooge_rank": 32,
+    "scrooge_rank": 33,
     "forbes_rank": 1285,
     "verification": {
       "990_pf": {
@@ -1877,7 +1947,7 @@
     "notes": "Hengrui pharma.",
     "scrooge_score": 99.48051948051948,
     "giving_rate_pct": 0.18181818181818182,
-    "scrooge_rank": 33,
+    "scrooge_rank": 34,
     "forbes_rank": 1367,
     "verification": {
       "990_pf": {
@@ -1932,7 +2002,7 @@
     "notes": "Chanel. Very private.",
     "scrooge_score": 99.46666666666667,
     "giving_rate_pct": 0.13333333333333333,
-    "scrooge_rank": 34,
+    "scrooge_rank": 35,
     "forbes_rank": 1404,
     "verification": {
       "990_pf": {
@@ -1997,7 +2067,7 @@
     "notes": "Did NOT sign Giving Pledge. Very private. Minimal philanthropy relative to massive wealth. One of the least generous billionaires.",
     "scrooge_score": 99.43946188340807,
     "giving_rate_pct": 0.11210762331838565,
-    "scrooge_rank": 35,
+    "scrooge_rank": 36,
     "forbes_rank": 38,
     "verification": {
       "990_pf": {
@@ -2059,7 +2129,7 @@
     "notes": "Chairperson emeritus of O.P. Jindal Group. India's richest woman. Asia's richest woman. Took over after husband's death in 2005. Also a politician.",
     "scrooge_score": 99.42857142857143,
     "giving_rate_pct": 0.14285714285714285,
-    "scrooge_rank": 36,
+    "scrooge_rank": 37,
     "forbes_rank": 204,
     "verification": {
       "990_pf": {
@@ -2110,7 +2180,7 @@
     "notes": "Richest in Chile. Antofagasta.",
     "scrooge_score": 99.40259740259741,
     "giving_rate_pct": 0.20909090909090908,
-    "scrooge_rank": 37,
+    "scrooge_rank": 38,
     "forbes_rank": 1432,
     "verification": {
       "990_pf": {
@@ -2173,7 +2243,7 @@
     "notes": "Sports mogul. Arsenal FC, LA Rams, Denver Nuggets. Real estate fortune.",
     "scrooge_score": 99.39047619047619,
     "giving_rate_pct": 0.21333333333333335,
-    "scrooge_rank": 38,
+    "scrooge_rank": 39,
     "forbes_rank": 504,
     "verification": {
       "990_pf": {
@@ -2236,7 +2306,7 @@
     "notes": "Quantum Pacific Group. London-based.",
     "scrooge_score": 99.33968253968254,
     "giving_rate_pct": 0.2311111111111111,
-    "scrooge_rank": 39,
+    "scrooge_rank": 40,
     "forbes_rank": 871,
     "verification": {
       "990_pf": {
@@ -2296,7 +2366,7 @@
     "notes": "Nongfu Spring. Was richest in Asia.",
     "scrooge_score": 99.31318681318682,
     "giving_rate_pct": 0.2403846153846154,
-    "scrooge_rank": 40,
+    "scrooge_rank": 41,
     "forbes_rank": 1356,
     "verification": {
       "990_pf": {
@@ -2351,7 +2421,7 @@
     "notes": "Pinduoduo founder.",
     "scrooge_score": 99.28888888888889,
     "giving_rate_pct": 0.2488888888888889,
-    "scrooge_rank": 41,
+    "scrooge_rank": 42,
     "forbes_rank": 2783,
     "verification": {
       "990_pf": {
@@ -2402,7 +2472,7 @@
     "notes": "Fidelity Investments.",
     "scrooge_score": 99.16666666666667,
     "giving_rate_pct": 0.33333333333333337,
-    "scrooge_rank": 42,
+    "scrooge_rank": 43,
     "forbes_rank": 2842,
     "verification": {
       "990_pf": {
@@ -2459,7 +2529,7 @@
     "notes": "Signed Giving Pledge. Recently pledged 95% of fortune. Current giving low relative to wealth but accelerating.",
     "scrooge_score": 99.11196911196912,
     "giving_rate_pct": 0.3108108108108108,
-    "scrooge_rank": 43,
+    "scrooge_rank": 44,
     "forbes_rank": 3,
     "verification": {
       "990_pf": {
@@ -2524,7 +2594,7 @@
     "notes": "PayPal co-founder. Contrarian philanthropist - anti-college, pro-life extension. Major political donor.",
     "scrooge_score": 99.10714285714286,
     "giving_rate_pct": 0.4464285714285714,
-    "scrooge_rank": 44,
+    "scrooge_rank": 45,
     "forbes_rank": 250,
     "verification": {
       "990_pf": {
@@ -2577,7 +2647,7 @@
     "notes": "Uber early employee.",
     "scrooge_score": 99.06666666666666,
     "giving_rate_pct": 0.46666666666666673,
-    "scrooge_rank": 45,
+    "scrooge_rank": 46,
     "forbes_rank": 1036,
     "verification": {
       "990_pf": {
@@ -2632,7 +2702,7 @@
     "notes": "Kering founder. Major art collector - Pinault Collection. Notre-Dame donor. Son Fran\u00e7ois-Henri now runs Kering.",
     "scrooge_score": 99.05967450271248,
     "giving_rate_pct": 0.3291139240506329,
-    "scrooge_rank": 46,
+    "scrooge_rank": 47,
     "forbes_rank": 277,
     "verification": {
       "990_pf": {
@@ -2691,7 +2761,7 @@
     "notes": "Has NOT signed Giving Pledge. Known for tight control of business and limited philanthropy relative to wealth.",
     "scrooge_score": 99.02173913043478,
     "giving_rate_pct": 0.1956521739130435,
-    "scrooge_rank": 47,
+    "scrooge_rank": 48,
     "forbes_rank": 56,
     "verification": {
       "990_pf": {
@@ -2722,29 +2792,6 @@
     },
     "verifiable_giving_millions": 0,
     "unverifiable_giving_millions": 45
-  },
-  {
-    "rank": 455,
-    "name": "Huang Wei",
-    "net_worth_billions": 12.0,
-    "country": "China",
-    "source_of_wealth": "Viya (livestream commerce)",
-    "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 50,
-    "giving_breakdown": {
-      "tax_penalties": -50,
-      "notes": "Tax evasion scandal 2021. Massive fine. Career destroyed. Little philanthropy before scandal."
-    },
-    "sources": [
-      "Forbes"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 2,
-    "notes": "Livestream seller. Tax evasion scandal destroyed career. Fined $210M. Minimal philanthropy.",
-    "scrooge_score": 98.95833333333334,
-    "giving_rate_pct": 0.4167,
-    "scrooge_rank": 48,
-    "forbes_rank": 455
   },
   {
     "rank": 2910,
@@ -3833,23 +3880,63 @@
     "liquidity_factor": 0.2,
     "total_lifetime_giving_millions": 75,
     "giving_breakdown": {
-      "foundation_grants": 50,
-      "direct_gifts": 25,
-      "notes": "Hendricks Family Foundation (2004): $3.7M grants in 2023. Focus: Beloit WI community. Economic development, education in Wisconsin. Major Republican donor (political giving excluded). Relatively modest charitable giving vs net worth."
+      "hendricks_family_foundation_cumulative": 40,
+      "beloit_health_system": 4,
+      "uw_madison_breast_cancer": 1.75,
+      "beloit_college_arts_center": 30,
+      "janesville_woodman": 0.5,
+      "other_community": 5,
+      "notes": "DEEP VERIFIED Jan 2026: ABC Supply co-founder (~$22B). Hendricks Family Foundation Inc (EIN 20-0874851): $73.7M assets, $4.5M disbursements (2024). Political giving EXCEEDS charitable: $50-70M+ to Republicans (2012-2024) vs $40-55M charitable lifetime. $9.5-13.1M political in 2019-2020 alone vs $1.5-2M charitable. Focus: Beloit/Rock County WI (health, education). ABC Supply corporate (separate): Homes For Our Troops $5.2M (2024). NOT Giving Pledge."
     },
     "sources": [
-      "Instrumentl 990",
-      "Inside Philanthropy",
-      "Forbes",
-      "Beloit Round Table"
+      "https://projects.propublica.org/nonprofits/organizations/200874851",
+      "https://www.insidephilanthropy.com/home/diane-hendricks-giving"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
     "notes": "ABC Supply co-founder/chair. Richest self-made woman in US (Forbes). Widowed 2007. Focus on revitalizing hometown Beloit. Large political donor.",
     "scrooge_score": 98.29545454545455,
-    "giving_rate_pct": 0.3409,
+    "giving_rate_pct": 0.3409090909090909,
     "scrooge_rank": 75,
-    "forbes_rank": 191
+    "forbes_rank": 191,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 4.5,
+        "ein": "20-0874851",
+        "note": "Hendricks Family Foundation Inc: $73.7M assets, $4.5M disbursements (2024), $14.5M (2020-2024 cumulative)",
+        "url": "https://projects.propublica.org/nonprofits/organizations/200874851"
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "ABC Supply is private",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 75,
+        "sources": [
+          "ProPublica 990-PF",
+          "Inside Philanthropy"
+        ],
+        "note": "Foundation + named gifts (Beloit College arts center, health system)",
+        "url": "https://projects.propublica.org/nonprofits/organizations/200874851"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 75,
+        "sources": [
+          "Wisconsin Democracy Campaign",
+          "OpenSecrets",
+          "Beloit Daily News"
+        ],
+        "note": "Political giving well-documented exceeds charitable",
+        "url": null
+      }
+    },
+    "giving_pledge": "no",
+    "verifiable_giving_millions": 75,
+    "unverifiable_giving_millions": 0
   },
   {
     "rank": 664,

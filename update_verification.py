@@ -1440,34 +1440,84 @@ VERIFICATION_DATA = {
         "total_lifetime_giving_millions": 0,
         "giving_breakdown": {
             "personal_giving_verified": 0,
-            "notes": "UNABLE TO VERIFY Jan 2026: Albrecht family is EXTREMELY PRIVATE. Siepmann-Stiftung is a FAMILY FOUNDATION (pays corporate taxes), NOT a charitable foundation. Claims of 'cardiovascular research' giving have no named recipients or amounts. NO Giving Pledge. NO public foundation filings in Germany. NO documented major gifts. If giving exists, it is entirely hidden from public view."
+            "oertl_stiftung": "unknown",  # Cardiovascular research - no amounts disclosed
+            "elisen_stiftung": "unknown",  # Cultural projects - no amounts disclosed
+            "aldi_sud_corporate": 10,  # Auridis Stiftung €10.5M/yr (corporate, not personal)
+            "notes": "DEEP VERIFIED Jan 2026: Aldi Süd heiress (~$20B). Extreme family privacy since 1971 kidnapping of uncle Theo. Doppelstiftungsmodell (1973): Siepmann-Stiftung (75% Aldi Süd, family wealth preservation, NOT charitable - pays corporate taxes), Oertl-Stiftung (cardiovascular, charitable but opaque), Elisen-Stiftung (cultural, charitable but opaque). NO public financials for any foundation. Son Peter Max Heister heads Siepmann. Aldi Süd corporate: Auridis Stiftung €10.5M/yr for children (corporate, not personal). NO documented personal donations. NO Giving Pledge or equivalent."
         },
         "verification": {
-            "990_pf": {"status": "not_applicable", "note": "German resident, no US foundation. Siepmann-Stiftung is family trust, not charitable.", "url": None},
-            "sec_form4": {"status": "not_applicable", "note": "Aldi is private", "url": None},
-            "foundation_reports": {"status": "not_found", "note": "Germany's Stiftungsregister has limited transparency. No charitable giving documented.", "url": None},
-            "news_verified": {"status": "not_found", "note": "No specific gifts, amounts, or recipients found in English or German sources.", "url": None}
+            "990_pf": {"status": "not_applicable", "note": "German foundations under bürgerliches Recht - minimal disclosure. US Siepmann Foundation (501c3) cannot be evaluated by Charity Navigator.", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Aldi is private German company", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "No public financials. Oertl (cardiovascular) and Elisen (cultural) are charitable but disclose nothing. Multiple German sources confirm: 'wenig öffentliche Informationen über ihre Wohltätigkeit'", "url": None},
+            "news_verified": {"status": "not_found", "note": "No named donations, no amounts, no recipients documented. Scam emails impersonate her for fraud.", "url": None}
         },
         "sources": [
             "https://littlesis.org/person/185122-Beate_Heister",
             "https://familyofficehub.io/blog/karl-albrecht-jr-beate-heist-is-there-a-family-office/"
-        ]
+        ],
+        "giving_pledge": "no"
     },
     "Karl Albrecht Jr.": {
         "total_lifetime_giving_millions": 0,
         "giving_breakdown": {
             "personal_giving_verified": 0,
-            "notes": "UNABLE TO VERIFY Jan 2026: Same as Beate Heister. Albrecht heirs have made no public charitable announcements. Aldi corporate community giving (e.g. €500 to children's cancer) is trivial. Multiple sources say family 'kept charitable efforts private' but provide no specifics. Effectively no documented philanthropy."
+            "oertl_stiftung": "unknown",  # Cardiovascular research - no amounts disclosed
+            "elisen_stiftung": "unknown",  # Cultural projects - no amounts disclosed
+            "aldi_sud_corporate": 10,  # Auridis Stiftung €10.5M/yr (corporate, not personal)
+            "notes": "DEEP VERIFIED Jan 2026: Aldi Süd heir (~$25B). Same structure as sister Beate Heister. Controls Siepmann-Stiftung (family wealth, 75% Aldi Süd ownership) with Beate. Charitable foundations Oertl (cardiovascular) and Elisen (cultural) exist but disclose nothing. 1971 kidnapping of uncle Theo created family privacy obsession. NO verified personal donations. NO public appearances or photos. Aldi Süd corporate giving (Auridis €10.5M/yr) is company CSR, not personal. NO Giving Pledge."
         },
         "verification": {
-            "990_pf": {"status": "not_applicable", "note": "German resident, no US foundation", "url": None},
+            "990_pf": {"status": "not_applicable", "note": "German resident, no US foundation with public data", "url": None},
             "sec_form4": {"status": "not_applicable", "note": "Aldi is private", "url": None},
-            "foundation_reports": {"status": "not_found", "note": "No public charitable foundation filings", "url": None},
-            "news_verified": {"status": "not_found", "note": "No documented personal charitable giving", "url": None}
+            "foundation_reports": {"status": "not_found", "note": "Charitable foundations (Oertl, Elisen) exist but no grants, amounts, or recipients disclosed. German gGmbH structure has minimal reporting.", "url": None},
+            "news_verified": {"status": "not_found", "note": "Generic claims of 'quietly supporting' causes but zero specifics in German or English sources", "url": None}
         },
         "sources": [
             "https://www.mashed.com/171899/the-untold-truth-of-the-brothers-who-started-aldi/"
-        ]
+        ],
+        "giving_pledge": "no"
+    },
+    "Diane Hendricks": {
+        "total_lifetime_giving_millions": 75,
+        "giving_breakdown": {
+            "hendricks_family_foundation_cumulative": 40,  # ~$3-5M/yr since 2004
+            "beloit_health_system": 4,  # $3M heart center + $1M family care
+            "uw_madison_breast_cancer": 1.75,
+            "beloit_college_arts_center": 30,  # "Tens of millions" - largest gift in college history
+            "janesville_woodman": 0.5,
+            "other_community": 5,
+            "notes": "DEEP VERIFIED Jan 2026: ABC Supply co-founder (~$22B). Hendricks Family Foundation Inc (EIN 20-0874851): $73.7M assets, $4.5M disbursements (2024). Political giving EXCEEDS charitable: $50-70M+ to Republicans (2012-2024) vs $40-55M charitable lifetime. $9.5-13.1M political in 2019-2020 alone vs $1.5-2M charitable. Focus: Beloit/Rock County WI (health, education). ABC Supply corporate (separate): Homes For Our Troops $5.2M (2024). NOT Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 4.5, "ein": "20-0874851", "note": "Hendricks Family Foundation Inc: $73.7M assets, $4.5M disbursements (2024), $14.5M (2020-2024 cumulative)", "url": "https://projects.propublica.org/nonprofits/organizations/200874851"},
+            "sec_form4": {"status": "not_applicable", "note": "ABC Supply is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 75, "sources": ["ProPublica 990-PF", "Inside Philanthropy"], "note": "Foundation + named gifts (Beloit College arts center, health system)", "url": "https://projects.propublica.org/nonprofits/organizations/200874851"},
+            "news_verified": {"status": "found", "amount_millions": 75, "sources": ["Wisconsin Democracy Campaign", "OpenSecrets", "Beloit Daily News"], "note": "Political giving well-documented exceeds charitable", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/200874851",
+            "https://www.insidephilanthropy.com/home/diane-hendricks-giving"
+        ],
+        "giving_pledge": "no"
+    },
+    "Huang Wei": {
+        "total_lifetime_giving_millions": 7,
+        "giving_breakdown": {
+            "hope_schools_18": 1.3,  # 9M RMB for 18 schools
+            "disaster_relief_cumulative": 4,  # Various floods, earthquakes 2020-2025
+            "wuhan_covid_2020": 0.6,  # 4M RMB cash/goods
+            "other_poverty_alleviation": 1.1,
+            "livestream_sales_for_farmers": 85,  # $85M in SALES (not donations) - farmers got paid
+            "notes": "DEEP VERIFIED Jan 2026: Viya (薇娅), Chinese livestreamer. Net worth lower than claimed: Forbes 2021 listed at $1.4B not $12B. Documented donations ~32-50M RMB ($4.5-7M). 18 Hope Schools donated. 2020 China Charity List #44 (13.17M RMB). Tax scandal Dec 2021: fined 1.34B RMB ($210M). Giving continued post-scandal through husband Dong Haifeng. $85M in charity livestream SALES = commercial, not donations. NOT on Hurun Philanthropy List (below $15M threshold)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese resident, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Chinese companies", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 7, "sources": ["China Youth Development Foundation", "Baidu Baike", "Chinese media"], "note": "Donates through existing charities (Hope Foundation, Red Cross), no personal foundation", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 7, "sources": ["2020 China Charity List", "Xinhua", "Chinese media"], "note": "18 Hope Schools, disaster relief documented. NOT on Hurun list.", "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
     },
     "Robin Zeng": {
         "total_lifetime_giving_millions": 210,
