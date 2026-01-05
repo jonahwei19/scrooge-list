@@ -103,62 +103,6 @@
     "giving_pledge": "no"
   },
   {
-    "rank": 1405,
-    "name": "Gerard Wertheimer",
-    "net_worth_billions": 45.0,
-    "country": "France",
-    "source_of_wealth": "Chanel",
-    "liquidity_factor": 0.25,
-    "total_lifetime_giving_millions": 0,
-    "giving_breakdown": {
-      "personal_giving": 0,
-      "chanel_corporate_giving_annual": 20,
-      "notes": "VERIFIED Jan 2026: NO verifiable personal giving. All philanthropy flows through Chanel corporate: Fondation Chanel (UK) has \u00a3157M assets, distributes \u00a315.6M/year (~$20M). Pierre J Wertheimer Foundation (EIN 13-6161226) is DORMANT - $0 assets. Alain Wertheimer's documented personal giving: ~$7,500 total (Carnegie Hall, MoMA). Wertheimers notably ABSENT from Notre-Dame reconstruction pledges (2019). Extreme privacy - no personal foundations, no public giving announcements."
-    },
-    "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/136161226",
-      "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 20,
-    "notes": "Chanel.",
-    "scrooge_score": 100,
-    "giving_rate_pct": 0.0,
-    "scrooge_rank": 3,
-    "forbes_rank": 1405,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 0,
-        "ein": "13-6161226",
-        "note": "Pierre J Wertheimer Foundation is dormant - $0 assets",
-        "url": "https://projects.propublica.org/nonprofits/organizations/136161226"
-      },
-      "sec_form4": {
-        "status": "not_applicable",
-        "note": "Chanel is private",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 0,
-        "sources": [
-          "UK Charity Commission - Fondation Chanel"
-        ],
-        "note": "All giving is Chanel corporate (\u00a3156.9M assets), not personal",
-        "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"
-      },
-      "news_verified": {
-        "status": "not_found",
-        "amount_millions": 0,
-        "note": "No verifiable personal donations found",
-        "url": null
-      }
-    },
-    "verifiable_giving_millions": 0,
-    "unverifiable_giving_millions": 0
-  },
-  {
     "rank": 203,
     "name": "Theo Albrecht Jr.",
     "net_worth_billions": 20.6,
@@ -177,7 +121,7 @@
     "notes": "Aldi Nord and Trader Joe's owner. Son of Aldi co-founder. Extremely private. Father was kidnapped 1971. Family avoids publicity entirely.",
     "scrooge_score": 100,
     "giving_rate_pct": 0.0,
-    "scrooge_rank": 4,
+    "scrooge_rank": 3,
     "forbes_rank": 203,
     "verification": {
       "990_pf": {
@@ -226,7 +170,7 @@
     "notes": "Former IBM CEO.",
     "scrooge_score": 100,
     "giving_rate_pct": 0.0,
-    "scrooge_rank": 5,
+    "scrooge_rank": 4,
     "forbes_rank": 865,
     "verification": {
       "990_pf": {
@@ -274,7 +218,7 @@
     "notes": "Bulgarian-American. Co-founder with Baiju Bhatt. GameStop saga controversy. Young billionaire with minimal philanthropy track record.",
     "scrooge_score": 99.98299319727892,
     "giving_rate_pct": 0.005952380952380952,
-    "scrooge_rank": 6,
+    "scrooge_rank": 5,
     "forbes_rank": 164,
     "verification": {
       "990_pf": {
@@ -303,6 +247,71 @@
     },
     "verifiable_giving_millions": 0,
     "unverifiable_giving_millions": 0.125
+  },
+  {
+    "rank": 1405,
+    "name": "Gerard Wertheimer",
+    "net_worth_billions": 45.0,
+    "country": "France",
+    "source_of_wealth": "Chanel",
+    "liquidity_factor": 0.25,
+    "total_lifetime_giving_millions": 2,
+    "giving_breakdown": {
+      "fondation_chanel_share": 0,
+      "orphanage_santo_domingo": 1,
+      "game_conservancy_action_innocence": 1,
+      "notes": "DEEP VERIFIED Jan 2026: CRITICAL - Fondation Chanel (EIN 81-1568389, UK Charity 1126tried185) is CORPORATE, not personal. Should NOT be counted as Wertheimer personal giving. Pierre J. Wertheimer Foundation (EIN 13-6161226) is essentially dormant ($0 assets). Only verifiable personal giving: wife Valerie's orphanage work (~$1M), minor documented gifts (~$1M). The Wertheimers are 'fashion's quietest billionaires' - famously private, no Giving Pledge, no Notre Dame donation despite $100B+ combined wealth."
+    },
+    "sources": [
+      "https://projects.propublica.org/nonprofits/organizations/136161226",
+      "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/",
+      "https://www.lemonde.fr/en/summer-reads/article/2024/08/23/chanel-s-secretive-owners-the-wertheimers_6720656_183.html"
+    ],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 20,
+    "notes": "Chanel.",
+    "scrooge_score": 99.98222222222222,
+    "giving_rate_pct": 0.0044444444444444444,
+    "scrooge_rank": 6,
+    "forbes_rank": 1405,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 0,
+        "ein": "13-6161226",
+        "note": "Pierre J. Wertheimer Foundation: $0 assets, dormant since 2021. Fondation Chanel (EIN 81-1568389) is CORPORATE - not counted.",
+        "url": "https://projects.propublica.org/nonprofits/organizations/136161226"
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "Chanel is private",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 0,
+        "sources": [
+          "ProPublica 990-PF",
+          "UK Charity Commission"
+        ],
+        "note": "Fondation Chanel \u00a3156.9M assets, \u00a315.6M/yr grants - but this is CORPORATE philanthropy from Chanel profits, NOT personal Wertheimer giving.",
+        "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 2,
+        "sources": [
+          "Le Monde 2024",
+          "NYT 2002",
+          "Patronview"
+        ],
+        "note": "Alain Wertheimer documented at ~$7,500 total (Carnegie Hall, MoMA). Gerard has NO documented personal giving.",
+        "url": "https://www.lemonde.fr/en/summer-reads/article/2024/08/23/chanel-s-secretive-owners-the-wertheimers_6720656_183.html"
+      }
+    },
+    "verifiable_giving_millions": 0,
+    "unverifiable_giving_millions": 2,
+    "giving_pledge": "no"
   },
   {
     "rank": 643,
@@ -2453,6 +2462,75 @@
     "unverifiable_giving_millions": 12
   },
   {
+    "rank": 191,
+    "name": "Diane Hendricks",
+    "net_worth_billions": 22.0,
+    "country": "United States",
+    "source_of_wealth": "ABC Supply",
+    "liquidity_factor": 0.2,
+    "total_lifetime_giving_millions": 32,
+    "giving_breakdown": {
+      "hendricks_family_foundation_cumulative": 22.7,
+      "beloit_health_system": 4,
+      "beloit_public_library": 1,
+      "humane_society_sw_wi": 1,
+      "beloit_college_in_kind": 3,
+      "janesville_woodman": 0.5,
+      "other_community": 0.8,
+      "notes": "DEEP VERIFIED Jan 2026: ABC Supply co-founder (~$22B). Hendricks Family Foundation Inc (EIN 20-0874851): $73.7M assets, cumulative giving $22.7M (per foundation website, Beloit Daily News 2025). Named gifts: Beloit Health $4M, Library $1M, Humane Society $1M. Beloit College arts center was building/renovation GIFT, not cash. Political giving exceeds charitable: $50-70M+ to Republicans (2012-2024). NOT Giving Pledge."
+    },
+    "sources": [
+      "https://projects.propublica.org/nonprofits/organizations/200874851",
+      "https://hendricksfamilyfoundation.org/",
+      "https://beloithealthsystem.planmygift.org/your-gifts-at-work/hendricks-family-heart-hospital"
+    ],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 15,
+    "notes": "ABC Supply co-founder/chair. Richest self-made woman in US (Forbes). Widowed 2007. Focus on revitalizing hometown Beloit. Large political donor.",
+    "scrooge_score": 99.27272727272727,
+    "giving_rate_pct": 0.14545454545454545,
+    "scrooge_rank": 43,
+    "forbes_rank": 191,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 22.7,
+        "ein": "20-0874851",
+        "note": "Hendricks Family Foundation Inc: $73.7M assets, $4.5M disbursements (2024), $22.7M cumulative (2004-2024) per foundation website",
+        "url": "https://projects.propublica.org/nonprofits/organizations/200874851"
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "ABC Supply is private",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 22.7,
+        "sources": [
+          "ProPublica 990-PF",
+          "Hendricks Family Foundation website"
+        ],
+        "note": "$22.7M foundation + ~$9M named gifts = ~$32M total",
+        "url": "https://hendricksfamilyfoundation.org/"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 32,
+        "sources": [
+          "Beloit Daily News",
+          "Beloit Health System",
+          "Inside Philanthropy"
+        ],
+        "note": "Named gifts documented: $3M heart hospital, $1M family care, $1M library, $1M humane society",
+        "url": "https://beloithealthsystem.planmygift.org/your-gifts-at-work/hendricks-family-heart-hospital"
+      }
+    },
+    "giving_pledge": "no",
+    "verifiable_giving_millions": 22.7,
+    "unverifiable_giving_millions": 9.3
+  },
+  {
     "rank": 2842,
     "name": "Abigail Johnson",
     "net_worth_billions": 30.0,
@@ -2472,7 +2550,7 @@
     "notes": "Fidelity Investments.",
     "scrooge_score": 99.16666666666667,
     "giving_rate_pct": 0.33333333333333337,
-    "scrooge_rank": 43,
+    "scrooge_rank": 44,
     "forbes_rank": 2842,
     "verification": {
       "990_pf": {
@@ -2529,7 +2607,7 @@
     "notes": "Signed Giving Pledge. Recently pledged 95% of fortune. Current giving low relative to wealth but accelerating.",
     "scrooge_score": 99.11196911196912,
     "giving_rate_pct": 0.3108108108108108,
-    "scrooge_rank": 44,
+    "scrooge_rank": 45,
     "forbes_rank": 3,
     "verification": {
       "990_pf": {
@@ -2594,7 +2672,7 @@
     "notes": "PayPal co-founder. Contrarian philanthropist - anti-college, pro-life extension. Major political donor.",
     "scrooge_score": 99.10714285714286,
     "giving_rate_pct": 0.4464285714285714,
-    "scrooge_rank": 45,
+    "scrooge_rank": 46,
     "forbes_rank": 250,
     "verification": {
       "990_pf": {
@@ -2647,7 +2725,7 @@
     "notes": "Uber early employee.",
     "scrooge_score": 99.06666666666666,
     "giving_rate_pct": 0.46666666666666673,
-    "scrooge_rank": 46,
+    "scrooge_rank": 47,
     "forbes_rank": 1036,
     "verification": {
       "990_pf": {
@@ -2702,7 +2780,7 @@
     "notes": "Kering founder. Major art collector - Pinault Collection. Notre-Dame donor. Son Fran\u00e7ois-Henri now runs Kering.",
     "scrooge_score": 99.05967450271248,
     "giving_rate_pct": 0.3291139240506329,
-    "scrooge_rank": 47,
+    "scrooge_rank": 48,
     "forbes_rank": 277,
     "verification": {
       "990_pf": {
@@ -2761,7 +2839,7 @@
     "notes": "Has NOT signed Giving Pledge. Known for tight control of business and limited philanthropy relative to wealth.",
     "scrooge_score": 99.02173913043478,
     "giving_rate_pct": 0.1956521739130435,
-    "scrooge_rank": 48,
+    "scrooge_rank": 49,
     "forbes_rank": 56,
     "verification": {
       "990_pf": {
@@ -2819,7 +2897,7 @@
     "notes": "VERIFIED: Walton Family Foundation share ~$2B. S. Robson = Rob Walton.",
     "scrooge_score": 98.91587163920208,
     "giving_rate_pct": 0.43365134431916735,
-    "scrooge_rank": 49,
+    "scrooge_rank": 50,
     "forbes_rank": 2910,
     "verification": {
       "990_pf": {
@@ -2877,7 +2955,7 @@
     "notes": "Did NOT sign Giving Pledge. Canada's richest person. Major art collector. Philanthropy modest relative to $71B wealth.",
     "scrooge_score": 98.76760563380282,
     "giving_rate_pct": 0.49295774647887325,
-    "scrooge_rank": 50,
+    "scrooge_rank": 51,
     "forbes_rank": 110,
     "verification": {
       "990_pf": {
@@ -2937,7 +3015,7 @@
     "notes": "Controversial former Uber CEO. Left board 2019. Sold $2.5B in shares",
     "scrooge_score": 98.7460815047022,
     "giving_rate_pct": 0.6896551724137931,
-    "scrooge_rank": 51,
+    "scrooge_rank": 52,
     "forbes_rank": 152,
     "verification": {
       "990_pf": {
@@ -2991,7 +3069,7 @@
     "notes": "Kering (Gucci, YSL). Art collector. Competes with Arnault. Notre-Dame donor.",
     "scrooge_score": 98.73417721518987,
     "giving_rate_pct": 0.37974683544303794,
-    "scrooge_rank": 52,
+    "scrooge_rank": 53,
     "forbes_rank": 366,
     "verification": {
       "990_pf": {
@@ -3043,7 +3121,7 @@
     "notes": "CEO of Grupo M\u00e9xico, Mexico's largest mining corporation. Third largest copper producer globally. Extremely private.",
     "scrooge_score": 98.72204472843451,
     "giving_rate_pct": 0.3194888178913738,
-    "scrooge_rank": 53,
+    "scrooge_rank": 54,
     "forbes_rank": 179,
     "verification": {
       "990_pf": {
@@ -3101,7 +3179,7 @@
     "notes": "Aldi S\u00fcd heirs. Legendary privacy like Aldi Nord family. Father Karl Sr. died 2014.",
     "scrooge_score": 98.68421052631578,
     "giving_rate_pct": 0.2632,
-    "scrooge_rank": 54,
+    "scrooge_rank": 55,
     "forbes_rank": 317
   },
   {
@@ -3126,7 +3204,7 @@
     "notes": "ByteDance. TikTok.",
     "scrooge_score": 98.67109634551495,
     "giving_rate_pct": 0.46511627906976744,
-    "scrooge_rank": 55,
+    "scrooge_rank": 56,
     "forbes_rank": 1345,
     "verification": {
       "990_pf": {
@@ -3185,7 +3263,7 @@
     "notes": "World's richest (at times). LVMH luxury empire. Major art patron. Louis Vuitton Foundation museum.",
     "scrooge_score": 98.66666666666667,
     "giving_rate_pct": 0.33333333333333337,
-    "scrooge_rank": 56,
+    "scrooge_rank": 57,
     "forbes_rank": 410,
     "verification": {
       "990_pf": {
@@ -3246,7 +3324,7 @@
     "notes": "Low profile philanthropist. Millennium manages $70B+",
     "scrooge_score": 98.6013986013986,
     "giving_rate_pct": 0.7692307692307693,
-    "scrooge_rank": 57,
+    "scrooge_rank": 58,
     "forbes_rank": 141,
     "verification": {
       "990_pf": {
@@ -3298,7 +3376,7 @@
     "notes": "Gulf Energy founder. Thailand's richest (sometimes). Power generation.",
     "scrooge_score": 98.57142857142858,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 58,
+    "scrooge_rank": 59,
     "forbes_rank": 473
   },
   {
@@ -3318,7 +3396,7 @@
     "notes": "Tencent founder.",
     "scrooge_score": 98.57142857142858,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 59,
+    "scrooge_rank": 60,
     "forbes_rank": 2522,
     "verification": {
       "990_pf": {
@@ -3368,7 +3446,7 @@
     "notes": "Tencent founder (Pony Ma).",
     "scrooge_score": 98.57142857142858,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 60,
+    "scrooge_rank": 61,
     "forbes_rank": 2782,
     "verification": {
       "990_pf": {
@@ -3416,7 +3494,7 @@
     "notes": "Rocket Lab. NZ space entrepreneur.",
     "scrooge_score": 98.52941176470588,
     "giving_rate_pct": 0.5882,
-    "scrooge_rank": 61,
+    "scrooge_rank": 62,
     "forbes_rank": 866
   },
   {
@@ -3438,7 +3516,7 @@
     "notes": "JCDecaux. DECEASED 2016.",
     "scrooge_score": 98.46153846153847,
     "giving_rate_pct": 0.4615,
-    "scrooge_rank": 62,
+    "scrooge_rank": 63,
     "forbes_rank": 1636
   },
   {
@@ -3460,7 +3538,7 @@
     "notes": "Afiniti. Align Technology/Invisalign founder.",
     "scrooge_score": 98.4375,
     "giving_rate_pct": 0.625,
-    "scrooge_rank": 63,
+    "scrooge_rank": 64,
     "forbes_rank": 961
   },
   {
@@ -3490,7 +3568,7 @@
     "notes": "Steel magnate. UK resident. Was world's 5th richest in 2005. Indian sports philanthropy.",
     "scrooge_score": 98.42592592592592,
     "giving_rate_pct": 0.4722222222222222,
-    "scrooge_rank": 64,
+    "scrooge_rank": 65,
     "forbes_rank": 411,
     "verification": {
       "990_pf": {
@@ -3551,7 +3629,7 @@
     "notes": "Richest in Indonesia. Djarum clove cigarettes. BCA bank.",
     "scrooge_score": 98.41269841269842,
     "giving_rate_pct": 0.4762,
-    "scrooge_rank": 65,
+    "scrooge_rank": 66,
     "forbes_rank": 1146
   },
   {
@@ -3575,7 +3653,7 @@
     "notes": "Barito Pacific. Petrochemicals. Past palm oil controversies. Private.",
     "scrooge_score": 98.4,
     "giving_rate_pct": 0.4,
-    "scrooge_rank": 66,
+    "scrooge_rank": 67,
     "forbes_rank": 339,
     "verification": {
       "990_pf": {
@@ -3624,7 +3702,7 @@
     "notes": "Telegram. Dubai-based.",
     "scrooge_score": 98.38709677419355,
     "giving_rate_pct": 0.6452,
-    "scrooge_rank": 67,
+    "scrooge_rank": 68,
     "forbes_rank": 1454
   },
   {
@@ -3650,7 +3728,7 @@
     "notes": "Djarum Group.",
     "scrooge_score": 98.3739837398374,
     "giving_rate_pct": 0.4878,
-    "scrooge_rank": 68,
+    "scrooge_rank": 69,
     "forbes_rank": 1147
   },
   {
@@ -3677,7 +3755,7 @@
     "notes": "Swedish. Signed Giving Pledge 2013. Focus on education, sustainability, tech access. Note: $1B deeptech investment is venture, not charity.",
     "scrooge_score": 98.35796387520526,
     "giving_rate_pct": 0.5747,
-    "scrooge_rank": 69,
+    "scrooge_rank": 70,
     "forbes_rank": 160
   },
   {
@@ -3704,7 +3782,7 @@
     "notes": "1990 felony bank fraud conviction (Lincoln S&L). Son founded Carvana. Low-profile philanthropy through family foundation.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 70,
+    "scrooge_rank": 71,
     "forbes_rank": 170,
     "verification": {
       "990_pf": {
@@ -3765,7 +3843,7 @@
     "notes": "BMW major shareholder (25%). Very private. Delphine Software. Foundation philanthropy.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 71,
+    "scrooge_rank": 72,
     "forbes_rank": 408
   },
   {
@@ -3789,7 +3867,7 @@
     "notes": "UK's richest person. Chemical industry. Sports teams owner. Monaco resident for tax. Limited philanthropy.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 72,
+    "scrooge_rank": 73,
     "forbes_rank": 360
   },
   {
@@ -3811,7 +3889,7 @@
     "notes": "LVMH.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 73,
+    "scrooge_rank": 74,
     "forbes_rank": 1646
   },
   {
@@ -3840,7 +3918,7 @@
     "notes": "WFF share + John Walton's legacy giving.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 74,
+    "scrooge_rank": 75,
     "forbes_rank": 501,
     "verification": {
       "990_pf": {
@@ -3869,73 +3947,6 @@
       }
     },
     "verifiable_giving_millions": 150,
-    "unverifiable_giving_millions": 0
-  },
-  {
-    "rank": 191,
-    "name": "Diane Hendricks",
-    "net_worth_billions": 22.0,
-    "country": "United States",
-    "source_of_wealth": "ABC Supply",
-    "liquidity_factor": 0.2,
-    "total_lifetime_giving_millions": 75,
-    "giving_breakdown": {
-      "hendricks_family_foundation_cumulative": 40,
-      "beloit_health_system": 4,
-      "uw_madison_breast_cancer": 1.75,
-      "beloit_college_arts_center": 30,
-      "janesville_woodman": 0.5,
-      "other_community": 5,
-      "notes": "DEEP VERIFIED Jan 2026: ABC Supply co-founder (~$22B). Hendricks Family Foundation Inc (EIN 20-0874851): $73.7M assets, $4.5M disbursements (2024). Political giving EXCEEDS charitable: $50-70M+ to Republicans (2012-2024) vs $40-55M charitable lifetime. $9.5-13.1M political in 2019-2020 alone vs $1.5-2M charitable. Focus: Beloit/Rock County WI (health, education). ABC Supply corporate (separate): Homes For Our Troops $5.2M (2024). NOT Giving Pledge."
-    },
-    "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/200874851",
-      "https://www.insidephilanthropy.com/home/diane-hendricks-giving"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 15,
-    "notes": "ABC Supply co-founder/chair. Richest self-made woman in US (Forbes). Widowed 2007. Focus on revitalizing hometown Beloit. Large political donor.",
-    "scrooge_score": 98.29545454545455,
-    "giving_rate_pct": 0.3409090909090909,
-    "scrooge_rank": 75,
-    "forbes_rank": 191,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 4.5,
-        "ein": "20-0874851",
-        "note": "Hendricks Family Foundation Inc: $73.7M assets, $4.5M disbursements (2024), $14.5M (2020-2024 cumulative)",
-        "url": "https://projects.propublica.org/nonprofits/organizations/200874851"
-      },
-      "sec_form4": {
-        "status": "not_applicable",
-        "note": "ABC Supply is private",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 75,
-        "sources": [
-          "ProPublica 990-PF",
-          "Inside Philanthropy"
-        ],
-        "note": "Foundation + named gifts (Beloit College arts center, health system)",
-        "url": "https://projects.propublica.org/nonprofits/organizations/200874851"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 75,
-        "sources": [
-          "Wisconsin Democracy Campaign",
-          "OpenSecrets",
-          "Beloit Daily News"
-        ],
-        "note": "Political giving well-documented exceeds charitable",
-        "url": null
-      }
-    },
-    "giving_pledge": "no",
-    "verifiable_giving_millions": 75,
     "unverifiable_giving_millions": 0
   },
   {
@@ -27804,69 +27815,6 @@
     "forbes_rank": 144
   },
   {
-    "rank": 1588,
-    "name": "Eric Schmidt",
-    "net_worth_billions": 25.0,
-    "country": "United States",
-    "source_of_wealth": "Google",
-    "liquidity_factor": 0.55,
-    "total_lifetime_giving_millions": 2000,
-    "giving_breakdown": {
-      "schmidt_fund_strategic_innovation": 600,
-      "schmidt_family_foundation": 400,
-      "broad_institute": 150,
-      "schmidt_futures_ai": 400,
-      "princeton": 30,
-      "yale": 15,
-      "uc_berkeley": 13,
-      "schmidt_ocean_institute": 100,
-      "rise_program": 100,
-      "other_universities": 50,
-      "notes": "VERIFIED Jan 2026: Former Google CEO (~$30B). Three foundations: Schmidt Family Foundation (EIN 20-4170342), Schmidt Fund for Strategic Innovation (EIN 46-3460261), Schmidt Ocean Institute (EIN 26-4562328). Pre-2019: ~$1B given. 2019: $1.3B (#2 US philanthropist that year). $1B Rise program with Rhodes Trust. Broad Institute $150M. Major AI/science funder. NOT Giving Pledge despite peer pressure."
-    },
-    "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full",
-      "https://projects.propublica.org/nonprofits/organizations/204170342/202513219349104316/full",
-      "https://projects.propublica.org/nonprofits/organizations/264562328/202513199349101171/full"
-    ],
-    "giving_pledge_signed": true,
-    "years_as_billionaire": 15,
-    "notes": "Google. Schmidt Futures. Giving Pledge.",
-    "scrooge_score": 85.45454545454545,
-    "giving_rate_pct": 8.0,
-    "scrooge_rank": 1047,
-    "forbes_rank": 1588,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 195,
-        "ein": "46-3460261",
-        "note": "Schmidt Fund for Strategic Innovation: $195M grants (2023)",
-        "url": "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full"
-      },
-      "sec_form4": {
-        "status": "not_found",
-        "note": "No longer at Google, most giving from prior wealth",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 2000,
-        "note": "Three foundations + named gifts. $1B pre-2019, $1.3B in 2019.",
-        "url": "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 2000,
-        "note": "2019 #2 US philanthropist, Broad/Rise/AI gifts widely covered",
-        "url": null
-      }
-    },
-    "verifiable_giving_millions": 2000,
-    "unverifiable_giving_millions": 0,
-    "giving_pledge": "no"
-  },
-  {
     "rank": 64,
     "name": "Robert Kraft",
     "net_worth_billions": 12.0,
@@ -27892,7 +27840,7 @@
     "notes": "Has NOT signed Giving Pledge. Claims $1B lifetime giving. Focus on youth, health equity, Jewish causes.",
     "scrooge_score": 85.41666666666666,
     "giving_rate_pct": 5.833333333333333,
-    "scrooge_rank": 1048,
+    "scrooge_rank": 1047,
     "forbes_rank": 64,
     "verification": {
       "990_pf": {
@@ -27949,7 +27897,7 @@
     "notes": "SAP co-founder. Germany's most generous billionaire. Football club owner. COVID vaccine funding.",
     "scrooge_score": 85.33333333333333,
     "giving_rate_pct": 7.333333333333333,
-    "scrooge_rank": 1049,
+    "scrooge_rank": 1048,
     "forbes_rank": 393,
     "verification": {
       "990_pf": {
@@ -28012,7 +27960,7 @@
     "notes": "PeopleSoft, Workday founder.",
     "scrooge_score": 85.3125,
     "giving_rate_pct": 5.875,
-    "scrooge_rank": 1050,
+    "scrooge_rank": 1049,
     "forbes_rank": 2412,
     "verification": {
       "990_pf": {
@@ -28062,7 +28010,7 @@
     "notes": "Hyundai Motor chairman.",
     "scrooge_score": 85.18518518518519,
     "giving_rate_pct": 4.4444,
-    "scrooge_rank": 1051,
+    "scrooge_rank": 1050,
     "forbes_rank": 1112
   },
   {
@@ -28084,7 +28032,7 @@
     "notes": "Demant/William Demant.",
     "scrooge_score": 85.18518518518519,
     "giving_rate_pct": 4.4444,
-    "scrooge_rank": 1052,
+    "scrooge_rank": 1051,
     "forbes_rank": 2324
   },
   {
@@ -28106,7 +28054,7 @@
     "notes": "Inter Miami.",
     "scrooge_score": 85.18518518518519,
     "giving_rate_pct": 6.6667,
-    "scrooge_rank": 1053,
+    "scrooge_rank": 1052,
     "forbes_rank": 1543
   },
   {
@@ -28137,7 +28085,7 @@
     "notes": "Duplicate - Jack Ma Chinese name. Counted in rank 382.",
     "scrooge_score": 85.0,
     "giving_rate_pct": 6.0,
-    "scrooge_rank": 1054,
+    "scrooge_rank": 1053,
     "forbes_rank": 462
   },
   {
@@ -28162,7 +28110,7 @@
     "notes": "Biocon founder. Giving Pledge signer. Cancer care. Self-made woman.",
     "scrooge_score": 85.0,
     "giving_rate_pct": 6.0,
-    "scrooge_rank": 1055,
+    "scrooge_rank": 1054,
     "forbes_rank": 542
   },
   {
@@ -28186,7 +28134,7 @@
     "notes": "Shoah Foundation.",
     "scrooge_score": 85.0,
     "giving_rate_pct": 7.5,
-    "scrooge_rank": 1056,
+    "scrooge_rank": 1055,
     "forbes_rank": 1535
   },
   {
@@ -28208,7 +28156,7 @@
     "notes": "Fitch.",
     "scrooge_score": 85.0,
     "giving_rate_pct": 6.0,
-    "scrooge_rank": 1057,
+    "scrooge_rank": 1056,
     "forbes_rank": 2203
   },
   {
@@ -28232,7 +28180,7 @@
     "notes": "Alibaba co-founder. Nets, Liberty owner.",
     "scrooge_score": 84.9624060150376,
     "giving_rate_pct": 5.2632,
-    "scrooge_rank": 1058,
+    "scrooge_rank": 1057,
     "forbes_rank": 663
   },
   {
@@ -28255,7 +28203,7 @@
     "notes": "Hyatt Hotels. Pritzker family. Chicago.",
     "scrooge_score": 84.9624060150376,
     "giving_rate_pct": 5.2632,
-    "scrooge_rank": 1059,
+    "scrooge_rank": 1058,
     "forbes_rank": 681
   },
   {
@@ -28279,7 +28227,7 @@
     "notes": "Pritzker family. Military philanthropy. First trans billionaire.",
     "scrooge_score": 84.9624060150376,
     "giving_rate_pct": 5.2632,
-    "scrooge_rank": 1060,
+    "scrooge_rank": 1059,
     "forbes_rank": 683
   },
   {
@@ -28303,7 +28251,7 @@
     "notes": "Danaher. Glenstone art museum. Giving Pledge.",
     "scrooge_score": 84.9624060150376,
     "giving_rate_pct": 5.2632,
-    "scrooge_rank": 1061,
+    "scrooge_rank": 1060,
     "forbes_rank": 704
   },
   {
@@ -28328,7 +28276,7 @@
     "notes": "Sugar King of Asia. Shangri-La Hotels. Malaysia's richest. Education scholarship focus.",
     "scrooge_score": 84.84848484848484,
     "giving_rate_pct": 4.5455,
-    "scrooge_rank": 1062,
+    "scrooge_rank": 1061,
     "forbes_rank": 329
   },
   {
@@ -28354,7 +28302,7 @@
     "notes": "Very private. AEG entertainment. Sports team owner. Christian conservative. Major landowner.",
     "scrooge_score": 84.84848484848484,
     "giving_rate_pct": 4.5455,
-    "scrooge_rank": 1063,
+    "scrooge_rank": 1062,
     "forbes_rank": 281
   },
   {
@@ -28378,7 +28326,7 @@
     "notes": "Bestseller. UK's largest landowner.",
     "scrooge_score": 84.76190476190476,
     "giving_rate_pct": 5.3333,
-    "scrooge_rank": 1064,
+    "scrooge_rank": 1063,
     "forbes_rank": 1274
   },
   {
@@ -28402,7 +28350,7 @@
     "notes": "Bestseller. Lost 3 children in Sri Lanka bombing.",
     "scrooge_score": 84.61538461538461,
     "giving_rate_pct": 4.6154,
-    "scrooge_rank": 1065,
+    "scrooge_rank": 1064,
     "forbes_rank": 1271
   },
   {
@@ -28424,7 +28372,7 @@
     "notes": "DECEASED 2024. Wahaha.",
     "scrooge_score": 84.61538461538461,
     "giving_rate_pct": 4.6154,
-    "scrooge_rank": 1066,
+    "scrooge_rank": 1065,
     "forbes_rank": 1355
   },
   {
@@ -28452,7 +28400,7 @@
     "notes": "Signed Giving Pledge. Activist hedge fund manager. Pershing Square Foundation active. Effective altruism interest.",
     "scrooge_score": 84.44444444444444,
     "giving_rate_pct": 7.777777777777778,
-    "scrooge_rank": 1067,
+    "scrooge_rank": 1066,
     "forbes_rank": 128,
     "verification": {
       "990_pf": {
@@ -28505,7 +28453,7 @@
     "notes": "eBay. HP.",
     "scrooge_score": 84.41558441558442,
     "giving_rate_pct": 8.5714,
-    "scrooge_rank": 1068,
+    "scrooge_rank": 1067,
     "forbes_rank": 1595
   },
   {
@@ -28529,7 +28477,7 @@
     "notes": "Vedanta Resources.",
     "scrooge_score": 84.4155844155844,
     "giving_rate_pct": 5.4545,
-    "scrooge_rank": 1069,
+    "scrooge_rank": 1068,
     "forbes_rank": 1195
   },
   {
@@ -28554,7 +28502,7 @@
     "notes": "Kinder Morgan. Giving Pledge.",
     "scrooge_score": 84.375,
     "giving_rate_pct": 6.25,
-    "scrooge_rank": 1070,
+    "scrooge_rank": 1069,
     "forbes_rank": 1518
   },
   {
@@ -28576,7 +28524,7 @@
     "notes": "Miele premium appliances.",
     "scrooge_score": 84.375,
     "giving_rate_pct": 3.125,
-    "scrooge_rank": 1071,
+    "scrooge_rank": 1070,
     "forbes_rank": 997
   },
   {
@@ -28598,7 +28546,7 @@
     "notes": "Miele family.",
     "scrooge_score": 84.375,
     "giving_rate_pct": 3.125,
-    "scrooge_rank": 1072,
+    "scrooge_rank": 1071,
     "forbes_rank": 998
   },
   {
@@ -28621,7 +28569,7 @@
     "notes": "TD Ameritrade. Chicago Cubs family. Giving Pledge.",
     "scrooge_score": 84.21052631578947,
     "giving_rate_pct": 7.8947,
-    "scrooge_rank": 1073,
+    "scrooge_rank": 1072,
     "forbes_rank": 680
   },
   {
@@ -28645,7 +28593,7 @@
     "notes": "Danaher. Glenstone Museum.",
     "scrooge_score": 84.12698412698413,
     "giving_rate_pct": 7.1429,
-    "scrooge_rank": 1074,
+    "scrooge_rank": 1073,
     "forbes_rank": 1557
   },
   {
@@ -28669,8 +28617,71 @@
     "notes": "Franklin Templeton.",
     "scrooge_score": 84.12698412698413,
     "giving_rate_pct": 7.1429,
-    "scrooge_rank": 1075,
+    "scrooge_rank": 1074,
     "forbes_rank": 1525
+  },
+  {
+    "rank": 1588,
+    "name": "Eric Schmidt",
+    "net_worth_billions": 25.0,
+    "country": "United States",
+    "source_of_wealth": "Google",
+    "liquidity_factor": 0.55,
+    "total_lifetime_giving_millions": 2200,
+    "giving_breakdown": {
+      "schmidt_fund_strategic_innovation_cumulative": 900,
+      "schmidt_family_foundation_cumulative": 600,
+      "broad_institute": 150,
+      "ai2050_program": 125,
+      "ai_postdoc_fellowship": 148,
+      "princeton": 30,
+      "uc_berkeley": 13,
+      "schmidt_ocean_institute": 100,
+      "rise_program": 100,
+      "other": 34,
+      "notes": "DEEP VERIFIED Jan 2026: Former Google CEO (~$30B). TWO main foundations - Schmidt Family Foundation (EIN 20-4170342): $1.99B assets, $201M disbursements 2024. Schmidt Fund for Strategic Innovation (EIN 46-3460261): $1.59B assets, $316M disbursements 2024. Combined: ~$517M/yr, ~$2.2B cumulative. Broad $150M (2021). AI2050 $125M. Rise $1B pledge. 11th Hour Project (SFF program): $138M grants 2023. NOT Giving Pledge. Forbes Philanthropy Score: 2."
+    },
+    "sources": [
+      "https://projects.propublica.org/nonprofits/organizations/463460261",
+      "https://projects.propublica.org/nonprofits/organizations/204170342",
+      "https://www.philanthropy.com/article/eric-and-wendy-schmidt-pledge-1-billion-to-advance-young-people-public-service-and-other-causes/"
+    ],
+    "giving_pledge_signed": true,
+    "years_as_billionaire": 15,
+    "notes": "Google. Schmidt Futures. Giving Pledge.",
+    "scrooge_score": 84.00000000000001,
+    "giving_rate_pct": 8.799999999999999,
+    "scrooge_rank": 1075,
+    "forbes_rank": 1588,
+    "verification": {
+      "990_pf": {
+        "status": "found",
+        "amount_millions": 517,
+        "ein": "46-3460261",
+        "note": "Schmidt Fund: $316M (2024). Schmidt Family Foundation (20-4170342): $201M (2024). Combined: $517M/yr",
+        "url": "https://projects.propublica.org/nonprofits/organizations/463460261"
+      },
+      "sec_form4": {
+        "status": "not_found",
+        "note": "No longer at Google, most giving from prior wealth",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 2200,
+        "note": "Two foundations: $1.99B + $1.59B = $3.58B assets. Combined ~$517M/yr disbursements.",
+        "url": "https://projects.propublica.org/nonprofits/organizations/204170342"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 2200,
+        "note": "2019 #2 US philanthropist, Broad/Rise/AI gifts covered. Chronicle: $2.2B poured into philanthropies since 2019.",
+        "url": "https://www.philanthropy.com/article/eric-and-wendy-schmidt-pledge-1-billion-to-advance-young-people-public-service-and-other-causes/"
+      }
+    },
+    "verifiable_giving_millions": 2200,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 451,

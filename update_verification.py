@@ -1334,23 +1334,25 @@ VERIFICATION_DATA = {
         ]
     },
     "Gerard Wertheimer": {
-        "total_lifetime_giving_millions": 60,
+        "total_lifetime_giving_millions": 2,
         "giving_breakdown": {
-            "fondation_chanel_annual_share": 55,
-            "israel_humanitarian_2023_share": 2,
-            "orphanage_santo_domingo": 1,
-            "game_conservancy_action_innocence": 2,
-            "notes": "VERIFIED Jan 2026: Same as Alain - philanthropy via Fondation Chanel (corporate). Gerard's wife Valerie manages orphanage in Dominican Republic. Personal giving undisclosed. Wertheimer-Stiftung (Switzerland, 2007) has minimal documented activity."
+            "fondation_chanel_share": 0,  # CORPORATE foundation - should NOT be attributed personally
+            "orphanage_santo_domingo": 1,  # Wife Valerie's charitable work
+            "game_conservancy_action_innocence": 1,
+            "notes": "DEEP VERIFIED Jan 2026: CRITICAL - Fondation Chanel (EIN 81-1568389, UK Charity 1126tried185) is CORPORATE, not personal. Should NOT be counted as Wertheimer personal giving. Pierre J. Wertheimer Foundation (EIN 13-6161226) is essentially dormant ($0 assets). Only verifiable personal giving: wife Valerie's orphanage work (~$1M), minor documented gifts (~$1M). The Wertheimers are 'fashion's quietest billionaires' - famously private, no Giving Pledge, no Notre Dame donation despite $100B+ combined wealth."
         },
         "verification": {
-            "990_pf": {"status": "not_applicable", "note": "No personal US foundation. See Pierre J. Wertheimer Foundation under Alain.", "url": None},
+            "990_pf": {"status": "found", "amount_millions": 0, "ein": "13-6161226", "note": "Pierre J. Wertheimer Foundation: $0 assets, dormant since 2021. Fondation Chanel (EIN 81-1568389) is CORPORATE - not counted.", "url": "https://projects.propublica.org/nonprofits/organizations/136161226"},
             "sec_form4": {"status": "not_applicable", "note": "Chanel is private", "url": None},
-            "foundation_reports": {"status": "partial", "amount_millions": 60, "sources": ["Fondation Chanel", "Wertheimer-Stiftung"], "note": "Swiss foundation has minimal public records. Corporate Fondation Chanel is primary vehicle.", "url": "https://www.fundraiso.com/en/organisations/wertheimer-stiftung"},
-            "news_verified": {"status": "partial", "amount_millions": 2, "sources": ["WWD", "Prabook"], "url": None}
+            "foundation_reports": {"status": "found", "amount_millions": 0, "sources": ["ProPublica 990-PF", "UK Charity Commission"], "note": "Fondation Chanel £156.9M assets, £15.6M/yr grants - but this is CORPORATE philanthropy from Chanel profits, NOT personal Wertheimer giving.", "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"},
+            "news_verified": {"status": "found", "amount_millions": 2, "sources": ["Le Monde 2024", "NYT 2002", "Patronview"], "note": "Alain Wertheimer documented at ~$7,500 total (Carnegie Hall, MoMA). Gerard has NO documented personal giving.", "url": "https://www.lemonde.fr/en/summer-reads/article/2024/08/23/chanel-s-secretive-owners-the-wertheimers_6720656_183.html"}
         },
         "sources": [
-            "https://wwd.com/business-news/markets/fashion-companies-humanitarian-donations-israel-hamas-war-1235876757/"
-        ]
+            "https://projects.propublica.org/nonprofits/organizations/136161226",
+            "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/",
+            "https://www.lemonde.fr/en/summer-reads/article/2024/08/23/chanel-s-secretive-owners-the-wertheimers_6720656_183.html"
+        ],
+        "giving_pledge": "no"
     },
     "François Pinault": {
         "total_lifetime_giving_millions": 104,
@@ -1478,25 +1480,27 @@ VERIFICATION_DATA = {
         "giving_pledge": "no"
     },
     "Diane Hendricks": {
-        "total_lifetime_giving_millions": 75,
+        "total_lifetime_giving_millions": 32,
         "giving_breakdown": {
-            "hendricks_family_foundation_cumulative": 40,  # ~$3-5M/yr since 2004
-            "beloit_health_system": 4,  # $3M heart center + $1M family care
-            "uw_madison_breast_cancer": 1.75,
-            "beloit_college_arts_center": 30,  # "Tens of millions" - largest gift in college history
-            "janesville_woodman": 0.5,
-            "other_community": 5,
-            "notes": "DEEP VERIFIED Jan 2026: ABC Supply co-founder (~$22B). Hendricks Family Foundation Inc (EIN 20-0874851): $73.7M assets, $4.5M disbursements (2024). Political giving EXCEEDS charitable: $50-70M+ to Republicans (2012-2024) vs $40-55M charitable lifetime. $9.5-13.1M political in 2019-2020 alone vs $1.5-2M charitable. Focus: Beloit/Rock County WI (health, education). ABC Supply corporate (separate): Homes For Our Troops $5.2M (2024). NOT Giving Pledge."
+            "hendricks_family_foundation_cumulative": 22.7,  # Per foundation website (2004-2024)
+            "beloit_health_system": 4,  # $3M heart hospital (2016) + $1M family care (2019)
+            "beloit_public_library": 1,  # Discovery PLAYce (2024)
+            "humane_society_sw_wi": 1,  # $1M challenge grant over 5 years (2023)
+            "beloit_college_in_kind": 3,  # Hendricks Center for Arts - building gift, not cash
+            "janesville_woodman": 0.5,  # 2025
+            "other_community": 0.8,  # Beloit Art Center, Lincoln Academy land, etc.
+            "notes": "DEEP VERIFIED Jan 2026: ABC Supply co-founder (~$22B). Hendricks Family Foundation Inc (EIN 20-0874851): $73.7M assets, cumulative giving $22.7M (per foundation website, Beloit Daily News 2025). Named gifts: Beloit Health $4M, Library $1M, Humane Society $1M. Beloit College arts center was building/renovation GIFT, not cash. Political giving exceeds charitable: $50-70M+ to Republicans (2012-2024). NOT Giving Pledge."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 4.5, "ein": "20-0874851", "note": "Hendricks Family Foundation Inc: $73.7M assets, $4.5M disbursements (2024), $14.5M (2020-2024 cumulative)", "url": "https://projects.propublica.org/nonprofits/organizations/200874851"},
+            "990_pf": {"status": "found", "amount_millions": 22.7, "ein": "20-0874851", "note": "Hendricks Family Foundation Inc: $73.7M assets, $4.5M disbursements (2024), $22.7M cumulative (2004-2024) per foundation website", "url": "https://projects.propublica.org/nonprofits/organizations/200874851"},
             "sec_form4": {"status": "not_applicable", "note": "ABC Supply is private", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 75, "sources": ["ProPublica 990-PF", "Inside Philanthropy"], "note": "Foundation + named gifts (Beloit College arts center, health system)", "url": "https://projects.propublica.org/nonprofits/organizations/200874851"},
-            "news_verified": {"status": "found", "amount_millions": 75, "sources": ["Wisconsin Democracy Campaign", "OpenSecrets", "Beloit Daily News"], "note": "Political giving well-documented exceeds charitable", "url": None}
+            "foundation_reports": {"status": "found", "amount_millions": 22.7, "sources": ["ProPublica 990-PF", "Hendricks Family Foundation website"], "note": "$22.7M foundation + ~$9M named gifts = ~$32M total", "url": "https://hendricksfamilyfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 32, "sources": ["Beloit Daily News", "Beloit Health System", "Inside Philanthropy"], "note": "Named gifts documented: $3M heart hospital, $1M family care, $1M library, $1M humane society", "url": "https://beloithealthsystem.planmygift.org/your-gifts-at-work/hendricks-family-heart-hospital"}
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/200874851",
-            "https://www.insidephilanthropy.com/home/diane-hendricks-giving"
+            "https://hendricksfamilyfoundation.org/",
+            "https://beloithealthsystem.planmygift.org/your-gifts-at-work/hendricks-family-heart-hospital"
         ],
         "giving_pledge": "no"
     },
@@ -1786,22 +1790,6 @@ VERIFICATION_DATA = {
             "https://www.krone.at/3537993"
         ]
     },
-    "Gerard Wertheimer": {
-        "total_lifetime_giving_millions": 0,
-        "giving_breakdown": {
-            "personal_giving_verified": 0,
-            "notes": "VERIFIED Jan 2026: NO documented personal charitable giving. All philanthropy flows through Chanel corporate: Fondation Chanel (UK, £156M assets, £15.6M/yr grants), Chanel Culture Fund. Pierre J Wertheimer Foundation (US) dormant ($0 assets). Notable: Absent from Notre-Dame pledges 2019. Alain has ~$7.5K documented (trivial). Extreme privacy."
-        },
-        "verification": {
-            "990_pf": {"status": "found", "amount_millions": 0, "ein": "13-6161226", "note": "Pierre J Wertheimer Foundation: Dormant, $0 assets (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/136161226"},
-            "sec_form4": {"status": "not_applicable", "note": "Chanel is private", "url": None},
-            "foundation_reports": {"status": "not_found", "note": "Corporate giving through Fondation Chanel, not personal foundation", "url": None},
-            "news_verified": {"status": "not_found", "note": "No documented personal giving; extreme privacy", "url": None}
-        },
-        "sources": [
-            "https://projects.propublica.org/nonprofits/organizations/136161226"
-        ]
-    },
     "Emmanuel Besnier": {
         "total_lifetime_giving_millions": 1,
         "giving_breakdown": {
@@ -1914,24 +1902,6 @@ VERIFICATION_DATA = {
         "sources": [
             "https://www.scmp.com/tech/big-tech/article/3126665/pinduoduo-founder-colin-huang-pledges-us100-million-create-research",
             "https://projects.propublica.org/nonprofits/organizations/931924982"
-        ]
-    },
-    "Gerard Wertheimer": {
-        "total_lifetime_giving_millions": 0,
-        "giving_breakdown": {
-            "personal_giving": 0,
-            "chanel_corporate_philanthropy": "~$20M/yr via Fondation Chanel (corporate, not personal)",
-            "notes": "VERIFIED Jan 2026: NO documented personal charitable giving. All philanthropy flows through Chanel corporate: Fondation Chanel UK (£156.9M assets, £15.6M/yr grants), Chanel Culture Fund ($1M/yr prizes). Pierre J Wertheimer Foundation (US, EIN 13-6161226) is DORMANT ($0 assets 2023). Alain Wertheimer personal giving: ~$7,500 documented. Family ABSENT from Notre-Dame €500M+ pledge (Arnault/Pinault/Bettencourt all contributed). Extreme secrecy - 'fashion's quietest billionaires'."
-        },
-        "verification": {
-            "990_pf": {"status": "found", "amount_millions": 0, "ein": "13-6161226", "note": "Pierre J Wertheimer Foundation is dormant - $0 assets", "url": "https://projects.propublica.org/nonprofits/organizations/136161226"},
-            "sec_form4": {"status": "not_applicable", "note": "Chanel is private, not US-listed", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 0, "sources": ["UK Charity Commission", "ProPublica"], "note": "Fondation Chanel UK: £156.9M assets BUT this is CORPORATE philanthropy, not Gerard's personal giving", "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"},
-            "news_verified": {"status": "not_found", "amount_millions": 0, "sources": ["Le Monde", "Business of Fashion"], "url": "https://www.businessoffashion.com/articles/luxury/rethinking-the-art-world-the-strategy-behind-chanels-arts-and-culture-push/"}
-        },
-        "sources": [
-            "https://projects.propublica.org/nonprofits/organizations/136161226",
-            "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"
         ]
     },
     "Emmanuel Besnier": {
@@ -2231,24 +2201,6 @@ VERIFICATION_DATA = {
         "sources": [
             "https://www.krone.at/3537993",
             "https://en.wikipedia.org/wiki/Mark_Mateschitz"
-        ]
-    },
-    "Gerard Wertheimer": {
-        "total_lifetime_giving_millions": 0,
-        "giving_breakdown": {
-            "personal_giving": 0,
-            "chanel_corporate_giving_annual": 20,
-            "notes": "VERIFIED Jan 2026: NO verifiable personal giving. All philanthropy flows through Chanel corporate: Fondation Chanel (UK) has £157M assets, distributes £15.6M/year (~$20M). Pierre J Wertheimer Foundation (EIN 13-6161226) is DORMANT - $0 assets. Alain Wertheimer's documented personal giving: ~$7,500 total (Carnegie Hall, MoMA). Wertheimers notably ABSENT from Notre-Dame reconstruction pledges (2019). Extreme privacy - no personal foundations, no public giving announcements."
-        },
-        "verification": {
-            "990_pf": {"status": "found", "amount_millions": 0, "ein": "13-6161226", "note": "Pierre J Wertheimer Foundation is dormant - $0 assets", "url": "https://projects.propublica.org/nonprofits/organizations/136161226"},
-            "sec_form4": {"status": "not_applicable", "note": "Chanel is private", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 0, "sources": ["UK Charity Commission - Fondation Chanel"], "note": "All giving is Chanel corporate (£156.9M assets), not personal", "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"},
-            "news_verified": {"status": "not_found", "amount_millions": 0, "note": "No verifiable personal donations found", "url": None}
-        },
-        "sources": [
-            "https://projects.propublica.org/nonprofits/organizations/136161226",
-            "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5174451/full-print/"
         ]
     },
     "Emmanuel Besnier": {
@@ -3415,30 +3367,30 @@ VERIFICATION_DATA = {
         "giving_pledge": "no"
     },
     "Eric Schmidt": {
-        "total_lifetime_giving_millions": 2000,
+        "total_lifetime_giving_millions": 2200,
         "giving_breakdown": {
-            "schmidt_fund_strategic_innovation": 600,  # $195M/yr grants
-            "schmidt_family_foundation": 400,  # Ongoing, 11th Hour Project
+            "schmidt_fund_strategic_innovation_cumulative": 900,  # EIN 46-3460261: $316M (2024), $255M (2023), cumulative ~$900M
+            "schmidt_family_foundation_cumulative": 600,  # EIN 20-4170342: $201M (2024), $152M (2023), 11th Hour Project
             "broad_institute": 150,  # Endowment gift 2021
-            "schmidt_futures_ai": 400,  # $125M + $148M + other AI
+            "ai2050_program": 125,  # $125M over 5 years
+            "ai_postdoc_fellowship": 148,  # 9 universities
             "princeton": 30,  # Multiple gifts
-            "yale": 15,
-            "uc_berkeley": 13,
+            "uc_berkeley": 13,  # Schmidt Center
             "schmidt_ocean_institute": 100,  # Operating foundation
-            "rise_program": 100,  # $1B commitment with Rhodes Trust
-            "other_universities": 50,
-            "notes": "VERIFIED Jan 2026: Former Google CEO (~$30B). Three foundations: Schmidt Family Foundation (EIN 20-4170342), Schmidt Fund for Strategic Innovation (EIN 46-3460261), Schmidt Ocean Institute (EIN 26-4562328). Pre-2019: ~$1B given. 2019: $1.3B (#2 US philanthropist that year). $1B Rise program with Rhodes Trust. Broad Institute $150M. Major AI/science funder. NOT Giving Pledge despite peer pressure."
+            "rise_program": 100,  # $1B commitment with Rhodes Trust (annual portion)
+            "other": 34,
+            "notes": "DEEP VERIFIED Jan 2026: Former Google CEO (~$30B). TWO main foundations - Schmidt Family Foundation (EIN 20-4170342): $1.99B assets, $201M disbursements 2024. Schmidt Fund for Strategic Innovation (EIN 46-3460261): $1.59B assets, $316M disbursements 2024. Combined: ~$517M/yr, ~$2.2B cumulative. Broad $150M (2021). AI2050 $125M. Rise $1B pledge. 11th Hour Project (SFF program): $138M grants 2023. NOT Giving Pledge. Forbes Philanthropy Score: 2."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 195, "ein": "46-3460261", "note": "Schmidt Fund for Strategic Innovation: $195M grants (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full"},
+            "990_pf": {"status": "found", "amount_millions": 517, "ein": "46-3460261", "note": "Schmidt Fund: $316M (2024). Schmidt Family Foundation (20-4170342): $201M (2024). Combined: $517M/yr", "url": "https://projects.propublica.org/nonprofits/organizations/463460261"},
             "sec_form4": {"status": "not_found", "note": "No longer at Google, most giving from prior wealth", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 2000, "note": "Three foundations + named gifts. $1B pre-2019, $1.3B in 2019.", "url": "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full"},
-            "news_verified": {"status": "found", "amount_millions": 2000, "note": "2019 #2 US philanthropist, Broad/Rise/AI gifts widely covered", "url": None}
+            "foundation_reports": {"status": "found", "amount_millions": 2200, "note": "Two foundations: $1.99B + $1.59B = $3.58B assets. Combined ~$517M/yr disbursements.", "url": "https://projects.propublica.org/nonprofits/organizations/204170342"},
+            "news_verified": {"status": "found", "amount_millions": 2200, "note": "2019 #2 US philanthropist, Broad/Rise/AI gifts covered. Chronicle: $2.2B poured into philanthropies since 2019.", "url": "https://www.philanthropy.com/article/eric-and-wendy-schmidt-pledge-1-billion-to-advance-young-people-public-service-and-other-causes/"}
         },
         "sources": [
-            "https://projects.propublica.org/nonprofits/organizations/463460261/202543219349108364/full",
-            "https://projects.propublica.org/nonprofits/organizations/204170342/202513219349104316/full",
-            "https://projects.propublica.org/nonprofits/organizations/264562328/202513199349101171/full"
+            "https://projects.propublica.org/nonprofits/organizations/463460261",
+            "https://projects.propublica.org/nonprofits/organizations/204170342",
+            "https://www.philanthropy.com/article/eric-and-wendy-schmidt-pledge-1-billion-to-advance-young-people-public-service-and-other-causes/"
         ],
         "giving_pledge": "no"
     },
