@@ -489,6 +489,18 @@
             line-height: 1.4;
         }
 
+        .verification-link {
+            font-size: 0.9rem;
+            text-decoration: none;
+            margin-left: auto;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .verification-link:hover {
+            opacity: 1;
+        }
+
         .verification-ein {
             font-size: 0.7rem;
             color: var(--accent-blue);
@@ -1052,6 +1064,7 @@
                     const amount = data.amount_millions;
                     const note = data.note || '';
                     const ein = data.ein || '';
+                    const url = data.url || null;
 
                     let amountDisplay = '-';
                     if (amount !== undefined && amount > 0) {
@@ -1062,11 +1075,18 @@
                         amountDisplay = 'N/A';
                     }
 
+                    // Build URL link if available
+                    let sourceLink = '';
+                    if (url) {
+                        sourceLink = `<a href="${url}" target="_blank" class="verification-link" title="View source">🔗</a>`;
+                    }
+
                     verificationHtml += `
                         <div class="verification-box status-${status}">
                             <div class="verification-header">
                                 <span class="verification-source">${label}</span>
                                 <span class="verification-status ${status}">${statusLabel}</span>
+                                ${sourceLink}
                             </div>
                             <div class="verification-amount">${amountDisplay}</div>
                             ${ein ? `<div class="verification-ein">EIN: ${ein}</div>` : ''}
