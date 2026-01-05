@@ -325,8 +325,11 @@ VERIFICATION_DATA = {
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/261551239",
-            "https://www.grantmakers.io/profiles/v0/261551239-jen-hsun-lori-huang-foundation/"
-        ]
+            "https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center",
+            "https://sfstandard.com/2025/02/20/nvidia-ceo-saves-arts-college-cca/",
+            "https://www.cnbc.com/2025/06/12/nvidia-stock-jensen-huang-charitable-foundation.html"
+        ],
+        "giving_pledge": "no"
     },
     "Michael Dell": {
         "total_lifetime_giving_millions": 2800,
@@ -334,21 +337,24 @@ VERIFICATION_DATA = {
             "dell_foundation_cumulative": 2800,
             "ut_austin_total": 200,
             "dell_medical_school": 50,
-            "dell_childrens_medical": 90,
-            "charter_schools": 120,
-            "homelessness": 38,
-            "notes": "VERIFIED Jan 2026: Michael & Susan Dell Foundation 990-PF shows $2.8B cumulative grants (1999-2024). ~$175-220M/year recent. UT Austin $200M, Dell Medical School $50M."
+            "dell_childrens_medical": 80,
+            "charter_schools": 220,
+            "invest_america_pledge_2025": "6250 (PLEDGE - children's accounts)",
+            "notes": "DEEP VERIFIED Jan 2026: $2.8B disbursed (1999-2025). $308M in 2024 alone. Chronicle: #3 US donor 2023-2024. Dec 2025: $6.25B pledge for children's investment accounts ('Trump Accounts'). UT Austin $200M+, Dell Medical School $50M, Dell Children's $80M+."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 2800, "ein": "36-4336415", "note": "Michael & Susan Dell Foundation: $219M (2024), $172M (2023), $184M (2022)", "url": "https://projects.propublica.org/nonprofits/organizations/364336415"},
-            "sec_form4": {"status": "found", "note": "$3.6B stock gift to foundation in Dec 2023", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045520&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 2800, "sources": ["ProPublica 990-PF", "Dell Foundation"], "note": "Foundation assets $7.77B, grants $2.8B cumulative", "url": "https://www.dell.org/"},
-            "news_verified": {"status": "found", "amount_millions": 2800, "sources": ["TIME", "Forbes", "UT Austin", "Inside Philanthropy"], "url": "https://time.com/collection/time100-philanthropy-2024/6990877/michael-susan-dell/"}
+            "990_pf": {"status": "found", "amount_millions": 308, "ein": "36-4336415", "note": "Michael & Susan Dell Foundation: $308M (2024), $116M (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/364336415"},
+            "sec_form4": {"status": "found", "note": "$1.7B stock gift Oct 2023 (Forbes)", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2800, "sources": ["ProPublica 990-PF", "Dell Foundation", "TIME100"], "note": "Foundation assets $7.5B+, cumulative $2.8B", "url": "https://www.dell.org/"},
+            "news_verified": {"status": "found", "amount_millions": 2800, "sources": ["TIME100 2025", "Chronicle Philanthropy 50", "CNN $6.25B pledge"], "url": "https://time.com/collections/time100-philanthropy-2025/7286083/michael-dell-susan-dell/"}
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/364336415",
-            "https://www.dell.org/"
-        ]
+            "https://time.com/collections/time100-philanthropy-2025/7286083/michael-dell-susan-dell/",
+            "https://www.cnn.com/2025/12/02/business/michael-susan-dell-donation-trump-accounts",
+            "https://news.utexas.edu/2020/01/31/michael-susan-dell-foundation-ut-austin-team-up-to-close-college-graduation-rate-gaps-across-income-levels/"
+        ],
+        "giving_pledge": "yes"
     },
     "Steve Ballmer": {
         "total_lifetime_giving_millions": 5700,
