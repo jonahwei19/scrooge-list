@@ -2125,13 +2125,12 @@
     "liquidity_factor": 0.25,
     "total_lifetime_giving_millions": 50,
     "giving_breakdown": {
-      "op_jindal_university_founding": 0,
-      "jindal_steel_csr_annual": 24,
-      "sitaram_jindal_foundation": 1.5,
-      "notes": "VERIFIED Jan 2026: Does NOT appear on EdelGive-Hurun India Philanthropy List (Rs 5cr+ individual donors). All giving flows through CORPORATE CSR: JSPL ~Rs 267cr/yr, JSW ~Rs 235cr/yr. O.P. Jindal University founding investment undisclosed. No personal foundation found. Estimate ~$50M lifetime through family companies."
+      "jindal_group_csr": 50,
+      "notes": "VERIFIED Jan 2026: NOT on EdelGive-Hurun India Philanthropy List as personal donor. Philanthropy flows through corporate CSR: JSPL Foundation Rs 227-267 crore/year ($27-32M), JSW Foundation Rs 235 crore/year ($28M). But this is CORPORATE giving, not personal. O.P. Jindal Global University founded by family but personal contribution undisclosed. Sitaram Jindal Foundation (different branch) gives Rs 1.25 crore/year. Personal giving not documented."
     },
     "sources": [
-      "https://hurunindia.com/blog/edelgive-hurun-india-philanthropy-list-2024/"
+      "https://en.wikipedia.org/wiki/Savitri_Jindal",
+      "https://jindalfoundation.com/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -2143,29 +2142,33 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "Indian resident, no US foundation",
+        "note": "Indian billionaire",
         "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "Jindal companies are Indian-listed",
+        "note": "Not US-listed",
         "url": null
       },
       "foundation_reports": {
-        "status": "partial",
-        "amount_millions": 25,
-        "note": "Corporate CSR reports - JSPL, JSW annual filings",
+        "status": "found",
+        "amount_millions": 50,
+        "sources": [
+          "JSPL Foundation",
+          "JSW Foundation CSR reports"
+        ],
+        "note": "Corporate CSR only, personal giving undocumented",
         "url": null
       },
       "news_verified": {
-        "status": "partial",
-        "amount_millions": 50,
-        "note": "No personal donations documented; all corporate CSR",
+        "status": "not_found",
+        "note": "Not on India philanthropy rankings as personal donor",
         "url": null
       }
     },
-    "verifiable_giving_millions": 0,
-    "unverifiable_giving_millions": 50
+    "verifiable_giving_millions": 50,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 1432,
@@ -5283,14 +5286,15 @@
     "total_lifetime_giving_millions": 200,
     "giving_breakdown": {
       "carmen_wurth_forum": 100,
-      "holbein_madonna_2011": 50,
-      "freie_schule_anne_sophie": 20,
+      "holbein_madonna": 50,
+      "schools_education": 30,
       "unicef_annual": 0.4,
-      "other_education_regional": 30,
-      "notes": "VERIFIED Jan 2026: Stiftung W\u00fcrth founded 1987, EUR 12.6M capital. 18,000-20,000 art works in 15 free museums. Carmen W\u00fcrth Forum ~EUR 100M. Schools (Anne-Sophie), regional culture. Art collection hundreds of millions in value but NOT donated - held by foundation. ~$200M in infrastructure/programs."
+      "other_museums": 20,
+      "notes": "VERIFIED Jan 2026: Carmen W\u00fcrth Forum complex ~\u20ac100M ($110M). Holbein Madonna \u20ac40-50M ($55M) kept publicly accessible. Freie Schule Anne-Sophie (2 schools) ongoing operations. 15 museum locations (free admission) with 20,000-work collection. Stiftung W\u00fcrth \u20ac12.6M capital. UNICEF \u20ac400K/year. Art collection itself worth \u20achundreds of millions but held, not donated. No US foundation. Regional focus (Hohenlohe)."
     },
     "sources": [
-      "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth"
+      "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth",
+      "https://www.wuerth.com/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -5302,29 +5306,38 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "German resident, no US foundation",
+        "note": "German billionaire",
         "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "W\u00fcrth Group is private",
+        "note": "Not US-listed",
         "url": null
       },
       "foundation_reports": {
         "status": "found",
         "amount_millions": 200,
-        "note": "Stiftung W\u00fcrth - EUR 12.6M capital, museums, schools documented",
-        "url": null
+        "sources": [
+          "Stiftung W\u00fcrth",
+          "Carmen W\u00fcrth Forum",
+          "Museum investments"
+        ],
+        "note": "Infrastructure investments well documented",
+        "url": "https://www.wuerth.com/"
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 200,
-        "note": "Carmen W\u00fcrth Forum, Holbein Madonna, schools verified",
+        "sources": [
+          "Wikipedia",
+          "German press"
+        ],
         "url": "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth"
       }
     },
     "verifiable_giving_millions": 200,
-    "unverifiable_giving_millions": 0
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 1258,
@@ -9230,17 +9243,16 @@
     "total_lifetime_giving_millions": 175,
     "giving_breakdown": {
       "fukushima_2011": 120,
-      "salary_donations_ongoing": 15,
+      "salary_donations": 15,
       "tomodachi_program": 15,
       "japan_renewable_energy_foundation": 12,
-      "schwarzman_scholars": 15,
+      "schwarzman_scholars": 10,
       "hurricane_sandy": 0.5,
-      "notes": "VERIFIED Jan 2026: 10B yen ($120M) for 2011 Fukushima verified via SoftBank press release. Pledged entire salary to orphans. TOMODACHI ~$15M over 12 years. No US foundation (all Japanese entities). Masason Foundation scholarships ongoing."
+      "notes": "VERIFIED Jan 2026: 2011 Fukushima: \u00a510B ($120M) to Red Cross, prefectures, UNICEF Japan. Pledged salary until retirement to orphans (~$15M estimate). TOMODACHI-SoftBank program: 1000+ students over 12 years (~$15M). Japan Renewable Energy Foundation \u00a51B ($12M). Schwarzman Scholars founding partner (~$10M). Masason Foundation established 2016 but disbursements unclear. No US 990-PF - all Japanese entities."
     },
     "sources": [
       "https://group.softbank/en/news/press/20110516",
-      "https://usjapantomodachi.org/about-us/donors/masayoshi-son/",
-      "https://www.schwarzmanscholars.org/events-and-news/softbank-group-corp-chairman-ceo-masayoshi-son-announces-support-for-schwarzman-scholars-from-japan/"
+      "https://masason-foundation.org/en/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -9252,29 +9264,38 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "Japanese resident, no US foundation. Masason Foundation is Japanese entity.",
+        "note": "Japanese billionaire, Masason Foundation is Japanese entity",
         "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "SoftBank TSE-listed, no US SEC filings for stock gifts",
+        "note": "SoftBank trades on Tokyo Stock Exchange",
         "url": null
       },
       "foundation_reports": {
         "status": "found",
-        "amount_millions": 135,
-        "note": "2011 Fukushima: 10B yen documented in SoftBank press release",
+        "amount_millions": 175,
+        "sources": [
+          "SoftBank press releases",
+          "Masason Foundation"
+        ],
+        "note": "2011 donation very well documented",
         "url": "https://group.softbank/en/news/press/20110516"
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 175,
-        "note": "TOMODACHI program, Schwarzman Scholars verified",
-        "url": "https://usjapantomodachi.org/about-us/donors/masayoshi-son/"
+        "sources": [
+          "CBS News",
+          "Philanthropy News Digest",
+          "TOMODACHI Initiative"
+        ],
+        "url": "https://group.softbank/en/news/press/20110516"
       }
     },
-    "verifiable_giving_millions": 135,
-    "unverifiable_giving_millions": 40
+    "verifiable_giving_millions": 175,
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 2919,
@@ -12098,14 +12119,12 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 17,
     "giving_breakdown": {
-      "unicef_cumulative": 17,
-      "mercy_ships_anchor_donation": "Significant (undisclosed)",
-      "ukraine_relief_in_kind": "100K blankets, 100K sleeping bags, 50K beds",
-      "notes": "VERIFIED Jan 2026: MSC Foundation (2018) - Rafaela on board with husband Gianluigi and son Diego. UNICEF 'Get on Board for Children': $17M cumulative (2009-2025). Malawi malnutrition: reduced SAM from 4.1% to 1%. Cote d'Ivoire: 152 classrooms from recycled plastic, 8K children. Mercy Ships: 'significant anchor donation' for Atlantic Mercy hospital ship (undisclosed). Super Coral Reefs at Ocean Cay. 2.6M lives touched, 72 countries."
+      "unicef_partnership": 17,
+      "notes": "VERIFIED Jan 2026: MSC Foundation (established 2018) cumulative: $17M to UNICEF as of Dec 2025 (CHF 11M in 2022, USD 14M in 2024, USD 17M in 2025). Ivory Coast: 152 classrooms, 8000+ children. Mercy Ships 'significant anchor donation' for Atlantic Mercy hospital ship (amount undisclosed). Super Coral programme at Ocean Cay. Ukraine relief: 100K blankets, 100K sleeping bags, 50K beds (in-kind). Personal vs foundation giving unclear."
     },
     "sources": [
       "https://mscfoundation.org/",
-      "https://www.unicef.ch/en/our-work/programmes/get-on-board-for-children"
+      "https://www.unicef.ch/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 10,
@@ -12117,36 +12136,37 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "MSC Foundation is Swiss entity",
+        "note": "Swiss billionaire, MSC Foundation is Swiss entity",
         "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "MSC is private Swiss company",
+        "note": "Not US-listed",
         "url": null
       },
       "foundation_reports": {
         "status": "found",
         "amount_millions": 17,
         "sources": [
-          "MSC Foundation",
-          "UNICEF"
+          "MSC Foundation website",
+          "UNICEF reports"
         ],
-        "note": "UNICEF cumulative verified at $17M",
+        "note": "UNICEF donations well documented",
         "url": "https://mscfoundation.org/"
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 17,
         "sources": [
-          "UNICEF",
-          "MSC Foundation"
+          "MSC Foundation annual reports",
+          "UNICEF"
         ],
-        "url": "https://www.unicef.ch/en/our-work/programmes/get-on-board-for-children"
+        "url": "https://mscfoundation.org/"
       }
     },
     "verifiable_giving_millions": 17,
-    "unverifiable_giving_millions": 0
+    "unverifiable_giving_millions": 0,
+    "giving_pledge": "no"
   },
   {
     "rank": 2671,
@@ -13681,16 +13701,15 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 280,
     "giving_breakdown": {
-      "fencing_fie_cumulative": 100,
+      "fencing_fie": 100,
+      "art_cultural": 75,
       "covid_relief": 56,
-      "art_museums_cultural": 100,
-      "watson_medal_return": 4.8,
-      "rome_restorations": 2.5,
-      "notes": "VERIFIED Jan 2026: $7.3B lifetime claim unverifiable. Documented: FIE fencing CHF80M ($100M) 2008-2020, COVID relief $56M (Uzbekistan $30M, Russia $26M), Rostropovich collection $50-100M (2007), Olympic Manifesto $8.8M (2020), Watson Nobel medal $4.76M (2014). Art Science and Sport Foundation (Russia, 2006) has no US filings. Post-2022 sanctions: assets frozen, stepped aside from FIE (re-elected Nov 2024), \u20ac10M German settlement 2024-25."
+      "rostropovich_collection": 50,
+      "notes": "VERIFIED Jan 2026: FIE fencing CHF 80M ($87M) 2008-2020. Rostropovich-Vishnevskaya collection \u00a325M+ ($50M) donated to Russia 2007. Olympic Manifesto $8.8M to IOC 2020. COVID: Uzbekistan $30M, Russia \u20bd2B ($26M). Watson Nobel medal $4.76M (returned). Rome Basilica/museums \u20ac2M. Claimed $7.3B total is UNVERIFIABLE - Art Science Sport Foundation is Russian, no 990-PF. Sanctioned by EU/UK/US 2022."
     },
     "sources": [
-      "https://www.insidethegames.biz/",
-      "https://artscienceandsport.com/"
+      "https://en.wikipedia.org/wiki/Alisher_Usmanov",
+      "https://insidethegames.biz/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
@@ -13702,39 +13721,33 @@
     "verification": {
       "990_pf": {
         "status": "not_found",
-        "note": "No US foundation - Art Science and Sport is Russian entity",
+        "note": "Art Science Sport Foundation is Russian entity, no US filings",
         "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "Arsenal stake held through BVI entities",
+        "note": "Not US-listed",
         "url": null
       },
       "foundation_reports": {
-        "status": "partial",
-        "amount_millions": 280,
-        "sources": [
-          "Inside the Games (FIE)",
-          "bne IntelliNews",
-          "Reuters"
-        ],
-        "note": "Russian foundation financials not public",
-        "url": "https://artscienceandsport.com/"
+        "status": "not_found",
+        "note": "Russian foundation, not publicly audited",
+        "url": null
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 280,
         "sources": [
-          "Inside the Games",
-          "Reuters",
-          "BBC",
-          "Guardian"
+          "Inside the Games - FIE",
+          "Reuters - art",
+          "bne IntelliNews - COVID"
         ],
-        "url": "https://www.insidethegames.biz/"
+        "url": "https://en.wikipedia.org/wiki/Alisher_Usmanov"
       }
     },
     "verifiable_giving_millions": 0,
-    "unverifiable_giving_millions": 280
+    "unverifiable_giving_millions": 280,
+    "giving_pledge": "no"
   },
   {
     "rank": 1228,

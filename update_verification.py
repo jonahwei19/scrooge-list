@@ -4905,6 +4905,108 @@ VERIFICATION_DATA = {
             "https://en.wikipedia.org/wiki/Colin_Huang"
         ],
         "giving_pledge": "no"
+    },
+    "Savitri Jindal": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "jindal_group_csr": 50,
+            "notes": "VERIFIED Jan 2026: NOT on EdelGive-Hurun India Philanthropy List as personal donor. Philanthropy flows through corporate CSR: JSPL Foundation Rs 227-267 crore/year ($27-32M), JSW Foundation Rs 235 crore/year ($28M). But this is CORPORATE giving, not personal. O.P. Jindal Global University founded by family but personal contribution undisclosed. Sitaram Jindal Foundation (different branch) gives Rs 1.25 crore/year. Personal giving not documented."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 50, "sources": ["JSPL Foundation", "JSW Foundation CSR reports"], "note": "Corporate CSR only, personal giving undocumented", "url": None},
+            "news_verified": {"status": "not_found", "note": "Not on India philanthropy rankings as personal donor", "url": None}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Savitri_Jindal",
+            "https://jindalfoundation.com/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Rafaela Aponte": {
+        "total_lifetime_giving_millions": 17,
+        "giving_breakdown": {
+            "unicef_partnership": 17,
+            "notes": "VERIFIED Jan 2026: MSC Foundation (established 2018) cumulative: $17M to UNICEF as of Dec 2025 (CHF 11M in 2022, USD 14M in 2024, USD 17M in 2025). Ivory Coast: 152 classrooms, 8000+ children. Mercy Ships 'significant anchor donation' for Atlantic Mercy hospital ship (amount undisclosed). Super Coral programme at Ocean Cay. Ukraine relief: 100K blankets, 100K sleeping bags, 50K beds (in-kind). Personal vs foundation giving unclear."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Swiss billionaire, MSC Foundation is Swiss entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 17, "sources": ["MSC Foundation website", "UNICEF reports"], "note": "UNICEF donations well documented", "url": "https://mscfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 17, "sources": ["MSC Foundation annual reports", "UNICEF"], "url": "https://mscfoundation.org/"}
+        },
+        "sources": [
+            "https://mscfoundation.org/",
+            "https://www.unicef.ch/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Reinhold Würth": {
+        "total_lifetime_giving_millions": 200,
+        "giving_breakdown": {
+            "carmen_wurth_forum": 100,
+            "holbein_madonna": 50,
+            "schools_education": 30,
+            "unicef_annual": 0.4,
+            "other_museums": 20,
+            "notes": "VERIFIED Jan 2026: Carmen Würth Forum complex ~€100M ($110M). Holbein Madonna €40-50M ($55M) kept publicly accessible. Freie Schule Anne-Sophie (2 schools) ongoing operations. 15 museum locations (free admission) with 20,000-work collection. Stiftung Würth €12.6M capital. UNICEF €400K/year. Art collection itself worth €hundreds of millions but held, not donated. No US foundation. Regional focus (Hohenlohe)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 200, "sources": ["Stiftung Würth", "Carmen Würth Forum", "Museum investments"], "note": "Infrastructure investments well documented", "url": "https://www.wuerth.com/"},
+            "news_verified": {"status": "found", "amount_millions": 200, "sources": ["Wikipedia", "German press"], "url": "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth"}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Reinhold_W%C3%BCrth",
+            "https://www.wuerth.com/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Masayoshi Son": {
+        "total_lifetime_giving_millions": 175,
+        "giving_breakdown": {
+            "fukushima_2011": 120,
+            "salary_donations": 15,
+            "tomodachi_program": 15,
+            "japan_renewable_energy_foundation": 12,
+            "schwarzman_scholars": 10,
+            "hurricane_sandy": 0.5,
+            "notes": "VERIFIED Jan 2026: 2011 Fukushima: ¥10B ($120M) to Red Cross, prefectures, UNICEF Japan. Pledged salary until retirement to orphans (~$15M estimate). TOMODACHI-SoftBank program: 1000+ students over 12 years (~$15M). Japan Renewable Energy Foundation ¥1B ($12M). Schwarzman Scholars founding partner (~$10M). Masason Foundation established 2016 but disbursements unclear. No US 990-PF - all Japanese entities."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Japanese billionaire, Masason Foundation is Japanese entity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "SoftBank trades on Tokyo Stock Exchange", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 175, "sources": ["SoftBank press releases", "Masason Foundation"], "note": "2011 donation very well documented", "url": "https://group.softbank/en/news/press/20110516"},
+            "news_verified": {"status": "found", "amount_millions": 175, "sources": ["CBS News", "Philanthropy News Digest", "TOMODACHI Initiative"], "url": "https://group.softbank/en/news/press/20110516"}
+        },
+        "sources": [
+            "https://group.softbank/en/news/press/20110516",
+            "https://masason-foundation.org/en/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Alisher Usmanov": {
+        "total_lifetime_giving_millions": 280,
+        "giving_breakdown": {
+            "fencing_fie": 100,
+            "art_cultural": 75,
+            "covid_relief": 56,
+            "rostropovich_collection": 50,
+            "notes": "VERIFIED Jan 2026: FIE fencing CHF 80M ($87M) 2008-2020. Rostropovich-Vishnevskaya collection £25M+ ($50M) donated to Russia 2007. Olympic Manifesto $8.8M to IOC 2020. COVID: Uzbekistan $30M, Russia ₽2B ($26M). Watson Nobel medal $4.76M (returned). Rome Basilica/museums €2M. Claimed $7.3B total is UNVERIFIABLE - Art Science Sport Foundation is Russian, no 990-PF. Sanctioned by EU/UK/US 2022."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "Art Science Sport Foundation is Russian entity, no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Russian foundation, not publicly audited", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 280, "sources": ["Inside the Games - FIE", "Reuters - art", "bne IntelliNews - COVID"], "url": "https://en.wikipedia.org/wiki/Alisher_Usmanov"}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Alisher_Usmanov",
+            "https://insidethegames.biz/"
+        ],
+        "giving_pledge": "no"
     }
 }
 
