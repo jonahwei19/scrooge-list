@@ -7400,6 +7400,309 @@ VERIFICATION_DATA = {
         ],
         "giving_pledge": "no",
         "red_flags": ["Died November 2024", "Some prize money is endowed not disbursed", "Hong Kong giving patterns differ from West"]
+    },
+
+    # Batch 3 - January 2026
+    "Leonid Mikhelson": {
+        "total_lifetime_giving_millions": 550,
+        "confidence": "MEDIUM",
+        "notes": "Russian gas billionaire (Novatek). V-A-C Foundation art philanthropy is dominant: GES-2 Moscow ($500-600M), Venice space, museum partnerships. Victoria Children's Foundation (~$20-50M) since 2003 for orphans. SANCTIONED by UK, Canada, Australia (April 2022) but NOT US/EU due to LNG importance.",
+        "giving_breakdown": {
+            "v_a_c_foundation_art": 450,
+            "victoria_children_foundation": 50,
+            "international_museums": 15,
+            "daf_transfers": 0,
+            "notes": "GES-2 cost never officially disclosed; Mikhelson said initial $300M 'doubled'. Novatek CSR (~$30-50M/year) is CORPORATE, not personal."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Russian - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 500, "note": "V-A-C Foundation GES-2 project ~$500-600M; Victoria Foundation limited disclosure", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 50, "note": "Art Newspaper, NYT confirm major art investment", "url": None}
+        },
+        "sources": [
+            "https://theartnewspaper.com/",
+            "https://www.forbes.com/profile/leonid-mikhelson/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["SANCTIONED by UK/Canada/Australia April 2022", "Art philanthropy serves 'soft power' objectives", "GES-2 costs never officially disclosed", "Wagner/PMC funding allegations (Meduza 2023)", "Novatek CSR is CORPORATE not personal"]
+    },
+    "Leonardo Del Vecchio": {
+        "total_lifetime_giving_millions": 300,
+        "confidence": "MEDIUM",
+        "notes": "Italian eyewear (Luxottica/EssilorLuxottica). Fondazione Leonardo Del Vecchio endowed 2017 with €300M. Major outlays: €100M COVID, €75M Isola Tiberina Hospital Rome, €20M Bocconi. Delfin 5% profits to foundation annually. Died June 2022; widow continues foundation.",
+        "giving_breakdown": {
+            "fondazione_initial_endowment": 330,
+            "covid_response_2020": 110,
+            "isola_tiberina_hospital": 85,
+            "bocconi_scholarships": 22,
+            "daf_transfers": 0,
+            "notes": "EUR figures converted at ~1.1. Endowment disbursements vs assets unclear. Delfin 5% ongoing (~€32-44M/year)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Italian - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Italian/French company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 330, "note": "Fondazione Leonardo Del Vecchio €300M endowment 2017", "url": "https://www.fondazioneldv.org"},
+            "news_verified": {"status": "found", "amount_millions": 200, "note": "COVID €100M, Isola Tiberina €75M, Bocconi €20M", "url": None}
+        },
+        "sources": [
+            "https://www.fondazioneldv.org",
+            "https://www.forbes.com/profile/leonardo-del-vecchio/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Died June 2022", "OneSight is CORPORATE not personal", "Foundation endowment vs actual disbursements unclear", "Claudio Del Vecchio's US foundation is SEPARATE"]
+    },
+    "Dhanin Chearavanont": {
+        "total_lifetime_giving_millions": 35,
+        "confidence": "LOW",
+        "notes": "Thai agribusiness (Charoen Pokphand Group). CRITICAL: Most claimed philanthropy is CP Group CORPORATE CSR, not personal. Verified personal: $21.8M COVID (2020), $2.9M Sichuan earthquake (2013). Daughter Thippaporn featured on Forbes Heroes - philanthropy may be her focus, not his.",
+        "giving_breakdown": {
+            "covid_personal_2020": 22,
+            "sichuan_earthquake_2013": 3,
+            "annual_temple_schools": 10,
+            "daf_transfers": 0,
+            "notes": "CP Group corporate COVID giving ($23M) is SEPARATE. Dhanin Tawee Chearavanont Foundation has no public financials."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Thai - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "Foundation exists but no public financials", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 35, "note": "COVID $21.8M, Sichuan $2.9M, ongoing smaller gifts", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/dhanin-chearavanont/",
+            "https://tatlerasia.com/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Most claimed giving is CP Group CORPORATE CSR", "NOT on Hurun philanthropy list", "Foundation has no public disclosure", "Daughter featured on Forbes Heroes instead", "Thailand has minimal charity transparency"]
+    },
+    "Robert Ng": {
+        "total_lifetime_giving_millions": 350,
+        "confidence": "HIGH",
+        "notes": "Singapore real estate (Far East Organization). Ng Teng Fong Charitable Foundation established 2010, pledged RMB 2B+ (~$280M). Major gifts: $125M Ng Teng Fong Hospital (2011), $52M Tan Tock Seng (2014), $20M National Gallery Singapore, education gifts to China universities. Forbes Asia Heroes 2020, 2025.",
+        "giving_breakdown": {
+            "ng_teng_fong_hospital": 125,
+            "tan_tock_seng_healthcare": 52,
+            "national_gallery_singapore": 20,
+            "education_china": 60,
+            "ai_development_hk_2025": 26,
+            "community_ngo_support": 42,
+            "daf_transfers": 0,
+            "notes": "Some gifts flow through Far East Organization corporate channels but family-controlled."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Hong Kong/Singapore - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 280, "note": "NTFCF pledged RMB 2B+", "url": "https://www.ntfcf.org.hk/"},
+            "news_verified": {"status": "found", "amount_millions": 200, "note": "Hospital gifts verified by institutions", "url": None}
+        },
+        "sources": [
+            "https://www.ntfcf.org.hk/",
+            "https://www.forbes.com/profile/robert-ng/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Corporate/personal giving distinction unclear with family-controlled companies", "Naming rights prominent in giving"]
+    },
+    "Wang Wei": {
+        "total_lifetime_giving_millions": 50,
+        "confidence": "LOW",
+        "notes": "Chinese logistics (SF Express). Extremely low profile - avoided media for decades. SF Express Public Welfare Foundation is CORPORATE (~$100M disbursed), not personal. Only personal: RMB 113M ($16M) in 2019 per Forbes China. NOT on Hurun philanthropy list despite $16B+ wealth.",
+        "giving_breakdown": {
+            "forbes_china_2019_donation": 16,
+            "sf_corporate_foundation_separate": 0,
+            "other_undisclosed": 34,
+            "daf_transfers": 0,
+            "notes": "SF Express Public Welfare Foundation is CORPORATE. Wang Wei's personal contributions undisclosed."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "SF Foundation is corporate, not personal", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 16, "note": "Forbes China 2019: RMB 113M personal donation", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/wang-wei/",
+            "https://www.sfgy.org/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["SF Foundation is CORPORATE not personal", "Only appeared on Forbes China philanthropy list ONCE (2019)", "NOT on Hurun despite $16B wealth", "Famously reclusive - 'good deeds without publicity'", "No personal foundation"]
+    },
+    "François-Henri Pinault": {
+        "total_lifetime_giving_millions": 55,
+        "confidence": "MEDIUM",
+        "notes": "French luxury (Kering - Gucci, Balenciaga). NOT to be confused with father François Pinault (art collector). Personal giving: €100M Notre-Dame (shared with father via Artemis, ~€50M his share). Kering Foundation ($42M since 2008) is CORPORATE. Wife Salma Hayek has separate foundation.",
+        "giving_breakdown": {
+            "notre_dame_personal_share": 55,
+            "beirut_2020": 1,
+            "kering_foundation_corporate_separate": 0,
+            "daf_transfers": 0,
+            "notes": "Kering Foundation €38M+ is CORPORATE funded. Notre-Dame was joint with father - attribution split unclear."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "French - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "French company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 0, "note": "Kering Foundation is CORPORATE", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 55, "note": "Notre-Dame €100M shared with father via Artemis", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/francois-henri-pinault/",
+            "https://www.kering.com/en/sustainability/kering-foundation/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Kering Foundation is CORPORATE not personal", "Notre-Dame attribution shared with father", "Art collection/museums belong to FATHER not him", "Only one large verified personal gift", "~0.6% of wealth given lifetime"]
+    },
+    "Wang Xing": {
+        "total_lifetime_giving_millions": 10,
+        "confidence": "LOW",
+        "notes": "Chinese tech (Meituan). CLASSIC DAF WAREHOUSING: Transferred $2.3B in Meituan stock to Wang Xing Foundation in 2021, but ZERO verified disbursements. Foundation has no website, no reports, no disclosed grantees. Disappeared from Hurun lists 2023-2024. Only verified direct giving: ~$8M Longyan school.",
+        "giving_breakdown": {
+            "longyan_school_2021": 8,
+            "tsinghua_xinghua_fund": 2,
+            "daf_transfers": 2270,
+            "notes": "CRITICAL: $2.3B stock transferred to own foundation in 2021 during antitrust investigation. NO disbursements documented 4 years later."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": 0, "note": "Wang Xing Foundation has NO public disclosure - no website, no reports", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 10, "note": "Longyan school RMB 50M, Tsinghua support", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/wang-xing/",
+            "https://chinaphilanthropy.ash.harvard.edu/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["CLASSIC DAF WAREHOUSING: $2.3B transferred, $0 disbursements tracked", "Foundation has NO website, NO reports, NO grantees disclosed", "Disappeared from Hurun 2023-2024 philanthropy lists", "June 2021 transfer coincided with antitrust probe - reputation management?", "Meituan corporate CSR is SEPARATE"]
+    },
+    "Zhang Zhidong": {
+        "total_lifetime_giving_millions": 18,
+        "confidence": "MEDIUM",
+        "notes": "Chinese tech (Tencent co-founder). Very low philanthropic profile vs peers. Only verified: $7.6M Shenzhen University (2018, joint with founders), $7.5M Wuhan College (2016). NO personal foundation unlike Chen Yidan ($1B+) or Ma Huateng ($2B+). Described as 'not widely publicized' giving.",
+        "giving_breakdown": {
+            "shenzhen_university_2018": 8,
+            "wuhan_college_2016": 8,
+            "earlier_joint_donations": 2,
+            "daf_transfers": 0,
+            "notes": "Tencent Charity Foundation is corporate. Chen Yidan is the philanthropic founder, not Zhang."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": 0, "note": "NO personal foundation exists", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 18, "note": "Harvard China Philanthropy database, Tencent announcements", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/zhang-zhidong/",
+            "https://chinaphilanthropy.ash.harvard.edu/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["~0.2% of $8B wealth given", "NO personal foundation unlike Tencent peers", "Very low profile vs Chen Yidan ($1B+) and Ma Huateng ($2B+)", "Limited transparency - 'not widely publicized'"]
+    },
+    "Andrew Forrest": {
+        "total_lifetime_giving_millions": 1800,
+        "confidence": "HIGH",
+        "notes": "Australian mining (Fortescue Metals). Minderoo Foundation endowed with A$7.2B (~$4.8B) since 2001 - largest in Australian history. BUT: Only ~A$210M/year disbursed (2.6% payout rate vs US 5% requirement). First Australians to sign Giving Pledge (2013). Walk Free anti-slavery, bushfire relief, COVID supplies.",
+        "giving_breakdown": {
+            "minderoo_cumulative_disbursements": 1500,
+            "bushfire_relief_2020": 47,
+            "covid_supplies_2020": 107,
+            "forrest_research_foundation": 43,
+            "gaza_humanitarian_2024": 10,
+            "daf_transfers": 3000,
+            "notes": "A$7.2B transferred to Minderoo, but cumulative DISBURSEMENTS only ~A$1.5-2B. Endowment now A$8.2B with 2.6% payout."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Australian - no US filings. ACNC registered.", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Australian company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1500, "note": "Minderoo audited reports show ~A$210-268M annual spending", "url": "https://cdn.minderoo.org/"},
+            "news_verified": {"status": "found", "amount_millions": 200, "note": "Bushfire, COVID, Walk Free well-documented", "url": None}
+        },
+        "sources": [
+            "https://www.minderoo.org/",
+            "https://givingpledge.org/pledger?pledgerId=196",
+            "https://www.afr.com/"
+        ],
+        "giving_pledge": "yes",
+        "red_flags": ["LOW 2.6% payout rate on A$8.2B endowment", "AFR: 'sitting on billions' criticism", "Transfer to foundation is NOT same as disbursement", "Some COVID supplies were government-reimbursed at cost"]
+    },
+    "Joseph Lau": {
+        "total_lifetime_giving_millions": 640,
+        "confidence": "MEDIUM-HIGH",
+        "notes": "Hong Kong real estate (Chinese Estates). Joseph Lau Luen Hung Charitable Trust claims HK$5B (~$640M) since 1991. Major verified: EdUHK HK$400M (2023), CityU HK$125M (2011), Fresh Wave Film HK$10M. MAJOR RED FLAG: Convicted of Macau bribery 2014, remains fugitive.",
+        "giving_breakdown": {
+            "eduhk_campus_2023": 51,
+            "cityu_2011": 16,
+            "healthcare": 128,
+            "education": 128,
+            "arts_culture": 10,
+            "daf_transfers": 0,
+            "notes": "Son Lau Ming-wai donations ($50M Karolinska, $13M SOAS) are SEPARATE from Joseph."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Hong Kong - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "HK securities", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 640, "note": "Trust Director claims HK$5B since 1991", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 200, "note": "EdUHK, CityU, Fresh Wave verified by institutions", "url": None}
+        },
+        "sources": [
+            "https://www.cityu.edu.hk/",
+            "https://www.forbes.com/profile/joseph-lau/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["CONVICTED of Macau bribery 2014 - remains FUGITIVE", "Panama Papers connection", "NOT on Forbes Heroes of Philanthropy despite scale", "Son's donations sometimes conflated with his"]
+    },
+    "Peter Woo": {
+        "total_lifetime_giving_millions": 90,
+        "confidence": "MEDIUM",
+        "notes": "Hong Kong real estate (Wheelock, Wharf). Major giving: Project WeCan education HK$500M (but flows through Wharf corporate), Prince of Wales Hospital HK$120M (1992, with wife), Environment Fund HK$50M (1994). 'Quiet philanthropist' - likely additional undisclosed.",
+        "giving_breakdown": {
+            "prince_of_wales_hospital_1992": 15,
+            "environment_fund_seed_1994": 6,
+            "project_wecan_personal_share": 32,
+            "other": 35,
+            "daf_transfers": 0,
+            "notes": "Project WeCan HK$500M flows through Wharf Holdings - attribution ambiguous between corporate and personal."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Hong Kong - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "HK securities", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "No formal private foundation with filings", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 90, "note": "Hospital, environment fund, Project WeCan verified", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/peter-woo/",
+            "https://tatlerasia.com/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Project WeCan attribution unclear - corporate vs personal", "No formal private foundation", "'PW Philanthropies' $1.8B claim was FRAUD/identity theft", "Post-2015 giving less documented"]
+    },
+    "Yuri Milner": {
+        "total_lifetime_giving_millions": 500,
+        "confidence": "HIGH",
+        "notes": "Russian-born Israeli tech investor (DST Global). Breakthrough Prize co-founder ($326M total, ~$65M his share). Breakthrough Initiatives: $100M Listen (SETI), $100M Starshot. Tech for Refugees $100M (2022). Israel giving $23M+. Giving Pledge signatory 2012. Renounced Russian citizenship Oct 2022.",
+        "giving_breakdown": {
+            "breakthrough_initiatives_seti_starshot": 200,
+            "breakthrough_prize_personal_share": 65,
+            "tech_for_refugees_2022": 100,
+            "israel_philanthropy": 23,
+            "ukraine_humanitarian": 15,
+            "covid_india": 1,
+            "daf_transfers": 0,
+            "notes": "Breakthrough Prize is co-funded by 5+ families - Milner's share ~15-25%. Foundation has 990 filings."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 100, "note": "Breakthrough Prize Foundation EIN 46-0677985", "url": "https://projects.propublica.org/nonprofits/organizations/460677985"},
+            "sec_form4": {"status": "not_applicable", "note": "Private investments", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 300, "note": "Breakthrough Foundation audited 990s, ~$40-70M annual", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 200, "note": "SETI $100M, Starshot $100M, Tech for Refugees $100M well-documented", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/460677985",
+            "https://givingpledge.org/pledger?pledgerId=246",
+            "https://breakthroughprize.org/"
+        ],
+        "giving_pledge": "yes",
+        "red_flags": ["Early DST funding included Russian state-linked capital (2009-2011)", "Paradise Papers scrutiny", "Breakthrough Prize credit shared among 5+ co-founders"]
     }
 }
 

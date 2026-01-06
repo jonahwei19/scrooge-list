@@ -13,10 +13,25 @@ Search for: "[Name] foundation", "[Name] family foundation", "[Name] philanthrop
 Look for: 990-PF filings on ProPublica, foundation websites, news about foundation grants
 Output: Foundation names, total assets, annual grants paid
 
-### 2. DAFS (Donor-Advised Funds)
+### 2. DAFS (Donor-Advised Funds) — TRACK SEPARATELY
 Search for: "[Name] donor advised fund", "[Name] Fidelity Charitable", "[Name] Schwab Charitable"
-Reality: DAFs are nearly opaque. Look for news mentions of DAF contributions.
-Output: Any reported DAF activity, otherwise note "no observable data"
+
+**CRITICAL:** DAF transfers are "parked" giving — the donor got a tax deduction but operating charities haven't received the money. Track these SEPARATELY from actual giving.
+
+Look for:
+- Foundation 990-PF grants TO DAF sponsors (Fidelity Charitable, Schwab Charitable, Vanguard Charitable, National Philanthropic Trust, SVCF, Goldman Sachs Philanthropy Fund)
+- SEC Form 4 stock gifts TO DAF sponsors (transaction code "G")
+- Any news about contributions TO DAFs
+
+**DAF Sponsor EINs:**
+- Fidelity Charitable: 11-0303001
+- Schwab Charitable: 31-1640316
+- Vanguard Charitable: 23-2888152
+- National Philanthropic Trust: 52-1934107
+- Silicon Valley Community Foundation: 20-5205488
+- Goldman Sachs Philanthropy Fund: 45-2831855
+
+Output: Amount transferred to DAFs (track in `giving_breakdown.daf_transfers`, NOT in total_lifetime_giving)
 
 ### 3. DIRECT_GIFTS
 Search for: "[Name] donation", "[Name] gave", "[Name] pledged", "[Name] million gift", "[Name] philanthropy"

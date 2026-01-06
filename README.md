@@ -136,20 +136,27 @@ python3 verify_billionaire.py --batch          # All suspicious entries
 - **Sortable columns** — rank by any metric
 - **Giving pipeline UI** — click any billionaire to see giving breakdown by type with source verification
 
-### Verifiable vs. Unverifiable Giving
+### Verifiable vs. DAF-Parked Giving
 
-Each billionaire's giving is now split into two categories:
+Each billionaire's giving is split into two categories:
 
-| Category | Sources | Display |
-|----------|---------|---------|
-| **Verifiable** | 990-PF filings, SEC Form 4 | Green column |
-| **Unverifiable** | News/announcements only | Yellow column |
+| Category | Definition | Display |
+|----------|------------|---------|
+| **Verifiable** | All giving to operating charities (foundation grants, direct gifts, news-verified gifts) | Green column |
+| **DAF Parked** | Money transferred to DAF sponsors that hasn't reached operating charities | Yellow column |
+
+**Why this matters:** DAF (Donor-Advised Fund) transfers count as "charitable" for tax purposes but may sit indefinitely. Money to Fidelity Charitable, Schwab Charitable, Vanguard Charitable, etc. is "parked" — the donor got the tax deduction but operating charities haven't received it.
 
 Toggle "Include Unverifiable Giving" to switch between:
-- **ON (default)**: Total giving = verifiable + unverifiable
-- **OFF**: Only count hard-documented giving from 990-PF and SEC filings
+- **ON (default)**: Total giving = verifiable + DAF parked
+- **OFF**: Only count giving that has reached operating charities
 
-This helps distinguish between billionaires with well-documented philanthropy vs. those relying on news coverage.
+Common DAF sponsors tracked:
+- Fidelity Charitable (EIN: 11-0303001)
+- Schwab Charitable (EIN: 31-1640316)
+- Vanguard Charitable (EIN: 23-2888152)
+- National Philanthropic Trust (EIN: 52-1934107)
+- Silicon Valley Community Foundation (EIN: 20-5205488)
 
 ## Running Locally
 
