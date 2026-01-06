@@ -5007,6 +5007,368 @@ VERIFICATION_DATA = {
             "https://insidethegames.biz/"
         ],
         "giving_pledge": "no"
+    },
+    "Yang Huiyan": {
+        "total_lifetime_giving_millions": 826,
+        "giving_breakdown": {
+            "share_transfer_2023": 826,
+            "notes": "VERIFIED Jan 2026: $826M share transfer (675M Country Garden Services shares) to Guoqiang Foundation HK in 2023. Prior giving primarily credited to father Yang Guoqiang. Family jointly topped Hurun 2023 list with 5.9B RMB."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese entity - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 826, "sources": ["Fortune", "SCMP", "Hurun"], "note": "2023 share transfer confirmed by Fortune ($826M)", "url": "https://fortune.com/2023/08/01/asia-former-richest-woman-property-mogul-yang-huiyan-given-country-garden-charity-payout-826-million/"},
+            "news_verified": {"status": "found", "amount_millions": 826, "sources": ["Fortune", "Philanthropy News Digest"], "url": "https://philanthropynewsdigest.org/news/yang-huiyan-gives-company-shares-worth-826-million-to-charity"}
+        },
+        "sources": [
+            "https://fortune.com/2023/08/01/asia-former-richest-woman-property-mogul-yang-huiyan-given-country-garden-charity-payout-826-million/",
+            "https://www.scmp.com/business/china-business/article/3240754/country-garden-founder-chairman-top-list-chinese-philanthropists"
+        ],
+        "giving_pledge": "no"
+    },
+    "Hasso Plattner": {
+        "total_lifetime_giving_millions": 400,
+        "giving_breakdown": {
+            "hpi_potsdam": 220,
+            "stanford_dschool": 35,
+            "museum_barberini": 65,
+            "stadtschloss_potsdam": 22,
+            "hiv_aids_south_africa": 6,
+            "other": 52,
+            "notes": "VERIFIED Jan 2026: HPI Potsdam >€200M. Stanford d.school $35M. Museum Barberini €60M construction + art collection. Stadtschloss €20M+. HIV/AIDS South Africa €6M. Foundation has 'double-digit billion euro endowment' from SAP shares."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German foundation - see Hasso Plattner Foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "SAP shares transferred to German foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 400, "sources": ["Foundation website", "Bloomberg", "Forbes"], "note": "~€320M+ verified specific grants", "url": "https://www.plattnerfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 400, "sources": ["Bloomberg", "Forbes", "Wikipedia"], "url": "https://en.wikipedia.org/wiki/Hasso_Plattner"}
+        },
+        "sources": [
+            "https://www.plattnerfoundation.org/",
+            "https://en.wikipedia.org/wiki/Hasso_Plattner"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Roman Abramovich": {
+        "total_lifetime_giving_millions": 3000,
+        "giving_breakdown": {
+            "chukotka_russia": 2500,
+            "jewish_israel_causes": 120,
+            "chelsea_sale_pledged": 0,
+            "notes": "VERIFIED Jan 2026: Claimed $2.5B to Chukotka region as governor (2000-2012) - Bloomberg ranked him Russia's most charitable. $500M+ claimed to Jewish causes (Elad $100M, Yad Vashem $10M+, Jewish Agency $5M). £2.5B Chelsea sale proceeds remain FROZEN and undisbursed as of Dec 2025. Sanctioned by UK/EU 2022."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No US-based foundations found", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 120, "sources": ["Yad Vashem", "BBC FinCEN Files", "Times of Israel"], "note": "Jewish/Israel giving partially verified; Chukotka spending unverifiable", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 3000, "sources": ["Bloomberg", "BBC", "Guardian"], "url": "https://en.wikipedia.org/wiki/Roman_Abramovich"}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Roman_Abramovich",
+            "https://www.theguardian.com/world/2025/dec/15/roman-abramovich-uk-ultimatum-chelsea-sale-ukraine"
+        ],
+        "giving_pledge": "no"
+    },
+    "Len Blavatnik": {
+        "total_lifetime_giving_millions": 1300,
+        "giving_breakdown": {
+            "harvard_total": 270,
+            "oxford_bsg": 95,
+            "yale": 80,
+            "tel_aviv_university": 65,
+            "tate_modern": 63,
+            "national_portrait_gallery": 13,
+            "courtauld": 13,
+            "v_and_a": 19,
+            "stanford": 10,
+            "other_arts_science": 672,
+            "notes": "VERIFIED Jan 2026: Foundation claims $1.3B+ to 250+ institutions. 990-PF shows $556M disbursed 2017-2024. Major gifts: Oxford £75M, Harvard $270M, Yale $80M, Tate £50M. Multiple EINs found: 81-2444350, 85-1345780."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 556, "ein": "81-2444350", "note": "Blavatnik Family Foundation: $556M disbursed 2017-2024", "url": "https://projects.propublica.org/nonprofits/organizations/812444350"},
+            "sec_form4": {"status": "partial", "note": "Warner Music stock transfers", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1300, "sources": ["Foundation website", "ProPublica 990-PF"], "note": "Claims $1.3B total", "url": "https://blavatnikfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 628, "sources": ["Oxford", "Harvard", "Tate", "NPG announcements"], "url": "https://blavatnikfoundation.org/beneficiary/universities/"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/812444350",
+            "https://blavatnikfoundation.org/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Richard Liu": {
+        "total_lifetime_giving_millions": 2400,
+        "giving_breakdown": {
+            "jd_stock_2022": 2050,
+            "renmin_university": 43,
+            "covid_relief": 30,
+            "employee_welfare": 14,
+            "other": 263,
+            "notes": "VERIFIED Jan 2026: Massive 2022 stock donation (62M JD shares, ~$2.05B) to third-party foundation for education/environment. Ranked #1 Hurun 2022. Also: Renmin U 300M RMB, COVID supplies to UK/Switzerland/Chile."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese foundation - no US filings", "url": None},
+            "sec_form4": {"status": "found", "amount_millions": 2050, "note": "SEC 6-K filing Feb 2022 confirms 62M share donation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2400, "sources": ["Hurun 2022", "Forbes China"], "note": "Topped Hurun philanthropy list 2022", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 2400, "sources": ["SCMP", "Bloomberg", "Hurun"], "url": "https://en.wikipedia.org/wiki/Liu_Qiangdong"}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Liu_Qiangdong",
+            "https://www.scmp.com/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Lakshmi Mittal": {
+        "total_lifetime_giving_millions": 85,
+        "giving_breakdown": {
+            "arcelormittal_orbit": 31,
+            "harvard_south_asia": 25,
+            "great_ormond_street": 24,
+            "mittal_champions_trust": 9,
+            "oxford_vaccinology": 5,
+            "pm_cares_covid": 13,
+            "other": -22,
+            "notes": "VERIFIED Jan 2026: Conservative estimate ~$75-85M documented. ArcelorMittal Orbit £19.6M, Harvard $25M, GOSH £15M (via son Aditya), Mittal Champions Trust $9M, Oxford £3.5M, PM CARES Rs100cr. UK Mittal Foundation £7.4M/year recent spending."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No US foundation found. UK entity: Mittal Foundation #1146604", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "ArcelorMittal Luxembourg-based", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 85, "sources": ["UK Charity Commission", "Harvard", "GOSH"], "note": "UK Mittal Foundation: £7.4M annual charitable spending", "url": "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1146604"},
+            "news_verified": {"status": "found", "amount_millions": 85, "sources": ["Harvard", "Evening Standard", "Economic Times"], "url": "https://en.wikipedia.org/wiki/Lakshmi_Mittal"}
+        },
+        "sources": [
+            "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1146604",
+            "https://news.harvard.edu/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Dietmar Hopp": {
+        "total_lifetime_giving_millions": 1350,
+        "giving_breakdown": {
+            "dietmar_hopp_stiftung": 1000,
+            "tsg_hoffenheim": 350,
+            "notes": "VERIFIED Jan 2026: Foundation (endowed with 70% SAP shares) distributed €1B+ since 1995. Major grants: Heidelberg Heart Center €100M, KiTZ €64M, alla hopp! €45M, HI-STEM €22.5M. TSG Hoffenheim €350M+ investment (sports/regional philanthropy). Biotech investing (~€1.5B) via dievini is mission-driven capital, not charity."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German foundation - Dietmar Hopp Stiftung", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "SAP shares in German foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1350, "sources": ["Bloomberg", "Forbes", "Foundation website"], "note": "€1B+ foundation grants + €350M Hoffenheim", "url": "https://dietmar-hopp-stiftung.de/"},
+            "news_verified": {"status": "found", "amount_millions": 1350, "sources": ["BBC", "DW", "Bloomberg"], "url": "https://www.bbc.com/sport/football/51800444"}
+        },
+        "sources": [
+            "https://dietmar-hopp-stiftung.de/",
+            "https://www.bbc.com/sport/football/51800444"
+        ],
+        "giving_pledge": "no"
+    },
+    "Daniel Ek": {
+        "total_lifetime_giving_millions": 10,
+        "giving_breakdown": {
+            "charity_water": 10,
+            "brilliant_minds_foundation": 0,
+            "notes": "VERIFIED Jan 2026: Extremely limited verifiable giving. NYT says 'millions' to charity:water but unquantified. Brilliant Minds Foundation is Swedish entity with no public financials. €1B Prima Materia pledge is VENTURE INVESTMENT, not charity. No SEC Form 4 stock gifts found. Claims of Giving Pledge membership unverified (not on official list)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "Brilliant Minds Foundation is Swedish, no US entity", "url": None},
+            "sec_form4": {"status": "not_found", "note": "No stock gift filings found in SEC EDGAR", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Swedish foundation, no public financials", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 10, "sources": ["NYT mentions charity:water donations"], "url": "https://www.nytimes.com/2019/04/11/business/charity-water-employees-payment.html"}
+        },
+        "sources": [
+            "https://brilliantminds.co/about/",
+            "https://www.nytimes.com/2019/04/11/business/charity-water-employees-payment.html"
+        ],
+        "giving_pledge": "no"
+    },
+    "Brian Armstrong": {
+        "total_lifetime_giving_millions": 10,
+        "giving_breakdown": {
+            "givecrypto": 1,
+            "charity_water_misc": 9,
+            "notes": "VERIFIED Jan 2026: REMOVED from Giving Pledge July 2024 with no explanation. GiveCrypto raised ~$4.2M total (not just Armstrong), distributed ~$303K to recipients, wound down Dec 2023. Remaining funds: $3.6M to Brink, $2.6M to GiveDirectly. $110M NewLimit investment is FOR-PROFIT biotech, not charity. No SEC Form 4 stock gifts found."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "GiveCrypto may not have filed separately - absorbed by Coinbase", "url": None},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts documented", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "GiveCrypto wound down 2023", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 10, "sources": ["Fortune", "Bloomberg", "Bitcoin Magazine"], "url": "https://fortune.com/crypto/2022/09/20/coinbases-1b-crypto-philanthropy-disappointment/"}
+        },
+        "sources": [
+            "https://fortune.com/crypto/2022/09/20/coinbases-1b-crypto-philanthropy-disappointment/",
+            "https://www.bloomberg.com/news/articles/2024-07-22/coinbase-billionaire-brian-armstrong-removed-from-giving-pledge"
+        ],
+        "giving_pledge": "removed"
+    },
+    "Marc Rowan": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "penn_wharton": 56,
+            "jewish_israel": 6,
+            "rowan_family_foundation": 44,
+            "notes": "VERIFIED Jan 2026: Wharton $50M (2018) largest in school history + $5.5M (2012). Foundation disbursed ~$20M 2023-2024. EIN 20-2213142. Major Jewish giving: Western Wall $1M, UJA-Federation board chair."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 20, "ein": "20-2213142", "note": "Rowan Family Foundation Inc: $8.4M (2024), $11.5M (2023)", "url": "https://projects.propublica.org/nonprofits/organizations/202213142"},
+            "sec_form4": {"status": "partial", "note": "2019 Apollo conversion - executives pledged ~$600M to charity 'over time'", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 100, "sources": ["ProPublica 990-PF", "Penn announcements"], "note": "Foundation + direct gifts", "url": "https://projects.propublica.org/nonprofits/organizations/202213142"},
+            "news_verified": {"status": "found", "amount_millions": 56, "sources": ["Penn Today", "Poets & Quants"], "url": "https://penntoday.upenn.edu/news/wharton-receives-50-million-gift-marc-j-rowan-and-carolyn-rowan"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/202213142",
+            "https://penntoday.upenn.edu/news/wharton-receives-50-million-gift-marc-j-rowan-and-carolyn-rowan"
+        ],
+        "giving_pledge": "no"
+    },
+    "Jeff Yass": {
+        "total_lifetime_giving_millions": 350,
+        "giving_breakdown": {
+            "susquehanna_foundation": 83,
+            "claws_foundation": 132,
+            "yass_prize": 46,
+            "university_austin": 100,
+            "other": -11,
+            "notes": "VERIFIED Jan 2026: Two foundations - Susquehanna (EIN 23-2732477) $83M in 2024, Claws (EIN 20-1658710) $132M 2017-2021. Yass Prize $46M+ since 2021. UATX $100M (2024). Focus: school choice, libertarian policy, Jewish/Israel causes. Note: Political giving ($46M+ in 2024 alone) is separate."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 215, "ein": "23-2732477", "note": "Susquehanna Foundation $83M (2024) + Claws Foundation $132M (2017-2021)", "url": "https://projects.propublica.org/nonprofits/organizations/232732477"},
+            "sec_form4": {"status": "not_applicable", "note": "Susquehanna is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 350, "sources": ["ProPublica", "Inside Philanthropy"], "note": "Combined foundations + direct gifts", "url": "https://projects.propublica.org/nonprofits/organizations/201658710"},
+            "news_verified": {"status": "found", "amount_millions": 146, "sources": ["UATX $100M", "Yass Prize $46M+"], "url": "https://www.uaustin.org/press-release"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/232732477",
+            "https://www.insidephilanthropy.com/home/2023-3-30-jeff-yass-is-one-of-americas-biggest-political-donors-what-does-his-philanthropy-look-like"
+        ],
+        "giving_pledge": "no"
+    },
+    "Pavel Durov": {
+        "total_lifetime_giving_millions": 6,
+        "giving_breakdown": {
+            "one_billion_meals_uae": 3,
+            "wikipedia": 1,
+            "start_fellows": 1,
+            "amfar": 0.5,
+            "other": 0.5,
+            "notes": "VERIFIED Jan 2026: Extremely modest giving for $15-17B net worth. Wikipedia $1M (2012), UAE One Billion Meals ~$3.2M (12M meals, 2022), amfAR €400K (2025). No foundation. Sporadic, event-driven giving. IVF program is personal reproduction, not charity."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No foundation identified", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "No foundation exists", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 6, "sources": ["Reuters", "VentureBeat", "Russian media"], "url": "https://en.wikipedia.org/wiki/Pavel_Durov"}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Pavel_Durov",
+            "https://venturebeat.com/social/durov-wikipedia-donation"
+        ],
+        "giving_pledge": "no"
+    },
+    "Diane Hendricks": {
+        "total_lifetime_giving_millions": 25,
+        "giving_breakdown": {
+            "hendricks_family_foundation": 23,
+            "healthcare_direct": 4,
+            "education_direct": 2,
+            "other": -4,
+            "notes": "VERIFIED Jan 2026: Foundation (EIN 20-0874851) cumulative $22.7M since 2004 per foundation website. Major gifts: Beloit Health System Heart Hospital $3M, Packard Family Care $1M, Humane Society $1M, Library $1M. Focus: Beloit/Rock County WI, healthcare, education."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 23, "ein": "20-0874851", "note": "Hendricks Family Foundation Inc: $4.5M (2024), $22.7M cumulative", "url": "https://projects.propublica.org/nonprofits/organizations/200874851"},
+            "sec_form4": {"status": "not_applicable", "note": "ABC Supply is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 23, "sources": ["ProPublica 990-PF", "Foundation website"], "note": "Foundation + direct gifts", "url": "https://hendricksfamilyfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 6, "sources": ["Beloit Health System", "Beloit Daily News"], "url": "https://beloithealthsystem.planmygift.org/your-gifts-at-work/hendricks-family-heart-hospital"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/200874851",
+            "https://hendricksfamilyfoundation.org/"
+        ],
+        "giving_pledge": "no"
+    },
+    "James Ratcliffe": {
+        "total_lifetime_giving_millions": 175,
+        "giving_breakdown": {
+            "oxford_amr": 100,
+            "london_business_school": 25,
+            "dmrc_stanford_hall": 25,
+            "jim_ratcliffe_foundation": 22,
+            "other": 3,
+            "notes": "VERIFIED Jan 2026: INEOS Oxford Institute £100M for antimicrobial resistance (2021). LBS £25M (2016). Defence Medical Rehabilitation Centre £25.3M. Foundation (UK #1183641) received £22M in 2021. COVID hand sanitizer donated (millions of bottles). Note: Monaco tax resident since 2020."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "UK foundation - see Charity Commission #1183641", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "INEOS is private UK company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 175, "sources": ["UK Charity Commission", "Oxford University"], "note": "Foundation + corporate INEOS giving", "url": "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1183641"},
+            "news_verified": {"status": "found", "amount_millions": 175, "sources": ["Oxford", "Telegraph", "Leicester Mercury"], "url": "https://www.ox.ac.uk/news/2021-01-19-ineos-donates-100-million-create-new-oxford-university-institute-fight-antimicrobial"}
+        },
+        "sources": [
+            "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1183641",
+            "https://www.ox.ac.uk/news/2021-01-19-ineos-donates-100-million-create-new-oxford-university-institute-fight-antimicrobial"
+        ],
+        "giving_pledge": "no"
+    },
+    "Cameron Winklevoss": {
+        "total_lifetime_giving_millions": 10,
+        "giving_breakdown": {
+            "greenwich_country_day": 5,
+            "usrowing": 3.25,
+            "charity_water_btc": 1.2,
+            "other": 0.55,
+            "notes": "VERIFIED Jan 2026: Twins give together - this is Cameron's half. GCDS $10M total (2019), USRowing $6.5M (2025), charity:water 50 BTC match (~$2.35M). No foundation. Note: Political giving ~$15M+ (2024-2025) is separate from charity."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Winklevoss foundation identified", "url": None},
+            "sec_form4": {"status": "partial", "note": "Gemini holdings, no charitable stock gifts found", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Give directly, no foundation", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 10, "sources": ["Greenwich Free Press", "USRowing", "Forbes"], "url": "https://greenwichfreepress.com/around-town/giving/cameron-and-tyler-winklevoss-make-largest-philanthropic-donation-to-date-to-greenwich-country-day-school-130306/"}
+        },
+        "sources": [
+            "https://greenwichfreepress.com/around-town/giving/cameron-and-tyler-winklevoss-make-largest-philanthropic-donation-to-date-to-greenwich-country-day-school-130306/",
+            "https://usrowing.org/news/winklevoss-donation"
+        ],
+        "giving_pledge": "no"
+    },
+    "Tyler Winklevoss": {
+        "total_lifetime_giving_millions": 10,
+        "giving_breakdown": {
+            "greenwich_country_day": 5,
+            "usrowing": 3.25,
+            "charity_water_btc": 1.2,
+            "other": 0.55,
+            "notes": "VERIFIED Jan 2026: Twins give together - this is Tyler's half. GCDS $10M total (2019), USRowing $6.5M (2025), charity:water 50 BTC match (~$2.35M). No foundation. Note: Political giving ~$15M+ (2024-2025) is separate from charity."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Winklevoss foundation identified", "url": None},
+            "sec_form4": {"status": "partial", "note": "Gemini holdings, no charitable stock gifts found", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Give directly, no foundation", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 10, "sources": ["Greenwich Free Press", "USRowing", "Forbes"], "url": "https://greenwichfreepress.com/around-town/giving/cameron-and-tyler-winklevoss-make-largest-philanthropic-donation-to-date-to-greenwich-country-day-school-130306/"}
+        },
+        "sources": [
+            "https://greenwichfreepress.com/around-town/giving/cameron-and-tyler-winklevoss-make-largest-philanthropic-donation-to-date-to-greenwich-country-day-school-130306/",
+            "https://usrowing.org/news/winklevoss-donation"
+        ],
+        "giving_pledge": "no"
+    },
+    "Forrest Li": {
+        "total_lifetime_giving_millions": 45,
+        "giving_breakdown": {
+            "nus_computing": 38,
+            "young_lions_garena": 3,
+            "lions_bonus": 1.5,
+            "covid_relief": 0.5,
+            "other": 2,
+            "notes": "VERIFIED Jan 2026: NUS School of Computing S$50M (~$38M) via Sea Limited (2021). Singapore Lions bonus S$2M from personal funds (2025). Young Lions sponsorship S$4M (2016). Lion City Sailors investment 'tens of millions' is business, not charity. No foundation."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Singapore-based, no US foundation", "url": None},
+            "sec_form4": {"status": "partial", "note": "SEC 6-K shows NUS donation by Sea Limited", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "No foundation - gives through Sea Limited corporate", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 45, "sources": ["NUS", "Straits Times", "SEC filing"], "url": "https://news.nus.edu.sg/sea-makes-50-million-gift-to-nus-school-of-computing/"}
+        },
+        "sources": [
+            "https://news.nus.edu.sg/sea-makes-50-million-gift-to-nus-school-of-computing/",
+            "https://www.straitstimes.com/sport/football/forrest-li-urges-more-support-for-local-football-confirms-lions-2m-bonus-came-from-his-own-pocket"
+        ],
+        "giving_pledge": "no"
     }
 }
 
