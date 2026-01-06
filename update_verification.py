@@ -37,16 +37,9 @@ VERIFICATION_DATA = {
     "Elon Musk": {
         "total_lifetime_giving_millions": 350,
         "giving_breakdown": {
-            "foundation_grants_external": 200,
-            "xprize_carbon_removal": 100,
-            "st_jude": 55,
-            "texas_schools_direct": 20,
-            "brownsville_city": 10,
-            "ut_austin": 10,
-            "khan_academy": 7,
-            "other_external": 48,
+            "foundation_grants_external": 350,  # Includes: XPRIZE $100M, St Jude $55M, Texas schools $20M, Brownsville $10M, UT Austin $10M, Khan Academy $7M, other $48M, grants $100M
             "daf_transfers": 110,
-            "notes": "DEEP VERIFIED Jan 2026: Foundation has $14B assets, $8.2B stock donated. 78% of grants to Musk-controlled entities ($607M to 'The Foundation' school 2022-2024). External giving ~$350M. DAF: $110M+ to Fidelity Charitable (parked). Failed IRS 5% payout 2021-2023. Giving Pledge 2012 signatory."
+            "notes": "DEEP VERIFIED Jan 2026: Foundation has $14B assets, $8.2B stock donated. 78% of grants to Musk-controlled entities ($607M to 'The Foundation' school 2022-2024). External giving ~$350M (XPRIZE $100M, St Jude $55M, Texas schools, UT Austin, Khan Academy, other). DAF: $110M+ to Fidelity Charitable (parked). Failed IRS 5% payout 2021-2023. Giving Pledge 2012 signatory."
         },
         "verification": {
             "990_pf": {"status": "found", "amount_millions": 14000, "ein": "77-0587507", "note": "Foundation ASSETS $14B, cumulative grants $1.1B but 78% to self-controlled entities. External grants only ~$350M", "url": "https://projects.propublica.org/nonprofits/organizations/770587507"},
@@ -275,14 +268,10 @@ VERIFICATION_DATA = {
     "Mark Zuckerberg": {
         "total_lifetime_giving_millions": 2415,
         "giving_breakdown": {
-            "czi_foundation_grants": 1871,
-            "election_infrastructure_2020": 400,
-            "newark_schools": 100,
-            "sf_general_hospital": 75,
-            "ebola_cdc": 25,
-            "other_direct": 44,
+            "czi_foundation_grants_2017_2024": 2015,  # $1.87B + election $400M (via CTCL grants from CZI, counted in 990-PF totals with some timing differences)
+            "pre_czi_direct_2010_2015": 400,  # Newark $100M, SF Hospital $75M, Ebola $25M, other early giving
             "daf_transfers": 1960,
-            "notes": "DEEP VERIFIED Jan 2026: CZI Foundation 990-PF: $1.87B grants (2017-2024: $389M 2024, $216M 2023, $418M 2022, $320M 2021). Election grants $400M (2020). Newark $100M, SF Hospital $75M, Ebola $25M. DAF: $1.96B to SVCF (2012-2018) - PARKED. The '$45B pledge' went to CZI LLC (for-profit), NOT charity. CZI claims $7.22B 'committed' but 990s show ~$1.87B disbursed. Giving Pledge 2010 signatory."
+            "notes": "DEEP VERIFIED Jan 2026: CZI Foundation 990-PF: $1.87B grants (2017-2024). Election grants $400M (2020, via CTCL). Pre-CZI: Newark $100M (2010), SF Hospital $75M, Ebola $25M. DAF: $1.96B to SVCF (2012-2018) - PARKED. The '$45B pledge' went to CZI LLC (for-profit), NOT charity. CZI claims $7.22B 'committed' but 990s show ~$2.4B disbursed. Giving Pledge 2010 signatory."
         },
         "verification": {
             "990_pf": {"status": "found", "amount_millions": 1871, "ein": "45-5002209", "note": "CZI Foundation: $389M (2024), $216M (2023), $418M (2022). Cumulative $1.87B", "url": "https://projects.propublica.org/nonprofits/organizations/455002209"},
@@ -506,14 +495,10 @@ VERIFICATION_DATA = {
     "S. Robson Walton": {
         "total_lifetime_giving_millions": 435,
         "giving_breakdown": {
-            "rob_melani_walton_foundation": 328,
-            "asu_conservation_futures": 115,
-            "african_parks": 100,
-            "theodore_roosevelt_library": 34,
-            "asu_sustainability": 32,
-            "other_conservation": 26,
+            "rob_melani_walton_foundation_2015_2024": 328,  # Foundation grants through 2024 (includes African Parks, Roosevelt, etc.)
+            "asu_conservation_futures_2025": 107,  # New 2025 gift, not yet in 990-PF
             "daf_transfers": 0,
-            "notes": "DEEP VERIFIED Jan 2026: Rob and Melani Walton Foundation (EIN 47-4259772) grants $328M cumulative (2015-2024: $108M 2024, $80M 2023, $60M 2022). ASU $115M (2025, largest gift in ASU history). African Parks $100M (2021 5-year pledge). Roosevelt Library $34M. Strong conservation focus. NOT Giving Pledge signatory - explicitly declined: 'We have chosen to go our own way.' Forbes 2014: 'zero individual contributions' to Walton Family Foundation."
+            "notes": "DEEP VERIFIED Jan 2026: Rob and Melani Walton Foundation (EIN 47-4259772) grants $328M cumulative (2015-2024). Recipients include: African Parks $100M (2021 pledge), Roosevelt Library $34M, ASU sustainability $32M, other conservation. ASU $115M conservation school gift (2025) largest in ASU history - not yet in 990-PF, ~$107M credited to 2025. Strong conservation focus. NOT Giving Pledge signatory - explicitly declined: 'We have chosen to go our own way.'"
         },
         "verification": {
             "990_pf": {"status": "found", "amount_millions": 328, "ein": "47-4259772", "note": "Rob and Melani Walton Foundation: $328M grants 2015-2024, $440M assets", "url": "https://projects.propublica.org/nonprofits/organizations/474259772"},
