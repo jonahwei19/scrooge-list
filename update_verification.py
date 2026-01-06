@@ -6776,6 +6776,185 @@ VERIFICATION_DATA = {
         ],
         "giving_pledge": "no",
         "red_flags": ["Explicitly prefers actual giving over pledges - declined Giving Pledge philosophy in interviews"]
+    },
+    "Pallonji Mistry": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "hurun_documented_2015_2018": 30,
+            "bd_petit_parsee_hospital": 5,
+            "parsi_community_trusts": 15,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$30-50M documented minimum. Died June 2022. Hurun India: FY2015-16 INR 96cr ($11.5M), FY2016-17 INR 68cr ($8.2M), FY2017-18 INR 72cr family ($8.7M). Family known for privacy. 2006 senior citizens home at BD Petit Parsee General Hospital. Shapoorji Pallonji Foundation is CORPORATE CSR not personal. CRITICAL: $1.5B pledge claim in one blog post is UNVERIFIED - no corroboration in Forbes/Hurun/mainstream press."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian/Irish billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "SP Group is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 30, "note": "Hurun India Philanthropy List documented annual giving 2015-2018", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 30, "sources": ["Hurun 2016-2018", "TOI obituary 2022"], "url": None}
+        },
+        "sources": [
+            "https://hurunindia.com/pillars/philanthropy/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["$1.5B pledge claim UNVERIFIED", "Shapoorji Pallonji Foundation is corporate CSR not personal"]
+    },
+    "Serge Dassault": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "dassault_histoire_patrimoine": 55,
+            "fondation_serge_dassault_disability": 15,
+            "prix_marcel_dassault_psychiatry": 4,
+            "mosque_corbeil_essonnes": 2,
+            "gustave_roussy_cancer": 10,
+            "dassault_systemes_foundation_us": 4,
+            "other": 10,
+            "notes": "VERIFIED Jan 2026: €80-120M (~$100M) estimated. Died May 2018. Groupe Dassault committed €50M to heritage restoration 2021-2031. Fondation Serge-Dassault (disability support) since 1991. Prix Marcel Dassault psychiatric research €90-300K annually since 2012. French billionaires rarely disclose totals. NO French billionaires have signed Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "French billionaire - Dassault Systemes Foundation US (EIN 81-3478010) is minor $400K/yr", "url": "https://projects.propublica.org/nonprofits/organizations/813478010"},
+            "sec_form4": {"status": "not_applicable", "note": "French companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 55, "note": "€50M heritage pledge documented via CMN/Fondation du Patrimoine", "url": "https://www.fondation-patrimoine.org/"},
+            "news_verified": {"status": "found", "amount_millions": 60, "sources": ["Le Monde 2005 mosque", "CMN 2021"], "url": None}
+        },
+        "sources": [
+            "https://dassault.fr/mecenat",
+            "https://www.fondation-patrimoine.org/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["French philanthropy disclosure is minimal", "No French billionaires have signed Giving Pledge"]
+    },
+    "Susan Dell": {
+        "total_lifetime_giving_millions": 2900,
+        "giving_breakdown": {
+            "michael_susan_dell_foundation_cumulative": 2900,
+            "invest_america_pledge_2025": 0,
+            "notes": "VERIFIED Jan 2026: $2.9B cumulative foundation grants since 1999 (AP/CNN/Reuters confirm). Susan is co-founder and Board Chair - reviews and approves all grants. EIN 36-4336415. $308M granted in 2024. $7.77B assets. December 2025: $6.25B pledge for Invest America 'Trump Accounts' - NOT YET DISBURSED so not counted. Focus: education, health, family economic stability, India/South Africa/US. CRITICAL: Michael Dell has NOT signed Giving Pledge despite being among wealthiest tech founders."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Michael & Susan Dell Foundation EIN 36-4336415, $2.9B cumulative grants, $7.77B assets", "url": "https://projects.propublica.org/nonprofits/organizations/364336415"},
+            "sec_form4": {"status": "not_found", "note": "Dell Technologies trades publicly but stock gifts not identified", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2900, "note": "dell.org confirms $2.8B+ commitments", "url": "https://www.dell.org/who-we-are/financials-policies/"},
+            "news_verified": {"status": "found", "amount_millions": 2900, "sources": ["CNN Dec 2025", "AP Dec 2025", "Reuters Dec 2025"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/364336415",
+            "https://www.dell.org/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["$6.25B Invest America pledge is commitment not yet disbursed", "Michael Dell notably absent from Giving Pledge"]
+    },
+    "Penny Knight": {
+        "total_lifetime_giving_millions": 3900,
+        "giving_breakdown": {
+            "ohsu_knight_cancer_institute": 2700,
+            "university_of_oregon": 2200,
+            "stanford_university": 475,
+            "portland_1803_fund": 400,
+            "other": 25,
+            "notes": "VERIFIED Jan 2026: ~$7.8B joint with Phil Knight over 20 years (Chronicle of Philanthropy). Using 50% attribution = $3.9B for Penny. OHSU: $100M 2008, $500M 2013, $2B Aug 2025 (largest US university donation ever). UO Knight Campus $1B+. Stanford Knight-Hennessy Scholars $400M. 1803 Fund (Portland Black community) $400M 2023. Knight Foundation EIN 91-1791788, $5.4B assets. Phil/Penny are Vice President/Director. Phil NOT signed Giving Pledge but states intent to give most away."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Knight Foundation EIN 91-1791788, $226M grants 2024, $5.4B assets", "url": "https://projects.propublica.org/nonprofits/organizations/911791788"},
+            "sec_form4": {"status": "not_found", "note": "Nike stock gifts likely but not identified", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 7800, "note": "Chronicle of Philanthropy $7.8B over 20 years", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 7800, "sources": ["OHSU Aug 2025", "Chronicle of Philanthropy", "TIME100"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/911791788",
+            "https://news.ohsu.edu/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["All giving is joint with Phil Knight - 50% attribution estimate"]
+    },
+    "Budi Hartono": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "documented_personal": 0,
+            "notes": "VERIFIED Jan 2026: NO verified PERSONAL giving found. CRITICAL: Djarum Foundation (1986) is CORPORATE CSR of PT Djarum, not personal philanthropy - Victor Hartono (son) is President Director. Family known for extreme privacy. No Giving Pledge. Only Indonesian signatory is Dato Sri DR Tahir (2013). Multiple sources note philanthropy 'done quietly without fanfare' but no amounts. Cannot distinguish personal vs corporate giving. ~$22B net worth with zero documented personal giving suggests either very private giving or minimal personal charity."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indonesian billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Djarum/BCA are Indonesian companies", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": 0, "note": "Djarum Foundation is corporate CSR not personal", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "sources": [], "url": None}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Djarum_Foundation"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Djarum Foundation is corporate CSR not personal giving", "Indonesian philanthropy transparency is low", "Extreme family privacy"]
+    },
+    "David Reuben": {
+        "total_lifetime_giving_millions": 150,
+        "giving_breakdown": {
+            "reuben_college_oxford_2020": 101,
+            "reuben_college_additional_2021": 8,
+            "reuben_scholarship_programme_2012": 15,
+            "chelsea_westminster_hospital": 3,
+            "great_ormond_street_hospital": 3,
+            "illuminated_river_foundation": 3,
+            "other_documented": 17,
+            "notes": "VERIFIED Jan 2026: ~£130-180M (~$150-220M) via Reuben Foundation (UK charity 1094130) since 2002. Joint giving with brother Simon. Oxford £80M+ 2020-2021 largest single gift. UK Charity Commission: £113.6M charitable expenditure 2020-2024 (2020 spike = Oxford gift). Chelsea/Westminster, GOSH, cultural initiatives. NOT Giving Pledge. Despite ~£150M giving, this is <1% of ~£22B net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "UK billionaires - Reuben Foundation is UK charity 1094130", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "UK/private companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 150, "note": "UK Charity Commission accounts 2020-2024, £113.6M expenditure", "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/3993320"},
+            "news_verified": {"status": "found", "amount_millions": 101, "sources": ["Oxford 2020", "Powerbase grants list"], "url": None}
+        },
+        "sources": [
+            "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/3993320"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Joint giving with Simon Reuben - each gets 50% attribution", "Giving is <1% of net worth"]
+    },
+    "Steven Cohen": {
+        "total_lifetime_giving_millions": 1300,
+        "giving_breakdown": {
+            "cohen_veterans_network": 275,
+            "laguardia_cuny_2024": 116,
+            "robin_hood_foundation": 100,
+            "lyme_disease_research": 107,
+            "moma_arts": 55,
+            "psychedelics_research": 60,
+            "nyu_langone_veterans": 17,
+            "cohen_veterans_bioscience": 30,
+            "other": 540,
+            "notes": "VERIFIED Jan 2026: $1.3B+ lifetime (foundation website). Steven & Alexandra Cohen Foundation EIN 06-1627638, $921M documented grants 2011-2024 via ProPublica. $129.7M granted in 2024. Cohen Veterans Network $275M pledge (22+ free mental health clinics). CUNY $116M 2024 (largest US community college gift). MoMA $50M+. Top veterans philanthropy donor. NOT signed Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Steven & Alexandra Cohen Foundation EIN 06-1627638, $921M cumulative grants documented, $537M assets", "url": "https://projects.propublica.org/nonprofits/organizations/61627638"},
+            "sec_form4": {"status": "not_found", "note": "Point72 is private hedge fund", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1300, "note": "Foundation website claims $1.3B+ total", "url": "https://www.steveandalex.org/"},
+            "news_verified": {"status": "found", "amount_millions": 1300, "sources": ["Chronicle of Philanthropy veterans", "CUNY 2024", "Forbes"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/61627638",
+            "https://www.steveandalex.org/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Joseph Safra": {
+        "total_lifetime_giving_millions": 150,
+        "giving_breakdown": {
+            "joseph_safra_foundation_us": 90,
+            "hospital_albert_einstein_pavilion": 30,
+            "jewish_community_brazil": 20,
+            "instituto_cultural_j_safra": 10,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: $100-200M estimated. Died Dec 2020. Joseph Safra Foundation (EIN 06-1640434) $5-12M annually 2002-2024, ~$80-100M cumulative. 2009 Vicky & Joseph Safra Pavilion at Hospital Albert Einstein (70,000 m², 16 floors). Co-funded Brazil's largest synagogue with brother Moise. Instituto Cultural J. Safra donated Rodin sculptures to Pinacoteca 1996. CRITICAL: Edmond J. Safra Foundation is BROTHER EDMOND's foundation (died 1999) - much larger, NOT Joseph's. Family very private about finances. Giving ~0.5-1% of $22B wealth."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Joseph Safra Foundation EIN 06-1640434, $5-12M annual, $28.5M assets", "url": "https://projects.propublica.org/nonprofits/organizations/61640434"},
+            "sec_form4": {"status": "not_applicable", "note": "Safra banking is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 90, "note": "ProPublica 990 filings show cumulative", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 30, "sources": ["Reuters obituary 2020", "Hospital Einstein timeline"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/61640434"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Edmond J. Safra Foundation is BROTHER's foundation, often confused", "Brazilian/Swiss giving not publicly documented", "Family very private"]
     }
 }
 
