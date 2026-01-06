@@ -717,7 +717,11 @@
                 </label>
                 <span style="font-size: 1.1rem; cursor: pointer;" onclick="setSantaMode(true)" id="santa-label">🎅 Santa</span>
             </div>
-            <p style="margin-top: 12px;"><a href="methodology.html" style="color: var(--accent-blue); text-decoration: none; font-size: 0.95rem;">📊 How we calculate scores &rarr;</a></p>
+            <p style="margin-top: 12px;">
+                <a href="methodology.html" style="color: var(--accent-blue); text-decoration: none; font-size: 0.95rem;">📊 How we calculate scores &rarr;</a>
+                <span style="margin: 0 10px; color: var(--text-secondary);">·</span>
+                <a href="https://github.com/jonahwei19/scrooge-list/issues" style="color: var(--text-secondary); text-decoration: none; font-size: 0.95rem;" title="We want this list to be as accurate as possible. Report if a billionaire's wealth or giving is substantially misreported.">Report inaccuracies</a>
+            </p>
         </header>
 
         <div class="stats-row" id="stats">
@@ -860,8 +864,8 @@
         </div>
 
         <footer>
-            <p>Data sources: Forbes RTB API, ProPublica Nonprofit Explorer, SEC EDGAR, FEC OpenData, IPS Giving Pledge Dataset <span title="We want this list to be as accurate as possible. If you have evidence that a billionaire's wealth or giving is substantially misreported, please open an issue on GitHub." style="cursor: help; border-bottom: 1px dotted var(--text-secondary);">*</span></p>
-            <p>Last updated: <span id="last-updated"></span> · <a href="https://github.com/jonahwei19/scrooge-list/issues" style="color: var(--text-secondary); font-size: 0.85rem;">Report inaccuracies</a></p>
+            <p>Data sources: Forbes RTB API, ProPublica Nonprofit Explorer, SEC EDGAR, FEC OpenData, IPS Giving Pledge Dataset</p>
+            <p>Last updated: <span id="last-updated"></span></p>
         </footer>
     </div>
 
