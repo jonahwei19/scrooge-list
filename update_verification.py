@@ -463,26 +463,6 @@ VERIFICATION_DATA = {
         ]
     },
     # === NEW ENTRIES WITH FULL VERIFICATION ===
-    "S. Robson Walton": {
-        "total_lifetime_giving_millions": 400,
-        "giving_breakdown": {
-            "rob_melani_walton_foundation": 300,
-            "african_parks": 100,
-            "asu_conservation": 115,
-            "walton_family_foundation_share": 0,
-            "notes": "VERIFIED Jan 2026: Rob and Melani Walton Foundation 990-PF shows ~$78M/year. Personal contribution to WFF: $0 over 23 years. African Parks $100M pledge (2021), ASU $115M (2025). Forbes Philanthropy Score: 1/5 (lowest)."
-        },
-        "verification": {
-            "990_pf": {"status": "found", "amount_millions": 300, "ein": "47-4259772", "note": "Rob and Melani Walton Foundation: ~$78M/year grants", "url": "https://projects.propublica.org/nonprofits/organizations/474259772"},
-            "sec_form4": {"status": "found", "amount_millions": 15, "note": "June 2019: 135,000 Walmart shares (~$15M) donated", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000903166&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 300, "sources": ["ProPublica 990-PF"], "note": "Foundation cumulative grants ~$300M", "url": "https://projects.propublica.org/nonprofits/organizations/474259772"},
-            "news_verified": {"status": "found", "amount_millions": 215, "sources": ["African Parks $100M", "ASU $115M"], "url": "https://www.africanparks.org/newsroom/press-releases/rob-and-melani-walton-donate-100-million-african-parks"}
-        },
-        "sources": [
-            "https://projects.propublica.org/nonprofits/organizations/474259772",
-            "https://www.africanparks.org/newsroom/press-releases/rob-and-melani-walton-donate-100-million-african-parks"
-        ]
-    },
     "Alice Walton": {
         "total_lifetime_giving_millions": 1500,
         "giving_breakdown": {
@@ -3484,26 +3464,6 @@ VERIFICATION_DATA = {
         "sources": ["https://projects.propublica.org/nonprofits/organizations/474634539", "https://projects.propublica.org/nonprofits/organizations/454757735"],
         "giving_pledge": "yes"
     },
-    "Jensen Huang": {
-        "total_lifetime_giving_millions": 200,
-        "giving_breakdown": {
-            "oregon_state": 50,
-            "stanford": 30,
-            "california_college_arts": 22.5,
-            "oneida_baptist": 2,
-            "johns_hopkins": 1,
-            "schwab_daf_transfers": 100,  # Heavy DAF use
-            "notes": "VERIFIED Jan 2026: Nvidia founder (~$130B). Jen-Hsun & Lori Huang Foundation (EIN 26-1551239): $9.2B assets (20th largest US foundation), but only $126M disbursements (2024). 77% of disbursements go to Schwab DAF. Oregon State $50M, Stanford $30M, CCA $22.5M. NOT Giving Pledge. Forbes 1/5 philanthropy score. NYT investigation (Dec 2024) on $8B estate tax avoidance."
-        },
-        "verification": {
-            "990_pf": {"status": "found", "amount_millions": 126, "ein": "26-1551239", "note": "Huang Foundation: $9.2B assets, $126M disbursements (2024). Heavy DAF transfers.", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
-            "sec_form4": {"status": "found", "note": "Nvidia stock gifts to foundation tracked", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 200, "note": "Foundation 990-PF + named university gifts", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
-            "news_verified": {"status": "found", "amount_millions": 200, "note": "Oregon State, Stanford, CCA gifts covered. NYT tax story Dec 2024.", "url": None}
-        },
-        "sources": ["https://projects.propublica.org/nonprofits/organizations/261551239"],
-        "giving_pledge": "no"
-    },
     "Peter Thiel": {
         "total_lifetime_giving_millions": 50,
         "giving_breakdown": {
@@ -3613,27 +3573,7 @@ VERIFICATION_DATA = {
         "sources": [],
         "giving_pledge": "no"
     },
-    # Batch 21: Mukesh Ambani, Michael Dell, Steve Ballmer, Julia Koch, Alice Walton, Jim Walton, Rob Walton, Francoise Bettencourt Meyers
-    "Mukesh Ambani": {
-        "total_lifetime_giving_millions": 500,
-        "giving_breakdown": {
-            "fy2025_edelgive": 75,  # Rs 626 crore
-            "fy2024_edelgive": 49,  # Rs 407 crore
-            "fy2023_edelgive": 45,  # Rs 376 crore
-            "covid_relief_2020": 60,  # Rs 500 crore to PM-CARES
-            "reliance_hospital": 100,
-            "other_cumulative": 171,
-            "notes": "VERIFIED Jan 2026: Reliance Industries chairman (~$115B). Reliance Foundation (2010, led by wife Nita) reaches 76M+ lives. EdelGive-Hurun 2025 #2 (Rs 626 crore). COVID: Rs 500 crore to PM-CARES + first Mumbai COVID hospital. TIME100 Philanthropy 2025. NOT Giving Pledge. Note: Corporate CSR (Rs 1,592 crore/yr) separate from personal giving. Giving ~0.4% of wealth vs Azim Premji's 14-15%."
-        },
-        "verification": {
-            "990_pf": {"status": "not_applicable", "note": "Indian foundation, no US filings", "url": None},
-            "sec_form4": {"status": "not_applicable", "note": "Reliance India-listed", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 500, "note": "Reliance Foundation reports + EdelGive-Hurun rankings", "url": None},
-            "news_verified": {"status": "found", "amount_millions": 500, "note": "EdelGive-Hurun #2 2025, COVID response widely covered, TIME100 2025", "url": None}
-        },
-        "sources": [],
-        "giving_pledge": "no"
-    },
+    # Batch 21: Michael Dell, Steve Ballmer, Julia Koch, Alice Walton, Jim Walton, Rob Walton, Francoise Bettencourt Meyers
     "Michael Dell": {
         "total_lifetime_giving_millions": 3000,
         "giving_breakdown": {
@@ -3741,27 +3681,6 @@ VERIFICATION_DATA = {
             "news_verified": {"status": "found", "amount_millions": 1500, "note": "$1.2B 2019 gift widely covered (Chronicle: largest gift of 2019)", "url": None}
         },
         "sources": ["https://projects.propublica.org/nonprofits/organizations/823575662"],
-        "giving_pledge": "no"
-    },
-    "S. Robson Walton": {
-        "total_lifetime_giving_millions": 500,
-        "giving_breakdown": {
-            "asu_conservation_2025": 115,
-            "african_parks_2021": 100,
-            "rob_melani_foundation_annual": 108,
-            "georgetown": 10,
-            "asu_sustainability_2012": 27.5,
-            "walton_family_foundation_pledge": 100,  # Portion of family $2B
-            "other": 39.5,
-            "notes": "VERIFIED Jan 2026: Walmart heir (~$80B), former WMT chairman. Rob and Melani Walton Foundation (EIN 47-4259772): $441M assets, $108M disbursements (2024). ASU $115M (2025, conservation school naming). African Parks $100M (2021, Rob is board chair). Conservation focus via WFF environment committee. Explicitly DECLINED Giving Pledge: 'We have chosen to do our own way.'"
-        },
-        "verification": {
-            "990_pf": {"status": "found", "amount_millions": 108, "ein": "47-4259772", "note": "Rob and Melani Walton Foundation: $441M assets, $108M disbursements (2024)", "url": "https://projects.propublica.org/nonprofits/organizations/474259772/202523189349103457/full"},
-            "sec_form4": {"status": "found", "note": "Walmart stock gifts to foundation tracked", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 500, "note": "Foundation + ASU + African Parks", "url": "https://projects.propublica.org/nonprofits/organizations/474259772/202523189349103457/full"},
-            "news_verified": {"status": "found", "amount_millions": 500, "note": "ASU $115M 2025, African Parks $100M 2021 widely covered", "url": None}
-        },
-        "sources": ["https://projects.propublica.org/nonprofits/organizations/474259772/202523189349103457/full"],
         "giving_pledge": "no"
     },
     "Francoise Bettencourt Meyers": {
