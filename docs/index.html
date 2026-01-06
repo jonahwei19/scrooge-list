@@ -706,8 +706,17 @@
 <body>
     <div class="container">
         <header>
-            <h1>The Scrooge List</h1>
-            <p class="subtitle">An inverse Forbes list - ranking billionaires by how little they've deployed for charity</p>
+            <h1 id="list-title">The Scrooge List</h1>
+            <p class="subtitle" id="list-subtitle">An inverse Forbes list - ranking billionaires by how little they've deployed for charity</p>
+            <div style="margin-top: 15px; display: flex; align-items: center; justify-content: center; gap: 12px;">
+                <span style="font-size: 1.1rem; cursor: pointer;" onclick="setSantaMode(false)" id="scrooge-label">😠 Scrooge</span>
+                <label class="toggle-switch" style="position: relative; display: inline-block; width: 50px; height: 26px;">
+                    <input type="checkbox" id="santa-toggle" onchange="toggleListMode()" style="opacity: 0; width: 0; height: 0;">
+                    <span style="position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--bg-card); border-radius: 26px; transition: 0.3s; border: 1px solid var(--border-color);"></span>
+                    <span id="toggle-slider" style="position: absolute; content: ''; height: 20px; width: 20px; left: 3px; bottom: 3px; background-color: #e74c3c; border-radius: 50%; transition: 0.3s;"></span>
+                </label>
+                <span style="font-size: 1.1rem; cursor: pointer;" onclick="setSantaMode(true)" id="santa-label">🎅 Santa</span>
+            </div>
             <p style="margin-top: 12px;"><a href="methodology.html" style="color: var(--accent-blue); text-decoration: none; font-size: 0.95rem;">📊 How we calculate scores &rarr;</a></p>
         </header>
 
@@ -914,6 +923,41 @@
         let rawData = [];
         let filteredData = [];
         let currentSort = { column: 'scrooge_score', direction: 'desc' };
+        let santaMode = false;
+
+        function toggleListMode() {
+            santaMode = document.getElementById('santa-toggle').checked;
+            updateListUI();
+            filterData();
+        }
+
+        function setSantaMode(isSanta) {
+            santaMode = isSanta;
+            document.getElementById('santa-toggle').checked = isSanta;
+            updateListUI();
+            filterData();
+        }
+
+        function updateListUI() {
+            const slider = document.getElementById('toggle-slider');
+            const title = document.getElementById('list-title');
+            const subtitle = document.getElementById('list-subtitle');
+            const scoreHeader = document.querySelector('th[onclick*="scrooge_score"]');
+
+            if (santaMode) {
+                slider.style.transform = 'translateX(24px)';
+                slider.style.backgroundColor = '#27ae60';
+                title.textContent = 'The Santa List';
+                subtitle.textContent = 'Top 20 billionaire philanthropists by lifetime giving';
+                if (scoreHeader) scoreHeader.textContent = 'Giving Rate';
+            } else {
+                slider.style.transform = 'translateX(0)';
+                slider.style.backgroundColor = '#e74c3c';
+                title.textContent = 'The Scrooge List';
+                subtitle.textContent = 'An inverse Forbes list - ranking billionaires by how little they\'ve deployed for charity';
+                if (scoreHeader) scoreHeader.textContent = 'Scrooge Score';
+            }
+        }
 
         // Load data from JSON
         async function loadData() {
@@ -1046,57 +1090,79 @@
         }
 
         function sortAndRender() {
-            const col = currentSort.column === 'scrooge_score' ? 'adjusted_score' : currentSort.column;
+            let displayData;
 
-            filteredData.sort((a, b) => {
-                let valA = a[col];
-                let valB = b[col];
-                if (valA === undefined || valA === null) valA = 0;
-                if (valB === undefined || valB === null) valB = 0;
-                if (typeof valA === 'string') valA = valA.toLowerCase();
-                if (typeof valB === 'string') valB = valB.toLowerCase();
+            // In Santa mode, always sort by total giving (descending) and limit to 20
+            if (santaMode) {
+                displayData = [...filteredData].sort((a, b) => {
+                    const givingA = a.total_lifetime_giving_millions || 0;
+                    const givingB = b.total_lifetime_giving_millions || 0;
+                    return givingB - givingA; // Descending by giving
+                }).slice(0, 20); // Top 20 only
+            } else {
+                const col = currentSort.column === 'scrooge_score' ? 'adjusted_score' : currentSort.column;
 
-                // Primary comparison
-                let result;
-                if (currentSort.direction === 'asc') {
-                    result = valA > valB ? 1 : valA < valB ? -1 : 0;
-                } else {
-                    result = valA < valB ? 1 : valA > valB ? -1 : 0;
-                }
+                displayData = [...filteredData].sort((a, b) => {
+                    let valA = a[col];
+                    let valB = b[col];
+                    if (valA === undefined || valA === null) valA = 0;
+                    if (valB === undefined || valB === null) valB = 0;
+                    if (typeof valA === 'string') valA = valA.toLowerCase();
+                    if (typeof valB === 'string') valB = valB.toLowerCase();
 
-                // Tie-breaker: when sorting by scrooge score and values are equal,
-                // rank by net worth (higher net worth = higher Scrooge rank when tied)
-                if (result === 0 && (col === 'adjusted_score' || col === 'scrooge_score')) {
-                    const nwA = a.net_worth_billions || 0;
-                    const nwB = b.net_worth_billions || 0;
-                    // For descending order (default for scores), higher net worth comes first
-                    if (currentSort.direction === 'desc') {
-                        result = nwB - nwA;
+                    // Primary comparison
+                    let result;
+                    if (currentSort.direction === 'asc') {
+                        result = valA > valB ? 1 : valA < valB ? -1 : 0;
                     } else {
-                        result = nwA - nwB;
+                        result = valA < valB ? 1 : valA > valB ? -1 : 0;
                     }
-                }
 
-                return result;
-            });
+                    // Tie-breaker: when sorting by scrooge score and values are equal,
+                    // rank by net worth (higher net worth = higher Scrooge rank when tied)
+                    if (result === 0 && (col === 'adjusted_score' || col === 'scrooge_score')) {
+                        const nwA = a.net_worth_billions || 0;
+                        const nwB = b.net_worth_billions || 0;
+                        // For descending order (default for scores), higher net worth comes first
+                        if (currentSort.direction === 'desc') {
+                            result = nwB - nwA;
+                        } else {
+                            result = nwA - nwB;
+                        }
+                    }
 
-            renderTable();
+                    return result;
+                });
+            }
+
+            renderTable(displayData);
             updateStats();
         }
 
-        function renderTable() {
+        function renderTable(displayData) {
             const tbody = document.getElementById('table-body');
             tbody.innerHTML = '';
 
-            filteredData.forEach((d, i) => {
-                const score = d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score;
-                const scoreClass = score >= 70 ? 'score-high' : score >= 40 ? 'score-medium' : 'score-low';
+            displayData.forEach((d, i) => {
                 const giving = d.total_lifetime_giving_millions || 0;
                 const verifiable = d.verifiable_giving_millions || 0;
                 const unverifiable = d.unverifiable_giving_millions || 0;
+                const netWorth = d.net_worth_billions * 1000; // in millions
 
                 // Format amounts
                 const formatAmount = (amt) => amt >= 1000 ? `$${(amt/1000).toFixed(1)}B` : `$${amt.toFixed(0)}M`;
+
+                // In Santa mode, show giving rate %; in Scrooge mode, show scrooge score
+                let scoreDisplay, scoreClass;
+                if (santaMode) {
+                    const givingRate = netWorth > 0 ? (giving / netWorth) * 100 : 0;
+                    scoreDisplay = givingRate.toFixed(1) + '%';
+                    scoreClass = givingRate >= 10 ? 'score-low' : givingRate >= 3 ? 'score-medium' : 'score-high';
+                } else {
+                    const score = d.adjusted_score !== undefined ? d.adjusted_score : d.scrooge_score;
+                    scoreDisplay = score.toFixed(1);
+                    scoreClass = score >= 70 ? 'score-high' : score >= 40 ? 'score-medium' : 'score-low';
+                }
 
                 const row = document.createElement('tr');
                 row.className = 'clickable';
@@ -1108,7 +1174,7 @@
                     <td class="money hide-mobile" style="color: var(--accent-green)">${formatAmount(verifiable)}</td>
                     <td class="money hide-mobile" style="color: var(--accent-yellow)">${formatAmount(unverifiable)}</td>
                     <td class="money hide-mobile">${formatAmount(giving)}</td>
-                    <td class="score-cell ${scoreClass}">${score.toFixed(1)}</td>
+                    <td class="score-cell ${scoreClass}">${scoreDisplay}</td>
                     <td class="hide-mobile ${getPledgeDisplay(d).class}">${getPledgeDisplay(d).text}</td>
                 `;
                 tbody.appendChild(row);
