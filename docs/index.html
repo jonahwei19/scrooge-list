@@ -1101,7 +1101,7 @@
                 row.className = 'clickable';
                 row.onclick = () => openProfile(d);
                 row.innerHTML = `
-                    <td>${d.scrooge_rank || i + 1}</td>
+                    <td>${i + 1}</td>
                     <td><strong>${d.name}</strong><br><small style="color:var(--text-secondary)">${d.country}</small></td>
                     <td class="money">$${d.net_worth_billions.toFixed(1)}B</td>
                     <td class="money hide-mobile" style="color: var(--accent-green)">${formatAmount(verifiable)}</td>
