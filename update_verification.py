@@ -5832,6 +5832,169 @@ VERIFICATION_DATA = {
             "https://givingpledge.org/"
         ],
         "giving_pledge": "yes"
+    },
+    "Philip Knight": {
+        "total_lifetime_giving_millions": 6000,
+        "giving_breakdown": {
+            "ohsu": 2700,
+            "university_of_oregon": 2200,
+            "stanford": 580,
+            "1803_fund_portland": 400,
+            "other": 120,
+            "notes": "VERIFIED Jan 2026: ~$5.5-6B lifetime (Phil & Penny Knight combined). Knight Foundation (EIN 91-1791788) had $5.4B assets, disbursed $226.5M in 2024. OHSU $2.7B+ (including $2B Aug 2025 - largest single US university gift ever). Oregon $2.2B+ (Knight Campus $1B, arena, law school). Stanford $580M (Knight-Hennessy Scholars $400M, GSB $105M, Brain Resilience $75M). 1803 Fund $400M for Portland Black community. SEC Form 4 shows ~$2B in Nike stock transfers to foundation 2018-2020. NOT a Giving Pledge signatory."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Knight Foundation EIN 91-1791788, $226.5M disbursed 2024, $5.4B assets", "url": "https://projects.propublica.org/nonprofits/organizations/911791788"},
+            "sec_form4": {"status": "found", "amount_millions": 2000, "note": "12M shares Oct 2018 ($990M), 7.25M shares Sept 2020 ($942M) to foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 226, "note": "2024 disbursements verified via 990-PF", "url": "https://www.grantmakers.io/profiles/v0/911791788-knight-foundation/"},
+            "news_verified": {"status": "found", "amount_millions": 6000, "sources": ["Chronicle of Philanthropy", "Oregonian", "TIME"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/911791788",
+            "https://www.grantmakers.io/profiles/v0/911791788-knight-foundation/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Takemitsu Takizaki": {
+        "total_lifetime_giving_millions": 5000,
+        "giving_breakdown": {
+            "keyence_foundation_shares": 5000,
+            "notes": "VERIFIED Jan 2026: ~$5B in Keyence shares transferred to Keyence Foundation (est. 2018). 2020: 3.65M shares (~$2.3B). 2022: 7.45M shares (~$2.6B). Foundation now holds 4.56% of Keyence (11.1M shares, ~$2.5B current value). ACTUAL DISBURSEMENTS are much lower - foundation awards ~700 scholarships/year at ¥4.8M each = ~$25-35M annually. Also runs Takizaki Memorial Trust for Asian students. Extremely private - no documented arts, health, or international giving. NOT on Giving Pledge (no Japanese signatories)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Japanese foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Japanese company", "url": None},
+            "foundation_reports": {"status": "partial", "note": "Forbes Asia verified share donations; scholarship numbers from foundation website", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 5000, "sources": ["Forbes Asia Heroes 2021, 2023"], "url": None}
+        },
+        "sources": [
+            "https://www.keyence-foundation.or.jp/",
+            "https://en.wikipedia.org/wiki/Takemitsu_Takizaki"
+        ],
+        "giving_pledge": "no"
+    },
+    "Christy Walton": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "alumbra_innovations_foundation": 100,
+            "notes": "VERIFIED Jan 2026: LOW-PROFILE philanthropist. Alumbra Innovations Foundation (EIN 83-2841232) her personal vehicle - $113.5M assets, disbursed $31.7M in 2024. Focus: environmental conservation, regenerative aquaculture (Baja), reproductive choice. 2014 Forbes report found Walton heirs contributed 'almost none' of personal wealth to Walton Family Foundation (funded by Sam Walton's CLATs). Claims of '$3.5B giving 2002-2006' likely conflate family foundation with personal. Victorian home donation + $4M endowment (2006). NOT a Giving Pledge signatory."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Alumbra Innovations Foundation EIN 83-2841232, $31.7M disbursed 2024, $113.5M assets", "url": "https://projects.propublica.org/nonprofits/organizations/832841232"},
+            "sec_form4": {"status": "not_applicable", "note": "Walmart shares held through trusts", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 100, "note": "990-PF shows ~$100M total disbursed 2019-2024", "url": "https://projects.propublica.org/nonprofits/organizations/832841232"},
+            "news_verified": {"status": "partial", "amount_millions": 0, "sources": [], "note": "Higher claims unverifiable", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/832841232",
+            "https://www.forbes.com/sites/clareoconnor/2014/06/03/report-walmarts-billionaire-waltons-give-almost-none-of-own-cash-to-family-foundation/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Susanne Klatten": {
+        "total_lifetime_giving_millions": 200,
+        "giving_breakdown": {
+            "skala_initiative": 100,
+            "stiftung_kunst_und_natur": 50,
+            "tum_unternehmertum": 20,
+            "herbert_quandt_foundation": 15,
+            "other": 15,
+            "notes": "VERIFIED Jan 2026: €150-200M+ lifetime. SKala Initiative €100M (2016-2022) via PHINEO partnership - 88 nonprofits funded. Stiftung Kunst und Natur (personal foundation since 2012) - 320-hectare estate, ~€6M/year. Founded UnternehmerTUM (2002). TUM Professorship €10M (2009). Herbert Quandt Foundation (joint with Stefan) €30M contribution. Explicitly REJECTED Giving Pledge per German media. Low-profile donor, deliberately private."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German foundations - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "German company", "url": None},
+            "foundation_reports": {"status": "partial", "note": "SKala €100M verified; Stiftung Kunst und Natur active but limited disclosure", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 100, "sources": ["ZEIT", "Handelsblatt", "PHINEO"], "url": None}
+        },
+        "sources": [
+            "https://www.skala-initiative.de/",
+            "https://www.stiftung-kunst-und-natur.de/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Zhang Yong": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "corporate_haidilao": 30,
+            "personal_sunrise_capital": 20,
+            "notes": "VERIFIED Jan 2026: PRIVATE philanthropist - limited documentation. Corporate: Jianyang Tongcai School (2001), Bingwen Education Foundation, Ai You Foundation partnership, COVID ¥5M, 2023 community initiatives $10M+. Personal: Managed through wife Shu Ping's Sunrise Capital Management (Singapore). Shu Ping on Hurun China Philanthropy List 2021 (requires ¥100-200M minimum). Focus: education, poverty relief in Sichuan. Extremely private - rarely gives interviews."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese/Singapore entities - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Hong Kong listed company", "url": None},
+            "foundation_reports": {"status": "partial", "note": "Shu Ping on Hurun 2021 list but exact amount undisclosed", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 30, "sources": ["Haidilao corporate reports", "SCMP"], "url": None}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Zhang_Yong_(restaurateur)",
+            "https://www.hurun.net/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Wang Chuanfu": {
+        "total_lifetime_giving_millions": 75,
+        "giving_breakdown": {
+            "personal_2010": 16,
+            "corporate_education": 50,
+            "other": 9,
+            "notes": "VERIFIED Jan 2026: MODEST personal giving relative to wealth. 2010: ¥104.5M personal donation ($16M) when founding BYD Charity Foundation. 2024: BYD (corporate) launched ¥3B education fund - BUT this is corporate, not personal. COVID: BYD donated 16M+ masks (corporate). NOT on Hurun Philanthropy top rankings despite $20B+ net worth. Contrast: peers Lei Jun gave ~$2B, Colin Huang ~$2B in share pledges. Focus: education and employee welfare."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Hong Kong/Shenzhen listed", "url": None},
+            "foundation_reports": {"status": "partial", "note": "BYD Charity Foundation exists but limited disclosure", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 16, "sources": ["2010 donation confirmed by multiple Chinese sources"], "url": None}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Wang_Chuanfu"
+        ],
+        "giving_pledge": "no"
+    },
+    "Dustin Moskovitz": {
+        "total_lifetime_giving_millions": 4500,
+        "giving_breakdown": {
+            "good_ventures_disbursements": 4000,
+            "political_giving": 50,
+            "givewell_top_charities": 100,
+            "other": 350,
+            "notes": "VERIFIED Jan 2026: ~$4-4.5B donated to date, targeting $15-20B lifetime. Good Ventures (EIN 46-1008520) has $7.94B assets, disbursed $357.5M in 2024. Open Philanthropy/Coefficient Giving outsources grantmaking. Youngest Giving Pledge signatory (2010). Focus: global health (malaria, deworming), AI safety, biosecurity, animal welfare. GiveWell top charities: ~$100M. COVID response through Open Philanthropy. Political: ~$50M to Democratic causes 2024."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Good Ventures EIN 46-1008520, $357.5M disbursed 2024, $7.94B assets", "url": "https://projects.propublica.org/nonprofits/organizations/461008520"},
+            "sec_form4": {"status": "not_applicable", "note": "Asana/Facebook holdings complex", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 357, "note": "990-PF and Open Philanthropy grants database", "url": "https://projects.propublica.org/nonprofits/organizations/461008520"},
+            "news_verified": {"status": "found", "amount_millions": 4500, "sources": ["Open Philanthropy database", "Vox", "Chronicle of Philanthropy"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/461008520",
+            "https://www.openphilanthropy.org/grants/"
+        ],
+        "giving_pledge": "yes"
+    },
+    "John Doerr": {
+        "total_lifetime_giving_millions": 2000,
+        "giving_breakdown": {
+            "stanford_sustainability_school": 1100,
+            "rice_doerr_institute": 50,
+            "benificus_annual": 500,
+            "environmental_defense_fund": 10,
+            "climate_organizations": 100,
+            "newschools_venture_fund": 50,
+            "other": 190,
+            "notes": "VERIFIED Jan 2026: ~$2B+ lifetime (John & Ann Doerr). Stanford Doerr School of Sustainability $1.1B (2022, largest Stanford gift ever). Rice Doerr Institute $50M (2015). Benificus Foundation (EIN 77-0444504) disbursed $220.1M in 2024. Co-founded NewSchools Venture Fund (1998). Major climate philanthropy: EDF, Climate Reality Project $5M+. Giving Pledge signatory 2010. 'Venture philanthropy' approach."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Benificus Foundation EIN 77-0444504, $220.1M disbursed 2024", "url": "https://projects.propublica.org/nonprofits/organizations/770444504"},
+            "sec_form4": {"status": "not_applicable", "note": "KPCB holdings complex structure", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 220, "note": "990-PF filings 1997-present", "url": "https://projects.propublica.org/nonprofits/organizations/770444504"},
+            "news_verified": {"status": "found", "amount_millions": 1100, "sources": ["Stanford announcement 2022", "Chronicle of Philanthropy"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/770444504",
+            "https://news.stanford.edu/2022/05/04/stanford-university-announces-major-sustainability-school/"
+        ],
+        "giving_pledge": "yes"
     }
 }
 
