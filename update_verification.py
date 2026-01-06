@@ -5530,6 +5530,308 @@ VERIFICATION_DATA = {
             "https://www.mscfoundation.org/news/14-million-for-unicef"
         ],
         "giving_pledge": "no"
+    },
+    "Beate Heister": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "foundation_grants": 0,
+            "notes": "VERIFIED Jan 2026: NO documented charitable giving. The Albrecht family (Aldi Süd) operates Oertl-Stiftung (medical research) and Elisen-Stiftung (culture) but NO public reporting on grants or donations. Siepmann-Stiftung is wealth management vehicle, not charity. Email scams impersonate Heister claiming '25% of wealth to charity' - these are frauds. German private foundations have no disclosure requirements. Not Giving Pledge signatory."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Oertl-Stiftung and Elisen-Stiftung exist but publish no financial data", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "sources": [], "url": None}
+        },
+        "sources": [
+            "https://de.wikipedia.org/wiki/Siepmann-Stiftung",
+            "https://de.wikipedia.org/wiki/Beate_Heister"
+        ],
+        "giving_pledge": "no"
+    },
+    "Michael Herz": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "personal": 0,
+            "notes": "VERIFIED Jan 2026: NO documented personal charitable giving found. His mother founded Max und Ingeburg Herz Stiftung (awards €70K geriatric research prizes). Brother Joachim donated entire €1.3B estate to Joachim Herz Stiftung (spending €26.5M in 2023). Michael and Wolfgang Herz reference 'family's charitable foundation' but no amounts attributable to Michael personally. Very private - lives 'away from public eye'."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 0, "note": "Joachim Herz Stiftung (brother's) spent €26.5M in 2023; Max und Ingeburg Herz Stiftung (mother's) active but amounts undisclosed", "url": "https://www.joachim-herz-stiftung.de/"},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "sources": [], "url": None}
+        },
+        "sources": [
+            "https://www.joachim-herz-stiftung.de/en/about-us/the-foundation",
+            "https://www.maxundingeburgherz-stiftung.de/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Marcel Herrmann Telles": {
+        "total_lifetime_giving_millions": 95,
+        "giving_breakdown": {
+            "telles_foundation_uk": 95,
+            "fundacao_estudar": "undisclosed",
+            "ismart": "undisclosed",
+            "notes": "VERIFIED Jan 2026: Telles Foundation UK (Charity 1158178) disbursed £75M (~$95M) in grants 2020-2024. Co-founded Fundação Estudar (1991) with Lemann and Sicupira - invests R$8-10M annually in scholarships. Founded Ismart (1999) for youth scholarships - annual budget ~R$4M. MoMA board member. NOT a Giving Pledge signatory."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "UK and Brazilian foundations - no US 990", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "AB InBev filings exist but Brazil-based", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 95, "note": "UK Charity Commission filings show £75M expenditure 2020-2024", "url": "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1165054"},
+            "news_verified": {"status": "found", "amount_millions": 0.3, "sources": ["Inteli grant $313K 2025"], "url": None}
+        },
+        "sources": [
+            "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1165054",
+            "https://www.estudar.org.br/en/sobre-nos/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Aneel Bhusri": {
+        "total_lifetime_giving_millions": 15,
+        "giving_breakdown": {
+            "personal_direct": 1,
+            "workday_foundation": 8,
+            "workday_corporate_social_justice": 10,
+            "notes": "VERIFIED Jan 2026: Giving Pledge signatory (2018) with wife Allison. $1M to Give2SF COVID relief (2020). Workday Foundation (EIN 46-0563684) he chairs disbursed $8M in 2024. Workday corporate committed $10M to social justice (2020). Memorial Tournament raised $14.6M 2022-2024. No personal family foundation exists - giving through corporate vehicles. Supports Harlem Children's Zone, Tipping Point, YearUp."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Workday Foundation EIN 46-0563684 - $8M disbursed 2024, $38.2M assets", "url": "https://projects.propublica.org/nonprofits/organizations/460563684"},
+            "sec_form4": {"status": "not_verified", "note": "Pre-April 2023 stock gifts not required on Form 4", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 8, "note": "Workday Foundation is corporate, not personal", "url": "https://projects.propublica.org/nonprofits/organizations/460563684"},
+            "news_verified": {"status": "found", "amount_millions": 1, "sources": ["Wikipedia - $1M Give2SF"], "url": "https://en.wikipedia.org/wiki/Aneel_Bhusri"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/460563684",
+            "https://en.wikipedia.org/wiki/Aneel_Bhusri"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Mangal Prabhat Lodha": {
+        "total_lifetime_giving_millions": 2500,
+        "giving_breakdown": {
+            "lodha_philanthropy_foundation": 2500,
+            "lodha_foundation_operations": "undisclosed",
+            "notes": "VERIFIED Jan 2026: Rs 20,000 crore (~$2.5B) PLEDGED Oct 2024 via transfer of ~18% Macrotech Developers stake to Lodha Philanthropy Foundation. Modeled on Tata Trusts. CRITICAL CAVEAT: This is share transfer, not cash - foundation will receive dividends over time. Launched Lodha Mathematical Sciences Institute Aug 2025. Lodha Foundation (since 2013) runs Unnati women's program, Genius education scholarships. Lodha Foundation UK (Charity 1158178) is dormant (£1,500 spending 2024)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Indian company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2500, "note": "Rs 20,000 crore share transfer verified by multiple Indian news sources Oct 2024", "url": "https://www.business-standard.com/companies/news/lodha-group-to-transfer-18-stake-in-macrotech-developers-for-philanthropy-124102801118_1.html"},
+            "news_verified": {"status": "found", "amount_millions": 2500, "sources": ["Business Standard", "The Hindu", "Moneycontrol"], "url": "https://www.thehindu.com/business/lodha-groups-abhishek-lodha-to-transfer-20000-cr-shares-in-mdl-to-philanthropy-foundation/article68807769.ece"}
+        },
+        "sources": [
+            "https://www.business-standard.com/companies/news/lodha-group-to-transfer-18-stake-in-macrotech-developers-for-philanthropy-124102801118_1.html",
+            "https://www.lodhafoundation.org/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Gustav Magnar Witzoe": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "w_initiative_foundation": 11,
+            "annual_giving_2023": 40,
+            "other": 0.25,
+            "notes": "VERIFIED Jan 2026: W Initiative foundation founded 2021 with NOK 110M (~$11M) seed capital. Norwegian media reports NOK 400M donated in single year (likely 2023). Known grants: NOK 10M to GiveDirectly (Rwanda), local sports funds (NOK 1-4M annually), UNICEF NOK 8M. Also donated NOK 2.5M to Ukraine drones (2025). Stated goal: donate NOK 1 billion lifetime (~$95M). Ambassador: tennis player Casper Ruud."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Norwegian stiftelse - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Norwegian company (SalMar)", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 11, "note": "W Initiative NOK 110M founding capital confirmed; NOK 400M annual giving per Nettavisen", "url": "https://www.w-initiative.com/en"},
+            "news_verified": {"status": "found", "amount_millions": 40, "sources": ["Nettavisen - NOK 400M", "Bergens Tidende"], "url": "https://www.nettavisen.no/kjendis/milliardararving-gustav-witzoe-har-delt-ut-hundrevis-av-millioner/s/5-95-2389184"}
+        },
+        "sources": [
+            "https://www.w-initiative.com/en",
+            "https://www.nettavisen.no/kjendis/milliardararving-gustav-witzoe-har-delt-ut-hundrevis-av-millioner/s/5-95-2389184"
+        ],
+        "giving_pledge": "no"
+    },
+    "Nicolas Puech": {
+        "total_lifetime_giving_millions": 12,
+        "giving_breakdown": {
+            "isocrates_foundation_seed": 11.5,
+            "journalism_grants": 0.5,
+            "notes": "VERIFIED Jan 2026: Founded Isocrates Foundation (formerly Fondation Nicolas Puech) 2011 with CHF 10M seed capital. Intended to leave €6-7B via inheritance but now in legal dispute after claiming Hermès shares 'vanished'. Foundation made grants to Arena for Journalism (€50K/yr), Digital Freedom Fund, IJ4EU. As of Nov 2023, foundation 'no longer processing new funding requests' due to legal fight. Forbes removed Puech from billionaires list 2025."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Swiss foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "French company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 11.5, "note": "CHF 10M seed capital verified; 900K Hermès shares were held but now disputed", "url": "https://isocrates.org/about-us/"},
+            "news_verified": {"status": "found", "amount_millions": 0.05, "sources": ["Arena for Journalism - €50K grants"], "url": "https://journalismarena.eu/contact-about/the-funders/"}
+        },
+        "sources": [
+            "https://isocrates.org/about-us/",
+            "https://fortune.com/europe/2023/12/19/hermes-billionaire-heir-nicolas-puech-cut-ties-charity-isocrates-foundation-gardener-adoption/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Sarath Ratanavadi": {
+        "total_lifetime_giving_millions": 7,
+        "giving_breakdown": {
+            "healthcare_covid": 1,
+            "healthcare_thammasat": 1.6,
+            "religious_wat_saket": 1.2,
+            "usc_golf": 3,
+            "community_programs": 0.2,
+            "notes": "VERIFIED Jan 2026: Gulf Energy/personal donations totaling ~THB 235M (~$7M). THB 55M to Thammasat hemodialysis center. THB 41M to Wat Saket temple restoration (Apr 2025). THB 34M+ COVID medical equipment. $3M to USC golf program (2015, controversial - son admitted as walk-on). Community programs: Gulf Sparks solar installations, flood relief. Represents ~0.05% of $12.9B net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Thai foundations - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Thai company", "url": None},
+            "foundation_reports": {"status": "partial", "note": "Gulf Foundation exists but no public financial reports", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 7, "sources": ["Nation Thailand", "Matichon", "LA Times (USC)"], "url": "https://www.nationthailand.com/pr-news/business/pr-news/40019836"}
+        },
+        "sources": [
+            "https://www.nationthailand.com/pr-news/business/pr-news/40019836",
+            "https://www.latimes.com/california/story/2024-10-22/usc-donor-kids-walk-on-athlete-admission-fundraising-scandal"
+        ],
+        "giving_pledge": "no"
+    },
+    "Peter Beck": {
+        "total_lifetime_giving_millions": 20,
+        "giving_breakdown": {
+            "foundation_capital": 20,
+            "scholarships": 0.2,
+            "notes": "VERIFIED Jan 2026: Sept 2023 sold 3.6M Rocket Lab shares for $20.2M to 'capitalize my charitable foundation' (Beck's own statement). Foundation name/structure unknown - likely NZ charitable trust. Rocket Lab Scholarship program since 2017 (~$20K/student/year). Women's Scholarship since 2022. Active in Squawk Squad bird conservation and University of Canterbury support. No US 990 found for personal foundation."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "Foundation likely NZ-based, no US filings", "url": None},
+            "sec_form4": {"status": "not_found", "note": "2023 share sale was for foundation capitalization, not direct gift", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Foundation structure and filings unknown", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 20, "sources": ["NZ Herald", "Forbes", "Beck Twitter"], "url": "https://x.com/Peter_J_Beck/status/1701731221079036140"}
+        },
+        "sources": [
+            "https://x.com/Peter_J_Beck/status/1701731221079036140",
+            "https://www.forbes.com/sites/mattdurot/2024/11/15/rocket-labs-founder-peter-beck-just-became-the-worlds-newest-space-billionaire/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Zia Chishti": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "personal": 0,
+            "notes": "VERIFIED Jan 2026: NO documented personal charitable giving found. Claims of 'millions' to 'Chishti Foundation', Gates Foundation, UN Foundation appear only in tabloid sources without corroboration. No US 990 filings found for any Chishti-controlled foundation. Afiniti corporate giving limited to laptop donations and tree planting. Received Sitara-e-Imtiaz 2018 for IT contributions, not philanthropy. Currently facing legal/financial troubles (TRG, Afiniti bankruptcy)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Zia Chishti foundation exists in IRS records", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Private companies", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "No foundation exists", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "sources": [], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/",
+            "https://en.wikipedia.org/wiki/Zia_Chishti"
+        ],
+        "giving_pledge": "no"
+    },
+    "Leonard Lauder": {
+        "total_lifetime_giving_millions": 2000,
+        "giving_breakdown": {
+            "met_cubist_collection": 1100,
+            "whitney_museum": 131,
+            "penn_nursing": 125,
+            "addf_pledge": 100,
+            "hunter_college": 62,
+            "msk_breast_center": 50,
+            "met_research_center": 22,
+            "wharton_lauder_institute": 20,
+            "national_gallery": 5,
+            "other": 385,
+            "notes": "VERIFIED Jan 2026: Over $2B lifetime giving per eJewish Philanthropy. Met Cubist collection (78+ works) valued at $1.1B+ (2013). Whitney $131M+ plus 760 artworks. Penn Nursing $125M (2022, largest nursing school gift ever). ADDF $100M (2023 family pledge, his share). Hunter $62M. MSK $50M. BCRF $114M+ via Estee Lauder. Leonard & Evelyn Lauder Foundation 990-PF (EIN 13-4139448) showed modest $6-7M/year disbursements. NOT a Giving Pledge signatory."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Leonard and Evelyn Lauder Foundation EIN 13-4139448, ~$23M disbursed 2011-2015", "url": "https://projects.propublica.org/nonprofits/organizations/134139448"},
+            "sec_form4": {"status": "not_verified", "note": "SEC EDGAR access blocked during research", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 23, "note": "990-PF filings 2011-2015 show $23M disbursed", "url": "https://projects.propublica.org/nonprofits/organizations/134139448"},
+            "news_verified": {"status": "found", "amount_millions": 1500, "sources": ["NYT Met gift", "Chronicle of Philanthropy", "Penn announcement"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/134139448",
+            "https://www.ejewishphilanthropy.com/leonard-lauder-collector-philanthropist-and-mentor/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Abigail Johnson": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "fidelity_foundation_share": 30,
+            "edward_c_johnson_fund_share": 20,
+            "notes": "VERIFIED Jan 2026: LOW-PROFILE philanthropist relative to wealth. No Giving Pledge signatory. No personal foundation - giving flows through family vehicles. Fidelity Foundation (corporate, EIN 04-6131201) has $4.98B assets, disbursed $167.8M in 2024. Edward C. Johnson Fund (EIN 04-6108344) has $496M assets, disbursed $22M in 2023. Inside Philanthropy notes 'difficult to distinguish her philanthropy from that of her family.' Focus: Boston-area arts, Harvard, health causes. UNCF $190M (2023) is Fidelity corporate, not personal."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Fidelity Foundation EIN 04-6131201, $167.8M disbursed 2024; Edward C. Johnson Fund EIN 04-6108344, $22M disbursed 2023", "url": "https://projects.propublica.org/nonprofits/organizations/46131201"},
+            "sec_form4": {"status": "not_applicable", "note": "Fidelity is private - no SEC filings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 190, "note": "Family foundations combined ~$190M/year, her personal share unclear", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 0, "sources": [], "note": "No major personal gifts documented", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/46131201",
+            "https://www.insidephilanthropy.com/find-a-grant/major-donors/abigail-johnson-html"
+        ],
+        "giving_pledge": "no"
+    },
+    "Francois Pinault": {
+        "total_lifetime_giving_millions": 100,
+        "giving_breakdown": {
+            "notre_dame": 100,
+            "notes": "VERIFIED Jan 2026: €100M Notre-Dame donation (2019) FULLY PAID - confirmed Dec 2024 by reconstruction oversight. Pinault Collection museums (€300-350M invested) are NOT charity - structured as Société Anonyme (public limited company) retaining family ownership, not a tax-exempt foundation. Art collection (~10,000 works, €1.25B+ value) remains family asset. Kering Foundation (corporate) is separate - funded by public company, not personal wealth. No Giving Pledge signatory."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "French - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "French company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 100, "note": "Notre-Dame €100M confirmed paid", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 100, "sources": ["AP News Dec 2024"], "url": None}
+        },
+        "sources": [
+            "https://apnews.com/article/notre-dame-reopening-donations-billionaires-pledges",
+            "https://news.artnet.com/art-world/pinault-collection-not-foundation-2419821"
+        ],
+        "giving_pledge": "no"
+    },
+    "Gina Rinehart": {
+        "total_lifetime_giving_millions": 350,
+        "giving_breakdown": {
+            "hancock_family_medical_foundation": 200,
+            "royal_flying_doctor": 16,
+            "olympic_sports": 70,
+            "indigenous_programs": 15,
+            "cambodia": 3,
+            "children_education": 10,
+            "other": 36,
+            "notes": "VERIFIED Jan 2026: $200M to Hancock Family Medical Foundation (2015, largest documented gift). ~$60-80M to Swimming Australia/Olympic sports since 2012. $16M to Royal Flying Doctor Service. Indigenous programs via Roy Hill Community Foundation (multi-million, undisclosed). Cambodia Hope Scholarships. NOT a Giving Pledge signatory. Australia's PAF disclosure requirements are weak - true giving likely higher but unverifiable."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Australian foundations - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Australian company", "url": None},
+            "foundation_reports": {"status": "partial", "note": "ACNC shows $205M Hancock Family Medical Foundation assets (2015); ongoing disclosures limited", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 300, "sources": ["AFR", "Swimming Australia", "Hancock Prospecting"], "url": None}
+        },
+        "sources": [
+            "https://www.afr.com/rich-list",
+            "https://www.hancockprospecting.com.au/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Vladimir Potanin": {
+        "total_lifetime_giving_millions": 500,
+        "giving_breakdown": {
+            "potanin_foundation_operations": 350,
+            "museum_gifts": 20,
+            "covid_nonprofit_support": 13,
+            "endowment_contributions": 100,
+            "notes": "VERIFIED Jan 2026: First Russian to sign Giving Pledge (2013). Potanin Foundation (est. 1999) awarded 27,000+ scholarships, 2,000+ professor grants. Annual budget ~$25M/year. In 2022, began building 100B ruble (~$1.1B) endowment with 10B ruble initial contribution. Museum gifts: Guggenheim (trustee until 2022 resignation), Centre Pompidou (~$1.4M), Hermitage ($6-7M including Black Square). Sanctions (UK/US 2022) severed Western ties. COVID: 1B rubles (~$13M) to Russian nonprofits 2020."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Russian foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Russian company", "url": None},
+            "foundation_reports": {"status": "partial", "note": "Foundation reports exist but not audited to Western standards; endowment building verified", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 500, "sources": ["Giving Pledge", "Potanin Foundation website", "Kennedy Center"], "url": None}
+        },
+        "sources": [
+            "https://www.fondpotanin.ru/en/",
+            "https://givingpledge.org/"
+        ],
+        "giving_pledge": "yes"
     }
 }
 
