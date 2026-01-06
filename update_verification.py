@@ -5995,6 +5995,464 @@ VERIFICATION_DATA = {
             "https://news.stanford.edu/2022/05/04/stanford-university-announces-major-sustainability-school/"
         ],
         "giving_pledge": "yes"
+    },
+    "Thai Lee": {
+        "total_lifetime_giving_millions": 25,
+        "giving_breakdown": {
+            "thai_lee_foundation": 15,
+            "cancer_research": 5,
+            "amherst_college": 3,
+            "other": 2,
+            "notes": "VERIFIED Jan 2026: ~$20-30M lifetime. Thai Lee Foundation (EIN 46-1613984) established 2014. Assets $13.8M (2024), grants $227K (2024), $1.9M (2023). Focus: education, cancer research (sister Margaret survived cancer). Extremely private - no executive assistant, minimal public profile. Inside Philanthropy notes giving 'very modest and negligible of late.' Net worth ~$6B. NOT a Giving Pledge signatory. Low giving rate (~0.4% of wealth)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Thai Lee Foundation EIN 46-1613984, $13.8M assets", "url": "https://projects.propublica.org/nonprofits/organizations/461613984"},
+            "sec_form4": {"status": "not_applicable", "note": "SHI International private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 15, "note": "990-PF filings 2014-present", "url": "https://projects.propublica.org/nonprofits/organizations/461613984"},
+            "news_verified": {"status": "not_found", "amount_millions": None, "sources": ["Forbes profile", "Inside Philanthropy"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/461613984"
+        ],
+        "giving_pledge": "no"
+    },
+    "John Paulson": {
+        "total_lifetime_giving_millions": 700,
+        "giving_breakdown": {
+            "harvard_seas": 400,
+            "central_park_conservancy": 100,
+            "nyu_stern": 146,
+            "hebrew_university": 27,
+            "center_responsible_lending": 15,
+            "childrens_hospital_guayaquil": 15,
+            "other": 7,
+            "notes": "VERIFIED Jan 2026: ~$680-700M documented. Harvard SEAS $400M (2015, largest Harvard gift ever, school renamed). Central Park Conservancy $100M (2012, largest parks gift ever). NYU Stern $146M+ (John A. Paulson Center $100M 2022 + earlier gifts). Hebrew University $27M (2023). Center for Responsible Lending $15M. Paulson Family Foundation (EIN 26-3922995) has $1.39B assets, disbursed $7.2M in 2024. NOT a Giving Pledge signatory."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Paulson Family Foundation EIN 26-3922995, $1.39B assets", "url": "https://projects.propublica.org/nonprofits/organizations/263922995"},
+            "sec_form4": {"status": "not_applicable", "note": "Hedge fund holdings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 7, "note": "990-PF filings 2009-present, $7.2M disbursed 2024", "url": "https://projects.propublica.org/nonprofits/organizations/263922995"},
+            "news_verified": {"status": "found", "amount_millions": 700, "sources": ["Harvard announcement 2015", "Chronicle of Philanthropy"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/263922995"
+        ],
+        "giving_pledge": "no"
+    },
+    "David Duffield": {
+        "total_lifetime_giving_millions": 600,
+        "giving_breakdown": {
+            "maddies_fund": 303,
+            "cornell_university": 145,
+            "oakland_spca": 2,
+            "animal_rescue_foundation": 1,
+            "veterans_first_responders": 15,
+            "maui_humane_society": 2,
+            "other": 132,
+            "notes": "VERIFIED Jan 2026: ~$470-600M+ lifetime. Maddie's Fund $303M (largest companion animal welfare gift). Dave & Cheryl Duffield Foundation (EIN 47-4279721) has $873M assets. Cornell University $145M+ (Duffield Institute for Animal Behavior $12M, College of Engineering). Plans to leave majority of $14.4B fortune to charity, not 10 children. Barron's 25 Best Givers (2009)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Maddie's Fund EIN 94-3362163, Dave & Cheryl Duffield Foundation EIN 47-4279721", "url": "https://projects.propublica.org/nonprofits/organizations/943362163"},
+            "sec_form4": {"status": "not_applicable", "note": "Workday/PeopleSoft holdings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 303, "note": "Maddie's Fund $303M+, Duffield Foundation $213M+", "url": "https://projects.propublica.org/nonprofits/organizations/474279721"},
+            "news_verified": {"status": "found", "amount_millions": 600, "sources": ["Cornell announcements", "Ridgewood Patch"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/943362163",
+            "https://projects.propublica.org/nonprofits/organizations/474279721"
+        ],
+        "giving_pledge": "no"
+    },
+    "Lei Jun": {
+        "total_lifetime_giving_millions": 1500,
+        "giving_breakdown": {
+            "lei_jun_foundation_shares": 1100,
+            "wuhan_university": 195,
+            "xiaomi_foundation_shares": 1100,
+            "disaster_relief": 50,
+            "other": 55,
+            "notes": "VERIFIED Jan 2026: ~$1.5B+ personal giving documented. July 2021: transferred $2.2B Xiaomi shares (616M shares split between Lei Jun Foundation and Xiaomi Foundation). Wuhan University: 1.45B yuan (~$195M) cumulative including $183M gift Nov 2023 (largest to Chinese university ever). Lei Jun Foundation focuses on education, AI, innovation. Pledged to return wealth '10x, 100x, 10000x.' NOT signed Giving Pledge but mirrors commitment."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "China-based foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Hong Kong listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1100, "note": "Lei Jun Foundation received 308M Xiaomi shares 2021", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 195, "sources": ["Wuhan University announcement 2023", "Hurun China Philanthropy"], "url": None}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/Lei_Jun"
+        ],
+        "giving_pledge": "no"
+    },
+    "He Xiangjian": {
+        "total_lifetime_giving_millions": 4000,
+        "giving_breakdown": {
+            "he_foundation": 3000,
+            "poverty_alleviation": 500,
+            "shunde_hometown": 300,
+            "he_science_foundation": 428,
+            "education": 200,
+            "other": 572,
+            "notes": "VERIFIED Jan 2026: ~$4-5B lifetime. He Foundation (founded 2013) received 100M Midea shares + 2B yuan cash in 2017 (~$888M total). Hurun #1 in 2018 ($1.18B). 15 consecutive years on Hurun list. 2023: He Science Foundation $428M for AI/climate research. Focus: poverty alleviation, education, elderly care, medical. 'Contributor to National Poverty Alleviation' award. $24B net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "China-based foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Hong Kong listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 4000, "note": "He Foundation, Hurun rankings", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 1180, "sources": ["Hurun China Philanthropy 2018 #1", "He Science Foundation 2023"], "url": None}
+        },
+        "sources": [
+            "https://hurun.net/en-US/Info/Detail?num=93E8C4B53DE6"
+        ],
+        "giving_pledge": "no"
+    },
+    "Reed Hastings": {
+        "total_lifetime_giving_millions": 2000,
+        "giving_breakdown": {
+            "svcf_2024_shares": 1600,
+            "hbcus_2020": 120,
+            "bowdoin_college": 50,
+            "minerva_tougaloo": 30,
+            "education_charter": 200,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$1.8-2B+ lifetime. Jan 2024: $1.1B (2M Netflix shares to SVCF). July 2024: $502M (790K Netflix shares). Bowdoin $50M (2025, largest in school history, Hastings AI Initiative). HBCUs $120M (2020: Morehouse, Spelman, UNCF $40M each). Giving Pledge signatory 2012. Charter school advocate (KIPP board). Hastings Fund at SVCF is primary vehicle."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Hastings Foundation Inc EIN 20-8162714 (dormant), main giving via SVCF DAF", "url": "https://projects.propublica.org/nonprofits/organizations/208162714"},
+            "sec_form4": {"status": "found", "note": "2024 stock gifts totaling $1.6B to SVCF", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1600, "note": "SVCF DAF contributions 2024", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 170, "sources": ["Bowdoin 2025", "HBCU announcements 2020"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/208162714"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Robert F. Smith": {
+        "total_lifetime_giving_millions": 600,
+        "giving_breakdown": {
+            "fund_ii_foundation": 250,
+            "student_freedom_initiative": 100,
+            "cornell_university": 65,
+            "morehouse_gift": 34,
+            "nmaahc": 20,
+            "carnegie_hall": 40,
+            "columbia_university": 25,
+            "susan_g_komen": 27,
+            "other": 39,
+            "notes": "VERIFIED Jan 2026: ~$580-600M documented. Morehouse 2019 graduation gift $34M (paid off 396 students' loans). Student Freedom Initiative $100M (2020). Fund II Foundation (EIN 47-2396669) $250M+ grants, $145M assets. Cornell $65M (school renamed). Carnegie Hall ~$40M (first Black chairman). NOTE: 2020 IRS settlement $139M + abandoned $182M deductions for offshore tax scheme."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Fund II Foundation EIN 47-2396669, $145M assets", "url": "https://projects.propublica.org/nonprofits/organizations/472396669"},
+            "sec_form4": {"status": "not_applicable", "note": "Vista Equity private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 250, "note": "Fund II Foundation cumulative grants", "url": "https://projects.propublica.org/nonprofits/organizations/472396669"},
+            "news_verified": {"status": "found", "amount_millions": 34, "sources": ["Morehouse 2019", "Cornell", "TIME100 Philanthropy"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/472396669"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Sun Piaoyang": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "medical_healthcare": 30,
+            "education": 10,
+            "poverty_alleviation": 5,
+            "other": 5,
+            "notes": "VERIFIED Jan 2026: Limited public data. ~$50M estimated. Featured on 2019 Hurun Philanthropy List for medical aid contributions. Hengrui Pharmaceutical (company) has 'tens of millions of yuan' in CSR since 2000. No personal foundation identified. Most giving appears corporate. Net worth ~$20B. Very low giving rate relative to wealth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "China-based, no US foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "China A-shares listed", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "No personal foundation identified", "url": None},
+            "news_verified": {"status": "found", "amount_millions": None, "sources": ["Hurun 2019 list"], "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Xu Jiayin": {
+        "total_lifetime_giving_millions": 2000,
+        "giving_breakdown": {
+            "guizhou_poverty_alleviation": 1200,
+            "education_schools": 500,
+            "hometown_zhoukou": 200,
+            "harvard": 2,
+            "other": 98,
+            "notes": "VERIFIED Jan 2026: ~$2B pre-2021 collapse (all pre-Evergrande bankruptcy). Hurun #1 in 2012, 2013. Forbes China #1 in 2012, 2013, 2018, 2019. 2017: $603M to Guizhou poverty alleviation (single largest). 2019: $590M annual giving. Focus: Guizhou Province (China's poorest), hometown Henan, education. Total 11.3B RMB cumulative through 2019. NOW: Net worth collapsed, Evergrande bankrupt, under criminal investigation."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "China-based", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Hong Kong listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2000, "note": "Hurun/Forbes China rankings pre-2021", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 600, "sources": ["Hurun China Philanthropy #1 2012-2013", "Forbes China #1 2018-2019"], "url": None}
+        },
+        "sources": [
+            "https://hurun.net/en-US/Info/Detail?num=93E8C4B53DE6"
+        ],
+        "giving_pledge": "no"
+    },
+    "Michael Moritz": {
+        "total_lifetime_giving_millions": 1000,
+        "giving_breakdown": {
+            "crankstart_foundation": 860,
+            "oxford_university": 166,
+            "university_chicago": 50,
+            "ucsf": 30,
+            "san_francisco_summer_school": 25,
+            "aclu": 20,
+            "other": 49,
+            "notes": "VERIFIED Jan 2026: ~$1B+ lifetime. Crankstart Foundation (EIN 94-3377099) $3.9-4B assets, disbursed $204M (2023), $201M (2022), $256M (2021). Oxford $166M+ (including £75M 2012, largest European undergrad scholarship gift). Giving Pledge signatory 2012. Knighted 2013 (KBE). Wales-born but SF-based. Focus: education access for low-income students."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Crankstart Foundation EIN 94-3377099, $4B assets", "url": "https://projects.propublica.org/nonprofits/organizations/943377099"},
+            "sec_form4": {"status": "not_applicable", "note": "Sequoia partnership", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 860, "note": "Crankstart 2020-2023 annual grants", "url": "https://projects.propublica.org/nonprofits/organizations/943377099"},
+            "news_verified": {"status": "found", "amount_millions": 166, "sources": ["Oxford 2012", "University of Chicago 2016"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/943377099"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Prajogo Pangestu": {
+        "total_lifetime_giving_millions": 35,
+        "giving_breakdown": {
+            "bakti_barito_foundation": 18,
+            "education_scholarships": 8,
+            "covid_relief": 5,
+            "environment": 2,
+            "other": 2,
+            "notes": "VERIFIED Jan 2026: ~$30-50M estimated lifetime. Bakti Barito Foundation (est. 2011) disbursed Rp 270B (~$17-18M) 2020-2024. Focus: education, environment, social development. COVID-19: Rp 30B medical equipment. Has NOT signed Giving Pledge (unlike peer Tahir). Indonesia's richest person (~$50B) but modest giving rate (~0.07% of wealth). Corporate/personal giving boundaries unclear."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indonesia-based foundation", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Indonesia listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 18, "note": "Bakti Barito Foundation 2020-2024", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": None, "sources": ["Bakti Barito website"], "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Rupert Murdoch": {
+        "total_lifetime_giving_millions": 30,
+        "giving_breakdown": {
+            "la_cathedral": 10,
+            "mcri_founding": 5,
+            "peace_coalition_rick_warren": 2,
+            "stock_gifts_2025": 9,
+            "bushfire_relief": 3,
+            "other": 1,
+            "notes": "VERIFIED Jan 2026: ~$30M personal giving (NOT corporate). The Murdoch Foundation Inc (EIN 13-3756893) is dormant with $0 assets since 2008. LA Cathedral $10M (1999). MCRI founding A$5M (1984). Rick Warren PEACE Coalition $2M. Dec 2025 SEC Form 4: 302K News Corp shares gifted (~$9M). Notably modest giving for $17-24B net worth. Has NOT signed Giving Pledge. Inside Philanthropy: 'limited personal philanthropy.' Children (James, Lachlan, Prudence) now more active philanthropists."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Murdoch Foundation Inc EIN 13-3756893 dormant since 2008", "url": "https://projects.propublica.org/nonprofits/organizations/133756893"},
+            "sec_form4": {"status": "found", "note": "Dec 2025: 302K News Corp shares gifted (~$9M)", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001024835&type=4"},
+            "foundation_reports": {"status": "found", "amount_millions": 0, "note": "Dormant foundation, no recent grants", "url": "https://projects.propublica.org/nonprofits/organizations/133756893"},
+            "news_verified": {"status": "found", "amount_millions": 10, "sources": ["LA Cathedral 1999", "MCRI founding 1984"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/133756893"
+        ],
+        "giving_pledge": "no"
+    },
+    "Sergey Brin": {
+        "total_lifetime_giving_millions": 3900,
+        "giving_breakdown": {
+            "sbff_grants": 2400,
+            "parkinsons_research": 1500,
+            "climate_giving": 400,
+            "catalyst4": 1500,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$3.9B lifetime (Forbes Feb 2025). Sergey Brin Family Foundation (EIN 47-2107200) $4.31B assets, $722M disbursed 2024. Parkinson's: $1.5B+ (LRRK2 research via MJFF, after discovering genetic risk through 23andMe). Climate: $400M+ (ClimateWorks $87M, Climate Imperative $80M). 2024: ~$900M given (~25% of lifetime). Nov 2025: $1.1B stock to Catalyst4."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "SBFF EIN 47-2107200, $4.31B assets, $722M disbursed 2024", "url": "https://projects.propublica.org/nonprofits/organizations/472107200"},
+            "sec_form4": {"status": "found", "note": "Nov 2025: $1.1B Alphabet shares to Catalyst4, MJFF, SBFF", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2400, "note": "SBFF cumulative grants 2014-2024", "url": "https://projects.propublica.org/nonprofits/organizations/472107200"},
+            "news_verified": {"status": "found", "amount_millions": 3900, "sources": ["Forbes Feb 2025", "Bloomberg"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/472107200"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Ken Griffin": {
+        "total_lifetime_giving_millions": 2000,
+        "giving_breakdown": {
+            "harvard_university": 500,
+            "msk_joint_gift": 200,
+            "university_chicago": 152,
+            "museum_science_industry": 125,
+            "art_institute_chicago": 25,
+            "lincoln_center": 10,
+            "amnh": 40,
+            "northwestern_medicine": 10,
+            "nicklaus_childrens": 25,
+            "other_chicago_farewell": 130,
+            "other": 783,
+            "notes": "VERIFIED Jan 2026: >$2B lifetime (TIME100, Griffin Catalyst). Harvard $500M+ (incl $300M 2023 FAS, school renamed). MSK $400M joint with Geffen (Griffin share ~$200M). UChicago $152M (Economics dept renamed). Museum of Science & Industry $125M (renamed). Uses Kenneth C. Griffin Charitable Fund (DAF - no public 990). NOT signed Giving Pledge. Chicago farewell 2022: $130M to 40+ orgs."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Citadel Group Foundation EIN 36-4482467 (small), Kenneth and Anne Griffin Foundation closed. Main giving via DAF.", "url": "https://projects.propublica.org/nonprofits/organizations/364482467"},
+            "sec_form4": {"status": "not_applicable", "note": "Hedge fund holdings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2, "note": "Citadel Group Foundation $2.4M disbursed 2024", "url": "https://projects.propublica.org/nonprofits/organizations/364482467"},
+            "news_verified": {"status": "found", "amount_millions": 2000, "sources": ["TIME100 Philanthropy 2025", "Griffin Catalyst", "Harvard 2023"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/364482467",
+            "https://www.griffincatalyst.org/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Julia Koch": {
+        "total_lifetime_giving_millions": 1300,
+        "giving_breakdown": {
+            "msk_cancer_center": 225,
+            "lincoln_center": 100,
+            "met_museum": 65,
+            "mit_koch_institute": 134,
+            "ny_presbyterian": 100,
+            "smithsonian": 50,
+            "amnh": 20,
+            "nyu_langone_2024": 75,
+            "other": 531,
+            "notes": "VERIFIED Jan 2026: ~$1.3B combined David & Julia Koch giving. David H Koch Charitable Foundation (EIN 48-0926946) now $1.5M assets (largely depleted). MSK $225M total (incl $150M 2015). Lincoln Center $100M (theater renamed). MIT Koch Institute $134M. Post-David (2019) giving slowed; Julia launched new vehicles 2022-2023. Julia Koch Family Foundation (EIN 92-1599313) $14.2M assets. NOT signed Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "David H Koch Charitable Foundation EIN 48-0926946, $1.5M assets (depleted)", "url": "https://projects.propublica.org/nonprofits/organizations/480926946"},
+            "sec_form4": {"status": "not_applicable", "note": "Koch Industries private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2, "note": "Foundation largely depleted, new Julia vehicles launched", "url": "https://projects.propublica.org/nonprofits/organizations/480926946"},
+            "news_verified": {"status": "found", "amount_millions": 1300, "sources": ["Forbes 2019 obituary", "Julia Koch Family Foundation"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/480926946",
+            "https://www.jkff.org/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Alice Walton": {
+        "total_lifetime_giving_millions": 1500,
+        "giving_breakdown": {
+            "crystal_bridges_investment": 600,
+            "art_bridges_foundation": 663,
+            "alice_l_walton_foundation": 330,
+            "school_of_medicine": 249,
+            "healthcare_mercy_partnership": 350,
+            "ua_school_of_art": 120,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$1.5B personal giving (Forbes Oct 2024). Alice L. Walton Foundation (EIN 82-3700633) $4.69B assets, $52M disbursed 2024. Art Bridges Foundation (EIN 81-0842855) $905M assets, $389M disbursed 2023. Crystal Bridges total investment ~$1.3B (family + personal). School of Medicine $249M. Healthcare partnership $350M. NOTE: Walton Family Foundation (~$6.2B cumulative) is FAMILY, not Alice personal."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Alice L. Walton Foundation EIN 82-3700633, $4.69B assets", "url": "https://projects.propublica.org/nonprofits/organizations/823700633"},
+            "sec_form4": {"status": "not_applicable", "note": "Walmart family holdings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 52, "note": "ALWF $52M disbursed 2024, Art Bridges $389M 2023", "url": "https://projects.propublica.org/nonprofits/organizations/823700633"},
+            "news_verified": {"status": "found", "amount_millions": 1500, "sources": ["Forbes Oct 2024", "TIME100 Philanthropy 2025"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/823700633",
+            "https://projects.propublica.org/nonprofits/organizations/810842855"
+        ],
+        "giving_pledge": "no"
+    },
+    "Dieter Schwarz": {
+        "total_lifetime_giving_millions": 4000,
+        "giving_breakdown": {
+            "ipai_ai_park": 2000,
+            "tum_professorships": 500,
+            "eth_zurich": 400,
+            "bildungscampus_heilbronn": 200,
+            "fraunhofer_centers": 100,
+            "experimenta": 75,
+            "oxford_stanford_other": 100,
+            "max_planck": 50,
+            "other": 575,
+            "notes": "VERIFIED Jan 2026: ~€3.5-4.5B ($4B+) lifetime. Dieter Schwarz Stiftung (holds 99.9% of Schwarz Group) gives >€100M/year. Innovation Park AI (IPAI) €2B commitment. TUM 41 professorships x 30 years (~€500M). ETH Zurich ~20 professorships (~€400M). Bildungscampus Heilbronn transformed hometown into university city. Germany's richest ($39B). No Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German Stiftung, no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Private company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 4000, "note": "Dieter Schwarz Stiftung - TUM, ETH, IPAI announcements", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 2000, "sources": ["TUM 2018-2022", "ETH 2023", "IPAI 2024"], "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Steve Ballmer": {
+        "total_lifetime_giving_millions": 5000,
+        "giving_breakdown": {
+            "university_oregon_institute": 425,
+            "washington_eceap_pledge": 1700,
+            "strivetogether": 175,
+            "communities_in_schools": 165,
+            "blue_meridian_partners": 50,
+            "uw_scholarships": 38,
+            "fireaid_2025": 15,
+            "detroit_area": 16,
+            "daf_2016": 1900,
+            "other": 516,
+            "notes": "VERIFIED Jan 2026: ~$3-7B estimates vary. Ballmer Group is LLC (no 990 filings). 2016: $1.9B to Goldman Sachs Philanthropy Fund DAF (per IRS leak). U Oregon Ballmer Institute $425M (2022). WA State ECEAP: up to $1.7B/10 years. StriveTogether $175M+. Communities In Schools $165M. TIME100: $7B over 10 years (self-reported). Chronicle: $3B past 5 years. 2024: $767M. NOT signed Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Ballmer Group is LLC, no 990 filing required", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Microsoft shares", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1900, "note": "2016 DAF contribution per IRS disclosure", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 425, "sources": ["U Oregon 2022", "TIME100 Philanthropy", "Chronicle 2025"], "url": None}
+        },
+        "sources": [
+            "https://www.ballmergroup.org/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Jim Simons": {
+        "total_lifetime_giving_millions": 6000,
+        "giving_breakdown": {
+            "simons_foundation": 2000,
+            "stony_brook_university": 1200,
+            "sfari_autism": 725,
+            "flatiron_institute": 400,
+            "math_for_america": 100,
+            "uc_berkeley": 60,
+            "cuny": 75,
+            "other": 1440,
+            "notes": "VERIFIED Jan 2026: ~$6B lifetime (Forbes, at death May 2024). Simons Foundation (EIN 13-3794889) $4.48B assets, $482M disbursed 2024. Stony Brook: $1.2B+ (incl $500M 2023, largest unrestricted to US public university). SFARI: $725M+ cumulative (world's largest private autism funder, $75-100M/year). Flatiron Institute: ~$80M/year. Giving Pledge signatory. Died May 2024."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Simons Foundation EIN 13-3794889, $4.48B assets, $482M disbursed 2024", "url": "https://projects.propublica.org/nonprofits/organizations/133794889"},
+            "sec_form4": {"status": "not_applicable", "note": "Renaissance Technologies (private hedge fund)", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 482, "note": "2024 disbursements", "url": "https://projects.propublica.org/nonprofits/organizations/133794889"},
+            "news_verified": {"status": "found", "amount_millions": 6000, "sources": ["Forbes obituary May 2024", "Stony Brook 2023"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/133794889"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Eric Schmidt": {
+        "total_lifetime_giving_millions": 2200,
+        "giving_breakdown": {
+            "schmidt_family_foundation": 1000,
+            "schmidt_futures_fund": 1000,
+            "broad_institute": 150,
+            "ai2050_program": 125,
+            "climate_carbon_research": 45,
+            "princeton": 30,
+            "rise_program_pledge": 1000,
+            "uc_berkeley": 13,
+            "other": 837,
+            "notes": "VERIFIED Jan 2026: ~$2-2.5B disbursed, $3.6B in foundation assets. Schmidt Family Foundation (EIN 20-4170342) $1.99B assets, $201M disbursed 2024. Schmidt Fund for Strategic Innovation (EIN 46-3460261) $1.59B assets, $316M disbursed 2024. Broad Institute $150M (2021). AI2050 $125M. 11th Hour Project (climate): $138M in 2023. 2019: pledged $1B more. Forbes Philanthropy Score: 2."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Schmidt Family Foundation EIN 20-4170342, $1.99B assets", "url": "https://projects.propublica.org/nonprofits/organizations/204170342"},
+            "sec_form4": {"status": "not_applicable", "note": "Former Google/Alphabet", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 517, "note": "Combined 2024 disbursements from two foundations", "url": "https://projects.propublica.org/nonprofits/organizations/463460261"},
+            "news_verified": {"status": "found", "amount_millions": 150, "sources": ["Broad Institute 2021", "Chronicle 2019"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/204170342",
+            "https://projects.propublica.org/nonprofits/organizations/463460261"
+        ],
+        "giving_pledge": "yes"
     }
 }
 
