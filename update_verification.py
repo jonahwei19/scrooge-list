@@ -6614,6 +6614,168 @@ VERIFICATION_DATA = {
             "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5052127"
         ],
         "giving_pledge": "no"
+    },
+    "Lee Shau Kee": {
+        "total_lifetime_giving_millions": 700,
+        "giving_breakdown": {
+            "hong_kong_universities": 140,
+            "mainland_china_universities": 83,
+            "warmth_project_farmer_training": 60,
+            "disaster_relief": 77,
+            "land_donations": 100,
+            "edinburgh_university": 15,
+            "other": 225,
+            "notes": "VERIFIED Jan 2026: ~$700M+ lifetime (Forbes). Died March 2025. HK$500M HKU 2007, HK$400M HKUST 2007. RMB200M each Peking/Tsinghua/Fudan. HK$560M Sichuan earthquake 2008 (largest by HK individual). Warmth Project trained 1.23M farmers. Land donations for youth hostel (66K sqft). £10M Edinburgh 2023. All via Lee Shau Kee Foundation and Hong Kong Pei Hua Education Foundation."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Hong Kong billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Hong Kong companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 700, "note": "Forbes obituary confirms HK$1B+ to HK universities, RMB600M mainland", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 700, "sources": ["Forbes Mar 2025", "Wikipedia", "HKBU"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/sites/zinnialee/2025/03/17/hong-kong-real-estate-billionaire-lee-shau-kee-once-asias-richest-person-dies-at-97/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Thomas Frist Jr.": {
+        "total_lifetime_giving_millions": 450,
+        "giving_breakdown": {
+            "frist_foundation_grants": 370,
+            "dorothy_cate_frist_foundation": 33,
+            "frist_art_museum": 25,
+            "princeton_campus_center": 25,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$450M via foundations. The Frist Foundation (EIN 62-1134070) $370M cumulative grants 2011-2024, $195M assets. Dorothy Cate and Thomas F. Frist Foundation (EIN 62-1103568) $33M grants. Frist Art Museum Nashville $25M. Princeton Frist Campus Center $25M. HCA Healthcare founder."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Frist Foundation EIN 62-1134070, $370M cumulative grants, $195M assets", "url": "https://projects.propublica.org/nonprofits/organizations/621134070"},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts identified", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 403, "note": "Combined two foundations", "url": "https://projects.propublica.org/nonprofits/organizations/621103568"},
+            "news_verified": {"status": "found", "amount_millions": 50, "sources": ["Frist Art Museum", "Princeton announcements"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/621134070",
+            "https://projects.propublica.org/nonprofits/organizations/621103568"
+        ],
+        "giving_pledge": "no"
+    },
+    "James Dyson": {
+        "total_lifetime_giving_millions": 175,
+        "giving_breakdown": {
+            "greshams_school": 44,
+            "imperial_college": 15,
+            "cambridge_university": 10,
+            "malmesbury_primary": 8,
+            "royal_college_art": 6,
+            "ruh_bath_cancer_centre": 5,
+            "race_against_dementia": 2,
+            "other": 85,
+            "notes": "VERIFIED Jan 2026: ~£140M (~$175M) via James Dyson Foundation (UK Charity 1099709). £35M Gresham's School 2023 (his alma mater), £12M Imperial College 2015, £8M Cambridge 2016, £6M Malmesbury Primary 2024, £5m RCA. Annual expenditure ~£5.6M. Sunday Times Giving List #1 in 2020, #4 in 2021. PERSONAL giving, not Dyson Ltd corporate."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "UK billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "UK company Dyson Ltd", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 175, "note": "UK Charity Commission 1099709, £5.6M annual", "url": "https://register-of-charities.charitycommission.gov.uk/charity-details/?regId=1099709"},
+            "news_verified": {"status": "found", "amount_millions": 175, "sources": ["Guardian 2015", "BBC 2024", "Fortune 2013"], "url": None}
+        },
+        "sources": [
+            "https://register-of-charities.charitycommission.gov.uk/charity-details/?regId=1099709",
+            "https://www.jamesdysonfoundation.co.uk/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Explicitly declined Giving Pledge in 2013: 'No, and I wouldn't'"]
+    },
+    "Henry Cheng": {
+        "total_lifetime_giving_millions": 350,
+        "giving_breakdown": {
+            "cybersecurity_donation": 46,
+            "hku_cheng_yu_tung_tower": 51,
+            "hkust_robotics_institute": 13,
+            "hkust_cheng_yu_tung_building": 12,
+            "other_family_foundation": 228,
+            "notes": "VERIFIED Jan 2026: ~$300-400M Cheng family giving (includes father Cheng Yu-tung who died 2016). RMB300M ($46M) cybersecurity 2016. HK$400M HKU 2008. HK$100M HKUST Robotics 2021. Chow Tai Fook Charity Foundation since 2012. CRITICAL: New World Development $430M land donation is CORPORATE, not personal - excluded from total."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Hong Kong billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Hong Kong companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 350, "note": "Chow Tai Fook Charity Foundation, family giving HK$2B claimed", "url": "https://www.ctfcf.org/"},
+            "news_verified": {"status": "found", "amount_millions": 46, "sources": ["China Daily 2016", "The Standard HK"], "url": None}
+        },
+        "sources": [
+            "https://www.ctfcf.org/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["HK$3.37B New World Development land donation often misattributed as personal - it's corporate"]
+    },
+    "David Tepper": {
+        "total_lifetime_giving_millions": 580,
+        "giving_breakdown": {
+            "tepper_foundation_grants": 426,
+            "david_nicole_tepper_foundation": 32,
+            "carnegie_mellon_direct": 125,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$580M lifetime. The Tepper Foundation (EIN 22-3500313) $426M cumulative grants 1996-2024, $744M assets. David & Nicole Tepper Foundation (EIN 85-2618674) $32M grants 2020-2024. Carnegie Mellon: $55M 2004 (naming), $67M 2013 (Quadrangle). COVID relief $25M 2020. Major food bank donor NJ/NC."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Tepper Foundation EIN 22-3500313, $426M cumulative grants, $744M assets", "url": "https://projects.propublica.org/nonprofits/organizations/223500313"},
+            "sec_form4": {"status": "not_found", "note": "Appaloosa is private hedge fund", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 458, "note": "Combined two foundations", "url": "https://projects.propublica.org/nonprofits/organizations/852618674"},
+            "news_verified": {"status": "found", "amount_millions": 125, "sources": ["CMU 2004", "CMU 2013", "Forbes COVID"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/223500313",
+            "https://projects.propublica.org/nonprofits/organizations/852618674"
+        ],
+        "giving_pledge": "no"
+    },
+    "Cyrus Poonawalla": {
+        "total_lifetime_giving_millions": 175,
+        "giving_breakdown": {
+            "villoo_poonawalla_foundation_annual": 75,
+            "adar_clean_city_initiative": 15,
+            "education_healthcare": 85,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$150-200M personal/family (not corporate). EdelGive Hurun: FY2022 $13M, FY2023 $22M, FY2024 $17M, FY2025 $21M. CRITICAL: £50M Oxford and £10M+ UK Science Museum donations are CORPORATE via Serum Institute - NOT personal. COVID vaccine donations also corporate CSR. All personal giving via Villoo Poonawalla Foundation."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Serum Institute is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 75, "note": "Villoo Poonawalla Foundation activities", "url": "https://www.vpcf.org/"},
+            "news_verified": {"status": "found", "amount_millions": 75, "sources": ["EdelGive Hurun 2022-2025", "Forbes Asia Heroes 2016"], "url": None}
+        },
+        "sources": [
+            "https://www.vpcf.org/",
+            "https://hurunindia.com/pillars/philanthropy/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["£50M Oxford donation often misattributed as personal - it's via Serum Life Sciences corporate entity"]
+    },
+    "Shiv Nadar": {
+        "total_lifetime_giving_millions": 1200,
+        "giving_breakdown": {
+            "shiv_nadar_university": 94,
+            "ssn_institutions": 51,
+            "vidyagyan_schools": 45,
+            "shiv_nadar_schools": 33,
+            "kiran_nadar_museum": 50,
+            "recent_5_year_2020_2025": 1000,
+            "mit_gift": 7,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: $1-1.5B lifetime. Wikipedia/Forbes confirm $1B+ committed. EdelGive Hurun: FY2025 $325M (#1), FY2024 $259M, FY2023 $245M. 5-year cumulative $1.2B. All via Shiv Nadar Foundation (1994) - SEPARATE from HCL Foundation corporate CSR. Shiv Nadar University, SSN Institutions, VidyaGyan rural schools. Topped Hurun India 4 of last 5 years."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "HCL Technologies trades in India", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1200, "note": "Shiv Nadar Foundation, EdelGive Hurun verified", "url": "https://www.shivnadarfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 1200, "sources": ["Forbes 2015", "EdelGive Hurun 2025", "MIT 2021"], "url": None}
+        },
+        "sources": [
+            "https://www.shivnadarfoundation.org/",
+            "https://hurunindia.com/pillars/philanthropy/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Explicitly prefers actual giving over pledges - declined Giving Pledge philosophy in interviews"]
     }
 }
 
