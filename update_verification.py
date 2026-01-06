@@ -5369,6 +5369,167 @@ VERIFICATION_DATA = {
             "https://www.straitstimes.com/sport/football/forrest-li-urges-more-support-for-local-football-confirms-lions-2m-bonus-came-from-his-own-pocket"
         ],
         "giving_pledge": "no"
+    },
+    "David Cheriton": {
+        "total_lifetime_giving_millions": 47,
+        "giving_breakdown": {
+            "waterloo_cs": 25,
+            "stanford": 12,
+            "ubc_chair": 7.5,
+            "ubc_cwsei": 2,
+            "other": 0.5,
+            "notes": "VERIFIED Jan 2026: U of Waterloo $25M (2005) - school renamed David R. Cheriton School of CS. Stanford $12M (2016). UBC $7.5M (2014) + $2M CWSEI (2010). Focus: exclusively CS education. Self-described as 'cheap'. NOT Giving Pledge signatory."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No US foundation found; Canadian 'David Cheriton Foundation' not in CRA registry", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Arista shares held in irrevocable trust", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "No foundation; gives directly to universities", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 47, "sources": ["U Waterloo", "Stanford", "UBC announcements"], "url": "https://science.ubc.ca/news/founding-google-investor-cheriton-donates-75-million-ubc-computer-science"}
+        },
+        "sources": [
+            "https://en.wikipedia.org/wiki/David_Cheriton",
+            "https://science.ubc.ca/news/founding-google-investor-cheriton-donates-75-million-ubc-computer-science"
+        ],
+        "giving_pledge": "no"
+    },
+    "Bruce Flatt": {
+        "total_lifetime_giving_millions": 2,
+        "giving_breakdown": {
+            "moma": 1.3,
+            "mskcc": 0.2,
+            "other": 0.5,
+            "notes": "VERIFIED Jan 2026: Extremely modest personal giving for $4.5B net worth. MoMA ~$1.3M joint with wife Lonti Ebers (2018-2023). MSKCC trustee ~$100-250K/year. Wife founded Amant ($40M+ invested) but that's her project. Brookfield Partners Foundation ($75M+) is Jack Cockwell, not Flatt."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Canadian-based; US Brookfield Partners Foundation exists but minimal activity", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Brookfield is Canadian", "url": None},
+            "foundation_reports": {"status": "partial", "amount_millions": 2, "sources": ["Grokipedia", "MoMA donor reports"], "note": "Brookfield Partners Foundation is corporate, not personal", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 2, "sources": ["Grokipedia", "MoMA", "Amant"], "url": "https://grokipedia.com/page/Bruce_Flatt"}
+        },
+        "sources": [
+            "https://grokipedia.com/page/Bruce_Flatt",
+            "https://projects.propublica.org/nonprofits/organizations/475270591"
+        ],
+        "giving_pledge": "no"
+    },
+    "Daniel Kretinsky": {
+        "total_lifetime_giving_millions": 25,
+        "giving_breakdown": {
+            "ep_foundation_2022_2024": 19,
+            "slovak_foundation": 4.5,
+            "other": 1.5,
+            "notes": "VERIFIED Jan 2026: EP Corporate Group Foundation (Czech) distributed CZK 467M (~€19M) 2022-2024. Committed CZK 2.5B over 10 years. Slovak Nadácia EPH ~€1.5M/year. Spokesman claimed €1B+ lifetime but this includes CSR/football/university partnerships - unverifiable."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Czech/Slovak foundations - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 25, "sources": ["EPH press releases", "Forbes Czech"], "note": "CZK 467M verified 2022-2024", "url": "https://www.epholding.cz/en/press-releases/"},
+            "news_verified": {"status": "found", "amount_millions": 25, "sources": ["Radio Prague", "Forbes Czech"], "url": "https://english.radio.cz/czech-billionaire-daniel-kretinsky-registers-new-charitable-foundation-8734654"}
+        },
+        "sources": [
+            "https://www.epholding.cz/en/press-releases/",
+            "https://forbes.cz/lists/nej-filantropove-ceska-2022/daniel-kretinsky/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Baiju Bhatt": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "personal": 0,
+            "notes": "VERIFIED Jan 2026: NO documented personal charitable giving found. Robinhood corporate donated $250K to suicide prevention (2020) after Alex Kearns death - that was company money, not Bhatt personal. No foundation. No SEC Form 4 stock gifts. Not Giving Pledge signatory. Co-founder Vlad Tenev has made stock gifts; Bhatt has not."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No Bhatt foundation found; 'Bhatt Foundation Inc' in Bakersfield is unrelated", "url": None},
+            "sec_form4": {"status": "not_found", "note": "Reviewed 28 transactions 2022-2025; all sales/conversions, no gifts", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "No foundation exists", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "sources": [], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Tony Xu": {
+        "total_lifetime_giving_millions": 12,
+        "giving_breakdown": {
+            "10x_better_foundation": 6,
+            "northwestern_patti_bao": 5,
+            "obama_foundation": 1,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: 10x Better Foundation (EIN 87-3883624) disbursed $5.8M in 2024. Northwestern $5M was Patti Bao's gift to her advisor. Obama Foundation $1M+ (2024). Signed Giving Pledge Nov 2021. Focus: deforestation, oceans, youth."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 6, "ein": "87-3883624", "note": "10x Better Foundation: $5.7M disbursed 2024, $11.5M total contributions", "url": "https://projects.propublica.org/nonprofits/organizations/873883624"},
+            "sec_form4": {"status": "not_found", "note": "No charitable stock gifts found in DASH filings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 6, "sources": ["ProPublica 990-PF"], "note": "10x Better Foundation active since 2021", "url": "https://projects.propublica.org/nonprofits/organizations/873883624"},
+            "news_verified": {"status": "found", "amount_millions": 6, "sources": ["Northwestern", "Obama Foundation", "PR Newswire"], "url": "https://news.northwestern.edu/stories/2022/06/multimillion-dollar-gift-to-advance-study-of-human-computer-interaction"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/873883624",
+            "https://givingpledge.org/pledger?pledgerId=432"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Teddy Sagi": {
+        "total_lifetime_giving_millions": 6,
+        "giving_breakdown": {
+            "idf_scholarships": 3,
+            "sagi_family_fidf": 3,
+            "taxi_initiative": 0.3,
+            "notes": "VERIFIED Jan 2026: IDF soldier scholarships $3M (2016-2019), ~5,000 awarded. Sagi family FIDF $3M (2016 gala) - attributed to his parents. Omer Adam taxi initiative NIS 1M (~$270K) Oct 2023. GoodVision Trust is investment vehicle, not charity."
+        },
+        "verification": {
+            "990_pf": {"status": "not_found", "note": "No foundation found; GoodVision Trust is investment vehicle", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "References to foundation but no public filings", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 6, "sources": ["Globes", "Jerusalem Post", "Ynet"], "url": "https://en.globes.co.il/en/article-sagi-salutes-discharged-idf-soldiers-with-scholarships-jobs-1001283846"}
+        },
+        "sources": [
+            "https://en.globes.co.il/en/article-sagi-salutes-discharged-idf-soldiers-with-scholarships-jobs-1001283846",
+            "https://www.jpost.com/israel-news/article-773491"
+        ],
+        "giving_pledge": "no"
+    },
+    "Falguni Nayar": {
+        "total_lifetime_giving_millions": 0.5,
+        "giving_breakdown": {
+            "pm_cares_covid": 0.12,
+            "nykaa_csr": 0.38,
+            "notes": "VERIFIED Jan 2026: Only documented personal gift: ~Rs 1 crore (~$120K) PM CARES matched employee donation (2020). Sanjay & Falguni Nayar Foundation exists (Sept 2021) but no public activity reports. Nykaa CSR is mandatory under Indian law. AIF partnership announced but no personal donation amount disclosed."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Indian company", "url": None},
+            "foundation_reports": {"status": "not_found", "note": "Foundation exists per MCA records but no public reports", "url": None},
+            "news_verified": {"status": "partial", "amount_millions": 0.12, "sources": ["Economic Times - PM CARES"], "url": "https://economictimes.indiatimes.com/magazines/panache/nykaa-employees-turn-covid-warriors"}
+        },
+        "sources": [
+            "https://economictimes.indiatimes.com/magazines/panache/nykaa-employees-turn-covid-warriors",
+            "https://www.nykaa.com/nykaa-csr"
+        ],
+        "giving_pledge": "no"
+    },
+    "Gianluigi Aponte": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "unicef": 14,
+            "mercy_ships": 20,
+            "disaster_relief": 5,
+            "ocean_cay_conservation": 10,
+            "other": 1,
+            "notes": "VERIFIED Jan 2026: MSC Foundation (est. 2018) is primary vehicle. UNICEF $14M cumulative. Mercy Ships partnership since 2011 + 'significant' new hospital ship donation (likely $20M+). Turkey/Syria relief 100+ containers. Ocean Cay marine restoration 'significant investment'. Family is notoriously secretive about finances."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Swiss foundation - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 50, "sources": ["MSC Foundation website", "UNICEF"], "note": "UNICEF $14M verified; other donations undisclosed", "url": "https://mscfoundation.org/"},
+            "news_verified": {"status": "found", "amount_millions": 14, "sources": ["MSC Foundation", "Maritime Executive"], "url": "https://www.mscfoundation.org/news/14-million-for-unicef"}
+        },
+        "sources": [
+            "https://mscfoundation.org/",
+            "https://www.mscfoundation.org/news/14-million-for-unicef"
+        ],
+        "giving_pledge": "no"
     }
 }
 
