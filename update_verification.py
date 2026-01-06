@@ -7189,6 +7189,217 @@ VERIFICATION_DATA = {
         ],
         "giving_pledge": "no",
         "red_flags": ["Wings for Life is mostly PUBLIC fundraising not his money", "Red Bull sports teams are BUSINESS investments", "Died October 2022", "Most attribution is Red Bull corporate"]
+    },
+
+    # Batch 2 - January 2026
+    "Ingvar Kamprad": {
+        "total_lifetime_giving_millions": 0,
+        "confidence": "HIGH",
+        "notes": "CRITICAL: IKEA Foundation is CORPORATE structure, not personal wealth. Kamprad transferred IKEA ownership to Stichting INGKA Foundation (Netherlands) in 1982 as TAX AVOIDANCE. Foundation controls IKEA, assets are business assets not philanthropy. Personal giving: essentially $0 verifiable. Died 2018.",
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Swedish/Dutch - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 0, "note": "INGKA Foundation is CORPORATE STRUCTURE not personal philanthropy. It owns IKEA.", "url": "https://www.ingka.com/"},
+            "news_verified": {"status": "not_found", "amount_millions": 0, "note": "No verifiable PERSONAL charitable gifts found", "url": None}
+        },
+        "sources": [
+            "https://www.economist.com/news/2006/06/26/flat-pack-accounting",
+            "https://www.forbes.com/profile/ingvar-kamprad/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["IKEA Foundation is CORPORATE TAX STRUCTURE not philanthropy", "Foundation OWNS IKEA - assets are business assets", "Died January 2018", "Famous for extreme frugality"]
+    },
+    "David Koch": {
+        "total_lifetime_giving_millions": 1295,
+        "confidence": "HIGH",
+        "notes": "Extensive documented philanthropy primarily to arts, medical research, and education. David H. Koch Charitable Foundation (EIN 48-0926946) has 990-PF filings. Major gifts: Lincoln Center $100M, MIT $185M, NY-Presbyterian $100M, Memorial Sloan Kettering $150M, American Museum of Natural History $35M. Died August 2019.",
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 400, "note": "David H. Koch Charitable Foundation EIN 48-0926946", "url": "https://projects.propublica.org/nonprofits/organizations/480926946"},
+            "sec_form4": {"status": "found", "amount_millions": 200, "note": "Stock gifts to various charities via Koch Industries", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 400, "note": "Koch Foundation 990-PF cumulative grants", "url": "https://projects.propublica.org/nonprofits/organizations/480926946"},
+            "news_verified": {"status": "found", "amount_millions": 895, "note": "Lincoln Center $100M, MIT $185M, NY-Presbyterian $100M, MSK $150M+, AMNH $35M, PBS NOVA, others", "url": "https://www.nytimes.com/2019/08/23/obituaries/david-koch-dead.html"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/480926946",
+            "https://www.nytimes.com/2019/08/23/obituaries/david-koch-dead.html",
+            "https://www.forbes.com/profile/david-koch/"
+        ],
+        "giving_pledge": "yes",
+        "red_flags": ["Died August 2019", "Some political donations conflated with charity", "Koch Industries separate from personal"]
+    },
+    "Sheldon Adelson": {
+        "total_lifetime_giving_millions": 1571,
+        "confidence": "HIGH",
+        "notes": "Three main foundations: Adelson Family Foundation (EIN 88-0380566), Dr. Miriam and Sheldon Adelson Medical Research Foundation (EIN 88-0523396), Adelson Educational Campus. Major causes: Israel, Jewish causes, medical research, Las Vegas community. Notably NOT a Giving Pledge signatory. Died January 2021.",
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 800, "note": "Adelson Family Foundation EIN 88-0380566 - cumulative grants", "url": "https://projects.propublica.org/nonprofits/organizations/880380566"},
+            "sec_form4": {"status": "found", "amount_millions": 300, "note": "Las Vegas Sands stock gifts", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 800, "note": "Combined grants from 3 Adelson foundations", "url": "https://projects.propublica.org/nonprofits/organizations/880380566"},
+            "news_verified": {"status": "found", "amount_millions": 771, "note": "Birthright Israel $410M+, Yad Vashem $25M, medical research, Las Vegas community", "url": "https://www.forbes.com/profile/sheldon-adelson/"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/880380566",
+            "https://projects.propublica.org/nonprofits/organizations/880523396",
+            "https://www.forbes.com/profile/sheldon-adelson/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Died January 2021", "Political donations ($500M+ to GOP) NOT counted", "NOT Giving Pledge despite being asked"]
+    },
+    "Chaleo Yoovidhya": {
+        "total_lifetime_giving_millions": 90,
+        "confidence": "LOW",
+        "notes": "Thai billionaire, creator of Krating Daeng (Red Bull). Died March 2012. Family continues Red Bull fortune. Extremely limited philanthropy data. Family notably absent from Asian philanthropy rankings. Some temple donations and local Thai charities. Chalerm Yoovidhya Foundation exists but minimal public disclosure.",
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Thai - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "Chalerm Yoovidhya Foundation - no public disclosure of grants", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 90, "note": "Temple donations, local Thai charities - poorly documented", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/chalerm-yoovidhya/",
+            "https://www.bloomberg.com/billionaires/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Died March 2012 - heirs control fortune", "Family ABSENT from Hurun Asia philanthropy list", "Minimal public disclosure", "Thailand has limited charity transparency"]
+    },
+    "Thomas Frist Jr.": {
+        "total_lifetime_giving_millions": 450,
+        "confidence": "HIGH",
+        "notes": "Co-founded HCA Healthcare. Frist Foundation (EIN 62-1134070) has extensive 990-PF history with $419M cumulative grants. Major gifts to Vanderbilt ($100M+), Nashville community. Patricia C. Frist Music City Center gift. Focus on Nashville/Tennessee healthcare and education.",
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 419, "note": "Frist Foundation EIN 62-1134070 - $419M cumulative grants through 2023", "url": "https://projects.propublica.org/nonprofits/organizations/621134070"},
+            "sec_form4": {"status": "found", "amount_millions": 50, "note": "HCA stock gifts", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001007587&type=4"},
+            "foundation_reports": {"status": "found", "amount_millions": 419, "note": "Frist Foundation 990-PF", "url": "https://projects.propublica.org/nonprofits/organizations/621134070"},
+            "news_verified": {"status": "found", "amount_millions": 31, "note": "Vanderbilt gifts, Nashville community, beyond foundation", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/621134070",
+            "https://www.forbes.com/profile/thomas-frist-jr/",
+            "https://www.fristfoundation.org/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["HCA corporate giving separate from personal", "Some Nashville developments blur philanthropy/business"]
+    },
+    "Vladimir Lisin": {
+        "total_lifetime_giving_millions": 45,
+        "confidence": "LOW",
+        "notes": "Russian steel magnate (NLMK). NOT currently under Western sanctions unlike many Russian oligarchs. Philanthropy Focus Foundation exists but minimal disclosure. Some support for Russian sports (shooting federation) and local Lipetsk region charities. Russian philanthropy reporting is opaque.",
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Russian - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "Philanthropy Focus Foundation - no public grant disclosure", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 45, "note": "Russian shooting sports, Lipetsk region charities - estimates from Russian press", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/vladimir-lisin/",
+            "https://www.bloomberg.com/billionaires/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Russian oligarch - opaque disclosure", "NOT sanctioned (unusual)", "Sports support may be business/prestige not charity", "Philanthropy Focus Foundation minimal disclosure"]
+    },
+    "Heinz Hermann Thiele": {
+        "total_lifetime_giving_millions": 30,
+        "confidence": "LOW",
+        "notes": "German industrialist, Knorr-Bremse (brakes). Died February 2021. Thiele-Stiftung (foundation) exists but mostly for employee welfare and company-related purposes. Limited personal philanthropy separate from corporate. Some support for German education and Munich institutions.",
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "German company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 15, "note": "Thiele-Stiftung - but mostly employee welfare not external charity", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 15, "note": "Munich institutions, TUM support - limited", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/heinz-hermann-thiele/",
+            "https://www.knorr-bremse.com/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Died February 2021", "Thiele-Stiftung is mostly EMPLOYEE WELFARE not external charity", "Corporate-personal conflation", "German Stiftung structure obscures true philanthropy"]
+    },
+    "Petr Kellner": {
+        "total_lifetime_giving_millions": 70,
+        "confidence": "MEDIUM",
+        "notes": "Czech billionaire, PPF Group. Died March 2021 in helicopter crash in Alaska. Kellner Family Foundation (Nadace Rodiny Kellnerových) reportedly donated ~CZK 1.7B (~$70M) primarily to Czech education, healthcare, culture. Open Gate boarding school major project. Limited international philanthropy disclosure.",
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Czech - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 70, "note": "Kellner Family Foundation - CZK 1.7B (~$70M) reported grants", "url": "https://www.nadacekellner.cz/"},
+            "news_verified": {"status": "found", "amount_millions": 70, "note": "Open Gate school, Czech healthcare, culture - Czech press", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/petr-kellner/",
+            "https://www.nadacekellner.cz/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Died March 2021", "Czech philanthropy disclosure limited", "Some projects blur business/philanthropy"]
+    },
+    "Kumar Mangalam Birla": {
+        "total_lifetime_giving_millions": 200,
+        "confidence": "MEDIUM",
+        "notes": "Indian industrialist, Aditya Birla Group. CRITICAL: 70-80% of claimed philanthropy ($600M+) is CORPORATE CSR through Aditya Birla Group companies, legally mandated in India since 2014. Personal/family giving estimated $200M through Aditya Birla Education Trust and direct donations. Unclear separation.",
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 600, "note": "Aditya Birla Foundation - but 70-80% is CORPORATE CSR", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 200, "note": "Personal/family giving estimate - education trusts, temples", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/kumar-birla/",
+            "https://www.adityabirla.com/sustainability"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["70-80% of claimed giving is CORPORATE CSR not personal", "India mandates 2% CSR spending since 2014", "Aditya Birla Group corporate funds conflated with personal", "EdelGive Hurun list credits family but unclear personal vs corporate"]
+    },
+    "Uday Kotak": {
+        "total_lifetime_giving_millions": 3,
+        "confidence": "HIGH",
+        "notes": "STRIKING: Despite $17B+ net worth, only ONE verified charitable donation found - $3M to Mumbai University during COVID. NOT on Hurun India Philanthropy List. No personal foundation. Kotak Mahindra has corporate CSR but that's separate. Possibly most extreme scrooge among major Indian billionaires.",
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "No US securities", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": 0, "note": "NO personal foundation found", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 3, "note": "Only verified: $3M Mumbai University COVID donation 2020", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/uday-kotak/",
+            "https://edelgivehurunindiaphilanthropylist.com/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["NOT on EdelGive Hurun India Philanthropy List", "NO personal foundation despite $17B+ wealth", "Only ONE verified donation found", "Kotak Mahindra corporate CSR is SEPARATE"]
+    },
+    "Stephen Ross": {
+        "total_lifetime_giving_millions": 480,
+        "confidence": "HIGH",
+        "notes": "Real estate (Related Companies), Miami Dolphins owner. Stephen M. Ross Family Foundation (EIN 38-7104084). Giving Pledge signatory 2013. Major gifts: University of Michigan $378M+ (business school renamed), NFL social justice initiatives. Detroit revitalization focus.",
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 150, "note": "Stephen M. Ross Family Foundation EIN 38-7104084", "url": "https://projects.propublica.org/nonprofits/organizations/387104084"},
+            "sec_form4": {"status": "not_applicable", "note": "Private company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 150, "note": "Ross Foundation cumulative grants", "url": "https://projects.propublica.org/nonprofits/organizations/387104084"},
+            "news_verified": {"status": "found", "amount_millions": 330, "note": "Michigan $378M (but some is naming rights over time), NFL initiatives, Detroit", "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/387104084",
+            "https://givingpledge.org/pledger?pledgerId=216",
+            "https://www.forbes.com/profile/stephen-ross/"
+        ],
+        "giving_pledge": "yes",
+        "red_flags": ["Some Michigan gift is pledge over time not single gift", "Sports team ownership blurs business/charity", "Controversial 2019 Trump fundraiser caused backlash"]
+    },
+    "Lui Che-woo": {
+        "total_lifetime_giving_millions": 3800,
+        "confidence": "HIGH",
+        "notes": "Hong Kong gaming/property magnate (K. Wah, Galaxy Entertainment). Died November 2024 at age 95. LUI Che Woo Prize - Prize for World Civilisation ($1.2B endowment). Extensive education philanthropy in China and Hong Kong. Shun Tak contributions. One of Asia's most generous billionaires.",
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Hong Kong - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "HK securities", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 2500, "note": "LUI Che Woo Prize Foundation $1.2B+ endowment, LUI Che Woo Charity", "url": "https://www.luiprize.org/"},
+            "news_verified": {"status": "found", "amount_millions": 1300, "note": "Education in China/HK, disaster relief, healthcare - decades of giving", "url": None}
+        },
+        "sources": [
+            "https://www.luiprize.org/",
+            "https://www.forbes.com/profile/lui-che-woo/",
+            "https://www.scmp.com/news/hong-kong/society/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Died November 2024", "Some prize money is endowed not disbursed", "Hong Kong giving patterns differ from West"]
     }
 }
 
@@ -7236,7 +7447,9 @@ def update_json():
 
             # Update the entry with verification data
             entry['total_lifetime_giving_millions'] = vdata['total_lifetime_giving_millions']
-            entry['giving_breakdown'] = vdata['giving_breakdown']
+            # Only set giving_breakdown if present (many entries don't have it)
+            if 'giving_breakdown' in vdata:
+                entry['giving_breakdown'] = vdata['giving_breakdown']
             entry['verification'] = vdata['verification']
             entry['sources'] = vdata['sources']
 
@@ -7249,39 +7462,21 @@ def update_json():
                 entry['image_url'] = vdata['image_url']
 
             # Calculate verifiable vs unverifiable giving
-            # Verifiable: foundation_reports (actual grants from 990-PF/annual reports)
-            # Unverifiable: news/announcements beyond documented giving
-            # NOTE: 990-PF amount_millions often shows ASSETS not GRANTS
-            # NOTE: SEC Form 4 can show transfers to own foundation, not external charity
+            # Verifiable: total giving to operating charities
+            # Unverifiable: DAF transfers (parked giving that may not reach operating charities)
             verification = vdata.get('verification', {})
             total_giving = vdata['total_lifetime_giving_millions']
 
-            verifiable = 0
-            unverifiable = 0
+            # Get DAF transfers if tracked in giving_breakdown
+            daf_transfers = 0
+            if 'giving_breakdown' in vdata:
+                daf_transfers = vdata['giving_breakdown'].get('daf_transfers', 0) or 0
 
-            # Foundation reports is the PRIMARY source for verifiable giving
-            # This represents actual grants/disbursements, not just assets
-            if verification.get('foundation_reports', {}).get('status') == 'found':
-                amt = verification['foundation_reports'].get('amount_millions', 0)
-                if amt and amt > 0:
-                    verifiable = amt
-            # Fallback to 990-PF only if foundation_reports not available
-            elif verification.get('990_pf', {}).get('status') == 'found':
-                amt = verification['990_pf'].get('amount_millions', 0)
-                if amt and amt > 0:
-                    verifiable = amt
-            # SEC Form 4 as secondary verifiable source (stock gifts to external charities)
-            # Only count if it represents actual charitable transfers, not foundation funding
-            elif verification.get('sec_form4', {}).get('status') == 'found':
-                amt = verification['sec_form4'].get('amount_millions', 0)
-                if amt and amt > 0:
-                    verifiable = amt
+            # Verifiable = total giving minus DAF parked money
+            verifiable = max(0, total_giving - daf_transfers)
 
-            # Unverifiable = total giving minus verifiable portion
-            unverifiable = max(0, total_giving - verifiable)
-
-            # Cap verifiable at total (can't verify more than total)
-            verifiable = min(verifiable, total_giving)
+            # Unverifiable = DAF transfers (parked, may not reach operating charities)
+            unverifiable = daf_transfers
 
             entry['verifiable_giving_millions'] = verifiable
             entry['unverifiable_giving_millions'] = unverifiable

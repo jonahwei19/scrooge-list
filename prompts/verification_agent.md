@@ -5,17 +5,22 @@ Research and verify the charitable giving of **{BILLIONAIRE_NAME}** (net worth: 
 
 ## What We're Looking For
 
-### COUNTED as charitable giving:
+### COUNTED as charitable giving (include in total_lifetime_giving_millions):
 - Foundation grants to EXTERNAL operating charities (from 990-PF filings)
 - Direct gifts to nonprofits (universities, hospitals, museums, etc.)
 - Stock donations to charities (SEC Form 4 code "G" to actual charities)
 - DAF grants OUT to operating charities (rarely visible)
 
-### NOT COUNTED:
+### TRACKED SEPARATELY as DAF Parked Money (in giving_breakdown.daf_transfers):
+- Foundation grants TO DAF sponsors (Fidelity Charitable, Schwab Charitable, Vanguard Charitable, SVCF, National Philanthropic Trust, Goldman Sachs Philanthropy Fund)
+- Stock gifts TO DAFs (SEC Form 4 code "G" to DAF sponsors)
+- Any contribution TO a DAF that hasn't been documented as flowing to an operating charity
+- **IMPORTANT**: This money is "parked" - it may never reach operating charities. Track it separately!
+
+### NOT COUNTED AT ALL:
 - Foundation ASSETS (only count grants disbursed)
 - Pledges (only count when money moves)
 - Political donations (Super PACs, campaigns, dark money)
-- Foundation transfers to their own DAF (parked, not deployed)
 - Self-dealing grants to orgs they control for personal benefit
 - Corporate foundation giving (unless clearly from personal wealth)
 - Art collections/private museums structured as companies
@@ -61,9 +66,12 @@ Also check regional philanthropy rankings:
    - Museum, arts, cultural institution gifts
    - Verify amounts are ACTUAL gifts, not pledges
 
-4. **Check for DAF usage**
-   - Look for grants to: Fidelity Charitable, Schwab Charitable, Vanguard Charitable, Silicon Valley Community Foundation, National Philanthropic Trust
-   - This is PARKED giving - note separately
+4. **Check for DAF usage** (CRITICAL for accurate tracking)
+   - Look for foundation grants TO: Fidelity Charitable, Schwab Charitable, Vanguard Charitable, Silicon Valley Community Foundation, National Philanthropic Trust, Goldman Sachs Philanthropy Fund
+   - Check SEC Form 4 for stock gifts to these DAF sponsors
+   - This is PARKED giving - record in giving_breakdown.daf_transfers
+   - Common EINs: Fidelity Charitable (11-0303001), Schwab Charitable (31-1640316), Vanguard Charitable (23-2888152), NPT (52-1934107), SVCF (20-5205488)
+   - **DO NOT include DAF transfers in total_lifetime_giving_millions** - they go in daf_transfers only
 
 5. **Check Giving Pledge status**
    - givingpledge.org - are they a signatory?
@@ -78,14 +86,16 @@ Return a JSON object with this structure:
   "name": "{BILLIONAIRE_NAME}",
   "total_lifetime_giving_millions": <number>,
   "giving_breakdown": {
-    "foundation_grants": <number or "unknown">,
+    "foundation_grants": <number or "unknown">,  // Grants to OPERATING charities only
     "university_gifts": <number or 0>,
     "hospital_gifts": <number or 0>,
     "direct_gifts": <number or 0>,
-    "daf_transfers": <number or 0>,
+    "daf_transfers": <number or 0>,  // CRITICAL: Foundation/stock gifts TO DAF sponsors - tracked separately!
     "other": <number or 0>,
     "notes": "<detailed research notes explaining each source>"
   },
+  // NOTE: total_lifetime_giving_millions should NOT include daf_transfers
+  // daf_transfers is "parked" money - may never reach operating charities
   "verification": {
     "990_pf": {
       "status": "found|not_found|not_applicable",
