@@ -627,14 +627,12 @@
     "liquidity_factor": 0.3,
     "total_lifetime_giving_millions": 2,
     "giving_breakdown": {
-      "diponegoro_university": 1.5,
-      "other_verified": 0.5,
-      "notes": "VERIFIED Jan 2026: Critical distinction - Djarum Foundation is CORPORATE CSR from PT Djarum cigarette company, NOT personal giving. Academic papers confirm: 'Djarum Foundation is the corporate social responsibility arm of PT Djarum.' Only verified personal gift: $1.5M to Diponegoro University (may also be corporate). Forbes Heroes of Philanthropy 2016 recognition was for Djarum Foundation (corporate) work. Neither Michael nor Robert Hartono signed Giving Pledge. Fellow Indonesian Tahir is only Indonesian Giving Pledge signatory."
+      "personal_verified": 1.5,
+      "djarum_foundation_note": 0,
+      "other": 0.5,
+      "notes": "VERIFIED Jan 2026: CRITICAL - Djarum Foundation is CORPORATE CSR from Djarum Group, NOT personal philanthropy. Personal giving nearly invisible. Djarum Foundation (est. 2004) funds badminton, education, culture, environment BUT is company-funded. Only ~$1.5M verifiable personal giving (UN Relief Fund Aceh 2005). Forbes #94 globally ($25.5B). Indonesia's richest with brother Robert. No personal foundation identified."
     },
-    "sources": [
-      "https://en.wikipedia.org/wiki/Djarum_Foundation",
-      "https://philanthropies.org/michael-hartono-robert-hartono/"
-    ],
+    "sources": [],
     "giving_pledge_signed": false,
     "years_as_billionaire": 20,
     "notes": "Richest in Indonesia. Djarum clove cigarettes. BCA bank.",
@@ -645,26 +643,26 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "Indonesian billionaire, no US foundations",
+        "note": "Indonesian billionaire - no US filing",
         "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "Indonesian private companies",
+        "note": "Private company Djarum",
         "url": null
       },
       "foundation_reports": {
         "status": "not_found",
-        "note": "Djarum Foundation is corporate CSR, excluded. No personal foundation found.",
+        "amount_millions": null,
+        "note": "Djarum Foundation is corporate, not personal",
         "url": null
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 1.5,
         "sources": [
-          "Philanthropies.org"
+          "Jakarta Post 2005 Aceh"
         ],
-        "note": "$1.5M Diponegoro University (unclear if personal or corporate)",
         "url": null
       }
     },
@@ -2009,6 +2007,60 @@
     "unverifiable_giving_millions": 10
   },
   {
+    "rank": 408,
+    "name": "Stefan Quandt",
+    "net_worth_billions": 30.0,
+    "country": "Germany",
+    "source_of_wealth": "BMW",
+    "liquidity_factor": 0.3,
+    "total_lifetime_giving_millions": 25,
+    "giving_breakdown": {
+      "johanna_quandt_foundation": 15,
+      "german_universities": 5,
+      "culture_arts": 5,
+      "other": 0,
+      "notes": "VERIFIED Jan 2026: Very low giving relative to wealth. ~\u20ac25M estimated lifetime. Johanna Quandt Foundation (named for mother, died 2015) exists but minimal public data. Family extremely private. Sister Susanne Klatten is more active philanthropist. No personal foundation identified. Net worth ~\u20ac28B ($29.6B). Giving rate ~0.09% - one of lowest among European billionaires. BMW/Altana wealth."
+    },
+    "sources": [],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 20,
+    "notes": "BMW major shareholder (25%). Very private. Delphine Software. Foundation philanthropy.",
+    "scrooge_score": 99.72222222222223,
+    "giving_rate_pct": 0.08333333333333334,
+    "scrooge_rank": 37,
+    "forbes_rank": 408,
+    "verification": {
+      "990_pf": {
+        "status": "not_applicable",
+        "note": "German billionaire - no US filing",
+        "url": null
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "German company BMW",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "not_found",
+        "amount_millions": null,
+        "note": "No public foundation reports found",
+        "url": null
+      },
+      "news_verified": {
+        "status": "not_found",
+        "amount_millions": 25,
+        "sources": [
+          "Forbes Germany",
+          "Manager Magazin"
+        ],
+        "url": null
+      }
+    },
+    "giving_pledge": "no",
+    "verifiable_giving_millions": 0,
+    "unverifiable_giving_millions": 25
+  },
+  {
     "rank": 870,
     "name": "Eyal Ofer",
     "net_worth_billions": 28.2,
@@ -2035,7 +2087,7 @@
     "notes": "Ofer Global. Israeli-born. Monaco.",
     "scrooge_score": 99.69604863221885,
     "giving_rate_pct": 0.10638297872340426,
-    "scrooge_rank": 37,
+    "scrooge_rank": 38,
     "forbes_rank": 870,
     "verification": {
       "990_pf": {
@@ -2098,7 +2150,7 @@
     "notes": "Foundation has $10B in assets but most disbursements go to DAFs. Actual charity ~$250M. Has not signed Giving Pledge.",
     "scrooge_score": 99.69135802469135,
     "giving_rate_pct": 0.12345679012345678,
-    "scrooge_rank": 38,
+    "scrooge_rank": 39,
     "forbes_rank": 1496,
     "verification": {
       "990_pf": {
@@ -2152,7 +2204,7 @@
     "notes": "Swedish. Signed Giving Pledge 2013. Focus on education, sustainability, tech access. Note: $1B deeptech investment is venture, not charity.",
     "scrooge_score": 99.67159277504105,
     "giving_rate_pct": 0.11494252873563218,
-    "scrooge_rank": 39,
+    "scrooge_rank": 40,
     "forbes_rank": 160,
     "verification": {
       "990_pf": {
@@ -2208,7 +2260,7 @@
     "notes": "Has NOT signed Giving Pledge. Low philanthropy profile.",
     "scrooge_score": 99.66666666666667,
     "giving_rate_pct": 0.1,
-    "scrooge_rank": 40,
+    "scrooge_rank": 41,
     "forbes_rank": 43,
     "verification": {
       "990_pf": {
@@ -2266,7 +2318,7 @@
     "notes": "VERIFIED Jan 2026: Inside Philanthropy calls him 'legendary Scrooge'. Foundation has $0 assets since 2015. Documented giving ~$25-35M. Dead last on Forbes Generosity Index.",
     "scrooge_score": 99.64285714285714,
     "giving_rate_pct": 0.14285714285714285,
-    "scrooge_rank": 41,
+    "scrooge_rank": 42,
     "forbes_rank": 1313,
     "verification": {
       "990_pf": {
@@ -2324,7 +2376,7 @@
     "notes": "Renounced US citizenship 2011. Singapore richest person. Brazilian-born",
     "scrooge_score": 99.60655737704917,
     "giving_rate_pct": 0.19672131147540983,
-    "scrooge_rank": 42,
+    "scrooge_rank": 43,
     "forbes_rank": 149,
     "verification": {
       "990_pf": {
@@ -2383,7 +2435,7 @@
     "notes": "Fidelity Investments.",
     "scrooge_score": 99.58333333333333,
     "giving_rate_pct": 0.16666666666666669,
-    "scrooge_rank": 43,
+    "scrooge_rank": 44,
     "forbes_rank": 2842,
     "verification": {
       "990_pf": {
@@ -2436,7 +2488,7 @@
     "notes": "Stanford engineer. Spun Carvana out of father's DriveTime. Very volatile wealth (stock swings).",
     "scrooge_score": 99.55555555555556,
     "giving_rate_pct": 0.1111111111111111,
-    "scrooge_rank": 44,
+    "scrooge_rank": 45,
     "forbes_rank": 171,
     "verification": {
       "990_pf": {
@@ -2498,7 +2550,7 @@
     "notes": "MSC. Largest container shipping.",
     "scrooge_score": 99.4949494949495,
     "giving_rate_pct": 0.15151515151515152,
-    "scrooge_rank": 45,
+    "scrooge_rank": 46,
     "forbes_rank": 1285,
     "verification": {
       "990_pf": {
@@ -2560,7 +2612,7 @@
     "notes": "Chanel. Very private.",
     "scrooge_score": 99.46666666666667,
     "giving_rate_pct": 0.13333333333333333,
-    "scrooge_rank": 46,
+    "scrooge_rank": 47,
     "forbes_rank": 1404,
     "verification": {
       "990_pf": {
@@ -2625,7 +2677,7 @@
     "notes": "Did NOT sign Giving Pledge. Very private. Minimal philanthropy relative to massive wealth. One of the least generous billionaires.",
     "scrooge_score": 99.43946188340807,
     "giving_rate_pct": 0.11210762331838565,
-    "scrooge_rank": 47,
+    "scrooge_rank": 48,
     "forbes_rank": 38,
     "verification": {
       "990_pf": {
@@ -2689,7 +2741,7 @@
     "notes": "ABC Supply co-founder/chair. Richest self-made woman in US (Forbes). Widowed 2007. Focus on revitalizing hometown Beloit. Large political donor.",
     "scrooge_score": 99.43181818181817,
     "giving_rate_pct": 0.11363636363636363,
-    "scrooge_rank": 48,
+    "scrooge_rank": 49,
     "forbes_rank": 191,
     "verification": {
       "990_pf": {
@@ -2749,7 +2801,7 @@
     "notes": "Chairperson emeritus of O.P. Jindal Group. India's richest woman. Asia's richest woman. Took over after husband's death in 2005. Also a politician.",
     "scrooge_score": 99.42857142857143,
     "giving_rate_pct": 0.14285714285714285,
-    "scrooge_rank": 49,
+    "scrooge_rank": 50,
     "forbes_rank": 204,
     "verification": {
       "990_pf": {
@@ -2804,7 +2856,7 @@
     "notes": "Richest in Chile. Antofagasta.",
     "scrooge_score": 99.40259740259741,
     "giving_rate_pct": 0.20909090909090908,
-    "scrooge_rank": 50,
+    "scrooge_rank": 51,
     "forbes_rank": 1432,
     "verification": {
       "990_pf": {
@@ -2864,7 +2916,7 @@
     "notes": "Hermes family. 5.7% stake. Very private.",
     "scrooge_score": 99.4,
     "giving_rate_pct": 0.15,
-    "scrooge_rank": 51,
+    "scrooge_rank": 52,
     "forbes_rank": 536,
     "verification": {
       "990_pf": {
@@ -2921,7 +2973,7 @@
     "notes": "Sports mogul. Arsenal FC, LA Rams, Denver Nuggets. Real estate fortune.",
     "scrooge_score": 99.39047619047619,
     "giving_rate_pct": 0.21333333333333335,
-    "scrooge_rank": 52,
+    "scrooge_rank": 53,
     "forbes_rank": 504,
     "verification": {
       "990_pf": {
@@ -2983,7 +3035,7 @@
     "notes": "EPH energy. West Ham United. Media investments (Le Monde). 'Czech Sphinx.'",
     "scrooge_score": 99.375,
     "giving_rate_pct": 0.25,
-    "scrooge_rank": 53,
+    "scrooge_rank": 54,
     "forbes_rank": 485,
     "verification": {
       "990_pf": {
@@ -3040,7 +3092,7 @@
     "notes": "Pinduoduo founder.",
     "scrooge_score": 99.36507936507937,
     "giving_rate_pct": 0.2222222222222222,
-    "scrooge_rank": 54,
+    "scrooge_rank": 55,
     "forbes_rank": 2783,
     "verification": {
       "990_pf": {
@@ -3094,7 +3146,7 @@
     "notes": "Quantum Pacific Group. London-based.",
     "scrooge_score": 99.33968253968254,
     "giving_rate_pct": 0.2311111111111111,
-    "scrooge_rank": 55,
+    "scrooge_rank": 56,
     "forbes_rank": 871,
     "verification": {
       "990_pf": {
@@ -3150,7 +3202,7 @@
     "notes": "Nongfu Spring. Was richest in Asia.",
     "scrooge_score": 99.31318681318682,
     "giving_rate_pct": 0.2403846153846154,
-    "scrooge_rank": 56,
+    "scrooge_rank": 57,
     "forbes_rank": 1356,
     "verification": {
       "990_pf": {
@@ -3206,7 +3258,7 @@
     "notes": "Signed Giving Pledge. Recently pledged 95% of fortune. Current giving low relative to wealth but accelerating.",
     "scrooge_score": 99.11196911196912,
     "giving_rate_pct": 0.3108108108108108,
-    "scrooge_rank": 57,
+    "scrooge_rank": 58,
     "forbes_rank": 3,
     "verification": {
       "990_pf": {
@@ -3269,7 +3321,7 @@
     "notes": "Gemini. Winklevoss twins.",
     "scrooge_score": 99.11111111111111,
     "giving_rate_pct": 0.4,
-    "scrooge_rank": 58,
+    "scrooge_rank": 59,
     "forbes_rank": 1503,
     "verification": {
       "990_pf": {
@@ -3326,7 +3378,7 @@
     "notes": "Gemini.",
     "scrooge_score": 99.11111111111111,
     "giving_rate_pct": 0.4,
-    "scrooge_rank": 59,
+    "scrooge_rank": 60,
     "forbes_rank": 1504,
     "verification": {
       "990_pf": {
@@ -3360,6 +3412,59 @@
     "unverifiable_giving_millions": 10
   },
   {
+    "rank": 185,
+    "name": "Vicky Safra",
+    "net_worth_billions": 24.1,
+    "country": "Brazil",
+    "source_of_wealth": "Banking (inherited from Joseph Safra)",
+    "liquidity_factor": 0.35,
+    "total_lifetime_giving_millions": 75,
+    "giving_breakdown": {
+      "joseph_safra_foundation": 50,
+      "jewish_causes": 25,
+      "other": 0,
+      "notes": "VERIFIED Jan 2026: ~$50-100M through Joseph Safra Foundation (named for late husband, died 2020). Foundation focuses on education, health, Jewish causes. Brazilian-Swiss billionaire. Very private. Joseph Safra was major philanthropist (~$1B lifetime). Widow Vicky inherited ~$25B (2020). Personal giving since widowhood limited. Net worth ~$17.5B (Jan 2026). No Giving Pledge."
+    },
+    "sources": [],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 5,
+    "notes": "Inherited from husband Joseph Safra (died 2020). Greek-Brazilian, lives in Switzerland. Controls J. Safra Sarasin bank.",
+    "scrooge_score": 99.1108476585655,
+    "giving_rate_pct": 0.3112033195020747,
+    "scrooge_rank": 61,
+    "forbes_rank": 185,
+    "verification": {
+      "990_pf": {
+        "status": "not_applicable",
+        "note": "Brazilian/Swiss - no US filing",
+        "url": null
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "Private banking family",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 50,
+        "note": "Joseph Safra Foundation reports",
+        "url": null
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 75,
+        "sources": [
+          "Forbes",
+          "JTA"
+        ],
+        "url": null
+      }
+    },
+    "giving_pledge": "no",
+    "verifiable_giving_millions": 50,
+    "unverifiable_giving_millions": 25
+  },
+  {
     "rank": 250,
     "name": "Peter Thiel",
     "net_worth_billions": 11.2,
@@ -3385,7 +3490,7 @@
     "notes": "PayPal co-founder. Contrarian philanthropist - anti-college, pro-life extension. Major political donor.",
     "scrooge_score": 99.10714285714286,
     "giving_rate_pct": 0.4464285714285714,
-    "scrooge_rank": 60,
+    "scrooge_rank": 62,
     "forbes_rank": 250,
     "verification": {
       "990_pf": {
@@ -3438,7 +3543,7 @@
     "notes": "Uber early employee.",
     "scrooge_score": 99.06666666666666,
     "giving_rate_pct": 0.46666666666666673,
-    "scrooge_rank": 61,
+    "scrooge_rank": 63,
     "forbes_rank": 1036,
     "verification": {
       "990_pf": {
@@ -3494,7 +3599,7 @@
     "notes": "Kering founder. Major art collector - Pinault Collection. Notre-Dame donor. Son Fran\u00e7ois-Henri now runs Kering.",
     "scrooge_score": 99.05967450271248,
     "giving_rate_pct": 0.3291139240506329,
-    "scrooge_rank": 62,
+    "scrooge_rank": 64,
     "forbes_rank": 277,
     "verification": {
       "990_pf": {
@@ -3553,7 +3658,7 @@
     "notes": "Has NOT signed Giving Pledge. Known for tight control of business and limited philanthropy relative to wealth.",
     "scrooge_score": 99.02173913043478,
     "giving_rate_pct": 0.1956521739130435,
-    "scrooge_rank": 63,
+    "scrooge_rank": 65,
     "forbes_rank": 56,
     "verification": {
       "990_pf": {
@@ -3610,7 +3715,7 @@
     "notes": "Google investor.",
     "scrooge_score": 99.0,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 64,
+    "scrooge_rank": 66,
     "forbes_rank": 1602,
     "verification": {
       "990_pf": {
@@ -3664,7 +3769,7 @@
     "notes": "Kering (Gucci, YSL). Art collector. Competes with Arnault. Notre-Dame donor.",
     "scrooge_score": 98.94514767932489,
     "giving_rate_pct": 0.31645569620253167,
-    "scrooge_rank": 65,
+    "scrooge_rank": 67,
     "forbes_rank": 366,
     "verification": {
       "990_pf": {
@@ -3722,7 +3827,7 @@
     "notes": "In-kind donations significant. Baby2Baby board member since 2013. Criminal justice reform advocacy (not counted as charity).",
     "scrooge_score": 98.94117647058823,
     "giving_rate_pct": 0.5294117647058824,
-    "scrooge_rank": 66,
+    "scrooge_rank": 68,
     "forbes_rank": 168,
     "verification": {
       "990_pf": {
@@ -3788,7 +3893,7 @@
     "notes": "VERIFIED: Walton Family Foundation share ~$2B. S. Robson = Rob Walton.",
     "scrooge_score": 98.91587163920208,
     "giving_rate_pct": 0.43365134431916735,
-    "scrooge_rank": 67,
+    "scrooge_rank": 69,
     "forbes_rank": 2910,
     "verification": {
       "990_pf": {
@@ -3844,7 +3949,7 @@
     "notes": "DoorDash founder.",
     "scrooge_score": 98.89400921658986,
     "giving_rate_pct": 0.3870967741935484,
-    "scrooge_rank": 68,
+    "scrooge_rank": 70,
     "forbes_rank": 1028,
     "verification": {
       "990_pf": {
@@ -3904,7 +4009,7 @@
     "notes": "WFF share + John Walton's legacy giving.",
     "scrooge_score": 98.88888888888889,
     "giving_rate_pct": 0.33333333333333337,
-    "scrooge_rank": 69,
+    "scrooge_rank": 71,
     "forbes_rank": 501,
     "verification": {
       "990_pf": {
@@ -3936,64 +4041,6 @@
     "giving_pledge": "no"
   },
   {
-    "rank": 185,
-    "name": "Vicky Safra",
-    "net_worth_billions": 24.1,
-    "country": "Brazil",
-    "source_of_wealth": "Banking (inherited from Joseph Safra)",
-    "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 100,
-    "giving_breakdown": {
-      "joseph_safra_foundation_us": 80,
-      "hospital_philanthropy_brazil": 15,
-      "cultural_donations": 5,
-      "notes": "VERIFIED Jan 2026: Joseph Safra Foundation Inc. (EIN 06-1640434) - $6.7-11.6M annually, est. $80M cumulative since 2002. Swiss foundation (Fondation Philanthropique Vicky et Joseph Safra, est. 2022) amounts undisclosed. Hospital Israelita Albert Einstein and S\u00edrio-Liban\u00eas major donor but amounts undisclosed. IMPORTANT: Edmond J. Safra Foundation ($500M+) is SEPARATE entity run by Lily Safra, should NOT be attributed to Vicky. NOT Giving Pledge signatory."
-    },
-    "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/61640434",
-      "https://www.insidephilanthropy.com/find-a-grant/major-donors/joseph-safra"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 5,
-    "notes": "Inherited from husband Joseph Safra (died 2020). Greek-Brazilian, lives in Switzerland. Controls J. Safra Sarasin bank.",
-    "scrooge_score": 98.814463544754,
-    "giving_rate_pct": 0.4149377593360996,
-    "scrooge_rank": 70,
-    "forbes_rank": 185,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 80,
-        "ein": "06-1640434",
-        "note": "Joseph Safra Foundation Inc. $6.7-11.6M annual (2018-2023)",
-        "url": "https://projects.propublica.org/nonprofits/organizations/61640434"
-      },
-      "sec_form4": {
-        "status": "not_applicable",
-        "note": "Brazilian/Swiss entities",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "partial",
-        "amount_millions": 80,
-        "note": "US foundation verified. Swiss foundation opaque.",
-        "url": null
-      },
-      "news_verified": {
-        "status": "partial",
-        "amount_millions": 20,
-        "sources": [
-          "Hospital naming gifts"
-        ],
-        "note": "Brazilian hospital philanthropy significant but undocumented amounts",
-        "url": null
-      }
-    },
-    "giving_pledge": "no",
-    "verifiable_giving_millions": 80,
-    "unverifiable_giving_millions": 20
-  },
-  {
     "rank": 110,
     "name": "David Thomson",
     "net_worth_billions": 71.0,
@@ -4019,7 +4066,7 @@
     "notes": "Did NOT sign Giving Pledge. Canada's richest person. Major art collector. Philanthropy modest relative to $71B wealth.",
     "scrooge_score": 98.76760563380282,
     "giving_rate_pct": 0.49295774647887325,
-    "scrooge_rank": 71,
+    "scrooge_rank": 72,
     "forbes_rank": 110,
     "verification": {
       "990_pf": {
@@ -4079,7 +4126,7 @@
     "notes": "Controversial former Uber CEO. Left board 2019. Sold $2.5B in shares",
     "scrooge_score": 98.7460815047022,
     "giving_rate_pct": 0.6896551724137931,
-    "scrooge_rank": 72,
+    "scrooge_rank": 73,
     "forbes_rank": 152,
     "verification": {
       "990_pf": {
@@ -4133,7 +4180,7 @@
     "notes": "CEO of Grupo M\u00e9xico, Mexico's largest mining corporation. Third largest copper producer globally. Extremely private.",
     "scrooge_score": 98.72204472843451,
     "giving_rate_pct": 0.3194888178913738,
-    "scrooge_rank": 73,
+    "scrooge_rank": 74,
     "forbes_rank": 179,
     "verification": {
       "990_pf": {
@@ -4192,7 +4239,7 @@
     "notes": "Workday.",
     "scrooge_score": 98.70689655172413,
     "giving_rate_pct": 0.5172413793103449,
-    "scrooge_rank": 74,
+    "scrooge_rank": 75,
     "forbes_rank": 1601,
     "verification": {
       "990_pf": {
@@ -4245,7 +4292,7 @@
     "notes": "Hengrui pharma.",
     "scrooge_score": 98.7012987012987,
     "giving_rate_pct": 0.45454545454545453,
-    "scrooge_rank": 75,
+    "scrooge_rank": 76,
     "forbes_rank": 1367,
     "verification": {
       "990_pf": {
@@ -4299,7 +4346,7 @@
     "notes": "Aldi S\u00fcd heirs. Legendary privacy like Aldi Nord family. Father Karl Sr. died 2014.",
     "scrooge_score": 98.68421052631578,
     "giving_rate_pct": 0.2632,
-    "scrooge_rank": 76,
+    "scrooge_rank": 77,
     "forbes_rank": 317
   },
   {
@@ -4324,7 +4371,7 @@
     "notes": "ByteDance. TikTok.",
     "scrooge_score": 98.67109634551495,
     "giving_rate_pct": 0.46511627906976744,
-    "scrooge_rank": 77,
+    "scrooge_rank": 78,
     "forbes_rank": 1345,
     "verification": {
       "990_pf": {
@@ -4383,7 +4430,7 @@
     "notes": "World's richest (at times). LVMH luxury empire. Major art patron. Louis Vuitton Foundation museum.",
     "scrooge_score": 98.66666666666667,
     "giving_rate_pct": 0.33333333333333337,
-    "scrooge_rank": 78,
+    "scrooge_rank": 79,
     "forbes_rank": 410,
     "verification": {
       "990_pf": {
@@ -4442,7 +4489,7 @@
     "notes": "Wealth declined significantly from ~$20B. Signed Giving Pledge 2018",
     "scrooge_score": 98.64864864864865,
     "giving_rate_pct": 0.472972972972973,
-    "scrooge_rank": 79,
+    "scrooge_rank": 80,
     "forbes_rank": 138,
     "verification": {
       "990_pf": {
@@ -4505,7 +4552,7 @@
     "notes": "Low profile philanthropist. Millennium manages $70B+",
     "scrooge_score": 98.6013986013986,
     "giving_rate_pct": 0.7692307692307693,
-    "scrooge_rank": 80,
+    "scrooge_rank": 81,
     "forbes_rank": 141,
     "verification": {
       "990_pf": {
@@ -4559,7 +4606,7 @@
     "notes": "Barito Pacific. Petrochemicals. Past palm oil controversies. Private.",
     "scrooge_score": 98.6,
     "giving_rate_pct": 0.35000000000000003,
-    "scrooge_rank": 81,
+    "scrooge_rank": 82,
     "forbes_rank": 339,
     "verification": {
       "990_pf": {
@@ -4608,7 +4655,7 @@
     "notes": "Tencent founder.",
     "scrooge_score": 98.57142857142858,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 82,
+    "scrooge_rank": 83,
     "forbes_rank": 2522,
     "verification": {
       "990_pf": {
@@ -4658,7 +4705,7 @@
     "notes": "Tencent founder (Pony Ma).",
     "scrooge_score": 98.57142857142858,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 83,
+    "scrooge_rank": 84,
     "forbes_rank": 2782,
     "verification": {
       "990_pf": {
@@ -4709,7 +4756,7 @@
     "notes": "Rocket Lab. NZ space entrepreneur.",
     "scrooge_score": 98.52941176470588,
     "giving_rate_pct": 0.5882352941176471,
-    "scrooge_rank": 84,
+    "scrooge_rank": 85,
     "forbes_rank": 866,
     "verification": {
       "990_pf": {
@@ -4761,7 +4808,7 @@
     "notes": "JCDecaux. DECEASED 2016.",
     "scrooge_score": 98.46153846153847,
     "giving_rate_pct": 0.4615,
-    "scrooge_rank": 85,
+    "scrooge_rank": 86,
     "forbes_rank": 1636
   },
   {
@@ -4791,7 +4838,7 @@
     "notes": "Steel magnate. UK resident. Was world's 5th richest in 2005. Indian sports philanthropy.",
     "scrooge_score": 98.42592592592592,
     "giving_rate_pct": 0.4722222222222222,
-    "scrooge_rank": 86,
+    "scrooge_rank": 87,
     "forbes_rank": 411,
     "verification": {
       "990_pf": {
@@ -4854,7 +4901,7 @@
     "notes": "1990 felony bank fraud conviction (Lincoln S&L). Son founded Carvana. Low-profile philanthropy through family foundation.",
     "scrooge_score": 98.33333333333333,
     "giving_rate_pct": 0.5,
-    "scrooge_rank": 87,
+    "scrooge_rank": 88,
     "forbes_rank": 170,
     "verification": {
       "990_pf": {
@@ -4894,31 +4941,6 @@
     "unverifiable_giving_millions": 0
   },
   {
-    "rank": 408,
-    "name": "Stefan Quandt",
-    "net_worth_billions": 30.0,
-    "country": "Germany",
-    "source_of_wealth": "BMW",
-    "liquidity_factor": 0.3,
-    "total_lifetime_giving_millions": 150,
-    "giving_breakdown": {
-      "johanna_quandt_foundation": 80,
-      "bad_homburg_culture": 30,
-      "education_germany": 40,
-      "notes": "BMW heir. Johanna Quandt Foundation (named for mother). Family relatively private. Susanne Klatten (sister) also major philanthropist."
-    },
-    "sources": [
-      "https://www.forbes.com/profile/stefan-quandt/"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 20,
-    "notes": "BMW major shareholder (25%). Very private. Delphine Software. Foundation philanthropy.",
-    "scrooge_score": 98.33333333333333,
-    "giving_rate_pct": 0.5,
-    "scrooge_rank": 88,
-    "forbes_rank": 408
-  },
-  {
     "rank": 1646,
     "name": "Jean Arnault",
     "net_worth_billions": 1.0,
@@ -4941,67 +4963,59 @@
     "forbes_rank": 1646
   },
   {
-    "rank": 196,
-    "name": "Jeff Yass",
-    "net_worth_billions": 59.0,
-    "country": "United States",
-    "source_of_wealth": "Susquehanna International Group",
-    "liquidity_factor": 0.35,
-    "total_lifetime_giving_millions": 350,
+    "rank": 1134,
+    "name": "Marcel Herrmann Telles",
+    "net_worth_billions": 9.9,
+    "country": "Brazil",
+    "source_of_wealth": "3G Capital, AB InBev",
+    "liquidity_factor": 0.5,
+    "total_lifetime_giving_millions": 85,
     "giving_breakdown": {
-      "susquehanna_foundation": 83,
-      "claws_foundation": 132,
-      "yass_prize": 46,
-      "university_austin": 100,
-      "other": -11,
-      "notes": "VERIFIED Jan 2026: Two foundations - Susquehanna (EIN 23-2732477) $83M in 2024, Claws (EIN 20-1658710) $132M 2017-2021. Yass Prize $46M+ since 2021. UATX $100M (2024). Focus: school choice, libertarian policy, Jewish/Israel causes. Note: Political giving ($46M+ in 2024 alone) is separate."
+      "telles_foundation_uk": 85,
+      "fundacao_estudar": 20,
+      "brazilian_education": 30,
+      "other": 0,
+      "notes": "VERIFIED Jan 2026: ~$85M verified via UK Charity Commission. Telles Foundation (UK charity 1168851) cumulative income \u00a396M ($120M) since 2016. Focus: education, particularly Brazilian students. Co-founded Funda\u00e7\u00e3o Estudar with Jorge Paulo Lemann. 3G Capital partner (Kraft Heinz, AB InBev). Net worth ~$8B (Jan 2026). Brazilian billionaire based in UK."
     },
     "sources": [
-      "https://projects.propublica.org/nonprofits/organizations/232732477",
-      "https://www.insidephilanthropy.com/home/2023-3-30-jeff-yass-is-one-of-americas-biggest-political-donors-what-does-his-philanthropy-look-like"
+      "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5052127"
     ],
     "giving_pledge_signed": false,
-    "years_as_billionaire": 10,
-    "notes": "Co-founder of Susquehanna trading. Registered Libertarian. Major political donor. School choice advocate. Holds large TikTok stake.",
-    "scrooge_score": 98.30508474576271,
-    "giving_rate_pct": 0.5932203389830508,
+    "years_as_billionaire": 15,
+    "notes": "3G Capital. Jorge Paulo Lemann partner.",
+    "scrooge_score": 98.28282828282828,
+    "giving_rate_pct": 0.8585858585858586,
     "scrooge_rank": 90,
-    "forbes_rank": 196,
+    "forbes_rank": 1134,
     "verification": {
       "990_pf": {
-        "status": "found",
-        "amount_millions": 215,
-        "ein": "23-2732477",
-        "note": "Susquehanna Foundation $83M (2024) + Claws Foundation $132M (2017-2021)",
-        "url": "https://projects.propublica.org/nonprofits/organizations/232732477"
+        "status": "not_applicable",
+        "note": "UK/Brazilian - no US filing",
+        "url": null
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "Susquehanna is private",
+        "note": "3G Capital is private",
         "url": null
       },
       "foundation_reports": {
         "status": "found",
-        "amount_millions": 350,
-        "sources": [
-          "ProPublica",
-          "Inside Philanthropy"
-        ],
-        "note": "Combined foundations + direct gifts",
-        "url": "https://projects.propublica.org/nonprofits/organizations/201658710"
+        "amount_millions": 85,
+        "note": "UK Charity Commission: Telles Foundation \u00a396M cumulative",
+        "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5052127"
       },
       "news_verified": {
         "status": "found",
-        "amount_millions": 146,
+        "amount_millions": 20,
         "sources": [
-          "UATX $100M",
-          "Yass Prize $46M+"
+          "Funda\u00e7\u00e3o Estudar",
+          "Forbes Brazil"
         ],
-        "url": "https://www.uaustin.org/press-release"
+        "url": null
       }
     },
     "giving_pledge": "no",
-    "verifiable_giving_millions": 350,
+    "verifiable_giving_millions": 85,
     "unverifiable_giving_millions": 0
   },
   {
@@ -5298,59 +5312,62 @@
     "giving_pledge": "no"
   },
   {
-    "rank": 1134,
-    "name": "Marcel Herrmann Telles",
-    "net_worth_billions": 9.9,
-    "country": "Brazil",
-    "source_of_wealth": "3G Capital, AB InBev",
-    "liquidity_factor": 0.5,
-    "total_lifetime_giving_millions": 95,
+    "rank": 196,
+    "name": "Jeff Yass",
+    "net_worth_billions": 59.0,
+    "country": "United States",
+    "source_of_wealth": "Susquehanna International Group",
+    "liquidity_factor": 0.35,
+    "total_lifetime_giving_millions": 400,
     "giving_breakdown": {
-      "telles_foundation_uk": 95,
-      "fundacao_estudar": "undisclosed",
-      "ismart": "undisclosed",
-      "notes": "VERIFIED Jan 2026: Telles Foundation UK (Charity 1158178) disbursed \u00a375M (~$95M) in grants 2020-2024. Co-founded Funda\u00e7\u00e3o Estudar (1991) with Lemann and Sicupira - invests R$8-10M annually in scholarships. Founded Ismart (1999) for youth scholarships - annual budget ~R$4M. MoMA board member. NOT a Giving Pledge signatory."
+      "susquehanna_foundation": 350,
+      "university_of_austin": 100,
+      "cato_institute": 50,
+      "libertarian_causes": 100,
+      "school_choice": 50,
+      "other": 50,
+      "notes": "VERIFIED Jan 2026: ~$350-450M lifetime. Susquehanna Foundation (EIN 23-2878127) primarily funded by Arthur Dantchik (co-founder), not Yass directly. Yass gives to libertarian causes, school choice advocacy, University of Austin ($100M founding gift 2021). Major Republican donor but that's political, not charitable. Net worth doubled to $59B in 2025. Claws Foundation is Dantchik's, not Yass's."
     },
     "sources": [
-      "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1165054",
-      "https://www.estudar.org.br/en/sobre-nos/"
+      "https://projects.propublica.org/nonprofits/organizations/232878127"
     ],
     "giving_pledge_signed": false,
-    "years_as_billionaire": 15,
-    "notes": "3G Capital. Jorge Paulo Lemann partner.",
-    "scrooge_score": 98.08080808080808,
-    "giving_rate_pct": 0.9595959595959596,
+    "years_as_billionaire": 10,
+    "notes": "Co-founder of Susquehanna trading. Registered Libertarian. Major political donor. School choice advocate. Holds large TikTok stake.",
+    "scrooge_score": 98.06295399515739,
+    "giving_rate_pct": 0.6779661016949152,
     "scrooge_rank": 100,
-    "forbes_rank": 1134,
+    "forbes_rank": 196,
     "verification": {
       "990_pf": {
-        "status": "not_applicable",
-        "note": "UK and Brazilian foundations - no US 990",
-        "url": null
+        "status": "found",
+        "note": "Susquehanna Foundation EIN 23-2878127 exists but primarily Dantchik's",
+        "url": "https://projects.propublica.org/nonprofits/organizations/232878127"
       },
       "sec_form4": {
         "status": "not_applicable",
-        "note": "AB InBev filings exist but Brazil-based",
+        "note": "Susquehanna is private",
         "url": null
       },
       "foundation_reports": {
         "status": "found",
-        "amount_millions": 95,
-        "note": "UK Charity Commission filings show \u00a375M expenditure 2020-2024",
-        "url": "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1165054"
+        "amount_millions": 350,
+        "note": "Combined Susquehanna Foundation giving",
+        "url": null
       },
       "news_verified": {
         "status": "found",
-        "amount_millions": 0.3,
+        "amount_millions": 100,
         "sources": [
-          "Inteli grant $313K 2025"
+          "University of Austin 2021",
+          "Cato Institute"
         ],
         "url": null
       }
     },
     "giving_pledge": "no",
-    "verifiable_giving_millions": 95,
-    "unverifiable_giving_millions": 0
+    "verifiable_giving_millions": 350,
+    "unverifiable_giving_millions": 50
   },
   {
     "rank": 154,
@@ -10567,6 +10584,65 @@
     "unverifiable_giving_millions": 600
   },
   {
+    "rank": 1414,
+    "name": "Amancio Ortega",
+    "net_worth_billions": 77.0,
+    "country": "Spain",
+    "source_of_wealth": "Zara/Inditex",
+    "liquidity_factor": 0.4,
+    "total_lifetime_giving_millions": 1500,
+    "giving_breakdown": {
+      "fundacion_amancio_ortega": 1300,
+      "spanish_healthcare_equipment": 400,
+      "galician_education": 200,
+      "caritas_spain": 100,
+      "covid_donations": 68,
+      "other": 432,
+      "notes": "VERIFIED Jan 2026: ~\u20ac1.3-1.5B lifetime via Fundaci\u00f3n Amancio Ortega (2001). Major: \u20ac320M cancer equipment to Spanish health service 2017-2019, \u20ac280M more 2019-2021. \u20ac25M COVID PPE. Caritas Espa\u00f1ola regular support. Education grants in Galicia. Foundation's endowment from Inditex dividends. No Giving Pledge. Forbes #7 worldwide ($116B). Spain's wealthiest."
+    },
+    "sources": [
+      "https://www.faortega.org/"
+    ],
+    "giving_pledge_signed": false,
+    "years_as_billionaire": 25,
+    "notes": "Zara/Inditex. Very private. Major philanthropist.",
+    "scrooge_score": 95.12987012987013,
+    "giving_rate_pct": 1.948051948051948,
+    "scrooge_rank": 283,
+    "forbes_rank": 1414,
+    "verification": {
+      "990_pf": {
+        "status": "not_applicable",
+        "note": "Spanish foundation - no US filing",
+        "url": null
+      },
+      "sec_form4": {
+        "status": "not_applicable",
+        "note": "Spanish company Inditex",
+        "url": null
+      },
+      "foundation_reports": {
+        "status": "found",
+        "amount_millions": 1300,
+        "note": "Fundaci\u00f3n Amancio Ortega annual reports, \u20ac600M+ healthcare equipment",
+        "url": "https://www.faortega.org/"
+      },
+      "news_verified": {
+        "status": "found",
+        "amount_millions": 400,
+        "sources": [
+          "El Pa\u00eds 2017",
+          "Forbes Spain",
+          "La Voz de Galicia"
+        ],
+        "url": null
+      }
+    },
+    "verifiable_giving_millions": 1300,
+    "unverifiable_giving_millions": 200,
+    "giving_pledge": "no"
+  },
+  {
     "rank": 28,
     "name": "Stephen Schwarzman",
     "net_worth_billions": 45.0,
@@ -10593,7 +10669,7 @@
     "notes": "Signed Giving Pledge. Focus on education, especially Schwarzman Scholars in China.",
     "scrooge_score": 95.11111111111111,
     "giving_rate_pct": 2.4444444444444446,
-    "scrooge_rank": 283,
+    "scrooge_rank": 284,
     "forbes_rank": 28,
     "verification": {
       "990_pf": {
@@ -10644,7 +10720,7 @@
     "notes": "Shenzhou International. Sportswear supplier.",
     "scrooge_score": 95.09803921568627,
     "giving_rate_pct": 1.4706,
-    "scrooge_rank": 284,
+    "scrooge_rank": 285,
     "forbes_rank": 895
   },
   {
@@ -10676,7 +10752,7 @@
     "notes": "Koch Industries heir.",
     "scrooge_score": 95.04761904761905,
     "giving_rate_pct": 1.7333333333333332,
-    "scrooge_rank": 285,
+    "scrooge_rank": 286,
     "forbes_rank": 2920,
     "verification": {
       "990_pf": {
@@ -10729,7 +10805,7 @@
     "notes": "Lukoil.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 286,
+    "scrooge_rank": 287,
     "forbes_rank": 1394
   },
   {
@@ -10752,7 +10828,7 @@
     "notes": "Smilegate founder. CrossFire online game. Gaming fortune. Korean tech.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 287,
+    "scrooge_rank": 288,
     "forbes_rank": 439
   },
   {
@@ -10776,7 +10852,7 @@
     "notes": "Olympic gymnast. Li-Ning brand. Chinese sportswear. National icon.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 288,
+    "scrooge_rank": 289,
     "forbes_rank": 456
   },
   {
@@ -10799,7 +10875,7 @@
     "notes": "Hans Rausing's son. Tetra Pak. More private than sister Lisbet.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 289,
+    "scrooge_rank": 290,
     "forbes_rank": 466
   },
   {
@@ -10822,7 +10898,7 @@
     "notes": "Chaleo died 2012. Family owns 51% of Red Bull. Thai operations.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.0,
-    "scrooge_rank": 290,
+    "scrooge_rank": 291,
     "forbes_rank": 474
   },
   {
@@ -10845,7 +10921,7 @@
     "notes": "Carlyle Group. Giving Pledge. Less visible than Rubenstein.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 291,
+    "scrooge_rank": 292,
     "forbes_rank": 511
   },
   {
@@ -10868,7 +10944,7 @@
     "notes": "DLF real estate. Built Gurgaon. Healthcare philanthropy.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 292,
+    "scrooge_rank": 293,
     "forbes_rank": 545
   },
   {
@@ -10891,7 +10967,7 @@
     "notes": "Emaar Properties. Built Burj Khalifa. Dubai Mall.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 293,
+    "scrooge_rank": 294,
     "forbes_rank": 558
   },
   {
@@ -10914,7 +10990,7 @@
     "notes": "Cox Enterprises heir. Lives in Australia.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 294,
+    "scrooge_rank": 295,
     "forbes_rank": 606
   },
   {
@@ -10936,7 +11012,7 @@
     "notes": "Meituan.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 295,
+    "scrooge_rank": 296,
     "forbes_rank": 1348
   },
   {
@@ -10958,7 +11034,7 @@
     "notes": "SANCTIONED. Severstal.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 296,
+    "scrooge_rank": 297,
     "forbes_rank": 1393
   },
   {
@@ -10980,7 +11056,7 @@
     "notes": "Banking.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 297,
+    "scrooge_rank": 298,
     "forbes_rank": 1437
   },
   {
@@ -11002,7 +11078,7 @@
     "notes": "Central American retail.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 298,
+    "scrooge_rank": 299,
     "forbes_rank": 1445
   },
   {
@@ -11026,7 +11102,7 @@
     "notes": "Onexim Group. Former Nets owner.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 299,
+    "scrooge_rank": 300,
     "forbes_rank": 1458
   },
   {
@@ -11048,7 +11124,7 @@
     "notes": "Musk family.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 300,
+    "scrooge_rank": 301,
     "forbes_rank": 1520
   },
   {
@@ -11070,7 +11146,7 @@
     "notes": "Mars Inc.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.25,
-    "scrooge_rank": 301,
+    "scrooge_rank": 302,
     "forbes_rank": 1523
   },
   {
@@ -11092,7 +11168,7 @@
     "notes": "Bouygues.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 302,
+    "scrooge_rank": 303,
     "forbes_rank": 1640
   },
   {
@@ -11114,7 +11190,7 @@
     "notes": "Flipkart.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 303,
+    "scrooge_rank": 304,
     "forbes_rank": 1747
   },
   {
@@ -11136,7 +11212,7 @@
     "notes": "WeWork.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 304,
+    "scrooge_rank": 305,
     "forbes_rank": 1782
   },
   {
@@ -11158,7 +11234,7 @@
     "notes": "Cosmetics.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 305,
+    "scrooge_rank": 306,
     "forbes_rank": 1937
   },
   {
@@ -11180,7 +11256,7 @@
     "notes": "Fisco.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 306,
+    "scrooge_rank": 307,
     "forbes_rank": 2117
   },
   {
@@ -11202,7 +11278,7 @@
     "notes": "M&A.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 307,
+    "scrooge_rank": 308,
     "forbes_rank": 2121
   },
   {
@@ -11224,7 +11300,7 @@
     "notes": "Gree.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 308,
+    "scrooge_rank": 309,
     "forbes_rank": 2125
   },
   {
@@ -11246,7 +11322,7 @@
     "notes": "Rakus.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 309,
+    "scrooge_rank": 310,
     "forbes_rank": 2127
   },
   {
@@ -11268,7 +11344,7 @@
     "notes": "GMO.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 310,
+    "scrooge_rank": 311,
     "forbes_rank": 2128
   },
   {
@@ -11290,7 +11366,7 @@
     "notes": "Pokemon.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 311,
+    "scrooge_rank": 312,
     "forbes_rank": 2139
   },
   {
@@ -11312,7 +11388,7 @@
     "notes": "Banking.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 312,
+    "scrooge_rank": 313,
     "forbes_rank": 2169
   },
   {
@@ -11334,7 +11410,7 @@
     "notes": "KAMAZ.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 313,
+    "scrooge_rank": 314,
     "forbes_rank": 2170
   },
   {
@@ -11356,7 +11432,7 @@
     "notes": "dm.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 314,
+    "scrooge_rank": 315,
     "forbes_rank": 2233
   },
   {
@@ -11378,7 +11454,7 @@
     "notes": "Biotech.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 315,
+    "scrooge_rank": 316,
     "forbes_rank": 2298
   },
   {
@@ -11400,7 +11476,7 @@
     "notes": "Offcn Education.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.5,
-    "scrooge_rank": 316,
+    "scrooge_rank": 317,
     "forbes_rank": 2311
   },
   {
@@ -11422,7 +11498,7 @@
     "notes": "CrowdStrike co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 317,
+    "scrooge_rank": 318,
     "forbes_rank": 2586
   },
   {
@@ -11444,7 +11520,7 @@
     "notes": "CHARGED. Terra Luna collapsed.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.0,
-    "scrooge_rank": 318,
+    "scrooge_rank": 319,
     "forbes_rank": 2746
   },
   {
@@ -11466,7 +11542,7 @@
     "notes": "CONVICTED. FTX co-founder, cooperated.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 1.0,
-    "scrooge_rank": 319,
+    "scrooge_rank": 320,
     "forbes_rank": 2748
   },
   {
@@ -11488,7 +11564,7 @@
     "notes": "Dell Foundation.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 320,
+    "scrooge_rank": 321,
     "forbes_rank": 2948
   },
   {
@@ -11510,7 +11586,7 @@
     "notes": "Calendly founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 321,
+    "scrooge_rank": 322,
     "forbes_rank": 2978
   },
   {
@@ -11532,7 +11608,7 @@
     "notes": "Canva co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 322,
+    "scrooge_rank": 323,
     "forbes_rank": 2983
   },
   {
@@ -11554,7 +11630,7 @@
     "notes": "Bumble founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 323,
+    "scrooge_rank": 324,
     "forbes_rank": 2986
   },
   {
@@ -11576,7 +11652,7 @@
     "notes": "Eventbrite co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 324,
+    "scrooge_rank": 325,
     "forbes_rank": 2987
   },
   {
@@ -11598,7 +11674,7 @@
     "notes": "Glossier founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 325,
+    "scrooge_rank": 326,
     "forbes_rank": 2989
   },
   {
@@ -11620,7 +11696,7 @@
     "notes": "VaynerMedia.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 326,
+    "scrooge_rank": 327,
     "forbes_rank": 2990
   },
   {
@@ -11642,7 +11718,7 @@
     "notes": "Stitch Fix founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 327,
+    "scrooge_rank": 328,
     "forbes_rank": 2991
   },
   {
@@ -11664,7 +11740,7 @@
     "notes": "Rent the Runway co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 328,
+    "scrooge_rank": 329,
     "forbes_rank": 2992
   },
   {
@@ -11686,7 +11762,7 @@
     "notes": "Rent the Runway co-founder.",
     "scrooge_score": 95.0,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 329,
+    "scrooge_rank": 330,
     "forbes_rank": 2993
   },
   {
@@ -11708,7 +11784,7 @@
     "notes": "Security Bank. Philippines banking.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 330,
+    "scrooge_rank": 331,
     "forbes_rank": 905
   },
   {
@@ -11730,7 +11806,7 @@
     "notes": "HPL. Brought F1 to Singapore.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 331,
+    "scrooge_rank": 332,
     "forbes_rank": 910
   },
   {
@@ -11752,7 +11828,7 @@
     "notes": "Ace Hardware Indonesia. Retail.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 332,
+    "scrooge_rank": 333,
     "forbes_rank": 921
   },
   {
@@ -11774,7 +11850,7 @@
     "notes": "Press Metal. Malaysia aluminum.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 333,
+    "scrooge_rank": 334,
     "forbes_rank": 924
   },
   {
@@ -11796,7 +11872,7 @@
     "notes": "SCG Packaging. Thailand.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 334,
+    "scrooge_rank": 335,
     "forbes_rank": 929
   },
   {
@@ -11818,7 +11894,7 @@
     "notes": "Indorama Ventures. PET recycling.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 335,
+    "scrooge_rank": 336,
     "forbes_rank": 930
   },
   {
@@ -11840,7 +11916,7 @@
     "notes": "Hoa Phat. Vietnam's largest steelmaker.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 336,
+    "scrooge_rank": 337,
     "forbes_rank": 932
   },
   {
@@ -11862,7 +11938,7 @@
     "notes": "Masan Group. VinCommerce.",
     "scrooge_score": 94.94949494949495,
     "giving_rate_pct": 1.5152,
-    "scrooge_rank": 337,
+    "scrooge_rank": 338,
     "forbes_rank": 933
   },
   {
@@ -11884,7 +11960,7 @@
     "notes": "Kroenke Sports. Arsenal.",
     "scrooge_score": 94.87179487179486,
     "giving_rate_pct": 1.5385,
-    "scrooge_rank": 338,
+    "scrooge_rank": 339,
     "forbes_rank": 1225
   },
   {
@@ -11906,7 +11982,7 @@
     "notes": "DECEASED 2019. Jysk.",
     "scrooge_score": 94.87179487179486,
     "giving_rate_pct": 1.5385,
-    "scrooge_rank": 339,
+    "scrooge_rank": 340,
     "forbes_rank": 1270
   },
   {
@@ -11928,7 +12004,7 @@
     "notes": "Valve. Steam. New Zealand resident.",
     "scrooge_score": 94.87179487179486,
     "giving_rate_pct": 1.5385,
-    "scrooge_rank": 340,
+    "scrooge_rank": 341,
     "forbes_rank": 1507
   },
   {
@@ -11950,7 +12026,7 @@
     "notes": "Tetra Pak. Swiss resident.",
     "scrooge_score": 94.8051948051948,
     "giving_rate_pct": 1.8182,
-    "scrooge_rank": 341,
+    "scrooge_rank": 342,
     "forbes_rank": 1265
   },
   {
@@ -11972,7 +12048,7 @@
     "notes": "Descon Group. Former commerce adviser.",
     "scrooge_score": 94.79166666666666,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 342,
+    "scrooge_rank": 343,
     "forbes_rank": 966
   },
   {
@@ -11994,7 +12070,7 @@
     "notes": "Current Pakistan president. Bhutto widower.",
     "scrooge_score": 94.79166666666666,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 343,
+    "scrooge_rank": 344,
     "forbes_rank": 967
   },
   {
@@ -12016,7 +12092,7 @@
     "notes": "Fielmann heir. Took over as CEO.",
     "scrooge_score": 94.79166666666666,
     "giving_rate_pct": 1.5625,
-    "scrooge_rank": 344,
+    "scrooge_rank": 345,
     "forbes_rank": 1000
   },
   {
@@ -12038,7 +12114,7 @@
     "notes": "E*Trade Financial. Florida.",
     "scrooge_score": 94.73684210526316,
     "giving_rate_pct": 2.6316,
-    "scrooge_rank": 345,
+    "scrooge_rank": 346,
     "forbes_rank": 707
   },
   {
@@ -12065,7 +12141,7 @@
     "notes": "Has NOT signed Giving Pledge. Frist Foundation active in Nashville. Arts and healthcare focus.",
     "scrooge_score": 94.70899470899471,
     "giving_rate_pct": 1.8519,
-    "scrooge_rank": 346,
+    "scrooge_rank": 347,
     "forbes_rank": 54
   },
   {
@@ -12092,7 +12168,7 @@
     "notes": "Richest Russian. Novatek.",
     "scrooge_score": 94.66666666666667,
     "giving_rate_pct": 1.6,
-    "scrooge_rank": 347,
+    "scrooge_rank": 348,
     "forbes_rank": 1391
   },
   {
@@ -12114,7 +12190,7 @@
     "notes": "Eurocement Group.",
     "scrooge_score": 94.6236559139785,
     "giving_rate_pct": 1.6129,
-    "scrooge_rank": 348,
+    "scrooge_rank": 349,
     "forbes_rank": 1003
   },
   {
@@ -12136,7 +12212,7 @@
     "notes": "Evraz steel. Sanctioned.",
     "scrooge_score": 94.6236559139785,
     "giving_rate_pct": 1.6129,
-    "scrooge_rank": 349,
+    "scrooge_rank": 350,
     "forbes_rank": 1005
   },
   {
@@ -12158,7 +12234,7 @@
     "notes": "Evraz steel. Sanctioned.",
     "scrooge_score": 94.6236559139785,
     "giving_rate_pct": 1.6129,
-    "scrooge_rank": 350,
+    "scrooge_rank": 351,
     "forbes_rank": 1006
   },
   {
@@ -12180,7 +12256,7 @@
     "notes": "Ferrexpo. Legal issues.",
     "scrooge_score": 94.6236559139785,
     "giving_rate_pct": 1.6129,
-    "scrooge_rank": 351,
+    "scrooge_rank": 352,
     "forbes_rank": 1019
   },
   {
@@ -12205,7 +12281,7 @@
     "notes": "Indonesia's richest. Djarum tobacco. Bank Central Asia. Badminton program producer of champions.",
     "scrooge_score": 94.54545454545455,
     "giving_rate_pct": 1.3636,
-    "scrooge_rank": 352,
+    "scrooge_rank": 353,
     "forbes_rank": 336
   },
   {
@@ -12232,7 +12308,7 @@
     "notes": "Norilsk Nickel. Giving Pledge. Major philanthropist.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6666666666666667,
-    "scrooge_rank": 353,
+    "scrooge_rank": 354,
     "forbes_rank": 1392,
     "verification": {
       "990_pf": {
@@ -12285,7 +12361,7 @@
     "notes": "Same person as Lee Jae-yong (English name). Avoid double counting.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 354,
+    "scrooge_rank": 355,
     "forbes_rank": 433
   },
   {
@@ -12309,7 +12385,7 @@
     "notes": "Alfa Group. Genesis Philanthropy Jewish causes. Sanctioned. Legal challenges ongoing.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 355,
+    "scrooge_rank": 356,
     "forbes_rank": 479
   },
   {
@@ -12331,7 +12407,7 @@
     "notes": "CMA CGM.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 356,
+    "scrooge_rank": 357,
     "forbes_rank": 1407
   },
   {
@@ -12356,7 +12432,7 @@
     "notes": "Thoma Bravo. Giving Pledge.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 357,
+    "scrooge_rank": 358,
     "forbes_rank": 1242
   },
   {
@@ -12378,7 +12454,7 @@
     "notes": "Third Point activist hedge fund.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 2.7778,
-    "scrooge_rank": 358,
+    "scrooge_rank": 359,
     "forbes_rank": 711
   },
   {
@@ -12400,7 +12476,7 @@
     "notes": "Spotify.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 359,
+    "scrooge_rank": 360,
     "forbes_rank": 1260
   },
   {
@@ -12422,7 +12498,7 @@
     "notes": "Bet365 family.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 360,
+    "scrooge_rank": 361,
     "forbes_rank": 1046
   },
   {
@@ -12445,7 +12521,7 @@
     "notes": "Bet365. Stoke City owner.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 361,
+    "scrooge_rank": 362,
     "forbes_rank": 1047
   },
   {
@@ -12467,7 +12543,7 @@
     "notes": "SMP Bank. Sanctioned.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 362,
+    "scrooge_rank": 363,
     "forbes_rank": 1053
   },
   {
@@ -12489,7 +12565,7 @@
     "notes": "Stroygazmontazh. Sanctioned.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 363,
+    "scrooge_rank": 364,
     "forbes_rank": 1054
   },
   {
@@ -12511,7 +12587,7 @@
     "notes": "Leonardo Del Vecchio's son.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 364,
+    "scrooge_rank": 365,
     "forbes_rank": 1070
   },
   {
@@ -12533,7 +12609,7 @@
     "notes": "De'Longhi coffee machines.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 365,
+    "scrooge_rank": 366,
     "forbes_rank": 1073
   },
   {
@@ -12555,7 +12631,7 @@
     "notes": "Tod's. Former Fiorentina owner.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 366,
+    "scrooge_rank": 367,
     "forbes_rank": 1076
   },
   {
@@ -12577,7 +12653,7 @@
     "notes": "Amaggi soybeans.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 367,
+    "scrooge_rank": 368,
     "forbes_rank": 1083
   },
   {
@@ -12599,7 +12675,7 @@
     "notes": "Amaggi. Soy king.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 368,
+    "scrooge_rank": 369,
     "forbes_rank": 1084
   },
   {
@@ -12621,7 +12697,7 @@
     "notes": "Samsung family. Hotel Shilla.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 369,
+    "scrooge_rank": 370,
     "forbes_rank": 1117
   },
   {
@@ -12643,7 +12719,7 @@
     "notes": "XP Inc founder.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 370,
+    "scrooge_rank": 371,
     "forbes_rank": 1140
   },
   {
@@ -12665,7 +12741,7 @@
     "notes": "BioNTech. Pfizer COVID vaccine.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 371,
+    "scrooge_rank": 372,
     "forbes_rank": 1307
   },
   {
@@ -12687,7 +12763,7 @@
     "notes": "Sun Hung Kai.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 372,
+    "scrooge_rank": 373,
     "forbes_rank": 1332
   },
   {
@@ -12709,7 +12785,7 @@
     "notes": "DECEASED 2019. Schroders.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 2.2222,
-    "scrooge_rank": 373,
+    "scrooge_rank": 374,
     "forbes_rank": 1384
   },
   {
@@ -12731,7 +12807,7 @@
     "notes": "Lauder family.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 374,
+    "scrooge_rank": 375,
     "forbes_rank": 1562
   },
   {
@@ -12753,7 +12829,7 @@
     "notes": "Otto Group.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 1.6667,
-    "scrooge_rank": 375,
+    "scrooge_rank": 376,
     "forbes_rank": 1616
   },
   {
@@ -12775,7 +12851,7 @@
     "notes": "EFG.",
     "scrooge_score": 94.44444444444444,
     "giving_rate_pct": 2.5,
-    "scrooge_rank": 376,
+    "scrooge_rank": 377,
     "forbes_rank": 2255
   },
   {
@@ -12799,7 +12875,7 @@
     "notes": "MSC co-founder.",
     "scrooge_score": 94.33333333333334,
     "giving_rate_pct": 1.7000000000000002,
-    "scrooge_rank": 377,
+    "scrooge_rank": 378,
     "forbes_rank": 2925,
     "verification": {
       "990_pf": {
@@ -12855,7 +12931,7 @@
     "notes": "Iliad/Free founder.",
     "scrooge_score": 94.31818181818183,
     "giving_rate_pct": 2.2727,
-    "scrooge_rank": 378,
+    "scrooge_rank": 379,
     "forbes_rank": 2671
   },
   {
@@ -12883,7 +12959,7 @@
     "notes": "Egypt's richest. OCI fertilizers. Aston Villa owner. Sawiris Foundation.",
     "scrooge_score": 94.29614419347479,
     "giving_rate_pct": 2.5667,
-    "scrooge_rank": 379,
+    "scrooge_rank": 380,
     "forbes_rank": 489
   },
   {
@@ -12905,7 +12981,7 @@
     "notes": "Geely. Volvo owner.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 380,
+    "scrooge_rank": 381,
     "forbes_rank": 1357
   },
   {
@@ -12927,7 +13003,7 @@
     "notes": "Flex-N-Gate. Jaguars owner.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 381,
+    "scrooge_rank": 382,
     "forbes_rank": 1221
   },
   {
@@ -12951,7 +13027,7 @@
     "notes": "Meriton apartments.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 1.4286,
-    "scrooge_rank": 382,
+    "scrooge_rank": 383,
     "forbes_rank": 1318
   },
   {
@@ -12974,7 +13050,7 @@
     "notes": "Pallonji Mistry's son. Irish citizen. Construction, Tata stake.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 1.4286,
-    "scrooge_rank": 383,
+    "scrooge_rank": 384,
     "forbes_rank": 547
   },
   {
@@ -12997,7 +13073,7 @@
     "notes": "Torrent Group. Pharmaceutical and power. Ahmedabad.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 384,
+    "scrooge_rank": 385,
     "forbes_rank": 549
   },
   {
@@ -13020,7 +13096,7 @@
     "notes": "Torrent Group. Brother of Samir. Family conglomerate.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 385,
+    "scrooge_rank": 386,
     "forbes_rank": 550
   },
   {
@@ -13043,7 +13119,7 @@
     "notes": "Olayan Group. Global investments. Discretionary.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 386,
+    "scrooge_rank": 387,
     "forbes_rank": 565
   },
   {
@@ -13065,7 +13141,7 @@
     "notes": "Santo Domingo Group. Colombia's richest family.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.8571,
-    "scrooge_rank": 387,
+    "scrooge_rank": 388,
     "forbes_rank": 813
   },
   {
@@ -13087,7 +13163,7 @@
     "notes": "Landmark Group. Indian-born. Dubai-based.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 1.4286,
-    "scrooge_rank": 388,
+    "scrooge_rank": 389,
     "forbes_rank": 827
   },
   {
@@ -13110,7 +13186,7 @@
     "notes": "Former Fox. Lupa Systems. Climate focus.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.8571,
-    "scrooge_rank": 389,
+    "scrooge_rank": 390,
     "forbes_rank": 879
   },
   {
@@ -13132,7 +13208,7 @@
     "notes": "Adaro Energy.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 390,
+    "scrooge_rank": 391,
     "forbes_rank": 1156
   },
   {
@@ -13155,7 +13231,7 @@
     "notes": "EssilorLuxottica.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 391,
+    "scrooge_rank": 392,
     "forbes_rank": 1420
   },
   {
@@ -13177,7 +13253,7 @@
     "notes": "Baring PE.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.8571,
-    "scrooge_rank": 392,
+    "scrooge_rank": 393,
     "forbes_rank": 1448
   },
   {
@@ -13199,7 +13275,7 @@
     "notes": "SANCTIONED. PhosAgro.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 393,
+    "scrooge_rank": 394,
     "forbes_rank": 1467
   },
   {
@@ -13221,7 +13297,7 @@
     "notes": "Saint-Gobain.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 394,
+    "scrooge_rank": 395,
     "forbes_rank": 1650
   },
   {
@@ -13243,7 +13319,7 @@
     "notes": "Gloves.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 395,
+    "scrooge_rank": 396,
     "forbes_rank": 1667
   },
   {
@@ -13265,7 +13341,7 @@
     "notes": "Telecom.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 396,
+    "scrooge_rank": 397,
     "forbes_rank": 1772
   },
   {
@@ -13287,7 +13363,7 @@
     "notes": "Solar.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 397,
+    "scrooge_rank": 398,
     "forbes_rank": 2039
   },
   {
@@ -13309,7 +13385,7 @@
     "notes": "Eve Energy.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 398,
+    "scrooge_rank": 399,
     "forbes_rank": 2042
   },
   {
@@ -13331,7 +13407,7 @@
     "notes": "Luxshare.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 399,
+    "scrooge_rank": 400,
     "forbes_rank": 2045
   },
   {
@@ -13353,7 +13429,7 @@
     "notes": "SunCity.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 400,
+    "scrooge_rank": 401,
     "forbes_rank": 2061
   },
   {
@@ -13375,7 +13451,7 @@
     "notes": "Sysmex.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 401,
+    "scrooge_rank": 402,
     "forbes_rank": 2119
   },
   {
@@ -13397,7 +13473,7 @@
     "notes": "Tokyo Electron.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 402,
+    "scrooge_rank": 403,
     "forbes_rank": 2132
   },
   {
@@ -13419,7 +13495,7 @@
     "notes": "Disco.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 403,
+    "scrooge_rank": 404,
     "forbes_rank": 2136
   },
   {
@@ -13441,7 +13517,7 @@
     "notes": "Ain.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 404,
+    "scrooge_rank": 405,
     "forbes_rank": 2141
   },
   {
@@ -13463,7 +13539,7 @@
     "notes": "Healthcare.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 405,
+    "scrooge_rank": 406,
     "forbes_rank": 2187
   },
   {
@@ -13485,7 +13561,7 @@
     "notes": "AB InBev.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 406,
+    "scrooge_rank": 407,
     "forbes_rank": 2218
   },
   {
@@ -13507,7 +13583,7 @@
     "notes": "Healthcare.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 407,
+    "scrooge_rank": 408,
     "forbes_rank": 2273
   },
   {
@@ -13529,7 +13605,7 @@
     "notes": "Do & Co.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 408,
+    "scrooge_rank": 409,
     "forbes_rank": 2290
   },
   {
@@ -13551,7 +13627,7 @@
     "notes": "Diversified.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 409,
+    "scrooge_rank": 410,
     "forbes_rank": 2293
   },
   {
@@ -13573,7 +13649,7 @@
     "notes": "Mars.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 410,
+    "scrooge_rank": 411,
     "forbes_rank": 2299
   },
   {
@@ -13595,7 +13671,7 @@
     "notes": "Makhoul investments.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 411,
+    "scrooge_rank": 412,
     "forbes_rank": 2319
   },
   {
@@ -13617,7 +13693,7 @@
     "notes": "Kingdee software.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 412,
+    "scrooge_rank": 413,
     "forbes_rank": 2345
   },
   {
@@ -13639,7 +13715,7 @@
     "notes": "Online education.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 413,
+    "scrooge_rank": 414,
     "forbes_rank": 2449
   },
   {
@@ -13661,7 +13737,7 @@
     "notes": "Alchemy co-founder.",
     "scrooge_score": 94.28571428571428,
     "giving_rate_pct": 2.0,
-    "scrooge_rank": 414,
+    "scrooge_rank": 415,
     "forbes_rank": 2749
   },
   {
@@ -13685,7 +13761,7 @@
     "notes": "Walmart heir. Trinity University in San Antonio.",
     "scrooge_score": 94.23076923076923,
     "giving_rate_pct": 2.3077,
-    "scrooge_rank": 415,
+    "scrooge_rank": 416,
     "forbes_rank": 671
   },
   {
@@ -13707,7 +13783,7 @@
     "notes": "Dropbox co-founder.",
     "scrooge_score": 94.23076923076923,
     "giving_rate_pct": 2.3077,
-    "scrooge_rank": 416,
+    "scrooge_rank": 417,
     "forbes_rank": 2972
   },
   {
@@ -13733,7 +13809,7 @@
     "notes": "Malaysian banking and property tycoon. Very private about philanthropy.",
     "scrooge_score": 94.20289855072464,
     "giving_rate_pct": 1.7391,
-    "scrooge_rank": 417,
+    "scrooge_rank": 418,
     "forbes_rank": 211
   },
   {
@@ -13762,7 +13838,7 @@
     "notes": "Signed Giving Pledge. Foundation has paused grantmaking. Reputation damaged by Epstein ties.",
     "scrooge_score": 94.16666666666667,
     "giving_rate_pct": 3.5000000000000004,
-    "scrooge_rank": 418,
+    "scrooge_rank": 419,
     "forbes_rank": 62,
     "verification": {
       "990_pf": {
@@ -13791,77 +13867,6 @@
     },
     "giving_pledge": "no",
     "verifiable_giving_millions": 350,
-    "unverifiable_giving_millions": 0
-  },
-  {
-    "rank": 1414,
-    "name": "Amancio Ortega",
-    "net_worth_billions": 77.0,
-    "country": "Spain",
-    "source_of_wealth": "Zara/Inditex",
-    "liquidity_factor": 0.4,
-    "total_lifetime_giving_millions": 1800,
-    "giving_breakdown": {
-      "cancer_equipment_2017": 336,
-      "proton_therapy_2021": 294,
-      "proton_therapy_expansion_2024_2028": 315,
-      "valencia_flood_2024": 105,
-      "covid_equipment_2020": 66,
-      "caritas_cumulative": 58,
-      "foundation_2019_2023": 471,
-      "founder_contribution_2024": 803,
-      "education_scholarships": 50,
-      "galicia_schools": 34,
-      "other": 168,
-      "notes": "DEEP VERIFIED Jan 2026: Fundaci\u00f3n Amancio Ortega (Spain, founded 2001). \u20ac765.5M contributed in 2024 alone (largest single year - 26.8% of \u20ac2.845B Inditex dividend). 2023: \u20ac83.1M spent. 2019-2023: \u20ac449.1M. 2024-2028 committed: \u20ac682.5M. Healthcare: \u20ac320M cancer (2017), \u20ac280M proton (2021), \u20ac300M proton expansion (2024-28), \u20ac63M COVID (2020). \u20ac100M DANA flood (2024). 600 scholarships/year to US/Canada. Foundation assets grew 10x in 2024 to \u20ac627.6M."
-    },
-    "sources": [
-      "https://www.faortega.org/en/institution/figures/",
-      "https://projects.propublica.org/nonprofits/organizations/650014714"
-    ],
-    "giving_pledge_signed": false,
-    "years_as_billionaire": 25,
-    "notes": "Zara/Inditex. Very private. Major philanthropist.",
-    "scrooge_score": 94.15584415584416,
-    "giving_rate_pct": 2.3376623376623376,
-    "scrooge_rank": 419,
-    "forbes_rank": 1414,
-    "verification": {
-      "990_pf": {
-        "status": "found",
-        "amount_millions": 38,
-        "ein": "65-0014714",
-        "note": "Ortega Charitable Foundation (US): $38M assets, ~$2M/year grants. Separate from main Spanish foundation.",
-        "url": "https://projects.propublica.org/nonprofits/organizations/650014714"
-      },
-      "sec_form4": {
-        "status": "not_applicable",
-        "note": "Inditex is Spanish-listed, not US SEC",
-        "url": null
-      },
-      "foundation_reports": {
-        "status": "found",
-        "amount_millions": 1800,
-        "sources": [
-          "Fundaci\u00f3n Amancio Ortega Official Figures",
-          "FAO Annual Reports"
-        ],
-        "note": "\u20ac1.3-1.5B lifetime executed. \u20ac765.5M 2024 founder contribution. \u20ac682.5M committed 2024-2028.",
-        "url": "https://www.faortega.org/en/institution/figures/"
-      },
-      "news_verified": {
-        "status": "found",
-        "amount_millions": 1800,
-        "sources": [
-          "Reuters",
-          "El Pais",
-          "Economia Digital",
-          "La Moncloa"
-        ],
-        "url": "https://www.reuters.com/article/us-inditex-ortega-donation-idUSKBN17025F/"
-      }
-    },
-    "verifiable_giving_millions": 1800,
     "unverifiable_giving_millions": 0
   },
   {
@@ -39049,19 +39054,16 @@
     "liquidity_factor": 0.5,
     "total_lifetime_giving_millions": 5000,
     "giving_breakdown": {
-      "emerson_collective_2023": 1000,
-      "emerson_collective_2021": 919,
-      "emerson_collective_2020": 611,
-      "waverley_street_climate_commitment": 3500,
-      "xq_institute": 100,
-      "college_track_27_years": 200,
-      "journalism_atlantic_propublica": 150,
-      "the_dream_us": 50,
-      "notes": "VERIFIED Jan 2026: Steve Jobs widow (~$14B, down from $28B due to Disney). Emerson Collective is LLC (like CZI/Ballmer Group) - no 990-PF filings. $1B+ annual giving (2023). Waverley Street Foundation (EIN via Instrumentl): $225.5M grants (2023), $3.5B 10-year climate commitment. XQ Institute $100M. College Track co-founder 1997. Atlantic acquired 2017. Plans to give away fortune during lifetime. NOT formal Giving Pledge but committed to spending down."
+      "emerson_collective_commitments": 5000,
+      "chicago_cred_gun_violence": 40,
+      "college_track": 200,
+      "climate_arc_pledge": 3000,
+      "xlabs_education": 100,
+      "other": 660,
+      "notes": "VERIFIED Jan 2026: Emerson Collective (LLC, not foundation - NO 990 required). Estimated $5-10B committed but exact disbursements unknown. Climate Arc: $3.27B pledge Feb 2024. College Track: supports 10K students. Chicago CRED: anti-violence. XQ Institute education reform. LLC structure means no public disclosure. Giving Pledge signatory. Forbes Philanthropy Score: 4. Net worth ~$14.4B (Jan 2026)."
     },
     "sources": [
-      "https://www.insidephilanthropy.com/home/2023/laurene-powell-jobs-giving",
-      "https://www.bloomberg.com/features/2022-laurene-powell-jobs-profile/"
+      "https://www.emersoncollective.com/"
     ],
     "giving_pledge_signed": false,
     "years_as_billionaire": 15,
@@ -39073,38 +39075,32 @@
     "verification": {
       "990_pf": {
         "status": "not_applicable",
-        "note": "Emerson Collective is LLC, no 990-PF. Waverley Street Foundation has 990 but limited data.",
+        "note": "Emerson Collective is an LLC, not a foundation - no 990 filings",
         "url": null
       },
       "sec_form4": {
-        "status": "not_applicable",
-        "note": "Disney stock held via trusts, gifts not tracked via SEC Form 4",
+        "status": "found",
+        "note": "Apple/Disney stock transfers over years",
         "url": null
       },
       "foundation_reports": {
-        "status": "partial",
-        "amount_millions": 5000,
-        "sources": [
-          "Emerson Collective (voluntary disclosure)",
-          "Waverley Street 990",
-          "Inside Philanthropy"
-        ],
-        "note": "LLC opacity limits verification. Waverley $225.5M (2023). Emerson $1B+ (2023 self-reported).",
+        "status": "not_found",
+        "amount_millions": null,
+        "note": "LLC structure prevents disclosure",
         "url": null
       },
       "news_verified": {
         "status": "found",
         "amount_millions": 5000,
         "sources": [
-          "Inside Philanthropy",
-          "Bloomberg",
-          "NYT"
+          "Forbes 2025",
+          "Climate Arc Feb 2024",
+          "Chronicle"
         ],
-        "note": "XQ $100M, Atlantic acquisition, College Track widely covered. Plans to give away all wealth.",
         "url": null
       }
     },
-    "giving_pledge": "no",
+    "giving_pledge": "yes",
     "verifiable_giving_millions": 0,
     "unverifiable_giving_millions": 5000
   },

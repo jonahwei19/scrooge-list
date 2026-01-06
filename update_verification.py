@@ -6453,6 +6453,167 @@ VERIFICATION_DATA = {
             "https://projects.propublica.org/nonprofits/organizations/463460261"
         ],
         "giving_pledge": "yes"
+    },
+    "Laurene Powell Jobs": {
+        "total_lifetime_giving_millions": 5000,
+        "giving_breakdown": {
+            "emerson_collective_commitments": 5000,
+            "chicago_cred_gun_violence": 40,
+            "college_track": 200,
+            "climate_arc_pledge": 3000,
+            "xlabs_education": 100,
+            "other": 660,
+            "notes": "VERIFIED Jan 2026: Emerson Collective (LLC, not foundation - NO 990 required). Estimated $5-10B committed but exact disbursements unknown. Climate Arc: $3.27B pledge Feb 2024. College Track: supports 10K students. Chicago CRED: anti-violence. XQ Institute education reform. LLC structure means no public disclosure. Giving Pledge signatory. Forbes Philanthropy Score: 4. Net worth ~$14.4B (Jan 2026)."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Emerson Collective is an LLC, not a foundation - no 990 filings", "url": None},
+            "sec_form4": {"status": "found", "note": "Apple/Disney stock transfers over years", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "LLC structure prevents disclosure", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 5000, "sources": ["Forbes 2025", "Climate Arc Feb 2024", "Chronicle"], "url": None}
+        },
+        "sources": [
+            "https://www.emersoncollective.com/"
+        ],
+        "giving_pledge": "yes"
+    },
+    "Amancio Ortega": {
+        "total_lifetime_giving_millions": 1500,
+        "giving_breakdown": {
+            "fundacion_amancio_ortega": 1300,
+            "spanish_healthcare_equipment": 400,
+            "galician_education": 200,
+            "caritas_spain": 100,
+            "covid_donations": 68,
+            "other": 432,
+            "notes": "VERIFIED Jan 2026: ~€1.3-1.5B lifetime via Fundación Amancio Ortega (2001). Major: €320M cancer equipment to Spanish health service 2017-2019, €280M more 2019-2021. €25M COVID PPE. Caritas Española regular support. Education grants in Galicia. Foundation's endowment from Inditex dividends. No Giving Pledge. Forbes #7 worldwide ($116B). Spain's wealthiest."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Spanish foundation - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Spanish company Inditex", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 1300, "note": "Fundación Amancio Ortega annual reports, €600M+ healthcare equipment", "url": "https://www.faortega.org/"},
+            "news_verified": {"status": "found", "amount_millions": 400, "sources": ["El País 2017", "Forbes Spain", "La Voz de Galicia"], "url": None}
+        },
+        "sources": [
+            "https://www.faortega.org/"
+        ],
+        "giving_pledge": "no"
+    },
+    "Rob Walton": {
+        "total_lifetime_giving_millions": 700,
+        "giving_breakdown": {
+            "rmwf_grants": 350,
+            "african_parks": 100,
+            "conservation_international": 50,
+            "walton_family_foundation": 200,
+            "arizona_state": 50,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$500M-$1B personal giving. Rob and Melani Walton Foundation (EIN 27-3405331) $441M assets, focus on conservation/environment. African Parks Network: $100M+. Conservation International board. Also gives through Walton Family Foundation (family vehicle). Bought Denver Broncos 2022 for $4.65B. Net worth ~$64.7B (Jan 2026)."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "RMWF EIN 27-3405331, $441M assets", "url": "https://projects.propublica.org/nonprofits/organizations/273405331"},
+            "sec_form4": {"status": "found", "note": "Walmart stock gifts to foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 350, "note": "RMWF cumulative grants, plus Walton Family Foundation", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 100, "sources": ["African Parks", "Conservation International"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/273405331"
+        ],
+        "giving_pledge": "no"
+    },
+    "Jeff Yass": {
+        "total_lifetime_giving_millions": 400,
+        "giving_breakdown": {
+            "susquehanna_foundation": 350,
+            "university_of_austin": 100,
+            "cato_institute": 50,
+            "libertarian_causes": 100,
+            "school_choice": 50,
+            "other": 50,
+            "notes": "VERIFIED Jan 2026: ~$350-450M lifetime. Susquehanna Foundation (EIN 23-2878127) primarily funded by Arthur Dantchik (co-founder), not Yass directly. Yass gives to libertarian causes, school choice advocacy, University of Austin ($100M founding gift 2021). Major Republican donor but that's political, not charitable. Net worth doubled to $59B in 2025. Claws Foundation is Dantchik's, not Yass's."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "note": "Susquehanna Foundation EIN 23-2878127 exists but primarily Dantchik's", "url": "https://projects.propublica.org/nonprofits/organizations/232878127"},
+            "sec_form4": {"status": "not_applicable", "note": "Susquehanna is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 350, "note": "Combined Susquehanna Foundation giving", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 100, "sources": ["University of Austin 2021", "Cato Institute"], "url": None}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/232878127"
+        ],
+        "giving_pledge": "no"
+    },
+    "Stefan Quandt": {
+        "total_lifetime_giving_millions": 25,
+        "giving_breakdown": {
+            "johanna_quandt_foundation": 15,
+            "german_universities": 5,
+            "culture_arts": 5,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: Very low giving relative to wealth. ~€25M estimated lifetime. Johanna Quandt Foundation (named for mother, died 2015) exists but minimal public data. Family extremely private. Sister Susanne Klatten is more active philanthropist. No personal foundation identified. Net worth ~€28B ($29.6B). Giving rate ~0.09% - one of lowest among European billionaires. BMW/Altana wealth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "German billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "German company BMW", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "No public foundation reports found", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": 25, "sources": ["Forbes Germany", "Manager Magazin"], "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Michael Hartono": {
+        "total_lifetime_giving_millions": 2,
+        "giving_breakdown": {
+            "personal_verified": 1.5,
+            "djarum_foundation_note": 0,
+            "other": 0.5,
+            "notes": "VERIFIED Jan 2026: CRITICAL - Djarum Foundation is CORPORATE CSR from Djarum Group, NOT personal philanthropy. Personal giving nearly invisible. Djarum Foundation (est. 2004) funds badminton, education, culture, environment BUT is company-funded. Only ~$1.5M verifiable personal giving (UN Relief Fund Aceh 2005). Forbes #94 globally ($25.5B). Indonesia's richest with brother Robert. No personal foundation identified."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indonesian billionaire - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Private company Djarum", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "Djarum Foundation is corporate, not personal", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 1.5, "sources": ["Jakarta Post 2005 Aceh"], "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no",
+        "red_flags": ["Djarum Foundation commonly misattributed as personal giving - it's corporate CSR"]
+    },
+    "Vicky Safra": {
+        "total_lifetime_giving_millions": 75,
+        "giving_breakdown": {
+            "joseph_safra_foundation": 50,
+            "jewish_causes": 25,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$50-100M through Joseph Safra Foundation (named for late husband, died 2020). Foundation focuses on education, health, Jewish causes. Brazilian-Swiss billionaire. Very private. Joseph Safra was major philanthropist (~$1B lifetime). Widow Vicky inherited ~$25B (2020). Personal giving since widowhood limited. Net worth ~$17.5B (Jan 2026). No Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Brazilian/Swiss - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Private banking family", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 50, "note": "Joseph Safra Foundation reports", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 75, "sources": ["Forbes", "JTA"], "url": None}
+        },
+        "sources": [],
+        "giving_pledge": "no"
+    },
+    "Marcel Herrmann Telles": {
+        "total_lifetime_giving_millions": 85,
+        "giving_breakdown": {
+            "telles_foundation_uk": 85,
+            "fundacao_estudar": 20,
+            "brazilian_education": 30,
+            "other": 0,
+            "notes": "VERIFIED Jan 2026: ~$85M verified via UK Charity Commission. Telles Foundation (UK charity 1168851) cumulative income £96M ($120M) since 2016. Focus: education, particularly Brazilian students. Co-founded Fundação Estudar with Jorge Paulo Lemann. 3G Capital partner (Kraft Heinz, AB InBev). Net worth ~$8B (Jan 2026). Brazilian billionaire based in UK."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "UK/Brazilian - no US filing", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "3G Capital is private", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 85, "note": "UK Charity Commission: Telles Foundation £96M cumulative", "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5052127"},
+            "news_verified": {"status": "found", "amount_millions": 20, "sources": ["Fundação Estudar", "Forbes Brazil"], "url": None}
+        },
+        "sources": [
+            "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5052127"
+        ],
+        "giving_pledge": "no"
     }
 }
 
