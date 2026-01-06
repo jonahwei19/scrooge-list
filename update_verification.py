@@ -7710,21 +7710,16 @@ def update_json():
                 entry['image_url'] = vdata['image_url']
 
             # Calculate verifiable vs unverifiable giving
-            # Verifiable: total giving to operating charities
-            # Unverifiable: DAF transfers (parked giving that may not reach operating charities)
-            verification = vdata.get('verification', {})
+            # total_lifetime_giving_millions = verified giving to OPERATING charities
+            # daf_transfers = ADDITIONAL parked money (tracked separately, not in total)
+            # So: verifiable = total, unverifiable = 0 (DAF is separate field)
             total_giving = vdata['total_lifetime_giving_millions']
 
-            # Get DAF transfers if tracked in giving_breakdown
-            daf_transfers = 0
-            if 'giving_breakdown' in vdata:
-                daf_transfers = vdata['giving_breakdown'].get('daf_transfers', 0) or 0
+            # Verifiable = total giving (already verified to operating charities)
+            verifiable = total_giving
 
-            # Verifiable = total giving minus DAF parked money
-            verifiable = max(0, total_giving - daf_transfers)
-
-            # Unverifiable = DAF transfers (parked, may not reach operating charities)
-            unverifiable = daf_transfers
+            # Unverifiable = 0 (DAF transfers tracked separately in giving_breakdown.daf_transfers)
+            unverifiable = 0
 
             entry['verifiable_giving_millions'] = verifiable
             entry['unverifiable_giving_millions'] = unverifiable
