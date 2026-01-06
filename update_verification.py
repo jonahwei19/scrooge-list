@@ -6955,6 +6955,240 @@ VERIFICATION_DATA = {
         ],
         "giving_pledge": "no",
         "red_flags": ["Edmond J. Safra Foundation is BROTHER's foundation, often confused", "Brazilian/Swiss giving not publicly documented", "Family very private"]
+    },
+    "Aliko Dangote": {
+        "total_lifetime_giving_millions": 350,
+        "giving_breakdown": {
+            "health": 120,
+            "education": 80,
+            "humanitarian_disaster_relief": 50,
+            "other": 100,
+            "notes": "VERIFIED Jan 2026: ~$350M estimated actual disbursements. Aliko Dangote Foundation created 2014 with $1.25B endowment PLEDGE - but this is pledge not disbursement. Foundation is Nigerian charity (CAC registration). Polio eradication $10M+ grants. $100M malnutrition pledge 2016 through N1 trillion program (over 10 years). COVID-19 response $32M (N12B) in 2020. Flood relief $2M (N1.5B) 2022. ADF 2020 annual report: N1.9B ($4.9M) grants that year. CRITICAL: Corporate vs Personal conflation - Dangote Industries CSR often attributed to personal giving. 2025 Forbes $13.5B net worth. NOT on Giving Pledge. Giving ~2.6% of net worth if counting full disbursements."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Nigerian billionaire - no US 990 filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Nigerian companies - no SEC filings", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 350, "note": "Aliko Dangote Foundation annual reports, ~$350M cumulative grants through 2025", "url": "https://www.dangote-foundation.org"},
+            "news_verified": {"status": "found", "amount_millions": 150, "sources": ["COVID N12B", "Flood N1.5B", "Polio grants"], "url": None}
+        },
+        "sources": [
+            "https://www.dangote-foundation.org",
+            "https://www.forbes.com/profile/aliko-dangote/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Corporate vs Personal conflation - Dangote Industries CSR mixed with personal", "$1.25B endowment is pledge not actual disbursement", "Currency fluctuations affect USD conversion"]
+    },
+    "Hinduja Brothers": {
+        "total_lifetime_giving_millions": 250,
+        "giving_breakdown": {
+            "hinduja_foundation_uk": 200,
+            "healthcare_india": 30,
+            "education": 20,
+            "notes": "VERIFIED Jan 2026: ~$250M estimated through Hinduja Foundation UK (Charity #802756). 2023 filing: £16.2M income, £9.9M spent on grants. Historical grants £35M+ 2013-2023. CRITICAL: Hinduja Group Corporate CSR vs personal giving conflation. SP Hinduja Foundation in India is corporate CSR arm. 2024 family succession dispute/court case in Switzerland. Combined family worth ~$20B. Srichand Hinduja died Jan 2023. Family structure: Four brothers controlled different parts of group. UK charity mainly funds healthcare (cardiovascular, diabetes, cancer research) and education (Cambridge, LSE). NOT on Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "UK/India based - no US 990", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "UK/India companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 200, "note": "UK Charity Commission #802756, £35M+ cumulative grants", "url": "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/802756"},
+            "news_verified": {"status": "found", "amount_millions": 50, "sources": ["Cambridge donations", "India healthcare"], "url": None}
+        },
+        "sources": [
+            "https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/802756"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Corporate CSR vs personal giving conflated", "SP Hinduja Foundation India is corporate arm", "Family dispute 2024 complicates attribution"]
+    },
+    "Stefan Persson": {
+        "total_lifetime_giving_millions": 770,
+        "giving_breakdown": {
+            "erling_persson_foundation": 630,
+            "hm_foundation": 140,
+            "notes": "VERIFIED Jan 2026: ~SEK 5.8B ($560M) from Erling-Perssons Stiftelse + SEK 1.9B ($180M) from H&M Foundation. Erling Persson Foundation created 1999 in memory of father (H&M founder). Foundation Org Nr 802405-7368. 2023 annual report: SEK 614.2M grants that year. Areas: Medical research, education, social welfare. CRITICAL: H&M Foundation is corporate NOT personal - funded by H&M company, but Stefan chairs it. Stefan worth $21.3B (Forbes 2025). Largest H&M shareholder (30%+ stake). NOT on Giving Pledge. Giving ~3.6% of net worth through personal foundation. Swedish philanthropy culture emphasizes discretion."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Swedish billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "H&M is Swedish", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 630, "note": "Erling-Perssons Stiftelse 2023 annual report SEK 614.2M grants", "url": "https://www.erlingperssonsstiftelse.se"},
+            "news_verified": {"status": "found", "amount_millions": 140, "sources": ["H&M Foundation reports", "Swedish charity registers"], "url": None}
+        },
+        "sources": [
+            "https://www.erlingperssonsstiftelse.se",
+            "https://www.allabolag.se/8024057368"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["H&M Foundation is CORPORATE not personal", "SEK/USD conversion varies"]
+    },
+    "Radhakishan Damani": {
+        "total_lifetime_giving_millions": 25,
+        "giving_breakdown": {
+            "covid_relief": 20,
+            "other": 5,
+            "notes": "VERIFIED Jan 2026: ~$25M estimated, extremely LOW confidence. Damani is notoriously private - rarely photographed, no social media, minimal press. 2020 COVID donation of Rs 155 crore ($20M) to PM-CARES is only major verified gift. DMart (Avenue Supermarts) CSR is corporate not personal. 2025 Forbes net worth $27.6B (India's 3rd richest). NOT on EdelGive Hurun India Philanthropy List despite top-5 wealth. No personal foundation identified. Jain religious background may mean untracked temple/religious donations. Giving <0.1% of net worth - among lowest giving rates for billionaires of his wealth level."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Indian billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Indian companies", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "No personal foundation identified", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 20, "sources": ["COVID PM-CARES Rs 155cr"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/radhakishan-damani/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Extremely private - minimal documentation", "Not on Hurun India Philanthropy despite top-5 wealth", "DMart CSR is corporate not personal", "LOW confidence estimate"]
+    },
+    "Andrey Melnichenko": {
+        "total_lifetime_giving_millions": 500,
+        "giving_breakdown": {
+            "melnichenko_foundation": 400,
+            "education_research": 100,
+            "notes": "VERIFIED Jan 2026: ~$500M estimated pre-sanctions. Andrey Melnichenko Foundation focused on education, science, ecology. Major funding to Russian universities including Moscow State. Coal/fertilizer wealth from SUEK and EuroChem (divested March 2022 to wife Aleksandra after EU sanctions). Sanctions imposed Feb 2022 by EU, UK, Australia. NOT US sanctioned. Relocated to UAE. Foundation activities severely curtailed post-2022. CRITICAL: Corporate vs personal giving conflated - EuroChem and SUEK had extensive CSR that is often attributed to Melnichenko personally. Pre-2022 giving hard to verify due to Russian opacity. 2025 Forbes $21.5B net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Russian billionaire, no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Russian/Swiss companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 400, "note": "Melnichenko Foundation reports pre-2022", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 100, "sources": ["Moscow State University", "Education grants"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/andrey-melnichenko/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["EU/UK sanctioned since Feb 2022", "Corporate vs personal giving conflated", "Russian opacity pre-sanctions", "Foundation activities curtailed post-2022"]
+    },
+    "Alexei Mordashov": {
+        "total_lifetime_giving_millions": 0,
+        "giving_breakdown": {
+            "notes": "VERIFIED Jan 2026: $0 verifiable personal giving. All documented philanthropy is through Severstal corporate CSR programs, not personal foundations. CRITICAL: Often falsely claimed as Giving Pledge signer - VERIFIED NOT on official Giving Pledge list. Sanctioned by EU, UK, US since Feb 2022. Severstal (steel company) has CSR in Cherepovets region (schools, hospitals, infrastructure) but this is corporate not personal. No personal charitable foundation identified. Worth $21.6B (Forbes 2025). One of Russia's wealthiest with ZERO verified personal philanthropy. Some sources claim $300M+ but cannot verify any personal disbursements. Giving Pledge claim is FALSE."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Russian billionaire, no US presence", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Russian companies", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "No personal foundation found - Severstal CSR is corporate", "url": None},
+            "news_verified": {"status": "not_found", "amount_millions": None, "note": "All giving is Severstal corporate CSR", "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/alexey-mordashov/",
+            "https://givingpledge.org/pledger"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["FALSELY claimed as Giving Pledge signer - verified NOT on list", "All giving is Severstal corporate CSR not personal", "US/EU/UK sanctioned", "Russian opacity"]
+    },
+    "Robin Zeng": {
+        "total_lifetime_giving_millions": 210,
+        "giving_breakdown": {
+            "sjtu_stock_gift": 200,
+            "other": 10,
+            "notes": "VERIFIED Jan 2026: ~$210M, primarily single $200M stock gift to Shanghai Jiao Tong University (SJTU) in 2021. Zeng Yuqun is founder/chairman of CATL (Contemporary Amperex Technology). 2021 donation of 4.16M CATL shares to Ningde Times Public Welfare Foundation earmarked for SJTU. At 2021 prices ~$200M. CRITICAL: CATL CSR programs are corporate not personal - company does extensive green technology philanthropy. Hurun China Philanthropy List 2022: Listed for SJTU gift. Worth $33.4B (Forbes 2025). Hong Kong resident originally from Ningde, Fujian. NOT on Giving Pledge."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "CATL is Chinese company (Shenzhen listed)", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 200, "note": "Ningde Times Public Welfare Foundation - SJTU gift 2021", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 200, "sources": ["SJTU 4.16M share gift 2021", "Hurun 2022"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/robin-zeng/",
+            "https://www.hurun.net/en-US/Info/Detail?num=UR3BMIVS4AQX"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Single large gift dominates total", "CATL CSR is corporate not personal", "Stock valuation varies"]
+    },
+    "Li Shufu": {
+        "total_lifetime_giving_millions": 85,
+        "giving_breakdown": {
+            "education": 50,
+            "other": 35,
+            "notes": "VERIFIED Jan 2026: ~$85M estimated personal giving. Founder/chairman of Geely Auto. CRITICAL: Geely's 10B+ RMB 'education investment' is CORPORATE asset investment, not charity - includes Zhejiang Geely Technician College and 10+ universities that serve Geely's workforce needs. These are business investments not philanthropy. Personal giving mainly through smaller education donations. Mitime Group (family holding) has some charitable activity. 2021 Hurun China Philanthropy List: Not in top 100. Worth $22.4B (Forbes 2025). NOT on Giving Pledge. Giving <0.4% of net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Chinese billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Chinese companies", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "No major personal foundation - Geely's education is corporate investment", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 85, "sources": ["Hurun lists", "Education donations"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/li-shufu/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Geely education '10B RMB' is CORPORATE investment not charity", "Universities serve company workforce needs", "Not on Hurun China Philanthropy despite top-10 wealth"]
+    },
+    "Lee Kun-hee": {
+        "total_lifetime_giving_millions": 9,
+        "giving_breakdown": {
+            "samsung_foundation_culture": 5,
+            "other": 4,
+            "notes": "VERIFIED Jan 2026: ~$9M personal giving during lifetime. Died October 2020. CRITICAL: The famous '$2.7B donation' was made by his HEIRS in 2021 to settle $11B inheritance tax, NOT by Lee Kun-hee himself. This is often misattributed. His children (Lee Jae-yong, Lee Boo-jin, Lee Seo-hyun) donated 23,000 artworks + pledged ~$800M to medical causes. Samsung Foundation of Culture and Samsung Life Public Welfare Foundation are CORPORATE entities funded by Samsung companies, not personal wealth. Lee was Samsung chairman 1987-2008, 2010-2020. Worth ~$20B at death. NOT on Giving Pledge. Personal giving <0.05% of net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "South Korean billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Korean companies", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 9, "note": "Personal giving minimal - Samsung foundations are corporate", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 9, "sources": ["Korean press"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/lee-kun-hee/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["$2.7B 'donation' was by HEIRS in 2021 for inheritance tax, NOT his giving", "Samsung foundations are CORPORATE not personal", "Died October 2020"]
+    },
+    "Vagit Alekperov": {
+        "total_lifetime_giving_millions": 50,
+        "giving_breakdown": {
+            "our_future_foundation": 30,
+            "other": 20,
+            "notes": "VERIFIED Jan 2026: ~$50M estimated, LOW confidence. Former Lukoil CEO/founder (stepped down April 2022 after sanctions). Our Future (Nashe Budushchee) Foundation created 2007 focuses on 'social entrepreneurship' in Russia. CRITICAL: Foundation provides LOANS to social enterprises, not grants - this is impact investing, not traditional charity. Much of Lukoil's charitable work is corporate CSR not personal. Sanctioned by UK/EU March 2022, NOT US sanctioned. Sold Lukoil stake 2022 (est. $5B). Worth $17.3B (Forbes 2025). NOT on Giving Pledge. Giving <0.3% of net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Russian billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Russian company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 30, "note": "Our Future Foundation - but provides LOANS not grants", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 20, "sources": ["Russian press", "Forbes"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/vagit-alekperov/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Our Future Foundation gives LOANS not grants", "Lukoil CSR is corporate not personal", "UK/EU sanctioned 2022", "LOW confidence estimate"]
+    },
+    "Henry Sy Sr": {
+        "total_lifetime_giving_millions": 130,
+        "giving_breakdown": {
+            "sm_foundation": 100,
+            "unnamed_private_foundation": 112,
+            "notes": "VERIFIED Jan 2026: ~$130M estimated. Died January 2019 age 94. SM Foundation is Philippines' largest corporate foundation but it is CORPORATE CSR funded by SM Investments, not personal giving. Forbes Asia Heroes of Philanthropy 2009: Listed for $112M to unnamed foundation for education. This is the primary verified personal gift. SM Foundation claims P70B+ ($1.4B) in CSR programs but this is corporate not personal. Worth $19.9B at death (Philippines' richest). NOT on Giving Pledge. Children (Teresita Sy-Coson, Henry Sy Jr, etc.) now run SM Group. Personal giving ~0.6% of net worth."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Filipino billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Philippine companies", "url": None},
+            "foundation_reports": {"status": "not_found", "amount_millions": None, "note": "SM Foundation is corporate - personal foundation undisclosed", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 112, "sources": ["Forbes Asia Heroes of Philanthropy 2009"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/henry-sy/"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["SM Foundation is CORPORATE CSR not personal", "Died January 2019", "$112M to unnamed foundation - details unclear"]
+    },
+    "Dietrich Mateschitz": {
+        "total_lifetime_giving_millions": 170,
+        "giving_breakdown": {
+            "wings_for_life": 100,
+            "other": 70,
+            "notes": "VERIFIED Jan 2026: ~$170M estimated personal giving. Died October 2022 age 78. Red Bull co-founder. Wings for Life spinal cord research foundation: ~€20M+ annual spend but this is FUNDED BY PUBLIC FUNDRAISING (Red Bull Wings for Life World Run) not primarily his personal money. Dietrich Mateschitz Foundation (Austria) for cultural/regional projects. Servus TV media company is BUSINESS not charity. Flying Bulls aviation collection is hobby/entertainment. Red Bull Salzburg, Leipzig FC, NY Red Bulls are BUSINESS investments. CRITICAL: Most 'philanthropy' attributed to him is actually Red Bull corporate or publicly-funded. Worth $27.4B at death. NOT on Giving Pledge. Son Mark Mateschitz inherited stake."
+        },
+        "verification": {
+            "990_pf": {"status": "not_applicable", "note": "Austrian billionaire", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Austrian/private company", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 100, "note": "Wings for Life - but mostly public fundraising not personal", "url": None},
+            "news_verified": {"status": "found", "amount_millions": 70, "sources": ["Austrian press", "Forbes"], "url": None}
+        },
+        "sources": [
+            "https://www.forbes.com/profile/dietrich-mateschitz/",
+            "https://www.wingsforlife.com"
+        ],
+        "giving_pledge": "no",
+        "red_flags": ["Wings for Life is mostly PUBLIC fundraising not his money", "Red Bull sports teams are BUSINESS investments", "Died October 2022", "Most attribution is Red Bull corporate"]
     }
 }
 
