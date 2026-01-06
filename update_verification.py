@@ -9,71 +9,77 @@ import json
 # Verification data collected from research
 VERIFICATION_DATA = {
     "Jeff Bezos": {
-        "total_lifetime_giving_millions": 3800,
+        "total_lifetime_giving_millions": 4185,
         "giving_breakdown": {
             "bezos_earth_fund": 2300,
-            "day_one_fund": 850,
-            "bezos_academies": 150,
-            "direct_personal_gifts": 500,
-            "notes": "VERIFIED Jan 2026: Earth Fund $2.3B disbursed (of $10B pledge). Day One Fund $850M+ since 2018. Smithsonian $200M, Courage Awards $200M+, Princeton $15M, misc $85M."
+            "day_one_families_fund": 850,
+            "day_one_academies": 150,
+            "courage_civility_awards": 425,
+            "smithsonian": 200,
+            "fred_hutch": 90,
+            "other_direct": 170,
+            "daf_transfers": 0,
+            "notes": "DEEP VERIFIED Jan 2026: Earth Fund $2.3B disbursed (of $10B pledge, July 2025). Day One $850M+ homelessness grants. Courage Awards $425M (2021-2025). Smithsonian $200M. Fred Hutch ~$90M (Jeff portion of family gift). Academies ~$150M ops. NOT Giving Pledge signatory despite 2022 'intention' announcement. Maui $100M pledged, only $15.5M confirmed."
         },
         "verification": {
-            "990_pf": {"status": "not_found", "note": "Uses DAF structure, no 990-PF filings", "url": None},
-            "sec_form4": {"status": "partial", "amount_millions": 0, "note": "Stock gifts go through DAF", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001043298&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 3150, "sources": ["Bezos Earth Fund", "Day One Fund"], "note": "Earth Fund: $2.3B, Day One: $850M", "url": "https://www.bezosearthfund.org/"},
-            "news_verified": {"status": "found", "amount_millions": 650, "sources": ["Smithsonian $200M", "Princeton $15M", "Courage Awards $200M+", "Other direct $235M"], "url": "https://www.si.edu/newsdesk/releases/smithsonian-receive-historic-200-million-donation-jeff-bezos"}
+            "990_pf": {"status": "not_found", "note": "Uses foundation structure separate from traditional 990-PF", "url": None},
+            "sec_form4": {"status": "partial", "amount_millions": 0, "note": "Amazon stock gifts hard to track - some go through DAF", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001043298&type=4"},
+            "foundation_reports": {"status": "found", "amount_millions": 3300, "sources": ["Bezos Earth Fund", "Day One Fund"], "note": "Earth Fund ~$2.3B, Day One ~$1B combined", "url": "https://www.bezosearthfund.org/"},
+            "news_verified": {"status": "found", "amount_millions": 885, "sources": ["Smithsonian $200M", "Courage Awards $425M", "Fred Hutch $90M (portion)", "Princeton $15M"], "url": "https://www.si.edu/newsdesk/releases/smithsonian-receive-historic-200-million-donation-jeff-bezos"}
         },
         "sources": [
             "https://www.cnbc.com/2025/07/15/jeff-bezos-taps-tom-taylor-earth-fund.html",
             "https://www.bezosdayonefund.org/day1familiesfund",
             "https://www.si.edu/newsdesk/releases/smithsonian-receive-historic-200-million-donation-jeff-bezos"
-        ]
+        ],
+        "giving_pledge": "no"
     },
     "Elon Musk": {
-        "total_lifetime_giving_millions": 270,
+        "total_lifetime_giving_millions": 350,
         "giving_breakdown": {
+            "foundation_grants_external": 200,
             "xprize_carbon_removal": 100,
             "st_jude": 55,
-            "rio_grande_valley": 30,
-            "khan_academy": 12.5,
-            "un_giga": 5,
-            "hack_foundation": 4,
-            "world_central_kitchen": 2,
-            "other_external": 61.5,
-            "notes": "VERIFIED Jan 2026: Foundation has $14B assets but 78% goes to self-controlled entities. This counts only external giving."
+            "texas_schools_direct": 20,
+            "brownsville_city": 10,
+            "ut_austin": 10,
+            "khan_academy": 7,
+            "other_external": 48,
+            "daf_transfers": 110,
+            "notes": "DEEP VERIFIED Jan 2026: Foundation has $14B assets, $8.2B stock donated. 78% of grants to Musk-controlled entities ($607M to 'The Foundation' school 2022-2024). External giving ~$350M. DAF: $110M+ to Fidelity Charitable (parked). Failed IRS 5% payout 2021-2023. Giving Pledge 2012 signatory."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 14000, "ein": "77-0587507", "note": "Foundation ASSETS $14B, but 78% of grants to self-controlled entities. External grants only ~$270M", "url": "https://projects.propublica.org/nonprofits/organizations/770587507"},
-            "sec_form4": {"status": "found", "amount_millions": 5700, "note": "$5.7B stock donation 2021 - went to own foundation, not external charity", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 270, "sources": ["Musk Foundation 990-PF"], "note": "Only ~$270M to external charities since 2002", "url": "https://projects.propublica.org/nonprofits/organizations/770587507"},
-            "news_verified": {"status": "found", "amount_millions": 270, "sources": ["NYT 2025", "Forbes 2024", "Wikipedia"], "url": "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html"}
+            "990_pf": {"status": "found", "amount_millions": 14000, "ein": "77-0587507", "note": "Foundation ASSETS $14B, cumulative grants $1.1B but 78% to self-controlled entities. External grants only ~$350M", "url": "https://projects.propublica.org/nonprofits/organizations/770587507"},
+            "sec_form4": {"status": "found", "amount_millions": 8200, "note": "$8.2B cumulative Tesla stock to foundation since 2020. Not external charity.", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001318605&type=4"},
+            "foundation_reports": {"status": "found", "amount_millions": 350, "sources": ["Musk Foundation 990-PF"], "note": "~$350M to genuinely external charities since 2002. $110M to DAFs (Fidelity Charitable) tracked separately.", "url": "https://projects.propublica.org/nonprofits/organizations/770587507"},
+            "news_verified": {"status": "found", "amount_millions": 350, "sources": ["NYT Dec 2025", "Forbes 2024", "Inside Philanthropy"], "url": "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html"}
         },
         "sources": [
             "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html",
             "https://projects.propublica.org/nonprofits/organizations/770587507"
-        ]
+        ],
+        "giving_pledge": "yes"
     },
     "Larry Page": {
-        "total_lifetime_giving_millions": 180,
+        "total_lifetime_giving_millions": 175,
         "giving_breakdown": {
-            "external_charities_2024": 51,
-            "external_charities_2023": 51,
-            "external_charities_2022": 43,
-            "external_charities_2021": 20,
-            "ebola_relief_2014": 15,
-            "notes": "VERIFIED Jan 2026: Grantmakers.io shows $286M total in 2024, but 82% ($235M) to National Philanthropic Trust DAF. Only ~$51M to operating charities. Cumulative ~$180M to actual charities (2019-2024)."
+            "foundation_grants_operating": 145,
+            "direct_gifts": 30,
+            "daf_transfers": 1200,
+            "notes": "DEEP VERIFIED Jan 2026: Carl Victor Page Memorial Foundation disbursed $1.33B since 2011, but 90%+ ($1.2B) went to DAFs (NPT, Schwab, Vanguard). Only ~$175M reached operating charities: European Climate Foundation $23M, RF Catalytic Capital $15M, Instituto Climate e Sociedad $10M, WRI $4.8M, Ebola $15M, Shoo the Flu $4M, others. NOT Giving Pledge signatory - prefers giving to entrepreneurs."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 286, "ein": "20-1922957", "note": "Carl Victor Page Memorial Foundation. Total 2024: $286M, but $235M (82%) to DAFs", "url": "https://projects.propublica.org/nonprofits/organizations/201922957"},
-            "sec_form4": {"status": "not_found", "note": "No stock gifts to external charities found", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 180, "sources": ["Grantmakers.io", "ProPublica 990-PF"], "note": "Only ~$180M to operating charities (excluding DAF transfers)", "url": "https://www.grantmakers.io/profiles/v0/201922957-carl-victor-page-memorial-foundation/"},
-            "news_verified": {"status": "found", "amount_millions": 180, "sources": ["Inside Philanthropy", "Philanthropy News Digest"], "url": "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor"}
+            "990_pf": {"status": "found", "amount_millions": 286, "ein": "20-1922957", "note": "Carl Victor Page Memorial Foundation. 2024: $286M, but $219M (77%) to DAFs. Total disbursed 2011-2024: $1.33B, ~90% to DAFs", "url": "https://projects.propublica.org/nonprofits/organizations/201922957"},
+            "sec_form4": {"status": "not_found", "note": "Stock goes to foundation, not direct to charity", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 175, "sources": ["Grantmakers.io", "Inside Philanthropy"], "note": "Only ~$175M to operating charities. $1.2B to DAFs (NPT $511M, Schwab $436M, Vanguard $250M) - PARKED.", "url": "https://www.grantmakers.io/profiles/v0/201922957-carl-victor-page-memorial-foundation/"},
+            "news_verified": {"status": "found", "amount_millions": 175, "sources": ["Inside Philanthropy 2024", "Observer 2023"], "url": "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor"}
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/201922957",
-            "https://www.grantmakers.io/profiles/v0/201922957-carl-victor-page-memorial-foundation/",
-            "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor"
-        ]
+            "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor",
+            "https://observer.com/2023/05/larry-page-foundation-donor-advised-funds-6-7-billion/"
+        ],
+        "giving_pledge": "no"
     },
     "MacKenzie Scott": {
         "total_lifetime_giving_millions": 26300,
@@ -98,51 +104,50 @@ VERIFICATION_DATA = {
         ]
     },
     "Bernard Arnault": {
-        "total_lifetime_giving_millions": 600,
+        "total_lifetime_giving_millions": 25,
         "giving_breakdown": {
-            "notre_dame": 226,
-            "fondation_louis_vuitton_net": 190,
-            "caillebotte_painting": 47,
-            "chardin_louvre": 16,
-            "versailles": 10,
-            "restos_du_coeur": 11,
-            "amazon_fires": 11,
-            "covid_china": 2,
-            "other": 87,
-            "notes": "VERIFIED Jan 2026: Notre Dame €200M confirmed paid. Fondation Louis Vuitton €790M gross but €603M tax benefit = €187M net. Cultural gifts via LVMH."
+            "restos_du_coeur_personal": 11,
+            "covid_china_personal": 2,
+            "other_personal": 12,
+            "daf_transfers": 0,
+            "notes": "DEEP VERIFIED Jan 2026: PERSONAL giving only ~€25M. Fondation Louis Vuitton (€790M) is LVMH CORPORATE foundation, not personal. Notre-Dame €200M was 'Arnault family AND LVMH Group' combined - no split disclosed. Restos du Coeur €10M (2023) is only clearly personal donation. NOT Giving Pledge signatory. French taxes = redistribution per Arnault."
         },
         "verification": {
-            "990_pf": {"status": "not_applicable", "note": "French billionaire - see French foundation filings", "url": None},
-            "sec_form4": {"status": "not_applicable", "note": "Not US-listed for philanthropy", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 600, "sources": ["Fondation Louis Vuitton", "French press"], "note": "€500M+ verified", "url": "https://www.fondationlouisvuitton.fr/"},
-            "news_verified": {"status": "found", "amount_millions": 600, "sources": ["Reuters", "Le Monde", "Artnet"], "url": "https://www.reuters.com/article/us-france-notredame-lvmh-idUSKCN1RU1FD/"}
+            "990_pf": {"status": "not_applicable", "note": "French billionaire - no US filings", "url": None},
+            "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 25, "sources": ["Le Monde", "Challenges"], "note": "Only €10M Restos du Coeur clearly personal. Fondation Louis Vuitton is LVMH corporate (€135M/yr ops). Notre-Dame was joint family+LVMH - no personal share disclosed.", "url": "https://www.lemonde.fr/societe/article/2023/09/04/restos-du-c-ur-la-famille-de-bernard-arnault-annonce-une-aide-de-10-millions-d-euros-a-l-association_6187786_3224.html"},
+            "news_verified": {"status": "found", "amount_millions": 25, "sources": ["Restos du Coeur €10M personal", "Red Cross China €2M"], "url": "https://www.challenges.fr/fortunes/bernard-arnault-enfin-philanthrope_662549"}
         },
         "sources": [
-            "https://www.reuters.com/article/us-france-notredame-lvmh-idUSKCN1RU1FD/",
-            "https://news.artnet.com/market/lvmh-caillebotte-musee-dorsay-2252434"
-        ]
+            "https://www.lemonde.fr/societe/article/2023/09/04/restos-du-c-ur-la-famille-de-bernard-arnault-annonce-une-aide-de-10-millions-d-euros-a-l-association_6187786_3224.html",
+            "https://www.challenges.fr/fortunes/bernard-arnault-enfin-philanthrope_662549"
+        ],
+        "giving_pledge": "no"
     },
     "Larry Ellison": {
-        "total_lifetime_giving_millions": 1150,
+        "total_lifetime_giving_millions": 1175,
         "giving_breakdown": {
             "ellison_medical_foundation": 430,
-            "larry_ellison_foundation": 450,
+            "larry_ellison_foundation": 290,
             "usc_cancer_center": 200,
             "friends_of_idf": 27,
-            "wildlife_conservation": 50,
-            "other": 43,
-            "notes": "VERIFIED Jan 2026: Ellison Medical Foundation $430M (closed 2013). Larry Ellison Foundation ~$450M cumulative. USC $200M. IDF $27M. Wildlife $50M."
+            "insider_trading_settlement": 100,
+            "other": 128,
+            "daf_transfers": 0,
+            "notes": "DEEP VERIFIED Jan 2026: Ellison Medical Foundation $430M grants (1997-2013, closed). Larry Ellison Foundation $290M verified (2018-2024 from 990-PF: $70M 2024, $54M 2023, $45M 2022, etc). USC $200M (2016). IDF $27M. $100M insider trading settlement to own foundation. Tony Blair Institute major recent recipient ($166M 2022-2024). Giving Pledge 2010 (95% pledge)."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 450, "ein": "94-3269827", "note": "Larry Ellison Foundation: $70M/year recent, $450M cumulative", "url": "https://projects.propublica.org/nonprofits/organizations/943269827"},
-            "sec_form4": {"status": "partial", "note": "Some stock gifts to foundation", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000930545&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 880, "sources": ["ProPublica 990-PF", "Ellison Medical Foundation"], "note": "EMF $430M + LEF $450M", "url": "https://projects.propublica.org/nonprofits/organizations/943269827"},
-            "news_verified": {"status": "found", "amount_millions": 270, "sources": ["USC $200M", "IDF $27M", "Wildlife $50M"], "url": "https://keck.usc.edu/ellison-institute/"}
+            "990_pf": {"status": "found", "amount_millions": 290, "ein": "94-3269827", "note": "Larry Ellison Foundation 2018-2024: $290M grants. Major grantee: Tony Blair Institute $166M+", "url": "https://projects.propublica.org/nonprofits/organizations/943269827"},
+            "sec_form4": {"status": "partial", "note": "Oracle stock gifts to foundation", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000930545&type=4"},
+            "foundation_reports": {"status": "found", "amount_millions": 720, "sources": ["ProPublica 990-PF", "NIH/PMC"], "note": "EMF $430M grants (1997-2013) + LEF $290M (2018-2024)", "url": "https://www.grantmakers.io/profiles/v0/943269827-the-larry-ellison-foundation/"},
+            "news_verified": {"status": "found", "amount_millions": 455, "sources": ["USC $200M", "IDF $27M ($16.6M 2017 largest FIDF gift)", "EMF $430M from PMC"], "url": "https://keck.usc.edu/ellison-institute/"}
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/943269827",
-            "https://keck.usc.edu/ellison-institute/"
-        ]
+            "https://keck.usc.edu/ellison-institute/",
+            "https://www.grantmakers.io/profiles/v0/943269827-the-larry-ellison-foundation/"
+        ],
+        "giving_pledge": "yes"
     },
     "Gautam Adani": {
         "total_lifetime_giving_millions": 250,
@@ -268,22 +273,29 @@ VERIFICATION_DATA = {
         ]
     },
     "Mark Zuckerberg": {
-        "total_lifetime_giving_millions": 5000,
+        "total_lifetime_giving_millions": 2415,
         "giving_breakdown": {
-            "czi_foundation_grants": 1870,
-            "czi_llc_estimated": 3130,
-            "notes": "VERIFIED Jan 2026: CZI Foundation 990-PF shows $1.87B in grants (2017-2024). CZI LLC grants not publicly disclosed. Total estimated ~$5B actual disbursements. The '$45B pledge' refers to stock transfer to LLC, not donations."
+            "czi_foundation_grants": 1871,
+            "election_infrastructure_2020": 400,
+            "newark_schools": 100,
+            "sf_general_hospital": 75,
+            "ebola_cdc": 25,
+            "other_direct": 44,
+            "daf_transfers": 1960,
+            "notes": "DEEP VERIFIED Jan 2026: CZI Foundation 990-PF: $1.87B grants (2017-2024: $389M 2024, $216M 2023, $418M 2022, $320M 2021). Election grants $400M (2020). Newark $100M, SF Hospital $75M, Ebola $25M. DAF: $1.96B to SVCF (2012-2018) - PARKED. The '$45B pledge' went to CZI LLC (for-profit), NOT charity. CZI claims $7.22B 'committed' but 990s show ~$1.87B disbursed. Giving Pledge 2010 signatory."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 1870, "ein": "45-5002209", "note": "CZI Foundation: $388M (2024), $216M (2023), $418M (2022), etc.", "url": "https://projects.propublica.org/nonprofits/organizations/455002209"},
-            "sec_form4": {"status": "found", "amount_millions": 45000, "note": "$45B in Meta stock transferred to CZI LLC - but LLC is not charity", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001548760&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 1870, "sources": ["ProPublica CZI Foundation 990-PF"], "note": "$1.87B verified through foundation arm", "url": "https://projects.propublica.org/nonprofits/organizations/455002209"},
-            "news_verified": {"status": "found", "amount_millions": 5000, "sources": ["PureGrant", "SF Standard", "CZI website"], "url": "https://chanzuckerberg.com/grants-ventures/grants/"}
+            "990_pf": {"status": "found", "amount_millions": 1871, "ein": "45-5002209", "note": "CZI Foundation: $389M (2024), $216M (2023), $418M (2022). Cumulative $1.87B", "url": "https://projects.propublica.org/nonprofits/organizations/455002209"},
+            "sec_form4": {"status": "found", "amount_millions": 45000, "note": "$45B in Meta stock to CZI LLC - LLC is for-profit, NOT charity", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001548760&type=4"},
+            "foundation_reports": {"status": "found", "amount_millions": 1871, "sources": ["ProPublica CZI Foundation 990-PF"], "note": "$1.87B via foundation. $1.96B to SVCF DAF tracked separately as parked.", "url": "https://projects.propublica.org/nonprofits/organizations/455002209"},
+            "news_verified": {"status": "found", "amount_millions": 600, "sources": ["Newark $100M", "SF Hospital $75M", "Election $400M", "Ebola $25M"], "url": "https://en.wikipedia.org/wiki/Chan_Zuckerberg_Initiative"}
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/455002209",
-            "https://chanzuckerberg.com/grants-ventures/grants/"
-        ]
+            "https://chanzuckerberg.com/grants-ventures/grants/",
+            "https://www.grantmakers.io/profiles/v0/455002209-chan-zuckerberg-initiative-foundation/"
+        ],
+        "giving_pledge": "yes"
     },
     "Sergey Brin": {
         "total_lifetime_giving_millions": 3900,
@@ -308,25 +320,28 @@ VERIFICATION_DATA = {
         "giving_pledge": "no"
     },
     "Jensen Huang": {
-        "total_lifetime_giving_millions": 333,
+        "total_lifetime_giving_millions": 148,
         "giving_breakdown": {
-            "foundation_2024": 126,
-            "foundation_2023": 60,
-            "foundation_2022": 66,
-            "foundation_2021": 32,
-            "foundation_pre_2021": 49,
-            "notes": "VERIFIED Jan 2026: Foundation 990-PF shows $333M cumulative disbursements (2014-2024). $126M in 2024 alone. Assets $9.2B. Major recipients include OSU, Stanford, Crisis Text Line, food banks. Some grants to DAFs but majority to operating charities."
+            "oregon_state": 64,
+            "stanford": 30,
+            "california_college_arts": 22.5,
+            "ohsu": 5,
+            "oneida_baptist": 2,
+            "hkust": 1.3,
+            "other_operating": 23.2,
+            "daf_transfers": 171,
+            "notes": "DEEP VERIFIED Jan 2026: Foundation disbursed $325M (2007-2024), but ~$171M (53%) went to DAFs (GeForce Fund at Schwab $125M, Schwab Charitable $46M). Only ~$148M to operating charities: OSU $64M (complex + earlier), Stanford $30M, CCA $22.5M (2025), OHSU $5M, Oneida Baptist $2M, HKUST $1.3M. Bloomberg: 'Two-thirds of all foundation grants go to DAFs.' Assets $9.1B. NOT Giving Pledge signatory."
         },
         "verification": {
-            "990_pf": {"status": "found", "amount_millions": 333, "ein": "26-1551239", "note": "Jen-Hsun & Lori Huang Foundation: $333M cumulative disbursed (2014-2024), $126M in 2024", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
-            "sec_form4": {"status": "found", "note": "Nvidia stock gifts to foundation tracked", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001341439&type=4&dateb=&owner=include&count=40"},
-            "foundation_reports": {"status": "found", "amount_millions": 333, "sources": ["ProPublica 990-PF", "Grantmakers.io"], "note": "$333M cumulative from 990-PF filings", "url": "https://www.grantmakers.io/profiles/v0/261551239-jen-hsun-lori-huang-foundation/"},
-            "news_verified": {"status": "found", "amount_millions": 333, "sources": ["ProPublica 990-PF", "OSU", "Stanford", "Crisis Text Line"], "url": "https://www.insidephilanthropy.com/guide-to-individual-donors/jensen-huang"}
+            "990_pf": {"status": "found", "amount_millions": 325, "ein": "26-1551239", "note": "Jen-Hsun & Lori Huang Foundation: $325M cumulative, but $171M to DAFs. Only $148M to operating charities.", "url": "https://projects.propublica.org/nonprofits/organizations/261551239"},
+            "sec_form4": {"status": "found", "note": "Nvidia stock gifts to foundation: June 2025 $90M, Dec 2024 etc.", "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001341439&type=4"},
+            "foundation_reports": {"status": "found", "amount_millions": 148, "sources": ["ProPublica 990-PF", "Bloomberg", "Investment News"], "note": "$148M to operating charities. $171M to DAFs (GeForce Fund, Schwab) - PARKED.", "url": "https://www.grantmakers.io/profiles/v0/261551239-jen-hsun-lori-huang-foundation/"},
+            "news_verified": {"status": "found", "amount_millions": 148, "sources": ["OSU $64M", "Stanford $30M", "CCA $22.5M", "Bloomberg DAF analysis"], "url": "https://philanthropynewsdigest.org/news/nvidia-ceo-s-8-billion-foundation-awards-two-thirds-of-giving-to-dafs"}
         },
         "sources": [
             "https://projects.propublica.org/nonprofits/organizations/261551239",
             "https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center",
-            "https://sfstandard.com/2025/02/20/nvidia-ceo-saves-arts-college-cca/",
+            "https://philanthropynewsdigest.org/news/nvidia-ceo-s-8-billion-foundation-awards-two-thirds-of-giving-to-dafs",
             "https://www.cnbc.com/2025/06/12/nvidia-stock-jensen-huang-charitable-foundation.html"
         ],
         "giving_pledge": "no"
@@ -508,6 +523,31 @@ VERIFICATION_DATA = {
             "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000903205&type=4"
         ]
     },
+    "S. Robson Walton": {
+        "total_lifetime_giving_millions": 435,
+        "giving_breakdown": {
+            "rob_melani_walton_foundation": 328,
+            "asu_conservation_futures": 115,
+            "african_parks": 100,
+            "theodore_roosevelt_library": 34,
+            "asu_sustainability": 32,
+            "other_conservation": 26,
+            "daf_transfers": 0,
+            "notes": "DEEP VERIFIED Jan 2026: Rob and Melani Walton Foundation (EIN 47-4259772) grants $328M cumulative (2015-2024: $108M 2024, $80M 2023, $60M 2022). ASU $115M (2025, largest gift in ASU history). African Parks $100M (2021 5-year pledge). Roosevelt Library $34M. Strong conservation focus. NOT Giving Pledge signatory - explicitly declined: 'We have chosen to go our own way.' Forbes 2014: 'zero individual contributions' to Walton Family Foundation."
+        },
+        "verification": {
+            "990_pf": {"status": "found", "amount_millions": 328, "ein": "47-4259772", "note": "Rob and Melani Walton Foundation: $328M grants 2015-2024, $440M assets", "url": "https://projects.propublica.org/nonprofits/organizations/474259772"},
+            "sec_form4": {"status": "partial", "note": "Walmart stock gifts to foundation", "url": None},
+            "foundation_reports": {"status": "found", "amount_millions": 435, "sources": ["ProPublica 990-PF", "Grantmakers.io"], "note": "Foundation $328M + major announced gifts (ASU, African Parks)", "url": "https://www.grantmakers.io/profiles/v0/474259772-rob-and-melani-walton-foundation/"},
+            "news_verified": {"status": "found", "amount_millions": 315, "sources": ["ASU $115M", "African Parks $100M", "Roosevelt Library $34M", "ASU sustainability $32M"], "url": "https://news.asu.edu/20250922-environment-and-sustainability-115M-gift-largest-ever-asu-establishes-walton-school-conservation-futures"}
+        },
+        "sources": [
+            "https://projects.propublica.org/nonprofits/organizations/474259772",
+            "https://news.asu.edu/20250922-environment-and-sustainability-115M-gift-largest-ever-asu-establishes-walton-school-conservation-futures",
+            "https://www.africanparks.org/rob-and-melani-walton-foundation-make-transformational-gift-preserve-30-million-hectares"
+        ],
+        "giving_pledge": "no"
+    },
     "Michael Bloomberg": {
         "total_lifetime_giving_millions": 21100,
         "giving_breakdown": {
@@ -532,23 +572,24 @@ VERIFICATION_DATA = {
         ]
     },
     "Mukesh Ambani": {
-        "total_lifetime_giving_millions": 400,
+        "total_lifetime_giving_millions": 15,
         "giving_breakdown": {
-            "reliance_foundation_personal": 350,
-            "hurun_tracked_2018_2025": 350,
-            "corporate_csr_not_counted": 0,
-            "notes": "VERIFIED Jan 2026: Personal/family philanthropy ~$45-75M/year (Hurun India). Cumulative personal giving ~$350-400M. Corporate CSR ($1.2B+) is legally mandated 2% of profits, not personal. Ranks 2nd-3rd among Indian philanthropists."
+            "temple_donations_personal": 15,
+            "daf_transfers": 0,
+            "notes": "DEEP VERIFIED Jan 2026: PERSONAL giving only ~$15M (temple donations: TTD $12M, Guruvayur $1.8M, Nathdwara $1.8M, etc). The $400-600M Hurun figures are RELIANCE FOUNDATION = corporate CSR (mandated 2% under India Companies Act 2013), NOT personal wealth. Reliance Foundation is 'wholly owned by Reliance Industries Limited' per Wikipedia. Ambani does NOT appear on Hurun 'personal capacity' donor lists (Shiv Nadar leads at $250M+/yr personal). NOT Giving Pledge signatory."
         },
         "verification": {
-            "990_pf": {"status": "not_applicable", "note": "Indian billionaire - Reliance Foundation is India-registered", "url": None},
+            "990_pf": {"status": "not_applicable", "note": "Indian billionaire - no US filings", "url": None},
             "sec_form4": {"status": "not_applicable", "note": "Not US-listed", "url": None},
-            "foundation_reports": {"status": "found", "amount_millions": 400, "sources": ["Reliance Foundation", "Hurun India Philanthropy List"], "note": "Personal giving ~$45-75M/year, cumulative ~$400M", "url": "https://www.reliancefoundation.org/"},
-            "news_verified": {"status": "found", "amount_millions": 400, "sources": ["Hurun India", "TIME100 Philanthropy", "Business Standard"], "url": "https://www.hurun.net/en-us/info/detail?num=India-Philanthropy-List"}
+            "foundation_reports": {"status": "found", "amount_millions": 15, "sources": ["Temple donation news", "Hurun personal capacity list"], "note": "Only temple donations (~$15M) clearly personal. Reliance Foundation ($180M/yr) is corporate CSR, owned by RIL.", "url": "https://en.wikipedia.org/wiki/Reliance_Foundation"},
+            "news_verified": {"status": "found", "amount_millions": 15, "sources": ["TTD $12M", "Guruvayur $1.8M", "Ayodhya $0.3M", "other temples"], "url": "https://www.cnbctv18.com/business/mukesh-ambani-nita-ambani-donate-rs-100-crore-ttd-tirumala-tirupati-devasthanams-mega-kitchen-19587432.htm"}
         },
         "sources": [
-            "https://www.reliancefoundation.org/",
-            "https://www.hurun.net/en-us/info/detail?num=India-Philanthropy-List"
-        ]
+            "https://en.wikipedia.org/wiki/Reliance_Foundation",
+            "https://www.hurun.net/en-us/info/detail?num=India-Philanthropy-List",
+            "https://www.cnbctv18.com/business/mukesh-ambani-nita-ambani-donate-rs-100-crore-ttd-tirumala-tirupati-devasthanams-mega-kitchen-19587432.htm"
+        ],
+        "giving_pledge": "no"
     },
     "Carlos Slim Helu": {
         "total_lifetime_giving_millions": 4500,
