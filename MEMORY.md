@@ -1,19 +1,22 @@
 # Scrooge List — Memory
 
-## State as of 2026-04-24 (after v3 publish build — 35-subject cohort)
+## State as of 2026-04-24 (v3 publish build — 45-subject cohort, 8 commits)
 
-**v3 build shipped.** 35 US billionaires researched end-to-end via parallel subagents; each has a `data/<slug>.v3.json` with every dollar URL-cited. Aggregated into `docs/scrooge_latest_v3.json` (+ CSV), per-subject `docs/profiles/<slug>.json`. Tier-based index + profile + methodology HTML is live with search, sortable tables, confidence-interval bars, and Open Graph metadata.
+**v3 build shipped.** 45 US billionaires researched end-to-end via parallel subagents; each has a `data/<slug>.v3.json` with every dollar URL-cited. Aggregated into `docs/scrooge_latest_v3.json` (+ CSV), per-subject `docs/profiles/<slug>.json`. Tier-based index + profile + methodology HTML is live with search, sortable tables, confidence-interval bars, per-year giving timeline, distribution dot-plot, and Open Graph metadata. 20 pre-publication outreach emails generated for Tier A/B.
 
-**Tier distribution (35 subjects):**
+**Tier distribution (45 subjects):**
 - Tier A Verified Low (4): Peterffy, Murdoch, Musk, Page — ordinal rank published
-- Tier B Probably Low (15): Ellison, Bezos, Brin, Huang, Ballmer, Schwarzman, Koch, Rob/Jim/Alice Walton, Griffin, Hamm, Julia Koch, Adelson, Cohen — alphabetical
+- Tier B Probably Low (18): Ellison, Bezos, Brin, Huang, Ballmer, Schwarzman, Koch, Rob/Jim/Alice/Lukas Walton, Griffin, Hamm, Julia Koch, Adelson, Cohen, Abigail Johnson, Cuban, Ross — alphabetical
 - Tier C Opaque (4): Zuckerberg, Blavatnik, Malone, Powell Jobs — alphabetical
-- On Track (12): Buffett, Scott, Bloomberg, Dell, Knight, Dalio, Moskovitz, Omidyar, Kravis, Rubenstein, Cooperman, Druckenmiller — calibration reference
+- On Track (19): Buffett, Scott, Bloomberg, Dell, Knight, Dalio, Moskovitz, Omidyar, Kravis, Rubenstein, Cooperman, Druckenmiller, Skoll, Melinda French Gates, Hastings (DAF-case), Kinder, Geffen, Leonard Lauder (posthumous) — calibration reference
 
-**Three archetypes surfaced:**
+**Four archetypes surfaced across 45 subjects:**
 - "Transparent LLC": Moskovitz (Coefficient Giving), Omidyar (Omidyar Network) — prove LLC ≠ opacity
 - "Opaque LLC": Zuckerberg (CZI), Powell Jobs (Emerson), Ballmer (Ballmer Group) — structural opacity by choice
-- "Political substitution dominant": Koch ($5.3B c4 over decade vs $1.1B c3), Adelson ($557M political household vs declining foundation)
+- "Political-charitable substitution dominant": Koch ($5.3B c4 / decade vs $1.1B c3), Adelson ($557M household political), Hamm (1:1)
+- "Pledge-signed vs unfulfilled gap": Ellison (2010, 0.2% of NW delivered), Musk (2012, 0.06%), Schwarzman (2020, posthumous-deferred), Ross (2013, 50% target $7.8B gap)
+
+**Publish-readiness:** all local state ready. Awaiting Jonah's push-to-GitHub authorization and outreach-send trigger.
 
 **Legacy v1/v2 state (still do not trust):**
 - `docs/scrooge_latest.json` (v1/v2) — still present but misleading; 97.8% of records scored ≥90 because non-hardcoded billionaires defaulted to $0 observable.
