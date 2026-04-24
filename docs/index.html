@@ -161,6 +161,28 @@ body{
 .searchbar .download-row a:hover{background:rgba(139,46,31,.08)}
 .dimmed{opacity:.25;transition:opacity .2s}
 
+.view-toggle{display:flex;gap:0;justify-content:center;margin:30px auto 18px;width:fit-content;border:1px solid var(--paper-shadow);background:var(--paper-mid)}
+.view-toggle .vt-btn{
+  font-family:var(--display);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-fade);background:transparent;border:0;padding:10px 26px;cursor:pointer;
+  transition:all .15s;border-right:1px solid var(--paper-shadow);
+}
+.view-toggle .vt-btn:last-child{border-right:0}
+.view-toggle .vt-btn:hover{color:var(--rust)}
+.view-toggle .vt-btn.active{background:var(--ink);color:var(--paper);cursor:default}
+.view-toggle .vt-btn[data-view="saints"].active{background:var(--green);color:var(--paper)}
+
+body.saint-view .tiers-scrooge{display:none}
+body:not(.saint-view) .saint-hero{display:none}
+body.saint-view .how-to-read,body.saint-view .pattern-filters,body.saint-view .distribution{display:none}
+body.saint-view #tierOnTrack thead th[data-sort="ratio"]{color:var(--green)}
+body.saint-view .section-head h2{color:var(--green)}
+body.saint-view .section-head h2 .orn{color:var(--green)}
+
+.saint-hero{margin:0 0 20px;padding:18px 22px;border:1px solid var(--green);background:rgba(74,110,58,.06);border-left:4px solid var(--green)}
+.saint-hero h2{font-family:var(--display);font-weight:400;font-style:italic;font-variation-settings:"opsz" 72,"SOFT" 70;font-size:clamp(1.5rem,2.3vw,2rem);margin:0 0 6px;color:var(--ink)}
+.saint-hero p{font-family:var(--serif,var(--display));font-size:.95rem;color:var(--ink-soft);line-height:1.55;margin:0;max-width:760px}
+
 .pattern-filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 32px;padding:0 2px}
 .pattern-filters .pf-label{font-family:var(--display);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-fade);margin-right:8px}
 .pattern-filters .pf-btn{
@@ -289,12 +311,19 @@ body{
     </div>
   </div>
 
+  <div class="view-toggle" role="tablist" aria-label="View">
+    <button class="vt-btn active" data-view="scrooges" role="tab" aria-selected="true">The Scrooges</button>
+    <button class="vt-btn" data-view="saints" role="tab" aria-selected="false">The Saints</button>
+  </div>
+
   <div class="searchbar">
     <input type="search" id="searchInput" placeholder="Filter by name…" aria-label="Filter subjects by name">
     <span class="download-row">
       <a href="cohort.html">Cohort stats</a>
       ·
       <a href="methodology.html">Methodology</a>
+      ·
+      <a href="https://github.com/jonahwei19/scrooge-list/issues/new" title="Report an inaccuracy — please include the citation URL">Report inaccuracies</a>
       ·
       <a href="scrooge_latest_v3.csv" download>CSV</a>
       ·
@@ -324,35 +353,42 @@ body{
     </ol>
   </div>
 
-  <div class="section-head"><h2><span class="orn">❧</span> Tier A · The Verified Low <span class="orn">❧</span></h2></div>
-  <p class="section-sub">Ranked ordinally. Low observable giving, and no opaque vehicle that could plausibly close the gap. Subjects here are the strongest claims the list makes.</p>
-  <div class="frontispiece-grid" id="tierA"></div>
+  <div class="saint-hero">
+    <h2>The Saints — subjects above the benchmark</h2>
+    <p>Same cohort, inverted frame. These subjects' observable giving clears the 10%-of-liquid-wealth-per-decade capacity benchmark, with 990-PF filings or published LLC grant databases to back it up. Sorted by ratio to benchmark (highest first). For the Scrooges, flip the toggle above.</p>
+  </div>
 
-  <div class="section-head"><h2><span class="orn">❧</span> Tier B · Probably Low <span class="orn">❧</span></h2></div>
-  <p class="section-sub">Observable giving is low relative to capacity, but at least one opaque vehicle exists. Presented alphabetically, not ranked.</p>
-  <table class="tier-table sortable" id="tierB">
-    <thead><tr>
-      <th data-sort="name">Name</th>
-      <th class="num" data-sort="net_worth">Net Worth</th>
-      <th class="num" data-sort="observable">Observable</th>
-      <th class="num" data-sort="ratio">Ratio</th>
-      <th>Pattern</th>
-    </tr></thead>
-    <tbody></tbody>
-  </table>
+  <div class="tiers-scrooge">
+    <div class="section-head"><h2><span class="orn">❧</span> Tier A · The Verified Low <span class="orn">❧</span></h2></div>
+    <p class="section-sub">Ranked ordinally. Low observable giving, and no opaque vehicle that could plausibly close the gap. Subjects here are the strongest claims the list makes.</p>
+    <div class="frontispiece-grid" id="tierA"></div>
 
-  <div class="section-head"><h2><span class="orn">❧</span> Tier C · Opaque <span class="orn">❧</span></h2></div>
-  <p class="section-sub">Most giving flows through LLCs or DAFs that do not require public disclosure. The published figure is a floor.</p>
-  <table class="tier-table sortable" id="tierC">
-    <thead><tr>
-      <th data-sort="name">Name</th>
-      <th class="num" data-sort="net_worth">Net Worth</th>
-      <th class="num" data-sort="observable">Observable</th>
-      <th class="num" data-sort="ratio">Ratio</th>
-      <th>Pattern</th>
-    </tr></thead>
-    <tbody></tbody>
-  </table>
+    <div class="section-head"><h2><span class="orn">❧</span> Tier B · Probably Low <span class="orn">❧</span></h2></div>
+    <p class="section-sub">Observable giving is low relative to capacity, but at least one opaque vehicle exists. Presented alphabetically, not ranked.</p>
+    <table class="tier-table sortable" id="tierB">
+      <thead><tr>
+        <th data-sort="name">Name</th>
+        <th class="num" data-sort="net_worth">Net Worth</th>
+        <th class="num" data-sort="observable">Observable</th>
+        <th class="num" data-sort="ratio">Ratio</th>
+        <th>Pattern</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <div class="section-head"><h2><span class="orn">❧</span> Tier C · Opaque <span class="orn">❧</span></h2></div>
+    <p class="section-sub">Most giving flows through LLCs or DAFs that do not require public disclosure. The published figure is a floor.</p>
+    <table class="tier-table sortable" id="tierC">
+      <thead><tr>
+        <th data-sort="name">Name</th>
+        <th class="num" data-sort="net_worth">Net Worth</th>
+        <th class="num" data-sort="observable">Observable</th>
+        <th class="num" data-sort="ratio">Ratio</th>
+        <th>Pattern</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
 
   <div class="section-head"><h2><span class="orn">❧</span> On Track · Not Scrooges <span class="orn">❧</span></h2></div>
   <p class="section-sub">Shown for calibration — these are not Scrooges. Observable giving is near or above the 10%-of-liquid-wealth benchmark, confirmed through 990-PFs or published LLC grant databases.</p>
@@ -432,6 +468,23 @@ body{
     patternFilters.querySelectorAll('.pf-btn').forEach(b => b.classList.toggle('active', b === btn));
     applyFilter();
   });
+
+  const viewToggle = document.querySelector('.view-toggle');
+  if (viewToggle) {
+    viewToggle.addEventListener('click', (e) => {
+      const btn = e.target.closest('.vt-btn');
+      if (!btn) return;
+      const view = btn.dataset.view;
+      viewToggle.querySelectorAll('.vt-btn').forEach(b => {
+        const on = b === btn;
+        b.classList.toggle('active', on);
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+      document.body.classList.toggle('saint-view', view === 'saints');
+      if (view === 'saints' && window.__sortOnTrackByRatio) window.__sortOnTrackByRatio();
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  }
 })();
 
 const ordinalSup = n => {
@@ -665,6 +718,10 @@ function installSortableTable(id, list) {
   });
 
   render();
+
+  if (id === 'tierOnTrack') {
+    window.__sortOnTrackByRatio = () => { state.key = 'ratio'; state.dir = 'desc'; render(); };
+  }
 }
 </script>
 </body>
