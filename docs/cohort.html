@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cohort Overview — The Scrooge List</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('scrooge-theme');if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){}})();
+</script>
+<style>
+:root{
+  --paper:#F3ECD9;--paper-mid:#E7DCC1;--paper-deep:#D8C9A4;--paper-shadow:#C9B78A;
+  --ink:#19130B;--ink-soft:#3C2F22;--ink-fade:#6E5E46;--ink-ghost:#9F8E70;
+  --rust:#8B2E1F;--rust-dark:#5D1C12;--gilt:#8C6B2D;--sepia:#735A3E;--rule:#22180E;--green:#4a6e3a;
+  --display:"Fraunces",ui-serif,serif;--body:"Newsreader",Georgia,serif;
+}
+[data-theme="dark"]{
+  --paper:#14110A;--paper-mid:#1C1811;--paper-deep:#261F14;--paper-shadow:#3B3121;
+  --ink:#EEDCBA;--ink-soft:#C4AF82;--ink-fade:#8B7951;--ink-ghost:#605335;
+  --rust:#D14A32;--rust-dark:#A93220;--gilt:#D4A032;--sepia:#A38456;--rule:#75633F;--green:#8fb57a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.7;font-feature-settings:"onum","liga","kern";-webkit-font-smoothing:antialiased}
+body{
+  background:radial-gradient(ellipse 800px 400px at 15% 5%, rgba(139,46,31,.045), transparent 70%),radial-gradient(ellipse 900px 500px at 90% 95%, rgba(140,107,45,.055), transparent 70%),var(--paper);
+  min-height:100vh;transition:background-color .4s;
+}
+[data-theme="dark"] body{background:radial-gradient(ellipse 900px 500px at 15% 5%, rgba(209,74,50,.08), transparent 70%),radial-gradient(ellipse 1000px 600px at 90% 95%, rgba(212,160,50,.09), transparent 70%),var(--paper)}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+[data-theme="dark"] .grain{opacity:.18;mix-blend-mode:screen}
+
+.sheet{position:relative;z-index:3;max-width:960px;margin:0 auto;padding:40px 36px 80px;animation:fadeUp .6s ease-out both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+.nav{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px;font-family:var(--display);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft)}
+.nav a{color:var(--rust);text-decoration:none;border-bottom:1px solid var(--rust);padding-bottom:1px}
+.nav button{background:none;border:none;cursor:pointer;font:inherit;color:inherit;letter-spacing:.22em}
+.nav button:hover{color:var(--rust)}
+
+.pmast{text-align:center;padding:36px 0 22px;border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);margin-bottom:34px;position:relative}
+.pmast::before,.pmast::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--rule)}
+.pmast::before{top:3px}.pmast::after{bottom:3px}
+.pmast .kicker{font-family:var(--display);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--rust);margin-bottom:10px}
+.pmast h1{font-family:var(--display);font-weight:800;font-variation-settings:"opsz" 144,"SOFT" 30;font-size:clamp(2.2rem,5vw,3.4rem);line-height:.98;letter-spacing:-.015em;color:var(--ink)}
+.pmast .subtitle{font-family:var(--display);font-style:italic;font-size:1.05rem;color:var(--ink-fade)}
+
+h2{font-family:var(--display);font-style:italic;font-weight:500;font-variation-settings:"opsz" 72,"SOFT" 60;font-size:1.7rem;margin:44px 0 6px;color:var(--ink)}
+h2::before{content:"";display:block;width:36px;height:2px;background:var(--rust);margin-bottom:14px}
+
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin:0 0 44px}
+.stat-cell{padding:20px 16px 18px;text-align:center;border-right:1px solid var(--paper-shadow);font-family:var(--display)}
+.stat-cell:last-child{border-right:none}
+.stat-cell .big{font-size:1.75rem;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink);line-height:1}
+.stat-cell .big.rust{color:var(--rust)}
+.stat-cell .big.gilt{color:var(--gilt)}
+.stat-cell .label{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-fade);margin-top:8px}
+
+.tier-bar{display:flex;width:100%;height:40px;border:1px solid var(--paper-shadow);margin:10px 0 6px;overflow:hidden;font-family:var(--display)}
+.tier-bar .seg{display:flex;align-items:center;justify-content:center;color:var(--paper);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;min-width:30px}
+.tier-bar .seg.a{background:var(--rust-dark)}
+.tier-bar .seg.b{background:var(--gilt)}
+.tier-bar .seg.c{background:var(--sepia)}
+.tier-bar .seg.ok{background:var(--green)}
+.tier-legend{display:flex;gap:22px;margin-top:8px;font-family:var(--display);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-fade)}
+.tier-legend .sw{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:middle}
+.tier-legend .sw.a{background:var(--rust-dark)}
+.tier-legend .sw.b{background:var(--gilt)}
+.tier-legend .sw.c{background:var(--sepia)}
+.tier-legend .sw.ok{background:var(--green)}
+
+.data-table{width:100%;border-collapse:collapse;margin:18px 0 30px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);font-family:var(--display)}
+.data-table th{padding:12px 14px 10px;text-align:left;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;border-bottom:1px solid var(--rule)}
+.data-table th.num{text-align:right}
+.data-table td{padding:10px 14px;color:var(--ink);font-size:.95rem;border-bottom:1px dotted var(--ink-ghost);vertical-align:baseline;font-variant-numeric:tabular-nums}
+.data-table td.num{text-align:right}
+.data-table tbody tr:last-child td{border-bottom:none}
+.data-table tbody tr:nth-child(even){background:rgba(216,201,164,.12)}
+[data-theme="dark"] .data-table tbody tr:nth-child(even){background:rgba(238,220,186,.04)}
+
+.flag-bar{display:flex;align-items:center;gap:10px;margin:6px 0}
+.flag-bar .label{width:240px;font-family:var(--display);font-size:.88rem;color:var(--ink-soft)}
+.flag-bar .track{flex:1;height:10px;background:var(--paper-deep);border:1px solid var(--paper-shadow);position:relative}
+.flag-bar .fill{height:100%;background:var(--rust);transition:width .4s ease}
+.flag-bar .count{font-family:var(--display);font-size:.85rem;color:var(--ink);font-variant-numeric:tabular-nums;width:36px;text-align:right}
+
+.callout{padding:18px 22px;margin:20px 0;border-left:3px solid var(--rust);background:rgba(139,46,31,.04)}
+[data-theme="dark"] .callout{background:rgba(209,74,50,.08)}
+.callout strong{font-family:var(--display);color:var(--ink);display:block;margin-bottom:6px}
+
+.colophon{text-align:center;padding-top:32px;margin-top:48px;border-top:2px solid var(--rule);position:relative}
+.colophon::before{content:"";display:block;position:absolute;top:3px;left:0;right:0;height:1px;background:var(--rule)}
+.col-line{font-family:var(--display);font-size:.82rem;letter-spacing:.06em;color:var(--ink-fade);margin:14px 0 4px}
+.col-line a{color:var(--rust);text-decoration:none;border-bottom:1px solid var(--rust)}
+
+@media (max-width:700px){
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-cell{border-bottom:1px solid var(--paper-shadow)}
+  .stat-cell:nth-child(odd){border-right:1px solid var(--paper-shadow)}
+  .sheet{padding:30px 20px 60px}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<main class="sheet">
+  <nav class="nav">
+    <a href="index.html">← The Ledger</a>
+    <span>Cohort Overview</span>
+    <button id="themeToggle" type="button">Mode ◐</button>
+  </nav>
+
+  <header class="pmast">
+    <div class="kicker">Cohort Dashboard · Volume I</div>
+    <h1>What the Numbers Show</h1>
+    <p class="subtitle">Aggregate statistics across the 51-subject launch cohort.</p>
+  </header>
+
+  <div id="content">
+    <p style="text-align:center;color:var(--ink-fade);padding:60px 0">Loading cohort statistics…</p>
+  </div>
+
+  <footer class="colophon">
+    <p class="col-line"><a href="index.html">The Ledger</a> · <a href="methodology.html">Methodology</a> · <a href="scrooge_latest_v3.csv" download>CSV</a></p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  const toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', () => {
+    const cur = document.documentElement.dataset.theme || 'light';
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem('scrooge-theme', next); } catch(e) {}
+  });
+})();
+
+const fmtUsd = usd => usd == null ? '—' : (usd >= 1e9 ? '$' + (usd/1e9).toFixed(usd >= 1e10 ? 0 : 2) + 'B' : '$' + (usd/1e6).toFixed(0) + 'M');
+const fmtNw = b => b == null ? '—' : '$' + (b >= 100 ? b.toFixed(0) : b.toFixed(1)) + 'B';
+
+fetch('scrooge_latest_v3.json')
+  .then(r => r.json())
+  .then(data => renderCohort(data.billionaires || []))
+  .catch(e => document.getElementById('content').innerHTML = '<p style="color:var(--rust);text-align:center;padding:40px">Could not load data.</p>');
+
+function renderCohort(bs) {
+  const n = bs.length;
+  const byTier = {};
+  for (const b of bs) {
+    byTier[b.tier] = (byTier[b.tier] || []);
+    byTier[b.tier].push(b);
+  }
+
+  const totalNw = bs.reduce((s, b) => s + (b.net_worth_best_usd_b || 0), 0);
+  const totalObs = bs.reduce((s, b) => s + (b.observable_usd || 0) / 1e9, 0);
+  const totalExp = bs.reduce((s, b) => s + (b.expected_usd || 0) / 1e9, 0);
+  const globalRatio = totalObs / totalExp;
+  const medianRatio = median(bs.map(b => b.ratio_observable_to_expected).filter(r => r != null));
+
+  // Pledge stats
+  const pledgeSigned = bs.filter(b => (b.red_flags || []).some(f =>
+    /GIVING_PLEDGE|UNFULFILLED/.test(typeof f === 'string' ? f : (f.flag || ''))
+  )).length;
+
+  // Red-flag distribution
+  const flagCounts = {};
+  for (const b of bs) {
+    const uniq = new Set();
+    for (const f of (b.red_flags || [])) {
+      const code = typeof f === 'string' ? f : (f.flag || '');
+      // Normalize variants
+      let norm = code;
+      if (/POLITICAL_(HEAVY|DOMINATES|SUBSTITUTION)/.test(code)) norm = 'Political-heavy';
+      else if (/LLC_OPACITY|FOR_PROFIT/.test(code)) norm = 'LLC / for-profit vehicle';
+      else if (/DAF|WAREHOUSING/.test(code)) norm = 'DAF-heavy';
+      else if (/LOW_PAYOUT|BORDERLINE_LOW/.test(code)) norm = 'Low foundation payout';
+      else if (/GIVING_PLEDGE_UNFULFILLED/.test(code)) norm = 'Pledge unfulfilled';
+      else if (/NO_GIVING_PLEDGE/.test(code)) norm = 'Never signed pledge';
+      else if (/NAMING_RIGHTS/.test(code)) norm = 'Naming-rights pattern';
+      else if (/POSTHUMOUS/.test(code)) norm = 'Posthumous deferral';
+      else if (/NET_WORTH_SURGE|LOW_OBSERVABLE_VS_WEALTH/.test(code)) norm = 'NW outpaced giving';
+      else if (/ESTATE_TRANSITION/.test(code)) norm = 'Estate transition';
+      else continue;
+      uniq.add(norm);
+    }
+    for (const f of uniq) flagCounts[f] = (flagCounts[f] || 0) + 1;
+  }
+  const flagSorted = Object.entries(flagCounts).sort((a, b) => b[1] - a[1]);
+
+  // Tier bar widths
+  const tierCounts = ['A_VERIFIED_LOW', 'B_PROBABLY_LOW', 'C_OPAQUE', 'ON_TRACK'].map(t => (byTier[t] || []).length);
+  const tierTotal = tierCounts.reduce((a,b) => a+b, 0) || 1;
+
+  // Biggest gaps (dollar terms)
+  const biggestGaps = [...bs]
+    .filter(b => b.expected_usd && b.observable_usd != null)
+    .sort((a, b) => (b.expected_usd - b.observable_usd) - (a.expected_usd - a.observable_usd))
+    .slice(0, 8);
+
+  // Overachievers (biggest positive ratio)
+  const overachievers = [...bs]
+    .filter(b => b.ratio_observable_to_expected != null)
+    .sort((a, b) => b.ratio_observable_to_expected - a.ratio_observable_to_expected)
+    .slice(0, 5);
+
+  let html = '';
+
+  html += `<div class="stat-grid">
+    <div class="stat-cell"><div class="big">${n}</div><div class="label">Subjects Researched</div></div>
+    <div class="stat-cell"><div class="big">$${totalNw.toFixed(0)}B</div><div class="label">Combined Net Worth</div></div>
+    <div class="stat-cell"><div class="big gilt">$${totalObs.toFixed(0)}B</div><div class="label">Combined Observable Giving</div></div>
+    <div class="stat-cell"><div class="big rust">${(globalRatio * 100).toFixed(0)}%</div><div class="label">vs. 10% benchmark</div></div>
+  </div>`;
+
+  html += `<h2>Tier Distribution</h2>
+    <div class="tier-bar">
+      ${tierCounts[0] ? `<div class="seg a" style="flex:${tierCounts[0]}">${tierCounts[0]}</div>` : ''}
+      ${tierCounts[1] ? `<div class="seg b" style="flex:${tierCounts[1]}">${tierCounts[1]}</div>` : ''}
+      ${tierCounts[2] ? `<div class="seg c" style="flex:${tierCounts[2]}">${tierCounts[2]}</div>` : ''}
+      ${tierCounts[3] ? `<div class="seg ok" style="flex:${tierCounts[3]}">${tierCounts[3]}</div>` : ''}
+    </div>
+    <div class="tier-legend">
+      <span><span class="sw a"></span>Tier A Verified Low (${tierCounts[0]})</span>
+      <span><span class="sw b"></span>Tier B Probably Low (${tierCounts[1]})</span>
+      <span><span class="sw c"></span>Tier C Opaque (${tierCounts[2]})</span>
+      <span><span class="sw ok"></span>On Track (${tierCounts[3]})</span>
+    </div>
+    <div class="callout"><strong>Reading this</strong>${globalRatio >= 1
+      ? 'Aggregate observable giving across the cohort <em>exceeds</em> the 10%-of-liquid-wealth benchmark — because On Track subjects (Buffett, Scott, Bloomberg) carry huge out-the-door totals that mask the individual gaps.'
+      : 'Aggregate observable giving <em>falls short</em> of the benchmark.'} Median subject ratio is <strong>${(medianRatio * 100).toFixed(0)}%</strong> of benchmark — the typical subject is below the norm even if the aggregate isn\'t.</div>`;
+
+  html += `<h2>Most Common Red Flags</h2>
+    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Count of subjects with each flag. Bar width = share of 51-subject cohort.</p>`;
+  for (const [flag, count] of flagSorted) {
+    const pct = (count / n) * 100;
+    html += `<div class="flag-bar">
+      <span class="label">${flag}</span>
+      <div class="track"><div class="fill" style="width:${pct}%"></div></div>
+      <span class="count">${count}</span>
+    </div>`;
+  }
+
+  html += `<h2>Biggest Dollar Gaps (Observable − Expected)</h2>
+    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Subjects whose observable giving falls furthest short of the 10%-of-liquid-wealth capacity benchmark in absolute dollars. Pure size effect — Musk dominates.</p>
+    <table class="data-table">
+      <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Benchmark</th><th class="num">Gap</th></tr></thead>
+      <tbody>`;
+  for (const b of biggestGaps) {
+    const gap = (b.expected_usd || 0) - (b.observable_usd || 0);
+    html += `<tr onclick="location.href='profile.html?id=${b.id}'" style="cursor:pointer">
+      <td><strong>${b.name_display}</strong></td>
+      <td class="num">${fmtNw(b.net_worth_best_usd_b)}</td>
+      <td class="num">${fmtUsd(b.observable_usd)}</td>
+      <td class="num">${fmtUsd(b.expected_usd)}</td>
+      <td class="num" style="color:var(--rust)">${fmtUsd(gap)}</td>
+    </tr>`;
+  }
+  html += `</tbody></table>`;
+
+  html += `<h2>Overachievers</h2>
+    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Highest ratio of observable to expected giving in the cohort. These subjects disprove the premise for themselves.</p>
+    <table class="data-table">
+      <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Ratio</th></tr></thead>
+      <tbody>`;
+  for (const b of overachievers) {
+    const r = b.ratio_observable_to_expected;
+    const rStr = r >= 1 ? r.toFixed(1) + '×' : (r * 100).toFixed(0) + '%';
+    html += `<tr onclick="location.href='profile.html?id=${b.id}'" style="cursor:pointer">
+      <td><strong>${b.name_display}</strong></td>
+      <td class="num">${fmtNw(b.net_worth_best_usd_b)}</td>
+      <td class="num">${fmtUsd(b.observable_usd)}</td>
+      <td class="num" style="color:var(--green)">${rStr}</td>
+    </tr>`;
+  }
+  html += `</tbody></table>`;
+
+  html += `<h2>Methodological Notes</h2>
+    <ul style="margin:10px 0 0 22px;color:var(--ink-soft);line-height:1.7">
+      <li><strong>US-only.</strong> Phase-2 global cohort (Hurun, ICIJ, EU registries) deferred.</li>
+      <li><strong>Observable ≠ Total.</strong> IPS/NPT/BofA research estimates observable captures 40–70% of true giving. Substantial residual through DAFs, LLCs, anonymous, religious, foreign, dynasty trusts.</li>
+      <li><strong>Net worth denominator</strong> spans 10–25% across Forbes, Bloomberg, and aggregators for concentrated private holdings. Best-estimate midpoint used; range disclosed per-subject.</li>
+      <li><strong>Tenure-weighted.</strong> Expected giving scales by min(years-as-billionaire / 10, 1) so recent billionaires (AI-boom founders) face lower denominators.</li>
+      <li><strong>Event roles resolve dedup.</strong> Pledges ≠ payments. Transfer-into-foundation ≠ grant-out. Announced gift + 990 entry = one event.</li>
+    </ul>`;
+
+  document.getElementById('content').innerHTML = html;
+}
+
+function median(arr) {
+  if (!arr.length) return 0;
+  const s = [...arr].sort((a, b) => a - b);
+  const m = Math.floor(s.length / 2);
+  return s.length % 2 === 0 ? (s[m-1] + s[m]) / 2 : s[m];
+}
+</script>
+</body>
+</html>
