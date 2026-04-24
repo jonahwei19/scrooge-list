@@ -144,6 +144,21 @@ a:hover{background:rgba(139,46,31,.08)}
 .cibar-track .tick-label{position:absolute;top:100%;margin-top:4px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-fade);transform:translateX(-50%);white-space:nowrap}
 .cibar-caption{margin-top:36px;font-size:.88rem;color:var(--ink-soft);font-style:italic;line-height:1.55}
 
+.timeline{margin:8px 0 28px;padding:20px 4px 12px;background:var(--paper-mid);border:1px solid var(--paper-shadow)}
+.timeline svg{width:100%;height:160px;display:block}
+.timeline .bar{fill:var(--rust);transition:opacity .15s}
+.timeline .bar.transfer{fill:var(--gilt)}
+.timeline .bar.pledge{fill:var(--sepia);opacity:.5}
+.timeline .bar:hover{opacity:.8}
+.timeline .axis{stroke:var(--ink-ghost);stroke-width:.5;opacity:.6}
+.timeline .yeartext,.timeline .amttext{font-family:var(--display);font-size:10px;fill:var(--ink-fade);font-variation-settings:"opsz" 9,"SOFT" 60}
+.timeline .yeartext{letter-spacing:.08em}
+.timeline-legend{display:flex;gap:18px;font-family:var(--display);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-fade);margin-top:4px;padding:0 8px}
+.timeline-legend .sw{display:inline-block;width:10px;height:10px;vertical-align:middle;margin-right:5px}
+.timeline-legend .sw.grant_out{background:var(--rust)}
+.timeline-legend .sw.transfer_in{background:var(--gilt)}
+.timeline-legend .sw.pledge{background:var(--sepia);opacity:.5}
+
 .colophon{text-align:center;padding-top:32px;margin-top:48px;border-top:2px solid var(--rule);position:relative}
 .colophon::before{content:"";display:block;position:absolute;top:3px;left:0;right:0;height:1px;background:var(--rule)}
 .col-line{font-family:var(--display);font-size:.8rem;letter-spacing:.06em;color:var(--ink-fade);margin:14px 0 4px}
@@ -309,6 +324,9 @@ function render(rec) {
     </div>`;
   }
 
+  // Per-year giving timeline (only if we have multi-year grant_out data)
+  html += renderTimeline(rec);
+
   // Detected vehicles
   html += renderVehicles(vehicles);
 
@@ -415,6 +433,88 @@ function render(rec) {
   }
 
   document.getElementById('content').innerHTML = html;
+}
+
+function renderTimeline(rec) {
+  // Bucket all cited events by year + role.
+  const events = (rec.cited_events || []).concat(rec.pledges_and_announcements || []);
+  const by = new Map();
+  for (const ev of events) {
+    let year = ev.year || (ev.date ? parseInt(String(ev.date).substring(0, 4)) : null);
+    if (!year && ev.year_range) year = ev.year_range[0];
+    if (!year || year < 1995 || year > 2030) continue;
+    const role = ev.event_role || 'other';
+    const amt = ev.amount_usd || ev.pledged_amount_usd || 0;
+    if (!amt) continue;
+    const key = year + '|' + role;
+    by.set(key, (by.get(key) || 0) + amt);
+  }
+  if (by.size < 3) return '';
+
+  const years = Array.from(new Set(Array.from(by.keys()).map(k => parseInt(k.split('|')[0])))).sort((a, b) => a - b);
+  if (years.length < 3) return '';
+
+  const yMin = years[0], yMax = years[years.length - 1];
+  const roles = ['grant_out', 'direct_gift', 'transfer_in', 'pledge', 'pledge_amendment'];
+  const yearTotals = years.map(y => {
+    const buckets = {};
+    for (const r of roles) buckets[r] = by.get(y + '|' + r) || 0;
+    return { year: y, buckets };
+  });
+  const maxAmt = Math.max(...yearTotals.map(yt => Math.max(...Object.values(yt.buckets))));
+  if (maxAmt === 0) return '';
+
+  const W = 1000, H = 160, PAD_L = 40, PAD_R = 20, PAD_T = 20, PAD_B = 28;
+  const plotW = W - PAD_L - PAD_R;
+  const plotH = H - PAD_T - PAD_B;
+  const yearCount = yMax - yMin + 1;
+  const barWidth = Math.min(28, (plotW / yearCount) * 0.8);
+  const xOf = y => PAD_L + ((y - yMin) / Math.max(1, yMax - yMin)) * plotW;
+
+  const hOf = amt => (amt / maxAmt) * plotH;
+
+  let inner = `<line class="axis" x1="${PAD_L}" y1="${H - PAD_B}" x2="${W - PAD_R}" y2="${H - PAD_B}"/>`;
+
+  // ticks every 2 years
+  for (let y = yMin; y <= yMax; y += Math.max(1, Math.floor(yearCount / 8))) {
+    const x = xOf(y);
+    inner += `<text class="yeartext" x="${x}" y="${H - PAD_B + 14}" text-anchor="middle">${y}</text>`;
+  }
+
+  // bars: stack grant_out + direct_gift as one "giving" color,
+  // transfer_in separately, pledges lighter
+  const roleClass = r => r === 'transfer_in' ? 'transfer' : (r === 'pledge' || r === 'pledge_amendment' ? 'pledge' : '');
+
+  for (const yt of yearTotals) {
+    const givingOut = (yt.buckets.grant_out || 0) + (yt.buckets.direct_gift || 0);
+    const transferIn = yt.buckets.transfer_in || 0;
+    const pledge = (yt.buckets.pledge || 0) + (yt.buckets.pledge_amendment || 0);
+    const cx = xOf(yt.year);
+    if (givingOut > 0) {
+      const h = hOf(givingOut);
+      inner += `<rect class="bar" x="${cx - barWidth / 2}" y="${H - PAD_B - h}" width="${barWidth}" height="${h}"><title>${yt.year} · ${fmtUsd(givingOut)} out</title></rect>`;
+    }
+    if (transferIn > 0) {
+      const h = hOf(transferIn);
+      const offset = givingOut > 0 ? -barWidth / 2 - 2 : 0;
+      inner += `<rect class="bar transfer" x="${cx - barWidth / 2 + offset}" y="${H - PAD_B - h}" width="${Math.max(4, barWidth / 2)}" height="${h}"><title>${yt.year} · ${fmtUsd(transferIn)} transfer in</title></rect>`;
+    }
+    if (pledge > 0 && !givingOut) {
+      const h = hOf(pledge);
+      inner += `<rect class="bar pledge" x="${cx - barWidth / 2}" y="${H - PAD_B - h}" width="${barWidth}" height="${h}"><title>${yt.year} · ${fmtUsd(pledge)} pledge</title></rect>`;
+    }
+  }
+
+  return `<h2>Giving Timeline</h2>
+    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Per-year sum of cited events. Out-the-door giving (grants, direct gifts) in rust; transfers into intermediaries in gold; pledges in faded.</p>
+    <div class="timeline">
+      <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">${inner}</svg>
+      <div class="timeline-legend">
+        <span><span class="sw grant_out"></span>Observable out</span>
+        <span><span class="sw transfer_in"></span>Transfer in</span>
+        <span><span class="sw pledge"></span>Pledge announced</span>
+      </div>
+    </div>`;
 }
 
 function renderVehicles(v) {
