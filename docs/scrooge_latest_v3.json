@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T15:12:01.346075Z",
+  "generated_at": "2026-04-24T15:21:08.924177Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
   "legal_disclaimer": "Every figure is an estimate of OBSERVABLE giving from the cited sources. Does not measure total giving. Subjects have been offered a right-of-reply; responses are published on individual profiles. Corrections welcome \u2014 see methodology page.",
   "tier_counts": {
     "A_VERIFIED_LOW": 4,
-    "B_PROBABLY_LOW": 17,
+    "B_PROBABLY_LOW": 18,
     "C_OPAQUE": 4,
     "MODERATE": 0,
-    "ON_TRACK": 17,
+    "ON_TRACK": 19,
     "UNKNOWN": 0
   },
-  "count": 42,
+  "count": 45,
   "billionaires": [
     {
       "id": "thomas_peterffy",
@@ -670,6 +670,51 @@
       "tier_rank": null
     },
     {
+      "id": "mark_cuban",
+      "name_display": "Mark Cuban",
+      "name_legal": "Mark Cuban",
+      "country": "United States",
+      "wealth_source": "Broadcast.com co-founder (sold to Yahoo! 1999 for $5.7B in stock); Dallas Mavericks owner 2000-2023 (sold 73% majority stake to Adelson/Dumont families Dec 2023 for ~$3.5B); Shark Tank investor; Mark Cuban Cost Plus Drug Company (PBC, 2022-).",
+      "years_as_billionaire_approx": 26,
+      "net_worth_best_usd_b": 6.0,
+      "net_worth_range_usd_b": [
+        5.7,
+        6.5
+      ],
+      "net_worth_as_of": "2026-03",
+      "liquidity_estimate_pct": 0.6,
+      "observable_usd": 48944705,
+      "expected_usd": 360000000,
+      "hidden_upper_usd": 150000000,
+      "ratio_observable_to_expected": 0.136,
+      "ratio_observable_to_nw": 0.00816,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Cuban is the canonical 'public-facing generous persona, light documented giving' case. Readers who follow him on Shark Tank / X would guess he gives ~$100M+/year; the 990-PF record shows MCF averaged ~$4M/year 2019-2024. The hidden upper bound plausibly reaches ~$200M cumulative \u2014 respectable but still below 1% of current net worth after 26 years as a billionaire. Rhetoric-action gap is real; the scale is smaller than Ellison's but in the same direction.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "RHETORIC_ACTION_GAP",
+        "CONCENTRATED_BENEFICIARY_ATHLETICS"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Mark Cuban Foundation",
+          "Mark Cuban Heroes Recreational Centers Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 21,
+      "event_count": 15,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "mark_cuban.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "miriam_adelson",
       "name_display": "Miriam Adelson",
       "name_legal": "Miriam Ochshorn Adelson",
@@ -1176,6 +1221,49 @@
       "tier_rank": null
     },
     {
+      "id": "david_geffen",
+      "name_display": "David Geffen",
+      "name_legal": "David Lawrence Geffen",
+      "country": "United States",
+      "wealth_source": "Entertainment industry founder \u2014 Asylum Records, Geffen Records (sold to MCA 1990 for ~$550M in shares, ~$670M from Matsushita's 1991 MCA acquisition), DGC Records, Geffen Pictures, co-founder DreamWorks SKG (1994) with Spielberg and Katzenberg. Major art collection (reported $2.3B). Substantial real estate and Warner Bros. Discovery stake.",
+      "years_as_billionaire_approx": 30,
+      "net_worth_best_usd_b": 9.3,
+      "net_worth_range_usd_b": [
+        8.0,
+        9.4
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 1246000000,
+      "expected_usd": 511500000,
+      "hidden_upper_usd": 550000000,
+      "ratio_observable_to_expected": 2.436,
+      "ratio_observable_to_nw": 0.134,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C)",
+      "tier_reasoning": "Geffen is on track on dollars-out \u2014 observable giving exceeds the 10% norm. Readers should understand the giving is heavily directed at prestige naming opportunities at wealthy institutions (UCLA, Yale, MoMA, LACMA, Lincoln Center, MSK). Impact-per-dollar is a separate question from quantity-given. The Scrooge List measures the latter; the PATTERN flags surface the former for reader judgment.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NAMING_RIGHTS_DOMINANT",
+        "GEOGRAPHIC_CONCENTRATION"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "The David Geffen Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 25,
+      "event_count": 19,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "david_geffen.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "david_rubenstein",
       "name_display": "David Rubenstein",
       "name_legal": "David Mark Rubenstein",
@@ -1383,6 +1471,50 @@
       "event_count": 22,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "leon_cooperman.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "leonard_lauder",
+      "name_display": "Leonard Lauder",
+      "name_legal": "Leonard Alan Lauder",
+      "country": "United States",
+      "wealth_source": "The Est\u00e9e Lauder Companies \u2014 eldest son of Est\u00e9e and Joseph H. Lauder; president 1972-1995, CEO 1982-1999, Chairman Emeritus thereafter. Primary asset: Est\u00e9e Lauder Cos. (EL) stock via family holdings; Lauder family controls multi-class voting shares.",
+      "years_as_billionaire_approx": 30,
+      "net_worth_best_usd_b": 9.7,
+      "net_worth_range_usd_b": [
+        9.7,
+        15.6
+      ],
+      "net_worth_as_of": "2025-06 (at time of death)",
+      "liquidity_estimate_pct": 0.3,
+      "observable_usd": 1463496902,
+      "expected_usd": 291000000,
+      "hidden_upper_usd": 2650000000,
+      "ratio_observable_to_expected": 5.03,
+      "ratio_observable_to_nw": 0.151,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C \u2014 verified meaningful giving)",
+      "tier_reasoning": "Leonard Lauder is the canonical example of 'art-heavy lifetime giving that appears ON-TRACK even though the headline number depends on a single appraisal-based non-cash gift.' Readers should see his $1.1B Met Cubist collection as an IMPORTANT but CONTINGENT piece of the observable total \u2014 a stricter valuation approach would materially shift the ratio.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NON_CASH_VALUATION_UNCERTAINTY",
+        "FAMILY_GIFT_ATTRIBUTION_AMBIGUITY",
+        "FOUNDATION_UNDER_RESOURCED_RELATIVE_TO_WEALTH"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Lauder Foundation Inc"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 21,
+      "event_count": 15,
+      "right_of_reply_status": "not_applicable_posthumous",
+      "_source_file": "leonard_lauder.v3.json",
       "tier_rank": null
     },
     {

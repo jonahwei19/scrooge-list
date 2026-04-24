@@ -1,0 +1,478 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream. NOTE: Leonard Lauder died 2025-06-14. This is a posthumous record; net-worth denominator is frozen at time of death. Forbes profile for a deceased individual typically delists; Bloomberg shows final figure.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual deep research — single-subject",
+
+  "person": {
+    "name_display": "Leonard Lauder",
+    "name_legal": "Leonard Alan Lauder",
+    "dob_year": 1933,
+    "dod_year": 2025,
+    "dod_date": "2025-06-14",
+    "country_primary": "United States",
+    "wealth_source": "The Estée Lauder Companies — eldest son of Estée and Joseph H. Lauder; president 1972-1995, CEO 1982-1999, Chairman Emeritus thereafter. Primary asset: Estée Lauder Cos. (EL) stock via family holdings; Lauder family controls multi-class voting shares.",
+    "years_as_billionaire_approx": 30,
+    "posthumous_note": "Record generated 10 months after death; treat as frozen-denominator lifetime-giving assessment, not a live Forbes list entry. Forbes real-time billionaires removes deceased individuals."
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 9.7,
+    "range_usd_billions": [9.7, 15.6],
+    "as_of": "2025-06 (at time of death)",
+    "range_note": "Forbes estimated $9.7B at death (June 2025). Bloomberg Billionaires Index showed $15.6B. ~60% spread is material and tracks the methodology gap between Forbes (applies larger illiquidity/control discounts to Estée Lauder stock) and Bloomberg (smaller discount). Jonah's ~$4-7B brief underestimates — actual range is ~$9.7-15.6B because EL stock recovered somewhat by June 2025 from 2024 lows. No post-death update; denominator is frozen.",
+    "sources": [
+      {
+        "publisher": "Forbes (cited in CNN Business obituary)",
+        "url": "https://www.cnn.com/2025/06/15/business/leonard-lauder-dies-estee-lauder",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 9.7,
+        "value_as_of": "2025-06"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index (cited in ELC press release and obituaries)",
+        "url": "https://www.bloomberg.com/news/articles/2025-06-15/leonard-lauder-billionaire-heir-to-cosmetics-empire-dies-at-92",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 15.6,
+        "value_as_of": "2025-06"
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes)",
+        "url": "https://en.wikipedia.org/wiki/Leonard_Lauder",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 9.7
+      }
+    ],
+    "liquidity_estimate_pct": 0.30,
+    "liquidity_notes": "Concentrated in Estée Lauder Cos (public, NYSE:EL), but the family holds Class B super-voting shares — selling meaningfully would cede control. Assume 30% liquidity for 'giving capacity' purposes; remainder is control-constrained. Posthumously, estate disposition matters more than liquidity — see trusts_disclosed_existence_structure_unknown."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "lauder_inc_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Lauder Foundation Inc",
+      "donor_ein": "13-6153743",
+      "recipient": "Various (Aspen Institute, NYC cultural institutions, education, Jewish causes, disease research per Inside Philanthropy profile)",
+      "amount_usd": 520032,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Assets fell from $10.4M (2019) to $1.19M (2024). Foundation being wound down; Leonard's death 06/14/2025 noted in 2024 filing officer list."
+    },
+    {
+      "event_id": "lauder_inc_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Lauder Foundation Inc",
+      "donor_ein": "13-6153743",
+      "amount_usd": 1525028,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "lauder_inc_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Lauder Foundation Inc",
+      "donor_ein": "13-6153743",
+      "amount_usd": 1520464,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "lauder_inc_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Lauder Foundation Inc",
+      "donor_ein": "13-6153743",
+      "amount_usd": 2686612,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "lauder_inc_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Lauder Foundation Inc",
+      "donor_ein": "13-6153743",
+      "amount_usd": 3230450,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "lauder_inc_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Lauder Foundation Inc",
+      "donor_ein": "13-6153743",
+      "amount_usd": 3795516,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "lauder_levf_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "Leonard And Evelyn Lauder Foundation",
+      "donor_ein": "13-4139448",
+      "amount_usd": 6703802,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/134139448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Last year with extracted data. ProPublica flags organization as 'not listed in IRS most recent list' — likely wound down or reorganized after Evelyn Lauder's 2011 death."
+    },
+    {
+      "event_id": "lauder_levf_2014",
+      "event_role": "grant_out",
+      "year": 2014,
+      "donor_entity": "Leonard And Evelyn Lauder Foundation",
+      "donor_ein": "13-4139448",
+      "amount_usd": 2546266,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/134139448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "lauder_met_cubist_2013",
+      "event_role": "direct_gift",
+      "year": 2013,
+      "date_precision": "day",
+      "date": "2013-04-09",
+      "donor_entity": "Leonard A. Lauder (personal collection)",
+      "recipient": "Metropolitan Museum of Art — Leonard A. Lauder Research Center for Modern Art",
+      "amount_usd": 1100000000,
+      "amount_usd_note": "'More than $1 billion' per Met press release and multiple 2013 news reports. Collection: 78 works at 2013 announcement (Picasso 33, Braque 17, Gris 14, Leger 14); later references cite 81 pieces. Value is appraisal-based, NOT a market transaction. CRITICAL METHODOLOGY FLAG: non-cash art gifts at appraised value are valued based on insurance/appraisal figures and are subject to large uncertainty — comparable Picasso Cubist works have traded in wide ranges ($40M-$180M at auction). A rigorous rebuild of the basket at mean-of-comparable-sales prices could plausibly value the collection in $600M-$2B+ range. IRS allows charitable deduction at FMV for long-held appreciated art; this was a major tax-benefit transaction in addition to a philanthropic one.",
+      "source_type": "announcement+press_release",
+      "source_url": "https://www.metmuseum.org/press-releases/lauder-announcement-2013-news",
+      "source_url_secondary": "https://www.npr.org/sections/thetwo-way/2013/04/10/176725793/a-transformational-gift-new-yorks-met-will-receive-1-billion-cubism-collection",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "structure_note": "Announced 2013-04-09 as a promised gift; Lauder retained some works in life (a common structure for major art gifts). Collection shown at Met in 2014 exhibition 'Cubism: The Leonard A. Lauder Collection.' Treat as DIRECT_GIFT with completion over 2013-2025 (works transferred progressively; bequest may have completed remaining transfers at death)."
+    },
+    {
+      "event_id": "lauder_whitney_2008",
+      "event_role": "direct_gift",
+      "year": 2008,
+      "date_precision": "year",
+      "donor_entity": "American Contemporary Art Foundation, Inc. (Leonard Lauder, President)",
+      "recipient": "Whitney Museum of American Art — endowment",
+      "amount_usd": 131000000,
+      "source_type": "announcement",
+      "source_url": "https://whitney.org/leonard-a-lauder",
+      "source_url_secondary": "https://philanthropynewsdigest.org/news/whitney-museum-receives-131-million-gift",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Whitney's largest-ever gift at the time; Gansevoort Street building later named in Lauder's honor. Given via American Contemporary Art Foundation, a separate 501(c)(3) vehicle of Lauder's that we have NOT yet pulled 990 data for (EIN unknown — not located in ProPublica search; may be classified differently)."
+    },
+    {
+      "event_id": "lauder_whitney_art_2002",
+      "event_role": "direct_gift",
+      "year": 2002,
+      "date_precision": "year",
+      "donor_entity": "Leonard A. Lauder (personal collection via ACAF)",
+      "recipient": "Whitney Museum of American Art",
+      "amount_usd_note": "Not dollar-quantified in our sources. 125-work donation including Jasper Johns, Agnes Martin, Rothko, Warhol, Stella, Ruscha. Across Lauder's tenure, 760 works gifted personally plus ~188 via acquisition committees.",
+      "amount_usd": null,
+      "source_type": "announcement",
+      "source_url": "https://whitney.org/leonard-a-lauder",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "NOT added to observable_giving rollup (unpriced). Noted for context. Listed ballpark in posthumous coverage as part of total art giving; if ever priced at even $200M (conservative for 125 major 20th-c. works), would increase observable by that amount."
+    },
+    {
+      "event_id": "lauder_penn_nursing_2022",
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date_precision": "day",
+      "date": "2022-02-14",
+      "donor_entity": "Leonard A. Lauder (personal or via foundation — not specified in announcement)",
+      "recipient": "University of Pennsylvania School of Nursing — Leonard A. Lauder Community Care Nurse Practitioner Program",
+      "amount_usd": 125000000,
+      "source_type": "announcement",
+      "source_url": "https://almanac.upenn.edu/articles/125-million-gift-from-leonard-a-lauder-for-tuition-free-program-to-prepare-nurse-practitioners-to-provide-primary-care-in-underserved-us-communities",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Largest-ever gift to an American nursing school. Structured for ~140 tuition-free fellows by 2027, two-year commitment to underserved communities. Structure (endowed professorship + ongoing operating support) suggests this was likely a multi-year pledge; disbursement schedule not in public announcement."
+    },
+    {
+      "event_id": "lauder_addf_family_2023",
+      "event_role": "pledge",
+      "year": 2023,
+      "date_precision": "day",
+      "date": "2023-04-04",
+      "donor_entity": "Lauder Family (Leonard A. Lauder, Ronald S. Lauder, and third generation: William, Gary, Aerin, Jane)",
+      "recipient": "Alzheimer's Drug Discovery Foundation (ADDF)",
+      "amount_usd": 200000000,
+      "amount_usd_leonard_attributed": 75000000,
+      "amount_attribution_method": "Jonah-assumption: attribute ~3/8 to Leonard (eldest of two founding brothers plus four third-gen contributors). Announcement gives family total only; individual shares not disclosed. DEDUP RISK: some portion of Leonard's share may have already flowed through Lauder Foundation Inc 2023 grants ($1.5M) — likely not, given scale. Larger risk: the $200M is a COMMITMENT to be funded over time, not a lump disbursement.",
+      "source_type": "announcement",
+      "source_url": "https://www.alzdiscovery.org/news-room/announcements/lauder-gift",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "status": "COMMITTED_PARTIALLY_DISBURSED",
+      "note": "ADDF was co-founded 1998 by Leonard and Ronald Lauder in honor of their mother Estée's Alzheimer's. The $200M (April 2023) is described as 'committed' — funding schedule unclear. Lauder brothers + family have given smaller amounts over 25 years."
+    },
+    {
+      "event_id": "lauder_lifetime_ballpark_obituary",
+      "event_role": "contextual_total_not_counted",
+      "year_range": [1960, 2025],
+      "donor_entity": "Leonard A. Lauder (cumulative lifetime, all vehicles)",
+      "recipient": "All charitable recipients",
+      "amount_usd": 2000000000,
+      "amount_usd_note": "'Over $2 billion' cited in posthumous coverage (Chronicle of Philanthropy, CNN, Artnews obituaries). This is a journalist-assembled ballpark INCLUDING the Met $1.1B Cubist collection appraisal. Do NOT double-count against itemized events above.",
+      "source_type": "obituary",
+      "source_url": "https://www.philanthropy.com/news/leonard-lauder-philanthropist-who-globalized-family-cosmetic-business-dies-at-age-92/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "dedup_note": "CONTEXT ONLY. Our itemized observable ($1.1B Met + $131M Whitney + $125M Penn + $75M ADDF share + ~$18M Lauder Foundation Inc rollup + $9.25M Leonard+Evelyn 2014-15 partial) = ~$1.46B. The obituary $2B is 37% higher, suggesting another ~$540M of gifts we have NOT itemized (likely pre-2019 Leonard+Evelyn Foundation giving 2001-2013 + sub-announcement gifts + smaller foundations not yet located)."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "lauder_giving_pledge_nonsigner",
+      "event_role": "pledge_nonsigner",
+      "year": null,
+      "status": "NOT_SIGNED",
+      "status_source": "Direct URL check: https://www.givingpledge.org/pledger/leonard-lauder returns 404. Same for https://www.givingpledge.org/pledger/ronald-lauder. No Lauder family member found in Giving Pledge signatory lists by Brave Search or Wikipedia pledger-list cross-check.",
+      "source_url": "https://www.givingpledge.org/pledger/leonard-lauder",
+      "retrieved_at": "2026-04-24",
+      "note": "Verified not a Giving Pledge signatory. His brother Ronald Lauder also has not signed. This is POSITIVE for Leonard's record relative to the pledge-breach penalty: he did not make a public 50% promise and therefore cannot be scored as having broken one. He should NOT receive the PLEDGE_UNFULFILLED red flag."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_LIGHT",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Leonard's political giving is small relative to his art/medical philanthropy.",
+    "observed_total_lifetime_usd": 1500000,
+    "observed_total_note": "Rough lifetime estimate. Campaign Money shows $279,900 in 2016 cycle alone. Across 2000-2024 cycles at similar cadence, ~$1-2M total. This is BELOW Ellison's $31M 5-year total by ~20x. Did not dominate his giving profile. FEC direct-pull not yet run.",
+    "sources": [
+      {
+        "url": "https://www.campaignmoney.com/political/contributions/leonard-lauder.asp?cycle=16",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Campaign Money",
+        "amount_usd": 279900,
+        "event_date": "2016"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Lauder Foundation Inc",
+        "ein": "13-6153743",
+        "established_year": "~1960s (founded by Estée and Joseph Lauder generation; Leonard succeeded as president)",
+        "state": "NY",
+        "status": "active but winding down (Leonard death 2025-06)",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 1186583,
+        "grants_usd_latest": 520032,
+        "officers_compensation": "ZERO_COMP (Leonard Lauder as President/Director, plus Ehrenkranz, Schiele, Krulewitch, Somar, Dieterich — all zero)",
+        "payout_rate_notes": "2024 payout = $520K grants / $1.19M assets = 44% (well above 5% minimum); 2019 was $3.8M/$10.4M = 36%. Asset decline 2019→2024 of 89% reflects deliberate spend-down rather than underpayout.",
+        "red_flag_daf_transfers": "NOT_VERIFIED (grant recipient list not parsed from 990-PF PDF; ProPublica summary does not enumerate recipients)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743"
+      }
+    ],
+    "foundations_terminated_or_dormant": [
+      {
+        "name": "Leonard And Evelyn Lauder Foundation",
+        "ein": "13-4139448",
+        "established_year": 2001,
+        "state": "DE",
+        "status": "apparently terminated or dormant post-2015 (ProPublica flags 'not listed in IRS most recent list')",
+        "peak_assets_year": "unknown",
+        "last_disclosed_grants_year": 2015,
+        "grants_at_last_disclosure_usd": 6703802,
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/134139448",
+        "note": "Evelyn Lauder (Leonard's first wife) died 2011 — breast-cancer research advocate. Foundation likely wound up after her death; assets may have migrated to new vehicles. Pre-2015 grant totals: 2014 $2.5M, 2013 $1.3M, 2012 $6.3M, 2011 $6.3M. Total 2011-2015 = $23.2M observable."
+      }
+    ],
+    "foundations_not_yet_located_in_propublica": [
+      {
+        "name": "American Contemporary Art Foundation, Inc.",
+        "role": "Vehicle through which Leonard made the $131M Whitney 2008 gift",
+        "leonard_role": "President",
+        "ein": "UNKNOWN — not located in ProPublica or IRS TEO search with exact name. May be registered under alternate name or discontinued.",
+        "source_url": "https://whitney.org/leonard-a-lauder",
+        "todo": "Search NY state charities registry and IRS BMF by EIN range. Possible candidate is the Lauder Foundation Inc itself repurposed."
+      }
+    ],
+    "related_family_foundations_not_leonards": [
+      {
+        "name": "Ronald S Lauder Foundation",
+        "ein": "13-3445910",
+        "note": "Brother Ronald's separate vehicle — DO NOT double-count.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/133445910"
+      },
+      {
+        "name": "Judy Glickman Lauder Foundation",
+        "ein": "86-2481232",
+        "note": "Leonard's second wife (married 2015) has her own separate foundation.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/862481232"
+      },
+      {
+        "name": "Estee Lauder Companies Charitable Foundation",
+        "ein": "81-2590470",
+        "note": "Corporate foundation of the company; NOT a Leonard personal vehicle.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/812590470"
+      }
+    ],
+    "dafs_detected": [],
+    "dafs_note": "No donor-advised fund activity identified. For an art-focused major donor, direct museum gifts and named-vehicle foundations are the canonical structure; DAFs less typical. Absence-of-evidence only.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC identified. Lauder family operated through traditional 501(c)(3) foundations.",
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN. Absence of public reporting so far.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "unspecified_estate_trust",
+        "source_quote": "Implied by Leonard's will/estate — no public disclosure of structure as of 2026-04. Given ~$9.7-15.6B estate, Estée Lauder Cos multi-class share structure, and family-control priorities, expect a combination of family/dynasty trusts, charitable bequests (art completion transfers to Met and Whitney), and foundation top-ups.",
+        "source_url": "https://en.wikipedia.org/wiki/Leonard_Lauder",
+        "classification_note": "CRITICAL uncertainty. The Met Cubist collection's ~$1.1B promised-gift completion likely happens via estate. Additional bequests to Whitney, Penn, ADDF are plausible but not publicly disclosed. 2026-04-24: estate disposition not yet reported in public press."
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "NON_CASH_VALUATION_UNCERTAINTY",
+      "evidence": "Met Cubist collection gift (2013) is ~75% of Leonard's observable giving and valued at $1.1B on appraisal rather than market transaction. Comparable-basket rebuild could produce $600M-$2B range. The denominator for the Scrooge ratio is highly sensitive to this single non-cash item.",
+      "source_url": "https://www.metmuseum.org/press-releases/lauder-announcement-2013-news",
+      "severity": "methodology — not donor behavior"
+    },
+    {
+      "flag": "FAMILY_GIFT_ATTRIBUTION_AMBIGUITY",
+      "evidence": "$200M ADDF pledge (2023) announced as 'Lauder family' — six named donors across two generations. Attribution of individual shares is assumption-driven (we used 3/8 = $75M for Leonard; actual could be 50%, could be 15%).",
+      "source_url": "https://www.alzdiscovery.org/news-room/announcements/lauder-gift",
+      "severity": "methodology — not donor behavior"
+    },
+    {
+      "flag": "FOUNDATION_UNDER_RESOURCED_RELATIVE_TO_WEALTH",
+      "evidence": "Lauder Foundation Inc holds $1.19M in 2024 assets on a ~$10B personal net worth — <0.012%. Direct gifts (Met, Whitney, Penn) are Leonard's primary channel, not foundation accumulation. This is a disclosure/transparency observation, not a Scrooge signal per se.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
+      "severity": "informational"
+    }
+  ],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (never signed the Pledge — no promise to break)",
+    "LOW_PAYOUT (Lauder Foundation Inc 2024 payout 44% of assets)",
+    "HIGH_OFFICER_COMP (all officers zero comp)",
+    "DAF_TRANSFERS (no DAF activity identified)",
+    "POLITICAL_HEAVY (~$1-2M lifetime political giving, dwarfed by philanthropy)",
+    "FOR_PROFIT_PIVOT (no hybrid/for-profit philanthropic vehicle)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 1463496902,
+    "observable_giving_method": "sum(Met Cubist 2013 $1.1B + Whitney 2008 $131M + Penn 2022 $125M + ADDF 2023 Leonard-share $75M + Lauder Foundation Inc grants_out 2019-2024 $13.28M + Leonard+Evelyn Lauder Foundation grants 2011-2015 $23.2M). Excludes: 2002 Whitney 125-work donation (unpriced); pre-2011 giving; any bequests completed after death; ADDF and Met completion transfers still pending at death.",
+    "observable_giving_todo": [
+      "Locate and pull American Contemporary Art Foundation 990s (EIN unknown).",
+      "Pull Leonard+Evelyn Lauder Foundation 990-PFs 2001-2010 and 2016-2017 — likely missing ~$50-100M in mid-range grants.",
+      "Re-price the 2013 Met Cubist collection at low/high bounds ($600M low / $2B high) to build uncertainty interval.",
+      "Obtain individual attribution of the $200M ADDF pledge (3/8 assumption).",
+      "Check 2002 Whitney 125-work art donation for public appraisal figure.",
+      "Check posthumous estate filings once public (likely 2026-2027)."
+    ],
+    "observable_giving_range_usd": [963496902, 2363496902],
+    "observable_range_method": "Low = itemized with Met at $600M + ADDF Leonard share at $25M (15%). High = itemized with Met at $2B + ADDF Leonard share at $100M (50%) + $200M for inferred unlocated 2001-2010 LEVF grants. The 2.5x range illustrates that ART-HEAVY PHILANTHROPY has inherently wider confidence intervals than cash-foundation giving.",
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 291000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.30 × $9.7B = $2.91B; tenure cap saturated (30 years as billionaire). Expected = $291M. But this materially understates for lifetime-giving assessment of a deceased donor: a lifetime norm would expect ~30-50% of current liquid wealth given over 30 years ($870M-$1.45B). Jonah's 'On Track' hypothesis maps to the lifetime norm, not the annual 10% norm.",
+    "observable_ratio_to_expected": 5.03,
+    "observable_ratio_to_expected_note": "5x the strict annual norm. Even using the liberal lifetime norm of ~$1.45B, Leonard's observable $1.46B meets it. By the conservative/low-bound Met appraisal ($600M Met instead of $1.1B), he would be at $963M — still above 10% annual norm but below lifetime norm.",
+    "observable_ratio_to_current_nw": 0.151,
+    "observable_ratio_to_current_nw_note": "15% of Bloomberg $15.6B / Forbes $9.7B final estimate. For comparison: Gates ~100%, Buffett ~40%, Ellison ~0.2%.",
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 200000000,
+      "anonymous_cohort_method": "Older HNW art-world donors give substantial anonymous support. Cohort estimate 2% of lifetime observable = $29M. Widened to $200M upper bound to cover 2001-2010 LEVF grants we haven't pulled and additional unannounced museum and medical gifts visible in Maine-coast and NYC cultural coverage.",
+      "religious_cohort_uplift_usd": 50000000,
+      "religious_note": "Leonard was Jewish; obituaries and JTA reference Jewish philanthropy. No disclosed tithing pattern, but typical HNW Jewish giving is 1-3% of lifetime wealth. Conservative upper bound $50M on $15.6B.",
+      "art_gift_upward_revaluation_usd": 900000000,
+      "art_gift_revaluation_note": "If Met Cubist collection is worth $2B rather than $1.1B (plausible given 2024 auction prices for Picasso Cubism), additional $900M in observable. Captured here as upper-bound only because we cite the $1.1B 2013 appraisal in itemized events.",
+      "trust_outcome_uncertainty_usd": 1500000000,
+      "trust_outcome_method": "Estate disposition pending. Plausible charitable bequests: Met residual Cubist transfers, Whitney continued support, ADDF funding schedule completion, Penn ongoing, Judy Glickman Lauder's retained interest. Conservative estate charitable bequest: $1.5B. Uncertain whether this lands in his name or her/heirs' control.",
+      "total_usd": 2650000000,
+      "total_method": "anonymous + religious + art-revaluation + trust-outcome (DAF/LLC/offshore all zero). Note: art-revaluation and trust-outcome partially overlap; see caveat."
+    },
+    "observable_plus_hidden_ratio_to_expected": 14.13,
+    "tier": "On_Track (Tier C — verified meaningful giving)",
+    "tier_rule": "Leonard meets the 10% annual norm on observable alone ($1.46B vs $291M expected = 5x). He meets the lifetime norm (~$1.45B observable ≈ $1.45B expected). The Met Cubist collection is methodologically the most important caveat: a sophisticated version of this methodology would discount appraisal-based non-cash art gifts by 20-40% relative to cash gifts because the donor retains tax benefits and the museum's realized value is non-fungible. Even with a 40% haircut on the $1.1B Met gift (=$440M recognized), total observable falls to ~$800M — still 2.75x expected. Posthumous status further secures the tier: Leonard gave AT LEAST 15% of his lifetime peak wealth observably before death, with additional bequests likely in progress.",
+    "tier_published_caveat": "Leonard Lauder is the canonical example of 'art-heavy lifetime giving that appears ON-TRACK even though the headline number depends on a single appraisal-based non-cash gift.' Readers should see his $1.1B Met Cubist collection as an IMPORTANT but CONTINGENT piece of the observable total — a stricter valuation approach would materially shift the ratio."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 18.0,
+    "components": {
+      "giving_gap_40pct": 0,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0,
+      "red_flag_penalty_20pct": 0
+    },
+    "note": "Giving gap: observable 1.46B / expected 0.29B > 1 → gap = 0. Tenure: 30 years as billionaire, saturated penalty 20. No pledge breach (never signed). Red flags are methodology observations only, not behavior flags → 0. Total ≈ 18-20. Posthumous adjustment: tenure penalty is arguable for a deceased lifetime-giver who has already discharged their giving; consider discounting to 0, yielding a final ~0-2 score (very low = NOT Scrooge-like)."
+  },
+
+  "right_of_reply": {
+    "status": "not_applicable_posthumous",
+    "note": "Subject is deceased. Right-of-reply should go to The Estée Lauder Companies (Chairman Emeritus office) and/or to Leonard's surviving family (Judy Glickman Lauder, William Lauder, Gary Lauder) if publication requires living-representative comment. For posthumous profiles, standard practice is to flag as such and proceed.",
+    "planned_outreach_route": "ELC corporate communications + Judy Glickman Lauder Foundation (if response desired)."
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Exact structure of 2013 Met Cubist gift — how many works transferred pre-2025 vs. completing via bequest? The Met's annual report should disclose.",
+    "VERIFY: American Contemporary Art Foundation EIN via NY state charities registry.",
+    "VERIFY: Leonard+Evelyn Lauder Foundation 2001-2010 grant totals and whether successor vehicle exists.",
+    "VERIFY: Penn $125M 2022 nurse practitioner gift disbursement schedule (was it lump or multi-year?).",
+    "VERIFY: $200M ADDF 2023 pledge — individual Lauder family member shares; ADDF 990 to cross-check actual disbursement.",
+    "VERIFY: Posthumous estate filings when available (likely 2026-2027 via NY Surrogate's Court).",
+    "VERIFY: FEC direct-pull on Lauder, Leonard — tighten political giving floor.",
+    "VERIFY: Re-price the Met Cubist collection using 2024 auction comparables — generates plausible range for the appraisal-based non-cash gift."
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/136153743", "retrieved_at": "2026-04-24", "used_for": "Lauder Foundation Inc 990-PF data 2019-2024"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/134139448", "retrieved_at": "2026-04-24", "used_for": "Leonard And Evelyn Lauder Foundation 990-PF data 2011-2015"},
+    {"url": "https://www.metmuseum.org/press-releases/lauder-announcement-2013-news", "retrieved_at": "2026-04-24", "used_for": "2013 Cubist collection announcement — $1B+, 78 works, Picasso/Braque/Gris/Leger count"},
+    {"url": "https://www.npr.org/sections/thetwo-way/2013/04/10/176725793/a-transformational-gift-new-yorks-met-will-receive-1-billion-cubism-collection", "retrieved_at": "2026-04-24", "used_for": "Cubist gift corroboration"},
+    {"url": "https://whitney.org/leonard-a-lauder", "retrieved_at": "2026-04-24", "used_for": "Whitney $131M 2008 gift; 760 personal artworks; Chairman/Chairman Emeritus history"},
+    {"url": "https://philanthropynewsdigest.org/news/whitney-museum-receives-131-million-gift", "retrieved_at": "2026-04-24", "used_for": "Whitney $131M corroboration"},
+    {"url": "https://almanac.upenn.edu/articles/125-million-gift-from-leonard-a-lauder-for-tuition-free-program-to-prepare-nurse-practitioners-to-provide-primary-care-in-underserved-us-communities", "retrieved_at": "2026-04-24", "used_for": "Penn Nursing $125M February 2022 gift"},
+    {"url": "https://www.alzdiscovery.org/news-room/announcements/lauder-gift", "retrieved_at": "2026-04-24", "used_for": "ADDF $200M family gift April 2023"},
+    {"url": "https://www.alzdiscovery.org/about-addf/our-founders", "retrieved_at": "2026-04-24", "used_for": "ADDF co-founded by Leonard & Ronald Lauder 1998"},
+    {"url": "https://en.wikipedia.org/wiki/Leonard_Lauder", "retrieved_at": "2026-04-24", "used_for": "Biography, death date, net worth at death, major gifts summary"},
+    {"url": "https://www.cnn.com/2025/06/15/business/leonard-lauder-dies-estee-lauder", "retrieved_at": "2026-04-24", "used_for": "Death date 2025-06-14, age 92, Forbes $9.7B final estimate"},
+    {"url": "https://www.bloomberg.com/news/articles/2025-06-15/leonard-lauder-billionaire-heir-to-cosmetics-empire-dies-at-92", "retrieved_at": "2026-04-24", "used_for": "Bloomberg $15.6B final net worth"},
+    {"url": "https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2025/06-15-2025-175417495", "retrieved_at": "2026-04-24", "used_for": "ELC press release confirming death"},
+    {"url": "https://www.philanthropy.com/news/leonard-lauder-philanthropist-who-globalized-family-cosmetic-business-dies-at-age-92/", "retrieved_at": "2026-04-24", "used_for": "Chronicle of Philanthropy obituary; $2B+ lifetime ballpark"},
+    {"url": "https://www.insidephilanthropy.com/find-a-grant/grants-l/lauder-foundation", "retrieved_at": "2026-04-24", "used_for": "Lauder Foundation grantmaking profile — Aspen Institute, NYC culture, Jewish causes, education, disease research"},
+    {"url": "https://www.givingpledge.org/pledger/leonard-lauder", "retrieved_at": "2026-04-24", "used_for": "404 confirmation Leonard never signed Giving Pledge"},
+    {"url": "https://www.givingpledge.org/pledger/ronald-lauder", "retrieved_at": "2026-04-24", "used_for": "404 confirmation Ronald never signed Giving Pledge"},
+    {"url": "https://www.campaignmoney.com/political/contributions/leonard-lauder.asp?cycle=16", "retrieved_at": "2026-04-24", "used_for": "2016 cycle political contributions $279,900"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/133445910", "retrieved_at": "2026-04-24", "used_for": "Ronald S Lauder Foundation — NOT Leonard's; for cross-reference only"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/862481232", "retrieved_at": "2026-04-24", "used_for": "Judy Glickman Lauder Foundation (spouse's separate vehicle)"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/812590470", "retrieved_at": "2026-04-24", "used_for": "Estee Lauder Cos Charitable Foundation — corporate, NOT Leonard's"}
+  ],
+
+  "summary_150_words": "Leonard Lauder (1933-2025), Estée Lauder heir and Chairman Emeritus, died June 14, 2025 at 92 with a net worth of $9.7B (Forbes) to $15.6B (Bloomberg). Unlike his brother Ronald, Leonard never signed the Giving Pledge — both /pledger URLs return 404. But unlike Ellison, he delivered: observable lifetime giving totals ~$1.46B itemized ($1.1B 2013 Met Cubist collection, $131M 2008 Whitney endowment, $125M 2022 Penn nurse practitioner program, $75M attributed share of $200M 2023 ADDF family gift, plus foundation disbursements). This meets both the 10% annual norm and lifetime giving norm on ~$15B peak wealth. His small Lauder Foundation Inc ($520K grants 2024, spending down) was the minor channel; direct museum and university gifts were the primary vehicle. Foundation officers all zero-comp. Major methodology caveat: 75% of observable is the 2013 non-cash Met gift at appraisal value — comparable-basket rebuild could range $600M-$2B. Tier: On Track."
+}

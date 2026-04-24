@@ -1,0 +1,513 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification downstream.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual research run — Mark Cuban single-subject deep research",
+
+  "person": {
+    "name_display": "Mark Cuban",
+    "name_legal": "Mark Cuban",
+    "dob_year": 1958,
+    "country_primary": "United States",
+    "wealth_source": "Broadcast.com co-founder (sold to Yahoo! 1999 for $5.7B in stock); Dallas Mavericks owner 2000-2023 (sold 73% majority stake to Adelson/Dumont families Dec 2023 for ~$3.5B); Shark Tank investor; Mark Cuban Cost Plus Drug Company (PBC, 2022-).",
+    "years_as_billionaire_approx": 26
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 6.0,
+    "range_usd_billions": [5.7, 6.5],
+    "as_of": "2026-03",
+    "range_note": "Forbes 2026 profile ~$6B (rank ~663). Several secondary sources cite $6.0B–$6.5B. Notably flat vs. pre-Mavericks-sale era — the $3.5B December 2023 Mavericks sale largely converted illiquid team equity to liquid assets rather than growing the total. Cuban disclosed a $275.9M tax bill 'last year' (likely 2024), consistent with the Mavericks-sale capital-gain year.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires",
+        "url": "https://www.forbes.com/profile/mark-cuban/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 6.0,
+        "rank_on_list": 663
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes Jan 2026)",
+        "url": "https://en.wikipedia.org/wiki/Mark_Cuban",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 6.0
+      },
+      {
+        "publisher": "Parade (citing 2026 figures)",
+        "url": "https://parade.com/celebrities/mark-cuban-net-worth",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 6.0
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/mark-cuban/",
+        "retrieved_at": "2026-04-24"
+      }
+    ],
+    "liquidity_estimate_pct": 0.60,
+    "liquidity_notes": "Cuban's wealth is UNUSUALLY LIQUID for a self-made billionaire. He famously collared/hedged his Yahoo! stock in 2000 before the dot-com crash and converted to diversified cash/securities. The December 2023 Mavericks sale converted another ~$2.5B of illiquid sports-franchise equity into cash (he retained a ~27% minority stake, further sellable). Cost Plus Drugs is private but modest-scale. Shark Tank portfolio (~$250M equity claim) is illiquid. Apply 0.60 liquidity factor — much higher than the 0.25 Ellison default — for 'giving capacity now' calculations."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "cuban_mcf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban Foundation",
+      "donor_ein": "26-0063142",
+      "recipient": "Various (ProPublica summary does not itemize)",
+      "amount_usd": 3400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cuban_mcf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Mark Cuban Foundation",
+      "donor_ein": "26-0063142",
+      "amount_usd": 2500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cuban_mcf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Mark Cuban Foundation",
+      "donor_ein": "26-0063142",
+      "amount_usd": 2600000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cuban_mcf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Mark Cuban Foundation",
+      "donor_ein": "26-0063142",
+      "amount_usd": 5600000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cuban_mcf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Mark Cuban Foundation",
+      "donor_ein": "26-0063142",
+      "amount_usd": 7100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cuban_mcf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Mark Cuban Foundation",
+      "donor_ein": "26-0063142",
+      "amount_usd": 5100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cuban_mcf_2011_2018_cumulative",
+      "event_role": "grant_out",
+      "year_range": [2011, 2018],
+      "donor_entity": "Mark Cuban Foundation",
+      "donor_ein": "26-0063142",
+      "amount_usd": 11050000,
+      "amount_usd_components": {
+        "2018": 5800000,
+        "2017": 1500000,
+        "2016": 1400000,
+        "2015": 1300000,
+        "2014": 659000,
+        "2013": 126000,
+        "2012": 111000,
+        "2011": 90000
+      },
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "MCF grants-out 2011-2018 aggregated from ProPublica year-by-year financial summary. Pre-2011 data not retrieved (foundation tax-exempt since April 2003; 2003-2010 period is a TODO)."
+    },
+    {
+      "event_id": "cuban_heroes_rec_2022_2024",
+      "event_role": "grant_out",
+      "year_range": [2022, 2024],
+      "donor_entity": "Mark Cuban Heroes Recreational Centers Foundation",
+      "donor_ein": "87-2356979",
+      "amount_usd": 44705,
+      "amount_usd_components": {
+        "2024": 2761,
+        "2023": 23849,
+        "2022": 18095
+      },
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/872356979",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Small operational recreational-center foundation (separate EIN from main MCF). Tax-exempt since March 2023. Operates Heroes Basketball center in Southern Dallas (remodeled former YWCA). Immaterial dollar amount but included for completeness."
+    },
+    {
+      "event_id": "cuban_iu_media_tech_2015",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date_precision": "month",
+      "date": "2015-06",
+      "donor_entity": "Mark Cuban (personal — source does not specify MCF pass-through)",
+      "recipient": "Indiana University Bloomington — Mark Cuban Center for Sports Media and Technology (inside Assembly Hall)",
+      "amount_usd": 5000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "NOT YET verified whether paid through MCF 2015 990-PF (2015 MCF grants_out only $1.3M, suggesting this gift was personal/direct — likely additive, not double-counted). Flag for future verification."
+    },
+    {
+      "event_id": "cuban_iu_rugby_2024",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "donor_entity": "Mark Cuban (personal)",
+      "recipient": "Indiana University rugby program",
+      "amount_usd": 6000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "MCF 2024 grants_out total $3.4M; $6M rugby gift exceeds that and is directly tied to Indiana athletics (a non-501c3 university athletic program may receive gifts through university foundation — still classifies as charitable). Treat as additive direct_gift. CAVEAT: athletic/NIL-adjacent giving sits in a gray zone — some analysts would exclude this from 'public benefit' philanthropy."
+    },
+    {
+      "event_id": "cuban_iu_athletics_2025",
+      "event_role": "direct_gift",
+      "year": 2025,
+      "donor_entity": "Mark Cuban (personal)",
+      "recipient": "Indiana University athletics / NIL funding",
+      "amount_usd": null,
+      "amount_usd_note": "Disclosed as 'large' but specific amount undisclosed in press. Not included in observable rollup until quantified.",
+      "source_type": "news",
+      "source_url": "https://www.cnbc.com/2026/01/18/mark-cuban-indiana-football-donor-how-to-build-successful-teams.html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "classification_note": "NIL-directed giving is contested as 'philanthropy.' NCAA NIL collectives are often 501(c)(3) pass-throughs to athletes; IRS revoked exempt status for several such collectives in 2023. If amount later disclosed, re-evaluate classification."
+    },
+    {
+      "event_id": "cuban_eff_2012",
+      "event_role": "direct_gift",
+      "year": 2012,
+      "date_precision": "day",
+      "date": "2012-12-19",
+      "donor_entity": "Mark Cuban (personal)",
+      "recipient": "Electronic Frontier Foundation — 'Mark Cuban Chair to Eliminate Stupid Patents' (Julie Samuels)",
+      "amount_usd": 250000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "cuban_fallen_patriot_2003_match",
+      "event_role": "transfer_in",
+      "year": 2003,
+      "donor_entity": "Mark Cuban (personal)",
+      "recipient": "Fallen Patriot Fund (program of Mark Cuban Foundation)",
+      "amount_usd": 1000000,
+      "amount_usd_note": "Cuban personally matched the first $1M of outside contributions. This is a transfer INTO MCF program — do NOT double-count against MCF grants-out.",
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Per dedup rule #2, this transfer_in is NOT counted in observable rollup. Fallen Patriot Fund disbursements flow through MCF 990-PF grants-out (already captured in cuban_mcf_* events). Total FPF cumulative disbursements reported as '$5M+' by press but already inside MCF's $37M cumulative grants-out since 2003."
+    },
+    {
+      "event_id": "cuban_delonte_west_2020",
+      "event_role": "direct_gift",
+      "year": 2020,
+      "donor_entity": "Mark Cuban (personal)",
+      "recipient": "Delonte West (individual — rehabilitation/hotel costs)",
+      "amount_usd": null,
+      "amount_usd_note": "Amount undisclosed; widely reported as personal gesture. Charitable classification unclear (gift to individual, not 501c3). Excluded from observable rollup.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low"
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "cuban_gp_not_signed",
+      "event_role": "pledge",
+      "status": "NOT_SIGNED",
+      "status_source": "Direct verification against givingpledge.org/pledgers (name not present) + CNBC Nov 2022 reporting of billionaires who haven't signed + no mention in any Cuban press coverage 2010-2026.",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "corroborating_source_url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html",
+      "notes": "Cuban has NEVER signed the Giving Pledge despite (a) 26 years as a billionaire, (b) frequent public commentary on wealth/taxes, and (c) extensive media platform (Shark Tank, podcasts, X). This is a notable absence — many lower-profile billionaires have signed. Cuban has not publicly explained the non-signature. Inside Philanthropy notes he 'has not signed the Giving Pledge or indicated how much of his fortune he will eventually give to philanthropy.'"
+    }
+  ],
+
+  "cost_plus_drugs_context": {
+    "event_role": "impact_mission_for_profit_NOT_philanthropy",
+    "entity_name": "Mark Cuban Cost Plus Drug Company (MCCPDC)",
+    "entity_type": "Public Benefit Corporation (PBC), for-profit",
+    "founded": 2022,
+    "classification_note": "MCCPDC is a for-profit public benefit corporation charging a transparent 15% markup + $5 pharmacy fee on generic drugs. It is NOT philanthropy under Forbes/Chronicle/IPS methodology — no 501(c)(3) designation, no charitable tax deduction, no grants. Estimated consumer savings ($661.8M potential on 7 oncology drugs per a JAMA study; 50-90% on generic spend) accrue to patients, not as Cuban's charitable giving.",
+    "sources": [
+      {
+        "url": "https://www.markcubancostplusdrugcompany.com/",
+        "retrieved_at": "2026-04-24",
+        "used_for": "Company identity, PBC structure, 15% markup model"
+      },
+      {
+        "url": "https://www.statnews.com/2024/07/29/mark-cuban-cost-plus-drug-company-bigger-impact-drug-shortages-not-drug-costs/",
+        "retrieved_at": "2026-04-24",
+        "used_for": "Impact assessment — more impact on shortages than costs"
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37290029/",
+        "retrieved_at": "2026-04-24",
+        "used_for": "Projected savings $661.8M (78.8%) on 7 generic oncology drugs vs Medicare"
+      }
+    ],
+    "methodology_note": "Included here for context and to preempt readers who will argue 'Cuban's real contribution is Cost Plus Drugs.' Scrooge methodology excludes for-profit impact ventures by design — same treatment as Ellison Institute of Technology. The argument that impact ventures should count is intellectually serious but would require re-scoring every billionaire's for-profit operations (Amazon's 'consumer surplus,' Tesla's 'EV transition,' etc.) — a different report."
+  },
+
+  "political_giving": {
+    "classification": "POLITICAL_LIGHT",
+    "substitution_note": "NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. For Cuban the displacement is near-zero because his direct political giving is minimal.",
+    "observed_total_1996_2025_usd": 7000,
+    "observed_total_note": "Per OpenSecrets: Cuban's last candidate contribution was $1,000 to Rep. Zoe Lofgren (D-CA) in 2002; $6,000 to Sen. Orrin Hatch (R-UT) in 1996. Cumulative FEC-disclosed direct-candidate giving is under $10K — negligible for a billionaire. Cuban publicly stated during the 2024 cycle that he did not donate 'a penny' to Kamala Harris or Harris-aligned super-PACs despite publicly campaigning for her. This is unusual — most billionaire endorsers also write checks.",
+    "2024_cycle_note": "Cuban campaigned publicly for Harris and signed the 'VCsforKamala' pledge (Sept 2024) but Newsweek (Oct 2024) reports he confirmed no cash contribution to the Harris campaign or affiliated PACs. Zero verified 2024-cycle FEC entries under his name as of retrieval.",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=mark+cuban",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "used_for": "Historical FEC direct-candidate giving totals"
+      },
+      {
+        "url": "https://www.newsweek.com/mark-cuban-denies-donating-kamala-harris-campaign-1961822",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Newsweek",
+        "used_for": "2024 non-donation statement"
+      },
+      {
+        "url": "https://www.geekwire.com/2024/mark-cuban-reid-hoffman-vinod-khosla-sign-vcsforkamala-pledge-started-by-seattle-investor/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "GeekWire",
+        "used_for": "VCsforKamala endorsement (pledge — not money)"
+      }
+    ],
+    "tax_advocacy_quotes": [
+      {
+        "quote_paraphrased": "Paying taxes is 'the most Patriotic thing you can do.' Asked whether billionaires should be taxed more rather than cut government jobs — answered 'Yes.' Paid $275.9M to the IRS 'last year' and called himself 'Proud' to have done so.",
+        "source_url": "https://finance.yahoo.com/news/mark-cuban-proud-pay-275-233043781.html",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Yahoo Finance"
+      },
+      {
+        "quote_paraphrased": "Support for a 'windfall tax' / 'billionaire's tax' on individuals earning $1B+ in taxable income in a single year; framed a proposed semiconductor-royalty tax as 'what [AOC, Sanders, Warren] should have' proposed.",
+        "source_url": "https://x.com/mcuban/status/1954997897478672710",
+        "retrieved_at": "2026-04-24",
+        "publisher": "X (Cuban personal account)"
+      },
+      {
+        "quote_paraphrased": "Critical of Elizabeth Warren's wealth tax specifically (argues it would force forced asset sales), but explicitly supportive of higher federal income tax rates on billionaires.",
+        "source_url": "https://www.cnbc.com/2019/11/11/mark-cuban-says-sen-warrens-policies-divert-attention-from-reality.html",
+        "retrieved_at": "2026-04-24",
+        "publisher": "CNBC"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Mark Cuban Foundation",
+        "ein": "26-0063142",
+        "established_year": 2003,
+        "state": "TX (Dallas)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 15800000,
+        "assets_usd_peak": 27500000,
+        "assets_peak_year": 2013,
+        "assets_trend_note": "MCF peaked at $27.5M in 2013, then steadily DECLINED to $3.4M in 2022 as Cuban drew down assets to fund disbursements without large new contributions. Contributions received reversed in 2023 ($5.3M) and 2024 ($10.6M), likely tied to Mavericks-sale liquidity event. Pattern: foundation runs net-negative for a decade, then recapitalized after the 2023 liquidity event.",
+        "officers_compensation": "ZERO_COMP (all officers — Mark Cuban, Alexis Cuban, Charles McKinney, Robert Hart, Dawn Knox — receive $0 across all years)",
+        "payout_rate_notes": "2020 payout 66% of assets (extraordinary); 2021 payout 95% (near full drawdown); 2022 payout 76%; 2023-2024 payout dropped to 38% / 22% as contributions rebuilt assets. Average 2019-2024 payout well above 5% legal minimum; no LOW_PAYOUT flag.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED (ProPublica summary does not itemize recipients; would require pulling full 990-PF PDFs for Schedule of Grants Paid).",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142"
+      },
+      {
+        "name": "Mark Cuban Heroes Recreational Centers Foundation",
+        "ein": "87-2356979",
+        "established_year": 2021,
+        "tax_exempt_since": "2023-03",
+        "state": "TX (Dallas)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 4417,
+        "officers_compensation": "ZERO_COMP (officers: Mark Cuban, Alexis Cuban, Charles McKinney, Robert Hart, Dawn Knox — same cluster as MCF)",
+        "operational_role_note": "Separate 501(c)(3) operating the Mark Cuban Heroes Basketball center in Southern Dallas (remodeled former YWCA). Pass-through scale — aggregate grants-out 2022-2024 under $50K. Effectively an operational program, not a grant-making vehicle.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/872356979"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified in public records. Cuban's MCF is a private foundation, not a DAF sponsor. Absence-of-evidence only — cannot rule out personal DAF accounts which are donor-opaque by design.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC identified. Mark Cuban Companies is his for-profit holding structure; MCCPDC (Cost Plus Drugs) is a for-profit PBC, not a philanthropic LLC.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "Mark Cuban Cost Plus Drug Company (MCCPDC)",
+        "classification": "FOR_PROFIT_PBC_IMPACT_MISSION",
+        "year_established": 2022,
+        "state": "TX (Dallas)",
+        "source_url": "https://www.markcubancostplusdrugcompany.com/",
+        "methodology_note": "Public Benefit Corporation with transparent 15% markup on generic drugs. Estimated consumer savings are substantial but accrue to patients, not counted as Cuban's charitable giving. Excluded from observable rollup — see cost_plus_drugs_context section."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. No public reporting of offshore structures under Cuban's name.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "Unlike Ellison, Cuban has not publicly disclosed placing his assets in a trust with charitable intent. No pledge letter exists (no Giving Pledge). Estate structure not publicly known."
+  },
+
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Cuban — a 26-year billionaire with one of the largest public platforms of any member of the Forbes 400 (Shark Tank, podcasts, active X presence, 2024 presidential-campaign-trail appearances) — has never signed the Giving Pledge. For a figure this visible with this much runway, non-signature is a conspicuous data point. Inside Philanthropy: 'has not signed the Giving Pledge or indicated how much of his fortune he will eventually give to philanthropy.'",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "corroborating_source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/mark-cuban"
+    },
+    {
+      "flag": "RHETORIC_ACTION_GAP",
+      "evidence": "Cuban publicly advocates for higher taxes on billionaires (supports windfall / $1B+-income tax, called paying taxes 'the most Patriotic thing you can do,' answered 'Yes' when asked if billionaires should be taxed more) yet has not made any reciprocal voluntary commitment — no Giving Pledge, no large multi-year pledge, no announced charitable trust. Observable lifetime giving (~$49M) is ~0.8% of current net worth after 26 years as a billionaire. The rhetorical stance is unusually pro-redistribution for a billionaire; the observable behavior is not.",
+      "source_url": "https://finance.yahoo.com/news/mark-cuban-proud-pay-275-233043781.html",
+      "note": "This is the core interesting case. Rhetoric suggests high generosity priors; behavior ranks below median for documented billionaire giving. Readers will argue both directions; flag makes the tension legible."
+    },
+    {
+      "flag": "CONCENTRATED_BENEFICIARY_ATHLETICS",
+      "evidence": "A disproportionate share of Cuban's largest public direct gifts go to Indiana University athletics: $5M Center for Sports Media (2015), $6M rugby (2024), undisclosed large 2025 athletics/NIL gift. Sports-program giving is charitable under IRS rules but occupies a contested zone — some analysts exclude athletic/NIL giving from 'public benefit' philanthropy. Outside IU athletics, Cuban's direct gifts of $1M+ are sparse (EFF $250K, Delonte West undisclosed-small).",
+      "source_url": "https://www.cnbc.com/2026/01/18/mark-cuban-indiana-football-donor-how-to-build-successful-teams.html"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (MCF aggregate 2019-2024 payout well above 5% minimum; 2020-2022 payouts were exceptional at 66-95%)",
+    "HIGH_OFFICER_COMP (all MCF + Heroes Rec officers take zero compensation)",
+    "POLITICAL_DOMINATES_CHARITABLE (direct political giving is <$10K cumulative; near-zero)",
+    "PLEDGE_UNFULFILLED (Cuban never signed, so cannot be 'unfulfilled' in the IPS sense — but see NO_GIVING_PLEDGE_SIGNATURE)",
+    "DAF_TRANSFERS (not yet verified — ProPublica summary fields do not expose recipient list)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 48944705,
+    "observable_giving_method": "sum(MCF 990-PF grants_out 2011-2024 = $37.35M) + Heroes Rec grants_out 2022-2024 ($45K) + IU Media/Tech 2015 ($5M direct, not yet deduped vs MCF 2015 $1.3M) + IU Rugby 2024 ($6M direct) + EFF 2012 ($250K direct) + Fallen Patriot $1M personal match (EXCLUDED as transfer_in) + IU Athletics 2025 (EXCLUDED, amount undisclosed) + Delonte West (EXCLUDED, to individual not 501c3). Pre-2011 MCF data not yet retrieved — foundation operated 2003-2010, likely immaterial given $27M peak assets not reached until 2013.",
+    "observable_giving_todo": [
+      "Pull MCF 990-PF full PDFs for 2003-2010 to close the early-era gap (likely adds <$5M given asset trajectory).",
+      "Verify whether IU 2015 $5M Media/Tech gift flowed through MCF (dedup-reduce observable) or was personal (already additive as coded).",
+      "Quantify IU 2025 athletics/NIL gift when disclosed in press or IU Foundation 990.",
+      "Pull MCF grant-recipient schedules to check for DAF transfers and run DAF_TRANSFERS red flag definitively.",
+      "Check SEC EDGAR for Cuban Form 4 G-transactions — unlikely to find much since Cuban divested Yahoo! stock in 2000 and holdings are now diversified.",
+      "Run ICIJ Offshore Leaks name match (Phase 2)."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 360000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1). liquid_wealth = 0.60 × $6.0B = $3.6B. Tenure 26 years — cap saturated. Expected = 0.10 × $3.6B = $360M. Note: Cuban's high liquidity factor (0.60 vs Ellison 0.25) means his 10%-norm denominator is larger per dollar of net worth than concentrated-equity billionaires.",
+    "observable_ratio_to_expected": 0.136,
+    "observable_ratio_to_current_nw": 0.00816,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 50000000,
+      "daf_uplift_note": "No DAF evidence in public records, but Cuban is explicit that he 'prefers to keep donations private' (per Advice Scout / Dallas Morning News 2020 coverage showing Mavericks-organization-channeled giving to 100+ orgs not captured in MCF 990s). Apply cohort uplift: 0.3% of net worth × 0.60 liquidity × 4x 'private giver' amplifier = $43M, round to $50M.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Cost Plus Drugs is for-profit and excluded by methodology. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 100000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of HNW donors give anonymously at least sometimes. Cuban is a self-described private giver with documented evidence of off-foundation philanthropy (Mavericks-org 100+ orgs in 2020, Delonte West personal aid, misc press-reported small gifts). Apply 1.5% of liquid wealth = 0.015 × $3.6B = $54M; widen to $100M as an upper bound because Mavericks-sale 2024 was a liquidity event with press hints of increased giving and MCF 2024 $10.6M contributions-received suggests additional giving likely flowed through other channels too.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Cuban publicly identifies as Jewish but is not notably religious and has not disclosed tithing-pattern giving to religious institutions. Zero uplift.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_note": "Cuban has not publicly disclosed any charitable trust structure. No uplift on this axis (unlike Ellison who discloses a trust with charitable intent). Absence of disclosure is itself a data point — see NO_GIVING_PLEDGE_SIGNATURE flag.",
+      "total_usd": 150000000,
+      "total_method": "daf + anonymous (llc/offshore/religious/trust all zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.553,
+    "tier": "Probably_Low (Tier B)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Cuban fails this: $49M + $150M = $199M hidden-inclusive vs. $360M expected = 55%. Above the Tier A cutoff. However, below the Tier C 'Verified Adequate' threshold of 1.0. Classification: Tier B Probably Low — observable giving is materially below the 10%-of-liquid norm (14% of expected) even with generous hidden-channel uplift, but the gap is not extreme enough to be Tier A 'Verified Low' at the confidence the evidence warrants.",
+    "tier_published_caveat": "Cuban is the canonical 'public-facing generous persona, light documented giving' case. Readers who follow him on Shark Tank / X would guess he gives ~$100M+/year; the 990-PF record shows MCF averaged ~$4M/year 2019-2024. The hidden upper bound plausibly reaches ~$200M cumulative — respectable but still below 1% of current net worth after 26 years as a billionaire. Rhetoric-action gap is real; the scale is smaller than Ellison's but in the same direction."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 72.3,
+    "components": {
+      "giving_gap_40pct": 34.5,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 17.8
+    },
+    "note": "Lower than Ellison (97.95) because: (a) no Giving Pledge signed means no pledge-breach penalty (0 vs 20), (b) red-flag penalty capped at ~3 flags worth. Giving-gap penalty still high because observable ratio is 13.6% of expected. DO NOT PUBLISH — tiers only."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Mark Cuban Companies (press@markcubancompanies.com-style contact), Mark Cuban Foundation (Dallas), and @mcuban on X for visibility. Cuban is unusually accessible — historically responds to press/DMs directly.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: MCF 990-PF full PDFs for 2003-2010 (tax-exempt since 2003; ProPublica financial summary starts 2011).",
+    "VERIFY: MCF 2015 990-PF recipient schedule — did the $5M IU Media/Tech gift flow through MCF or was it personal? Currently coded as additive; may be double-count.",
+    "VERIFY: MCF 2019-2024 grant recipient schedules — run DAF_TRANSFERS red flag definitively (currently 'not yet verified').",
+    "VERIFY: IU 2025 athletics/NIL gift amount (press says 'large,' not quantified).",
+    "VERIFY: Mavericks-organization 100+ org giving reported by Dallas Morning News 2020 — is this captured in MCF 990s or separate corporate giving from the franchise itself (pre-sale Cuban entity)?",
+    "VERIFY: SEC Form 4 G-transactions for Cuban's CIK — low expected yield.",
+    "VERIFY: FEC bulk-data pull to confirm OpenSecrets <$10K direct political total.",
+    "VERIFY: ICIJ Offshore Leaks name match (Phase 2).",
+    "VERIFY: Post-2024 announced gifts via Brave Search (1-year freshness)."
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/260063142", "retrieved_at": "2026-04-24", "used_for": "Mark Cuban Foundation 990-PF data 2011-2024, assets, officers"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/872356979", "retrieved_at": "2026-04-24", "used_for": "Mark Cuban Heroes Recreational Centers Foundation 990-PF data 2022-2024"},
+    {"url": "https://www.givingpledge.org/pledgers", "retrieved_at": "2026-04-24", "used_for": "Verification that Cuban is NOT a Giving Pledge signer"},
+    {"url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html", "retrieved_at": "2026-04-24", "used_for": "Corroboration that Cuban has not signed"},
+    {"url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/mark-cuban", "retrieved_at": "2026-04-24", "used_for": "Inside Philanthropy profile — 'has not signed the Giving Pledge or indicated how much of his fortune he will eventually give'"},
+    {"url": "https://www.forbes.com/profile/mark-cuban/", "retrieved_at": "2026-04-24", "used_for": "Current 2026 net worth ($6B) and Forbes rank (~663)"},
+    {"url": "https://en.wikipedia.org/wiki/Mark_Cuban", "retrieved_at": "2026-04-24", "used_for": "Net worth corroboration, Broadcast.com sale, Mavericks sale, IU gifts, EFF gift, Fallen Patriot Fund, career background"},
+    {"url": "https://fortune.com/2023/12/27/dallas-mavericks-sold-mark-cuban-adelson-nba/", "retrieved_at": "2026-04-24", "used_for": "Mavericks 2023 sale terms — $3.5B for 73% stake to Adelson/Dumont"},
+    {"url": "https://www.markcubancostplusdrugcompany.com/", "retrieved_at": "2026-04-24", "used_for": "Cost Plus Drugs — PBC identity, 15% markup model"},
+    {"url": "https://www.statnews.com/2024/07/29/mark-cuban-cost-plus-drug-company-bigger-impact-drug-shortages-not-drug-costs/", "retrieved_at": "2026-04-24", "used_for": "Cost Plus Drugs impact context"},
+    {"url": "https://pubmed.ncbi.nlm.nih.gov/37290029/", "retrieved_at": "2026-04-24", "used_for": "Projected $661.8M savings on 7 generic oncology drugs (Cost Plus)"},
+    {"url": "https://www.opensecrets.org/donor-lookup/results?name=mark+cuban", "retrieved_at": "2026-04-24", "used_for": "Cuban's FEC-disclosed direct-candidate giving: $1K to Lofgren 2002, $6K to Hatch 1996"},
+    {"url": "https://www.newsweek.com/mark-cuban-denies-donating-kamala-harris-campaign-1961822", "retrieved_at": "2026-04-24", "used_for": "2024 non-donation to Harris campaign / PACs"},
+    {"url": "https://www.geekwire.com/2024/mark-cuban-reid-hoffman-vinod-khosla-sign-vcsforkamala-pledge-started-by-seattle-investor/", "retrieved_at": "2026-04-24", "used_for": "2024 VCsforKamala endorsement (public support — not dollars)"},
+    {"url": "https://finance.yahoo.com/news/mark-cuban-proud-pay-275-233043781.html", "retrieved_at": "2026-04-24", "used_for": "Cuban's $275.9M tax bill; 'Yes' to taxing billionaires more; 'Proud' to pay"},
+    {"url": "https://x.com/mcuban/status/1954997897478672710", "retrieved_at": "2026-04-24", "used_for": "Cuban's billionaire-tax / semiconductor-royalty stance aligning with Sanders/Warren/AOC frame"},
+    {"url": "https://www.cnbc.com/2019/11/11/mark-cuban-says-sen-warrens-policies-divert-attention-from-reality.html", "retrieved_at": "2026-04-24", "used_for": "Cuban's opposition to Warren wealth tax (specifically) while supporting higher income-tax rates"},
+    {"url": "https://www.cnbc.com/2026/01/18/mark-cuban-indiana-football-donor-how-to-build-successful-teams.html", "retrieved_at": "2026-04-24", "used_for": "2025 Indiana athletics / NIL funding (amount undisclosed)"},
+    {"url": "https://www.markcubanheroescenter.org/the-genesis", "retrieved_at": "2026-04-24", "used_for": "Heroes Basketball center origins — remodeled YWCA"},
+    {"url": "https://parade.com/celebrities/mark-cuban-net-worth", "retrieved_at": "2026-04-24", "used_for": "Net worth corroboration 2026"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/mark-cuban/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg Billionaires Index corroboration"}
+  ],
+
+  "summary_150_words": "Mark Cuban (b. 1958; $6B, Forbes 2026) is the canonical case of public-facing generous persona with light documented giving. Observable lifetime charity through the Mark Cuban Foundation (EIN 26-0063142, est. 2003) totals ~$37.3M grants-out 2011-2024 — averaging $4M/year. Add direct gifts (Indiana University: $5M 2015, $6M 2024; EFF $250K 2012) and the Heroes Recreational Centers Foundation (~$45K), and observable giving reaches ~$49M — about 0.8% of current net worth after 26 years as a billionaire, or 14% of the 10%-of-liquid-wealth norm. Cuban has NOT signed the Giving Pledge, unusual given his public platform. His Cost Plus Drugs (for-profit PBC) delivers real consumer savings but does not count as charity. Direct political giving is negligible (~$7K lifetime per OpenSecrets). Rhetoric-action gap is the defining feature: publicly supports higher billionaire taxes, has made no reciprocal voluntary commitment. Tier B Probably Low."
+}
