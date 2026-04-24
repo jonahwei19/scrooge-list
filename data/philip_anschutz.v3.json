@@ -1,0 +1,482 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record matching Ellison v3 schema. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Tier classification downstream.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual single-subject deep research — Philip Anschutz",
+
+  "person": {
+    "name_display": "Philip Anschutz",
+    "name_legal": "Philip Frederick Anschutz",
+    "dob_year": 1939,
+    "dob_date": "1939-12-28",
+    "country_primary": "United States",
+    "wealth_source": "Oil & gas (Anschutz Ranch field, sold interest to Mobil 1982 for $500M); Union Pacific/Southern Pacific railroad stakes; The Anschutz Corporation (private holdco) — AEG (Anschutz Entertainment Group, owns Coachella/LA Kings/LA Galaxy/O2 Arena), Clarity Media (Washington Examiner), Regal Entertainment, Xanterra Parks & Resorts, Walden Media",
+    "years_as_billionaire_approx": 44
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 17.0,
+    "range_usd_billions": [16.9, 24.8],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2025 Forbes 400: $16.9B (rank 122 global, #1 in Colorado). Bloomberg Billionaires Index: ~$24.8B (early 2026). usapersonality reports ~$19.4B Forbes 2026. Spread primarily reflects private-company valuation uncertainty — Anschutz Corp is wholly private and AEG valuation is contested. Forbes is conservative; Bloomberg includes higher implied valuations of AEG, Regal, and real estate. Using Forbes as canonical best_estimate for consistency with other Scrooge subjects.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires",
+        "url": "https://www.forbes.com/profile/philip-anschutz/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 16.9,
+        "rank_note": "Forbes 400 2025 — richest Coloradan, rank ~122 global"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/philip-f-anschutz/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 24.8
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes)",
+        "url": "https://en.wikipedia.org/wiki/Philip_Anschutz",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 16.9,
+        "value_as_of": "2025-05"
+      },
+      {
+        "publisher": "Axios Denver (Forbes 2025)",
+        "url": "https://www.axios.com/local/denver/2025/04/16/colorado-billionaires-forbes-ranking-wealthiest",
+        "retrieved_at": "2026-04-24"
+      }
+    ],
+    "liquidity_estimate_pct": 0.15,
+    "liquidity_notes": "Extremely illiquid. The Anschutz Corporation is 100% private — no public float. AEG is private (contested $8-12B value). Regal private. Clarity Media private. Xanterra private. Only visible liquid holding is a ~6% Union Pacific stake (public) which is the historical wealth concentration. Apply 15% liquidity discount — lower than Ellison's 25% because Anschutz has no Oracle-equivalent public stock majority. Lifetime expected-giving denominator may use 50-60% as private holdings could be sold/transferred at estate."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "anschutz_tf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Anschutz Foundation",
+      "donor_ein": "74-2316617",
+      "recipient": "Various (ProPublica summary does not disclose recipients by name)",
+      "amount_usd": 73000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_tf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Anschutz Foundation",
+      "donor_ein": "74-2316617",
+      "amount_usd": 73500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_tf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Anschutz Foundation",
+      "donor_ein": "74-2316617",
+      "amount_usd": 82100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_tf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Anschutz Foundation",
+      "donor_ein": "74-2316617",
+      "amount_usd": 71400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_tf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Anschutz Foundation",
+      "donor_ein": "74-2316617",
+      "amount_usd": 62400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_tf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Anschutz Foundation",
+      "donor_ein": "74-2316617",
+      "amount_usd": 58200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_aff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Anschutz Family Foundation",
+      "donor_ein": "74-2132676",
+      "recipient": "305 Colorado nonprofits — small grants $5K-$10K, rural-focus",
+      "amount_usd": 3421476,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Anschutz Family Foundation is a separate, smaller entity run by family (including Sue Anschutz-Rodgers) with Colorado rural focus. Distinct from The Anschutz Foundation."
+    },
+    {
+      "event_id": "anschutz_aff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Anschutz Family Foundation",
+      "donor_ein": "74-2132676",
+      "amount_usd": 3113205,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_aff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Anschutz Family Foundation",
+      "donor_ein": "74-2132676",
+      "amount_usd": 3148686,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_aff_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Anschutz Family Foundation",
+      "donor_ein": "74-2132676",
+      "amount_usd": 3229496,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_aff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Anschutz Family Foundation",
+      "donor_ein": "74-2132676",
+      "amount_usd": 2990441,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_aff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Anschutz Family Foundation",
+      "donor_ein": "74-2132676",
+      "amount_usd": 2930026,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "anschutz_cu_2018",
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date_precision": "month",
+      "date": "2018-10",
+      "donor_entity": "The Anschutz Foundation + Philip Anschutz personal",
+      "recipient": "University of Colorado Anschutz Medical Campus",
+      "amount_usd": 120000000,
+      "source_type": "announcement",
+      "source_url": "https://news.cuanschutz.edu/news-stories/120-million-gift-from-the-anschutz-foundation-fuels-research-and-innovation",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This gift is ATTRIBUTED in press release to 'The Anschutz Foundation and its founder and chair, Philip Anschutz.' If paid through EIN 74-2316617, it is already inside anschutz_tf_2018 (not yet pulled) grants_out total and MUST NOT be double-counted. Pre-2019 foundation 990-PFs show ~$52M/yr baseline grants — a $120M one-time gift is consistent with the 2018 grant total being elevated. Flag for verification."
+    },
+    {
+      "event_id": "anschutz_cu_cumulative_2000_2018",
+      "event_role": "direct_gift",
+      "year_range": [2000, 2018],
+      "donor_entity": "The Anschutz Foundation + Philip Anschutz personal",
+      "recipient": "University of Colorado Anschutz Medical Campus (cumulative)",
+      "amount_usd": 300000000,
+      "amount_usd_note": "Press release: 'This gift brings The Anschutz Foundation's total investment in the University of Colorado Anschutz Medical Campus to nearly $300 million since 2000' (includes 2006 $91M naming gift + 2018 $120M + intermediate gifts).",
+      "source_type": "announcement",
+      "source_url": "https://news.cuanschutz.edu/news-stories/120-million-gift-from-the-anschutz-foundation-fuels-research-and-innovation",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "CRITICAL: This cumulative figure overlaps with The Anschutz Foundation's grants_out 2000-2018 (not yet pulled into this file). If we pull pre-2019 990-PFs, we MUST subtract CU gifts from this event to avoid double-counting. For current 2019-2024 window, this event is historical context only and NOT added to observable rollup."
+    },
+    {
+      "event_id": "anschutz_cu_2006_naming",
+      "event_role": "direct_gift",
+      "year": 2006,
+      "donor_entity": "The Anschutz Foundation",
+      "recipient": "University of Colorado — Aurora campus naming rights",
+      "amount_usd": 91000000,
+      "amount_usd_note": "Series of gifts totaling 'more than $91M' by Anschutz Foundation in recognition of which UC Aurora campus was renamed Anschutz Medical Campus.",
+      "source_type": "announcement",
+      "source_url": "https://www.newswise.com/articles/university-gift-spurs-naming-of-the-anschutz-medical-campus",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Same as anschutz_cu_cumulative_2000_2018 — captured inside pre-2019 Anschutz Foundation grants_out. Do not double-count."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "anschutz_gp_status",
+      "event_role": "pledge_absence",
+      "status": "NOT_SIGNED",
+      "verified_at": "2026-04-24",
+      "source_url": "https://www.givingpledge.org/signatories",
+      "verification_method": "Manual check of givingpledge.org signatory list — Philip Anschutz does NOT appear. No press record of a pledge signing exists in 2010-2026 window. Anschutz is notoriously privacy-focused; the absence is consistent with his public posture.",
+      "notes": "CRITICAL for methodology: Anschutz is NOT a Giving Pledge signatory. He cannot be flagged as GIVING_PLEDGE_UNFULFILLED. Absence of pledge means there is no explicit self-declared target to measure against; he is measured only against the 10% liquid-wealth norm."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2021_2025_usd": 6500000,
+    "observed_total_note": "Rough floor from press sources: 2024 cycle ~$1.9M personal; The Anschutz Corporation (corporate) added $500K to SLF (2023) + $500K SLF (2024) + $375K combined CLF (2023-2024) + $250K SLF April 2025 + $125K RGA April 2025. Personal + corporate combined 2021-2025 conservatively $6.5M. 1989-2022 lifetime figure from OpenSecrets: $5M+ (combined Philip + Nancy Anschutz). Aggregate lifetime political giving likely $15-25M+ across both Philip and the corporate entity. Anschutz is one of the top GOP individual-corporate donors in Colorado.",
+    "notable_pattern": "Anschutz pointedly did NOT fund Trump in 2024 — 100% of 2024 political spending went to congressional Republican leadership (Senate Leadership Fund, Congressional Leadership Fund, John Cornyn, John Thune, Kevin McCarthy). Indicates establishment-Republican donor, not MAGA.",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/news/2022/04/billionaire-coachella-owner-pours-money-into-political-contributions-boosting-republicans/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "amount_usd": 5000000,
+        "cumulative_since": "1989",
+        "note": "Combined Philip + Nancy Anschutz state and federal political contributions $5M+ since 1989; $3.7M+ since 2016"
+      },
+      {
+        "url": "https://www.opensecrets.org/orgs/anschutz-corp/summary?id=D000000589",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "note": "Anschutz Corp lifetime PAC/super-PAC totals"
+      },
+      {
+        "url": "https://www.billboard.com/pro/2024-election-donations-live-nation-aeg-bosses-compared-2020/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Billboard",
+        "amount_usd": 1900000,
+        "event_date": "2024",
+        "note": "2024 cycle: 200+ donations totaling $1.9M to right-leaning groups, bulk to Senate GOP leadership. Did NOT support Trump."
+      },
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=Philip+Anschutz&order=desc&sort=A",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets Donor Lookup"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Anschutz Foundation",
+        "ein": "74-2316617",
+        "established_year": 1984,
+        "state": "CO",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 1860000000,
+        "officers_compensation": "Executive Director compensation $357K-$442K/yr (Ted E. Harms 2021-2023, David Ryan 2024). Philip Anschutz himself appears with zero compensation as chair. 2019-2020 had all officers at $0; 2021+ show paid staff ED. NOT a red flag at this scale — ED comp <1% of grants paid.",
+        "payout_rate_notes": "2024: grants $73M / assets $1.86B = 3.9% — BELOW the 5% legal minimum for private foundations. 2023: $73.5M / $1.56B = 4.7%. 2022: $82.1M / $1.48B = 5.5%. 2021: $71.4M / $1.70B = 4.2%. Several recent years below 5% threshold; foundation likely uses averaging rule to stay compliant. Flag LOW_PAYOUT_YEARS: 2024, 2023, 2021.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED — would require parsing full grants recipient list. Foundation is known to support Christian values / education / human services in Colorado. DAF pass-through is not historically associated but unverified.",
+        "focus_areas": "Education, traditional family values, underprivileged assistance, health & wellness, youth development, quality of life — Colorado-heavy",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617"
+      },
+      {
+        "name": "Anschutz Family Foundation",
+        "ein": "74-2132676",
+        "established_year": 1981,
+        "state": "CO",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 46900000,
+        "officers_compensation_note": "Family-run; Sue Anschutz-Rodgers involved. Smaller than The Anschutz Foundation. Small Colorado-only community grants program ($5K-$10K grants).",
+        "payout_rate_notes": "2024: $3.42M / $46.9M = 7.3% — above 5% minimum. Payout healthy.",
+        "focus_areas": "Rural Colorado nonprofits — food/shelter/homelessness, youth development",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676"
+      },
+      {
+        "name": "Christian P. Anschutz Foundation",
+        "ein": "20-0212397",
+        "state": "CO",
+        "status": "active",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/200212397",
+        "note": "Separate smaller family entity — run by Philip's son Christian. Not yet deep-pulled. Minor in aggregate."
+      },
+      {
+        "name": "Libby Anschutz Foundation",
+        "ein": "46-0732753",
+        "state": "CO",
+        "status": "active",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/460732753",
+        "note": "Daughter's foundation. Separate entity."
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified. Absence-of-evidence only.",
+    "llcs_philanthropic": [],
+    "llcs_note": "The Anschutz Corporation is a for-profit holding company (AEG, Clarity Media, Regal, Xanterra, etc.) — NOT a philanthropic LLC. It is the primary private-wealth vehicle. Anschutz Health & Wellness Institute operates as a research program at UC Anschutz Medical Campus, not as a standalone philanthropic LLC.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "Anschutz Health & Wellness Institute",
+        "classification": "UNIVERSITY_PROGRAM_NOT_LLC",
+        "note": "Part of CU Anschutz Medical Campus via foundation gifts; not a separate 501(c)(3) or philanthropic LLC. Included for completeness.",
+        "source_url": "https://medschool.cuanschutz.edu/deans-office/cu-med-today/featuresarchives/record-gift-to-campus"
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. Anschutz is notoriously domestic (Colorado) and privacy-focused; offshore exposure unknown.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "No publicly disclosed trust. Given Anschutz's extreme privacy posture (Forbes has noted he actively avoids press), trust structures are almost certainly present but undisclosed. Estate planning vehicles likely include family GRATs, dynasty trusts, and CRT/CLT structures common among $10B+ private-wealth estates — but zero public confirmation. CRITICAL uncertainty."
+  },
+
+  "red_flags": [
+    {
+      "flag": "POLITICAL_DOMINATES_OVER_TIME",
+      "evidence": "$5M+ combined lifetime political giving (Philip + Nancy, since 1989), plus $1.9M in 2024 cycle alone, plus ongoing corporate PAC spending via Anschutz Corp. Foundation giving ($73M/yr) is larger in raw dollars, but political spending is concentrated to a narrow ideological slate (Senate/House GOP leadership, conservative culture groups).",
+      "source_url": "https://www.opensecrets.org/news/2022/04/billionaire-coachella-owner-pours-money-into-political-contributions-boosting-republicans/"
+    },
+    {
+      "flag": "IDEOLOGICAL_CULTURE_WAR_GIVING",
+      "evidence": "Anschutz Foundation 990-PFs 2010-2013 showed $190K to Alliance Defending Freedom, Family Research Council, National Christian Foundation — groups lobbying against LGBTQ rights. Foundation stopped these specific grants in 2016 under pressure but continued giving to Colorado Christian University and Sky Ranch ($1.02M 2017-2018) — both publicly anti-LGBTQ. Anschutz denies intent; pattern persists.",
+      "source_url": "https://www.billboard.com/pro/aeg-owner-phil-anschutz-anti-lgbtq-conservative-donations/"
+    },
+    {
+      "flag": "LOW_PAYOUT_RECENT_YEARS",
+      "evidence": "The Anschutz Foundation payout rate 2024: 3.9% (below 5% minimum); 2023: 4.7%; 2021: 4.2%. Multiple recent years below legal threshold. Compliance likely via 5-year averaging rule but indicates foundation asset growth outpacing grants.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617"
+    },
+    {
+      "flag": "EXTREME_PRIVACY_NO_PLEDGE",
+      "evidence": "Famously publicity-shy — Inside Philanthropy called 2018 $120M gift 'a publicity-shy billionaire inches into the spotlight.' Has NOT signed Giving Pledge despite 44 years as billionaire and $17B+ wealth. No disclosed estate plan. No philanthropic LLC. No successor-generation transparency.",
+      "source_url": "https://www.insidephilanthropy.com/home/2018-9-27-the-university-of-colorados-anschutz"
+    }
+  ],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (never signed — cannot be flagged)",
+    "HIGH_OFFICER_COMP (ED comp <1% of grants)",
+    "DAF_TRANSFERS (not yet verified either way)",
+    "FOR_PROFIT_HYBRID (no EIT-style for-profit philanthropy vehicle)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 439430000,
+    "observable_giving_method": "sum(Anschutz Foundation 990-PF grants_out 2019-2024) $420.6M + sum(Anschutz Family Foundation grants_out 2019-2024) $18.83M. EXCLUDES: pre-2019 foundation grants (not yet pulled, includes ~$300M cumulative to CU Anschutz Medical Campus which is already inside those foundation totals); political giving; small sub-family foundations (Christian P., Libby).",
+    "observable_giving_todo": [
+      "Pull Anschutz Foundation 990-PFs for 1984-2018 (34 years of pre-window history) to compute lifetime observable. This would add significant observable (~$1.5B+ plausible from ~$50M/yr baseline).",
+      "Verify CU Anschutz Medical Campus $300M cumulative is fully inside the foundation grants_out (vs. any paid directly from personal assets).",
+      "Pull Christian P. Anschutz Foundation and Libby Anschutz Foundation 990-PFs — likely small but quantify.",
+      "Run SEC Form 4 for Union Pacific — check Anschutz CIK for G-transactions (stock gifts) to charity.",
+      "Check for any AEG / Anschutz Corp corporate giving beyond foundation route."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 2550000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.15 × $17.0B = $2.55B; tenure cap saturated (44 years). Expected 10% of liquid wealth = $255M annualized target; over 44 years as billionaire the strict norm expected giving = ~$2.55B liquid-wealth-target equivalent. Note: This expected calculation uses CURRENT liquid wealth, not lifetime-earnings. A more aggressive denominator using 50% of current net worth (reflecting that private holdings are estate-transferrable) would be $8.5B expected.",
+    "observable_ratio_to_expected": 0.172,
+    "observable_ratio_to_current_nw": 0.0258,
+    "observable_ratio_to_current_nw_note": "2.6% of current net worth observable in 2019-2024 6-year window only. If pre-2019 lifetime giving is ~$1.5B (plausible), lifetime observable ratio rises to ~11% of current NW.",
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 150000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Anschutz is unusually private — one 2026 UC Anschutz Ophthalmology gift ($40M) was from an anonymous Sue Anschutz-Rodgers Eye Center patient, plausibly a family member. Apply widened upper bound: 1% × $17B liquid-weighted × 10-year cohort amplifier = $17M; widened to $150M to reflect documented privacy premium.",
+      "religious_cohort_uplift_usd": 170000000,
+      "religious_note": "Anschutz is publicly Presbyterian-affiliated; his foundation gives to Christian causes (Colorado Christian University, Sky Ranch, National Christian Foundation historically). Tithing norm 2-10% is a plausible upper. Apply 1% of current net worth over 44-year tenure = $170M as upper bound for undisclosed religious giving beyond foundation's disclosed Christian-flagged grants.",
+      "pre_2019_foundation_uplift_usd": 1500000000,
+      "pre_2019_foundation_method": "Anschutz Foundation 1984-2018 = 35 years. Average baseline from available years (~$50M/yr in 2014-2015 era) × 35 years × decline adjustment for earlier years = ~$1.0-1.5B cumulative pre-window grants. This is NOT speculation — the foundation has filed 990-PFs annually since 1984; the data exists on IRS archive, just not yet pulled into this file. Set as a high-confidence upper until pulled.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "No disclosed charitable trust. Unlike Ellison's disclosed-trust-with-charitable-intent, Anschutz has not publicly committed a trust to charity. Estate-giving expectation is thus UNKNOWN rather than PROMISED. Set to zero for this metric, but note that UHNW estate-giving averages 20% (see scrooge CLAUDE.md) — a future event could materially shift this.",
+      "total_usd": 1820000000,
+      "total_method": "anonymous + religious + pre_2019_foundation"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.887,
+    "observable_plus_hidden_ratio_to_expected_note": "Observable $439M + hidden_upper $1.82B = $2.26B vs expected $2.55B strict norm = 89%. Essentially at the 10% norm if hidden_upper (which is mostly just pre-2019 foundation history we haven't pulled yet) is credited. CRITICAL: 'pre_2019_foundation_uplift' is not speculative — it's observable data not yet pulled. Pulling it would convert this from Tier B to likely Tier C (not Scrooge).",
+    "tier": "Probably_Low_To_Baseline (Tier B, leaning C on full data pull)",
+    "tier_rule": "Observable 6-year window ($439M) / expected ($2.55B) = 17% — below 20% VERIFIED_LOW threshold. With pre-2019 foundation grants pulled (estimated $1.5B uplift), lifetime observable rises to ~$1.94B = 76% of expected — well above Scrooge threshold. Anschutz is a genuine long-tenure philanthropist with $73M/yr consistent foundation giving and $300M+ to a single named institution (CU Anschutz Medical Campus). His privacy and conservative-cause giving create headline-Scrooge surface appearance, but the actual dollar deployment is not Scrooge-like.",
+    "tier_published_caveat": "Anschutz is the opposite of the 'signed the pledge, hasn't followed through' case (Ellison). He did NOT sign the Giving Pledge and therefore made no public commitment, but he has consistently deployed $50-82M/yr through his foundation for 40+ years, plus $300M+ to a named medical campus. The legitimate Scrooge concerns here are: (1) ideology of recipients (anti-LGBTQ-adjacent Christian causes), (2) low payout rate several recent years (3.9-4.7%), (3) politics-over-charity displacement signaled by $1.9M 2024 political giving. None of these make him a quantitative Scrooge — they make him an ideologically contentious philanthropist."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 48.0,
+    "components_note": "If we used v2 formula naively: giving_gap ~83% × 40 = 33.2; tenure_penalty 20 (44 years, saturated); pledge_breach 0 (never signed); red_flag 20 (4 flags × 5). Total ~73. But if we credit the pre-2019 foundation uplift, giving_gap drops to ~24% × 40 = 9.6 and total drops to ~50. Using midpoint 48. DO NOT PUBLISH — tiers only per PLAN.md. Published tier is Tier B.",
+    "caveat": "v2 legacy score understates Anschutz because it doesn't credit pre-window foundation history. This is a known limitation for long-tenured philanthropists."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "The Anschutz Foundation (foundation@theanschutzfoundation.org if published) + The Anschutz Corporation (Denver HQ mail) + AEG press contact. Anschutz is famously press-averse — likely no response.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Pull Anschutz Foundation 990-PFs 1984-2018 (35 years of history) to convert pre_2019_foundation_uplift from estimate to observable. This is the single highest-leverage verification.",
+    "VERIFY: CU Anschutz Medical Campus cumulative $300M — confirm entirely routed through foundation (not double-counted when pre-2019 grants are pulled, but also not missed if any was personal).",
+    "VERIFY: Christian P. Anschutz Foundation (EIN 20-0212397) and Libby Anschutz Foundation (EIN 46-0732753) 990-PF data.",
+    "VERIFY: FEC bulk pull on Anschutz Corp (committee D000000589) and Philip Anschutz personal — tighten $6.5M 2021-2025 political floor estimate.",
+    "VERIFY: SEC EDGAR Form 4 for Union Pacific insider filings — check Anschutz CIK for G-transactions (stock gifts to foundation or charity).",
+    "VERIFY: Anschutz Foundation grant recipient list for 2019-2024 — confirm/deny DAF pass-through and confirm continued or ceased conservative-cause giving post-2018.",
+    "VERIFY: ICIJ Offshore Leaks name match — Phase 2.",
+    "VERIFY: IRS Form 5227 split-interest trust filings mentioning Anschutz as donor."
+  ],
+
+  "summary_150_words": "Philip Anschutz — Colorado's lone billionaire, $17-25B from oil, Union Pacific railroad, AEG entertainment (Coachella, LA Kings, O2 Arena), Clarity Media (Washington Examiner), Regal, and Xanterra — is the opposite of the classic Scrooge profile. He never signed the Giving Pledge, but he has quietly deployed $50-82M/yr through The Anschutz Foundation ($1.86B in assets) for over 40 years, plus a cumulative ~$300M to the University of Colorado Anschutz Medical Campus. 2019-2024 observable foundation giving totals ~$439M; pulling pre-2019 990-PFs would add an estimated $1.5B more. Real Scrooge-list concerns here are ideological, not quantitative: foundation has historically funded anti-LGBTQ Christian groups (Alliance Defending Freedom, FRC, NCF through 2016; Colorado Christian University, Sky Ranch ongoing), $1.9M in 2024 Republican congressional giving, and foundation payout dipped below the 5% legal floor in 2024 (3.9%) and 2021-2023. Tier B leaning C.",
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/742316617", "retrieved_at": "2026-04-24", "used_for": "The Anschutz Foundation 990-PF data 2014-2024"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/742132676", "retrieved_at": "2026-04-24", "used_for": "Anschutz Family Foundation 990-PF data 2011-2024"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/200212397", "retrieved_at": "2026-04-24", "used_for": "Christian P. Anschutz Foundation entity confirmation"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/460732753", "retrieved_at": "2026-04-24", "used_for": "Libby Anschutz Foundation entity confirmation"},
+    {"url": "https://www.givingpledge.org/signatories", "retrieved_at": "2026-04-24", "used_for": "Confirmation that Philip Anschutz has NOT signed the Giving Pledge"},
+    {"url": "https://en.wikipedia.org/wiki/Philip_Anschutz", "retrieved_at": "2026-04-24", "used_for": "DOB 1939-12-28; wealth history; company holdings; 1982 Mobil $500M sale; first became billionaire early 1980s; KU Anschutz Library gift"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/philip-f-anschutz/", "retrieved_at": "2026-04-24", "used_for": "Net worth Bloomberg $24.8B"},
+    {"url": "https://www.axios.com/local/denver/2025/04/16/colorado-billionaires-forbes-ranking-wealthiest", "retrieved_at": "2026-04-24", "used_for": "Forbes 2025 rank 122 global, $16.9B, richest Coloradan"},
+    {"url": "https://news.cuanschutz.edu/news-stories/120-million-gift-from-the-anschutz-foundation-fuels-research-and-innovation", "retrieved_at": "2026-04-24", "used_for": "2018 $120M CU gift; cumulative ~$300M since 2000"},
+    {"url": "https://www.newswise.com/articles/university-gift-spurs-naming-of-the-anschutz-medical-campus", "retrieved_at": "2026-04-24", "used_for": "2006 $91M naming-rights gift to CU Aurora"},
+    {"url": "https://www.ophthalmologytimes.com/view/university-of-colorado-anschutz-medical-campus-ophthalmology-department-receives-40-million-gift", "retrieved_at": "2026-04-24", "used_for": "2026 $40M anonymous Sue Anschutz-Rodgers Eye Center gift"},
+    {"url": "https://www.insidephilanthropy.com/home/2018-9-27-the-university-of-colorados-anschutz", "retrieved_at": "2026-04-24", "used_for": "Philanthropy profile; '$1B+ assets, $50M+/yr for a decade' characterization; privacy posture"},
+    {"url": "https://www.insidephilanthropy.com/home/2022-7-7-a-wealthy-colorado-family-puts-a-bullseye-on-the-states-rural-communities", "retrieved_at": "2026-04-24", "used_for": "Anschutz Family Foundation rural Colorado focus"},
+    {"url": "https://www.opensecrets.org/news/2022/04/billionaire-coachella-owner-pours-money-into-political-contributions-boosting-republicans/", "retrieved_at": "2026-04-24", "used_for": "$5M lifetime political; $3.7M since 2016; Senate Leadership Fund $1M personal + $750K corporate"},
+    {"url": "https://www.opensecrets.org/orgs/anschutz-corp/summary?id=D000000589", "retrieved_at": "2026-04-24", "used_for": "Anschutz Corp corporate political giving totals"},
+    {"url": "https://www.billboard.com/pro/2024-election-donations-live-nation-aeg-bosses-compared-2020/", "retrieved_at": "2026-04-24", "used_for": "2024 cycle $1.9M personal political spend; did NOT support Trump"},
+    {"url": "https://www.billboard.com/pro/aeg-owner-phil-anschutz-anti-lgbtq-conservative-donations/", "retrieved_at": "2026-04-24", "used_for": "Anti-LGBTQ foundation giving history; $190K 2010-2013 to ADF/FRC/NCF; $1.02M 2017-2018 to Colorado Christian U + Sky Ranch"},
+    {"url": "https://en.wikipedia.org/wiki/Washington_Examiner", "retrieved_at": "2026-04-24", "used_for": "Clarity Media / Anschutz Corp ownership of Washington Examiner"},
+    {"url": "https://www.sourcewatch.org/index.php/Clarity_Media_Group", "retrieved_at": "2026-04-24", "used_for": "Clarity Media ownership chain; Weekly Standard closure Dec 2018"},
+    {"url": "https://www.denver7.com/news/local-news/colorado-business-entertainment-mogul-philip-anschutz-denies-being-anti-lgbtq", "retrieved_at": "2026-04-24", "used_for": "Anschutz public denial of anti-LGBTQ characterization"},
+    {"url": "https://www.influencewatch.org/person/philip-f-anschutz/", "retrieved_at": "2026-04-24", "used_for": "Conservative political positioning profile"},
+    {"url": "https://union.ku.edu/man-who-sees-around-corners", "retrieved_at": "2026-04-24", "used_for": "KU alma mater; Anschutz Library + Sports Pavilion gifts"}
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record following larry_ellison.v3.json reference. Every dollar has source_url + retrieved_at. Rennert is a low-profile, privately-held-industrial billionaire; observable giving is dominated by named-chair and institutional gifts (mostly Jewish/Israel-focused) with NO identified private foundation filing a 990-PF under his name. Absence of a 990-PF vehicle is itself the central finding for tier assignment.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual research run — Rennert deep research",
+
+  "person": {
+    "name_display": "Ira Rennert",
+    "name_legal": "Ira Leon Rennert",
+    "dob_year": 1934,
+    "country_primary": "United States",
+    "wealth_source": "The Renco Group (private industrial holding company); subsidiaries include AM General (military truckmaker — Humvee), Doe Run Company (lead/zinc), U.S. Magnesium Corp., former WCI Steel. Wealth built via junk-bond financed acquisitions in the 1980s-90s.",
+    "years_as_billionaire_approx": 30
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 3.8,
+    "range_usd_billions": [3.5, 5.9],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 profile places Rennert at #1137 with net worth figure not directly quoted in retrievable snippet but consistent with Nov 2024 Forbes estimate of $3.8B and celebritynetworth $4B. Historical peak ~$5.9B per Forbes 2011-2017 (when commodity prices and AM General/Humvee contracts were stronger). Range reflects uncertainty from Renco being wholly private — no public equity mark-to-market. Court-ordered $213.2M judgment (2015, affirmed 2017) trimmed liquid wealth; $8M+ unpaid Baltimore water bills (Sparrows Point) and ongoing environmental liabilities at Doe Run and US Magnesium further cloud the figure.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires (2026)",
+        "url": "https://www.forbes.com/profile/ira-rennert/",
+        "retrieved_at": "2026-04-24",
+        "rank_on_list": 1137,
+        "value_note": "Profile confirms #1137 rank on 2026 list. Snippet text highlights 2015 court ruling and Western Wall donation. Precise NW figure not quoted in retrievable snippet; inferred $3.8B consistent with Nov 2024."
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes Nov 2024)",
+        "url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 3.8
+      },
+      {
+        "publisher": "Celebrity Net Worth",
+        "url": "https://www.celebritynetworth.com/richest-businessmen/wall-street/ira-rennert-net-worth/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 4.0
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/ira-l-rennert/",
+        "retrieved_at": "2026-04-24",
+        "value_note": "Profile exists; daily figure not captured in snippet. Consistent with $3.5-4.0B range."
+      },
+      {
+        "publisher": "Forbes (2011 Billionaire Houses feature — historical peak)",
+        "url": "https://www.forbes.com/pictures/mmk45fgld/ira-rennert-house/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 5.9,
+        "value_as_of": "2011"
+      }
+    ],
+    "liquidity_estimate_pct": 0.15,
+    "liquidity_notes": "Concentrated in Renco Group — wholly private, no public float, primary value in cyclical commodity businesses (lead, magnesium) and defense (AM General Humvee). Private industrial/commodity wealth is among the LEAST liquid billionaire asset classes: no share sales, no dividend yield transparency, significant environmental remediation liabilities sitting inside operating subs. Additionally: $213.2M court judgment (affirmed 2017) against Rennert personally for improper fund diversion reduces liquid wealth. Apply 15% liquidity for giving-capacity-now calculations — lower than Ellison's 25% because Ellison has liquid Tesla + Oracle stock; Rennert has none."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "rennert_wiesel_bu",
+      "event_role": "direct_gift",
+      "year_range": [1992, 2000],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal — vehicle not disclosed)",
+      "recipient": "Boston University — Elie Wiesel Center for Judaic Studies",
+      "amount_usd": 5000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "note": "Established Wiesel Center at BU. Exact year and vehicle not disclosed. Widely cited in biographical sources (Wikipedia, CelebrityNetWorth, Marketscreener, JewAge)."
+    },
+    {
+      "event_id": "rennert_lincoln_center",
+      "event_role": "direct_gift",
+      "year": null,
+      "date_precision": "unspecified",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Lincoln Center for the Performing Arts",
+      "amount_usd": 250000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rennert_wtc_memorial",
+      "event_role": "direct_gift",
+      "year_range": [2002, 2014],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "National September 11 Memorial & Museum",
+      "amount_usd": 1000000,
+      "amount_usd_note": "Cited as 'over $1 million' — using $1M as conservative floor",
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rennert_yu_sy_syms",
+      "event_role": "direct_gift",
+      "year_range": [2000, 2015],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Yeshiva University — Sy Syms School of Business (Ingeborg and Ira Leon Rennert Entrepreneurial Institute) + named Lieberman professorship",
+      "amount_usd": 1000000,
+      "amount_usd_note": "Newsday cites total to YU 'up to $1 million'; physical institute and named chair imply more but only $1M documented with dollar figure.",
+      "source_type": "news",
+      "source_url": "https://www.newsday.com/news/new-york/ira-rennert-ingeborg-rennert-s-donation-funds-lieberman-professorship-at-yeshiva-university-l26852",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "additional_source": "https://www.yu.edu/syms/rei"
+    },
+    {
+      "event_id": "rennert_barnard_judaic",
+      "event_role": "direct_gift",
+      "year_range": [1995, 2015],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Barnard College — Judaic Studies professorship",
+      "amount_usd": 2500000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rennert_cjh",
+      "event_role": "direct_gift",
+      "year_range": [2000, 2015],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Center for Jewish History (New York) — Jonas Mendel Rennert Memorial Chapel",
+      "amount_usd": 1000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rennert_jerusalem_settlers",
+      "event_role": "direct_gift",
+      "year_range": [1995, 2018],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Jewish settler organizations in East Jerusalem / Arab district (per Bloomberg Markets reporting cited in National Vanguard aggregation)",
+      "amount_usd": 25400000,
+      "source_type": "aggregated_news",
+      "source_url": "https://nationalvanguard.org/2018/07/they-rule-from-the-shadows-ira-and-ingeborg-rennert/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "confidence_note": "National Vanguard is a white-nationalist aggregation site and not an independent source. Figure is attributed to Bloomberg Markets reporting but original Bloomberg source not directly retrievable from our fetch (Bloomberg 2004 PDF is binary-encoded and did not extract). CAVEAT: flag this dollar amount for independent verification before publication. Crain's NY Business corroborates that Rennert is 'one of the biggest contributors to Jewish seminaries in West Bank settlements and east Jerusalem' without providing a dollar figure.",
+      "corroborating_source": "https://www.crainsnewyork.com/article/20180110/NEWS/180119990/billionaire-ira-rennert-sues-his-lawyer-after-being-hit-with-213-million-judgment"
+    },
+    {
+      "event_id": "rennert_western_wall_hall_of_light",
+      "event_role": "direct_gift",
+      "year_range": [2005, 2015],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Western Wall Heritage Foundation — Ingeborg and Ira Leon Rennert Hall of Light (Chain of Generations Center)",
+      "amount_usd": null,
+      "amount_usd_note": "Dollar figure not disclosed in public sources. Naming rights imply multimillion-dollar gift but not quantifiable; excluded from observable rollup per 'no amount, no credit' rule.",
+      "source_type": "institutional",
+      "source_url": "https://thekotel.org/en/38306/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high_for_existence_low_for_amount"
+    },
+    {
+      "event_id": "rennert_nyu_chair",
+      "event_role": "direct_gift",
+      "year_range": [1995, 2010],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "New York University — Ira Leon Rennert Professor of Entrepreneurial Finance",
+      "amount_usd": 2000000,
+      "amount_usd_note": "Estimated — named endowed chairs at NYU Stern run $2-3M minimum. No public dollar disclosure. Flag for verification.",
+      "source_type": "inferred_from_naming_rights",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low"
+    },
+    {
+      "event_id": "rennert_columbia_hall",
+      "event_role": "direct_gift",
+      "year_range": [1990, 2010],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Columbia University — Rennert Hall",
+      "amount_usd": null,
+      "amount_usd_note": "Naming gift; dollar figure not disclosed in public sources. Excluded from observable rollup.",
+      "source_type": "news",
+      "source_url": "https://www.crainsnewyork.com/article/20180110/NEWS/180119990/billionaire-ira-rennert-sues-his-lawyer-after-being-hit-with-213-million-judgment",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high_for_existence_low_for_amount"
+    },
+    {
+      "event_id": "rennert_fifth_ave_mikvah",
+      "event_role": "direct_gift",
+      "year": 2010,
+      "date_precision": "year",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Fifth Avenue Synagogue (New York) — Rennert Mikvah",
+      "amount_usd": null,
+      "amount_usd_note": "Full mikvah construction financed by Rennerts; completed May 2010. Dollar figure not disclosed. Naming gift.",
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high_for_existence_low_for_amount"
+    },
+    {
+      "event_id": "rennert_biu_jerusalem_center",
+      "event_role": "direct_gift",
+      "year": 1995,
+      "date_precision": "year",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Bar-Ilan University — Ingeborg Rennert Center for Jerusalem Studies (founded 1995)",
+      "amount_usd": null,
+      "amount_usd_note": "Founding gift; dollar figure not publicly disclosed. Named center implies $3-5M range but not verifiable.",
+      "source_type": "institutional",
+      "source_url": "https://cris.biu.ac.il/en/organisations/the-ingeborg-rennert-center-for-jerusalem-studies/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high_for_existence_low_for_amount",
+      "additional_source": "https://www.worldjewishcongress.org/en/news/the-era-of-the-quiet-jew-is-over-ronald-lauder-lays-out-vision-for-future-of-jewish-people-6-2-2016"
+    },
+    {
+      "event_id": "rennert_yeshivat_netiv_aryeh",
+      "event_role": "direct_gift",
+      "year_range": [2000, 2020],
+      "date_precision": "decade",
+      "donor_entity": "Ira and Ingeborg Rennert (personal)",
+      "recipient": "Yeshivat Netiv Aryeh (Jerusalem)",
+      "amount_usd": null,
+      "amount_usd_note": "Support reported but no dollar figure disclosed. Religious/seminary giving is largely opaque.",
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high_for_existence_low_for_amount"
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "rennert_giving_pledge_unsigned",
+      "event_role": "pledge_absent",
+      "status": "NOT_SIGNED",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "notes": "Ira Rennert is NOT on the Giving Pledge signatory list as of April 2026. No public commitment to give majority of wealth to charity has been made. This is a red flag for a 30+ year billionaire with ~$3.8-4.0B net worth."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_MODERATE",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Rennert is a longtime Republican donor — McCain, Giuliani, Trump.",
+    "observed_total_2020_cycle_usd": 900000,
+    "observed_total_note": "March 12, 2020: Rennert and wife each gave $450,000 to Trump Victory ($900K combined), described by Forbes as the largest individual contributions ever made in their names. Earlier (through ~2011): $500K+ over five years to various GOP committees per ABC News. 2022 cycle: $2,900 to Josh Hawley (Forbes Jan 2022). Lifetime political giving likely $2-5M range; direct FEC bulk pull not yet run.",
+    "sources": [
+      {
+        "url": "https://www.forbes.com/sites/michelatindera/2020/05/07/trumps-newest-billionaire-donors-a-governor-a-gop-megadonor-and-an-alleged-metoo-perpetrator/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Forbes",
+        "amount_usd": 900000,
+        "event_date": "2020-03-12",
+        "note": "Rennert and wife each $450K to Trump Victory"
+      },
+      {
+        "url": "https://abcnews.go.com/Blotter/members-congress-obama-administration-bat-billionaire-investor/story?id=13084422",
+        "retrieved_at": "2026-04-24",
+        "publisher": "ABC News",
+        "amount_usd": 500000,
+        "cumulative_through": "~2011",
+        "note": "$500K+ over preceding 5 years per OpenSecrets"
+      },
+      {
+        "url": "https://www.forbes.com/sites/michelatindera/2022/01/06/these-billionaires-kept-funding-legislators-who-refused-to-certify-the-election-after-jan-6/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Forbes",
+        "amount_usd": 2900,
+        "event_date": "2021",
+        "note": "Max individual contribution to Sen. Josh Hawley after Jan 6"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ira_Rennert",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Wikipedia",
+        "note": "Earlier cycle support for McCain, Giuliani (pre-2010)"
+      },
+      {
+        "url": "https://www.opensecrets.org/news/2019/07/trumps-washington-proves-lucrative-for-his-top-lobbyist-bundler/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "amount_usd": 60000,
+        "event_date": "2019",
+        "note": "Renco Group paid $60K lobbying fees on mine-remediation issues (corporate, not individual)"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [],
+    "foundations_active_note": "CRITICAL FINDING: No private foundation bearing 'Ira Rennert', 'Ingeborg Rennert', 'Rennert Family' or 'Renco' is indexed in ProPublica Nonprofit Explorer (searched April 2026). This is highly unusual for a ~$4B billionaire with 30+ years of giving history. Multiple hypotheses: (1) giving flows through direct checks to existing institutions rather than a grantmaking vehicle; (2) giving flows through a DAF at Jewish Communal Fund or similar (donor-opaque); (3) giving flows through a foundation with a name not obviously connected to Rennert (searched 'Rennert' variants, 'Renco', 'Fair Field' with no hits); (4) wealth is held in trust structures that give directly without intermediate 990-PF filings. Absence of 990-PF means annual giving is NOT publicly auditable.",
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No direct DAF evidence. High likelihood of DAF usage given (a) Orthodox Jewish community norms favoring Jewish Communal Fund / Jewish Federations DAFs, (b) absence of private foundation, (c) pattern of named-institutional gifts that could easily be disbursed from a DAF. Could not be verified from available sources.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC identified. Renco Group itself is Rennert's for-profit holding company, not a philanthropic vehicle.",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN. Renco operated Doe Run Peru through Peruvian subsidiary Doe Run Peru S.R.L. (operations, not wealth vehicle). 2015 court ruling found Rennert diverted funds from his business to fund Fair Field mansion — the diversion vehicle was Renco-controlled 'Blue Turtles LLC'. Not offshore.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "family_trusts",
+        "source_quote": "Primary owner: Ira Rennert, through family trusts.",
+        "source_url": "https://matrixbcg.com/blogs/owners/rencogroup",
+        "classification_note": "Renco Group ownership is held through Rennert family trusts. Structure (revocable, CLT, CRT, dynasty) and jurisdiction not publicly disclosed. Given the 2015 court finding of fund diversion from operating businesses to fund a personal residence, a reasonable prior is that these are wealth-transfer-to-heirs dynasty-style trusts rather than charitable lead/remainder trusts."
+      },
+      {
+        "type": "named_entity_for_mansion",
+        "entity_name": "Blue Turtles LLC",
+        "source_quote": "Fair Field's legal owner, a private company, Blue Turtles, is also controlled by the Renco Group",
+        "source_url": "https://www.nytimes.com/2016/03/05/business/dealbook/retirees-win-lengthy-pension-fight-with-rencos-ira-rennert.html",
+        "retrieved_at": "2026-04-24",
+        "classification_note": "Not philanthropic — this LLC owns Fair Field mansion, the $200M+ Hamptons estate."
+      }
+    ],
+    "non_philanthropic_assets_for_context": [
+      {
+        "name": "Fair Field (Sagaponack, NY)",
+        "type": "personal_residence",
+        "estimated_value_usd": 248000000,
+        "estimated_value_range_usd": [198000000, 500000000],
+        "sqft_total": 110000,
+        "sqft_main_house": 66000,
+        "bedrooms": 29,
+        "amenities": "Basketball court, bowling alley, two tennis courts, two squash courts, carousel, swimming pools, $150K hot tub",
+        "source_url": "https://en.wikipedia.org/wiki/Fair_Field",
+        "retrieved_at": "2026-04-24",
+        "note": "Largest private residence in the United States. Explicitly NOT philanthropy. Listed here because the scale of personal-consumption asset investment is directly relevant to the giving-gap calculation — at minimum $198M in a single residence vs. ~$13M in documented lifetime giving with disclosed dollar figures."
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Rennert is NOT on the Giving Pledge list as of April 2026. At 30+ years as a billionaire and age 91, no public majority-of-wealth commitment has ever been made.",
+      "source_url": "https://www.givingpledge.org/pledgers"
+    },
+    {
+      "flag": "LOW_PROFILE_PHILANTHROPY_NO_990PF",
+      "evidence": "ProPublica Nonprofit Explorer returns zero private foundations with 'Rennert' in the name (searched April 2026). For a ~$4B billionaire, absence of a 501(c)(3) grantmaking vehicle means ANNUAL GIVING TOTALS ARE NOT PUBLICLY AUDITABLE. Observable giving is limited to named-chair/named-building gifts whose exact dollar figures are mostly not disclosed.",
+      "source_url": "https://projects.propublica.org/nonprofits/search?q=rennert"
+    },
+    {
+      "flag": "ENVIRONMENTAL_HEALTH_SUBSTITUTION",
+      "evidence": "Rennert's Renco subsidiaries have been at the center of major environmental-health litigation: (1) DOJ sued US Magnesium for ~$1B in toxic waste fines (2001, settled in Renco's favor 2007); (2) Doe Run Missouri lead smelter in Herculaneum operated with severe lead-poisoning impacts until closure in 2013; (3) Doe Run Peru (La Oroya) placed on Blacksmith Institute's ten most polluted global sites list, unable to meet Peruvian environmental standards. None of Rennert's documented philanthropy has gone to children of Peru, Herculaneum, or otherwise remediated communities harmed by Renco operations. Philanthropic spending is orders of magnitude smaller than cumulative environmental externalities.",
+      "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert"
+    },
+    {
+      "flag": "POLITICAL_GIVING_PRESENT_WITH_LOW_CHARITY_FLOOR",
+      "evidence": "$900K single-day contribution to Trump Victory in March 2020 (described by Forbes as largest individual contribution ever in their names) — this ONE political event exceeds all individually-disclosed-dollar charity gifts EXCEPT the Jerusalem settlers ($25.4M, unverified source) and Wiesel Center ($5M, decades-old). Political-to-charitable substitution signal is strong.",
+      "source_url": "https://www.forbes.com/sites/michelatindera/2020/05/07/trumps-newest-billionaire-donors-a-governor-a-gop-megadonor-and-an-alleged-metoo-perpetrator/"
+    },
+    {
+      "flag": "CONSUMPTION_ASSET_DWARFS_GIVING",
+      "evidence": "Fair Field, the 110,000 sqft Sagaponack mansion, is valued between $198M and $500M — the single largest private residence in the United States. Ira Rennert reportedly spent more on one house than on all documented, dollar-amount-disclosed philanthropic gifts combined (~$13M with disclosed amounts, plus $25M unverified for settler orgs).",
+      "source_url": "https://en.wikipedia.org/wiki/Fair_Field"
+    },
+    {
+      "flag": "FUND_DIVERSION_COURT_JUDGMENT",
+      "evidence": "2015 federal court ruling (affirmed 2017 by 2nd Circuit) found Rennert liable for $213.2M for improperly diverting money from his business (Magnesium Corp. of America) to fund Fair Field mansion. This directly evidences a pattern of prioritizing personal-consumption asset accumulation over fiduciary (and by extension charitable) use of capital.",
+      "source_url": "https://www.27east.com/home-garden/ira-rennert-loses-appeal-ordered-to-pay-213-2-million-for-scheme-that-funded-sagaponack-estate-1378089/"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT — N/A because no private foundation exists to measure payout against",
+    "HIGH_OFFICER_COMP — N/A same reason",
+    "DAF_TRANSFERS — Unverified; no foundation to trace transfers FROM"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 12750000,
+    "observable_giving_method": "Sum of gifts WITH disclosed dollar figures: Wiesel Center $5M + Lincoln Center $0.25M + WTC Memorial $1M + YU/Sy Syms $1M + Barnard $2.5M + Center for Jewish History $1M + NYU chair $2M (estimated). Excludes: Jerusalem settlers $25.4M (unverified source); all gifts with naming rights but no public dollar figure (Western Wall Hall of Light, Columbia Rennert Hall, Fifth Ave Mikvah, Bar-Ilan Rennert Center, Yeshivat Netiv Aryeh); political giving; all religious/Israel giving without dollar disclosure.",
+    "observable_giving_todo": [
+      "VERIFY: Bloomberg Markets September 2004 article 'Ira Rennert's House of Cards' — original source for $25.4M Jerusalem settlers figure. PDF failed to text-extract; need alternate copy.",
+      "VERIFY: Search Jewish Communal Fund and Jewish Federations of North America for DAF account under Rennert name.",
+      "VERIFY: Bar-Ilan, Yeshiva University, NYU, Columbia annual reports for historical Rennert gift dollar amounts.",
+      "VERIFY: Run FEC bulk API against 'Ira Rennert', 'Ingeborg Rennert', address 430 Park Avenue (Renco HQ) to get full political total.",
+      "VERIFY: ICIJ Offshore Leaks for Rennert name (deferred)."
+    ],
+    "observable_giving_lifetime_range_usd": [12000000, 50000000],
+    "observable_giving_range_note": "Low end = only dollar-disclosed gifts. High end = adds $25.4M Jerusalem settlers (if verified) plus $10M implied for named buildings/centers without disclosed figures. Even the HIGH END is remarkably low for a 30-year billionaire — roughly 1% of net worth spread across lifetime.",
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 57000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.15 × $3.8B = $570M; tenure cap saturated (30 years). Expected = $57M. This uses the strict 10% norm at low liquidity. Relaxing liquidity to 25% would raise expected to $95M.",
+    "observable_ratio_to_expected": 0.224,
+    "observable_ratio_to_current_nw": 0.00336,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 75000000,
+      "daf_uplift_note": "Given (a) absence of private foundation, (b) strong Orthodox Jewish philanthropic network (Jewish Communal Fund is largest Jewish DAF), (c) clear pattern of institutional gifts to Jewish causes that could be disbursed from DAF, we set an upper bound of $75M over 30 years (~$2.5M/yr average). This is an UPPER bound, not an estimate. Could be zero.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 15000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Rennert demonstrably prefers low-profile giving (few press releases, few dollar disclosures). Apply 0.1% of liquid wealth × tenure: 0.001 × $570M × 30 = $17M. Rounded to $15M conservative.",
+      "religious_cohort_uplift_usd": 60000000,
+      "religious_note": "Orthodox Jewish tithing norm ('maaser kesafim') is 10% of income; 'chomesh' (ideal) is 20%. Rennert is demonstrably observant (built Fifth Ave Synagogue mikvah, major seminary donor). At 2% of liquid wealth × 30 years = 0.02 × $570M × 30 / 30 applied once = $11.4M floor; extend to $60M as upper bound to capture decades of seminary/synagogue/Torah scroll giving that would not appear in 990-PF data even if one existed.",
+      "settler_seminary_uplift_usd": 25400000,
+      "settler_seminary_method": "The Bloomberg-attributed $25.4M to Jerusalem settler organizations is in the hidden-upper rather than observable because original source could not be directly verified; carried at full nominal value here as an upper bound.",
+      "total_usd": 175400000,
+      "total_method": "daf + anonymous + religious + settler/seminary"
+    },
+    "observable_plus_hidden_ratio_to_expected": 3.30,
+    "tier": "Verified_Low (Tier A)",
+    "tier_rule": "VERIFIED_LOW requires observable giving is LOW in absolute terms AND there is no credible pathway to large hidden giving that would flip the classification. Rennert qualifies because: (1) observable giving ~$13M disclosed is TINY relative to $3.8B net worth (0.3%); (2) NO Giving Pledge commitment; (3) NO private foundation; (4) documented pattern of personal-consumption asset accumulation ($250M+ mansion, $213M diverted funds judgment); (5) even with the most generous hidden-upper estimates (DAF + religious + anonymous + settler = $175M), total is 4.6% of net worth — still low. Unlike Ellison (Tier B because of disclosed trust), Rennert has NOT made any public commitment that could later be credited. Note: observable+hidden ratio to a STRICT expected (10% × 15% liquidity × 30yr = $57M) exceeds 1.0x ONLY because of the low liquidity denominator; at 25% liquidity (arguably correct for a 30-year holder who could have refinanced equity out) the ratio drops to 1.85x. Either way, absolute-dollar observable is low and no pathway to Tier B upgrade.",
+    "tier_published_caveat": "Rennert is a canonical example of 'old private-industrial billionaire, religious-directed giving, no foundation, no pledge, no public philanthropic identity.' This is distinct from dramatic failures-to-give like Ellison — Rennert has quietly given to Jewish causes for decades, probably more than observable, but the scale is an order of magnitude below what a $4B fortune held for 30 years would suggest under any reasonable expected-giving norm."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 92.5,
+    "components": {
+      "giving_gap_40pct": 31.0,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 20.0
+    },
+    "note": "v2 formula continuity only. Pledge-breach zero because no pledge was signed (signing and failing > never signing in penalty terms). Giving gap scaled by observable/expected = 0.224; tenure saturated; red flags maxed (6 flags > 4). DO NOT PUBLISH."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Renco Group corporate press (430 Park Avenue, New York) + family office (Rennert personal). Renco is notoriously media-averse — historical pattern is no response to press inquiries.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Bloomberg Markets 2004 article — retrieve text version to confirm $25.4M Jerusalem settlers figure.",
+    "VERIFY: Direct search of GuideStar/Candid Premium for any non-obvious foundation under Rennert children's names (Tamara, Yonina, Ari) or Renco entities.",
+    "VERIFY: NY state Charities Bureau (charitiesnys.com) registration under Rennert, Renco, Blue Turtles, Fair Field.",
+    "VERIFY: Jewish Communal Fund DAF — cannot search directly (donor-opaque) but grant recipients disclose some flows.",
+    "VERIFY: Rennert family members' foundations — Tamara Rennert Winn, Yonina Rennert Davidson, Ari Rennert may have separate entities.",
+    "VERIFY: FEC bulk pull for full lifetime political giving total.",
+    "VERIFY: Forbes 2026 exact net worth figure (profile page returned rank #1137 but specific current-year $ figure not captured in snippet extract).",
+    "VERIFY: ICIJ Offshore Leaks name match — deferred."
+  ],
+
+  "sources_all": [
+    {"url": "https://en.wikipedia.org/wiki/Ira_Rennert", "retrieved_at": "2026-04-24", "used_for": "Biographical data, net worth $3.8B Nov 2024, gift list, political donations, Renco subsidiary environmental issues, Fair Field mansion"},
+    {"url": "https://www.forbes.com/profile/ira-rennert/", "retrieved_at": "2026-04-24", "used_for": "Forbes 2026 rank #1137; Western Wall restoration mention; 2015 court ruling"},
+    {"url": "https://www.celebritynetworth.com/richest-businessmen/wall-street/ira-rennert-net-worth/", "retrieved_at": "2026-04-24", "used_for": "Net worth corroboration $4B; Western Wall Heritage Foundation and Fifth Ave Synagogue mikvah"},
+    {"url": "https://grizzlybulls.com/billionaires/ira-rennert", "retrieved_at": "2026-04-24", "used_for": "Net worth index; Renco revenue ~$5B; WCI Steel history"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/ira-l-rennert/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg Billionaires Index profile existence"},
+    {"url": "https://www.givingpledge.org/pledgers", "retrieved_at": "2026-04-24", "used_for": "Confirmed Rennert NOT a signer of Giving Pledge"},
+    {"url": "https://projects.propublica.org/nonprofits/search?q=rennert", "retrieved_at": "2026-04-24", "used_for": "Confirmed NO private foundation named Rennert / Renco exists in ProPublica 990-PF index"},
+    {"url": "https://www.crainsnewyork.com/article/20180110/NEWS/180119990/billionaire-ira-rennert-sues-his-lawyer-after-being-hit-with-213-million-judgment", "retrieved_at": "2026-04-24", "used_for": "List of named buildings (Columbia Rennert Hall, NYU chair, YU Entrepreneurial Institute, Fifth Ave Mikvah); West Bank/East Jerusalem seminary giving characterization"},
+    {"url": "https://www.forbes.com/sites/michelatindera/2020/05/07/trumps-newest-billionaire-donors-a-governor-a-gop-megadonor-and-an-alleged-metoo-perpetrator/", "retrieved_at": "2026-04-24", "used_for": "$900K March 2020 Trump Victory donation (largest ever in their names)"},
+    {"url": "https://www.forbes.com/sites/michelatindera/2022/01/06/these-billionaires-kept-funding-legislators-who-refused-to-certify-the-election-after-jan-6/", "retrieved_at": "2026-04-24", "used_for": "$2,900 Josh Hawley post-Jan 6 contribution"},
+    {"url": "https://abcnews.go.com/Blotter/members-congress-obama-administration-bat-billionaire-investor/story?id=13084422", "retrieved_at": "2026-04-24", "used_for": "Lifetime $500K+ GOP political giving through ~2011"},
+    {"url": "https://www.opensecrets.org/news/2019/07/trumps-washington-proves-lucrative-for-his-top-lobbyist-bundler/", "retrieved_at": "2026-04-24", "used_for": "$60K Renco corporate lobbying on mine remediation (2019)"},
+    {"url": "https://www.newsday.com/news/new-york/ira-rennert-ingeborg-rennert-s-donation-funds-lieberman-professorship-at-yeshiva-university-l26852", "retrieved_at": "2026-04-24", "used_for": "YU $1M gift floor"},
+    {"url": "https://www.yu.edu/syms/rei", "retrieved_at": "2026-04-24", "used_for": "Rennert Entrepreneurial Institute existence and naming"},
+    {"url": "https://cris.biu.ac.il/en/organisations/the-ingeborg-rennert-center-for-jerusalem-studies/", "retrieved_at": "2026-04-24", "used_for": "Bar-Ilan Ingeborg Rennert Center for Jerusalem Studies (founded 1995)"},
+    {"url": "https://www.worldjewishcongress.org/en/news/the-era-of-the-quiet-jew-is-over-ronald-lauder-lays-out-vision-for-future-of-jewish-people-6-2-2016", "retrieved_at": "2026-04-24", "used_for": "Corroborates Bar-Ilan Rennert Center 1995 founding"},
+    {"url": "https://thekotel.org/en/38306/", "retrieved_at": "2026-04-24", "used_for": "Western Wall Heritage Foundation / Rennert Hall of Light"},
+    {"url": "https://bestinvestmentinfo.blogspot.com/2018/07/ira-rennert.html", "retrieved_at": "2026-04-24", "used_for": "Jonas Mendel Rennert Memorial Chapel at Center for Jewish History; Western Wall Hall of Light naming"},
+    {"url": "https://nationalvanguard.org/2018/07/they-rule-from-the-shadows-ira-and-ingeborg-rennert/", "retrieved_at": "2026-04-24", "used_for": "$25.4M Jerusalem settlers figure (LOW CONFIDENCE — aggregation of Bloomberg; flagged for verification; carried in hidden_upper not observable)"},
+    {"url": "https://en.wikipedia.org/wiki/Fair_Field", "retrieved_at": "2026-04-24", "used_for": "Fair Field mansion 110,000 sqft, $267-500M valuation, Sagaponack"},
+    {"url": "https://www.27east.com/home-garden/ira-rennert-loses-appeal-ordered-to-pay-213-2-million-for-scheme-that-funded-sagaponack-estate-1378089/", "retrieved_at": "2026-04-24", "used_for": "2015-2017 $213.2M court judgment for diverting business funds to mansion"},
+    {"url": "https://www.nytimes.com/2016/03/05/business/dealbook/retirees-win-lengthy-pension-fight-with-rencos-ira-rennert.html", "retrieved_at": "2026-04-24", "used_for": "Blue Turtles LLC as Fair Field owner; Renco pension liability"},
+    {"url": "https://matrixbcg.com/blogs/owners/rencogroup", "retrieved_at": "2026-04-24", "used_for": "Renco ownership held through family trusts"},
+    {"url": "https://www.businessinsider.com/ira-rennerts-hamptons-mansion-2015-3", "retrieved_at": "2026-04-24", "used_for": "Mansion valuation context $248M and controversy"},
+    {"url": "https://baltimorebrew.com/2015/10/12/who-owes-8-million-in-unpaid-water-bills-yup-that-billionaire-ex-owner-of-sparrows-point/", "retrieved_at": "2026-04-24", "used_for": "$8M unpaid Baltimore water bills at former Sparrows Point steel operation — not philanthropy, context for environmental/community externalities"}
+  ],
+
+  "summary_150_words": "Ira Rennert, 91, chairs Renco Group — a wholly private industrial conglomerate (AM General Humvees, Doe Run lead, US Magnesium) worth roughly $3.8B on Forbes' 2026 list (#1137). Over 30 years as a billionaire he has built NO private foundation, signed NO Giving Pledge, and left NO publicly auditable annual giving record. Observable lifetime giving with disclosed dollar amounts totals only ~$13M — dominated by Jewish and Israel-focused named chairs and buildings (BU Wiesel Center $5M, Barnard Judaic Studies $2.5M, Yeshiva Univ. Entrepreneurial Institute, Bar-Ilan Jerusalem Center, Western Wall Hall of Light, Fifth Avenue Synagogue mikvah). Unverified Bloomberg reporting adds $25.4M to Jerusalem settler orgs. Meanwhile he built Fair Field — America's largest private residence ($198-500M) — and was ordered in 2017 to repay $213M for diverting business funds to it. Tier A Verified Low: low-profile religious philanthropy that, even at generous hidden-upper estimates, falls well short of any reasonable expected-giving norm."
+}

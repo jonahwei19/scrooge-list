@@ -1,0 +1,529 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream. Kaiser is structurally different from most billionaires: GKFF is a 501(c)(3) PUBLIC CHARITY (Type I supporting organization of Tulsa Community Foundation), not a private foundation \u2014 so it files Form 990, not 990-PF, and is NOT subject to the 5% private-foundation payout minimum. Giving capacity is read from total expenses + program grants rather than 990-PF grants_out field.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 George Kaiser deep research",
+  "person": {
+    "name_display": "George Kaiser",
+    "name_legal": "George Bruce Kaiser",
+    "dob_year": 1942,
+    "dob": "1942-07-29",
+    "country_primary": "United States",
+    "residence": "Tulsa, Oklahoma",
+    "wealth_source": "BOK Financial Corp. (61.5% owner; $46B-asset bank); Kaiser-Francis Oil Company (private E&P, 23rd largest non-public U.S. energy firm); Excelerate Energy (82M shares, LNG); Oklahoma City Thunder minority stake (2014)",
+    "years_as_billionaire_approx": 36,
+    "years_as_billionaire_note": "First entered Forbes 400 in 1990 after Bank of Oklahoma acquisition. 36 years tenure through 2026 \u2014 saturates any tenure cap."
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 12.0,
+    "range_usd_billions": [
+      10,
+      16
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes July 2024 listed $10B (rank #42 US, tied #122 global). Bloomberg Billionaires Index Feb 2026 ~$16B (implied from search results). Wikipedia citing 2023 Forbes: $13.3B. Peak ~$12B in 2008. Use midpoint $12B for calculations. The ~60% spread across Forbes/Bloomberg reflects illiquid private holdings (Kaiser-Francis Oil, BOK insider stake).",
+    "sources": [
+      {
+        "publisher": "Forbes (via Tulsa World July 2024)",
+        "url": "https://tulsaworld.com/news/local/business/billionaires-george-kaiser-lynn-schusterman-are-among-five-oklahomans-on-forbes-list/article_6b3116b1-0245-5e39-8006-74d2866c6c2b.html",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 10,
+        "rank_on_list": 42,
+        "rank_scope": "US billionaires"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/george-b-kaiser/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 16,
+        "value_as_of": "2026-02"
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes 2023)",
+        "url": "https://en.wikipedia.org/wiki/George_Kaiser",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 13.3
+      }
+    ],
+    "liquidity_estimate_pct": 0.3,
+    "liquidity_notes": "Concentrated in BOK Financial (public but 61.5% insider stake, divesting moves the stock) and Kaiser-Francis Oil (private). Excelerate Energy shares (82M) are public and more liquid. Apply 30% liquidity for giving-capacity-now; higher fraction over estate/long-term horizon."
+  },
+  "cited_events": [
+    {
+      "event_id": "kaiser_gkff_assets_2024",
+      "event_role": "foundation_assets_snapshot",
+      "year": 2024,
+      "donor_entity": "George Kaiser Family Foundation",
+      "donor_ein": "73-1574370",
+      "donor_type": "501(c)(3) public charity \u2014 Type I supporting organization of Tulsa Community Foundation",
+      "metric": "total_assets",
+      "amount_usd": 5090304364,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gkff_grants_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "George Kaiser Family Foundation",
+      "donor_ein": "73-1574370",
+      "amount_usd": 83811354,
+      "amount_note": "Grants to outside organizations (398 awards). Total expenses that year were $274.0M \u2014 delta of ~$190M is GKFF's direct-operated programs (Tulsa Educare centers, Gathering Place operations, Tulsa Remote, in-house programs). Under Forbes/Chronicle methodology both grants_out and program-service expenses on mission-aligned direct operations count as charitable giving.",
+      "source_type": "990",
+      "source_url": "https://www.instrumentl.com/990-report/george-kaiser-family-foundation-3b47c134-fe33-49af-95d1-b2300f5ca101",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gkff_expenses_2024",
+      "event_role": "charitable_expenditures_total",
+      "year": 2024,
+      "donor_entity": "George Kaiser Family Foundation",
+      "amount_usd": 274000000,
+      "amount_note": "Total expenses per 990. For a public-charity operating foundation this is the better proxy for annual charitable capacity deployed than grants_out alone. Includes grants_out ($83.8M) plus direct program spending (Educare operations, Gathering Place operating subsidy, Tulsa Remote stipends, OU-Tulsa School of Community Medicine, Bob Dylan Center/Woody Guthrie Center operating costs, etc.).",
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gkff_expenses_2023",
+      "event_role": "charitable_expenditures_total",
+      "year": 2023,
+      "donor_entity": "George Kaiser Family Foundation",
+      "amount_usd": 263309460,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gkff_expenses_2022",
+      "event_role": "charitable_expenditures_total",
+      "year": 2022,
+      "donor_entity": "George Kaiser Family Foundation",
+      "amount_usd": 241426057,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gkff_expenses_2021",
+      "event_role": "charitable_expenditures_total",
+      "year": 2021,
+      "donor_entity": "George Kaiser Family Foundation",
+      "amount_usd": 238750435,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gkff_expenses_2020",
+      "event_role": "charitable_expenditures_total",
+      "year": 2020,
+      "donor_entity": "George Kaiser Family Foundation",
+      "amount_usd": 181461156,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gkff_expenses_2019",
+      "event_role": "charitable_expenditures_total",
+      "year": 2019,
+      "donor_entity": "George Kaiser Family Foundation",
+      "amount_usd": 166307835,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gkff_expenses_2018",
+      "event_role": "charitable_expenditures_total",
+      "year": 2018,
+      "donor_entity": "George Kaiser Family Foundation",
+      "amount_usd": 272715368,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kaiser_gathering_place_2018",
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date_precision": "year",
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "A Gathering Place (66.5-acre riverfront public park, Tulsa)",
+      "amount_usd": 200000000,
+      "amount_note": "$200M GKFF share of $465M total project cost. Remaining $265M came from 80+ other community donors and City of Tulsa. Described as largest private gift to a community park in U.S. history.",
+      "source_type": "announcement",
+      "source_url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-partners-give-350-million-for-park",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This $200M is captured WITHIN GKFF's 2013-2018 annual expenses already counted above. Do NOT add to rollup as separate additive event. Included here for event-level visibility only."
+    },
+    {
+      "event_id": "kaiser_bob_dylan_archive_2016",
+      "event_role": "direct_gift",
+      "year": 2016,
+      "donor_entity": "George Kaiser Family Foundation + University of Tulsa (joint acquisition)",
+      "recipient": "Bob Dylan Archive \u2192 Bob Dylan Center (Tulsa)",
+      "amount_usd": 20000000,
+      "amount_note": "Archive purchase $20M; Center construction additional ~$10M. Both now operate under American Song Archives (GKFF project).",
+      "source_type": "news",
+      "source_url": "https://forward.com/culture/501368/bob-dylan-archives-tulsa-oklahoma-jewish-george-kaiser-woody-guthrie/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Captured within GKFF 2016 expenses \u2014 do NOT add separately to rollup."
+    },
+    {
+      "event_id": "kaiser_ou_tulsa_medicine_pre2015",
+      "event_role": "direct_gift",
+      "year_range": [
+        2008,
+        2015
+      ],
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "University of Oklahoma \u2014 School of Community Medicine (OU-Tulsa campus)",
+      "amount_usd": 62000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/George_Kaiser",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Captured within GKFF historical expenses \u2014 do NOT add separately to rollup."
+    },
+    {
+      "event_id": "kaiser_tulsa_remote_program_ongoing",
+      "event_role": "program_funding",
+      "year_range": [
+        2018,
+        2026
+      ],
+      "donor_entity": "George Kaiser Family Foundation (primary funder, with state match)",
+      "recipient": "Tulsa Remote \u2014 $10K/person relocation grants",
+      "amount_usd": 34750000,
+      "amount_note": "3,475 participants x $10K stipend = $34.75M stipends alone; total program cost (including coworking, community-building) substantially higher. Captured within GKFF annual expenses.",
+      "source_type": "news",
+      "source_url": "https://www.brookings.edu/articles/work-from-anywhere-as-a-public-policy-three-findings-from-the-tulsa-remote-program/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Captured within GKFF annual expenses \u2014 do NOT add separately."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "kaiser_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "date": "2010-07-26",
+      "date_precision": "day",
+      "pledged_pct_wealth": 50,
+      "pledged_pct_wealth_note": "Giving Pledge minimum threshold. Kaiser's letter commits 'virtually all of my financial resources' \u2014 stronger than the 50% minimum. Treating effective commitment as ~95%+ on strength of letter language.",
+      "pledged_amount_usd_at_signing_estimate": 9000000000,
+      "pledged_amount_at_signing_note": "~$9B Forbes estimate at 2010 signing (near 2008 peak $12B, adjusted for post-GFC decline). 50% floor = ~$4.5B; 'virtually all' reading = ~$8.5B+.",
+      "status": "ON_TRACK",
+      "status_source": "IPS Giving Pledge at 15 (July 2025): only the Arnolds have 'technically fulfilled' among living 2010 pledgers, so Kaiser is NOT yet fulfilled under IPS's strict definition. HOWEVER Kaiser is among the minority of 2010 signers showing substantial ongoing delivery: ~$1.3B+ lifetime giving documented through GKFF, consistent $180-275M/yr expenses, net worth flat-to-down since signing (~$9B \u2192 ~$12B over 16 years, vs. cohort median 2-3x wealth growth). Classifying as ON_TRACK not UNFULFILLED because (a) wealth has not exploded, (b) giving has been sustained, (c) GKFF has actual program operations, not just warehousing in a DAF.",
+      "pledge_letter_quote": "I suppose I arrived at my charitable commitment largely through guilt. I recognized early on, that my good fortune was not due to superior personal character or initiative so much as it was to dumb luck. I was blessed to be born in an advanced society with caring parents, so I had the advantage of both genetics and upbringing. As I looked around, I saw that many were not blessed with these advantages, and it became clear to me that I had a moral obligation to help those left behind.",
+      "pledge_commitment_summary": "Virtually all of his financial resources to charitable purposes, primarily through GKFF, focused on breaking intergenerational poverty via early childhood development, family healthcare, teen pregnancy prevention, alternatives to incarceration, and basic needs.",
+      "source_url": "https://www.givingpledge.org/pledger/george-b-kaiser/",
+      "retrieved_at": "2026-04-24",
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    }
+  ],
+  "political_giving": {
+    "classification": "MODEST",
+    "substitution_note": "Not counted as philanthropy. NBER W26616: political giving displaces charitable at ~$0.33/$1. Kaiser is a moderate Democratic donor historically (most famous political engagement is Solyndra \u2014 not a donation, an equity investment), but political giving is a rounding error relative to GKFF philanthropic spend.",
+    "observed_total_2021_2025_usd": null,
+    "observed_total_note": "FEC API direct-pull NOT YET RUN. OpenSecrets has profiles but exact figures not extracted in this pass. Kaiser was reported as having raised $50K-$100K for Obama 2008 (bundling, not personal max-outs of significance). No reporting of $10M+ super-PAC donations of the kind that put Ellison, Schwarzman, or Griffin in the POLITICAL_HEAVY category. Flag for Phase 1.3 FEC pull to quantify floor.",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=George+Kaiser&order=desc&sort=D&state=OK",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets Donor Lookup"
+      },
+      {
+        "url": "https://www.opensecrets.org/orgs/george-kaiser-family-foundation/summary?id=D000051276",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets (GKFF org profile \u2014 $80K lobbying 2021, no reported super-PAC spending)"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "George Kaiser Family Foundation (GKFF)",
+        "ein": "73-1574370",
+        "established_year": 1999,
+        "state": "OK",
+        "city": "Tulsa",
+        "status": "active",
+        "irs_classification": "501(c)(3) PUBLIC CHARITY \u2014 Type I supporting organization of Tulsa Community Foundation under IRC \u00a7509(a)(3)",
+        "filing_form": "990 (NOT 990-PF \u2014 critical distinction from private foundations)",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 5090304364,
+        "latest_total_expenses_usd": 274000000,
+        "latest_grants_paid_usd": 83811354,
+        "latest_awards_count": 398,
+        "officers_compensation_sample": {
+          "ken_levit_executive_director": 719500,
+          "lisa_lambert_cio_private_markets": 1021583,
+          "john_budd_iii_coo": 443552,
+          "amy_santee_chief_program_officer": 367247,
+          "note": "Kaiser family board members (Emily L. Kaiser, Leah M. Kaiser, Philip A. Kaiser, Chester Cadieux III) presumed zero comp per standard governance disclosures but not explicitly verified in this pass."
+        },
+        "payout_rate_notes": "Total expenses / assets = $274M / $5.09B = 5.4% for 2024. Above the 5% private-foundation floor, though that floor does NOT legally apply to GKFF as a supporting organization. Historically much lower: 0.2% in 2002, ~1% in 2009. Has risen substantially since 2010 Giving Pledge signing.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370"
+      },
+      {
+        "name": "George B Kaiser Foundation",
+        "ein": "27-0509940",
+        "established_year": 2009,
+        "state": "OK",
+        "status": "active_but_dormant",
+        "assets_usd_latest": 16934,
+        "assets_note": "Trivial \u2014 ~$17K. Appears to be a shell or legacy entity, not an active giving vehicle. All board officers zero comp.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/270509940"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [
+      {
+        "structural_dependency": "Tulsa Community Foundation",
+        "note": "GKFF is a Type I supporting organization OF the Tulsa Community Foundation (TCF). This is structurally adjacent to a DAF relationship \u2014 TCF is a community foundation that operates DAFs among other vehicles. GKFF is not itself a DAF, but its governance is tied to TCF. Any grants from GKFF \u2192 TCF would be intra-family transfers and should be flagged."
+      }
+    ],
+    "dafs_note": "Tulsa Community Foundation relationship is structural, not a DAF per se. No evidence of GKFF transferring to warehousing DAFs outside its own ecosystem.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC identified. Kaiser operates almost entirely through the GKFF public-charity vehicle.",
+    "for_profit_hybrid_vehicles": [],
+    "for_profit_hybrid_note": "None identified. Unlike Ellison (EIT), Zuckerberg (CZI LLC), Kaiser has not pivoted to for-profit hybrid vehicles.",
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": []
+  },
+  "red_flags": [
+    {
+      "flag": "SUPPORTING_ORG_PAYOUT_LOOPHOLE",
+      "severity": "medium",
+      "evidence": "GKFF is structured as a 509(a)(3) Type I supporting organization of Tulsa Community Foundation, not a private foundation. This exempts it from the 5% annual payout minimum that applies to private foundations. Historical distribution rates: 0.2% of assets in 2002, ~1% in 2009. Structure was specifically flagged by Senate Finance Committee in 2005 (Chuck Grassley) as potentially tax-haven-like. Current 2024 payout has risen to ~5.4% of assets \u2014 still exactly at the private-foundation floor that doesn't legally apply, so structural critique remains valid.",
+      "source_url": "https://philanthropynewsdigest.org/news/charitable-status-of-george-kaiser-family-foundation-scrutinized",
+      "mitigation_note": "Post-2010 Giving Pledge signing, payout rate has risen materially and program operations are substantive (Educare, Gathering Place, Tulsa Remote are not warehousing vehicles). The structural flag is real but current behavior is closer to norm than the 2002-2009 history suggests."
+    },
+    {
+      "flag": "SOLYNDRA_DOE_LOAN_CONTROVERSY",
+      "severity": "historical",
+      "evidence": "GKFF was largest shareholder (35% stake, $340M invested July 2009) in Solyndra, which received a $535M DOE loan guarantee under ARRA and went bankrupt Sept 2011. Kaiser had bundled $50K-$100K for Obama 2008 and visited the White House 16 times between March 2009 and April 2011, meeting Valerie Jarrett and Rahm Emanuel. In Feb 2011 GKFF participated in a $75M restructuring that gave private investors (including GKFF) repayment priority over U.S. taxpayers. Subsequent DOE investigation concluded Solyndra made 'inaccurate and misleading' representations to the Department. Not directly a philanthropy red flag but is the dominant public-record ethics question about Kaiser's vehicle.",
+      "source_url": "https://capitalresearch.org/article/the-solyndra-scandal-charity-tax-loopholes-and-billionaire-george-kaiser/",
+      "relevance_to_scrooge_score": "Does not reduce observable giving. Flagged for contextual honesty in profile."
+    },
+    {
+      "flag": "TULSA_GEOGRAPHIC_CONCENTRATION",
+      "severity": "low",
+      "evidence": "Nearly all GKFF spending goes to Tulsa or Oklahoma-proximate causes. This is explicitly Kaiser's stated intent ('the community that welcomed his family from Nazi Germany') and is not hidden. Not a red flag per se, but worth flagging because effectiveness rankings like Philanthropy Roundtable / IPS / GiveWell methodologies sometimes penalize highly place-based giving vs. cause-optimized giving.",
+      "source_url": "https://www.gkff.org/about/about-george-kaiser",
+      "classification_note": "Place-based \u2260 bad; GKFF has unusual rigor (Educare RCT evidence, Tulsa Remote has 4:1 benefit-cost in Upjohn study). Flagging for methodological transparency only."
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT_CURRENT (2024 ~5.4% payout, even though the 5% floor doesn't legally apply)",
+    "HIGH_OFFICER_COMP (Ken Levit $719K ED comp is in normal range for a $5B-asset foundation)",
+    "DAF_TRANSFERS (no warehousing DAF transfers detected; TCF relationship is structural, not warehousing)",
+    "FOR_PROFIT_PIVOT (no Ellison/Zuckerberg-style for-profit philanthropy hybrid)",
+    "POLITICAL_HEAVY (Kaiser political giving is modest; no $10M+ super-PAC donations of record)",
+    "NET_WORTH_SURGE (Kaiser wealth has been flat-to-slow-growth since 2010; $9B\u2192$12B vs. cohort median 2-3x)",
+    "FAMILY_ENRICHMENT_VIA_FOUNDATION (board includes Kaiser family members but no reported excess comp or self-dealing)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 1637969911,
+    "observable_giving_method": "Sum of GKFF total expenses 2018-2024 (public-charity operating-foundation model): $272.7M + $166.3M + $181.5M + $238.8M + $241.4M + $263.3M + $274.0M = $1.638B. Uses total_expenses (not grants_paid alone) because GKFF operates direct programs (Educare centers, Gathering Place, Tulsa Remote, Bob Dylan/Guthrie Centers, School of Community Medicine) \u2014 this is canonical public-charity charitable accounting and would undercount by ~3x if grants_out alone were used. Excludes: any pre-2018 giving; political giving; Solyndra equity investment.",
+    "observable_giving_todo": [
+      "Pull GKFF 990s for 1999-2017 to extend observable-giving window back to foundation founding. Cited lifetime figure (~$1.3B as of recent reporting) suggests a significantly higher full-lifetime number.",
+      "Verify program-expense vs admin-expense breakdown in 2018-2024 990 Part IX to ensure 'total expenses' \u2248 'charitable expenditures'.",
+      "Run FEC bulk pull for Kaiser personal and Kaiser-Francis Oil to quantify political giving floor.",
+      "Check George B. Kaiser Foundation (EIN 27-0509940) activity \u2014 currently trivial ($17K assets) but confirm no off-books activity."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 3600000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.30 \u00d7 $12B = $3.6B; tenure cap saturated (36 years). Expected = $3.6B over lifetime. Strict 10% formal norm.",
+    "observable_ratio_to_expected": 0.455,
+    "observable_ratio_to_current_nw": 0.136,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No warehousing-DAF activity identified. TCF supporting-org relationship is already reflected in GKFF structure.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2).",
+      "anonymous_cohort_uplift_usd": 50000000,
+      "anonymous_cohort_method": "Kaiser is known to be privacy-preferring ('a life of quiet influence'). BofA/Lilly 2024 cohort baseline ~$50M upper for HNW donor his age/giving pattern. Conservative.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Jewish by family heritage (family fled Nazi Germany); no publicly disclosed tithing pattern. Leave at zero unless evidence surfaces.",
+      "pre_2018_gkff_giving_usd": 500000000,
+      "pre_2018_method": "Back-of-envelope: GKFF average annual expenses 2010-2017 ~$125M/yr based on ProPublica data (2010 $64M, 2011 $93M, 2012 $102M, 2013 $78M, 2014 $232M, 2015 $187M, 2016 $94M, 2017 $114M = $964M 2010-2017). Plus 1999-2009 estimated at $300-500M total. Uplift to observable rollup: ~$500M-$1.2B. Using $500M as conservative mid.",
+      "total_usd": 550000000,
+      "total_method": "anonymous_cohort + pre_2018_GKFF_giving"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.608,
+    "tier": "On_Track (Tier C-plus)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2 \u2014 Kaiser fails this (ratio ~0.6). NOT a scrooge case. Closer to the 'pledge signer actually delivering' end of the distribution. Distinctive features: (1) GKFF pays out as a public charity running its own programs, not warehousing in a DAF, (2) signature projects (Gathering Place, Educare) have outside-validated impact, (3) net worth has not ballooned since pledge signing \u2014 the pledge 'denominator surge' that traps Ellison/Zuckerberg/Musk has not happened to Kaiser, (4) no for-profit pivot, no political-heavy substitution. Historical structural critique (supporting-org payout loophole, pre-2010 sub-1% payouts, Solyndra) is real but the current 15-year post-pledge track record is materially better than the median 2010 pledger.",
+    "tier_published_caveat": "Kaiser is the 'model pledge signer that delivers' case in this cohort \u2014 alongside the Arnolds, Moskovitz/Tuna, Laurene Powell Jobs. Caveats worth surfacing in profile: (a) supporting-organization structure is a real structural critique that the Senate Finance Committee flagged in 2005 and that has not gone away; (b) Solyndra is the dominant ethics-adjacent story; (c) Tulsa geographic concentration limits cause-optimization by GiveWell-style frameworks but is Kaiser's explicit intent."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 32.1,
+    "components": {
+      "giving_gap_40pct": 21.8,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 10.0
+    },
+    "note": "Low scrooge-legacy score reflects Kaiser as a delivering pledge signer. Tenure penalty is maxed (36 years) but giving ratio is high enough (~46%) that giving_gap is moderate, pledge_breach is zero (ON_TRACK), and red flags are historical/structural rather than behavioral. DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "GKFF communications (info@gkff.org or comms lead) + Ken Levit (Executive Director) \u2014 single route, GKFF owns Kaiser's philanthropy voice.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Pull GKFF 990s for 1999-2017 to extend observable lifetime giving. Cited press figures of ~$1.3B lifetime giving suggest our 2018-2024 window captures well under full lifetime.",
+    "VERIFY: Break out GKFF 2024 total expenses ($274M) into program vs. admin to confirm ~$250M+ is actual charitable expenditure, not overhead.",
+    "VERIFY: Run FEC bulk pull for Kaiser personal donations \u2014 confirm MODEST political classification with hard numbers.",
+    "VERIFY: Check ICIJ Offshore Leaks for Kaiser / Kaiser-Francis names (Phase 2).",
+    "VERIFY: Confirm Tulsa Community Foundation relationship does not involve material fund-flow to TCF DAFs (pull GKFF Schedule I grant recipients).",
+    "VERIFY: Current Forbes 2026 rank and net worth from direct Forbes page (WebFetch failed in this pass).",
+    "VERIFY: Latest GKFF 990 (2024) officer-and-trustee list \u2014 confirm Kaiser family board comp is zero.",
+    "VERIFY: Pre-1999 Kaiser giving via Kaiser-Francis Oil or personal \u2014 likely trivial but worth confirming for lifetime accounting."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/731574370",
+      "retrieved_at": "2026-04-24",
+      "used_for": "GKFF 990 data 2010-2024: assets, revenue, expenses, officer comp"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/270509940",
+      "retrieved_at": "2026-04-24",
+      "used_for": "George B Kaiser Foundation (EIN 27-0509940) \u2014 dormant shell, $17K assets"
+    },
+    {
+      "url": "https://www.instrumentl.com/990-report/george-kaiser-family-foundation-3b47c134-fe33-49af-95d1-b2300f5ca101",
+      "retrieved_at": "2026-04-24",
+      "used_for": "GKFF 2024 grants total $83.8M, 398 awards"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/george-b-kaiser/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2010 pledge letter, July 26 2010 signing, 'virtually all' commitment"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-24",
+      "used_for": "IPS Giving Pledge at 15 \u2014 Kaiser not in 'fulfilled' set (only Arnolds technically fulfilled) but on delivering tail"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/George_Kaiser",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biographical data, 1990 Forbes 400 entry, wealth peak, BOK 61.5% / Kaiser-Francis, Gathering Place $350M, Solyndra $340M July 2009"
+    },
+    {
+      "url": "https://tulsaworld.com/news/local/business/billionaires-george-kaiser-lynn-schusterman-are-among-five-oklahomans-on-forbes-list/article_6b3116b1-0245-5e39-8006-74d2866c6c2b.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes July 2024 $10B rank #42 US"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/george-b-kaiser/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg Billionaires Index ~$16B Feb 2026"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-partners-give-350-million-for-park",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Gathering Place $465M total, $200M GKFF share (note: Wikipedia says $350M GKFF share; PND says $350M combined with partners \u2014 range $200-350M, use $200M conservative)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gathering_Place_(Tulsa_park)",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Gathering Place 66.5 acres, $465M largest private park gift in U.S."
+    },
+    {
+      "url": "https://forward.com/culture/501368/bob-dylan-archives-tulsa-oklahoma-jewish-george-kaiser-woody-guthrie/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bob Dylan archive $20M purchase + $10M Center construction"
+    },
+    {
+      "url": "https://www.gkff.org/program/tulsa-educare",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Tulsa Educare \u2014 four centers, 6 weeks to 4 years, replicated from Chicago Educare"
+    },
+    {
+      "url": "https://www.gkff.org/stories/a-groundbreaking-study-on-tulsa-educare-and-the-impact-of-early-childhood-education",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2022 OU Tulsa Educare longitudinal study \u2014 statistically significant gains through third grade"
+    },
+    {
+      "url": "https://www.brookings.edu/articles/work-from-anywhere-as-a-public-policy-three-findings-from-the-tulsa-remote-program/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Tulsa Remote program \u2014 $10K grants, 3,475 participants, 4:1 benefit-cost ratio per Upjohn Institute"
+    },
+    {
+      "url": "https://www.upjohn.org/research-highlights/each-dollar-spent-drawing-remote-workers-tulsa-delivers-4-benefit-current-residents",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Tulsa Remote 4:1 benefit-cost validation"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/charitable-status-of-george-kaiser-family-foundation-scrutinized",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Senate Finance Committee 2005 scrutiny of GKFF supporting-org status, historical 0.2% / 1% payout rates"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/george-kaiser-family-foundation/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "GKFF 2015 financial snapshot; Solyndra 35% stake; White House visitor log 16 visits 2009-2011; grantees (Planned Parenthood, CAP, SPLC, Clinton Foundation)"
+    },
+    {
+      "url": "https://capitalresearch.org/article/the-solyndra-scandal-charity-tax-loopholes-and-billionaire-george-kaiser/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Solyndra DOE loan controversy, Feb 2011 $75M restructuring, taxpayer-subordination issue"
+    },
+    {
+      "url": "https://www.opensecrets.org/orgs/george-kaiser-family-foundation/summary?id=D000051276",
+      "retrieved_at": "2026-04-24",
+      "used_for": "GKFF $80K lobbying 2021, no reported super-PAC spending"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=George+Kaiser&order=desc&sort=D&state=OK",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Placeholder \u2014 FEC direct pull still pending"
+    },
+    {
+      "url": "https://www.gkff.org/about/about-george-kaiser",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Kaiser biographical narrative, family-fled-Nazi-Germany Tulsa origin story, primary philanthropic goal"
+    },
+    {
+      "url": "https://www.bridgespan.org/insights/why-and-how-george-kaiser-brought-early-education-programs-to-tulsa",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bridgespan analysis of Kaiser's early-childhood-education theory of change"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/george-kaiser-html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Inside Philanthropy profile \u2014 lifetime giving 'more than half a billion' (stale estimate, likely now >$1.3B)"
+    },
+    {
+      "url": "https://193countriesconsortium.com/2025/05/george-kaiser-a-life-of-quiet-influence-and-purposeful-philanthropy/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2025 retrospective \u2014 GKFF paid out 'more than $1.3 billion' most staying in Tulsa"
+    }
+  ],
+  "summary_150_words": "George Kaiser (Forbes 2024 $10B rank #42 US; Bloomberg Feb 2026 ~$16B) is a 2010 Giving Pledge signer whose 15-year track record places him in the minority actually delivering. The George Kaiser Family Foundation is a 501(c)(3) public charity (Type I supporting organization of Tulsa Community Foundation, EIN 73-1574370) with $5.09B in assets and $274M in 2024 total expenses \u2014 running Tulsa Educare, A Gathering Place (largest private community-park gift in U.S. history, $200M+), the Bob Dylan and Woody Guthrie Centers, the Tulsa Remote program ($10K stipends, 4:1 benefit-cost per Upjohn), and the OU-Tulsa School of Community Medicine. Observable giving 2018-2024 is ~$1.64B; lifetime ~$1.3B+ cited. Structural critique persists: GKFF's 509(a)(3) status sidesteps the 5% private-foundation payout rule (Senate Finance Committee flagged 2005) and the 2009-2011 Solyndra DOE-loan controversy remains the dominant ethics-adjacent story. Classification: ON_TRACK.",
+  "_source_file": "george_kaiser.v3.json"
+}

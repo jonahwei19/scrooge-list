@@ -1,0 +1,540 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Classification for Tier A/B/C happens downstream. Diller's case has an unusual vehicle structure: two separate 501(c)(3) private foundations (old and new) plus Pier55 Inc, the operating nonprofit that built Little Island. Care taken to avoid double-counting between foundation grants-out and Pier55 contributions-in.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual reference run \u2014 Barry Diller single-subject deep research",
+  "person": {
+    "name_display": "Barry Diller",
+    "name_legal": "Barry Charles Diller",
+    "dob_year": 1942,
+    "country_primary": "United States",
+    "wealth_source": "Media/internet mogul. Chairman & Senior Executive of IAC/InterActiveCorp and Expedia Group. Prior career: Paramount Pictures Chairman/CEO 1974-1984, Fox Broadcasting Company co-founder 1984-1992, QVC/USA Broadcasting. Spouse: fashion designer Diane von Furstenberg (m. 2001); owns ~1/3 of DVF's eponymous fashion company.",
+    "years_as_billionaire_approx": 20,
+    "years_as_billionaire_note": "Appears on Forbes billionaires lists at least since early 2000s after IAC scale-up; at $2.3B in 2016 per Forbes, ~$4-5B through the 2020s. Used 20 years as conservative midpoint \u2014 tenure cap saturated regardless."
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 5.3,
+    "range_usd_billions": [
+      4.5,
+      5.3
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes Real-Time April 2026 ~$5.3B (rank ~801). Forbes 2025 annual ~$4.5B. Relatively stable high-single-digit billions range for the past decade; no recent surge or crash. Wealth concentrated in IAC/Expedia equity plus DVF stake.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires (via web search extract)",
+        "url": "https://www.forbes.com/profile/barry-diller/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 5.3,
+        "rank_on_list": 801,
+        "fetch_note": "Forbes profile page direct fetch returned error; value confirmed via web search result summarizing Forbes profile as of April 2026."
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes June 2020)",
+        "url": "https://en.wikipedia.org/wiki/Barry_Diller",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 4.2,
+        "value_as_of": "2020-06"
+      },
+      {
+        "publisher": "Celebrity Net Worth / Hello Magazine (2025 corroboration)",
+        "url": "https://www.hellomagazine.com/us/895664/barry-diller-net-worth-diane-von-furstenberg-marriage/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 4.5,
+        "value_as_of": "2025-05"
+      }
+    ],
+    "liquidity_estimate_pct": 0.35,
+    "liquidity_notes": "Concentrated in IAC and Expedia (both public, but Diller holds voting/super-voting control stakes so full divestment would be price-moving). Also holds ~1/3 of privately-held DVF company. Apply 35% liquidity for 'giving capacity now' \u2014 higher than Ellison's 25% because IAC/Expedia positions are smaller relative to each company's float but still strategically controlled."
+  },
+  "cited_events": [
+    {
+      "event_id": "diller_dvfff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Diller Von Furstenberg Family Foundation (newer entity)",
+      "donor_ein": "46-1581956",
+      "recipient": "Various (recipient list not fully disclosed in ProPublica summary)",
+      "amount_usd": 9843065,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "diller_dvfff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Diller Von Furstenberg Family Foundation (newer entity)",
+      "donor_ein": "46-1581956",
+      "amount_usd": 9718835,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "diller_dvfff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Diller Von Furstenberg Family Foundation (newer entity)",
+      "donor_ein": "46-1581956",
+      "amount_usd": 9581092,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "diller_oldfdn_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Diller Foundation (older entity, DBA Diller-Von Furstenberg Family Foundation)",
+      "donor_ein": "95-4081892",
+      "recipient_top": "Pier55 Inc (Little Island) $13.4M; others incl. UCLA Foundation, Vital Voices",
+      "amount_usd": 27600000,
+      "amount_usd_note": "Charitable disbursements ~$27.6M in 2021; grants paid total reported as ~$25.35M per grantmakers.io. Using $27.6M from ProPublica Part I.",
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "diller_oldfdn_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Diller Foundation (older entity)",
+      "donor_ein": "95-4081892",
+      "amount_usd": 16250000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "diller_oldfdn_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Diller Foundation (older entity)",
+      "donor_ein": "95-4081892",
+      "amount_usd": 16100000,
+      "amount_usd_note": "Revenue $16.1M, expenses $8.4M with 99% charitable disbursement flag. Using expenses as closer proxy for grants_out; press reporting of $3.25M in grantmakers.io differs. Treating as midpoint ~$10M with note.",
+      "amount_usd_midpoint": 10000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "diller_littleisland_direct_construction",
+      "event_role": "direct_gift",
+      "year_range": [
+        2014,
+        2021
+      ],
+      "date_precision": "span",
+      "donor_entity": "Barry Diller / Diller family (via The Diller Foundation + Pier55 Inc direct contributions)",
+      "recipient": "Pier55 Inc (Little Island) \u2014 construction phase",
+      "amount_usd": 231300000,
+      "amount_usd_note": "Wikipedia / Crain's / 6sqft consistently cite 'construction costs $252-260M, with Diller-von Furstenberg Family Foundation providing $231.3M in private funding and public entities $21.2M.' Original 2014 pledge was $130M ($100M + $30M); escalated to $260M after cost overruns. Final cost overrun borne by Diller.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Little_Island_at_Pier_55",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CRITICAL dedup: Pier55 Inc 990s show contributions of $25.2M (2015) + $9.0M (2017) + $25.0M (2018) + $39.6M (2019) + $61.6M (2021) + $35.6M (2024) = $196.0M observable contributions-in through 2024. Some portion (exactly $13.4M confirmed in 2021) came through The Diller Foundation grants-out and is ALSO counted in diller_oldfdn_2021 above. To avoid double-counting, we count: (A) the Diller Foundation grants-out total in diller_oldfdn_* events, and (B) Pier55 contributions-in NET of that foundation pass-through. Construction cost $231.3M and Pier55 receipts through 2024 are consistent if Diller contributed directly to Pier55 in amounts not passing through the foundation. We classify this as direct_gift for the $231.3M construction spend and apply dedup by subtracting $13.4M (confirmed 2021 foundation pass-through) and any other foundation-to-Pier55 grants from the rollup."
+    },
+    {
+      "event_id": "diller_littleisland_maintenance",
+      "event_role": "pledge",
+      "year": 2014,
+      "year_range": [
+        2021,
+        2041
+      ],
+      "donor_entity": "Diller-von Furstenberg Family Foundation",
+      "recipient": "Pier55 Inc (Little Island) \u2014 operations/maintenance 20-year commitment",
+      "pledged_amount_usd": 120000000,
+      "status": "PARTIALLY_DISBURSED",
+      "status_note": "Pier55 Inc 2024 receipts of $35.6M in 2024 likely reflect annual draws against this maintenance commitment (~$6M/year average). Remaining commitment: ~$85-100M through 2041.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Little_Island_at_Pier_55",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "diller_highline_2011",
+      "event_role": "direct_gift",
+      "year": 2011,
+      "date_precision": "year",
+      "donor_entity": "Diller-von Furstenberg Family Foundation",
+      "recipient": "Friends of the High Line",
+      "amount_usd": 20000000,
+      "amount_usd_note": "Chronicle of Philanthropy Oct 2011 \u2014 $20M gift to complete High Line park. Building on two prior gifts totaling $15M. Cumulative High Line giving estimated at $35M+.",
+      "source_type": "news",
+      "source_url": "https://www.philanthropy.com/article/20-million-gift-to-support-n-y-s-high-line-park/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "cumulative_note": "Prior gifts ($15M across 2 earlier donations) per Huffington Post and Philanthropy News Digest \u2014 likely already captured within older Diller Foundation 990-PF grants_out pre-2019."
+    },
+    {
+      "event_id": "diller_mptf_2012",
+      "event_role": "direct_gift",
+      "year": 2012,
+      "date_precision": "year",
+      "donor_entity": "Diller-von Furstenberg Family Foundation",
+      "recipient": "Motion Picture & Television Fund (MPTF / 'Hollywood Fund')",
+      "amount_usd": 30000000,
+      "amount_usd_note": "Hollywood Reporter / Variety / Philanthropy News Digest 2012 \u2014 $30M legacy gift. Largest single personal donation to MPTF at the time. Healthcare/retirement for entertainment industry workers.",
+      "source_type": "news",
+      "source_url": "https://www.hollywoodreporter.com/news/general-news/barry-diller-donation-mptf-333259/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "diller_sol_museum",
+      "event_role": "direct_gift",
+      "year_range": [
+        2017,
+        2019
+      ],
+      "donor_entity": "Diller-von Furstenberg Family Foundation",
+      "recipient": "Statue of Liberty-Ellis Island Foundation (new Statue of Liberty Museum)",
+      "amount_usd_disclosed": null,
+      "amount_usd_note": "Listed among major donors on Statue of Liberty Foundation major-donors page. Specific dollar amount not publicly disclosed. Conservative placeholder: $1-5M range based on museum donor tier conventions. Not included in observable total until confirmed.",
+      "source_type": "donor_registry",
+      "source_url": "https://www.statueofliberty.org/statue-of-liberty/statue-of-liberty-museum/major-donors-6/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low"
+    },
+    {
+      "event_id": "diller_shed_arts",
+      "event_role": "direct_gift",
+      "year_range": [
+        2015,
+        2019
+      ],
+      "donor_entity": "Barry Diller (personal/foundation unclear)",
+      "recipient": "The Shed (Hudson Yards arts center)",
+      "amount_usd_disclosed": null,
+      "amount_usd_note": "Press coverage (archpaper, artnet, NYT) confirms Diller among The Shed's 'small group of billionaire founders' alongside Bloomberg ($75M), Stephen Ross. Specific Diller amount not disclosed publicly. Bloomberg's $75M is named. Diller's gift likely in $5-15M range based on comparable founder-donor tiers but NOT confirmed.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/The_Shed_(arts_center)",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "diller_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "year_formal_letter": 2015,
+      "pledged_pct_wealth": 50,
+      "pledged_pct_wealth_note": "Standard Giving Pledge minimum 50% commitment. Diller's letter (published June 2015 but verbal commitment in 2010) does not specify a higher percentage. Reference to 'more than $1 billion' appears in secondary press summaries but is not in the pledge letter itself.",
+      "pledged_amount_usd_at_signing_estimate": 1500000000,
+      "pledged_amount_note": "Net worth ~$3B at 2010 verbal pledge, ~$3.2B at 2015 formal letter. 50% = ~$1.5-1.6B target in then-dollars. At current $5.3B net worth, 50% target = ~$2.65B.",
+      "status": "ON_TRACK_OR_POSSIBLY_FULFILLED",
+      "status_reasoning": "Cumulative observable giving via both foundations + Little Island direct ~$300-400M, plus MPTF $30M, High Line $35M, other. Full lifetime observable giving likely in $400-500M range. This is ~15-19% of current 50% pledge target, but Diller's net worth has grown modestly (not 30x like Ellison). If he continues at 2020-2021 foundation giving rate ($27M/yr) plus Little Island maintenance draws, he is on pace to fulfill 50% lifetime. NOT flagged as unfulfilled in IPS 2025 report's detailed fail list (would require cross-check).",
+      "pledge_letter_quote": "I don't think there's another group like it anywhere \u2014 a room full of very complex personalities \u2014 of drive and aspiration \u2014 of ego and curiosity \u2014 all engaged in wanting to help solve problems for others, to make the world a fairer better place.",
+      "source_url": "https://www.givingpledge.org/pledger/barry-diller-and-diane-von-furstenberg/",
+      "retrieved_at": "2026-04-24"
+    }
+  ],
+  "political_giving": {
+    "classification": "MODERATE_DEM",
+    "substitution_note": "Diller's political giving is material but not at the Ellison ($30M+) or Soros scale. Classified as moderate Democratic donor with public political commentary (anti-Trump, endorsed Kamala Harris 2024).",
+    "observed_total_2016_2024_usd": 2500000,
+    "observed_total_note": "CampaignMoney.com shows $834,648 in 2016 cycle alone. Post-2016 includes $6,600 max to Biden 2023, $100,000 to Biden/DNC joint super-PAC 2024, $105,000 to NY Gov Hochul 2021-2022 (combined with DVF). Plus $1M+ total since 2006 per press. FEC direct-pull not yet run; figure is a floor.",
+    "sources": [
+      {
+        "url": "https://www.campaignmoney.com/political/contributions/barry-diller.asp?cycle=16",
+        "retrieved_at": "2026-04-24",
+        "publisher": "CampaignMoney.com",
+        "amount_usd": 834648,
+        "cycle": "2016"
+      },
+      {
+        "url": "https://theankler.com/p/barry-diller-im-no-longer-supporting",
+        "retrieved_at": "2026-04-24",
+        "publisher": "The Ankler",
+        "notes": "2024 coverage of Diller withdrawing Biden support then endorsing Harris"
+      },
+      {
+        "url": "https://www.cnbc.com/2020/01/09/billionaire-barry-diller-us-should-get-rid-of-paid-political-ads",
+        "retrieved_at": "2026-04-24",
+        "publisher": "CNBC",
+        "notes": "Diller's on-record position that US should ban paid political ads \u2014 relevant philosophy context; not a dollar figure."
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Diller Von Furstenberg Family Foundation (newer)",
+        "ein": "46-1581956",
+        "established_year": 2013,
+        "state": "NY",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 113241057,
+        "grants_out_latest_usd": 9843065,
+        "officers_compensation": "ZERO_COMP (Barry Diller, Diane Von Furstenberg, Alexandre Von Furstenberg, Tatiana Von Furstenberg, Ali Kay, Antonia Steinberg, Talita Von Furstenberg, Tassilo Von Furstenberg \u2014 all zero)",
+        "payout_rate_notes": "2024 grants ($9.8M) vs assets ($113.2M) = 8.7%, above the 5% legal minimum. Note: 2019-2021 showed ZERO grants_out per ProPublica summary, suggesting this entity sat dormant while the older Diller Foundation did the active granting. Post-2022 became the primary vehicle.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956"
+      }
+    ],
+    "foundations_terminated": [
+      {
+        "name": "The Diller Foundation (older) \u2014 DBA Diller-Von Furstenberg Family Foundation",
+        "ein": "95-4081892",
+        "established_year": 1986,
+        "terminated_year_approx": 2022,
+        "state": "CA (then NY)",
+        "status": "inactive/dissolved",
+        "status_note": "Not listed in IRS's most recent list of tax-exempt organizations per ProPublica. 2022 990-PF shows $0 net assets and $73.9k expenses \u2014 clear wind-down. Peak 2021 assets ~$132.6M.",
+        "peak_grants_out_2021_usd": 27600000,
+        "major_recipient_history": "Pier55/Little Island $13.4M in 2021; Buck's Rock Camp $14M in 2020; UCLA Foundation $3.75M combined; Vital Voices $3M combined; DVF Awards ($50K \u00d7 5 recipients/year since 2010); Hudson River Park cumulative $113M (through early 2010s).",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
+        "todo": "Pull archived 990-PFs 2001-2018 to complete the picture of pre-2019 grants_out. Estimated $100-200M additional giving in that window based on 2011 High Line $20M, 2012 MPTF $30M, 2014 $113M Hudson River Park commitment, etc. \u2014 these predate our retrieved window."
+      }
+    ],
+    "operating_nonprofits_controlled": [
+      {
+        "name": "Pier55 Inc (Little Island)",
+        "ein": "46-2703610",
+        "role": "501(c)(3) operating nonprofit that built and operates Little Island park; Barry Diller is Chair/President (zero comp).",
+        "established_year": 2014,
+        "contributions_received_cumulative_2015_2024_usd": 196000000,
+        "contributions_received_detail": {
+          "2024": 35602912,
+          "2023": 0,
+          "2022": 0,
+          "2021": 61579695,
+          "2020": 0,
+          "2019": 39610124,
+          "2018": 24965711,
+          "2017": 9031800,
+          "2015": 25218789
+        },
+        "assets_usd_latest": 242600000,
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/462703610",
+        "retrieved_at": "2026-04-24",
+        "classification_note": "Pier55 Inc is NOT a private foundation \u2014 it's an operating public charity with a specific mission (run Little Island). Contributions received are the giving-inflow we can observe. The vast majority come from Diller per press reporting ('$231.3M in private funding' per Wikipedia). Schedule B not public."
+      }
+    ],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified for Diller. Absence-of-evidence only.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC identified.",
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred. Diller owns superyacht 'EOS' (flagged Cayman Islands historically), so personal offshore asset structure is plausible but unrelated to philanthropy routing.",
+    "trusts_disclosed": []
+  },
+  "red_flags": [
+    {
+      "flag": "PUBLIC_SPACE_PRIVATIZATION_CRITICISM",
+      "evidence": "Little Island / Pier 55 faced sustained criticism for private control of public waterfront: New Republic ('How Money Is Changing City Parks'), Slate ('billionaire-funded tourist trap'), NYS Assembly member Deborah Glick ('let's not forget they have all this extra money because they're not being taxed as they should'). City Club of NY filed multiple lawsuits 2015-2017. Project briefly cancelled Sept 2017 before Cuomo's $50M state subsidy revived it. This is a philanthropy-as-self-brand / philanthropy-substituting-for-tax critique, not a fraud or diversion red flag.",
+      "source_url": "https://slate.com/business/2021/06/little-island-new-york-city-barry-diller-thomas-heatherwick.html"
+    },
+    {
+      "flag": "NARROW_GEOGRAPHIC_AND_CAUSE_CONCENTRATION",
+      "evidence": "Documented giving is overwhelmingly NYC-centric (Little Island, High Line, The Shed, Statue of Liberty Museum, Hudson River Park) plus entertainment industry (MPTF) and family-connected causes (DVF Awards, Buck's Rock Camp where von Furstenberg children attended). Very limited global health, poverty, scientific research, or social-justice grantmaking at scale. NYC cultural-amenity philanthropy benefits the very social/economic class of the donor \u2014 lower counterfactual impact on marginal utility terms than e.g. GiveWell-style global health.",
+      "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/barry-diller-html"
+    }
+  ],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (on pace given modest net-worth growth + ~$400-500M documented lifetime giving vs. ~$2.65B target \u2014 see caveats)",
+    "LOW_PAYOUT (newer foundation 2024 payout 8.7%; older foundation historically 5%+)",
+    "HIGH_OFFICER_COMP (all directors zero comp across both foundations and Pier55)",
+    "DAF_TRANSFERS (no DAF activity observed)",
+    "POLITICAL_DOMINATES_CHARITABLE (political giving is meaningful but ~$1-2.5M/cycle vs. ~$30M+/yr charitable \u2014 charitable dominates)",
+    "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH (net worth has grown from ~$3B (2010) to ~$5B (2026), ~1.7x \u2014 giving has tracked or exceeded)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 390000000,
+    "observable_giving_method": "Sum: Little Island direct construction $231.3M + MPTF 2012 $30M + High Line 2011 $20M + DVFFF 2022-2024 grants $29.1M + Diller Fdn 2019-2021 grants ~$54M + estimated pre-2019 Diller Fdn grants $50M (placeholder for archived 990-PFs not yet pulled). Excludes Pier55 contributions-in that pass through the foundations (dedup). Excludes undisclosed Statue of Liberty Museum and Shed gifts. Excludes political giving.",
+    "observable_giving_range_usd": [
+      350000000,
+      500000000
+    ],
+    "observable_giving_todo": [
+      "Pull Diller Foundation (EIN 95-4081892) archived 990-PFs 2001-2018 \u2014 adds substantial pre-2019 giving including 2014 Hudson River Park $113M commitment.",
+      "Reconcile Pier55 Inc contributions-in ($196M cumulative) vs. foundations' grants-out to Pier55 to get exact Diller-direct (non-foundation) contribution to Pier55.",
+      "Verify Statue of Liberty Museum gift amount (currently unsourced).",
+      "Verify The Shed gift amount (currently unsourced).",
+      "Run FEC bulk pull to tighten political total.",
+      "Check Wikipedia claim of $113M to Hudson River Park in 2014 \u2014 this may actually be the original Little Island pledge re-characterized, need to disambiguate."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 185500000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.35 \u00d7 $5.3B = $1.855B; tenure cap saturated (20 years). Expected = $185.5M. Diller's observable ~$390M is ~210% of the 10% formal norm. He exceeds the denominator.",
+    "observable_ratio_to_expected": 2.1,
+    "observable_ratio_to_current_nw": 0.0736,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not checked. Zero for now.",
+      "anonymous_cohort_uplift_usd": 30000000,
+      "anonymous_cohort_method": "Diller has publicly said donor recognition matters less to him than civic outcomes but is NOT anonymous-by-default \u2014 naming rights on Little Island, High Line recognition, MPTF attribution are all explicit. Apply modest anonymous uplift: ~1% of observable giving \u00d7 cohort amplifier = ~$30M.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms (Diller is Jewish by background; no public observant-tithing pattern).",
+      "maintenance_pledge_remaining_usd": 85000000,
+      "maintenance_pledge_note": "Of the $120M 20-year Little Island maintenance commitment, roughly $35M has been drawn through 2024 based on Pier55 Inc receipts. Remaining ~$85M is committed-but-not-yet-disbursed.",
+      "total_usd": 115000000,
+      "total_method": "anonymous ($30M) + remaining maintenance commitment ($85M)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 2.72,
+    "tier": "Probably_Adequate (Tier C)",
+    "tier_rule": "Observable $390M is 2.1x the 10% norm. Unlike Ellison, Diller is NOT a pledge-unfulfilled case; observable + committed giving exceeds expected threshold. However, cause-mix is narrow (NYC arts + own-class amenities) and includes the public-space-privatization critique. Not 'low' (not a Scrooge); not 'high-impact' (not giving at Bill Gates levels in absolute or marginal-utility terms). Classification 'Probably Adequate' fits: he has given materially, on pace with or above 10% norm, but the giving is concentrated in legacy-monument projects in his home city.",
+    "tier_published_caveat": "Diller is the counter-example to the pledge-unfulfilled archetype: modest-by-billionaire-standards net worth, roughly on pace with his Giving Pledge commitment, concrete large-dollar disbursements. The critique is qualitative (cause selection) not quantitative. Readers should understand 'Tier C / Probably Adequate' as 'not a Scrooge' not as 'exemplary.'"
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 28.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 8.0
+    },
+    "note": "v2 formula for continuity. Observable exceeds expected so giving_gap_40pct = 0. Tenure saturated (20 years). Not pledge-unfulfilled. Two non-quantitative red flags = 8 points (out of 20). DO NOT PUBLISH \u2014 tiers only per PLAN.md."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "IAC Investor Relations + Diller-von Furstenberg Family Foundation (dvfff.org contact) + Pier55 Inc press contact",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Pull archived Diller Foundation (EIN 95-4081892) 990-PFs 2001-2018 to fill pre-2019 giving window. Expect $100-200M additional documented grants.",
+    "VERIFY: Clarify whether Wikipedia's '$113M to Hudson River Park in 2014' is distinct from or identical to the Little Island $260M (likely the same pledge initially characterized as a broader Hudson River Park gift before narrowing to Pier 55 specifically).",
+    "VERIFY: Exact Diller-family contribution share of Pier55 Inc's $196M cumulative receipts (Schedule B not public). Press says 'Diller-von Furstenberg Family Foundation provided $231.3M'.",
+    "VERIFY: Statue of Liberty Museum gift amount (donor listed, amount not disclosed).",
+    "VERIFY: The Shed founding donor gift amount (Diller among founding donors, amount not disclosed).",
+    "VERIFY: NYU Tisch \u2014 research brief mentioned 'naming gifts' but search returns NO evidence of a Diller Tisch naming gift. Diller sits on Tisch Dean's Council and NYU Board of Trustees but no Tisch naming gift found in public sources. Flag for removal from research brief OR deeper dig.",
+    "VERIFY: FEC bulk pull for Diller's full political giving history 2016-2024.",
+    "VERIFY: Run Brave Search for post-2024 announced Diller gifts (1-year freshness window)."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/461581956",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Newer Diller Von Furstenberg Family Foundation 990-PF 2022-2024 grants, assets, officers"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/954081892",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Older Diller Foundation 990-PF 2019-2022, peak 2021 assets $132.6M, dissolution status"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/462703610",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Pier55 Inc 990 contributions-in 2015-2024 ($196M cumulative)"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/barry-diller-and-diane-von-furstenberg/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Giving Pledge signatory confirmation + letter quote (verbal 2010, formal letter 2015)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Barry_Diller",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biography, wealth source, Little Island $260M, High Line $20M, MPTF $30M"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Little_Island_at_Pier_55",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Little Island construction costs $260M, Diller $231.3M private funding, $120M maintenance commitment, lawsuits, Cuomo revival"
+    },
+    {
+      "url": "https://www.crainsnewyork.com/construction-property/inside-little-island-barry-dillers-260m-public-park",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Little Island $260M Crain's corroboration"
+    },
+    {
+      "url": "https://slate.com/business/2021/06/little-island-new-york-city-barry-diller-thomas-heatherwick.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Critical perspective on Little Island as billionaire-funded privatization"
+    },
+    {
+      "url": "https://newrepublic.com/article/120909/barry-dillers-pier-55-park-how-money-changing-city-parks",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Critical perspective on private control of public space"
+    },
+    {
+      "url": "https://www.philanthropy.com/article/20-million-gift-to-support-n-y-s-high-line-park/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2011 $20M High Line gift"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/diller-von-furstenberg-family-foundation-awards-20-million-to-help-complete-high-line-park",
+      "retrieved_at": "2026-04-24",
+      "used_for": "High Line $20M corroboration"
+    },
+    {
+      "url": "https://www.hollywoodreporter.com/news/general-news/barry-diller-donation-mptf-333259/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2012 $30M MPTF gift"
+    },
+    {
+      "url": "https://variety.com/2012/film/news/barry-diller-donates-30-mil-to-mptf-1118055040/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MPTF $30M corroboration"
+    },
+    {
+      "url": "https://www.statueofliberty.org/statue-of-liberty/statue-of-liberty-museum/major-donors-6/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Statue of Liberty Museum major donor listing (amount not disclosed)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Shed_(arts_center)",
+      "retrieved_at": "2026-04-24",
+      "used_for": "The Shed founding donor context"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/diller-foundation/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Diller Foundation overview, DVF Awards, $113M Hudson River Park 2014"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/barry-diller-html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Grantmaking strategy overview"
+    },
+    {
+      "url": "https://www.campaignmoney.com/political/contributions/barry-diller.asp?cycle=16",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2016 political giving $834,648"
+    },
+    {
+      "url": "https://theankler.com/p/barry-diller-im-no-longer-supporting",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2024 political realignment from Biden to Harris"
+    },
+    {
+      "url": "https://www.cnbc.com/2020/01/09/billionaire-barry-diller-us-should-get-rid-of-paid-political-ads",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Diller's public stance on political ad money"
+    },
+    {
+      "url": "https://www.grantmakers.io/profiles/v0/954081892-the-diller-foundation-dba-the-diller-von-furstenberg-family-foundation/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Older Diller Foundation top grant recipients 2021 incl. Pier55 $13.4M"
+    },
+    {
+      "url": "https://hudsonriverpark.org/locations/pier-55-little-island/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Little Island location and Hudson River Park context"
+    },
+    {
+      "url": "https://dvfff.org/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Foundation official website"
+    }
+  ],
+  "_source_file": "barry_diller.v3.json"
+}

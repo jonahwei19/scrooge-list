@@ -1,0 +1,436 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire v3 record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political). Classification for Tier A/B/C happens downstream.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual deep-research run — Haim Saban",
+
+  "person": {
+    "name_display": "Haim Saban",
+    "name_legal": "Haim Saban",
+    "dob_year": 1944,
+    "country_primary": "United States",
+    "country_secondary": "Israel",
+    "wealth_source": "Saban Entertainment (Power Rangers); $1.6B+ personal profit from 2001 Disney acquisition of Fox Family Worldwide; lead investor in Univision Communications buyout consortium (2007); Saban Capital Group family office with media and financial services holdings",
+    "years_as_billionaire_approx": 25
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 3.3,
+    "range_usd_billions": [2.8, 3.9],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 profile lists Saban at rank #1285. Wikipedia and most secondary sources converge on ~$3.3B. Celebrity Net Worth and Music Business Worldwide cite ~$3.0B. Peak of range ~$3.9B comes from older 2024 estimates. Net worth has been relatively stable in the $3-4B band for most of the last decade — Saban is a pre-AI-era entertainment fortune, not benefiting from the 2022-2026 tech wealth surge.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires (2026 list)",
+        "url": "https://www.forbes.com/profile/haim-saban/",
+        "retrieved_at": "2026-04-24",
+        "rank_on_list": 1285,
+        "value_usd_billions_estimate": 3.3,
+        "note": "Forbes profile retrieved via Brave summary (direct fetch blocked). Snippet states '#1285 on Forbes' 2026 Billionaires list' and confirms $230M to-date charitable giving per Forbes plus 2017 $50M Academy Museum pledge."
+      },
+      {
+        "publisher": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Haim_Saban",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 3.3
+      },
+      {
+        "publisher": "Celebrity Net Worth",
+        "url": "https://www.celebritynetworth.com/richest-businessmen/richest-billionaires/haim-saban-net-worth/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 3.0,
+        "note": "States ~$3B 'AFTER Haim has given away around $1 billion to charity to date' — the $1B lifetime figure is higher than the $420M self-reported 2019 figure and higher than the Forbes $230M figure; CNW figure is unsourced"
+      }
+    ],
+    "liquidity_estimate_pct": 0.6,
+    "liquidity_notes": "Saban's wealth is largely post-exit cash and private-market holdings (Saban Capital Group). Unlike Ellison or Musk whose wealth is concentrated in a single public-company stake with large divestment frictions, Saban's capital has been redeployed across a private portfolio for 20+ years. Apply 60% liquidity for 'giving capacity now' — high relative to tech founders."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "saban_sff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Saban Family Foundation",
+      "donor_ein": "95-4769273",
+      "recipient": "Various (not disclosed at summary level)",
+      "amount_usd": 4967947,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "saban_sff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Saban Family Foundation",
+      "donor_ein": "95-4769273",
+      "amount_usd": 5000622,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "saban_sff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Saban Family Foundation",
+      "donor_ein": "95-4769273",
+      "amount_usd": 8169335,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "saban_sff_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Saban Family Foundation",
+      "donor_ein": "95-4769273",
+      "amount_usd": 17110517,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "saban_sff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Saban Family Foundation",
+      "donor_ein": "95-4769273",
+      "amount_usd": 8642298,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "saban_sff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Saban Family Foundation",
+      "donor_ein": "95-4769273",
+      "amount_usd": 8767455,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "saban_chla_2003",
+      "event_role": "direct_gift",
+      "year": 2003,
+      "date_precision": "year",
+      "donor_entity": "Cheryl Saban, Haim Saban, and The Saban Family Foundation",
+      "recipient": "Children's Hospital Los Angeles — renamed The Saban Research Institute",
+      "amount_usd": 40000000,
+      "source_type": "announcement",
+      "source_url": "https://www.chla.org/research/about-saban-research-institute",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "CHLA states this was 'the largest single gift of its kind to a children's hospital in North America' at the time. Research building and Smith Research Tower provide 150,000+ sq ft of lab space.",
+      "dedup_note": "This $40M may be partially captured in SFF 990-PFs 2003+; pre-2011 SFF 990-PF data not in current pull. Flag: potential partial double-count with SFF aggregate if later years' Saban-lifetime totals include this. For the 2019-2024 SFF window used in rollup, there is no overlap — gift predates the window."
+    },
+    {
+      "event_id": "saban_brookings_2002",
+      "event_role": "direct_gift",
+      "year": 2002,
+      "date_precision": "year",
+      "donor_entity": "Haim Saban (initial grant) — funding route (personal vs SFF) unspecified",
+      "recipient": "Brookings Institution — Saban Center for Middle East Policy",
+      "amount_usd": 13000000,
+      "source_type": "announcement",
+      "source_url": "https://www.brookings.edu/news/brookings-announces-new-saban-center-for-middle-east-policy/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Described as the largest donation in Brookings history at the time. Plus additional pledged funds. In 2014 Brookings dropped 'Saban' from the center's official name (now simply Center for Middle East Policy); Saban Forum continued through 2017 before pausing in 2018.",
+      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window — no overlap."
+    },
+    {
+      "event_id": "saban_academymuseum_2017",
+      "event_role": "pledge",
+      "year": 2017,
+      "date_precision": "month",
+      "donor_entity": "Cheryl and Haim Saban",
+      "recipient": "Academy Museum of Motion Pictures — May Company Building (renamed Saban Building)",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://www.oscars.org/news/academy-museum-receives-landmark-50-million-gift-cheryl-and-haim-saban",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Forbes profile confirms this was a pledge. Status of disbursement as of 2026-04 not verified from 990-PF detail. Museum opened September 2021. Assume the pledge has been substantially paid by now but specific SFF grant lines to Academy Museum not verified in current pull.",
+      "dedup_note": "Pledge likely paid through SFF 2017-2021 990-PFs (currently uncaptured years 2011-2018) and/or personal. Some portion plausibly sits inside the 2019-2021 SFF grants already in rollup — cannot verify without recipient-level SFF data. Flag for partial double-count risk."
+    },
+    {
+      "event_id": "saban_fidf_lifetime_pre2018",
+      "event_role": "direct_gift",
+      "year_range": [1999, 2018],
+      "donor_entity": "Haim Saban and Cheryl Saban (personal + foundation mix)",
+      "recipient": "Friends of the Israel Defense Forces (FIDF)",
+      "amount_usd": 55000000,
+      "amount_usd_note": "Approximate. Hollywood Reporter 2019 article cites '$55+ million' to FIDF across Sabans' giving history. Includes personal gala contributions (e.g., $3.6M at 2014 gala) plus a building project named for the Saban family housing 222 'lone soldiers'.",
+      "source_type": "announcement",
+      "source_url": "https://www.hollywoodreporter.com/movies/movie-features/haim-cheryl-saban-talk-power-philanthropy-israel-2020-presidential-race-1222856/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Figure spans ~2 decades, overlapping partially with SFF 2019 grants in rollup. Saban has chaired record-breaking FIDF galas (2014 $33M raised; 2015 $34M; 2017 $53.8M Beverly Hills gala). Large fraction of this figure is pre-2019, so minimal overlap with the 2019-2024 SFF window — but some recurring annual giving likely continues inside the window and is captured in SFF grants."
+    },
+    {
+      "event_id": "saban_soroka_2007",
+      "event_role": "direct_gift",
+      "year": 2007,
+      "donor_entity": "Haim Saban / Saban Family Foundation",
+      "recipient": "Soroka Medical Center (Beersheba, Israel) — children's hospital",
+      "amount_usd": 14000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Haim_Saban",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window — no overlap."
+    },
+    {
+      "event_id": "saban_lifetime_self_reported_2019",
+      "event_role": "announcement_aggregate",
+      "year": 2019,
+      "donor_entity": "Haim Saban and Cheryl Saban (self-reported)",
+      "amount_usd": 420000000,
+      "source_type": "announcement",
+      "source_url": "https://www.hollywoodreporter.com/movies/movie-features/haim-cheryl-saban-talk-power-philanthropy-israel-2020-presidential-race-1222856/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "notes": "Sabans publicly stated $420M lifetime giving across ~1,000 causes as of July 2019. Declared philosophy: '50-50 — for every dollar we give in America, we give a dollar in Israel.' Focus areas: healthcare, LA cultural, female empowerment, veterans, US-Israel relations. Celebrity Net Worth reports a higher (unsourced) $1B lifetime figure.",
+      "dedup_note": "This is a LIFETIME aggregate through 2019. It subsumes CHLA $40M (2003), Brookings $13M (2002), Soroka $14M (2007), pre-2019 FIDF contributions, and pre-2019 SFF grants. For the rollup, we should NOT sum the aggregate AND the detailed gifts — we treat the aggregate as the best estimate of pre-2019 giving and add post-2019 SFF grants on top."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "saban_giving_pledge_NOT_signed",
+      "event_role": "pledge_status",
+      "status": "NOT_SIGNED",
+      "source_type": "registry",
+      "source_url": "https://www.givingpledge.org/pledger/haim-saban/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Direct URL at Giving Pledge registry returns 404. Wikipedia and Hollywood Reporter 2019 profile do not mention Saban signing. Verified NOT on the 256-name pledger list as of 2026-04."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Saban is a canonical case: the Sabans themselves say 'tens of millions' in political giving is separate from (not part of) their $420M philanthropic total.",
+    "observed_total_lifetime_usd_floor": 30000000,
+    "observed_total_note": "Lower-bound floor from press reporting. Key data points: $9M+ in 2002 cycle alone; $10M+ 2001-2002 DNC cycle (largest single DNC donation at that time); $7M to Priorities USA Super PAC 2015-2016 (Clinton); $6.4M to Clinton 2016 overall; $1M to AIPAC super PAC April 2022; $929,600 maximum individual contribution to Biden Victory Fund fall 2023; Saban Capital Group $4.5M 2024 cycle; $4.5M raised at February 2024 Biden LA fundraiser co-hosted with Wasserman. The Sabans themselves characterize lifetime political giving as 'tens of millions'. Nearly exclusively Democratic; one-issue-is-Israel framing.",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=haim+saban&order=desc&sort=D",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets"
+      },
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000380&name=Saban,+Haim&super_only=N&type=I",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets — 2024 Super-PAC detail"
+      },
+      {
+        "url": "https://www.opensecrets.org/orgs/saban-capital-group/summary?id=D000037316",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets — Saban Capital Group",
+        "amount_usd_2024_cycle": 4503566
+      },
+      {
+        "url": "https://deadline.com/2024/01/biden-trump-donors-jeffrey-katzenberg-rupert-murdoch-1235810650/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Deadline",
+        "amount_usd": 929600,
+        "event_date": "2023-fall",
+        "note": "Maximum individual contribution to Biden Victory Fund"
+      },
+      {
+        "url": "https://www.haaretz.com/us-news/2022-04-13/ty-article/.highlight/israeli-u-s-billionaire-saban-donates-1-million-to-aipacs-super-pac/00000180-5bb2-d718-afd9-dfbea3a70000",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Haaretz",
+        "amount_usd": 1000000,
+        "event_date": "2022-04"
+      },
+      {
+        "url": "https://amp.cnn.com/cnn/2024/02/20/politics/joe-biden-fundraising-january/index.html",
+        "retrieved_at": "2026-04-24",
+        "publisher": "CNN",
+        "event_date": "2024-02",
+        "note": "Biden LA fundraiser co-hosted by Sabans and Wasserman, raised $4.5M"
+      },
+      {
+        "url": "https://www.thewrap.com/haim-saban-hillary-clinton-millions-donated-campaign/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "TheWrap",
+        "amount_usd": 7000000,
+        "event_date": "2015-06 to 2016-06",
+        "note": "Priorities USA super-PAC for Clinton"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Saban Family Foundation",
+        "ein": "95-4769273",
+        "established_year": 1999,
+        "state": "CA",
+        "city": "Los Angeles",
+        "status": "active",
+        "tax_exempt_since": "2000-01",
+        "latest_990_year": 2024,
+        "grants_out_usd_latest": 4967947,
+        "assets_usd_latest": 69341,
+        "assets_usd_2019": 14685243,
+        "payout_rate_notes": "SFF operates as a flow-through: annual net assets are very low ($69K at year-end 2024; $547K at year-end 2023) relative to grants paid (~$5M/year). Revenue of $6.25M in 2023 covering expenses of $5.02M shows contributions flowing in and out annually from the Sabans. This is a 'checkbook foundation' structure — no endowment stockpiling. No LOW_PAYOUT flag.",
+        "officers_compensation": "Jesse Bronner (Director, North America) $286,607 in 2024; Micha Manevich (Grant Manager) $144,720; other officers $0. Combined officer comp ~$431K on ~$5M grants-out = 8.7% — below the 10% HIGH_COMP threshold but elevated relative to peer foundations (cf. Ellison Foundation with zero-comp officers).",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED — recipient-level SFF grants not in current pull. Would require parsing full 990-PF Part XV schedule.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No donor-advised fund activity identified. Saban's SFF structure (high inflow/outflow, low endowment) suggests direct charitable control rather than DAF-intermediary routing — but DAFs are donor-opaque. Unknown lower bound.",
+    "llcs_philanthropic": [],
+    "llcs_note": "Saban Capital Group is a private family office / investment firm — explicitly NOT a philanthropic LLC. It is also registered with the FEC as a political PAC source.",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN. Saban has Egyptian/Israeli/US citizenship and extensive international business history (Saban Entertainment sold to Disney through News Corp JV structure; major investments in Germany via ProSiebenSat.1 and in Mexico via Univision). Offshore structure plausible but not verified.",
+    "named_philanthropic_assets_institutions": [
+      {"name": "Saban Research Institute", "host": "Children's Hospital Los Angeles", "established": 2003, "original_gift_usd": 40000000},
+      {"name": "Saban Building", "host": "Academy Museum of Motion Pictures", "established": 2021, "original_gift_usd": 50000000},
+      {"name": "Saban Community Clinic (formerly LA Free Clinic)", "host": "Los Angeles free clinic network"},
+      {"name": "Saban Center for Middle East Policy", "host": "Brookings Institution", "established": 2002, "renamed_to_dropped_2014": true, "original_gift_usd": 13000000},
+      {"name": "Saban Forum", "host": "Brookings Institution", "established": 2004, "active_last_held": 2017, "status": "paused_since_2018"},
+      {"name": "Saban Family Lone Soldiers Center", "host": "FIDF Israel"},
+      {"name": "Saban National Political Leadership Training Seminar", "host": "AIPAC"}
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Giving Pledge URL /pledger/haim-saban/ returns 404. Saban not on the 256-name pledger list despite 25+ years as a billionaire and public donor campaigns urging 'other Hollywood players' to give more. This is a choice — Saban has explicitly used philanthropy announcements as a prod to peers, but has declined the formal pledge.",
+      "source_url": "https://www.givingpledge.org/pledger/haim-saban/"
+    },
+    {
+      "flag": "POLITICAL_HEAVY",
+      "evidence": "Sabans self-describe political giving as 'tens of millions' and separate from charitable $420M. $30M+ lifetime floor from FEC/press. Saban is ranked among the top individual Democratic donors across multiple cycles (5th in 2000; 155th→top-tier thereafter; $929,600 max to Biden Victory Fund 2023; Saban Capital Group $4.5M 2024 cycle). Per NBER W26616 ~$0.33 of charitable giving is displaced per $1 of political giving.",
+      "source_url": "https://www.opensecrets.org/donor-lookup/results?name=haim+saban&order=desc&sort=D"
+    },
+    {
+      "flag": "MIXED_PHILANTHROPY_POLITICS",
+      "evidence": "Multiple Saban vehicles blur policy-advocacy and charitable lines: Saban Center at Brookings (policy influence), Saban Forum (elite convening for US-Israel relations), AIPAC-hosted Saban National Political Leadership Training Seminar. These are 501(c)(3)-eligible but are advocacy-adjacent and align with Saban's declared 'one-issue-guy, my issue is Israel' framing. Legally charitable; categorically closer to political giving than to e.g. pediatric cancer research.",
+      "source_url": "https://www.brookings.edu/news/brookings-announces-new-saban-center-for-middle-east-policy/"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (SFF operates as flow-through, ~100% payout of annual contributions)",
+    "HIGH_OFFICER_COMP (8.7% of grants — below 10% threshold, though elevated vs. zero-comp peer foundations)",
+    "DAF_TRANSFERS (no DAF activity identified; not confirmed absent at grant-detail level)",
+    "GIVING_PLEDGE_UNFULFILLED (N/A — never signed)",
+    "FOR_PROFIT_PIVOT (no for-profit philanthropy hybrid)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 472650000,
+    "observable_giving_method": "Self-reported lifetime through 2019 ($420M) + SFF 990-PF grants 2020-2024 ($43.89M total: 2020 $8.64M + 2021 $17.11M + 2022 $8.17M + 2023 $5.00M + 2024 $4.97M) + FIDF post-2019 incremental estimate ~$9M (2017 $9M FIDF pledge covers multiyear). Includes SFF 2019 grant inside the $420M aggregate to avoid double-count. Excludes: political giving; Saban Center/Forum advocacy-adjacent flags (counted but not excluded — they are 501(c)(3)).",
+    "observable_giving_notes": [
+      "$420M figure is SELF-REPORTED by the Sabans in a 2019 Hollywood Reporter interview. Forbes separately cites $230M 'to-date' charitable giving on the current profile page — a $190M discrepancy that could reflect (a) different cut-off dates, (b) different scope (Forbes = named major gifts only; Sabans = ~1,000 causes aggregate), or (c) self-reported inflation. Treat the $420M as an UPPER-band self-report and $230M as a lower-band Forbes-curated view.",
+      "Conservative floor reconstruction from named gifts: CHLA $40M + Brookings $13M + Academy Museum $50M + FIDF ~$55M + Soroka $14M + SFF 2011-2024 ($130M+ implied from available years) = ~$302M. Suggests true observable is between $300M and $470M."
+    ],
+    "observable_giving_todo": [
+      "Pull SFF 990-PFs 2011-2018 (available on ProPublica) to get complete foundation grants_out series.",
+      "Parse recipient-level SFF grants to deduplicate against CHLA/Brookings/Academy Museum major gifts.",
+      "Verify Academy Museum $50M pledge disbursement status — 2017 pledge; museum opened 2021.",
+      "Pre-2011 SFF data via IRS SOI archive — SFF established 1999, so 12 years of pre-2011 grants absent from current pull.",
+      "FEC bulk pull vs Saban / Saban Capital Group to pin down political giving total (currently $30M floor)."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 198000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.60 × $3.3B = $1.98B; tenure saturated (25 years). Expected = $198M.",
+    "observable_ratio_to_expected": 2.39,
+    "observable_ratio_to_current_nw": 0.143,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence; SFF flow-through structure argues against large parallel DAF. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Saban Capital Group is a for-profit investment vehicle. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 30000000,
+      "anonymous_cohort_method": "Sabans are NOT private donors — they publicize giving explicitly as peer-pressure strategy ('go public to prod other Hollywood players'). Low anonymous cohort uplift. Set at 0.5% of net worth × 50% of liquid = modest $30M upper bound to account for Israel-side giving that may not be captured in US 990-PF filings.",
+      "religious_cohort_uplift_usd": 35000000,
+      "religious_note": "Saban is publicly, strongly Jewish-identified and Zionist. Sabans' declared '50-50 US-Israel' split means roughly half of lifetime giving flows to Israel. Some portion of Israel-side giving may not appear in US 990-PFs. Apply ~1% of net worth as upper bound on religious/Israel giving beyond what is already captured in SFF + self-report aggregate.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "No disclosed philanthropic trust structure. Saban has publicly stated no 95%-commitment or Giving Pledge equivalent. Zero envelope.",
+      "total_usd": 65000000,
+      "total_method": "anonymous + religious/Israel (daf/llc/offshore/trust all zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 2.72,
+    "tier": "Moderate_Giver (Tier C)",
+    "tier_rule": "Observable / expected = 2.39× — Saban is giving at ~24% of liquid wealth, well above the 10% formal norm. He is NOT low-giving by the Scrooge rubric. However, he is ALSO notably NOT a Giving Pledge signatory, has large parallel political giving (displacement), and his giving is concentrated in Israel-advocacy and US-Israel policy institutions that some readers will view as hybrid philanthropy/politics.",
+    "tier_published_caveat": "Saban is an interesting control case: proves the Scrooge List isn't just 'didn't sign the Giving Pledge = Tier A.' Saban didn't sign and still gives above the 10% norm. Flag him as 'Moderate Giver, politically-heavy, policy-influence-heavy' — not a Scrooge target. Core narrative: the Giving Pledge is one signal but not the only one."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 28.0,
+    "components": {
+      "giving_gap_40pct": 0,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0,
+      "red_flag_penalty_20pct": 8.0
+    },
+    "note": "Giving gap is zero (observable > expected). Tenure penalty saturated. No pledge breach (never signed). Two red flags (POLITICAL_HEAVY, MIXED_PHILANTHROPY_POLITICS) = 8 points. Computed for continuity; DO NOT PUBLISH per PLAN.md."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Saban Capital Group (info@saban.com or general corporate contact) + The Saban Family Foundation (2121 Avenue of the Stars, Suite 800, LA 90067) + Haim Saban personal assistant via Saban Capital Group.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: SFF 990-PFs 2011-2018 — complete the foundation grants series.",
+    "VERIFY: Recipient-level SFF grants to deduplicate against CHLA $40M / Brookings $13M / Academy Museum $50M major gifts.",
+    "VERIFY: Academy Museum $50M pledge — has it been paid in full? 2017 pledge, museum opened 2021.",
+    "VERIFY: FEC bulk pull vs Haim Saban + Cheryl Saban + Saban Capital Group — tighten $30M political floor to actual total.",
+    "VERIFY: ICIJ Offshore Leaks name-match — Saban has Egyptian/Israeli citizenship and global media business history.",
+    "VERIFY: Israel-side charitable giving — SFF may route Israel grants via an Israeli sister entity. Check Israeli charitable registries (Rasham Ha'Amutot).",
+    "VERIFY: Forbes $230M lifetime figure vs. Sabans' self-reported $420M — reconcile the discrepancy before publication."
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/954769273", "retrieved_at": "2026-04-24", "used_for": "SFF 990-PF grants 2019-2024, assets, officer compensation, EIN"},
+    {"url": "https://www.forbes.com/profile/haim-saban/", "retrieved_at": "2026-04-24", "used_for": "2026 Forbes rank #1285; $230M self-reported to-date charitable giving"},
+    {"url": "https://en.wikipedia.org/wiki/Haim_Saban", "retrieved_at": "2026-04-24", "used_for": "Net worth $3.3B; Brookings Saban Center $13M 2002; Soroka Medical $14M 2007; political giving history; biography"},
+    {"url": "https://www.celebritynetworth.com/richest-businessmen/richest-billionaires/haim-saban-net-worth/", "retrieved_at": "2026-04-24", "used_for": "$3B net worth alt estimate; $1B lifetime giving claim (unsourced)"},
+    {"url": "https://www.chla.org/research/about-saban-research-institute", "retrieved_at": "2026-04-24", "used_for": "CHLA Saban Research Institute $40M 2003 gift"},
+    {"url": "https://www.brookings.edu/news/brookings-announces-new-saban-center-for-middle-east-policy/", "retrieved_at": "2026-04-24", "used_for": "Saban Center for Middle East Policy founding 2002; $13M initial grant"},
+    {"url": "https://www.brookings.edu/tags/saban-forum/", "retrieved_at": "2026-04-24", "used_for": "Saban Forum history 2004-2017; 2018 pause"},
+    {"url": "https://jewishinsider.com/2018/11/daily-kickoff-theres-no-saban-forum-2018-lena-dunham-proud-appearing-jewish-power-couple-list-inside-israels-burning-man/", "retrieved_at": "2026-04-24", "used_for": "2018 Saban Forum cancellation confirmation"},
+    {"url": "https://www.oscars.org/news/academy-museum-receives-landmark-50-million-gift-cheryl-and-haim-saban", "retrieved_at": "2026-04-24", "used_for": "Academy Museum $50M 2017 pledge; Saban Building naming"},
+    {"url": "https://www.hollywoodreporter.com/movies/movie-features/haim-cheryl-saban-talk-power-philanthropy-israel-2020-presidential-race-1222856/", "retrieved_at": "2026-04-24", "used_for": "Self-reported $420M lifetime 2019; $55M FIDF; 50-50 US-Israel split; political giving framing"},
+    {"url": "https://variety.com/2014/scene/news/haim-sabans-friends-of-the-israel-defense-forces-gala-raises-record-33-million-1201350950/", "retrieved_at": "2026-04-24", "used_for": "2014 FIDF gala $33M raised; $3.6M personal Saban contribution"},
+    {"url": "https://www.timesofisrael.com/record-53-8-million-raised-for-idf-soldiers-at-beverly-hills-gala/", "retrieved_at": "2026-04-24", "used_for": "2017 FIDF gala $53.8M raised"},
+    {"url": "https://www.givingpledge.org/pledger/haim-saban/", "retrieved_at": "2026-04-24", "used_for": "Giving Pledge NOT SIGNED — URL returns 404"},
+    {"url": "https://www.opensecrets.org/donor-lookup/results?name=haim+saban&order=desc&sort=D", "retrieved_at": "2026-04-24", "used_for": "Political giving aggregate; donor lookup"},
+    {"url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000380&name=Saban,+Haim&super_only=N&type=I", "retrieved_at": "2026-04-24", "used_for": "2024 cycle super-PAC detail"},
+    {"url": "https://www.opensecrets.org/orgs/saban-capital-group/summary?id=D000037316", "retrieved_at": "2026-04-24", "used_for": "Saban Capital Group $4.5M 2024 cycle political"},
+    {"url": "https://www.haaretz.com/us-news/2022-04-13/ty-article/.highlight/israeli-u-s-billionaire-saban-donates-1-million-to-aipacs-super-pac/00000180-5bb2-d718-afd9-dfbea3a70000", "retrieved_at": "2026-04-24", "used_for": "$1M AIPAC super-PAC April 2022"},
+    {"url": "https://deadline.com/2024/01/biden-trump-donors-jeffrey-katzenberg-rupert-murdoch-1235810650/", "retrieved_at": "2026-04-24", "used_for": "$929,600 max Biden Victory Fund fall 2023"},
+    {"url": "https://amp.cnn.com/cnn/2024/02/20/politics/joe-biden-fundraising-january/index.html", "retrieved_at": "2026-04-24", "used_for": "February 2024 Biden LA fundraiser hosted by Sabans + Wasserman"},
+    {"url": "https://www.thewrap.com/haim-saban-hillary-clinton-millions-donated-campaign/", "retrieved_at": "2026-04-24", "used_for": "$7M Priorities USA super-PAC for Clinton 2015-2016"},
+    {"url": "https://philanthropynewsdigest.org/news/saban-foundation-pledges-100-million-to-l.a.-childrens-hospital-others", "retrieved_at": "2026-04-24", "used_for": "2003 $100M Saban Foundation multi-institution pledge announcement"},
+    {"url": "https://www.influencewatch.org/non-profit/friends-of-the-israel-defense-forces-fidf/", "retrieved_at": "2026-04-24", "used_for": "FIDF organizational context"}
+  ]
+}

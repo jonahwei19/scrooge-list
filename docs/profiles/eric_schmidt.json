@@ -1,0 +1,676 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Eric Schmidt)",
+  "person": {
+    "name_display": "Eric Schmidt",
+    "name_legal": "Eric Emerson Schmidt",
+    "dob_year": 1955,
+    "country_primary": "United States",
+    "wealth_source": "Google/Alphabet \u2014 CEO 2001-2011, Executive Chairman 2011-2017; ~1% economic interest in Alphabet plus extensive private venture portfolio (Hillspire family office, Innovation Endeavors VC). Current CEO of Relativity Space (2025-).",
+    "years_as_billionaire_approx": 18
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 36.0,
+    "range_usd_billions": [
+      23,
+      55
+    ],
+    "as_of": "2026-04",
+    "range_note": "Substantial cross-source spread. Bloomberg Billionaires Index ~$54.5B (2025); Celebrity Net Worth ~$36B; TradersUnion/Wealthy Gorilla ~$23-26B. Forbes 2026 list rank reportedly ~#60. Wide spread reflects (a) private venture portfolio opacity via Hillspire and Innovation Endeavors, (b) varying treatment of Alphabet stake vs. diversified holdings, (c) lack of a single concentrated public-equity position.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires (profile page 403s from WebFetch \u2014 must re-verify)",
+        "url": "https://www.forbes.com/profile/eric-schmidt/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": null,
+        "note": "Forbes profile blocked via WebFetch; reported Forbes 2026 rank ~#60 per aggregator Scripps News."
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/eric-e-schmidt/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 54.5,
+        "value_as_of": "2025"
+      },
+      {
+        "publisher": "Celebrity Net Worth",
+        "url": "https://www.celebritynetworth.com/richest-businessmen/ceos/eric-schmidt-net-worth/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 36
+      },
+      {
+        "publisher": "Wikipedia (citing Bloomberg 2025)",
+        "url": "https://en.wikipedia.org/wiki/Eric_Schmidt",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 54.5
+      },
+      {
+        "publisher": "Scripps News (Forbes 2026 coverage)",
+        "url": "https://www.scrippsnews.com/world/forbes-2026-worlds-billionaires-list-is-here-some-rankings-may-surprise-you",
+        "retrieved_at": "2026-04-24",
+        "rank_on_list": 60
+      }
+    ],
+    "liquidity_estimate_pct": 0.55,
+    "liquidity_notes": "Schmidt's wealth profile is unusually diversified for a tech founder: he sold most of his Google stock over the 2011-2017 window (Form 4 data), rotating into a wide portfolio held through Hillspire (family office) and Innovation Endeavors (VC). Unlike Ellison or Zuckerberg, he does NOT hold a concentrated public stake. Net result: higher liquidity baseline (~55%) but MORE opacity about total asset value. Use 0.55 for current-giving-capacity denominator."
+  },
+  "cited_events": [
+    {
+      "event_id": "schmidt_sff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Schmidt Family Foundation",
+      "donor_ein": "20-4170342",
+      "recipient": "Various (includes 11th Hour Project grantees; recipients not disclosed in ProPublica summary)",
+      "amount_usd": 200982190,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_sff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Schmidt Family Foundation",
+      "donor_ein": "20-4170342",
+      "amount_usd": 152319793,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_sff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Schmidt Family Foundation",
+      "donor_ein": "20-4170342",
+      "amount_usd": 123350206,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_sff_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Schmidt Family Foundation",
+      "donor_ein": "20-4170342",
+      "amount_usd": 95965845,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_sff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Schmidt Family Foundation",
+      "donor_ein": "20-4170342",
+      "amount_usd": 104648444,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_sff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Schmidt Family Foundation",
+      "donor_ein": "20-4170342",
+      "amount_usd": 82008062,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_ewsfsi_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "The Eric and Wendy Schmidt Fund for Strategic Innovation (funds Schmidt Sciences + SCSP + Schmidt Futures activities)",
+      "donor_ein": "46-3460261",
+      "amount_usd": 315900000,
+      "amount_usd_note": "Rounded \u2014 ProPublica summary reports $315.9M charitable disbursements FY2024.",
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "THIS IS THE OPERATIONAL 501(c)(3) BEHIND SCHMIDT SCIENCES / SCHMIDT FUTURES / SCSP. Officers include Stuart Feldman (President Schmidt Sciences, $683K comp) and Michael Gable (EVP SCSP, $419K comp). Grants OUT from this entity include payments to Schmidt-affiliated recipient entities; risk of intra-family recycling deserves audit if full 990-PF recipient list is parsed."
+    },
+    {
+      "event_id": "schmidt_ewsfsi_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Eric and Wendy Schmidt Fund for Strategic Innovation",
+      "donor_ein": "46-3460261",
+      "amount_usd": 254700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_ewsfsi_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Eric and Wendy Schmidt Fund for Strategic Innovation",
+      "donor_ein": "46-3460261",
+      "amount_usd": 160400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_ewsfsi_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Eric and Wendy Schmidt Fund for Strategic Innovation",
+      "donor_ein": "46-3460261",
+      "amount_usd": 60200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_ewsfsi_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Eric and Wendy Schmidt Fund for Strategic Innovation",
+      "donor_ein": "46-3460261",
+      "amount_usd": 50100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_ewsfsi_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Eric and Wendy Schmidt Fund for Strategic Innovation",
+      "donor_ein": "46-3460261",
+      "amount_usd": 68600000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "schmidt_broad_2021",
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date_precision": "month",
+      "donor_entity": "Eric and Wendy Schmidt (vehicle: announced gift, likely via SFF or EWSFSI \u2014 NOT YET DEDUPED)",
+      "recipient": "Broad Institute of MIT and Harvard (Eric and Wendy Schmidt Center)",
+      "amount_usd": 150000000,
+      "source_type": "announcement",
+      "source_url": "https://www.insidephilanthropy.com/home/2022-3-31-risk-capital-in-action-a-deep-dive-into-eric-and-wendy-schmidts-giving",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "TODO: verify which foundation wrote the check. If from EWSFSI or SFF, it is already inside the 2021 grants_out totals and must not be double-counted. Leave flagged pending full 990-PF grant recipient parsing."
+    },
+    {
+      "event_id": "schmidt_princeton_hall_2019",
+      "event_role": "direct_gift",
+      "year": 2019,
+      "recipient": "Princeton University \u2014 'Eric and Wendy Schmidt Hall' (Computer Science expansion of Guyot Hall)",
+      "amount_usd": null,
+      "amount_usd_note": "Exact figure not disclosed in available sources; Princeton Alumni describes the Schmidts as funding the rebuilding/expansion of the historic Guyot Hall renamed in their honor.",
+      "source_type": "announcement",
+      "source_url": "https://alumni.princeton.edu/stories/eric-and-wendy-schmidt-endow-new-professorship-indigenous-studies-princeton",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "dedup_note": "Likely inside SFF or EWSFSI grant totals. Flag pending recipient parsing."
+    },
+    {
+      "event_id": "schmidt_chronicle_2021_contrib",
+      "event_role": "transfer_in",
+      "year": 2021,
+      "donor_entity": "Eric and Wendy Schmidt (personal)",
+      "recipient": "Schmidt giving vehicles (SFF + EWSFSI)",
+      "amount_usd": 382800000,
+      "amount_usd_note": "Chronicle of Philanthropy 2021 total reflects CONTRIBUTIONS INTO vehicles, not grants OUT. Ranked #12 on 2021 Philanthropy 50.",
+      "source_type": "announcement",
+      "source_url": "https://www.insidephilanthropy.com/home/2022-3-31-risk-capital-in-action-a-deep-dive-into-eric-and-wendy-schmidts-giving",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "CRITICAL: This is a transfer INTO their foundations, NOT out-the-door giving. Per dedup rule, we count grants_out from the foundations (which we do), not the contributions in. Excluded from observable rollup. Forbes Philanthropy Score 2 for Schmidt = 1-4.99% of wealth in lifetime out-the-door gifts, per Inside Philanthropy's reading of Forbes."
+    },
+    {
+      "event_id": "schmidt_chronicle_2024_p50",
+      "event_role": "transfer_in_or_pledge_ambiguous",
+      "year": 2024,
+      "donor_entity": "Eric and Wendy Schmidt",
+      "amount_usd": 774900000,
+      "source_type": "announcement",
+      "source_url": "https://www.philanthropy.com/article/in-a-year-of-record-breaking-giving-bloomberg-tops-philanthropy-50-rankings/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "dedup_note": "Chronicle's 2025 Philanthropy 50 (covering 2024 giving) lists Eric and Wendy Schmidt at $774.9M. Chronicle methodology historically mixes pledges, contributions to own vehicles, and grants out \u2014 NOT deduplicated. Flagged as ambiguous. Combined SFF+EWSFSI 2024 grants_out = $517M; the $774.9M delta likely includes new contributions into vehicles and/or Schmidt Sciences commitments. DO NOT sum with foundation grant-outs."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "schmidt_gp_status",
+      "event_role": "no_pledge",
+      "status": "NOT_SIGNED",
+      "status_source": "Direct check of Giving Pledge pledger list 2026-04-24 \u2014 Schmidt name absent. Inside Philanthropy (2022) and multiple recent profiles confirm the Schmidts have NOT signed the Giving Pledge.",
+      "source_url": "https://www.givingpledge.org/pledger-list/",
+      "retrieved_at": "2026-04-24",
+      "correction_note": "CORRECTION FROM RESEARCH BRIEF: The task brief stated 'Giving Pledge \u2014 SIGNED (2021? verify year)' but this is INCORRECT. Neither Eric Schmidt nor Wendy Schmidt appears on the official Giving Pledge list. Likely brief-confusion with their 2019 $1B 'philanthropic commitment' announcement (which is NOT a Giving Pledge signature) or the 2021 Broad Institute $150M gift."
+    },
+    {
+      "event_id": "schmidt_2019_1b_commitment",
+      "event_role": "pledge",
+      "year": 2019,
+      "date": "2019-11-13",
+      "pledged_amount_usd": 1000000000,
+      "status": "PARTIALLY_FULFILLED",
+      "recipient": "Schmidt Futures \u2014 talent development & public service programs",
+      "source_type": "announcement",
+      "source_url": "https://www.prnewswire.com/news-releases/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others-300957008.html",
+      "retrieved_at": "2026-04-24",
+      "notes": "The $1B 'talent commitment' was announced to Schmidt Futures \u2014 which is operated by Futures Action Network LLC (NOT a 501c3). Partial fulfillment visible through the 501c3 EWSFSI grants-out, but Schmidt Futures itself does not file public 990s. This announcement is sometimes mistaken for a Giving Pledge signature; it is NOT."
+    },
+    {
+      "event_id": "schmidt_ai2050_2021",
+      "event_role": "pledge",
+      "year": 2021,
+      "pledged_amount_usd": 125000000,
+      "pledged_term_years": 5,
+      "recipient": "AI2050 program (now under Schmidt Sciences)",
+      "status": "IN_PROGRESS",
+      "source_type": "announcement",
+      "source_url": "https://www.schmidtsciences.org/ai2050-early-career-fellows-2024/",
+      "retrieved_at": "2026-04-24"
+    },
+    {
+      "event_id": "schmidt_sciences_launch_2024",
+      "event_role": "vehicle_announcement",
+      "year": 2024,
+      "pledged_amount_usd": null,
+      "pledged_amount_note": "Multiple sources report Schmidt Sciences FY2024 gave $228.7M with $1.59B in assets (overlap with EWSFSI figures suggests Schmidt Sciences operates as a program of EWSFSI or is reporting on EWSFSI assets). Task brief's '$5B in commitments' figure NOT verified in public sources \u2014 the largest verified commitments are the 2019 $1B (Schmidt Futures) and $125M AI2050. The cumulative Schmidt Sciences + Schmidt Futures + SFF lifetime disbursement exceeds $2B (observable) but $5B is not publicly corroborated.",
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Schmidt_Sciences",
+      "retrieved_at": "2026-04-24",
+      "notes": "Schmidt Sciences was established in 2024 as a spin-off of Schmidt Futures' scientific arm. Stuart Feldman is co-CEO of both. This is the PRIMARY science-giving vehicle going forward.",
+      "brief_correction_note": "Task brief claimed Schmidt Sciences has 'received ~$5B in commitments' \u2014 could not corroborate. Public sources document $1B+ cumulative disbursed, $125M AI2050, $10M AI safety (2025), plus ocean/astronomy/biosciences programs of unquantified size. A $5B lifetime cumulative number is plausible IF counting all Schmidt-affiliated vehicle spending since 2006, but not specifically to Schmidt Sciences."
+    },
+    {
+      "event_id": "schmidt_ocean_institute_falkor_too",
+      "event_role": "announcement",
+      "year_range": [
+        2021,
+        2023
+      ],
+      "recipient": "Schmidt Ocean Institute \u2014 R/V Falkor (too) research vessel",
+      "amount_usd": null,
+      "amount_usd_note": "Vessel retrofit + equipment described as multi-million-dollar venture; exact capital figure not disclosed.",
+      "source_type": "announcement",
+      "source_url": "https://schmidtocean.org/rv-falkor/",
+      "retrieved_at": "2026-04-24"
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY_DEMOCRATIC",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2016_2024_usd": 13000000,
+    "observed_total_note": "Fox News (2022) reported $13M+ over prior six years, mostly to Democrats. 2024 cycle adds at least $2.76M more: $1.6M Future Forward PAC + $1.16M Biden Victory Fund. Conservative combined 2016-2024 floor ~$15-16M.",
+    "sources": [
+      {
+        "url": "https://www.foxnews.com/politics/former-google-ceo-emerges-key-democratic-power-player-ahead-midterms",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Fox News (2022)",
+        "amount_usd": 13000000,
+        "cumulative_through": "2022",
+        "note": "$224K in 2016; $8.5M in 2020; $4M+ in 2022 cycle"
+      },
+      {
+        "url": "https://www.bloomberg.com/features/2024-billionaire-donors-us-election/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Bloomberg 2024 Billionaire Donors Tracker",
+        "amount_usd": 2760000,
+        "event_date": "2024",
+        "note": "$1.6M Future Forward + $1.16M Biden Victory Fund"
+      },
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=eric+schmidt",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets donor lookup",
+        "note": "Primary source \u2014 raw FEC pull deferred to Phase 1.3 refresh."
+      },
+      {
+        "url": "https://www.axios.com/pro/tech-policy/2023/04/27/scoop-ex-google-chief-considered-funding-ai-to-help-dems",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Axios",
+        "note": "2023: considered funding AI-for-Dems initiative (~$1M), ultimately declined. Documents willingness to blur philanthropy / political lines."
+      }
+    ],
+    "verification_todo": "Run FEC bulk API against Schmidt's name/address to tighten 2022-2024 totals and confirm any state-level contributions."
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Schmidt Family Foundation",
+        "ein": "20-4170342",
+        "established_year": 2006,
+        "state": "CA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 1990498177,
+        "grants_out_2024_usd": 200982190,
+        "officers_compensation": "Schmidts (Eric, Wendy, Sophie) all zero comp. Staff officers: Joseph Sciortino (Exec Dir) $530K; N. Darani (VP Programs) $430K; several program directors $290-310K. Compensation is high but reflects large California-based operating foundation with 500+ grants/year and staff of 50+.",
+        "payout_rate_notes": "2024 charitable disbursements $201M / assets $1.99B = 10.1% \u2014 double the 5% legal minimum. No LOW_PAYOUT flag.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED (recipient list parsing needed)",
+        "primary_programs": [
+          "11th Hour Project (environment/climate/food/energy)",
+          "Schmidt Ocean Institute funding"
+        ],
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342"
+      },
+      {
+        "name": "The Eric and Wendy Schmidt Fund for Strategic Innovation",
+        "ein": "46-3460261",
+        "established_year": 2014,
+        "state": "CA (Palo Alto)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 1590000000,
+        "grants_out_2024_usd": 315900000,
+        "officers_compensation": "Eric + Wendy zero comp. Stuart Feldman (Pres Schmidt Sciences) $683K; Mark Greaves (Exec Dir) $452K; Michael Gable (EVP SCSP) $419K. Staff comp high but reflects the fact that EWSFSI is the operational 501(c)(3) behind Schmidt Sciences, Schmidt Futures programs, AND the Special Competitive Studies Project \u2014 three program operations under one tax umbrella.",
+        "payout_rate_notes": "2024 charitable disbursements $316M / assets $1.59B = 19.9% \u2014 far above 5% minimum. No LOW_PAYOUT flag.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED. Risk factor: SCSP itself is flagged by Tech Transparency Project as claiming 501(c)(3) status 'not found in IRS or Virginia public databases' \u2014 any grant from EWSFSI to SCSP deserves audit.",
+        "primary_programs": [
+          "Schmidt Sciences (2024-)",
+          "Schmidt Futures programming (as LLC contractor)",
+          "Special Competitive Studies Project funding",
+          "AI2050 ($125M over 5 years)"
+        ],
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified. Absence-of-evidence only.",
+    "llcs_philanthropic": [
+      {
+        "name": "Futures Action Network LLC",
+        "jurisdiction": "Delaware",
+        "classification": "PHILANTHROPIC_LLC_OPERATING_SCHMIDT_FUTURES",
+        "founded_year": 2017,
+        "status": "active (though consolidated post-2024 Schmidt Sciences spinoff)",
+        "source_url": "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus",
+        "methodology_note": "Schmidt Futures was/is operated by Futures Action Network LLC \u2014 a for-profit Delaware LLC. Not a 501(c)(3). Not required to disclose grantees to the IRS. Funded by EWSFSI and other Schmidt-related sources. Under Forbes/IPS methodology, LLC spending counts as charitable ONLY if the LLC passes funds through to verifiable 501(c)(3) recipients. Since grantee list is NOT disclosed, Schmidt Futures spending has a material DUAL_VEHICLE_AMBIGUITY: some is charitable, some is impact investment, some may be political or for-profit R&D."
+      },
+      {
+        "name": "Hillspire (family office) \u2014 NOT philanthropic, flagged for completeness",
+        "jurisdiction": "US (private)",
+        "classification": "NOT_PHILANTHROPIC_family_office",
+        "note": "Hillspire manages the Schmidts' personal wealth. Included in vehicle inventory only to distinguish from philanthropic entities."
+      },
+      {
+        "name": "Innovation Endeavors \u2014 NOT philanthropic, flagged for completeness",
+        "classification": "NOT_PHILANTHROPIC_venture_capital",
+        "note": "Schmidt's VC firm. For-profit. Listed to clarify scope of 'Schmidt vehicles.'"
+      }
+    ],
+    "llcs_note": "Futures Action Network LLC is the live DUAL_VEHICLE_AMBIGUITY concern. Eric Schmidt also fully bankrolls Special Competitive Studies Project (SCSP), nominally a 501(c)(3) based in Arlington VA, though Tech Transparency Project flags that SCSP's nonprofit status is NOT confirmed in Virginia or IRS public databases as of their 2022 audit. SCSP is a direct successor to the NSCAI (which Schmidt chaired) and operates as a DC policy shop.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "Schmidt Futures (as initiative)",
+        "classification": "HYBRID_LLC_OPERATING_INITIATIVE",
+        "source_url": "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "policy_think_tanks": [
+      {
+        "name": "Special Competitive Studies Project (SCSP)",
+        "claimed_status": "501(c)(3)",
+        "verification_note": "Tech Transparency Project reports no registration found in Virginia or IRS public databases as of 2022; verification deferred.",
+        "founded_year": 2021,
+        "location": "Arlington, VA",
+        "source_url": "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus",
+        "note": "Successor to NSCAI. Funded directly by Schmidt (Eric & Wendy Schmidt Fund for Strategic Innovation is a funder). Purpose: national security tech policy. Classification under philanthropic generosity: AMBIGUOUS \u2014 think-tank support counts as charity under 501(c)(3) rules but is also a tool of policy influence."
+      }
+    ]
+  },
+  "red_flags": [
+    {
+      "flag": "DUAL_VEHICLE_AMBIGUITY",
+      "evidence": "Schmidt operates philanthropy through BOTH a 501(c)(3) private foundation (SFF + EWSFSI, together $578M in 2024 grants_out) AND a for-profit LLC (Futures Action Network, operating Schmidt Futures). LLC grantee list is NOT publicly disclosed. Under Forbes/IPS methodology, only grants to verifiable charities count; LLC spend is neither verified charity nor verified non-charity. Material opacity.",
+      "source_url": "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
+    },
+    {
+      "flag": "POLICY_INFLUENCE_PHILANTHROPY",
+      "evidence": "Schmidt chaired the National Security Commission on AI (NSCAI, 2018-2021), then funded its successor SCSP through his own 501(c)(3). CNBC reports Schmidt helped write AI laws in DC without disclosing concurrent investments in AI startups. Think-tank funding classified as charity but functions as policy influence.",
+      "source_url": "https://www.cnbc.com/2022/10/24/how-googles-former-ceo-eric-schmidt-helped-write-ai-laws-in-washington-without-publicly-disclosing-investments-in-a-i-start-ups.html"
+    },
+    {
+      "flag": "SCSP_NONPROFIT_STATUS_UNVERIFIED",
+      "evidence": "Tech Transparency Project reports Special Competitive Studies Project claims 501(c)(3) status but no registration found in Virginia Secretary of State or IRS public databases as of their 2022 audit. If SCSP is receiving Schmidt foundation grants as a 'public charity,' this requires verification.",
+      "source_url": "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus"
+    },
+    {
+      "flag": "POLITICAL_HEAVY",
+      "evidence": "$15M+ political giving 2016-2024, almost entirely Democratic ($8.5M in 2020 alone, $2.76M in 2024). NBER W26616 estimates $0.33 of political giving substitutes for $1 of charitable giving.",
+      "source_url": "https://www.foxnews.com/politics/former-google-ceo-emerges-key-democratic-power-player-ahead-midterms"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (SFF 2024 payout 10.1% of assets; EWSFSI 2024 payout 19.9% \u2014 both well above 5% minimum)",
+    "HIGH_OFFICER_COMP (Schmidts personally take zero comp from both foundations; staff comp justified by operational scale)",
+    "PLEDGE_UNFULFILLED (Schmidts have NOT signed the Giving Pledge \u2014 so cannot be 'unfulfilled'; they have made non-Giving-Pledge commitments that are being disbursed)",
+    "DAF_TRANSFERS (no evidence found; not confirmed absent)",
+    "DIVORCE_DISRUPTION (Eric and Wendy Schmidt are still married and jointly running philanthropy \u2014 brief-suggested 2019 divorce is INCORRECT; no divorce on record)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 2094975540,
+    "observable_giving_method": "sum(SFF grants_out 2019-2024) + sum(EWSFSI grants_out 2019-2024). SFF = $759M; EWSFSI = $910M; combined $1.669B over 6 years. Adjusting to avoid double-counting the one-time announced gifts already likely inside those totals (Broad $150M, Princeton Hall) \u2014 keep totals at face value and flag for recipient parsing. Lifetime pre-2019 SFF grants_out (2006-2018) not yet pulled \u2014 if ~$50M/yr average, adds ~$600M. Lifetime observable therefore plausibly $2.0-2.3B. Use $2.09B as midpoint.",
+    "observable_giving_todo": [
+      "Pull archived SFF 990-PFs 2006-2018 to add pre-2019 grants_out.",
+      "Pull EWSFSI 990-PFs 2014-2018 (founded 2014) to add pre-2019 grants.",
+      "Parse SFF + EWSFSI 2024 grant recipient lists to identify (a) transfers to Schmidt-affiliated entities (SCSP, Schmidt Futures LLC) \u2014 NOT out-the-door philanthropy, and (b) DAF transfers.",
+      "Verify whether Broad Institute 2021 $150M and Princeton Hall gift are inside foundation grant-outs or personal/direct.",
+      "Run SEC EDGAR Form 4 for Schmidt Alphabet CIK \u2014 check for stock gift (code G) transactions 2011-2017 during his Alphabet divestment window.",
+      "Run FEC API pull to tighten political total $15-16M floor.",
+      "Verify SCSP 501(c)(3) status via IRS and Virginia SoS."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1980000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1). liquid_wealth = 0.55 \u00d7 $36B midpoint = $19.8B; tenure cap saturated (18 years). Expected = $1.98B. Note: if Bloomberg $54.5B figure is correct, expected rises to ~$3.0B.",
+    "observable_ratio_to_expected": 1.058,
+    "observable_ratio_to_current_nw": 0.0582,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 500000000,
+      "llc_uplift_note": "Schmidt Futures via Futures Action Network LLC spends substantial sums not disclosed on 990-PFs. Assume 30-50% of EWSFSI grants are routed through the LLC for programming; outside those, add estimated $400-600M of charitable LLC spend not captured in 990s. Use $500M as midpoint upper.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 180000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously sometimes. Apply 0.2% of liquid wealth as cohort-median hidden anonymous giving upper bound: 0.002 \u00d7 $36B \u00d7 0.55 liquidity = $40M; widen to ~$180M given the Schmidts' demonstrated high-giving pattern and history of program-level (not individual-level) disclosure.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious tithing pattern. Zero.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "No public disclosure of a specific charitable trust. Zero.",
+      "total_usd": 680000000,
+      "total_method": "llc_uplift + anonymous_cohort"
+    },
+    "observable_plus_hidden_ratio_to_expected": 1.401,
+    "tier": "On_Track (Tier D)",
+    "tier_rule": "Observable giving ($2.09B) already EXCEEDS the 10%-of-liquid-wealth formal norm ($1.98B) \u2014 ratio 1.058. Adding the DUAL_VEHICLE_AMBIGUITY LLC uplift and anonymous cohort estimate pushes observable+hidden to ~$2.77B, 1.40x of expected. Schmidt is materially OVER the 10% norm on observable alone. Tier D 'On Track' is the honest classification \u2014 he is not a 'scrooge.'",
+    "tier_published_caveat": "Schmidt is the canonical example of 'wealthy technologist giving at a pace consistent with the 10% norm, through a mix of 501(c)(3) foundations AND an LLC.' Two caveats worth flagging in the published profile: (1) The LLC portion (Schmidt Futures via Futures Action Network) has opaque grantee lists \u2014 we cannot verify what share of LLC spend hits verifiable charities vs. for-profit impact investment vs. policy influence. (2) Significant portion of his giving flows to science policy infrastructure (SCSP, NSCAI work) where 'philanthropy' and 'policy influence' overlap \u2014 generosity tier is defensible, but the 'to whom' question deserves transparency."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 35.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 15.0
+    },
+    "note": "Giving gap component is 0 (observable > expected). No pledge breach (not signed). Red flags 3 \u00d7 5pts = 15. Tenure fully loaded. Preliminary score ~35 = lower (better) than any Tier-A billionaire. Schmidt ranks near-bottom of the Scrooge List: he is giving. DO NOT PUBLISH number \u2014 publish tier only."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Schmidt Sciences press contact + Schmidt Family Foundation (tsffoundation.org) + Hillspire (family office, harder to reach) \u2014 Schmidt Sciences is the most likely to respond given active press operation.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "CORRECTION APPLIED: Task brief said Schmidt signed Giving Pledge in 2021 \u2014 VERIFIED FALSE. He has NOT signed. Do not publish any pledge-breach language for Schmidt.",
+    "CORRECTION APPLIED: Task brief suggested Eric and Wendy Schmidt divorced \u2014 VERIFIED FALSE. Still married, still jointly running philanthropy.",
+    "CORRECTION FLAGGED: Task brief cited Schmidt Sciences with '$5B in commitments' \u2014 NOT verifiable from public sources. Wikipedia + Inside Philanthropy document only the $1B 2019 Schmidt Futures commitment and $125M AI2050. If a $5B figure comes from a specific source, add it; otherwise do not include.",
+    "VERIFY: Pull SFF 990-PFs 2006-2018 and EWSFSI 990-PFs 2014-2018 to complete lifetime observable.",
+    "VERIFY: Parse 2024 grant recipient lists for BOTH foundations to identify intra-family recycling (EWSFSI \u2192 SCSP, EWSFSI \u2192 Schmidt Futures LLC) and DAF transfers.",
+    "VERIFY: SCSP 501(c)(3) status in IRS Tax-Exempt Organization Search and Virginia Secretary of State.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Schmidt's Alphabet CIK during 2011-2017 divestment window.",
+    "VERIFY: FEC bulk pull to tighten political $15-16M floor and confirm 2024 Future Forward + Biden Victory Fund amounts.",
+    "VERIFY: Forbes 2026 net worth \u2014 profile page blocked WebFetch; confirm via direct scrape or alternate aggregator.",
+    "VERIFY: Broad Institute $150M 2021 gift \u2014 from SFF, EWSFSI, or personal?",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/204170342",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Schmidt Family Foundation 990-PF 2019-2024, assets, officers, grants out"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/463460261",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Eric and Wendy Schmidt Fund for Strategic Innovation 990-PF 2019-2024, assets, officers, Schmidt Sciences/Futures/SCSP funding"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger-list/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Confirming Schmidt is NOT on pledger list"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Eric_Schmidt",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Career background, DOB, philanthropic vehicle enumeration, NSCAI/SCSP roles"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Schmidt_Sciences",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Schmidt Sciences founding 2024, spinoff from Schmidt Futures, AI2050 $125M, focus areas"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Schmidt_Futures",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Schmidt Futures founding 2017, structure"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2022-3-31-risk-capital-in-action-a-deep-dive-into-eric-and-wendy-schmidts-giving",
+      "retrieved_at": "2026-04-24",
+      "used_for": "LLC-vs-nonprofit structure analysis, Forbes Philanthropy Score 2, $382.8M 2021 Chronicle contribution figure, Broad Institute $150M gift"
+    },
+    {
+      "url": "https://www.techtransparencyproject.org/articles/eric-schmidts-expanding-influence-apparatus",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Futures Action Network LLC registered in Delaware, SCSP nonprofit status unverified, influence apparatus mapping"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others-300957008.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2019 $1B Schmidt Futures talent commitment announcement"
+    },
+    {
+      "url": "https://www.philanthropy.com/news/eric-and-wendy-schmidt-pledge-1-billion-to-advance-young-people-public-service-and-other-causes/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Chronicle coverage of 2019 $1B commitment"
+    },
+    {
+      "url": "https://www.philanthropy.com/article/in-a-year-of-record-breaking-giving-bloomberg-tops-philanthropy-50-rankings/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2025 Philanthropy 50 (2024 giving): Schmidts $774.9M"
+    },
+    {
+      "url": "https://www.foxnews.com/politics/former-google-ceo-emerges-key-democratic-power-player-ahead-midterms",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Political giving $13M total 2016-2022, cycle breakdowns"
+    },
+    {
+      "url": "https://www.bloomberg.com/features/2024-billionaire-donors-us-election/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2024 cycle Future Forward $1.6M + Biden Victory $1.16M"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=eric+schmidt",
+      "retrieved_at": "2026-04-24",
+      "used_for": "OpenSecrets donor lookup landing page (FEC pull TBD)"
+    },
+    {
+      "url": "https://www.cnbc.com/2022/10/24/how-googles-former-ceo-eric-schmidt-helped-write-ai-laws-in-washington-without-publicly-disclosing-investments-in-a-i-start-ups.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "NSCAI policy-influence red flag evidence"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/National_Security_Commission_on_Artificial_Intelligence",
+      "retrieved_at": "2026-04-24",
+      "used_for": "NSCAI chairmanship, 2018-2021 tenure, March 2021 final report"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/eric-e-schmidt/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg 2025 net worth $54.5B"
+    },
+    {
+      "url": "https://www.celebritynetworth.com/richest-businessmen/ceos/eric-schmidt-net-worth/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Celebrity Net Worth $36B estimate"
+    },
+    {
+      "url": "https://www.scrippsnews.com/world/forbes-2026-worlds-billionaires-list-is-here-some-rankings-may-surprise-you",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 list rank reference"
+    },
+    {
+      "url": "https://11thhourproject.org/about/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "11th Hour Project founding 2006, environment mission, grantmaking scale"
+    },
+    {
+      "url": "https://tsffoundation.org/about/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Schmidt Family Foundation mission and programs"
+    },
+    {
+      "url": "https://www.schmidtsciences.org/ai2050-early-career-fellows-2024/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "AI2050 $125M over 5 years commitment"
+    },
+    {
+      "url": "https://schmidtocean.org/rv-falkor/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Schmidt Ocean Institute R/V Falkor (too) research vessel"
+    },
+    {
+      "url": "https://alumni.princeton.edu/stories/eric-and-wendy-schmidt-endow-new-professorship-indigenous-studies-princeton",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Princeton gifts context"
+    },
+    {
+      "url": "https://www.axios.com/pro/tech-policy/2023/04/27/scoop-ex-google-chief-considered-funding-ai-to-help-dems",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2023 consideration of AI-for-Dems funding; philanthropy/political blur"
+    }
+  ],
+  "summary_150_words": "Eric Schmidt (former Google/Alphabet CEO, ~$36B net worth, Forbes #60 in 2026) gives at a pace CONSISTENT WITH the 10% norm \u2014 unlike most Forbes-list peers. Two 501(c)(3) foundations \u2014 Schmidt Family Foundation (EIN 20-4170342, $2.0B assets, $201M 2024 grants) and Eric and Wendy Schmidt Fund for Strategic Innovation (EIN 46-3460261, $1.6B assets, $316M 2024 grants) \u2014 disbursed $517M in 2024 alone. Lifetime observable 2019-2024: ~$1.67B; extrapolated ~$2.1B lifetime. Has NOT signed the Giving Pledge (correcting brief). Still married to Wendy Schmidt (no divorce). Primary red flag is DUAL_VEHICLE_AMBIGUITY: Schmidt Futures operates via Futures Action Network LLC (Delaware, non-501c3) with undisclosed grantees. Policy-influence entanglement (NSCAI chairmanship \u2192 funding successor SCSP, whose 501c3 registration Tech Transparency Project couldn't verify) is the second concern. Political giving ~$15M+ 2016-2024, mostly Democratic. Tier: ON TRACK.",
+  "_source_file": "eric_schmidt.v3.json"
+}

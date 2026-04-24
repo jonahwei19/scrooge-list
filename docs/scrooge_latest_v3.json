@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T15:21:08.924177Z",
+  "generated_at": "2026-04-24T15:32:46.570862Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
   "legal_disclaimer": "Every figure is an estimate of OBSERVABLE giving from the cited sources. Does not measure total giving. Subjects have been offered a right-of-reply; responses are published on individual profiles. Corrections welcome \u2014 see methodology page.",
   "tier_counts": {
-    "A_VERIFIED_LOW": 4,
-    "B_PROBABLY_LOW": 18,
-    "C_OPAQUE": 4,
+    "A_VERIFIED_LOW": 5,
+    "B_PROBABLY_LOW": 19,
+    "C_OPAQUE": 6,
     "MODERATE": 0,
-    "ON_TRACK": 19,
+    "ON_TRACK": 21,
     "UNKNOWN": 0
   },
-  "count": 45,
+  "count": 51,
   "billionaires": [
     {
       "id": "thomas_peterffy",
@@ -201,6 +201,51 @@
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "larry_page.v3.json",
       "tier_rank": 4
+    },
+    {
+      "id": "ira_rennert",
+      "name_display": "Ira Rennert",
+      "name_legal": "Ira Leon Rennert",
+      "country": "United States",
+      "wealth_source": "The Renco Group (private industrial holding company); subsidiaries include AM General (military truckmaker \u2014 Humvee), Doe Run Company (lead/zinc), U.S. Magnesium Corp., former WCI Steel. Wealth built via junk-bond financed acquisitions in the 1980s-90s.",
+      "years_as_billionaire_approx": 30,
+      "net_worth_best_usd_b": 3.8,
+      "net_worth_range_usd_b": [
+        3.5,
+        5.9
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.15,
+      "observable_usd": 12750000,
+      "expected_usd": 57000000,
+      "hidden_upper_usd": 175400000,
+      "ratio_observable_to_expected": 0.224,
+      "ratio_observable_to_nw": 0.00336,
+      "tier": "A_VERIFIED_LOW",
+      "tier_raw": "Verified_Low (Tier A)",
+      "tier_reasoning": "Rennert is a canonical example of 'old private-industrial billionaire, religious-directed giving, no foundation, no pledge, no public philanthropic identity.' This is distinct from dramatic failures-to-give like Ellison \u2014 Rennert has quietly given to Jewish causes for decades, probably more than observable, but the scale is an order of magnitude below what a $4B fortune held for 30 years would suggest under any reasonable expected-giving norm.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "LOW_PROFILE_PHILANTHROPY_NO_990PF",
+        "ENVIRONMENTAL_HEALTH_SUBSTITUTION",
+        "POLITICAL_GIVING_PRESENT_WITH_LOW_CHARITY_FLOOR",
+        "CONSUMPTION_ASSET_DWARFS_GIVING",
+        "FUND_DIVERSION_COURT_JUDGMENT"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 0,
+        "foundations_active_names": [],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 25,
+      "event_count": 14,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "ira_rennert.v3.json",
+      "tier_rank": 5
     },
     {
       "id": "abigail_johnson",
@@ -762,6 +807,54 @@
       "tier_rank": null
     },
     {
+      "id": "philip_anschutz",
+      "name_display": "Philip Anschutz",
+      "name_legal": "Philip Frederick Anschutz",
+      "country": "United States",
+      "wealth_source": "Oil & gas (Anschutz Ranch field, sold interest to Mobil 1982 for $500M); Union Pacific/Southern Pacific railroad stakes; The Anschutz Corporation (private holdco) \u2014 AEG (Anschutz Entertainment Group, owns Coachella/LA Kings/LA Galaxy/O2 Arena), Clarity Media (Washington Examiner), Regal Entertainment, Xanterra Parks & Resorts, Walden Media",
+      "years_as_billionaire_approx": 44,
+      "net_worth_best_usd_b": 17.0,
+      "net_worth_range_usd_b": [
+        16.9,
+        24.8
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.15,
+      "observable_usd": 439430000,
+      "expected_usd": 2550000000,
+      "hidden_upper_usd": 1820000000,
+      "ratio_observable_to_expected": 0.172,
+      "ratio_observable_to_nw": 0.0258,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low_To_Baseline (Tier B, leaning C on full data pull)",
+      "tier_reasoning": "Anschutz is the opposite of the 'signed the pledge, hasn't followed through' case (Ellison). He did NOT sign the Giving Pledge and therefore made no public commitment, but he has consistently deployed $50-82M/yr through his foundation for 40+ years, plus $300M+ to a named medical campus. The legitimate Scrooge concerns here are: (1) ideology of recipients (anti-LGBTQ-adjacent Christian causes), (2) low payout rate several recent years (3.9-4.7%), (3) politics-over-charity displacement signaled by $1.9M 2024 political giving. None of these make him a quantitative Scrooge \u2014 they make him an ideologically contentious philanthropist.",
+      "pledge_signed": false,
+      "red_flags": [
+        "POLITICAL_DOMINATES_OVER_TIME",
+        "IDEOLOGICAL_CULTURE_WAR_GIVING",
+        "LOW_PAYOUT_RECENT_YEARS",
+        "EXTREME_PRIVACY_NO_PLEDGE"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 4,
+        "foundations_active_names": [
+          "The Anschutz Foundation",
+          "Anschutz Family Foundation",
+          "Christian P. Anschutz Foundation",
+          "Libby Anschutz Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 22,
+      "event_count": 16,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "philip_anschutz.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "rob_walton",
       "name_display": "Rob Walton",
       "name_legal": "Samuel Robson Walton",
@@ -1031,6 +1124,93 @@
       "event_count": 21,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "steve_cohen.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "barry_diller",
+      "name_display": "Barry Diller",
+      "name_legal": "Barry Charles Diller",
+      "country": "United States",
+      "wealth_source": "Media/internet mogul. Chairman & Senior Executive of IAC/InterActiveCorp and Expedia Group. Prior career: Paramount Pictures Chairman/CEO 1974-1984, Fox Broadcasting Company co-founder 1984-1992, QVC/USA Broadcasting. Spouse: fashion designer Diane von Furstenberg (m. 2001); owns ~1/3 of DVF's eponymous fashion company.",
+      "years_as_billionaire_approx": 20,
+      "net_worth_best_usd_b": 5.3,
+      "net_worth_range_usd_b": [
+        4.5,
+        5.3
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.35,
+      "observable_usd": 390000000,
+      "expected_usd": 185500000,
+      "hidden_upper_usd": 115000000,
+      "ratio_observable_to_expected": 2.1,
+      "ratio_observable_to_nw": 0.0736,
+      "tier": "C_OPAQUE",
+      "tier_raw": "Probably_Adequate (Tier C)",
+      "tier_reasoning": "Diller is the counter-example to the pledge-unfulfilled archetype: modest-by-billionaire-standards net worth, roughly on pace with his Giving Pledge commitment, concrete large-dollar disbursements. The critique is qualitative (cause selection) not quantitative. Readers should understand 'Tier C / Probably Adequate' as 'not a Scrooge' not as 'exemplary.'",
+      "pledge_signed": false,
+      "red_flags": [
+        "PUBLIC_SPACE_PRIVATIZATION_CRITICISM",
+        "NARROW_GEOGRAPHIC_AND_CAUSE_CONCENTRATION"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Diller Von Furstenberg Family Foundation (newer)"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 23,
+      "event_count": 13,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "barry_diller.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "haim_saban",
+      "name_display": "Haim Saban",
+      "name_legal": "Haim Saban",
+      "country": "United States",
+      "wealth_source": "Saban Entertainment (Power Rangers); $1.6B+ personal profit from 2001 Disney acquisition of Fox Family Worldwide; lead investor in Univision Communications buyout consortium (2007); Saban Capital Group family office with media and financial services holdings",
+      "years_as_billionaire_approx": 25,
+      "net_worth_best_usd_b": 3.3,
+      "net_worth_range_usd_b": [
+        2.8,
+        3.9
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.6,
+      "observable_usd": 472650000,
+      "expected_usd": 198000000,
+      "hidden_upper_usd": 65000000,
+      "ratio_observable_to_expected": 2.39,
+      "ratio_observable_to_nw": 0.143,
+      "tier": "C_OPAQUE",
+      "tier_raw": "Moderate_Giver (Tier C)",
+      "tier_reasoning": "Saban is an interesting control case: proves the Scrooge List isn't just 'didn't sign the Giving Pledge = Tier A.' Saban didn't sign and still gives above the 10% norm. Flag him as 'Moderate Giver, politically-heavy, policy-influence-heavy' \u2014 not a Scrooge target. Core narrative: the Giving Pledge is one signal but not the only one.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "POLITICAL_HEAVY",
+        "MIXED_PHILANTHROPY_POLITICS"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "The Saban Family Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 22,
+      "event_count": 13,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "haim_saban.v3.json",
       "tier_rank": null
     },
     {
@@ -1346,6 +1526,97 @@
       "event_count": 14,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "dustin_moskovitz.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "eric_schmidt",
+      "name_display": "Eric Schmidt",
+      "name_legal": "Eric Emerson Schmidt",
+      "country": "United States",
+      "wealth_source": "Google/Alphabet \u2014 CEO 2001-2011, Executive Chairman 2011-2017; ~1% economic interest in Alphabet plus extensive private venture portfolio (Hillspire family office, Innovation Endeavors VC). Current CEO of Relativity Space (2025-).",
+      "years_as_billionaire_approx": 18,
+      "net_worth_best_usd_b": 36.0,
+      "net_worth_range_usd_b": [
+        23,
+        55
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 2094975540,
+      "expected_usd": 1980000000,
+      "hidden_upper_usd": 680000000,
+      "ratio_observable_to_expected": 1.058,
+      "ratio_observable_to_nw": 0.0582,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier D)",
+      "tier_reasoning": "Schmidt is the canonical example of 'wealthy technologist giving at a pace consistent with the 10% norm, through a mix of 501(c)(3) foundations AND an LLC.' Two caveats worth flagging in the published profile: (1) The LLC portion (Schmidt Futures via Futures Action Network) has opaque grantee lists \u2014 we cannot verify what share of LLC spend hits verifiable charities vs. for-profit impact investment vs. policy influence. (2) Significant portion of his giving flows to science policy infrastructure (SCSP, NSCAI work) where 'philanthropy' and 'policy influence' overlap \u2014 generosity tier is defensible, but the 'to whom' question deserves transparency.",
+      "pledge_signed": false,
+      "red_flags": [
+        "DUAL_VEHICLE_AMBIGUITY",
+        "POLICY_INFLUENCE_PHILANTHROPY",
+        "SCSP_NONPROFIT_STATUS_UNVERIFIED",
+        "POLITICAL_HEAVY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "The Schmidt Family Foundation",
+          "The Eric and Wendy Schmidt Fund for Strategic Innovation"
+        ],
+        "llcs_philanthropic_count": 3,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 25,
+      "event_count": 21,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "eric_schmidt.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "george_kaiser",
+      "name_display": "George Kaiser",
+      "name_legal": "George Bruce Kaiser",
+      "country": "United States",
+      "wealth_source": "BOK Financial Corp. (61.5% owner; $46B-asset bank); Kaiser-Francis Oil Company (private E&P, 23rd largest non-public U.S. energy firm); Excelerate Energy (82M shares, LNG); Oklahoma City Thunder minority stake (2014)",
+      "years_as_billionaire_approx": 36,
+      "net_worth_best_usd_b": 12.0,
+      "net_worth_range_usd_b": [
+        10,
+        16
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.3,
+      "observable_usd": 1637969911,
+      "expected_usd": 3600000000,
+      "hidden_upper_usd": 550000000,
+      "ratio_observable_to_expected": 0.455,
+      "ratio_observable_to_nw": 0.136,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C-plus)",
+      "tier_reasoning": "Kaiser is the 'model pledge signer that delivers' case in this cohort \u2014 alongside the Arnolds, Moskovitz/Tuna, Laurene Powell Jobs. Caveats worth surfacing in profile: (a) supporting-organization structure is a real structural critique that the Senate Finance Committee flagged in 2005 and that has not gone away; (b) Solyndra is the dominant ethics-adjacent story; (c) Tulsa geographic concentration limits cause-optimization by GiveWell-style frameworks but is Kaiser's explicit intent.",
+      "pledge_signed": false,
+      "red_flags": [
+        "SUPPORTING_ORG_PAYOUT_LOOPHOLE",
+        "SOLYNDRA_DOE_LOAN_CONTROVERSY",
+        "TULSA_GEOGRAPHIC_CONCENTRATION"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "George Kaiser Family Foundation (GKFF)",
+          "George B Kaiser Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 24,
+      "event_count": 14,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "george_kaiser.v3.json",
       "tier_rank": null
     },
     {
