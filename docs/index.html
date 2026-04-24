@@ -161,6 +161,17 @@ body{
 .searchbar .download-row a:hover{background:rgba(139,46,31,.08)}
 .dimmed{opacity:.25;transition:opacity .2s}
 
+.pattern-filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 32px;padding:0 2px}
+.pattern-filters .pf-label{font-family:var(--display);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-fade);margin-right:8px}
+.pattern-filters .pf-btn{
+  font-family:var(--display);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-soft);background:transparent;border:1px solid var(--paper-shadow);
+  padding:5px 12px;cursor:pointer;transition:all .15s;
+}
+.pattern-filters .pf-btn:hover{border-color:var(--rust);color:var(--rust)}
+.pattern-filters .pf-btn.active{background:var(--rust);color:var(--paper);border-color:var(--rust)}
+[data-theme="dark"] .pattern-filters .pf-btn.active{color:var(--paper)}
+
 .distribution{margin:0 0 52px}
 .dist-caption{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
 .dist-title{font-family:var(--display);font-style:italic;font-variation-settings:"opsz" 48;font-size:1.2rem;color:var(--ink)}
@@ -289,6 +300,18 @@ body{
     </span>
   </div>
 
+  <div class="pattern-filters" id="patternFilters" aria-label="Filter by pattern">
+    <span class="pf-label">Filter by pattern:</span>
+    <button class="pf-btn active" data-pattern="">All</button>
+    <button class="pf-btn" data-pattern="GIVING_PLEDGE_UNFULFILLED">Pledge unmet</button>
+    <button class="pf-btn" data-pattern="NO_GIVING_PLEDGE_SIGNATURE">No pledge</button>
+    <button class="pf-btn" data-pattern="POLITICAL">Political-heavy</button>
+    <button class="pf-btn" data-pattern="LLC_OPACITY">LLC opaque</button>
+    <button class="pf-btn" data-pattern="FOR_PROFIT">For-profit pivot</button>
+    <button class="pf-btn" data-pattern="DAF">DAF-heavy</button>
+    <button class="pf-btn" data-pattern="LOW_PAYOUT">Low payout</button>
+  </div>
+
   <div class="how-to-read">
     <h3>How to read this</h3>
     <ol>
@@ -371,20 +394,42 @@ body{
     try { localStorage.setItem('scrooge-theme', next); } catch(e) {}
   });
 
-  // Live filter by name across every card/row
+  // Live filter by name + pattern across every card/row
   const searchInput = document.getElementById('searchInput');
+  const patternFilters = document.getElementById('patternFilters');
+  let activePattern = '';
+
+  function rowFlags(el) {
+    // Read the flags stashed on the element by render functions
+    return (el.dataset.flags || '').split(',').filter(Boolean);
+  }
+
   function applyFilter() {
     const q = (searchInput.value || '').trim().toLowerCase();
+    const matchPattern = el => {
+      if (!activePattern) return true;
+      return rowFlags(el).some(f => f.includes(activePattern));
+    };
     document.querySelectorAll('.offender').forEach(el => {
       const name = (el.querySelector('.name')?.textContent || '').toLowerCase();
-      el.classList.toggle('dimmed', q && !name.includes(q));
+      const hide = (q && !name.includes(q)) || !matchPattern(el);
+      el.classList.toggle('dimmed', hide);
     });
     document.querySelectorAll('.tier-table tbody tr').forEach(el => {
       const name = (el.querySelector('.name')?.textContent || '').toLowerCase();
-      el.classList.toggle('dimmed', q && !name.includes(q));
+      const hide = (q && !name.includes(q)) || !matchPattern(el);
+      el.classList.toggle('dimmed', hide);
     });
   }
   searchInput.addEventListener('input', applyFilter);
+
+  patternFilters.addEventListener('click', (e) => {
+    const btn = e.target.closest('.pf-btn');
+    if (!btn) return;
+    activePattern = btn.dataset.pattern || '';
+    patternFilters.querySelectorAll('.pf-btn').forEach(b => b.classList.toggle('active', b === btn));
+    applyFilter();
+  });
 })();
 
 const ordinalSup = n => {
@@ -546,6 +591,7 @@ function renderDistribution(bs) {
 }
 
 function escXml(s) { return String(s || '').replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c])); }
+function escHtml(s) { return String(s || '').replace(/[<>&"']/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;',"'":'&#39;'}[c])); }
 
 function renderTierA(list) {
   const grid = document.getElementById('tierA');
@@ -553,7 +599,8 @@ function renderTierA(list) {
   grid.innerHTML = list.map((b, i) => {
     const rank = b.tier_rank || (i + 1);
     const ratio = b.ratio_observable_to_expected;
-    return `<a class="offender" href="${profileLink(b.id)}">
+    const flagsData = (b.red_flags || []).map(f => typeof f === 'string' ? f : (f.flag || '')).join(',');
+    return `<a class="offender" href="${profileLink(b.id)}" data-flags="${escHtml(flagsData)}">
       <div class="rank"><sup>${ordinalSup(rank).replace(rank,'').replace('<sup>','').replace('</sup>','')}</sup>${rank}</div>
       <div class="name">${b.name_display}</div>
       <div class="loc">${b.wealth_source || b.country || ''}</div>
@@ -580,7 +627,8 @@ function installSortableTable(id, list) {
   let state = { key: 'name', dir: 'asc' };
 
   function rowFor(b) {
-    return `<tr onclick="location.href='${profileLink(b.id)}'">
+    const flagsData = (b.red_flags || []).map(f => typeof f === 'string' ? f : (f.flag || '')).join(',');
+    return `<tr onclick="location.href='${profileLink(b.id)}'" data-flags="${escHtml(flagsData)}">
       <td class="name">${b.name_display}</td>
       <td class="num">${fmtNw(b.net_worth_best_usd_b)}</td>
       <td class="num">${fmtUsd(b.observable_usd)}</td>
