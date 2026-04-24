@@ -1,0 +1,519 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record following Ellison v3 reference. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Richard Kinder)",
+  "person": {
+    "name_display": "Richard Kinder",
+    "name_legal": "Richard Dan Kinder",
+    "dob_year": 1944,
+    "country_primary": "United States",
+    "residence": "Houston, Texas",
+    "wealth_source": "Co-founder and Executive Chairman of Kinder Morgan Inc. (KMI) \u2014 North America's largest energy infrastructure / pipeline operator. Majority of fortune from ~12% stake in KMI. Co-founded with William Morgan in 1997 after leaving Enron as president/COO.",
+    "spouse": "Nancy G. Kinder (co-philanthropist; President/CEO of Kinder Foundation)",
+    "years_as_billionaire_approx": 20
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 13.0,
+    "range_usd_billions": [
+      10.6,
+      13.0
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 World's Billionaires List places Kinder at $13B, rank ~232 globally (Houston's richest). Bloomberg's 2024-2025 real-time index tracked lower ~$10.6-11.2B. Fortune Oct 2025 cites $11.2B. Dollar-range tight vs. Ellison; pipeline stake is less volatile than Oracle.",
+    "sources": [
+      {
+        "publisher": "Forbes (via CultureMap Houston / InnovationMap reporting on 2026 World's Billionaires List)",
+        "url": "https://houston.innovationmap.com/forbes-worlds-billionaires-list-houstonians-2676212536.html",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 13.0,
+        "rank_on_list": 232
+      },
+      {
+        "publisher": "CultureMap Houston",
+        "url": "https://houston.culturemap.com/news/society/19-houston-billionaires-worlds-richest/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 13.0,
+        "note": "Grew by $2.4B since 2025 list"
+      },
+      {
+        "publisher": "Fortune",
+        "url": "https://fortune.com/2025/10/21/houston-billionaire-couple-nancy-rich-kinder-donating-95-percent-fortune/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 11.2,
+        "value_as_of": "2025-10"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/richard-d-kinder/",
+        "retrieved_at": "2026-04-24"
+      }
+    ],
+    "liquidity_estimate_pct": 0.55,
+    "liquidity_notes": "Kinder's wealth is ~12% stake in Kinder Morgan (public, NYSE:KMI). Less concentrated than Ellison's 41% Oracle stake; stake is smaller relative to float, so divesting would move stock less. Kinder also historically takes $1 salary and collects his compensation primarily via dividends \u2014 large, predictable cash flow. Apply 55% liquidity estimate (vs. Ellison's 25%)."
+  },
+  "cited_events": [
+    {
+      "event_id": "kinder_kf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Kinder Foundation",
+      "donor_ein": "76-0519073",
+      "amount_usd": 59894419,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Total charitable disbursements per ProPublica summary of Kinder Foundation 990-PF."
+    },
+    {
+      "event_id": "kinder_kf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Kinder Foundation",
+      "donor_ein": "76-0519073",
+      "amount_usd": 57233266,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kinder_kf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Kinder Foundation",
+      "donor_ein": "76-0519073",
+      "amount_usd": 55804166,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kinder_kf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Kinder Foundation",
+      "donor_ein": "76-0519073",
+      "amount_usd": 52966104,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kinder_kf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Kinder Foundation",
+      "donor_ein": "76-0519073",
+      "amount_usd": 51670075,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kinder_kf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Kinder Foundation",
+      "donor_ein": "76-0519073",
+      "amount_usd": 49281349,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kinder_kf_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "Kinder Foundation",
+      "donor_ein": "76-0519073",
+      "amount_usd": 31554304,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kinder_rice_kinder_institute_2026",
+      "event_role": "direct_gift",
+      "year": 2026,
+      "date_precision": "month",
+      "date": "2026-03",
+      "donor_entity": "Kinder Foundation",
+      "recipient": "Rice University \u2014 Kinder Institute for Urban Research ($50M endowment + $5M immediate research)",
+      "amount_usd": 55000000,
+      "source_type": "announcement",
+      "source_url": "https://news.rice.edu/news/2026/rices-kinder-institute-secures-future-and-advances-solutions-houston-55m-kinder",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "March 2026 announcement; will appear in Kinder Foundation 2026 990-PF when filed. Will be captured in kinder_kf_2026 grant_out total (not yet filed). Listed here separately as direct_gift for event granularity. DO NOT double-count if and when 2026 990-PF data is added."
+    },
+    {
+      "event_id": "kinder_md_anderson_tch_2025",
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date_precision": "day",
+      "date": "2025-05-14",
+      "donor_entity": "Kinder Foundation",
+      "recipient": "UT MD Anderson Cancer Center + Texas Children's Hospital \u2014 Kinder Children's Cancer Center",
+      "amount_usd": 150000000,
+      "source_type": "announcement",
+      "source_url": "https://www.mdanderson.org/newsroom/ut-md-anderson-and-texas-children-s-hospital-announce--150-million-gift-from-Kinder-Foundation-to-launch-Kinder-Childrens-Cancer-Center.h00-159776445.html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "One of the largest philanthropic gifts to an American pediatric hospital.",
+      "dedup_note": "Will be captured in 2025 Kinder Foundation 990-PF when filed (likely 2026-07 onward). Disbursement may span multiple years. When kinder_kf_2025 row is added, this event must be netted out to avoid double-counting."
+    },
+    {
+      "event_id": "kinder_buffalo_bayou_east_2022",
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date_precision": "month",
+      "date": "2022-09",
+      "donor_entity": "Kinder Foundation",
+      "recipient": "Buffalo Bayou Partnership \u2014 Buffalo Bayou East Master Plan",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://buffalobayou.org/buffalo-bayou-partnership-announces-kinder-foundations-100m-catalyst-gift-to-accelerate-buffalo-bayou-east-master-plan/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Largest single donation in Houston parks history. Already captured in kinder_kf_2022 grant_out total ($55.8M); NOTE the 2022 Kinder Foundation 990-PF total ($55.8M) is LOWER than this single announcement ($100M), which indicates the $100M is a multi-year pledge/pass-through via Buffalo Bayou Partnership, not disbursed all in 2022.",
+      "dedup_note": "KEEP as announcement-level event. Do NOT add $100M to the 2022 rollup total \u2014 the 2022 990-PF grants-out of $55.8M is what actually left the foundation. $100M is the multi-year commitment."
+    },
+    {
+      "event_id": "kinder_rice_kinder_institute_2022",
+      "event_role": "direct_gift",
+      "year": 2022,
+      "donor_entity": "Kinder Foundation",
+      "recipient": "Rice University \u2014 Kinder Institute for Urban Research",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://news.rice.edu/news/2022/50m-kinder-foundation-grant-will-expand-kinder-institutes-work-solve-challenges-facing",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Already captured in kinder_kf_2022 990-PF grant_out total or paid multi-year. Listed separately for event-level visibility."
+    },
+    {
+      "event_id": "kinder_memorial_park_2018",
+      "event_role": "direct_gift",
+      "year": 2018,
+      "donor_entity": "Kinder Foundation",
+      "recipient": "Memorial Park Conservancy (Houston)",
+      "amount_usd": 70000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "kinder_mfah_2015",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "donor_entity": "Kinder Foundation",
+      "recipient": "Museum of Fine Arts, Houston",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "kinder_missouri_democracy_2015",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "donor_entity": "Kinder Foundation",
+      "recipient": "University of Missouri \u2014 Kinder Institute on Constitutional Democracy (Rich Kinder alma mater)",
+      "amount_usd": 25000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "kinder_bayou_greenways_2013",
+      "event_role": "direct_gift",
+      "year": 2013,
+      "donor_entity": "Kinder Foundation",
+      "recipient": "Houston Parks Board \u2014 Bayou Greenways 2020",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "kinder_buffalo_bayou_park_2010",
+      "event_role": "direct_gift",
+      "year": 2010,
+      "donor_entity": "Kinder Foundation",
+      "recipient": "Buffalo Bayou Partnership \u2014 Buffalo Bayou Park (original 2.3-mile section)",
+      "amount_usd": 30000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "kinder_rice_cumulative",
+      "event_role": "direct_gift_cumulative",
+      "year_range": [
+        2010,
+        2026
+      ],
+      "donor_entity": "Kinder Foundation",
+      "recipient": "Rice University \u2014 Kinder Institute for Urban Research (all gifts cumulative)",
+      "amount_usd": 135000000,
+      "source_type": "announcement",
+      "source_url": "https://news.rice.edu/news/2026/rices-kinder-institute-secures-future-and-advances-solutions-houston-55m-kinder",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Per 2026 Rice press release: 'Including the latest gift, the Kinder Foundation has now given more than $135 million to the institute.' Well above the $50M+ threshold flagged in research brief.",
+      "dedup_note": "Summary row \u2014 individual gifts (2022 $50M, 2026 $55M, earlier $30M) are already captured. DO NOT add this $135M to rollup; it's a sum-of-parts for context."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "kinder_gp_2011",
+      "event_role": "pledge",
+      "year": 2011,
+      "date_precision": "year",
+      "pledged_pct_wealth": 95,
+      "pledged_amount_usd_at_signing_estimate": 4750000000,
+      "status": "ON_TRACK",
+      "status_source": "Kinder Foundation public reporting: >$850M committed to Houston projects as of Dec 2024; reaffirmed in Oct 2025 $10B Houston-specific pledge.",
+      "pledge_letter_key_quotes": [
+        "95% of their wealth to charity either during their lifetimes or at their deaths (exceeded the Giving Pledge's 50% minimum)",
+        "Focus on three areas: education, urban green space, and quality of life \u2014 concentrated on Houston"
+      ],
+      "source_url": "https://www.givingpledge.org/pledger/rich-and-nancy-kinder/",
+      "retrieved_at": "2026-04-24",
+      "notes": "RESEARCH BRIEF CORRECTION: User prompt cited 2014 signing; actual year is 2011 per Giving Pledge website and multiple independent sources. Wealth at 2011 signing ~$5B (pre-Kinder Morgan IPO consolidation). 95% target at signing ~$4.75B. Current net worth $13B; 95% target now ~$12.35B. Gap between observable foundation giving (~$850M through 2024) and 95% target is ~$11.5B \u2014 but pledge is lifetime-OR-estate, so bulk can land at death via Kinder Foundation bequest."
+    },
+    {
+      "event_id": "kinder_houston_10b_2025",
+      "event_role": "pledge_reaffirmation",
+      "year": 2025,
+      "date_precision": "month",
+      "date": "2025-10",
+      "pledged_amount_usd": 10000000000,
+      "status": "ANNOUNCED",
+      "recipient": "Houston-area charities (parks, arts, education, quality of life)",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/10/21/houston-billionaire-couple-nancy-rich-kinder-donating-95-percent-fortune/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Oct 2025 announcement at Emancipation Park groundbreaking: Kinders committed $10B (95% of then-$11.2B net worth) to Houston charities, with bulk expected to pass via Kinder Foundation bequest. Reaffirmation of 2011 Giving Pledge with explicit geographic focus."
+    }
+  ],
+  "political_giving": {
+    "classification": "MODERATE_OIL_INDUSTRY_ALIGNED",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Kinder's political giving is modest relative to his foundation giving.",
+    "observed_total_known_usd": "NOT_YET_FEC_API_PULLED",
+    "observed_total_note": "OpenSecrets profile exists for 'Kinder, Richard D. & Nancy G.' (donor ID U0000004227). Full multi-cycle FEC API pull not yet run. Known contributions are oil-industry\u2013aligned Republican committees/candidates; total appears to be low-single-digit millions across 2012-2024 cycles \u2014 an order of magnitude smaller than Ellison's $31M+. Kinder Morgan corporate PAC separately reported $167,757 in 2024 cycle (not Richard's personal giving).",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail/2016?id=U0000004227&name=Kinder,+Richard+D.+&+Nancy+G.=&super_only=N&type=I",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets \u2014 donor detail for Richard & Nancy Kinder (personal)"
+      },
+      {
+        "url": "https://www.opensecrets.org/orgs/kinder-morgan-inc/totals?id=D000035105",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets \u2014 Kinder Morgan Inc corporate PAC (NOT personal)",
+        "amount_usd": 167757,
+        "cycle": "2024"
+      }
+    ],
+    "verification_todo": "Run FEC bulk pull on 'Richard Kinder' + 'Nancy Kinder' Houston TX across 2012-2026 cycles to produce exact multi-cycle total."
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Kinder Foundation",
+        "ein": "76-0519073",
+        "established_year": 1997,
+        "state": "TX",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 173359442,
+        "total_revenue_2024_usd": 84468068,
+        "total_expenses_2024_usd": 61251054,
+        "grants_out_2024_usd": 59894419,
+        "officers_compensation": "Chairman Richard D. Kinder and President/CEO Nancy G. Kinder receive ZERO compensation. Top paid officers are operational staff: Guy Hagstette (Sr. VP Parks & Civic Projects, $398,622), Sarah Newbery (Director of Parks & Greenspace, $260,886), Patra Brannon (Director of Education & Community Projects, $225,561). These are reasonable salaries for a foundation running parks projects.",
+        "payout_rate_notes": "2024 grants-out ($59.9M) vs assets ($173.4M) = 34.5% \u2014 well above 5% legal minimum. Revenue ($84.5M) exceeds expenses ($61.3M) \u2014 foundation is being continuously fed by the Kinders. Cumulative commitments >$850M since 1997 per Foundation's own reporting.",
+        "red_flag_daf_transfers": "NOT DETECTED \u2014 Kinder Foundation grants flow to specific named Houston institutions (Rice, MFAH, MD Anderson, Buffalo Bayou Partnership, Memorial Park Conservancy, Houston Parks Board). No DAF intermediary pattern observed.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+        "foundation_own_url": "https://kinderfoundation.org/about-us/financials/"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified. Kinders give via their named foundation direct to recipient institutions.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC detected. Giving is 501(c)(3) foundation structure.",
+    "for_profit_hybrid_vehicles": [],
+    "for_profit_hybrid_note": "No for-profit hybrid vehicles detected. Unlike Ellison's EIT pivot, Kinder's philanthropy is traditional 501(c)(3) grant-making.",
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. No public reporting so far.",
+    "trusts_disclosed_existence_structure_unknown": []
+  },
+  "red_flags": [],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (Kinder Foundation 2024 payout 34.5% of assets; cumulative 30+ years of active grant-making)",
+    "HIGH_OFFICER_COMP (Kinders take zero comp; operational staff paid reasonable market rates for Houston foundation work)",
+    "DAF_TRANSFERS (no DAF activity; grants flow direct to named Houston institutions)",
+    "PLEDGE_UNFULFILLED (observable giving $850M+ is ~7% of current net worth, >17% of wealth at 2011 signing; on-track at cohort median for living pledgers)",
+    "POLITICAL_DOMINATES_CHARITABLE (political giving is low single-digit millions vs. $850M+ foundation giving; ratio is ~100:1 charitable:political, opposite of Ellison)",
+    "NO_OBSERVABLE_GIVING (large, well-documented giving)",
+    "FOR_PROFIT_PIVOT (no for-profit hybrid vehicle)",
+    "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH (giving has scaled with net worth: $31.5M in 2015 \u2192 $59.9M in 2024, ~2x over a decade; net worth grew ~2.5x in same period \u2014 reasonable match)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 858403683,
+    "observable_giving_method": "Kinder Foundation's own reporting of >$850M committed to Houston projects as of Dec 2024 (foundation website). Independently corroborated by sum(990-PF grants_out 2015-2024 known years) + pre-2015 disbursements (estimated from cumulative-minus-post-2015 gap). Press-cited cumulative figure climbed to >$900M by Oct 2025 after MD Anderson $150M and continued annual grants. Excludes: political giving; excludes 2025 $150M MD Anderson announcement (will hit 2025 990-PF, not yet filed); excludes 2026 $55M Rice announcement (not yet disbursed).",
+    "observable_giving_todo": [
+      "Pull Kinder Foundation 990-PFs for years 2016-2018 from ProPublica (gap in current data pull).",
+      "Pull 1997-2014 990-PFs for pre-Phase-v3-window historical.",
+      "Update when 2025 and 2026 990-PFs file (will capture MD Anderson $150M and Rice $55M).",
+      "Run FEC bulk pull on Richard + Nancy Kinder for exact multi-cycle political total."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 715000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1). liquid_wealth = 0.55 \u00d7 $13B = $7.15B. Tenure cap saturated (20 years). Expected = $715M.",
+    "observable_ratio_to_expected": 1.2,
+    "observable_ratio_to_current_nw": 0.066,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF activity detected. Zero.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 50000000,
+      "anonymous_cohort_method": "Kinders are explicitly public about their giving (press conferences, named buildings, foundation website disclosure). Anonymous cohort uplift should be MINIMAL. Applied floor: 0.05% \u00d7 liquid_wealth = $3.6M; rounded up to $50M as upper bound to cover small unreported personal gifts outside foundation.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious giving pattern.",
+      "estate_bequest_commitment_usd": 11500000000,
+      "estate_bequest_method": "The Kinders' 2011 Giving Pledge + 2025 reaffirmation explicitly commits 95% of wealth, with the portion not given during lifetime to pass to Kinder Foundation at death. At current $13B, 95% = $12.35B; observable giving-so-far ~$0.86B; gap ~$11.5B. UNLIKE Ellison's trust (structure undisclosed, 'virtually all' vague), Kinder's bequest path is explicit and flows through an existing operating foundation with decades of grant-making history. Credibility of estate bequest is therefore HIGH. Listed here for confidence-interval visibility; do NOT include in tier calculation (bequest has not yet disbursed).",
+      "total_usd": 50000000,
+      "total_method": "anonymous only. Estate bequest is a SEPARATE line in the confidence interval, not a hidden-giving uplift."
+    },
+    "observable_plus_hidden_ratio_to_expected": 1.27,
+    "tier": "On_Track (Tier C)",
+    "tier_rule": "Observable giving ($858M) exceeds 10%-of-liquid-wealth expectation ($715M). Giving velocity is rising ($31M in 2015 to $60M in 2024). Zero red flags. Pledge signed 2011 and reaffirmed Oct 2025 with explicit $10B Houston commitment. Published tier: 'On Track' \u2014 Kinders are actively delivering on their pledge through a well-run operating foundation, with a credible estate-bequest path for the remainder. This is the canonical counter-example to Ellison: same Giving Pledge signers, dramatically different observable behavior.",
+    "tier_published_caveat": "Readers should see Kinder as the canonical example of 'signed the Giving Pledge, actually doing it.' Observable giving exceeds the 10% formal norm. The remaining 93% of wealth is committed via estate bequest to an existing operating foundation \u2014 this is higher-credibility than opaque trust structures. Main uncertainty: whether lifetime vs. estate split is suboptimal (estate-only giving delays impact by decades). Counterfactual: if Kinder stopped giving today, Houston loses its largest private parks/arts/education funder."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 0.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 0.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 0.0
+    },
+    "note": "Observable giving exceeds 10%-of-liquid-wealth expectation; no red flags; pledge on-track. All penalty components zero. Computed with v2 formula for continuity with current pipeline. DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Kinder Foundation communications contact via kinderfoundation.org; cc Nancy Kinder (President/CEO). Likely to respond favorably \u2014 they publish their own financials and welcome scrutiny.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Pull Kinder Foundation 990-PFs for years 2016-2018 (ProPublica gap) and pre-2015 years (1997-2014) to complete historical observable giving.",
+    "VERIFY: Run FEC bulk pull against Richard Kinder and Nancy Kinder Houston TX across 2012-2026 cycles for exact personal political total.",
+    "VERIFY: Confirm 2025 990-PF when filed (expected ~mid-2026) captures the MD Anderson $150M disbursement.",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2; Kinder Morgan has international pipeline operations but no public offshore-structure flag for Kinder personally.",
+    "VERIFY: Structure of Kinder's estate plan \u2014 is bequest via will, revocable trust, or pre-funded to Kinder Foundation? Check for any disclosed Charitable Lead/Remainder Trust filings.",
+    "VERIFY: Run Brave Search for post-April-2026 announced Kinder gifts within 1-year freshness window."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/760519073",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Kinder Foundation 990-PF data 2015, 2019-2024; assets; officers; zero comp for Kinders"
+    },
+    {
+      "url": "https://kinderfoundation.org/about-us/financials/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Foundation's own disclosure of cumulative giving >$850M as of Dec 2024"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/rich-and-nancy-kinder/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2011 pledge signing, 95% commitment, focus areas"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Major gifts timeline (Discovery Green, Buffalo Bayou, Rice, MFAH, U Missouri, HSPVA, Memorial Park, MacGregor Park) 2004-2023"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Richard_Kinder",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biographical details, Kinder Morgan founding, career background"
+    },
+    {
+      "url": "https://houston.innovationmap.com/forbes-worlds-billionaires-list-houstonians-2676212536.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 World's Billionaires List \u2014 Kinder at $13B, rank 232"
+    },
+    {
+      "url": "https://houston.culturemap.com/news/society/19-houston-billionaires-worlds-richest/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 Houston billionaires \u2014 Kinder richest in Houston, net worth grew $2.4B YoY"
+    },
+    {
+      "url": "https://fortune.com/2025/10/21/houston-billionaire-couple-nancy-rich-kinder-donating-95-percent-fortune/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Oct 2025 $10B Houston pledge reaffirmation; $11.2B net worth at time of announcement"
+    },
+    {
+      "url": "https://www.mdanderson.org/newsroom/ut-md-anderson-and-texas-children-s-hospital-announce--150-million-gift-from-Kinder-Foundation-to-launch-Kinder-Childrens-Cancer-Center.h00-159776445.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "May 2025 $150M gift to MD Anderson + Texas Children's for Kinder Children's Cancer Center"
+    },
+    {
+      "url": "https://buffalobayou.org/buffalo-bayou-partnership-announces-kinder-foundations-100m-catalyst-gift-to-accelerate-buffalo-bayou-east-master-plan/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Sept 2022 $100M Buffalo Bayou East catalyst gift \u2014 largest in Houston parks history"
+    },
+    {
+      "url": "https://news.rice.edu/news/2026/rices-kinder-institute-secures-future-and-advances-solutions-houston-55m-kinder",
+      "retrieved_at": "2026-04-24",
+      "used_for": "March 2026 $55M grant to Rice Kinder Institute; cumulative Rice giving >$135M"
+    },
+    {
+      "url": "https://news.rice.edu/news/2022/50m-kinder-foundation-grant-will-expand-kinder-institutes-work-solve-challenges-facing",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Sept 2022 $50M grant to Rice Kinder Institute"
+    },
+    {
+      "url": "https://www.opensecrets.org/outside-spending/donor_detail/2016?id=U0000004227&name=Kinder,+Richard+D.+&+Nancy+G.=&super_only=N&type=I",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Richard & Nancy Kinder personal political donor ID"
+    },
+    {
+      "url": "https://www.opensecrets.org/orgs/kinder-morgan-inc/totals?id=D000035105",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Kinder Morgan corporate PAC totals (separate from personal giving)"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/richard-d-kinder/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg Billionaires Index profile"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/kinders-announce-10-billion-commitment-to-houston-organizations",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$10B Houston commitment announcement"
+    }
+  ],
+  "_source_file": "richard_kinder.v3.json"
+}

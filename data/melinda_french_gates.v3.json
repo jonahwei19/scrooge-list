@@ -1,0 +1,509 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 — single-subject deep research (Melinda French Gates)",
+
+  "person": {
+    "name_display": "Melinda French Gates",
+    "name_legal": "Melinda Ann French Gates",
+    "dob_year": 1964,
+    "country_primary": "United States",
+    "wealth_source": "Divorce settlement from Bill Gates (Cascade Investment transferred ~$2.4B in securities in May 2021 — AutoNation, Canadian National Railway, Coca-Cola FEMSA, Grupo Televisa); plus $12.5B received from Gates Foundation in 2024 upon resignation as co-chair, earmarked by her for women-and-families philanthropy. No operating-company stake of her own — wealth is entirely a derived/transferred position from her ex-spouse's Microsoft fortune.",
+    "years_as_billionaire_approx": 5,
+    "years_as_billionaire_note": "Forbes first listed her as a billionaire in her own right after the 2021 Cascade transfers. Prior to that, her wealth was co-held with Bill Gates and she did not appear as a separately-ranked billionaire."
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 30.4,
+    "range_usd_billions": [13, 31],
+    "as_of": "2026-02",
+    "range_note": "Forbes February 2026 profile at $30.4B (rank #72). Wide range reflects (a) whether the $12.5B Gates Foundation transfer (which she has publicly committed to deploy philanthropically) counts toward her personal wealth — Forbes includes it; some wealth trackers exclude it because of the public deployment pledge — and (b) market fluctuation on the Cascade-transferred securities. Lower-end estimates around $13-14B appear in older trackers that exclude the 2024 Gates Foundation grant.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires (Feb 2026)",
+        "url": "https://www.forbes.com/profile/melinda-french-gates/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 30.4,
+        "rank_on_list": 72
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes + Bloomberg early 2026)",
+        "url": "https://en.wikipedia.org/wiki/Melinda_French_Gates",
+        "retrieved_at": "2026-04-24",
+        "value_range_usd_billions": [29, 31]
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/melinda-french-gates/",
+        "retrieved_at": "2026-04-24",
+        "value_note": "Bloomberg tracks her separately post-2024 divorce settlement realization; profile accessible but exact number not captured in this pass."
+      }
+    ],
+    "liquidity_estimate_pct": 0.85,
+    "liquidity_notes": "Unlike operating-company founders (Ellison/Musk/Bezos), Melinda French Gates holds a liquid-securities portfolio transferred from Cascade Investment (publicly traded stocks across ~4 companies) plus the $12.5B grant from Gates Foundation (presumably liquid or near-liquid securities). She has no single concentrated operating-company position. Apply HIGH (85%) liquidity — giving capacity is not gated by stock-price support or dilution risk."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "mfg_ppf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Pivotal Philanthropies Foundation",
+      "donor_ein": "88-2918646",
+      "recipient": "Multiple — including National Philanthropic Trust ($257.5M), New Venture Fund + Hopewell Fund ($28.1M combined), Center for Reproductive Rights, Collaborative for Gender + Reproductive Equity, National Women's Law Center, The 19th, Action for Women's Health grantees",
+      "amount_usd": 486800000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "FLAG: $257.5M went to National Philanthropic Trust — this is a major DAF sponsor. Per v3 dedup rules, grants into DAFs should be flagged as DAF_TRANSFER and not credited as end-of-pipeline charitable giving until NPT disburses. That $257.5M is ~53% of PPF's 2024 grants. This is a significant DAF-intermediated portion."
+    },
+    {
+      "event_id": "mfg_ppf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Pivotal Philanthropies Foundation",
+      "donor_ein": "88-2918646",
+      "amount_usd": 48100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "mfg_ppf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Pivotal Philanthropies Foundation",
+      "donor_ein": "88-2918646",
+      "amount_usd": 8100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "PPF established Oct 2022 — partial-year activity."
+    },
+    {
+      "event_id": "mfg_gf_transfer_2024",
+      "event_role": "transfer_in",
+      "year": 2024,
+      "date_precision": "day",
+      "date": "2024-06-07",
+      "donor_entity": "Gates Foundation (Bill Gates sole chair, post-MFG resignation)",
+      "recipient": "Melinda French Gates (personal / Pivotal entities)",
+      "amount_usd": 12500000000,
+      "source_type": "announcement",
+      "source_url": "https://www.cnbc.com/amp/2024/05/13/melinda-french-gates-to-resign-from-gates-foundation-will-pursue-own-philanthropy-with-12point5-billion-grant.html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This $12.5B is a transfer FROM the Gates Foundation TO Melinda French Gates as she resigned as co-chair. It originated as philanthropic capital (inside a 501(c)(3)) and was transferred to her personal control for deployment via Pivotal. Under strict 990 methodology this was a grant OUT of Gates Foundation to a qualified vehicle (it flowed through to Pivotal entities). We record it as transfer_in to the MFG vehicles; when it is subsequently deployed out by Pivotal foundations it should be counted there. DO NOT double-count with Gates Foundation's own giving records.",
+      "related_990_capitalizations": [
+        {"entity": "Pivotal Philanthropies Opportunity Foundation (EIN 93-4378098)", "received_2024_usd": 982228982},
+        {"entity": "Pivotal Philanthropies Pathways Foundation (EIN 93-4414218)", "received_2024_usd": 982228982},
+        {"entity": "Pivotal Philanthropies Momentum Foundation (EIN 93-4400793)", "received_2024_usd": 982228982}
+      ],
+      "capitalization_note": "Three 2023/2024-vintage foundations each received ~$982M in contributions in FY2024 — total ~$2.95B capitalization visible in 990s, which is a subset of the $12.5B commitment. Remaining ~$9.5B landing location not yet fully traced in public 990s; plausibly a combination of direct grants via PPF, Pivotal Ventures LLC, and/or capitalization of other entities not yet filed."
+    },
+    {
+      "event_id": "mfg_cascade_transfer_2021",
+      "event_role": "transfer_in",
+      "year": 2021,
+      "date_precision": "month",
+      "date": "2021-05",
+      "donor_entity": "Cascade Investment (Bill Gates's family office)",
+      "recipient": "Melinda French Gates (personal)",
+      "amount_usd": 2400000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Melinda_French_Gates",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Divorce-settlement securities transfer: AutoNation (2.94M sh), Canadian National Railway (14.1M sh), Coca-Cola FEMSA (25.8M sh), Grupo Televisa (155.4M sh). This is a wealth_transfer, NOT charitable giving. Recorded here for provenance of her billionaire wealth only.",
+      "classification_note": "NOT counted as philanthropy."
+    },
+    {
+      "event_id": "mfg_wellcome_leap_2025",
+      "event_role": "grant_out",
+      "year": 2025,
+      "date_precision": "day",
+      "date": "2025-09-10",
+      "donor_entity": "Pivotal (via Pivotal Philanthropies Foundation)",
+      "recipient": "Wellcome Leap (women's health research — autoimmune, mental health, cardiovascular)",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://wellcomeleap.org/pivotal_partnership_news/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "TODO: verify whether this $50M Pivotal contribution appears inside PPF 2025 990-PF (expected Nov 2026) — if so, do not double-count. For now flagged as ANNOUNCED, not yet visible in ProPublica 2025 data."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "mfg_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "role": "co-founder of the Giving Pledge",
+      "pledged_pct_wealth": 50,
+      "status": "ON_TRACK_OR_AHEAD",
+      "status_source": "Co-founded the pledge with Bill Gates and Warren Buffett in 2010. Committed to giving away the majority of her resources in her lifetime. As of 2026-04, documented giving via Gates Foundation co-chair tenure (2000-2024) plus post-resignation Pivotal giving substantially exceeds 50% of her current net worth when Gates Foundation historical contributions are attributed.",
+      "pledge_letter_quote": "The only responsible thing to do with a fortune this size is give it away—as thoughtfully and impactfully as possible.",
+      "source_url": "https://www.givingpledge.org/pledger/melinda-french-gates/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Wealth at signing (2010): joint-and-co-held with Bill Gates, not separately enumerated. Updated her pledge letter in 2022 to remove sole-Gates-Foundation destination language (see next event)."
+    },
+    {
+      "event_id": "mfg_gp_update_2022",
+      "event_role": "pledge_amendment",
+      "year": 2022,
+      "date_precision": "day",
+      "date": "2022-02-02",
+      "source_type": "announcement",
+      "source_url": "https://fortune.com/2022/02/02/melinda-french-gates-gates-foundation-giving-pledge/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Feb 2022 pledge-letter update: dropped language specifying Gates Foundation as destination of bulk of her wealth. Signaled intent to deploy outside the joint foundation — which materialized two years later with her May 2024 resignation.",
+      "classification_note": "Amendment preserves 50% commitment but unbundles destination from Gates Foundation."
+    },
+    {
+      "event_id": "mfg_1b_women_2024",
+      "event_role": "pledge",
+      "year": 2024,
+      "date_precision": "day",
+      "date": "2024-05-28",
+      "pledged_amount_usd": 1000000000,
+      "pledge_window": "through 2026",
+      "status": "PARTIALLY_DEPLOYED",
+      "recipient": "Women's power and influence globally — sub-allocations: $150M workplace barriers; $235M organizational scale; $240M to 12 global leaders at $20M each; $250M Action for Women's Health open call; $125M ecosystem",
+      "source_type": "announcement",
+      "source_url": "https://www.pivotal.com/articles/melinda-french-gates-announces-1billlion-commitment-to-advance-women-globally",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "named_leaders": [
+        "Dr. Alfiee Breland-Noble (AAKOMA Project)",
+        "Allyson Felix",
+        "Ava DuVernay",
+        "Gary Barker (Equimundo)",
+        "Hauwa Ojeifo (She Writes Woman)",
+        "Jacinda Ardern",
+        "Leymah Roberta Gbowee",
+        "Crystal Echo Hawk (IllumiNative)",
+        "Shabana Basij-Rasikh (SOLA)",
+        "M.V. Lee Badgett"
+      ],
+      "deployment_status_2026_04": "Action for Women's Health open call winners (80+ orgs at $1M-$5M each, ~$250M total) announced late 2025; $240M to 12 leaders substantially deployed per 2024 990-PF data; remaining components in progress.",
+      "deployment_evidence_url": "https://leverforchange.org/article/press-release/afwh-awardees-announcement/"
+    },
+    {
+      "event_id": "mfg_wellcome_leap_2025_pledge",
+      "event_role": "pledge",
+      "year": 2025,
+      "date": "2025-09-10",
+      "pledged_amount_usd": 50000000,
+      "recipient": "Wellcome Leap partnership ($100M joint with Wellcome Leap's $50M)",
+      "source_type": "announcement",
+      "source_url": "https://www.pivotal.com/media/wellcome-leap-and-pivotal-commit-100-million-to-womens-health-research",
+      "retrieved_at": "2026-04-24",
+      "status": "ANNOUNCED",
+      "notes": "Programs start 2026. Duplicates mfg_wellcome_leap_2025 (cited_events) — this row is the announcement/pledge, the other is the grant classification."
+    },
+    {
+      "event_id": "mfg_gp_ips_critique_2025",
+      "event_role": "public_statement",
+      "year": 2025,
+      "date_precision": "day",
+      "date": "2025-12-04",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/12/04/melinda-french-gates-rips-billionaire-class-giving-pledge/",
+      "retrieved_at": "2026-04-24",
+      "notes": "December 2025 Fortune interview: French Gates publicly stated Giving Pledge has 'fallen short' and urged fellow billionaires to deploy more aggressively. As one of three co-founders of the pledge, her public critique is consequential for the credibility of the entire Giving Pledge norm. Supports classifying her own giving as ON_TRACK rather than laggard."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_MODERATE",
+    "substitution_note": "NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Melinda French Gates's political giving is orders of magnitude smaller than her philanthropic giving — not a substitution concern at her scale.",
+    "observed_total_2024_cycle_usd": 4996300,
+    "observed_total_note": "Composition: ~$76,300 direct FEC-itemized individual contributions to candidates/PACs (2024) + ~$920,000 to Harris Victory Fund (joint-fundraising committee) + $1,000,000 each to three pro-Harris 501(c)(4) nonprofits (CFFE, Care in Action, Galvanize Action) per Bloomberg reporting + undisclosed contribution to Future Forward's nonprofit arm. Total visible floor ~$4-5M; upper bound higher because c4 nonprofit contributions are not required to be disclosed.",
+    "sources": [
+      {
+        "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=melinda+french+gates",
+        "retrieved_at": "2026-04-24",
+        "publisher": "FEC",
+        "amount_usd": 76300,
+        "event_date": "2024",
+        "notes": "15 itemized contributions to candidates and PACs in 2024 ranging $2,500-$10,000 each. Includes Kristen for Michigan, Maggie for Congress, Angie Craig, Montanans for Tester, NY State Democratic Committee, ActBlue, Purpose PAC, Blue Hen Federal PAC, and others."
+      },
+      {
+        "url": "https://www.bloomberg.com/features/2024-billionaire-donors-us-election/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Bloomberg",
+        "amount_usd": 920000,
+        "event_date": "2024",
+        "notes": "Harris Victory Fund contribution (joint-fundraising committee, distributes to Harris campaign + DNC + state parties)."
+      },
+      {
+        "url": "https://thehill.com/homenews/campaign/4792083-melinda-french-gates-kamala-harris-endorsement-2024/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "The Hill",
+        "event_date": "2024-07-23",
+        "notes": "Public endorsement of Kamala Harris — first time she endorsed a presidential candidate."
+      },
+      {
+        "url": "https://www.snopes.com/fact-check/melinda-gates-donate-kamala-harris/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Snopes (fact-check)",
+        "notes": "Debunks viral claim of $52M donation — no evidence of that figure. Actual verifiable total is in the low-millions."
+      }
+    ],
+    "notes": "Much smaller political footprint than e.g. Ellison ($31M+) or Bloomberg. Donations concentrated in 2024 election cycle; no significant 2022 or 2020 activity visible. Primary motivation stated by French Gates: reproductive rights."
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Pivotal Philanthropies Foundation",
+        "ein": "88-2918646",
+        "established_year": 2022,
+        "established_month": "October",
+        "state": "WA",
+        "address": "Redmond, WA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 7358421363,
+        "grants_out_2024_usd": 486800000,
+        "grants_out_2023_usd": 48100000,
+        "grants_out_2022_usd": 8100000,
+        "officers_compensation": "ZERO_COMP (MFG as Director, John Sage as Pres/Treasurer, Brooke Anderson as VP/Secretary — all $0 comp per ProPublica filings)",
+        "payout_rate_notes": "Grants out 2024 ($486.8M) vs assets ($7.36B) = 6.6% — above the 5% legal minimum. Jump from $48M (2023) → $486M (2024) reflects ramp-up after the May 2024 Gates Foundation capitalization.",
+        "red_flag_daf_transfers": "PRESENT: $257.5M of $486.8M 2024 grants (~53%) went to National Philanthropic Trust, a major DAF sponsor. This is a significant DAF-intermediated portion requiring follow-through tracking. Not full-opacity (NPT publishes aggregate grant data) but end-recipient specificity is lost.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646"
+      },
+      {
+        "name": "Pivotal Philanthropies Opportunity Foundation",
+        "ein": "93-4378098",
+        "former_name": "Greenfinch Foundation",
+        "established_year": 2023,
+        "state": "WA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 962632507,
+        "grants_out_2024_usd": 0,
+        "contributions_received_2024_usd": 982228982,
+        "officers_compensation": "ZERO_COMP (same three officers as PPF)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/934378098",
+        "notes": "Capitalized via Bill Gates / Gates Foundation transfer; zero disbursements first year. Not yet a payout-rate concern given recency of establishment."
+      },
+      {
+        "name": "Pivotal Philanthropies Pathways Foundation",
+        "ein": "93-4414218",
+        "former_name": "Snowfinch Foundation",
+        "established_year": 2024,
+        "state": "WA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 962559669,
+        "grants_out_2024_usd": 0,
+        "contributions_received_2024_usd": 982228982,
+        "officers_compensation": "ZERO_COMP (same three officers)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/934414218"
+      },
+      {
+        "name": "Pivotal Philanthropies Momentum Foundation",
+        "ein": "93-4400793",
+        "former_name": "Rosefinch Foundation",
+        "established_year": 2023,
+        "state": "WA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 962559625,
+        "grants_out_2024_usd": 0,
+        "contributions_received_2024_usd": 982228982,
+        "officers_compensation": "ZERO_COMP (same three officers)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/934400793"
+      },
+      {
+        "name": "Firefinch Foundation",
+        "ein": "93-4354569",
+        "established_year": 2023,
+        "state": "WA",
+        "status": "active_but_dormant",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 0,
+        "grants_out_2024_usd": 0,
+        "source_url": "https://www.grantmakers.io/profiles/v0/882918646-pivotal-philanthropies-foundation/",
+        "notes": "Per Capital Research Center: 2024 net assets $0, revenue $0. Appears to be a shell or holding entity not yet active."
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [
+      {
+        "sponsor": "National Philanthropic Trust (NPT)",
+        "amount_usd": 257500000,
+        "year": 2024,
+        "source": "Pivotal Philanthropies Foundation 2024 990-PF grants list (per Capital Research Center reporting)",
+        "source_url": "https://capitalresearch.org/article/melinda-french-gates-and-her-pivotal-philanthropies/",
+        "retrieved_at": "2026-04-24",
+        "classification_note": "DAF_TRANSFER detected. Per scrooge dedup rules, DAF contributions are partial-observability — we see the dollar enter NPT but not the end recipient. Counted at face value in observable_giving but flagged."
+      }
+    ],
+    "dafs_note": "MFG has explicit use of DAFs via NPT in 2024 (53% of Pivotal Philanthropies Foundation's grants). Unlike Ellison where DAF activity is inferred but not confirmed, MFG's DAF_TRANSFER is CONFIRMED. This is the single largest observability-reduction in her giving profile.",
+    "llcs_philanthropic": [
+      {
+        "name": "Pivotal Ventures LLC",
+        "established_year": 2015,
+        "state": "WA",
+        "structure": "LLC",
+        "disclosure_status": "NOT_PUBLICLY_REPORTED",
+        "transparency_note": "Per Capital Research Center and Chronicle of Philanthropy: an LLC does not require any disclosure of grant-making activity, staffing, expenditures, or grantees. MFG explicitly chose LLC structure for 'maximum operational flexibility' — enabling mixed charitable gifts, political donations, and for-profit investments through the same vehicle.",
+        "source_url": "https://www.pivotal.com/about",
+        "secondary_source_url": "https://capitalresearch.org/article/melinda-french-gates-and-her-pivotal-philanthropies/",
+        "retrieved_at": "2026-04-24"
+      }
+    ],
+    "llcs_note": "Pivotal Ventures LLC is a PHILANTHROPIC LLC comparable to CZI (Zuckerberg) and Emerson Collective (Powell Jobs). Total LLC flow not publicly disclosed — some giving flows through the 501(c)(3) foundations (where it IS disclosed), other flows through the LLC (opaque). The 501(c)(3) foundations named 'Pivotal Philanthropies X Foundation' are the disclosed channel; the LLC is the opaque channel.",
+    "c4_nonprofits": [
+      {
+        "name": "Pivotal Initiatives Fund",
+        "structure": "501(c)(4)",
+        "purpose": "Policy and advocacy",
+        "reported_2024_revenue_usd": 0,
+        "reported_2024_assets_usd": 0,
+        "source_url": "https://capitalresearch.org/article/melinda-french-gates-and-her-pivotal-philanthropies/",
+        "retrieved_at": "2026-04-24",
+        "notes": "501(c)(4) entities do not file 990-PF (file 990 instead), have lighter disclosure than private foundations, and can spend on political advocacy. Reported zero activity in 2024."
+      }
+    ],
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN. No public reporting of offshore entities.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "No publicly disclosed personal trust structures. Divorce-settlement transfers appear to have come as direct securities (not via a dynasty trust or similar). This absence-of-evidence is noteworthy relative to other pledgers (e.g., Ellison's disclosed but opaque trust)."
+  },
+
+  "red_flags": [
+    {
+      "flag": "LLC_OPACITY",
+      "evidence": "Pivotal Ventures LLC (established 2015) discloses no grantmaking, no staffing, no recipients. Chosen explicitly by MFG for 'maximum operational flexibility' per Chronicle of Philanthropy. Unknown portion of her giving flows through this vehicle and is invisible to 990-PF reporting.",
+      "source_url": "https://capitalresearch.org/article/melinda-french-gates-and-her-pivotal-philanthropies/",
+      "severity": "MODERATE",
+      "severity_note": "Opacity exists, but MFG has ALSO established five 501(c)(3) foundations with full 990-PF reporting. She has opted INTO disclosure for a large portion of her activity — unlike some philanthropic-LLC operators (e.g., CZI) who route more through the opaque LLC. Net: LLC exists but is balanced by substantial disclosed giving."
+    },
+    {
+      "flag": "DAF_TRANSFERS",
+      "evidence": "$257.5M of $486.8M 2024 Pivotal Philanthropies Foundation grants (~53%) went to National Philanthropic Trust, a DAF sponsor. End recipients not visible on 990.",
+      "source_url": "https://capitalresearch.org/article/melinda-french-gates-and-her-pivotal-philanthropies/",
+      "severity": "MODERATE",
+      "severity_note": "Above the 50% threshold typically used for DAF_TRANSFER flag."
+    },
+    {
+      "flag": "MULTIPLE_SHELL_FOUNDATIONS_AWAITING_DEPLOYMENT",
+      "evidence": "Three 501(c)(3) foundations (Opportunity, Pathways, Momentum) each received ~$982M in 2024 but disbursed $0. Plus Firefinch Foundation: $0 assets, $0 revenue. Pattern suggests warehousing, not deployment. Establishing multiple same-officer foundations is sometimes used to allow 5% payout on smaller bases rather than a consolidated base — though not yet a violation given recency.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/934378098",
+      "severity": "LOW",
+      "severity_note": "Recency of establishment (all 2023-2024) means 5% payout requirement hasn't yet triggered. Revisit in 2026 filing cycle — if these three continue at $0 disbursement, would become a LOW_PAYOUT flag."
+    }
+  ],
+  "red_flags_not_present": [
+    "PLEDGE_UNFULFILLED — she co-founded the Giving Pledge and observable giving (when Gates Foundation tenure is attributed) substantially exceeds 50% of her current net worth.",
+    "POLITICAL_HEAVY — political giving ~$4-5M, vs. philanthropic giving ~$487M 2024 alone. Ratio is ~1:100.",
+    "HIGH_OFFICER_COMP — all Pivotal foundation officers zero comp.",
+    "FOR_PROFIT_PIVOT — unlike Ellison's EIT, Pivotal's charitable-vs-investment separation is structurally cleaner (foundations file 990s; investments are separate)."
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 543000000,
+    "observable_giving_method": "sum(Pivotal Philanthropies Foundation 990-PF grants_out 2022-2024) + Wellcome Leap 2025 $50M (announced, not yet in 990). Excludes: (a) Gates Foundation tenure giving 2000-2024 — that's a joint effort with Bill Gates, attributable but not cleanly single-subject; (b) $12.5B transfer_in which has not yet flowed out to end recipients; (c) Pivotal Ventures LLC activity (unknown, opaque).",
+    "observable_giving_excluded_context": "MFG served as co-chair of Gates Foundation 2000-2024. Gates Foundation cumulative giving is ~$83B+ over its lifetime. If attributed 50% to her as co-founder/co-chair for the period she was active, her tenure-attributed share would be tens of billions. We EXCLUDE this from the single-subject observable here to avoid double-counting with Bill Gates's record, but note it as context for the 'lifetime giving' picture.",
+    "observable_giving_todo": [
+      "Pull 2025 990-PF filings (available Nov 2026) for PPF and the three Bill-Gates-capitalized foundations — these will show whether the $12.5B transfer actually flows out.",
+      "Traced Wellcome Leap $50M against PPF 2025 990 when available.",
+      "Attempt to trace Pivotal Ventures LLC flow via state incorporation records / Delaware or Washington filings — likely yields nothing by design.",
+      "Attribution model for Gates Foundation 2000-2024 tenure — decide at aggregator level whether to split between MFG and BMG or leave as pre-split joint vehicle."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1292000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.85 × $30.4B = $25.84B; tenure factor = 5/10 = 0.5. Expected = $1.29B. Tenure is LOW because she has only been a separately-listed billionaire since 2021. If we used her full co-billionaire tenure (since ~1999 Microsoft IPO wealth), tenure saturates at 1.0 and expected = $2.58B.",
+    "observable_ratio_to_expected": 0.42,
+    "observable_ratio_to_current_nw": 0.0179,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "The $257.5M to NPT is already captured in observable_giving (it counted as a grant_out from PPF). The UPLIFT from opacity (what NPT subsequently did with it) is uncertain but the dollars are already in observable. Zero additional uplift.",
+      "llc_uplift_usd": 500000000,
+      "llc_uplift_note": "Pivotal Ventures LLC activity is unknown. Applying CZI-comparable benchmark: for an LLC-philanthropic operator at MFG's scale with her public giving cadence, LLC flow of $250-750M/year is plausible. Point estimate ~$500M as hidden upper over the 2022-2025 window.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not checked yet. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 60000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Applied at 0.2% of liquid wealth: 0.002 × $30.4B × 0.85 = $52M, rounded to $60M.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "MFG is Catholic. Published references suggest she has been publicly at odds with Church positions on reproductive rights, making Catholic tithing norms a poor predictor. Zero uplift.",
+      "gates_foundation_tenure_attribution_usd": 0,
+      "gates_foundation_tenure_note": "Deliberately set to zero for this single-subject roll-up. The attribution question (what portion of Gates Foundation 2000-2024 giving should be credited to MFG vs BMG) is a project-level decision, not a single-subject decision. Flag for aggregator.",
+      "total_usd": 560000000,
+      "total_method": "llc + anonymous (daf already in observable; others zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.85,
+    "tier": "ON_TRACK (Tier C — publicly committed and actively deploying)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. MFG ratio: ~0.85 — well above the low threshold. She is actively deploying at roughly 42% of the strict 10%/year norm on observable alone, rising to 85% with LLC + anonymous uplift. Given (a) her 5-year standalone tenure, (b) her $12.5B transfer only landed in June 2024, and (c) public critique of OTHER pledgers' slowness, she fits 'on-track deployer' profile.",
+    "tier_published_caveat": "MFG is a counterexample to the pledge-unfulfilled pattern: she co-founded the Giving Pledge, publicly criticizes laggards (Dec 2025 Fortune), and has deployed $487M in 2024 alone. Main observability concern is the Pivotal Ventures LLC opacity — some unknown portion of her giving is invisible to 990 reporting. On balance: ON_TRACK, NOT a Scrooge candidate."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 35.0,
+    "components": {
+      "giving_gap_40pct": 23.2,
+      "tenure_penalty_20pct": 4.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 7.5
+    },
+    "note": "Low score = less Scrooge-like. Giving gap still significant (only 42% of 10% norm on observable) but pledge is on-track, tenure penalty is small (new billionaire), and red flags are moderate (LLC opacity + DAF transfers) rather than severe. Computed with v2 formula for pipeline continuity. DO NOT PUBLISH per PLAN.md — tiers only."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Pivotal press contact at pivotal.com + Brooke Anderson (CEO, Pivotal) + John Sage (President, Pivotal Philanthropies Foundation).",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Wellcome Leap $50M — confirm inclusion in PPF 2025 990-PF when available (Nov 2026).",
+    "VERIFY: Full landing location of the $12.5B Gates Foundation transfer — three foundations show ~$2.95B combined; the remaining ~$9.5B is not yet traced in public 990s.",
+    "VERIFY: Pivotal Ventures LLC flow estimate — attempt WA state filings, Delaware LLC registry, any SEC filings referencing the LLC as beneficial owner.",
+    "VERIFY: 2025 990-PF for Opportunity/Pathways/Momentum — confirm whether $0 disbursement first year turned into meaningful 2025 disbursement (if not, upgrade to LOW_PAYOUT flag).",
+    "VERIFY: Political giving floor via full FEC bulk pull (not just individual contribution lookup) to catch joint fundraising, 527 contributions, etc.",
+    "VERIFY: Attribution policy for Gates Foundation 2000-2024 — project-level decision about whether MFG-tenure giving is credited to her personally, to the joint vehicle, or to Bill Gates.",
+    "VERIFY: Firefinch Foundation — is it shell/dormant or awaiting activation? Check 2025 filing."
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/882918646", "retrieved_at": "2026-04-24", "used_for": "Pivotal Philanthropies Foundation 990-PF — assets, grants 2022-2024, officers"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/934378098", "retrieved_at": "2026-04-24", "used_for": "Pivotal Philanthropies Opportunity Foundation 990-PF"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/934414218", "retrieved_at": "2026-04-24", "used_for": "Pivotal Philanthropies Pathways Foundation 990-PF"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/934400793", "retrieved_at": "2026-04-24", "used_for": "Pivotal Philanthropies Momentum Foundation 990-PF"},
+    {"url": "https://www.givingpledge.org/pledger/melinda-french-gates/", "retrieved_at": "2026-04-24", "used_for": "2010 Giving Pledge co-founder role, 2022 letter update, verbatim key quote"},
+    {"url": "https://fortune.com/2022/02/02/melinda-french-gates-gates-foundation-giving-pledge/", "retrieved_at": "2026-04-24", "used_for": "Feb 2022 pledge-letter amendment dropping Gates Foundation as sole destination"},
+    {"url": "https://www.cnbc.com/amp/2024/05/13/melinda-french-gates-to-resign-from-gates-foundation-will-pursue-own-philanthropy-with-12point5-billion-grant.html", "retrieved_at": "2026-04-24", "used_for": "May 13 2024 Gates Foundation resignation + $12.5B commitment"},
+    {"url": "https://www.gatesfoundation.org/ideas/media-center/press-releases/2024/05/melinda-french-gates", "retrieved_at": "2026-04-24", "used_for": "Official Gates Foundation statement on MFG departure"},
+    {"url": "https://www.pivotal.com/articles/melinda-french-gates-announces-1billlion-commitment-to-advance-women-globally", "retrieved_at": "2026-04-24", "used_for": "$1B commitment breakdown (150/235/240/250/125 sub-allocations)"},
+    {"url": "https://www.npr.org/2024/05/28/nx-s1-4983841/melinda-gates-1-billion-donation-womens-rights-groups", "retrieved_at": "2026-04-24", "used_for": "May 28 2024 $1B commitment announcement"},
+    {"url": "https://leverforchange.org/article/press-release/afwh-awardees-announcement/", "retrieved_at": "2026-04-24", "used_for": "Action for Women's Health 80+ awardees, $250M deployed late 2025"},
+    {"url": "https://wellcomeleap.org/pivotal_partnership_news/", "retrieved_at": "2026-04-24", "used_for": "Sept 10 2025 $100M ($50M Pivotal + $50M Wellcome) women's health partnership"},
+    {"url": "https://www.pivotal.com/media/wellcome-leap-and-pivotal-commit-100-million-to-womens-health-research", "retrieved_at": "2026-04-24", "used_for": "Wellcome Leap partnership announcement"},
+    {"url": "https://fortune.com/2025/12/04/melinda-french-gates-rips-billionaire-class-giving-pledge/", "retrieved_at": "2026-04-24", "used_for": "Dec 2025 public critique of Giving Pledge fulfillment"},
+    {"url": "https://www.forbes.com/profile/melinda-french-gates/", "retrieved_at": "2026-04-24", "used_for": "Feb 2026 net worth $30.4B, rank #72"},
+    {"url": "https://en.wikipedia.org/wiki/Melinda_French_Gates", "retrieved_at": "2026-04-24", "used_for": "Biographical data, 2021 Cascade Investment transfers, divorce timeline"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/melinda-french-gates/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg Billionaires Index profile"},
+    {"url": "https://www.bloomberg.com/features/2024-billionaire-donors-us-election/", "retrieved_at": "2026-04-24", "used_for": "2024 election political giving (Harris Victory Fund ~$920K, c4 nonprofit contributions)"},
+    {"url": "https://thehill.com/homenews/campaign/4792083-melinda-french-gates-kamala-harris-endorsement-2024/", "retrieved_at": "2026-04-24", "used_for": "July 2024 Harris endorsement"},
+    {"url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=melinda+french+gates", "retrieved_at": "2026-04-24", "used_for": "FEC itemized individual contributions 2024: 15 transactions, $76,300 total"},
+    {"url": "https://www.snopes.com/fact-check/melinda-gates-donate-kamala-harris/", "retrieved_at": "2026-04-24", "used_for": "Fact-check debunking viral $52M Harris donation claim"},
+    {"url": "https://capitalresearch.org/article/melinda-french-gates-and-her-pivotal-philanthropies/", "retrieved_at": "2026-04-24", "used_for": "Pivotal structure analysis — 5 foundations + LLC + c4; 2024 grant recipients; $257.5M to NPT; former names of foundations"},
+    {"url": "https://www.pivotal.com/about", "retrieved_at": "2026-04-24", "used_for": "Pivotal organizational overview (Ventures LLC + Philanthropies + Initiatives Fund)"},
+    {"url": "https://www.insidephilanthropy.com/home/melinda-french-gates-latest-move-an-open-call-for-womens-health", "retrieved_at": "2026-04-24", "used_for": "Action for Women's Health grantees — Center for Reproductive Rights, Collaborative for Gender + Reproductive Equity, National Women's Law Center, The 19th"},
+    {"url": "https://www.philanthropy.com/article/melinda-french-gates-announces-where-1-billion-in_new-funds-will-go-to-help-women-and-girls", "retrieved_at": "2026-04-24", "used_for": "$1B allocation detail via Chronicle of Philanthropy"},
+    {"url": "https://amherstbulletin.com/2024/06/06/umass-retired-professor-awarded-20-million-from-melinda-french-gates-philanthropic-foundation-55420217/", "retrieved_at": "2026-04-24", "used_for": "M.V. Lee Badgett $20M leader grant confirmation"},
+    {"url": "https://www.geekwire.com/2025/melinda-french-gates-offers-her-thoughts-as-gates-foundation-makes-plans-to-sunset-in-2045/", "retrieved_at": "2026-04-24", "used_for": "2025 context on Gates Foundation's 2045 sunset plan and MFG's commentary"}
+  ]
+}

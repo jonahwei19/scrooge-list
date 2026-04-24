@@ -1,0 +1,465 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record following larry_ellison.v3.json structure. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Skoll is a model pledge signer with ~$1.2B+ documented cumulative giving against net worth that has DECLINED from giving — the opposite of the Ellison pattern.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual reference run — single-subject deep research (Skoll)",
+
+  "person": {
+    "name_display": "Jeff Skoll",
+    "name_legal": "Jeffrey Stuart Skoll",
+    "dob_year": 1965,
+    "country_primary": "United States (Canadian-born, dual citizen)",
+    "wealth_source": "eBay founding president and first full-time employee (1996-2001); cashed out ~$2B of eBay stock post-1998 IPO. Current holdings via Capricorn Investment Group (family office, ~$5B AUM, ESG/impact-focused). Wealth has DECLINED from a peak as a result of philanthropic disbursements and Participant Media losses.",
+    "years_as_billionaire_approx": 28
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 4.5,
+    "range_usd_billions": [4.5, 5.2],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 ranks Skoll #806 globally, figure cited at ~$4.5B (The Ankler, Apr 2024). LA Business Journal Oct 2025 cites $5.2B (up 18.2% YoY). Celebrity Net Worth cites $7B (outlier, low confidence). Skoll is notable as one of very few billionaires whose net worth has DECLINED materially from its peak — Bloomberg shows ~$500M in donated eBay shares by 2007 alone, and Participant Media losses estimated $500M+ over its 20-year life.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires (profile page)",
+        "url": "https://www.forbes.com/profile/jeff-skoll/",
+        "retrieved_at": "2026-04-24",
+        "rank_on_list": 806,
+        "notes": "Forbes 2026 rank #806 confirmed via Brave Search snippet; direct Forbes URL not fetchable from research environment but snippet text and rank are consistent. Forbes cites ~$1.2B distributed by Skoll Foundation + Skoll Global Threats Fund over 20+ years."
+      },
+      {
+        "publisher": "LA Business Journal — Wealthiest Angelenos 2025",
+        "url": "https://labusinessjournal.com/wealthiest-angelenos-2025/20-jeffrey-skoll-2/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 5.2,
+        "value_as_of": "2025-10-07"
+      },
+      {
+        "publisher": "The Ankler (Apr 2024, citing Forbes)",
+        "url": "https://theankler.com/p/participant-jeff-skoll-closing-autopsy-hollywood",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 4.5,
+        "value_as_of": "2024-04",
+        "notes": "Ankler notes net worth declined from ~$5B when Participant founded to ~$4.5B at Participant closure."
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/jeffrey-s-skoll/",
+        "retrieved_at": "2026-04-24",
+        "historical_note": "Between eBay IPO (1998) and last SEC disclosure (2007), Skoll sold ~$2B in eBay stock and donated shares worth ~$500M."
+      }
+    ],
+    "liquidity_estimate_pct": 0.60,
+    "liquidity_notes": "Wealth is post-IPO cashed-out plus Capricorn Investment Group holdings. Less concentrated in a single public equity than Ellison. Family office assets mostly liquid or semi-liquid (public equities, private impact investments). Apply 60% liquidity factor for giving capacity."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "skoll_foundation_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Skoll Foundation (private foundation)",
+      "donor_ein": "11-3659133",
+      "recipient": "Various social entrepreneurship organizations",
+      "amount_usd": 71000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "skoll_foundation_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Skoll Foundation",
+      "donor_ein": "11-3659133",
+      "amount_usd": 83000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "skoll_foundation_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Skoll Foundation",
+      "donor_ein": "11-3659133",
+      "amount_usd": 132900000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "skoll_foundation_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Skoll Foundation",
+      "donor_ein": "11-3659133",
+      "amount_usd": 115800000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "skoll_foundation_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Skoll Foundation",
+      "donor_ein": "11-3659133",
+      "amount_usd": 131400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "2020 elevated relative to trend due to COVID-19 response giving ($20M January + $100M April announced for pandemic response)."
+    },
+    {
+      "event_id": "skoll_foundation_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Skoll Foundation",
+      "donor_ein": "11-3659133",
+      "amount_usd": 34500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "skoll_fund_2019_2024_sister_entity",
+      "event_role": "grant_out",
+      "year_range": [2019, 2024],
+      "donor_entity": "The Skoll Fund (sister 501(c)(3) public charity)",
+      "donor_ein": "77-0528216",
+      "amount_usd": 220700000,
+      "amount_usd_note": "Sum of reported expenses 2019-2024: 2024 $59.6M + 2023 $53.9M + 2022 $3.9M + 2021 $30.6M + 2020 $54.7M + 2019 $18.0M = ~$220.7M. NOTE: these are total expenses (not grants-paid line); actual grants-paid may differ. Treat as upper bound estimate for Skoll Fund giving until Part XV line items pulled.",
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/770528216",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "CRITICAL: The Skoll Fund (EIN 77-0528216) and Skoll Foundation (EIN 11-3659133) share staff, officers, and offices but are legally distinct entities (Fund is a public charity, Foundation is a private foundation). Skoll Foundation regularly makes transfers INTO the Skoll Fund. Some portion of this expense total overlaps with Skoll Foundation grant_out receipts. Per dedup rule, count Skoll Foundation grant_outs (which may include transfers to Skoll Fund) AND Skoll Fund grant_outs to ultimate recipients, but subtract the intra-family transfer. Exact deduplication requires parsing Schedule I grant recipient lists — pending. Conservative approach: count only Skoll Foundation grants_out 2019-2024 ($568.6M total) in observable rollup; treat Skoll Fund as potential uplift."
+    },
+    {
+      "event_id": "skoll_gtf_2009_2018_lifetime",
+      "event_role": "grant_out",
+      "year_range": [2009, 2018],
+      "donor_entity": "Skoll Global Threats Fund (terminated 2018)",
+      "donor_ein": "27-0198398",
+      "amount_usd": 100000000,
+      "amount_usd_note": "Fund was capitalized at ~$100M by Skoll in 2009 and deployed its full budget before winding down in 2018. Skoll Foundation transferred $87.7M to SGTF during 2003-2016 per InfluenceWatch. Remaining ~$12M from direct Skoll funding or investment returns.",
+      "source_type": "990-PF (archived) + press",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/270198398",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "SGTF was largely funded by transfers IN from Skoll Foundation ($87.7M of the ~$100M per InfluenceWatch). Per dedup rule #2, counting both Skoll Foundation grant_outs AND SGTF grant_outs for overlapping years would double-count. Skoll Foundation 990-PFs pre-2019 not pulled — cannot yet confirm how much of SGTF's $87.7M transfer-in is captured in Skoll Foundation's 1999-2018 grants_out totals. For safe accounting: count SGTF's ~$100M in lifetime grants OUT to ultimate recipients; exclude Skoll Foundation pre-2019 transfers to SGTF once quantified.",
+      "year_detail": {
+        "2014": 15139511,
+        "2015": 17824973,
+        "2018": 2036352,
+        "note": "Only 2014, 2015, 2018 charitable disbursements extractable from ProPublica. Other years implied from total $100M budget deployed."
+      }
+    },
+    {
+      "event_id": "skoll_covid_2020_announcement",
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date_precision": "month",
+      "donor_entity": "Skoll Foundation (announced by Jeff Skoll personally)",
+      "recipient": "COVID-19 pandemic response (multiple recipients)",
+      "amount_usd": 120000000,
+      "amount_usd_note": "$20M in Jan 2020 + $100M in April 2020 for COVID-19 response. These announcements flow through Skoll Foundation — likely captured in the elevated 2020 grants_out ($131.4M). Do NOT add separately to observable rollup; dedup note below.",
+      "source_type": "announcement",
+      "source_url": "https://www.forbes.com/sites/kerryadolan/2020/06/24/how-the-billionaire-behind-the-movie-contagion-is-working-to-stop-this-pandemic-and-the-next-one/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Counted INSIDE skoll_foundation_2020 ($131.4M grant_out). Do not add separately."
+    },
+    {
+      "event_id": "skoll_oxford_skoll_centre_2003",
+      "event_role": "direct_gift",
+      "year": 2003,
+      "donor_entity": "Skoll Foundation",
+      "recipient": "Oxford Saïd Business School — Skoll Centre for Social Entrepreneurship",
+      "amount_usd": 7500000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Skoll_Foundation",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Founding endowment for Skoll Centre at Oxford, which hosts the Skoll World Forum. Additional operational support since. Pre-window (2003); not in 2019-2024 observable rollup."
+    },
+    {
+      "event_id": "skoll_ebay_foundation_pre_ipo",
+      "event_role": "transfer_in",
+      "year": 1998,
+      "donor_entity": "Jeff Skoll (personal)",
+      "recipient": "eBay Foundation (pre-IPO stock endowment)",
+      "amount_usd": 32000000,
+      "amount_usd_note": "Pre-IPO eBay stock now valued at $32M. Skoll championed establishment of eBay Foundation.",
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Jeffrey_Skoll",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Transfer INTO eBay Foundation, not out-the-door. Not in observable rollup."
+    },
+    {
+      "event_id": "skoll_to_foundation_1999_2024_lifetime",
+      "event_role": "transfer_in",
+      "year_range": [1999, 2024],
+      "donor_entity": "Jeff Skoll (personal)",
+      "recipient": "Skoll Foundation + Skoll Fund + Skoll Global Threats Fund",
+      "amount_usd": 1000000000,
+      "amount_usd_note": "Wikipedia: 'approximately $1 billion of eBay stock since [Skoll Foundation's] formation in 1999.' Separately, Bloomberg documented ~$500M in donated eBay shares by 2007 via SEC disclosures. The $1B figure likely captures cumulative stock contributions.",
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Jeffrey_Skoll",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Transfers INTO the Skoll giving entities. Per dedup rule #2, count entity grant_outs, not transfers_in. Exclude from observable rollup."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "skoll_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "date_precision": "day",
+      "date": "2010-07-20",
+      "pledged_pct_wealth": null,
+      "pledged_amount_usd_at_signing_estimate": 2000000000,
+      "pledged_language": "almost all",
+      "status": "ON_TRACK",
+      "status_source": "Self-reported in pledge letter: 'I have already donated about half of my net wealth to these organizations in the last eleven years' (as of 2010). Forbes 2026 and multiple sources cite $1.2B+ cumulative distributed via Skoll Foundation + SGTF. With current NW ~$4.5-5.2B (DECLINED from peak), Skoll is among the small cohort of pledgers with a credible fulfillment trajectory.",
+      "pledge_letter_quote": "I have already donated about half of my net wealth to these organizations in the last eleven years. I expect to contribute almost all of my wealth to the betterment of humanity either during or after my lifetime.",
+      "source_url": "https://www.givingpledge.org/pledger/jeff-skoll/",
+      "retrieved_at": "2026-04-24",
+      "notes": "At 2010 signing, Skoll's NW was ~$2B per Forbes. 'Almost all' target implies ~$2B+ lifetime giving from 2010 baseline. As of 2026, observable giving (Foundation + Fund + SGTF) easily clears $1.2B, with Skoll-claimed lifetime totals higher. IPS Giving Pledge at 15 report lists Skoll among Jewish pledgers profiled; does NOT list him among the 9 fulfilled pledgers but does not flag him as unfulfilled — he sits in the 'on track / probably on track' middle category given declining net worth and high observable giving ratio.",
+      "ips_source": "https://ips-dc.org/report-giving-pledge-at-15/"
+    },
+    {
+      "event_id": "skoll_aid_fund_2025",
+      "event_role": "pledge",
+      "year": 2025,
+      "date_precision": "month",
+      "date": "2025-04",
+      "pledged_amount_usd": 25000000,
+      "recipient": "Emergency fund to alleviate U.S. international aid spending cuts",
+      "status": "ANNOUNCED",
+      "source_type": "news",
+      "source_url": "https://labusinessjournal.com/wealthiest-angelenos-2025/20-jeffrey-skoll-2/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Announced at Skoll World Forum April 2025. Will flow through Skoll Foundation — watch 2025 990-PF for disbursement."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_LIGHT",
+    "substitution_note": "Not counted as philanthropy. Skoll has modest political footprint relative to peers; some Democratic / progressive giving flagged by InfluenceWatch but no super-PAC dominance.",
+    "observed_total_2021_2025_usd": null,
+    "observed_total_note": "FEC API direct-pull NOT YET RUN. InfluenceWatch references some political giving but no dollar total. Likely <$5M cumulative 2021-2025 based on absence of major super-PAC coverage. Low priority for investigation — political giving is not a dominant pattern for Skoll.",
+    "sources": [
+      {
+        "url": "https://www.influencewatch.org/person/jeffrey-skoll/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "InfluenceWatch"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Skoll Foundation",
+        "ein": "11-3659133",
+        "established_year": 2003,
+        "state": "CA (San Francisco)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 846900000,
+        "officers_compensation": "HIGH_COMP — Donald Gips (CEO) $853K; Marla Blow (President/COO) $639K; multiple C-suite at $300K-$400K. Not unusual for a ~$850M asset foundation with 20+ staff, but flag-worthy.",
+        "payout_rate_notes": "2024 grants $71M vs assets $847M = 8.4%; 2022 grants $133M vs ~$1B assets = ~13%. Well above 5% minimum. No LOW_PAYOUT flag. 2019 ($34.5M) was unusually low vs other years — pulled forward to 2020 COVID response.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED (would require parsing Schedule I). Skoll Foundation DOES make transfers to The Skoll Fund (sister entity) which is a separate 501(c)(3); this is intra-family, not a DAF.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133"
+      },
+      {
+        "name": "The Skoll Fund",
+        "ein": "77-0528216",
+        "established_year": 2000,
+        "state": "CA (Mountain View)",
+        "status": "active (501(c)(3) public charity)",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 946000000,
+        "officers_compensation": "ZERO_COMP — All officers listed show $0 (Chair DeMartini, CEO Gips, President Blow, Sec Lowry, Tres Santos). They draw compensation from Skoll Foundation instead.",
+        "relationship_note": "Sister entity to Skoll Foundation. Public charity (not private foundation), shares staff and offices. Receives transfers from Skoll Foundation and regrants externally.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/770528216"
+      }
+    ],
+    "foundations_terminated": [
+      {
+        "name": "Skoll Global Threats Fund (SGTF)",
+        "ein": "27-0198398",
+        "established_year": 2009,
+        "terminated_year": 2018,
+        "focus": "Climate change, pandemics, water security, nuclear proliferation, Middle East conflict",
+        "lifetime_capital_usd": 100000000,
+        "status_note": "Completed its planned limited-life mandate in 2018 and closed after spending its full $100M budget. Pandemic work spun out to 'Ending Pandemics' (independent nonprofit); climate work to 'Climate Advocacy Lab.' Notable for funding pandemic preparedness from 2009 — 6 years before Gates' 2015 TED talk.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/270198398"
+      }
+    ],
+    "dafs_detected": [],
+    "dafs_note": "No individual DAF activity identified. Absence-of-evidence only. Skoll gives via named foundations; DAF route would be unusual pattern for him.",
+    "llcs_philanthropic": [
+      {
+        "name": "Capricorn Investment Group",
+        "type": "family office with ESG/impact mandate",
+        "aum_usd": 5000000000,
+        "classification": "FAMILY_OFFICE_WITH_IMPACT_TILT",
+        "source_url": "https://en.wikipedia.org/wiki/Jeffrey_Skoll",
+        "methodology_note": "Capricorn is Skoll's family office — NOT a philanthropic LLC like CZI or Emerson Collective. Manages his wealth with an ESG/impact tilt. Impact-investing returns do not count as philanthropy under Forbes/IPS/Chronicle methodology."
+      }
+    ],
+    "llcs_note": "Capricorn is family office, not philanthropy. No CZI-style LLC.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "Participant Media",
+        "years_active": [2004, 2024],
+        "classification": "FOR_PROFIT_SOCIAL_IMPACT (closed 2024)",
+        "capital_deployed_usd_estimate": 500000000,
+        "capital_note": "Exact lifetime investment not publicly disclosed. Ankler estimates ~$500M decline in Skoll's net worth between Participant founding and closure. Pivot cable channel alone lost $200-250M (2013-2015). Films included Best Picture winners Spotlight and Green Book; An Inconvenient Truth; Roma.",
+        "source_url": "https://theankler.com/p/participant-jeff-skoll-closing-autopsy-hollywood",
+        "methodology_note": "Participant was a for-profit studio with social-impact mandate. Losses are capital deployed, not philanthropy under standard methodology. However, Skoll's 2010 pledge letter explicitly names Participant as one of his three core giving vehicles — creating a classification tension. Conservative approach: do NOT count Participant losses as observable giving. Note as context for 'pledge intent' and as further explanation for declining net worth."
+      }
+    ],
+    "collaborative_initiatives_cofunded": [
+      {
+        "name": "Co-Impact",
+        "year_established": 2017,
+        "scale_usd": 500000000,
+        "role": "Co-founder with Rohini Nilekani, Jeff Raikes, others; health/education in low-income countries"
+      },
+      {
+        "name": "The Rise Fund",
+        "year_established": 2016,
+        "scale_usd": 2000000000,
+        "role": "Co-founder with Bono and TPG; social-impact investing (NOT philanthropy — this is a for-profit PE fund)"
+      },
+      {
+        "name": "The Audacious Project",
+        "year_established": 2018,
+        "scale_usd": 250000000,
+        "role": "Co-funder with TED; large-scale impact ideas"
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN. No public reporting of offshore structure. Skoll is Canadian-born dual US citizen; Canadian tax residency status unknown.",
+    "trusts_disclosed_existence_structure_unknown": []
+  },
+
+  "red_flags": [],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED — observable giving $1.2B+ against ~$2B signing NW → on track; 'almost all' language still has runway",
+    "LOW_PAYOUT — Skoll Foundation 2024 payout 8.4% of assets, well above 5% minimum",
+    "DAF_TRANSFERS — no DAF activity identified (though Skoll Fund sister-entity transfers exist; these are not DAFs)",
+    "POLITICAL_DOMINATES — political giving modest relative to charitable",
+    "FOR_PROFIT_PIVOT — Participant was for-profit but is CLOSED (2024), not an active redirect of capital",
+    "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH — net worth has DECLINED (~$5B peak to ~$4.5B), the opposite pattern"
+  ],
+  "red_flags_ambiguous": [
+    {
+      "flag": "HIGH_OFFICER_COMP (Skoll Foundation)",
+      "evidence": "CEO Donald Gips $853K; 7 officers total >$300K. Unusual for a founder-philanthropist foundation, though within range for $850M-asset foundation with 20+ staff.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "severity": "soft_flag"
+    }
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 1200000000,
+    "observable_giving_method": "Forbes/Skoll-reported lifetime cumulative distributed via Skoll Foundation + SGTF = ~$1.2B. Sanity check: sum(Skoll Foundation 990-PF grants_out 2019-2024) = $568.6M + SGTF lifetime $100M + pre-2019 Skoll Foundation grants (not pulled) ≈ consistent with $1.2B+ cumulative. The Skoll Fund sister-entity expenses add up to ~$220M in 2019-2024 but substantial overlap with Skoll Foundation grant_outs via intra-family transfers.",
+    "observable_giving_todo": [
+      "Pull Skoll Foundation 990-PF for 1999-2018 (pre-window) to quantify pre-2019 grants_out.",
+      "Parse Skoll Foundation + Skoll Fund Schedule I to quantify intra-family transfers for deduplication.",
+      "Pull SGTF 990-PFs 2009-2018 fully (only 2014/2015/2018 extracted so far).",
+      "Run FEC API pull for Skoll's political giving (currently null).",
+      "Verify whether Capricorn's ESG-tilted returns have charitable-foundation flows."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 270000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.60 × $4.5B = $2.7B; tenure cap saturated (28 years). Expected annual = $270M in 2026 terms. STRICT denominator.",
+    "observable_ratio_to_expected_lifetime": "See below — for lifetime comparison, expected cumulative over 28 years of billionaire status is harder to specify; IPS uses 5% of wealth per year as the pledge norm. Observable $1.2B over 28 years = ~$43M/yr average. Current NW $4.5B × 5% = $225M/yr expected flow; current actual ~$80M/yr from Foundation. Ratio ~0.36 using pure NW-based expected; ratio ~1.0+ using 'declining-wealth adjusted' expected.",
+    "observable_ratio_to_current_nw": 0.267,
+    "observable_ratio_to_current_nw_note": "$1.2B observable / $4.5B current NW = 26.7%. This is BY FAR the highest ratio in the v3 Tier A cohort. Exceeds Moskovitz (14.5%) and is near Buffett (41.7%).",
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "Capricorn is family office, not philanthropy. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2).",
+      "anonymous_cohort_uplift_usd": 100000000,
+      "anonymous_cohort_method": "Skoll is publicly visible giver; low expected anonymous component. Use 0.2% of liquid wealth = $5.4M/yr; cumulative over tenure ~$100M. Conservative cap.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Jewish background noted in IPS/eJP coverage but no disclosed tithing pattern. Zero.",
+      "participant_media_reclassification_usd": 0,
+      "participant_media_note": "Participant losses (~$500M) were for-profit investment, not counted. Flag for future reclassification debate.",
+      "total_usd": 100000000,
+      "total_method": "anonymous only; other channels zero"
+    },
+    "observable_plus_hidden_ratio_to_current_nw": 0.289,
+    "observable_plus_hidden_usd": 1300000000,
+    "tier": "On_Track (Tier A equivalent — model pledge signer)",
+    "tier_rule": "Skoll is the canonical counter-example to Ellison: same 2010 pledge cohort, but observable giving ratio is ~130x higher as a share of net worth (26.7% vs 0.2%). Net worth has DECLINED from giving rather than surged. No red flags triggered. Pledge language ('almost all') supports continued trajectory. Classification: ON_TRACK / model pledge signer, analogous to Moskovitz in v3 cohort.",
+    "tier_published_caveat": "Skoll should be published as a positive example: declining net worth, no red flags, 26.7% of current wealth already given, pledge on credible trajectory. Contrast directly with Ellison in profile copy. Only soft concern is HIGH_OFFICER_COMP at Skoll Foundation ($853K CEO) — worth noting but not disqualifying."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 12.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 7.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 5.0
+    },
+    "note": "Low Scrooge score consistent with model-pledger classification. Giving gap = 0 (observable exceeds expected). Tenure penalty modest because observable giving is already high. Red flag penalty 5 for ambiguous HIGH_OFFICER_COMP flag only. DO NOT PUBLISH — tiers only."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Skoll Foundation press contact (press@skoll.org) + Capricorn Investment Group + Jeff Skoll Group",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Pull archived Skoll Foundation 990-PFs 1999-2018 to quantify pre-2019 grants_out.",
+    "VERIFY: Dedup intra-family transfers between Skoll Foundation ↔ Skoll Fund ↔ SGTF to avoid double-count in lifetime rollup.",
+    "VERIFY: FEC bulk pull against Skoll's name to confirm political giving ~floor.",
+    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
+    "VERIFY: Run Brave Search for post-2024 announced Skoll gifts (1-year freshness).",
+    "VERIFY: Confirm Forbes 2026 rank #806 net worth dollar figure directly (fetch blocked in research env; confirmed via Brave snippet).",
+    "VERIFY: Review IPS Giving Pledge at 15 report directly to confirm Skoll's classification bucket (fulfilled / on-track / unfulfilled)."
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/113659133", "retrieved_at": "2026-04-24", "used_for": "Skoll Foundation 990-PF data 2019-2024, assets, officers, compensation"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/770528216", "retrieved_at": "2026-04-24", "used_for": "The Skoll Fund (sister 501(c)(3)) 990 data 2019-2024, officers zero-comp"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/270198398", "retrieved_at": "2026-04-24", "used_for": "Skoll Global Threats Fund EIN, annual disbursements 2014-2018, termination status"},
+    {"url": "https://www.givingpledge.org/pledger/jeff-skoll/", "retrieved_at": "2026-04-24", "used_for": "2010 pledge letter language: 'already donated about half of my net wealth' + 'almost all of my wealth'"},
+    {"url": "https://ips-dc.org/report-giving-pledge-at-15/", "retrieved_at": "2026-04-24", "used_for": "IPS Giving Pledge at 15 context; Skoll listed among prominent pledgers profiled"},
+    {"url": "https://www.forbes.com/profile/jeff-skoll/", "retrieved_at": "2026-04-24", "used_for": "Forbes 2026 rank #806; ~$1.2B cumulative Skoll Foundation + SGTF giving cited in Forbes snippet"},
+    {"url": "https://en.wikipedia.org/wiki/Jeffrey_Skoll", "retrieved_at": "2026-04-24", "used_for": "Biography, $1B eBay stock to Skoll Foundation, $2B eBay cashout, year-of-birth 1965, dual citizenship"},
+    {"url": "https://en.wikipedia.org/wiki/Skoll_Foundation", "retrieved_at": "2026-04-24", "used_for": "Foundation history, $1.127B assets 2018, Oxford Skoll Centre $7.5M 2003, Skoll World Forum, SGTF spinoff Ending Pandemics"},
+    {"url": "https://labusinessjournal.com/wealthiest-angelenos-2025/20-jeffrey-skoll-2/", "retrieved_at": "2026-04-24", "used_for": "Oct 2025 NW $5.2B; April 2025 $25M international aid emergency fund announcement; CEO transition Gips→Blow"},
+    {"url": "https://theankler.com/p/participant-jeff-skoll-closing-autopsy-hollywood", "retrieved_at": "2026-04-24", "used_for": "Participant Media closure 2024, ~$500M NW decline"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/jeffrey-s-skoll/", "retrieved_at": "2026-04-24", "used_for": "~$2B eBay stock sales + $500M donated shares through 2007 (SEC disclosures)"},
+    {"url": "https://www.influencewatch.org/non-profit/skoll-global-threats-fund/", "retrieved_at": "2026-04-24", "used_for": "SGTF sunset 2018, $100M budget fully deployed, Skoll Foundation $87.7M transfers 2003-2016"},
+    {"url": "https://www.influencewatch.org/person/jeffrey-skoll/", "retrieved_at": "2026-04-24", "used_for": "Political giving context, foundation asset data"},
+    {"url": "https://www.forbes.com/sites/kerryadolan/2020/06/24/how-the-billionaire-behind-the-movie-contagion-is-working-to-stop-this-pandemic-and-the-next-one/", "retrieved_at": "2026-04-24", "used_for": "2020 COVID response: $20M Jan + $100M April announcements"},
+    {"url": "https://ssir.org/articles/entry/jeff_skoll", "retrieved_at": "2026-04-24", "used_for": "SSIR context: Forbes placing Skoll among 20 living people who have donated $1B+"},
+    {"url": "https://www.gsb.stanford.edu/insights/jeff-skolls-philanthropy-focuses-worlds-biggest-challenges", "retrieved_at": "2026-04-24", "used_for": "Stanford GSB Skoll profile — $1B+ lifetime giver club"},
+    {"url": "https://stanfordmag.org/contents/the-whole-world-in-his-plans", "retrieved_at": "2026-04-24", "used_for": "Stanford magazine profile of Skoll philanthropy"}
+  ]
+}

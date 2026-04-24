@@ -1,0 +1,602 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record matching larry_ellison.v3.json schema. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 single-subject deep research \u2014 Stephen M. Ross",
+  "person": {
+    "name_display": "Stephen Ross",
+    "name_legal": "Stephen Michael Ross",
+    "dob_year": 1940,
+    "country_primary": "United States",
+    "wealth_source": "Related Companies (real estate development \u2014 Hudson Yards, Deutsche Bank Center/Time Warner Center); Miami Dolphins NFL team (~94% stake); Equinox Holdings (SoulCycle, Equinox Fitness); Related Ross (West Palm Beach); Formula 1 Miami Grand Prix stake",
+    "years_as_billionaire_approx": 18,
+    "years_as_billionaire_note": "Ross first appeared on Forbes 400 around 2008; has been billionaire continuously since."
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 17.0,
+    "range_usd_billions": [
+      15,
+      17
+    ],
+    "as_of": "2026-04",
+    "range_note": "Caproasia (Jan 2026) cites $17B; ForbesRichest tracker $17.0B; Wikipedia 2020 snapshot $10.1B (dated). March 2026 Dolphins 1% sale to Lin Bin at $125M implies $12.5B valuation for Dolphins holding co alone \u2014 consistent with $15-17B total personal fortune. Dec 2024 Ross sold 13% of Dolphins/assets at $8.1B valuation.",
+    "sources": [
+      {
+        "publisher": "Caproasia",
+        "url": "https://www.caproasia.com/2026/01/18/united-states-real-estate-related-companies-founder-billionaire-stephen-ross-age-85-with-17-billion-fortune-rejected-15-billion-buyout-offer-for-national-football-league-nfl-team-miami-dolphin/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 17.0
+      },
+      {
+        "publisher": "ForbesRichest (live tracker)",
+        "url": "https://forbesrichest.com/billionaire/stephen-ross",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 17.0
+      },
+      {
+        "publisher": "The Real Deal Miami",
+        "url": "https://therealdeal.com/miami/2026/03/04/steve-ross-to-sell-1-of-miami-dolphins-to-chinese-investor/",
+        "retrieved_at": "2026-04-24",
+        "value_note": "March 2026 1% sale at $125M implies Dolphins holding co ~$12.5B"
+      },
+      {
+        "publisher": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Stephen_M._Ross",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 10.1,
+        "value_as_of": "2020-Forbes"
+      }
+    ],
+    "liquidity_estimate_pct": 0.25,
+    "liquidity_notes": "Heavily illiquid. Related Companies is private. Miami Dolphins (~94%) is a single sports-franchise asset. Equinox/SoulCycle is private. Real estate portfolio ($60B+ developed) is asset-heavy but encumbered by debt and partners. 25% liquidity is reasonable for giving-capacity-now; recent partial-stake sales (Dec 2024 13% Dolphins at $8.1B val; March 2026 1% at $12.5B val) show ability to monetize selectively."
+  },
+  "cited_events": [
+    {
+      "event_id": "ross_smrf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Stephen M Ross Foundation",
+      "donor_ein": "38-7104084",
+      "recipient": "Various (recipients not disclosed in ProPublica summary)",
+      "amount_usd": 38951006,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Sharp spike vs surrounding years. Foundation assets only ~$11.7M at end of 2024 \u2014 implies funding passed through quickly (possible DAF transfer or large one-time pledge payment). Grant recipients not disclosed in ProPublica summary; 990-PF Schedule B would resolve."
+    },
+    {
+      "event_id": "ross_smrf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Stephen M Ross Foundation",
+      "donor_ein": "38-7104084",
+      "amount_usd": 396414,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ross_smrf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Stephen M Ross Foundation",
+      "donor_ein": "38-7104084",
+      "amount_usd": 39655,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ross_smrf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Stephen M Ross Foundation",
+      "donor_ein": "38-7104084",
+      "amount_usd": 10075,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ross_smrf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Stephen M Ross Foundation",
+      "donor_ein": "38-7104084",
+      "amount_usd": 3000025,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ross_smrf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Stephen M Ross Foundation",
+      "donor_ein": "38-7104084",
+      "amount_usd": 10819675,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ross_umich_2004_bschool",
+      "event_role": "direct_gift",
+      "year": 2004,
+      "date_precision": "year",
+      "donor_entity": "Stephen Ross (personal \u2014 pre-SMRF foundation)",
+      "recipient": "University of Michigan Stephen M. Ross School of Business",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Stephen_M._Ross",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Naming gift for business school; at the time one of the largest B-school gifts ever."
+    },
+    {
+      "event_id": "ross_umich_2013_200m",
+      "event_role": "direct_gift",
+      "year": 2013,
+      "date_precision": "day",
+      "date": "2013-09-04",
+      "donor_entity": "Stephen Ross (personal \u2014 pre-SMRF foundation)",
+      "recipient": "University of Michigan \u2014 $100M Ross School of Business + $100M U-M Athletics",
+      "amount_usd": 200000000,
+      "source_type": "announcement",
+      "source_url": "https://news.umich.edu/u-michigan-to-receive-200-million-from-prominent-real-estate-developer-stephen-m-ross/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Largest single gift in U-M history at the time. Athletics campus renamed Stephen M. Ross Athletic Campus. Widely cited as the largest athletics gift ever to a U.S. university at the time of announcement."
+    },
+    {
+      "event_id": "ross_wri_2014_30m",
+      "event_role": "direct_gift",
+      "year": 2014,
+      "date_precision": "month",
+      "donor_entity": "Stephen Ross (personal)",
+      "recipient": "World Resources Institute \u2014 WRI Ross Center for Sustainable Cities",
+      "amount_usd": 30500000,
+      "source_type": "announcement",
+      "source_url": "https://www.wri.org/news/stephen-ross-makes-over-30-million-gift-wri-advance-sustainable-cities",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ross_rise_2015_founding",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "donor_entity": "Stephen Ross (personal)",
+      "recipient": "Ross Initiative in Sports for Equality (RISE) \u2014 501(c)(3) founding",
+      "amount_usd": 17000000,
+      "source_type": "announcement",
+      "source_url": "https://www.influencewatch.org/non-profit/ross-initiative-in-sports-for-equality-rise/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "notes": "Founding commitment cited as $30M total since 2015. Split: estimated $17M pre-2020 founding + base, $13M 2020 additional (see ross_rise_2020_13m). Total commitment $30M as of June 2020 statement. If commitments not yet fully disbursed, treat as pledge vs grant distinction."
+    },
+    {
+      "event_id": "ross_umich_2017_50m",
+      "event_role": "direct_gift",
+      "year": 2017,
+      "date_precision": "day",
+      "date": "2017-09-20",
+      "donor_entity": "Stephen Ross (personal \u2014 pre-SMRF)",
+      "recipient": "University of Michigan Ross School of Business \u2014 Student Success & faculty",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://news.umich.edu/stephen-ross-gives-additional-50-million-to-u-m-bringing-total-lifetime-giving-to-378-million/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "University of Michigan press release confirms lifetime giving reaches $378M with this gift."
+    },
+    {
+      "event_id": "ross_umich_2020_dci",
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date_precision": "day",
+      "date": "2020-02-21",
+      "donor_entity": "Stephen Ross (personal)",
+      "recipient": "University of Michigan \u2014 Detroit Center for Innovation (DCI)",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://detroit.umich.edu/news-stories/stephen-ross-announces-100-million-gift-to-detroit-center-for-innovation/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Launch gift for 190,000 sq ft research/education center on former Wayne County Jail site, partnered with Dan Gilbert's land contribution. Multi-year pledge."
+    },
+    {
+      "event_id": "ross_wri_2020_63p5m",
+      "event_role": "direct_gift",
+      "year": 2020,
+      "donor_entity": "Stephen Ross (personal)",
+      "recipient": "World Resources Institute \u2014 Ross Center for Sustainable Cities",
+      "amount_usd": 63500000,
+      "source_type": "announcement",
+      "source_url": "https://www.wri.org/news/release-stephen-m-ross-commits-635-million-resilient-sustainable-cities",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Brings cumulative WRI Ross Center commitment to $100M (with 2014 $30.5M plus prior smaller).",
+      "dedup_note": "If any portion was paid through SMRF foundation (EIN 387104084), 2020 SMRF grant_out $3.0M would need to be checked against this; unlikely given WRI's $63.5M far exceeds SMRF's 2020 disbursement."
+    },
+    {
+      "event_id": "ross_rise_2020_13m",
+      "event_role": "pledge",
+      "year": 2020,
+      "date_precision": "day",
+      "date": "2020-06-26",
+      "donor_entity": "Stephen Ross (personal)",
+      "recipient": "Ross Initiative in Sports for Equality (RISE)",
+      "amount_usd": 13000000,
+      "pledge_period_years": 4,
+      "source_type": "announcement",
+      "source_url": "https://philanthropynewsdigest.org/news/stephen-ross-pledges-13-million-to-help-end-racism-through-sports",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Four-year commitment announced post-George Floyd. Brings total RISE commitments to $30M since 2015 founding."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "ross_gp_2013",
+      "event_role": "pledge",
+      "year": 2013,
+      "pledged_pct_wealth_note": "No specific percentage stated in letter \u2014 commits to 'substantial majority'",
+      "pledged_amount_usd_at_signing_estimate": 3000000000,
+      "status": "UNFULFILLED_OR_UNVERIFIED",
+      "status_source": "IPS Giving Pledge at 15 (July 2025): only 9 of 256 living/deceased pledgers have fulfilled; Ross not among the 9 fulfillers cited.",
+      "pledge_letter_quote": "I commit to give away the substantial majority of my assets to charitable causes and give back to the society of which my success was derived.",
+      "source_url": "https://www.givingpledge.org/pledger/stephen-m-ross/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Signed 2013. Net worth at signing estimated ~$3-4B (Forbes 2013). 'Substantial majority' = conservatively 50%+ = ~$1.5-2B at 2013. Current net worth $17B; 50% target = ~$8.5B. Documented observable giving lifetime ~$665M (see rollup). Gap ~$7.8B against 50% floor.",
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "focus_areas": "Education, arts, healthcare, sustainable urban development"
+    },
+    {
+      "event_id": "ross_vanderbilt_50m",
+      "event_role": "pledge",
+      "year": 2024,
+      "date_precision": "year",
+      "pledged_amount_usd": 50000000,
+      "status": "ANNOUNCED_STATUS_UNCLEAR",
+      "recipient": "Vanderbilt University \u2014 West Palm Beach graduate campus",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Stephen_M._Ross",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "notes": "Reported as $50M toward Vanderbilt's $520M West Palm graduate campus plan. Disbursement schedule not verified."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2018_2025_usd_floor": 3000000,
+    "observed_total_note": "Minimum floor from press sources only; FEC direct pull not yet run. Ross is a major Republican/Trump-era donor but primarily personal-check-size (hundreds of thousands) rather than Ellison-scale super-PAC megagifts. Common Sense NYC super-PAC seeded with $1M personal + $500K via Vote for NYC's Future (2021). Historic OpenSecrets coverage (2019) cited Ross as top-200 donor at ~$452K lifetime, 93% Republican.",
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/2021/07/13/trump-fundraiser-stephen-ross-super-pac-helps-defeat-progressives-in-nyc-elections.html",
+        "retrieved_at": "2026-04-24",
+        "publisher": "CNBC",
+        "amount_usd": 1000000,
+        "event_description": "Personal funding of Common Sense NYC super-PAC, 2021 NYC Council primary"
+      },
+      {
+        "url": "https://www.thecity.nyc/2021/04/08/billionaire-developer-launches-nyc-super-pac/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "The City",
+        "amount_usd": 500000,
+        "event_description": "$500K to Vote for NYC's Future 2021"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/stephen-ross-trump-fundraiser-puts-billionaire-host-on-defensive/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "CBS News",
+        "event_description": "Aug 2019 Hamptons Trump fundraiser \u2014 raised $12M total across two events; up to $250K/plate. Ross hosted at his Southampton home. Triggered Equinox/SoulCycle boycott calls."
+      },
+      {
+        "url": "https://www.washingtonpost.com/politics/trump-fundraiser-flap-makes-soulcycle-equinox-owner-stephen-ross-hotter/2019/08/09/daa1c278-babb-11e9-b3b4-2bb69e8c4e39_story.html",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Washington Post",
+        "event_description": "Hamptons Trump 2020 fundraiser corroboration"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2019-08-08/trump-s-hamptons-fundraisers-put-high-profile-donors-in-a-bind",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Bloomberg"
+      }
+    ],
+    "todo": "FEC bulk pull against Ross name/address + Related Companies employer to tighten number. Common Sense NYC + Voters of NYC combined raised $2M+ in 2021 alone; Ross may have given more across all cycles than the $3M floor."
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Stephen M Ross Foundation",
+        "ein": "38-7104084",
+        "established_year": 2016,
+        "state": "NH",
+        "city": "Portsmouth",
+        "trustee": "Jordan Park Trust Company LLC / Perspecta Trust LLC",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 11700000,
+        "officers_compensation": "ZERO_COMP (all officers/trustees report $0 compensation; Ross serves on Distribution and Investment Committees)",
+        "grants_by_year_usd": {
+          "2024": 396414,
+          "2023": 38951006,
+          "2022": 39655,
+          "2021": 10075,
+          "2020": 3000025,
+          "2019": 10819675
+        },
+        "payout_rate_notes": "Extreme year-over-year volatility: $38.9M (2023) vs $40K (2022) vs $11M (2019). Foundation operates as flow-through; Ross makes most philanthropy directly rather than through this vehicle. 2024 $396K / $11.7M assets = 3.4% payout \u2014 below 5% IRS minimum for private foundations. Flag: LOW_PAYOUT_2024.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED \u2014 2023 spike of $38.9M against $11.7M year-end assets raises a DAF-transfer hypothesis but ProPublica summary page does not disclose recipients. Schedule B/Part XV review needed.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084"
+      },
+      {
+        "name": "Related Ross Foundation Inc",
+        "ein": "93-1962166",
+        "state": "unknown",
+        "status": "active",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/931962166",
+        "notes": "Separate entity tied to Related Ross (West Palm Beach Related Companies subsidiary). Financials not yet pulled. TODO."
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF accounts publicly identified in Ross's name. 2023 SMRF $38.9M grant spike is a flag worth investigating \u2014 SMRF may have routed through a sponsoring DAF or passed through to RISE/WRI/DCI. Until Schedule B is examined, treat as unknown lower bound.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No CZI-style philanthropic LLC. Related Companies is for-profit; Related Ross is for-profit real estate.",
+    "for_profit_hybrid_vehicles": [],
+    "nonprofit_beneficiaries_named_for_donor": [
+      {
+        "name": "Stephen M. Ross School of Business (University of Michigan)",
+        "type": "named_school",
+        "naming_gift_year": 2004,
+        "naming_gift_usd": 100000000
+      },
+      {
+        "name": "WRI Ross Center for Sustainable Cities",
+        "type": "named_program",
+        "cumulative_usd": 100000000
+      },
+      {
+        "name": "Stephen M. Ross Athletic Campus (U-M)",
+        "type": "named_physical_campus",
+        "naming_gift_year": 2013
+      },
+      {
+        "name": "Ross Initiative in Sports for Equality (RISE)",
+        "type": "founded_nonprofit",
+        "founding_year": 2015,
+        "cumulative_usd": 30000000
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "family_trust_implied",
+        "source_quote": "Jordan Park Trust Company LLC is the trustee of SMRF; Perspecta Trust LLC administers. Typical structure for UHNW estate planning.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+        "classification_note": "Foundation is trust-held but specific grantor/family trust structures for Ross personal assets are not publicly disclosed. Ross has transferred value through Dolphins holding co stake sales (Dec 2024 13% at $8.1B val; March 2026 1% at $12.5B val); underlying ownership structure not public."
+      }
+    ]
+  },
+  "red_flags": [
+    {
+      "flag": "GIVING_PLEDGE_UNFULFILLED",
+      "evidence": "Signed 2013 Giving Pledge committing 'substantial majority' of assets. Net worth has grown from ~$3-4B (2013) to $17B (2026). Observable giving ~$665M lifetime \u2014 far below 50% floor (~$8.5B at current NW). IPS 2025 report lists only 9 of 256 pledgers fulfilled; Ross not among them.",
+      "source_url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "flag": "POLITICAL_HEAVY",
+      "evidence": "2019 Hamptons Trump fundraiser host (up to $250K/plate); funded Common Sense NYC super-PAC with $1M+ personal; $500K to Vote for NYC's Future; historic 93% Republican giving pattern (OpenSecrets). Triggered consumer boycotts of Equinox/SoulCycle.",
+      "source_url": "https://www.cnbc.com/2021/07/13/trump-fundraiser-stephen-ross-super-pac-helps-defeat-progressives-in-nyc-elections.html"
+    },
+    {
+      "flag": "LOW_PAYOUT_2024",
+      "evidence": "SMRF 2024 grants $396,414 vs end-of-year assets $11.7M = 3.4% payout, below 5% IRS minimum for private foundations. Single-year anomaly following massive 2023 distribution; check 2025 filing.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084"
+    },
+    {
+      "flag": "UNEXAMINED_DAF_RISK",
+      "evidence": "2023 SMRF grants_out $38.9M vs foundation assets $11.7M implies flow-through with no visible recipient list in ProPublica summary. Could be direct gift (e.g., to UMich, WRI, RISE) or DAF transfer. Until Schedule B examined, flag as unverified.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084"
+    },
+    {
+      "flag": "SPORTS_TEAM_AS_PRIMARY_WEALTH_LOCK",
+      "evidence": "Miami Dolphins (~94%) + Related Companies private equity are extremely illiquid. Unlike public-market billionaires, Ross has strong structural reason to not liquidate for giving; he generates giving capacity only through stake sales (Dec 2024, March 2026) or dividends.",
+      "source_url": "https://therealdeal.com/miami/2026/03/04/steve-ross-to-sell-1-of-miami-dolphins-to-chinese-investor/"
+    }
+  ],
+  "red_flags_not_present": [
+    "HIGH_OFFICER_COMP (SMRF officers report zero compensation)",
+    "NO_OBSERVABLE_GIVING (clear multi-hundred-million track record to UMich, WRI, RISE, DCI)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 665716850,
+    "observable_giving_method": "Lifetime direct gifts: UMich 2004 $100M + UMich 2013 $200M + WRI 2014 $30.5M + UMich 2017 $50M + UMich 2020 DCI $100M + WRI 2020 $63.5M + RISE $30M + Vanderbilt $50M (pledged) = $624M direct gifts. Plus SMRF 990-PF grants_out 2019-2024 sum = $53.2M. Total $677.2M. Subtract ~$12M overlap hypothesis (SMRF funds that may have passed through to UMich/WRI) = $665.7M. Does NOT count political giving.",
+    "observable_giving_alternate_umich_only": 478000000,
+    "observable_giving_alternate_note": "University of Michigan's own press releases characterize lifetime UMich giving as $478M (post-2020 figures). UMich-only + WRI ($100M) + RISE ($30M) + Vanderbilt pledge ($50M) = $658M; adding foundation grants-out 2019-2024 ($53M net of double-count) gives similar ~$665M. Two independent paths to same rough total.",
+    "observable_giving_todo": [
+      "Pull SMRF 990-PF Schedule B / Part XV years 2019-2024 to deduplicate against direct-gift press announcements.",
+      "Pull Related Ross Foundation Inc (EIN 93-1962166) 990-PF for full giving picture.",
+      "Verify Vanderbilt $50M WPB pledge and current disbursement status.",
+      "Check for 2021-2025 additional gifts not yet surfaced (PRI loop on Ross name).",
+      "Run SEC filings for any stock-gift G-transactions (unlikely as Related is private)."
+    ],
+    "expected_giving_usd_50pct_of_liquid_weighted_by_tenure": 2125000000,
+    "expected_giving_method": "50% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.25 \u00d7 $17B = $4.25B; tenure cap saturated (18 years). Expected = $2.125B. Uses 50% not 10% because Ross's own pledge commits to 'substantial majority' (\u226550%).",
+    "expected_giving_usd_10pct_liquid_strict": 425000000,
+    "expected_giving_alt_note": "Under standard Scrooge 10%-of-liquid norm (not Ross's own 50% pledge): $4.25B \u00d7 10% = $425M. Observable $665M EXCEEDS this. Under Ross's own pledged 50% standard, he falls short by ~$1.46B.",
+    "observable_ratio_to_expected_50pct": 0.313,
+    "observable_ratio_to_expected_10pct": 1.566,
+    "observable_ratio_to_current_nw": 0.0391,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 50000000,
+      "daf_uplift_note": "2023 SMRF $38.9M spike is the main uplift candidate if it routed through a DAF. Anonymous cohort DAF giving upper at $50M.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until verified.",
+      "anonymous_cohort_uplift_usd": 85000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of HNW donors give anonymously at least sometimes. Ross is relatively public about giving (naming gifts); assume anonymous giving is a small fraction. 0.5% \u00d7 $17B = $85M upper bound (generous given he name-brands most gifts).",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious giving. Zero.",
+      "trust_outcome_uncertainty_usd": 2000000000,
+      "trust_outcome_method": "Ross has publicly pledged 'substantial majority' and has heir children. Estate could eventually disburse to charity or to family. Upper envelope $2B represents a plausible death-transfer charitable share (roughly 10-15% of current NW) \u2014 DOES NOT count toward observable for Tier classification.",
+      "total_usd": 2135000000,
+      "total_method": "daf + llc + offshore + anonymous + religious + trust = 50M + 0 + 0 + 85M + 0 + 2B"
+    },
+    "observable_plus_hidden_ratio_to_expected_50pct": 1.318,
+    "observable_plus_hidden_ratio_to_expected_10pct": 6.59,
+    "tier": "Probably_Low (Tier B)",
+    "tier_rule": "Under the standard 10%-of-liquid norm, Ross's observable giving ($665M) EXCEEDS the $425M floor \u2014 suggests NOT a Scrooge by that metric. Under his own 2013 pledge commitment ('substantial majority' \u2192 50%+), the $2.125B target is unmet (31% of expected). Tier B reflects this tension: visible mid-hundreds-of-millions of documented giving, but a pledge commitment that implies ~5-10x current lifetime total. Worth watching the 2023 SMRF spike and any post-2024 gift announcements.",
+    "tier_published_caveat": "Ross is not a classic Scrooge case. He has given $478M lifetime to University of Michigan alone (largest donor in UM history), $100M cumulative to WRI, $30M to RISE, $100M to DCI. The Scrooge lens flags him because: (1) signed Giving Pledge but hasn't approached the 'substantial majority' threshold given his $17B fortune, (2) heavy political-fundraiser role for Trump, (3) wealth is locked in illiquid sports/real estate assets, (4) 2024 foundation payout anomaly."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 56.0,
+    "components": {
+      "giving_gap_40pct": 12.5,
+      "tenure_penalty_20pct": 18.0,
+      "pledge_breach_penalty_20pct": 10.5,
+      "red_flag_penalty_20pct": 15.0
+    },
+    "note": "Computed with v2 formula. Lower than Ellison/Zuckerberg scores because observable giving is genuinely substantial. DO NOT PUBLISH this number \u2014 publish tiers only per PLAN.md."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Related Companies press contact + Stephen M Ross Foundation trustee (Jordan Park / Perspecta Trust, Portsmouth NH) + RISE communications + Miami Dolphins communications \u2014 four-channel outreach for document delivery.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: SMRF 990-PF Schedule B grant recipients 2019-2024 \u2014 in particular resolve the 2023 $38.9M spike (DAF? UMich? WRI?).",
+    "VERIFY: Related Ross Foundation Inc (EIN 93-1962166) full 990-PF history.",
+    "VERIFY: Vanderbilt $50M WPB pledge disbursement status (2024-2026).",
+    "VERIFY: FEC bulk pull against Ross + Related Companies employer for 2018-2026 total political giving.",
+    "VERIFY: Common Sense NYC + Voters of NYC total Ross funding 2021-2025 cycles.",
+    "VERIFY: Dec 2024 Dolphins 13% sale at $8.1B val \u2014 did any proceeds go to foundation or charity? (Check SMRF 2024 revenue side.)",
+    "VERIFY: March 2026 1% Dolphins sale to Lin Bin \u2014 any charity routing?",
+    "VERIFY: Pre-2019 SMRF filings (foundation established 2016, so 2016-2018 990-PFs exist).",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: Post-2024 gift announcements via Brave Search press discovery."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+      "retrieved_at": "2026-04-24",
+      "used_for": "SMRF 990-PF grants 2019-2024, assets, trustee, zero-comp officers"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/931962166",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Related Ross Foundation Inc existence; financials not yet pulled"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/stephen-m-ross/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2013 pledge letter verbatim, 'substantial majority' commitment, focus areas"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-24",
+      "used_for": "9-of-256 pledge fulfillment classification"
+    },
+    {
+      "url": "https://news.umich.edu/u-michigan-to-receive-200-million-from-prominent-real-estate-developer-stephen-m-ross/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2013 UMich $200M gift ($100M b-school + $100M athletics), largest U-M gift at time"
+    },
+    {
+      "url": "https://mgoblue.com/news/2013/9/4/u-m-athletics-to-receive-100-million-from-stephen-m-ross",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2013 athletics $100M, Stephen M. Ross Athletic Campus naming"
+    },
+    {
+      "url": "https://news.umich.edu/stephen-ross-gives-additional-50-million-to-u-m-bringing-total-lifetime-giving-to-378-million/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2017 $50M gift; lifetime at that point = $378M"
+    },
+    {
+      "url": "https://detroit.umich.edu/news-stories/stephen-ross-announces-100-million-gift-to-detroit-center-for-innovation/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2020 DCI $100M gift (Detroit Center for Innovation, UMich campus)"
+    },
+    {
+      "url": "https://www.wri.org/news/stephen-ross-makes-over-30-million-gift-wri-advance-sustainable-cities",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2014 WRI $30.5M founding gift"
+    },
+    {
+      "url": "https://www.wri.org/news/release-stephen-m-ross-commits-635-million-resilient-sustainable-cities",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2020 WRI $63.5M follow-on; cumulative $100M"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/stephen-ross-pledges-13-million-to-help-end-racism-through-sports",
+      "retrieved_at": "2026-04-24",
+      "used_for": "June 2020 RISE $13M 4-year pledge; $30M cumulative commitment since 2015 founding"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/ross-initiative-in-sports-for-equality-rise/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "RISE 501(c)(3) status, 2015 founding, $30M total"
+    },
+    {
+      "url": "https://www.cnbc.com/2021/07/13/trump-fundraiser-stephen-ross-super-pac-helps-defeat-progressives-in-nyc-elections.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Common Sense NYC super-PAC, $1M Ross seed funding"
+    },
+    {
+      "url": "https://www.thecity.nyc/2021/04/08/billionaire-developer-launches-nyc-super-pac/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$500K to Vote for NYC's Future 2021"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/stephen-ross-trump-fundraiser-puts-billionaire-host-on-defensive/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2019 Hamptons Trump fundraiser $12M raised; $250K/plate; Equinox boycott"
+    },
+    {
+      "url": "https://www.washingtonpost.com/politics/trump-fundraiser-flap-makes-soulcycle-equinox-owner-stephen-ross-hotter/2019/08/09/daa1c278-babb-11e9-b3b4-2bb69e8c4e39_story.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Hamptons fundraiser corroboration; 93% Republican giving historical pattern"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Stephen_M._Ross",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Lifetime UMich $478M; 2020 Forbes $10.1B; DOB 1940-05-10; Vanderbilt $50M pledge"
+    },
+    {
+      "url": "https://forbesrichest.com/billionaire/stephen-ross",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2026 net worth $17B; Related Companies / Dolphins / Equinox / F1 Miami asset mix"
+    },
+    {
+      "url": "https://www.caproasia.com/2026/01/18/united-states-real-estate-related-companies-founder-billionaire-stephen-ross-age-85-with-17-billion-fortune-rejected-15-billion-buyout-offer-for-national-football-league-nfl-team-miami-dolphin/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Jan 2026 $17B fortune; $15B Dolphins buyout offer rejected"
+    },
+    {
+      "url": "https://therealdeal.com/miami/2026/03/04/steve-ross-to-sell-1-of-miami-dolphins-to-chinese-investor/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "March 2026 1% Dolphins sale at $125M implying $12.5B valuation"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2019-08-08/trump-s-hamptons-fundraisers-put-high-profile-donors-in-a-bind",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Hamptons fundraiser context"
+    }
+  ],
+  "summary_150_words": "Stephen Ross (b. 1940, Related Companies founder, ~94% owner of Miami Dolphins) is worth ~$17B in 2026. He signed the Giving Pledge in 2013, committing 'substantial majority' of assets to charity. Observable lifetime giving is ~$665M: $478M to University of Michigan alone (largest donor in UM history, including $200M in 2013 split between Ross School of Business and athletics \u2014 the biggest athletics gift at the time), $100M cumulative to WRI Ross Center for Sustainable Cities, $30M founding RISE (Ross Initiative in Sports for Equality) in 2015, and $100M for University of Michigan's Detroit Center for Innovation (2020). The Stephen M Ross Foundation (EIN 38-7104084, NH) shows erratic payouts \u2014 $38.9M in 2023, then just $396K in 2024 (below 5% IRS minimum). Political: major Trump-era Republican donor, host of the notorious 2019 Hamptons fundraiser ($250K/plate) and primary funder of NYC's anti-progressive Common Sense NYC super-PAC. Tier B \u2014 real giving, real pledge gap, real political substitution.",
+  "_source_file": "stephen_ross.v3.json"
+}

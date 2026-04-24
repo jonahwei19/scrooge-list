@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T14:58:11.297498Z",
+  "generated_at": "2026-04-24T15:12:01.346075Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
   "legal_disclaimer": "Every figure is an estimate of OBSERVABLE giving from the cited sources. Does not measure total giving. Subjects have been offered a right-of-reply; responses are published on individual profiles. Corrections welcome \u2014 see methodology page.",
   "tier_counts": {
     "A_VERIFIED_LOW": 4,
-    "B_PROBABLY_LOW": 16,
+    "B_PROBABLY_LOW": 17,
     "C_OPAQUE": 4,
     "MODERATE": 0,
-    "ON_TRACK": 12,
+    "ON_TRACK": 17,
     "UNKNOWN": 0
   },
-  "count": 36,
+  "count": 42,
   "billionaires": [
     {
       "id": "thomas_peterffy",
@@ -219,7 +219,7 @@
       "observable_usd": 816100000,
       "expected_usd": 525000000,
       "hidden_upper_usd": 1200000000,
-      "ratio_observable_to_expected": null,
+      "ratio_observable_to_expected": 1.55,
       "ratio_observable_to_nw": 0.0233,
       "tier": "B_PROBABLY_LOW",
       "tier_raw": "Mid (Tier B) \u2014 attribution-ambiguous",
@@ -456,7 +456,7 @@
       "observable_usd": 338000000,
       "expected_usd": 5355000000,
       "hidden_upper_usd": 2170000000,
-      "ratio_observable_to_expected": null,
+      "ratio_observable_to_expected": 0.0631,
       "ratio_observable_to_nw": 0.00199,
       "tier": "B_PROBABLY_LOW",
       "tier_raw": "Probably_Low (Tier B)",
@@ -806,6 +806,53 @@
       "event_count": 27,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "sergey_brin.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "stephen_ross",
+      "name_display": "Stephen Ross",
+      "name_legal": "Stephen Michael Ross",
+      "country": "United States",
+      "wealth_source": "Related Companies (real estate development \u2014 Hudson Yards, Deutsche Bank Center/Time Warner Center); Miami Dolphins NFL team (~94% stake); Equinox Holdings (SoulCycle, Equinox Fitness); Related Ross (West Palm Beach); Formula 1 Miami Grand Prix stake",
+      "years_as_billionaire_approx": 18,
+      "net_worth_best_usd_b": 17.0,
+      "net_worth_range_usd_b": [
+        15,
+        17
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.25,
+      "observable_usd": 665716850,
+      "expected_usd": 425000000,
+      "hidden_upper_usd": 2135000000,
+      "ratio_observable_to_expected": 1.5664,
+      "ratio_observable_to_nw": 0.0391,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Ross is not a classic Scrooge case. He has given $478M lifetime to University of Michigan alone (largest donor in UM history), $100M cumulative to WRI, $30M to RISE, $100M to DCI. The Scrooge lens flags him because: (1) signed Giving Pledge but hasn't approached the 'substantial majority' threshold given his $17B fortune, (2) heavy political-fundraiser role for Trump, (3) wealth is locked in illiquid sports/real estate assets, (4) 2024 foundation payout anomaly.",
+      "pledge_signed": false,
+      "red_flags": [
+        "GIVING_PLEDGE_UNFULFILLED",
+        "POLITICAL_HEAVY",
+        "LOW_PAYOUT_2024",
+        "UNEXAMINED_DAF_RISK",
+        "SPORTS_TEAM_AS_PRIMARY_WEALTH_LOCK"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Stephen M Ross Foundation",
+          "Related Ross Foundation Inc"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 21,
+      "event_count": 16,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "stephen_ross.v3.json",
       "tier_rank": null
     },
     {
@@ -1254,6 +1301,47 @@
       "tier_rank": null
     },
     {
+      "id": "jeff_skoll",
+      "name_display": "Jeff Skoll",
+      "name_legal": "Jeffrey Stuart Skoll",
+      "country": "United States (Canadian-born, dual citizen)",
+      "wealth_source": "eBay founding president and first full-time employee (1996-2001); cashed out ~$2B of eBay stock post-1998 IPO. Current holdings via Capricorn Investment Group (family office, ~$5B AUM, ESG/impact-focused). Wealth has DECLINED from a peak as a result of philanthropic disbursements and Participant Media losses.",
+      "years_as_billionaire_approx": 28,
+      "net_worth_best_usd_b": 4.5,
+      "net_worth_range_usd_b": [
+        4.5,
+        5.2
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.6,
+      "observable_usd": 1200000000,
+      "expected_usd": 270000000,
+      "hidden_upper_usd": 100000000,
+      "ratio_observable_to_expected": 4.4444,
+      "ratio_observable_to_nw": 0.267,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier A equivalent \u2014 model pledge signer)",
+      "tier_reasoning": "Skoll should be published as a positive example: declining net worth, no red flags, 26.7% of current wealth already given, pledge on credible trajectory. Contrast directly with Ellison in profile copy. Only soft concern is HIGH_OFFICER_COMP at Skoll Foundation ($853K CEO) \u2014 worth noting but not disqualifying.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Skoll Foundation",
+          "The Skoll Fund"
+        ],
+        "llcs_philanthropic_count": 1,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 17,
+      "event_count": 14,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "jeff_skoll.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "leon_cooperman",
       "name_display": "Leon Cooperman",
       "name_legal": "Leon G. Cooperman",
@@ -1298,6 +1386,51 @@
       "tier_rank": null
     },
     {
+      "id": "lukas_walton",
+      "name_display": "Lukas Walton",
+      "name_legal": "Lukas Tiberias Walton",
+      "country": "United States",
+      "wealth_source": "Walmart Inc. \u2014 third-generation heir; grandson of founder Sam Walton; only child of John T. Walton (died 2005 plane crash) and Christy Walton. Inherited the bulk of his father's estate (approximately one-third per some sources; 'biggest beneficiary' per Bloomberg court-document analysis). Holds ~3.7% Walmart stake. Also founded S2G Ventures (2014, food/ag impact VC; spun out as RIA May 2024) and serves as Executive Chairman/Founder of Builders Vision, his family office/impact platform managing ~$15B across venture capital, philanthropy (Builders Initiative), and sustainable asset management (Builders Asset Management).",
+      "years_as_billionaire_approx": 20,
+      "net_worth_best_usd_b": 40,
+      "net_worth_range_usd_b": [
+        35,
+        51
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.25,
+      "observable_usd": 339864000,
+      "expected_usd": 2000000000,
+      "hidden_upper_usd": 635000000,
+      "ratio_observable_to_expected": 0.34,
+      "ratio_observable_to_nw": 0.0085,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C) or borderline Probably_Low (Tier B)",
+      "tier_reasoning": "Readers should see Lukas Walton as 'the third-generation Walton who broke the mold \u2014 built a purpose-driven $1.65B impact platform, kept political giving modest and Democratic-leaning, focused on climate/oceans/food, but whose observable 990-PF grants ($340M over 7 years) still lag his wealth ($40B) by a factor of 100 over that period.' The HEADLINE figures ($3B deployed, $2B committed, $15B platform) conflate grants with for-profit impact investment \u2014 use the foundation's 990-PF grants_out line for strict comparison. He is NOT a Giving Pledge signer (contra the research brief) \u2014 the family's collective declination applies to him per the known record. He chairs WFF's Environment Program Committee and has personally contributed $149M to WFF (transfer_in). On the 10% formal norm he's tracking below capacity but improving faster than his peers. Best-case Tier C, most-likely borderline Tier B.",
+      "pledge_signed": false,
+      "red_flags": [
+        "FOR_PROFIT_HYBRID_CONFLATION",
+        "DAF_TRANSFERS",
+        "LOW_PAYOUT_HISTORICAL",
+        "JOINT_FAMILY_FOUNDATION_PRORATA_AMBIGUITY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Builders Initiative Inc (Builders Initiative Foundation)"
+        ],
+        "llcs_philanthropic_count": 1,
+        "for_profit_hybrids_count": 2,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 33,
+      "event_count": 16,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "lukas_walton.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "mackenzie_scott",
       "name_display": "MacKenzie Scott",
       "name_legal": "MacKenzie Scott (formerly MacKenzie Bezos; formerly MacKenzie Tuttle)",
@@ -1333,6 +1466,54 @@
       "event_count": 7,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "mackenzie_scott.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "melinda_french_gates",
+      "name_display": "Melinda French Gates",
+      "name_legal": "Melinda Ann French Gates",
+      "country": "United States",
+      "wealth_source": "Divorce settlement from Bill Gates (Cascade Investment transferred ~$2.4B in securities in May 2021 \u2014 AutoNation, Canadian National Railway, Coca-Cola FEMSA, Grupo Televisa); plus $12.5B received from Gates Foundation in 2024 upon resignation as co-chair, earmarked by her for women-and-families philanthropy. No operating-company stake of her own \u2014 wealth is entirely a derived/transferred position from her ex-spouse's Microsoft fortune.",
+      "years_as_billionaire_approx": 5,
+      "net_worth_best_usd_b": 30.4,
+      "net_worth_range_usd_b": [
+        13,
+        31
+      ],
+      "net_worth_as_of": "2026-02",
+      "liquidity_estimate_pct": 0.85,
+      "observable_usd": 543000000,
+      "expected_usd": 1292000000,
+      "hidden_upper_usd": 560000000,
+      "ratio_observable_to_expected": 0.42,
+      "ratio_observable_to_nw": 0.0179,
+      "tier": "ON_TRACK",
+      "tier_raw": "ON_TRACK (Tier C \u2014 publicly committed and actively deploying)",
+      "tier_reasoning": "MFG is a counterexample to the pledge-unfulfilled pattern: she co-founded the Giving Pledge, publicly criticizes laggards (Dec 2025 Fortune), and has deployed $487M in 2024 alone. Main observability concern is the Pivotal Ventures LLC opacity \u2014 some unknown portion of her giving is invisible to 990 reporting. On balance: ON_TRACK, NOT a Scrooge candidate.",
+      "pledge_signed": false,
+      "red_flags": [
+        "LLC_OPACITY",
+        "DAF_TRANSFERS",
+        "MULTIPLE_SHELL_FOUNDATIONS_AWAITING_DEPLOYMENT"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 5,
+        "foundations_active_names": [
+          "Pivotal Philanthropies Foundation",
+          "Pivotal Philanthropies Opportunity Foundation",
+          "Pivotal Philanthropies Pathways Foundation",
+          "Pivotal Philanthropies Momentum Foundation",
+          "Firefinch Foundation"
+        ],
+        "llcs_philanthropic_count": 1,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 27,
+      "event_count": 11,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "melinda_french_gates.v3.json",
       "tier_rank": null
     },
     {
@@ -1554,6 +1735,88 @@
       "event_count": 18,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "ray_dalio.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "reed_hastings",
+      "name_display": "Reed Hastings",
+      "name_legal": "Wilmot Reed Hastings Jr.",
+      "country": "United States",
+      "wealth_source": "Netflix Inc. co-founder (1997); served as CEO 1999-2023; Executive Chairman 2023-2026; announced exit from Netflix board April 2026. Wealth now concentrated in remaining Netflix stock (<1% of outstanding after 2024 gifts + sales) plus diversified liquid assets. Former Pure Software founder (sold 1997).",
+      "years_as_billionaire_approx": 14,
+      "net_worth_best_usd_b": 5.8,
+      "net_worth_range_usd_b": [
+        5.4,
+        6.6
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.7,
+      "observable_usd": 0,
+      "expected_usd": 405300000,
+      "hidden_upper_usd": 50000000,
+      "ratio_observable_to_expected": 0.0,
+      "ratio_observable_to_nw": null,
+      "tier": "ON_TRACK",
+      "tier_raw": "Opaque (Tier C) OR On Track (Tier B) \u2014 methodology-dependent",
+      "tier_reasoning": "Hastings is the canonical 'DAF-heavy Giving Pledger' \u2014 publicly committed, structurally liquid, and has moved large dollar amounts out of his personal balance sheet into a charitable vehicle. Readers should know that $1.7B has been committed but only ~$200M has been verifiably delivered to end recipients as of 2026-04. The DAF may be disbursing at a healthy rate; we simply can't see it. This is a transparency concern, not (necessarily) a generosity concern.",
+      "pledge_signed": false,
+      "red_flags": [
+        "DAF_HEAVY",
+        "DAF_OUTFLOWS_UNVERIFIABLE",
+        "POLITICAL_HEAVY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 0,
+        "foundations_active_names": [],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 26,
+      "event_count": 8,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "reed_hastings.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "richard_kinder",
+      "name_display": "Richard Kinder",
+      "name_legal": "Richard Dan Kinder",
+      "country": "United States",
+      "wealth_source": "Co-founder and Executive Chairman of Kinder Morgan Inc. (KMI) \u2014 North America's largest energy infrastructure / pipeline operator. Majority of fortune from ~12% stake in KMI. Co-founded with William Morgan in 1997 after leaving Enron as president/COO.",
+      "years_as_billionaire_approx": 20,
+      "net_worth_best_usd_b": 13.0,
+      "net_worth_range_usd_b": [
+        10.6,
+        13.0
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 858403683,
+      "expected_usd": 715000000,
+      "hidden_upper_usd": 50000000,
+      "ratio_observable_to_expected": 1.2,
+      "ratio_observable_to_nw": 0.066,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C)",
+      "tier_reasoning": "Readers should see Kinder as the canonical example of 'signed the Giving Pledge, actually doing it.' Observable giving exceeds the 10% formal norm. The remaining 93% of wealth is committed via estate bequest to an existing operating foundation \u2014 this is higher-credibility than opaque trust structures. Main uncertainty: whether lifetime vs. estate split is suboptimal (estate-only giving delays impact by decades). Counterfactual: if Kinder stopped giving today, Houston loses its largest private parks/arts/education funder.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Kinder Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 16,
+      "event_count": 19,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "richard_kinder.v3.json",
       "tier_rank": null
     },
     {

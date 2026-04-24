@@ -46,11 +46,24 @@ def extract_summary(rec: dict) -> dict:
     observable_usd = rollup.get("observable_giving_usd") or rollup.get("observable_usd") or 0
     expected_usd = (
         rollup.get("expected_giving_usd_10pct_liquid_weighted_by_tenure")
+        or rollup.get("expected_giving_usd_10pct_liquid_strict")
         or rollup.get("expected_giving_usd")
         or 0
     )
     hidden_upper = (rollup.get("hidden_upper_usd") or {}).get("total_usd") or 0
-    ratio_to_expected = rollup.get("observable_ratio_to_expected")
+    # Agents have produced slightly varying key names. Try canonical first,
+    # then known alternates, then compute from observable/expected.
+    ratio_to_expected = (
+        rollup.get("observable_ratio_to_expected")
+        or rollup.get("observable_ratio_to_expected_strict")
+        or rollup.get("observable_ratio_to_expected_formal_tenure")
+        or rollup.get("observable_ratio_to_expected_at_10pct_pledge")
+    )
+    if ratio_to_expected is None and expected_usd and observable_usd is not None:
+        try:
+            ratio_to_expected = round(observable_usd / expected_usd, 4)
+        except ZeroDivisionError:
+            ratio_to_expected = None
     ratio_to_nw = rollup.get("observable_ratio_to_current_nw")
 
     # Tier — normalize various forms the agents produced
