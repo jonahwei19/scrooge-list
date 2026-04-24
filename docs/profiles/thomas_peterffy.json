@@ -1,0 +1,545 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record following Ellison v3 template. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 \u2014 Peterffy deep research",
+  "person": {
+    "name_display": "Thomas Peterffy",
+    "name_legal": "Thomas Peterffy",
+    "dob_year": 1944,
+    "dob_date": "1944-09-30",
+    "country_primary": "United States",
+    "country_of_origin": "Hungary",
+    "residence": "Palm Beach, FL",
+    "wealth_source": "Founder, chairman, and largest shareholder of Interactive Brokers Group (IBKR); pioneer of electronic securities trading. Concentrated position in IBKR common stock (publicly traded).",
+    "years_as_billionaire_approx": 20
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 82.9,
+    "range_usd_billions": [
+      73.3,
+      89.2
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 list (March 2026): $82.9B, ranked #23 worldwide and #1 in Palm Beach. Up from $57.3B on the 2025 list \u2014 a ~45% increase driven by IBKR stock appreciation. Bloomberg Billionaires Index and gurufocus report $73.3B\u2013$89.2B in real-time tracking. Wikipedia still cites the older $57.3B figure (Nov 2025).",
+    "sources": [
+      {
+        "publisher": "Forbes 2026 (via Boca Raton Tribune / Palm Beach Daily News analysis)",
+        "url": "https://www.bocaratontribune.com/bocaratonnews/2026/03/palm-beach-home-to-65-billionaires-on-forbes-list-of-worlds-richest/for-the-first-time-digital-trading-pioneer-thomas-peterffy-is-ranked-as-the-richest-person-in-palm-beach-according-to-a-palm-beach-daily-news-analysis-of-financial-data-in-the-2026-forbes-list-of-th/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 82.9,
+        "rank_on_list": 23
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes late-2025)",
+        "url": "https://en.wikipedia.org/wiki/Thomas_Peterffy",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 57.3,
+        "value_as_of": "2025-11"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/thomas-peterffy/",
+        "retrieved_at": "2026-04-24"
+      }
+    ],
+    "liquidity_estimate_pct": 0.35,
+    "liquidity_notes": "Peterffy's ~75% stake in Interactive Brokers is public equity, so nominally liquid, but divesting would move the stock and is Rule 144-restricted. Applying ~35% liquidity discount for 'giving capacity now' \u2014 more liquid than Ellison (25%) because IBKR is less concentrated in his identity than Oracle is in Ellison's. No disclosed family-office side pocket at the scale of Lawrence Investments."
+  },
+  "cited_events": [
+    {
+      "event_id": "peterffy_pf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "recipient": "Various (74+ recipients; environmental and Indigenous-focused NGOs)",
+      "amount_usd": 7296779,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 8132785,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 8229834,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 6705895,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 4250274,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 341575,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2018",
+      "event_role": "grant_out",
+      "year": 2018,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 449441,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2017",
+      "event_role": "grant_out",
+      "year": 2017,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 363460,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2016",
+      "event_role": "grant_out",
+      "year": 2016,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 442818,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "The Peterffy Foundation",
+      "donor_ein": "47-2351448",
+      "amount_usd": 270901,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "peterffy_pf_transfer_2020",
+      "event_role": "transfer_in",
+      "year": 2020,
+      "donor_entity": "Thomas Peterffy (personal)",
+      "recipient": "The Peterffy Foundation (EIN 47-2351448)",
+      "amount_usd": 78000000,
+      "source_type": "news",
+      "source_url": "https://www.insidephilanthropy.com/home/will-this-81-year-old-trading-billionaires-fortune-seed-a-new-megafunder",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This is a transfer INTO the Peterffy Foundation (in shares), NOT out-the-door giving. Per dedup rule #2, we count grants OUT (captured in peterffy_pf_2020 through peterffy_pf_2024), not transfers in. Explains why 2020+ grants-out jumped ~20x vs. 2019. Classified as transfer_in and excluded from observable rollup."
+    },
+    {
+      "event_id": "peterffy_bff_2015_2024",
+      "event_role": "grant_out",
+      "year_range": [
+        2015,
+        2024
+      ],
+      "donor_entity": "Balance for Freedom Inc",
+      "donor_ein": "81-0899116",
+      "amount_usd": 9471159,
+      "amount_note": "Sum of grants paid 2015-2024: $4.76M (2015) + $604K (2016) + $1.66M (2017) + $2.25M (2018) + $782 (2019) + $510 (2020) + $0 (2021) + $954 (2022) + $1,226 (2023) + $201K (2024). Near-zero grants in 5 of last 6 years per Inside Philanthropy.",
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/810899116",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Peterffy is Chairman & CEO (zero comp). Classification unclear \u2014 Inside Philanthropy describes it as a 'Balance for Freedom' vehicle; NTEE categorization is 'Corporate Foundations.' Activity collapsed after 2018. Possible the operating mission shifted or was wound down de facto; no 2025 data yet."
+    },
+    {
+      "event_id": "peterffy_vanderbilt_2003",
+      "event_role": "direct_gift",
+      "year": 2003,
+      "date_precision": "year",
+      "donor_entity": "Thomas Peterffy / Interactive Brokers",
+      "recipient": "Vanderbilt University \u2014 Financial Markets Research Center (renamed Hans Stoll Financial Markets Research Center in 2021)",
+      "amount_usd": 3000000,
+      "amount_note": "Reported as a $3M equity stake in Interactive Brokers at time of gift. Pre-IPO IBKR value; actual realized value to Vanderbilt upon any liquidation would differ. Treating face value as reported.",
+      "source_type": "announcement",
+      "source_url": "https://www.nashvillepost.com/home/owen-schools-financial-markets-research-center-receives-3-million-gift/article_a44e140f-7087-5be2-8a65-2b4292f7e628.html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "corroborating_source": "https://news.vanderbilt.edu/2021/04/22/financial-markets-research-center-renamed-for-hans-stoll/",
+      "dedup_note": "Pre-dates Peterffy Foundation (2014) and Balance for Freedom (2016) \u2014 cannot be duplicated against either. Standalone direct personal gift."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "peterffy_giving_pledge_nonsigner",
+      "event_role": "pledge_status",
+      "status": "NOT_SIGNED",
+      "source_url": "https://www.givingpledge.org/pledger-list/",
+      "corroborating_source": "https://www.insidephilanthropy.com/home/will-this-81-year-old-trading-billionaires-fortune-seed-a-new-megafunder",
+      "retrieved_at": "2026-04-24",
+      "notes": "Peterffy has not signed the Giving Pledge. Verified: his name does not appear on the Giving Pledge pledger list. Inside Philanthropy (2025): 'if he has a second life as a major charitable donor, he has kept it tightly under wraps.' No public successor commitment of comparable magnitude identified."
+    },
+    {
+      "event_id": "peterffy_hungarian_order_2017",
+      "event_role": "recognition",
+      "year": 2017,
+      "recipient": "Thomas Peterffy",
+      "awarded_by": "Hungarian government (PM Viktor Orb\u00e1n)",
+      "award": "Grand Cross of the Hungarian Order of Merit",
+      "source_url": "https://abouthungary.hu/news-in-brief/pm-orban-presents-hungarian-thomas-peterffy-with-the-grand-cross-of-the-hungarian-order-of-merit",
+      "retrieved_at": "2026-04-24",
+      "notes": "Recognition, not a donation. No publicly documented major philanthropic gift to Hungarian causes identified. Peterffy's primary Hungary-related 'giving back' appears to be locating Interactive Brokers' Central European operations in Budapest (2021) \u2014 a for-profit decision, not charity. Inside Philanthropy notes one Peterffy Foundation grant to Order of Malta American Association to support Hungarian language/culture revitalization among at-risk youth in Transylvania, Romania \u2014 amount not disclosed separately from foundation totals."
+    },
+    {
+      "event_id": "peterffy_pba_medal_2025",
+      "event_role": "recognition",
+      "year": 2025,
+      "date": "2025-11-13",
+      "awarded_by": "Palm Beach Atlantic University",
+      "award": "Lead Medalist, 41st Annual American Free Enterprise Day",
+      "source_url": "https://www.pba.edu/news/palm-beach-atlantic-honors-thomas-peterffy-as-american-free-enterprise-main-medalist/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Recognition event; no publicly disclosed accompanying gift to PBA. Peterffy's address reportedly centered on his immigration story, not philanthropy commitments."
+    },
+    {
+      "event_id": "peterffy_mar_a_lago_jet_2026",
+      "event_role": "in_kind_donation_minor",
+      "year": 2026,
+      "date": "2026-02",
+      "donor_entity": "Thomas Peterffy (personal)",
+      "recipient": "Palm Beach police/firefighter scholarship auction (Mar-a-Lago charity event)",
+      "amount_usd": null,
+      "amount_note": "Peterffy donated round-trip use of his private jet as part of an auction package that sold for $2M (winning bidder: Herbert Wertheim). Peterffy did NOT pay $2M \u2014 he contributed the flight. Value of the jet time unquantified in reporting.",
+      "source_type": "news",
+      "source_url": "https://dnyuz.com/2026/02/03/meet-the-palm-beach-billionaire-who-paid-2-million-for-a-private-white-house-visit-with-trump/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Correcting common misreporting \u2014 some secondary sources imply Peterffy paid $2M for a Mar-a-Lago lunch. The $2M was paid by Wertheim; Peterffy only donated the jet. Excluded from observable giving as amount is not quantified and benefit was a local scholarship fund, not a research or programmatic grant."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2020_2024_usd": 13000000,
+    "observed_total_note": "OpenSecrets-sourced floor of $13M to GOP super PACs in 2020+2022 cycles alone. Additional $500K + $344,660 to Trump 47 Committee (Aug 2024), $3M+ to Youngkin's Spirit of Virginia PAC (three $1M tranches), plus $100K pro-Trump 2016 and $60K+ RNC 2011. True total likely $20M+ but FEC bulk-pull deferred. Peterffy self-described December 2024: 'I've always been a Republican all my life.'",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail?cycle=2020&id=U0000004660&type=I&super=s&name=Peterffy,+Thomas",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "note": "2020 super PAC donor detail"
+      },
+      {
+        "url": "https://www.wric.com/news/virginia-news/youngkins-pac-gets-third-1-million-donation-from-republican-megadonor-thomas-peterffy/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "WRIC ABC 8News",
+        "amount_usd": 3000000,
+        "recipient": "Spirit of Virginia PAC (Youngkin)"
+      },
+      {
+        "url": "https://www.nbcnews.com/politics/2024-election/gop-megadonor-thomas-peterffy-donates-another-1-million-glenn-youngkin-rcna97011",
+        "retrieved_at": "2026-04-24",
+        "publisher": "NBC News",
+        "note": "Characterizes Peterffy as 'GOP megadonor'"
+      },
+      {
+        "url": "https://www.newsweek.com/gop-donor-turns-ron-desantis-after-new-abortion-law-1794595",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Newsweek",
+        "note": "Peterffy withdrew support from DeSantis after 6-week abortion ban \u2014 evidence of active partisan engagement, not passive check-writing."
+      },
+      {
+        "url": "https://www.vpap.org/donors/460730-thomas-peterffy/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Virginia Public Access Project"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Peterffy Foundation",
+        "ein": "47-2351448",
+        "established_year": 2014,
+        "state": "FL (West Palm Beach)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 172157828,
+        "officers_compensation": "ZERO_COMP (Alexandra, Catherine, William Peterffy \u2014 Thomas's three children \u2014 plus family lawyer Christopher Uzpen. Thomas Peterffy himself is NOT on the board.)",
+        "payout_rate_notes": "Grants out 2024 ($7.3M) / assets ($172M) = 4.2% \u2014 BELOW the 5% legal minimum for private foundations. Same pattern 2022\u20132024 (4.2%\u20134.7%). Potential LOW_PAYOUT flag but technically foundations average across years and can carry forward, so not yet a violation.",
+        "red_flag_daf_transfers": "NOT_VERIFIED \u2014 grant recipients include environmental NGOs (Stand.earth, Canopy via Tides, Amazon Watch, Land is Life, Colectivo Quipa, NDN Collective). Tides Foundation grant is a DAF/fiscal-sponsor intermediary but amount is small ($300K) and recipient purpose (Canopy) is named.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+        "thematic_focus": "Environmental conservation, Indigenous rights, environmental justice, reproductive health",
+        "note": "Family-controlled. Thomas Peterffy funds it but does not direct grantmaking. Inside Philanthropy: foundation diverges ideologically from the patriarch's Republican politics \u2014 e.g., $20K to Planned Parenthood in 2024."
+      },
+      {
+        "name": "Balance for Freedom Inc",
+        "ein": "81-0899116",
+        "established_year": 2016,
+        "state": "Delaware/FL",
+        "status": "active_but_dormant",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 13700000,
+        "officers": "Thomas Peterffy (Chairman & CEO), Earl Nemser, Christopher Uzpen",
+        "officers_compensation": "ZERO_COMP",
+        "payout_rate_notes": "Near-zero grants in 5 of last 6 years: 2019 $782, 2020 $510, 2021 $0, 2022 $954, 2023 $1,226, 2024 $201K. Earlier years (2015-2018) grants totaled $9.3M. Cumulative activity $9.47M. With $13.7M in current assets and $1,226 in 2023 grants, the effective payout rate is ~0.01% \u2014 a DORMANT_FOUNDATION flag. The 5% minimum distribution requirement may be at risk.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/810899116",
+        "note": "Only vehicle where Peterffy himself sits as officer. Purpose per Inside Philanthropy is ideological/'freedom' \u2014 but grantmaking has effectively stopped. Flag: possible WAREHOUSING structure."
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No direct DAF activity identified. Peterffy Foundation routes ~$300K/yr through Tides Foundation (a DAF-adjacent intermediary) for Canopy; de minimis at the Peterffy scale.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC identified (no CZI / Emerson Collective / Ballmer Group analog).",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "No publicly disclosed charitable trust structure. Absence of disclosure is itself informative: unlike Ellison (who disclosed a trust in his Giving Pledge letter), Peterffy has made no public commitment about estate disposition. Default prior: majority passes to three children, who already control the $172M Peterffy Foundation."
+  },
+  "red_flags": [
+    {
+      "flag": "LOW_PROFILE_PHILANTHROPY",
+      "evidence": "Net worth $82.9B; cumulative observable lifetime giving (Peterffy Foundation $36.5M since 2015 + Balance for Freedom $9.5M since 2015 + Vanderbilt $3M in 2003) totals ~$49M. This is 0.06% of current net worth and ~0.2% of 10-year liquidity-adjusted expected giving. Inside Philanthropy (2025): 'if he has a second life as a major charitable donor, he has kept it tightly under wraps.'",
+      "source_url": "https://www.insidephilanthropy.com/home/will-this-81-year-old-trading-billionaires-fortune-seed-a-new-megafunder"
+    },
+    {
+      "flag": "POLITICAL_DOMINATES_CHARITABLE",
+      "evidence": "$13M+ to GOP super PACs in 2020+2022 alone, vs. $7M/yr total foundation giving. Known political giving 2011\u20132024 is ~$20M, at least on par with and likely exceeding cumulative charitable giving. NBER substitution coefficient applies.",
+      "source_url": "https://www.opensecrets.org/outside-spending/donor_detail?cycle=2020&id=U0000004660&type=I&super=s&name=Peterffy,+Thomas"
+    },
+    {
+      "flag": "DORMANT_SECONDARY_FOUNDATION",
+      "evidence": "Balance for Freedom Inc (EIN 81-0899116) holds $13.7M in assets but made zero or near-zero grants in 5 of the last 6 years (2019: $782; 2020: $510; 2021: $0; 2022: $954; 2023: $1,226). Peterffy is the only Peterffy family member on the board. Pattern resembles a warehousing/holding structure rather than an active grantmaker.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/810899116"
+    },
+    {
+      "flag": "NO_GIVING_PLEDGE_NO_ESTATE_DISCLOSURE",
+      "evidence": "Peterffy has not signed the Giving Pledge. Unlike many peer billionaires, he has made no public commitment about estate disposition. Combined with $82.9B net worth, age 81, and three adult children who control the active family foundation, default prior is dynastic wealth transfer with a $172M foundation as the 'philanthropy' carve-out (~0.2% of fortune).",
+      "source_url": "https://www.givingpledge.org/pledger-list/"
+    },
+    {
+      "flag": "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH",
+      "evidence": "Forbes 2025 to Forbes 2026: $57.3B \u2192 $82.9B (+45% in ~12 months). Peterffy Foundation 2023\u21922024 grants-out: $8.13M \u2192 $7.3M (DECREASED 10%). Wealth growth is not reflected in giving trajectory.",
+      "source_url": "https://www.bocaratontribune.com/bocaratonnews/2026/03/palm-beach-home-to-65-billionaires-on-forbes-list-of-worlds-richest/for-the-first-time-digital-trading-pioneer-thomas-peterffy-is-ranked-as-the-richest-person-in-palm-beach-according-to-a-palm-beach-daily-news-analysis-of-financial-data-in-the-2026-forbes-list-of-th/"
+    },
+    {
+      "flag": "LOW_PAYOUT_PETERFFY_FOUNDATION",
+      "evidence": "Peterffy Foundation 2024: $7.3M grants / $172M assets = 4.2%. Below 5% minimum distribution requirement. 2022: $8.2M / assets (~$155M est) = 5.3%; 2023: $8.1M / $178M (peak) = 4.6%. Trending down. IRS allows 5-year averaging so not an automatic violation, but a yellow flag.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448"
+    }
+  ],
+  "red_flags_not_present": [
+    "HIGH_OFFICER_COMP (all officers of both foundations zero-comp)",
+    "DAF_TRANSFERS_MAJOR (de minimis Tides routing only)",
+    "OFFSHORE_ENTITIES (not yet checked \u2014 cannot claim absent)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 48971159,
+    "observable_giving_method": "sum(Peterffy Foundation 990-PF grants_out 2015-2024 = $36.48M) + sum(Balance for Freedom Inc grants_out 2015-2024 = $9.47M) + Vanderbilt 2003 direct_gift ($3M, pre-foundation). Excludes: $78M transfer INTO Peterffy Foundation in 2020; political giving; unquantified 2026 jet donation; Hungarian Order of Merit (award only).",
+    "observable_giving_todo": [
+      "Pull SEC EDGAR Form 4 G-transactions for Peterffy's IBKR CIK \u2014 any stock gifts to 501(c)(3) not captured via foundation filings.",
+      "FEC bulk pull to refine political total (floor: $20M+).",
+      "ICIJ Offshore Leaks name match (Phase 2).",
+      "Brave Search for post-2024 announced gifts (pre-2015 period may contain additional Vanderbilt-style direct gifts).",
+      "Verify whether Vanderbilt 2003 IBKR equity gift has been included in or is separate from subsequent filings."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 2901500000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.35 \u00d7 $82.9B = $29.02B; tenure cap saturated (~20 years). Expected = $2.90B. Strict denominator matching the formal 10% norm.",
+    "observable_ratio_to_expected": 0.01688,
+    "observable_ratio_to_current_nw": 0.000591,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No material DAF evidence.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked \u2014 zero until checked.",
+      "anonymous_cohort_uplift_usd": 150000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously sometimes. Peterffy profile (private, Republican, disfavors public attention) raises the prior that some giving is off-books. Apply conservative upper bound of 0.5% of liquid wealth: 0.005 \u00d7 $82.9B \u00d7 0.35 = $145M. Rounded to $150M as upper.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "Unlike Ellison, Peterffy has NOT disclosed any charitable trust. No public commitment language to credit. Zero uplift \u2014 cannot assign probability to undeclared estate intentions.",
+      "hungarian_giving_uplift_usd": 10000000,
+      "hungarian_giving_method": "Hungarian Order of Merit (2017) and IBKR-Budapest locating decision suggest homeland ties. No major public Hungarian philanthropic gift identified. Apply modest $10M upper bound for plausible off-shore Hungarian giving that would not appear in US 990 filings (e.g., direct gifts to Hungarian foundations, cultural institutions, Order of Malta work in Transylvania).",
+      "total_usd": 160000000,
+      "total_method": "anonymous + hungarian_giving"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.0721,
+    "tier": "Verified_Low (Tier A)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Peterffy: ($49M + $160M) / $2.90B = 7.2%, well below 20% threshold. Unlike Ellison \u2014 who has a disclosed trust that introduces outcome uncertainty \u2014 Peterffy has made no comparable public commitment. He qualifies for the strictest tier classification.",
+    "tier_published_caveat": "Peterffy is a structural example of the 'private billionaire' archetype: $82.9B fortune, public political engagement ($20M+ GOP), minimal public philanthropy ($49M lifetime observable), no Giving Pledge, no disclosed charitable trust. The Peterffy Foundation is a family vehicle run by his children ($172M assets, $7M/yr out) \u2014 impressive in absolute terms, negligible relative to his net worth (0.2% of fortune). Balance for Freedom Inc is effectively dormant. Default prior absent new disclosure: primarily dynastic wealth."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 98.3,
+    "components": {
+      "giving_gap_40pct": 39.3,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 20.0,
+      "low_profile_bonus_20pct": 19.0
+    },
+    "note": "v2-style computation for pipeline continuity. No pledge penalty because he never signed (can't breach what you didn't sign). Full red-flag penalty (6 flags capped at 20). Replaced 'pledge_breach' weight with 'low_profile_bonus' reflecting the 49M / 2.9B expected gap. DO NOT PUBLISH per PLAN.md."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Interactive Brokers Investor Relations (publicly listed) + The Peterffy Foundation (West Palm Beach, FL, via filing address) + Balance for Freedom Inc (via Christopher Uzpen, family lawyer listed on both filings).",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Exact Forbes 2026 figure on forbes.com/profile/thomas-peterffy (WebFetch 403'd \u2014 retry via archive.org or alt mirror).",
+    "VERIFY: Vanderbilt 2003 $3M IBKR equity gift \u2014 what was realized value post-2007 IPO? Did Vanderbilt liquidate or hold?",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Peterffy CIK against IBKR ticker \u2014 stock gifts beyond Vanderbilt.",
+    "VERIFY: FEC bulk pull to get exact 2011-2024 political total (floor $20M; likely higher).",
+    "VERIFY: Pull pre-2015 Peterffy charitable history (he was a billionaire from ~2005 \u2014 decade of activity not yet captured).",
+    "VERIFY: Balance for Freedom Inc \u2014 get grant recipient detail for 2024's $201K uptick. Is it seeding a restart?",
+    "VERIFY: Peterffy Foundation 2024 recipient list via full 990-PF PDF \u2014 confirm no undisclosed DAF intermediaries.",
+    "VERIFY: Any Hungarian direct giving via Budapest-based vehicles (MTA, cultural institutions, Order of Malta Hungary).",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 Phase 2."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/472351448",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Peterffy Foundation 990-PF data 2015-2024, assets, officers, EIN 47-2351448"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/810899116",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Balance for Freedom Inc 990 data, confirming Peterffy is Chairman/CEO, dormancy pattern, EIN 81-0899116"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/will-this-81-year-old-trading-billionaires-fortune-seed-a-new-megafunder",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Foundation narrative, $78M 2020 transfer-in, $2M Mar-a-Lago characterization, dormancy observation, grant recipient detail"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Thomas_Peterffy",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biographical data (DOB 1944-09-30, Budapest origin), Hungarian Order of Merit 2017, Republican quote, net worth Nov 2025"
+    },
+    {
+      "url": "https://www.bocaratontribune.com/bocaratonnews/2026/03/palm-beach-home-to-65-billionaires-on-forbes-list-of-worlds-richest/for-the-first-time-digital-trading-pioneer-thomas-peterffy-is-ranked-as-the-richest-person-in-palm-beach-according-to-a-palm-beach-daily-news-analysis-of-financial-data-in-the-2026-forbes-list-of-th/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 net worth $82.9B, rank #23, Palm Beach residence"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger-list/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Confirmed Peterffy is NOT on Giving Pledge signer list"
+    },
+    {
+      "url": "https://www.opensecrets.org/outside-spending/donor_detail?cycle=2020&id=U0000004660&type=I&super=s&name=Peterffy,+Thomas",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2020 super PAC political giving detail; OpenSecrets donor ID U0000004660"
+    },
+    {
+      "url": "https://www.wric.com/news/virginia-news/youngkins-pac-gets-third-1-million-donation-from-republican-megadonor-thomas-peterffy/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$3M to Youngkin Spirit of Virginia PAC (three $1M tranches)"
+    },
+    {
+      "url": "https://www.nbcnews.com/politics/2024-election/gop-megadonor-thomas-peterffy-donates-another-1-million-glenn-youngkin-rcna97011",
+      "retrieved_at": "2026-04-24",
+      "used_for": "'GOP megadonor' characterization"
+    },
+    {
+      "url": "https://www.newsweek.com/gop-donor-turns-ron-desantis-after-new-abortion-law-1794595",
+      "retrieved_at": "2026-04-24",
+      "used_for": "DeSantis-abortion political engagement evidence"
+    },
+    {
+      "url": "https://www.vpap.org/donors/460730-thomas-peterffy/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Virginia political donations corroboration"
+    },
+    {
+      "url": "https://news.vanderbilt.edu/2021/04/22/financial-markets-research-center-renamed-for-hans-stoll/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Vanderbilt Financial Markets Research Center endowed 2003 by Peterffy; renamed Hans Stoll in 2021"
+    },
+    {
+      "url": "https://www.nashvillepost.com/home/owen-schools-financial-markets-research-center-receives-3-million-gift/article_a44e140f-7087-5be2-8a65-2b4292f7e628.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Vanderbilt $3M IBKR equity gift amount"
+    },
+    {
+      "url": "https://abouthungary.hu/news-in-brief/pm-orban-presents-hungarian-thomas-peterffy-with-the-grand-cross-of-the-hungarian-order-of-merit",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Hungarian Order of Merit 2017 \u2014 recognition not donation"
+    },
+    {
+      "url": "https://www.pba.edu/news/palm-beach-atlantic-honors-thomas-peterffy-as-american-free-enterprise-main-medalist/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Palm Beach Atlantic University medalist Nov 2025"
+    },
+    {
+      "url": "https://dnyuz.com/2026/02/03/meet-the-palm-beach-billionaire-who-paid-2-million-for-a-private-white-house-visit-with-trump/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Correcting Mar-a-Lago $2M narrative \u2014 Wertheim bid, Peterffy donated jet only"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/thomas-peterffy/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg Billionaires Index cross-reference"
+    },
+    {
+      "url": "https://nationaltoday.com/us/ar/harrison-ar/news/2026/04/13/peterffy-foundation-steers-billionaires-wealth-toward-environmental-causes/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Foundation environmental focus, ideological divergence from patriarch politics"
+    }
+  ],
+  "_source_file": "thomas_peterffy.v3.json"
+}

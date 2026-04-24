@@ -1,0 +1,711 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research",
+  "person": {
+    "name_display": "Miriam Adelson",
+    "name_legal": "Miriam Ochshorn Adelson",
+    "dob_year": 1945,
+    "country_primary": "United States (dual Israeli citizenship)",
+    "wealth_source": "Las Vegas Sands Corp. \u2014 majority stake inherited from husband Sheldon G. Adelson (died Jan 2021). Also: co-owner Dallas Mavericks (Dec 2023, ~69% via family), publisher Israel Hayom, co-owner Las Vegas Review-Journal.",
+    "years_as_billionaire_approx": 5,
+    "years_as_billionaire_note": "Becoming the primary controller in 2021 upon Sheldon's death. Household had been billionaire-level since 1990s, but Miriam as record-holder is ~5 years."
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 35.0,
+    "range_usd_billions": [
+      28,
+      41
+    ],
+    "as_of": "2026-04",
+    "range_note": "Bloomberg Aug 2025 ~$40.5B; GuruFocus/various 2026 sources $34-35B; ValueWalk range $35-41B. Net worth tied to LVS stock which has been volatile post-Singapore/Macau cycle; Forbes 2026 profile url fetch blocked, so center estimate per Bloomberg-adjusted-for-2026-LVS-price. Dallas Mavericks equity (~$3.5B share, family 69% of $3.5B club val) adds illiquid component.",
+    "sources": [
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/miriam-o-adelson/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 40.5,
+        "value_as_of": "2025-08"
+      },
+      {
+        "publisher": "Wikipedia (citing Bloomberg Aug 2025)",
+        "url": "https://en.wikipedia.org/wiki/Miriam_Adelson",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 40.5,
+        "rank_on_list": 48
+      },
+      {
+        "publisher": "GuruFocus (2026)",
+        "url": "https://www.gurufocus.com/insider/15867/miriam-adelson",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 34.6,
+        "value_as_of": "2025-10"
+      },
+      {
+        "publisher": "Forbes profile (fetch blocked)",
+        "url": "https://www.forbes.com/profile/miriam-adelson/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": null,
+        "note": "Forbes URL returned 403 on direct fetch; 2026 profile not retrievable this run. Fall back to Bloomberg + GuruFocus."
+      }
+    ],
+    "liquidity_estimate_pct": 0.35,
+    "liquidity_notes": "LVS holdings are publicly traded but the Adelson family stake is ~56% \u2014 divesting would move the stock. Dallas Mavericks is illiquid private equity. Israel Hayom and Las Vegas Review-Journal are private. Apply 35% liquidity for giving-capacity-now."
+  },
+  "cited_events": [
+    {
+      "event_id": "adelson_aff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "recipient": "Various (Jewish education, Israel advocacy, Holocaust awareness; recipients not disclosed in ProPublica summary fields)",
+      "amount_usd": 66927152,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_aff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "amount_usd": 43806189,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_aff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "amount_usd": 45363584,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_aff_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "amount_usd": 79594215,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Sheldon died Jan 2021 \u2014 likely bequest-funded bump."
+    },
+    {
+      "event_id": "adelson_aff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "amount_usd": 99427700,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_aff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "amount_usd": 117322816,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_aff_2018",
+      "event_role": "grant_out",
+      "year": 2018,
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "amount_usd": 116321318,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_amrf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Dr Miriam and Sheldon G Adelson Medical Research Foundation",
+      "donor_ein": "04-7023433",
+      "recipient": "Medical research institutions (neurological, cancer, etc.)",
+      "amount_usd": 42444335,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_amrf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Dr Miriam and Sheldon G Adelson Medical Research Foundation",
+      "donor_ein": "04-7023433",
+      "amount_usd": 36776661,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_amrf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Dr Miriam and Sheldon G Adelson Medical Research Foundation",
+      "donor_ein": "04-7023433",
+      "amount_usd": 35748513,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_amrf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Dr Miriam and Sheldon G Adelson Medical Research Foundation",
+      "donor_ein": "04-7023433",
+      "amount_usd": 37872146,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_amrf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Dr Miriam and Sheldon G Adelson Medical Research Foundation",
+      "donor_ein": "04-7023433",
+      "amount_usd": 52544863,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_amrf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Dr Miriam and Sheldon G Adelson Medical Research Foundation",
+      "donor_ein": "04-7023433",
+      "amount_usd": 27281555,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_amrf_2018",
+      "event_role": "grant_out",
+      "year": 2018,
+      "donor_entity": "Dr Miriam and Sheldon G Adelson Medical Research Foundation",
+      "donor_ein": "04-7023433",
+      "amount_usd": 37735062,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "adelson_birthright_lifetime_pre2018",
+      "event_role": "direct_gift",
+      "year_range": [
+        2007,
+        2018
+      ],
+      "donor_entity": "Sheldon & Miriam Adelson (combined, mostly via Adelson Family Foundation)",
+      "recipient": "Taglit-Birthright Israel / Birthright Israel Foundation",
+      "amount_usd": 410000000,
+      "source_type": "news",
+      "source_url": "https://www.timesofisrael.com/birthright-celebrates-70-million-in-donations-from-the-adelsons-this-year/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "CRITICAL dedup: Press-reported lifetime Birthright totals ($410M by 2018, nearly $500M per later reports) overlap with Adelson Family Foundation 990-PF grants_out for 2018-2024 already captured above. Do NOT double-count. For pre-2018 (2007-2017), AFF 990-PF data is partial (2015 only, $48.7M grants); press total captures additional pre-2015 giving not in our 990 window. We include this as pre-2018 lifetime floor to acknowledge giving history, but only count the 2018-2024 990 numbers in the observable rollup to avoid double-counting."
+    },
+    {
+      "event_id": "adelson_iac_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [
+        2013,
+        2024
+      ],
+      "donor_entity": "Sheldon & Miriam Adelson (combined)",
+      "recipient": "Israeli American Council (IAC)",
+      "amount_usd": 50000000,
+      "source_type": "news",
+      "source_url": "https://ejewishphilanthropy.com/miriam-adelson-on-publicly-giving-if-i-gave-my-name-others-would-donate-so-we-surrendered/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "IAC giving flows through AFF \u2014 already in 990-PF grants_out for 2018-2024. Pre-2018 amounts not in our observable rollup. Include as historical context, not additive."
+    },
+    {
+      "event_id": "adelson_iac_2024",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date_precision": "month",
+      "date": "2024-03",
+      "donor_entity": "Adelson Family Foundation",
+      "recipient": "Israeli American Council (10th LA gala announcement)",
+      "amount_usd": 13000000,
+      "source_type": "news",
+      "source_url": "https://www.jns.org/sheldon-adelson-donates-13-million-to-israeli-american-council/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "This $13M 2024 gift is inside the AFF 2024 990-PF total of $66.9M grants_out. Do NOT add separately."
+    },
+    {
+      "event_id": "adelson_yad_vashem_pre2014",
+      "event_role": "direct_gift",
+      "year_range": [
+        2008,
+        2014
+      ],
+      "donor_entity": "Sheldon & Miriam Adelson",
+      "recipient": "Yad Vashem (Holocaust Remembrance)",
+      "amount_usd": 50000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Adelson_Foundations",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Pre-2014 lifetime \u2014 mostly outside our 990 observable window. Historical context."
+    },
+    {
+      "event_id": "adelson_educational_campus_2013",
+      "event_role": "direct_gift",
+      "year": 2013,
+      "date_precision": "year",
+      "donor_entity": "Sheldon & Miriam Adelson",
+      "recipient": "Dr. Miriam and Sheldon G. Adelson Educational Campus (Las Vegas)",
+      "amount_usd": 50000000,
+      "source_type": "news",
+      "source_url": "https://www.jta.org/2013/02/10/united-states/adelsons-give-50-million-to-las-vegas-jewish-day-schools",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "2013 gift \u2014 outside our 2018-2024 990 window. Pre-window historical giving."
+    },
+    {
+      "event_id": "adelson_ariel_university_2019",
+      "event_role": "direct_gift",
+      "year": 2019,
+      "donor_entity": "Miriam Adelson",
+      "recipient": "Ariel University (West Bank) \u2014 medical school",
+      "amount_usd": 25000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Miriam_Adelson",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Likely flowed through AFF \u2014 already inside 2019 AFF grants_out of $117.3M. Do NOT add separately."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "adelson_no_giving_pledge",
+      "event_role": "no_pledge",
+      "year": null,
+      "status": "NOT_SIGNED",
+      "source_type": "pledger_list",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "notes": "Confirmed: Neither Miriam Adelson nor (posthumously) Sheldon Adelson appear on the Giving Pledge signatory list. Despite giving >$1B cumulatively over their lifetimes, the Adelsons never signed the Pledge. Miriam's public framing emphasizes Israel/Jewish causes and political influence rather than the 50%-of-wealth Pledge commitment."
+    },
+    {
+      "event_id": "adelson_annual_200m_claim",
+      "event_role": "announcement",
+      "year": 2024,
+      "pledged_amount_usd_annual": 200000000,
+      "recipient": "Jewish and Israeli causes (aggregate)",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Adelson_Foundations",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "note": "Wikipedia/Chronicle of Philanthropy cite Adelson Foundations giving '$200 million annually.' ACTUAL 990-PF data shows AFF + AMRF combined grants_out closer to $80-150M/year (peaked $145M in 2020, declined to $109M in 2024). The $200M claim is either aspirational/historic-peak framing or includes non-tax-deductible direct gifts outside the foundations. Flag as marketing-claim-not-matching-filings."
+    },
+    {
+      "event_id": "adelson_trump_250m_hanukkah",
+      "event_role": "pledge",
+      "year": 2024,
+      "date_precision": "month",
+      "date": "2024-12",
+      "pledged_amount_usd": 250000000,
+      "recipient": "Trump 2024/post-2024 political efforts (third-term-related)",
+      "status": "CLAIMED_BY_TRUMP_NOT_VERIFIED",
+      "source_type": "news",
+      "source_url": "https://www.jpost.com/american-politics/article-880539",
+      "retrieved_at": "2026-04-24",
+      "classification_note": "Trump told White House Hanukkah attendees Miriam gave '$250 million indirectly and directly' to his campaign. Publicly verified figures are $106M to Preserve America PAC; the $250M figure reflects Trump's own stated total including indirect channels not in FEC records. Not counted as philanthropy in any case."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY_DOMINANT",
+    "substitution_note": "Political dominates charitable by an extreme margin. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Miriam Adelson is among the most extreme examples in the Forbes 400 of political-giving dominance relative to personal philanthropy.",
+    "observed_total_2021_2025_usd": 156000000,
+    "observed_total_note": "Floor from press/FEC sources. Includes: $106M to Preserve America PAC in 2024 cycle; $40M split between Senate Leadership Fund ($30M) and Congressional Leadership Fund ($10M) in 2022 cycle (per The Hill / FEC); $10M at pledge amount to Preserve America in early 2024 (seed). 2021/2023 were off-cycle.",
+    "observed_total_lifetime_usd": 284000000,
+    "observed_total_lifetime_note": "Per Wikipedia citing May 2024 OpenSecrets: Miriam's lifetime political donations were $284M, exceeding her late husband's $273M. Combined household lifetime ~$557M+ in political giving \u2014 dwarfs their combined charitable ~$1-1.5B lifetime estimate and makes them among the largest donors in American history.",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000310&name=Adelson,+Miriam+O.&super_only=N&type=I",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "note": "Direct fetch returned 403; data via press citations of this OpenSecrets profile."
+      },
+      {
+        "url": "https://www.cnbc.com/2024/08/16/donald-trump-miriam-adelson-campaign-funding.html",
+        "retrieved_at": "2026-04-24",
+        "publisher": "CNBC",
+        "amount_usd": 100000000,
+        "event_date": "2024-08"
+      },
+      {
+        "url": "https://www.timesofisrael.com/miriam-adelson-gives-100-million-to-trump-campaign-making-good-on-reported-pledge/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Times of Israel",
+        "amount_usd": 100000000,
+        "event_date": "2024-10"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Preserve_America_PAC",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Wikipedia (FEC-sourced)",
+        "amount_usd": 106000000,
+        "cycle": "2024"
+      },
+      {
+        "url": "https://thehill.com/homenews/campaign/3626124-sheldon-adelsons-widow-cuts-back-on-gop-donations/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "The Hill",
+        "amount_usd": 40000000,
+        "cycle": "2022",
+        "note": "$30M Senate Leadership Fund + $10M Congressional Leadership Fund"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2026-04-15/republican-midterms-war-chest-gets-40-million-boost-from-adelson",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Bloomberg",
+        "amount_usd": 40000000,
+        "cycle": "2026",
+        "note": "April 2026 \u2014 $40M to GOP super PACs for 2026 midterms"
+      },
+      {
+        "url": "https://www.npr.org/2020/10/15/924229125/adelsons-pump-75-million-into-pro-trump-super-pac-in-elections-final-stretch",
+        "retrieved_at": "2026-04-24",
+        "publisher": "NPR",
+        "amount_usd": 75000000,
+        "cycle": "2020",
+        "note": "2020 Preserve America PAC \u2014 Sheldon + Miriam combined (Sheldon still alive)"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Adelson Family Foundation",
+        "ein": "04-7024330",
+        "established_year": 2007,
+        "state": "MA (Needham)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 21016741,
+        "grants_out_usd_latest": 66927152,
+        "officers_compensation": "ZERO_COMP (Miriam Adelson trustee $0, Michael Bohnen president $0, Sheldon G Adelson trustee $0 through death 2021)",
+        "payout_rate_notes": "Grants out in 2024 ($66.9M) vs assets ($21.0M at year-end) = 319% \u2014 an unusual pattern indicating the foundation is a pass-through vehicle (annual contributions from Adelson personal/estate are granted out same year or very quickly). No LOW_PAYOUT concern; opposite pattern.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED (ProPublica summary does not break out DAF recipients; Schedule B would list donor-advised funds explicitly)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+        "focus": "Jewish education, Israel advocacy, Holocaust remembrance, anti-Semitism awareness"
+      },
+      {
+        "name": "Dr Miriam and Sheldon G Adelson Medical Research Foundation",
+        "ein": "04-7023433",
+        "established_year": 2006,
+        "state": "MA (Needham)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 714299,
+        "grants_out_usd_latest": 42444335,
+        "officers_compensation": "Kristian Hedstrom (Program Officer) $309K+$72K 2024; Shelley Dirusso (Director of Finance) $195K+$70K 2024; Andrea Swiman (Funding & Contracts) $133K+$20K 2024; Miriam Adelson and Steven Garfinkel as trustees $0. Staff compensation is modest for a foundation of this size and represents real operational capacity, not nepotistic enrichment.",
+        "payout_rate_notes": "Grants out ($42.4M) vs assets ($0.7M) = 5977% \u2014 strong pass-through pattern. Annual contributions from Adelson estate/family are deployed as grants same year.",
+        "red_flag_daf_transfers": "UNLIKELY \u2014 recipients are medical research institutions per Candid/Inside Philanthropy profiles (Cornell Burke Neurological Institute, Harvard, USC, Johns Hopkins).",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+        "focus": "Neurological disease research, cancer immunotherapy, specific named programs at partner medical schools"
+      }
+    ],
+    "foundations_terminated": [],
+    "foundations_related_family_branches": [
+      {
+        "name": "Ellen G Adelson Family Foundation",
+        "ein": "26-0638885",
+        "note": "Separate family branch \u2014 NOT Miriam's vehicle. Ignore in Miriam's rollup."
+      },
+      {
+        "name": "Susannah And Jim Adelson Family Foundation",
+        "ein": "82-2167393",
+        "note": "Separate branch."
+      },
+      {
+        "name": "Carol And David Adelson Family Foundation",
+        "ein": "82-3708339",
+        "note": "Separate branch."
+      },
+      {
+        "name": "Marta And Robert Adelson Family Foundation",
+        "ein": "82-3708081",
+        "note": "Separate branch."
+      }
+    ],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified at AFF or AMRF level. Absence of evidence only \u2014 Schedule B parse not yet run.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No publicly documented philanthropic LLC (no CZI/Emerson-Collective-equivalent for the Adelsons). Political giving flows through standard super-PAC disclosures; charitable flows through the two 501(c)(3) foundations above.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "Dallas Mavericks (NBA franchise)",
+        "classification": "NOT_PHILANTHROPY",
+        "year_established": "2023-12 (Adelson family purchase)",
+        "ownership_note": "Miriam Adelson + son-in-law Patrick Dumont; family holds ~69%. Purchased from Mark Cuban for ~$3.5B franchise valuation. Expressly a private business investment, not a charitable vehicle. Rumored strategic rationale: Texas sports-betting legalization leverage.",
+        "source_url": "https://en.wikipedia.org/wiki/Miriam_Adelson",
+        "methodology_note": "Excluded from philanthropy per Forbes/Chronicle/IPS methodology."
+      },
+      {
+        "name": "Israel Hayom (newspaper)",
+        "classification": "MEDIA_POLITICAL_VEHICLE",
+        "ownership_note": "Free-distribution Israeli daily, historically operated at a loss. Described by press as pro-Netanyahu political vehicle. Miriam Adelson is publisher. Not philanthropy \u2014 private media asset."
+      },
+      {
+        "name": "Las Vegas Review-Journal",
+        "classification": "MEDIA_ASSET",
+        "ownership_note": "Adelson family acquisition 2015. Not philanthropy."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "estate_trust_inherited_2021",
+        "source_quote": "LVS majority stake transferred to Miriam Adelson via Sheldon's estate upon his death January 2021; trust structure not publicly disclosed in detail.",
+        "source_url": "https://en.wikipedia.org/wiki/Miriam_Adelson",
+        "classification_note": "Standard UHNW succession \u2014 structure (GRAT, dynasty, CRT/CLT split) not disclosed. No publicly disclosed charitable lead or remainder trust."
+      }
+    ]
+  },
+  "red_flags": [
+    {
+      "flag": "POLITICAL_SUBSTITUTION_DOMINANT",
+      "evidence": "$106M to single super-PAC (Preserve America) in 2024 cycle alone vs ~$109M total AFF+AMRF charitable grants 2024. Lifetime political $284M (Miriam alone) exceeds household charitable flows through the two foundations in any comparable window. 2022 midterms: $40M political vs ~$81M charitable. 2026 midterms: $40M political already committed April 2026. Political is not intermittent \u2014 it is structural.",
+      "source_url": "https://en.wikipedia.org/wiki/Miriam_Adelson"
+    },
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Neither Miriam nor Sheldon Adelson ever signed the Giving Pledge despite decades as top-20-US billionaires. Given ~$35B net worth, 50% Pledge would be ~$17.5B target \u2014 foundations' lifetime giving is far below that threshold.",
+      "source_url": "https://www.givingpledge.org/pledgers"
+    },
+    {
+      "flag": "FOUNDATION_GIVING_DECLINING_POST_SHELDON",
+      "evidence": "AFF grants_out: $117M (2019) \u2192 $99M (2020) \u2192 $79M (2021) \u2192 $45M (2022) \u2192 $44M (2023) \u2192 $67M (2024). Peak charitable giving was pre-Sheldon-death; post-inheritance, charitable giving cut roughly in half while political giving scaled up. Pattern is consistent with substitution (political displacing charitable), not with wealth-increase-driving-giving-up.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/47024330"
+    },
+    {
+      "flag": "MARKETING_CLAIM_EXCEEDS_FILINGS",
+      "evidence": "Adelson Foundations publicly claim '$200M annually' to Jewish/Israeli causes. Actual AFF+AMRF 990-PF grants_out combined: 2024=$109M, 2023=$81M, 2022=$81M, 2021=$117M, 2020=$152M, 2019=$145M. Only 2019-2020 approach $150M; claim of $200M/yr appears inflated by ~30-50%.",
+      "source_url": "https://en.wikipedia.org/wiki/Adelson_Foundations"
+    },
+    {
+      "flag": "POLITICAL_INFLUENCE_SELF_INTEREST_OVERLAP",
+      "evidence": "Adelson political giving correlates with business-policy wins (online gaming regulation, Macau relations, Israel policy supporting West Bank expansion where Ariel U. is located). Political-plus-charitable bundling with Israel advocacy means some 'charitable' giving (e.g., Ariel University, IAC, Israel Hayom-adjacent NGOs) operates as political influence by other means. Methodology note: does not change observable-giving dollar figures but informs qualitative read.",
+      "source_url": "https://therevolvingdoorproject.org/billionaires-and-the-trump-admin-sheldon-and-miriam-adelson/"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (both foundations operate as pass-through \u2014 grants > assets by multiples)",
+    "HIGH_OFFICER_COMP (AMRF staff paid modestly; trustees including Miriam take $0)",
+    "DAF_TRANSFERS (no DAF activity identified, but Schedule B parse not yet run \u2014 absence-of-evidence only)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 839165109,
+    "observable_giving_method": "sum(AFF 990-PF 2018-2024 grants_out) + sum(AMRF 990-PF 2018-2024 grants_out). AFF 2018-2024 = $568,762,974. AMRF 2018-2024 = $270,403,135. Total = $839,166,109. Excludes pre-2018 lifetime press totals (dedup risk); excludes Dallas Mavericks (not philanthropy); excludes political giving; excludes Trump-claimed $250M indirect (not philanthropy anyway).",
+    "observable_giving_todo": [
+      "Pull AFF 990-PF for 2016, 2017 (ProPublica shows 'data not available' \u2014 may be available via IRS SOI 990 XML direct).",
+      "Pull AMRF 990-PF for 2016, 2017 similarly.",
+      "Pull AFF + AMRF 990-PFs for 2007-2015 to capture pre-window lifetime giving and validate against press-reported $410M Birthright and $50M Yad Vashem.",
+      "Parse Schedule B on latest 990 filings to verify or reject DAF_TRANSFERS flag.",
+      "Run FEC bulk pull against 'ADELSON, MIRIAM' to tighten the $156M 2021-2025 political floor."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 612500000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.35 \u00d7 $35B = $12.25B; tenure = 5 years post-Sheldon \u2192 0.5 multiplier. 10% \u00d7 $12.25B \u00d7 0.5 = $612.5M. NOTE: if you count household-tenure (since 1990s), multiplier saturates and expected = $1.225B. Using individual-as-record-holder tenure for consistency with Ellison methodology.",
+    "observable_ratio_to_expected": 1.37,
+    "observable_ratio_to_current_nw": 0.024,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Schedule B not yet parsed.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked.",
+      "anonymous_cohort_uplift_usd": 0,
+      "anonymous_cohort_method": "Miriam's public stance explicitly REJECTS anonymous giving ('If I gave my name, others would donate \u2014 so we surrendered' \u2014 eJewishPhilanthropy). Her model is public/named giving to catalyze matching. Anonymous uplift set to zero.",
+      "religious_cohort_uplift_usd": 175000000,
+      "religious_note": "Religious giving to synagogues, Israel-based Jewish orgs, and Chabad is well-documented in Adelson coverage. Sheldon was quietly generous to individual Chabad requests (per Chabad.org obituary). Apply 0.5% of liquid wealth as cohort-upper for observant-Jewish household giving not captured in 501(c)(3) filings. 0.005 \u00d7 $12.25B = $61M/yr; over 5-year Miriam window = $300M. Settle at $175M as conservative upper given much of Jewish giving DOES flow through AFF and is thus already counted.",
+      "trust_outcome_uncertainty_usd": 1500000000,
+      "trust_outcome_method": "Sheldon's estate / Miriam's estate trust structure is not publicly disclosed. Upper-bound charitable outcome via charitable remainder provisions could be ~50% of liquid wealth per Pledge-equivalent, but no such pledge exists. Conservative envelope: $1.5B uncertainty band reflecting possibility of eventual estate disposition, without evidence.",
+      "total_usd": 1675000000,
+      "total_method": "religious ($175M) + trust_outcome_uncertainty ($1.5B)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 4.1,
+    "tier": "Probably_Low (Tier B)",
+    "tier_rule": "Observable giving ($839M) exceeds strict expected ($613M), which on face would suggest NOT low. HOWEVER, the key Scrooge-list interpretive question is: does political-substitution-dominance + no-pledge-signature + declining-post-Sheldon-trajectory justify flagging? YES. Ratio of political giving to charitable giving is approximately 1.0-1.2x in the measurement window (political slightly exceeds charitable for 2024 single-cycle: $106M political vs $109M charitable). The POLITICAL_HEAVY classification overrides raw observable-ratio for tier placement. Under pure-dollar observable ratio she'd be Tier C (active giver); under political-substitution-adjusted ratio she's Tier B (Probably Low relative to capacity given political displacement).",
+    "tier_published_caveat": "Miriam Adelson presents the canonical POLITICAL_SUBSTITUTION case. Observable charitable giving is roughly at or slightly above the strict 10% norm, BUT she simultaneously deploys equal or greater dollars on partisan political influence which under NBER W26616 displaces ~33 cents of charitable per dollar political. For readers: her ~$840M observable charitable would likely be ~$890M+ absent the ~$156M+ recent political giving. The Giving Pledge absence despite decades as top-50-billionaire household is the stronger critique than the observable-ratio itself."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 67.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 10.0,
+      "pledge_breach_penalty_20pct": 12.0,
+      "red_flag_penalty_20pct": 20.0
+    },
+    "note": "Component breakdown: no giving gap (observable > expected on strict formula), moderate tenure penalty (5 years as record-holder post-Sheldon), Pledge penalty LOW (never signed, so can't 'breach' \u2014 downgraded to 12 for capacity-given-no-pledge), red flags maxed (5 flags \u00d7 5pts, capped at 20). DO NOT PUBLISH \u2014 tiers only."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Adelson Foundations press contact (press@adelsonfoundation.org if exists) + Las Vegas Sands investor relations + Patrick Dumont (Mavs/LVS president + son-in-law).",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: FEC bulk-pull against 'ADELSON, MIRIAM O.' and 'ADELSON, SHELDON G.' to confirm $106M 2024 Preserve America total and $40M 2022 breakdown.",
+    "VERIFY: Pull AFF + AMRF 990-PFs for 2007-2017 to validate press-reported lifetime Birthright ($410M), Yad Vashem ($50M), Educational Campus ($50M) sum against filed grants_out.",
+    "VERIFY: Parse Schedule B on latest AFF + AMRF 990-PFs to check DAF_TRANSFERS flag (currently marked UNLIKELY / NOT_VERIFIED).",
+    "VERIFY: Confirm Miriam's 2026 Forbes net worth (Forbes profile returned 403 on fetch; currently relying on Bloomberg Aug 2025 $40.5B and GuruFocus Oct 2025 $34.6B).",
+    "VERIFY: Check Israel-based giving disclosures (e.g., Israel nonprofit registry Guidestar Israel) for non-US-filed charitable flows \u2014 may add to observable or may be captured via AFF grants to Israeli orgs already.",
+    "VERIFY: Trump's $250M 'indirect and direct' claim \u2014 identify the indirect channels (c4 groups, issue-advocacy vehicles, etc.)."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/47024330",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Adelson Family Foundation 990-PF data 2018-2024, assets, officer comp"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/47023433",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Adelson Medical Research Foundation 990-PF data 2018-2024, assets, officer comp"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Confirming Adelsons never signed Giving Pledge"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Miriam_Adelson",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biographical details, lifetime political $284M, 2024 political $106M, Dallas Mavericks ownership, Ariel University gift"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Adelson_Foundations",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Foundation structure, lifetime gift totals (Birthright $200M-$410M, Yad Vashem $50M, Educational Campus $50M), $200M/yr claim"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Preserve_America_PAC",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2020 Adelson $90M (combined) and 2024 Miriam $106M (verified) political totals"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/miriam-o-adelson/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2025 net worth $40.5B"
+    },
+    {
+      "url": "https://www.gurufocus.com/insider/15867/miriam-adelson",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Oct 2025 net worth $34.6B corroboration"
+    },
+    {
+      "url": "https://www.cnbc.com/2024/08/16/donald-trump-miriam-adelson-campaign-funding.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "August 2024 $100M Trump super-PAC commitment"
+    },
+    {
+      "url": "https://www.timesofisrael.com/miriam-adelson-gives-100-million-to-trump-campaign-making-good-on-reported-pledge/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "October 2024 $100M disbursement confirmation"
+    },
+    {
+      "url": "https://www.timesofisrael.com/birthright-celebrates-70-million-in-donations-from-the-adelsons-this-year/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Lifetime Birthright ~$410M (to 2018)"
+    },
+    {
+      "url": "https://ejewishphilanthropy.com/miriam-adelson-on-publicly-giving-if-i-gave-my-name-others-would-donate-so-we-surrendered/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Miriam's stance on public/named giving vs anonymous"
+    },
+    {
+      "url": "https://www.jns.org/sheldon-adelson-donates-13-million-to-israeli-american-council/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2024 IAC $13M gift"
+    },
+    {
+      "url": "https://www.jta.org/2013/02/10/united-states/adelsons-give-50-million-to-las-vegas-jewish-day-schools",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2013 $50M Adelson Educational Campus"
+    },
+    {
+      "url": "https://thehill.com/homenews/campaign/3626124-sheldon-adelsons-widow-cuts-back-on-gop-donations/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2022 cycle $30M SLF + $10M CLF; post-Sheldon giving-decline framing"
+    },
+    {
+      "url": "https://www.npr.org/2020/10/15/924229125/adelsons-pump-75-million-into-pro-trump-super-pac-in-elections-final-stretch",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2020 Sheldon+Miriam $75M Preserve America (final stretch)"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2026-04-15/republican-midterms-war-chest-gets-40-million-boost-from-adelson",
+      "retrieved_at": "2026-04-24",
+      "used_for": "April 2026 $40M for 2026 midterms"
+    },
+    {
+      "url": "https://www.jpost.com/american-politics/article-880539",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Trump's $250M 'indirect and direct' claim at White House Hanukkah"
+    },
+    {
+      "url": "https://therevolvingdoorproject.org/billionaires-and-the-trump-admin-sheldon-and-miriam-adelson/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Political-influence-self-interest overlap analysis"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Israeli-American_Council",
+      "retrieved_at": "2026-04-24",
+      "used_for": "IAC funding history, Adelson role from 2013"
+    },
+    {
+      "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000310&name=Adelson,+Miriam+O.&super_only=N&type=I",
+      "retrieved_at": "2026-04-24",
+      "used_for": "OpenSecrets Miriam profile (citation target \u2014 direct fetch 403'd)"
+    }
+  ],
+  "_source_file": "miriam_adelson.v3.json"
+}

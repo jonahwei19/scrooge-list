@@ -1,19 +1,111 @@
 {
-  "generated_at": "2026-04-24T14:07:04.297867Z",
+  "generated_at": "2026-04-24T14:27:03.828204Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
   "legal_disclaimer": "Every figure is an estimate of OBSERVABLE giving from the cited sources. Does not measure total giving. Subjects have been offered a right-of-reply; responses are published on individual profiles. Corrections welcome \u2014 see methodology page.",
   "tier_counts": {
-    "A_VERIFIED_LOW": 2,
-    "B_PROBABLY_LOW": 11,
-    "C_OPAQUE": 1,
+    "A_VERIFIED_LOW": 4,
+    "B_PROBABLY_LOW": 15,
+    "C_OPAQUE": 2,
     "MODERATE": 0,
     "ON_TRACK": 7,
     "UNKNOWN": 0
   },
-  "count": 21,
+  "count": 28,
   "billionaires": [
+    {
+      "id": "thomas_peterffy",
+      "name_display": "Thomas Peterffy",
+      "name_legal": "Thomas Peterffy",
+      "country": "United States",
+      "wealth_source": "Founder, chairman, and largest shareholder of Interactive Brokers Group (IBKR); pioneer of electronic securities trading. Concentrated position in IBKR common stock (publicly traded).",
+      "years_as_billionaire_approx": 20,
+      "net_worth_best_usd_b": 82.9,
+      "net_worth_range_usd_b": [
+        73.3,
+        89.2
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.35,
+      "observable_usd": 48971159,
+      "expected_usd": 2901500000,
+      "hidden_upper_usd": 160000000,
+      "ratio_observable_to_expected": 0.01688,
+      "ratio_observable_to_nw": 0.000591,
+      "tier": "A_VERIFIED_LOW",
+      "tier_raw": "Verified_Low (Tier A)",
+      "tier_reasoning": "Peterffy is a structural example of the 'private billionaire' archetype: $82.9B fortune, public political engagement ($20M+ GOP), minimal public philanthropy ($49M lifetime observable), no Giving Pledge, no disclosed charitable trust. The Peterffy Foundation is a family vehicle run by his children ($172M assets, $7M/yr out) \u2014 impressive in absolute terms, negligible relative to his net worth (0.2% of fortune). Balance for Freedom Inc is effectively dormant. Default prior absent new disclosure: primarily dynastic wealth.",
+      "pledge_signed": false,
+      "red_flags": [
+        "LOW_PROFILE_PHILANTHROPY",
+        "POLITICAL_DOMINATES_CHARITABLE",
+        "DORMANT_SECONDARY_FOUNDATION",
+        "NO_GIVING_PLEDGE_NO_ESTATE_DISCLOSURE",
+        "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH",
+        "LOW_PAYOUT_PETERFFY_FOUNDATION"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "The Peterffy Foundation",
+          "Balance for Freedom Inc"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 18,
+      "event_count": 17,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "thomas_peterffy.v3.json",
+      "tier_rank": 1
+    },
+    {
+      "id": "rupert_murdoch",
+      "name_display": "Rupert Murdoch",
+      "name_legal": "Keith Rupert Murdoch",
+      "country": "United States (naturalized 1985; born Australia)",
+      "wealth_source": "News Corp / Fox Corp founder and controlling shareholder via Murdoch Family Trust (Cruden Financial Services, sole trustee). 1999 divorce from Anna Torv converted a portion of holdings into the family trust; 2025 $3.3B settlement restructured beneficial interests.",
+      "years_as_billionaire_approx": 35,
+      "net_worth_best_usd_b": 22.7,
+      "net_worth_range_usd_b": [
+        20,
+        24
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.15,
+      "observable_usd": 8000000,
+      "expected_usd": 340500000,
+      "hidden_upper_usd": 15000000,
+      "ratio_observable_to_expected": 0.0235,
+      "ratio_observable_to_nw": 0.000352,
+      "tier": "A_VERIFIED_LOW",
+      "tier_raw": "Verified_Low (Tier A)",
+      "tier_reasoning": "Readers should see Murdoch as the canonical counterexample to the 'billionaires quietly give a lot' narrative: his personal philanthropy is vanishingly small in both absolute and percentage terms, his foundation is dormant, and he has declined the Giving Pledge. The large News Corp/Fox corporate giving footprint is not his personal wealth. The $3.3B 2025 settlement moved $1.1B into each of three children's hands \u2014 family downstream giving (especially Quadrivium) may grow, but that is not Rupert's giving.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "DORMANT_FOUNDATION",
+        "FORBES_LOWEST_PHILANTHROPY_SCORE",
+        "CORPORATE_PHILANTHROPY_MASKS_PERSONAL",
+        "TRUST_STRUCTURE_NON_CHARITABLE"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 0,
+        "foundations_active_names": [],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 26,
+      "event_count": 10,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "rupert_murdoch.v3.json",
+      "tier_rank": 2
+    },
     {
       "id": "elon_musk",
       "name_display": "Elon Musk",
@@ -60,7 +152,7 @@
       "event_count": 11,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "elon_musk.v3.json",
-      "tier_rank": 1
+      "tier_rank": 3
     },
     {
       "id": "larry_page",
@@ -108,7 +200,7 @@
       "event_count": 15,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "larry_page.v3.json",
-      "tier_rank": 2
+      "tier_rank": 4
     },
     {
       "id": "alice_walton",
@@ -209,6 +301,52 @@
       "event_count": 17,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "charles_koch.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "harold_hamm",
+      "name_display": "Harold Hamm",
+      "name_legal": "Harold Glenn Hamm",
+      "country": "United States",
+      "wealth_source": "Continental Resources \u2014 founder and executive chairman. 83%+ family stake. Pioneered Bakken shale fracking. Took company private in Nov 2022 via Omega Acquisition Inc. ($4.3B cash to minority shareholders; family pre-owned the rest).",
+      "years_as_billionaire_approx": 18,
+      "net_worth_best_usd_b": 17.0,
+      "net_worth_range_usd_b": [
+        14.7,
+        18.5
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.1,
+      "observable_usd": 80200000,
+      "expected_usd": 170000000,
+      "hidden_upper_usd": 1517000000,
+      "ratio_observable_to_expected": 0.472,
+      "ratio_observable_to_nw": 0.00472,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Readers should see Hamm as a case study in 'political-charitable substitution': $4.3M to Trump PACs and $2.2M+ in industry lobbying vehicles (DEPA, Windfall) in parallel with $4.5M HHF distributions in 2024. The 2022 HHF spike ($37.8M) is a one-off around the take-private transaction; it is NOT a sustained giving level. Hamm has signed the Giving Pledge but observable giving is ~0.5% of current net worth.",
+      "pledge_signed": false,
+      "red_flags": [
+        "GIVING_PLEDGE_UNFULFILLED",
+        "POLITICAL_DOMINATES_CHARITABLE_RECENT_CYCLES",
+        "POLITICAL_CHARITABLE_BLURRING",
+        "PRIVATE_COMPANY_LIQUIDITY_LOCK",
+        "POLITICAL_ADVOCACY_VEHICLES_FOUNDED"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "The Harold Hamm Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 20,
+      "event_count": 12,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "harold_hamm.v3.json",
       "tier_rank": null
     },
     {
@@ -347,6 +485,55 @@
       "tier_rank": null
     },
     {
+      "id": "julia_koch",
+      "name_display": "Julia Koch",
+      "name_legal": "Julia Margaret Flesher Koch",
+      "country": "United States",
+      "wealth_source": "Inherited 42% stake in Koch Industries (second-largest privately held U.S. company, ~$125B annual revenue) from husband David H. Koch upon his death August 23, 2019. Also family-office holdings, NY sports-team stakes (15% BSE Global acquired June 2024 \u2014 Brooklyn Nets, NY Liberty; 10% NY Giants acquired October 2025).",
+      "years_as_billionaire_approx": 7,
+      "net_worth_best_usd_b": 81.2,
+      "net_worth_range_usd_b": [
+        74.2,
+        81.2
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.15,
+      "observable_usd": 84460249,
+      "expected_usd": 852000000,
+      "hidden_upper_usd": 165740000,
+      "ratio_observable_to_expected": 0.0991,
+      "ratio_observable_to_nw": 0.00104,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Julia Koch should be presented as the canonical 'estate-transition dropoff' case: when a primary philanthropist (David) dies, the widow-controlled foundation can wind down rather than scale up. Observable giving post-2019 is a small fraction of David's pre-2019 ~$30-60M/yr rate, despite Julia's net worth being multiples higher than David's was. Also: she uses (c)(4) vehicles rather than (c)(3) foundations, which creates opacity and is structurally identical to the pattern flagged in Charles Koch's profile.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "ESTATE_TRANSITION_GIVING_COLLAPSE",
+        "501C4_SOCIAL_WELFARE_SUBSTITUTION",
+        "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH",
+        "PREFERS_SPORTS_TEAMS_OVER_CHARITY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 4,
+        "foundations_active_names": [
+          "David H. Koch Charitable Foundation",
+          "Julia Koch Family Foundation",
+          "Julia Koch Family Philanthropy Fund",
+          "Mary Julia Koch Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 16,
+      "event_count": 15,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "julia_koch.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "ken_griffin",
       "name_display": "Ken Griffin",
       "name_legal": "Kenneth Cordele Griffin",
@@ -434,6 +621,53 @@
       "event_count": 13,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "larry_ellison.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "miriam_adelson",
+      "name_display": "Miriam Adelson",
+      "name_legal": "Miriam Ochshorn Adelson",
+      "country": "United States (dual Israeli citizenship)",
+      "wealth_source": "Las Vegas Sands Corp. \u2014 majority stake inherited from husband Sheldon G. Adelson (died Jan 2021). Also: co-owner Dallas Mavericks (Dec 2023, ~69% via family), publisher Israel Hayom, co-owner Las Vegas Review-Journal.",
+      "years_as_billionaire_approx": 5,
+      "net_worth_best_usd_b": 35.0,
+      "net_worth_range_usd_b": [
+        28,
+        41
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.35,
+      "observable_usd": 839165109,
+      "expected_usd": 612500000,
+      "hidden_upper_usd": 1675000000,
+      "ratio_observable_to_expected": 1.37,
+      "ratio_observable_to_nw": 0.024,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Miriam Adelson presents the canonical POLITICAL_SUBSTITUTION case. Observable charitable giving is roughly at or slightly above the strict 10% norm, BUT she simultaneously deploys equal or greater dollars on partisan political influence which under NBER W26616 displaces ~33 cents of charitable per dollar political. For readers: her ~$840M observable charitable would likely be ~$890M+ absent the ~$156M+ recent political giving. The Giving Pledge absence despite decades as top-50-billionaire household is the stronger critique than the observable-ratio itself.",
+      "pledge_signed": false,
+      "red_flags": [
+        "POLITICAL_SUBSTITUTION_DOMINANT",
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "FOUNDATION_GIVING_DECLINING_POST_SHELDON",
+        "MARKETING_CLAIM_EXCEEDS_FILINGS",
+        "POLITICAL_INFLUENCE_SELF_INTEREST_OVERLAP"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Adelson Family Foundation",
+          "Dr Miriam and Sheldon G Adelson Medical Research Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 3,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 21,
+      "event_count": 23,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "miriam_adelson.v3.json",
       "tier_rank": null
     },
     {
@@ -615,6 +849,96 @@
       "event_count": 10,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "steve_ballmer.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "steve_cohen",
+      "name_display": "Steve Cohen",
+      "name_legal": "Steven A. Cohen",
+      "country": "United States",
+      "wealth_source": "Hedge fund founder \u2014 SAC Capital Advisors (1992-2016); Point72 Asset Management (2014-present, ~$45.7B AUM). Owner of NY Mets (acquired controlling stake Sept 2020 for $2.4B). Major art collector.",
+      "years_as_billionaire_approx": 25,
+      "net_worth_best_usd_b": 23.0,
+      "net_worth_range_usd_b": [
+        21,
+        23
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.5,
+      "observable_usd": 811600000,
+      "expected_usd": 1150000000,
+      "hidden_upper_usd": 315000000,
+      "ratio_observable_to_expected": 0.706,
+      "ratio_observable_to_nw": 0.0353,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_OK (Tier B, upper band)",
+      "tier_reasoning": "Cohen is the canonical example of 'built genuine infrastructure \u2014 CVN mental-health clinics, LaGuardia workforce center, MoMA capital \u2014 without Giving Pledge signaling.' Observable giving ratio 3.5% of current net worth is an order of magnitude higher than Ellison's 0.2%. Readers should not confuse the absence of a pledge with absence of giving. Flag the SAC history and political-donation defensiveness for context, not as giving-denominator adjustments.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "POLITICAL_GIVING_DEFENSIVE_PATTERN",
+        "SAC_INSIDER_TRADING_CONTEXT"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Steven & Alexandra Cohen Foundation Inc"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 19,
+      "event_count": 21,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "steve_cohen.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "john_malone",
+      "name_display": "John Malone",
+      "name_legal": "John Carl Malone",
+      "country": "United States",
+      "wealth_source": "Cable TV (TCI, sold to AT&T 1999); Liberty Media / Liberty Global / Warner Bros. Discovery / QVC Group tracking stocks; also ranching and real estate (Silver Spur Ranches, Bar Lazy Seven, etc.) \u2014 largest private landowner in US from 2011-2021 (~2.2M acres), since surpassed to #3",
+      "years_as_billionaire_approx": 26,
+      "net_worth_best_usd_b": 11.1,
+      "net_worth_range_usd_b": [
+        9.8,
+        12.0
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.35,
+      "observable_usd": 290000000,
+      "expected_usd": 388500000,
+      "hidden_upper_usd": 1565000000,
+      "ratio_observable_to_expected": 0.747,
+      "ratio_observable_to_nw": 0.0261,
+      "tier": "C_OPAQUE",
+      "tier_raw": "Unclear (Tier C)",
+      "tier_reasoning": "Malone is the archetype of the 'low-key private giver with big stated intentions.' Unlike Ellison (signed pledge, massive wealth, clearly not tracking), Malone never signed a pledge, his wealth has been stable ($8-12B) for 25+ years, and he has given ~$290M observably plus invested $23M+ in Greenland and stated intent to conserve 2.2M acres. The key uncertainties: (a) will the land-trust intent be executed, and (b) at what appraised value. Without those, he's closer to Tier B 'Probably Mid' than A or D.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "LOW_OBSERVABLE_VS_WEALTH",
+        "CONSERVATION_EASEMENT_RETAINED_USE",
+        "MFLPF_LOW_PAYOUT_AS_PCT_ASSETS"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "The Malone Family Foundation",
+          "Malone Family Land Preservation Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 18,
+      "event_count": 22,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "john_malone.v3.json",
       "tier_rank": null
     },
     {

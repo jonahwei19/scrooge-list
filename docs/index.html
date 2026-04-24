@@ -134,6 +134,11 @@ body{
 .tier-table td.name{font-weight:600;font-variation-settings:"opsz" 32,"SOFT" 40}
 .tier-table td.flags{color:var(--rust);font-style:italic;font-size:.85rem}
 .tier-table td.tier-tag{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-fade)}
+.tier-table.sortable thead th[data-sort]{cursor:pointer;user-select:none;position:relative;padding-right:22px}
+.tier-table.sortable thead th[data-sort]:hover{color:var(--rust)}
+.tier-table.sortable thead th[data-sort]::after{content:"↕";position:absolute;right:6px;opacity:.3;font-size:.78rem}
+.tier-table.sortable thead th[data-sort].asc::after{content:"↑";opacity:1;color:var(--rust)}
+.tier-table.sortable thead th[data-sort].desc::after{content:"↓";opacity:1;color:var(--rust)}
 
 .chip{display:inline-block;padding:2px 9px 3px;margin:0 4px 4px 0;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;font-family:var(--display);font-variation-settings:"opsz" 9,"SOFT" 50;line-height:1.4}
 .chip.rust{color:var(--rust)}
@@ -188,7 +193,7 @@ body{
   </h1>
   <div class="masthead-rule bottom"></div>
 
-  <p class="deck">An inverse Forbes ledger. Twenty-one billionaires, tiered by how little of their fortunes we can find deployed for charity — with every dollar cited to its source.</p>
+  <p class="deck">An inverse Forbes ledger. <span id="cohortCount">—</span> billionaires, tiered by how little of their fortunes we can find deployed for charity — with every dollar cited to its source.</p>
 
   <div class="epigraph">
     <p>“<em>We identified $X in documented giving.</em>” Never the other way around. Where our sources cannot see, we do not speculate — we mark a tier and invite correction.</p>
@@ -205,22 +210,40 @@ body{
 
   <div class="section-head"><h2><span class="orn">❧</span> Tier B · Probably Low <span class="orn">❧</span></h2></div>
   <p class="section-sub">Observable giving is low relative to capacity, but at least one opaque vehicle exists. Presented alphabetically, not ranked.</p>
-  <table class="tier-table" id="tierB">
-    <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Ratio</th><th>Pattern</th></tr></thead>
+  <table class="tier-table sortable" id="tierB">
+    <thead><tr>
+      <th data-sort="name">Name</th>
+      <th class="num" data-sort="net_worth">Net Worth</th>
+      <th class="num" data-sort="observable">Observable</th>
+      <th class="num" data-sort="ratio">Ratio</th>
+      <th>Pattern</th>
+    </tr></thead>
     <tbody></tbody>
   </table>
 
   <div class="section-head"><h2><span class="orn">❧</span> Tier C · Opaque <span class="orn">❧</span></h2></div>
   <p class="section-sub">Most giving flows through LLCs or DAFs that do not require public disclosure. The published figure is a floor.</p>
-  <table class="tier-table" id="tierC">
-    <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Ratio</th><th>Pattern</th></tr></thead>
+  <table class="tier-table sortable" id="tierC">
+    <thead><tr>
+      <th data-sort="name">Name</th>
+      <th class="num" data-sort="net_worth">Net Worth</th>
+      <th class="num" data-sort="observable">Observable</th>
+      <th class="num" data-sort="ratio">Ratio</th>
+      <th>Pattern</th>
+    </tr></thead>
     <tbody></tbody>
   </table>
 
   <div class="section-head"><h2><span class="orn">❧</span> On Track · Not Scrooges <span class="orn">❧</span></h2></div>
   <p class="section-sub">Shown for calibration. Observable giving is near or above the 10%-of-liquid-wealth capacity benchmark.</p>
-  <table class="tier-table" id="tierOnTrack">
-    <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Ratio</th><th>Notes</th></tr></thead>
+  <table class="tier-table sortable" id="tierOnTrack">
+    <thead><tr>
+      <th data-sort="name">Name</th>
+      <th class="num" data-sort="net_worth">Net Worth</th>
+      <th class="num" data-sort="observable">Observable</th>
+      <th class="num" data-sort="ratio">Ratio</th>
+      <th>Notes</th>
+    </tr></thead>
     <tbody></tbody>
   </table>
 
@@ -308,15 +331,21 @@ const patternChips = (rec) => {
   return out.slice(0, 3).join('');
 };
 
+const cohortWords = n => {
+  const w = ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty','twenty-one','twenty-two','twenty-three','twenty-four','twenty-five','twenty-six','twenty-seven','twenty-eight','twenty-nine','thirty'];
+  return w[n] ? w[n].charAt(0).toUpperCase() + w[n].slice(1) : n.toString();
+};
+
 fetch('scrooge_latest_v3.json')
   .then(r => r.json())
   .then(data => {
     const bs = data.billionaires || [];
+    document.getElementById('cohortCount').textContent = cohortWords(bs.length);
     renderStats(data);
     renderTierA(bs.filter(b => b.tier === 'A_VERIFIED_LOW'));
-    renderTierTable('tierB', bs.filter(b => b.tier === 'B_PROBABLY_LOW'));
-    renderTierTable('tierC', bs.filter(b => b.tier === 'C_OPAQUE'));
-    renderTierTable('tierOnTrack', bs.filter(b => b.tier === 'ON_TRACK'));
+    installSortableTable('tierB', bs.filter(b => b.tier === 'B_PROBABLY_LOW'));
+    installSortableTable('tierC', bs.filter(b => b.tier === 'C_OPAQUE'));
+    installSortableTable('tierOnTrack', bs.filter(b => b.tier === 'ON_TRACK'));
     if (data.generated_at) {
       const dt = new Date(data.generated_at);
       document.getElementById('lastRevised').textContent = dt.toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'});
@@ -365,19 +394,54 @@ function renderTierA(list) {
   }).join('');
 }
 
-function renderTierTable(id, list) {
-  const tbody = document.querySelector('#' + id + ' tbody');
-  if (!list.length) { tbody.innerHTML = '<tr><td colspan="5" style="padding:24px;color:var(--ink-fade);font-style:italic">No subjects in this tier.</td></tr>'; return; }
-  const sorted = [...list].sort((a, b) => (a.name_display || '').localeCompare(b.name_display || ''));
-  tbody.innerHTML = sorted.map(b => `
-    <tr onclick="location.href='${profileLink(b.id)}'">
+const SORT_KEYS = {
+  name: b => (b.name_display || '').toLowerCase(),
+  net_worth: b => -(b.net_worth_best_usd_b || 0),
+  observable: b => -(b.observable_usd || 0),
+  ratio: b => b.ratio_observable_to_expected == null ? Infinity : b.ratio_observable_to_expected,
+};
+
+function installSortableTable(id, list) {
+  const table = document.getElementById(id);
+  const tbody = table.querySelector('tbody');
+  let state = { key: 'name', dir: 'asc' };
+
+  function rowFor(b) {
+    return `<tr onclick="location.href='${profileLink(b.id)}'">
       <td class="name">${b.name_display}</td>
       <td class="num">${fmtNw(b.net_worth_best_usd_b)}</td>
       <td class="num">${fmtUsd(b.observable_usd)}</td>
       <td class="num">${fmtRatio(b.ratio_observable_to_expected)}</td>
       <td class="flags">${patternChips(b) || '—'}</td>
-    </tr>
-  `).join('');
+    </tr>`;
+  }
+
+  function render() {
+    if (!list.length) { tbody.innerHTML = '<tr><td colspan="5" style="padding:24px;color:var(--ink-fade);font-style:italic">No subjects in this tier.</td></tr>'; return; }
+    const keyFn = SORT_KEYS[state.key] || SORT_KEYS.name;
+    const sorted = [...list].sort((a, b) => {
+      const av = keyFn(a), bv = keyFn(b);
+      if (av < bv) return state.dir === 'asc' ? -1 : 1;
+      if (av > bv) return state.dir === 'asc' ? 1 : -1;
+      return 0;
+    });
+    tbody.innerHTML = sorted.map(rowFor).join('');
+    table.querySelectorAll('th[data-sort]').forEach(th => {
+      th.classList.remove('asc', 'desc');
+      if (th.dataset.sort === state.key) th.classList.add(state.dir);
+    });
+  }
+
+  table.querySelectorAll('th[data-sort]').forEach(th => {
+    th.addEventListener('click', () => {
+      const key = th.dataset.sort;
+      if (state.key === key) state.dir = state.dir === 'asc' ? 'desc' : 'asc';
+      else { state.key = key; state.dir = (key === 'name' ? 'asc' : 'desc'); }
+      render();
+    });
+  });
+
+  render();
 }
 </script>
 </body>

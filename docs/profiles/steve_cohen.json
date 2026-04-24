@@ -1,0 +1,595 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record matching Ellison v3 reference. Every dollar has source_url + retrieved_at. Events scoped by event_role. Tier classification happens downstream.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research",
+  "person": {
+    "name_display": "Steve Cohen",
+    "name_legal": "Steven A. Cohen",
+    "dob_year": 1956,
+    "country_primary": "United States",
+    "wealth_source": "Hedge fund founder \u2014 SAC Capital Advisors (1992-2016); Point72 Asset Management (2014-present, ~$45.7B AUM). Owner of NY Mets (acquired controlling stake Sept 2020 for $2.4B). Major art collector.",
+    "years_as_billionaire_approx": 25
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 23.0,
+    "range_usd_billions": [
+      21,
+      23
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 list: $23B, ranked 111th globally (up $1.7B YoY per Hartford Business Journal). Several secondary sources still citing $21-21.3B carryover from 2024-2025. Consensus band $21-23B.",
+    "sources": [
+      {
+        "publisher": "Hartford Business Journal (citing Forbes 2026 list)",
+        "url": "https://hartfordbusiness.com/article/cts-billionaire-class-grows-to-19-on-forbes-2026-list-8-crack-top-1000/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 23.0,
+        "rank_on_list": 111
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes)",
+        "url": "https://en.wikipedia.org/wiki/Steve_Cohen_(businessman)",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 21.3,
+        "value_as_of": "2024"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/steven-a-cohen/",
+        "retrieved_at": "2026-04-24"
+      }
+    ],
+    "liquidity_estimate_pct": 0.5,
+    "liquidity_notes": "Hedge-fund GP fortune has higher liquidity than operator-founder wealth (Ellison/Zuckerberg). Point72 is private but Cohen's stake is cashable via fund distributions. Offset: $2.4B locked in Mets (illiquid franchise asset, not a philanthropy vehicle). Art collection (reportedly $1B+) is semi-liquid. Apply 50% liquidity discount \u2014 between hedge-fund GP norm (60-70%) and public-stock-founder norm (20-30%)."
+  },
+  "cited_events": [
+    {
+      "event_id": "cohen_sacf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "recipient": "Various (charitable disbursements from 990-PF)",
+      "amount_usd": 129700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "2024 charitable disbursements $129.7M; assets $537.2M \u2014 payout ratio ~24%, well above 5% minimum."
+    },
+    {
+      "event_id": "cohen_sacf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 124400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_sacf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 122500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_sacf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 109700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_sacf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 92000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_sacf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 102600000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_sacf_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 60100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_sacf_2014",
+      "event_role": "grant_out",
+      "year": 2014,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 51000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_sacf_2013",
+      "event_role": "grant_out",
+      "year": 2013,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 43500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "2013 is the year of the $1.8B SAC Capital insider-trading plea; foundation giving continued uninterrupted. $248M revenue into foundation that year (largest single-year funding) \u2014 Cohen pre-funded the foundation's balance sheet from $0.6M assets (2011) to $280M (2013) even as criminal case unfolded."
+    },
+    {
+      "event_id": "cohen_sacf_2012",
+      "event_role": "grant_out",
+      "year": 2012,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 43200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_sacf_2011",
+      "event_role": "grant_out",
+      "year": 2011,
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "amount_usd": 42500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "cohen_cvn_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Cohen Veterans Network Inc (public charity, separate 501(c)(3))",
+      "donor_ein": "47-3950655",
+      "amount_usd": 51400000,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/473950655",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CVN is a separately-incorporated public charity operating the 22-clinic mental-health network. Its revenue comes primarily from SACF grants and cost-sharing with treated veterans. Counting CVN expenses as additive to SACF would DOUBLE-COUNT: SACF grants to CVN are already inside SACF's $129.7M 2024 disbursements. Therefore CVN expenses are NOT added to observable_giving \u2014 listed here for transparency. The operational spend is the evidence that SACF dollars actually reach veterans."
+    },
+    {
+      "event_id": "cohen_cvb_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Cohen Veterans Bioscience Inc (public charity, separate 501(c)(3))",
+      "donor_ein": "47-1981973",
+      "amount_usd": 14080000,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/471981973",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CVB is a separately-incorporated 501(c)(3) research org focused on PTSD/TBI biomarkers. Similar to CVN: its program expenses are downstream of SACF grants \u2014 NOT additive. Listed for transparency on operational footprint. CEO Magali Haas compensation $497K (2024) is a notable figure for a small research shop \u2014 not HIGH_COMP relative to program budget (~3.5%) but worth flagging."
+    },
+    {
+      "event_id": "cohen_laguardia_2024",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date_precision": "day",
+      "date": "2024-03-20",
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "recipient": "LaGuardia Community College (CUNY) \u2014 Cohen Career Collective",
+      "amount_usd": 116200000,
+      "source_type": "announcement",
+      "source_url": "https://www.laguardia.edu/news/steven-alexandra-cohen-foundation-awards-116-million-grant-to-laguardia-community-college-to-create-the-cohen-career-collective/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This $116.2M grant was awarded by SACF and is therefore almost certainly INSIDE the SACF 2024 $129.7M disbursement total \u2014 not additive. Marked direct_gift for narrative clarity but MUST NOT be double-counted against cohen_sacf_2024. Largest-ever gift to a US community college per multiple sources."
+    },
+    {
+      "event_id": "cohen_moma_2017",
+      "event_role": "direct_gift",
+      "year": 2017,
+      "date_precision": "day",
+      "date": "2017-06-27",
+      "donor_entity": "Steven & Alexandra Cohen Foundation",
+      "recipient": "Museum of Modern Art \u2014 expansion capital campaign",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://www.artnews.com/art-news/news/moma-receives-50-m-gift-from-steven-alexandra-cohen-foundation-to-support-expansion-8610/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Gift given THROUGH SACF per Art News and Bloomberg \u2014 therefore rolled into SACF grants_out. Not additive. Cohen joined MoMA trustee board in 2016; gift surfaced a year later. Named Steven and Alexandra Cohen Center for Special Exhibitions (sixth-floor gallery)."
+    },
+    {
+      "event_id": "cohen_morgan_stanley_childrens_2008",
+      "event_role": "direct_gift",
+      "year": 2008,
+      "donor_entity": "Steven & Alexandra Cohen Foundation (likely \u2014 Wikipedia cites 'Cohen')",
+      "recipient": "Morgan Stanley Children's Hospital of NewYork-Presbyterian",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Steve_Cohen_(businessman)",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Pre-dates SACF's major-grant era (SACF assets were <$1M through 2011). Could have been a personal gift OR from an earlier foundation vehicle. Insufficient source specificity to confirm. Left here for narrative continuity; not counted toward observable (would fall in years with incomplete SACF data). Hospital was renamed 'Morgan Stanley Children's Hospital' ~2003; Cohen gift named the Steven and Alexandra Cohen Pediatric Emergency Department."
+    },
+    {
+      "event_id": "cohen_cvn_launch_2016",
+      "event_role": "pledge",
+      "year": 2016,
+      "donor_entity": "Steve Cohen (personal commitment)",
+      "recipient": "Cohen Veterans Network (then-new charity)",
+      "amount_usd": 275000000,
+      "source_type": "announcement",
+      "source_url": "https://www.propublica.org/article/steve-cohen-privatized-ptsd-veterans-clinic",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "status": "LARGELY_FULFILLED",
+      "status_note": "2016 announcement pledged $275M to stand up a national network of free mental-health clinics for veterans. CVN revenue 2015-2024 aggregate (from 990s): ~$342M \u2014 the pledge has been funded and then some. Counting mechanics: the flows into CVN show up as grants_out from SACF (primary funder), so already captured in SACF rollup. NOT double-counted here."
+    },
+    {
+      "event_id": "cohen_robin_hood_cumulative",
+      "event_role": "direct_gift",
+      "year_range": [
+        2004,
+        2014
+      ],
+      "donor_entity": "Steven & Alexandra Cohen (personal + foundation)",
+      "recipient": "Robin Hood Foundation",
+      "amount_usd": 100000000,
+      "amount_usd_note": "'More than $100M' cumulative per reporting \u2014 exact figure not disclosed. Single largest disclosed year: $13.35M in 2011 (LittleSis).",
+      "source_type": "announcement",
+      "source_url": "https://littlesis.org/relationships/229981",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Cohen served on Robin Hood board 2004-2014 (stepped down to emeritus). Gifts likely flowed both personally and through SACF. Portion overlapping with SACF 2011-2014 grant-outs is already captured. Treat this row as narrative-only; do not add."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "cohen_giving_pledge_NOT_SIGNED",
+      "event_role": "pledge_NOT_SIGNED",
+      "status": "NOT_A_SIGNATORY",
+      "verification_method": "Searched givingpledge.org/pledgers page; Steve Cohen not listed. Direct URL /pledger/steve-cohen returns 404.",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "notes": "Cohen has NOT signed the Giving Pledge. Red flag NO_GIVING_PLEDGE_SIGNATURE applies \u2014 but note this flag is weaker than PLEDGE_UNFULFILLED (e.g., Ellison), because Cohen has not made the 50%+ commitment at all. Interpret in context: his lifetime giving posture ($1.5B+ SACF cumulative per foundation website) is higher than most Giving Pledge signatories' realized giving, so the absence of a pledge is more accurately 'did not overcommit' than 'underperforming the commitment.'"
+    },
+    {
+      "event_id": "cohen_lifetime_giving_claim",
+      "event_role": "announcement",
+      "status": "SELF_REPORTED",
+      "donor_entity": "Steven & Alexandra Cohen Foundation",
+      "amount_usd_claimed": 1500000000,
+      "source_type": "foundation_website",
+      "source_url": "https://www.steveandalex.org/",
+      "retrieved_at": "2026-04-24",
+      "note": "Foundation website claims 'over $1.5B' in cumulative grantmaking since 2001. Reconciliation against 990-PF data: sum of available disbursements 2011-2024 = ~$1.021B. Adding pre-2011 giving (foundation existed from 2001 but at smaller scale) and 2015-2018 gap years (990 data shown in fetch covers 2011-2015 + 2019-2024 as visible rows) plausibly bridges to $1.5B claim. Credible self-report; not counted additive."
+    },
+    {
+      "event_id": "cohen_mets_2020",
+      "event_role": "private_investment_not_charity",
+      "year": 2020,
+      "date_precision": "month",
+      "date": "2020-09",
+      "donor_entity": "Steven A. Cohen (personal)",
+      "recipient": "New York Mets (private baseball franchise)",
+      "amount_usd": 2400000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Steve_Cohen_(businessman)",
+      "retrieved_at": "2026-04-24",
+      "classification_note": "NOT philanthropy. Included for context on liquid-wealth deployment. Per standard Forbes/IPS methodology, for-profit sports franchise purchase does not count as charitable giving. Also notable: this $2.4B is ~10% of current net worth tied up in an illiquid asset \u2014 relevant to liquidity calculation."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_MODERATE_GROWING",
+    "substitution_note": "Not counted as philanthropy. NBER W26616: political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2008_2025_usd_disclosed": 7600000,
+    "observed_total_note": "Minimum floor from press aggregation \u2014 NOT a comprehensive FEC bulk pull. Confirmed items: $57K Dem Senatorial Cmte 2008; $28K NRSC 2008; $1.5M Rep Governors Assoc 2010; $30.4K NRSC 2012; $2.85M America Leads super-PAC (Christie 2016); $2M Senate Leadership Fund 2017; $1M Congressional Leadership Fund 2017; $1M Trump inaugural 2017. Fox Business (2025) reports 'ramping up GOP donations' in 2024-2025 cycle but specific figures not retrieved. Dollar figure will tighten when FEC API direct-pull runs.",
+    "pattern_note": "Cohen gave bipartisan through 2008; shifted to near-exclusively Republican after 2010 SEC investigation of SAC Capital began. Hasn't given to 'virtually a single Democrat on the federal level since 2010' (Fox Business 2025). Pattern strongly consistent with defensive regulatory posture, not ideology.",
+    "sources": [
+      {
+        "url": "https://www.foxbusiness.com/politics/billionaire-steven-cohen-ramps-up-gop-donations-amid-hedge-fund-comeback",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Fox Business",
+        "used_for": "2024-2025 GOP donation surge, historical donation timeline"
+      },
+      {
+        "url": "https://news.artnet.com/art-world/steve-cohen-republican-donor-1207619",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Artnet",
+        "used_for": "Senate Leadership Fund $2M, Congressional Leadership Fund $1M (2017)"
+      },
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail?cycle=2018&id=U0000003829&type=I&super=N&name=Cohen,+Steven+A.",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "used_for": "Donor-detail page (Steven A. Cohen, ID U0000003829)"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Steven & Alexandra Cohen Foundation Inc",
+        "ein": "06-1627638",
+        "established_year": 2001,
+        "state": "CT (Stamford)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 537222157,
+        "grants_paid_2024_usd": 129700000,
+        "officers_compensation": "ZERO_COMP (Steven A Cohen VP/Treasurer, Alexandra M Cohen President/Secretary, Joshua Cohen Director \u2014 all $0)",
+        "payout_rate_notes": "2024 charitable disbursements $129.7M / assets $537.2M = 24%. Far above 5% legal minimum. No LOW_PAYOUT flag. Multi-year pattern shows foundation functions as a flow-through, not an endowment build-up: assets have been stable at ~$520M since 2019 while disbursements grew from $102.6M to $129.7M.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED \u2014 would require parsing grant recipients list. Foundation website names specific grantees (LaGuardia, CVN, CVB, MoMA, many smaller) suggesting direct grantmaking rather than DAF warehousing, but unverified from ProPublica summary page.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/61627638"
+      }
+    ],
+    "operating_charities_funded": [
+      {
+        "name": "Cohen Veterans Network Inc (CVN)",
+        "ein": "47-3950655",
+        "classification": "501(c)(3) public charity, operating entity",
+        "established_year": 2015,
+        "state": "CT",
+        "focus": "22-clinic national network delivering free mental-health care to post-9/11 veterans and families",
+        "latest_990_year": 2024,
+        "revenue_2024_usd": 55900000,
+        "expenses_2024_usd": 51400000,
+        "ceo_compensation_2024_usd": 539115,
+        "ceo_name": "Anthony Hassan",
+        "scale": "22 clinics across 21 states; 82,000+ clients served April 2016-March 2025",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/473950655",
+        "controversy_note": "ProPublica 2018 investigation documented operational friction: Los Angeles clinic closed <1 year after opening; staff allegedly told to prioritize healthier patients over homeless veterans. VA integration contested. Does not undermine the scale of the infrastructure built ($342M+ aggregate operational spend 2015-2024), but tempers 'clean hero' framing."
+      },
+      {
+        "name": "Cohen Veterans Bioscience Inc (CVB)",
+        "ein": "47-1981973",
+        "classification": "501(c)(3) public charity, research organization",
+        "established_year": 2015,
+        "state": "MA (Pittsfield, also operates Cambridge)",
+        "focus": "Biomarker research for PTSD, TBI, and trauma-related brain disorders",
+        "latest_990_year": 2024,
+        "revenue_2024_usd": 8380000,
+        "expenses_2024_usd": 14080000,
+        "ceo_name": "Magali Haas",
+        "ceo_compensation_2024_usd": 497238,
+        "note": "CVB revenue has declined sharply from $21M (2019) peak to $3.4M (2025 partial). Operating at expense > revenue since at least 2019. Whether Cohen is winding down CVB or sustaining a research program through net-asset drawdown is ambiguous. Flag for follow-up.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/471981973"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified. Absence-of-evidence only. Cohen's giving pattern via named public grants to named recipients (LaGuardia, MoMA, CVN, CVB) suggests low reliance on DAFs, but this is inference, not verification.",
+    "llcs_philanthropic": [],
+    "llcs_note": "Point72 Asset Management is Cohen's hedge-fund business, NOT a philanthropic LLC. Not analogous to CZI / Ballmer Group / Emerson Collective.",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. No public reporting flags offshore structure for Cohen.",
+    "trusts_disclosed_existence_structure_unknown": []
+  },
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Cohen is not listed at givingpledge.org/pledgers; /pledger/steve-cohen returns 404. At age 69 and $23B net worth, non-participation is notable but the flag is softer than PLEDGE_UNFULFILLED since he has not made and broken a 50% commitment.",
+      "source_url": "https://www.givingpledge.org/pledgers"
+    },
+    {
+      "flag": "POLITICAL_GIVING_DEFENSIVE_PATTERN",
+      "evidence": "Cohen's giving was bipartisan through 2008 and flipped to near-exclusively Republican after 2010 SEC investigation. Fox Business (2025) reports renewed GOP donation surge coinciding with hedge-fund comeback. Pattern suggests regulatory-defensive, not ideological. NBER W26616 substitution: ~$0.33 charitable giving forgone per $1 political.",
+      "source_url": "https://www.foxbusiness.com/politics/billionaire-steven-cohen-ramps-up-gop-donations-amid-hedge-fund-comeback"
+    },
+    {
+      "flag": "SAC_INSIDER_TRADING_CONTEXT",
+      "evidence": "SAC Capital pleaded guilty and paid $1.8B in criminal fines (2013) \u2014 largest insider-trading fine in US history. Cohen personally settled SEC civil case (2016) with 2-year supervisory ban. Not a philanthropy red flag per se, but relevant to reputational-laundering hypothesis: foundation assets grew from $0.6M (2011) to $280M (2013) during criminal case, and CVN/CVB were launched (2015) immediately after Point72 relaunch. Reader should weigh whether the mental-health infrastructure is genuine impact, reputation-rebuild, or both (most likely: both).",
+      "source_url": "https://en.wikipedia.org/wiki/Steve_Cohen_(businessman)"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (SACF 2024 payout 24% of assets, well above 5% minimum)",
+    "HIGH_OFFICER_COMP at foundation (all SACF officers zero comp). CVN/CVB CEO comp is at operating-charity scale, not foundation scale.",
+    "DAF_TRANSFERS (no DAF activity identified; not confirmed absent)",
+    "PLEDGE_UNFULFILLED (did not sign Giving Pledge \u2014 can't break what wasn't made)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 811600000,
+    "observable_giving_method": "sum(SACF 990-PF charitable disbursements 2011-2024 for years with data: 2011-2015 + 2019-2024, i.e. 42.5+43.2+43.5+51.0+60.1+102.6+92.0+109.7+122.5+124.4+129.7). 2016-2018 SACF data not retrieved (gap years). Excludes: CVN/CVB operational expenses (downstream of SACF \u2014 double-count risk); Mets acquisition; political giving; $50M Morgan Stanley Children's 2008 (unconfirmed vehicle).",
+    "observable_giving_todo": [
+      "Pull SACF 990-PF for 2016, 2017, 2018 \u2014 plausibly add $150-250M to observable.",
+      "Parse SACF 2024 Part XV grant recipient list to verify LaGuardia $116M is inside the $129.7M (high confidence yes).",
+      "Verify the $50M 2008 Morgan Stanley Children's Hospital gift's vehicle \u2014 add to observable if confirmed direct.",
+      "Run FEC bulk pull against Steven A. Cohen's name/address to tighten political total.",
+      "Parse SACF grant recipient list for DAF intermediaries (confirm or refute DAF_TRANSFERS flag)."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1150000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.50 \u00d7 $23B = $11.5B; tenure cap saturated (25 years). Expected = $1.15B. Strict 10% norm.",
+    "observable_ratio_to_expected": 0.706,
+    "observable_ratio_to_current_nw": 0.0353,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence; the visible grantmaking pattern (named public recipients) argues against significant DAF warehousing. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 115000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously sometimes. Cohen has a documented preference for naming recipient-side (MoMA gallery named, CVN/CVB are name-attached, LaGuardia building named), which WEAKENS the anonymous-cohort hypothesis for him. Apply ~1% of observable giving as a conservative hidden upper: ~$115M over lifetime. Well-below cohort median.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly documented religious-tithing commitment. Zero.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "No disclosed charitable trust structure. Zero envelope.",
+      "gap_years_uplift_usd": 200000000,
+      "gap_years_method": "SACF 2016-2018 data not yet retrieved; interpolating between $60M (2015) and $102.6M (2019) at ~$70M/yr/yr gives ~$200-220M additional for those three years.",
+      "total_usd": 315000000,
+      "total_method": "anonymous + gap_years (daf/llc/offshore/religious/trust all zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.98,
+    "tier": "Probably_OK (Tier B, upper band)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Cohen fails this test decisively (ratio ~0.98, approaching 1.0). He is an AT-OR-NEAR 10%-norm giver given liquid wealth. The case for Tier B rather than 'Not Low' is that (a) he has not signed the Giving Pledge (no forward commitment), (b) political giving pattern is defensive, (c) SAC history adds context. But observable giving itself is the strongest in this cohort of US-based hedge-fund billionaires at this wealth level.",
+    "tier_published_caveat": "Cohen is the canonical example of 'built genuine infrastructure \u2014 CVN mental-health clinics, LaGuardia workforce center, MoMA capital \u2014 without Giving Pledge signaling.' Observable giving ratio 3.5% of current net worth is an order of magnitude higher than Ellison's 0.2%. Readers should not confuse the absence of a pledge with absence of giving. Flag the SAC history and political-donation defensiveness for context, not as giving-denominator adjustments."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 42.5,
+    "components": {
+      "giving_gap_40pct": 11.8,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 10.0
+    },
+    "note": "v2-formula placeholder for pipeline continuity. giving_gap = 1 - 0.706 = 0.294 \u00d7 40 = 11.8. tenure saturated. no pledge signed so pledge_breach = 0 (the formula penalizes signed-but-unfulfilled, not non-signers). 2 of 3 red flags \u00d7 5 = 10. DO NOT PUBLISH this number \u2014 we publish tiers only."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Point72 press contact + Steven & Alexandra Cohen Foundation press contact (info via steveandalex.org) + Cohen Veterans Network media contact",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: SACF 990-PF for 2016, 2017, 2018 (gap years in retrieved data).",
+    "VERIFY: LaGuardia $116M is inside SACF 2024 grants_out (high confidence yes; check Part XV recipients list).",
+    "VERIFY: Morgan Stanley Children's Hospital 2008 $50M gift vehicle (personal vs. earlier foundation).",
+    "VERIFY: FEC bulk pull against Steven A. Cohen's name/address (2008-2025) \u2014 tighten political total from the $7.6M floor.",
+    "VERIFY: SACF Part XV grant recipients list for DAF intermediaries.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Cohen's CIK (if any \u2014 as a hedge-fund manager rather than issuer insider, likely limited).",
+    "VERIFY: ICIJ Offshore Leaks name-match \u2014 deferred to Phase 2.",
+    "VERIFY: CVB declining revenue trajectory \u2014 is the research program being wound down or funded from reserves?",
+    "VERIFY: Brave Search for post-2024 announced Cohen gifts not yet captured (1-year freshness window)."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/61627638",
+      "retrieved_at": "2026-04-24",
+      "used_for": "SACF 990-PF data 2011-2024, assets, officers (zero comp)"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/473950655",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Cohen Veterans Network 990 2015-2024, CEO comp, revenue/expenses"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/471981973",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Cohen Veterans Bioscience 990 2015-2025, CEO comp, revenue/expenses"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Verify Cohen is NOT a Giving Pledge signatory"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Steve_Cohen_(businessman)",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biography, SAC settlement, Mets purchase, lifetime gift summary, $2.4B Mets 2020"
+    },
+    {
+      "url": "https://hartfordbusiness.com/article/cts-billionaire-class-grows-to-19-on-forbes-2026-list-8-crack-top-1000/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 net worth $23B, rank 111"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/steven-a-cohen/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg Billionaires Index profile"
+    },
+    {
+      "url": "https://www.laguardia.edu/news/steven-alexandra-cohen-foundation-awards-116-million-grant-to-laguardia-community-college-to-create-the-cohen-career-collective/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$116.2M LaGuardia gift 2024-03-20"
+    },
+    {
+      "url": "https://www.artnews.com/art-news/news/moma-receives-50-m-gift-from-steven-alexandra-cohen-foundation-to-support-expansion-8610/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$50M MoMA gift 2017-06-27"
+    },
+    {
+      "url": "https://www.propublica.org/article/steve-cohen-privatized-ptsd-veterans-clinic",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$275M CVN launch commitment 2016; LA clinic closure controversy"
+    },
+    {
+      "url": "https://www.cohenveteransnetwork.org/about-us/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "CVN clinic count (22), client total (82,000+), coverage (21 states)"
+    },
+    {
+      "url": "https://www.foxbusiness.com/politics/billionaire-steven-cohen-ramps-up-gop-donations-amid-hedge-fund-comeback",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Political donation timeline 2008-2017, 2024-2025 GOP surge"
+    },
+    {
+      "url": "https://news.artnet.com/art-world/steve-cohen-republican-donor-1207619",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Senate Leadership Fund $2M, Congressional Leadership Fund $1M (2017)"
+    },
+    {
+      "url": "https://www.opensecrets.org/outside-spending/donor_detail?cycle=2018&id=U0000003829&type=I&super=N&name=Cohen,+Steven+A.",
+      "retrieved_at": "2026-04-24",
+      "used_for": "OpenSecrets donor-detail (ID U0000003829)"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2013-11-04/sac-capital-to-pay-1-dot-8-billion-the-largest-insider-trading-fine-ever",
+      "retrieved_at": "2026-04-24",
+      "used_for": "SAC $1.8B insider-trading settlement 2013"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2016-3",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Cohen personal SEC civil settlement 2016, 2-year supervisory ban"
+    },
+    {
+      "url": "https://www.steveandalex.org/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Foundation self-report: $1.5B+ lifetime grantmaking since 2001"
+    },
+    {
+      "url": "https://littlesis.org/relationships/229981",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Robin Hood Foundation $13.35M 2011 gift; $100M+ cumulative"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2014-05-01/steven-cohen-stepping-down-from-board-of-robin-hood-foundation",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Robin Hood board tenure 2004-2014"
+    }
+  ],
+  "_source_file": "steve_cohen.v3.json"
+}

@@ -1,0 +1,532 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment / conservation_easement). Classification for Tier A/B/C happens downstream.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual deep-research run — John Malone",
+
+  "person": {
+    "name_display": "John Malone",
+    "name_legal": "John Carl Malone",
+    "dob_year": 1941,
+    "country_primary": "United States",
+    "wealth_source": "Cable TV (TCI, sold to AT&T 1999); Liberty Media / Liberty Global / Warner Bros. Discovery / QVC Group tracking stocks; also ranching and real estate (Silver Spur Ranches, Bar Lazy Seven, etc.) — largest private landowner in US from 2011-2021 (~2.2M acres), since surpassed to #3",
+    "years_as_billionaire_approx": 26,
+    "years_as_billionaire_note": "Forbes first listed Malone as billionaire ~1999-2000 after TCI/AT&T sale. Tenure cap (>=10 years) saturated for expected-giving calc."
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 11.1,
+    "range_usd_billions": [9.8, 12.0],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 real-time shows ~$11.1B (rank ~266). Bloomberg Billionaires Index early-2025 showed ~$9.8B. Press/Wikipedia cite Bloomberg May 2021 ~$9B. Net worth has been fairly stable $8-12B over last five years; Malone is not a 'stock-price-spike' billionaire — wealth is diversified across media tracking stocks + illiquid land + private holdings.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires",
+        "url": "https://www.forbes.com/profile/john-malone/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 11.1,
+        "rank_on_list": 266,
+        "fetch_note": "Forbes direct fetch blocked in this retrieval; figure corroborated via downstream sources citing Forbes 2026 profile."
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/john-c-malone/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 9.83,
+        "value_as_of": "2025-early"
+      },
+      {
+        "publisher": "Wikipedia (citing Bloomberg May 2021)",
+        "url": "https://en.wikipedia.org/wiki/John_C._Malone",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 9.0
+      }
+    ],
+    "liquidity_estimate_pct": 0.35,
+    "liquidity_notes": "Malone's wealth mix: ~40-50% public tracking stocks (WBD, Liberty Media, Liberty Global, QVC Group — liquid but concentrated, voting-share restrictions); ~25-35% private land holdings (Silver Spur, Greenland, Maine forest — highly illiquid, held in trusts/LLCs); ~15-25% other private assets (Liberty-affiliated private investments, Irish castle holdings). 35% liquidity discount is appropriate — more liquid than Ellison (no founder-block issue) but substantially encumbered by land."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "malone_mff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Malone Family Foundation",
+      "donor_ein": "84-1408520",
+      "recipient": "Top recipients: Boothbay Region YMCA ($2.0M), Global Down Syndrome Foundation ($50K) — bulk of 2024 grant activity appears to be these two plus smaller grants",
+      "amount_usd": 3230125,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Charitable disbursements figure. Top-2 named grants sum to $2.05M per CauseIQ; balance is smaller grants including Malone Scholars Program scholarships to private secondary schools."
+    },
+    {
+      "event_id": "malone_mff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Malone Family Foundation",
+      "donor_ein": "84-1408520",
+      "amount_usd": 29505835,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Unusually large disbursement year — 10x normal. Likely a one-time large grant (recipient not disclosed in ProPublica summary). TODO: pull 990-PF Part XV to identify the ~$25M+ grant."
+    },
+    {
+      "event_id": "malone_mff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Malone Family Foundation",
+      "donor_ein": "84-1408520",
+      "amount_usd": 7208432,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_mff_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Malone Family Foundation",
+      "donor_ein": "84-1408520",
+      "amount_usd": 6618614,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_mff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Malone Family Foundation",
+      "donor_ein": "84-1408520",
+      "amount_usd": 2215567,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_mff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Malone Family Foundation",
+      "donor_ein": "84-1408520",
+      "amount_usd": 7182099,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_mflpf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Malone Family Land Preservation Foundation",
+      "donor_ein": "48-1306827",
+      "amount_usd": 2240000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "classification_note": "This is a land-preservation operating foundation — Malone is President/Treasurer (zero comp). Disbursements largely fund internal land-stewardship operations (ranch hands, managers) rather than out-the-door grants to external 501(c)(3)s. Classification is arguable: IRS treats as charitable, but the land stays in the Malone family's effective control. See methodology_note on conservation easements."
+    },
+    {
+      "event_id": "malone_mflpf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Malone Family Land Preservation Foundation",
+      "donor_ein": "48-1306827",
+      "amount_usd": 2300000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_mflpf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Malone Family Land Preservation Foundation",
+      "donor_ein": "48-1306827",
+      "amount_usd": 1940000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_mflpf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Malone Family Land Preservation Foundation",
+      "donor_ein": "48-1306827",
+      "amount_usd": 1990000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_mflpf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Malone Family Land Preservation Foundation",
+      "donor_ein": "48-1306827",
+      "amount_usd": 1730000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_mflpf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Malone Family Land Preservation Foundation",
+      "donor_ein": "48-1306827",
+      "amount_usd": 1670000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_yale_2011",
+      "event_role": "direct_gift",
+      "year": 2011,
+      "date_precision": "day",
+      "date": "2011-03-24",
+      "donor_entity": "John Malone (personal — vehicle not specified)",
+      "recipient": "Yale School of Engineering & Applied Science — endowment for 10 professorships",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://news.yale.edu/2011/03/24/alumnus-john-malone-commits-50-million-yale-s-engineering-school",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Pre-2019 event, not captured in our 2019-2024 990-PF window. Vehicle (personal vs. Malone Family Foundation) not specified in press — 2011 MFF grants-out not yet pulled to deduplicate. Retained in observable sum as direct_gift since MFF 2011 assets/grant level (~$80M) could not absorb a $50M gift without being visible as a spike."
+    },
+    {
+      "event_id": "malone_yale_2000",
+      "event_role": "direct_gift",
+      "year": 2000,
+      "donor_entity": "John Malone (personal)",
+      "recipient": "Yale — Daniel L. Malone Engineering Center",
+      "amount_usd": 24000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/John_C._Malone",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Pre-foundation-era for most purposes. Confidence medium — Wikipedia-sourced, original Yale press release not re-verified in this pull."
+    },
+    {
+      "event_id": "malone_johnshopkins_2011",
+      "event_role": "direct_gift",
+      "year": 2011,
+      "donor_entity": "John Malone (personal)",
+      "recipient": "Johns Hopkins Whiting School of Engineering — Malone Hall",
+      "amount_usd": 30000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/John_C._Malone",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "May overlap with MFF 2011 giving; foundation assets $80M+ in 2011 could not easily absorb both Yale ($50M) and Hopkins ($30M) the same year without major pre-2019 grant spike. Tentatively treat as additive to MFF."
+    },
+    {
+      "event_id": "malone_colostate_2014",
+      "event_role": "direct_gift",
+      "year": 2014,
+      "donor_entity": "John and Leslie Malone (personal)",
+      "recipient": "Colorado State University — Institute for Biologic Translational Therapies",
+      "amount_usd": 42500000,
+      "source_type": "announcement",
+      "source_url": "https://source.colostate.edu/malone/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "malone_hopkins_school",
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date_precision": "approximate",
+      "donor_entity": "John Malone (personal)",
+      "recipient": "Hopkins School (New Haven, CT — secondary school, NOT Johns Hopkins University)",
+      "amount_usd": 60000000,
+      "amount_usd_note": "Reported as $60M for two buildings plus the Gibbs Center for Innovation",
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/John_C._Malone",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "dedup_note": "Year approximate — Wikipedia does not pin date precisely. Hopkins School (New Haven) ≠ Johns Hopkins University; distinct event from malone_johnshopkins_2011. Low confidence on exact amount and year; not re-verified."
+    },
+    {
+      "event_id": "malone_mainemed_2021",
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date_precision": "month",
+      "date": "2021-06",
+      "donor_entity": "John and Leslie Malone (personal)",
+      "recipient": "Maine Medical Center — Malone Family Tower (cardiac and vascular)",
+      "amount_usd": 25000000,
+      "source_type": "announcement",
+      "source_url": "https://www.mainehealth.org/news/2021/06/mmc-launches-150-m-capital-campaign-record-25-m-philanthropic-gift",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "2021 MFF grants-out ($6.6M) could not contain a $25M gift. Treated as additive / personal."
+    },
+    {
+      "event_id": "malone_greenland_easement_2000",
+      "event_role": "conservation_easement",
+      "year": 2000,
+      "date_precision": "day",
+      "date": "2000-07-26",
+      "donor_entity": "John Malone (personal)",
+      "recipient": "The Conservation Fund + Douglas County CO (initial easement holder); transferred 2020 to Colorado Cattlemen's Agricultural Land Trust",
+      "property": "Greenland Ranch, Douglas County CO",
+      "acreage": 17700,
+      "amount_usd": 23000000,
+      "amount_usd_note": "Malone contributed $23M to secure conservation easements from the sellers (Gaylord family); separately paid $55M to acquire the property ($78M total investment). Of the $23M easement portion, some was covered by a $9.1M GOCO (Great Outdoors Colorado) grant. LAND REMAINS IN PRIVATE OWNERSHIP — Malone retains use rights; development rights extinguished.",
+      "source_type": "news",
+      "source_url": "https://goco.org/news/releases/17700-acre-greenland-ranch-conservation-easement-transferred-to-the-colorado",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "methodology_note": "Under IRC § 170(h), qualified conservation contributions are tax-deductible charitable gifts. Malone's $23M was paid TO the sellers to extinguish their development rights — the land itself stays privately owned by Malone. This is NOT the classic conservation-easement tax scheme (where a landowner donates an easement on his own land and takes a deduction at the appraised 'highest-and-best-use' value); it's a cash purchase of development rights. Counts as charitable contribution in the observable rollup with a FLAG that ownership/use stays with Malone.",
+      "classification_note": "Counted in observable_giving. See rollup.observable_giving_method for per-event flag."
+    },
+    {
+      "event_id": "malone_maryland_farm_2007",
+      "event_role": "conservation_easement",
+      "year": 2007,
+      "donor_entity": "John and Leslie Malone (personal)",
+      "property": "600-acre thoroughbred farm, Maryland",
+      "acreage": 600,
+      "amount_usd": null,
+      "amount_usd_note": "Dollar value not publicly reported. Malones purchased the farm to prevent residential development and placed it under conservation easement. Unknown whether they took a federal tax deduction or what the appraised easement value was.",
+      "source_type": "news",
+      "source_url": "https://www.thegentlemansjournal.com/article/john-malone-everything-need-know-americas-single-largest-land-owner/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "classification_note": "NOT counted in observable_giving (no dollar figure). Flag for methodology review."
+    },
+    {
+      "event_id": "malone_future_land_trust_intent",
+      "event_role": "pledge",
+      "year": 2023,
+      "date_precision": "approximate",
+      "donor_entity": "John Malone (personal — statement of intent)",
+      "recipient": "Unspecified future conservation trust",
+      "amount_usd_note": "Malones have stated intention that most of their 2.2M acres will enter a trust to be 'preserved forever as open space.' Land value alone likely $1B-$3B+ (based on per-acre ranch prices $500-$2000/acre x 2.2M acres); easement value would be a fraction. No dollar pledge, no binding instrument identified.",
+      "status": "INTENT_STATED_NOT_EXECUTED",
+      "source_type": "news",
+      "source_url": "https://landreport.com/john-malone-born-to-be-wired-excerpt",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "classification_note": "NOT counted in observable. Represents a statement of intent similar in nature to Ellison's trust disclosure — meaningful upper bound but no legal commitment yet."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "malone_no_giving_pledge",
+      "event_role": "pledge_status",
+      "status": "NOT_SIGNED",
+      "source_type": "official_pledgers_list_absence",
+      "source_url": "https://givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "notes": "John Malone has not signed the Giving Pledge. His name does not appear on the official pledger list. Press coverage (Chronicle of Philanthropy, Inside Philanthropy) consistently notes that he has stated 'most of my wealth will go to philanthropy' but has not made a formal pledge. Red flag NO_GIVING_PLEDGE_SIGNATURE applies.",
+      "confidence": "high"
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_MODERATE",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2021_2025_usd": null,
+    "observed_total_note": "FEC direct pull not yet executed in this research session. OpenSecrets donor-lookup page returns 769 records for 'John Malone' (common name) and disambiguation would require address/employer match. Press records indicate Malone has historically supported Republican candidates and libertarian causes (Cato Institute board member) but has been notably LESS politically active at the super-PAC scale than Ellison/Adelson/Koch-tier. Preliminary estimate: <$5M cumulative 2021-2025; significantly lower than Ellison's $31M+. Flag for Phase 1.3 FEC API pull with address filter (Denver CO 80206 area or Parker CO).",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=John+Malone&order=desc&sort=D",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "note": "Disambiguation required — 769 records across all John Malones"
+      }
+    ],
+    "verification_todo": "Run FEC bulk pull filtered by employer='Liberty Media' or 'Liberty Interactive' + Colorado zip; tighten dollar figure before publishing."
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Malone Family Foundation",
+        "ein": "84-1408520",
+        "established_year": 1997,
+        "state": "WY (incorporated); operations in Hobe Sound, FL and Encampment, WY",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 88301151,
+        "assets_trajectory": "Peaked $111M in 2021-2022; drew down to $88M by 2024 following 2023's $29.5M disbursement year. Suggests deliberate wind-down or large grant pulse rather than perpetual-endowment mode.",
+        "officers_compensation": "Executive Director Cathie Wlaschin: $56K in 2024 (down from $118K in 2023 — note reduction). Malone family members (John, Leslie, Evan) receive $0 comp across all years.",
+        "payout_rate_notes": "2024 disbursements ($3.23M) / 2023 assets ($89.6M) = 3.6% — BELOW 5% legal minimum. Would trigger LOW_PAYOUT red flag if sustained; 2023 at $29.5M/$111M = 26% over-payout. Volatile disbursement pattern — likely averages >5% on 5-year rolling basis. Need multi-year rolling calc before flagging.",
+        "focus": "Malone Scholars Program — scholarship endowments to certain private secondary schools throughout the US. Also health/community grants (Boothbay YMCA, Global Down Syndrome Foundation).",
+        "red_flag_daf_transfers": "NOT_IDENTIFIED in summary data. Top 2024 grants (Boothbay YMCA $2M, Global Down Syndrome Foundation $50K) are operating charities, not DAFs. 2023's $29.5M spike recipient unknown — TODO: pull 990-PF Part XV to confirm not a DAF transfer.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520"
+      },
+      {
+        "name": "Malone Family Land Preservation Foundation",
+        "ein": "48-1306827",
+        "established_year": 2003,
+        "state": "WY (Encampment)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 126800000,
+        "officers_compensation": "Executive Director Rye Austin $205K (2024); Manager of PAP (Paintrock?) $69K; Manager of RTR $60K; Ranch Hand $46K. Malones (John President/Treasurer, Leslie VP/Secretary, Evan 2nd VP) all $0 comp.",
+        "payout_rate_notes": "2024 disbursements $2.24M / $126.8M assets = 1.8% — WELL BELOW 5% LEGAL MINIMUM. This is a classic LOW_PAYOUT red flag. However, MFLPF is classified as an 'operating foundation' for land stewardship rather than a grantmaking foundation — operating foundations have different payout rules (must spend 85% of adjusted net income on direct charitable activities). The $2.24M may be operational stewardship rather than grants. Flag for methodology review.",
+        "focus": "Land conservation/stewardship of Malone family-owned ranches (Silver Spur, Paintrock, etc.). Pays ranch hands and managers. Effectively an internal operating cost center holding conservation easements.",
+        "critical_classification_note": "This foundation's $126.8M in assets are primarily the easement values on Malone-owned land. The 'charitable disbursements' are stewardship costs for land that remains under Malone family control. Under strict Forbes/IPS methodology, the existence of such a foundation can inflate observable-giving numbers while providing limited public benefit compared to cash grants to operating charities. Treated here with HALF CREDIT in rollup — see methodology_note.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified. Absence-of-evidence only; MFF 2023's $29.5M unexplained spike is a candidate for DAF-parking but not confirmed. TODO: 990-PF Part XV.",
+    "llcs_philanthropic": [],
+    "llcs_note": "Silver Spur Ranches LLC, Bar Lazy Seven, etc. are ranching businesses / family-office entities — NOT philanthropic LLCs in the CZI/Emerson Collective sense. They hold operating ranches and land.",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "Malone holds Humewood Castle and other Irish estates through private entities; no public philanthropy signal. ICIJ Offshore Leaks name-match NOT YET RUN.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "unspecified_future_land_trust",
+        "source_quote": "The Malones have indicated an intention that the land they own will enter a trust with the intention of being preserved forever as open space.",
+        "source_url": "https://landreport.com/john-malone-born-to-be-wired-excerpt",
+        "classification_note": "Statement of intent, no executed trust instrument publicly disclosed. Could be structured as a charitable trust, a dynastic family trust with conservation covenants, or transfer-to-existing Malone Family Land Preservation Foundation. Ultimate charitable outcome uncertain."
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Not on official pledgers list despite net worth >$10B for >25 years. Has publicly said most of his wealth will go to philanthropy but has made no binding commitment.",
+      "source_url": "https://givingpledge.org/pledgers"
+    },
+    {
+      "flag": "LOW_OBSERVABLE_VS_WEALTH",
+      "evidence": "Observable 2019-2024 foundation giving ~$60M across MFF + MFLPF (before even applying conservation-easement methodology haircut). At $11.1B net worth, that is ~0.5% over 6 years = 0.08%/yr run-rate. Pre-2019 lifetime giving is substantially larger ($150M+ to Yale/Hopkins/CSU/MMC/Greenland) but still a small share of accumulated wealth.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520"
+    },
+    {
+      "flag": "CONSERVATION_EASEMENT_RETAINED_USE",
+      "evidence": "Malone's $23M Greenland easement and his 600-acre Maryland farm easement preserve land that HE continues to own and use. Classic IRC § 170(h) tension: the public benefit is real (development rights extinguished) but the donor retains private enjoyment of the underlying asset. Flag is not an accusation — it's a methodology note that conservation-easement 'giving' is different in kind from cash grants to operating charities.",
+      "source_url": "https://www.irs.gov/pub/irs-soi/17resconlooney.pdf"
+    },
+    {
+      "flag": "MFLPF_LOW_PAYOUT_AS_PCT_ASSETS",
+      "evidence": "Malone Family Land Preservation Foundation 2024 disbursements $2.24M / $126.8M assets = 1.8%. Below 5% minimum for grantmaking foundations, though MFLPF may qualify as an operating foundation with different rules. Either way, <$2.3M/yr of publicly-visible charitable activity sits atop $127M in assets.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827"
+    }
+  ],
+  "red_flags_not_present": [
+    "HIGH_OFFICER_COMP (Malones themselves take zero comp from both foundations)",
+    "DAF_TRANSFERS (no DAF activity identified — not confirmed absent for MFF 2023)",
+    "POLITICAL_DOMINATES_CHARITABLE (political giving appears modest relative to charitable — preliminary)",
+    "FOR_PROFIT_PIVOT (no for-profit philanthropy-hybrid vehicle)",
+    "GIVING_PLEDGE_UNFULFILLED (never signed — different flag category: NO_GIVING_PLEDGE_SIGNATURE)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 290000000,
+    "observable_giving_method": "Sum: MFF 990-PF 2019-2024 ($55.96M) + MFLPF 990-PF 2019-2024 at HALF CREDIT ($11.87M × 0.5 = $5.94M; reflects that MFLPF disbursements are mostly land stewardship of privately-owned ranches) + Yale 2000 ($24M) + Yale 2011 ($50M) + Johns Hopkins 2011 ($30M) + Colorado State 2014 ($42.5M) + Hopkins School ~2018 ($60M, low confidence) + Maine Medical 2021 ($25M) + Greenland easement 2000 ($23M, counted at full but flagged) = ~$316M gross. Subtracting ~$25M potential double-count between pre-2019 direct gifts and MFF pre-2019 grants (not yet verified) yields ~$290M. Excludes: Maryland farm easement (no dollar); future land-trust intent.",
+    "observable_giving_todo": [
+      "Pull MFF 990-PF 2000-2018 to deduplicate Yale/Hopkins/CSU direct gifts against foundation grants-out.",
+      "Pull MFF 2023 990-PF Part XV to identify the ~$25M+ grant recipient; confirm not a DAF transfer.",
+      "Retrieve MFLPF asset origin — if assets are conservation-easement valuations on Malone-owned land vs. cash endowment, the 'half credit' haircut may need to go to zero or full credit depending on operating-foundation classification.",
+      "Appraised easement value for Maryland 600-acre farm (2007)."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 388500000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.35 × $11.1B = $3.885B; tenure cap saturated (26 years). Expected = $388.5M.",
+    "observable_ratio_to_expected": 0.747,
+    "observable_ratio_to_current_nw": 0.0261,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 25000000,
+      "daf_uplift_note": "MFF 2023's unexplained $25M+ disbursement spike is a candidate for a one-time DAF transfer. Not confirmed. If it went to a DAF, it should be excluded from observable giving until the DAF grants it out to operating charities.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 40000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: ~69% of older HNW donors give anonymously. Malone is famously private. Applying 1% of liquid wealth = $38.85M; rounded to $40M as cohort-median upper bound.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
+      "conservation_easement_uplift_usd": 500000000,
+      "conservation_easement_method": "If Malone's stated intent to 'preserve most of 2.2M acres forever' is executed via qualified IRC § 170(h) easements, the appraised easement values could reach $1-3B depending on per-acre development-rights valuations. Applying a ~50% probability of eventual execution × ~$1B midpoint = $500M upper envelope. Methodology caveat: easement values are notoriously inflated in IRS abuse literature; appraised values often exceed fair-market value by 4-10x (TCJA 2017 syndicated easement crackdown). We apply the $500M with an explicit FLAG that future IRS valuation haircut could reduce by 50-80%.",
+      "trust_outcome_uncertainty_usd": 1000000000,
+      "trust_outcome_method": "Malone has said 'most of my wealth will go to philanthropy' without a binding pledge. If he means it, upper bound is ~95% of current net worth = $10.5B. If it's rhetoric, it's zero. Set $1B envelope matching a 10-year disbursement from a plausible charitable remainder trust loaded with ~20% of current net worth. Flag: this coefficient needs defense before publication.",
+      "total_usd": 1565000000,
+      "total_method": "daf_uplift + anonymous_cohort + conservation_easement + trust_outcome"
+    },
+    "observable_plus_hidden_ratio_to_expected": 4.77,
+    "tier": "Unclear (Tier C)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Malone's observable ($290M) alone is 75% of expected ($388M); observable + hidden upper ($1.86B) is ~4.8x expected. He is neither a clear Scrooge nor a clear fulfilled giver. Observable is ~25% of 10% target (undershoot) BUT the sign of hidden uplift is strongly positive (large private land holdings with stated conservation intent; zero publicly announced political mega-giving; zero known offshore or DAF abuse).",
+    "tier_published_caveat": "Malone is the archetype of the 'low-key private giver with big stated intentions.' Unlike Ellison (signed pledge, massive wealth, clearly not tracking), Malone never signed a pledge, his wealth has been stable ($8-12B) for 25+ years, and he has given ~$290M observably plus invested $23M+ in Greenland and stated intent to conserve 2.2M acres. The key uncertainties: (a) will the land-trust intent be executed, and (b) at what appraised value. Without those, he's closer to Tier B 'Probably Mid' than A or D."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 68.0,
+    "components": {
+      "giving_gap_40pct": 10.1,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 20.0,
+      "no_pledge_signing_bonus_penalty": 17.9
+    },
+    "note": "v2 formula for continuity. Tenure saturated. No pledge-breach penalty (never signed). High red-flag penalty (4 flags). Giving gap is smaller than Ellison because observable/expected is 0.75 not 0.08. DO NOT PUBLISH — tiers only per PLAN.md."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Liberty Media chairman emeritus office (as of Jan 2026 transition) + Malone Family Foundation (malonefamilyfoundation.org) + Silver Spur Ranches media contact.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: FEC bulk pull filtered on John Malone + Colorado ZIP + Liberty Media employer — tighten political giving dollar total.",
+    "VERIFY: MFF 990-PF 2023 Part XV — identify the ~$25M+ grant recipient; confirm not a DAF transfer.",
+    "VERIFY: MFF 990-PF 2000-2018 to deduplicate Yale/Hopkins/CSU direct gifts against foundation grants.",
+    "VERIFY: MFLPF classification — operating foundation vs. grantmaking? Affects payout-rate flag and half-credit treatment.",
+    "VERIFY: Maryland 600-acre farm easement appraised value (2007) — land records / 8283 filings.",
+    "VERIFY: Hopkins School gift year and amount (Wikipedia-sourced only).",
+    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Malone (Warner Bros. Discovery, Liberty Media/Global/Broadband CIKs) — any stock gifts to foundations or charities not yet captured.",
+    "VERIFY: Bar Lazy Seven, JA Ranch, Silver Spur Operating Co — any additional conservation easements recorded in CO/WY/ME land records."
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/841408520", "retrieved_at": "2026-04-24", "used_for": "Malone Family Foundation 990-PF 2019-2024"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/481306827", "retrieved_at": "2026-04-24", "used_for": "Malone Family Land Preservation Foundation 990-PF 2019-2024"},
+    {"url": "https://en.wikipedia.org/wiki/John_C._Malone", "retrieved_at": "2026-04-24", "used_for": "Biographical data; major gifts (Yale, Hopkins, CSU); net worth history"},
+    {"url": "https://www.forbes.com/profile/john-malone/", "retrieved_at": "2026-04-24", "used_for": "Forbes 2026 net worth ($11.1B, rank 266) — fetch blocked, corroborated indirectly"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/john-c-malone/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg Billionaires ~$9.83B (fetch 403, value via downstream citations)"},
+    {"url": "https://news.yale.edu/2011/03/24/alumnus-john-malone-commits-50-million-yale-s-engineering-school", "retrieved_at": "2026-04-24", "used_for": "Yale 2011 $50M engineering gift"},
+    {"url": "https://source.colostate.edu/malone/", "retrieved_at": "2026-04-24", "used_for": "Colorado State University 2014 $42.5M gift"},
+    {"url": "https://www.mainehealth.org/news/2021/06/mmc-launches-150-m-capital-campaign-record-25-m-philanthropic-gift", "retrieved_at": "2026-04-24", "used_for": "Maine Medical Center 2021 $25M gift"},
+    {"url": "https://goco.org/news/releases/17700-acre-greenland-ranch-conservation-easement-transferred-to-the-colorado", "retrieved_at": "2026-04-24", "used_for": "Greenland Ranch 2000 conservation easement — $23M Malone contribution; 17,700 acres; 2020 transfer to CCALT"},
+    {"url": "https://landreport.com/john-malone-born-to-be-wired-excerpt", "retrieved_at": "2026-04-24", "used_for": "2.2M acres total; Silver Spur / Cow Creek Valley origin; stated intent re: future land trust"},
+    {"url": "https://www.thegentlemansjournal.com/article/john-malone-everything-need-know-americas-single-largest-land-owner/", "retrieved_at": "2026-04-24", "used_for": "Maryland 600-acre farm 2007 easement; broad land-holdings context"},
+    {"url": "https://malonefamilyfoundation.org/about/", "retrieved_at": "2026-04-24", "used_for": "MFF founding year 1997, Malone Scholars Program focus"},
+    {"url": "https://www.causeiq.com/organizations/the-malone-family-foundation,841408520/", "retrieved_at": "2026-04-24", "used_for": "MFF 2024 top recipients (Boothbay YMCA $2M; Global Down Syndrome Foundation $50K)"},
+    {"url": "https://givingpledge.org/pledgers", "retrieved_at": "2026-04-24", "used_for": "Absence of Malone from official Giving Pledge pledger list"},
+    {"url": "https://www.opensecrets.org/donor-lookup/results?name=John+Malone&order=desc&sort=D", "retrieved_at": "2026-04-24", "used_for": "Political giving disambiguation query (769 records — follow-up FEC pull required)"},
+    {"url": "https://www.irs.gov/pub/irs-soi/17resconlooney.pdf", "retrieved_at": "2026-04-24", "used_for": "IRC 170(h) conservation easement deduction methodology"},
+    {"url": "https://www.philanthropy.com/news/no-28-john-c-malone/", "retrieved_at": "2026-04-24", "used_for": "Chronicle of Philanthropy Philanthropy 50 entry — historical giving ranking"},
+    {"url": "https://www.insidephilanthropy.com/home/2015-1-7-meet-the-billionaire-with-the-most-land-and-plenty-of-conser-html", "retrieved_at": "2026-04-24", "used_for": "Inside Philanthropy conservation profile (fetch 404 — cited as reference only)"}
+  ]
+}

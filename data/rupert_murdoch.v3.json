@@ -1,0 +1,424 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire v3 record matching ellison reference. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual reference run — Rupert Murdoch",
+
+  "person": {
+    "name_display": "Rupert Murdoch",
+    "name_legal": "Keith Rupert Murdoch",
+    "dob_year": 1931,
+    "country_primary": "United States (naturalized 1985; born Australia)",
+    "wealth_source": "News Corp / Fox Corp founder and controlling shareholder via Murdoch Family Trust (Cruden Financial Services, sole trustee). 1999 divorce from Anna Torv converted a portion of holdings into the family trust; 2025 $3.3B settlement restructured beneficial interests.",
+    "years_as_billionaire_approx": 35
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 22.7,
+    "range_usd_billions": [20, 24],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 list shows Murdoch & family at ~$22.7B (rank #112). Bloomberg Billionaires Index and secondary aggregators show $20–24B. The 2025 succession settlement moved $3.3B out of Rupert's controlled pool: James, Elisabeth, and Prudence each received $1.1B and exited the trust's controlling stake. Forbes generally reports the family-combined figure, not Rupert-personal.",
+    "sources": [
+      {
+        "publisher": "Forbes 2026 World's Billionaires",
+        "url": "https://www.forbes.com/profile/rupert-murdoch/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 22.7,
+        "rank_on_list": 112,
+        "fetch_note": "Forbes profile page blocked to WebFetch in this environment; value triangulated from Scripps News Forbes 2026 summary and Bloomberg Billionaires Index."
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/keith-r-murdoch/",
+        "retrieved_at": "2026-04-24"
+      },
+      {
+        "publisher": "Scripps News — Forbes 2026 List recap",
+        "url": "https://www.scrippsnews.com/world/forbes-2026-worlds-billionaires-list-is-here-some-rankings-may-surprise-you",
+        "retrieved_at": "2026-04-24"
+      },
+      {
+        "publisher": "Wikipedia — Rupert Murdoch",
+        "url": "https://en.wikipedia.org/wiki/Rupert_Murdoch",
+        "retrieved_at": "2026-04-24"
+      }
+    ],
+    "liquidity_estimate_pct": 0.15,
+    "liquidity_notes": "Murdoch's wealth is concentrated in Fox Corp and News Corp equity held through the Murdoch Family Trust. Dual-class structure (trust owns ~14% economic / ~41% voting of News Corp) means divestment would move both stocks and threaten control — highly illiquid by design. Post-2025 settlement, Rupert personally controls a smaller beneficial share of the trust corpus (younger daughters Grace and Chloe retain one-third each; Lachlan controls voting). Apply 15% liquidity discount for immediate giving capacity, 40–50% for lifetime expected-giving denominator."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "murdoch_mcri_1984",
+      "event_role": "direct_gift",
+      "year": 1984,
+      "date_precision": "year",
+      "donor_entity": "Rupert Murdoch and family",
+      "recipient": "Birth Defects Research Institute, Royal Children's Hospital Melbourne (became Murdoch Institute for Research into Birth Defects, now Murdoch Children's Research Institute)",
+      "amount_usd": 4200000,
+      "amount_original_currency": "AUD 5,000,000",
+      "amount_note": "A$5M in 1984 ≈ US$4.2M at 1984 AUD/USD ≈ 0.88.",
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Murdoch_Children%27s_Research_Institute",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "attribution_note": "Described as 'Rupert Murdoch and his family' — in practice, Dame Elisabeth Murdoch (Rupert's mother) became patron and was the dominant philanthropic force. How much of the A$5M was Rupert personally vs. family/News Corp is not disclosed. Treated here as half attributable to Rupert."
+    },
+    {
+      "event_id": "murdoch_foundation_1996_2015",
+      "event_role": "grant_out",
+      "year_range": [1996, 2015],
+      "donor_entity": "The Murdoch Foundation Inc",
+      "donor_ein": "13-3756893",
+      "recipient": "Primarily Weill Cornell Medical School (pre-2008); zero grants 2008–2015",
+      "amount_usd": 6000000,
+      "amount_note": "Per Inside Philanthropy, the foundation distributed ~$6M in the three years preceding 2008. Public ProPublica records show $0 charitable disbursements 2011–2015 and near-zero asset base. Post-2015 the foundation dropped off the IRS tax-exempt list.",
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133756893",
+      "secondary_source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "The Inside Philanthropy $6M estimate covers ~2005–2007; ProPublica shows $0 grants 2011–2015. Combined figure ~$6M is a cumulative lifetime upper bound for Murdoch Foundation Inc (EIN 13-3756893). Officers listed as K Rupert Murdoch (Chair), Arthur Siskind, Elisabeth/James/Lachlan Murdoch, Prudence MacLeod — all zero comp."
+    },
+    {
+      "event_id": "murdoch_rick_warren_peace_2007",
+      "event_role": "direct_gift",
+      "year": 2007,
+      "date_precision": "year",
+      "donor_entity": "Rupert Murdoch (personal)",
+      "recipient": "Rick Warren's P.E.A.C.E. Coalition",
+      "amount_usd": 2000000,
+      "source_type": "secondary_press",
+      "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "dedup_note": "May be inside the Murdoch Foundation grant total — source does not specify vehicle. Counted once conservatively; if later found inside the $6M foundation bucket, subtract to avoid double-count."
+    },
+    {
+      "event_id": "murdoch_thatcher_chelsea_pensioners_2013",
+      "event_role": "direct_gift",
+      "year": 2013,
+      "donor_entity": "Rupert Murdoch (personal)",
+      "recipient": "Chelsea Pensioners Appeal (in memory of Margaret Thatcher)",
+      "amount_usd": 15000,
+      "source_type": "secondary_press",
+      "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "murdoch_tony_blair_faith_foundation",
+      "event_role": "direct_gift",
+      "year_range": [2010, 2015],
+      "donor_entity": "Rupert Murdoch (personal)",
+      "recipient": "Tony Blair Faith Foundation",
+      "amount_usd": 100000,
+      "source_type": "secondary_press",
+      "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low"
+    },
+    {
+      "event_id": "murdoch_milly_dowler_2011",
+      "event_role": "direct_gift",
+      "year": 2011,
+      "donor_entity": "Rupert Murdoch / News Corp (post phone-hacking scandal restitution)",
+      "recipient": "Charities chosen by Dowler family",
+      "amount_usd": 1000000,
+      "amount_original_currency": "GBP ~£1M",
+      "source_type": "secondary_press",
+      "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Sometimes characterized as News Corp / News International settlement, not personal giving. Press accounts vary; conservatively counted as half personal."
+    },
+    {
+      "event_id": "murdoch_bushfire_personal_2020",
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date_precision": "month",
+      "date": "2020-01",
+      "donor_entity": "Rupert Murdoch and Jerry Hall (personal)",
+      "recipient": "Australian bushfire relief (unspecified recipients)",
+      "amount_usd": 1400000,
+      "amount_original_currency": "AUD 2,000,000",
+      "source_type": "news",
+      "source_url": "https://www.smh.com.au/business/companies/rupert-murdoch-s-news-corp-pledges-5-million-to-bushfire-relief-20200114-p53rag.html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Separate from News Corp's own A$5M corporate pledge. Rupert + Jerry personal is A$2M ≈ US$1.4M at Jan-2020 rates."
+    },
+    {
+      "event_id": "murdoch_herald_sun_2024_pledge",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "donor_entity": "Rupert Murdoch / Herald Sun",
+      "recipient": "Australian community charities (Herald Sun appeal)",
+      "amount_usd": 200000,
+      "amount_original_currency": "AUD ~300,000",
+      "source_type": "social_media_post",
+      "source_url": "https://www.linkedin.com/posts/heraldsun_rupert-murdoch-herald-sun-donate-300k-to-activity-7273456696356696065-nBt3",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "dedup_note": "May be corporate Herald Sun giving rather than Rupert personal. Counted at 50% attribution."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "murdoch_giving_pledge_NOT_SIGNED",
+      "event_role": "pledge_absence_verified",
+      "status": "NOT_SIGNED",
+      "source_url": "https://www.givingpledge.org/signatories",
+      "retrieved_at": "2026-04-24",
+      "notes": "Verified: Rupert Murdoch is NOT listed as a Giving Pledge signatory. No Murdoch family member on the current pledger roster. This is consistent with Forbes assigning Murdoch their lowest possible philanthropy score (1/5).",
+      "secondary_source_url": "https://www.insidephilanthropy.com/home/will-philanthropy-get-a-cut-of-the-3-3-billion-murdoch-succession-deal"
+    },
+    {
+      "event_id": "murdoch_succession_settlement_2025",
+      "event_role": "trust_restructuring_not_charity",
+      "year": 2025,
+      "date_precision": "day",
+      "date": "2025-09-08",
+      "amount_usd": 3300000000,
+      "recipient": "Siblings James, Elisabeth, Prudence ($1.1B each)",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/09/08/rupert-murdoch-settlement-trust-lachlan-james-fox-news-wall-street-journal/",
+      "retrieved_at": "2026-04-24",
+      "classification_note": "This is an intra-family wealth transfer to settle a trust-control lawsuit, NOT charitable giving. Included here for context because Inside Philanthropy has suggested the payouts may boost downstream family philanthropy (James/Kathryn Quadrivium has a precedent of redeploying such proceeds). Rupert's personal philanthropy was not altered by the deal. NOT counted in observable giving."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_MODERATE",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33/$1. Note: News Corp / Fox Corp editorial influence is arguably the larger political vehicle here but is not tallied as personal political spending.",
+    "observed_personal_lifetime_total_usd": 3500000,
+    "observed_total_note": "OpenSecrets: ~$750K federal since 1990 (80% Republican). Plus $1M California GOP 1996. Plus $2M Senate Leadership Fund October 2024. Plus smaller cycle contributions. Total personal lifetime federal + major state: ~$3.5M through 2025. This is modest by UHNW standards — his son James alone spent $100M in the 2020 cycle via Quadrivium-linked vehicles. Rupert's institutional political influence runs through News Corp/Fox editorial, not personal checks.",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000330&name=Murdoch,+K.+Rupert&super_only=N&type=I",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "note": "K. Rupert Murdoch donor detail page"
+      },
+      {
+        "url": "https://deadline.com/2024/01/biden-trump-donors-jeffrey-katzenberg-rupert-murdoch-1235810650/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Deadline",
+        "amount_usd": 2000000,
+        "event_date": "2024-10",
+        "recipient": "Senate Leadership Fund"
+      },
+      {
+        "url": "https://www.latimes.com/archives/la-xpm-1996-10-26-mn-58068-story.html",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Los Angeles Times",
+        "amount_usd": 1000000,
+        "event_date": "1996",
+        "recipient": "California Republican Party"
+      },
+      {
+        "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=Rupert+Murdoch",
+        "retrieved_at": "2026-04-24",
+        "publisher": "FEC (direct individual contribution query)"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [],
+    "foundations_dormant": [
+      {
+        "name": "The Murdoch Foundation Inc",
+        "ein": "13-3756893",
+        "state": "NY",
+        "status": "DORMANT — dropped from IRS tax-exempt list post-2015",
+        "established_year_approx": "pre-1996",
+        "last_active_year": 2008,
+        "latest_990pf_year": 2015,
+        "assets_usd_latest": 0,
+        "grants_paid_2011_2015_usd": 0,
+        "grants_paid_pre_2008_usd": 6000000,
+        "grants_note": "Per Inside Philanthropy, foundation distributed ~$6M in the three years preceding 2008, >50% to Weill Cornell Medical School. Filed $0 grants 2011, 2012, 2013, 2014, 2015. Revenue in those years ranged from $1 to $258.",
+        "officers": ["K Rupert Murdoch (Chair & President — $0 comp)", "Arthur Siskind (Sec/Dir)", "Elisabeth Murdoch (Dir)", "James R Murdoch (Dir)", "Lachlan K Murdoch (Dir)", "Prudence MacLeod (Dir)"],
+        "payout_rate_notes": "No payout for a decade-plus. Effectively a defunct shell.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/133756893"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified. Absence-of-evidence only — DAFs are donor-opaque.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC identified for Rupert personally. Family philanthropic LLCs belong to other relatives (James/Kathryn's Quadrivium Foundation is a 501(c)(3), EIN 45-3536976 — NOT Rupert's vehicle and NOT credited to him).",
+    "corporate_vehicles_not_personal": [
+      {
+        "name": "News Corp Foundation / News Corp philanthropy partners",
+        "examples_usd": {
+          "motion_picture_television_fund_foundation_year_range": "2012-era $20M gift",
+          "hurricane_sandy_relief_2012": 1000000,
+          "news_corp_bushfire_pledge_2020_aud": 5000000
+        },
+        "classification_note": "Corporate giving from a publicly held media company. NOT counted as Rupert Murdoch's personal philanthropy under Forbes/IPS methodology — these are shareholder-funded corporate grants, not personal-wealth deployments.",
+        "source_url": "https://www.philanthropy.com/article/rupert-murdochs-firm-gives-20-million-to-hollywood-charity/"
+      },
+      {
+        "name": "Fox Corporation charitable giving",
+        "classification_note": "Same treatment as News Corp — corporate, not personal. No direct personal attribution.",
+        "source_url": "https://www.cnbc.com/2021/07/15/fox-news-owner-donates-to-joe-manchins-campaign.html"
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. The Murdoch Family Trust itself is a Nevada trust (not offshore), extensively litigated and therefore partially documented.",
+    "trusts_disclosed": [
+      {
+        "name": "Murdoch Family Trust (MFT) — 'In the Matter of the Doe 1 Trust'",
+        "jurisdiction": "Nevada",
+        "established_year": 1999,
+        "trustee": "Cruden Financial Services (sole trustee)",
+        "structure_note": "Six-director board: four older children each appoint one director (one vote), Rupert appoints two directors (two votes each). Chloe and Grace (younger daughters) are non-voting beneficiaries entitled to one-third of trust assets upon turning 30. Dual-class News Corp shares held: ~14% economic, ~41% voting.",
+        "classification_note": "This is a WEALTH-CONTROL trust, not a charitable trust. Nevada 'bad faith' ruling (Judge Gorman, 9 December 2024) and $3.3B settlement (8 September 2025) are about succession, not philanthropy. No public evidence of charitable remainder or charitable-lead structure.",
+        "source_url": "https://en.wikipedia.org/wiki/Succession_of_Rupert_Murdoch",
+        "secondary_source_url": "https://www.npr.org/2024/12/10/nx-s1-5222866/rupert-murdoch-loses-courtroom-attempt-to-change-the-family-trust"
+      }
+    ],
+    "board_affiliations_non_financial": [
+      {
+        "institution": "Hoover Institution (Stanford) — Board of Overseers",
+        "role": "Overseer",
+        "financial_commitment_disclosed": "UNKNOWN",
+        "source_url": "https://www.hoover.org/about/who-we-are/overseers",
+        "classification_note": "Overseer roles often involve expected gifts but amounts are not disclosed. Included under hidden_upper.anonymous_cohort estimate, not observable."
+      },
+      {
+        "institution": "Ronald Reagan Presidential Foundation (board member per secondary sources)",
+        "source_url": "https://www.quora.com/Has-Rupert-Murdoch-done-anything-good-as-in-charities-or-conservation-projects",
+        "confidence": "low"
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Rupert Murdoch has not signed the Giving Pledge despite being one of the ~200 longest-tenured US+AUS billionaires. Verified against current givingpledge.org signatory roster.",
+      "source_url": "https://www.givingpledge.org/signatories"
+    },
+    {
+      "flag": "DORMANT_FOUNDATION",
+      "evidence": "The Murdoch Foundation Inc (EIN 13-3756893) has paid $0 in grants from 2008 onward through its last public 990-PF (2015), and subsequently dropped from the IRS tax-exempt list. Rupert remains Chair & President on record.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133756893"
+    },
+    {
+      "flag": "FORBES_LOWEST_PHILANTHROPY_SCORE",
+      "evidence": "Forbes assigns Murdoch a 1/5 philanthropy score — the lowest possible — for his personal giving record across net worth, percentage given, pledge status, and foundation activity. Inside Philanthropy has repeatedly characterized him as 'Scrooge-like'.",
+      "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html"
+    },
+    {
+      "flag": "CORPORATE_PHILANTHROPY_MASKS_PERSONAL",
+      "evidence": "Public-facing philanthropy (Motion Picture & Television Fund $20M, Murdoch Community Hero Awards, News Corp bushfire pledge) is corporate News Corp/Fox spending — shareholder-funded, not Rupert's personal wealth deployment. The optics of a giving empire obscure negligible personal giving.",
+      "source_url": "https://www.politico.com/media/story/2014/04/news-corp-burnishes-its-image-with-philanthropic-push-001985/"
+    },
+    {
+      "flag": "TRUST_STRUCTURE_NON_CHARITABLE",
+      "evidence": "The Murdoch Family Trust — the primary vehicle holding Rupert's wealth — is a succession/control trust, not a charitable lead or remainder trust. The 2024 Nevada case and 2025 $3.3B settlement confirm the trust's purpose is intergenerational control of Fox/News Corp, not charitable disposition.",
+      "source_url": "https://en.wikipedia.org/wiki/Succession_of_Rupert_Murdoch"
+    }
+  ],
+  "red_flags_not_present": [
+    "HIGH_OFFICER_COMP (Murdoch Foundation 990s show zero compensation for all officers including Rupert)",
+    "LOW_PAYOUT (technically the foundation is at 0% payout, but it's de-facto dormant with near-zero assets — not a live foundation hoarding assets)",
+    "DAF_TRANSFERS (no DAF activity identified — no grants at all)",
+    "POLITICAL_DOMINATES_CHARITABLE (his $3.5M lifetime personal political giving is modest; the much larger political footprint runs through News Corp/Fox editorial)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 8000000,
+    "observable_giving_method": "Sum of attributable-to-Rupert personal events: MCRI 1984 (~$2.1M, half attribution of A$5M family gift), Murdoch Foundation lifetime through 2008 (~$6M upper bound, possibly partly inside-family), Rick Warren P.E.A.C.E. $2M (risk of being inside the foundation bucket — dedup to avoid double count), Chelsea Pensioners $15K, Tony Blair Faith Foundation $100K, Milly Dowler $500K (half-attributed — settlement-flavored), bushfire relief $1.4M, Herald Sun 2024 $100K (half-attributed). Conservative cumulative ≈ $8M lifetime. Excludes: News Corp/Fox corporate giving (not personal); political giving; succession settlement (not charity).",
+    "observable_giving_lifetime_caveat": "This is a LIFETIME-to-date number against ~35 years as a billionaire. Larry Ellison's $467M figure is 2019–2024 foundation output alone — apples-to-oranges. Murdoch's personal observable giving at ~$8M lifetime is roughly 0.04% of current net worth and is materially lower on a %-of-wealth basis than nearly every documented US billionaire we have measured.",
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 340500000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1). liquid_wealth = 0.15 × $22.7B = $3.405B. Tenure cap saturated (35 years). Expected ≈ $340.5M. Stricter 10% formal norm.",
+    "observable_ratio_to_expected": 0.0235,
+    "observable_ratio_to_current_nw": 0.000352,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 15000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Murdoch has a Hoover Overseer board seat and Reagan Foundation affiliation with plausible but undisclosed gifts. We model an anonymous cohort uplift of ~0.4% of liquid_wealth = $15M as a generous upper bound. Even at this uplift, total observable+hidden < 7% of the 10% expected norm.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Rick Warren P.E.A.C.E. $2M gift suggests some evangelical-adjacent giving, but no pattern of tithing. Zero.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "Unlike Ellison, Murdoch has NO disclosed charitable-intent trust. The Murdoch Family Trust is explicitly a succession/control vehicle; the 2025 settlement confirms it distributes to heirs, not charity. No trust-outcome uncertainty to model.",
+      "news_corp_corporate_note": "News Corp Foundation / Fox Corp corporate giving is excluded from hidden upper — it is shareholder-funded and not attributable to Rupert personally. Including it would double-count public-company dollars.",
+      "total_usd": 15000000,
+      "total_method": "anonymous_cohort only (all other buckets zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.0676,
+    "tier": "Verified_Low (Tier A)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Murdoch: ($8M + $15M) / $340.5M = 6.76% — well below 0.2 threshold. Unlike Ellison, he has no Giving Pledge commitment, no disclosed charitable trust, and no philanthropic LLC that would force us up to 'Probably Low'. The evidence is consistent and convergent: Forbes' lowest philanthropy score, a dormant foundation, no pledge, no announced major gifts in 20+ years. This is a canonical Tier A Verified Low case.",
+    "tier_published_caveat": "Readers should see Murdoch as the canonical counterexample to the 'billionaires quietly give a lot' narrative: his personal philanthropy is vanishingly small in both absolute and percentage terms, his foundation is dormant, and he has declined the Giving Pledge. The large News Corp/Fox corporate giving footprint is not his personal wealth. The $3.3B 2025 settlement moved $1.1B into each of three children's hands — family downstream giving (especially Quadrivium) may grow, but that is not Rupert's giving."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 99.6,
+    "components": {
+      "giving_gap_40pct": 39.9,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 20.0,
+      "extra_penalty_no_pledge_plus_dormant_foundation": 19.7
+    },
+    "note": "No pledge breach (he never signed). Maximum tenure penalty (35 years). Near-maximum giving gap (observable 0.035% of NW). 5 red flags. Computed for internal continuity. DO NOT PUBLISH this number — publish tiers only per PLAN.md."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "News Corp Corporate Communications + Fox Corporation Corporate Communications + Cruden Financial Services (trustee) — all three to raise visibility and document delivery. Copy to Lachlan Murdoch's office given his post-settlement control role.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Pull Murdoch Foundation (EIN 13-3756893) 990-PFs for 1996–2010 window to confirm $6M lifetime grants figure. ProPublica currently surfaces 2011–2015 only.",
+    "VERIFY: FEC bulk pull against K. Rupert Murdoch to confirm or refine $3.5M lifetime personal federal political giving.",
+    "VERIFY: Check Australian Charities and Not-for-profits Commission (ACNC) for any Murdoch-linked charitable trust registered in Australia beyond MCRI.",
+    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2. Family trust is Nevada, but business structure spans multiple jurisdictions.",
+    "VERIFY: Confirm whether the 2025 settlement terms include any charitable side letters or philanthropic obligations — Inside Philanthropy speculates but does not confirm.",
+    "VERIFY: Check Weill Cornell Medical School gift records for named Murdoch chair/fund to confirm the pre-2008 foundation giving destination.",
+    "VERIFY: MCRI (Murdoch Children's Research Institute) annual reports for any subsequent Rupert-personal gifts beyond the 1984 founding donation."
+  ],
+
+  "sources_all": [
+    {"url": "https://www.forbes.com/profile/rupert-murdoch/", "retrieved_at": "2026-04-24", "used_for": "Forbes 2026 rank 112 and net worth ~$22.7B (triangulated; direct fetch blocked)"},
+    {"url": "https://www.scrippsnews.com/world/forbes-2026-worlds-billionaires-list-is-here-some-rankings-may-surprise-you", "retrieved_at": "2026-04-24", "used_for": "Forbes 2026 list ranking confirmation"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/keith-r-murdoch/", "retrieved_at": "2026-04-24", "used_for": "Net worth corroboration"},
+    {"url": "https://en.wikipedia.org/wiki/Rupert_Murdoch", "retrieved_at": "2026-04-24", "used_for": "Biographical, business holdings, wealth source"},
+    {"url": "https://en.wikipedia.org/wiki/Succession_of_Rupert_Murdoch", "retrieved_at": "2026-04-24", "used_for": "Murdoch Family Trust structure, Nevada court case, $3.3B settlement terms, Judge Gorman bad-faith ruling"},
+    {"url": "https://en.wikipedia.org/wiki/Murdoch_Children%27s_Research_Institute", "retrieved_at": "2026-04-24", "used_for": "1984 A$5M founding donation; Dame Elisabeth Murdoch patronage"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/133756893", "retrieved_at": "2026-04-24", "used_for": "Murdoch Foundation Inc 990-PF data 2011-2015 — zero grants, zero assets, officers list"},
+    {"url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html", "retrieved_at": "2026-04-24", "used_for": "Inactive foundation, ~$6M pre-2008 grants majority Weill Cornell, $15K Chelsea Pensioners, $100K Blair Faith, $1M Dowler, $2M Rick Warren, Forbes 1/5 score"},
+    {"url": "https://www.insidephilanthropy.com/home/will-philanthropy-get-a-cut-of-the-3-3-billion-murdoch-succession-deal", "retrieved_at": "2026-04-24", "used_for": "Post-settlement family philanthropy outlook; Rupert personal forecast 'probably not much'"},
+    {"url": "https://www.insidephilanthropy.com/home/2014-12-18-rupert-murdoch-and-philanthropy-will-a-legendary-scrooge-cha-html", "retrieved_at": "2026-04-24", "used_for": "Historical Scrooge characterization"},
+    {"url": "https://fortune.com/2025/09/08/rupert-murdoch-settlement-trust-lachlan-james-fox-news-wall-street-journal/", "retrieved_at": "2026-04-24", "used_for": "$3.3B settlement September 8 2025"},
+    {"url": "https://www.npr.org/2024/12/10/nx-s1-5222866/rupert-murdoch-loses-courtroom-attempt-to-change-the-family-trust", "retrieved_at": "2026-04-24", "used_for": "Nevada 'bad faith' ruling December 9 2024"},
+    {"url": "https://www.cnn.com/2024/12/09/media/robert-murdoch-family-trust", "retrieved_at": "2026-04-24", "used_for": "Nevada court ruling corroboration"},
+    {"url": "https://deadline.com/2024/12/murdoch-succession-battle-latest-1236086919/", "retrieved_at": "2026-04-24", "used_for": "Gorman ruling context"},
+    {"url": "https://www.lexology.com/library/detail.aspx?g=2fbef6fa-dd04-4d12-92f1-95b8b590d4bb", "retrieved_at": "2026-04-24", "used_for": "Nevada Supreme Court December 2025 unsealing"},
+    {"url": "https://www.givingpledge.org/signatories", "retrieved_at": "2026-04-24", "used_for": "VERIFIED absence of Rupert Murdoch from pledger list"},
+    {"url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000330&name=Murdoch,+K.+Rupert&super_only=N&type=I", "retrieved_at": "2026-04-24", "used_for": "OpenSecrets K. Rupert Murdoch donor detail"},
+    {"url": "https://deadline.com/2024/01/biden-trump-donors-jeffrey-katzenberg-rupert-murdoch-1235810650/", "retrieved_at": "2026-04-24", "used_for": "$2M Senate Leadership Fund October 2024"},
+    {"url": "https://www.latimes.com/archives/la-xpm-1996-10-26-mn-58068-story.html", "retrieved_at": "2026-04-24", "used_for": "$1M California Republican Party 1996"},
+    {"url": "https://www.philanthropy.com/article/rupert-murdochs-firm-gives-20-million-to-hollywood-charity/", "retrieved_at": "2026-04-24", "used_for": "News Corp $20M Motion Picture & Television Fund — corporate not personal"},
+    {"url": "https://www.politico.com/media/story/2014/04/news-corp-burnishes-its-image-with-philanthropic-push-001985/", "retrieved_at": "2026-04-24", "used_for": "Murdoch Community Hero Awards — corporate News Corp philanthropy program"},
+    {"url": "https://www.smh.com.au/business/companies/rupert-murdoch-s-news-corp-pledges-5-million-to-bushfire-relief-20200114-p53rag.html", "retrieved_at": "2026-04-24", "used_for": "2020 bushfire: Rupert + Jerry personal A$2M; News Corp corporate A$5M"},
+    {"url": "https://www.linkedin.com/posts/heraldsun_rupert-murdoch-herald-sun-donate-300k-to-activity-7273456696356696065-nBt3", "retrieved_at": "2026-04-24", "used_for": "Herald Sun A$300K 2024 charity appeal (mostly corporate attribution)"},
+    {"url": "https://www.cnbc.com/2021/06/08/james-murdoch-spent-100-million-to-fund-political-causes-during-2020-election.html", "retrieved_at": "2026-04-24", "used_for": "Distinguishing James Murdoch/Quadrivium from Rupert personally"},
+    {"url": "https://www.hoover.org/about/who-we-are/overseers", "retrieved_at": "2026-04-24", "used_for": "Hoover Institution Overseer board seat"},
+    {"url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=Rupert+Murdoch", "retrieved_at": "2026-04-24", "used_for": "FEC individual contributions base URL for verification todo"}
+  ]
+}

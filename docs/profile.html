@@ -125,6 +125,22 @@ a:hover{background:rgba(139,46,31,.08)}
 .todo-list li{margin-bottom:6px;font-size:.92rem}
 .todo-list li::marker{color:var(--gilt)}
 
+.cibar{margin:10px 0 32px;font-family:var(--display)}
+.cibar-legend{display:flex;gap:20px;flex-wrap:wrap;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:10px;font-variation-settings:"opsz" 9,"SOFT" 50}
+.cibar-legend .sw{display:inline-block;width:14px;height:12px;vertical-align:middle;margin-right:6px}
+.cibar-legend .sw.obs{background:var(--rust)}
+.cibar-legend .sw.hidden{background:repeating-linear-gradient(45deg,rgba(139,46,31,.2) 0 4px,transparent 4px 8px);border:1px dashed var(--rust)}
+.cibar-legend .sw.cap{border:2px dashed var(--gilt);background:transparent}
+.cibar-track{position:relative;height:34px;background:var(--paper-mid);border:1px solid var(--paper-shadow);overflow:hidden}
+.cibar-track .obs{position:absolute;left:0;top:0;bottom:0;background:var(--rust);transition:width .6s ease}
+.cibar-track .hidden{position:absolute;left:0;top:0;bottom:0;background:repeating-linear-gradient(45deg,rgba(139,46,31,.18) 0 4px,transparent 4px 8px);transition:width .6s ease}
+[data-theme="dark"] .cibar-track .hidden{background:repeating-linear-gradient(45deg,rgba(209,74,50,.28) 0 4px,transparent 4px 8px)}
+.cibar-track .tick{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--gilt)}
+.cibar-track .tick.cap{background:var(--gilt);width:2px}
+.cibar-track .tick.tier-a{background:var(--ink-ghost)}
+.cibar-track .tick-label{position:absolute;top:100%;margin-top:4px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-fade);transform:translateX(-50%);white-space:nowrap}
+.cibar-caption{margin-top:36px;font-size:.88rem;color:var(--ink-soft);font-style:italic;line-height:1.55}
+
 .colophon{text-align:center;padding-top:32px;margin-top:48px;border-top:2px solid var(--rule);position:relative}
 .colophon::before{content:"";display:block;position:absolute;top:3px;left:0;right:0;height:1px;background:var(--rule)}
 .col-line{font-family:var(--display);font-size:.8rem;letter-spacing:.06em;color:var(--ink-fade);margin:14px 0 4px}
@@ -253,6 +269,35 @@ function render(rec) {
       </div>
     </div>
   `;
+
+  // Confidence-interval bar — Observable | Hidden upper | Capacity
+  const hiddenUpper = ((rollup.hidden_upper_usd || {}).total_usd) || 0;
+  if (expected > 0) {
+    // Scale: benchmark (expected) sits at 100. Show up to 120 for overshoot.
+    const obsPct = Math.min(100, (observable / expected) * 100);
+    const totalPct = Math.min(140, ((observable + hiddenUpper) / expected) * 100);
+    const hiddenPct = Math.max(0, totalPct - obsPct);
+    const trackMax = Math.max(120, totalPct + 5);
+    const obsWidth = (obsPct / trackMax) * 100;
+    const totalWidth = (totalPct / trackMax) * 100;
+    const capPos = (100 / trackMax) * 100;
+    const tierAPos = (20 / trackMax) * 100;
+
+    html += `<div class="cibar">
+      <div class="cibar-legend">
+        <span><span class="sw obs"></span>Observable</span>
+        <span><span class="sw hidden"></span>Hidden upper bound</span>
+        <span><span class="sw cap"></span>Capacity (10% of liquid)</span>
+      </div>
+      <div class="cibar-track" title="${obsPct.toFixed(1)}% observable, +${hiddenPct.toFixed(1)}% hidden upper, vs 100% capacity">
+        <div class="hidden" style="width:${totalWidth}%"></div>
+        <div class="obs" style="width:${obsWidth}%"></div>
+        <div class="tick tier-a" style="left:${tierAPos}%"><span class="tick-label" style="left:${tierAPos}%">20% · Tier A threshold</span></div>
+        <div class="tick cap" style="left:${capPos}%"><span class="tick-label" style="left:${capPos}%">100% · Capacity</span></div>
+      </div>
+      <p class="cibar-caption">Observable giving equals <strong>${fmtRatio(ratio)}</strong> of the 10%-of-liquid-wealth capacity benchmark (${fmtUsd(expected)}). Hidden upper bound adds ${fmtUsd(hiddenUpper)} — the maximum we think could plausibly be flowing through opaque vehicles without contradicting public evidence.</p>
+    </div>`;
+  }
 
   if (rollup.tier_reasoning || rollup.tier_published_caveat) {
     html += `<div class="callout ${tierInfo.cls === 'ontrack' ? 'green' : ''}">
