@@ -3,7 +3,12 @@
 Output of `python3 check_urls.py --timeout 6 --workers 12` run against all 51
 records. Full log archived at commit time; classification below.
 
-**Summary: 983 / 1224 unique URLs live (80%).**
+**Summary: 1022 / 1224 unique URLs live (83.5%) after re-run with Safari UA.**
+
+Initial run under `ScroogeListURLCheck/1.0` UA showed 80.3% live (241 dead).
+Re-run under `Mozilla/5.0 ... Safari/605.1.15` UA showed 83.5% live
+(202 dead) — the delta is bot-blocking, not rotted content. The 17 × 404
+results are consistent across both runs and represent the triage set below.
 
 | Status | Count | Meaning | Action |
 |---|---|---|---|
@@ -72,9 +77,28 @@ Drop from `sources_all` unless a specific verified article replacement exists.
 18. `opb.org/article/2025/12/16/oregon-phil-penny-knight-donation-ohsu-tops-charitable-list/` — Phil Knight. Dec 2025 article; may have been renamed.
 19. `strivetogether.org/news/ballmer-group-pledges-60-million-strivetogether/` — Steve Ballmer. Plausible but unresolvable.
 
+## Current enforcement
+
+Every record with one of the 19 URLs has been annotated with
+`source_verification_status: "dead_link_<reason>"`. The validator
+(`validate_v3.py`) now errors on any source flagged `likely_fabricated`
+and warns on any `dead_link_*` — so **`python3 validate_v3.py` will
+exit non-zero until these are resolved**, which acts as the pre-publish
+gate.
+
+Three dollar-bearing events cite `likely_fabricated` URLs and are blocking:
+
+- **Henry Kravis** $75M direct_gift_announced — CMC URL not found
+- **Jeff Bezos** $106M grant_out — safehaven.org URL not found
+- **Stanley Druckenmiller** $100M direct_gift — InsidePhilanthropy URL not found
+
+Total value of events at risk: ~$281M.
+
 ## Recommended action (before publish)
 
-1. Drop items 1–6 (fabricated / should-not-have-been-cited) from `sources_all`.
-2. Fix the 7 InsidePhilanthropy slugs (`-html` → `.html`), re-check.
-3. Spot-check items 7–19 manually via archive.org; keep if recoverable, drop if not.
-4. Re-run `check_urls.py` to confirm the error rate drops below 5%.
+1. Replace the source URL for each of the 3 dollar-bearing events with a
+   verifiable citation, or remove the event entirely.
+2. For the 7 InsidePhilanthropy URLs in `sources_all` (bibliography),
+   drop or replace — these are the most likely fabrications.
+3. Spot-check the `rotted` URLs via archive.org for recovery.
+4. Re-run `check_urls.py` and `validate_v3.py` until both are clean.

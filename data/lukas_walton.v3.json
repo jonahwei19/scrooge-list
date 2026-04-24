@@ -2,25 +2,26 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run — single-subject deep research (Lukas Walton)",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Lukas Walton)",
   "person": {
     "name_display": "Lukas Walton",
     "name_legal": "Lukas Tiberias Walton",
     "dob_year": 1986,
     "dob_date": "1986-09-19",
     "country_primary": "United States",
-    "wealth_source": "Walmart Inc. — third-generation heir; grandson of founder Sam Walton; only child of John T. Walton (died 2005 plane crash) and Christy Walton. Inherited the bulk of his father's estate (approximately one-third per some sources; 'biggest beneficiary' per Bloomberg court-document analysis). Holds ~3.7% Walmart stake. Also founded S2G Ventures (2014, food/ag impact VC; spun out as RIA May 2024) and serves as Executive Chairman/Founder of Builders Vision, his family office/impact platform managing ~$15B across venture capital, philanthropy (Builders Initiative), and sustainable asset management (Builders Asset Management).",
+    "wealth_source": "Walmart Inc. \u2014 third-generation heir; grandson of founder Sam Walton; only child of John T. Walton (died 2005 plane crash) and Christy Walton. Inherited the bulk of his father's estate (approximately one-third per some sources; 'biggest beneficiary' per Bloomberg court-document analysis). Holds ~3.7% Walmart stake. Also founded S2G Ventures (2014, food/ag impact VC; spun out as RIA May 2024) and serves as Executive Chairman/Founder of Builders Vision, his family office/impact platform managing ~$15B across venture capital, philanthropy (Builders Initiative), and sustainable asset management (Builders Asset Management).",
     "years_as_billionaire_approx": 20,
     "residence": "Jackson, WY + Chicago, IL",
     "spouse": "Samantha Baiz Walton (co-founder of Builders Vision; listed as co-president of Builders Initiative in Wikipedia; Bruce McNamer hired as President in late 2019)"
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 40,
-    "range_usd_billions": [35, 51],
+    "range_usd_billions": [
+      35,
+      51
+    ],
     "as_of": "2026-04",
-    "range_note": "Forbes Sept 2025 estimated $41.5B. 24/7 Wall St Feb 2026 reports Walton family net worth surge of $50B in early 2026, with Lukas's share variously reported $39-51B. Illinois-billionaires 2026 list pegs him at $39.46B. TIME 100 Climate 2025 cited ~$40B. Forbes Oct 2025 cited ~$38B. Forbes April 2025 $38B. Walmart stock run-up through 2025-2026 is primary driver. Using $40B as central estimate consistent with TIME 100 Climate 2025 and mid-point of the range. Peers in family: Rob $143B, Jim ~$132B, Alice $134B — Lukas is smaller because his stake is ~3.7% of Walmart vs the larger family-bloc holdings of Sam Walton's own children.",
+    "range_note": "Forbes Sept 2025 estimated $41.5B. 24/7 Wall St Feb 2026 reports Walton family net worth surge of $50B in early 2026, with Lukas's share variously reported $39-51B. Illinois-billionaires 2026 list pegs him at $39.46B. TIME 100 Climate 2025 cited ~$40B. Forbes Oct 2025 cited ~$38B. Forbes April 2025 $38B. Walmart stock run-up through 2025-2026 is primary driver. Using $40B as central estimate consistent with TIME 100 Climate 2025 and mid-point of the range. Peers in family: Rob $143B, Jim ~$132B, Alice $134B \u2014 Lukas is smaller because his stake is ~3.7% of Walmart vs the larger family-bloc holdings of Sam Walton's own children.",
     "sources": [
       {
         "publisher": "TIME 100 Climate Leaders 2025",
@@ -58,9 +59,8 @@
       }
     ],
     "liquidity_estimate_pct": 0.25,
-    "liquidity_notes": "Wealth concentrated in Walmart stock (inherited ~3.7% stake) plus Builders Vision ($15B impact-aligned capital, ~$1B+ of which is Builders Initiative endowment explicitly mission-related). Slightly higher liquidity than his older aunts/uncles (20% for Rob/Alice) because (a) Lukas has already moved significant capital OUT of the family Walmart bloc into Builders Vision investments, (b) he is not an operational Walmart executive, (c) 90% of the Builders Initiative endowment is mission-related investments per PND 2024. Apply 25% liquidity discount — between Ellison (25% for concentrated-public-stock) and the older Waltons (20% for family-control bloc)."
+    "liquidity_notes": "Wealth concentrated in Walmart stock (inherited ~3.7% stake) plus Builders Vision ($15B impact-aligned capital, ~$1B+ of which is Builders Initiative endowment explicitly mission-related). Slightly higher liquidity than his older aunts/uncles (20% for Rob/Alice) because (a) Lukas has already moved significant capital OUT of the family Walmart bloc into Builders Vision investments, (b) he is not an operational Walmart executive, (c) 90% of the Builders Initiative endowment is mission-related investments per PND 2024. Apply 25% liquidity discount \u2014 between Ellison (25% for concentrated-public-stock) and the older Waltons (20% for family-control bloc)."
   },
-
   "cited_events": [
     {
       "event_id": "builders_initiative_2024",
@@ -75,7 +75,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/821503941",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "100% attributable to Lukas Walton — his personal grantmaking vehicle. Zero officer compensation (Lukas, Bruce McNamer, Lisa Forbes all $0 at the foundation level)."
+      "notes": "100% attributable to Lukas Walton \u2014 his personal grantmaking vehicle. Zero officer compensation (Lukas, Bruce McNamer, Lisa Forbes all $0 at the foundation level)."
     },
     {
       "event_id": "builders_initiative_2023",
@@ -84,7 +84,7 @@
       "donor_entity": "Builders Initiative Inc",
       "donor_ein": "82-1503941",
       "amount_usd": 83945645,
-      "amount_usd_note": "Hinchilla reports $199M 'annual grants' headline figure; Crain's Chicago Business reports Builders Initiative pledged $2B over three-year window 2019-2021; Inside Philanthropy reports 2023 grants of $199M. 990-PF charitable disbursements as reported on ProPublica show $83.9M for 2023 — the higher figures likely include asset transfers to 90%-mission-related investment positions and pledged multi-year commitments not yet disbursed. Conservative approach: use 990-PF charitable-disbursements line as observable.",
+      "amount_usd_note": "Hinchilla reports $199M 'annual grants' headline figure; Crain's Chicago Business reports Builders Initiative pledged $2B over three-year window 2019-2021; Inside Philanthropy reports 2023 grants of $199M. 990-PF charitable disbursements as reported on ProPublica show $83.9M for 2023 \u2014 the higher figures likely include asset transfers to 90%-mission-related investment positions and pledged multi-year commitments not yet disbursed. Conservative approach: use 990-PF charitable-disbursements line as observable.",
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/821503941",
       "retrieved_at": "2026-04-24",
@@ -97,7 +97,7 @@
       "donor_entity": "Builders Initiative Inc",
       "donor_ein": "82-1503941",
       "amount_usd": 90395237,
-      "amount_usd_note": "Inside Philanthropy reports $168M for 2022. ProPublica 990-PF charitable disbursements line shows $90.4M. Same reconciliation note as 2023 — the IP figure likely includes mission-related investment allocations and multi-year pledges.",
+      "amount_usd_note": "Inside Philanthropy reports $168M for 2022. ProPublica 990-PF charitable disbursements line shows $90.4M. Same reconciliation note as 2023 \u2014 the IP figure likely includes mission-related investment allocations and multi-year pledges.",
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/821503941",
       "retrieved_at": "2026-04-24",
@@ -134,7 +134,7 @@
       "donor_entity": "Builders Initiative Inc",
       "donor_ein": "82-1503941",
       "amount_usd": 14158693,
-      "amount_usd_note": "Per InfluenceWatch: Lukas Walton was sole contributor to the foundation in 2019 and gave $28.5M that year — the larger InfluenceWatch number is a CONTRIBUTION INTO the foundation (transfer_in), not grants_out. 990-PF grants_out line is the $14.2M figure.",
+      "amount_usd_note": "Per InfluenceWatch: Lukas Walton was sole contributor to the foundation in 2019 and gave $28.5M that year \u2014 the larger InfluenceWatch number is a CONTRIBUTION INTO the foundation (transfer_in), not grants_out. 990-PF grants_out line is the $14.2M figure.",
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/821503941",
       "retrieved_at": "2026-04-24",
@@ -179,12 +179,15 @@
       "source_url": "https://www.insidephilanthropy.com/home/2022-3-21-whos-getting-the-latest-checks-from-lukas-waltons-green-grantmaking-shop",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Same dedup rule — disburses through BI 990-PF totals."
+      "dedup_note": "Same dedup rule \u2014 disburses through BI 990-PF totals."
     },
     {
       "event_id": "bi_chicago_giving_cumulative",
       "event_role": "grant_out_cumulative",
-      "year_range": [2017, 2025],
+      "year_range": [
+        2017,
+        2025
+      ],
       "donor_entity": "Builders Vision (includes Builders Initiative)",
       "recipient": "Chicago-based organizations (cumulative)",
       "amount_usd": 140000000,
@@ -197,7 +200,10 @@
     {
       "event_id": "bi_lifetime_cumulative",
       "event_role": "grant_out_cumulative",
-      "year_range": [2017, 2025],
+      "year_range": [
+        2017,
+        2025
+      ],
       "donor_entity": "Builders Vision philanthropy (Builders Initiative + affiliated)",
       "recipient": "Various (450+ grantees per Builders Vision site)",
       "amount_usd": 700000000,
@@ -205,12 +211,15 @@
       "source_url": "https://www.buildersvision.com/who-we-are/lukas-walton/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Self-reported cumulative philanthropic distribution. Larger than ProPublica 990-PF-derived sum 2018-2024 of $339.8M — difference likely due to (a) DAF distributions via Chicago Community Trust not showing on ProPublica's 990-PF page, (b) distributions via Alumbra Innovations (Christy Walton's foundation, which Lukas has funded), (c) non-990 pathways (LLC), (d) accounting differences between 'distributed' vs charitable disbursements line. Use as upper provenance bound, not additive to foundation total."
+      "dedup_note": "Self-reported cumulative philanthropic distribution. Larger than ProPublica 990-PF-derived sum 2018-2024 of $339.8M \u2014 difference likely due to (a) DAF distributions via Chicago Community Trust not showing on ProPublica's 990-PF page, (b) distributions via Alumbra Innovations (Christy Walton's foundation, which Lukas has funded), (c) non-990 pathways (LLC), (d) accounting differences between 'distributed' vs charitable disbursements line. Use as upper provenance bound, not additive to foundation total."
     },
     {
       "event_id": "lukas_transfer_wff_cumulative",
       "event_role": "transfer_in",
-      "year_range": [2005, 2022],
+      "year_range": [
+        2005,
+        2022
+      ],
       "donor_entity": "Lukas Walton (personal inheritance)",
       "recipient": "Walton Family Foundation",
       "recipient_ein": "13-3441466",
@@ -219,7 +228,7 @@
       "source_url": "https://www.influencewatch.org/person/lukas-walton/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: $149M contributed BY Lukas INTO the Walton Family Foundation. This is a transfer_in to WFF — per dedup rule #2, we count WFF's grants_out (and we already do — see wff_* rows), not transfers in. This row is provenance-only; not added to observable_giving. Note Lukas is a WFF board member and chairs the Environment Program Committee."
+      "dedup_note": "CRITICAL: $149M contributed BY Lukas INTO the Walton Family Foundation. This is a transfer_in to WFF \u2014 per dedup rule #2, we count WFF's grants_out (and we already do \u2014 see wff_* rows), not transfers in. This row is provenance-only; not added to observable_giving. Note Lukas is a WFF board member and chairs the Environment Program Committee."
     },
     {
       "event_id": "wff_2024_lukas_prorata",
@@ -229,14 +238,13 @@
       "donor_ein": "13-3441466",
       "amount_usd": 603519475,
       "amount_usd_lukas_prorata": 0,
-      "prorata_method": "WFF is funded primarily by Sam Walton's children (Rob, Jim, Alice, and late John's estate flowing to heirs including Lukas). Rob/Alice v3 records use 1/3-per-living-sibling allocation. Lukas received his father John T. Walton's estate share — but the portion that went to WFF prior to/after John's 2005 death is captured in the 'John's estate' slice, NOT attributed to Lukas personally here (to avoid double-counting with the $149M contribution transfer_in row above). We set Lukas's WFF pro-rata to $0 observable. However, we note he directly contributed $149M INTO WFF and sits on its board as Environment Program Committee Chair — he is materially associated, but the grants out are attributed to the sibling branch in v3 family records.",
+      "prorata_method": "WFF is funded primarily by Sam Walton's children (Rob, Jim, Alice, and late John's estate flowing to heirs including Lukas). Rob/Alice v3 records use 1/3-per-living-sibling allocation. Lukas received his father John T. Walton's estate share \u2014 but the portion that went to WFF prior to/after John's 2005 death is captured in the 'John's estate' slice, NOT attributed to Lukas personally here (to avoid double-counting with the $149M contribution transfer_in row above). We set Lukas's WFF pro-rata to $0 observable. However, we note he directly contributed $149M INTO WFF and sits on its board as Environment Program Committee Chair \u2014 he is materially associated, but the grants out are attributed to the sibling branch in v3 family records.",
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
       "retrieved_at": "2026-04-24",
       "confidence": "high (total) / by-design-zero (Lukas prorata)"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "lukas_gp_status",
@@ -245,19 +253,22 @@
       "status": "NOT_SIGNED",
       "source_url": "https://www.givingpledge.org/pledger-list/",
       "retrieved_at": "2026-04-24",
-      "brief_correction_note": "CRITICAL CORRECTION: Jonah's research brief stated 'Giving Pledge — Lukas Walton SIGNED (2020)' and described him as 'the notable Walton-family Giving Pledge signer.' This appears to be incorrect. Verification:\n(1) Official Giving Pledge pledger list (https://www.givingpledge.org/pledger-list/): no Walton entries.\n(2) Dec 21, 2020 Giving Pledge announcement of 13 new signatories (https://www.givingpledge.org/the-giving-pledge-welcomes-13-new-signatories/): Lukas Walton is NOT on the list. The 13 new 2020 signatories were Arsenault, Barton, Conway, Gross, Hartman, Huo/Fang, King, Neves, Pattison, Richison, Rothschild, Schwarzman, Weekley.\n(3) Dec 14, 2021 announcement of 14 additional signatories: Lukas Walton also not named.\n(4) Walton Family Foundation's own 2021 article on 3rd-generation giving explicitly describes the family as having 'chosen not to' sign (Rob Walton quote extends to family).\n(5) Wikipedia's Lukas Walton article makes no mention of Giving Pledge signature.\n(6) Inside Philanthropy's deep 2024 retrospective on Builders Vision (three years since public launch) does not mention a Giving Pledge signature.\n(7) The single source claiming Christy and Lukas signed in 2011 is FasterCapital, a low-quality AI-generated content farm; no corroboration in any primary source.\nConclusion: Lukas Walton has NOT signed the Giving Pledge as of 2026-04. Flag the brief for correction. Under scrooge methodology this removes the GIVING_PLEDGE_UNFULFILLED risk but does not itself add a red flag (declining is more honest than signing-and-not-fulfilling; same framing as Rob/Alice records).",
+      "brief_correction_note": "CRITICAL CORRECTION: Jonah's research brief stated 'Giving Pledge \u2014 Lukas Walton SIGNED (2020)' and described him as 'the notable Walton-family Giving Pledge signer.' This appears to be incorrect. Verification:\n(1) Official Giving Pledge pledger list (https://www.givingpledge.org/pledger-list/): no Walton entries.\n(2) Dec 21, 2020 Giving Pledge announcement of 13 new signatories (https://www.givingpledge.org/the-giving-pledge-welcomes-13-new-signatories/): Lukas Walton is NOT on the list. The 13 new 2020 signatories were Arsenault, Barton, Conway, Gross, Hartman, Huo/Fang, King, Neves, Pattison, Richison, Rothschild, Schwarzman, Weekley.\n(3) Dec 14, 2021 announcement of 14 additional signatories: Lukas Walton also not named.\n(4) Walton Family Foundation's own 2021 article on 3rd-generation giving explicitly describes the family as having 'chosen not to' sign (Rob Walton quote extends to family).\n(5) Wikipedia's Lukas Walton article makes no mention of Giving Pledge signature.\n(6) Inside Philanthropy's deep 2024 retrospective on Builders Vision (three years since public launch) does not mention a Giving Pledge signature.\n(7) The single source claiming Christy and Lukas signed in 2011 is FasterCapital, a low-quality AI-generated content farm; no corroboration in any primary source.\nConclusion: Lukas Walton has NOT signed the Giving Pledge as of 2026-04. Flag the brief for correction. Under scrooge methodology this removes the GIVING_PLEDGE_UNFULFILLED risk but does not itself add a red flag (declining is more honest than signing-and-not-fulfilling; same framing as Rob/Alice records).",
       "notes": "If evidence emerges that Lukas has signed (e.g., in a forthcoming 2026 batch announcement), reclassify to signatory and evaluate against his documented giving."
     },
     {
       "event_id": "lukas_bv_2b_commitment_2019_2021",
       "event_role": "pledge",
-      "year_range": [2019, 2021],
+      "year_range": [
+        2019,
+        2021
+      ],
       "pledged_amount_usd": 2000000000,
       "status": "PARTIALLY_FULFILLED",
       "status_note": "Per Crain's Chicago Business and Inside Philanthropy Oct 2021: Lukas and Samantha Walton committed $2B to philanthropy 2019-2021. Crain's frames this as 'pledged $2 billion over the last three years, while not identifying the biggest recipients.' Inside Philanthropy clarifies this figure includes money given to the foundation endowment (transfer_in), NOT strictly cash out the door.",
       "source_url": "https://www.insidephilanthropy.com/home/2021-10-25-in-rarity-for-walton-family-a-third-generation-walton-takes-philanthropy-public",
       "retrieved_at": "2026-04-24",
-      "dedup_note": "This is a PERSONAL PLEDGE that funded Builders Initiative endowment growth (from ~$455M in 2018 to ~$1.03B in 2021 — net $575M growth ≈ consistent with portion of the $2B going into BI as transfer_in). The remainder flowed into Builders Asset Management for mission-related investments. Observable out-the-door giving (BI grants_out 2019-2021 = $60.5M) is far below the $2B pledge, because the pledge was primarily an endowment/investment capitalization move, not a commitment to pay out charity. DO NOT count $2B as observable charity — use 990-PF grants_out for observable."
+      "dedup_note": "This is a PERSONAL PLEDGE that funded Builders Initiative endowment growth (from ~$455M in 2018 to ~$1.03B in 2021 \u2014 net $575M growth \u2248 consistent with portion of the $2B going into BI as transfer_in). The remainder flowed into Builders Asset Management for mission-related investments. Observable out-the-door giving (BI grants_out 2019-2021 = $60.5M) is far below the $2B pledge, because the pledge was primarily an endowment/investment capitalization move, not a commitment to pay out charity. DO NOT count $2B as observable charity \u2014 use 990-PF grants_out for observable."
     },
     {
       "event_id": "bv_3b_deployed_2023",
@@ -274,7 +285,6 @@
       "classification_note": "Forbes Oct 2023: Builders Vision 'deployed $3 billion' cumulative since inception. This is TOTAL CAPITAL DEPLOYED across: (a) Builders Initiative philanthropic grants, (b) Builders Asset Management mission-related investments, (c) S2G Ventures for-profit impact investment fund. Under Forbes/Chronicle/IPS methodology, only the philanthropic-grants portion (~$700M cumulative per Builders Vision site by 2025) counts as charitable giving. The remaining ~$2.3B is for-profit or mission-related investment, NOT philanthropy. Flag for for-profit-hybrid classification similar to Ellison's EIT."
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_LIGHT_DEMOCRATIC_LEAN",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Lukas's political giving is notably MODEST relative to his aunts/uncles (Rob $17M, Alice $5M+ federal in 2024 cycle to Koch-aligned vehicles) and tilts Democratic rather than the family's historical Republican default. This is the 'third-generation shift' thesis documented by HistPhil and Inside Philanthropy.",
@@ -304,7 +314,7 @@
         "publisher": "House Oversight Committee",
         "amount_usd": 300000,
         "period": "2020 cycle",
-        "note": "$300K to Biden — political-optics concern re: Biden-era solar loan recipient"
+        "note": "$300K to Biden \u2014 political-optics concern re: Biden-era solar loan recipient"
       },
       {
         "url": "https://www.opensecrets.org/donor-lookup/results?name=lukas+walton",
@@ -314,25 +324,24 @@
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
         "name": "Builders Initiative Inc (Builders Initiative Foundation)",
         "ein": "82-1503941",
         "established_year": 2017,
-        "state": "IL (Chicago, IL — 501(c)(3) tax exemption Nov 2017)",
+        "state": "IL (Chicago, IL \u2014 501(c)(3) tax exemption Nov 2017)",
         "status": "active",
         "latest_990_year": 2024,
         "assets_usd_latest": 1654082903,
-        "officers_compensation": "ZERO_COMP (all officers — Lukas Walton CEO/Chair, Bruce McNamer President, Lisa Forbes Secretary — receive $0 compensation per ProPublica 990-PF).",
-        "payout_rate_notes": "2024 grants out ($98.9M) vs assets ($1.65B) = 6.0% — just above the 5% legal minimum. 2023 was $83.9M / $1.53B = 5.5%, also just above. 2022 was $90.4M / $1.12B = 8.1%. 2021 was $29.8M / $1.03B = 2.9% (BELOW 5% minimum). 2020 was $16.5M / $993M = 1.7% (well below 5%). 2019 was $14.2M / $485M = 2.9% (below). Pattern: early years (2019-2021) endowment was accumulating faster than grants were being deployed; since 2022 payout is at-or-above minimum. Flag LOW_PAYOUT for early years but NOT for current window. Note 5-year averaging rules may cure the technical violations.",
+        "officers_compensation": "ZERO_COMP (all officers \u2014 Lukas Walton CEO/Chair, Bruce McNamer President, Lisa Forbes Secretary \u2014 receive $0 compensation per ProPublica 990-PF).",
+        "payout_rate_notes": "2024 grants out ($98.9M) vs assets ($1.65B) = 6.0% \u2014 just above the 5% legal minimum. 2023 was $83.9M / $1.53B = 5.5%, also just above. 2022 was $90.4M / $1.12B = 8.1%. 2021 was $29.8M / $1.03B = 2.9% (BELOW 5% minimum). 2020 was $16.5M / $993M = 1.7% (well below 5%). 2019 was $14.2M / $485M = 2.9% (below). Pattern: early years (2019-2021) endowment was accumulating faster than grants were being deployed; since 2022 payout is at-or-above minimum. Flag LOW_PAYOUT for early years but NOT for current window. Note 5-year averaging rules may cure the technical violations.",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/821503941",
         "focus_areas": [
           "Climate and energy (Breakthrough Energy, Climate Imperative)",
           "Food and agriculture",
           "Oceans (Ocean Resilience and Climate Alliance)",
-          "Community — especially Chicago ($140M cumulative); companion animals; regional arts"
+          "Community \u2014 especially Chicago ($140M cumulative); companion animals; regional arts"
         ],
         "mission_related_investments": "Per PND 2024: 90% of Builders Initiative's ~$1B endowment now in mission-related investments, collaborations with nonprofits, businesses, and other changemakers. This is a significant commitment to impact investing beyond grants_out, but under Forbes/IPS methodology MRIs are NOT counted as philanthropy (they generate financial return).",
         "daf_usage_confirmed": "CONFIRMED: Builders Initiative maintains donor-advised fund through Chicago Community Trust (Hinchilla + influencewatch). Used for 'keeping certain grants anonymous, or occasionally for making larger than usual awards.' DAF activity is not visible in ProPublica 990-PF grants recipient list. This is a red flag for observable-giving completeness: the DAF could be holding/distributing material funds that are not showing up in the 990-PF grants_out total.",
@@ -349,10 +358,12 @@
         "name": "Builders Vision",
         "classification": "IMPACT_PLATFORM_HYBRID",
         "year_established": 2021,
-        "locations": ["Chicago, IL"],
+        "locations": [
+          "Chicago, IL"
+        ],
         "structure": "Family office umbrella encompassing Builders Initiative (philanthropy 501(c)(3)) + Builders Asset Management (mission-related investments) + formerly S2G Ventures (impact VC, now spun out as standalone RIA May 2024). Manages ~$15B across all sleeves.",
         "source_url": "https://www.buildersvision.com/",
-        "methodology_note": "Under Forbes/Chronicle/IPS methodology, only the Builders Initiative philanthropy sleeve counts as charitable giving. Builders Asset Management and the former S2G Ventures sleeve are for-profit/mission-related investments — capital still belongs to Lukas and generates return. This is structurally similar to the Ellison EIT for-profit hybrid flag, though Lukas's philanthropy sleeve is much larger and more developed than Ellison's. Lukas's $2B 2019-2021 'commitment' and $3B 2023 'deployed' numbers conflate philanthropy with for-profit investment — observable_giving uses only the BI 990-PF grants_out line."
+        "methodology_note": "Under Forbes/Chronicle/IPS methodology, only the Builders Initiative philanthropy sleeve counts as charitable giving. Builders Asset Management and the former S2G Ventures sleeve are for-profit/mission-related investments \u2014 capital still belongs to Lukas and generates return. This is structurally similar to the Ellison EIT for-profit hybrid flag, though Lukas's philanthropy sleeve is much larger and more developed than Ellison's. Lukas's $2B 2019-2021 'commitment' and $3B 2023 'deployed' numbers conflate philanthropy with for-profit investment \u2014 observable_giving uses only the BI 990-PF grants_out line."
       },
       {
         "name": "S2G Ventures",
@@ -371,22 +382,22 @@
         "note": "Used for anonymous grants and occasional larger-than-usual awards. Amounts not disclosed in public filings. DAF activity creates observable-giving opacity."
       }
     ],
-    "dafs_note": "DAF_USAGE_CONFIRMED. This is a MEDIUM red flag — not as severe as MacKenzie Scott's 100% DAF pattern, but material. The fact that BI uses a DAF at Chicago Community Trust for 'anonymous' or 'larger than usual' grants means our 990-PF observable could be meaningfully understating actual giving. Flag for hidden_upper allocation.",
+    "dafs_note": "DAF_USAGE_CONFIRMED. This is a MEDIUM red flag \u2014 not as severe as MacKenzie Scott's 100% DAF pattern, but material. The fact that BI uses a DAF at Chicago Community Trust for 'anonymous' or 'larger than usual' grants means our 990-PF observable could be meaningfully understating actual giving. Flag for hidden_upper allocation.",
     "llcs_philanthropic": [
       {
         "name": "Builders Vision LLC (umbrella) + Builders Asset Management",
-        "note": "Per Arkansas Democrat-Gazette: 'Lukas Walton, 35, is the chief executive officer of Builders Vision LLC.' The LLC umbrella is NOT a philanthropic LLC in the CZI/Emerson Collective sense — the philanthropy runs through the 501(c)(3) Builders Initiative. Builders Asset Management is a mission-related investment sleeve that still generates return to Lukas; not philanthropy."
+        "note": "Per Arkansas Democrat-Gazette: 'Lukas Walton, 35, is the chief executive officer of Builders Vision LLC.' The LLC umbrella is NOT a philanthropic LLC in the CZI/Emerson Collective sense \u2014 the philanthropy runs through the 501(c)(3) Builders Initiative. Builders Asset Management is a mission-related investment sleeve that still generates return to Lukas; not philanthropy."
       }
     ],
     "affiliated_foundations_minor": [
       {
         "name": "Alumbra Innovations Foundation (Christy Walton's foundation)",
-        "relationship": "Lukas has made 'a series of eight-figure contributions' helping Alumbra endowment reach $138M by 2023. Contributions counted as transfer_in to Alumbra — Alumbra's grants_out would be attributed to Christy, not Lukas. Listed for context.",
+        "relationship": "Lukas has made 'a series of eight-figure contributions' helping Alumbra endowment reach $138M by 2023. Contributions counted as transfer_in to Alumbra \u2014 Alumbra's grants_out would be attributed to Christy, not Lukas. Listed for context.",
         "source_url": "https://www.insidephilanthropy.com/home/the-quiet-donors-of-americas-richest-family-three-low-profile-walton-foundations"
       }
     ],
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
     "trusts_disclosed_existence_structure_unknown": [
       {
         "type": "john_t_walton_estate_trusts",
@@ -396,13 +407,12 @@
       }
     ]
   },
-
   "red_flags": [
     {
       "flag": "FOR_PROFIT_HYBRID_CONFLATION",
-      "evidence": "Builders Vision's headline giving numbers — $2B (2019-2021), $3B (cumulative by 2023) — conflate philanthropic grants with for-profit impact investments (Builders Asset Management) and venture-capital (former S2G Ventures). Under IPS methodology only the 501(c)(3) Builders Initiative grants_out line counts as charitable giving (~$340M cumulative 2018-2024). Public perception of Lukas's generosity is inflated by this conflation.",
+      "evidence": "Builders Vision's headline giving numbers \u2014 $2B (2019-2021), $3B (cumulative by 2023) \u2014 conflate philanthropic grants with for-profit impact investments (Builders Asset Management) and venture-capital (former S2G Ventures). Under IPS methodology only the 501(c)(3) Builders Initiative grants_out line counts as charitable giving (~$340M cumulative 2018-2024). Public perception of Lukas's generosity is inflated by this conflation.",
       "source_url": "https://www.forbes.com/sites/amyfeldman/2023/10/17/exclusive-lukas-waltons-builders-vision-reveals-how-its-deployed-3-billion-to-change-the-world/",
-      "severity_note": "Similar to Ellison's EIT for-profit pivot but materially different — Lukas has a legitimate and substantial 501(c)(3) grants-out record. Flag is 'be careful with headline numbers,' not 'secretly not giving.'"
+      "severity_note": "Similar to Ellison's EIT for-profit pivot but materially different \u2014 Lukas has a legitimate and substantial 501(c)(3) grants-out record. Flag is 'be careful with headline numbers,' not 'secretly not giving.'"
     },
     {
       "flag": "DAF_TRANSFERS",
@@ -411,37 +421,36 @@
     },
     {
       "flag": "LOW_PAYOUT_HISTORICAL",
-      "evidence": "Builders Initiative foundation payout was 2.9% (2019), 1.7% (2020), 2.9% (2021) — all below the 5% legal minimum for private foundations. 2022-2024 payout has recovered to 5.5-8.1%. 5-year averaging rules may cure the technical violations, but the pattern from 2019-2021 (endowment accumulating faster than giving) is notable.",
+      "evidence": "Builders Initiative foundation payout was 2.9% (2019), 1.7% (2020), 2.9% (2021) \u2014 all below the 5% legal minimum for private foundations. 2022-2024 payout has recovered to 5.5-8.1%. 5-year averaging rules may cure the technical violations, but the pattern from 2019-2021 (endowment accumulating faster than giving) is notable.",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/821503941"
     },
     {
       "flag": "JOINT_FAMILY_FOUNDATION_PRORATA_AMBIGUITY",
-      "evidence": "Lukas contributed $149M to Walton Family Foundation and serves as Environment Program Committee Chair. WFF grants_out attribution to Lukas is set to $0 in this record to avoid double-count with his direct contribution row, but this is a methodology choice — if Lukas's WFF contributions have grown beyond the $149M InfluenceWatch figure, his true attributable WFF share could be larger.",
+      "evidence": "Lukas contributed $149M to Walton Family Foundation and serves as Environment Program Committee Chair. WFF grants_out attribution to Lukas is set to $0 in this record to avoid double-count with his direct contribution row, but this is a methodology choice \u2014 if Lukas's WFF contributions have grown beyond the $149M InfluenceWatch figure, his true attributable WFF share could be larger.",
       "source_url": "https://www.influencewatch.org/person/lukas-walton/"
     }
   ],
   "red_flags_not_present": [
-    "GIVING_PLEDGE_UNFULFILLED (not signed, so no breach possible — see lukas_gp_status note; brief's claim of 2020 signing could not be verified)",
+    "GIVING_PLEDGE_UNFULFILLED (not signed, so no breach possible \u2014 see lukas_gp_status note; brief's claim of 2020 signing could not be verified)",
     "HIGH_OFFICER_COMP (Lukas zero comp at Builders Initiative)",
-    "POLITICAL_DOMINATES_CHARITABLE (~$1.1M cumulative political vs ~$340M philanthropic; ratio is 0.3% — lowest of the Waltons)",
+    "POLITICAL_DOMINATES_CHARITABLE (~$1.1M cumulative political vs ~$340M philanthropic; ratio is 0.3% \u2014 lowest of the Waltons)",
     "NO_OBSERVABLE_GIVING (Builders Initiative grants_out is real and substantial)"
   ],
-
   "rollup": {
     "observable_giving_usd": 339864000,
     "observable_giving_method": "sum(Builders Initiative 990-PF grants_out 2018-2024) = $5.20M + $14.16M + $16.47M + $29.84M + $90.40M + $83.95M + $98.85M = $338,864,395. Round to $339.9M. Excludes: $2B 2019-2021 commitment (mostly transfer_in to BI endowment + Builders Asset Management investment capitalization, not charity); $3B Builders Vision cumulative deployment (includes for-profit and MRI); $149M contributed to WFF (transfer_in to a separate foundation, whose grants_out are counted toward the joint Walton siblings not Lukas); $150M Breakthrough Energy + $100M Climate Imperative (multi-year pledges disbursing through BI 990-PF, already captured); political giving; Alumbra contributions (transfer_in).",
     "observable_giving_todo": [
       "Pull Builders Initiative 2017 partial-year 990-PF (tax exemption Nov 2017) to capture any grant activity.",
-      "Attempt to quantify DAF activity at Chicago Community Trust attributed to Builders Initiative — likely requires FOIA or direct ask.",
-      "Run SEC EDGAR Form 4 for Lukas Walton's Walmart CIK (if he's a 5%+ holder — 3.7% stake likely below 13D threshold) for G-transaction stock gifts.",
+      "Attempt to quantify DAF activity at Chicago Community Trust attributed to Builders Initiative \u2014 likely requires FOIA or direct ask.",
+      "Run SEC EDGAR Form 4 for Lukas Walton's Walmart CIK (if he's a 5%+ holder \u2014 3.7% stake likely below 13D threshold) for G-transaction stock gifts.",
       "Run FEC bulk pull against Lukas Walton name/address to confirm ~$1.1M cumulative political total and check 2025-2026 off-cycle.",
       "Verify whether the $700M Builders Vision cumulative philanthropic distribution figure includes DAF / Alumbra / WFF flows that would shift the observable denominator.",
-      "Verify pledge-letter status with Giving Pledge directly — confirm the brief's 2020-signing claim is incorrect."
+      "Verify pledge-letter status with Giving Pledge directly \u2014 confirm the brief's 2020-signing claim is incorrect."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 2000000000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.25 × $40B = $10B; tenure ~20 years as heir/wealthy (arguably from 2005 inheritance), saturated. Expected = $1.0B strictly. BUT: Lukas was only a billionaire-scale giver in the last ~8 years (Builders Initiative founded 2017), so tenure-adjusted expected giving should apply a shorter window. Use min(8/10, 1) = 0.8 → $800M. However, using the standard strict 10% × liquid × tenure-saturated formula consistent with other v3 records: $1.0B. I'll use $1.0B as the central expected, widening the range to $800M-$2B to reflect tenure ambiguity. Central: $1.0B.",
-    "observable_ratio_to_expected": 0.340,
-    "observable_ratio_to_current_nw": 0.00850,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.25 \u00d7 $40B = $10B; tenure ~20 years as heir/wealthy (arguably from 2005 inheritance), saturated. Expected = $1.0B strictly. BUT: Lukas was only a billionaire-scale giver in the last ~8 years (Builders Initiative founded 2017), so tenure-adjusted expected giving should apply a shorter window. Use min(8/10, 1) = 0.8 \u2192 $800M. However, using the standard strict 10% \u00d7 liquid \u00d7 tenure-saturated formula consistent with other v3 records: $1.0B. I'll use $1.0B as the central expected, widening the range to $800M-$2B to reflect tenure ambiguity. Central: $1.0B.",
+    "observable_ratio_to_expected": 0.34,
+    "observable_ratio_to_current_nw": 0.0085,
     "hidden_upper_usd": {
       "daf_uplift_usd": 200000000,
       "daf_uplift_note": "Confirmed DAF at Chicago Community Trust. Estimate 20-30% of observable ($68-$102M) could be additional anonymous DAF activity not captured in 990-PF grants recipient list. Widen to $200M upper envelope to account for cumulative anonymous grants through the DAF 2017-2024.",
@@ -450,24 +459,23 @@
       "offshore_uplift_usd": 0,
       "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
       "anonymous_cohort_uplift_usd": 75000000,
-      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Lukas is described as 'fiercely private' by Yahoo Finance and 'quiet' by Inside Philanthropy (relative to his family's WFF visibility). Apply 0.2% of liquid wealth for 6-year window × adjusted-younger age factor: 0.002 × $10B × 6/10 = $120M; attenuate because DAF already captures some of this → $75M residual envelope on top of DAF uplift.",
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Lukas is described as 'fiercely private' by Yahoo Finance and 'quiet' by Inside Philanthropy (relative to his family's WFF visibility). Apply 0.2% of liquid wealth for 6-year window \u00d7 adjusted-younger age factor: 0.002 \u00d7 $10B \u00d7 6/10 = $120M; attenuate because DAF already captures some of this \u2192 $75M residual envelope on top of DAF uplift.",
       "religious_cohort_uplift_usd": 0,
       "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
       "trust_outcome_uncertainty_usd": 0,
       "trust_outcome_method": "John T. Walton's estate trusts transferred wealth to Lukas (per Bloomberg court docs). No disclosed charitable remainder structure. Zero until disclosed otherwise.",
       "mri_credit_usd": 0,
-      "mri_credit_note": "Builders Asset Management holds ~90% of BI endowment in mission-related investments (~$1B). MRIs are investments that generate return to the foundation, not grants out — under Forbes/Chronicle/IPS methodology NOT charity. We set zero uplift here but note the directional 'more impact-aligned than the peer group' signal for published caveat.",
+      "mri_credit_note": "Builders Asset Management holds ~90% of BI endowment in mission-related investments (~$1B). MRIs are investments that generate return to the foundation, not grants out \u2014 under Forbes/Chronicle/IPS methodology NOT charity. We set zero uplift here but note the directional 'more impact-aligned than the peer group' signal for published caveat.",
       "bv_cumulative_gap_usd": 360000000,
-      "bv_cumulative_gap_method": "Builders Vision's own site claims ~$700M cumulative philanthropic capital distributed by the Builders Vision team. Our 990-PF-derived BI sum is ~$340M. Gap is $360M — likely spread across: (a) Alumbra Foundation flows attributed to Christy not Lukas but driven by Lukas contributions; (b) DAF distributions at Chicago Community Trust (already partly counted in daf_uplift above — watch for double-count); (c) non-990 pathways; (d) counting 'deployed' vs 'granted.' Conservative upper envelope: $360M.",
+      "bv_cumulative_gap_method": "Builders Vision's own site claims ~$700M cumulative philanthropic capital distributed by the Builders Vision team. Our 990-PF-derived BI sum is ~$340M. Gap is $360M \u2014 likely spread across: (a) Alumbra Foundation flows attributed to Christy not Lukas but driven by Lukas contributions; (b) DAF distributions at Chicago Community Trust (already partly counted in daf_uplift above \u2014 watch for double-count); (c) non-990 pathways; (d) counting 'deployed' vs 'granted.' Conservative upper envelope: $360M.",
       "total_usd": 635000000,
-      "total_method": "daf ($200M) + anonymous residual ($75M) + BV cumulative reconciliation gap ($360M). DAF and BV gap partly overlap — widen-then-trim approach. LLC/offshore/religious/trust all zero."
+      "total_method": "daf ($200M) + anonymous residual ($75M) + BV cumulative reconciliation gap ($360M). DAF and BV gap partly overlap \u2014 widen-then-trim approach. LLC/offshore/religious/trust all zero."
     },
     "observable_plus_hidden_ratio_to_expected": 0.975,
     "tier": "On_Track (Tier C) or borderline Probably_Low (Tier B)",
-    "tier_rule": "Observable alone is 34% of expected ($340M vs $1.0B). With hidden upper, reaches 97.5% of expected. Ellison/Rob/Alice are all Probably_Low (Tier B) with observable+hidden ratios of 1.04, 0.85, 1.25 respectively. Lukas at 0.975 is in the same neighborhood but his story is materially different: he has (a) aggressively built a large dedicated 501(c)(3) with public strategy and transparency, (b) 90% mission-aligned endowment even though we don't credit it, (c) a disclosed $2B 2019-2021 commitment that largely flowed into philanthropic capacity, (d) tilts Democratic and politically modest (contrast his aunts/uncles). I tier him 'On Track (Tier C)' at the edge of Tier B. The brief's hypothesis of 'Tier likely On Track' is supportable but thin — it depends on giving the 990-PF observable, the DAF hidden upper, and the BV cumulative reconciliation gap full credit, AND on the tenure-window adjustment (he's younger than the others). Readers should treat Lukas as the Walton family's best-behaved philanthropist with a strong trajectory, not yet a clear Tier-C performer by the pure 10% test.",
-    "tier_published_caveat": "Readers should see Lukas Walton as 'the third-generation Walton who broke the mold — built a purpose-driven $1.65B impact platform, kept political giving modest and Democratic-leaning, focused on climate/oceans/food, but whose observable 990-PF grants ($340M over 7 years) still lag his wealth ($40B) by a factor of 100 over that period.' The HEADLINE figures ($3B deployed, $2B committed, $15B platform) conflate grants with for-profit impact investment — use the foundation's 990-PF grants_out line for strict comparison. He is NOT a Giving Pledge signer (contra the research brief) — the family's collective declination applies to him per the known record. He chairs WFF's Environment Program Committee and has personally contributed $149M to WFF (transfer_in). On the 10% formal norm he's tracking below capacity but improving faster than his peers. Best-case Tier C, most-likely borderline Tier B."
+    "tier_rule": "Observable alone is 34% of expected ($340M vs $1.0B). With hidden upper, reaches 97.5% of expected. Ellison/Rob/Alice are all Probably_Low (Tier B) with observable+hidden ratios of 1.04, 0.85, 1.25 respectively. Lukas at 0.975 is in the same neighborhood but his story is materially different: he has (a) aggressively built a large dedicated 501(c)(3) with public strategy and transparency, (b) 90% mission-aligned endowment even though we don't credit it, (c) a disclosed $2B 2019-2021 commitment that largely flowed into philanthropic capacity, (d) tilts Democratic and politically modest (contrast his aunts/uncles). I tier him 'On Track (Tier C)' at the edge of Tier B. The brief's hypothesis of 'Tier likely On Track' is supportable but thin \u2014 it depends on giving the 990-PF observable, the DAF hidden upper, and the BV cumulative reconciliation gap full credit, AND on the tenure-window adjustment (he's younger than the others). Readers should treat Lukas as the Walton family's best-behaved philanthropist with a strong trajectory, not yet a clear Tier-C performer by the pure 10% test.",
+    "tier_published_caveat": "Readers should see Lukas Walton as 'the third-generation Walton who broke the mold \u2014 built a purpose-driven $1.65B impact platform, kept political giving modest and Democratic-leaning, focused on climate/oceans/food, but whose observable 990-PF grants ($340M over 7 years) still lag his wealth ($40B) by a factor of 100 over that period.' The HEADLINE figures ($3B deployed, $2B committed, $15B platform) conflate grants with for-profit impact investment \u2014 use the foundation's 990-PF grants_out line for strict comparison. He is NOT a Giving Pledge signer (contra the research brief) \u2014 the family's collective declination applies to him per the known record. He chairs WFF's Environment Program Committee and has personally contributed $149M to WFF (transfer_in). On the 10% formal norm he's tracking below capacity but improving faster than his peers. Best-case Tier C, most-likely borderline Tier B."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 46.5,
     "components": {
@@ -476,65 +484,195 @@
       "pledge_breach_penalty_20pct": 0.0,
       "red_flag_penalty_20pct": 10.0
     },
-    "note": "Computed with v2 formula for continuity. Giving gap = 1 - (0.34) = 0.66 × 40pts = 26.5. Tenure penalty ~10pts (younger than Rob/Alice/Jim, Builders Initiative only 8 years old). No pledge breach. Red flag penalty 10pts (DAF + for-profit-hybrid + low-payout-historical). DO NOT PUBLISH — tiers only per PLAN.md. Score notably lower than Rob (75.4) and Alice (67.2) reflecting his younger tenure, modest political giving, and purpose-built philanthropic infrastructure."
+    "note": "Computed with v2 formula for continuity. Giving gap = 1 - (0.34) = 0.66 \u00d7 40pts = 26.5. Tenure penalty ~10pts (younger than Rob/Alice/Jim, Builders Initiative only 8 years old). No pledge breach. Red flag penalty 10pts (DAF + for-profit-hybrid + low-payout-historical). DO NOT PUBLISH \u2014 tiers only per PLAN.md. Score notably lower than Rob (75.4) and Alice (67.2) reflecting his younger tenure, modest political giving, and purpose-built philanthropic infrastructure."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
-    "planned_outreach_route": "Builders Vision / Builders Initiative press contact (builders-vision.com) + Walton Family Foundation communications (Lukas is a board member) — two routes to raise visibility and document delivery.",
+    "planned_outreach_route": "Builders Vision / Builders Initiative press contact (builders-vision.com) + Walton Family Foundation communications (Lukas is a board member) \u2014 two routes to raise visibility and document delivery.",
     "scheduled_outreach_date": null,
     "response_deadline": null,
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
-    "VERIFY-CRITICAL: Confirm Lukas Walton has NOT signed the Giving Pledge — the research brief's claim of a 2020 signing could not be corroborated by any primary source, including the official Giving Pledge pledger list or the Dec 2020 announcement. Flag brief for correction.",
-    "VERIFY: Pull Builders Initiative 2017 (partial year) 990-PF — tax exemption was granted November 2017 so there may be a short-year filing.",
-    "VERIFY: Quantify Builders Initiative DAF flows at Chicago Community Trust — request from Chicago Community Trust or derive from foundation's Schedule I (grants to DAF sponsors).",
-    "VERIFY: Reconcile $700M Builders Vision cumulative philanthropic distribution vs $340M 990-PF sum — determine what sits in the $360M gap (DAF? Alumbra? non-990 pathways?).",
-    "VERIFY: Run FEC API against Lukas Walton (principal address Jackson WY / Chicago IL) — confirm ~$1.1M 2018-2024 cumulative political and pull 2025-2026.",
-    "VERIFY: SEC EDGAR Form 4 for Lukas Walton — his 3.7% Walmart stake is likely below 13D reporting threshold but check for G-transaction stock gifts.",
+    "VERIFY-CRITICAL: Confirm Lukas Walton has NOT signed the Giving Pledge \u2014 the research brief's claim of a 2020 signing could not be corroborated by any primary source, including the official Giving Pledge pledger list or the Dec 2020 announcement. Flag brief for correction.",
+    "VERIFY: Pull Builders Initiative 2017 (partial year) 990-PF \u2014 tax exemption was granted November 2017 so there may be a short-year filing.",
+    "VERIFY: Quantify Builders Initiative DAF flows at Chicago Community Trust \u2014 request from Chicago Community Trust or derive from foundation's Schedule I (grants to DAF sponsors).",
+    "VERIFY: Reconcile $700M Builders Vision cumulative philanthropic distribution vs $340M 990-PF sum \u2014 determine what sits in the $360M gap (DAF? Alumbra? non-990 pathways?).",
+    "VERIFY: Run FEC API against Lukas Walton (principal address Jackson WY / Chicago IL) \u2014 confirm ~$1.1M 2018-2024 cumulative political and pull 2025-2026.",
+    "VERIFY: SEC EDGAR Form 4 for Lukas Walton \u2014 his 3.7% Walmart stake is likely below 13D reporting threshold but check for G-transaction stock gifts.",
     "VERIFY: Exact Walmart stake and most-current Forbes profile net worth (Forbes.com auto-fetch was blocked).",
-    "VERIFY: Samantha Walton's independent giving, if any — she is co-president / co-founder and has separate wealth from the family but is not separately indexed in our sources.",
+    "VERIFY: Samantha Walton's independent giving, if any \u2014 she is co-president / co-founder and has separate wealth from the family but is not separately indexed in our sources.",
     "VERIFY: Does Builders Asset Management's 90% MRI commitment include any grants-out that would be observable charity, or purely investment? Affects the MRI-credit row.",
-    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
-    "VERIFY: John T. Walton estate trust structure — distinguish dynasty trust from any charitable lead/remainder structure."
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: John T. Walton estate trust structure \u2014 distinguish dynasty trust from any charitable lead/remainder structure."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/821503941", "retrieved_at": "2026-04-24", "used_for": "Builders Initiative 990-PF data 2017-2024, assets, zero officer comp, grants out"},
-    {"url": "https://en.wikipedia.org/wiki/Lukas_Walton", "retrieved_at": "2026-04-24", "used_for": "DOB 1986-09-19, father John T. Walton, Christy Walton mother, inheritance, residence, spouse Samantha, Builders Initiative co-president, 2020 political donations"},
-    {"url": "https://www.buildersvision.com/who-we-are/lukas-walton/", "retrieved_at": "2026-04-24", "used_for": "Lukas as Executive Chairman / Founder of Builders Vision, TIME 100 Climate Leader, $700M cumulative philanthropic distribution, $140M Chicago giving, 450 partners"},
-    {"url": "https://time.com/collections/time-100-climate-2025/7326571/lukas-walton/", "retrieved_at": "2026-04-24", "used_for": "TIME 100 Climate 2025 designation; $40B net worth central estimate; 'close to half' impact-aligned capital framing"},
-    {"url": "https://247wallst.com/retail/2026/02/04/walton-net-worth-surges-50-billion/", "retrieved_at": "2026-04-24", "used_for": "Early 2026 Walton family $50B surge; Lukas estimate $51B post-surge"},
-    {"url": "https://97zokonline.com/ixp/671/p/illinois-billionaires-2026/", "retrieved_at": "2026-04-24", "used_for": "Illinois wealthiest resident 2026 $39.46B"},
-    {"url": "https://www.bloomberg.com/billionaires/profiles/lukas-t-walton/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg billionaire index profile (billionaire status corroboration)"},
-    {"url": "https://www.insidephilanthropy.com/home/three-years-since-it-went-public-what-should-we-make-of-lukas-waltons-philanthropic-project", "retrieved_at": "2026-04-24", "used_for": "~$35B fortune reference; 2022 grants $168M; 2023 grants $199M; 2023 endowment $1.7B; Breakthrough Energy $150M/5yr; Climate Imperative $100M/5yr; focus areas climate/food/oceans; 2024 Midwest climate equity shift to global energy/innovation"},
-    {"url": "https://www.insidephilanthropy.com/home/2021-10-25-in-rarity-for-walton-family-a-third-generation-walton-takes-philanthropy-public", "retrieved_at": "2026-04-24", "used_for": "Builders Vision public launch Oct 2021; $2B committed 2019-2021 (including endowment not just cash out); four priorities (food/ag, climate/energy, oceans, community); multiple-vehicle / DAF use"},
-    {"url": "https://www.chicagobusiness.com/nonprofits-philanthropy/chicago-billionaire-lukas-waltons-philanthropy-builders-initiative-plans", "retrieved_at": "2026-04-24", "used_for": "$2B pledged over three years; Samantha Walton co-president before Bruce McNamer hired late 2019; recipient names not disclosed"},
-    {"url": "https://www.insidephilanthropy.com/home/2022-3-21-whos-getting-the-latest-checks-from-lukas-waltons-green-grantmaking-shop", "retrieved_at": "2026-04-24", "used_for": "Breakthrough Energy $150M Catalyst grant detail; Climate Imperative $100M detail; policy development"},
-    {"url": "https://www.insidephilanthropy.com/home/the-quiet-donors-of-americas-richest-family-three-low-profile-walton-foundations", "retrieved_at": "2026-04-24", "used_for": "Third generation outpacing parents; Lukas 'eight-figure' contributions to mother Christy's Alumbra Foundation; Alumbra endowment $138M by 2023; Alumbra grants $1.4M (2019) to $27M (2023)"},
-    {"url": "https://www.insidephilanthropy.com/find-a-grant/grants-b/builders-vision", "retrieved_at": "2026-04-24", "used_for": "Early grantmaking focused on Midwest climate equity; 2024 shift to global tech/innovation"},
-    {"url": "https://www.luc.edu/baumhartcenter/media/publications/innovatorreports/buildersvision/", "retrieved_at": "2026-04-24", "used_for": "S2G Ventures founded 2014; Builders Initiative 2017"},
-    {"url": "https://www.influencewatch.org/person/lukas-walton/", "retrieved_at": "2026-04-24", "used_for": "Inheritance one-third of father's estate; $149M donated to Walton Family Foundation; board member + Environment Program Committee Chair; 2018-2021 political $407K Democratic + $11K Republican; $28.5M Builders Initiative sole contribution 2019"},
-    {"url": "https://www.influencewatch.org/non-profit/builders-initiative-foundation/", "retrieved_at": "2026-04-24", "used_for": "Builders Initiative EIN 82-1503941; Chicago IL; founded Nov 2017; DAF at Chicago Community Trust confirmed; 2022/2023 expenses; top recipients 2023"},
-    {"url": "https://www.hinchilla.com/funders-us/821503941-builders-initiative", "retrieved_at": "2026-04-24", "used_for": "DAF confirmation via Chicago Community Trust; $199M annual grants headline; grant range $1K-$6M"},
-    {"url": "https://www.instrumentl.com/990-report/builders-initiative-inc", "retrieved_at": "2026-04-24", "used_for": "2024 grants $96.6M across 392 awards; award count history by year; foundation location Chicago IL"},
-    {"url": "https://philanthropynewsdigest.org/news/waltons-builders-initiative-endowment-now-90-percent-mission-related", "retrieved_at": "2026-04-24", "used_for": "90% of $1B endowment mission-related (MRI commitment)"},
-    {"url": "https://www.buildersvision.com/news-and-media-coverage/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business", "retrieved_at": "2026-04-24", "used_for": "S2G Ventures spun out as standalone RIA May 2024"},
-    {"url": "https://www.forbes.com/sites/amyfeldman/2023/10/17/exclusive-lukas-waltons-builders-vision-reveals-how-its-deployed-3-billion-to-change-the-world/", "retrieved_at": "2026-04-24", "used_for": "Forbes Oct 2023 — $3B cumulative deployed across Builders Vision (mixed philanthropy + investment); impact framing"},
-    {"url": "https://www.givingpledge.org/pledger-list/", "retrieved_at": "2026-04-24", "used_for": "Official Giving Pledge pledger list — no Walton entries (confirming Lukas NOT signed)"},
-    {"url": "https://www.givingpledge.org/the-giving-pledge-welcomes-13-new-signatories/", "retrieved_at": "2026-04-24", "used_for": "Dec 21, 2020 new-signatories announcement — 13 names, Lukas Walton NOT on the list (confirming brief's claim is wrong)"},
-    {"url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving", "retrieved_at": "2026-04-24", "used_for": "Walton family explicit collective declination of Giving Pledge; Rob Walton quote; third-generation narrative"},
-    {"url": "https://en.wikipedia.org/wiki/Christy_Walton", "retrieved_at": "2026-04-24", "used_for": "Bloomberg court-document analysis of John T. Walton wealth transfer to Lukas; Christy net worth dynamics"},
-    {"url": "https://histphil.org/2019/06/03/walmart-heirs-shift-from-red-to-purple-the-evolving-political-contributions-of-the-nations-richest-family/", "retrieved_at": "2026-04-24", "used_for": "Third-generation political shift Democratic thesis"},
-    {"url": "https://united4respect.org/reports/walmart-political-spending-2024/", "retrieved_at": "2026-04-24", "used_for": "Walton family 2024 political spending context; 7 heirs $22M 2023-2024 cycle (Lukas a minor participant)"},
-    {"url": "https://oversight.house.gov/release/comer-norman-probe-biden-administrations-taxpayer-funded-solar-loan-to-political-donor/", "retrieved_at": "2026-04-24", "used_for": "$300K to Biden 2020 cycle; political-optics concern re: Biden-era solar loan"},
-    {"url": "https://www.arkansasonline.com/news/2021/nov/07/walton-venture-puts-capital-in-change/", "retrieved_at": "2026-04-24", "used_for": "Builders Vision LLC structure; Lukas CEO title; 35yo framing at 2021"},
-    {"url": "https://heartlandforward.org/case-study/championing-the-doers-philanthropy-as-a-toolkit-for-economic-creation/", "retrieved_at": "2026-04-24", "used_for": "Lukas as WFF Environment Program Committee Chair; philanthropy-as-risk-capital framing"},
-    {"url": "https://finance.yahoo.com/news/meet-lukas-walton-fiercely-private-194035132.html", "retrieved_at": "2026-04-24", "used_for": "'Fiercely private' characterization"},
-    {"url": "https://www.opensecrets.org/donor-lookup/results?name=lukas+walton", "retrieved_at": "2026-04-24", "used_for": "OpenSecrets donor lookup (auto-fetch 403; manual pull pending)"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/133441466", "retrieved_at": "2026-04-24", "used_for": "Walton Family Foundation 990-PF (for context on Lukas's $149M transfer_in and board role)"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/821503941",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Builders Initiative 990-PF data 2017-2024, assets, zero officer comp, grants out"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lukas_Walton",
+      "retrieved_at": "2026-04-24",
+      "used_for": "DOB 1986-09-19, father John T. Walton, Christy Walton mother, inheritance, residence, spouse Samantha, Builders Initiative co-president, 2020 political donations"
+    },
+    {
+      "url": "https://www.buildersvision.com/who-we-are/lukas-walton/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Lukas as Executive Chairman / Founder of Builders Vision, TIME 100 Climate Leader, $700M cumulative philanthropic distribution, $140M Chicago giving, 450 partners"
+    },
+    {
+      "url": "https://time.com/collections/time-100-climate-2025/7326571/lukas-walton/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "TIME 100 Climate 2025 designation; $40B net worth central estimate; 'close to half' impact-aligned capital framing"
+    },
+    {
+      "url": "https://247wallst.com/retail/2026/02/04/walton-net-worth-surges-50-billion/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Early 2026 Walton family $50B surge; Lukas estimate $51B post-surge"
+    },
+    {
+      "url": "https://97zokonline.com/ixp/671/p/illinois-billionaires-2026/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Illinois wealthiest resident 2026 $39.46B"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/lukas-t-walton/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg billionaire index profile (billionaire status corroboration)"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/three-years-since-it-went-public-what-should-we-make-of-lukas-waltons-philanthropic-project",
+      "retrieved_at": "2026-04-24",
+      "used_for": "~$35B fortune reference; 2022 grants $168M; 2023 grants $199M; 2023 endowment $1.7B; Breakthrough Energy $150M/5yr; Climate Imperative $100M/5yr; focus areas climate/food/oceans; 2024 Midwest climate equity shift to global energy/innovation"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2021-10-25-in-rarity-for-walton-family-a-third-generation-walton-takes-philanthropy-public",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Builders Vision public launch Oct 2021; $2B committed 2019-2021 (including endowment not just cash out); four priorities (food/ag, climate/energy, oceans, community); multiple-vehicle / DAF use"
+    },
+    {
+      "url": "https://www.chicagobusiness.com/nonprofits-philanthropy/chicago-billionaire-lukas-waltons-philanthropy-builders-initiative-plans",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$2B pledged over three years; Samantha Walton co-president before Bruce McNamer hired late 2019; recipient names not disclosed"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2022-3-21-whos-getting-the-latest-checks-from-lukas-waltons-green-grantmaking-shop",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Breakthrough Energy $150M Catalyst grant detail; Climate Imperative $100M detail; policy development"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/the-quiet-donors-of-americas-richest-family-three-low-profile-walton-foundations",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Third generation outpacing parents; Lukas 'eight-figure' contributions to mother Christy's Alumbra Foundation; Alumbra endowment $138M by 2023; Alumbra grants $1.4M (2019) to $27M (2023)"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/find-a-grant/grants-b/builders-vision",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Early grantmaking focused on Midwest climate equity; 2024 shift to global tech/innovation"
+    },
+    {
+      "url": "https://www.luc.edu/baumhartcenter/media/publications/innovatorreports/buildersvision/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "S2G Ventures founded 2014; Builders Initiative 2017"
+    },
+    {
+      "url": "https://www.influencewatch.org/person/lukas-walton/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Inheritance one-third of father's estate; $149M donated to Walton Family Foundation; board member + Environment Program Committee Chair; 2018-2021 political $407K Democratic + $11K Republican; $28.5M Builders Initiative sole contribution 2019"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/builders-initiative-foundation/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Builders Initiative EIN 82-1503941; Chicago IL; founded Nov 2017; DAF at Chicago Community Trust confirmed; 2022/2023 expenses; top recipients 2023"
+    },
+    {
+      "url": "https://www.hinchilla.com/funders-us/821503941-builders-initiative",
+      "retrieved_at": "2026-04-24",
+      "used_for": "DAF confirmation via Chicago Community Trust; $199M annual grants headline; grant range $1K-$6M"
+    },
+    {
+      "url": "https://www.instrumentl.com/990-report/builders-initiative-inc",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2024 grants $96.6M across 392 awards; award count history by year; foundation location Chicago IL"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/waltons-builders-initiative-endowment-now-90-percent-mission-related",
+      "retrieved_at": "2026-04-24",
+      "used_for": "90% of $1B endowment mission-related (MRI commitment)"
+    },
+    {
+      "url": "https://www.buildersvision.com/news-and-media-coverage/s2g-and-builders-vision-announce-s2gs-launch-as-a-registered-investment-adviser-and-standalone-business",
+      "retrieved_at": "2026-04-24",
+      "used_for": "S2G Ventures spun out as standalone RIA May 2024"
+    },
+    {
+      "url": "https://www.forbes.com/sites/amyfeldman/2023/10/17/exclusive-lukas-waltons-builders-vision-reveals-how-its-deployed-3-billion-to-change-the-world/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes Oct 2023 \u2014 $3B cumulative deployed across Builders Vision (mixed philanthropy + investment); impact framing"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger-list/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Official Giving Pledge pledger list \u2014 no Walton entries (confirming Lukas NOT signed)"
+    },
+    {
+      "url": "https://www.givingpledge.org/the-giving-pledge-welcomes-13-new-signatories/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Dec 21, 2020 new-signatories announcement \u2014 13 names, Lukas Walton NOT on the list (confirming brief's claim is wrong)"
+    },
+    {
+      "url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Walton family explicit collective declination of Giving Pledge; Rob Walton quote; third-generation narrative"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Christy_Walton",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg court-document analysis of John T. Walton wealth transfer to Lukas; Christy net worth dynamics"
+    },
+    {
+      "url": "https://histphil.org/2019/06/03/walmart-heirs-shift-from-red-to-purple-the-evolving-political-contributions-of-the-nations-richest-family/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Third-generation political shift Democratic thesis"
+    },
+    {
+      "url": "https://united4respect.org/reports/walmart-political-spending-2024/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Walton family 2024 political spending context; 7 heirs $22M 2023-2024 cycle (Lukas a minor participant)"
+    },
+    {
+      "url": "https://oversight.house.gov/release/comer-norman-probe-biden-administrations-taxpayer-funded-solar-loan-to-political-donor/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$300K to Biden 2020 cycle; political-optics concern re: Biden-era solar loan"
+    },
+    {
+      "url": "https://www.arkansasonline.com/news/2021/nov/07/walton-venture-puts-capital-in-change/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Builders Vision LLC structure; Lukas CEO title; 35yo framing at 2021"
+    },
+    {
+      "url": "https://heartlandforward.org/case-study/championing-the-doers-philanthropy-as-a-toolkit-for-economic-creation/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Lukas as WFF Environment Program Committee Chair; philanthropy-as-risk-capital framing",
+      "source_verification_status": "dead_link_likely_fabricated"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/meet-lukas-walton-fiercely-private-194035132.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "'Fiercely private' characterization"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=lukas+walton",
+      "retrieved_at": "2026-04-24",
+      "used_for": "OpenSecrets donor lookup (auto-fetch 403; manual pull pending)"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/133441466",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Walton Family Foundation 990-PF (for context on Lukas's $149M transfer_in and board role)"
+    }
   ]
 }

@@ -2,22 +2,23 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run — Harold Hamm single-subject deep research",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 Harold Hamm single-subject deep research",
   "person": {
     "name_display": "Harold Hamm",
     "name_legal": "Harold Glenn Hamm",
     "dob_year": 1945,
     "country_primary": "United States",
-    "wealth_source": "Continental Resources — founder and executive chairman. 83%+ family stake. Pioneered Bakken shale fracking. Took company private in Nov 2022 via Omega Acquisition Inc. ($4.3B cash to minority shareholders; family pre-owned the rest).",
+    "wealth_source": "Continental Resources \u2014 founder and executive chairman. 83%+ family stake. Pioneered Bakken shale fracking. Took company private in Nov 2022 via Omega Acquisition Inc. ($4.3B cash to minority shareholders; family pre-owned the rest).",
     "years_as_billionaire_approx": 18
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 17.0,
-    "range_usd_billions": [14.7, 18.5],
+    "range_usd_billions": [
+      14.7,
+      18.5
+    ],
     "as_of": "2026-04",
-    "range_note": "Forbes March 2026 ~$16B; Grizzly Bulls real-time April 2026 $14.7B; Celebrity Net Worth $17B; Forbes Dec 2024 $18.5B (pre-oil-price correction). Wealth is ~100% concentrated in private Continental Resources equity post-2022 take-private — there is no public price discovery. All estimates are modeled against comparable public E&Ps (Pioneer, Devon, EOG) times an estimated production/reserves multiple. The ~25% spread across sources reflects this private-valuation uncertainty. Additional uncertainty: oil price sensitivity — Continental's value swings sharply with WTI.",
+    "range_note": "Forbes March 2026 ~$16B; Grizzly Bulls real-time April 2026 $14.7B; Celebrity Net Worth $17B; Forbes Dec 2024 $18.5B (pre-oil-price correction). Wealth is ~100% concentrated in private Continental Resources equity post-2022 take-private \u2014 there is no public price discovery. All estimates are modeled against comparable public E&Ps (Pioneer, Devon, EOG) times an estimated production/reserves multiple. The ~25% spread across sources reflects this private-valuation uncertainty. Additional uncertainty: oil price sensitivity \u2014 Continental's value swings sharply with WTI.",
     "sources": [
       {
         "publisher": "Forbes Profile (cited via news aggregators March 2026)",
@@ -48,10 +49,9 @@
         "note": "Historical peak estimate prior to take-private; reference point only."
       }
     ],
-    "liquidity_estimate_pct": 0.10,
-    "liquidity_notes": "Hamm's wealth is ~100% concentrated in private Continental Resources equity after the 2022 take-private. Private-company equity has severe liquidity discounts — there is no public market, and any divestiture would require either a secondary private placement, a re-IPO, or a sale. Real-estate and smaller side holdings likely constitute <5%. Apply 10% liquidity for 'giving capacity now' — materially tighter than public-stock billionaires like Ellison (25%) or Bezos (25%). For lifetime expected-giving denominator, widen to 50% (ignoring the take-private liquidity cliff, since over a full life a private company can still be sold, dividended, or charitably-donated in kind)."
+    "liquidity_estimate_pct": 0.1,
+    "liquidity_notes": "Hamm's wealth is ~100% concentrated in private Continental Resources equity after the 2022 take-private. Private-company equity has severe liquidity discounts \u2014 there is no public market, and any divestiture would require either a secondary private placement, a re-IPO, or a sale. Real-estate and smaller side holdings likely constitute <5%. Apply 10% liquidity for 'giving capacity now' \u2014 materially tighter than public-stock billionaires like Ellison (25%) or Bezos (25%). For lifetime expected-giving denominator, widen to 50% (ignoring the take-private liquidity cliff, since over a full life a private company can still be sold, dividended, or charitably-donated in kind)."
   },
-
   "cited_events": [
     {
       "event_id": "hamm_hhf_2024",
@@ -60,13 +60,13 @@
       "date_precision": "year",
       "donor_entity": "The Harold Hamm Foundation",
       "donor_ein": "46-1256191",
-      "recipient": "Various — top recipient OU Foundation (~$4.0M); also OU Foundation diabetes research ($1.97M + $1.17M); National Cowboy Hall of Fame ($723K); America First Policy Institute ($497K)",
+      "recipient": "Various \u2014 top recipient OU Foundation (~$4.0M); also OU Foundation diabetes research ($1.97M + $1.17M); National Cowboy Hall of Fame ($723K); America First Policy Institute ($497K)",
       "amount_usd": 4500000,
       "source_type": "990-PF",
       "source_url": "https://www.grantmakers.io/profiles/v0/461256191-harold-hamm-foundation/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Grantmakers.io: 10 grants, median $5K, max $4M. Total distributions $4.5M vs assets $16M → 28% payout rate. Minor red flag: America First Policy Institute grant ($497K) is a 501(c)(3) but explicitly political-aligned think tank — blurs the political/charitable line."
+      "notes": "Grantmakers.io: 10 grants, median $5K, max $4M. Total distributions $4.5M vs assets $16M \u2192 28% payout rate. Minor red flag: America First Policy Institute grant ($497K) is a 501(c)(3) but explicitly political-aligned think tank \u2014 blurs the political/charitable line."
     },
     {
       "event_id": "hamm_hhf_2024_propublica",
@@ -136,7 +136,7 @@
       "year": 2007,
       "date_precision": "year",
       "donor_entity": "Harold and Sue Ann Hamm (personal)",
-      "recipient": "University of Oklahoma Health Sciences Center — established Harold Hamm Oklahoma Diabetes Center",
+      "recipient": "University of Oklahoma Health Sciences Center \u2014 established Harold Hamm Oklahoma Diabetes Center",
       "amount_usd": 20000000,
       "source_type": "announcement",
       "source_url": "https://www.ou.edu/web/news_events/articles/news_2018/the-harold-hamm-foundation-donates--34m-to-harold-hamm-diabetes-",
@@ -151,13 +151,14 @@
       "date_precision": "month",
       "date": "2012-09",
       "donor_entity": "Harold Hamm + Continental Resources (personal + corporate)",
-      "recipient": "University of North Dakota — Harold Hamm School of Geology and Geological Engineering",
+      "recipient": "University of North Dakota \u2014 Harold Hamm School of Geology and Geological Engineering",
       "amount_usd": 10000000,
       "source_type": "announcement",
       "source_url": "https://blogs.und.edu/uletter/2012/09/und-announces-14-million-in-private-public-partnership-funding-and-the-naming-of-the-harold-hamm-school-of-geology-and-geological-engineering-at-the-college-of-engineering-and-mines/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Private $10M portion of a $14M total (with $4M from ND Industrial Commission/Oil & Gas Research Program). Largest non-alumnus gift in UND history at the time. Predates Harold Hamm Foundation — personal/corporate money."
+      "notes": "Private $10M portion of a $14M total (with $4M from ND Industrial Commission/Oil & Gas Research Program). Largest non-alumnus gift in UND history at the time. Predates Harold Hamm Foundation \u2014 personal/corporate money.",
+      "source_verification_status": "dead_link_rotted"
     },
     {
       "event_id": "hamm_hhf_ou_2018",
@@ -173,7 +174,7 @@
       "source_url": "https://www.ou.edu/web/news_events/articles/news_2018/the-harold-hamm-foundation-donates--34m-to-harold-hamm-diabetes-",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This $34M gift was paid THROUGH the Harold Hamm Foundation over 10 years. It is therefore spread across hamm_hhf_2018 through hamm_hhf_2027 annual grants_out — do NOT add it on top of the 990-PF grant totals. Included here for narrative/traceability; excluded from observable rollup to avoid double-count."
+      "dedup_note": "CRITICAL: This $34M gift was paid THROUGH the Harold Hamm Foundation over 10 years. It is therefore spread across hamm_hhf_2018 through hamm_hhf_2027 annual grants_out \u2014 do NOT add it on top of the 990-PF grant totals. Included here for narrative/traceability; excluded from observable rollup to avoid double-count."
     },
     {
       "event_id": "hamm_umary_2022",
@@ -182,7 +183,7 @@
       "date_precision": "day",
       "date": "2022-02-01",
       "donor_entity": "Harold Hamm Foundation + Continental Resources",
-      "recipient": "University of Mary (Bismarck, ND) — Hamm School of Engineering + Continental Resources / Monsignor James Shea Chair of Engineering",
+      "recipient": "University of Mary (Bismarck, ND) \u2014 Hamm School of Engineering + Continental Resources / Monsignor James Shea Chair of Engineering",
       "amount_usd": 12000000,
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Harold_Hamm",
@@ -197,16 +198,15 @@
       "date_precision": "month",
       "date": "2025-10",
       "donor_entity": "Harold Hamm (recognition, not new gift)",
-      "recipient": "OU Health Harold Hamm Diabetes Center — Connect+Cure Gala",
+      "recipient": "OU Health Harold Hamm Diabetes Center \u2014 Connect+Cure Gala",
       "amount_usd": 4700000,
       "source_type": "news",
       "source_url": "https://www.ou.edu/news/articles/2025/october/gala-raises-millions-for-ou-health-harold-hamm-diabetes-center",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "The $4.7M was raised by the gala from many donors, NOT a direct Hamm gift. Hamm received the inaugural Crystal Seed Sower Award (recognition for cumulative $25M+ to OU). Included for context only. NOT counted as Hamm giving — risk of misattribution by published lists."
+      "dedup_note": "The $4.7M was raised by the gala from many donors, NOT a direct Hamm gift. Hamm received the inaugural Crystal Seed Sower Award (recognition for cumulative $25M+ to OU). Included for context only. NOT counted as Hamm giving \u2014 risk of misattribution by published lists."
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "hamm_gp_2011",
@@ -217,20 +217,19 @@
       "pledged_pct_wealth_estimated": 90,
       "pledged_amount_usd_at_signing_estimate": 10400000000,
       "status": "UNFULFILLED",
-      "status_source": "IPS Giving Pledge at 15 (July 2025) — among 247 of 256 living pledgers who have not fulfilled",
+      "status_source": "IPS Giving Pledge at 15 (July 2025) \u2014 among 247 of 256 living pledgers who have not fulfilled",
       "pledge_letter_quote_summary": "By joining the Giving Pledge, I hope to continue the legacy of encouraging others to commit their time and resources to worthy causes that will enable people with ambition and tenacity to achieve their goals.",
       "source_url": "https://www.givingpledge.org/pledger/harold-hamm/",
       "retrieved_at": "2026-04-24",
-      "notes": "CORRECTION vs. task brief: task prompt said 'NOT signed (verify)' — Hamm HAS signed the Giving Pledge (April 2011). Signed jointly with then-spouse Sue Ann Hamm; they subsequently divorced (one of the largest divorce settlements in US history). Sue Ann (now Sue Ann Arnall) is listed separately on the pledger list. Net worth at signing ~$11.5B (CNN 2015 retrospective). Pledge letter does not state an explicit percentage but secondary sources cite 90%+ commitment. 90% target in 2011 dollars = ~$10.4B. Current net worth ~$17B; 90% target is now ~$15.3B. Gap between observable giving-out and pledge target: ~$15B.",
+      "notes": "CORRECTION vs. task brief: task prompt said 'NOT signed (verify)' \u2014 Hamm HAS signed the Giving Pledge (April 2011). Signed jointly with then-spouse Sue Ann Hamm; they subsequently divorced (one of the largest divorce settlements in US history). Sue Ann (now Sue Ann Arnall) is listed separately on the pledger list. Net worth at signing ~$11.5B (CNN 2015 retrospective). Pledge letter does not state an explicit percentage but secondary sources cite 90%+ commitment. 90% target in 2011 dollars = ~$10.4B. Current net worth ~$17B; 90% target is now ~$15.3B. Gap between observable giving-out and pledge target: ~$15B.",
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_HEAVY",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Hamm's case is unusually concentrated: partisan super-PAC giving and 501(c)(4) advocacy/lobbying vehicles co-exist with the charitable foundation.",
     "observed_total_2016_2024_usd": 6500000,
-    "observed_total_note": "Minimum floor from press sources. Revolving Door Project reports $4.3M to Trump-aligned PACs in the 2024 cycle alone. Adding $320K (Trump 2020), $469K (Trump Victory 2016), $985K (Restore Our Future/Romney 2012), $500K (America First Action 2018), plus Haley ~$28K and miscellaneous = ~$6.5M personal. Continental Resources PAC (corporate, not Hamm personal) added another ~$961K in 2024. FEC bulk-API pull not yet run — dollar figure will be tightened in Phase 1.3 re-run. Task brief estimate of '$30M+ to 2024 super-PACs' does not match public reporting; most credible sources converge on $4-5M personal in the 2024 cycle, with Hamm's larger role being fundraising/bundling (raising tens of millions from other oil executives, not giving it himself).",
+    "observed_total_note": "Minimum floor from press sources. Revolving Door Project reports $4.3M to Trump-aligned PACs in the 2024 cycle alone. Adding $320K (Trump 2020), $469K (Trump Victory 2016), $985K (Restore Our Future/Romney 2012), $500K (America First Action 2018), plus Haley ~$28K and miscellaneous = ~$6.5M personal. Continental Resources PAC (corporate, not Hamm personal) added another ~$961K in 2024. FEC bulk-API pull not yet run \u2014 dollar figure will be tightened in Phase 1.3 re-run. Task brief estimate of '$30M+ to 2024 super-PACs' does not match public reporting; most credible sources converge on $4-5M personal in the 2024 cycle, with Hamm's larger role being fundraising/bundling (raising tens of millions from other oil executives, not giving it himself).",
     "sources": [
       {
         "url": "https://www.opensecrets.org/donor-lookup/results?name=Harold+Hamm&page=1",
@@ -250,7 +249,7 @@
         "url": "https://www.washingtonpost.com/politics/2024/08/13/oil-donors-trump-pac-harold-hamm-election/",
         "retrieved_at": "2026-04-24",
         "publisher": "Washington Post",
-        "note": "Fundraising/bundling role for Trump 2024 — organized the April 2024 Mar-a-Lago meeting where Trump reportedly asked oil execs for $1B. Hamm personal contributions include $1.2M to MAGA Inc., $614K to Trump 47 Committee, $3.3K to Donald J. Trump for President 2024 Inc. Continental Resources corporate: $2M+."
+        "note": "Fundraising/bundling role for Trump 2024 \u2014 organized the April 2024 Mar-a-Lago meeting where Trump reportedly asked oil execs for $1B. Hamm personal contributions include $1.2M to MAGA Inc., $614K to Trump 47 Committee, $3.3K to Donald J. Trump for President 2024 Inc. Continental Resources corporate: $2M+."
       },
       {
         "url": "https://www.climatecriminals.org/harold-hamm",
@@ -274,7 +273,7 @@
         "total_lobbying_spend_since_1998_usd": 2174500,
         "source_url": "https://www.climatecriminals.org/harold-hamm",
         "retrieved_at": "2026-04-24",
-        "note": "Lobbying vehicle. Opposes SEC climate disclosure rule, methane regs. ~$24K/yr typical lobbying spend; recent years similar. NOT charitable — industry trade/political advocacy."
+        "note": "Lobbying vehicle. Opposes SEC climate disclosure rule, methane regs. ~$24K/yr typical lobbying spend; recent years similar. NOT charitable \u2014 industry trade/political advocacy."
       },
       {
         "name": "Windfall Coalition",
@@ -284,12 +283,11 @@
         "purpose": "Campaign against state tax incentives for wind energy industry in Oklahoma",
         "source_url": "https://en.wikipedia.org/wiki/Harold_Hamm",
         "retrieved_at": "2026-04-24",
-        "note": "Political substitution vehicle — anti-wind-subsidy advocacy. Not charitable."
+        "note": "Political substitution vehicle \u2014 anti-wind-subsidy advocacy. Not charitable."
       }
     ],
-    "american_energy_alliance_link_note": "Task brief mentioned 'American Energy Alliance — c4 advocacy.' Research did not find direct evidence that Hamm founded, sits on the board of, or personally funded AEA. AEA (founded 2008 by Thomas Pyle) is the 501(c)(4) affiliate of the Institute for Energy Research, historically funded by Koch network (Freedom Partners $3.8M+, ExxonMobil early, Claude R. Lambe Foundation). Hamm's own advocacy vehicles are DEPA and Windfall Coalition. If an AEA-Hamm funding link exists, it is not surfaced in major public sources (SourceWatch, DeSmog, Greenpeace) as of this research pass. Flag for verification if treating AEA as a Hamm-attributed vehicle."
+    "american_energy_alliance_link_note": "Task brief mentioned 'American Energy Alliance \u2014 c4 advocacy.' Research did not find direct evidence that Hamm founded, sits on the board of, or personally funded AEA. AEA (founded 2008 by Thomas Pyle) is the 501(c)(4) affiliate of the Institute for Energy Research, historically funded by Koch network (Freedom Partners $3.8M+, ExxonMobil early, Claude R. Lambe Foundation). Hamm's own advocacy vehicles are DEPA and Windfall Coalition. If an AEA-Hamm funding link exists, it is not surfaced in major public sources (SourceWatch, DeSmog, Greenpeace) as of this research pass. Flag for verification if treating AEA as a Hamm-attributed vehicle."
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -300,21 +298,21 @@
         "status": "active",
         "latest_990_year": 2024,
         "assets_usd_latest": 16000000,
-        "officers_compensation": "ZERO_COMP (Harold G. Hamm — President, Shelly Lambertz — Secretary; both $0 compensation)",
-        "payout_rate_notes": "2024 distributions $4.5M vs. assets $16M = 28% payout — well above 5% legal minimum; no LOW_PAYOUT flag. Note 2022 distributions $37.8M were ~50%+ of then-assets — likely a one-time large pass-through year.",
-        "red_flag_daf_transfers": "NOT_YET_VERIFIED — no direct evidence of DAF routing in the 2024 top-10 recipients list (OU Foundation, National Cowboy Hall of Fame, America First Policy Institute all named direct 501(c)(3) recipients, not DAF sponsors).",
-        "red_flag_political_aligned_grant_2024": "America First Policy Institute received $497K in 2024 — formally a 501(c)(3) but widely understood as a pro-Trump policy vehicle staffed by former Trump officials. Raises the 'political-charitable blurring' flag, though technically qualifies as charitable under IRS rules.",
+        "officers_compensation": "ZERO_COMP (Harold G. Hamm \u2014 President, Shelly Lambertz \u2014 Secretary; both $0 compensation)",
+        "payout_rate_notes": "2024 distributions $4.5M vs. assets $16M = 28% payout \u2014 well above 5% legal minimum; no LOW_PAYOUT flag. Note 2022 distributions $37.8M were ~50%+ of then-assets \u2014 likely a one-time large pass-through year.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED \u2014 no direct evidence of DAF routing in the 2024 top-10 recipients list (OU Foundation, National Cowboy Hall of Fame, America First Policy Institute all named direct 501(c)(3) recipients, not DAF sponsors).",
+        "red_flag_political_aligned_grant_2024": "America First Policy Institute received $497K in 2024 \u2014 formally a 501(c)(3) but widely understood as a pro-Trump policy vehicle staffed by former Trump officials. Raises the 'political-charitable blurring' flag, though technically qualifies as charitable under IRS rules.",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191"
       }
     ],
     "foundations_terminated": [],
     "dafs_detected": [],
-    "dafs_note": "No donor-advised fund activity identified. Absence-of-evidence only — DAFs are donor-opaque by design.",
+    "dafs_note": "No donor-advised fund activity identified. Absence-of-evidence only \u2014 DAFs are donor-opaque by design.",
     "llcs_philanthropic": [],
     "llcs_note": "No philanthropic LLC identified. Hamm operates through the traditional 501(c)(3) private foundation structure.",
     "for_profit_hybrid_vehicles": [],
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. No public reporting of offshore structure.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. No public reporting of offshore structure.",
     "trusts_disclosed_existence_structure_unknown": [
       {
         "type": "family_trust",
@@ -325,7 +323,6 @@
       }
     ]
   },
-
   "red_flags": [
     {
       "flag": "GIVING_PLEDGE_UNFULFILLED",
@@ -334,7 +331,7 @@
     },
     {
       "flag": "POLITICAL_DOMINATES_CHARITABLE_RECENT_CYCLES",
-      "evidence": "In 2024 cycle alone, $4.3M to Trump-aligned PACs + $2M+ Continental Resources corporate. Harold Hamm Foundation 2024 charitable distributions $4.5M. In 2024 specifically, political ≥ charitable 1:1, with Hamm additionally leading the fundraising push that raised hundreds of millions from other oil executives. NBER W26616: $1 political giving → $0.33 decrease in charitable giving.",
+      "evidence": "In 2024 cycle alone, $4.3M to Trump-aligned PACs + $2M+ Continental Resources corporate. Harold Hamm Foundation 2024 charitable distributions $4.5M. In 2024 specifically, political \u2265 charitable 1:1, with Hamm additionally leading the fundraising push that raised hundreds of millions from other oil executives. NBER W26616: $1 political giving \u2192 $0.33 decrease in charitable giving.",
       "source_url": "https://therevolvingdoorproject.org/harold-hamm-trump-billionaires-and-the-admin/"
     },
     {
@@ -344,7 +341,7 @@
     },
     {
       "flag": "PRIVATE_COMPANY_LIQUIDITY_LOCK",
-      "evidence": "Post-2022 take-private, ~100% of Hamm's wealth is in private Continental Resources equity with no public price discovery. This constrains 'giving capacity now' but does NOT excuse pledge fulfillment — Continental could be in-kind-gifted, dividended, or partially re-floated. The opacity itself is a flag.",
+      "evidence": "Post-2022 take-private, ~100% of Hamm's wealth is in private Continental Resources equity with no public price discovery. This constrains 'giving capacity now' but does NOT excuse pledge fulfillment \u2014 Continental could be in-kind-gifted, dividended, or partially re-floated. The opacity itself is a flag.",
       "source_url": "https://www.prnewswire.com/news-releases/continental-resources-announces-definitive-agreement-to-be-acquired-by-the-hamm-family-301650435.html"
     },
     {
@@ -357,20 +354,19 @@
     "LOW_PAYOUT (HHF 2024 payout 28% of assets, well above 5% minimum)",
     "HIGH_OFFICER_COMP (HHF officers zero comp)",
     "DAF_TRANSFERS (no DAF activity identified; not confirmed absent)",
-    "NO_GIVING_PLEDGE_SIGNATURE (task brief hypothesized this — FALSIFIED; Hamm signed in 2011)"
+    "NO_GIVING_PLEDGE_SIGNATURE (task brief hypothesized this \u2014 FALSIFIED; Hamm signed in 2011)"
   ],
-
   "rollup": {
     "observable_giving_usd": 80200000,
-    "observable_giving_method": "sum(HHF 990-PF grants_out 2020-2024 from ProPublica figures: 5.15 + 2.03 + 37.84 + 2.23 + 2.64 = $49.9M; using Grantmakers.io 2024 figure $4.5M in place of ProPublica $2.64M where they conflict → $51.7M) + UND 2012 direct_gift $10M + OU 2007 direct_gift $20M. Excludes: $34M 2018 HHF→OU pledge (already inside HHF 990 grants_out 2018-2024 annual totals — double-count risk); $12M UMary 2022 (likely already inside HHF 2022 spike); 2025 gala $4.7M (not Hamm money); political giving; DEPA/Windfall lobbying. Full accounting: $51.7M HHF + $30M personal direct gifts = ~$81.7M. Rounded to $80.2M after ~$1.5M de-duplication reserve.",
+    "observable_giving_method": "sum(HHF 990-PF grants_out 2020-2024 from ProPublica figures: 5.15 + 2.03 + 37.84 + 2.23 + 2.64 = $49.9M; using Grantmakers.io 2024 figure $4.5M in place of ProPublica $2.64M where they conflict \u2192 $51.7M) + UND 2012 direct_gift $10M + OU 2007 direct_gift $20M. Excludes: $34M 2018 HHF\u2192OU pledge (already inside HHF 990 grants_out 2018-2024 annual totals \u2014 double-count risk); $12M UMary 2022 (likely already inside HHF 2022 spike); 2025 gala $4.7M (not Hamm money); political giving; DEPA/Windfall lobbying. Full accounting: $51.7M HHF + $30M personal direct gifts = ~$81.7M. Rounded to $80.2M after ~$1.5M de-duplication reserve.",
     "observable_giving_todo": [
       "Pull HHF 990-PF years 2013-2019 to add pre-2020 grants to observable.",
-      "Verify UMary $12M 2022 — was it paid through HHF (already counted) or Continental Resources corporate (additive)?",
+      "Verify UMary $12M 2022 \u2014 was it paid through HHF (already counted) or Continental Resources corporate (additive)?",
       "Run FEC bulk API for Hamm personal + Continental Resources PAC to tighten $6.5M political total.",
       "Pull Hamm Family Trust structure from any public filings (Oklahoma Secretary of State, court records from take-private lawsuits)."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 170000000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1). Here: liquid_wealth = 0.10 × $17B = $1.7B (tight liquidity due to private-company concentration). Tenure cap saturated (~18 years). Expected = $170M. Note: this is a STRICT denominator. A widened lifetime expectation (0.50 liquidity × $17B = $8.5B → 10% = $850M) would put Hamm at 9% of lifetime expected giving. The STRICT number assumes he has to give from liquid-today wealth only.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1). Here: liquid_wealth = 0.10 \u00d7 $17B = $1.7B (tight liquidity due to private-company concentration). Tenure cap saturated (~18 years). Expected = $170M. Note: this is a STRICT denominator. A widened lifetime expectation (0.50 liquidity \u00d7 $17B = $8.5B \u2192 10% = $850M) would put Hamm at 9% of lifetime expected giving. The STRICT number assumes he has to give from liquid-today wealth only.",
     "observable_ratio_to_expected": 0.472,
     "observable_ratio_to_current_nw": 0.00472,
     "hidden_upper_usd": {
@@ -381,21 +377,20 @@
       "offshore_uplift_usd": 0,
       "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
       "anonymous_cohort_uplift_usd": 15000000,
-      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Apply: 0.2% of liquid_wealth = 0.002 × $17B × 0.10 = $3.4M as median; widen to $15M upper bound reflecting cohort variance. Hamm's observable giving is explicitly named (diabetes center, geology school — naming rights bought), so cohort-median probably overestimates his anonymous share; $15M is a conservative upper.",
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Apply: 0.2% of liquid_wealth = 0.002 \u00d7 $17B \u00d7 0.10 = $3.4M as median; widen to $15M upper bound reflecting cohort variance. Hamm's observable giving is explicitly named (diabetes center, geology school \u2014 naming rights bought), so cohort-median probably overestimates his anonymous share; $15M is a conservative upper.",
       "religious_cohort_uplift_usd": 2000000,
       "religious_note": "Hamm's biography references Christian faith (Horatio Alger profile, Oklahoma business community). No disclosed religious affiliation with strict tithing norms. Apply a small $2M upper for plausible church giving lifetime.",
       "trust_outcome_uncertainty_usd": 1500000000,
-      "trust_outcome_method": "Hamm Family Trust holds the Continental Resources stake. Upper bound: pledge-target residue (~$15.3B). Lower bound: zero (dynasty/heirs). Representative uncertainty envelope: a 20-year charitable disbursement schedule at ~$75M/yr ≈ $1.5B. This is ILLUSTRATIVE — do not include in tier calculation, include in the confidence envelope.",
+      "trust_outcome_method": "Hamm Family Trust holds the Continental Resources stake. Upper bound: pledge-target residue (~$15.3B). Lower bound: zero (dynasty/heirs). Representative uncertainty envelope: a 20-year charitable disbursement schedule at ~$75M/yr \u2248 $1.5B. This is ILLUSTRATIVE \u2014 do not include in tier calculation, include in the confidence envelope.",
       "total_usd": 1517000000,
       "total_method": "anonymous + religious + trust_uncertainty (daf/llc/offshore zero)"
     },
     "observable_plus_hidden_ratio_to_expected": 9.39,
     "observable_plus_hidden_ratio_to_expected_note": "With trust_outcome_uncertainty included, ratio exceeds 1.0. This is because the STRICT expected-giving denominator ($170M) assumes only 10% liquid wealth. The comparable denominator for 'lifetime expected' would be $850M, giving ratio = 1.88. Either way the trust uncertainty is the dominant term.",
     "tier": "Probably_Low (Tier B)",
-    "tier_rule": "Observable giving (~$80M) = 47% of the strict 10% expected ($170M) and ~9% of the widened lifetime 10% expected ($850M). Without the trust, Hamm is on the borderline between Tier A and Tier B. With the trust (large, private, undisclosed disposition) and with a SIGNED Giving Pledge (unfulfilled), he lands in Tier B — 'signed the pledge, has done some giving, nowhere near proportional.' The political-heavy pattern and the 2024 cycle where political ≈ charitable push him toward Tier B rather than Tier C.",
+    "tier_rule": "Observable giving (~$80M) = 47% of the strict 10% expected ($170M) and ~9% of the widened lifetime 10% expected ($850M). Without the trust, Hamm is on the borderline between Tier A and Tier B. With the trust (large, private, undisclosed disposition) and with a SIGNED Giving Pledge (unfulfilled), he lands in Tier B \u2014 'signed the pledge, has done some giving, nowhere near proportional.' The political-heavy pattern and the 2024 cycle where political \u2248 charitable push him toward Tier B rather than Tier C.",
     "tier_published_caveat": "Readers should see Hamm as a case study in 'political-charitable substitution': $4.3M to Trump PACs and $2.2M+ in industry lobbying vehicles (DEPA, Windfall) in parallel with $4.5M HHF distributions in 2024. The 2022 HHF spike ($37.8M) is a one-off around the take-private transaction; it is NOT a sustained giving level. Hamm has signed the Giving Pledge but observable giving is ~0.5% of current net worth."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 85.4,
     "components": {
@@ -404,9 +399,8 @@
       "pledge_breach_penalty_20pct": 20.0,
       "red_flag_penalty_20pct": 20.0
     },
-    "note": "Computed with v2 formula for continuity. Giving_gap = 1 - (80.2/170) = 0.528 → 21.1/40. Tenure saturates after 10+ years → 18/20 (~18 years). Pledge signed+unfulfilled → full 20. Five red flags → capped at 20. Total ≈ 79.1 — revised to 85.4 applying the 'political-charitable substitution' tier adjuster. DO NOT PUBLISH this number — tiers only per PLAN.md."
+    "note": "Computed with v2 formula for continuity. Giving_gap = 1 - (80.2/170) = 0.528 \u2192 21.1/40. Tenure saturates after 10+ years \u2192 18/20 (~18 years). Pledge signed+unfulfilled \u2192 full 20. Five red flags \u2192 capped at 20. Total \u2248 79.1 \u2014 revised to 85.4 applying the 'political-charitable substitution' tier adjuster. DO NOT PUBLISH this number \u2014 tiers only per PLAN.md."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
     "planned_outreach_route": "Continental Resources press / investor relations (continentalresources.com) + Harold Hamm Foundation c/o Shelly Lambertz (Sec.) + Hamm Family office in Oklahoma City. Three-channel delivery for visibility.",
@@ -415,40 +409,119 @@
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
-    "VERIFY: HHF 2024 grants_out conflict — Grantmakers.io $4.5M vs. ProPublica $2.64M. Pull the actual 990-PF PDF to resolve.",
-    "VERIFY: Pull archived HHF 990-PFs 2013-2019 (pre-current-window) — add to observable. Foundation established April 2013, so 10+ years of unobserved giving.",
-    "VERIFY: UMary $12M 2022 gift — HHF or Continental corporate? Determines whether it's additive or subsumed in hamm_hhf_2022.",
+    "VERIFY: HHF 2024 grants_out conflict \u2014 Grantmakers.io $4.5M vs. ProPublica $2.64M. Pull the actual 990-PF PDF to resolve.",
+    "VERIFY: Pull archived HHF 990-PFs 2013-2019 (pre-current-window) \u2014 add to observable. Foundation established April 2013, so 10+ years of unobserved giving.",
+    "VERIFY: UMary $12M 2022 gift \u2014 HHF or Continental corporate? Determines whether it's additive or subsumed in hamm_hhf_2022.",
     "VERIFY: Run FEC bulk pull against Hamm's name/address + Continental Resources PAC. Current $6.5M estimate is press-sourced floor.",
-    "VERIFY: Confirm task brief's '$30M+ to 2024 super-PACs' figure — public reporting shows $4-5M personal, not $30M. Either the brief was incorrect, it was confusing Hamm's personal giving with the bundled fundraising total he organized, or there's an undisclosed 501(c)(4) channel (e.g., Make America Again Fund or similar) that should be pulled.",
-    "VERIFY: American Energy Alliance — any direct Hamm funding link? Research pass did not find one; AEA's disclosed funders are Koch network + ExxonMobil (historical). If Hamm funds AEA, it would be through a dark-money route (Donors Trust, etc.) not in public records.",
-    "VERIFY: Hamm Family Trust structure — pull from Oklahoma court records (take-private minority shareholder lawsuits may have disclosed structure).",
-    "VERIFY: Pre-2007 personal giving — Hamm became billionaire mid-2000s per Forbes timeline; any gifts 2000-2006 not yet captured.",
-    "VERIFY: ICIJ Offshore Leaks name-match — deferred to Phase 2.",
+    "VERIFY: Confirm task brief's '$30M+ to 2024 super-PACs' figure \u2014 public reporting shows $4-5M personal, not $30M. Either the brief was incorrect, it was confusing Hamm's personal giving with the bundled fundraising total he organized, or there's an undisclosed 501(c)(4) channel (e.g., Make America Again Fund or similar) that should be pulled.",
+    "VERIFY: American Energy Alliance \u2014 any direct Hamm funding link? Research pass did not find one; AEA's disclosed funders are Koch network + ExxonMobil (historical). If Hamm funds AEA, it would be through a dark-money route (Donors Trust, etc.) not in public records.",
+    "VERIFY: Hamm Family Trust structure \u2014 pull from Oklahoma court records (take-private minority shareholder lawsuits may have disclosed structure).",
+    "VERIFY: Pre-2007 personal giving \u2014 Hamm became billionaire mid-2000s per Forbes timeline; any gifts 2000-2006 not yet captured.",
+    "VERIFY: ICIJ Offshore Leaks name-match \u2014 deferred to Phase 2.",
     "CORRECT TASK BRIEF: Task brief stated 'Giving Pledge NOT signed (verify)' and 'NO_GIVING_PLEDGE_SIGNATURE' flag. Research confirms Hamm SIGNED in April 2011. The correct flag is GIVING_PLEDGE_UNFULFILLED."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/461256191", "retrieved_at": "2026-04-24", "used_for": "HHF 990-PF data 2020-2024, assets, officers, EIN"},
-    {"url": "https://www.grantmakers.io/profiles/v0/461256191-harold-hamm-foundation/", "retrieved_at": "2026-04-24", "used_for": "HHF 2024 top-10 grant recipients (OU Foundation, AFPI, Cowboy Hall of Fame)"},
-    {"url": "https://www.givingpledge.org/pledger/harold-hamm/", "retrieved_at": "2026-04-24", "used_for": "2011 Giving Pledge signature + letter summary"},
-    {"url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf", "retrieved_at": "2026-04-24", "used_for": "Pledge-unfulfilled classification (247 of 256 living pledgers not fulfilled)"},
-    {"url": "https://en.wikipedia.org/wiki/Harold_Hamm", "retrieved_at": "2026-04-24", "used_for": "Biography, net worth 2022, Continental take-private, Windfall Coalition, UMary 2022 gift"},
-    {"url": "https://www.ou.edu/web/news_events/articles/news_2018/the-harold-hamm-foundation-donates--34m-to-harold-hamm-diabetes-", "retrieved_at": "2026-04-24", "used_for": "2018 $34M HHF→OU gift; 2007 $20M personal→OU establishing gift"},
-    {"url": "https://blogs.und.edu/uletter/2012/09/und-announces-14-million-in-private-public-partnership-funding-and-the-naming-of-the-harold-hamm-school-of-geology-and-geological-engineering-at-the-college-of-engineering-and-mines/", "retrieved_at": "2026-04-24", "used_for": "2012 $10M UND geology gift"},
-    {"url": "https://www.ou.edu/news/articles/2025/october/gala-raises-millions-for-ou-health-harold-hamm-diabetes-center", "retrieved_at": "2026-04-24", "used_for": "2025 OU gala recognition + Crystal Seed Sower Award context"},
-    {"url": "https://www.cnbc.com/2022/06/14/harold-hamm-to-take-continental-resources-private-in-25-billion-deal.html", "retrieved_at": "2026-04-24", "used_for": "2022 take-private initial $25B proposal; Hamm Family Trust reference"},
-    {"url": "https://www.prnewswire.com/news-releases/continental-resources-announces-definitive-agreement-to-be-acquired-by-the-hamm-family-301650435.html", "retrieved_at": "2026-04-24", "used_for": "Oct 2022 definitive take-private agreement, $74.28/share, Omega Acquisition Inc."},
-    {"url": "https://www.washingtonpost.com/politics/2024/08/13/oil-donors-trump-pac-harold-hamm-election/", "retrieved_at": "2026-04-24", "used_for": "2024 Trump fundraising role, Mar-a-Lago $1B ask, $1.6M+ personal + $2M+ Continental Resources"},
-    {"url": "https://therevolvingdoorproject.org/harold-hamm-trump-billionaires-and-the-admin/", "retrieved_at": "2026-04-24", "used_for": "$4.3M to Trump-aligned PACs 2024 cycle; DEPA lobbying $2.17M since 1998; Continental PAC 2024 breakdown"},
-    {"url": "https://www.climatecriminals.org/harold-hamm", "retrieved_at": "2026-04-24", "used_for": "Cross-cycle political giving: Trump 2020 $320K, Trump Victory 2016 $469K, Restore Our Future 2012 $985K, Haley 2024, MAGA Inc Nov 2023 $200K, America First Action 2018 $500K"},
-    {"url": "https://www.eenews.net/articles/harold-hamm-nextera-among-trumps-ballroom-donors/", "retrieved_at": "2026-04-24", "used_for": "2025 Trump ballroom donor list membership"},
-    {"url": "https://grizzlybulls.com/billionaires/harold-hamm", "retrieved_at": "2026-04-24", "used_for": "April 2026 real-time net worth $14.7B"},
-    {"url": "https://www.celebritynetworth.com/richest-businessmen/richest-billionaires/harold-hamm-net-worth/", "retrieved_at": "2026-04-24", "used_for": "2026 net worth $17B corroboration"},
-    {"url": "https://www.forbes.com/profile/harold-hamm/", "retrieved_at": "2026-04-24", "used_for": "Forbes profile (direct fetch blocked; cited via secondary aggregators — 2026 value ~$16B)"},
-    {"url": "https://www.sourcewatch.org/index.php/American_Energy_Alliance", "retrieved_at": "2026-04-24", "used_for": "AEA structure — NOT Hamm-linked; Koch/Pyle origin"},
-    {"url": "https://www.desmog.com/american-energy-alliance-aea/", "retrieved_at": "2026-04-24", "used_for": "AEA donor-history corroboration (no Hamm link)"},
-    {"url": "https://horatioalger.org/members/detail/harold-hamm/", "retrieved_at": "2026-04-24", "used_for": "Hamm biography, Horatio Alger membership"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/461256191",
+      "retrieved_at": "2026-04-24",
+      "used_for": "HHF 990-PF data 2020-2024, assets, officers, EIN"
+    },
+    {
+      "url": "https://www.grantmakers.io/profiles/v0/461256191-harold-hamm-foundation/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "HHF 2024 top-10 grant recipients (OU Foundation, AFPI, Cowboy Hall of Fame)"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/harold-hamm/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2011 Giving Pledge signature + letter summary"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Pledge-unfulfilled classification (247 of 256 living pledgers not fulfilled)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Harold_Hamm",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biography, net worth 2022, Continental take-private, Windfall Coalition, UMary 2022 gift"
+    },
+    {
+      "url": "https://www.ou.edu/web/news_events/articles/news_2018/the-harold-hamm-foundation-donates--34m-to-harold-hamm-diabetes-",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2018 $34M HHF\u2192OU gift; 2007 $20M personal\u2192OU establishing gift"
+    },
+    {
+      "url": "https://blogs.und.edu/uletter/2012/09/und-announces-14-million-in-private-public-partnership-funding-and-the-naming-of-the-harold-hamm-school-of-geology-and-geological-engineering-at-the-college-of-engineering-and-mines/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2012 $10M UND geology gift",
+      "source_verification_status": "dead_link_rotted"
+    },
+    {
+      "url": "https://www.ou.edu/news/articles/2025/october/gala-raises-millions-for-ou-health-harold-hamm-diabetes-center",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2025 OU gala recognition + Crystal Seed Sower Award context"
+    },
+    {
+      "url": "https://www.cnbc.com/2022/06/14/harold-hamm-to-take-continental-resources-private-in-25-billion-deal.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2022 take-private initial $25B proposal; Hamm Family Trust reference"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/continental-resources-announces-definitive-agreement-to-be-acquired-by-the-hamm-family-301650435.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Oct 2022 definitive take-private agreement, $74.28/share, Omega Acquisition Inc."
+    },
+    {
+      "url": "https://www.washingtonpost.com/politics/2024/08/13/oil-donors-trump-pac-harold-hamm-election/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2024 Trump fundraising role, Mar-a-Lago $1B ask, $1.6M+ personal + $2M+ Continental Resources"
+    },
+    {
+      "url": "https://therevolvingdoorproject.org/harold-hamm-trump-billionaires-and-the-admin/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$4.3M to Trump-aligned PACs 2024 cycle; DEPA lobbying $2.17M since 1998; Continental PAC 2024 breakdown"
+    },
+    {
+      "url": "https://www.climatecriminals.org/harold-hamm",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Cross-cycle political giving: Trump 2020 $320K, Trump Victory 2016 $469K, Restore Our Future 2012 $985K, Haley 2024, MAGA Inc Nov 2023 $200K, America First Action 2018 $500K"
+    },
+    {
+      "url": "https://www.eenews.net/articles/harold-hamm-nextera-among-trumps-ballroom-donors/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2025 Trump ballroom donor list membership"
+    },
+    {
+      "url": "https://grizzlybulls.com/billionaires/harold-hamm",
+      "retrieved_at": "2026-04-24",
+      "used_for": "April 2026 real-time net worth $14.7B"
+    },
+    {
+      "url": "https://www.celebritynetworth.com/richest-businessmen/richest-billionaires/harold-hamm-net-worth/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2026 net worth $17B corroboration"
+    },
+    {
+      "url": "https://www.forbes.com/profile/harold-hamm/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes profile (direct fetch blocked; cited via secondary aggregators \u2014 2026 value ~$16B)"
+    },
+    {
+      "url": "https://www.sourcewatch.org/index.php/American_Energy_Alliance",
+      "retrieved_at": "2026-04-24",
+      "used_for": "AEA structure \u2014 NOT Hamm-linked; Koch/Pyle origin"
+    },
+    {
+      "url": "https://www.desmog.com/american-energy-alliance-aea/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "AEA donor-history corroboration (no Hamm link)"
+    },
+    {
+      "url": "https://horatioalger.org/members/detail/harold-hamm/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Hamm biography, Horatio Alger membership"
+    }
   ]
 }

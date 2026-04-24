@@ -2,8 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run — single-subject deep research",
-
+  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research",
   "person": {
     "name_display": "Leon Cooperman",
     "name_legal": "Leon G. Cooperman",
@@ -12,10 +11,12 @@
     "wealth_source": "Omega Advisors hedge fund founder (1991-2018, converted to family office); prior 25-year career at Goldman Sachs, rose to chairman/CEO of Goldman Sachs Asset Management",
     "years_as_billionaire_approx": 20
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 3.3,
-    "range_usd_billions": [2.5, 3.7],
+    "range_usd_billions": [
+      2.5,
+      3.7
+    ],
     "as_of": "2026-04",
     "range_note": "Multiple secondary sources cite Cooperman in the $3.2-$3.7B range as of late 2025 / early 2026. Gurufocus (Mar 2026) ~$3.61B; CelebsLives ~$3.6B; other estimates cluster around $3.2B. Forbes profile page could not be fetched directly (access blocked) but tertiary reporting consistently places him in this band. Prompt range target given as $2.5-3.5B; using $3.3B as central.",
     "sources": [
@@ -40,9 +41,8 @@
       }
     ],
     "liquidity_estimate_pct": 0.85,
-    "liquidity_notes": "Wealth held primarily through Omega Advisors family office (converted from public-facing hedge fund in 2018). Highly liquid — cash, public securities, and hedge fund assets, not concentrated founder-equity. Apply 85% liquidity for 'giving capacity now' calculations (vs. 25% for Ellison's Oracle stake). This is the standard treatment for hedge fund principals."
+    "liquidity_notes": "Wealth held primarily through Omega Advisors family office (converted from public-facing hedge fund in 2018). Highly liquid \u2014 cash, public securities, and hedge fund assets, not concentrated founder-equity. Apply 85% liquidity for 'giving capacity now' calculations (vs. 25% for Ellison's Oracle stake). This is the standard treatment for hedge fund principals."
   },
-
   "cited_events": [
     {
       "event_id": "cooperman_ltcff_2025",
@@ -105,7 +105,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "The announced $100M Saint Barnabas gift in Sept 2021 was made 'from the Cooperman Family Foundation' per Bloomberg — but LTCFF only paid out $22.2M this year, meaning the $100M was likely pledged/multi-year, not disbursed in full. DO NOT add the $100M on top of 990-PF totals without pledge-payment schedule confirmation."
+      "dedup_note": "The announced $100M Saint Barnabas gift in Sept 2021 was made 'from the Cooperman Family Foundation' per Bloomberg \u2014 but LTCFF only paid out $22.2M this year, meaning the $100M was likely pledged/multi-year, not disbursed in full. DO NOT add the $100M on top of 990-PF totals without pledge-payment schedule confirmation."
     },
     {
       "event_id": "cooperman_ltcff_2020",
@@ -209,7 +209,7 @@
       "year": 2011,
       "date_precision": "year",
       "donor_entity": "Leon and Toby Cooperman (announced; likely routed through LTCFF or personal)",
-      "recipient": "Columbia Business School — Manhattanville campus construction",
+      "recipient": "Columbia Business School \u2014 Manhattanville campus construction",
       "amount_usd": 25000000,
       "source_type": "announcement",
       "source_url": "https://news.columbia.edu/news/leon-cooperman-gives-school-25-million-manhattanville-campus",
@@ -223,13 +223,13 @@
       "year": 2014,
       "date_precision": "year",
       "donor_entity": "Leon and Toby Cooperman",
-      "recipient": "Hunter College (CUNY) — $10M scholarships + $15M library renovation (Leon and Toby Cooperman Library)",
+      "recipient": "Hunter College (CUNY) \u2014 $10M scholarships + $15M library renovation (Leon and Toby Cooperman Library)",
       "amount_usd": 25000000,
       "source_type": "announcement",
       "source_url": "https://www.hunter.cuny.edu/communications/news/top-featured-stories/alums-toby-and-leon-cooperman-give-hunter-record-25-million",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Largest gift ever to Hunter College at the time. Likely routed through LTCFF — inside 2013-2018 LTCFF payouts of ~$95M across those 5 years. EXCLUDED from observable rollup to avoid double-count with LTCFF grants_out."
+      "dedup_note": "Largest gift ever to Hunter College at the time. Likely routed through LTCFF \u2014 inside 2013-2018 LTCFF payouts of ~$95M across those 5 years. EXCLUDED from observable rollup to avoid double-count with LTCFF grants_out."
     },
     {
       "event_id": "cooperman_stbarnabas_2014",
@@ -237,13 +237,13 @@
       "year": 2014,
       "date_precision": "year",
       "donor_entity": "Leon and Toby Cooperman",
-      "recipient": "Saint Barnabas Medical Center (NJ) — expansion catalyst gift",
+      "recipient": "Saint Barnabas Medical Center (NJ) \u2014 expansion catalyst gift",
       "amount_usd": 25000000,
       "source_type": "announcement",
       "source_url": "https://keepingthepromise.brrh.com/latest-news/2019/december/toby-and-leon-cooperman-make-transformative-25-m/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Announced gift — very likely paid through LTCFF. EXCLUDED from observable rollup to avoid double-count."
+      "dedup_note": "Announced gift \u2014 very likely paid through LTCFF. EXCLUDED from observable rollup to avoid double-count."
     },
     {
       "event_id": "cooperman_stbarnabas_2021",
@@ -252,13 +252,13 @@
       "date_precision": "month",
       "date": "2021-09",
       "donor_entity": "Leon and Toby Cooperman Family Foundation",
-      "recipient": "Saint Barnabas Medical Center — renamed Cooperman Barnabas Medical Center",
+      "recipient": "Saint Barnabas Medical Center \u2014 renamed Cooperman Barnabas Medical Center",
       "amount_usd": 100000000,
       "source_type": "announcement",
       "source_url": "https://www.rwjbh.org/blog/2021/september/saint-barnabas-medical-center-receives-100-milli/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Largest gift ever from Coopermans, largest hospital gift in NJ history. LTCFF 2021 990-PF shows only $22.2M grants_out — so the $100M is either a multi-year pledge or was partly paid via Cooperman personal assets outside LTCFF. EXCLUDED from observable rollup as a pledge rather than confirmed-paid; will be counted as it appears in future 990-PFs.",
+      "dedup_note": "Largest gift ever from Coopermans, largest hospital gift in NJ history. LTCFF 2021 990-PF shows only $22.2M grants_out \u2014 so the $100M is either a multi-year pledge or was partly paid via Cooperman personal assets outside LTCFF. EXCLUDED from observable rollup as a pledge rather than confirmed-paid; will be counted as it appears in future 990-PFs.",
       "status": "ANNOUNCED_PARTIAL_PAYMENT"
     },
     {
@@ -273,14 +273,14 @@
       "source_url": "https://coopermanscholars.org/about/our-donor/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Cooperman College Scholars is a separate 501(c)(3) — transfers from LTCFF to it would be grants_out at LTCFF (already counted). Additional personal/direct gifts to CCS are incremental. Prompt asks about CU Boulder — Cooperman College Scholars operates in Essex County, NJ, NOT CU Boulder. No CU Boulder gift identified."
+      "dedup_note": "Cooperman College Scholars is a separate 501(c)(3) \u2014 transfers from LTCFF to it would be grants_out at LTCFF (already counted). Additional personal/direct gifts to CCS are incremental. Prompt asks about CU Boulder \u2014 Cooperman College Scholars operates in Essex County, NJ, NOT CU Boulder. No CU Boulder gift identified."
     },
     {
       "event_id": "cooperman_birthright_2010",
       "event_role": "direct_gift",
       "year": 2010,
       "donor_entity": "Leon and Toby Cooperman",
-      "recipient": "Birthright Israel Foundation — Cooperman Family Fund for Jewish Future",
+      "recipient": "Birthright Israel Foundation \u2014 Cooperman Family Fund for Jewish Future",
       "amount_usd": 5000000,
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Leon_Cooperman",
@@ -302,7 +302,6 @@
       "dedup_note": "Likely already inside LTCFF 2024 grants_out ($19.2M). EXCLUDED from observable rollup to avoid double-count. Notable: amount announced exceeds LTCFF 2024 total, so some portion may have come from personal or was multi-year pledge."
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "cooperman_gp_2010",
@@ -310,12 +309,12 @@
       "year": 2010,
       "pledged_pct_wealth": 50,
       "pledged_amount_usd_at_signing_estimate": 1500000000,
-      "pledged_amount_note": "Giving Pledge = 'majority' of wealth (minimum 50%). Cooperman has publicly stated he plans to give away at least half in lifetime and put the rest into a foundation for his kids. Net worth at 2010 signing was ~$1.8B per Forbes, implying ~$900M-$1.8B pledge floor. He has also stated he wants to 'give it all away' in lifetime — watchable but not formally pledged.",
+      "pledged_amount_note": "Giving Pledge = 'majority' of wealth (minimum 50%). Cooperman has publicly stated he plans to give away at least half in lifetime and put the rest into a foundation for his kids. Net worth at 2010 signing was ~$1.8B per Forbes, implying ~$900M-$1.8B pledge floor. He has also stated he wants to 'give it all away' in lifetime \u2014 watchable but not formally pledged.",
       "status": "ON_TRACK_OR_FULFILLED",
-      "status_source": "Observable LTCFF 990-PF grants 2012-2025 sum to ~$230M plus multiple direct announced gifts (Hunter $25M, Columbia $25M, Saint Barnabas $100M, Cooperman College Scholars $25-50M, Jewish Community Foundation $20M) — implying $400M-$700M+ paid-to-date philanthropy on a ~$3.3B current net worth base. Approaching/exceeding 50% minimum pledge target if we include announced commitments.",
+      "status_source": "Observable LTCFF 990-PF grants 2012-2025 sum to ~$230M plus multiple direct announced gifts (Hunter $25M, Columbia $25M, Saint Barnabas $100M, Cooperman College Scholars $25-50M, Jewish Community Foundation $20M) \u2014 implying $400M-$700M+ paid-to-date philanthropy on a ~$3.3B current net worth base. Approaching/exceeding 50% minimum pledge target if we include announced commitments.",
       "pledge_letter_quotes": [
-        "We make a living by what we get, but we make a life by what we give. — Sir Winston Churchill (quoted)",
-        "A man's net worth is measured not by what he earns but rather what he gives away. — Talmud (quoted)",
+        "We make a living by what we get, but we make a life by what we give. \u2014 Sir Winston Churchill (quoted)",
+        "A man's net worth is measured not by what he earns but rather what he gives away. \u2014 Talmud (quoted)",
         "Toby and I feel it is our moral imperative to give others the opportunity to pursue the American dream by sharing our financial success."
       ],
       "source_url": "https://givingpledge.org/pledger?pledgerId=182",
@@ -331,10 +330,9 @@
       "source_url": "https://jewishstandard.timesofisrael.com/the-coopermans-put-millions-into-philanthropy/",
       "retrieved_at": "2026-04-24",
       "quote_paraphrased": "Cooperman has stated he will give away half of his wealth in his lifetime and the other half to his children to form a foundation as his legacy.",
-      "notes": "Prompt flags Cooperman's 'give away ALL' intent as watchable. Jewish Standard reporting indicates the more precise framing is: half in lifetime, half through a family foundation that continues giving after death. Functionally, 100% of wealth eventually goes to charitable purposes under this plan — but the downstream-foundation-for-kids model has historically been a structure where heirs retain de facto control and compensation, so this is not equivalent to a clean 100% charitable commitment. Watchable but not counted above 50% floor."
+      "notes": "Prompt flags Cooperman's 'give away ALL' intent as watchable. Jewish Standard reporting indicates the more precise framing is: half in lifetime, half through a family foundation that continues giving after death. Functionally, 100% of wealth eventually goes to charitable purposes under this plan \u2014 but the downstream-foundation-for-kids model has historically been a structure where heirs retain de facto control and compensation, so this is not equivalent to a clean 100% charitable commitment. Watchable but not counted above 50% floor."
     }
   ],
-
   "political_giving": {
     "classification": "LIGHT_MIXED",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Cooperman's political footprint is modest compared to peer hedge fund billionaires (Griffin, Simons, Singer) and does not materially displace his observable charitable giving.",
@@ -352,11 +350,10 @@
         "url": "https://www.foxbusiness.com/money/leon-cooperman-politics",
         "retrieved_at": "2026-04-24",
         "publisher": "Fox Business",
-        "note": "Characterizes Cooperman as having 'history of controversial political commentary' — primarily vocal opposition to wealth tax, not a major super-PAC donor."
+        "note": "Characterizes Cooperman as having 'history of controversial political commentary' \u2014 primarily vocal opposition to wealth tax, not a major super-PAC donor."
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -369,62 +366,60 @@
         "latest_990_year": 2025,
         "assets_usd_latest": 580603240,
         "grants_out_usd_latest": 22565023,
-        "officers_compensation": "ZERO_COMP (all seven trustees — Leon Cooperman, Toby Cooperman, Michael Cooperman, Wayne Cooperman, Jodi Cooperman, Courtney Cooperman, Anne Archer — receive $0 compensation per 2025 filing)",
-        "payout_rate_notes": "Grants out in 2025 ($22.6M) vs. prior-year assets ($433.7M) = ~5.2%. RIGHT AT the 5% legal minimum across years. Foundation is accumulating faster than it is granting — 2012 assets were $147M, 2025 assets are $581M (4x growth) while grants_out grew only 3x. Watch for LOW_PAYOUT flag: 2022 payout was ~5.2%, 2021 was ~5.4%, 2020 was ~5.4% — consistently at floor, not above.",
+        "officers_compensation": "ZERO_COMP (all seven trustees \u2014 Leon Cooperman, Toby Cooperman, Michael Cooperman, Wayne Cooperman, Jodi Cooperman, Courtney Cooperman, Anne Archer \u2014 receive $0 compensation per 2025 filing)",
+        "payout_rate_notes": "Grants out in 2025 ($22.6M) vs. prior-year assets ($433.7M) = ~5.2%. RIGHT AT the 5% legal minimum across years. Foundation is accumulating faster than it is granting \u2014 2012 assets were $147M, 2025 assets are $581M (4x growth) while grants_out grew only 3x. Watch for LOW_PAYOUT flag: 2022 payout was ~5.2%, 2021 was ~5.4%, 2020 was ~5.4% \u2014 consistently at floor, not above.",
         "red_flag_daf_transfers": "NOT_YET_VERIFIED (would require parsing grant recipients list; ProPublica summary page does not disclose recipients)",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941"
       }
     ],
     "foundations_terminated": [],
     "dafs_detected": [],
-    "dafs_note": "No donor-advised fund activity identified in summary-level review. Inside Philanthropy reporting suggests Cooperman is known for direct named gifts to institutions (hospitals, universities) — low DAF-usage profile compared to peers.",
+    "dafs_note": "No donor-advised fund activity identified in summary-level review. Inside Philanthropy reporting suggests Cooperman is known for direct named gifts to institutions (hospitals, universities) \u2014 low DAF-usage profile compared to peers.",
     "llcs_philanthropic": [],
     "llcs_note": "No philanthropic LLC identified. Omega Advisors is the family office (for-profit investment management), not a philanthropic vehicle.",
     "for_profit_hybrid_vehicles": [],
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. No public reporting of offshore activity.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. No public reporting of offshore activity.",
     "trusts_disclosed_existence_structure_unknown": []
   },
-
   "red_flags": [
     {
       "flag": "SEC_INSIDER_TRADING_SETTLEMENT",
-      "evidence": "September 2016: SEC charged Cooperman and Omega Advisors with insider trading in Atlas Pipeline Partners (APL) securities based on material nonpublic information. Settled May 2017 for $4.9M without admitting wrongdoing; subject to onsite compliance monitoring through 2022. Relevant to philanthropic credibility only insofar as it contextualizes wealth origination — does not negate giving.",
+      "evidence": "September 2016: SEC charged Cooperman and Omega Advisors with insider trading in Atlas Pipeline Partners (APL) securities based on material nonpublic information. Settled May 2017 for $4.9M without admitting wrongdoing; subject to onsite compliance monitoring through 2022. Relevant to philanthropic credibility only insofar as it contextualizes wealth origination \u2014 does not negate giving.",
       "source_url": "https://www.sec.gov/newsroom/press-releases/2016-189"
     },
     {
       "flag": "PAYOUT_AT_LEGAL_FLOOR",
-      "evidence": "LTCFF consistently pays out at or near the 5% legal minimum. Foundation assets 4x since 2012 ($147M → $581M) but grants_out only 3x ($7M → $22.6M). Foundation is compounding faster than it grants, implying the endowment is being built up rather than deployed. At 5% payout on $581M, annual grants are ~$29M — fine for a small foundation but not commensurate with the rhetoric of 'giving it all away'.",
+      "evidence": "LTCFF consistently pays out at or near the 5% legal minimum. Foundation assets 4x since 2012 ($147M \u2192 $581M) but grants_out only 3x ($7M \u2192 $22.6M). Foundation is compounding faster than it grants, implying the endowment is being built up rather than deployed. At 5% payout on $581M, annual grants are ~$29M \u2014 fine for a small foundation but not commensurate with the rhetoric of 'giving it all away'.",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941"
     },
     {
       "flag": "FOUNDATION_DYNASTY_STRUCTURE",
-      "evidence": "All seven LTCFF trustees are family members (Cooperman spouse, two sons, daughters-in-law, granddaughter). Cooperman has publicly stated plan is half-to-charity-in-lifetime, half-to-foundation-controlled-by-kids. Under the Giving Pledge's 'majority of wealth' rule this qualifies, but the family-foundation-in-perpetuity model is structurally weaker than direct deployment — heirs control the giving in perpetuity, which compounds the LOW_PAYOUT risk over generations.",
+      "evidence": "All seven LTCFF trustees are family members (Cooperman spouse, two sons, daughters-in-law, granddaughter). Cooperman has publicly stated plan is half-to-charity-in-lifetime, half-to-foundation-controlled-by-kids. Under the Giving Pledge's 'majority of wealth' rule this qualifies, but the family-foundation-in-perpetuity model is structurally weaker than direct deployment \u2014 heirs control the giving in perpetuity, which compounds the LOW_PAYOUT risk over generations.",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941"
     }
   ],
   "red_flags_not_present": [
-    "NO_OBSERVABLE_GIVING — $230M+ documented from LTCFF alone over 14 years.",
-    "HIGH_OFFICER_COMP — all LTCFF trustees receive zero comp.",
-    "PLEDGE_UNFULFILLED — On track or functionally fulfilled at current giving pace vs. 50% of ~$3.3B floor.",
-    "POLITICAL_HEAVY — modest political footprint, does not dominate charitable giving.",
-    "DAF_TRANSFERS — no evidence of DAF-intermediary routing."
+    "NO_OBSERVABLE_GIVING \u2014 $230M+ documented from LTCFF alone over 14 years.",
+    "HIGH_OFFICER_COMP \u2014 all LTCFF trustees receive zero comp.",
+    "PLEDGE_UNFULFILLED \u2014 On track or functionally fulfilled at current giving pace vs. 50% of ~$3.3B floor.",
+    "POLITICAL_HEAVY \u2014 modest political footprint, does not dominate charitable giving.",
+    "DAF_TRANSFERS \u2014 no evidence of DAF-intermediary routing."
   ],
-
   "rollup": {
     "observable_giving_usd": 230447565,
-    "observable_giving_method": "sum(LTCFF 990-PF grants_out 2012-2025) = $230.4M. Excludes: Columbia 2011 ($25M, pre-ProPublica window, likely via LTCFF), Hunter 2014 ($25M, likely inside LTCFF 2013-2018), Saint Barnabas 2014 ($25M, likely inside LTCFF), Saint Barnabas 2021 ($100M, likely multi-year pledge with partial payment via LTCFF), Cooperman College Scholars 2015 ($25M, likely inside LTCFF), Birthright 2010 ($5M, pre-window), Jewish Community Foundation 2024 ($20M, likely inside LTCFF 2024). Bigger personal-direct gifts outside LTCFF cannot be ruled out — so $230M is LOWER BOUND.",
+    "observable_giving_method": "sum(LTCFF 990-PF grants_out 2012-2025) = $230.4M. Excludes: Columbia 2011 ($25M, pre-ProPublica window, likely via LTCFF), Hunter 2014 ($25M, likely inside LTCFF 2013-2018), Saint Barnabas 2014 ($25M, likely inside LTCFF), Saint Barnabas 2021 ($100M, likely multi-year pledge with partial payment via LTCFF), Cooperman College Scholars 2015 ($25M, likely inside LTCFF), Birthright 2010 ($5M, pre-window), Jewish Community Foundation 2024 ($20M, likely inside LTCFF 2024). Bigger personal-direct gifts outside LTCFF cannot be ruled out \u2014 so $230M is LOWER BOUND.",
     "observable_giving_upper_bound_usd": 580000000,
-    "observable_giving_upper_bound_method": "If major announced gifts were partly/wholly from personal assets outside LTCFF: LTCFF $230M + 50% of $225M announced-gifts set + $100M Saint Barnabas pledge-to-date (~50%) = ~$400-580M plausible upper bound. Jewish Standard reporting characterizes lifetime giving as 'nearing the billion-dollar mark' — consistent with this upper bound if personal gifts are additive.",
+    "observable_giving_upper_bound_method": "If major announced gifts were partly/wholly from personal assets outside LTCFF: LTCFF $230M + 50% of $225M announced-gifts set + $100M Saint Barnabas pledge-to-date (~50%) = ~$400-580M plausible upper bound. Jewish Standard reporting characterizes lifetime giving as 'nearing the billion-dollar mark' \u2014 consistent with this upper bound if personal gifts are additive.",
     "observable_giving_todo": [
-      "Pull LTCFF pre-2012 990-PFs (1982-2011) via IRS SOI — foundation has been active since 1981, 30 years of pre-ProPublica data exists.",
+      "Pull LTCFF pre-2012 990-PFs (1982-2011) via IRS SOI \u2014 foundation has been active since 1981, 30 years of pre-ProPublica data exists.",
       "Verify whether $100M Saint Barnabas 2021 gift is disbursing as multi-year pledge via LTCFF or was paid separately from personal Omega Advisors assets.",
       "Verify whether Hunter $25M 2014, Columbia $25M 2011, Saint Barnabas $25M 2014 were LTCFF-routed or personal.",
       "FEC bulk pull for Leon Cooperman political giving total 2010-2025.",
       "Parse LTCFF grant recipients to check for DAF routing."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 280500000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.85 × $3.3B = $2.805B; tenure cap saturated (20 years). Expected = $280.5M. Cooperman's observable floor of $230M is 82% of this norm; upper bound ~$580M exceeds it 2x.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.85 \u00d7 $3.3B = $2.805B; tenure cap saturated (20 years). Expected = $280.5M. Cooperman's observable floor of $230M is 82% of this norm; upper bound ~$580M exceeds it 2x.",
     "observable_ratio_to_expected": 0.821,
     "observable_ratio_to_current_nw": 0.0698,
     "hidden_upper_usd": {
@@ -435,20 +430,19 @@
       "offshore_uplift_usd": 0,
       "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
       "anonymous_cohort_uplift_usd": 50000000,
-      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Cooperman's public profile is the OPPOSITE of anonymous — nearly every major gift is named (Cooperman Library, Cooperman Barnabas Medical Center, Cooperman College Scholars, Cooperman Scholarship). Anonymous uplift bounded low. Apply 0.2% of liquid wealth = $5.6M, rounded up to $50M to allow for direct personal-asset gifts outside LTCFF that are simply not in press coverage.",
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Cooperman's public profile is the OPPOSITE of anonymous \u2014 nearly every major gift is named (Cooperman Library, Cooperman Barnabas Medical Center, Cooperman College Scholars, Cooperman Scholarship). Anonymous uplift bounded low. Apply 0.2% of liquid wealth = $5.6M, rounded up to $50M to allow for direct personal-asset gifts outside LTCFF that are simply not in press coverage.",
       "religious_cohort_uplift_usd": 20000000,
       "religious_note": "Cooperman is publicly Jewish; multiple significant gifts to Jewish causes (Birthright, Jewish Community Foundation of MetroWest, Jewish Federation). Jewish philanthropic giving is typically visible rather than hidden (unlike churches). Small uplift bounded at $20M for synagogue-level giving not captured in 990 recipient data.",
       "trust_outcome_uncertainty_usd": 1500000000,
-      "trust_outcome_method": "Cooperman's stated plan: half to charity in lifetime, half to family foundation controlled by heirs after death. The family-foundation half (~$1.5B at current NW) is committed to charitable purposes in principle but deployed at heir-controlled pace — historically a very uncertain pathway. We set an uncertainty envelope of $1.5B representing the eventual-charitable-deployment portion of the family-controlled estate, but DO NOT include this in tier calculation. Flag for downstream Tier A/B/C scoring.",
+      "trust_outcome_method": "Cooperman's stated plan: half to charity in lifetime, half to family foundation controlled by heirs after death. The family-foundation half (~$1.5B at current NW) is committed to charitable purposes in principle but deployed at heir-controlled pace \u2014 historically a very uncertain pathway. We set an uncertainty envelope of $1.5B representing the eventual-charitable-deployment portion of the family-controlled estate, but DO NOT include this in tier calculation. Flag for downstream Tier A/B/C scoring.",
       "total_usd": 1570000000,
       "total_method": "anonymous + religious + trust (daf/llc/offshore all zero)"
     },
     "observable_plus_hidden_ratio_to_expected": 6.42,
     "tier": "Probably_On_Track (Tier C)",
-    "tier_rule": "Observable $230M / expected $281M = 82%. Upper bound $580M / expected $281M = 207%. Even at the strict lower bound Cooperman is within spitting distance of the 10% formal norm. Add credibly-named announced gifts ($225M+) and he clears the norm 2x. He is a Tier C 'on track' giver — not a Bill Gates / MacKenzie Scott Tier VERIFIED_HIGH (that requires >5x expected), but meaningfully above the 'signed but hasn't delivered' cohort. Red flags (SEC settlement, payout-at-floor, dynasty structure) lower confidence but do not reverse the classification.",
-    "tier_published_caveat": "Cooperman is the canonical example of 'Giving Pledge signer who is actually giving.' Net worth is small ($3.3B vs. Ellison's $227B), which makes the pledge target reachable within an ordinary human lifetime. Public persona as philanthropy-defender-in-chief aligns with observable disbursements. The structural risk is dynasty-foundation compounding rather than lifetime deployment — watch LTCFF payout rate over the next decade."
+    "tier_rule": "Observable $230M / expected $281M = 82%. Upper bound $580M / expected $281M = 207%. Even at the strict lower bound Cooperman is within spitting distance of the 10% formal norm. Add credibly-named announced gifts ($225M+) and he clears the norm 2x. He is a Tier C 'on track' giver \u2014 not a Bill Gates / MacKenzie Scott Tier VERIFIED_HIGH (that requires >5x expected), but meaningfully above the 'signed but hasn't delivered' cohort. Red flags (SEC settlement, payout-at-floor, dynasty structure) lower confidence but do not reverse the classification.",
+    "tier_published_caveat": "Cooperman is the canonical example of 'Giving Pledge signer who is actually giving.' Net worth is small ($3.3B vs. Ellison's $227B), which makes the pledge target reachable within an ordinary human lifetime. Public persona as philanthropy-defender-in-chief aligns with observable disbursements. The structural risk is dynasty-foundation compounding rather than lifetime deployment \u2014 watch LTCFF payout rate over the next decade."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 25.5,
     "components": {
@@ -457,46 +451,112 @@
       "pledge_breach_penalty_20pct": 0.0,
       "red_flag_penalty_20pct": 5.0
     },
-    "note": "Computed with v2 formula for continuity. DO NOT PUBLISH this number — we publish tiers only per PLAN.md. Low score reflects solid observable giving ratio, on-track pledge, modest but not zero red flags."
+    "note": "Computed with v2 formula for continuity. DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md. Low score reflects solid observable giving ratio, on-track pledge, modest but not zero red flags."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
-    "planned_outreach_route": "Leon and Toby Cooperman Family Foundation (Boca Raton, FL) + Omega Advisors family office + Cooperman College Scholars — document delivery to foundation trustees directly.",
+    "planned_outreach_route": "Leon and Toby Cooperman Family Foundation (Boca Raton, FL) + Omega Advisors family office + Cooperman College Scholars \u2014 document delivery to foundation trustees directly.",
     "scheduled_outreach_date": null,
     "response_deadline": null,
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
     "VERIFY: Forbes 2026 net worth directly (WebFetch blocked in this pass; used aggregator estimates).",
     "VERIFY: Pull LTCFF pre-2012 990-PFs via IRS SOI (foundation active since 1981).",
-    "VERIFY: Saint Barnabas $100M 2021 — pledge-payment schedule (was this multi-year or paid in one tranche from personal assets?).",
-    "VERIFY: Hunter $25M 2014, Columbia $25M 2011, Cooperman College Scholars $25M 2015 — LTCFF-routed or personal?",
+    "VERIFY: Saint Barnabas $100M 2021 \u2014 pledge-payment schedule (was this multi-year or paid in one tranche from personal assets?).",
+    "VERIFY: Hunter $25M 2014, Columbia $25M 2011, Cooperman College Scholars $25M 2015 \u2014 LTCFF-routed or personal?",
     "VERIFY: FEC bulk pull for Leon Cooperman political giving 2010-2025 (estimate of ~$500K floor not yet tightened).",
     "VERIFY: Parse LTCFF grant recipient list to confirm NO DAF routing.",
-    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
-    "VERIFY: Prompt mentioned Cooperman College Scholars / CU Boulder link — no CU Boulder connection found. Cooperman College Scholars is Essex County NJ-based. Confirm with Jonah that this was the intended target or research another CU Boulder link."
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: Prompt mentioned Cooperman College Scholars / CU Boulder link \u2014 no CU Boulder connection found. Cooperman College Scholars is Essex County NJ-based. Confirm with Jonah that this was the intended target or research another CU Boulder link."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/133102941", "retrieved_at": "2026-04-24", "used_for": "LTCFF 990-PF data 2012-2025, assets, trustees, zero-comp verification"},
-    {"url": "https://givingpledge.org/pledger?pledgerId=182", "retrieved_at": "2026-04-24", "used_for": "2010 pledge letter verbatim text, signing year, 'majority' commitment"},
-    {"url": "https://en.wikipedia.org/wiki/Leon_Cooperman", "retrieved_at": "2026-04-24", "used_for": "Biography, career arc (Goldman → Omega), major gifts timeline, SEC case"},
-    {"url": "https://news.columbia.edu/news/leon-cooperman-gives-school-25-million-manhattanville-campus", "retrieved_at": "2026-04-24", "used_for": "Columbia Business School $25M 2011 gift"},
-    {"url": "https://www.hunter.cuny.edu/communications/news/top-featured-stories/alums-toby-and-leon-cooperman-give-hunter-record-25-million", "retrieved_at": "2026-04-24", "used_for": "Hunter College $25M 2014 gift (largest-ever gift to Hunter)"},
-    {"url": "https://coopermanscholars.org/about/our-donor/", "retrieved_at": "2026-04-24", "used_for": "Cooperman College Scholars program (Essex County NJ — NOT CU Boulder)"},
-    {"url": "https://www.rwjbh.org/blog/2021/september/saint-barnabas-medical-center-receives-100-milli/", "retrieved_at": "2026-04-24", "used_for": "Saint Barnabas $100M 2021 gift; hospital rename"},
-    {"url": "https://keepingthepromise.brrh.com/latest-news/2019/december/toby-and-leon-cooperman-make-transformative-25-m/", "retrieved_at": "2026-04-24", "used_for": "Saint Barnabas $25M 2014 catalyst gift"},
-    {"url": "https://philanthropynewsdigest.org/news/jewish-community-foundation-of-metrowest-new-jersey-to-receive-20-million-from-local-couple", "retrieved_at": "2026-04-24", "used_for": "Jewish Community Foundation MetroWest NJ $20M gift"},
-    {"url": "https://www.sec.gov/newsroom/press-releases/2016-189", "retrieved_at": "2026-04-24", "used_for": "SEC insider trading charges — September 2016"},
-    {"url": "https://www.sec.gov/newsroom/speeches-statements/statement-leon-cooperman-settling-insider-trading-charges", "retrieved_at": "2026-04-24", "used_for": "SEC settlement statement May 2017"},
-    {"url": "https://jewishstandard.timesofisrael.com/the-coopermans-put-millions-into-philanthropy/", "retrieved_at": "2026-04-24", "used_for": "'Nearing the billion-dollar mark' lifetime giving characterization; half-in-lifetime, half-to-kids-foundation model"},
-    {"url": "https://www.insidephilanthropy.com/home/2022-5-31-a-look-at-how-and-where-the-leon-and-toby-cooperman-family-foundation-gives", "retrieved_at": "2026-04-24", "used_for": "LTCFF giving pattern analysis"},
-    {"url": "https://www.gurufocus.com/insider/388/leon-g-cooperman", "retrieved_at": "2026-04-24", "used_for": "Net worth estimate $3.61B 2026"},
-    {"url": "https://www.opensecrets.org/donor-lookup/results?name=leon+cooperman&order=desc&sort=A", "retrieved_at": "2026-04-24", "used_for": "Political giving donor-lookup page reference (not bulk parsed)"},
-    {"url": "https://www.foxbusiness.com/money/leon-cooperman-politics", "retrieved_at": "2026-04-24", "used_for": "Political commentary characterization"},
-    {"url": "https://en.wikipedia.org/wiki/Cooperman_Barnabas_Medical_Center", "retrieved_at": "2026-04-24", "used_for": "Hospital rename verification"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/133102941",
+      "retrieved_at": "2026-04-24",
+      "used_for": "LTCFF 990-PF data 2012-2025, assets, trustees, zero-comp verification"
+    },
+    {
+      "url": "https://givingpledge.org/pledger?pledgerId=182",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2010 pledge letter verbatim text, signing year, 'majority' commitment"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Leon_Cooperman",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biography, career arc (Goldman \u2192 Omega), major gifts timeline, SEC case"
+    },
+    {
+      "url": "https://news.columbia.edu/news/leon-cooperman-gives-school-25-million-manhattanville-campus",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Columbia Business School $25M 2011 gift"
+    },
+    {
+      "url": "https://www.hunter.cuny.edu/communications/news/top-featured-stories/alums-toby-and-leon-cooperman-give-hunter-record-25-million",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Hunter College $25M 2014 gift (largest-ever gift to Hunter)"
+    },
+    {
+      "url": "https://coopermanscholars.org/about/our-donor/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Cooperman College Scholars program (Essex County NJ \u2014 NOT CU Boulder)"
+    },
+    {
+      "url": "https://www.rwjbh.org/blog/2021/september/saint-barnabas-medical-center-receives-100-milli/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Saint Barnabas $100M 2021 gift; hospital rename"
+    },
+    {
+      "url": "https://keepingthepromise.brrh.com/latest-news/2019/december/toby-and-leon-cooperman-make-transformative-25-m/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Saint Barnabas $25M 2014 catalyst gift"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/jewish-community-foundation-of-metrowest-new-jersey-to-receive-20-million-from-local-couple",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Jewish Community Foundation MetroWest NJ $20M gift"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/press-releases/2016-189",
+      "retrieved_at": "2026-04-24",
+      "used_for": "SEC insider trading charges \u2014 September 2016"
+    },
+    {
+      "url": "https://www.sec.gov/newsroom/speeches-statements/statement-leon-cooperman-settling-insider-trading-charges",
+      "retrieved_at": "2026-04-24",
+      "used_for": "SEC settlement statement May 2017"
+    },
+    {
+      "url": "https://jewishstandard.timesofisrael.com/the-coopermans-put-millions-into-philanthropy/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "'Nearing the billion-dollar mark' lifetime giving characterization; half-in-lifetime, half-to-kids-foundation model"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2022-5-31-a-look-at-how-and-where-the-leon-and-toby-cooperman-family-foundation-gives",
+      "retrieved_at": "2026-04-24",
+      "used_for": "LTCFF giving pattern analysis",
+      "source_verification_status": "dead_link_likely_fabricated"
+    },
+    {
+      "url": "https://www.gurufocus.com/insider/388/leon-g-cooperman",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Net worth estimate $3.61B 2026"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=leon+cooperman&order=desc&sort=A",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Political giving donor-lookup page reference (not bulk parsed)"
+    },
+    {
+      "url": "https://www.foxbusiness.com/money/leon-cooperman-politics",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Political commentary characterization"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cooperman_Barnabas_Medical_Center",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Hospital rename verification"
+    }
   ]
 }

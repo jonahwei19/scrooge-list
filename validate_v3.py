@@ -62,6 +62,13 @@ def check(rec: dict, path: Path) -> tuple[list[str], list[str]]:
             errors.append(f"sources_all[{i}] invalid url: {url!r}")
         if not (isinstance(s, dict) and s.get("retrieved_at")):
             warnings.append(f"sources_all[{i}] missing retrieved_at")
+        # Dead-link annotations (written by check_urls.py / manual triage).
+        if isinstance(s, dict):
+            status = s.get("source_verification_status") or ""
+            if status.startswith("dead_link_fabricated") or status.startswith("dead_link_likely_fabricated"):
+                errors.append(f"sources_all[{i}] flagged as likely-fabricated ({status}) — replace before publish")
+            elif status.startswith("dead_link_"):
+                warnings.append(f"sources_all[{i}] flagged dead ({status}) — consider replacing")
 
     # Event source URLs + canonical event_role enforcement
     for fld in ("cited_events", "pledges_and_announcements"):
@@ -86,6 +93,17 @@ def check(rec: dict, path: Path) -> tuple[list[str], list[str]]:
                     errors.append(f"{fld}[{i}] canonical_role {canon!r} not in CANONICAL_EVENT_ROLES")
             if not ev.get("source_url") and ev.get("amount_usd"):
                 warnings.append(f"{fld}[{i}] amount with no source_url")
+            ev_status = ev.get("source_verification_status") or ""
+            if ev_status.startswith("dead_link_likely_fabricated") and ev.get("amount_usd"):
+                errors.append(
+                    f"{fld}[{i}] dollar event (${ev.get('amount_usd')/1e6:.0f}M) cites a likely-fabricated URL "
+                    f"— replace source or remove event before publish: {ev.get('source_url')}"
+                )
+            elif ev_status.startswith("dead_link_") and ev.get("amount_usd"):
+                warnings.append(
+                    f"{fld}[{i}] dollar event (${ev.get('amount_usd')/1e6:.0f}M) cites a dead URL "
+                    f"({ev_status}) — verify or replace before publish"
+                )
 
     # Amount arithmetic: sum of grant_out + direct_gift event amounts should
     # land within ±20% of rollup.observable_giving_usd. This catches agents
