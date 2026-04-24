@@ -160,6 +160,20 @@ body{
 .searchbar .download-row a:hover{background:rgba(139,46,31,.08)}
 .dimmed{opacity:.25;transition:opacity .2s}
 
+.how-to-read{
+  margin:0 0 56px;padding:28px 32px;
+  background:var(--paper-mid);border-left:3px solid var(--rust);
+}
+.how-to-read h3{
+  font-family:var(--display);font-style:italic;
+  font-variation-settings:"opsz" 48,"SOFT" 60;
+  font-size:1.25rem;margin-bottom:10px;color:var(--ink);
+}
+.how-to-read ol{margin:10px 0 0 22px;color:var(--ink-soft);line-height:1.6;font-family:var(--body)}
+.how-to-read ol li{margin-bottom:8px;padding-left:4px}
+.how-to-read ol li::marker{color:var(--rust);font-family:var(--display);font-weight:700}
+.how-to-read strong{color:var(--ink)}
+
 .chip{display:inline-block;padding:2px 9px 3px;margin:0 4px 4px 0;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;font-family:var(--display);font-variation-settings:"opsz" 9,"SOFT" 50;line-height:1.4}
 .chip.rust{color:var(--rust)}
 .chip.gilt{color:var(--gilt)}
@@ -235,8 +249,18 @@ body{
     </span>
   </div>
 
+  <div class="how-to-read">
+    <h3>How to read this</h3>
+    <ol>
+      <li><strong>Tier A is the strong claim.</strong> Each subject has low observable giving AND we could not identify an opaque vehicle (DAF, LLC, offshore trust) that would plausibly close the gap. Click through for the evidence chain.</li>
+      <li><strong>Tier B is a softer claim.</strong> Observable giving is low, but at least one opaque vehicle exists. We cannot prove hidden generosity is absent — only that we cannot find it in public records.</li>
+      <li><strong>Tier C is "we cannot say."</strong> Most giving here flows through an LLC or DAF that does not require public disclosure.</li>
+      <li><strong>On Track is calibration.</strong> Observable giving clears the 10%-of-liquid-wealth benchmark — they are not Scrooges, and we show them to make the tier boundaries legible.</li>
+    </ol>
+  </div>
+
   <div class="section-head"><h2><span class="orn">❧</span> Tier A · The Verified Low <span class="orn">❧</span></h2></div>
-  <p class="section-sub">Ranked ordinally. Low observable giving, and no opaque vehicle that could plausibly close the gap.</p>
+  <p class="section-sub">Ranked ordinally. Low observable giving, and no opaque vehicle that could plausibly close the gap. Subjects here are the strongest claims the list makes.</p>
   <div class="frontispiece-grid" id="tierA"></div>
 
   <div class="section-head"><h2><span class="orn">❧</span> Tier B · Probably Low <span class="orn">❧</span></h2></div>
@@ -266,7 +290,7 @@ body{
   </table>
 
   <div class="section-head"><h2><span class="orn">❧</span> On Track · Not Scrooges <span class="orn">❧</span></h2></div>
-  <p class="section-sub">Shown for calibration. Observable giving is near or above the 10%-of-liquid-wealth capacity benchmark.</p>
+  <p class="section-sub">Shown for calibration — these are not Scrooges. Observable giving is near or above the 10%-of-liquid-wealth benchmark, confirmed through 990-PFs or published LLC grant databases.</p>
   <table class="tier-table sortable" id="tierOnTrack">
     <thead><tr>
       <th data-sort="name">Name</th>

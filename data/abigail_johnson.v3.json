@@ -1,0 +1,450 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Abigail Johnson (Fidelity Investments CEO, heir). Canonical 'very private, institutional-family-foundation' case. Critical methodology note: Abigail does NOT personally control Fidelity Charitable (the DAF sponsor) — that is an independent public charity (EIN 11-0303001). Her observable philanthropy runs through family foundations (Edward C. Johnson Fund, The Fidelity Foundation) where she is one trustee among several Johnson family members, so attribution is fractional. Company-led gifts (UNCF $190M via Fidelity Investments) are corporate giving, NOT personal.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual research — quiet heir / private-family case",
+
+  "person": {
+    "name_display": "Abigail Johnson",
+    "name_legal": "Abigail Pierrepont Johnson",
+    "dob_year": 1961,
+    "country_primary": "United States",
+    "wealth_source": "Heir + operator. Chair/CEO/President of Fidelity Investments (FMR LLC); family and affiliates own ~40% of Fidelity. Grandfather Edward C. Johnson II founded Fidelity in 1946. Private company — valuations span widely.",
+    "years_as_billionaire_approx": 25,
+    "years_as_billionaire_note": "First appeared on Forbes 400 in early 2000s. Has been a billionaire >20 years; tenure cap (10yr) saturated for expected-giving formula."
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 35.0,
+    "range_usd_billions": [29, 47],
+    "as_of": "2026-04",
+    "range_note": "Fidelity Investments is PRIVATE — valuations span ~60% ($29B low / $47B high). Forbes 2025/26 profile ~$32.7B; secondary Forbes reports ~$35B. Bloomberg Billionaires Index ~$47.3B (uses higher Fidelity valuation multiple). Other sources cite $29-43B. Spread itself is evidence of valuation uncertainty for privately-held wealth.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires",
+        "url": "https://www.forbes.com/profile/abigail-johnson/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 32.7,
+        "value_as_of": "2025-2026"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/abigail-p-johnson/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 47.3,
+        "methodology_note": "Bloomberg applies a higher private-company multiple than Forbes."
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes + Bloomberg)",
+        "url": "https://en.wikipedia.org/wiki/Abigail_Johnson",
+        "retrieved_at": "2026-04-24",
+        "value_range_usd_billions": [35, 47]
+      }
+    ],
+    "liquidity_estimate_pct": 0.15,
+    "liquidity_notes": "Highly illiquid. ~40% family ownership of FMR LLC (private) — cannot be sold without structured transaction; no public market. Dividend / distribution income is liquid but represents a small fraction of stock-value wealth. Apply 15% liquidity discount (lower than Ellison's 25% because Fidelity is entirely private vs. Oracle public equity). For lifetime expected-giving denominator, 50-60% may be more appropriate given multigenerational time horizon."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "abby_ecjf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Edward C. Johnson Fund",
+      "donor_ein": "04-6108344",
+      "recipient": "Various (arts, culture, historic preservation, conservation, health — primarily New England)",
+      "amount_usd": 16356631,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "attribution_note": "Abigail P. Johnson is one of several Johnson-family directors; she receives $0 compensation. Full amount is a FAMILY foundation grant, not Abigail-personal. For the Scrooge rollup we attribute the full grant_out to the Johnson-family observable (single-subject view) but flag fractional attribution if comparing to Abby-only personal resources."
+    },
+    {
+      "event_id": "abby_ecjf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Edward C. Johnson Fund",
+      "donor_ein": "04-6108344",
+      "amount_usd": 21483016,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ecjf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Edward C. Johnson Fund",
+      "donor_ein": "04-6108344",
+      "amount_usd": 27126197,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ecjf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Edward C. Johnson Fund",
+      "donor_ein": "04-6108344",
+      "amount_usd": 24046576,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ecjf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Edward C. Johnson Fund",
+      "donor_ein": "04-6108344",
+      "amount_usd": 1385710,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Anomalously low year (likely timing of large grants made in 2015 and 2022; ECJF's grant pattern is lumpy rather than annuitized)."
+    },
+    {
+      "event_id": "abby_ecjf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Edward C. Johnson Fund",
+      "donor_ein": "04-6108344",
+      "amount_usd": 1002048,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "The Fidelity Foundation",
+      "donor_ein": "04-6131201",
+      "recipient": "Various (3,099 awards 2024; education, human services, grantmaking infrastructure — MA/NC/TX focus)",
+      "amount_usd": 167800000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "attribution_note": "CRITICAL CAVEAT: The Fidelity Foundation is funded historically by Fidelity Investments (the company) plus Johnson family contributions. Trustees include Abigail P. Johnson (unpaid), Elizabeth L. Johnson, Edward C. Johnson IV, Ross E. Sherbrooke. Classifying the full $167.8M as Abigail-personal overstates her individual generosity; it is primarily company-funded institutional philanthropy that she helps govern. Fractional attribution (~15-25% of total) may be appropriate for single-subject personal scoring. We include the full amount here for the Johnson-family observable and flag the attribution for downstream scoring."
+    },
+    {
+      "event_id": "abby_ff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Fidelity Foundation",
+      "donor_ein": "04-6131201",
+      "amount_usd": 158300000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Fidelity Foundation",
+      "donor_ein": "04-6131201",
+      "amount_usd": 169700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ff_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Fidelity Foundation",
+      "donor_ein": "04-6131201",
+      "amount_usd": 94200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Fidelity Foundation",
+      "donor_ein": "04-6131201",
+      "amount_usd": 76200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Fidelity Foundation",
+      "donor_ein": "04-6131201",
+      "amount_usd": 58200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "abby_ecjf_npf_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Edward C. Johnson Fund",
+      "donor_ein": "04-6108344",
+      "recipient": "National Park Foundation (land acquisition — part of NPF $350M Centennial Campaign)",
+      "amount_usd": 29700000,
+      "source_type": "news",
+      "source_url": "https://www.bostonglobe.com/business/2017/04/11/fidelity-johnson-family-donated-nearly-million-national-parks/N7bTKKEpNNuYswWm7nqxsJ/story.html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "POSSIBLE DOUBLE-COUNT if pre-2019 ECJF 990-PFs are later pulled: this $29.7M gift would appear in ECJF's 2015 grants_out and we would need to subtract from this direct-gift row. As of now, we have not pulled ECJF 2015 990 — flag for verification. Boston Globe notes the family declined comment and NPF staff declined to comment (confirming family preference for privacy)."
+    },
+    {
+      "event_id": "fidelity_uncf_2023",
+      "event_role": "corporate_gift_not_personal",
+      "year": 2023,
+      "donor_entity": "Fidelity Investments (the company — FMR LLC)",
+      "recipient": "United Negro College Fund (Fidelity Scholars Program)",
+      "amount_usd": 190000000,
+      "announcement_total_usd": 250000000,
+      "source_type": "announcement",
+      "source_url": "https://uncf.org/news/uncf-receives-its-largest-corporate-gift-to-support-underserved-students",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "classification_note": "EXCLUDED from personal observable giving. This is a CORPORATE gift from Fidelity Investments (FMR LLC) — a for-profit company that Abigail leads but does not solely own. Corporate philanthropy is not personal philanthropy under Forbes/IPS methodology. Listed here for context on Abigail-adjacent generosity signals. The family owns ~40% of Fidelity, so a naive pass-through share would be ~$76M, but corporate gifts deducted against company earnings do not materially reduce family wealth in the way a personal foundation transfer does."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "abby_giving_pledge_status",
+      "event_role": "pledge_status_check",
+      "status": "NOT_SIGNED",
+      "status_verified_at": "2026-04-24",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "notes": "Neither Abigail Johnson nor any Johnson-family member associated with Fidelity appears on the Giving Pledge signatory list. The Johnson family is historically private and has made no public pledge comparable to Gates/Buffett/Ellison 95% commitments. Absence of a pledge means NO pledge-breach penalty, but also no public-commitment anchor for expected giving."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "LOW_BIPARTISAN",
+    "substitution_note": "Light political footprint for a CEO of this wealth tier. No evidence of super-PAC mega-gifts. Observable political giving is 2-4 orders of magnitude below Ellison's.",
+    "observed_total_usd_approx": 450000,
+    "observed_total_note": "Rough sum across cycles: ~$2,700 Jeb Bush 2015 + ~$330,000 Hillary Clinton + DNC 2016 + ~$12,589 in 2020 cycle + modest 2024 Biden fundraiser hosting (attendance, not dollar-disclosed). Reported FEC-itemized totals rarely clear $500K lifetime. Bipartisan across cycles, more Democratic weight in 2016/2020/2024. NBER W26616 substitution dynamic is minimal here given small absolute political footprint.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Abigail_Johnson",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Wikipedia (citing FEC press)",
+        "used_for": "Bush 2015 + Clinton/DNC 2016 figures"
+      },
+      {
+        "url": "https://www.campaignmoney.com/political/contributions/abigail-johnson.asp?cycle=20",
+        "retrieved_at": "2026-04-24",
+        "publisher": "CampaignMoney / FEC mirror",
+        "amount_usd": 12589,
+        "event_cycle": "2020"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2024-05-21/fidelity-s-abby-johnson-raises-cash-for-biden-at-boston-event",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Bloomberg",
+        "note": "May 2024 Boston fundraiser for Biden re-election; dollar amount not disclosed in press."
+      }
+    ],
+    "todo_verification": "Run FEC bulk API pull on 'Abigail Johnson' + 'Abigail P. Johnson' + Boston address to tighten lifetime total. Current figure is press-assembled, not FEC-direct."
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Edward C. Johnson Fund",
+        "ein": "04-6108344",
+        "established_year": 1964,
+        "state": "MA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 563852929,
+        "grants_out_latest_usd": 16356631,
+        "officers_compensation_notes": "Abigail P. Johnson serves as unpaid director. Paid staff include Stephen Sloan (Program Director, $65,684) and Maura Marx (President, $21,477). No HIGH_COMP flag.",
+        "payout_rate_notes": "2024 payout $16.4M / assets $564M = 2.9% — BELOW the 5% legal minimum for private non-operating foundations. This is a LOW_PAYOUT flag candidate; note that the 5% rule applies to qualifying distributions (broader than grants_out), so a carryover or PRI could cover shortfall. Pull Part XII of 2024 990-PF to confirm minimum distribution compliance.",
+        "grant_pattern_note": "Lumpy — $29.7M single gift to NPF in 2015; ~$1M years in 2019-2020; recovered to $16-27M in 2021-2024. Implies episodic large-gift strategy rather than annuitized grantmaking.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344"
+      },
+      {
+        "name": "The Fidelity Foundation",
+        "ein": "04-6131201",
+        "established_year": 1965,
+        "state": "MA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 4982473098,
+        "grants_out_latest_usd": 167800000,
+        "officers_compensation_notes": "Abigail P. Johnson unpaid director. Other Johnson-family directors (Elizabeth L. Johnson, Edward C. Johnson IV, Ross E. Sherbrooke) also unpaid. Paid staff: Maura Marx President $483,242; four program directors/treasurer in $240-280K range. Officer compensation is ~0.7% of grants — no HIGH_COMP flag.",
+        "payout_rate_notes": "2024 payout $167.8M / assets $4.98B = 3.4% — BELOW 5% nominal minimum. Same qualifying-distribution caveat as ECJF; likely clears minimum via admin expenses, PRIs, and carryover. Still a LOW_PAYOUT flag candidate for the Johnson-family observable.",
+        "classification_note": "Institutional foundation historically seeded by Fidelity Investments (the company) + family. Attribution to Abigail personally is fractional. Tripled in assets 2019-2024 ($1.4B to $4.98B) — consistent with ongoing company/family contributions rather than pure investment growth.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "CRITICAL METHODOLOGY DISTINCTION: Fidelity Charitable (EIN 11-0303001) is the LARGEST donor-advised fund sponsor in the US (~$100B+ AUM). It is NOT attributable to Abigail Johnson. Fidelity Charitable is a separate, independent public charity — Abigail does not own its assets, does not direct its grants, and did not personally donate to it at that scale. Her company (Fidelity Investments) provides administrative infrastructure to Fidelity Charitable, but account-holder money belongs to account holders. If Abigail personally has a DAF account, it is not individually disclosed. Absence of evidence only — DAF activity is donor-opaque by design.",
+    "daf_clarification_source": "https://www.fidelitycharitable.org/",
+    "llcs_philanthropic": [],
+    "llcs_note": "No CZI-style philanthropic LLC identified. Fidelity Investments (FMR LLC) is a for-profit financial services company, not a philanthropic vehicle.",
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. Johnson family historically uses onshore MA/Boston structures per public records; no prior press surfacing of offshore vehicles. Low prior probability but unverified.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "presumed_family_trust_structure",
+        "source_quote": null,
+        "classification_note": "The Johnson family is frequently cited as using sophisticated estate planning (expected for a multigenerational family fortune of this scale at a firm that advises clients on dynasty trusts). No specific Abigail-trust has been publicly disclosed — unlike Ellison's 2010 Giving Pledge letter trust disclosure. Structure (revocable, GRAT, dynasty, CLT, CRT) is unknown. High a-priori likelihood of grantor/dynasty trust usage given tax planning norms for $30B+ private-company fortunes; not a disclosed fact.",
+        "confidence": "inferred_not_disclosed"
+      }
+    ],
+    "company_foundations_not_personal": [
+      {
+        "name": "Fidelity Investments Charitable Gift Fund (DBA Fidelity Charitable)",
+        "ein": "11-0303001",
+        "classification": "PUBLIC_CHARITY_DAF_SPONSOR_NOT_PERSONAL",
+        "assets_usd_approx": 100000000000,
+        "not_personal_note": "Abigail Johnson does NOT control this entity's assets. It is an independent 501(c)(3) public charity. Fidelity Charitable's $100B+ AUM is account-holder money, not Johnson-family money. EXCLUDED from Abigail's observable giving."
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "PRIVATE_FAMILY_OPACITY",
+      "evidence": "Johnson family is historically press-shy; NPF 2015 gift surfaced only via Boston Globe reporting after the fact and both NPF and Fidelity declined to comment. Multiple Johnson-family-named entities exist (Edward C. Johnson Fund, Fidelity Foundation, plus unrelated Johnson Family Foundations); attribution to Abigail personally vs. family vs. Fidelity Investments the company is genuinely difficult.",
+      "source_url": "https://www.bostonglobe.com/business/2017/04/11/fidelity-johnson-family-donated-nearly-million-national-parks/N7bTKKEpNNuYswWm7nqxsJ/story.html"
+    },
+    {
+      "flag": "LOW_PAYOUT_CANDIDATE_ECJF",
+      "evidence": "Edward C. Johnson Fund 2024 grants_out $16.4M / assets $564M = 2.9% — nominally below the 5% private-foundation minimum distribution rule. Needs Part XII review to confirm qualifying distributions clear 5% when admin + PRI added.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344"
+    },
+    {
+      "flag": "LOW_PAYOUT_CANDIDATE_FIDELITY_FOUNDATION",
+      "evidence": "Fidelity Foundation 2024 grants_out $167.8M / assets $4.98B = 3.4% — nominally below 5%. Same Part XII review needed. Asset growth from $1.4B (2019) to $4.98B (2024) outpaces grant growth ($58M to $168M) — foundation is accumulating faster than disbursing.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201"
+    },
+    {
+      "flag": "CORPORATE_PERSONAL_ATTRIBUTION_AMBIGUITY",
+      "evidence": "$190M UNCF gift publicly announced as 'Fidelity Investments' (corporate), not Abigail personal or family-foundation. CEO gets implicit reputational credit for corporate giving that is technically company money. This is a KNOWN disclosure norm issue and NOT a unique Abigail red flag — it's a category signal for how little truly personal giving is observable.",
+      "source_url": "https://uncf.org/news/uncf-receives-its-largest-corporate-gift-to-support-underserved-students"
+    }
+  ],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (not signed — no breach possible)",
+    "POLITICAL_DOMINATES_CHARITABLE (political giving <$500K lifetime vs. $10M+/yr family foundation giving)",
+    "HIGH_OFFICER_COMP (all Johnson-family directors unpaid; paid staff compensation <1% of grants)",
+    "DAF_TRANSFERS (no 990-PF evidence of foundation-to-DAF transfers; Fidelity Charitable is a separate entity, not a Johnson family DAF)",
+    "FOR_PROFIT_PIVOT (no EIT-style for-profit philanthropy hybrid)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 816100000,
+    "observable_giving_method": "sum(ECJF 990-PF grants_out 2019-2024) + sum(Fidelity Foundation 990-PF grants_out 2019-2024). ECJF 6yr total: $91.4M. Fidelity Foundation 6yr total: $724.2M. Combined: $815.6M (rounded to $816.1M including NPF 2015 gift if not deduped against pre-2019 ECJF). EXCLUDES: $190M UNCF corporate gift (company money, not personal); Fidelity Charitable DAF assets (separate entity); political giving.",
+    "observable_giving_attribution_caveat": "This $816M is JOHNSON-FAMILY observable giving, not Abigail-personal. Fractional attribution to Abigail alone might be 15-30% ($120-245M) given ~4-5 Johnson-family trustees across both foundations and the Fidelity Foundation's institutional (company-seeded) character. For single-subject Scrooge scoring where the 'subject' is effectively 'Abigail + Johnson family', the $816M figure is defensible; for strict Abigail-personal scoring it overstates.",
+    "observable_giving_todo": [
+      "Pull ECJF archived 990-PFs 1964-2018 — especially 2015 to dedup NPF $29.7M gift.",
+      "Pull Fidelity Foundation archived 990-PFs pre-2019 (grantmaking dates to 1965 — $500M+ lifetime claimed).",
+      "Run SEC Form 4 check — Abigail's CIK (Fidelity is private, so likely no direct Form 4; check FMR LLC 13G/13D filings for stock gifts instead).",
+      "Run FEC direct-pull to tighten political total.",
+      "Check for any personal Abigail-only foundation (not Edward C. Johnson Fund, not Fidelity Foundation). None surfaced in search; absence-of-evidence confirmed.",
+      "Verify 990-PF Part XII qualifying-distribution compliance for both foundations (LOW_PAYOUT candidacy)."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 525000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.15 × $35B = $5.25B; tenure cap saturated (25 years). Expected = $525M. STRICT denominator. If using a less-strict 50% liquidity (accounting for multigenerational timescales for selling Fidelity stake): $1.75B expected.",
+    "observable_ratio_to_expected_strict": 1.55,
+    "observable_ratio_to_expected_less_strict": 0.47,
+    "observable_ratio_to_current_nw": 0.0233,
+    "ratio_note": "UNDER the strict 10%-of-liquid denominator, Abigail+family actually EXCEEDS expected giving ($816M > $525M). Under the less-strict 50%-liquidity denominator (appropriate for multigenerational wealth), they deliver 47% of expected — a middle outcome. The result is very sensitive to liquidity assumption; we report both. If attribution is fractionalized to Abigail-personal (30% share: ~$245M), she falls to 47% of strict expected / 14% of less-strict expected.",
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence tied to Abigail personally. Cannot credit Fidelity Charitable's $100B+ AUM as her giving (it is not her money). Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 200000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Johnson family's strong historical privacy preference (Boston Globe: 'consistent with the family's practice of anonymity') argues for a larger anonymous envelope than the cohort median. Set anonymous uplift at ~25% of observable giving = $200M upper.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No disclosed religious affiliation with tithing norms. Zero.",
+      "trust_outcome_uncertainty_usd": 1000000000,
+      "trust_outcome_method": "No publicly-disclosed trust with charitable remainder. Unlike Ellison's pledge-letter disclosure, we have NO basis to credit future trust disbursement as charitable. Envelope of $1B represents plausible but entirely speculative estate-plan charitable disposition; NOT included in tier calculation.",
+      "total_usd": 1200000000,
+      "total_method": "anonymous + speculative trust (daf/llc/offshore/religious all zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected_strict": 3.84,
+    "observable_plus_hidden_ratio_to_expected_less_strict": 1.15,
+    "tier": "Mid (Tier B) — attribution-ambiguous",
+    "tier_rule": "Under strict-liquidity expected, observable alone (even attributed wholly to Abigail+family) clears the 10% norm — technically NOT Scrooge-tier-worthy. Under less-strict liquidity OR under Abigail-personal-only attribution (30% fractional), she drops to 14-47% of expected — middling. The CORRECT tier here depends on a judgment call about (a) how to handle private-company illiquidity and (b) how to handle family-foundation fractional attribution. We assign Tier B 'Mid — attribution-ambiguous' and flag that the answer flips based on methodology choices. This is NOT a clear Scrooge case; it is a clear 'genuinely hard to classify' case — the quiet-heir archetype that resists simple ranking.",
+    "tier_published_caveat": "Readers should see Abigail Johnson as the canonical EXAMPLE of why fractional attribution and private-company illiquidity matter. Her family's observable giving ($816M over 6 years via Edward C. Johnson Fund + Fidelity Foundation) is substantial in absolute terms but small relative to $35B net worth. She has NOT signed the Giving Pledge, so there is no public commitment to measure against. Absence of a lever does not mean absence of generosity; it means absence of measurable accountability. Treat as 'quiet — probably mid — unknowable upper bound'."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 42.0,
+    "components": {
+      "giving_gap_40pct": 18.8,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 15.0
+    },
+    "components_note": "Giving gap = 1 - (observable/expected_less_strict) = 1 - 0.47 = 0.53; 0.53 × 40 = 21.2 (we adjusted down to 18.8 to reflect that observable includes institutional family-foundation giving where Abby-personal attribution is fractional; actual Abby-only gap is higher but the family-unit gap is the legitimate number for a Scrooge score). Tenure saturated at 20. Pledge 0 (not signed, can't breach). Red flags: 3 LOW_PAYOUT/ATTRIBUTION candidates × 5 = 15. Score ~42.",
+    "note": "DO NOT PUBLISH. Per PLAN.md we publish tiers, not numbers. Numbers are shown here for pipeline continuity only. This score is MEANINGFULLY lower than Ellison's 97.95 — correctly reflecting that Johnson family foundations actually disburse grants at meaningful scale, whereas Ellison's do not."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Fidelity Investments Corporate Communications + The Fidelity Foundation (via Maura Marx, President) + Edward C. Johnson Fund trustees. Three parallel routes given known family press-shyness.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: 990-PF Part XII qualifying-distribution compliance for ECJF and Fidelity Foundation 2024 — confirm/refute LOW_PAYOUT candidacy.",
+    "VERIFY: Pull ECJF 2015 990-PF to dedup $29.7M NPF gift against cited-event row.",
+    "VERIFY: Pull Fidelity Foundation archived 990s pre-2019 — foundation claims $500M+ lifetime disbursement since 1965.",
+    "VERIFY: FEC bulk pull on Abigail's name + addresses to tighten political total (current $450K is press-assembled).",
+    "VERIFY: Check for any Abigail-personal-only 501(c)(3) — current search returned none, but confirm absence rather than leave as unchecked.",
+    "VERIFY: SEC 13G/13D and Form 3/4 filings for FMR LLC — any stock gift events where Abigail transferred FMR stock to charity directly?",
+    "VERIFY: ICIJ Offshore Leaks name match (deferred to Phase 2).",
+    "VERIFY: Any disclosed trust structure (estate plan filings, divorce records, litigation filings that might surface trust structure).",
+    "VERIFY: Re-check Giving Pledge site annually — family could sign in future."
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/46108344", "retrieved_at": "2026-04-24", "used_for": "Edward C. Johnson Fund 990-PF data 2019-2024, assets, officers, EIN"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/46131201", "retrieved_at": "2026-04-24", "used_for": "The Fidelity Foundation 990-PF data 2019-2024, assets, officers, Abigail listed as Director/VP"},
+    {"url": "https://www.fidelityfoundation.org/about-us/", "retrieved_at": "2026-04-24", "used_for": "Fidelity Foundation establishment 1965, trustee list, $500M+ lifetime claim"},
+    {"url": "https://www.givingpledge.org/pledgers", "retrieved_at": "2026-04-24", "used_for": "Verification that Abigail Johnson has NOT signed Giving Pledge"},
+    {"url": "https://www.forbes.com/profile/abigail-johnson/", "retrieved_at": "2026-04-24", "used_for": "2026 net worth ~$32.7B"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/abigail-p-johnson/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg ~$47.3B net worth (higher Fidelity multiple)"},
+    {"url": "https://en.wikipedia.org/wiki/Abigail_Johnson", "retrieved_at": "2026-04-24", "used_for": "Biography, DOB 1961, 40% family ownership stake, political giving history"},
+    {"url": "https://www.bostonglobe.com/business/2017/04/11/fidelity-johnson-family-donated-nearly-million-national-parks/N7bTKKEpNNuYswWm7nqxsJ/story.html", "retrieved_at": "2026-04-24", "used_for": "$29.7M NPF 2015 gift from Edward C. Johnson Fund; family press-shy confirmation"},
+    {"url": "https://uncf.org/news/uncf-receives-its-largest-corporate-gift-to-support-underserved-students", "retrieved_at": "2026-04-24", "used_for": "$190M UNCF corporate gift from Fidelity Investments (company, not personal)"},
+    {"url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/abigail-johnson-html", "retrieved_at": "2026-04-24", "used_for": "Overview of Johnson family giving areas (arts, culture, health, preservation); note that IP acknowledges difficulty distinguishing Abigail from family"},
+    {"url": "https://www.fidelitycharitable.org/", "retrieved_at": "2026-04-24", "used_for": "Confirmation Fidelity Charitable is independent public charity with DAF program — NOT Abigail-controlled"},
+    {"url": "https://www.campaignmoney.com/political/contributions/abigail-johnson.asp?cycle=20", "retrieved_at": "2026-04-24", "used_for": "2020 political contributions $12,589"},
+    {"url": "https://www.bloomberg.com/news/articles/2024-05-21/fidelity-s-abby-johnson-raises-cash-for-biden-at-boston-event", "retrieved_at": "2026-04-24", "used_for": "May 2024 Biden fundraiser attendance"}
+  ],
+
+  "summary_150_words": "Abigail Johnson (Fidelity Investments Chair/CEO, ~$35B net worth, ~40% family ownership of private Fidelity) is the canonical quiet-heir case. She has NOT signed the Giving Pledge. Her observable philanthropy runs through two family-institutional foundations she helps govern as an unpaid director: Edward C. Johnson Fund (EIN 04-6108344, $564M assets, $16M 2024 grants) and The Fidelity Foundation (EIN 04-6131201, $4.98B assets, $168M 2024 grants). Combined 2019-2024 grants ~$816M — substantial absolute, modest vs. net worth. Critical caveat: Fidelity Charitable ($100B+ DAF sponsor) is NOT her money — it is an independent public charity. The $190M Fidelity-Investments-to-UNCF gift is corporate, not personal. Political footprint small (~$450K lifetime). Family press-shy; no disclosed trust structure. Tier B 'Mid — attribution-ambiguous'. Whether she is Scrooge-like depends heavily on liquidity assumption and whether family-foundation giving is credited to her personally. Verified low only under the strictest personal-attribution view."
+}

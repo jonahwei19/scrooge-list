@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T14:42:48.490117Z",
+  "generated_at": "2026-04-24T14:58:11.297498Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
   "legal_disclaimer": "Every figure is an estimate of OBSERVABLE giving from the cited sources. Does not measure total giving. Subjects have been offered a right-of-reply; responses are published on individual profiles. Corrections welcome \u2014 see methodology page.",
   "tier_counts": {
     "A_VERIFIED_LOW": 4,
-    "B_PROBABLY_LOW": 15,
+    "B_PROBABLY_LOW": 16,
     "C_OPAQUE": 4,
     "MODERATE": 0,
     "ON_TRACK": 12,
     "UNKNOWN": 0
   },
-  "count": 35,
+  "count": 36,
   "billionaires": [
     {
       "id": "thomas_peterffy",
@@ -201,6 +201,52 @@
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "larry_page.v3.json",
       "tier_rank": 4
+    },
+    {
+      "id": "abigail_johnson",
+      "name_display": "Abigail Johnson",
+      "name_legal": "Abigail Pierrepont Johnson",
+      "country": "United States",
+      "wealth_source": "Heir + operator. Chair/CEO/President of Fidelity Investments (FMR LLC); family and affiliates own ~40% of Fidelity. Grandfather Edward C. Johnson II founded Fidelity in 1946. Private company \u2014 valuations span widely.",
+      "years_as_billionaire_approx": 25,
+      "net_worth_best_usd_b": 35.0,
+      "net_worth_range_usd_b": [
+        29,
+        47
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.15,
+      "observable_usd": 816100000,
+      "expected_usd": 525000000,
+      "hidden_upper_usd": 1200000000,
+      "ratio_observable_to_expected": null,
+      "ratio_observable_to_nw": 0.0233,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Mid (Tier B) \u2014 attribution-ambiguous",
+      "tier_reasoning": "Readers should see Abigail Johnson as the canonical EXAMPLE of why fractional attribution and private-company illiquidity matter. Her family's observable giving ($816M over 6 years via Edward C. Johnson Fund + Fidelity Foundation) is substantial in absolute terms but small relative to $35B net worth. She has NOT signed the Giving Pledge, so there is no public commitment to measure against. Absence of a lever does not mean absence of generosity; it means absence of measurable accountability. Treat as 'quiet \u2014 probably mid \u2014 unknowable upper bound'.",
+      "pledge_signed": false,
+      "red_flags": [
+        "PRIVATE_FAMILY_OPACITY",
+        "LOW_PAYOUT_CANDIDATE_ECJF",
+        "LOW_PAYOUT_CANDIDATE_FIDELITY_FOUNDATION",
+        "CORPORATE_PERSONAL_ATTRIBUTION_AMBIGUITY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Edward C. Johnson Fund",
+          "The Fidelity Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 13,
+      "event_count": 15,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "abigail_johnson.v3.json",
+      "tier_rank": null
     },
     {
       "id": "alice_walton",
