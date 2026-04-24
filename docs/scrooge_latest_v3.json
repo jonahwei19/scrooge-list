@@ -1,0 +1,962 @@
+{
+  "generated_at": "2026-04-24T14:07:04.297867Z",
+  "generator": "aggregate_v3.py",
+  "cohort": "US Tier A launch cohort",
+  "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
+  "legal_disclaimer": "Every figure is an estimate of OBSERVABLE giving from the cited sources. Does not measure total giving. Subjects have been offered a right-of-reply; responses are published on individual profiles. Corrections welcome \u2014 see methodology page.",
+  "tier_counts": {
+    "A_VERIFIED_LOW": 2,
+    "B_PROBABLY_LOW": 11,
+    "C_OPAQUE": 1,
+    "MODERATE": 0,
+    "ON_TRACK": 7,
+    "UNKNOWN": 0
+  },
+  "count": 21,
+  "billionaires": [
+    {
+      "id": "elon_musk",
+      "name_display": "Elon Musk",
+      "name_legal": "Elon Reeve Musk",
+      "country": "United States",
+      "wealth_source": "Tesla (CEO, ~13% stake); SpaceX (founder, ~42% stake, private); xAI (founder, ~50% stake); X Corp. (owner); Neuralink; The Boring Company",
+      "years_as_billionaire_approx": 14,
+      "net_worth_best_usd_b": 811.2,
+      "net_worth_range_usd_b": [
+        636,
+        849
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.15,
+      "observable_usd": 500000000,
+      "expected_usd": 12168000000,
+      "hidden_upper_usd": 599500000,
+      "ratio_observable_to_expected": 0.0411,
+      "ratio_observable_to_nw": 0.000616,
+      "tier": "A_VERIFIED_LOW",
+      "tier_raw": "Verified_Low (Tier A)",
+      "tier_reasoning": "Musk is the canonical 'richest person alive who has given least relative to wealth' example. 0.06% lifetime giving rate (Forbes April 2026) is one of the lowest in the Forbes 400. Additional concerns: political giving ($288M+ in 2024) exceeds lifetime philanthropy; Musk Foundation missed IRS 5% minimum three consecutive years; majority of 'giving' goes to Musk-controlled entities (The Foundation school + Fidelity DAF); Giving Pledge signed 2012 remains unfulfilled at 50% target ($405B gap).",
+      "pledge_signed": false,
+      "red_flags": [
+        "GIVING_PLEDGE_UNFULFILLED",
+        "POLITICAL_DOMINATES_CHARITABLE",
+        "LOW_PAYOUT",
+        "DAF_TRANSFERS",
+        "FOUNDATION_TO_SELF",
+        "NO_OBSERVABLE_GIVING_RELATIVE_TO_WEALTH",
+        "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Musk Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 30,
+      "event_count": 11,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "elon_musk.v3.json",
+      "tier_rank": 1
+    },
+    {
+      "id": "larry_page",
+      "name_display": "Larry Page",
+      "name_legal": "Lawrence Edward Page",
+      "country": "United States",
+      "wealth_source": "Google / Alphabet co-founder (1998); holds ~6% of Alphabet (Class B supervoting + Class C). Also longevity startup investments (Calico funded through Alphabet, not personally philanthropic). Recent AI startup (Dynatomics, reported 2025).",
+      "years_as_billionaire_approx": 22,
+      "net_worth_best_usd_b": 269,
+      "net_worth_range_usd_b": [
+        252,
+        285
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.3,
+      "observable_usd": 1782643000,
+      "expected_usd": 8070000000,
+      "hidden_upper_usd": 400000000,
+      "ratio_observable_to_expected": 0.22,
+      "ratio_observable_to_nw": 0.00662,
+      "tier": "A_VERIFIED_LOW",
+      "tier_raw": "Verified_Low (Tier A)",
+      "tier_reasoning": "Page is the canonical Tier A example: 22+ years as billionaire, never signed Giving Pledge, foundation grants are 77-100% DAF-warehoused, direct-to-operating-charity dollars are a small fraction of wealth (<1%), tax-minimization behavior (Fiji, California exit to Miami) not matched by giving velocity. Even accepting foundation grants-out as fully charitable (charitable intent at the foundation level), Page deploys ~0.7% of NW lifetime \u2014 an order of magnitude below 10% norm. The DailyMail 0.03% headline is defensible under a strict 'direct to operating charity' numerator; the defensible-generous framing still lands below 1%. Either way: LOW.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE",
+        "DAF_TRANSFERS_SEVERE",
+        "LOW_OBSERVABLE_RELATIVE_TO_WEALTH",
+        "LOW_PAYOUT_HISTORICAL",
+        "FOUNDATION_ACCUMULATION_OUTPACES_DISBURSEMENT",
+        "TAX_MINIMIZATION_PATTERN_WITHOUT_GIVING_MATCH",
+        "LONGEVITY_INTEREST_NOT_PHILANTHROPIC"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "The Carl Victor Page Memorial Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 3,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 39,
+      "event_count": 15,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "larry_page.v3.json",
+      "tier_rank": 2
+    },
+    {
+      "id": "alice_walton",
+      "name_display": "Alice Walton",
+      "name_legal": "Alice Louise Walton",
+      "country": "United States",
+      "wealth_source": "Walmart Inc. \u2014 only daughter of founder Sam Walton. Walton family collectively owns ~45% of Walmart through Walton Enterprises LLC and Walton Family Holdings Trust. Wealth held primarily via trust structures rather than direct equity. Also founder/principal of Crystal Bridges Museum of American Art, Art Bridges Foundation, Heartland Whole Health Institute, and Alice L. Walton School of Medicine.",
+      "years_as_billionaire_approx": 30,
+      "net_worth_best_usd_b": 134,
+      "net_worth_range_usd_b": [
+        101,
+        134
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.2,
+      "observable_usd": 2196680300,
+      "expected_usd": 2680000000,
+      "hidden_upper_usd": 1147280000,
+      "ratio_observable_to_expected": 0.82,
+      "ratio_observable_to_nw": 0.01639,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Readers should see Alice Walton as 'the most publicly-visible Walton philanthropist \u2014 substantial and recognizable cultural + medical + museum-access giving, with zero officer compensation at her personal vehicles \u2014 BUT the foundations are accumulating assets faster than they deploy them (1.1% payout at ALWF 2024 is the signature red flag), and the $134B net worth is compounding faster than the giving. Forbes' own methodology places her in the 1%-4.99% lifetime-giving band. Observable ~$2.2B over 6 years is 0.27%/yr of current NW and 82% of the 10% formal norm. She has NOT signed the Giving Pledge (by family consensus) so cannot be in breach. Comparable reference class: other non-signers with similar wealth \u2014 where she looks relatively generous vs. Rob (more observable giving; less political giving) but still well short of the 10% formal norm.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "LOW_PAYOUT_ALWF",
+        "LOW_OBSERVABLE_VS_WEALTH",
+        "POLITICAL_SURGE_2024",
+        "JOINT_FAMILY_FOUNDATION_OPACITY",
+        "ART_BRIDGES_COLLECTION_VS_GRANTS_AMBIGUITY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 5,
+        "foundations_active_names": [
+          "Alice L Walton Foundation",
+          "Art Bridges Inc (Art Bridges Foundation)",
+          "Heartland Whole Health Institute",
+          "Alice L. Walton School of Medicine (AWSOM)",
+          "Crystal Bridges Museum of American Art"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 31,
+      "event_count": 26,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "alice_walton.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "charles_koch",
+      "name_display": "Charles Koch",
+      "name_legal": "Charles G. Koch",
+      "country": "United States",
+      "wealth_source": "Koch Industries (chairman, co-CEO, majority owner after buying out David Koch estate and other siblings). Privately held \u2014 oil refining, chemicals, pipelines, paper, fertilizer, commodity trading. Also significant private-equity and real-estate holdings via Koch Industries.",
+      "years_as_billionaire_approx": 40,
+      "net_worth_best_usd_b": 68,
+      "net_worth_range_usd_b": [
+        60,
+        71.4
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.15,
+      "observable_usd": 996361458,
+      "expected_usd": 1020000000,
+      "hidden_upper_usd": 150000000,
+      "ratio_observable_to_expected": 1.075,
+      "ratio_observable_to_nw": 0.0161,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Tier B / Probably_Low (political-substitution case)",
+      "tier_reasoning": "Readers should see Koch as the canonical political-substitution case. His 501(c)(3) foundation giving is real and tracked. But $5.3B to c4 political advocacy is ~5x all his lifetime charitable giving \u2014 a deliberate structural choice. Unlike Ellison (signed Giving Pledge, unfulfilled), Koch never promised and his legacy plan is explicitly c4-centric. Published-list classification MUST distinguish c3 giving from c4 transfers or it will misrepresent his philanthropic profile by 5-10x.",
+      "pledge_signed": false,
+      "red_flags": [
+        "POLITICAL_SUBSTITUTION_DOMINANT",
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "C4_ADVOCACY_HEAVY",
+        "FOUNDATION_PAYOUT_DECLINING",
+        "LATE_LIFE_LEGACY_C4_TILT"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 5,
+        "foundations_active_names": [
+          "Charles Koch Foundation",
+          "Charles Koch Foundation II",
+          "Charles J And Elizabeth R Koch Tr Charitable Private Foundation",
+          "Stand Together Foundation",
+          "Stand Together Fellowship (formerly Charles Koch Institute)"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 18,
+      "event_count": 17,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "charles_koch.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "jeff_bezos",
+      "name_display": "Jeff Bezos",
+      "name_legal": "Jeffrey Preston Bezos",
+      "country": "United States",
+      "wealth_source": "Amazon.com founder (~8.6% stake after post-2019 divorce split with MacKenzie Scott); Blue Origin (100% private); Washington Post (100% private via Nash Holdings)",
+      "years_as_billionaire_approx": 28,
+      "net_worth_best_usd_b": 239.4,
+      "net_worth_range_usd_b": [
+        223,
+        254
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 3450000000,
+      "expected_usd": 13167000000,
+      "hidden_upper_usd": 800000000,
+      "ratio_observable_to_expected": 0.262,
+      "ratio_observable_to_nw": 0.0144,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Bezos is the canonical example of 'biggest pledge in philanthropic history, behind schedule to deliver.' $2.3B Earth Fund disbursed through 2026 against $10B by 2030 target; $850M Day 1 Fund through 2025 against open-ended $2B; Smithsonian $200M fulfilled. His challenge is not whether he gives \u2014 he demonstrably does \u2014 but whether the pace matches the pledge and the wealth.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "PLEDGE_BEHIND_SCHEDULE",
+        "LLC_OPACITY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Bezos Earth Fund Foundation"
+        ],
+        "llcs_philanthropic_count": 3,
+        "for_profit_hybrids_count": 2,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 44,
+      "event_count": 22,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "jeff_bezos.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "jensen_huang",
+      "name_display": "Jensen Huang",
+      "name_legal": "Jen-Hsun Huang",
+      "country": "United States",
+      "wealth_source": "Nvidia Corp. co-founder and CEO since 1993; ~3% ownership stake in Nvidia (world's most valuable company as of 2026). Wealth is concentrated in Nvidia stock held in his name, in a family trust, and via the Huang Foundation + GeForce Fund DAF.",
+      "years_as_billionaire_approx": 9,
+      "net_worth_best_usd_b": 170.0,
+      "net_worth_range_usd_b": [
+        162,
+        178
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.35,
+      "observable_usd": 338000000,
+      "expected_usd": 5355000000,
+      "hidden_upper_usd": 2170000000,
+      "ratio_observable_to_expected": null,
+      "ratio_observable_to_nw": 0.00199,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Readers should see Huang as a 'recently-minted mega-billionaire whose giving infrastructure has not scaled to match his wealth.' The foundation is actively ramping ($126M in 2024, required ~$369M in 2025). But structural issues remain: 65% of foundation payout goes to his own DAF, not to operating charities; GeForce Fund grantees are not disclosed; LOW_PAYOUT flag is active. Under economic-tenure (3yr) analysis he looks better (ratio 1.4x expected); under formal-tenure analysis he looks worse (0.47x expected). Both views are legitimate. Do NOT classify as 'unfulfilled pledge' \u2014 he never signed the Giving Pledge.",
+      "pledge_signed": false,
+      "red_flags": [
+        "LOW_PAYOUT",
+        "DAF_TRANSFERS",
+        "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "The Jen-Hsun and Lori Huang Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 28,
+      "event_count": 17,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "jensen_huang.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "jim_walton",
+      "name_display": "Jim Walton",
+      "name_legal": "James Carr Walton",
+      "country": "United States",
+      "wealth_source": "Walmart Inc. \u2014 youngest surviving son of founder Sam Walton. Walton family collectively owns ~45% of Walmart. Jim's primary operational vehicle is Arvest Bank (44% personal stake, ~$26B assets, ~$2.3B book value Dec 2025 FDIC filing); served as Arvest CEO until 2024, now Chairman of Arvest Bank Group. Walmart board director 2005-present (joined after brother John's 2005 death). Chairs Community Publishers Inc. (newspaper firm).",
+      "years_as_billionaire_approx": 33,
+      "net_worth_best_usd_b": 142.4,
+      "net_worth_range_usd_b": [
+        100,
+        150
+      ],
+      "net_worth_as_of": "2026-02",
+      "liquidity_estimate_pct": 0.2,
+      "observable_usd": 1350009518,
+      "expected_usd": 2848000000,
+      "hidden_upper_usd": 2047336825,
+      "ratio_observable_to_expected": 0.474,
+      "ratio_observable_to_nw": 0.00948,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B) \u2014 trending toward Tier A Verified Low",
+      "tier_reasoning": "Readers should see Jim Walton as the canonical example of 'the least visible Walton heir' \u2014 a centibillionaire whose primary life's work has been a for-profit regional bank (Arvest), whose personal philanthropic vehicle (Town Branch Foundation, ~$500M endowment, no website) is dwarfed by his brother Rob's RMWF and his sister Alice's Crystal Bridges/AWF. He has not signed the Giving Pledge (by family position) so cannot be 'in breach.' His 2019 $1.2B Walmart-stock gift is the single biggest public philanthropic marker on his record, but the recipient was never disclosed and is most plausibly WFF \u2014 making it a transfer-in, not an out-the-door act of generosity to a specific cause. If Jim's goal were to deploy wealth for public good at scale, the mechanisms exist (TBF could grow 10x in a year from a single Walmart-stock contribution); they have not been used.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "LOW_OBSERVABLE_VS_WEALTH",
+        "LEAST_PUBLICLY_PHILANTHROPIC_SIBLING",
+        "POLITICAL_ACTIVITY_2024",
+        "JOINT_FAMILY_FOUNDATION_OPACITY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Walton Family Foundation Inc",
+          "Town Branch Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 26,
+      "event_count": 17,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "jim_walton.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "ken_griffin",
+      "name_display": "Ken Griffin",
+      "name_legal": "Kenneth Cordele Griffin",
+      "country": "United States",
+      "wealth_source": "Founder and CEO of Citadel LLC (hedge fund, ~$69B AUM) and Founder/Non-Executive Chairman of Citadel Securities (market maker). Both privately held.",
+      "years_as_billionaire_approx": 23,
+      "net_worth_best_usd_b": 50.7,
+      "net_worth_range_usd_b": [
+        47,
+        51.2
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.4,
+      "observable_usd": 981544220,
+      "expected_usd": 2028000000,
+      "hidden_upper_usd": 1600000000,
+      "ratio_observable_to_expected": 0.484,
+      "ratio_observable_to_nw": 0.0194,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Moderate (Tier B)",
+      "tier_reasoning": "Griffin is a useful contrast to Ellison: HIGH observable dollars, but HIGH political dollars and explicit refusal to sign a percentage pledge. On the Scrooge List frame he is NOT a canonical 'Scrooge' \u2014 he gives real money \u2014 but his score is pulled up by political substitution and the opacity of his DAF-channel giving.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "POLITICAL_HEAVY",
+        "DAF_OPACITY",
+        "NAMING_RIGHTS_DOMINANT"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Citadel Group Foundation (a.k.a. The Citadel Foundation)"
+        ],
+        "llcs_philanthropic_count": 1,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 26,
+      "event_count": 19,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "ken_griffin.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "larry_ellison",
+      "name_display": "Larry Ellison",
+      "name_legal": "Lawrence Joseph Ellison",
+      "country": "United States",
+      "wealth_source": "Oracle Corp. co-founder; 41% ownership stake; also significant Tesla holdings and Lawrence Investments family office",
+      "years_as_billionaire_approx": 25,
+      "net_worth_best_usd_b": 227.6,
+      "net_worth_range_usd_b": [
+        201,
+        258
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.25,
+      "observable_usd": 467500000,
+      "expected_usd": 5690000000,
+      "hidden_upper_usd": 5455000000,
+      "ratio_observable_to_expected": 0.0822,
+      "ratio_observable_to_nw": 0.00205,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Readers should see Ellison as the canonical example of 'signed the Giving Pledge, hasn't followed through yet.' Observable giving ~$467M is 0.2% of current net worth and 8% of the 10% formal norm. The trust could still make good; as of 2026-04, it has not.",
+      "pledge_signed": false,
+      "red_flags": [
+        "GIVING_PLEDGE_UNFULFILLED",
+        "POLITICAL_DOMINATES_CHARITABLE",
+        "FOR_PROFIT_PIVOT",
+        "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "The Larry Ellison Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 15,
+      "event_count": 13,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "larry_ellison.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "rob_walton",
+      "name_display": "Rob Walton",
+      "name_legal": "Samuel Robson Walton",
+      "country": "United States",
+      "wealth_source": "Walmart Inc. \u2014 eldest son of founder Sam Walton; Walmart chairman 1992-2015, chairman emeritus thereafter. Walton family collectively owns ~45% of Walmart. Also principal owner of Denver Broncos (2022 purchase for $4.65B), 25.5% stake in Arvest Bank (~$2.3B book).",
+      "years_as_billionaire_approx": 35,
+      "net_worth_best_usd_b": 143.1,
+      "net_worth_range_usd_b": [
+        110,
+        145
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.2,
+      "observable_usd": 1521149148,
+      "expected_usd": 2862000000,
+      "hidden_upper_usd": 898338709,
+      "ratio_observable_to_expected": 0.531,
+      "ratio_observable_to_nw": 0.01063,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Readers should see Rob Walton as the canonical example of 'old-money dynasty \u2014 substantial joint-family foundation giving, no Giving Pledge signature, surging political giving, and individual wealth compounding faster than individual generosity.' Observable giving ~$1.5B over 6 years is 0.18%/yr of current NW and 53% of the 10% formal norm. He has NOT signed the Giving Pledge (by choice) so cannot be 'in breach' of it \u2014 the comparable reference class is other non-signers with similar wealth and similar observable giving rates.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "LOW_OBSERVABLE_VS_WEALTH",
+        "POLITICAL_SURGE_2024",
+        "JOINT_FAMILY_FOUNDATION_OPACITY"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Walton Family Foundation Inc",
+          "Rob and Melani Walton Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 17,
+      "event_count": 17,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "rob_walton.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "sergey_brin",
+      "name_display": "Sergey Brin",
+      "name_legal": "Sergey Mikhailovich Brin",
+      "country": "United States",
+      "wealth_source": "Alphabet / Google co-founder; large Class B and Class C Alphabet stake; Bayshore Global Management (family office) manages non-Alphabet holdings including Tesla stock",
+      "years_as_billionaire_approx": 22,
+      "net_worth_best_usd_b": 248.4,
+      "net_worth_range_usd_b": [
+        238,
+        256
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.45,
+      "observable_usd": 2439200000,
+      "expected_usd": 11178000000,
+      "hidden_upper_usd": 750000000,
+      "ratio_observable_to_expected": 0.218,
+      "ratio_observable_to_nw": 0.00982,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B) \u2014 lower end",
+      "tier_reasoning": "Brin is the canonical case of 'real giving but still small relative to the pile.' Observable ~$2.4B is ~1% of current net worth and ~22% of the 10% formal norm. His Parkinson's commitment is genuine and historically significant \u2014 he is, factually, the largest individual donor to Parkinson's research ever. But that commitment now represents a tiny fraction of his wealth. Trajectory matters: if 2025's $2B in stock transfers disburses on 2024's $722M/yr cadence, his ratio will improve meaningfully in coming years.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "POLITICAL_GIVING_TO_BLOCK_WEALTH_TAX",
+        "501C4_SIZE_APPROACHING_C3",
+        "FOUNDATION_LAG_DURING_WEALTH_SURGE"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Sergey Brin Family Foundation",
+          "Catalyst4 Inc."
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 36,
+      "event_count": 27,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "sergey_brin.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "stephen_schwarzman",
+      "name_display": "Stephen Schwarzman",
+      "name_legal": "Stephen Allen Schwarzman",
+      "country": "United States",
+      "wealth_source": "Blackstone Inc. co-founder, chairman & CEO; owns ~19% of publicly-traded Blackstone; also large annual compensation/dividend income ($1.2B in 2025)",
+      "years_as_billionaire_approx": 18,
+      "net_worth_best_usd_b": 47.8,
+      "net_worth_range_usd_b": [
+        43,
+        55
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.4,
+      "observable_usd": 1053500000,
+      "expected_usd": 1912000000,
+      "hidden_upper_usd": 12140000000,
+      "ratio_observable_to_expected": 0.551,
+      "ratio_observable_to_nw": 0.022,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Low (Tier B)",
+      "tier_reasoning": "Schwarzman is the canonical 'named gift' philanthropist. Observable $1.05B is ~2% of current net worth and 55% of the 10% formal norm. He has given substantially more than Ellison or Zuckerberg observably but is pursuing the classical posthumous-foundation strategy Buffett critiqued. Political giving ($78M+ since 2020) approaches philanthropic giving on an annual basis.",
+      "pledge_signed": false,
+      "red_flags": [
+        "GIVING_PLEDGE_UNFULFILLED",
+        "POLITICAL_HEAVY",
+        "POSTHUMOUS_DEFERRAL",
+        "NAMING_RIGHTS_PATTERN"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Stephen A Schwarzman Foundation",
+          "Stephen A Schwarzman Education Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 28,
+      "event_count": 19,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "stephen_schwarzman.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "steve_ballmer",
+      "name_display": "Steve Ballmer",
+      "name_legal": "Steven Anthony Ballmer",
+      "country": "United States",
+      "wealth_source": "Microsoft \u2014 joined 1980 as employee #30, granted 8% equity stake by Bill Gates; CEO 2000-2014; retains ~4% ownership (~333M shares). Also LA Clippers (purchased 2014 for $2B; Sportico valuation ~$6.72B Oct 2025) and The Forum.",
+      "years_as_billionaire_approx": 25,
+      "net_worth_best_usd_b": 132.3,
+      "net_worth_range_usd_b": [
+        117.8,
+        166
+      ],
+      "net_worth_as_of": "2026-01 to 2026-02",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 5070000000,
+      "expected_usd": 7260000000,
+      "hidden_upper_usd": 850000000,
+      "ratio_observable_to_expected": 0.6983,
+      "ratio_observable_to_nw": 0.0384,
+      "tier": "B_PROBABLY_LOW",
+      "tier_raw": "Probably_Generous_but_LLC_Opaque (Tier B)",
+      "tier_reasoning": "Ballmer is the canonical 'probably giving a lot, but we can't independently verify' case. On self-reported + Forbes-reconciled figures, he is giving at 70-80% of the 10% formal norm \u2014 among the more generous top-15 billionaires. But the LLC structure means that if self-reporting stopped tomorrow, we would have very little ability to reconstruct the giving from public records. Readers should see Ballmer as 'transparency mode choice' \u2014 a billionaire who gives meaningfully but has chosen a vehicle class that lets him stop disclosing whenever he wants.",
+      "pledge_signed": false,
+      "red_flags": [
+        "LLC_OPACITY",
+        "DAF_TRANSFERS",
+        "POLITICAL_HEAVY",
+        "NO_PRIVATE_FOUNDATION"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 0,
+        "foundations_active_names": [],
+        "llcs_philanthropic_count": 1,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 32,
+      "event_count": 10,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "steve_ballmer.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "mark_zuckerberg",
+      "name_display": "Mark Zuckerberg",
+      "name_legal": "Mark Elliot Zuckerberg",
+      "country": "United States",
+      "wealth_source": "Meta Platforms co-founder & CEO; ~13% ownership stake (as of Nov 2025 Bloomberg filing); also Zuckerberg private investments / family office",
+      "years_as_billionaire_approx": 18,
+      "net_worth_best_usd_b": 230,
+      "net_worth_range_usd_b": [
+        210,
+        270
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.2,
+      "observable_usd": 4365000000,
+      "expected_usd": 4140000000,
+      "hidden_upper_usd": 3455000000,
+      "ratio_observable_to_expected": 1.054,
+      "ratio_observable_to_nw": 0.019,
+      "tier": "C_OPAQUE",
+      "tier_raw": "Tier_C_Opaque",
+      "tier_reasoning": "Zuckerberg is the canonical LLC_OPACITY case. His 990-PF grants alone (~$1.87B 2017-2024) would place him mid-tier. The 99% Meta shares pledge, if fully disbursed to 501(c)(3)s over his lifetime, would make him one of the largest philanthropists in history. As of 2026-04, only ~2.3% of that notional has reached the 501(c)(3) arm of CZI. The rest sits in a for-profit LLC whose grantees we cannot independently verify. Readers should understand this as: 'Signed the Giving Pledge, structured primary giving vehicle as a for-profit LLC, self-reports large aggregate giving \u2014 external verification confirms less than 30% of the self-report.'",
+      "pledge_signed": false,
+      "red_flags": [
+        "LLC_OPACITY",
+        "FOR_PROFIT_PIVOT",
+        "GIVING_PLEDGE_UNFULFILLED_TO_DATE",
+        "DAF_TRANSFERS_OPACITY",
+        "BORDERLINE_LOW_PAYOUT_CZIF",
+        "SOCIAL_ADVOCACY_WINDDOWN_2025"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 3,
+        "foundations_active_names": [
+          "Chan Zuckerberg Initiative Foundation",
+          "Chan Zuckerberg Biohub Inc",
+          "Chan Zuckerberg Initiative Advocacy"
+        ],
+        "llcs_philanthropic_count": 1,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 28,
+      "event_count": 21,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "mark_zuckerberg.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "dustin_moskovitz",
+      "name_display": "Dustin Moskovitz",
+      "name_legal": "Dustin Aaron Moskovitz",
+      "country": "United States",
+      "wealth_source": "Facebook (Meta) co-founder; Asana co-founder and former CEO; residual Meta holdings plus Asana equity drive net worth",
+      "years_as_billionaire_approx": 15,
+      "net_worth_best_usd_b": 10.2,
+      "net_worth_range_usd_b": [
+        10.2,
+        19.1
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 5000000000,
+      "expected_usd": 841500000,
+      "hidden_upper_usd": 0,
+      "ratio_observable_to_expected": 5.94,
+      "ratio_observable_to_nw": 0.49,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier A+ / 'Doing It')",
+      "tier_reasoning": "Readers should see Moskovitz/Tuna as the canonical example of 'signed the Giving Pledge young and actually delivered.' Cumulative $5B in observable grants + $7.94B committed inside a transparent foundation + explicit spend-down intent + ~$10B already moved out of personal balance sheet into the philanthropic orbit. At $10.2B current personal net worth, they have given away or committed roughly double their Forbes personal net worth to charity already.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Good Ventures Foundation",
+          "Good Ventures (501(c)(3) \u2014 separate entity)"
+        ],
+        "llcs_philanthropic_count": 4,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 22,
+      "event_count": 14,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "dustin_moskovitz.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "mackenzie_scott",
+      "name_display": "MacKenzie Scott",
+      "name_legal": "MacKenzie Scott (formerly MacKenzie Bezos; formerly MacKenzie Tuttle)",
+      "country": "United States",
+      "wealth_source": "Amazon divorce settlement 2019 \u2014 received ~25% of the couple's Amazon shares (~4% of Amazon outstanding, ~19.7M shares at settlement), tax-free under IRC \u00a71041. No operating-company role. Author. Post-divorce wealth managed through family office Lost Horse LLC (Seattle, est. late 2019).",
+      "years_as_billionaire_approx": 7,
+      "net_worth_best_usd_b": 38.0,
+      "net_worth_range_usd_b": [
+        31,
+        43
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.85,
+      "observable_usd": 26300000000,
+      "expected_usd": 2261800000,
+      "hidden_upper_usd": 200000000,
+      "ratio_observable_to_expected": 11.63,
+      "ratio_observable_to_nw": 0.692,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Model_Pledger)",
+      "tier_reasoning": "Scott is the canonical methodological edge case for the Scrooge List: she is simultaneously one of the MOST observed (detailed grant-recipient database) and one of the MOST opaque (no foundation, undated DAF inflows, family-office LLC) billionaires in the US cohort. Her exclusion from Chronicle of Philanthropy's Philanthropy 50 (2024, 2025, 2026) despite giving more than the list's #1 ranked donor in 2025 ($7.1B vs. Bloomberg's $4.3B) is, by itself, evidence that standard philanthropy-tracking infrastructure is broken. The scrooge-list methodology choice to credit Scott's self-published grants-to-501(c)(3) totals is a deliberate departure from Chronicle methodology and should be flagged in methodology prose.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 0,
+        "foundations_active_names": [],
+        "llcs_philanthropic_count": 1,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 26,
+      "event_count": 7,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "mackenzie_scott.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "michael_bloomberg",
+      "name_display": "Michael Bloomberg",
+      "name_legal": "Michael Rubens Bloomberg",
+      "country": "United States",
+      "wealth_source": "Bloomberg L.P. (financial data/media terminal, founded 1981) \u2014 sole owner of ~88% of the company; also former 3-term mayor of New York City",
+      "years_as_billionaire_approx": 30,
+      "net_worth_best_usd_b": 109,
+      "net_worth_range_usd_b": [
+        104,
+        110
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.15,
+      "observable_usd": 21100000000,
+      "expected_usd": 1635000000,
+      "hidden_upper_usd": 95500000000,
+      "ratio_observable_to_expected": 12.9,
+      "ratio_observable_to_nw": 0.194,
+      "tier": "ON_TRACK",
+      "tier_raw": "ON_TRACK / GENEROUS (Tier C \u2014 'Probably High Giving')",
+      "tier_reasoning": "Bloomberg is the reference point for 'what a centibillionaire actively fulfilling the pledge looks like' \u2014 high base rate of disclosed giving (~$3.7B/yr, $21.1B cumulative), structural Bloomberg L.P. succession commitment, clean foundation governance (12%+ payout, nominal comp), no red flags. His observable/pledge-target ratio (~19%) is ~95\u00d7 Ellison's (~0.2%). Use Bloomberg to calibrate the upper boundary of the Scrooge tier system. Any scoring formula that classifies Bloomberg as 'Scrooge-like' is prima facie miscalibrated.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Bloomberg Family Foundation Inc. (dba Bloomberg Philanthropies)"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 30,
+      "event_count": 22,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "michael_bloomberg.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "michael_dell",
+      "name_display": "Michael Dell",
+      "name_legal": "Michael Saul Dell",
+      "country": "United States",
+      "wealth_source": "Dell Technologies founder/CEO (~45-50% stake); also Broadcom stake (from 2023 VMware sale to Broadcom for $68B); DFO Management / MSD Capital family office; Secureworks stake",
+      "years_as_billionaire_approx": 34,
+      "net_worth_best_usd_b": 135.0,
+      "net_worth_range_usd_b": [
+        112,
+        151
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.35,
+      "observable_usd": 1064200000,
+      "expected_usd": 4725000000,
+      "hidden_upper_usd": 2510000000,
+      "ratio_observable_to_expected": 0.225,
+      "ratio_observable_to_nw": 0.0079,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C)",
+      "tier_reasoning": "Readers should see Dell as the anti-Ellison: did NOT sign Giving Pledge but HAS built a serious working foundation over 25 years, zero-comp principals, broad operations. Key tensions: (1) $5B endowment injection accumulating faster than deploying (low payout ratio watch); (2) $210M DAF transfer opacity; (3) $6.25B Trump Accounts pledge is NOT conventional charity. Dell is notable for doing real philanthropy without the public commitment apparatus (Pledge, LLC, splashy vehicles).",
+      "pledge_signed": false,
+      "red_flags": [
+        "DAF_TRANSFERS",
+        "LOW_PAYOUT_RATIO_WATCH",
+        "TRUMP_ACCOUNTS_NOT_CLEARLY_CHARITABLE",
+        "GIVING_PLEDGE_NOT_SIGNED"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Michael & Susan Dell Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 30,
+      "event_count": 16,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "michael_dell.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "phil_knight",
+      "name_display": "Phil Knight",
+      "name_legal": "Philip Hampson Knight",
+      "country": "United States",
+      "wealth_source": "Nike, Inc. co-founder (1964, originally Blue Ribbon Sports); largest shareholder and chairman emeritus. Also holds Laika (stop-motion animation studio, owned via son Travis Knight) and other private investments.",
+      "years_as_billionaire_approx": 30,
+      "net_worth_best_usd_b": 35.4,
+      "net_worth_range_usd_b": [
+        33,
+        44
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 3279053559,
+      "expected_usd": 1947000000,
+      "hidden_upper_usd": 450000000,
+      "ratio_observable_to_expected": 1.684,
+      "ratio_observable_to_nw": 0.0926,
+      "tier": "ON_TRACK",
+      "tier_raw": "Tier_C_On_Track",
+      "tier_reasoning": "Readers should see Knight as the counterexample to Ellison: no Giving Pledge signature, but substantially MORE observable giving delivered ($3.28B vs $0.47B) at a much smaller net worth ($35B vs $227B). Knight demonstrates that pledge-signing is neither necessary (he hasn't signed) nor sufficient (Ellison has signed, minimally delivered). On-track classification should be qualified by: (1) foundation payout sitting at the 5% legal minimum, and (2) the $2B OHSU pledge is a multi-year commitment at age 88.",
+      "pledge_signed": false,
+      "red_flags": [
+        "LOW_PAYOUT_NEAR_MINIMUM",
+        "POTENTIAL_DAF_ROUTING",
+        "OHSU_2B_PLEDGE_STATUS_UNKNOWN",
+        "POLITICAL_HEAVY_STATE_LEVEL"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Knight Foundation (Phil & Penny Knight private foundation, Beaverton OR)"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": true
+      },
+      "sources_count": 23,
+      "event_count": 19,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "phil_knight.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "ray_dalio",
+      "name_display": "Ray Dalio",
+      "name_legal": "Raymond Thomas Dalio",
+      "country": "United States",
+      "wealth_source": "Bridgewater Associates \u2014 founder 1975, world's largest hedge fund at peak (~$124B AUM). Sold his last shares of Bridgewater in July 2025 for ~$6.8B cash. Remaining wealth is diversified across cash, family office holdings, and real estate.",
+      "years_as_billionaire_approx": 14,
+      "net_worth_best_usd_b": 20.0,
+      "net_worth_range_usd_b": [
+        15,
+        28
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.7,
+      "observable_usd": 583500000,
+      "expected_usd": 1400000000,
+      "hidden_upper_usd": 2550000000,
+      "ratio_observable_to_expected": 0.4168,
+      "ratio_observable_to_nw": 0.0292,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C)",
+      "tier_reasoning": "Readers should see Dalio as a signed Giving Pledge member who is materially delivering on the commitment. Key nuances: (1) the $7B+ 'Dalio Philanthropies' lifetime figure includes transfers INTO the foundations and family fund, not just grants OUT \u2014 actual charitable deployment is lower. (2) LOW_PAYOUT flag on Dalio Foundation Inc 2021-2024 is real \u2014 the foundation has ballooned from $740M to $1.67B in assets while grant cadence slowed. (3) Connecticut partnership governance collapse in 2020 is a genuine governance flag. (4) Observable giving is understated in this file because Dalio Family Fund Inc 990s are not yet retrieved.",
+      "pledge_signed": false,
+      "red_flags": [
+        "LOW_PAYOUT_MULTI_YEAR",
+        "GOVERNANCE_CONTROVERSY_CT_PARTNERSHIP",
+        "DUAL_ENTITY_STRUCTURE_UNVERIFIED_FLOW"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 2,
+        "foundations_active_names": [
+          "Dalio Foundation Inc",
+          "Dalio Family Fund Inc"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 22,
+      "event_count": 18,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "ray_dalio.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "warren_buffett",
+      "name_display": "Warren Buffett",
+      "name_legal": "Warren Edward Buffett",
+      "country": "United States",
+      "wealth_source": "Berkshire Hathaway \u2014 chairman, CEO (stepping down end of 2025) and largest individual shareholder; essentially 100% Berkshire common stock at time of 2006 pledge (98%+ of net worth)",
+      "years_as_billionaire_approx": 40,
+      "net_worth_best_usd_b": 148.9,
+      "net_worth_range_usd_b": [
+        146,
+        150
+      ],
+      "net_worth_as_of": "2026-01",
+      "liquidity_estimate_pct": 0.85,
+      "observable_usd": 60000000000,
+      "expected_usd": 12660000000,
+      "hidden_upper_usd": 148500000000,
+      "ratio_observable_to_expected": 4.74,
+      "ratio_observable_to_nw": 0.403,
+      "tier": "ON_TRACK",
+      "tier_raw": "ON_TRACK / CEILING_REFERENCE",
+      "tier_reasoning": "Use Buffett as the anchor/ceiling in lists and methodology pages: 'Buffett's $60B+ lifetime giving, with 99.5% of remainder committed at death, is the reference standard by which we judge other pledge signers.' Ellison gap to Buffett-equivalent = 99.8% short. A billionaire's position on the Scrooge list is effectively measured by distance from Buffett.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 0,
+        "foundations_active_names": [],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 35,
+      "event_count": 17,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "warren_buffett.v3.json",
+      "tier_rank": null
+    }
+  ]
+}

@@ -1,0 +1,642 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record for Jeff Bezos. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run — Bezos deep research, mirrors ellison v3 structure",
+
+  "person": {
+    "name_display": "Jeff Bezos",
+    "name_legal": "Jeffrey Preston Bezos",
+    "dob_year": 1964,
+    "country_primary": "United States",
+    "wealth_source": "Amazon.com founder (~8.6% stake after post-2019 divorce split with MacKenzie Scott); Blue Origin (100% private); Washington Post (100% private via Nash Holdings)",
+    "years_as_billionaire_approx": 28,
+    "marital_note": "2019 divorce from MacKenzie Scott; she received 25% of the couple's Amazon stake (~4% of AMZN). Her giving (>$19B since 2019) is NOT attributed to Bezos. Married Lauren Sánchez in 2025; she serves as Vice Chair of Bezos Earth Fund."
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 239.4,
+    "range_usd_billions": [223, 254],
+    "as_of": "2026-04",
+    "range_note": "Forbes April 2026 profile ranks Bezos #3 at ~$223B (Forbes top-10 article April 2026); Wikipedia citing Forbes Dec 2025 gives $239.4B; Bloomberg Billionaires Index April 2026 cites $254B. ~14% spread across sources within the same quarter — single-point net-worth denominators are unstable.",
+    "sources": [
+      {
+        "publisher": "Forbes (Top 10 Richest, April 2026)",
+        "url": "https://www.forbes.com/sites/forbeswealthteam/article/the-top-ten-richest-people-in-the-world/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 223,
+        "rank_on_list": 3
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes Dec 2025)",
+        "url": "https://en.wikipedia.org/wiki/Jeff_Bezos",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 239.4,
+        "rank_on_list": 4
+      },
+      {
+        "publisher": "Fortune (citing Bloomberg Billionaires Index, April 2026)",
+        "url": "https://fortune.com/2026/04/10/amazon-jeff-bezos-80k-salary-billionaires-ceo-executive-chairman/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 254
+      }
+    ],
+    "liquidity_estimate_pct": 0.55,
+    "liquidity_notes": "Amazon stake (~8.6%) is publicly traded and deep-market liquid; Bezos sold $13.5B in 2024 and filed to sell $4.8B more in March 2025 without meaningful stock disruption. Blue Origin is a private, cash-consuming asset (negative near-term liquidity). Washington Post is a private, low-multiple asset. Cash and public securities outside Amazon are significant. Use 55% liquidity for giving-capacity-now; 85%+ for lifetime expected giving denominator."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "bezos_earth_fund_2020_initial_grants",
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "month",
+      "date": "2020-11",
+      "donor_entity": "Bezos Earth Fund (LLC structure — Fellowship Ventures LLC — not a 501(c)(3) through 2023)",
+      "recipient": "16 environmental nonprofits including WWF, Nature Conservancy, EDF, NRDC, World Resources Institute ($100M each for the largest)",
+      "amount_usd": 791000000,
+      "source_type": "announcement",
+      "source_url": "https://www.nytimes.com/2021/09/20/business/jeff-bezos-earth-fund.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bezos_earth_fund_2021_cop26",
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "month",
+      "date": "2021-11",
+      "donor_entity": "Bezos Earth Fund",
+      "recipient": "Land and food systems commitments including restoration of African landscapes; announced at COP26 Glasgow",
+      "amount_usd": 1000000000,
+      "amount_usd_note": "$1B committed in 2021; portion disbursed immediately, remainder over multi-year schedule",
+      "source_type": "announcement",
+      "source_url": "https://www.cnbc.com/2021/09/20/jeff-bezos-pledges-1-billion-to-conservation-through-bezos-earth-fund.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "May overlap with later 'cumulative disbursed' figures. Use cumulative_disbursed_2026 (~$2.3B) as canonical rollup, NOT additive sum of announcements."
+    },
+    {
+      "event_id": "bezos_earth_fund_2022_grassroots",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Bezos Earth Fund",
+      "recipient": "Grassroots climate justice groups (~$204M round)",
+      "amount_usd": 204000000,
+      "source_type": "announcement",
+      "source_url": "https://www.seattletimes.com/business/bezos-earth-fund-announces-nearly-204-million-in-additional-donations-with-focus-on-grassroots-climate-groups/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "bezos_earth_fund_2024_alt_protein",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Bezos Earth Fund",
+      "recipient": "Bezos Centers for Sustainable Protein (part of $1B sustainable-protein commitment)",
+      "amount_usd": 60000000,
+      "source_type": "news",
+      "source_url": "https://www.forbes.com/sites/mollybohannon/2024/03/12/bezos-earth-fund-invests-60-million-in-centers-to-improve-alternative-meats/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bezos_earth_fund_cumulative_2026",
+      "event_role": "grant_out_cumulative",
+      "year_range": [2020, 2026],
+      "donor_entity": "Bezos Earth Fund (LLC + post-2024 Foundation)",
+      "amount_usd": 2300000000,
+      "source_type": "news",
+      "source_url": "https://www.cnbc.com/2025/07/15/jeff-bezos-taps-tom-taylor-earth-fund.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "Fortune April 2026 corroborates ~$2.3B cumulative disbursed through Earth Fund. This is the CANONICAL rollup number for Earth Fund observable giving; supersedes sum of individual announcements which overlap/double-count.",
+      "corroborating_source": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/"
+    },
+    {
+      "event_id": "bezos_earth_fund_foundation_2024_990",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Bezos Earth Fund Foundation (EIN 93-1868994) — tax-exempt since Jan 2024",
+      "donor_ein": "93-1868994",
+      "amount_usd": 13900000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/931868994",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This $13.9M is the FOUNDATION (501(c)(3)) arm, which only became tax-exempt in Jan 2024 and reports $223K in total assets. The $2.3B cumulative Earth Fund disbursement runs through the LLC (Fellowship Ventures LLC) which does not file public 990s. The $13.9M 990-PF figure is INCLUDED within the $2.3B cumulative total; do NOT additively sum."
+    },
+    {
+      "event_id": "bezos_d1ff_2018",
+      "event_role": "grant_out",
+      "year": 2018,
+      "donor_entity": "Day 1 Families Fund (Bezos Day One Fund)",
+      "amount_usd": 97500000,
+      "source_type": "announcement",
+      "source_url": "https://endhomelessness.org/blog/day-1-fund-will-serve-will/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "24 organizations, inaugural year"
+    },
+    {
+      "event_id": "bezos_d1ff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Day 1 Families Fund",
+      "amount_usd": 98500000,
+      "source_type": "announcement",
+      "source_url": "https://familyaidboston.org/2019/12/06/familyaid-boston-receives-5-million-bezos-day-1-families-fund-grant-to-help-solve-homelessness/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "32 organizations"
+    },
+    {
+      "event_id": "bezos_d1ff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Day 1 Families Fund",
+      "amount_usd": 105900000,
+      "source_type": "announcement",
+      "source_url": "https://safehaven.org/safe-haven-family-shelter-receives-1-25-million-bezos-day-1-families-fund-grant-to-end-homelessness/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "42 organizations"
+    },
+    {
+      "event_id": "bezos_d1ff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Day 1 Families Fund",
+      "amount_usd": 117550000,
+      "source_type": "announcement",
+      "source_url": "https://people.com/bezos-day-1-families-fund-announces-2023-grantees-8404924",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "38 organizations from 23 states, DC, and Puerto Rico"
+    },
+    {
+      "event_id": "bezos_d1ff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "day",
+      "date": "2024-11-20",
+      "donor_entity": "Day 1 Families Fund",
+      "amount_usd": 110500000,
+      "source_type": "announcement",
+      "source_url": "https://philanthropynewsdigest.org/news/bezos-day-one-fund-awards-110.5-million-for-homeless-families",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "40 organizations"
+    },
+    {
+      "event_id": "bezos_d1ff_2025",
+      "event_role": "grant_out",
+      "year": 2025,
+      "donor_entity": "Day 1 Families Fund",
+      "amount_usd": 102500000,
+      "source_type": "announcement",
+      "source_url": "https://www.bezosdayonefund.org/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "32 recipients from 20 states, DC, and Guam — eighth annual round"
+    },
+    {
+      "event_id": "bezos_d1ff_cumulative_2024",
+      "event_role": "grant_out_cumulative",
+      "year_range": [2018, 2024],
+      "donor_entity": "Day 1 Families Fund",
+      "amount_usd": 750000000,
+      "source_type": "announcement",
+      "source_url": "https://www.homelesstrust.org/homeless-trust/news-and-events/2024-11-20-bezos-day-one-grant.page",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "Fund's own disclosure: 248 grants totaling 'nearly $750M' to organizations in all 50 states, DC, and Puerto Rico (through Nov 2024). Adding 2025 round (~$102.5M) brings cumulative to ~$850M through 2025 — matches Fortune 2026 figure.",
+      "dedup_note": "CANONICAL Day 1 Families Fund rollup. Do NOT also count individual annual rounds additively — they are subsumed in this cumulative."
+    },
+    {
+      "event_id": "bezos_smithsonian_pledge",
+      "event_role": "pledge_fulfilled",
+      "year": 2021,
+      "date_precision": "month",
+      "date": "2021-07",
+      "donor_entity": "Jeff Bezos (personal)",
+      "recipient": "Smithsonian Institution — National Air and Space Museum / Bezos Learning Center",
+      "amount_usd": 200000000,
+      "status": "FULFILLED",
+      "status_note": "Pledge completed in 2024 per Fortune 2026.",
+      "source_type": "announcement",
+      "source_url": "https://www.si.edu/newsdesk/releases/smithsonian-receive-historic-200-million-donation-jeff-bezos",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "corroborating_source": "https://fortune.com/article/mackenzie-scott-26-billion-donations-net-worth-amazon-shares/"
+    },
+    {
+      "event_id": "bezos_cca_parton_2022",
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date_precision": "day",
+      "date": "2022-11-12",
+      "donor_entity": "Jeff Bezos + Lauren Sánchez (Courage & Civility Award)",
+      "recipient": "Dolly Parton (to disburse to charities of her choice)",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://www.cnbc.com/2022/11/16/dolly-parton-receives-100-million-dollar-award-from-jeff-bezos.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Courage & Civility is NOT an endowment — it's a direct gift from Bezos/Sánchez personally to the recipient who then regrants. Counted as observable direct_gift because recipient is explicitly charitable. Do not dedupe against Earth Fund or D1FF."
+    },
+    {
+      "event_id": "bezos_cca_jones_andres_2021",
+      "event_role": "direct_gift",
+      "year": 2021,
+      "donor_entity": "Jeff Bezos (Courage & Civility Award)",
+      "recipient": "Van Jones (Dream Corps) + José Andrés (World Central Kitchen) — $100M total, $50M each",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://www.forbes.com/sites/kenrickcai/2021/07/20/jeff-bezos-says-hell-give-away-200-million-in-new-philanthropic-initiative-for-leaders-with-civility/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bezos_cca_longoria_2024",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "donor_entity": "Jeff Bezos + Lauren Sánchez (Courage & Civility Award)",
+      "recipient": "Eva Longoria (Eva Longoria Foundation)",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://fortune.com/2026/04/21/jeff-bezos-gave-eva-longoria-admiral-behind-osama-bin-laden-capture-100-million-you-dont-need-wealth-to-give-back/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bezos_cca_mcraven_2024",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "donor_entity": "Jeff Bezos + Lauren Sánchez (Courage & Civility Award)",
+      "recipient": "Admiral William McRaven",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://fortune.com/2026/04/21/jeff-bezos-gave-eva-longoria-admiral-behind-osama-bin-laden-capture-100-million-you-dont-need-wealth-to-give-back/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Fortune April 2026 frames Longoria + McRaven as the 'two $50M Courage & Civility Awards in 2024'; article title's '$100M' refers to the combined 2024 prize pool."
+    },
+    {
+      "event_id": "bezos_stock_gifts_2025_march",
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date_precision": "month",
+      "date": "2025-03",
+      "donor_entity": "Jeff Bezos (personal, SEC Form 4 G-transaction)",
+      "recipient": "Undisclosed 501(c)(3) charities",
+      "amount_usd": 60000000,
+      "source_type": "SEC Form 4 + news",
+      "source_url": "https://financialpost.com/wealth/bezos-unloads-amazon-stock",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "note": "Financial Post: Bezos 'given away nearly 930,000 shares to nonprofits in 2025' with ~$60M March tranche. Likely flows to Bezos Earth Fund Foundation and/or Day 1 Fund structures.",
+      "dedup_note": "POTENTIAL DOUBLE-COUNT against Earth Fund cumulative or D1FF cumulative — the stock gifts may be the funding mechanism, not incremental outlays. Flag for SEC Form 4 direct parse in Phase 1.2."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "bezos_earth_fund_pledge_2020",
+      "event_role": "pledge",
+      "year": 2020,
+      "date_precision": "month",
+      "date": "2020-02",
+      "pledged_amount_usd": 10000000000,
+      "recipient": "Bezos Earth Fund (climate + nature)",
+      "status": "PARTIALLY_FULFILLED",
+      "status_note": "~$2.3B disbursed through April 2026 (23% of pledge). On pro-rata pace for a 2020-2030 decade (10 years × $1B/yr = $10B), expected $1.4B disbursed by April 2026 — actual is AHEAD of linear. However $7.7B remains with only ~4.5 years until 2030 deadline. Pace acceleration required: ~$1.7B/yr vs. realized ~$400M/yr average.",
+      "source_type": "announcement",
+      "source_url": "https://www.bezosearthfund.org/who-we-are",
+      "retrieved_at": "2026-04-23",
+      "corroborating_source": "https://www.cnbc.com/2025/07/15/jeff-bezos-taps-tom-taylor-earth-fund.html",
+      "pledge_letter_quote": "The Earth Fund was created by a commitment of $10 billion from Jeff Bezos in 2020 to be disbursed as grants to address climate and nature within the current decade.",
+      "notes": "Lauren Sánchez Bezos stepped in as Vice Chair to accelerate disbursement; Tom Taylor (former Amazon Alexa head) hired as CEO in July 2025 explicitly to increase 'operational execution.'"
+    },
+    {
+      "event_id": "bezos_d1ff_pledge_2018",
+      "event_role": "pledge",
+      "year": 2018,
+      "pledged_amount_usd": 2000000000,
+      "recipient": "Day 1 Families Fund (homelessness) + Day 1 Academies Fund (Bezos Academy preschools)",
+      "status": "PARTIALLY_FULFILLED",
+      "status_note": "~$850M cumulative disbursement through 2025 against $2B initial commitment (42.5% of pledge). No time-bound deadline stated — open-ended.",
+      "source_type": "announcement",
+      "source_url": "https://people.com/bezos-day-1-families-fund-announces-2023-grantees-8404924",
+      "retrieved_at": "2026-04-23",
+      "notes": "The $2B launch commitment covers both Families Fund and Academies Fund jointly. Bezos Academy operates ~40+ tuition-free preschools across the US as of 2025, funded via Day 1 Academies Fund — spend exact figure not publicly disclosed."
+    },
+    {
+      "event_id": "bezos_majority_wealth_interview_2022",
+      "event_role": "public_statement_not_pledge",
+      "year": 2022,
+      "date_precision": "month",
+      "date": "2022-11",
+      "donor_entity": "Jeff Bezos",
+      "source_type": "interview",
+      "source_url": "https://www.ft.com/content/6a1b87d8-696c-4259-b30a-e140e49bbfd4",
+      "retrieved_at": "2026-04-23",
+      "quote_paraphrased": "Bezos told CNN in Nov 2022 he intends to give away 'the majority' of his wealth during his lifetime, acknowledging the difficulty of doing so effectively.",
+      "corroborating_source": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/",
+      "classification_note": "NOT a Giving Pledge signature. No legally binding or publicly documented commitment beyond 'majority' verbal intent. Inside Philanthropy and Fortune both characterize it as less formal than the Giving Pledge."
+    }
+  ],
+
+  "giving_pledge_status": {
+    "signed": false,
+    "status": "NOT_SIGNED",
+    "verification_sources": [
+      {
+        "url": "https://www.givingpledge.org/who-has-taken-the-pledge/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Giving Pledge official site",
+        "note": "Bezos is absent from the full pledger list."
+      },
+      {
+        "url": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Fortune",
+        "quote": "Bezos has not signed it."
+      },
+      {
+        "url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html",
+        "retrieved_at": "2026-04-23",
+        "publisher": "CNBC",
+        "note": "Lists Bezos as #3 among richest non-signers."
+      },
+      {
+        "url": "https://www.desertsun.com/story/news/nation/california/2026/04/21/why-jeff-bezos-gave-eva-longoria-50-million/89715988007/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Desert Sun (April 2026)",
+        "quote": "he has not yet signed the Giving Pledge"
+      }
+    ],
+    "note": "MacKenzie Scott (ex-wife) signed in 2019. Bezos's mother and stepfather fund the separate Bezos Family Foundation. NEITHER counts toward Jeff Bezos's own giving."
+  },
+
+  "political_giving": {
+    "classification": "POLITICAL_LIGHT",
+    "substitution_note": "Federal political giving by Bezos himself has been minimal as a percentage of wealth. Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2018_2025_usd": 11000000,
+    "observed_total_note": "Federal-level only. Floor: $10M With Honor Fund 2018 (bipartisan veterans super-PAC) + ~$1M in smaller federal contributions 2018-2025. Amazon corporate PAC, Blue Origin PAC, and Amazon corporate lobbying are separate legal entities and NOT counted as Bezos personal political giving. Note: Dec 2024 $1M Amazon corporate donation to Trump inaugural fund is corporate, not personal — flagged in sources for reader context.",
+    "sources": [
+      {
+        "url": "https://enewspaper.latimes.com/infinity/article_share.aspx?guid=a1c1fcd6-7805-445f-8734-2ea5c926e629",
+        "retrieved_at": "2026-04-23",
+        "publisher": "LA Times",
+        "amount_usd": 10000000,
+        "event_date": "2018-09",
+        "note": "Bezos + MacKenzie $10M to With Honor super-PAC — his largest reported personal political donation"
+      },
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=jeffrey+bezos",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets Donor Lookup",
+        "note": "Federal individual contribution searches under Jeffrey Bezos return a handful of smaller records; Phase 1.3 FEC bulk pull will tighten. Bezos has NOT been reported as a major individual donor in 2020, 2022, or 2024 election cycles."
+      },
+      {
+        "url": "https://united4respect.org/reports/amazon-political-spending-2024/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "United for Respect",
+        "amount_usd": 17000000,
+        "note": "$17M figure reported for 'Amazon and the Bezos family' 2024 cycle — the majority is Amazon corporate PAC and lobbying, NOT personal Jeff Bezos contributions. Included for context only."
+      },
+      {
+        "url": "https://www.warren.senate.gov/imo/media/doc/letters_on_big_tech_donations_to_trump_inaugural_fund.pdf",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Sen. Warren letter to Bezos (Jan 17 2025)",
+        "amount_usd": 1000000,
+        "event_date": "2024-12-12",
+        "note": "Amazon corporate (not Bezos personal) $1M to Trump 2025 inaugural fund; Warren flags as potential influence-seeking."
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Bezos Earth Fund Foundation",
+        "ein": "93-1868994",
+        "established_year": "2024 (tax-exempt since Jan 2024; parent 'Bezos Earth Fund' predates as LLC from 2020)",
+        "state": "DC (Washington)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 223000,
+        "grants_paid_2024_usd": 13900000,
+        "contributions_received_2024_usd": 14300000,
+        "officers_compensation_2024": [
+          {"name": "Andrew Steer", "role": "President & Director", "compensation_usd": 817660},
+          {"name": "Douglas Varley", "role": "Secretary", "compensation_usd": 496611},
+          {"name": "Tony Chan", "role": "Treasurer (through 9/30)", "compensation_usd": 408588},
+          {"name": "Jeffrey Bezos", "role": "Director", "compensation_usd": 0},
+          {"name": "Lauren Sanchez Bezos", "role": "Director", "compensation_usd": 0}
+        ],
+        "payout_rate_notes": "Foundation-only figures are a tiny sliver of Earth Fund activity. The bulk of the $2.3B cumulative Earth Fund disbursement flows through the LLC (Fellowship Ventures LLC) which does NOT file 990s. Assets=$223K with $14.3M contributions and $13.9M grants — essentially a pass-through with no endowment accumulation.",
+        "red_flag_high_comp": "CHECK: ~$1.7M total officer comp vs. $13.9M in grants = ~12% comp-to-grants ratio, above the v2 HIGH_COMP threshold. HOWEVER, this is misleading because the foundation is only one piece of the Earth Fund org chart; comp likely covers work spanning both entities. Do not raise HIGH_COMP flag on this basis alone.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/931868994"
+      }
+    ],
+    "foundations_terminated": [],
+    "foundations_related_not_attributed": [
+      {
+        "name": "Bezos Family Foundation",
+        "ein": "91-2073258",
+        "established_year": 2000,
+        "founders": "Mike (Miguel) and Jackie Bezos — Jeff's parents, NOT Jeff himself",
+        "status": "active",
+        "note": "CRITICAL DEDUP: Bezos Family Foundation is frequently conflated with Jeff's giving in news coverage. It is the parents' foundation, not Jeff's. Initial endowment came from early Amazon stock gift from Jeff, but subsequent contributions and governance are Mike & Jackie's. Do NOT attribute BFF grants to Jeff Bezos.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/912073258",
+        "corroborating_source": "https://bezosfamilyfoundation.org/about-us"
+      }
+    ],
+    "dafs_detected": [],
+    "dafs_note": "No donor-advised fund activity identified. Absence-of-evidence only — DAFs are donor-opaque by design.",
+    "llcs_philanthropic": [
+      {
+        "name": "Fellowship Ventures LLC (operating as Bezos Earth Fund)",
+        "state": "DE (Delaware)",
+        "classification": "PHILANTHROPIC_LLC",
+        "year_established": "~2020",
+        "source_url": "https://www.vox.com/recode/22321861/jeff-bezos-climate-earth-fund-andrew-steel-amazon",
+        "corroborating_source": "https://www.insidephilanthropy.com/home/2021/11/3/another-big-pledge-from-bezos-what-we-know-about-a-new-commitment-to-land-and-food-systems",
+        "methodology_note": "Recode/Vox 2021 reporting: 'Bezos set up an LLC, Fellowship Ventures, that applied to trademark Bezos Earth Fund in July 2020.' Forbes 2023 explicitly: 'Bezos does not have his own private charitable foundation.' LLC structure allows for-profit investments + nonprofit grants without public 990 filings. This is structurally similar to CZI and Emerson Collective. The $2.3B cumulative Earth Fund number should be ACCEPTED as observable giving per Earth Fund's own disclosures, BUT the underlying transaction-level data is not verifiable via 990s — trust layer depends on Earth Fund PR releases + news coverage."
+      },
+      {
+        "name": "Bezos Day One Fund (entity structure not publicly specified)",
+        "classification": "LIKELY_PHILANTHROPIC_LLC_OR_DAF",
+        "year_established": 2018,
+        "source_url": "https://www.bezosdayonefund.org/",
+        "methodology_note": "Day One Fund houses Day 1 Families Fund + Day 1 Academies Fund (Bezos Academy). Does not appear to file public 990s in its own name. Annual grant rounds are publicly announced, giving reasonable confidence in the cumulative $850M figure, but the entity's legal wrapper is not clearly disclosed."
+      },
+      {
+        "name": "Bezos Academy (operating entity)",
+        "classification": "TUITION_FREE_PRESCHOOL_NETWORK",
+        "year_established": 2020,
+        "locations_count_2025": "40+",
+        "source_url": "https://bezosacademy.org/",
+        "methodology_note": "Operating arm of Day 1 Academies Fund. Preschools are free to families under 400% FPL. Expenditures not publicly disclosed in aggregate; inferred to be inside the $2B Day One Fund launch commitment. Bezos Academy IS included within the Day 1 Fund cumulative rollup; individual school operating budgets (e.g. $4.5-6M TWU Denton project) are NOT additive on top of that rollup."
+      }
+    ],
+    "llcs_note": "LLC-dominant structure is Bezos's distinguishing feature vs. peers like Gates (GF), Buffett (Berkshire → GF), Ellison (LEF). Means conventional 990-PF analysis captures almost none of Bezos's giving. We rely on public announcements + news + Fortune/CNBC cumulative figures.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "Blue Origin",
+        "classification": "PRIVATE_INVESTMENT_NOT_CHARITY",
+        "year_established": 2000,
+        "note": "Aerospace private company, 100% Bezos-owned. Not philanthropy. Often conflated in popular accounts of Bezos 'giving' activities — IT IS NOT."
+      },
+      {
+        "name": "Washington Post (Nash Holdings)",
+        "classification": "PRIVATE_INVESTMENT_NOT_CHARITY",
+        "year_established": 2013,
+        "note": "Newspaper ownership since 2013 (~$250M purchase). Not philanthropy under any reasonable accounting. Operates as a private business with editorial independence from Amazon."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. No public reporting of offshore philanthropic structures.",
+    "trusts_disclosed_existence_structure_unknown": []
+  },
+
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Bezos is #3-#4 richest person globally yet has never signed the Giving Pledge in its 15+ year existence. Ex-wife MacKenzie Scott signed in 2019 and has given >$19B since. Verbal 'majority of wealth' statement (Nov 2022 CNN) is not a legally documented pledge. Jonah's peer analysis shows every other top-10 billionaire has EITHER signed the pledge OR publicly declined with stated reasoning (Musk, Brin). Bezos has done neither clearly.",
+      "source_url": "https://www.givingpledge.org/who-has-taken-the-pledge/",
+      "corroborating_source": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/"
+    },
+    {
+      "flag": "PLEDGE_BEHIND_SCHEDULE",
+      "evidence": "$10B Earth Fund 2020→2030 pledge: $2.3B disbursed through April 2026 (~23%) with ~4.5 years remaining. To hit $10B by 2030 requires ~$1.7B/yr pace vs. realized ~$400M/yr average. CEO hire in July 2025 (Tom Taylor) explicitly frames the acceleration need. Not VERIFIED_UNFULFILLED (still time), but structurally behind.",
+      "source_url": "https://www.cnbc.com/2025/07/15/jeff-bezos-taps-tom-taylor-earth-fund.html"
+    },
+    {
+      "flag": "LLC_OPACITY",
+      "evidence": "Bezos's primary giving vehicle (Fellowship Ventures LLC dba Bezos Earth Fund) does not file public 990s. $2.3B cumulative figure is Earth Fund's own PR claim; transaction-level verification via IRS filings is not available for the LLC-routed majority of that giving. Same applies to Day One Fund structure.",
+      "source_url": "https://www.vox.com/recode/22321861/jeff-bezos-climate-earth-fund-andrew-steel-amazon"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (Bezos Earth Fund Foundation 2024: $13.9M grants vs. $14.3M contributions ≈ 97% payout — essentially pass-through; LLC arm disbursed $2.3B and is not measured as 'assets')",
+    "DAF_TRANSFERS (no DAF activity identified; not confirmed absent)",
+    "POLITICAL_HEAVY ($11M federal individual giving since 2018; dominated by one 2018 bipartisan-veterans gift — not ideologically partisan mega-donor pattern like Ellison/Musk/Adelson)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 3450000000,
+    "observable_giving_method": "Bezos Earth Fund cumulative ($2.3B through 2026) + Day 1 Fund cumulative ($0.85B through 2025) + Smithsonian $200M (fulfilled 2024) + Courage & Civility Awards $300M (Parton 2022 $100M + Jones/Andrés 2021 $100M + Longoria 2024 $50M + McRaven 2024 $50M). Excludes: Blue Origin (private co.), Washington Post (private co.), Bezos Family Foundation (parents' foundation), Amazon corporate charity / inauguration fund donations, $60M March 2025 stock gift (likely already in Earth Fund cumulative — dedup risk). Excludes political giving.",
+    "observable_giving_todo": [
+      "Pull SEC EDGAR Form 4 G-transactions for Bezos's CIK to identify stock gifts not captured via LLC PR (e.g. 2025 ~930K shares reported by Financial Post).",
+      "Verify Day 1 Academies Fund / Bezos Academy operating expenditures are fully inside $850M Day 1 cumulative or whether Academy operating budget is additive.",
+      "Try to obtain Fellowship Ventures LLC state filings (DE) for any additional disclosure.",
+      "Cross-check Earth Fund grants_out against any 2025/2026 year-end disclosures — Fortune April 2026 may already reflect 2025 full year."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 13167000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.55 × $239.4B = $131.67B; tenure cap saturated (28 years). Expected = $13.17B. This is a STRICT denominator matching the formal 10% norm.",
+    "observable_ratio_to_expected": 0.262,
+    "observable_ratio_to_current_nw": 0.0144,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 500000000,
+      "llc_uplift_note": "LLC wrapper allows for undisclosed giving NOT announced via press releases. Apply 0.2% of liquid_wealth as upper bound = 0.002 × $131.67B = $263M. Round up to $500M to reflect that Earth Fund has announced some grants without dollar disclosure (e.g. AI Grand Challenge Phase II, pending Costa Rica/Panama/Colombia/Ecuador marine expansion). Conservative upper bound.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 300000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Bezos is NOT known as an anonymous-style giver (most giving is publicly branded 'Bezos X'). Apply low-end cohort amplifier: ~1% of observable giving × small factor = $300M upper bound.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "Bezos has NOT publicly disclosed a charitable trust vehicle (unlike Ellison). His November 2022 'majority of wealth' statement is not legally structured. No trust uplift.",
+      "total_usd": 800000000,
+      "total_method": "llc_uplift + anonymous_cohort_uplift (others zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.323,
+    "tier": "Probably_Low (Tier B)",
+    "tier_rule": "Observable ($3.45B) + hidden_upper ($0.8B) = $4.25B vs. expected $13.17B → 32% of the 10% norm. Above Tier A VERIFIED_LOW threshold (< 20%). Signed-pledge-but-behind OR spoken-pledge-but-structurally-on-track dynamics put him in Tier B. Compared to Ellison (Tier B at 0.262% of current NW observable vs. 10% norm), Bezos is MUCH further along on observable dollars (1.44% of current NW) — $3.45B is more than Ellison, Zuckerberg, and Musk's observable totals combined. The 'probably low' classification reflects the GAP between current ~$3.5B and 10%-of-liquid-wealth benchmark of $13B, not an accusation of zero giving.",
+    "tier_published_caveat": "Bezos is the canonical example of 'biggest pledge in philanthropic history, behind schedule to deliver.' $2.3B Earth Fund disbursed through 2026 against $10B by 2030 target; $850M Day 1 Fund through 2025 against open-ended $2B; Smithsonian $200M fulfilled. His challenge is not whether he gives — he demonstrably does — but whether the pace matches the pledge and the wealth."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 73.8,
+    "components": {
+      "giving_gap_40pct": 27.1,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 10.0,
+      "red_flag_penalty_20pct": 15.0
+    },
+    "components_note": "giving_gap: (1 - 0.323) × 40 = 27.08. tenure: 28 years, cap at 20. pledge: partial-breach weighting (Earth Fund behind schedule, no Giving Pledge signature) = 10/20. red_flags: 3 flags × 5 = 15/20.",
+    "note": "Computed with v2 formula for continuity with current pipeline. DO NOT PUBLISH this number — we publish tiers only per PLAN.md. Significantly lower than Ellison's 97.95 because Bezos has delivered orders of magnitude more observable giving."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Bezos Earth Fund press contact (communications@bezosearthfund.org) + Day 1 Fund press + Amazon corporate communications (Jeff Bezos retains executive chair role) + Lauren Sánchez Bezos office.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Exact Bezos Earth Fund cumulative as of 2026-Q1 via Earth Fund's own annual report or Form 990 (once filed) — current $2.3B figure is CNBC July 2025 + Fortune April 2026 but no directly disclosed year-end.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Bezos's CIK (1043298) 2020-2025 — reconcile with Earth Fund contributions received ($14.3M on 2024 990 is far less than the 930K shares reported for 2025).",
+    "VERIFY: Fellowship Ventures LLC Delaware state filings — any additional disclosure.",
+    "VERIFY: Whether Bezos Academy operating expenditures are subsumed in Day 1 $850M cumulative or additive.",
+    "VERIFY: Individual FEC contributions under Jeff Bezos / Jeffrey Bezos — Phase 1.3 bulk pull to tighten $11M floor.",
+    "VERIFY: Any Bezos-attributed ICIJ Offshore Leaks entries — deferred to Phase 2.",
+    "VERIFY: Status of $1B sustainable-protein commitment within Earth Fund (announced 2024) — how much of the $1B is already inside the $2.3B cumulative vs. future.",
+    "VERIFY: Any pre-2020 personal giving by Bezos not yet captured (e.g. Princeton $15M reported early 2010s, other university/hospital gifts)."
+  ],
+
+  "sources_all": [
+    {"url": "https://www.forbes.com/sites/forbeswealthteam/article/the-top-ten-richest-people-in-the-world/", "retrieved_at": "2026-04-23", "used_for": "Forbes April 2026 net worth $223B and rank #3"},
+    {"url": "https://en.wikipedia.org/wiki/Jeff_Bezos", "retrieved_at": "2026-04-23", "used_for": "Net worth corroboration $239.4B (Forbes Dec 2025)"},
+    {"url": "https://fortune.com/2026/04/10/amazon-jeff-bezos-80k-salary-billionaires-ceo-executive-chairman/", "retrieved_at": "2026-04-23", "used_for": "Bloomberg Billionaires Index April 2026 $254B + $80K Amazon salary context"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/931868994", "retrieved_at": "2026-04-23", "used_for": "Bezos Earth Fund Foundation EIN 93-1868994, 2024 990-PF data, officer compensation"},
+    {"url": "https://www.bezosearthfund.org/who-we-are", "retrieved_at": "2026-04-23", "used_for": "$10B pledge, 2030 disbursement deadline"},
+    {"url": "https://www.cnbc.com/2025/07/15/jeff-bezos-taps-tom-taylor-earth-fund.html", "retrieved_at": "2026-04-23", "used_for": "$2.3B cumulative Earth Fund disbursed; Tom Taylor CEO hire"},
+    {"url": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/", "retrieved_at": "2026-04-23", "used_for": "2030 clock, Lauren Sánchez leadership, Bezos has not signed Giving Pledge, ~$2.3B deployed"},
+    {"url": "https://www.vox.com/recode/22321861/jeff-bezos-climate-earth-fund-andrew-steel-amazon", "retrieved_at": "2026-04-23", "used_for": "Fellowship Ventures LLC structure as Bezos Earth Fund vehicle"},
+    {"url": "https://www.insidephilanthropy.com/home/2021/11/3/another-big-pledge-from-bezos-what-we-know-about-a-new-commitment-to-land-and-food-systems", "retrieved_at": "2026-04-23", "used_for": "LLC structure confirmation; Fellowship Ventures trademark filing July 2020"},
+    {"url": "https://www.forbes.com/sites/phoebeliu/2023/03/21/jeff-bezos-earth-fund-announces-35-million-in-new-grants-to-climate-reporting-and-sustainable-agriculture/", "retrieved_at": "2026-04-23", "used_for": "Forbes 2023: 'Bezos does not have his own private charitable foundation'; $690M given away in 2022"},
+    {"url": "https://www.nytimes.com/2021/09/20/business/jeff-bezos-earth-fund.html", "retrieved_at": "2026-04-23", "used_for": "2020 initial $791M Earth Fund grants to 16 organizations"},
+    {"url": "https://www.cnbc.com/2021/09/20/jeff-bezos-pledges-1-billion-to-conservation-through-bezos-earth-fund.html", "retrieved_at": "2026-04-23", "used_for": "2021 $1B conservation commitment"},
+    {"url": "https://www.seattletimes.com/business/bezos-earth-fund-announces-nearly-204-million-in-additional-donations-with-focus-on-grassroots-climate-groups/", "retrieved_at": "2026-04-23", "used_for": "2022 $204M grassroots round"},
+    {"url": "https://www.forbes.com/sites/mollybohannon/2024/03/12/bezos-earth-fund-invests-60-million-in-centers-to-improve-alternative-meats/", "retrieved_at": "2026-04-23", "used_for": "2024 $60M Bezos Centers for Sustainable Protein"},
+    {"url": "https://www.bezosearthfund.org/news-and-insights/bezos-earth-fund-announces-30-million-in-ai-grand-challenge-awards", "retrieved_at": "2026-04-23", "used_for": "$30M AI Grand Challenge October 2025 + $100M AI initiative context"},
+    {"url": "https://www.reuters.com/sustainability/boards-policy-regulation/bezos-earth-fund-boosts-marine-conservation-with-245-million-2025-12-09/", "retrieved_at": "2026-04-23", "used_for": "$24.5M December 2025 marine conservation grants"},
+    {"url": "https://people.com/bezos-day-1-families-fund-announces-2023-grantees-8404924", "retrieved_at": "2026-04-23", "used_for": "2023 Day 1 Families Fund $117.55M; $2B launch commitment"},
+    {"url": "https://philanthropynewsdigest.org/news/bezos-day-one-fund-awards-110.5-million-for-homeless-families", "retrieved_at": "2026-04-23", "used_for": "2024 Day 1 Families Fund $110.5M to 40 organizations"},
+    {"url": "https://www.bezosdayonefund.org/", "retrieved_at": "2026-04-23", "used_for": "2025 Day 1 Families Fund $102.5M to 32 recipients"},
+    {"url": "https://www.homelesstrust.org/homeless-trust/news-and-events/2024-11-20-bezos-day-one-grant.page", "retrieved_at": "2026-04-23", "used_for": "Day 1 Families Fund cumulative ~$750M through Nov 2024; 248 grants"},
+    {"url": "https://endhomelessness.org/blog/day-1-fund-will-serve-will/", "retrieved_at": "2026-04-23", "used_for": "2018 Day 1 Families Fund $97.5M inaugural"},
+    {"url": "https://familyaidboston.org/2019/12/06/familyaid-boston-receives-5-million-bezos-day-1-families-fund-grant-to-help-solve-homelessness/", "retrieved_at": "2026-04-23", "used_for": "2019 Day 1 Families Fund $98.5M"},
+    {"url": "https://safehaven.org/safe-haven-family-shelter-receives-1-25-million-bezos-day-1-families-fund-grant-to-end-homelessness/", "retrieved_at": "2026-04-23", "used_for": "2020 Day 1 Families Fund $105.9M"},
+    {"url": "https://fortune.com/article/mackenzie-scott-26-billion-donations-net-worth-amazon-shares/", "retrieved_at": "2026-04-23", "used_for": "$2.3B Earth Fund + $850M Day 1 + $200M Smithsonian completed 2024 cumulative figures"},
+    {"url": "https://www.si.edu/newsdesk/releases/smithsonian-receive-historic-200-million-donation-jeff-bezos", "retrieved_at": "2026-04-23", "used_for": "2021 $200M Smithsonian pledge announcement"},
+    {"url": "https://www.forbes.com/sites/kenrickcai/2021/07/20/jeff-bezos-says-hell-give-away-200-million-in-new-philanthropic-initiative-for-leaders-with-civility/", "retrieved_at": "2026-04-23", "used_for": "Courage & Civility Award launch; $200M program; $791M Earth Fund total context"},
+    {"url": "https://www.cnbc.com/2022/11/16/dolly-parton-receives-100-million-dollar-award-from-jeff-bezos.html", "retrieved_at": "2026-04-23", "used_for": "2022 Dolly Parton $100M Courage & Civility Award"},
+    {"url": "https://fortune.com/2026/04/21/jeff-bezos-gave-eva-longoria-admiral-behind-osama-bin-laden-capture-100-million-you-dont-need-wealth-to-give-back/", "retrieved_at": "2026-04-23", "used_for": "2024 Longoria + McRaven $50M each C&C Awards"},
+    {"url": "https://bezosacademy.org/", "retrieved_at": "2026-04-23", "used_for": "Bezos Academy 40+ preschools; free tuition model"},
+    {"url": "https://www.bezosdayonefund.org/day1academiesfund", "retrieved_at": "2026-04-23", "used_for": "Day 1 Academies Fund / Bezos Academy structure"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/912073258", "retrieved_at": "2026-04-23", "used_for": "Bezos Family Foundation — parents' foundation, NOT attributed to Jeff"},
+    {"url": "https://bezosfamilyfoundation.org/about-us", "retrieved_at": "2026-04-23", "used_for": "Bezos Family Foundation established 2000 by Mike & Jackie Bezos (parents)"},
+    {"url": "https://www.givingpledge.org/who-has-taken-the-pledge/", "retrieved_at": "2026-04-23", "used_for": "Bezos absent from Giving Pledge signer list"},
+    {"url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html", "retrieved_at": "2026-04-23", "used_for": "CNBC: Bezos #3 richest non-signer"},
+    {"url": "https://www.desertsun.com/story/news/nation/california/2026/04/21/why-jeff-bezos-gave-eva-longoria-50-million/89715988007/", "retrieved_at": "2026-04-23", "used_for": "April 2026 reconfirmation Bezos has not signed Giving Pledge"},
+    {"url": "https://www.ft.com/content/6a1b87d8-696c-4259-b30a-e140e49bbfd4", "retrieved_at": "2026-04-23", "used_for": "2022 CNN 'majority of wealth' verbal intent"},
+    {"url": "https://enewspaper.latimes.com/infinity/article_share.aspx?guid=a1c1fcd6-7805-445f-8734-2ea5c926e629", "retrieved_at": "2026-04-23", "used_for": "2018 $10M With Honor super-PAC — largest personal political donation"},
+    {"url": "https://www.opensecrets.org/donor-lookup/results?name=jeffrey+bezos", "retrieved_at": "2026-04-23", "used_for": "OpenSecrets donor lookup — minimal personal political activity 2020-2024"},
+    {"url": "https://united4respect.org/reports/amazon-political-spending-2024/", "retrieved_at": "2026-04-23", "used_for": "Amazon + Bezos family $17M 2024 cycle (mostly corporate)"},
+    {"url": "https://www.warren.senate.gov/imo/media/doc/letters_on_big_tech_donations_to_trump_inaugural_fund.pdf", "retrieved_at": "2026-04-23", "used_for": "Amazon corporate $1M Trump inaugural fund Dec 2024 (NOT personal)"},
+    {"url": "https://variety.com/2025/digital/news/jeff-bezos-stock-sale-share-ownership-1236385238/", "retrieved_at": "2026-04-23", "used_for": "Bezos $13.5B 2024 stock sales; March 2025 $4.8B additional sale filed"},
+    {"url": "https://financialpost.com/wealth/bezos-unloads-amazon-stock", "retrieved_at": "2026-04-23", "used_for": "Bezos ~930K shares gifted to nonprofits 2025; ~$60M March tranche"},
+    {"url": "https://www.instrumentl.com/990-report/bezos-earth-fund-foundation", "retrieved_at": "2026-04-23", "used_for": "Bezos Earth Fund Foundation $223K total assets"},
+    {"url": "https://www.insidephilanthropy.com/find-a-grant/grants-b/bezos-earth-fund", "retrieved_at": "2026-04-23", "used_for": "Bezos Earth Fund grantmaking programs; 2025 $163.5M Pacific marine expansion"}
+  ]
+}

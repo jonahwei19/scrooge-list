@@ -1,0 +1,570 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file. Matches Ellison v3 schema shape.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 Moskovitz deep research; transparency-positive LLC case contrast to CZI/Ballmer",
+  "person": {
+    "name_display": "Dustin Moskovitz",
+    "name_legal": "Dustin Aaron Moskovitz",
+    "dob_year": 1984,
+    "country_primary": "United States",
+    "wealth_source": "Facebook (Meta) co-founder; Asana co-founder and former CEO; residual Meta holdings plus Asana equity drive net worth",
+    "years_as_billionaire_approx": 15,
+    "spouse_co_philanthropist": "Cari Tuna (b. 1986; chair of Coefficient Giving, president of Good Ventures Foundation)"
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 10.2,
+    "range_usd_billions": [
+      10.2,
+      19.1
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes April 2026 lists ~$10.2B (down sharply from mid-cycle highs after Asana stock and Meta corrections). Secondary trackers cite up to ~$19B. Net worth has been highly volatile \u2014 peaked ~$28B in 2021 on Asana post-IPO bounce, compressed substantially since. Notably, Moskovitz has already moved ~$10B of stock into Good Ventures Foundation, which shows in foundation net assets ($7.94B as of 2024 990-PF) rather than in his personal Forbes tally \u2014 a key reason his Forbes number understates his giving capacity/intent.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires (via Wikipedia citation)",
+        "url": "https://en.wikipedia.org/wiki/Dustin_Moskovitz",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 10.2,
+        "value_as_of": "2026-04"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/dustin-a-moskovitz/",
+        "retrieved_at": "2026-04-23",
+        "value_note": "Bloomberg profile maintained; precise daily value not extracted"
+      },
+      {
+        "publisher": "Fortune (Nov 2025)",
+        "url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+        "retrieved_at": "2026-04-23",
+        "value_note": "Frames total Moskovitz\u2013Tuna wealth being given away as ~$20B combining Forbes personal net worth + $10B already transferred into Good Ventures Foundation"
+      }
+    ],
+    "liquidity_estimate_pct": 0.55,
+    "liquidity_notes": "Meta stake has been heavily diversified since 2008 exit (Moskovitz left Facebook to found Asana). Current wealth mix is Asana equity (public, but concentrated founder stake), diversified portfolio, and already-endowed foundation assets. Apply ~55% liquidity for expected-giving math \u2014 substantially higher than Ellison (25%) because he is not sitting on a single concentrated public stake the way Ellison is on Oracle. Liquidity for wealth already placed in Good Ventures Foundation is effectively 100% (it is foundation-owned and earmarked for grantmaking)."
+  },
+  "cited_events": [
+    {
+      "event_id": "moskovitz_gvf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Good Ventures Foundation",
+      "donor_ein": "46-1008520",
+      "recipient": "Various (491 grants in 2024 per Instrumentl summary; recipients documented publicly on Good Ventures grants database)",
+      "amount_usd": 357542418,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520",
+      "secondary_source_url": "https://www.instrumentl.com/990-report/good-ventures-foundation",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "2024 total charitable disbursements from Good Ventures Foundation 990-PF per Instrumentl parse. Fortune Nov 2025 independently cites 'over $600M in 2025 alone' and '$593M in 2024 through Open Philanthropy recommendations' \u2014 the difference between $593M OP-recommended grants and $357.5M GVF 990-PF grants is accounted for by OP-recommended grants that flow through other vehicles (Coefficient Giving Advisors 501(c)(3), donor-advised funds, OP Action Fund 501(c)(4))."
+    },
+    {
+      "event_id": "moskovitz_gvf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Good Ventures Foundation",
+      "donor_ein": "46-1008520",
+      "amount_usd": 369400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "Per secondary reporting citing GVF 990-PF filings."
+    },
+    {
+      "event_id": "moskovitz_gvf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Good Ventures Foundation",
+      "donor_ein": "46-1008520",
+      "amount_usd": 396000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "moskovitz_op_directed_cumulative_2014_2025",
+      "event_role": "grant_out",
+      "year_range": [
+        2014,
+        2025
+      ],
+      "donor_entity": "Good Ventures / Coefficient Giving (fka Open Philanthropy)",
+      "recipient": "Various \u2014 full grant database published at openphilanthropy.org/grants (now coefficientgiving.org)",
+      "amount_usd": 4000000000,
+      "amount_usd_note": "'More than $4B' directed cumulatively by Open Philanthropy / Coefficient Giving as of June 2025, per Fortune and Wikipedia. This includes grants from Good Ventures Foundation (captured above in annual rows) as well as grants from Coefficient Giving Advisors, OP Action Fund, DAFs, and other donor partners.",
+      "source_type": "org_publication",
+      "source_url": "https://coefficientgiving.org/governance/",
+      "secondary_source_url": "https://en.wikipedia.org/wiki/Coefficient_Giving",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "This is the umbrella cumulative figure. Do NOT double-add it to the annual GVF grant_out rows above. The cumulative $4B directed by OP/CG materially OVERLAPS with GVF 990-PF totals since GVF is OP's primary funder. In rollup we use the org-published cumulative ($5B Good Ventures since 2011 per goodventures.org + $4B OP directed) as the observable figure rather than summing annual rows."
+    },
+    {
+      "event_id": "moskovitz_gv_cumulative_5b",
+      "event_role": "grant_out",
+      "year_range": [
+        2011,
+        2025
+      ],
+      "donor_entity": "Good Ventures (umbrella \u2014 foundation + affiliated grantmaking entities)",
+      "recipient": "Various \u2014 grants database publicly disclosed",
+      "amount_usd": 5000000000,
+      "amount_usd_note": "'$5B distributed to grantees over 15+ years' per Good Ventures' own About page and Wikipedia corroboration. This is the headline cumulative giving figure and is what we use in rollup.",
+      "source_type": "org_publication",
+      "source_url": "https://www.goodventures.org/our-giving/",
+      "secondary_source_url": "https://en.wikipedia.org/wiki/Good_Ventures",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "moskovitz_malaria_consortium_cumulative",
+      "event_role": "direct_gift",
+      "year_range": [
+        2016,
+        2025
+      ],
+      "donor_entity": "Good Ventures / Coefficient Giving recommendations",
+      "recipient": "Malaria Consortium (seasonal malaria chemoprevention)",
+      "amount_usd": 300000000,
+      "amount_usd_note": "At least $300M cumulative per Fortune Nov 2025.",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Inside the $5B cumulative above. Not additive; documented here for program-level specificity."
+    },
+    {
+      "event_id": "moskovitz_evidence_action_cumulative",
+      "event_role": "direct_gift",
+      "year_range": [
+        2017,
+        2025
+      ],
+      "donor_entity": "Good Ventures / Coefficient Giving recommendations",
+      "recipient": "Evidence Action (deworming + safe water interventions)",
+      "amount_usd": 200000000,
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Inside the $5B cumulative above. Not additive."
+    },
+    {
+      "event_id": "moskovitz_helen_keller_cumulative",
+      "event_role": "direct_gift",
+      "year_range": [
+        2017,
+        2025
+      ],
+      "donor_entity": "Good Ventures / Coefficient Giving recommendations",
+      "recipient": "Helen Keller International (vitamin A supplementation)",
+      "amount_usd": 100000000,
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Inside the $5B cumulative above. Not additive."
+    },
+    {
+      "event_id": "moskovitz_openai_nonprofit_2017",
+      "event_role": "direct_gift",
+      "year": 2017,
+      "donor_entity": "Good Ventures",
+      "recipient": "OpenAI (then a 501(c)(3) nonprofit) \u2014 AI safety research",
+      "amount_usd": 30000000,
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Inside the $5B cumulative. Notable because OpenAI has since reorganized; historically counted as charitable at time of grant."
+    },
+    {
+      "event_id": "moskovitz_anthropic_stake_to_nonprofit",
+      "event_role": "direct_gift",
+      "year": 2025,
+      "donor_entity": "Moskovitz (personal / Good Ventures)",
+      "recipient": "Nonprofit entity holding Anthropic stake",
+      "amount_usd": 500000000,
+      "amount_usd_note": "Moved a $500M stake in Anthropic into nonprofit status per Fortune Nov 2025. Classification as charity is plausible but depends on recipient's tax status; treat as MEDIUM confidence.",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "Likely additive to the $5B Good Ventures cumulative, since it's a 2025 personal transaction not necessarily booked inside GVF's grant totals. Flag for deduplication when 2025 GVF 990-PF is published."
+    },
+    {
+      "event_id": "moskovitz_gvf_endowment_transfer",
+      "event_role": "transfer_in",
+      "year_range": [
+        2011,
+        2025
+      ],
+      "donor_entity": "Dustin Moskovitz (personal, Meta/Asana equity)",
+      "recipient": "Good Ventures Foundation",
+      "amount_usd": 10000000000,
+      "amount_usd_note": "Approximately $10B in stock transferred into Good Ventures Foundation per Fortune Nov 2025; corroborated by GVF 990-PF net assets of $7.94B in 2024 after ~$5B in grants paid out \u2014 implying ~$12B lifetime contributions in.",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This is a transfer INTO Good Ventures Foundation, NOT out-the-door giving. Per dedup rule #2, we count GVF's grants OUT (captured in moskovitz_gv_cumulative_5b), not the transfers in. Recorded here for context and to show total wealth committed to philanthropy infrastructure is much larger than current Forbes personal net worth."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "moskovitz_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "pledged_pct_wealth": 50,
+      "pledged_pct_wealth_note": "Giving Pledge baseline is 'at least half'; Moskovitz and Tuna's public statements and actions are consistent with intent to give substantially more \u2014 Fortune describes them giving away 'nearly all' their wealth.",
+      "age_at_signing": 26,
+      "status": "ON_TRACK",
+      "status_source": "IPS Giving Pledge at 15 (July 2025) \u2014 Moskovitz/Tuna are among the small set of pledgers making substantive, disclosed progress toward the pledge.",
+      "pledge_letter_quote": "We will donate and invest with both urgency and mindfulness, aiming to foster a safer, healthier and more economically empowered global community.",
+      "source_url": "https://www.givingpledge.org/pledger/dustin-moskovitz-and-cari-tuna/",
+      "retrieved_at": "2026-04-23",
+      "notes": "Signed 2010 at age 26 (Dustin) and 25 (Cari \u2014 youngest individual signatory in Giving Pledge history). Wealth at signing ~$1.4B (Forbes 2010). At 50% target in 2010 dollars = ~$700M. Observable giving of ~$5B already exceeds the 2010 pledge target by ~7x. At current net worth ~$10.2B, 50% target = ~$5.1B \u2014 they are essentially at/through the floor of the pledge already, with $7.94B still inside the foundation earmarked for future grantmaking.",
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "event_id": "moskovitz_gwwc_pledge",
+      "event_role": "pledge",
+      "year_range": [
+        2011,
+        2015
+      ],
+      "pledged_pct_income": 10,
+      "status": "ONGOING",
+      "recipient_org": "Giving What We Can",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Dustin_Moskovitz",
+      "retrieved_at": "2026-04-23",
+      "notes": "Moskovitz also signed the Giving What We Can pledge (10% of income to effective charity), reinforcing explicit EA alignment."
+    },
+    {
+      "event_id": "moskovitz_20b_framing_2025",
+      "event_role": "announcement",
+      "year": 2025,
+      "announced_amount_usd": 20000000000,
+      "announced_amount_note": "Fortune Nov 2025 frames total Moskovitz-Tuna philanthropic commitment as ~$20B: ~$10B already in Good Ventures Foundation + personal net worth ~$10B, substantially all intended for charitable deployment in their lifetimes.",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+      "retrieved_at": "2026-04-23",
+      "notes": "Not an incremental new pledge \u2014 a reframing of the combined giving trajectory. Good Ventures explicitly states intent to spend most/all funds during founders' lifetimes."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_MODERATE_DEM_ALIGNED",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. However, for Moskovitz the charitable budget is so large ($5B+) that the political giving is not meaningfully displacing charity; the substitution penalty is informational only.",
+    "observed_total_2016_2024_usd": 80000000,
+    "observed_total_note": "Approximately $55M+ to Democrats over the 2020-2024 cycles per press reporting (Fortune, Washington Post). 2020 cycle: ~$24M personal + ~$45M via Asana channels (some disputed attribution). 2024 cycle: ~$10M to Future Forward PAC (pro-Harris) + additional via Asana. Total reported across 2016-2024 easily exceeds $80M.",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=Dustin+Moskovitz",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets"
+      },
+      {
+        "url": "https://fortune.com/2024/09/25/silicon-valley-political-donations-elon-musk-peter-thiel-reid-hoffman/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Fortune",
+        "amount_usd_note": "$55M+ to Democrats over 2020-2024"
+      },
+      {
+        "url": "https://www.washingtonpost.com/elections/interactive/2024/biggest-campaign-donors-election-2024/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Washington Post",
+        "amount_usd": 10000000,
+        "event_date": "2024",
+        "event_note": "Future Forward PAC (pro-Harris)"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Good Ventures Foundation",
+        "ein": "46-1008520",
+        "established_year": 2013,
+        "state": "CA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 7935504121,
+        "grants_paid_usd_latest": 357542418,
+        "officers_compensation": "ZERO_COMP (Cari Tuna, Dustin Moskovitz, and Divesh Makan all receive zero compensation per 2024 990-PF)",
+        "payout_rate_notes": "Grants out 2024 ($357.5M) vs assets ($7.94B) = 4.5% \u2014 just below the 5% legal minimum in a single year, but this is a grant-TIMING artifact. Foundation received $1.51B in new contributions in 2024 (revenue >> expenses), so assets grew. Under IRS 4940/4942 averaging rules over 5 years, payout is well compliant. NOT flagged as LOW_PAYOUT \u2014 Good Ventures has explicit spend-down intent per public statements.",
+        "red_flag_daf_transfers": "NOT_PRESENT (Good Ventures grants are publicly disclosed at granular level via goodventures.org and coefficientgiving.org grants databases \u2014 the OPPOSITE of DAF opacity)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520"
+      },
+      {
+        "name": "Good Ventures (501(c)(3) \u2014 separate entity)",
+        "ein": "45-2757586",
+        "established_year": 2011,
+        "state": "CA",
+        "status": "active",
+        "officers_compensation": "ZERO_COMP (Tuna President, Moskovitz Director per ProPublica filings)",
+        "note": "Separate 501(c)(3) public charity shell used early in Good Ventures' history (2011-2018 primary activity), distinct from Good Ventures Foundation private foundation (EIN 46-1008520). Not all historical giving flowed through the same EIN; both entities' 990s document the cumulative trail.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/452757586"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "Coefficient Giving governance page explicitly mentions 'donor-advised funds' as one of multiple grantmaking channels. Specific DAF vehicles are not publicly named in the governance page; could be minor routing for specific legal/tax purposes rather than opacity-seeking. Material enough to note but NOT a red flag given the extensive public grants database.",
+    "llcs_philanthropic": [
+      {
+        "name": "Coefficient Giving LLC (formerly Open Philanthropy LLC)",
+        "structure": "LLC (grantmaking advisor entity)",
+        "classification": "TRANSPARENT_LLC",
+        "board_of_managers": [
+          "Cari Tuna (Chair)",
+          "Dustin Moskovitz",
+          "Elie Hassenfeld",
+          "Alexander Berger"
+        ],
+        "transparency_note": "CRITICAL: Contrasts with CZI/Ballmer Group LLC opacity. Coefficient Giving publishes: (a) full grants database with recipient, amount, date, and cause area, (b) research reports on cause-area strategy, (c) annual giving totals, (d) governance page listing entities. This is the gold standard for transparent LLC philanthropy.",
+        "cumulative_directed_usd": 4000000000,
+        "cumulative_directed_as_of": "2025-06",
+        "source_url": "https://coefficientgiving.org/governance/",
+        "secondary_source_url": "https://en.wikipedia.org/wiki/Coefficient_Giving"
+      },
+      {
+        "name": "Coefficient Giving Advisors, Inc.",
+        "structure": "501(c)(3) public charity",
+        "note": "Grantmaking arm that disburses funds from donor-advised funds and other sources per governance disclosure. Public-charity status provides additional transparency vs. pure LLC.",
+        "source_url": "https://coefficientgiving.org/governance/"
+      },
+      {
+        "name": "Coefficient Giving Action Fund (fka Open Philanthropy Action Fund)",
+        "structure": "501(c)(4) social welfare organization",
+        "note": "Does policy/advocacy-adjacent grantmaking that private foundations cannot legally do. Not charity under 501(c)(3) definition but transparency posture mirrors the main vehicle.",
+        "source_url": "https://www.influencewatch.org/non-profit/open-philanthropy-action-fund/"
+      },
+      {
+        "name": "Coefficient Giving Research",
+        "structure": "501(c)(3) nonprofit research organization",
+        "note": "Non-grantmaking; hosts most staff. Produces the cause-area research that informs grant recommendations.",
+        "source_url": "https://coefficientgiving.org/governance/"
+      }
+    ],
+    "llcs_note": "The Coefficient Giving / Open Philanthropy multi-entity structure is the KEY OBSERVABILITY CASE: it uses an LLC chassis for regulatory flexibility (can support 501(c)(4) policy work alongside 501(c)(3) grants, and can take advisory fees from third-party donors) but voluntarily publishes grant-level data. LLC \u2260 opaque \u2014 structure alone is not diagnostic. Contrast to CZI (Chan Zuckerberg Initiative LLC): formally similar chassis, dramatically less granular disclosure.",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "No public reporting of offshore structures. ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "No disclosed trust structures in pledge letter or public record. Moskovitz and Tuna have instead been unusually explicit about routing wealth through the Good Ventures Foundation rather than private dynasty structures."
+  },
+  "red_flags": [],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (Moskovitz/Tuna have already granted out ~$5B cumulative against 2010 pledge target of ~$700M; explicitly ON_TRACK in IPS taxonomy)",
+    "LOW_PAYOUT (2024 single-year payout 4.5% is a contribution-timing artifact; 5-year averaging per IRS 4942 is compliant; spend-down intent explicit)",
+    "DAF_TRANSFERS (granular grants database publicly maintained; opposite of DAF opacity)",
+    "HIGH_OFFICER_COMP (all principals zero comp per 990-PF)",
+    "POLITICAL_DOMINATES_CHARITABLE ($80M political vs. $5B charitable = 1.6%; not substitutive at this scale)",
+    "FOR_PROFIT_PIVOT (no for-profit hybrid vehicles announced; contrast to Ellison EIT 2025 pivot)",
+    "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH (giving has scaled faster than personal net worth; $10B already transferred to foundation)",
+    "LLC_OPACITY (the LLC in the chassis is the Coefficient Giving LLC; voluntarily publishes grants \u2014 NOT a CZI-style disclosure vacuum)"
+  ],
+  "transparency_positives": [
+    {
+      "flag": "PUBLIC_GRANTS_DATABASE",
+      "evidence": "Good Ventures publishes every grant (recipient, amount, date, program area) at goodventures.org/our-portfolio/grants-database. Coefficient Giving does the same at coefficientgiving.org. Represents best-in-class grantmaker disclosure.",
+      "source_url": "https://www.goodventures.org/our-portfolio/grants-database/"
+    },
+    {
+      "flag": "PUBLIC_CAUSE_AREA_REASONING",
+      "evidence": "Coefficient Giving publishes research reports explaining WHY each cause area is funded (importance/neglectedness/tractability framework). Virtually no other billionaire-funded grantmaker operates at this level of methodological transparency.",
+      "source_url": "https://coefficientgiving.org/"
+    },
+    {
+      "flag": "EXPLICIT_SPEND_DOWN_INTENT",
+      "evidence": "Good Ventures public materials state intent to spend most/all funds during founders' lifetimes \u2014 no perpetual-foundation dynasty posture.",
+      "source_url": "https://en.wikipedia.org/wiki/Good_Ventures"
+    },
+    {
+      "flag": "MULTI_PLEDGE_ALIGNMENT",
+      "evidence": "Beyond Giving Pledge, Moskovitz also signed Giving What We Can (10% of income to effective charity). Combined with Tuna's youngest-individual-signer status, signals philanthropic intent embedded in life planning, not end-of-life tax posture.",
+      "source_url": "https://en.wikipedia.org/wiki/Dustin_Moskovitz"
+    }
+  ],
+  "rollup": {
+    "observable_giving_usd": 5000000000,
+    "observable_giving_method": "Good Ventures cumulative distributed grants ($5B, 2011-2025) per Good Ventures' own public disclosure, corroborated by Wikipedia and Fortune. This is deliberately used as the primary observable rather than summing annual 990-PF rows to avoid (a) undercounting grants that flowed through non-GVF entities (OP Advisors, OP Action Fund, DAFs), and (b) double-counting grants recommended by OP/CG but paid from GVF. The $4B 'OP directed' figure is a subset of the $5B total (since GVF is OP's main funder); using $5B avoids double counting. Excludes: GVF endowment transfers-in; Moskovitz political giving; Anthropic nonprofit reclassification (medium confidence, flagged for update).",
+    "observable_giving_todo": [
+      "Pull GVF 990-PF years 2013-2020 directly to tighten year-by-year series.",
+      "Pull Good Ventures (EIN 45-2757586) 990 filings 2011-2018 to capture pre-GVF grantmaking.",
+      "Quantify grants from Coefficient Giving Advisors 501(c)(3) and OP Action Fund 501(c)(4) separately to verify they are not additive to $5B headline.",
+      "Verify 2025 Anthropic stake reclassification (~$500M) charitable-tax-status and whether it is inside or outside the $5B headline."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 841500000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.55 \u00d7 $10.2B = $5.61B; tenure cap saturated (15 years). Expected = $561M \u00d7 1.5 (if we weight by tenure without cap, matching Ellison method would give 1.0). Using tenure-capped version matching Ellison: expected = $561M. Using uncapped for clarity: $561M \u00d7 1.5 = $841.5M. Keeping uncapped here to give a more aggressive denominator for comparison.",
+    "observable_ratio_to_expected": 5.94,
+    "observable_ratio_to_expected_note": "Observable giving is ~6x the 10%-liquid formal norm. Against the broader denominator (current net worth $10.2B + $7.94B foundation assets = $18.1B total 'wealth-in-philanthropic-orbit'), observable giving is ~28% \u2014 an unusually high ratio among living billionaires.",
+    "observable_ratio_to_current_nw": 0.49,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "Moskovitz/Tuna philanthropy is one of the most granularly disclosed on Earth. Any DAF-routed giving is still captured in the OP grants database. Zero hidden uplift needed.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "Coefficient Giving LLC publishes its grants. Zero hidden uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "No offshore reporting; not yet checked (Phase 2).",
+      "anonymous_cohort_uplift_usd": 0,
+      "anonymous_cohort_method": "Moskovitz is an explicit public philanthropist operating in the EA tradition, which rewards disclosure and transparency as epistemic inputs to grantmaking improvement. Anonymous-giving cohort uplift does not apply. Zero.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
+      "future_commitment_envelope_usd": 7940000000,
+      "future_commitment_method": "Good Ventures Foundation assets ($7.94B per 2024 990-PF) represent wealth already legally committed to charitable distribution \u2014 it cannot return to Moskovitz's personal estate. This is functionally a committed-but-not-yet-distributed charitable envelope. We DO NOT add it to observable giving (consistent with Ellison trust treatment \u2014 undisbursed funds do not count). We record it here to make the confidence interval visible. Good Ventures' stated spend-down intent means this $7.94B is highly likely to be grant_out within 15-25 years.",
+      "total_usd": 0,
+      "total_method": "All hidden uplifts zero for published observable. Future commitment envelope of $7.94B tracked separately as forward visibility, not counted in hidden_upper."
+    },
+    "observable_plus_hidden_ratio_to_expected": 5.94,
+    "tier": "On_Track (Tier A+ / 'Doing It')",
+    "tier_rule": "VERIFIED_HIGH requires observable / expected > 1.0 AND transparency posture. Moskovitz satisfies both at ~6x the 10%-liquid expectation and with best-in-class grantmaking disclosure. This is the CANONICAL POSITIVE CASE for the Scrooge List \u2014 the contrast point that makes the list not just a hit piece on tech billionaires. LLC structure (Coefficient Giving LLC) demonstrates that LLC \u2260 opacity; the deciding variable is disclosure behavior, not vehicle choice.",
+    "tier_published_caveat": "Readers should see Moskovitz/Tuna as the canonical example of 'signed the Giving Pledge young and actually delivered.' Cumulative $5B in observable grants + $7.94B committed inside a transparent foundation + explicit spend-down intent + ~$10B already moved out of personal balance sheet into the philanthropic orbit. At $10.2B current personal net worth, they have given away or committed roughly double their Forbes personal net worth to charity already."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 0.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 0.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 0.0
+    },
+    "note": "Computed with v2 formula for continuity. Scrooge score floor-clamped to 0 when observable > expected. Published tier is 'On Track' not a score. v1/v2 pipeline separately calculated 85.5 for Moskovitz in an earlier run using a much narrower observable denominator (~$1.7B); that was an error of incomplete data, not methodology \u2014 this v3 pull uses the full Good Ventures umbrella."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Coefficient Giving press contact + Good Ventures press contact (both publish contact info). Given transparency posture, likely to respond substantively.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Pull GVF 990-PF years 2013-2020 via ProPublica/IRS to tighten year-by-year grants series.",
+    "VERIFY: Pull Good Ventures (EIN 45-2757586) 990 filings 2011-2018.",
+    "VERIFY: Quantify Coefficient Giving Advisors 501(c)(3) separate grants (public charity 990, not 990-PF).",
+    "VERIFY: Quantify OP/CG Action Fund 501(c)(4) grants for political-adjacent vs. charitable classification.",
+    "VERIFY: SEC Form 4 G-transactions for Moskovitz CIK for additional stock-gift events not yet in GVF rollup.",
+    "VERIFY: FEC bulk pull against Moskovitz name/address to confirm $80M 2016-2024 political total.",
+    "VERIFY: 2025 Anthropic $500M reclassification \u2014 is the receiving nonprofit a 501(c)(3)? Is it already inside the $5B GV cumulative, or additive?",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2 (low prior given transparency posture)."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/461008520",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Good Ventures Foundation 990-PF, EIN, assets, officers, 2024 grants paid"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/452757586",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Good Ventures (earlier 501(c)(3)) 990 filings, officers, historical grants"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/dustin-moskovitz-and-cari-tuna/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2010 pledge letter verbatim text, signing year"
+    },
+    {
+      "url": "https://www.goodventures.org/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Cumulative $5B distributed figure, cause areas"
+    },
+    {
+      "url": "https://www.goodventures.org/our-giving/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$5B distributed to grantees / 15+ years of giving"
+    },
+    {
+      "url": "https://www.goodventures.org/our-portfolio/grants-database/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Public grants database existence (transparency positive)"
+    },
+    {
+      "url": "https://coefficientgiving.org/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Rebranded Open Philanthropy website, grant recommendations"
+    },
+    {
+      "url": "https://coefficientgiving.org/governance/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Multi-entity structure: LLC + Advisors 501(c)(3) + Action Fund 501(c)(4) + Research; board membership"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Coefficient_Giving",
+      "retrieved_at": "2026-04-23",
+      "used_for": "History (renamed Nov 2025 from Open Philanthropy), $4B cumulative directed as of June 2025, leadership"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Good_Ventures",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Founding 2011, spend-down intent, cause areas, 5th largest Silicon Valley foundation 2022"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dustin_Moskovitz",
+      "retrieved_at": "2026-04-23",
+      "used_for": "DOB 1984, 2008 Facebook departure, Asana co-founding, Giving What We Can pledge, net worth"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cari_Tuna",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Youngest individual Giving Pledge signer at age 25"
+    },
+    {
+      "url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$4B+ cumulative, $600M+ in 2025, $10B endowment transfer to Good Ventures, $300M Malaria Consortium, $200M Evidence Action, $100M Helen Keller, $30M OpenAI 2017, $500M Anthropic 2025, $20B total wealth commitment framing"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/open-philanthropy-launches-120-million-fund-to-promote-abundance",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2025 $120M Abundance & Growth three-year initiative"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/open-philanthropy-awards-150-million-to-high-impact-grantmakers",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$150M to high-impact grantmakers as part of OP ongoing programming"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/open-philanthropy-is-now-coefficient-giving-heres-what-has-and-hasnt-changed",
+      "retrieved_at": "2026-04-23",
+      "used_for": "November 2025 rebrand to Coefficient Giving; multi-donor expansion"
+    },
+    {
+      "url": "https://www.instrumentl.com/990-report/good-ventures-foundation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "GVF $357.5M 2024 grants, $7.94B assets, zero-comp officers"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=Dustin+Moskovitz",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Political giving lookup"
+    },
+    {
+      "url": "https://fortune.com/2024/09/25/silicon-valley-political-donations-elon-musk-peter-thiel-reid-hoffman/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$55M+ Moskovitz political giving to Democrats 2020-2024"
+    },
+    {
+      "url": "https://www.washingtonpost.com/elections/interactive/2024/biggest-campaign-donors-election-2024/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2024 Future Forward PAC $10M (pro-Harris)"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Giving Pledge 15-year retrospective; Moskovitz/Tuna classification"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/dustin-a-moskovitz/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg Billionaires Index profile corroboration"
+    }
+  ],
+  "_source_file": "dustin_moskovitz.v3.json"
+}

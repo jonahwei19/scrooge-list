@@ -7,9 +7,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
-<script>
-(function(){try{var t=null;var h=(location.hash||'').match(/theme=(dark|light)/);if(h)t=h[1];if(!t)t=localStorage.getItem('scrooge-theme');if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){}})();
-</script>
 <style>
 :root{
   --paper:#F3ECD9;
@@ -25,40 +22,14 @@
   --gilt:#8C6B2D;
   --sepia:#735A3E;
   --rule:#22180E;
-  --callout-bg:rgba(139,46,31,.04);
-  --callout-info-bg:rgba(140,107,45,.05);
-  --code-bg:#D8C9A4;
-  --row-alt:rgba(216,201,164,.12);
   --display:"Fraunces",ui-serif,"Times New Roman",Georgia,serif;
   --body:"Newsreader",Georgia,"Times New Roman",serif;
 }
-[data-theme="dark"]{
-  --paper:#14110A;
-  --paper-mid:#1C1811;
-  --paper-deep:#261F14;
-  --paper-shadow:#3B3121;
-  --ink:#EEDCBA;
-  --ink-soft:#C4AF82;
-  --ink-fade:#8B7951;
-  --ink-ghost:#605335;
-  --rust:#D14A32;
-  --rust-dark:#A93220;
-  --gilt:#D4A032;
-  --sepia:#A38456;
-  --rule:#75633F;
-  --callout-bg:rgba(209,74,50,.08);
-  --callout-info-bg:rgba(212,160,50,.08);
-  --code-bg:#2A2216;
-  --row-alt:rgba(238,220,186,.04);
-}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{
-  background:var(--paper);
-  color:var(--ink);
-  font-family:var(--body);
-  font-optical-sizing:auto;
-  font-size:17px;
-  line-height:1.75;
+  background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-optical-sizing:auto;
+  font-size:17px;line-height:1.75;
   font-feature-settings:"onum","liga","kern";
   -webkit-font-smoothing:antialiased;
 }
@@ -68,22 +39,11 @@ body{
     radial-gradient(ellipse 900px 500px at 90% 95%, rgba(140,107,45,.055), transparent 70%),
     var(--paper);
   min-height:100vh;
-  transition:background-color .4s ease, color .4s ease;
-}
-[data-theme="dark"] body{
-  background:
-    radial-gradient(ellipse 900px 500px at 15% 5%, rgba(209,74,50,.08), transparent 70%),
-    radial-gradient(ellipse 1000px 600px at 90% 95%, rgba(212,160,50,.09), transparent 70%),
-    var(--paper);
 }
 .grain{
   position:fixed;inset:0;pointer-events:none;z-index:2;
   opacity:.55;mix-blend-mode:multiply;
   background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-}
-[data-theme="dark"] .grain{
-  opacity:.18;mix-blend-mode:screen;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.92 0 0 0 0 0.82 0 0 0 0 0.64 0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 .foxing{
   position:fixed;inset:0;pointer-events:none;z-index:1;
@@ -94,61 +54,23 @@ body{
     radial-gradient(circle at 73% 78%, rgba(139,46,31,.08), transparent 3%),
     radial-gradient(circle at 22% 87%, rgba(115,90,62,.11), transparent 2%);
 }
-[data-theme="dark"] .foxing{
-  opacity:.5;mix-blend-mode:screen;
-  background-image:
-    radial-gradient(circle at 8% 12%, rgba(212,160,50,.16), transparent 3%),
-    radial-gradient(circle at 92% 22%, rgba(209,74,50,.12), transparent 2.5%),
-    radial-gradient(circle at 73% 78%, rgba(212,160,50,.1), transparent 3%),
-    radial-gradient(circle at 22% 87%, rgba(209,74,50,.1), transparent 2%);
-}
 .sheet{
   position:relative;z-index:3;
-  max-width:780px;
-  margin:0 auto;
+  max-width:780px;margin:0 auto;
   padding:48px 40px 80px;
   animation:fadeUp .9s ease-out both;
 }
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-
-.toprow{
-  display:flex;justify-content:space-between;align-items:center;
-  margin-bottom:8px;gap:16px;
-}
 .back{
   display:inline-flex;align-items:center;gap:8px;
-  font-family:var(--display);
-  font-style:italic;
-  color:var(--rust);
-  text-decoration:none;
-  font-size:.95rem;
-  border-bottom:1px solid var(--rust);
-  padding-bottom:1px;
+  font-family:var(--display);font-style:italic;
+  color:var(--rust);text-decoration:none;
+  font-size:.95rem;border-bottom:1px solid var(--rust);padding-bottom:1px;
 }
-.theme-toggle{
-  background:none;border:none;padding:2px 0;
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:var(--display);
-  font-variation-settings:"opsz" 9,"SOFT" 50;
-  font-size:.78rem;
-  letter-spacing:.26em;
-  text-transform:uppercase;
-  color:var(--ink-soft);
-  cursor:pointer;
-  transition:color .2s;
-}
-.theme-toggle:hover{color:var(--rust)}
-.theme-glyph{font-size:1rem;color:var(--rust);letter-spacing:0;transform:translateY(-1px);transition:transform .3s ease}
-.theme-toggle:hover .theme-glyph{transform:translateY(-1px) rotate(-12deg)}
-@media (max-width:560px){.theme-label{display:none}}
-.back:hover{background:var(--callout-bg)}
-
+.back:hover{background:rgba(139,46,31,.08)}
 .masthead{
-  text-align:center;
-  padding:44px 0 12px;
-  margin-top:20px;
-  border-top:2px solid var(--rule);
-  border-bottom:2px solid var(--rule);
+  text-align:center;padding:44px 0 12px;margin-top:20px;
+  border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);
   position:relative;
 }
 .masthead::before,.masthead::after{
@@ -159,213 +81,97 @@ body{
 .masthead .kicker{
   font-family:var(--display);
   font-variation-settings:"opsz" 9,"SOFT" 50;
-  font-size:.78rem;
-  letter-spacing:.26em;
-  text-transform:uppercase;
-  color:var(--rust);
-  margin-bottom:14px;
+  font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--rust);margin-bottom:14px;
 }
 .masthead h1{
   font-family:var(--display);
   font-variation-settings:"opsz" 144,"SOFT" 30;
-  font-weight:800;
-  font-size:clamp(3rem,6vw,4.8rem);
-  line-height:.92;
-  letter-spacing:-.02em;
-  color:var(--ink);
+  font-weight:800;font-size:clamp(3rem,6vw,4.8rem);
+  line-height:.92;letter-spacing:-.02em;color:var(--ink);
 }
 .masthead h1::first-letter{color:var(--rust)}
 .masthead .deck{
-  font-family:var(--display);
-  font-style:italic;
+  font-family:var(--display);font-style:italic;
   font-variation-settings:"opsz" 24,"SOFT" 80;
-  color:var(--ink-fade);
-  margin-top:14px;
-  font-size:1.15rem;
+  color:var(--ink-fade);margin-top:14px;font-size:1.15rem;
 }
-
 h2{
-  font-family:var(--display);
-  font-style:italic;
-  font-weight:500;
+  font-family:var(--display);font-style:italic;font-weight:500;
   font-variation-settings:"opsz" 72,"SOFT" 60;
   font-size:clamp(1.7rem,2.5vw,2.2rem);
-  margin:56px 0 8px;
-  color:var(--ink);
-  letter-spacing:-.005em;
+  margin:56px 0 8px;color:var(--ink);letter-spacing:-.005em;
 }
-h2::before{
-  content:"";display:block;
-  width:40px;height:2px;background:var(--rust);
-  margin-bottom:20px;
-}
+h2::before{content:"";display:block;width:40px;height:2px;background:var(--rust);margin-bottom:20px}
 h3{
-  font-family:var(--display);
-  font-variation-settings:"opsz" 24,"SOFT" 40;
-  font-weight:600;
-  font-size:1.22rem;
-  margin:28px 0 10px;
-  color:var(--ink);
+  font-family:var(--display);font-variation-settings:"opsz" 24,"SOFT" 40;
+  font-weight:600;font-size:1.22rem;margin:28px 0 10px;color:var(--ink);
 }
-
-p{
-  color:var(--ink-soft);
-  margin:0 0 18px;
-}
+p{color:var(--ink-soft);margin:0 0 18px}
 p strong,li strong{color:var(--ink);font-weight:600}
-
-a{color:var(--rust);text-decoration:none;border-bottom:1px solid var(--rust)}
-a:hover{background:var(--callout-bg);border-bottom-color:var(--rust)}
-
-ul,ol{
-  margin:16px 0 22px 24px;
-  color:var(--ink-soft);
-}
+a{color:var(--rust);text-decoration:none;border-bottom:1px solid rgba(139,46,31,.4)}
+a:hover{background:rgba(139,46,31,.08);border-bottom-color:var(--rust)}
+ul,ol{margin:16px 0 22px 24px;color:var(--ink-soft)}
 li{margin-bottom:8px;padding-left:6px}
 ul li::marker{color:var(--rust)}
 ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
-
-.dropcap{
-  font-size:1.1rem;
-  line-height:1.75;
-}
+.dropcap{font-size:1.1rem;line-height:1.75}
 .dropcap::first-letter{
-  float:left;
-  font-family:var(--display);
-  font-weight:900;
+  float:left;font-family:var(--display);font-weight:900;
   font-variation-settings:"opsz" 144,"SOFT" 10;
-  font-size:5rem;
-  line-height:.82;
-  margin:6px 12px -6px 0;
-  color:var(--rust);
+  font-size:5rem;line-height:.82;margin:6px 12px -6px 0;color:var(--rust);
 }
-
 .formula{
-  background:var(--paper-mid);
-  border-left:3px solid var(--rust);
-  padding:22px 26px;
-  margin:24px 0 30px;
-  font-family:var(--display);
-  font-variation-settings:"opsz" 24,"SOFT" 30;
-  font-variant-numeric:oldstyle-nums;
-  font-size:1rem;
-  line-height:1.9;
-  color:var(--ink-soft);
+  background:var(--paper-mid);border-left:3px solid var(--rust);
+  padding:22px 26px;margin:24px 0 30px;
+  font-family:var(--display);font-variation-settings:"opsz" 24,"SOFT" 30;
+  font-variant-numeric:oldstyle-nums;font-size:1rem;line-height:1.9;color:var(--ink-soft);
 }
 .formula strong{
-  display:block;
-  font-family:var(--display);
-  font-size:1.15rem;
-  color:var(--ink);
-  font-weight:700;
-  margin-bottom:12px;
-  font-style:italic;
+  display:block;font-family:var(--display);font-size:1.15rem;
+  color:var(--ink);font-weight:700;margin-bottom:12px;font-style:italic;
 }
 .formula .bullet{color:var(--rust);margin-right:6px}
-
 .data-table{
-  width:100%;
-  border-collapse:collapse;
-  margin:22px 0 30px;
-  border-top:2px solid var(--rule);
-  border-bottom:2px solid var(--rule);
-  font-family:var(--display);
-  font-variation-settings:"opsz" 18,"SOFT" 30;
+  width:100%;border-collapse:collapse;margin:22px 0 30px;
+  border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);
+  font-family:var(--display);font-variation-settings:"opsz" 18,"SOFT" 30;
 }
 .data-table thead th{
-  padding:12px 14px 10px;
-  text-align:left;
-  font-family:var(--display);
-  font-variation-settings:"opsz" 9,"SOFT" 60;
-  font-size:.72rem;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  color:var(--ink-soft);
-  font-weight:500;
-  border-bottom:1px solid var(--rule);
+  padding:12px 14px 10px;text-align:left;font-family:var(--display);
+  font-variation-settings:"opsz" 9,"SOFT" 60;font-size:.72rem;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
+  font-weight:500;border-bottom:1px solid var(--rule);
 }
 .data-table tbody tr{border-bottom:1px dotted var(--ink-ghost)}
 .data-table tbody tr:last-child{border-bottom:none}
-.data-table tbody tr:nth-child(even){background:var(--row-alt)}
-.data-table td{
-  padding:12px 14px;
-  color:var(--ink);
-  font-size:.97rem;
-  vertical-align:baseline;
-}
-.data-table code{
-  font-family:"JetBrains Mono",monospace;
-  background:var(--code-bg);
-  padding:2px 8px;
-  font-size:.84rem;
-  color:var(--rust);
-}
-
-.confidence-high{color:var(--ink);font-weight:600}
-.confidence-medium{color:var(--gilt);font-weight:600}
-.confidence-low{color:var(--rust);font-weight:600;font-style:italic}
-
-.callout{
-  padding:20px 24px;
-  margin:24px 0;
-  border-left:3px solid var(--rust);
-  background:var(--callout-bg);
-}
-.callout.info{
-  border-left-color:var(--gilt);
-  background:var(--callout-info-bg);
-}
+.data-table tbody tr:nth-child(even){background:rgba(216,201,164,.12)}
+.data-table td{padding:12px 14px;color:var(--ink);font-size:.97rem;vertical-align:baseline}
+.data-table code{font-family:"JetBrains Mono",monospace;background:var(--paper-deep);padding:2px 8px;font-size:.84rem;color:var(--rust-dark)}
+.tier-a{color:var(--rust-dark);font-weight:700}
+.tier-b{color:var(--gilt);font-weight:600}
+.tier-c{color:var(--sepia);font-weight:600}
+.tier-ok{color:#2d5a1f;font-weight:600}
+.callout{padding:20px 24px;margin:24px 0;border-left:3px solid var(--rust);background:rgba(139,46,31,.04)}
+.callout.info{border-left-color:var(--gilt);background:rgba(140,107,45,.05)}
+.callout.green{border-left-color:#2d5a1f;background:rgba(45,90,31,.06)}
 .callout strong{font-family:var(--display);color:var(--ink);display:block;margin-bottom:8px;font-size:1.02rem}
 .callout ul{margin:10px 0 0 22px}
 .callout p:last-child{margin-bottom:0}
-
 .source-list{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:0;
-  margin:24px 0;
-  border-top:1px solid var(--rule);
-  border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:0;margin:24px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);
 }
-.source-card{
-  padding:18px 22px;
-  border-right:1px solid var(--paper-shadow);
-  border-bottom:1px solid var(--paper-shadow);
-}
+.source-card{padding:18px 22px;border-right:1px solid var(--paper-shadow);border-bottom:1px solid var(--paper-shadow)}
 .source-card h4{
-  font-family:var(--display);
-  font-variation-settings:"opsz" 24,"SOFT" 30;
-  font-weight:600;
-  color:var(--rust);
-  margin-bottom:6px;
-  font-size:1.05rem;
+  font-family:var(--display);font-variation-settings:"opsz" 24,"SOFT" 30;
+  font-weight:600;color:var(--rust);margin-bottom:6px;font-size:1.05rem;
 }
-.source-card p{
-  font-style:italic;
-  font-size:.9rem;
-  color:var(--ink-fade);
-  margin:0;
-}
-
-.colophon{
-  text-align:center;
-  padding-top:32px;
-  margin-top:56px;
-  border-top:2px solid var(--rule);
-  position:relative;
-}
-.colophon::before{
-  content:"";display:block;position:absolute;top:3px;left:0;right:0;height:1px;background:var(--rule);
-}
-.col-line{
-  font-family:var(--display);
-  font-size:.82rem;
-  letter-spacing:.06em;
-  color:var(--ink-fade);
-  margin:16px 0 4px;
-}
+.source-card p{font-style:italic;font-size:.9rem;color:var(--ink-fade);margin:0}
+.colophon{text-align:center;padding-top:32px;margin-top:56px;border-top:2px solid var(--rule);position:relative}
+.colophon::before{content:"";display:block;position:absolute;top:3px;left:0;right:0;height:1px;background:var(--rule)}
+.col-line{font-family:var(--display);font-size:.82rem;letter-spacing:.06em;color:var(--ink-fade);margin:16px 0 4px}
 .col-line em{font-style:italic}
-
 @media (max-width:700px){
   .sheet{padding:32px 22px 60px}
   .data-table{font-size:.9rem}
@@ -374,210 +180,190 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
 </style>
 </head>
 <body>
-
 <div class="grain" aria-hidden="true"></div>
 <div class="foxing" aria-hidden="true"></div>
 
 <main class="sheet">
-
-  <div class="toprow">
-    <a class="back" href="index.html">← Return to the Ledger</a>
-    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle night edition">
-      <span class="theme-label" id="theme-label">Night Edition</span>
-      <span class="theme-glyph" id="theme-glyph" aria-hidden="true">☾</span>
-    </button>
-  </div>
+  <a class="back" href="index.html">← Return to the Ledger</a>
 
   <header class="masthead">
-    <div class="kicker">A Note on Method · Vol. I</div>
+    <div class="kicker">A Note on Method · Vol. II · April MMXXVI</div>
     <h1>Methodology</h1>
-    <p class="deck">How the Scrooge Score is computed, where it sees clearly, and where it does not.</p>
+    <p class="deck">How the Scrooge List is built, what it can see, what it cannot, and why it is tiered rather than ranked.</p>
   </header>
 
-  <h2>Overview</h2>
-  <p class="dropcap">The Scrooge List is an inverse Forbes ledger that ranks billionaires by how little of their fortune has been deployed for charity. The aim is transparency: to understand who is giving, who is not, and why the gap exists. The Scrooge Score (0–100) measures philanthropic deployment relative to capacity.</p>
+  <h2>What This List Measures</h2>
+  <p class="dropcap">The Scrooge List estimates <strong>observable out-the-door giving</strong> to tax-exempt charitable organizations, as a share of capacity. That is the narrowest honest measure of billionaire philanthropy, and it is the only one that survives the available data. This list does <strong>not</strong> claim to measure total generosity. It cannot, because much of billionaire giving passes through vehicles that do not publicly disclose.</p>
 
-  <ul>
-    <li><strong>Score 0–30:</strong> Generous givers — a significant portion of wealth deployed.</li>
-    <li><strong>Score 30–60:</strong> Moderate — some observable giving.</li>
-    <li><strong>Score 60–80:</strong> Light — minimal relative to capacity.</li>
-    <li><strong>Score 80–100:</strong> Scrooge territory — very little observable giving.</li>
-  </ul>
+  <p>Every dollar we cite is linked to a source — a 990-PF filing, a charity-side announcement, a regulatory filing, a reputable press report. We do not estimate where we cannot see. Where giving is invisible, we say so.</p>
 
-  <h2>The Formula</h2>
-  <div class="formula">
-    <strong>Score = 100 × (1 − Giving Rate / Benchmark)</strong>
-    where:<br>
-    &nbsp;&nbsp;Giving Rate = Total Observable Giving ÷ Liquid Wealth<br>
-    &nbsp;&nbsp;Benchmark = 10 % (expected lifetime deployment)<br><br>
-    <span class="bullet">•</span> Giving Rate ≥ 10 % → Score = 0 (excellent philanthropist)<br>
-    <span class="bullet">•</span> Giving Rate = 0 % → Score = 100 (maximum Scrooge)<br>
-    <span class="bullet">•</span> Giving Pledge fulfilled → reward applied<br>
-    <span class="bullet">•</span> Giving Pledge broken → penalty applied<br>
-    <span class="bullet">•</span> Red flags → additional penalty each
+  <div class="callout">
+    <strong>The language we use</strong>
+    <p>We write "<em>we identified $X in documented giving</em>," never "<em>they have given only $X</em>." A low observable figure means our sources could not verify more — not that more does not exist.</p>
   </div>
 
-  <h3>Score Components</h3>
-  <ol>
-    <li><strong>Giving Rate (primary factor):</strong> Observable charitable deployment divided by deployable wealth.</li>
-    <li><strong>Liquidity Adjustment:</strong> 20–70 % of net worth assumed deployable, varying by wealth source.</li>
-    <li><strong>Pledge Penalty:</strong> Giving Pledge signers lagging commitment carry extra weight.</li>
-    <li><strong>Red-Flag Penalties:</strong> Added per flag (capped at four).</li>
-  </ol>
-
-  <h2>Data Sources (16 Modules)</h2>
-  <p>We aggregate from sixteen distinct source categories. Each finding carries a source URL, verified by the pipeline's BS-checker.</p>
+  <h2>Tiers, Not Rankings</h2>
+  <p>Ranking the Forbes 3,000 in ordinal order — who is #47 stingiest vs. #48 — would require a precision our data does not support. Observable giving is a lower-bound estimate; net worth carries a 10–25% spread across credible sources; and the residue of unobservable giving is structurally unknowable. We therefore classify:</p>
 
   <table class="data-table">
-    <thead>
-      <tr><th>Category</th><th>Source</th><th>Confidence</th></tr>
-    </thead>
+    <thead><tr><th>Tier</th><th>Who Belongs</th><th>Published As</th></tr></thead>
     <tbody>
-      <tr><td>Private Foundations</td><td>IRS Form 990-PF via ProPublica</td><td class="confidence-high">High</td></tr>
-      <tr><td>Direct Gifts</td><td>Chronicle of Philanthropy, news, Wikipedia</td><td class="confidence-medium">Medium</td></tr>
-      <tr><td>Securities Gifts</td><td>SEC Form 4 (transaction code &ldquo;G&rdquo;)</td><td class="confidence-medium">Medium</td></tr>
-      <tr><td>University Gifts</td><td>Institutional announcements, Chronicle</td><td class="confidence-medium">Medium</td></tr>
-      <tr><td>Noncash Contributions</td><td>SEC filings, news (stock, art, real estate)</td><td class="confidence-medium">Medium</td></tr>
-      <tr><td>Giving Pledge</td><td>Official givingpledge.org</td><td class="confidence-high">High</td></tr>
-      <tr><td>Political Giving</td><td>FEC OpenData</td><td class="confidence-high">High</td></tr>
-      <tr><td>State Charities</td><td>CA Registry, NY Charities Bureau</td><td class="confidence-medium">Medium</td></tr>
-      <tr><td>Donor-Advised Funds</td><td>Aggregate estimates only</td><td class="confidence-low">Low</td></tr>
-      <tr><td>Philanthropic LLCs</td><td>Media coverage (CZI, Emerson Collective, Ballmer Group)</td><td class="confidence-low">Low</td></tr>
-      <tr><td>Split-Interest Trusts</td><td>IRS Form 5227 (limited access)</td><td class="confidence-low">Low</td></tr>
-      <tr><td>Offshore</td><td>ICIJ leaks, UK Charity Commission</td><td class="confidence-low">Low</td></tr>
-      <tr><td>Candid / GuideStar</td><td>990 database</td><td class="confidence-medium">Medium</td></tr>
-      <tr><td>OSINT Sources</td><td>30+ open-source intelligence sources</td><td>Varies</td></tr>
+      <tr><td><span class="tier-a">A — Verified Low</span></td><td>Low observable giving <em>and</em> no material opaque vehicle (DAF, LLC, offshore trust) that could plausibly close the gap.</td><td>Ordinal rank — but only where confidence intervals do not overlap.</td></tr>
+      <tr><td><span class="tier-b">B — Probably Low</span></td><td>Low observable giving relative to capacity, but at least one opaque vehicle exists, so hidden giving is possible.</td><td>Alphabetical. No ordinal rank.</td></tr>
+      <tr><td><span class="tier-c">C — Opaque</span></td><td>Most giving flows through vehicles (LLCs, DAFs) that do not require public disclosure; the published figure is a floor.</td><td>Alphabetical.</td></tr>
+      <tr><td><span class="tier-ok">On Track</span></td><td>Observable giving is near or above the capacity benchmark.</td><td>Shown for calibration. Not Scrooges.</td></tr>
     </tbody>
   </table>
 
-  <h2>What We Cannot See</h2>
-  <div class="callout">
-    <strong>Important Limitation</strong>
-    A significant portion of billionaire philanthropy flows through opaque channels no public register covers. A high Scrooge Score does not prove a person is ungenerous — it may only mean their giving is invisible.
+  <p>This is the approach Bloomberg uses for <em>wealth</em> (a 1–5 star confidence rating) and that the Chronicle of Philanthropy uses for its Philanthropy 50 (it simply declines to rank anyone who won't disclose). We adopt the same discipline, inverted: where we can't see, we don't rank.</p>
+
+  <h2>The Capacity Benchmark</h2>
+  <div class="formula">
+    <strong>Expected Giving = 10% × Liquid Wealth × min(Years as Billionaire / 10, 1)</strong>
+    <span class="bullet">•</span> Liquid wealth: net worth × liquidity factor (0.20 – 0.85 depending on asset mix)<br>
+    <span class="bullet">•</span> Tenure cap: scales down for recent billionaires (AI-boom founders, etc.)<br>
+    <span class="bullet">•</span> Observable / Expected &lt; 0.20 is the <em>Verified Low</em> threshold (Tier A/B)
   </div>
 
-  <p>Channels with zero or minimal transparency:</p>
+  <p>The 10% coefficient is deliberately strict. It is below the lifetime-pledge benchmark (50% minimum, per the Giving Pledge) and above the IRS private-foundation legal minimum (5% annual payout). It approximates the aggregate generosity rate observed across HNW cohorts in the Bank of America–Lilly School of Philanthropy studies.</p>
+
+  <h2>What We Cannot See — The Honest Error Bar</h2>
+  <div class="callout">
+    <strong>Observable ≠ Total</strong>
+    <p>Research across IPS, Boston College's Forum on Philanthropy, and the National Philanthropic Trust suggests that observable 990-based and announcement-based giving captures roughly <strong>40–70% of true lifetime giving</strong> for a typical US billionaire cohort. The residual is real and large. A high Scrooge tier does not assert the subject is ungenerous — it asserts we cannot find evidence of generosity at scale.</p>
+  </div>
+
+  <p>Channels with structural opacity:</p>
   <ul>
-    <li><strong>Donor-Advised Funds:</strong> $251B+ held, no disclosure of individual accounts. Contributions are deductible immediately; grants to charities may be delayed indefinitely.</li>
-    <li><strong>Dynasty Trusts:</strong> $360B+ in South Dakota alone, no public registry. Can operate for centuries.</li>
-    <li><strong>Philanthropic LLCs:</strong> CZI, Emerson Collective, Ballmer Group — no 990 filing requirement. We rely on media coverage.</li>
-    <li><strong>Foreign Giving:</strong> Overseas donations rarely disclosed. Cross-border philanthropy is essentially invisible.</li>
-    <li><strong>Religious Giving:</strong> Churches exempt from 990. Tithing is not publicly tracked.</li>
-    <li><strong>Anonymous Giving:</strong> Many gifts are deliberately anonymous. We track only named gifts.</li>
+    <li><strong>Donor-Advised Funds</strong> — $326B held at US sponsors (NPT 2025); 25.3% annual payout; 27% of all individual giving now flows through DAFs. <em>No donor-level disclosure.</em></li>
+    <li><strong>Philanthropic LLCs</strong> — CZI (Zuckerberg), Emerson Collective (Powell Jobs), Ballmer Group, Bezos Earth Fund parent (Fellowship Ventures), and Good Ventures (Moskovitz) are LLCs with no 990 filing requirement. Some (Moskovitz) publish extensively; others (CZI) publish selectively. Transparency is a <em>choice</em>, not a requirement.</li>
+    <li><strong>Dynasty Trusts</strong> — $360B+ in South Dakota alone (ICIJ Pandora Papers); no public registry; capable of running for centuries.</li>
+    <li><strong>501(c)(4) Advocacy</strong> — Politically active charities; not philanthropy under standard methodology. Koch's <em>Believe in People</em> received $4.3B in 2022 alone.</li>
+    <li><strong>Anonymous Giving</strong> — Per the 2024 BofA/Lilly HNW study, 69% of older HNW donors report giving anonymously at least sometimes.</li>
+    <li><strong>Religious Giving</strong> — Churches are exempt from 990 filings. 39% of affluent donor dollars go to religion (2025 BofA/Lilly).</li>
+    <li><strong>Foreign Giving</strong> — No country discloses donor names in bulk. Non-US giving by US billionaires (and vice versa) is largely invisible.</li>
   </ul>
+
+  <h2>Deduplication Rules</h2>
+  <p>A single charitable event can appear in three places: a press announcement, the donor's 990-PF (if routed through their foundation), and the recipient's 990 (if filed). Counting all three would triple-count. We apply these rules:</p>
+
+  <table class="data-table">
+    <thead><tr><th>Rule</th><th>What It Does</th></tr></thead>
+    <tbody>
+      <tr><td>Pledge ≠ Payment</td><td>A 2010 $10B pledge and a 2024 $500M payment are different events. Pledges are tracked but do not count as observable until disbursed.</td></tr>
+      <tr><td>Into ≠ Out of</td><td>A billionaire transferring stock to their private foundation is a <code>transfer_in</code>. The foundation's subsequent grants to working charities are <code>grant_out</code>. Only the latter counts as observable giving. (Forbes' methodology is the reverse, which IPS has criticized.)</td></tr>
+      <tr><td>Announcement + Filing</td><td>If a $200M press-announced gift also appears in that year's 990-PF, it is the same event. Recorded once.</td></tr>
+      <tr><td>DAF-routed announced gift</td><td>If the donor publicly says "we gave $10M to X via our DAF," this counts as a direct gift, not DAF opacity.</td></tr>
+      <tr><td>Multi-year pledge</td><td>Counted in the year paid, not the year announced. (Chronicle uses the opposite; we document both framings.)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What Does Not Count as Charity</h2>
+  <p>We exclude from observable giving:</p>
+  <ul>
+    <li><strong>For-profit "impact" ventures.</strong> The Ellison Institute of Technology (Oxford) is structured as a for-profit hybrid per reporting in the New York Times (Aug 2025); under the Forbes, Chronicle, and IPS methodologies it does not count as charity until and unless disbursed to a 501(c)(3) or foreign charitable equivalent.</li>
+    <li><strong>Private investments framed as philanthropy.</strong> Ellison's December 2025 $40B commitment to the Paramount–Skydance merger was described by Fortune as <em>"not a charitable donation in the classic sense."</em></li>
+    <li><strong>501(c)(4) advocacy contributions.</strong> Political advocacy, including to "social welfare" organizations that function as super-PAC adjuncts.</li>
+    <li><strong>Political contributions.</strong> Federal, state, and super-PAC giving. Tracked in a separate field and flagged as <code>POLITICAL_HEAVY</code> when large, because NBER Working Paper 26616 estimates political giving displaces charitable giving at roughly $0.33 per $1.</li>
+    <li><strong>Sports team ownership, political campaigns, and commercial real estate.</strong> Even when philanthropically framed.</li>
+  </ul>
+
+  <h2>Sources</h2>
+  <p>Our data chain, per finding type:</p>
+
+  <table class="data-table">
+    <thead>
+      <tr><th>Category</th><th>Primary Source</th><th>Confidence</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Private Foundations</td><td>IRS Form 990-PF via ProPublica Nonprofit Explorer</td><td class="tier-ok">High</td></tr>
+      <tr><td>Public Charities (donor-side)</td><td>Form 990 via ProPublica + charity website</td><td class="tier-ok">High</td></tr>
+      <tr><td>Announced Gifts</td><td>Recipient institution announcements, Chronicle of Philanthropy, reputable press</td><td class="tier-b">Medium</td></tr>
+      <tr><td>Securities Gifts</td><td>SEC Form 4 transaction code "G"</td><td class="tier-b">Medium</td></tr>
+      <tr><td>Giving Pledge</td><td>Official givingpledge.org + IPS <em>Giving Pledge at 15</em> (July 2025)</td><td class="tier-ok">High</td></tr>
+      <tr><td>Political Giving</td><td>FEC OpenData + OpenSecrets</td><td class="tier-ok">High</td></tr>
+      <tr><td>LLC Disclosures</td><td>Self-published grant databases (where extant); press where not</td><td class="tier-c">Low–Medium</td></tr>
+      <tr><td>Offshore Entities</td><td>ICIJ OffshoreLeaks</td><td class="tier-c">Low</td></tr>
+      <tr><td>Estate / Trust Disclosures</td><td>Will filings, press, pledge-letter text</td><td class="tier-c">Very low</td></tr>
+    </tbody>
+  </table>
 
   <h2>Red Flags</h2>
-  <p>Patterns flagged as concerning:</p>
+  <p>Patterns we surface on individual profiles — each has a documented citation per subject:</p>
 
   <table class="data-table">
-    <thead>
-      <tr><th>Flag</th><th>Trigger</th><th>Concern</th></tr>
-    </thead>
+    <thead><tr><th>Flag</th><th>Trigger</th><th>What It Signals</th></tr></thead>
     <tbody>
-      <tr><td><code>LOW_GIVING_RATE</code></td><td>&lt; 0.5 % of NW deployed (for $10B+ fortunes)</td><td>Very low giving relative to capacity.</td></tr>
-      <tr><td><code>PLEDGE_UNFULFILLED</code></td><td>Giving Pledge signer with &lt; 25 % progress</td><td>Public commitment unmet.</td></tr>
-      <tr><td><code>NO_OBSERVABLE_GIVING</code></td><td>$50B+ NW with &lt; $100M observable</td><td>Ultra-wealthy with no visible philanthropy.</td></tr>
-      <tr><td><code>LOW_PAYOUT</code></td><td>Foundation payout rate &lt; 5 %</td><td>Legal minimum not met (where 990 available).</td></tr>
+      <tr><td><code>GIVING_PLEDGE_UNFULFILLED</code></td><td>Signed the Giving Pledge; observable giving is low relative to commitment.</td><td>Public commitment has not yet been matched by observable disbursements. Per IPS <em>Giving Pledge at 15</em> (2025), only 9 of 256 pledgers have fulfilled.</td></tr>
+      <tr><td><code>POLITICAL_HEAVY</code></td><td>Political giving approaches or exceeds charitable giving over the past cycle.</td><td>Substitution effect per NBER W26616.</td></tr>
+      <tr><td><code>LOW_PAYOUT</code></td><td>Private foundation payout below 5% legal minimum, or barely above.</td><td>Wealth parked in foundation but not deployed.</td></tr>
+      <tr><td><code>DAF_TRANSFERS</code></td><td>A significant share of foundation grants-out go to the donor's own DAF.</td><td>Foundation dollars recycled into opaque vehicle. Reduces observable out-the-door.</td></tr>
+      <tr><td><code>LLC_OPACITY</code></td><td>Primary giving vehicle is an LLC with limited self-disclosure.</td><td>Observable figure is a floor; true giving could be materially higher or lower.</td></tr>
+      <tr><td><code>FOR_PROFIT_PIVOT</code></td><td>Giving Pledge redirected to for-profit "impact" ventures.</td><td>Removes dollars from the charitable pool under standard methodology.</td></tr>
+      <tr><td><code>POSTHUMOUS_DEFERRAL</code></td><td>Pledge letter commits the bulk to posthumous distribution.</td><td>Giving capacity is not being deployed during lifetime.</td></tr>
+      <tr><td><code>NO_GIVING_PLEDGE_SIGNATURE</code></td><td>Has never signed the Giving Pledge.</td><td>Informational only; not a breach (you cannot break what you never signed).</td></tr>
     </tbody>
   </table>
 
-  <h2>Giving Pledge Analysis</h2>
-  <p>The Giving Pledge is a moral commitment (not legally binding) to give away a majority (&gt; 50 %) of one's wealth. We track:</p>
-  <ul>
-    <li><strong>Sign Year</strong> — when the pledge was made.</li>
-    <li><strong>Net Worth at Signing</strong> — baseline for the commitment.</li>
-    <li><strong>Observable Giving</strong> — what we can verify has been deployed.</li>
-    <li><strong>Fulfillment Rate</strong> — Observable ÷ (50 % of NW at signing).</li>
-  </ul>
-
+  <h2>Right of Reply</h2>
   <div class="callout info">
-    <strong>Pledge Status Categories</strong>
-    <ul>
-      <li><strong>Fulfilled:</strong> ≥ 100 % of commitment observable.</li>
-      <li><strong>On Track:</strong> 50–99 % — good progress.</li>
-      <li><strong>Behind:</strong> 10–49 % — some giving, below expectation.</li>
-      <li><strong>Minimal:</strong> &lt; 10 % — very little progress.</li>
-    </ul>
+    <strong>Every Tier A subject is contacted before publication.</strong>
+    <p>We send a plain-text email to the subject's known press or foundation contact, stating the specific numbers and tier we intend to publish, and offering a one-week response window. Any response — verbatim — is published on the subject's profile. "No response" is published in the same place.</p>
+    <p>This is standard practice at Forbes, Bloomberg, and the Chronicle of Philanthropy. It is also the single most effective defense against the <em>actual malice</em> standard applied in US defamation law to public figures.</p>
   </div>
 
-  <h2>Data Quality Indicators</h2>
-  <ul>
-    <li><strong class="confidence-high">High:</strong> 3+ verified sources (990s, SEC filings, major announced gifts).</li>
-    <li><strong class="confidence-medium">Medium:</strong> 1–2 sources.</li>
-    <li><strong class="confidence-low">Low:</strong> Estimates only.</li>
-    <li><strong>Estimated:</strong> Statistical models based on peer patterns.</li>
-  </ul>
+  <h2>Corrections</h2>
+  <p>We maintain a public changelog. If you can document giving we have missed — with a source we can link — send it and we will update the record. Preferred: 990-PF line-items, recipient-side press releases, SEC filings, pledge letters. We do not update on bare assertion.</p>
 
-  <h2>On Estimation</h2>
-  <p>For billionaires without verified giving data, we do <strong>not</strong> fabricate numbers. Instead we:</p>
-  <ol>
-    <li>Query ProPublica for foundations matching the name.</li>
-    <li>Search for announced gifts in news and Wikipedia.</li>
-    <li>Check Giving Pledge signer status.</li>
-    <li>If nothing is found, mark the entry as "Estimated" with no observable giving.</li>
-  </ol>
-  <p>This means those with no public philanthropic record show $0 observable and a high score. This may be unfair to private givers — but we prefer accuracy to fabrication.</p>
-
-  <h2>Limitations &amp; Disclaimers</h2>
+  <h2>Known Limitations</h2>
   <div class="callout">
     <ul>
-      <li>This is a research project, not a definitive ranking of generosity.</li>
-      <li>Data reflects the last pipeline run — recent gifts may be missing.</li>
-      <li>Many may give through channels we cannot track.</li>
-      <li>Pledge fulfillment is computed vs. NW at signing, not current NW.</li>
-      <li>Name matching is imperfect — some foundations may be missed.</li>
-      <li>International billionaires receive far less US-based transparency.</li>
+      <li><strong>US-centric.</strong> This first release covers US-resident billionaires where 990-PF and SEC Form 4 data anchor verification. Global cohort (Hurun, ICIJ, UK/CA/AU registries) is deferred to the next release.</li>
+      <li><strong>Recency.</strong> 990-PF filings lag 6–18 months. Recent large gifts (2025–2026) may be announced but not yet in foundation filings.</li>
+      <li><strong>Net worth denominator.</strong> Forbes and Bloomberg disagree by 10–25% for donors with concentrated private holdings. We publish a range, not a point estimate.</li>
+      <li><strong>Name matching.</strong> Small foundations may be missed; namesakes (two <em>Knight Foundation</em>s exist, for example — one Phil Knight, one Miami journalism) are flagged manually.</li>
+      <li><strong>Impact is not measured.</strong> A $100M gift to a high-impact charity and a $100M gift to a named building appear identically in our data. This is a list of inputs, not outcomes.</li>
+      <li><strong>Historical cutoff.</strong> Gifts before the subject's billionaire era are generally not tracked.</li>
     </ul>
   </div>
 
-  <h2>Data Pipeline</h2>
-  <p>The list is generated by an automated pipeline that:</p>
+  <h2>What We Publish Per Subject</h2>
+  <p>Every Tier A and Tier B profile displays:</p>
   <ol>
-    <li>Fetches the Forbes Real-Time Billionaires list (3,000+).</li>
-    <li>Queries each of the 16 data-source modules.</li>
-    <li>Deduplicates findings across categories.</li>
-    <li>Computes Scrooge Scores.</li>
-    <li>Publishes to this web application.</li>
+    <li>Best-estimate net worth, range across credible sources, and as-of date.</li>
+    <li>Observable giving with every dollar linked to its source URL.</li>
+    <li>Detected vehicles (active foundations, closed foundations, LLCs, offshore entities, trusts-of-interest).</li>
+    <li>Pledge status (Giving Pledge signed? letter text? fulfillment per IPS 2025?).</li>
+    <li>Political giving floor + source.</li>
+    <li>Red flags with citations.</li>
+    <li>Confidence interval: [observable, observable + hidden upper bound].</li>
+    <li>Right-of-reply box — subject's response or "no response to date X."</li>
+    <li>Full source log with retrieval dates.</li>
+    <li>Verification TODOs — what we have not yet checked.</li>
   </ol>
 
-  <h2>Sources &amp; Attribution</h2>
+  <h2>Sources &amp; Benchmarks</h2>
   <div class="source-list">
-    <div class="source-card"><h4>Forbes</h4><p>Real-Time Billionaires API — net worth and rankings.</p></div>
-    <div class="source-card"><h4>ProPublica</h4><p>Nonprofit Explorer — 990-PF foundation data.</p></div>
-    <div class="source-card"><h4>SEC EDGAR</h4><p>Form 4 filings — securities gifts.</p></div>
-    <div class="source-card"><h4>FEC OpenData</h4><p>Political contribution data.</p></div>
-    <div class="source-card"><h4>Giving Pledge</h4><p>Official signer database.</p></div>
-    <div class="source-card"><h4>Chronicle of Philanthropy</h4><p>Major-gift announcements.</p></div>
-    <div class="source-card"><h4>IPS / Inequality.org</h4><p>Giving Pledge fulfillment analysis.</p></div>
-    <div class="source-card"><h4>ICIJ</h4><p>Offshore-leaks databases.</p></div>
+    <div class="source-card"><h4>Forbes RTB</h4><p>Real-time billionaires — net worth and rankings.</p></div>
+    <div class="source-card"><h4>Bloomberg</h4><p>Billionaires Index — alternate valuation, 1–5 star confidence.</p></div>
+    <div class="source-card"><h4>ProPublica</h4><p>Nonprofit Explorer — 990-PF and 990 filings.</p></div>
+    <div class="source-card"><h4>SEC EDGAR</h4><p>Form 4 — securities gifts (transaction code G).</p></div>
+    <div class="source-card"><h4>FEC OpenData</h4><p>Federal political contributions.</p></div>
+    <div class="source-card"><h4>OpenSecrets</h4><p>Aggregated political donor profiles.</p></div>
+    <div class="source-card"><h4>Giving Pledge</h4><p>Signer list + verbatim pledge letters.</p></div>
+    <div class="source-card"><h4>IPS — Giving Pledge at 15</h4><p>Authoritative fulfillment study (July 2025).</p></div>
+    <div class="source-card"><h4>NPT DAF Report</h4><p>Annual donor-advised-fund aggregate.</p></div>
+    <div class="source-card"><h4>BofA/Lilly HNW Study</h4><p>Anonymous + religious giving rates.</p></div>
+    <div class="source-card"><h4>Chronicle of Philanthropy</h4><p>Philanthropy 50 rankings and methodology.</p></div>
+    <div class="source-card"><h4>NBER W26616</h4><p>Political–charitable substitution research.</p></div>
   </div>
 
   <footer class="colophon">
     <p class="col-line"><em>Set in</em> Fraunces <em>and</em> Newsreader.</p>
-    <p class="col-line"><em>Last revised</em> January MMXXVI.</p>
+    <p class="col-line"><em>Methodology revision</em> II · April MMXXVI.</p>
     <p class="col-line"><a href="index.html">← Return to the Ledger</a></p>
   </footer>
-
 </main>
-
-<script>
-(function(){
-  const KEY='scrooge-theme';
-  const glyph=document.getElementById('theme-glyph');
-  const label=document.getElementById('theme-label');
-  function apply(t){
-    document.documentElement.dataset.theme=t;
-    if(glyph) glyph.textContent = t==='dark' ? '☀' : '☾';
-    if(label) label.textContent = t==='dark' ? 'Day Edition' : 'Night Edition';
-  }
-  apply(document.documentElement.dataset.theme||'light');
-  document.getElementById('theme-toggle').addEventListener('click',()=>{
-    const next = document.documentElement.dataset.theme==='dark' ? 'light' : 'dark';
-    try{ localStorage.setItem(KEY,next); }catch(e){}
-    apply(next);
-  });
-})();
-</script>
 
 </body>
 </html>

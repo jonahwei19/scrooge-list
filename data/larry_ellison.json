@@ -1,0 +1,172 @@
+{
+  "name": "Larry Ellison",
+  "net_worth_billions": 245.0,
+  "country": "United States",
+  "research_date": "2026-01-02T12:00:00",
+  "research_method": "Web search via Brave Search API + ProPublica 990 data",
+
+  "foundations": {
+    "category": "FOUNDATIONS",
+    "total": 267400000,
+    "confidence": "HIGH",
+    "notes": "Sum of Larry Ellison Foundation disbursements 2019-2024 from ProPublica 990-PF data",
+    "findings": [
+      {
+        "amount": 76360000,
+        "recipient": "Various (via Larry Ellison Foundation)",
+        "year": "2024",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+        "description": "Annual charitable disbursements from The Larry Ellison Foundation",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 54700000,
+        "recipient": "Various (via Larry Ellison Foundation)",
+        "year": "2023",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 45200000,
+        "recipient": "Various (via Larry Ellison Foundation)",
+        "year": "2022",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 41300000,
+        "recipient": "Various (via Larry Ellison Foundation)",
+        "year": "2021",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 22100000,
+        "recipient": "Various (via Larry Ellison Foundation)",
+        "year": "2020",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 27900000,
+        "recipient": "Various (via Larry Ellison Foundation)",
+        "year": "2019",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+
+  "direct_gifts": {
+    "category": "DIRECT_GIFTS",
+    "total": 1305000000,
+    "confidence": "MEDIUM",
+    "notes": "Major announced gifts from news sources",
+    "findings": [
+      {
+        "amount": 200000000,
+        "recipient": "University of Southern California",
+        "year": "2016",
+        "source_url": "https://www.forbes.com/sites/katevinton/2016/05/12/oracle-founder-larry-ellison-donates-200-million-to-usc-for-cancer-treatment-center/",
+        "description": "Gift to establish Lawrence J. Ellison Institute for Transformative Medicine of USC (cancer research)",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 1000000000,
+        "recipient": "Ellison Medical Foundation",
+        "year": "1997-2013",
+        "source_url": "https://fortune.com/2025/09/23/oracle-founder-larry-ellison-pledged-give-away-95-percent-of-393b-fortune-leadership-changes-mystery/",
+        "description": "Total contributions to Ellison Medical Foundation for aging research (foundation now closed)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "amount": 5000000,
+        "recipient": "Lawrence J. Ellison Musculo-Skeletal Research Center",
+        "year": "Unknown",
+        "source_url": "https://foundationguide.org/philanthropist/lawrence-joseph-larry-ellison/",
+        "description": "Gift to establish musculo-skeletal research center",
+        "confidence": "MEDIUM"
+      },
+      {
+        "amount": 100000000,
+        "recipient": "Ellison Institute research",
+        "year": "2025",
+        "source_url": "https://www.hindustantimes.com/business/larry-ellisons-philanthropy-comes-into-focus-amid-surge-in-net-worth-101758788421357-amp.html",
+        "description": "Recent pledge for research at the Ellison Institute",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+
+  "dafs": {
+    "category": "DAFS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No observable DAF activity found for Larry Ellison",
+    "findings": []
+  },
+
+  "securities": {
+    "category": "SECURITIES",
+    "total": 0,
+    "confidence": "LOW",
+    "notes": "No Form 4 gift transactions found - would need to search SEC EDGAR directly",
+    "findings": []
+  },
+
+  "split_interest": {
+    "category": "SPLIT_INTEREST",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No charitable remainder or lead trusts found in public records",
+    "findings": []
+  },
+
+  "llcs": {
+    "category": "PHILANTHROPIC_LLCS",
+    "total": 0,
+    "confidence": "LOW",
+    "notes": "No known philanthropic LLCs like CZI structure",
+    "findings": []
+  },
+
+  "religious": {
+    "category": "RELIGIOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No religious giving information found",
+    "findings": []
+  },
+
+  "anonymous": {
+    "category": "ANONYMOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "Anonymous giving by definition not trackable",
+    "findings": []
+  },
+
+  "summary": {
+    "total_found_raw": 1572400000,
+    "deduplication_notes": "Ellison Medical Foundation $1B may overlap with earlier foundation grants - keeping as separate since EMF was closed in 2013 and LEF is different entity",
+    "duplicates_removed": 0,
+    "total_after_dedup": 1572400000,
+    "total_observable_high_conf": 467560000,
+    "total_with_medium_conf": 1572400000,
+    "giving_rate_pct": 0.64,
+    "scrooge_score_notes": "With $1.57B in verifiable giving over career, Ellison has given ~0.64% of current net worth. This is higher than original pipeline showed ($0)."
+  },
+
+  "sources": [
+    "https://projects.propublica.org/nonprofits/organizations/943269827",
+    "https://fortune.com/2025/09/23/oracle-founder-larry-ellison-pledged-give-away-95-percent-of-393b-fortune-leadership-changes-mystery/",
+    "https://www.forbes.com/sites/katevinton/2016/05/12/oracle-founder-larry-ellison-donates-200-million-to-usc-for-cancer-treatment-center/",
+    "https://foundationguide.org/philanthropist/lawrence-joseph-larry-ellison/",
+    "https://www.hindustantimes.com/business/larry-ellisons-philanthropy-comes-into-focus-amid-surge-in-net-worth-101758788421357-amp.html"
+  ]
+}

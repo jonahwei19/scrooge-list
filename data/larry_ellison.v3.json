@@ -1,0 +1,414 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run — single-subject deep research",
+
+  "person": {
+    "name_display": "Larry Ellison",
+    "name_legal": "Lawrence Joseph Ellison",
+    "dob_year": 1944,
+    "country_primary": "United States",
+    "wealth_source": "Oracle Corp. co-founder; 41% ownership stake; also significant Tesla holdings and Lawrence Investments family office",
+    "years_as_billionaire_approx": 25
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 227.6,
+    "range_usd_billions": [201, 258],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 profile ~$227B; Wikipedia citing early-2026 Forbes ~$201B; CEO Today Magazine ~$258B. Peaked Sept 2025 at ~$393B before Oracle stock correction. The ~25% spread across 'Forbes 2026' sources is itself evidence that single-point net-worth denominators are unstable.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires",
+        "url": "https://www.forbes.com/profile/larry-ellison/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 227.6,
+        "rank_on_list": 6
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes early 2026)",
+        "url": "https://en.wikipedia.org/wiki/Larry_Ellison",
+        "retrieved_at": "2026-04-23",
+        "value_range_usd_billions": [201, 203]
+      },
+      {
+        "publisher": "Fortune (Sept 2025 peak)",
+        "url": "https://fortune.com/2025/09/23/oracle-founder-larry-ellison-pledged-give-away-95-percent-of-393b-fortune-leadership-changes-mystery/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 393,
+        "value_as_of": "2025-09"
+      }
+    ],
+    "liquidity_estimate_pct": 0.25,
+    "liquidity_notes": "Concentrated in Oracle (public, but 41% stake — divesting would move the stock). Tesla holdings are liquid. Lawrence Investments family office assets are private. Apply 25% liquidity discount for 'giving capacity now' calculations; 70%+ for lifetime 'expected giving' denominator."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "ellison_lef_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Larry Ellison Foundation",
+      "donor_ein": "94-3269827",
+      "recipient": "Various (recipients not disclosed in 990-PF summary fields)",
+      "amount_usd": 76400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ellison_lef_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Larry Ellison Foundation",
+      "donor_ein": "94-3269827",
+      "amount_usd": 54700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ellison_lef_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Larry Ellison Foundation",
+      "donor_ein": "94-3269827",
+      "amount_usd": 45200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ellison_lef_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Larry Ellison Foundation",
+      "donor_ein": "94-3269827",
+      "amount_usd": 41400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ellison_lef_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Larry Ellison Foundation",
+      "donor_ein": "94-3269827",
+      "amount_usd": 22100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ellison_lef_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Larry Ellison Foundation",
+      "donor_ein": "94-3269827",
+      "amount_usd": 27700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "ellison_usc_2016",
+      "event_role": "direct_gift",
+      "year": 2016,
+      "date_precision": "day",
+      "date": "2016-05-12",
+      "donor_entity": "Larry Ellison (personal — NOT yet verified as from LEF or personal)",
+      "recipient": "University of Southern California — Lawrence J. Ellison Institute for Transformative Medicine",
+      "amount_usd": 200000000,
+      "source_type": "announcement",
+      "source_url": "https://www.forbes.com/sites/katevinton/2016/05/12/oracle-founder-larry-ellison-donates-200-million-to-usc-for-cancer-treatment-center/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "TODO: verify whether this $200M was paid through LEF (in which case it would be inside the 2016 LEF 990-PF grant total, not additive) or from personal assets. LEF 2016 data not yet retrieved. If through LEF, this event would be rolled into ellison_lef_2016 once that year's 990 is pulled. If personal, it is additive."
+    },
+    {
+      "event_id": "ellison_emf_transfers_1997_2013",
+      "event_role": "transfer_in",
+      "year_range": [1997, 2013],
+      "donor_entity": "Larry Ellison (personal)",
+      "recipient": "Ellison Medical Foundation (EIN unknown, closed 2013)",
+      "amount_usd": 1000000000,
+      "amount_usd_note": "Approximate — cited as 'over $1B lifetime' to EMF; exact number not disclosed",
+      "source_type": "announcement",
+      "source_url": "https://fortune.com/2025/09/23/oracle-founder-larry-ellison-pledged-give-away-95-percent-of-393b-fortune-leadership-changes-mystery/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "CRITICAL: This is a transfer INTO Ellison Medical Foundation, NOT out-the-door giving. Per dedup rule #2, we count EMF's grants OUT (which we do not yet have), not the transfers in. Double-counting risk if EMF's grant-outs are later found and this row is also counted. Mark as transfer_in and exclude from observable rollup."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "ellison_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "pledged_pct_wealth": 95,
+      "pledged_amount_usd_at_signing_estimate": 12000000000,
+      "status": "UNFULFILLED",
+      "status_source": "IPS Giving Pledge at 15 (July 2025) — among 247 of 256 living pledgers who have not fulfilled",
+      "pledge_letter_quote": "Many years ago, I put virtually all of my assets into a trust with the intent of giving away at least 95% of my wealth to charitable causes. I have already given hundreds of millions of dollars to medical research and education, and I will give billions more over time.",
+      "source_url": "https://www.givingpledge.org/pledger/larry-ellison/",
+      "retrieved_at": "2026-04-23",
+      "notes": "Wealth at signing ~$12B (Forbes 2010 estimate). 95% target in 2010 dollars = ~$11.4B. Current net worth is ~$227B; 95% target is now ~$216B. Gap between documented giving-out and pledge target: ~$215B.",
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "event_id": "ellison_gp_amendment_2025",
+      "event_role": "pledge_amendment",
+      "year": 2025,
+      "date_precision": "month",
+      "source_type": "social_media_post",
+      "source_url": "https://www.insidephilanthropy.com/home/larry-ellison-wants-for-profits-to-solve-big-problems-heres-what-that-mindset-overlooks",
+      "retrieved_at": "2026-04-23",
+      "quote_paraphrased_by_ip": "I believed and continue to believe that practicing philanthropy by giving to nonprofit organizations that pursue public good is important. But there are additional ways that I would like to invest my time and resources in giving back to the world we share.",
+      "notes": "Inside Philanthropy describes this as Ellison 'amending' his 2010 Giving Pledge to include for-profit ventures through Ellison Institute of Technology. Standard Forbes/Chronicle/IPS methodology does not count for-profit investment as philanthropy."
+    },
+    {
+      "event_id": "ellison_eit_oxford_1p3b",
+      "event_role": "pledge",
+      "year": 2025,
+      "pledged_amount_usd": 1300000000,
+      "status": "ANNOUNCED_NOT_DISBURSED",
+      "recipient": "Ellison Institute of Technology — Oxford campus",
+      "source_type": "news",
+      "source_url": "https://www.nytimes.com/2025/08/12/business/larry-ellison-oracle-philanthropy.html",
+      "retrieved_at": "2026-04-23",
+      "classification_note": "Ellison Institute explicitly described by NYT as for-profit ventures alongside research. Classification under Forbes/IPS methodology: NOT counted as charitable giving until disbursed to a 501(c)(3) or foreign equivalent. Flag for reclassification when disbursement evidence appears."
+    },
+    {
+      "event_id": "ellison_eit_100m_2025",
+      "event_role": "pledge",
+      "year": 2025,
+      "pledged_amount_usd": 100000000,
+      "recipient": "Ellison Institute research (unspecified)",
+      "source_type": "news",
+      "source_url": "https://www.hindustantimes.com/business/larry-ellisons-philanthropy-comes-into-focus-amid-surge-in-net-worth-101758788421357-amp.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "low",
+      "classification_note": "Same for-profit hybrid concern as ellison_eit_oxford_1p3b"
+    },
+    {
+      "event_id": "ellison_paramount_2025",
+      "event_role": "private_investment_not_charity",
+      "year": 2025,
+      "date": "2025-12-23",
+      "pledged_amount_usd": 40000000000,
+      "recipient": "Paramount–Skydance merger (private, for-profit)",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/12/23/larry-ellison-40-billion-pledge-son-paramount-philanthropy-capitalism/",
+      "retrieved_at": "2026-04-23",
+      "classification_note": "Fortune explicitly: 'not a charitable donation in the classic sense.' Included here for context on where Ellison's capital is being deployed; NOT counted as philanthropy."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2021_2025_usd": 31000000,
+    "observed_total_note": "Minimum floor from press sources; FEC API direct-pull not yet run. Includes $30M+ to Opportunity Matters Fund (pro-Tim Scott super-PAC) plus $1M to pro-Lindsey Graham PAC July 2025. Dollar figure will be tightened when Phase 1.3 FEC integration runs.",
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail/2022?id=U0000003787&name=Ellison,+Lawrence&super=N&type=I",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets"
+      },
+      {
+        "url": "https://www.bloomberg.com/news/articles/2025-07-31/oracle-billionaire-larry-ellison-gave-1-million-to-pro-lindsey-graham-pac",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Bloomberg",
+        "amount_usd": 1000000,
+        "event_date": "2025-07"
+      },
+      {
+        "url": "https://www.opensecrets.org/news/2025/09/oracle-invested-millions-in-government-influence-before-winning-a-major-stake-in-tiktok/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets",
+        "amount_usd": 30000000,
+        "cumulative_since": "2021"
+      },
+      {
+        "url": "https://www.forbes.com/sites/michelatindera/2022/02/21/billionaire-larry-ellison-makes-his-largest-political-donation-on-record/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Forbes",
+        "amount_usd": 15000000,
+        "event_date": "2022-01"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Larry Ellison Foundation",
+        "ein": "94-3269827",
+        "established_year": 1997,
+        "state": "CA",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 116900000,
+        "officers_compensation": "ZERO_COMP (all officers receive zero compensation — Ellison, Marinelli, McGregor, Mori, Haratani)",
+        "payout_rate_notes": "Grants out in 2024 ($76.4M) vs assets ($116.9M) = 65% — well above the 5% legal minimum; no LOW_PAYOUT flag.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED (would require parsing grant recipients list; ProPublica summary page does not disclose recipients)",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827"
+      }
+    ],
+    "foundations_terminated": [
+      {
+        "name": "Ellison Medical Foundation",
+        "established_year": 1997,
+        "terminated_year": 2013,
+        "focus": "Aging research",
+        "status_note": "Closed in 2013. At termination, Ellison stated he would continue medical research giving through personal vehicles. Successor 990-PF not identified in our data; pre-2013 grant-out history not yet retrieved.",
+        "todo": "Pull archived 990-PFs 1997-2013 via IRS SOI or ProPublica archive to quantify actual grants_out before termination."
+      }
+    ],
+    "dafs_detected": [],
+    "dafs_note": "No donor-advised fund activity identified. Absence-of-evidence only — DAFs are donor-opaque by design. Assume unknown lower bound; see hidden_upper calculation.",
+    "llcs_philanthropic": [],
+    "llcs_note": "Lawrence Investments is Ellison's family office / personal holding company — explicitly NOT a philanthropic LLC like CZI or Emerson Collective.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "Ellison Institute of Technology (EIT)",
+        "locations": ["Oxford, UK", "Los Angeles, CA"],
+        "classification": "FOR_PROFIT_HYBRID",
+        "year_established": "~2016 (as Lawrence Ellison Institute for Transformative Medicine at USC); reconstituted as standalone EIT more recently",
+        "source_url": "https://www.nytimes.com/2025/08/12/business/larry-ellison-oracle-philanthropy.html",
+        "methodology_note": "NYT Aug 2025 describes EIT as a pivot to for-profit ventures plus research. Under Forbes/Chronicle/IPS methodology, for-profit impact investments do not count as charitable giving. EIT's pledges are NOT counted in observable giving until and unless disbursed to a 501(c)(3) or foreign charitable equivalent."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. Absence of public reporting so far; structure unknown.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "unspecified_trust",
+        "source_quote": "Many years ago, I put virtually all of my assets into a trust with the intent of giving away at least 95% of my wealth to charitable causes.",
+        "source_url": "https://www.givingpledge.org/pledger/larry-ellison/",
+        "classification_note": "Ellison's 2010 pledge letter discloses the existence of a trust holding 'virtually all' his assets. Specific structure (revocable, grantor, CLT, CRT, dynasty, etc.) and jurisdiction not publicly disclosed. If it's a charitable lead/remainder trust, future giving is committed; if it's a dynasty or GRAT, it's primarily a wealth-transfer vehicle with uncertain charitable outcome. CRITICAL uncertainty."
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "GIVING_PLEDGE_UNFULFILLED",
+      "evidence": "IPS Giving Pledge at 15 (July 2025) lists Ellison among 247 of 256 living pledgers who have not fulfilled. Observable giving ~$467M vs. pledge target ~$216B at current net worth.",
+      "source_url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "flag": "POLITICAL_DOMINATES_CHARITABLE",
+      "evidence": "$31M+ political giving 2021-2025 vs. ~$75M/yr foundation giving. Political giving to partisan super-PACs displaces charitable giving at ~$0.33/$1 per NBER W26616.",
+      "source_url": "https://www.opensecrets.org/news/2025/09/oracle-invested-millions-in-government-influence-before-winning-a-major-stake-in-tiktok/"
+    },
+    {
+      "flag": "FOR_PROFIT_PIVOT",
+      "evidence": "Ellison's 2025 Giving Pledge 'amendment' redirects resources to Ellison Institute of Technology, classified by NYT Aug 2025 as a for-profit hybrid. IPS explicitly excludes intermediary and for-profit vehicles from generosity measures.",
+      "source_url": "https://www.nytimes.com/2025/08/12/business/larry-ellison-oracle-philanthropy.html"
+    },
+    {
+      "flag": "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH",
+      "evidence": "Net worth grew from ~$12B at 2010 pledge signing to $393B peak in Sept 2025 (~33x). Annual LEF giving grew from $27.7M (2019) to $76.4M (2024) (~3x). Pledge fulfillment gap widened, not narrowed.",
+      "source_url": "https://fortune.com/2025/09/23/oracle-founder-larry-ellison-pledged-give-away-95-percent-of-393b-fortune-leadership-changes-mystery/"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (LEF 2024 payout 65% of assets, well above 5% minimum)",
+    "HIGH_OFFICER_COMP (all LEF officers zero comp)",
+    "DAF_TRANSFERS (no DAF activity identified; not confirmed absent)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 467500000,
+    "observable_giving_method": "sum(LEF 990-PF grants_out 2019-2024) + USC 2016 direct_gift (NOT YET deduped against LEF 2016 990-PF). Excludes: transfers INTO EMF; EIT Oxford pledges (for-profit hybrid); political giving; Paramount investment.",
+    "observable_giving_todo": [
+      "Pull LEF 990-PF years 1997-2018 to see if USC $200M 2016 gift is already captured in LEF grants_out (in which case subtract from direct_gifts to avoid double-count).",
+      "Pull Ellison Medical Foundation archived 990-PFs 1997-2013 — add grants_out for years active.",
+      "Run SEC EDGAR Form 4 for Ellison personal CIK — check for stock gifts to LEF, USC, or other 501(c)(3)."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 5690000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.25 × $227.6B = $56.9B; tenure cap saturated (25 years). Expected = $5.69B. This is a STRICT denominator matching the formal 10% norm.",
+    "observable_ratio_to_expected": 0.0822,
+    "observable_ratio_to_current_nw": 0.00205,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 455000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Apply: 0.2% of liquid_wealth as cohort-median hidden anonymous giving upper bound. 0.002 × $227.6B × 0.25 liquidity = $114M; but Ellison is explicit in his pledge letter that he historically preferred privacy, so widen upper bound to 1% of observable giving × 100x cohort amplifier = $467M × 1.0 = $467M. Settling on $455M as a conservative upper.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
+      "trust_outcome_uncertainty_usd": 5000000000,
+      "trust_outcome_method": "Ellison's disclosed trust could eventually disburse to charity per his pledge (upper bound: most of $216B 95% target) OR primarily to heirs (dynasty-like outcome: ~0). Published lists should NOT credit undisbursed trust assets toward observable. We set an uncertainty envelope of ~$5B — representing what a 10-year disbursement schedule from the trust's charitable portion might plausibly deploy — to make the confidence interval visible, but we DO NOT include this in tier calculation. Flag: this coefficient needs justification before publication.",
+      "total_usd": 5455000000,
+      "total_method": "anonymous + trust (daf/llc/offshore/religious all zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 1.04,
+    "tier": "Probably_Low (Tier B)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Ellison fails this test only because the trust_outcome_uncertainty is large — he has publicly stated that virtually all his wealth is in a trust with charitable intent. Without that disclosed trust, he would be Tier A Verified Low. WITH the trust, he's Tier B 'Probably Low' — publicly committed to giving but has not yet done so, and the trust's ultimate disposition is private.",
+    "tier_published_caveat": "Readers should see Ellison as the canonical example of 'signed the Giving Pledge, hasn't followed through yet.' Observable giving ~$467M is 0.2% of current net worth and 8% of the 10% formal norm. The trust could still make good; as of 2026-04, it has not."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 97.95,
+    "components": {
+      "giving_gap_40pct": 38.3,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 20.0,
+      "red_flag_penalty_20pct": 20.0
+    },
+    "note": "Computed with v2 formula for continuity with current pipeline. DO NOT PUBLISH this number — we publish tiers only per PLAN.md."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Oracle Investor Relations + Ellison Institute of Technology press contact + Lawrence Investments (family office) — all three to raise visibility and document delivery.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: USC 2016 $200M gift — from LEF or personal? Need LEF 2016 990-PF to deduplicate.",
+    "VERIFY: Pull archived LEF 990-PFs for years 1997-2018 (pre-current-window). Add total to observable_giving.",
+    "VERIFY: Ellison Medical Foundation grants_out 1997-2013 (EMF closed 2013 but should have had grant activity in those years).",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Ellison's CIK — any stock gifts to charity not already in LEF data.",
+    "VERIFY: FEC bulk pull against Ellison's name/address to confirm or refine $31M political total.",
+    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
+    "VERIFY: Structure of Ellison's disclosed trust (revocable? CLT? dynasty? GRAT?). Check SEC filings, estate press coverage, legal filings.",
+    "VERIFY: Run Brave Search for post-2024 announced Ellison gifts not yet captured here (1-year freshness window)."
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/943269827", "retrieved_at": "2026-04-23", "used_for": "LEF 990-PF data 2019-2024, assets, officers"},
+    {"url": "https://www.givingpledge.org/pledger/larry-ellison/", "retrieved_at": "2026-04-23", "used_for": "2010 pledge letter verbatim text, 95% commitment, trust disclosure"},
+    {"url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf", "retrieved_at": "2026-04-23", "used_for": "Pledge-unfulfilled classification (247 of 256 living pledgers not fulfilled)"},
+    {"url": "https://fortune.com/2025/09/23/oracle-founder-larry-ellison-pledged-give-away-95-percent-of-393b-fortune-leadership-changes-mystery/", "retrieved_at": "2026-04-23", "used_for": "EMF $1B+ lifetime figure; Sept 2025 $393B peak net worth; EIT leadership turmoil"},
+    {"url": "https://fortune.com/2025/12/23/larry-ellison-40-billion-pledge-son-paramount-philanthropy-capitalism/", "retrieved_at": "2026-04-23", "used_for": "$40B Paramount pledge as private-investment, not charity"},
+    {"url": "https://www.nytimes.com/2025/08/12/business/larry-ellison-oracle-philanthropy.html", "retrieved_at": "2026-04-23", "used_for": "EIT for-profit hybrid classification"},
+    {"url": "https://www.insidephilanthropy.com/home/larry-ellison-wants-for-profits-to-solve-big-problems-heres-what-that-mindset-overlooks", "retrieved_at": "2026-04-23", "used_for": "2025 pledge amendment X-post paraphrase"},
+    {"url": "https://www.forbes.com/sites/katevinton/2016/05/12/oracle-founder-larry-ellison-donates-200-million-to-usc-for-cancer-treatment-center/", "retrieved_at": "2026-04-23", "used_for": "USC 2016 $200M gift event"},
+    {"url": "https://www.opensecrets.org/outside-spending/donor_detail/2022?id=U0000003787&name=Ellison,+Lawrence&super=N&type=I", "retrieved_at": "2026-04-23", "used_for": "2022 political giving detail"},
+    {"url": "https://www.opensecrets.org/news/2025/09/oracle-invested-millions-in-government-influence-before-winning-a-major-stake-in-tiktok/", "retrieved_at": "2026-04-23", "used_for": "$30M+ 2021-2025 political total"},
+    {"url": "https://www.bloomberg.com/news/articles/2025-07-31/oracle-billionaire-larry-ellison-gave-1-million-to-pro-lindsey-graham-pac", "retrieved_at": "2026-04-23", "used_for": "July 2025 $1M Graham PAC gift"},
+    {"url": "https://www.forbes.com/sites/michelatindera/2022/02/21/billionaire-larry-ellison-makes-his-largest-political-donation-on-record/", "retrieved_at": "2026-04-23", "used_for": "$15M Tim Scott PAC 2022"},
+    {"url": "https://www.forbes.com/profile/larry-ellison/", "retrieved_at": "2026-04-23", "used_for": "Current 2026 net worth and rank"},
+    {"url": "https://en.wikipedia.org/wiki/Larry_Ellison", "retrieved_at": "2026-04-23", "used_for": "Net worth corroboration; career background"},
+    {"url": "https://www.hindustantimes.com/business/larry-ellisons-philanthropy-comes-into-focus-amid-surge-in-net-worth-101758788421357-amp.html", "retrieved_at": "2026-04-23", "used_for": "$100M EIT research pledge 2025"}
+  ]
+}

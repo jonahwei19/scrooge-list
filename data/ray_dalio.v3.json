@@ -1,0 +1,513 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run — single-subject deep research",
+
+  "person": {
+    "name_display": "Ray Dalio",
+    "name_legal": "Raymond Thomas Dalio",
+    "dob_year": 1949,
+    "country_primary": "United States",
+    "wealth_source": "Bridgewater Associates — founder 1975, world's largest hedge fund at peak (~$124B AUM). Sold his last shares of Bridgewater in July 2025 for ~$6.8B cash. Remaining wealth is diversified across cash, family office holdings, and real estate.",
+    "years_as_billionaire_approx": 14
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 20.0,
+    "range_usd_billions": [15, 28],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 profile rank #188 on the global billionaires list. Bloomberg Billionaires Index Feb 2026 estimates $20B at rank #128. Several aggregators report a wider $14-28B range reflecting uncertainty about cash position and family office holdings after the 2025 Bridgewater exit. Fell within the $15-20B range flagged in scope.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires (2026 list)",
+        "url": "https://www.forbes.com/profile/ray-dalio/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 20.0,
+        "rank_on_list": 188,
+        "note": "Direct Forbes profile fetch blocked in session; rank/value confirmed via aggregator summaries of Forbes 2026 data"
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/raymond-t-dalio/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 20.0,
+        "rank_on_list": 128,
+        "value_as_of": "2026-02"
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes / Bloomberg 2026)",
+        "url": "https://en.wikipedia.org/wiki/Ray_Dalio",
+        "retrieved_at": "2026-04-23",
+        "value_range_usd_billions": [15, 20]
+      }
+    ],
+    "liquidity_estimate_pct": 0.70,
+    "liquidity_notes": "Dalio sold his remaining Bridgewater equity in July 2025 for ~$6.8B cash (per Wikipedia/ValueWalk). The resulting portfolio is much more liquid than a typical tech-founder billionaire — primarily cash, public securities, and family-office holdings rather than concentrated founder stock. Apply 70% liquid for 'giving capacity now.'"
+  },
+
+  "cited_events": [
+    {
+      "event_id": "dalio_foundation_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "recipient": "Various (recipients not fully itemized in ProPublica summary)",
+      "amount_usd": 59200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "notes": "Charitable disbursements from Dalio Foundation Inc 2024 990-PF."
+    },
+    {
+      "event_id": "dalio_foundation_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 17200000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 12300000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 12600000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 33600000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 58500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 71500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2014",
+      "event_role": "grant_out",
+      "year": 2014,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 121600000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2013",
+      "event_role": "grant_out",
+      "year": 2013,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 110500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2012",
+      "event_role": "grant_out",
+      "year": 2012,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 30100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_foundation_2011",
+      "event_role": "grant_out",
+      "year": 2011,
+      "donor_entity": "Dalio Foundation Inc",
+      "donor_ein": "43-1965846",
+      "amount_usd": 44500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_nyp_health_justice_2020",
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date_precision": "month",
+      "date": "2020-10",
+      "donor_entity": "Dalio Philanthropies (likely flowed through Dalio Foundation Inc)",
+      "recipient": "NewYork-Presbyterian Hospital — Dalio Center for Health Justice",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://www.prnewswire.com/news-releases/newyork-presbyterian-launches-dalio-center-for-health-justice-301150719.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Likely captured within 2020 Dalio Foundation grant_out ($33.6M) if paid from the foundation, but more likely spread across multiple years or paid from a separate personal/family-fund vehicle. Leave as standalone direct_gift and flag for dedup when Dalio Foundation 2020 grant recipient list is parsed. If double-counted, subtract from direct_gifts."
+    },
+    {
+      "event_id": "dalio_oceanx_bloomberg_2018",
+      "event_role": "pledge",
+      "year": 2018,
+      "date_precision": "year",
+      "donor_entity": "Dalio Philanthropies + Bloomberg Philanthropies (joint)",
+      "recipient": "OceanX ocean exploration + ocean-mapping initiative",
+      "amount_usd_joint_total": 185000000,
+      "amount_usd_dalio_share_estimate": 92500000,
+      "amount_usd_dalio_share_note": "Assume 50% split absent disclosure of the actual ratio; standalone event until the joint-pledge share is verified.",
+      "source_type": "announcement",
+      "source_url": "https://www.cnbc.com/2018/06/05/ray-dalio-james-cameron-launch-oceanx.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "Joint with Bloomberg. Dalio share likely recorded through Dalio Foundation grants in subsequent years. Currently flagged as a pledge; roll into grants_out when specific payment years are identified."
+    },
+    {
+      "event_id": "dalio_ct_partnership_2019",
+      "event_role": "pledge",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Dalio Philanthropies",
+      "recipient": "Partnership for Connecticut (joint with State of Connecticut)",
+      "pledged_amount_usd": 100000000,
+      "status": "DISSOLVED_2020",
+      "status_note": "Partnership dissolved June 2020 less than one year after formation due to governance/transparency issues and leadership crisis. Reported that Dalio had contributed ~$20M at dissolution time, which was refunded or returned to foundation per some reporting. Actual disbursement to partnership uncertain.",
+      "source_type": "announcement",
+      "source_url": "https://ctmirror.org/2020/06/03/ct-and-dalio-philanthropies-to-formally-dissolve-education-partnership-on-friday/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_ct_trump_accounts_2025",
+      "event_role": "pledge",
+      "year": 2025,
+      "date": "2025-12-17",
+      "donor_entity": "Dalio Philanthropies",
+      "recipient": "~300,000 Connecticut children — seeding federal Trump Account child investment accounts with $250 each",
+      "pledged_amount_usd": 75000000,
+      "status": "ANNOUNCED",
+      "source_type": "announcement",
+      "source_url": "https://www.businesswire.com/news/home/20251217847942/en/Dalios-Double-Down-on-Connecticuts-Youth",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "classification_note": "Press framed as philanthropy — Dalio Philanthropies seeded children's investment accounts. CNBC/CT Mirror note the accounts were created by the 2025 Trump administration legislation; they are tax-advantaged savings accounts for children, not partisan gifts. Count under observable pledges once payment starts. For now, pledge only."
+    },
+    {
+      "event_id": "dalio_woods_hole_2012",
+      "event_role": "direct_gift",
+      "year": 2012,
+      "donor_entity": "Ray Dalio (personal)",
+      "recipient": "Woods Hole Oceanographic Institution",
+      "amount_usd": 5000000,
+      "amount_usd_note": "$5M plus donation of personal research yacht and equipment (value not separately disclosed).",
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/OceanX",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "dalio_ct_lifetime_2025",
+      "event_role": "cumulative_disclosure",
+      "year_range": [1995, 2025],
+      "donor_entity": "Dalio family + Dalio Philanthropies",
+      "recipient": "Connecticut nonprofits collectively",
+      "amount_usd": 280000000,
+      "source_type": "announcement",
+      "source_url": "https://www.businesswire.com/news/home/20251217847942/en/Dalios-Double-Down-on-Connecticuts-Youth",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "This $280M lifetime CT figure OVERLAPS with Dalio Foundation grants_out. Use for narrative context only. DO NOT add to observable rollup (would double-count)."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "dalio_gp_2011",
+      "event_role": "pledge",
+      "year": 2011,
+      "date_precision": "month",
+      "date": "2011-04",
+      "pledged_pct_wealth": 50,
+      "pledged_amount_usd_at_signing_estimate": 5000000000,
+      "status": "PROGRESSING",
+      "status_source": "IPS Giving Pledge at 15 (July 2025) — Dalio's direct-to-charity giving is ongoing and at a materially higher rate than typical signers.",
+      "pledge_letter_quote": "We had planned to give most of our money to those it will most help anyway. For all of these reasons, we enthusiastically make this giving pledge.",
+      "pledge_focus_areas": [
+        "Barbara: inner-city education",
+        "Ray: microfinance and nature conservation/research",
+        "Joint: meditation programs for inner-city school children and stressed communities"
+      ],
+      "source_url": "https://givingpledge.org/pledger?pledgerId=185",
+      "retrieved_at": "2026-04-23",
+      "notes": "Pledge committed to giving 'more than half' of wealth in lifetime. Dalio's net worth at 2011 signing was ~$10B — 50% target in 2011 dollars ~$5B. Current net worth ~$20B; 50% target now ~$10B. With ~$1B+ already distributed in grants from Dalio Foundation (per Wikipedia) and $7B+ contributed to Dalio Philanthropies vehicles, pledge is notably more on-track than most signers."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_LOW",
+    "substitution_note": "Political giving is minimal; does not displace charitable giving at a material level.",
+    "observed_total_2021_2025_usd": 50000,
+    "observed_total_note": "Dalio has publicly self-identified as 'apolitical' and 'a strong bipartisan moderate' (LinkedIn, 2023). Last publicly known direct political donation was $5,000 in 1998 to Freedom & Free Enterprise PAC. Political giving is not a material contributor to his philanthropic profile. Placeholder $50K upper bound pending FEC bulk pull. Political giving is NOT a red flag for Dalio.",
+    "sources": [
+      {
+        "url": "https://www.thestreet.com/personalities/5-high-profile-hedge-fund-founders-and-their-political-affiliations",
+        "retrieved_at": "2026-04-23",
+        "publisher": "TheStreet",
+        "note": "Dalio self-described as apolitical bipartisan moderate"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Dalio Foundation Inc",
+        "ein": "43-1965846",
+        "established_year": 2003,
+        "state": "CT (Westport)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 1670000000,
+        "officers_compensation": "ZERO_COMP most years (Ray Dalio, Barbara Dalio, Matthew Dalio, Janine Racanelli, Lisa Safian). Exception: 2014 and 2015 filings show $500,000 aggregate officer comp. Effectively zero comp at current scale.",
+        "payout_rate_notes": "2024 grants out ($59.2M) vs assets ($1.67B) = 3.5% — BELOW the 5% legal minimum. 2023 was 1.1% ($17.2M/$1.54B). 2022 was 0.8% ($12.3M/$1.51B). 2021 was 0.85%. These are multi-year sub-5% payouts. Flag: LOW_PAYOUT. (Note: IRS 5% payout can be satisfied via qualifying distributions that include admin expenses, not just grants paid — verify before publishing.)",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED — would require parsing grant recipient list from full 990-PF filings.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846"
+      },
+      {
+        "name": "Dalio Family Fund Inc",
+        "ein": "83-1575536",
+        "established_year": 2018,
+        "state": "CT (Westport)",
+        "status": "active",
+        "classification": "public_charity_501c3_not_private_foundation",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 4039494510,
+        "classification_note": "This is the SECOND Dalio vehicle. It is a public charity (files Form 990, not 990-PF) with $4B+ in assets. Its grantmaking focuses on Education, Philanthropy/Voluntarism/Grantmaking, and Human Services in CT, NY, and CA. Grant-out activity not yet retrieved — THIS IS THE PRIMARY OUTSTANDING DATA GAP.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/831575536",
+        "todo": "CRITICAL: Pull Dalio Family Fund Inc 2019-2024 Form 990 filings to capture grants_paid. Likely substantially larger than Dalio Foundation Inc based on $4B asset base vs $1.67B."
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity publicly identified. Dalio Family Fund's public-charity classification with $4B assets is structurally similar to a DAF sponsor but operates as a family-directed grantmaker. Absence-of-evidence only.",
+    "llcs_philanthropic": [],
+    "llcs_note": "Dalio Philanthropies is an umbrella brand, not a legal entity — operates through Dalio Foundation Inc, Dalio Family Fund Inc, and the Dalio family office. Program arms include Dalio Education, OceanX, Endless, China Care Foundation, Dalio Center for Health Justice. No philanthropic LLC equivalent to CZI or Emerson Collective.",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. Bridgewater had prior offshore-vehicle press attention; Dalio personally has not been named in Pandora/Paradise/Panama Papers per public reporting, but not verified.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "family_office_unspecified",
+        "source_quote": "Dalio Family Office operates as family LP allocator and manages Dalio wealth post-Bridgewater",
+        "source_url": "https://pipelineroad.com/directory/dalio-family",
+        "classification_note": "Post-2025 Bridgewater exit, wealth is managed through Dalio Family Office. Specific trust/entity structure for charitable commitments not disclosed publicly. Per Giving Pledge letter, intent is to give 'more than half' but disbursement vehicle structure is not public."
+      }
+    ],
+    "program_arms_under_dalio_philanthropies": [
+      {
+        "name": "OceanX",
+        "focus": "Ocean exploration and research",
+        "founded": 2016,
+        "co_founder": "Mark Dalio (Ray's son)",
+        "source_url": "https://en.wikipedia.org/wiki/OceanX"
+      },
+      {
+        "name": "Dalio Education",
+        "focus": "Connecticut public school funding, youth programs",
+        "note": "Primary vehicle after Partnership for CT dissolution in 2020"
+      },
+      {
+        "name": "Endless",
+        "focus": "Digital access / educational software",
+        "note": "Program area within Dalio Philanthropies"
+      },
+      {
+        "name": "China Care Foundation",
+        "focus": "Chinese orphan support",
+        "founder": "Matt Dalio (Ray's son)",
+        "cumulative_raised_usd": 15000000,
+        "source_url": "https://www.daliophilanthropies.org/"
+      },
+      {
+        "name": "Dalio Center for Health Justice (at NewYork-Presbyterian)",
+        "focus": "Health equity research, disparities",
+        "founded": 2020,
+        "seed_gift_usd": 50000000,
+        "source_url": "https://www.prnewswire.com/news-releases/newyork-presbyterian-launches-dalio-center-for-health-justice-301150719.html"
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "LOW_PAYOUT_MULTI_YEAR",
+      "evidence": "Dalio Foundation Inc grants_paid as % of assets was 3.5% (2024), 1.1% (2023), 0.8% (2022), 0.85% (2021). All below the 5% IRS minimum at face value. IRS 5% test includes admin expenses so may be satisfied formally, but grant-out cadence is notably slow relative to $1.67B asset base.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846"
+    },
+    {
+      "flag": "GOVERNANCE_CONTROVERSY_CT_PARTNERSHIP",
+      "evidence": "Partnership for Connecticut ($100M pledge, 2019) dissolved June 2020 less than one year after launch due to transparency issues — state partners exempted the entity from FOIA at Dalio family insistence. Leadership crisis: CEO Mary Anne Schmitt-Carey fired after six weeks by Barbara Dalio et al.; subsequent defamation/breach-of-contract lawsuit filed. Bipartisan Connecticut legislative criticism.",
+      "source_url": "https://www.insidephilanthropy.com/home/2022-8-8-what-went-wrong-a-look-back-at-the-collapse-of-a-billionaire-funded-education-partnership"
+    },
+    {
+      "flag": "DUAL_ENTITY_STRUCTURE_UNVERIFIED_FLOW",
+      "evidence": "Dalio operates both a private foundation (Dalio Foundation Inc, $1.67B assets) and a public charity (Dalio Family Fund Inc, $4.04B assets). Flow of funds between entities, and from Dalio personally into each, is not yet mapped. Public-charity structure can function like a DAF sponsor without DAF-level disclosure; warrants review.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/831575536"
+    }
+  ],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (Dalio is progressing materially — $1B+ already disbursed, $7B+ contributed to vehicles)",
+    "POLITICAL_DOMINATES_CHARITABLE (political giving is negligible — self-described apolitical)",
+    "HIGH_OFFICER_COMP (zero comp most years across both foundations)",
+    "FOR_PROFIT_PIVOT (no for-profit hybrid vehicle like EIT)",
+    "DAF_TRANSFERS (no DAF activity identified)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 583500000,
+    "observable_giving_method": "sum(Dalio Foundation 990-PF grants_out for years we have: 2011, 2012, 2013, 2014, 2015, 2019, 2020, 2021, 2022, 2023, 2024) = $44.5M + $30.1M + $110.5M + $121.6M + $71.5M + $58.5M + $33.6M + $12.6M + $12.3M + $17.2M + $59.2M = $571.6M. Plus Woods Hole 2012 ($5M, likely not through foundation) + OceanX Dalio share estimate partially attributed elsewhere. Simplification: $571.6M foundation total + $10M non-foundation direct gifts floor = ~$583.5M. CRITICAL GAP: Dalio Family Fund Inc (EIN 83-1575536, $4B assets) grants_out are NOT included — that entity likely accounts for the gap between this $583M and the $1B+ figure cited by Wikipedia and the $7B+ family-level figure cited by Dalio Philanthropies.",
+    "observable_giving_todo": [
+      "CRITICAL: Pull Dalio Family Fund Inc (EIN 83-1575536) Form 990 for 2019-2024. This is likely the primary giving vehicle and is currently missing from this rollup.",
+      "Pull Dalio Foundation 990-PF years 2003-2010 and 2016-2018 to close pre-current-window and gap-year coverage.",
+      "Dedup Dalio Center for Health Justice $50M 2020 gift against Dalio Foundation 2020 grant recipients list when retrieved.",
+      "Dedup Partnership for CT $100M 2019 pledge against Dalio Foundation 2019 grant recipients (reported partial disbursement before 2020 dissolution).",
+      "Verify OceanX funding allocations — confirm whether joint Bloomberg partnership $185M figure reflects pledges paid or announced-only.",
+      "Run SEC EDGAR Form 4 for Bridgewater CIKs — check for stock gifts (less likely post-exit but possible 2015-2024 history)."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1400000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.70 × $20B = $14.0B; tenure cap saturated (14 years). Expected = $1.4B. This is a STRICT denominator matching the formal 10% norm. Expected is much lower than for Ellison because Dalio is less wealthy; expected ratio becomes correspondingly more achievable.",
+    "observable_ratio_to_expected": 0.4168,
+    "observable_ratio_to_current_nw": 0.0292,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift from DAFs specifically.",
+      "family_fund_uplift_usd": 2000000000,
+      "family_fund_uplift_note": "Dalio Family Fund Inc (EIN 83-1575536) has $4.04B assets and is a public charity with disclosed-but-unretrieved Form 990 filings. Based on typical public-charity grantmaking payout of ~8-15% on endowed accounts and the explicitly stated 'Dalio Philanthropies has granted over $7B' lifetime figure, estimate $2B of lifetime grants from this entity not yet in observable. This should CONVERT to observable once 990s are parsed.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 50000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously sometimes. Dalio has not signaled a preference for anonymity (in fact, aggressively named) but applying cohort-median 0.2% of liquid wealth = 0.002 × $20B × 0.70 = $28M, rounded to $50M conservative upper.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
+      "trust_outcome_uncertainty_usd": 500000000,
+      "trust_outcome_method": "Dalio family office structure and any charitable trust commitments not disclosed. Given $20B current net worth and ~$10B pledge target, apply $500M uncertainty envelope to represent undisbursed charitable trust assets that could plausibly be deployed over next 10 years.",
+      "total_usd": 2550000000,
+      "total_method": "family_fund + anonymous + trust (daf/llc/offshore/religious all zero). NOTE: the family_fund component is NOT truly hidden — it's in publicly filed 990s; it's just not yet retrieved in this research pass. Once retrieved, it should move from hidden_upper to observable."
+    },
+    "observable_plus_hidden_ratio_to_expected": 2.24,
+    "tier": "On_Track (Tier C)",
+    "tier_rule": "ON_TRACK requires (observable + hidden_upper) / expected > 1.0 AND pledge progress visible. Dalio passes: observable_plus_hidden_ratio = 2.24 (substantially above 1.0). Observable-only ratio is 0.42 (below 1.0) but the Dalio Family Fund Inc omission materially understates observable — once that $4B-asset entity's grants_out are retrieved, observable should rise to ~$2-3B range, putting observable-only ratio at 1.5-2.0. Dalio is the canonical example of a SIGNED PLEDGER WHO IS ACTUALLY GIVING — contrast with Ellison (Tier B) and Zuckerberg (Tier C/D).",
+    "tier_published_caveat": "Readers should see Dalio as a signed Giving Pledge member who is materially delivering on the commitment. Key nuances: (1) the $7B+ 'Dalio Philanthropies' lifetime figure includes transfers INTO the foundations and family fund, not just grants OUT — actual charitable deployment is lower. (2) LOW_PAYOUT flag on Dalio Foundation Inc 2021-2024 is real — the foundation has ballooned from $740M to $1.67B in assets while grant cadence slowed. (3) Connecticut partnership governance collapse in 2020 is a genuine governance flag. (4) Observable giving is understated in this file because Dalio Family Fund Inc 990s are not yet retrieved."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 38.0,
+    "components": {
+      "giving_gap_40pct": 23.3,
+      "tenure_penalty_20pct": 14.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 10.0
+    },
+    "note": "v2 legacy formula. DO NOT PUBLISH. For continuity with existing pipeline dashboards only. Lower than Ellison (98) because Dalio is actually giving, and much lower than Buffett's 58 is not comparable since Dalio has less tenure."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Dalio Philanthropies press contact + Dalio Family Office + Janine Racanelli (Executive Director, Dalio Foundation Inc) — raise visibility through multiple channels",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "CRITICAL: Pull Dalio Family Fund Inc (EIN 83-1575536) Form 990 for years 2019-2024 via ProPublica. This is the single largest data gap in this record.",
+    "VERIFY: Dalio Foundation 990-PF recipient lists for 2019-2024 — dedup NYP Dalio Center for Health Justice $50M, Partnership for CT disbursements, OceanX allocations.",
+    "VERIFY: Full pledge letter from givingpledge.org/pledger?pledgerId=185 — currently have partial quote; confirm 'more than half' language and specific commitments.",
+    "VERIFY: Pre-2011 Dalio Foundation 990-PF history (entity founded 2003) for complete observable-giving calculation.",
+    "VERIFY: OceanX funding flow — is it a separate 501(c)(3)? If so, pull its 990 and check for transfers_in from Dalio Foundation/Family Fund.",
+    "VERIFY: Actual Partnership for Connecticut disbursement before 2020 dissolution — multiple sources cite different partial-payment figures.",
+    "VERIFY: Dalio Center for Health Justice $50M — paid upfront in 2020 or multi-year? Check NYP annual reports.",
+    "VERIFY: IPS Giving Pledge at 15 (July 2025) status for Dalio — is he listed as 'progressing' or 'unfulfilled'?",
+    "VERIFY: FEC bulk pull for Dalio's name/address — confirm political giving stays at $0-$50K range.",
+    "VERIFY: Bridgewater exit 2025 — were any shares gifted to charity (SEC Form 4 'G' transactions) before or during the $6.8B sale?"
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/431965846", "retrieved_at": "2026-04-23", "used_for": "Dalio Foundation Inc 990-PF data — grants_out for 2011-2024, assets, officer comp zero"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/831575536", "retrieved_at": "2026-04-23", "used_for": "Dalio Family Fund Inc EIN, $4.04B assets, public-charity classification, 990 filing history"},
+    {"url": "https://givingpledge.org/pledger?pledgerId=185", "retrieved_at": "2026-04-23", "used_for": "Giving Pledge signing 2011, pledge letter quote, focus areas"},
+    {"url": "https://www.daliophilanthropies.org/about/", "retrieved_at": "2026-04-23", "used_for": "Entity-structure overview, program arms (OceanX, Dalio Education, Endless, China Care Foundation), founding 1995/2003 timeline"},
+    {"url": "https://www.daliophilanthropies.org/", "retrieved_at": "2026-04-23", "used_for": "Lifetime $7B+ family giving figure"},
+    {"url": "https://www.influencewatch.org/non-profit/dalio-philanthropies/", "retrieved_at": "2026-04-23", "used_for": "Asset base history, LOW_PAYOUT cross-check, Partnership for Connecticut criticism, major grant recipients (Harvard, Yale, Stanford, Johns Hopkins)"},
+    {"url": "https://en.wikipedia.org/wiki/Ray_Dalio", "retrieved_at": "2026-04-23", "used_for": "2026 net worth $20B, Bridgewater founding 1975, July 2025 Bridgewater exit for $6.8B cash, Dalio Foundation received $5B+ from family, $1B+ grants distributed, $50M NYP, $10M China COVID 2020, $4M CT COVID 2020, $100M CT schools 2019, $185M Bloomberg OceanX 2018"},
+    {"url": "https://en.wikipedia.org/wiki/OceanX", "retrieved_at": "2026-04-23", "used_for": "OceanX founding 2016 by Ray & Mark Dalio, Woods Hole 2012 $5M + yacht"},
+    {"url": "https://www.cnbc.com/2018/06/05/ray-dalio-james-cameron-launch-oceanx.html", "retrieved_at": "2026-04-23", "used_for": "OceanX founding with James Cameron, $185M joint Bloomberg Philanthropies commitment"},
+    {"url": "https://www.prnewswire.com/news-releases/newyork-presbyterian-launches-dalio-center-for-health-justice-301150719.html", "retrieved_at": "2026-04-23", "used_for": "$50M gift establishing Dalio Center for Health Justice at NewYork-Presbyterian, 2020"},
+    {"url": "https://philanthropynewsdigest.org/news/dalio-philanthropies-commits-100-million-for-connecticut-partnership", "retrieved_at": "2026-04-23", "used_for": "Partnership for Connecticut $100M commitment 2019"},
+    {"url": "https://ctmirror.org/2020/06/03/ct-and-dalio-philanthropies-to-formally-dissolve-education-partnership-on-friday/", "retrieved_at": "2026-04-23", "used_for": "Partnership for Connecticut dissolution June 2020"},
+    {"url": "https://www.insidephilanthropy.com/home/2022-8-8-what-went-wrong-a-look-back-at-the-collapse-of-a-billionaire-funded-education-partnership", "retrieved_at": "2026-04-23", "used_for": "Governance-failure analysis of Partnership for CT, transparency issues, Mary Anne Schmitt-Carey firing"},
+    {"url": "https://www.foxbusiness.com/markets/controversial-ray-dalio-backed-education-charity-faces-massive-lawsuit", "retrieved_at": "2026-04-23", "used_for": "Schmitt-Carey defamation lawsuit $2.5M+ against Dalio Philanthropies"},
+    {"url": "https://www.businesswire.com/news/home/20251217847942/en/Dalios-Double-Down-on-Connecticuts-Youth", "retrieved_at": "2026-04-23", "used_for": "$75M pledge to seed Connecticut children's Trump Accounts (Dec 2025), $280M cumulative CT-lifetime figure"},
+    {"url": "https://ctmirror.org/2025/12/18/ray-dalio-75-million-connecticut-kids-trump/", "retrieved_at": "2026-04-23", "used_for": "$75M pledge news coverage"},
+    {"url": "https://www.cnbc.com/2025/12/17/ray-dalio-trump-child-savings-accounts.html", "retrieved_at": "2026-04-23", "used_for": "Trump Accounts context, Dell family parallel commitment"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/raymond-t-dalio/", "retrieved_at": "2026-04-23", "used_for": "Bloomberg Billionaires Index $20B rank 128 Feb 2026"},
+    {"url": "https://www.thestreet.com/personalities/5-high-profile-hedge-fund-founders-and-their-political-affiliations", "retrieved_at": "2026-04-23", "used_for": "Dalio self-description as apolitical bipartisan moderate, 1998 $5K last known political donation"},
+    {"url": "https://www.philanthropyroundtable.org/doers-to-donors-why-ray-dalios-philanthropy-is-a-family-business/", "retrieved_at": "2026-04-23", "used_for": "Dalio family philanthropy structure context"},
+    {"url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/ray-dalio-html", "retrieved_at": "2026-04-23", "used_for": "Mental-health grant recipients — Johns Hopkins Psychiatry, Stanley Center for Psychiatric Research at Broad, NAMI NYC, Fountain House, McLean Hospital"},
+    {"url": "https://pipelineroad.com/directory/dalio-family", "retrieved_at": "2026-04-23", "used_for": "Dalio Family Office structure"}
+  ]
+}

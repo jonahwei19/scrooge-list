@@ -1,0 +1,646 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file. Bloomberg is the CEILING control case \u2014 high-giving pledge signer classified by IPS as one of the few plausibly 'on track.' Use to calibrate Tier C boundary and sanity-check the denominator.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 HIGH GIVING control/calibration case",
+  "person": {
+    "name_display": "Michael Bloomberg",
+    "name_legal": "Michael Rubens Bloomberg",
+    "dob_year": 1942,
+    "country_primary": "United States",
+    "wealth_source": "Bloomberg L.P. (financial data/media terminal, founded 1981) \u2014 sole owner of ~88% of the company; also former 3-term mayor of New York City",
+    "years_as_billionaire_approx": 30
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 109,
+    "range_usd_billions": [
+      104,
+      110
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 Top 200 list (March 2026) ranks him #18 at $109B. Wikipedia and Yahoo Finance cite $109.4B as of early 2026. Investopedia $104.7B Jan 2025. Forbes real-time profile ~$106.2B. Narrow ~5% spread; net-worth denominator relatively stable for Bloomberg because Bloomberg L.P. is private and valued by discounted-cash-flow rather than daily stock swings.",
+    "sources": [
+      {
+        "publisher": "Forbes World's Billionaires 2026 Top 200",
+        "url": "https://www.forbes.com/sites/chasewithorn/2026/03/10/forbes-worlds-billionaires-list-2026-the-top-200/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 109,
+        "rank_on_list": 18
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes March 2026)",
+        "url": "https://en.wikipedia.org/wiki/Michael_Bloomberg",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 109.4
+      },
+      {
+        "publisher": "Forbes Real-Time Billionaires profile",
+        "url": "https://www.forbes.com/profile/michael-bloomberg/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 106.2,
+        "note": "WebFetch blocked; value taken from Brave Search result snippet \u2014 confidence medium"
+      }
+    ],
+    "liquidity_estimate_pct": 0.15,
+    "liquidity_notes": "Bloomberg's wealth is overwhelmingly concentrated in his ~88% stake in PRIVATE Bloomberg L.P. \u2014 illiquid by design; no public float. However, Bloomberg L.P. generates $10B+ in annual revenue with high margins, and Bloomberg has publicly stated he directs the 'vast majority of profits' to Bloomberg Philanthropies. Standard liquid-wealth discount (15%) applied for any 'give now' comparison. For lifetime-expected-giving calculation the structural commitment matters more than point-in-time liquidity \u2014 Bloomberg L.P. is effectively operating as a for-benefit corporation funnelling profits to charity."
+  },
+  "cited_events": [
+    {
+      "event_id": "bloomberg_bff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "recipient": "Multiple (foundation-level aggregate \u2014 recipients not itemized at summary layer)",
+      "amount_usd": 1473990509,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 1423427842,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 1247955241,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 1232358204,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 521101192,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "note": "2020 grants-out drop to $521M is anomalous vs. 2019 ($1.64B) and 2021 ($1.23B); likely a reporting-window or grant-timing artifact rather than a genuine pause. Bloomberg Philanthropies' self-reported giving for 2020 calendar year is materially higher \u2014 suggests funds flowed through non-BFF channels that year (personal, DAF, corporate). Confirms structural point that BFF 990-PF is a FLOOR, not total."
+    },
+    {
+      "event_id": "bloomberg_bff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 1640551634,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 290870944,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2014",
+      "event_role": "grant_out",
+      "year": 2014,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 149846898,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2013",
+      "event_role": "grant_out",
+      "year": 2013,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 205049182,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2012",
+      "event_role": "grant_out",
+      "year": 2012,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 131969097,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_bff_2011",
+      "event_role": "grant_out",
+      "year": 2011,
+      "donor_entity": "Bloomberg Family Foundation Inc.",
+      "donor_ein": "20-5602483",
+      "amount_usd": 117551222,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_jhu_2024",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date_precision": "day",
+      "date": "2024-07-08",
+      "donor_entity": "Bloomberg Philanthropies (umbrella; includes Bloomberg Family Foundation + personal + corporate)",
+      "recipient": "Johns Hopkins University \u2014 School of Medicine (free tuition <$300K family income), plus financial aid for Nursing, Public Health, and other graduate schools",
+      "amount_usd": 1000000000,
+      "source_type": "announcement",
+      "source_url": "https://www.bloomberg.org/press/bloomberg-philanthropies-makes-medical-school-free-at-johns-hopkins-university-for-majority-of-students/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "This $1B gift is disbursed through Bloomberg Philanthropies umbrella. Any portion flowing through BFF 990-PF in 2024 ($1.47B total grants) may be partially captured in bloomberg_bff_2024 \u2014 but BFF grants-out is LESS than the single announced JHU gift, so the majority of this $1B must have flowed via non-BFF channels (direct, corporate Bloomberg L.P., or other charitable vehicles). Flag for deduplication: DO NOT simply add $1B + $1.47B for 2024; the Chronicle $3.7B 2024 headline figure is the de-facto consolidated total and should be treated as the ceiling for 2024 observable."
+    },
+    {
+      "event_id": "bloomberg_jhu_2018",
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date_precision": "day",
+      "date": "2018-11-18",
+      "donor_entity": "Michael Bloomberg (personal) + Bloomberg Philanthropies",
+      "recipient": "Johns Hopkins University \u2014 undergraduate financial aid (need-blind admission)",
+      "amount_usd": 1800000000,
+      "source_type": "announcement",
+      "source_url": "https://www.mikebloomberg.com/news/michael-bloomberg-makes-largest-ever-contribution-education-institution-united-states/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "notes": "Largest single gift ever to a U.S. academic institution at time of announcement. NPR corroboration: https://www.npr.org/2018/11/18/669047641/michael-bloomberg-gives-1-8-billion-to-financial-aid-at-johns-hopkins-university",
+      "dedup_note": "BFF 2018 990-PF not pulled yet. If this gift flowed through BFF, it should appear in BFF grants-out for 2018 (TODO). If flowed personally or via Bloomberg L.P., it is additive to BFF. Hub JHU citation uses phrasing 'Bloomberg Philanthropies' which is umbrella, not specifically BFF."
+    },
+    {
+      "event_id": "bloomberg_hbcu_2024",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date_precision": "month",
+      "date": "2024-08",
+      "donor_entity": "Bloomberg Philanthropies (via Greenwood Initiative)",
+      "recipient": "Four HBCU medical colleges: Charles R. Drew University, Howard University College of Medicine, Meharry Medical College, Morehouse School of Medicine",
+      "amount_usd": 600000000,
+      "source_type": "announcement",
+      "source_url": "https://www.bloomberg.org/education/supporting-educational-institutions/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Same umbrella deduplication concern as JHU gifts \u2014 rolls up into 2024 Chronicle $3.7B aggregate."
+    },
+    {
+      "event_id": "bloomberg_beyond_carbon_2019",
+      "event_role": "direct_gift",
+      "year": 2019,
+      "date_precision": "month",
+      "date": "2019-06",
+      "donor_entity": "Bloomberg Philanthropies (via Beyond Carbon initiative)",
+      "recipient": "Beyond Carbon (climate advocacy campaign \u2014 grassroots, state/local govt coal retirement)",
+      "amount_usd": 500000000,
+      "source_type": "announcement",
+      "source_url": "https://www.nytimes.com/2019/06/06/climate/bloomberg-climate-pledge-coal.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_beyond_carbon_2023",
+      "event_role": "direct_gift",
+      "year": 2023,
+      "date_precision": "month",
+      "date": "2023-09",
+      "donor_entity": "Bloomberg Philanthropies",
+      "recipient": "Beyond Carbon (second-tranche expansion)",
+      "amount_usd": 500000000,
+      "source_type": "announcement",
+      "source_url": "https://earthjustice.org/press/2023/michael-r-bloomberg-doubles-down-with-additional-500m-to-help-end-fossil-fuels-and-usher-in-a-new-era-of-clean-energy-in-the-united-states",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_harvard_cities_2021",
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date_precision": "day",
+      "date": "2021-03-10",
+      "donor_entity": "Bloomberg Philanthropies",
+      "recipient": "Harvard University \u2014 Bloomberg Center for Cities",
+      "amount_usd": 150000000,
+      "source_type": "announcement",
+      "source_url": "https://news.harvard.edu/gazette/story/2021/03/bloomberg-philanthropies-harvard-create-new-bloomberg-center-for-cities/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "bloomberg_polio_to_date",
+      "event_role": "grant_out",
+      "year_range": [
+        2013,
+        2025
+      ],
+      "donor_entity": "Bloomberg Philanthropies",
+      "recipient": "Global Polio Eradication Initiative (partnership with Gates Foundation, Rotary)",
+      "amount_usd": 325000000,
+      "source_type": "annual_report",
+      "source_url": "https://www.bloomberg.org/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Cumulative total 'to date.' Almost certainly already captured inside annual BFF 990-PF grants-out for the relevant years. Included here for topical visibility \u2014 DO NOT add to observable rollup (avoid double-count with bloomberg_bff_* rows)."
+    },
+    {
+      "event_id": "bloomberg_lifetime_announcement_2024",
+      "event_role": "announcement_rollup",
+      "year": 2024,
+      "donor_entity": "Bloomberg Philanthropies (umbrella: foundation + personal + corporate)",
+      "recipient": "All recipients, all years",
+      "amount_usd": 21100000000,
+      "source_type": "annual_report",
+      "source_url": "https://www.bloomberg.org/annualreport/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "notes": "Self-reported lifetime total through 2024: $21.1B. Corroborated by TIME 100 Philanthropy 2025 profile ($21B+), Hinchilla funder-directory ($21.1B lifetime), Chronicle Philanthropy 50 (top donor 2023 and 2024 with $3.7B/yr). TIME corroboration: https://time.com/collections/time100-philanthropy-2025/7286082/michael-bloomberg-titan/",
+      "dedup_note": "This is the SELF-REPORTED CEILING. Observable via 990-PF alone is ~$10-11B (BFF lifetime cumulative grants-out, years 2006 through 2024). The $21.1B minus BFF grants-out equals roughly $10B that flowed through non-foundation channels \u2014 direct-gift vehicles, Bloomberg L.P. corporate giving, DAFs, or other entities we have not yet mapped. For tier calculation, use the 990-PF floor PLUS externally corroborated direct gifts (JHU 2018, JHU 2024, HBCU 2024, Beyond Carbon 2019+2023) and flag the delta as 'self-reported-but-partially-corroborated.'"
+    },
+    {
+      "event_id": "bloomberg_lifetime_announcement_2025",
+      "event_role": "announcement_rollup",
+      "year": 2025,
+      "donor_entity": "Bloomberg Philanthropies",
+      "recipient": "All recipients, all years",
+      "amount_usd": 25400000000,
+      "source_type": "annual_report",
+      "source_url": "https://www.bloomberg.org/about/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "notes": "Lifetime total through end-2025 per bloomberg.org/about page: $25.4B with $4.3B deployed in 2025 (Brave Search snippet). Implies 2025 annual giving ~$4.3B \u2014 higher than 2024 ($3.7B). No independent press corroboration of the 2025 annual figure yet retrieved."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "bloomberg_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "pledged_pct_wealth": 99,
+      "pledged_amount_usd_at_signing_estimate": 18000000000,
+      "status": "ON_TRACK",
+      "status_source": "IPS Giving Pledge at 15 (July 2025). Despite IPS's overall critical framing (only 9 of 256 pledgers fulfilled, 247 not-on-track), Bloomberg is typically cited by IPS and press as the CEILING example \u2014 a centibillionaire whose annual giving materially approaches the rate needed to fulfill. $21.1B lifetime giving vs. 99% of $109B net worth = $108B target. Still a $87B gap, but observable giving trajectory (~$4B/yr and rising) would close a material fraction within his lifetime at current wealth.",
+      "pledge_letter_quote": "I've been committed to giving away the vast majority of my wealth to causes that I'm passionate about\u2014and that my children are passionate about. And so I am enthusiastically taking the Giving Pledge, and nearly all of my net worth will be given away in the years ahead or left to my foundation.",
+      "pledge_letter_distinctive_quote": "The reality of great wealth is that you can't spend it and you can't take it with you... What other company can you work for where the owner gives nearly all the profits to charity?",
+      "source_url": "https://www.givingpledge.org/pledger/michael-bloomberg/",
+      "retrieved_at": "2026-04-23",
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "notes": "Wealth at 2010 signing ~$18B. Pledge language ('nearly all') is effectively 95-99%. Current net worth $109B; 99% target = $108B. Cumulative giving-to-date $21.1B. Observable ratio to pledge target ~19.4%. This is an order of magnitude higher than typical Giving Pledge signer (Ellison 0.2%). IPS report 'Giving Pledge at 15' explicitly references Bloomberg School of Public Health at Johns Hopkins (funded by the $1.8B 2018 gift, plus later gifts) as an example of pledgers' giving being visible/corroborable."
+    },
+    {
+      "event_id": "bloomberg_lp_succession_plan",
+      "event_role": "pledge",
+      "year": 2014,
+      "pledged_pct_wealth": 88,
+      "status": "ANNOUNCED_NOT_EXECUTED",
+      "pledged_amount_usd": 95000000000,
+      "recipient": "Bloomberg Family Foundation / Bloomberg Philanthropies",
+      "source_type": "announcement",
+      "source_url": "https://www.alliancemagazine.org/blog/michael-bloomberg-to-transfer-his-company-to-charity/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "notes": "Bloomberg has stated his ~88% stake in Bloomberg L.P. will pass to Bloomberg Philanthropies / Bloomberg Family Foundation. This is the structural mechanism by which the Giving Pledge is expected to be fulfilled \u2014 his estate is effectively a charitable remainder at the corporate-ownership level. Valued at ~$95B using current net worth \u00d7 88%. Not yet executed; depends on death/estate. Classification: pledge_in_structure (disclosed but not disbursed).",
+      "dedup_note": "This is a future commitment, not observable giving. Bloomberg's will/estate document is non-public so structural form is unverified. Flag for trust_outcome_uncertainty parallel to Ellison's disclosed trust."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. HOWEVER, for Bloomberg the effect size may be smaller because his charitable giving rate ($3.7B/yr) dwarfs his political giving ($50M/yr typical).",
+    "observed_total_2024_cycle_usd": 97000000,
+    "observed_total_note": "2024 election cycle disclosed minimum: $47M federally disclosed PRE-Harris-nomination switch, PLUS $50M Harris super-PAC gift October 2024. Total ~$97M for 2024 cycle. Does NOT include $1B+ spent on his own 2020 presidential primary campaign (that is campaign finance for a candidate, not donor political giving, and is excluded from this classification).",
+    "sources": [
+      {
+        "url": "https://www.nytimes.com/2024/10/28/us/elections/michael-bloomberg-presidential-race-donations.html",
+        "retrieved_at": "2026-04-23",
+        "publisher": "New York Times",
+        "amount_usd": 50000000,
+        "event_date": "2024-10",
+        "note": "$50M to Future Forward (Harris-aligned super-PAC) in October 2024; article confirms $47M in earlier federally-disclosed political contributions in 2024 cycle including $19M to Biden/Harris Future Forward."
+      },
+      {
+        "url": "https://www.forbes.com/sites/saradorn/2024/10/28/michael-bloomberg-gives-harris-50-million-report-says/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Forbes",
+        "amount_usd": 47000000,
+        "event_date": "2024",
+        "cumulative_cycle": "2024"
+      },
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000003704&name=Bloomberg,+Michael+R.&super_only=N&type=I",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets"
+      }
+    ],
+    "own_campaign_spending_excluded_usd": 1000000000,
+    "own_campaign_note": "Bloomberg self-funded ~$1B for his own 2020 Democratic presidential primary campaign (Feb-March 2020). Per Forbes/Chronicle methodology, candidate self-funding is NOT political donor giving and NOT philanthropy. Excluded from both classifications. Reference: https://www.nbcnews.com/politics/meet-the-press/blog/meet-press-blog-latest-news-analysis-data-driving-political-discussion-n988541/ncrd1188321"
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Bloomberg Family Foundation Inc. (dba Bloomberg Philanthropies)",
+        "ein": "20-5602483",
+        "established_year": 2006,
+        "state": "NY",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 12100000000,
+        "officers_compensation": "Most directors receive $12,900/yr (nominal board fee). CEO Patricia E. Harris receives $12,900 per filing. Mark Carney, Rev. Joseph M. McShane, Samuel J. Palmisano receive $0. NO high-compensation flag.",
+        "payout_rate_notes": "2024 grants-out $1.47B / assets $12.1B = 12.2% payout \u2014 WELL above 5% legal minimum. Every recent year >10% payout. Foundation is self-replenishing because Bloomberg directs Bloomberg L.P. profits into it faster than it disburses. NO LOW_PAYOUT flag.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED via grant-schedule parsing. Bloomberg Philanthropies has self-reported that it does NOT primarily use DAFs as intermediaries \u2014 its spending is direct to operating nonprofits and re-granting entities. Confidence: medium pending Schedule I review.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF vehicle identified as primary giving channel. Bloomberg's umbrella Philanthropies is a PF plus personal plus corporate giving; DAF is not the structural primary. Absence-of-evidence caveat still applies \u2014 flag for confirmation against 990-PF Schedule I.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC like CZI/Emerson Collective identified. Bloomberg L.P. itself is a for-profit C-corp, but is structurally promised to the foundation at succession. No LLC-based opacity concern in current disclosure.",
+    "for_profit_hybrid_vehicles": [],
+    "corporate_giving_through_business": [
+      {
+        "name": "Bloomberg L.P. corporate giving",
+        "mechanism": "Bloomberg L.P. (the private company, ~88% owned by M. Bloomberg) directs a 'majority of profits' to Bloomberg Philanthropies annually. Not a separate 501(c)(3) but a disclosed corporate channel of philanthropic disbursement.",
+        "source_url": "https://www.bloomberg.org/about/",
+        "classification_note": "Under Forbes/Chronicle methodology, corporate gifts from a privately-held company controlled by the billionaire generally count as the billionaire's personal philanthropy when they consolidate under the umbrella (Chronicle treats Bloomberg as a single donor). For this scrooge record, we defer to the Chronicle/IPS consolidated treatment and include corporate channel dollars within the Bloomberg Philanthropies aggregate."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. Absence of public reporting so far.",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "charitable_succession_via_bloomberg_lp_ownership",
+        "source_quote": "nearly all of my net worth will be given away in the years ahead or left to my foundation",
+        "source_url": "https://www.givingpledge.org/pledger/michael-bloomberg/",
+        "classification_note": "Bloomberg's succession plan \u2014 Bloomberg L.P. shares to Bloomberg Philanthropies on death \u2014 is functionally a charitable remainder commitment. Specific legal instrument (CRT, CLT, direct bequest, or foundation share-transfer) is not publicly disclosed. Unlike Ellison, Bloomberg has a multi-decade track record of pre-death giving that corroborates pledge intent."
+      }
+    ]
+  },
+  "red_flags": [],
+  "red_flags_not_present": [
+    "NO_OBSERVABLE_GIVING ($21.1B lifetime, $3.7B most recent year \u2014 orders of magnitude above any threshold)",
+    "PLEDGE_UNFULFILLED (IPS classifies as 'not yet fulfilled' but clearly on-trajectory; observable/pledge-target ratio ~19% and rising \u2014 by far the most fulfilled centibillionaire pledger)",
+    "LOW_PAYOUT (BFF 2024 payout rate 12.2%, well above 5% minimum; persistent history of >10%)",
+    "HIGH_OFFICER_COMP (officers at $12,900 nominal board fee; CEO Harris zero above that; others $0)",
+    "DAF_TRANSFERS (no evidence BFF uses DAFs as primary intermediary; direct-to-operating-nonprofit model)",
+    "FOR_PROFIT_PIVOT (no pivot to for-profit 'hybrid' \u2014 structure is classical C3 plus corporate flow)",
+    "POLITICAL_DOMINATES_CHARITABLE (Political $97M in 2024 vs. Charitable $3.7B = ratio 2.6% \u2014 political is a rounding error)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 21100000000,
+    "observable_giving_method": "Self-reported lifetime total from bloomberg.org/annualreport (2024) = $21.1B. Corroborated bottom-up: BFF 990-PF cumulative grants-out 2006-2024 is ~$10-11B (partial years shown: $1.47B 2024, $1.42B 2023, $1.25B 2022, $1.23B 2021, $521M 2020, $1.64B 2019, $291M 2015, $150M 2014, $205M 2013, $132M 2012, $118M 2011 \u2014 sum of years shown = $8.43B; extrapolated with pre-2011 and unshown years = ~$10B). Plus externally corroborated direct gifts: JHU 2018 $1.8B, JHU 2024 $1B, HBCU 2024 $0.6B, Beyond Carbon 2019 $0.5B, Beyond Carbon 2023 $0.5B, Harvard Cities 2021 $0.15B = $4.55B. Bottom-up corroborated floor = $10B BFF + $4.55B direct = ~$14.5B. Residual $6.6B between self-reported $21.1B and corroborated $14.5B is plausibly explained by (a) Bloomberg L.P. corporate giving outside BFF, (b) unrecorded small/mid gifts through personal channels, (c) BFF grants-out for years not yet retrieved (2006-2010, 2016-2018). Confidence MEDIUM on the $21.1B ceiling, HIGH on the $14.5B corroborated floor.",
+    "observable_giving_todo": [
+      "Pull BFF 990-PF for years 2016, 2017, 2018 \u2014 close the gap between corroborated floor and self-reported ceiling.",
+      "Pull BFF 990-PF for 2006-2010 startup years.",
+      "Verify whether JHU 2018 $1.8B flowed through BFF (which would make it partially-double-counted) or personal/corporate channels.",
+      "Pull Bloomberg L.P. disclosure of annual philanthropy allocation from profits."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1635000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.15 \u00d7 $109B = $16.35B; tenure cap saturated (30 years). Expected = $1.64B. Note: liquidity discount is aggressive because Bloomberg L.P. is private \u2014 but given structural pledge and committed profit flow, the EFFECTIVE liquid-for-philanthropy number is much higher than the raw 15% discount suggests.",
+    "observable_ratio_to_expected": 12.9,
+    "observable_ratio_to_current_nw": 0.194,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence; low priority for Bloomberg given direct-gift structural model.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 500000000,
+      "anonymous_cohort_method": "Small hidden-anonymous uplift \u2014 Bloomberg's giving is predominantly NAMED (JHU Bloomberg School, Bloomberg Center for Cities, etc.), which means the anonymous-cohort proxy should be LOWER, not higher, than average centibillionaire. Apply 0.5% of liquid wealth = $82M, rounded up to $500M to account for small and mid-gifts that never hit press; plus unnamed gifts from Bloomberg L.P. corporate CSR.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Bloomberg is culturally Jewish but not religiously observant in a tithing sense. Zero tithing-driven hidden giving assumed.",
+      "trust_outcome_uncertainty_usd": 95000000000,
+      "trust_outcome_method": "Bloomberg has publicly committed ~88% of Bloomberg L.P. (~$95B at current valuation) to the foundation at succession. Unlike Ellison's opaque trust, Bloomberg's commitment is repeatedly restated in public, structurally signalled, and corroborated by a multi-decade history of giving that follows his stated model (including a published annual report with audited figures). Trust outcome uncertainty is therefore relatively LOW as a share of the committed amount; we set the uplift at the full nominal $95B for the ceiling-case upper bound, but flag that the REALIZED amount depends on Bloomberg's lifetime remaining, Bloomberg L.P. valuation at succession, and any partial inter-vivos transfers (which are ongoing at a ~$3-4B/yr rate).",
+      "total_usd": 95500000000,
+      "total_method": "anonymous_cohort + trust_outcome (daf/llc/offshore/religious all zero). Total hidden-upper $95.5B."
+    },
+    "observable_plus_hidden_ratio_to_expected": 71.2,
+    "tier": "ON_TRACK / GENEROUS (Tier C \u2014 'Probably High Giving')",
+    "tier_rule": "Observable giving $21.1B against expected $1.64B = 12.9\u00d7 expected. Observable ratio to current net worth 19.4% (vs. 10% norm). This is CEILING behavior \u2014 Bloomberg is one of the clearest examples of a pledge signer actively delivering. Classification: Tier C (probably high giving, i.e. NOT a Scrooge). Publicly, the Scrooge List should either (a) not rank Bloomberg at all since he's outside the target population, or (b) show him at the bottom/'most generous' end as a calibration anchor with a positive color.",
+    "tier_published_caveat": "Bloomberg is the reference point for 'what a centibillionaire actively fulfilling the pledge looks like' \u2014 high base rate of disclosed giving (~$3.7B/yr, $21.1B cumulative), structural Bloomberg L.P. succession commitment, clean foundation governance (12%+ payout, nominal comp), no red flags. His observable/pledge-target ratio (~19%) is ~95\u00d7 Ellison's (~0.2%). Use Bloomberg to calibrate the upper boundary of the Scrooge tier system. Any scoring formula that classifies Bloomberg as 'Scrooge-like' is prima facie miscalibrated.",
+    "scoring_sanity_check": "v1 pipeline output (from CLAUDE.md Sample Output table) shows Bloomberg at Score 75.0 with $24B observable at $96B net worth. v3 should produce a MUCH LOWER Scrooge score. The v1 75.0 score appears to be a formula miscalibration \u2014 Bloomberg with 25% observable/NW ratio sitting in same rank band as Schwarzman (1.4%), Ballmer (1.7%), Knight (3.8%) is clearly wrong. Flag for v3 formula work."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 10.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 10.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 0.0
+    },
+    "note": "Near-floor scrooge score \u2014 Bloomberg is not a Scrooge. Tenure penalty retained because he's been a billionaire 30 years (still gets partial-denominator weight in a mechanical formula). DO NOT PUBLISH as a number; publish tier only."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Bloomberg Philanthropies press@bloomberg.org; Bloomberg L.P. corporate communications. Bloomberg Philanthropies is a well-resourced press operation and will respond substantively.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null,
+    "anticipated_response_type": "Likely constructive \u2014 Bloomberg's team publishes lifetime totals openly and invites verification; challenge would be ensuring our methodology credits corporate-channel + personal-channel giving at parity with foundation-channel."
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Pull BFF 990-PF for years 2016, 2017, 2018 to close corroborated-floor gap to $14.5B.",
+    "VERIFY: Determine whether JHU 2018 $1.8B gift flowed through BFF (look at 2018 BFF 990-PF Schedule I) or personal/corporate channel \u2014 deduplication critical.",
+    "VERIFY: Pull Bloomberg L.P. annual philanthropy disclosure (if any) to quantify corporate channel relative to foundation channel.",
+    "VERIFY: Run SEC EDGAR Form 4 \u2014 Bloomberg L.P. is private, but if Bloomberg holds any other public equity (e.g., Bloomberg personal portfolio) stock-gift Form 4s may exist.",
+    "VERIFY: FEC bulk pull to confirm $97M 2024-cycle political total.",
+    "VERIFY: IPS Giving Pledge at 15 \u2014 extract any Bloomberg-specific 'on-track' classification line (report references Bloomberg School of Public Health at JHU).",
+    "VERIFY: Run Brave Search for 2025-2026 announced Bloomberg gifts not yet captured (freshness window).",
+    "VERIFY: Cross-check self-reported $25.4B lifetime through 2025 against bottom-up."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "retrieved_at": "2026-04-23",
+      "used_for": "BFF 990-PF data 2011-2024, assets, officer compensation, EIN"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/michael-bloomberg/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2010 Giving Pledge letter verbatim text, 'nearly all' commitment"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-23",
+      "used_for": "IPS classification context (9 of 256 fulfilled); Bloomberg School of Public Health at JHU referenced as visible pledge-aligned giving"
+    },
+    {
+      "url": "https://www.bloomberg.org/annualreport/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Self-reported lifetime $21.1B through 2024; $3.7B 2024 annual giving"
+    },
+    {
+      "url": "https://www.bloomberg.org/about/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Self-reported lifetime $25.4B through 2025; $4.3B 2025 annual giving; structural 'Bloomberg L.P. profits to Bloomberg Philanthropies' disclosure"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bloomberg_Philanthropies",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Chronicle Philanthropy 50 top donor 2023+2024; $3.7B 2024"
+    },
+    {
+      "url": "https://observer.com/2025/03/michael-bloomberg-americas-most-generous-philanthropist/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Chronicle Philanthropy 50 top donor 2024 corroboration"
+    },
+    {
+      "url": "https://www.philanthropy.com/news/michael-bloomberg-tops-list-of-americas-biggest-donors-for-the-second-year-in-a-row/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Chronicle 2024 ranking and $3.7B breakdown across categories"
+    },
+    {
+      "url": "https://www.cnbc.com/2025/03/07/billionaire-michael-bloomberg-dont-wait-too-long-to-give-wealth-away.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$3.7B 2024 giving corroboration; give-during-lifetime philosophy"
+    },
+    {
+      "url": "https://time.com/collections/time100-philanthropy-2025/7286082/michael-bloomberg-titan/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$21B+ lifetime corroboration from TIME 100 Philanthropy 2025"
+    },
+    {
+      "url": "https://www.bloomberg.org/press/bloomberg-philanthropies-makes-medical-school-free-at-johns-hopkins-university-for-majority-of-students/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "JHU 2024 $1B free-medical-school gift announcement"
+    },
+    {
+      "url": "https://hub.jhu.edu/2024/07/08/johns-hopkins-investment-financial-aid-medical-students/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "JHU 2024 gift details (<$300K family income full cost-of-attendance)"
+    },
+    {
+      "url": "https://www.nytimes.com/2024/07/08/us/bloomberg-donation-johns-hopkins-medical.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "JHU 2024 $1B gift NYT corroboration"
+    },
+    {
+      "url": "https://www.mikebloomberg.com/news/michael-bloomberg-makes-largest-ever-contribution-education-institution-united-states/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "JHU 2018 $1.8B gift \u2014 largest ever to U.S. academic institution"
+    },
+    {
+      "url": "https://www.npr.org/2018/11/18/669047641/michael-bloomberg-gives-1-8-billion-to-financial-aid-at-johns-hopkins-university",
+      "retrieved_at": "2026-04-23",
+      "used_for": "JHU 2018 $1.8B NPR corroboration"
+    },
+    {
+      "url": "https://www.bloomberg.org/education/supporting-educational-institutions/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "HBCU medical colleges 2024 $600M gift"
+    },
+    {
+      "url": "https://blackeconomicalliance.org/press-release/the-black-economic-alliance-applauds-bloomberg-philanthropies-historic-gift-to-hbcu-medical-colleges-investing-in-the-next-generation-of-black-doctors/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "HBCU $600M 2024 corroboration"
+    },
+    {
+      "url": "https://www.nytimes.com/2019/06/06/climate/bloomberg-climate-pledge-coal.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Beyond Carbon 2019 $500M launch"
+    },
+    {
+      "url": "https://earthjustice.org/press/2023/michael-r-bloomberg-doubles-down-with-additional-500m-to-help-end-fossil-fuels-and-usher-in-a-new-era-of-clean-energy-in-the-united-states",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Beyond Carbon 2023 $500M expansion"
+    },
+    {
+      "url": "https://news.harvard.edu/gazette/story/2021/03/bloomberg-philanthropies-harvard-create-new-bloomberg-center-for-cities/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Harvard Bloomberg Center for Cities 2021 $150M"
+    },
+    {
+      "url": "https://www.forbes.com/sites/chasewithorn/2026/03/10/forbes-worlds-billionaires-list-2026-the-top-200/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes 2026 net worth $109B, rank #18"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Michael_Bloomberg",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Net worth corroboration ($109.4B March 2026); biographical data"
+    },
+    {
+      "url": "https://www.nytimes.com/2024/10/28/us/elections/michael-bloomberg-presidential-race-donations.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$50M Harris super-PAC Oct 2024 + $47M prior 2024 federal political giving"
+    },
+    {
+      "url": "https://www.forbes.com/sites/saradorn/2024/10/28/michael-bloomberg-gives-harris-50-million-report-says/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$50M Harris gift Forbes corroboration"
+    },
+    {
+      "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000003704&name=Bloomberg,+Michael+R.&super_only=N&type=I",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2024 political cycle donor detail"
+    },
+    {
+      "url": "https://www.nbcnews.com/politics/meet-the-press/blog/meet-press-blog-latest-news-analysis-data-driving-political-discussion-n988541/ncrd1188321",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg 2020 self-funded ~$1B own-primary campaign (excluded as candidate-self-funding, not philanthropy or donor giving)"
+    },
+    {
+      "url": "https://www.alliancemagazine.org/blog/michael-bloomberg-to-transfer-his-company-to-charity/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg L.P. succession plan \u2014 company to foundation at death; $1.1B personal giving outside foundation mentioned"
+    },
+    {
+      "url": "https://www.bloomberg.org/environment/advancing-clean-energy/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Beyond Carbon initiative overview"
+    },
+    {
+      "url": "https://www.hinchilla.com/funder-directory/bloomberg-philanthropies",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$21.1B lifetime + $3.7B 2024 corroboration (funder directory aggregator)"
+    },
+    {
+      "url": "https://ejewishphilanthropy.com/your-daily-phil-bloomberg-again-tops-biggest-donor-list-giving-3-7b-in-2024/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2024 top-donor corroboration"
+    }
+  ],
+  "_source_file": "michael_bloomberg.v3.json"
+}

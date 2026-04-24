@@ -1,0 +1,122 @@
+{
+  "name": "Warren Buffett",
+  "net_worth_billions": 146.8,
+  "country": "United States",
+  "research_date": "2026-01-02T13:45:00",
+  "research_method": "Web search via Brave Search API",
+
+  "foundations": {
+    "category": "FOUNDATIONS",
+    "total": 0,
+    "confidence": "LOW",
+    "notes": "Buffett's foundation giving goes through the Susan Thompson Buffett Foundation and Howard G. Buffett Foundation. Would need to look up their 990s separately.",
+    "findings": []
+  },
+
+  "direct_gifts": {
+    "category": "DIRECT_GIFTS",
+    "total": 60000000000,
+    "confidence": "HIGH",
+    "notes": "Warren Buffett's Berkshire Hathaway stock donations since 2006",
+    "findings": [
+      {
+        "amount": 36000000000,
+        "recipient": "Bill & Melinda Gates Foundation",
+        "year": "2006-2022",
+        "source_url": "https://www.gatesfoundation.org/about/leadership/warren-buffett",
+        "description": "Cumulative contributions to Gates Foundation valued at time of receipt",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 6000000000,
+        "recipient": "Gates Foundation + 4 family charities",
+        "year": "2025",
+        "source_url": "https://fortune.com/2025/06/30/warren-buffett-donates-6-billion-gates-foundation-charities/",
+        "description": "12.36 million Berkshire Class B shares worth $6B",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 5300000000,
+        "recipient": "Gates Foundation + family charities",
+        "year": "2024",
+        "source_url": "https://www.reuters.com/business/warren-buffett-donate-up-53-bln-berkshire-shares-2024-06-28/",
+        "description": "Record annual donation at the time",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 12700000000,
+        "recipient": "Various (Gates + family charities)",
+        "year": "2023 and earlier",
+        "source_url": "https://www.cnbc.com/2025/07/02/with-6-billion-donation-buffett-has-now-given-away-over-60-billion.html",
+        "description": "Remainder to bring total to $60B+",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+
+  "securities": {
+    "category": "SECURITIES",
+    "total": 0,
+    "confidence": "LOW",
+    "notes": "Buffett's giving IS securities (Berkshire stock). Already counted in direct_gifts.",
+    "findings": []
+  },
+
+  "dafs": {
+    "category": "DAFS",
+    "total": 0,
+    "confidence": "LOW",
+    "notes": "Buffett doesn't use DAFs - gives Berkshire stock directly to foundations",
+    "findings": []
+  },
+
+  "split_interest": {
+    "category": "SPLIT_INTEREST",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No charitable trusts found",
+    "findings": []
+  },
+
+  "llcs": {
+    "category": "PHILANTHROPIC_LLCS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No philanthropic LLCs - Buffett uses traditional stock gifts",
+    "findings": []
+  },
+
+  "religious": {
+    "category": "RELIGIOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No religious giving found",
+    "findings": []
+  },
+
+  "anonymous": {
+    "category": "ANONYMOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "Anonymous giving not trackable",
+    "findings": []
+  },
+
+  "summary": {
+    "total_found_raw": 60000000000,
+    "deduplication_notes": "All of Buffett's giving is Berkshire stock to foundations. The $60B+ total is well-documented and represents actual transfers (not pledges).",
+    "duplicates_removed": 0,
+    "total_after_dedup": 60000000000,
+    "total_observable_high_conf": 47300000000,
+    "total_with_medium_conf": 60000000000,
+    "giving_rate_pct": 40.87,
+    "scrooge_score_notes": "Buffett has given away ~$60B, which is ~41% of his current $146.8B net worth. He's clearly the anti-Scrooge. Note: His wealth has grown faster than he can give it away, so the percentage looks lower than his commitment."
+  },
+
+  "sources": [
+    "https://www.gatesfoundation.org/about/leadership/warren-buffett",
+    "https://fortune.com/2025/06/30/warren-buffett-donates-6-billion-gates-foundation-charities/",
+    "https://www.reuters.com/business/warren-buffett-donate-up-53-bln-berkshire-shares-2024-06-28/",
+    "https://www.cnbc.com/2025/07/02/with-6-billion-donation-buffett-has-now-given-away-over-60-billion.html"
+  ]
+}

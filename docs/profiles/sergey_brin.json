@@ -1,0 +1,787 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research",
+  "person": {
+    "name_display": "Sergey Brin",
+    "name_legal": "Sergey Mikhailovich Brin",
+    "dob_year": 1973,
+    "country_primary": "United States",
+    "wealth_source": "Alphabet / Google co-founder; large Class B and Class C Alphabet stake; Bayshore Global Management (family office) manages non-Alphabet holdings including Tesla stock",
+    "years_as_billionaire_approx": 22,
+    "biographical_notes": "Co-founded Google with Larry Page in 1998. Diagnosed with LRRK2 mutation (Parkinson's risk variant) after 23andMe testing c. 2008 \u2014 this is the documented origin of his multibillion-dollar commitment to Parkinson's research. Divorced Anne Wojcicki (23andMe co-founder) in 2015; the jointly-operated Brin Wojcicki Foundation pre-dates the split."
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 248.4,
+    "range_usd_billions": [
+      238,
+      256
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 RTB: $255.6B at Jan 13 2026 (rank #3, after Alphabet hit $4T); Livemint citing Forbes RTB $248.4B late 2025; Times of India reporting Forbes 2026 $238.4B (rank #5). ~7% spread across sources. Alphabet AI rally in 2025 drove a large step-up; ranking and value have been volatile week-to-week.",
+    "sources": [
+      {
+        "publisher": "Forbes (Jan 2026)",
+        "url": "https://www.forbes.com/sites/tylerroush/2026/01/13/sergey-brin-becomes-worlds-no-3-richest-overtakes-jeff-bezos-larry-ellison-after-alphabet-hits-4-trillion/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 255.6,
+        "rank_on_list": 3
+      },
+      {
+        "publisher": "Livemint citing Forbes RTB",
+        "url": "https://www.livemint.com/companies/people/sergey-brin-net-worth-hits-248-4-billion-making-him-3rd-richest-as-google-co-founder-duo-now-trail-elon-musk-11764085319464.html",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 248.4
+      },
+      {
+        "publisher": "Times of India citing Forbes 2026",
+        "url": "https://timesofindia.indiatimes.com/world/rest-of-world/top-10-richest-men-in-the-world-2026-elon-musk-leads-with-over-700-billion-fortune-ahead-of-larry-page-jeff-bezos-and-mark-zuckerberg/articleshow/126415009.cms",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 238.4
+      }
+    ],
+    "liquidity_estimate_pct": 0.45,
+    "liquidity_notes": "Concentrated in Alphabet (public; Brin's stake is ~5-6% of shares outstanding \u2014 divestiture moves the stock but less than Ellison's Oracle position). Large Tesla holdings also liquid. Bayshore Global Management holds non-public investments. Higher liquidity than Ellison because stake is smaller relative to total float. Apply 45% liquidity discount for 'giving capacity now' calculations."
+  },
+  "cited_events": [
+    {
+      "event_id": "brin_sbff_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "recipient": "Multiple (Michael J. Fox Foundation $253M, UCSF $68.1M, Climate Imperative Foundation $49M, Stanford $32M, and others per 990-PF)",
+      "amount_usd": 722400000,
+      "amount_usd_note": "ProPublica summary: charitable disbursements $722.4M; contributions received into the foundation $161.2M in same year. IP reported $698M in a prior version and $900M grants-made in a later version; the $722.4M figure tracks ProPublica 990-PF summary.",
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 389500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 519400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 242400000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 253300000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 125700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2018",
+      "event_role": "grant_out",
+      "year": 2018,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 55100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2017",
+      "event_role": "grant_out",
+      "year": 2017,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 43300000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2016",
+      "event_role": "grant_out",
+      "year": 2016,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 25100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 2500000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_sbff_2014",
+      "event_role": "grant_out",
+      "year": 2014,
+      "donor_entity": "Sergey Brin Family Foundation",
+      "donor_ein": "47-2107200",
+      "amount_usd": 0,
+      "amount_note": "Founding year \u2014 vehicle received $268.3M in initial contributions but disbursed no grants that year.",
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_bwf_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "The Brin Wojcicki Foundation",
+      "donor_ein": "20-1922947",
+      "amount_usd": 50700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922947",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Brin Wojcicki Foundation was jointly operated with ex-wife Anne Wojcicki. Per ProPublica, filings exist through FY2019 but post-2015 detail is thin. Attribution between Brin and Wojcicki is unclear post-2015 (divorce 2015); in strict accounting this should be split 50/50, but since Anne is separately tracked and has her own Giving Pledge (2022), this record counts BWF fully under Brin for rollup purposes with note."
+    },
+    {
+      "event_id": "brin_bwf_2014",
+      "event_role": "grant_out",
+      "year": 2014,
+      "donor_entity": "The Brin Wojcicki Foundation",
+      "donor_ein": "20-1922947",
+      "amount_usd": 21300000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922947",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_bwf_2013",
+      "event_role": "grant_out",
+      "year": 2013,
+      "donor_entity": "The Brin Wojcicki Foundation",
+      "donor_ein": "20-1922947",
+      "amount_usd": 25700000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922947",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_bwf_2012",
+      "event_role": "grant_out",
+      "year": 2012,
+      "donor_entity": "The Brin Wojcicki Foundation",
+      "donor_ein": "20-1922947",
+      "amount_usd": 9100000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922947",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_bwf_2011",
+      "event_role": "grant_out",
+      "year": 2011,
+      "donor_entity": "The Brin Wojcicki Foundation",
+      "donor_ein": "20-1922947",
+      "amount_usd": 8800000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922947",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_catalyst4_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Catalyst4 Inc. (501(c)(4))",
+      "donor_ein": "87-3323607",
+      "amount_usd": 13097520,
+      "amount_note": "2022 total expenses ~$13.1M; ~$13M on climate change, ~$78K on neurological research. Notable recipients: Sixteen Thirty Fund $7M, Energy Action Fund $5.7M.",
+      "source_type": "990",
+      "source_url": "https://www.influencewatch.org/non-profit/catalyst4/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_catalyst4_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Catalyst4 Inc.",
+      "donor_ein": "87-3323607",
+      "amount_usd": 44000000,
+      "amount_note": "Inside Philanthropy report: ~$22M climate, balance across CNS disease and other causes. Separately Inside Philanthropy reports $44M in total Catalyst4 grants in 2024.",
+      "source_type": "announcement",
+      "source_url": "https://www.insidephilanthropy.com/home/sergey-brins-grantmaking-soars-past-major-legacy-foundations",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "501(c)(4) not 501(c)(3). Under IPS/Forbes/Chronicle methodology 501(c)(4)s count for social welfare but are distinct from traditional charitable giving because they can lobby and political-advocate. Flag for reclassification review."
+    },
+    {
+      "event_id": "brin_stockgift_2023_600m",
+      "event_role": "transfer_in",
+      "year": 2023,
+      "donor_entity": "Sergey Brin (personal)",
+      "recipient": "Sergey Brin Family Foundation and/or Catalyst4 (exact split not disclosed)",
+      "amount_usd": 600000000,
+      "source_type": "news",
+      "source_url": "https://philanthropynewsdigest.org/news/sergey-brin-donates-700-million-worth-of-alphabet-shares",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "This is a transfer INTO Brin's foundations. Per dedup rule #2, count foundation grants OUT \u2014 not transfers IN \u2014 to avoid double counting. The foundation will disburse these funds in future years and they will then appear as grants_out."
+    },
+    {
+      "event_id": "brin_stockgift_2024_200m",
+      "event_role": "transfer_in",
+      "year": 2024,
+      "donor_entity": "Sergey Brin (personal)",
+      "recipient": "Sergey Brin Family Foundation",
+      "amount_usd": 200000000,
+      "amount_note": "~$100M each in May 2024 and December 2024, per SEC Form 4 filings reported by Bloomberg/PND.",
+      "source_type": "news",
+      "source_url": "https://philanthropynewsdigest.org/news/sergey-brin-donates-700-million-worth-of-alphabet-shares",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Transfer IN \u2014 matched against SBFF 2024 contributions_received $161.2M on ProPublica; press $200M vs. 990 $161.2M suggests part landed in Catalyst4 or across fiscal-year boundary."
+    },
+    {
+      "event_id": "brin_stockgift_2025_may_700m",
+      "event_role": "transfer_in",
+      "year": 2025,
+      "date_precision": "month",
+      "date": "2025-05",
+      "donor_entity": "Sergey Brin (personal)",
+      "recipient": "Catalyst4 (~80% of shares) + Sergey Brin Family Foundation",
+      "amount_usd": 700000000,
+      "source_type": "news",
+      "source_url": "https://www.forbes.com/sites/phoebeliu/2025/05/27/where-google-cofounder-sergey-brin-is-putting-his-new-700-million-charitable-gift/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Transfer IN. Will flow OUT in subsequent years and be captured then as grants_out."
+    },
+    {
+      "event_id": "brin_stockgift_2025_nov_1p1b",
+      "event_role": "transfer_in",
+      "year": 2025,
+      "date_precision": "day",
+      "date": "2025-11-26",
+      "donor_entity": "Sergey Brin (personal)",
+      "recipient": "Primary: Catalyst4 (~$1B); Sergey Brin Family Foundation (~$90M); Michael J. Fox Foundation direct (~$45M)",
+      "amount_usd": 1135000000,
+      "amount_note": "1,778,650 Class A + 1,778,650 Class C Alphabet shares = ~3.56M shares per SEC Form 4. Valued at ~$1.1B based on market price. Recipient allocations disclosed by Brin's family-office spokesperson.",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "The $45M direct gift to Michael J. Fox Foundation IS a direct_gift (counts as grant_out). The $1B to Catalyst4 and $90M to SBFF are transfers_in. Split event when rolling up."
+    },
+    {
+      "event_id": "brin_mjff_2025_nov_direct",
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date": "2025-11-26",
+      "donor_entity": "Sergey Brin (personal)",
+      "recipient": "Michael J. Fox Foundation for Parkinson's Research",
+      "amount_usd": 45000000,
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Direct personal gift to 501(c)(3) \u2014 counts as grant_out under dedup rules. Separated from the Catalyst4/SBFF portions of the same Nov 2025 transaction."
+    },
+    {
+      "event_id": "brin_hias_2009",
+      "event_role": "direct_gift",
+      "year": 2009,
+      "donor_entity": "Sergey Brin (personal)",
+      "recipient": "Hebrew Immigrant Aid Society (HIAS)",
+      "amount_usd": 1000000,
+      "source_type": "news",
+      "source_url": "https://techcrunch.com/2009/10/25/sergey-brin-donates-1-million-to-organization-that-helped-him-migrate-to-the-u-s/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "brin_parkinsons_lifetime",
+      "event_role": "aggregate_claim",
+      "year_range": [
+        2009,
+        2025
+      ],
+      "donor_entity": "Sergey Brin (all vehicles combined)",
+      "recipient": "Parkinson's disease research \u2014 primarily Michael J. Fox Foundation, Aligning Science Across Parkinson's (ASAP), and affiliated grantees",
+      "amount_usd": 1500000000,
+      "amount_usd_note": "Forbes Feb 2025 ('more than $1.5B'). Earlier Forbes Dec 2022 cited '$1B+'. Philanthropy News Digest in 2024 cited '$1.1B'. By late 2025 press: closer to $1.5-2B. This is a cross-vehicle aggregate claim, not a discrete event \u2014 used for narrative, NOT additive to observable_giving rollup (the underlying grants are captured by SBFF/BWF/Catalyst4 990 rows and the direct-gift rows above).",
+      "source_type": "news",
+      "source_url": "https://www.forbes.com/sites/phoebeliu/2025/02/06/sergey-brins-2-billion-quest-to-tackle-parkinsons-bipolar-disorder-and-now-autism/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "DO NOT ADD TO ROLLUP. Aggregate narrative only \u2014 the constituent grants are already in SBFF/BWF/Catalyst4/direct-gift rows."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "brin_no_pledge",
+      "event_role": "pledge_absent",
+      "status": "NOT_SIGNED",
+      "pledger_entity": "Sergey Brin",
+      "source_url": "https://www.cnbc.com/amp/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html",
+      "retrieved_at": "2026-04-23",
+      "notes": "Brin has NOT signed the Giving Pledge. Multiple sources confirm (CNBC 2022, Vox 2019, CCN, IBTimes). Ex-wife Anne Wojcicki signed the Giving Pledge in 2022 on her own; she is listed on givingpledge.org but Sergey is not. Brin has not publicly spoken about the Giving Pledge."
+    },
+    {
+      "event_id": "wojcicki_gp_2022_adjacent",
+      "event_role": "pledge_adjacent",
+      "pledger_entity": "Anne Wojcicki (ex-wife, not Brin)",
+      "year": 2022,
+      "status": "SIGNED_BY_ADJACENT_PARTY",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-23",
+      "notes": "Listed for context only. Anne Wojcicki is not the subject of this record; her pledge does NOT encumber Sergey's assets. If BWF survives under joint control (ProPublica shows ambiguous post-divorce status), pledge dollars might come out of its corpus \u2014 but that's Anne's commitment, not Sergey's."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_MODERATE_ISSUE_ORIENTED",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Brin's political giving is more issue-oriented (housing, anti-wealth-tax ballot measures, climate-adjacent) than party-machine.",
+    "observed_total_2021_2025_usd": 22000000,
+    "observed_total_note": "Rough floor: $20M to California housing / ballot-measure political effort (NYT Jan 2026), $78,400 max-out to Matt Mahan for California governor (Guardian Mar 2026), plus pre-2020 smaller FEC-level giving to Democratic candidates/DNC per OpenSecrets. FEC API pull not yet run.",
+    "sources": [
+      {
+        "url": "https://www.nytimes.com/2026/01/28/us/politics/california-billionaires-sergey-brin-campaign.html",
+        "retrieved_at": "2026-04-23",
+        "publisher": "New York Times",
+        "amount_usd": 20000000,
+        "event_date": "2026-01",
+        "note": "$20M to California political drive on housing \u2014 described as 'may also help ward off a wealth tax.'"
+      },
+      {
+        "url": "https://www.theguardian.com/us-news/2026/mar/11/silicon-valley-donations-california-governor-race",
+        "retrieved_at": "2026-04-23",
+        "publisher": "The Guardian",
+        "amount_usd": 78400,
+        "event_date": "2026-02",
+        "note": "Max-out to Matt Mahan (Dem) for California governor."
+      },
+      {
+        "url": "https://fortune.com/2024/10/24/americas-richest-men-cant-agree-who-should-be-next-president/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Fortune",
+        "note": "Historical Democratic giving (Obama, DNC, clean-energy ballot measures) per OpenSecrets; no presidential endorsement 2024."
+      },
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?cand=&cycle=&employ=&name=Sergey+Brin&state=&zip=",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Sergey Brin Family Foundation",
+        "ein": "47-2107200",
+        "established_year": 2014,
+        "state": "CA",
+        "fiscal_agent": "Pacific Foundation Services (1660 Bush St. No. 300, San Francisco, CA 94109)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 4310000000,
+        "grants_paid_latest": 722400000,
+        "officers": [
+          "Sergey Brin (Director & President)",
+          "Tara Farnsworth (Treasurer, also Bayshore Global Management CFO)",
+          "Robert Brown (Secretary)"
+        ],
+        "officers_compensation": "ZERO_COMP (all officers zero compensation across all filed years 2014-2024)",
+        "payout_rate_notes": "2024 payout $722.4M / $4.31B = ~16.8% \u2014 well above 5% legal minimum; no LOW_PAYOUT flag. Multi-year trend: payout has accelerated sharply from $2.5M in 2015 (1st full grantmaking year) to $722M in 2024.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED \u2014 ProPublica summary does not disclose individual grant recipients; would need to parse full 990-PF schedules.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200"
+      },
+      {
+        "name": "Catalyst4 Inc.",
+        "ein": "87-3323607",
+        "tax_status": "501(c)(4)",
+        "established_year": 2021,
+        "state": "CA",
+        "reported_legal_address_note": "Inside Philanthropy reports Catalyst4 was 'legally headquartered in a UPS store' \u2014 consistent with lean-vehicle approach.",
+        "status": "active",
+        "assets_2022_usd": 430482760,
+        "assets_2021_usd": 469174402,
+        "grants_2022_usd": 13097520,
+        "grants_2024_usd": 44000000,
+        "officers": [
+          "Robert Brown (President)",
+          "Tara Farnsworth (Secretary/Treasurer \u2014 same as SBFF)",
+          "Ekemini Riley (Board Member \u2014 also co-leads ASAP)"
+        ],
+        "seeded_with_note": "Initial $366M of Tesla-stock-sale proceeds in 2021 (per InfluenceWatch citing Candid).",
+        "tax_status_note": "501(c)(4) \u2014 social welfare, CAN engage in unlimited lobbying and some political activity. Under IPS/Forbes/Chronicle methodology this is distinct from 501(c)(3) charitable giving. We include Catalyst4 in observable_giving but flag that ~$44M/yr in 501(c)(4) expenditures is not the same category as SBFF charity.",
+        "source_url": "https://www.influencewatch.org/non-profit/catalyst4/"
+      }
+    ],
+    "foundations_uncertain_status": [
+      {
+        "name": "The Brin Wojcicki Foundation",
+        "ein": "20-1922947",
+        "established_year": 2004,
+        "state": "CA",
+        "status": "UNCERTAIN \u2014 spokesperson claims active, filings through 2019, not listed on IRS most-recent tax-exempt organizations list per InfluenceWatch",
+        "latest_990_year_with_data": 2015,
+        "assets_2015_usd": 866400000,
+        "grants_paid_2015_usd": 50700000,
+        "joint_control_note": "Jointly operated by Sergey Brin and Anne Wojcicki. Divorce finalized 2015. Anne's IP spokesperson (2018) said BWF 'is still in operation.' Post-2015 financial detail on ProPublica is thin. Attribution of post-2015 giving between Sergey and Anne is unclear.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/201922947",
+        "ip_source": "https://www.insidephilanthropy.com/home/2018-5-31-a-rising-force-what-to-know-about-the-wojcicki-sisters-and-their-foundations"
+      }
+    ],
+    "operating_initiatives_funded": [
+      {
+        "name": "Aligning Science Across Parkinson's (ASAP)",
+        "founder": "Sergey Brin (primary funder, established ~2019)",
+        "implementation_partner": "Michael J. Fox Foundation for Parkinson's Research",
+        "leadership": "Ekemini Riley (Managing Director; also Catalyst4 board), Randy Schekman (Nobel laureate, scientific director)",
+        "granting_activity": "Multiple grant rounds totaling $132M (three-year initial) and later $161M first round per PND reports. Recent 2025 rounds offer up to $6M per team over 3 years.",
+        "classification_note": "NOT a separate 501(c)(3) \u2014 implemented through MJFF grants from SBFF. Funds flow: Brin \u2192 SBFF \u2192 MJFF/ASAP \u2192 researchers. The $253M 2024 MJFF grant from SBFF is the dominant vector.",
+        "source_url": "https://parkinsonsroadmap.org/",
+        "pnd_source": "https://philanthropynewsdigest.org/news/aligning-science-across-parkinson-s-awards-161-million-in-grants"
+      }
+    ],
+    "dafs_detected": [],
+    "dafs_note": "No donor-advised fund activity identified. Absence-of-evidence only. Assume unknown lower bound; see hidden_upper calculation.",
+    "llcs_philanthropic": [],
+    "llcs_note": "Bayshore Global Management is Brin's family office \u2014 explicitly a personal/financial management entity, NOT a philanthropic LLC like CZI or Emerson Collective. No known philanthropic LLC for Brin.",
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "No publicly disclosed personal trust of the kind Ellison's pledge letter references. Brin's non-charitable wealth management runs through Bayshore Global; specific estate-planning structure not public."
+  },
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Multiple sources confirm Brin has never signed the Giving Pledge and has not publicly spoken about it. Ex-wife Anne Wojcicki signed separately in 2022.",
+      "source_url": "https://www.cnbc.com/amp/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html",
+      "severity_note": "Weaker signal than PLEDGE_UNFULFILLED \u2014 Brin never made the commitment publicly, so there's no breach. But given net worth and 22 years as a billionaire, absence of pledge is itself notable."
+    },
+    {
+      "flag": "POLITICAL_GIVING_TO_BLOCK_WEALTH_TAX",
+      "evidence": "NYT Jan 2026: $20M to California political drive whose aims 'may also help ward off a wealth tax.' Structurally concerning: political deployment to protect personal wealth reduces the potential philanthropic pool.",
+      "source_url": "https://www.nytimes.com/2026/01/28/us/politics/california-billionaires-sergey-brin-campaign.html"
+    },
+    {
+      "flag": "501C4_SIZE_APPROACHING_C3",
+      "evidence": "Catalyst4 received $1B+ of Brin's 2025 Alphabet stock gifts vs. $90M to SBFF \u2014 Brin is routing his marginal giving through a 501(c)(4) advocacy vehicle rather than a 501(c)(3) charity. 501(c)(4) allows unlimited lobbying and greater opacity. Still deductible to donor for some purposes but a different instrument than traditional charity.",
+      "source_url": "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/"
+    },
+    {
+      "flag": "FOUNDATION_LAG_DURING_WEALTH_SURGE",
+      "evidence": "Between 2014 (SBFF established with $268M) and 2020, SBFF disbursed less than $500M cumulative while Brin's net worth grew from ~$30B to $80B+. Giving only accelerated to current $700M/yr level after 2022. Pre-2020 'giving rate' was <0.3% of net worth annually.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/472107200"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (SBFF 2024 payout 16.8%, well above 5% minimum)",
+    "HIGH_OFFICER_COMP (all SBFF and Catalyst4 officers zero comp)",
+    "DAF_TRANSFERS (no DAF activity identified; not confirmed absent)",
+    "PLEDGE_UNFULFILLED (never signed \u2014 flagged separately as NO_GIVING_PLEDGE_SIGNATURE)",
+    "POLITICAL_DOMINATES_CHARITABLE (political ~$22M vs. charity >$700M/yr; ratio <3%)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 2439200000,
+    "observable_giving_method": "sum(SBFF 990-PF grants_out 2014-2024) + sum(BWF 990-PF grants_out 2011-2015) + Catalyst4 2022 ($13M) + Catalyst4 2024 ($44M, press) + MJFF Nov 2025 direct gift ($45M) + HIAS 2009 ($1M). Excludes: stock gift TRANSFERS into foundations (dedup rule #2); the Parkinson's lifetime aggregate narrative claim. SBFF total 1997-2024: ~$2.379B. BWF 2011-2015: ~$116M. Catalyst4: ~$57M. Direct gifts: ~$46M. Grand total ~$2.44B.",
+    "observable_giving_todo": [
+      "Pull BWF 990-PF filings for years 2016-2019 \u2014 ProPublica has the filings but key fields were not in summary; parse XML to get grants_paid.",
+      "Split BWF post-divorce giving between Brin and Wojcicki (attribution unclear).",
+      "Pull SBFF 2024 full 990-PF (not just summary) to verify whether $722M includes $45M MJFF direct gift (which would then need to be subtracted to avoid double-count).",
+      "Run SEC EDGAR Form 4 G-transactions for Brin's CIK to identify any stock gifts not routed through SBFF/Catalyst4 (e.g., direct to operating charities).",
+      "Verify Catalyst4 2023 990 when available (only 2021-2022 currently summarized)."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 11178000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.45 \u00d7 $248.4B = $111.78B; tenure cap saturated (22 years). Expected = $11.178B. Higher liquidity factor than Ellison (0.45 vs 0.25) because Brin's Alphabet stake is a smaller fraction of float.",
+    "observable_ratio_to_expected": 0.218,
+    "observable_ratio_to_current_nw": 0.00982,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "c4_uncounted_uplift_usd": 500000000,
+      "c4_uncounted_method": "Catalyst4 received $1B+ of transfers in 2025; most not yet disbursed. If/when disbursed as climate/CNS advocacy (501(c)(4)), Forbes/Chronicle methodology may partially credit. Set uncertainty envelope of ~$500M as plausible near-term disbursement not yet appearing in 990s.",
+      "anonymous_cohort_uplift_usd": 250000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Brin is documented as historically preferring relative privacy (Forbes Dec 2022: 'quietly' became largest Parkinson's donor). Apply 1% of liquid_wealth ceiling \u00d7 0.22 probability weight = $111.78B \u00d7 0.01 \u00d7 0.22 = $246M. Round to $250M.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Brin has given to HIAS (Hebrew Immigrant Aid Society, $1M 2009) but is not reported to tithe at scale. Zero.",
+      "parkinsons_pledge_future_usd": 0,
+      "parkinsons_pledge_future_note": "Brin has not made a quantified future pledge. Future giving will be captured by 990s as it occurs.",
+      "total_usd": 750000000,
+      "total_method": "c4_uncounted + anonymous (daf/llc/offshore/religious/pledge_future all zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.286,
+    "tier": "Probably_Low (Tier B) \u2014 lower end",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Brin: 0.286, so fails strict Verified_Low. Probably_Low because: (a) observable giving of $2.44B is real and documented, (b) giving rate has accelerated sharply since 2022 ($722M/yr run-rate), (c) Parkinson's commitment is specific and demonstrated, (d) 2025 stock transfers of ~$1.9B signal more is coming. But 22 years of compounding wealth with <1% lifetime giving-to-current-NW ratio, no Giving Pledge, and increasing channeling through 501(c)(4) advocacy keeps him in Tier B rather than Tier C/D.",
+    "tier_published_caveat": "Brin is the canonical case of 'real giving but still small relative to the pile.' Observable ~$2.4B is ~1% of current net worth and ~22% of the 10% formal norm. His Parkinson's commitment is genuine and historically significant \u2014 he is, factually, the largest individual donor to Parkinson's research ever. But that commitment now represents a tiny fraction of his wealth. Trajectory matters: if 2025's $2B in stock transfers disburses on 2024's $722M/yr cadence, his ratio will improve meaningfully in coming years."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 76.4,
+    "components": {
+      "giving_gap_40pct": 31.3,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 20.0
+    },
+    "note": "Computed with v2 formula for continuity. Pledge-breach = 0 because he never signed (no pledge to breach). Giving-gap = (1 - 0.218) \u00d7 40 = 31.3. Tenure saturated at 22 years. Red flags saturated (4 present). DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Sergey Brin Family Foundation (c/o Pacific Foundation Services) + Catalyst4 + Bayshore Global Management (family office) \u2014 triangulate across all three philanthropic/financial contacts.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Pull SBFF full 990-PF for 2024 and check whether $45M MJFF direct gift (Nov 2025) is already in the grants_paid figure \u2014 if yes, subtract to avoid double-count (though dates suggest the $45M is 2025 not 2024).",
+    "VERIFY: BWF post-2015 990s (2016-2019) \u2014 parse XML for grants_paid and current status.",
+    "VERIFY: Catalyst4 full 990 for 2023 and 2024 when ProPublica has summary data.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Brin's CIK \u2014 confirm $700M (May 2025) and $1.1B (Nov 2025) gift events; check for 2014-2024 gifts not covered in press.",
+    "VERIFY: FEC bulk pull against Brin's name/address to firm up $22M+ political estimate.",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: ASAP/MJFF grant flow \u2014 ensure the $253M 2024 SBFF\u2192MJFF grant isn't double-counted against any ASAP press-release totals."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/472107200",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Sergey Brin Family Foundation 990-PF data 2014-2024, assets, officers"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/201922947",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Brin Wojcicki Foundation 990-PF data 2011-2015"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/catalyst4/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Catalyst4 EIN, 2022 grants detail, officers, Tesla-stock seeding"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/sergey-brin-family-foundation/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "SBFF grant recipient detail, 2025 stock-gift allocations across vehicles"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/brin-wojcicki-foundation/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "BWF context, divorce and post-2015 status"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/sergey-brins-grantmaking-soars-past-major-legacy-foundations",
+      "retrieved_at": "2026-04-23",
+      "used_for": "SBFF 2025 $1.1B grants total; Catalyst4 2024 $44M total"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/find-a-grant/grants-b/sergey-brin-family-foundation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "SBFF grant focus areas; 2024 $900M grants-made reported figure; $4B+ assets"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/sergey-brin-emerges-as-a-climate-megafunder",
+      "retrieved_at": "2026-04-23",
+      "used_for": "SBFF climate grants $243M in 2024; Catalyst4 climate $22M in 2024"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/no-billionaires-arent-retreating-from-philanthropy",
+      "retrieved_at": "2026-04-23",
+      "used_for": "SBFF annual giving trajectory $124M (2019) \u2192 $519M (2022) \u2192 $698M (2024)"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2018-5-31-a-rising-force-what-to-know-about-the-wojcicki-sisters-and-their-foundations",
+      "retrieved_at": "2026-04-23",
+      "used_for": "BWF status post-divorce; $866M 2015 assets; still-in-operation claim"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/sergey-brin-has-donated-1.1-billion-for-parkinson-s-disease-research",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$1.1B Parkinson's lifetime total per Candid"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/sergey-brin-donates-700-million-worth-of-alphabet-shares",
+      "retrieved_at": "2026-04-23",
+      "used_for": "May 2025 $700M stock gift; 2024 $100M May + $100M December gifts; 2023 $600M gift"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/sergey-brin-donates-more-than-1.1-billion-worth-of-alphabet-shares",
+      "retrieved_at": "2026-04-23",
+      "used_for": "November 2025 $1.1B stock gift"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/aligning-science-across-parkinson-s-awards-161-million-in-grants",
+      "retrieved_at": "2026-04-23",
+      "used_for": "ASAP $161M first-round grants; leadership detail"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/aligning-science-across-parkinson-s-initiative-awards-132-million",
+      "retrieved_at": "2026-04-23",
+      "used_for": "ASAP $132M earlier round"
+    },
+    {
+      "url": "https://www.forbes.com/sites/kerryadolan/2022/12/09/exclusive-google-cofounder-sergey-brin-has-quietly-donated-more-than-1-billion-toward-this-one-specific-disease/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$1B+ Parkinson's lifetime (2022); 'quietly' descriptor; $78B net worth in 2022"
+    },
+    {
+      "url": "https://www.forbes.com/sites/phoebeliu/2025/02/06/sergey-brins-2-billion-quest-to-tackle-parkinsons-bipolar-disorder-and-now-autism/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$1.5B+ Parkinson's lifetime (2025); bipolar and autism new bets"
+    },
+    {
+      "url": "https://www.forbes.com/sites/phoebeliu/2025/05/27/where-google-cofounder-sergey-brin-is-putting-his-new-700-million-charitable-gift/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "May 2025 $700M gift \u2014 ~80% to Catalyst4"
+    },
+    {
+      "url": "https://www.forbes.com/sites/tylerroush/2026/01/13/sergey-brin-becomes-worlds-no-3-richest-overtakes-jeff-bezos-larry-ellison-after-alphabet-hits-4-trillion/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Jan 2026 net worth $255.6B, rank #3"
+    },
+    {
+      "url": "https://fortune.com/2025/11/30/sergey-brin-gift-1-billion-alphabet-stock-ai-rally-michael-j-fox/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Nov 2025 $1.1B gift detail: $1B Catalyst4 + $90M SBFF + $45M MJFF direct"
+    },
+    {
+      "url": "https://www.aicerts.ai/news/market-philanthropy-sergey-brins-1-1b-stock-gift/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Nov 2025 SEC Form 4 detail: 1,778,650 Class A + 1,778,650 Class C"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2025-11-29/sergey-brin-gifts-1-1-billion-in-alphabet-stock-after-ai-rally",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg confirmation of Nov 2025 $1.1B gift"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/sergey-m-brin/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg Billionaires Index Brin profile"
+    },
+    {
+      "url": "https://www.livemint.com/companies/people/sergey-brin-net-worth-hits-248-4-billion-making-him-3rd-richest-as-google-co-founder-duo-now-trail-elon-musk-11764085319464.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$248.4B net worth late 2025"
+    },
+    {
+      "url": "https://timesofindia.indiatimes.com/world/rest-of-world/top-10-richest-men-in-the-world-2026-elon-musk-leads-with-over-700-billion-fortune-ahead-of-larry-page-jeff-bezos-and-mark-zuckerberg/articleshow/126415009.cms",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes 2026 $238.4B, rank #5"
+    },
+    {
+      "url": "https://www.cnbc.com/amp/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Brin confirmed NOT signed Giving Pledge"
+    },
+    {
+      "url": "https://www.vox.com/2019/4/22/18491577/founders-giving-pledge-tech-philanthropy-billionaires",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Brin + Page Giving Pledge absence confirmation"
+    },
+    {
+      "url": "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Brin has not spoken publicly about Giving Pledge"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Anne Wojcicki 2022 signature; Brin absent from pledger list"
+    },
+    {
+      "url": "https://www.nytimes.com/2026/01/28/us/politics/california-billionaires-sergey-brin-campaign.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$20M California political drive Jan 2026 \u2014 housing / anti-wealth-tax"
+    },
+    {
+      "url": "https://www.theguardian.com/us-news/2026/mar/11/silicon-valley-donations-california-governor-race",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Matt Mahan max-out $78,400 Feb 2026"
+    },
+    {
+      "url": "https://fortune.com/2024/10/24/americas-richest-men-cant-agree-who-should-be-next-president/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2024 no presidential endorsement; historical Dem giving"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?cand=&cycle=&employ=&name=Sergey+Brin&state=&zip=",
+      "retrieved_at": "2026-04-23",
+      "used_for": "OpenSecrets donor lookup (unparsed detail, placeholder for FEC API run)"
+    },
+    {
+      "url": "https://techcrunch.com/2009/10/25/sergey-brin-donates-1-million-to-organization-that-helped-him-migrate-to-the-u-s/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$1M HIAS gift 2009"
+    },
+    {
+      "url": "https://parkinsonsroadmap.org/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "ASAP initiative page"
+    },
+    {
+      "url": "https://www.instrumentl.com/990-report/sergey-brin-family-foundation-co-pacific-foundation-services",
+      "retrieved_at": "2026-04-23",
+      "used_for": "SBFF $4.3B assets corroboration"
+    }
+  ],
+  "_source_file": "sergey_brin.v3.json"
+}

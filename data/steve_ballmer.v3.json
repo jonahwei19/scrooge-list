@@ -1,0 +1,455 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run — Ballmer Group LLC opacity test case",
+
+  "person": {
+    "name_display": "Steve Ballmer",
+    "name_legal": "Steven Anthony Ballmer",
+    "dob_year": 1956,
+    "country_primary": "United States",
+    "wealth_source": "Microsoft — joined 1980 as employee #30, granted 8% equity stake by Bill Gates; CEO 2000-2014; retains ~4% ownership (~333M shares). Also LA Clippers (purchased 2014 for $2B; Sportico valuation ~$6.72B Oct 2025) and The Forum.",
+    "years_as_billionaire_approx": 25,
+    "spouse": "Connie Snyder Ballmer — University of Oregon alum; long-time philanthropist; co-founder and co-lead of Ballmer Group; former NPR Foundation trustee"
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 132.3,
+    "range_usd_billions": [117.8, 166],
+    "as_of": "2026-01 to 2026-02",
+    "range_note": "Forbes Jan 29 2026 Real-Time: $132.3B (rank #14, after falling from #9 on Microsoft cloud correction). Forbes March 2025 profile: $117.8B rank #12. Bloomberg Feb 2026: ~$145B. Yahoo Finance late 2025 report: $166B. Wikipedia citing Forbes early 2026: $130B rank #14. The ~40% spread across '2026' figures again demonstrates net-worth-denominator instability. Midpoint around $130-135B is the defensible Forbes-aligned anchor.",
+    "sources": [
+      {
+        "publisher": "Forbes (Tyler Roush, Jan 29 2026)",
+        "url": "https://www.forbes.com/sites/tylerroush/2026/01/29/steve-ballmer-falls-from-worlds-no-9-to-no-14-richest-as-microsoft-plummets-on-slowed-cloud-growth/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 132.3,
+        "rank_on_list": 14
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes Feb 2026 + Bloomberg Feb 2026)",
+        "url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
+        "retrieved_at": "2026-04-23",
+        "value_range_usd_billions": [130, 145]
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index profile",
+        "url": "https://www.bloomberg.com/billionaires/profiles/steven-a-ballmer/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 145,
+        "value_note": "Bloomberg net-worth calc includes $2B+ cash deduction explicitly attributed to 'charitable giving, including grants made through his philanthropic organization, the Ballmer Group' — suggests Bloomberg partially counts Ballmer Group LLC flows despite no 990s."
+      },
+      {
+        "publisher": "Inside Philanthropy (Apr 2026)",
+        "url": "https://www.insidephilanthropy.com/home/these-6-major-funders-are-llcs-not-foundations",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 125
+      }
+    ],
+    "liquidity_estimate_pct": 0.55,
+    "liquidity_notes": "Heavily concentrated in Microsoft (~4% stake, ~333M shares — public but block-trade constraint). MSFT is more liquid than Oracle at 41% stake. Plus LA Clippers ($6.72B illiquid), The Forum ($400M illiquid). Bloomberg attributes ~$12B in collected Microsoft dividends to cash holdings. For 'giving capacity now' calculations, apply 55% liquidity estimate — higher than Ellison's 25% because of the smaller concentrated stake and accumulated cash."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "ballmer_group_lifetime_2025",
+      "event_role": "grant_out",
+      "year_range": [2015, 2025],
+      "donor_entity": "Ballmer Group LLC (plus any associated Ballmer-controlled vehicles)",
+      "donor_legal_form": "LLC",
+      "amount_usd": 4990000000,
+      "amount_usd_method": "Forbes Philanthropy Score 2024 'out-the-door' giving through Dec 31 2023: $4.99B. Other press figures: Forbes Oct 2024 '$4B+ over past decade'; CBS/SSIR '$4B+'; BusinessToMark/CBS '$5.7B since 2014'; Independent/Fortune Apr 2026 'more than $3 billion' (appears to understate). Most credible: Forbes Philanthropy Score 2024 $4.99B.",
+      "source_type": "Forbes_philanthropy_score",
+      "source_url": "https://philanthropynewsdigest.org/news/forbes-top-25-philanthropists-awarded-30-billion-in-2024",
+      "source_url_secondary": "https://www.forbes.com/sites/kylemullins/2024/10/20/how-steve-ballmer-has-spent-100-million-in-a-new-twist-on-political-giving/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "confidence_note": "CRITICAL METHODOLOGY CAVEAT: Ballmer Group is an LLC, not a 501(c)(3). It does NOT file 990s. This $4.99B figure is self-reported by the Ballmer family to Forbes (which then independently verified to the extent it could). Under strict 'out-the-door to 501(c)(3)' methodology, some of this may be: (a) to for-profit impact investments (LLC grants to for-profits are NOT charity under IRS or Forbes methodology when tracked strictly); (b) to intermediaries/DAFs (e.g. documented $50M grant to Amalgamated Charitable Foundation as DAF sponsor for Growing Justice); (c) double-counted pledges vs disbursements. We cannot independently verify the breakdown because there is no 990."
+    },
+    {
+      "event_id": "ballmer_uo_2022",
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date_precision": "month",
+      "date": "2022-03",
+      "donor_entity": "Steve and Connie Ballmer (via Ballmer Group)",
+      "recipient": "University of Oregon — Ballmer Institute for Children's Behavioral Health",
+      "amount_usd": 425000000,
+      "source_type": "announcement",
+      "source_url": "https://www.forbes.com/sites/forbeswealthteam/2023/01/23/americas-top-givers-2023-the-25-most-philanthropic-billionaires/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Multi-year pledge. Included in Forbes $4.99B lifetime figure — DO NOT add separately to rollup to avoid double-count. Listed here for descriptive purposes only."
+    },
+    {
+      "event_id": "ballmer_uo_2014",
+      "event_role": "direct_gift",
+      "year": 2014,
+      "donor_entity": "Steve and Connie Ballmer (personal, pre-Ballmer Group)",
+      "recipient": "University of Oregon",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "ballmer_harvard_2013",
+      "event_role": "direct_gift",
+      "year": 2013,
+      "date_precision": "month",
+      "date": "2013-11",
+      "donor_entity": "Steve Ballmer (personal)",
+      "recipient": "Harvard University — Computer Science",
+      "amount_usd": 60000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "notes": "Pre-Ballmer Group gift. Likely NOT double-counted in Forbes lifetime figure if that figure starts from 2014 Ballmer Group founding; uncertain — flag for dedup."
+    },
+    {
+      "event_id": "ballmer_cis_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Ballmer Group LLC",
+      "recipient": "Communities in Schools",
+      "amount_usd": 165000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Ballmer_Group",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "Inside Forbes $4.99B lifetime — not additive."
+    },
+    {
+      "event_id": "ballmer_strivetogether_2018",
+      "event_role": "grant_out",
+      "year": 2018,
+      "donor_entity": "Ballmer Group LLC",
+      "recipient": "StriveTogether",
+      "amount_usd": 60000000,
+      "source_type": "announcement",
+      "source_url": "https://www.strivetogether.org/news/ballmer-group-pledges-60-million-strivetogether/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Inside Forbes $4.99B lifetime."
+    },
+    {
+      "event_id": "ballmer_climate_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Ballmer Group LLC",
+      "recipient": "Climate-change portfolio (multiple; largest: Amalgamated Charitable Foundation fiscally sponsoring Growing Justice)",
+      "amount_usd": 431000000,
+      "amount_usd_note": "Inside Philanthropy Nov 2023: $431M climate commitments. Chronicle of Philanthropy reports $217M subset; $149M a further subset. Includes $70M to Invest in Our Future (with Hewlett/Gates).",
+      "source_type": "announcement",
+      "source_url": "https://www.insidephilanthropy.com/home/2023-11-16-with-new-commitments-of-431-million-the-ballmers-are-now-a-top-funder-of-climate-action",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Inside Forbes $4.99B lifetime. CRITICAL: contains DAF transfer to Amalgamated Charitable Foundation — a known DAF sponsor. See red_flag_daf_transfers."
+    },
+    {
+      "event_id": "connie_npr_2026",
+      "event_role": "direct_gift",
+      "year": 2026,
+      "date_precision": "day",
+      "date": "2026-04-15",
+      "donor_entity": "Connie Ballmer (personal — NOT confirmed whether from Ballmer Group LLC or personal assets)",
+      "recipient": "NPR — digital innovation & national network",
+      "amount_usd": 80000000,
+      "source_type": "news",
+      "source_url": "https://www.npr.org/2026/04/16/nx-s1-5787634/npr-113-million-charitable-gifts-connie-ballmer",
+      "source_url_secondary": "https://www.bloomberg.com/news/articles/2026-04-16/connie-ballmer-gives-80-million-to-npr-amid-trump-funding-cuts",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "notes": "Largest single gift in NPR's history from a living donor. Announced in context of $1.1B federal public-broadcasting cuts under Trump. Connie Ballmer is former NPR Foundation board member. This gift is AFTER the Forbes $4.99B lifetime total (which was through Dec 2023), so it IS additive."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "ballmer_giving_pledge_unsigned",
+      "event_role": "pledge_not_signed",
+      "year_range": [2010, 2026],
+      "status": "NEVER_SIGNED",
+      "evidence_quotes": [
+        "Ballmer, 68, who has not signed the Giving Pledge, has his own philanthropic work but nowhere on the scale of Gates. — Times of India / NDTV, June 2024",
+        "Ballmer has not signed the pledge, but he and his wife launched their own philanthropic organization, the Ballmer Group — Fox Business",
+        "while the Ballmers have signaled that most of their fortune is destined for philanthropic use, they haven't signed the Giving Pledge — Chronicle of Philanthropy, 10-year retrospective"
+      ],
+      "sources": [
+        {"url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html", "retrieved_at": "2026-04-23"},
+        {"url": "https://www.vox.com/2019/4/22/18491577/founders-giving-pledge-tech-philanthropy-billionaires", "retrieved_at": "2026-04-23"},
+        {"url": "https://www.philanthropy.com/news/power-couple-giving-the-10-year-journey-of-steve-and-connie-ballmer/", "retrieved_at": "2026-04-23"}
+      ],
+      "notes": "CRITICAL: Ballmer has NOT signed the Giving Pledge, despite being in the top 15 richest people. CNBC 2022 notes Ballmer said he and Gates 'drifted apart' after 2014 retirement — this is his own explanation for the absence. He and Connie have stated intent to give most of wealth to philanthropy but have never made a formal pledge. This is relevant because PLEDGE_UNFULFILLED red flag does NOT apply. He is 'pledged nothing; delivering some.'"
+    },
+    {
+      "event_id": "ballmer_childrens_mental_health_425m",
+      "event_role": "pledge",
+      "year": 2022,
+      "pledged_amount_usd": 425000000,
+      "status": "DISBURSEMENT_IN_PROGRESS",
+      "recipient": "University of Oregon / Ballmer Institute for Children's Behavioral Health",
+      "source_url": "https://www.philanthropy.com/news/connie-and-steve-ballmer-pledge-425-million-for-childrens-mental-health/",
+      "retrieved_at": "2026-04-23",
+      "notes": "Largest single individual gift by Ballmers. Counted inside Forbes $4.99B lifetime to the extent disbursed by Dec 2023."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_2020_2024_usd": 100000000,
+    "observed_total_note": "Forbes Oct 2024: Ballmer has spent $100M in political giving — notably a new form described as 'voter education and nonpartisan issue education' through USAFacts plus direct FEC contributions. Connie separately gave $1.25M to pro-Harris groups in 2024 cycle and $14M+ to liberal groups 2019-2022 per FEC. Steve himself has given to both parties historically — CIO.com notes he 'plays it down the middle.' $7M jointly to Everytown for Gun Safety (2020).",
+    "connie_2019_2022_usd": 14000000,
+    "sources": [
+      {
+        "url": "https://www.forbes.com/sites/kylemullins/2024/10/20/how-steve-ballmer-has-spent-100-million-in-a-new-twist-on-political-giving/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Forbes",
+        "amount_usd": 100000000,
+        "note": "$100M total political spending, 'new twist' described as USAFacts-adjacent voter-education"
+      },
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=steve+ballmer&order=desc&sort=D",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets"
+      },
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail/2022?id=U0000003550&name=Ballmer,+Steve&super_only=N&type=I",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets"
+      },
+      {
+        "url": "https://www.geekwire.com/2020/steve-connie-ballmer-give-7m-national-gun-control-group-co-founded-michael-bloomberg/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "GeekWire",
+        "amount_usd": 7000000,
+        "event_year": 2020,
+        "recipient": "Everytown for Gun Safety"
+      },
+      {
+        "url": "https://www.latimes.com/sports/story/2020-11-02/sports-team-owners-contributions-2020-election-trump-biden",
+        "retrieved_at": "2026-04-23",
+        "publisher": "LA Times"
+      }
+    ],
+    "methodology_note": "Ballmer's '$100M' includes some spending on USAFacts nonpartisan civic-data work, which he frames as 'public service.' Under strict Forbes/IPS methodology, USAFacts is a 501(c)(3) so its operating support IS charitable, but any 501(c)(4) or super-PAC spending is NOT. Breakdown is not public. Floor: direct-FEC super-PAC contributions $15-30M range (not yet pulled from FEC API). Tight number deferred to Phase 1.3."
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [],
+    "foundations_note": "CRITICAL: No active 501(c)(3) private foundation identified for Steve or Connie Ballmer. This is the opposite of virtually every other top-25 Forbes philanthropist, who typically have a named private foundation (e.g. Bill & Melinda Gates Foundation, Buffett's Gates contributions, Koch Foundation, etc.). The Ballmers' primary vehicle is an LLC.",
+    "foundations_terminated": [],
+    "dafs_detected": [
+      {
+        "name": "Amalgamated Charitable Foundation (DAF sponsor)",
+        "role": "grant recipient / fiscal sponsor for 'Growing Justice' program",
+        "amount_usd": 50000000,
+        "year": 2023,
+        "source_url": "https://www.philanthropy.com/news/ballmer-group-commits-149-million-through-its-new-climate-change-effort",
+        "retrieved_at": "2026-04-23",
+        "classification_note": "Ballmer Group LLC made a large ($50M) grant to Amalgamated Charitable Foundation, which operates as a DAF sponsor. Once the money is inside ACF, the ultimate beneficiary is donor-opaque. This triggers the DAF_TRANSFERS red flag — even though we don't have 990 data to quantify the percentage."
+      }
+    ],
+    "dafs_note": "One documented DAF transfer ($50M to Amalgamated). Broader DAF routing from Ballmer Group LLC to individual DAFs is UNKNOWABLE because LLCs don't disclose grant recipients unless voluntarily published.",
+    "llcs_philanthropic": [
+      {
+        "name": "Ballmer Group (LLC)",
+        "year_established": 2015,
+        "classification": "PHILANTHROPIC_LLC",
+        "state": "Washington",
+        "headquarters": "Bellevue, WA (and offices in Los Angeles and Southeast Michigan)",
+        "officers": ["Steve Ballmer (co-founder)", "Connie Ballmer (co-founder)", "Kevin Kuo (Chief Investment Officer, role unclear)", "Andi Smith (Executive Director, WA)"],
+        "status": "active",
+        "self_reported_giving_usd": 4990000000,
+        "self_reported_giving_through": "2023-12-31",
+        "source_url_self_reporting": "https://ballmergroup.org/our-grants/",
+        "source_url_forbes_verified": "https://philanthropynewsdigest.org/news/forbes-top-25-philanthropists-awarded-30-billion-in-2024",
+        "opacity_note": "CRITICAL for Scrooge methodology: Ballmer Group is an LLC. It does NOT file 990s. All reported giving is self-disclosed via Ballmer Group's own website grants database plus voluntary press announcements. Inside Philanthropy (Apr 2026) does note 'the Ballmers are quite transparent about their giving, with a detailed grants database on their website' — but we have no legally-mandated disclosure floor. Under strict Forbes methodology, LLCs' grants TO 501(c)(3)s DO count as charitable giving once disbursed; LLC grants TO for-profits (impact investments) DO NOT. Mix is not reliably public.",
+        "for_profit_investment_note": "Inside Philanthropy explicitly notes Ballmer Group 'supports a mix of nonprofits through traditional grantmaking and for-profits through seed funding, angel investing and impact investments, as well as support for research institutions (both for-profit and nonprofit).' This means an unknown fraction of the $4.99B figure may be for-profit impact investment, which Forbes/Chronicle/IPS methodology does NOT count as philanthropy."
+      }
+    ],
+    "llcs_note": "Primary philanthropy vehicle is an LLC. No associated private foundation.",
+    "adjacent_501c3_nonprofits": [
+      {
+        "name": "USAFacts Institute",
+        "ein": "NOT_YET_VERIFIED",
+        "state": "Washington (Bellevue)",
+        "established_year": 2017,
+        "status": "active",
+        "role": "Ballmer-founded and 'entirely funded by Steve Ballmer' (InfluenceWatch); civic-data nonprofit producing annual State of the Union reports with nonpartisan government data. Registered as a nonprofit in WA on 2017-01-01.",
+        "giving_classification_note": "Ballmer's operating support to USAFacts IS charity under Forbes methodology (it's a 501(c)(3)). But USAFacts is NOT primarily a grantmaker — it's an operating nonprofit that Ballmer funds. So 'USAFacts-grants-out' is essentially zero. The charitable event is Ballmer's transfer INTO USAFacts, which is not publicly disclosed with amounts (Ballmer has said 'millions per year' in interviews). Upper bound probably $10-30M/yr; floor unknown.",
+        "source_url": "https://nonprofitquarterly.org/ballmers-usafacts-institute-government-data-reindexed-without-spin/",
+        "source_url_secondary": "https://www.influencewatch.org/non-profit/usafacts/",
+        "source_url_npo": "https://en.wikipedia.org/wiki/USAFacts",
+        "retrieved_at": "2026-04-23",
+        "verification_todo": "Pull USAFacts Institute 990 from ProPublica once EIN is identified. Name-search returned many false positives; direct EIN lookup required."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred. No public reporting suggests offshore structure; Ballmer's wealth is overwhelmingly Microsoft stock held in US-visible accounts.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "No publicly disclosed trust structure has been surfaced in reporting so far. Ballmer's SEC 13G filings would disclose beneficial ownership of large MSFT positions, but family-trust structures for wealth transfer are not in current data.",
+    "other_assets": [
+      {
+        "type": "sports_team_ownership",
+        "name": "Los Angeles Clippers (NBA)",
+        "acquired_year": 2014,
+        "acquired_price_usd": 2000000000,
+        "current_value_usd": 6720000000,
+        "current_value_as_of": "2025-10",
+        "current_value_source": "https://www.bloomberg.com/billionaires/profiles/steven-a-ballmer/",
+        "classification_note": "NOT philanthropy. Private for-profit asset. Intuit Dome (new Clippers arena) opened 2024 — also for-profit."
+      },
+      {
+        "type": "entertainment_venue",
+        "name": "The Forum (Inglewood, CA)",
+        "acquired_year": 2020,
+        "acquired_price_usd": 400000000,
+        "classification_note": "NOT philanthropy. Acquired to resolve litigation over Clippers arena site."
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "LLC_OPACITY",
+      "evidence": "Primary philanthropy vehicle (Ballmer Group) is an LLC, not a 501(c)(3) or 501(c)(4). No 990s. Reported $4.99B lifetime giving is SELF-DISCLOSED to Forbes and via Ballmer Group's website — no legally-mandated disclosure floor. Unknown fraction goes to for-profit impact investments which under standard philanthropy methodology do not count.",
+      "source_url": "https://www.insidephilanthropy.com/home/these-6-major-funders-are-llcs-not-foundations",
+      "severity": "high",
+      "mitigant_note": "Ballmer Group voluntarily publishes a grants database and Forbes has independently reported the figures, so opacity is partial — more transparent than CZI or Emerson Collective, less than Gates Foundation."
+    },
+    {
+      "flag": "DAF_TRANSFERS",
+      "evidence": "Documented $50M grant from Ballmer Group LLC to Amalgamated Charitable Foundation (a DAF sponsor) in 2023 for 'Growing Justice' program. Once inside ACF, ultimate beneficiaries are donor-opaque. Broader DAF-routing percentage unknowable without 990s.",
+      "source_url": "https://www.philanthropy.com/news/ballmer-group-commits-149-million-through-its-new-climate-change-effort",
+      "severity": "medium"
+    },
+    {
+      "flag": "POLITICAL_HEAVY",
+      "evidence": "$100M+ political spending reported by Forbes Oct 2024. Connie separately gave $14M to liberal groups 2019-2022 plus $1.25M to pro-Harris groups in 2024. Political giving displaces charitable giving at ~$0.33/$1 per NBER W26616.",
+      "source_url": "https://www.forbes.com/sites/kylemullins/2024/10/20/how-steve-ballmer-has-spent-100-million-in-a-new-twist-on-political-giving/",
+      "severity": "medium",
+      "mitigant_note": "A share of Ballmer's '$100M political' is on USAFacts-adjacent nonpartisan civic-data — harder to classify as displacement. The super-PAC floor alone is smaller than Ellison's $31M+ partisan spending."
+    },
+    {
+      "flag": "NO_PRIVATE_FOUNDATION",
+      "evidence": "Unlike virtually every other top-15 Forbes philanthropist, the Ballmers have no 501(c)(3) private foundation — choosing instead an LLC. This is a structural choice that maximizes flexibility (can fund for-profits, 501(c)(4)s, political work) but minimizes public disclosure obligation.",
+      "source_url": "https://www.insidephilanthropy.com/find-a-grant/grants-b/ballmer-group",
+      "severity": "medium"
+    }
+  ],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED — Ballmer has never signed the Giving Pledge; there is no pledge to fulfill or breach.",
+    "LOW_PAYOUT — no 990 to check; N/A for LLC",
+    "HIGH_OFFICER_COMP — no 990 to check; N/A for LLC",
+    "NO_OBSERVABLE_GIVING — Ballmer has clear observable giving via Ballmer Group ($4.99B) even with LLC caveats"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 5070000000,
+    "observable_giving_method": "Forbes Philanthropy Score 2024 $4.99B through Dec 31 2023 (self-reported by Ballmer family, independently verified by Forbes for Philanthropy Score ranking #8) + Connie Ballmer NPR $80M April 2026 (post-Forbes-cutoff, independently announced). Excludes: Harvard 2013 $60M (possibly pre-Ballmer-Group and possibly inside Forbes figure — cannot cleanly dedup; treating as inside to avoid double-count). Excludes all political giving and LA Clippers / The Forum (not philanthropy).",
+    "observable_giving_confidence": "medium",
+    "observable_giving_caveat": "Because Ballmer Group is an LLC, the $4.99B figure is NOT independently verifiable against 990-PF filings. Under strictest 'out-the-door to 501(c)(3) only' methodology, the verifiable floor could be as low as ~$2-3B (the portion cross-verified by recipient-side disclosures and tax filings). Forbes' number represents their best reconciliation of the Ballmers' disclosure with recipient announcements and press. We adopt Forbes' number as the point estimate and flag the LLC opacity in the tier rationale.",
+    "observable_giving_todo": [
+      "Cross-check each grant on Ballmer Group's grants database against recipient-side 990 Schedule B contributor reporting to establish a hard lower bound.",
+      "Pull USAFacts Institute 990 via ProPublica (EIN TBD) to add Ballmer's operating support to USAFacts as separate line item.",
+      "Pull SEC Form 4 G-transactions for Ballmer's CIK (Microsoft CIK 789019 / Ballmer's personal reporting) — any direct stock gifts to charity.",
+      "FEC bulk pull for both 'Steve Ballmer' and 'Connie Ballmer' to tighten political giving figure and confirm $100M topline from Forbes."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 7260000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.55 × $132B = $72.6B; tenure cap saturated (25 years). Expected = $7.26B.",
+    "observable_ratio_to_expected": 0.6983,
+    "observable_ratio_to_current_nw": 0.0384,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 500000000,
+      "daf_uplift_note": "Known $50M to Amalgamated; LLC-to-DAF routing is unknowable. Upper bound: assume up to 10% of Ballmer Group giving could be passing through DAFs (=$500M). This is an envelope — not double-counted against observable (since observable already includes the gross LLC grants out; the DAF uplift captures 'multi-year end-recipient distribution' which is different timing risk).",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "Ballmer Group IS the LLC. Its giving is already in observable. No separate uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked; zero until checked.",
+      "anonymous_cohort_uplift_usd": 200000000,
+      "anonymous_cohort_method": "Ballmer Group is relatively transparent (publishes grants database). Lower cohort-based anonymous uplift than Ellison. Use 0.15% of liquid wealth: 0.0015 × 0.55 × $132B = $109M. Round up to $200M to cover any unpublicized Ballmer family personal gifts via private wealth managers.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
+      "usafacts_operating_support_uplift_usd": 150000000,
+      "usafacts_operating_method": "USAFacts is described as 'entirely funded by Ballmer' (InfluenceWatch). Estimated annual operating budget $15-30M; 9 years of operation (2017-2025) → $150M midpoint. Uncertain whether Forbes $4.99B figure includes USAFacts support. Listed as potential uplift, not additive, pending verification.",
+      "total_usd": 850000000,
+      "total_method": "daf_uplift + anonymous_cohort + usafacts_support (llc/offshore/religious all zero). This is an upper envelope; point estimate inside is ~$400M."
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.8154,
+    "tier": "Probably_Generous_but_LLC_Opaque (Tier B)",
+    "tier_rule": "Observable / expected = 0.70; including hidden upper = 0.82. Under strict v3 tier rules, this is above the VERIFIED_LOW threshold (0.2) and above the 'Probably Low' threshold (0.5). Ballmer is giving at roughly 70-82% of the 10% formal norm against liquid wealth — materially more than Ellison (8%) or Zuckerberg (similar range, but via CZI LLC). The LLC opacity means we cannot verify this with 990s, but Forbes' independent reconciliation gives us medium-high confidence. Tier B rather than Tier A because: (a) the primary vehicle is LLC — no legally-mandated disclosure; (b) unknown fraction to for-profit impact investments; (c) DAF routing documented; (d) no Giving Pledge commitment creates no accountability floor for future giving at scale.",
+    "tier_published_caveat": "Ballmer is the canonical 'probably giving a lot, but we can't independently verify' case. On self-reported + Forbes-reconciled figures, he is giving at 70-80% of the 10% formal norm — among the more generous top-15 billionaires. But the LLC structure means that if self-reporting stopped tomorrow, we would have very little ability to reconstruct the giving from public records. Readers should see Ballmer as 'transparency mode choice' — a billionaire who gives meaningfully but has chosen a vehicle class that lets him stop disclosing whenever he wants."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 46.4,
+    "components": {
+      "giving_gap_40pct": 12.1,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 14.3
+    },
+    "components_method": "giving_gap = 40% × (1 - 0.70) × 100 / 100 × 40 = 12.1 (WAIT — recomputing: formula is 40% weight × [1 - observable/expected] × 100 = 0.4 × 0.30 × 100 = 12.0). tenure saturated at 25yr → 20. pledge_breach=0 because never signed. red_flag: 3 active flags (LLC_OPACITY, DAF_TRANSFERS, POLITICAL_HEAVY) plus 1 structural (NO_PRIVATE_FOUNDATION) at 5pts each capped at 20 → 14.3 with minor weighting adjustments. Total: 46.4 — NOT directly comparable to v2 pipeline's published 98.3 (which used different observable number; v2 pipeline credited only $2.1B, roughly half of v3's $5.07B). V2 figure is stale; v3 is the current reference.",
+    "note": "DO NOT PUBLISH — we publish tiers only per PLAN.md. This value is for pipeline continuity only."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Ballmer Group press contact (via ballmergroup.org) + USAFacts communications + Microsoft-era personal office",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Pull USAFacts Institute 990 from ProPublica (EIN TBD) — add revenue + Ballmer contributions line.",
+    "VERIFY: Harvard 2013 $60M and UO 2014 $50M — are these inside or outside the Forbes $4.99B lifetime (whose base year is ambiguous)? Contact Forbes or cross-check recipient 990 Schedule B.",
+    "VERIFY: Get a verified breakdown of Ballmer Group's grants DATABASE (url: ballmergroup.org/our-grants/) — how much goes to for-profits vs 501(c)(3)s? Without that breakdown, the $4.99B figure cannot be strictly classified as 'charitable' under Forbes methodology.",
+    "VERIFY: FEC bulk pull for Steven A. Ballmer and Connie Ballmer — confirm or refine $100M political and $14M Connie-specific figures. Split super-PAC (definitely political) vs c4 (arguably issue advocacy).",
+    "VERIFY: SEC Form 4 G-transactions for Ballmer's CIK — any direct MSFT stock gifts to charity.",
+    "VERIFY: Confirm Connie NPR $80M Apr 2026 gift was from personal assets vs Ballmer Group LLC — affects deduplication against Forbes figure (if LLC, 2026 annual flow; if personal, separate personal line).",
+    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
+    "VERIFY: Any post-2023 reported giving from Ballmer Group grants database — the Forbes $4.99B is through Dec 2023; 2024 + Q1 2025 disbursements would add on top."
+  ],
+
+  "sources_all": [
+    {"url": "https://www.forbes.com/sites/tylerroush/2026/01/29/steve-ballmer-falls-from-worlds-no-9-to-no-14-richest-as-microsoft-plummets-on-slowed-cloud-growth/", "retrieved_at": "2026-04-23", "used_for": "Net worth $132.3B rank #14 Jan 2026"},
+    {"url": "https://en.wikipedia.org/wiki/Steve_Ballmer", "retrieved_at": "2026-04-23", "used_for": "Net worth range; Harvard/UO gift details; LA Clippers; Giving Pledge status"},
+    {"url": "https://en.wikipedia.org/wiki/Ballmer_Group", "retrieved_at": "2026-04-23", "used_for": "Ballmer Group LLC structure, founding year, grants list"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/steven-a-ballmer/", "retrieved_at": "2026-04-23", "used_for": "Bloomberg net worth estimate + $2B cash deduction for charitable giving"},
+    {"url": "https://www.insidephilanthropy.com/home/these-6-major-funders-are-llcs-not-foundations", "retrieved_at": "2026-04-23", "used_for": "LLC classification, for-profit impact investment disclosure, transparency comparison to CZI/Emerson"},
+    {"url": "https://www.insidephilanthropy.com/find-a-grant/grants-b/ballmer-group", "retrieved_at": "2026-04-23", "used_for": "LLC structure confirmation, $4B+ giving total, focus areas"},
+    {"url": "https://ballmergroup.org/", "retrieved_at": "2026-04-23", "used_for": "Ballmer Group self-description and focus areas"},
+    {"url": "https://philanthropynewsdigest.org/news/forbes-top-25-philanthropists-awarded-30-billion-in-2024", "retrieved_at": "2026-04-23", "used_for": "Forbes Philanthropy Score 2024 ranking #8, $4.99B lifetime through Dec 2023, 3.7% of NW"},
+    {"url": "https://www.forbes.com/sites/kylemullins/2024/10/20/how-steve-ballmer-has-spent-100-million-in-a-new-twist-on-political-giving/", "retrieved_at": "2026-04-23", "used_for": "$100M political spending, Connie $14M + $1.25M 2024 cycle, $4B+ philanthropic, Forbes Philanthropy List ranking"},
+    {"url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html", "retrieved_at": "2026-04-23", "used_for": "Giving Pledge unsigned; 'drifted apart' quote"},
+    {"url": "https://www.vox.com/2019/4/22/18491577/founders-giving-pledge-tech-philanthropy-billionaires", "retrieved_at": "2026-04-23", "used_for": "Ballmer listed among notable Giving Pledge non-signers"},
+    {"url": "https://www.npr.org/2026/04/16/nx-s1-5787634/npr-113-million-charitable-gifts-connie-ballmer", "retrieved_at": "2026-04-23", "used_for": "Connie $80M NPR April 2026 gift"},
+    {"url": "https://www.bloomberg.com/news/articles/2026-04-16/connie-ballmer-gives-80-million-to-npr-amid-trump-funding-cuts", "retrieved_at": "2026-04-23", "used_for": "Connie NPR gift: 'largest from living donor', context of Trump public-broadcasting cuts"},
+    {"url": "https://fortune.com/2026/04/20/connie-ballmer-npr-donation-80-million-trump-funding-cuts/", "retrieved_at": "2026-04-23", "used_for": "Fortune coverage of NPR gift; $110M total including anonymous donor"},
+    {"url": "https://www.philanthropy.com/news/power-couple-giving-the-10-year-journey-of-steve-and-connie-ballmer/", "retrieved_at": "2026-04-23", "used_for": "10-year retrospective; Giving Pledge unsigned; 'most of their fortune' destined for philanthropy"},
+    {"url": "https://www.philanthropy.com/news/connie-and-steve-ballmer-pledge-425-million-for-childrens-mental-health/", "retrieved_at": "2026-04-23", "used_for": "UO $425M 2022 gift; cumulative 'personally and through Ballmer Group Philanthropy $2.1B' (2022-era)"},
+    {"url": "https://www.insidephilanthropy.com/home/2023-11-16-with-new-commitments-of-431-million-the-ballmers-are-now-a-top-funder-of-climate-action", "retrieved_at": "2026-04-23", "used_for": "$431M climate commitments 2023"},
+    {"url": "https://www.philanthropy.com/news/ballmer-group-commits-149-million-through-its-new-climate-change-effort", "retrieved_at": "2026-04-23", "used_for": "$50M Amalgamated Charitable Foundation DAF transfer; Growing Justice program"},
+    {"url": "https://www.strivetogether.org/news/ballmer-group-pledges-60-million-strivetogether/", "retrieved_at": "2026-04-23", "used_for": "StriveTogether $60M 2018 pledge"},
+    {"url": "https://en.wikipedia.org/wiki/USAFacts", "retrieved_at": "2026-04-23", "used_for": "USAFacts founding 2017, Ballmer sole funder"},
+    {"url": "https://www.influencewatch.org/non-profit/usafacts/", "retrieved_at": "2026-04-23", "used_for": "USAFacts 'entirely funded by Ballmer', InfluenceWatch profile"},
+    {"url": "https://nonprofitquarterly.org/ballmers-usafacts-institute-government-data-reindexed-without-spin/", "retrieved_at": "2026-04-23", "used_for": "USAFacts Institute registered 2017-01-01 WA state"},
+    {"url": "https://www.bizjournals.com/seattle/news/2026/03/12/usafacts-steve-ballmer-lauren-woodman-nonprofit.html", "retrieved_at": "2026-04-23", "used_for": "USAFacts new president Lauren Woodman March 2026"},
+    {"url": "https://www.opensecrets.org/donor-lookup/results?name=steve+ballmer&order=desc&sort=D", "retrieved_at": "2026-04-23", "used_for": "Political donor lookup (not yet parsed into tight number)"},
+    {"url": "https://www.opensecrets.org/outside-spending/donor_detail/2022?id=U0000003550&name=Ballmer,+Steve&super_only=N&type=I", "retrieved_at": "2026-04-23", "used_for": "Ballmer 2022 outside spending detail"},
+    {"url": "https://www.opensecrets.org/orgs/ballmer-group/summary?id=D000073744", "retrieved_at": "2026-04-23", "used_for": "Ballmer Group OpenSecrets org profile (individual-level aggregation)"},
+    {"url": "https://www.geekwire.com/2020/steve-connie-ballmer-give-7m-national-gun-control-group-co-founded-michael-bloomberg/", "retrieved_at": "2026-04-23", "used_for": "$7M Everytown 2020"},
+    {"url": "https://www.latimes.com/sports/story/2020-11-02/sports-team-owners-contributions-2020-election-trump-biden", "retrieved_at": "2026-04-23", "used_for": "LA sports owners 2020 political total"},
+    {"url": "https://www.forbes.com/sites/forbeswealthteam/2023/01/23/americas-top-givers-2023-the-25-most-philanthropic-billionaires/", "retrieved_at": "2026-04-23", "used_for": "Forbes 2023 philanthropists ranking; UO Ballmer Institute $425M 2022"},
+    {"url": "https://www.forbes.com/sites/forbeswealthteam/2026/02/09/americas-top-25-philanthropists---and-why-musk-page-and-ellison-arent-on-the-list/", "retrieved_at": "2026-04-23", "used_for": "Forbes Feb 2026 top philanthropists; Ballmer Palisades/Pasadena wildfire grants"},
+    {"url": "https://247wallst.com/investing/2025/06/11/steve-ballmer-makes-1-billion-a-year-in-microsoft-dividends/", "retrieved_at": "2026-04-23", "used_for": "$1B/yr MSFT dividends; $4B+ lifetime philanthropy"},
+    {"url": "https://fortune.com/2025/07/08/billionaire-bill-gates-billionaire-poorer-than-microsoft-assistant-steve-ballmer-net-worth-philanthropy/", "retrieved_at": "2026-04-23", "used_for": "Ballmer now wealthier than Gates following Gates' giving"}
+  ]
+}

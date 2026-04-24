@@ -4,3 +4,7 @@ __pycache__/
 output/
 scrooge_raw_data.json
 .DS_Store
+# ephemeral run logs
+*.log
+# outreach emails are drafts — stash locally, do not commit
+outreach/*.txt

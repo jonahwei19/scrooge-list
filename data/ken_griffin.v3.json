@@ -1,0 +1,528 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record following Ellison v3 reference. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run — single-subject deep research (Griffin)",
+
+  "person": {
+    "name_display": "Ken Griffin",
+    "name_legal": "Kenneth Cordele Griffin",
+    "dob_year": 1968,
+    "country_primary": "United States",
+    "wealth_source": "Founder and CEO of Citadel LLC (hedge fund, ~$69B AUM) and Founder/Non-Executive Chairman of Citadel Securities (market maker). Both privately held.",
+    "years_as_billionaire_approx": 23
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 50.7,
+    "range_usd_billions": [47, 51.2],
+    "as_of": "2026-04",
+    "range_note": "Forbes Apr 2026 values Griffin at $50.7B (per Forbes article dated 2026-04-23). Wikipedia cites Forbes Jan 2026 at $51.2B, world's 34th richest. Traders Union cites $47.27B. Range reflects inherent volatility of private-company valuations (Citadel and Citadel Securities are not publicly traded).",
+    "sources": [
+      {
+        "publisher": "Forbes (2026-04-23 article re: NYC Mamdani tax)",
+        "url": "https://www.forbes.com/sites/zacharyfolk/2026/04/23/ken-griffins-citadel-suggests-6-billion-nyc-project-may-be-at-risk-over-mamdani-tax/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 50.7
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes Jan 2026)",
+        "url": "https://en.wikipedia.org/wiki/Kenneth_C._Griffin",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 51.2,
+        "rank_on_list": 34
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/kenneth-c-griffin/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions_note": "Bloomberg profile page; Citadel AUM ~$69B cited"
+      }
+    ],
+    "liquidity_estimate_pct": 0.4,
+    "liquidity_notes": "Wealth is concentrated in private firms (Citadel hedge fund and Citadel Securities market maker). Both are valued via periodic external valuations, not tradable stock. Griffin has collected hundreds of millions in annual Citadel earnings for 25+ years; large cash flow from the hedge fund's incentive fees and Citadel Securities' market-making spreads. Apply 40% liquidity discount for 'giving capacity now' — higher than Ellison's 25% because hedge fund managers realize cash income each year rather than holding one illiquid public stake."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "griffin_cgf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Citadel Group Foundation (a.k.a. The Citadel Foundation)",
+      "donor_ein": "36-4482467",
+      "recipient": "Various (recipients not disclosed in ProPublica summary fields)",
+      "amount_usd": 2376864,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "notes": "CGF operates as near-pure pass-through: 2024 revenue $2.37M → charitable disbursements $2.38M → net assets $1,362. This is NOT Griffin's primary vehicle — it is a small Citadel-firm-branded entity. Primary giving runs through the Kenneth C. Griffin Charitable Fund (structure not public)."
+    },
+    {
+      "event_id": "griffin_cgf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Citadel Group Foundation",
+      "donor_ein": "36-4482467",
+      "amount_usd": 990290,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_cgf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Citadel Group Foundation",
+      "donor_ein": "36-4482467",
+      "amount_usd": 2218566,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_cgf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Citadel Group Foundation",
+      "donor_ein": "36-4482467",
+      "amount_usd": 916233,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_cgf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Citadel Group Foundation",
+      "donor_ein": "36-4482467",
+      "amount_usd": 439252,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_cgf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Citadel Group Foundation",
+      "donor_ein": "36-4482467",
+      "amount_usd": 214015,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_harvard_2014",
+      "event_role": "direct_gift",
+      "year": 2014,
+      "date_precision": "month",
+      "date": "2014-02",
+      "donor_entity": "Kenneth C. Griffin Charitable Fund",
+      "recipient": "Harvard University — undergraduate financial aid (largest gift in Harvard College history at the time)",
+      "amount_usd": 150000000,
+      "source_type": "announcement",
+      "source_url": "https://news.harvard.edu/gazette/story/2014/02/kenneth-griffin-makes-largest-gift-in-harvard-college-history/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_moma_2015",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date_precision": "day",
+      "date": "2015-12-22",
+      "donor_entity": "Kenneth C. Griffin Charitable Fund",
+      "recipient": "Museum of Modern Art (MoMA) — $40M unrestricted; naming rights to east wing ('David and Peggy Rockefeller Building' / Johnson Wing area, renamed per NYT)",
+      "amount_usd": 40000000,
+      "source_type": "announcement",
+      "source_url": "https://archive.nytimes.com/artsbeat.blogs.nytimes.com/2015/12/22/40-million-moma-gift-from-kenneth-c-griffin-brings-naming-rights-to-johnson-wing/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_uchicago_2017",
+      "event_role": "direct_gift",
+      "year": 2017,
+      "date_precision": "month",
+      "date": "2017-11",
+      "donor_entity": "Kenneth C. Griffin Charitable Fund",
+      "recipient": "University of Chicago — Department of Economics (renamed Kenneth C. Griffin Department of Economics)",
+      "amount_usd": 125000000,
+      "source_type": "announcement",
+      "source_url": "https://news.uchicago.edu/story/uchicago-announces-125-million-gift-support-economic-scholarship",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_msi_2019",
+      "event_role": "direct_gift",
+      "year": 2019,
+      "date_precision": "day",
+      "date": "2019-10-03",
+      "donor_entity": "Kenneth C. Griffin Charitable Fund",
+      "recipient": "Museum of Science and Industry, Chicago — renamed 'Kenneth C. Griffin Museum of Science and Industry' (official rebrand May 2024)",
+      "amount_usd": 125000000,
+      "source_type": "announcement",
+      "source_url": "https://www.chicagotribune.com/2019/10/04/the-museum-of-science-and-industry-is-getting-a-new-name-after-chicago-billionaire-ken-griffin-donates-125-million/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_harvard_2023",
+      "event_role": "direct_gift",
+      "year": 2023,
+      "date_precision": "day",
+      "date": "2023-04-11",
+      "donor_entity": "Kenneth C. Griffin Charitable Fund",
+      "recipient": "Harvard University — Faculty of Arts and Sciences. Graduate School of Arts and Sciences renamed 'Harvard Kenneth C. Griffin Graduate School of Arts and Sciences' ('Harvard Griffin GSAS').",
+      "amount_usd": 300000000,
+      "source_type": "announcement",
+      "source_url": "https://news.harvard.edu/gazette/story/2023/04/kenneth-c-griffin-makes-gift-of-300-million-to-fas/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "controversy_note": "Extensive controversy over naming. Per Harvard Crimson, GSAS administrators told students the contract is 'ironclad' and only two names are permissible. LGBTQ+ student clubs were mandated to include 'Griffin' in their names. Former dean publicly argued in Boston Globe that the naming 'dishonors Harvard's core values' given Griffin's political giving."
+    },
+    {
+      "event_id": "griffin_msk_2023",
+      "event_role": "direct_gift",
+      "year": 2023,
+      "date_precision": "day",
+      "date": "2023-12-12",
+      "donor_entity": "Kenneth C. Griffin Charitable Fund (co-donation with David Geffen Foundation)",
+      "recipient": "Memorial Sloan Kettering Cancer Center (MSK) — largest single donation in MSK's 150-year history",
+      "amount_usd_total": 400000000,
+      "amount_usd": 200000000,
+      "amount_usd_note": "Total gift $400M; split 50/50 per MSK announcement is the standard assumption in press coverage but not explicitly confirmed. Attribute $200M to Griffin as best estimate.",
+      "source_type": "announcement",
+      "source_url": "https://www.mskcc.org/news-releases/mskcc-announces-landmark-400-million-gift-from-kenneth-griffin-and-david-geffen",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "Co-donation with Geffen. Split assumption should be revisited if MSK publishes exact allocation."
+    },
+    {
+      "event_id": "griffin_artic_2006",
+      "event_role": "direct_gift",
+      "year": 2006,
+      "date_precision": "day",
+      "date": "2006-10-13",
+      "donor_entity": "Kenneth C. Griffin and Anne Dias Griffin (personal)",
+      "recipient": "Art Institute of Chicago — Modern Wing (grand atrium renamed 'Griffin Court')",
+      "amount_usd": 19000000,
+      "source_type": "announcement",
+      "source_url": "https://www.chicagotribune.com/2006/10/13/no-hedging-on-love-for-art/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Joint gift with ex-wife Anne Dias Griffin (divorced 2015). Attribution to Ken Griffin alone is standard in philanthropy press."
+    },
+    {
+      "event_id": "griffin_field_museum",
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date_precision": "year",
+      "donor_entity": "Kenneth C. Griffin Charitable Fund",
+      "recipient": "Field Museum of Natural History, Chicago — funded 'Antarctic Dinosaurs' traveling exhibition; earlier gifts support dinosaur hall (SUE the T. Rex adjacent / Griffin Halls of Evolving Planet)",
+      "amount_usd": 5500000,
+      "amount_usd_note": "This is one traceable $5.5M gift. Total Griffin giving to Field Museum over lifetime may be higher; only this specific gift is source-anchored.",
+      "source_type": "announcement",
+      "source_url": "https://www.fieldmuseum.org/about/press/field-museum-announces-55-million-gift-kenneth-c-griffin-charitable-fund",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_success_academy_2018",
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date_precision": "day",
+      "date": "2018-11-13",
+      "donor_entity": "Kenneth C. Griffin Charitable Fund",
+      "recipient": "Success Academy Charter Schools (NYC)",
+      "amount_usd": 10000000,
+      "source_type": "announcement",
+      "source_url": "https://apnews.com/press-release/business-wire/new-york-education-new-york-city-philanthropy-charter-schools-8e3d78e839a94259845b935d2f3a6230",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "griffin_constitution_2021",
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date_precision": "month",
+      "date": "2021-11",
+      "donor_entity": "Kenneth C. Griffin (personal purchase, then loaned to Crystal Bridges Museum)",
+      "recipient": "Crystal Bridges Museum of American Art — public display of a rare first printing of the U.S. Constitution",
+      "amount_usd": 43200000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Kenneth_C._Griffin",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "classification_note": "Auction purchase of personal collectible asset that is loaned to a museum. Philanthropy value depends on whether the asset is permanently gifted (charitable) or remains Griffin's personal property on loan (not charitable). Current reporting describes it as a loan. DO NOT count in observable_giving until ownership transfer is verified."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "griffin_no_giving_pledge",
+      "event_role": "pledge_refusal",
+      "year": 2019,
+      "status": "REFUSED_TO_SIGN",
+      "status_source": "Inside Philanthropy (2019) — Griffin publicly stated he would not sign the Giving Pledge.",
+      "quote": "You will clearly see me give away my wealth over my lifetime, and when I pass away.",
+      "source_url": "https://www.insidephilanthropy.com/home/2019-10-25-what-the-right-hand-is-doing-the-paradoxical-giving-of-a-billionaire-mega-donor",
+      "retrieved_at": "2026-04-23",
+      "notes": "Griffin is NOT a Giving Pledge signatory. This means he has no public commitment to a percentage of wealth for charity. His stated intent is to give during life and via estate, without a formal threshold."
+    },
+    {
+      "event_id": "griffin_catalyst_2023",
+      "event_role": "announcement_vehicle_launch",
+      "year": 2023,
+      "date_precision": "month",
+      "date": "2023-09",
+      "entity_launched": "Griffin Catalyst",
+      "pledged_amount_usd": null,
+      "source_type": "news",
+      "source_url": "https://www.reuters.com/business/griffin-citadel-hedge-fund-lays-out-roadmap-future-philanthropic-giving-2023-09-13/",
+      "retrieved_at": "2026-04-23",
+      "notes": "Griffin launched Griffin Catalyst in Sept 2023 as a 'civic engagement initiative' and public-facing brand for his philanthropy. Per Inside Philanthropy, Griffin Catalyst does NOT itself make grants — it is a clearinghouse/brand; actual giving still runs through the Kenneth C. Griffin Charitable Fund. Not a legal entity that files a 990."
+    },
+    {
+      "event_id": "griffin_lifetime_self_reported",
+      "event_role": "self_reported_total",
+      "year": 2025,
+      "self_reported_total_usd": 2500000000,
+      "source_type": "self_reported",
+      "source_url": "https://www.griffincatalyst.org/about/",
+      "retrieved_at": "2026-04-23",
+      "notes": "Griffin Catalyst's own About page claims 'Ken has donated more than $2.5 billion to advance initiatives with the power to transform lives.' Forbes 2023 list cited $1.56B; Reuters Sept 2023 said 'more than $2 billion.' Inside Philanthropy March 2025 cited Forbes figure of '$2.3 billion and counting.' We use this as an UPPER BOUND self-reported total — not as observable_giving — because the composition of this $2.5B (direct 501(c)(3) gifts vs. Charitable-Fund-internal transfers vs. political vs. personal-use art purchases) is not independently verifiable."
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Griffin is in the top 10 individual political donors in the U.S. for multiple cycles.",
+    "observed_total_2020_2024_usd": 173000000,
+    "observed_total_note": "Approximate floor: $66M in 2020 cycle (Wikipedia citing OpenSecrets) + $107M in 2024 cycle outside-spending (Ballotpedia citing OpenSecrets 2024 top donors list). FEC direct-pull not yet run for 2022 cycle or primaries — total will rise when Phase 1.3 FEC integration runs.",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kenneth_C._Griffin",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Wikipedia (citing OpenSecrets)",
+        "amount_usd": 66000000,
+        "cycle": "2020"
+      },
+      {
+        "url": "https://ballotpedia.org/Kenneth_Griffin",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Ballotpedia (citing OpenSecrets 2024 Top Donors)",
+        "amount_usd": 107000000,
+        "cycle": "2024",
+        "rank_on_2024_top_donors": 5
+      },
+      {
+        "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000003655&name=Griffin,+Kenneth+C&super_only=N&type=I",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets",
+        "notes": "Direct page fetch blocked (403). OpenSecrets donor-detail ID U0000003655 is Griffin's canonical record."
+      },
+      {
+        "url": "https://www.artnews.com/art-news/news/billionaire-collector-kenneth-griffin-donated-100-million-2024-election-senate-leadership-fund-1234724065/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "ArtNews (citing OpenSecrets)",
+        "itemization_2024": "$20M to Senate Leadership Fund (pro-GOP Senate, two $10M tranches July & Sept 2024); $15M to Congressional Leadership Fund (pro-GOP House); $15M to Keystone Renewal PAC; $10M to Maryland's Future (pro-Larry Hogan)"
+      },
+      {
+        "url": "https://apnews.com/article/ken-griffin-gop-megadonor-citadel-nikki-haley-2ede4041821f4bf7cce28bca8d1b346b",
+        "retrieved_at": "2026-04-23",
+        "publisher": "AP",
+        "amount_usd": 5000000,
+        "event_date": "2023",
+        "notes": "$5M to pro-Nikki-Haley super PAC"
+      },
+      {
+        "url": "https://www.chicagobusiness.com/government/citadels-ken-griffin-makes-political-campaign-contributions-across-country",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Crain's Chicago Business",
+        "amount_usd": 10700000,
+        "notes": "$10.7M to DeSantis campaign + associated PACs since 2018 (cumulative through 2022 Florida gubernatorial)"
+      }
+    ],
+    "desantis_note": "TASK SPEC flagged '$10M DeSantis 2024' — careful interpretation: Griffin's largest DeSantis giving was $5M in 2021 to DeSantis's state reelection PAC and $10.7M cumulative 2018-2022. He publicly sat out the 2024 presidential primary, moving to Haley ($5M) and then back-bench GOP committees. Did NOT give $10M to a DeSantis 2024 presidential vehicle — the DeSantis cash was pre-primary state-level support, not 2024 federal. Spec may be conflating cycles."
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Citadel Group Foundation (a.k.a. The Citadel Foundation)",
+        "ein": "36-4482467",
+        "established_year": 2002,
+        "state": "FL (Miami; previously Chicago)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 1362,
+        "officers_compensation": "ZERO_COMP (Griffin, Beeson, Fagan, Russo all zero)",
+        "payout_rate_notes": "Operates as near-pure pass-through. Revenue flows in from Citadel / Griffin in year and out to charities same year. Net assets stay near zero. No LOW_PAYOUT flag (structurally cannot underpay — doesn't accumulate assets).",
+        "grants_out_2019_2024_total_usd": 7155220,
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
+        "classification_note": "This is a FIRM foundation, not Griffin's primary personal philanthropic vehicle. The scale ($0.2M–$2.4M/yr) is orders of magnitude below his headline gifts ($125M–$300M). Headline gifts are attributed to 'Kenneth C. Griffin Charitable Fund' in every announcement press release."
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [
+      {
+        "name": "Kenneth C. Griffin Charitable Fund",
+        "classification": "LIKELY_DAF_OR_PRIVATE_FUND",
+        "evidence": "Inside Philanthropy (2025) explicitly states: 'doesn't have a public website, and since it isn't listed on the IRS or ProPublica foundation directories, is likely a donor-advised fund that isn't required to report its financials or grantees.' Every major press release (Harvard, MoMA, UChicago, MSI, Success Academy, Field Museum) credits this entity as the donor.",
+        "public_financial_reporting": "NONE",
+        "source_url": "https://www.insidephilanthropy.com/home/the-king-of-wall-street-south-checking-in-on-kenneth-griffins-giving",
+        "retrieved_at": "2026-04-23",
+        "opacity_note": "If this IS a DAF at a community foundation or commercial sponsor (Fidelity/Schwab/Vanguard Charitable), contributions are tax-deductible the year of contribution but pay-out timing is opaque. If instead it is a private operating arrangement / LLC, even less transparent. ProPublica shows zero matches under this name for standalone 990-PF — strongly consistent with DAF structure."
+      }
+    ],
+    "dafs_note": "Griffin's headline giving model is the textbook pattern IPS identified: most Giving-Pledge-equivalent wealth gets routed through DAF-like opaque vehicles. In Griffin's case, absence of a Giving Pledge SIGNATURE + DAF-structured giving vehicle means BOTH the pledge-compliance check and the 990-PF audit trail are neutralized. Known named gifts (observable) are floor; unknown DAF balance is opaque upper.",
+    "llcs_philanthropic": [
+      {
+        "name": "Griffin Catalyst",
+        "year_launched": 2023,
+        "structure": "NOT_A_LEGAL_GRANT_VEHICLE",
+        "classification_note": "Inside Philanthropy: 'Griffin Catalyst does not make grants; instead, Kenneth Griffin moves his philanthropy through the Kenneth C. Griffin Charitable Fund.' Griffin Catalyst is a brand / civic-engagement platform / comms layer, not a 501(c)(3) or LLC making disbursements.",
+        "source_url": "https://www.insidephilanthropy.com/find-a-grant/grants-g/griffin-catalyst",
+        "retrieved_at": "2026-04-23"
+      }
+    ],
+    "llcs_note": "No CZI-style or Emerson-Collective-style philanthropic LLC identified.",
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "Unlike Ellison's 2010 pledge letter, Griffin has NOT publicly disclosed a trust structure. He explicitly refused the Giving Pledge. No estate-planning transparency exists. Structure unknown."
+  },
+
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE_SIGNATURE",
+      "evidence": "Griffin publicly refused to sign the Giving Pledge (per Inside Philanthropy 2019). Unlike Ellison, Bezos, Musk, Zuckerberg — all of whom have signed — Griffin has made no percentage-of-wealth public commitment.",
+      "source_url": "https://www.insidephilanthropy.com/home/2019-10-25-what-the-right-hand-is-doing-the-paradoxical-giving-of-a-billionaire-mega-donor"
+    },
+    {
+      "flag": "POLITICAL_HEAVY",
+      "evidence": "$173M+ observed political giving across 2020 + 2024 cycles alone ($66M in 2020; $107M in 2024 per Ballotpedia/OpenSecrets). Ranked 5th among 2024 individual outside-spending donors. Political giving on this scale substitutes for charitable giving at ~$0.33/$1 per NBER W26616.",
+      "source_url": "https://ballotpedia.org/Kenneth_Griffin"
+    },
+    {
+      "flag": "DAF_OPACITY",
+      "evidence": "Primary philanthropic vehicle (Kenneth C. Griffin Charitable Fund) is not on IRS/ProPublica foundation registries — consistent with a DAF or equivalent opaque structure. Grantees are disclosed only via voluntary press releases.",
+      "source_url": "https://www.insidephilanthropy.com/home/the-king-of-wall-street-south-checking-in-on-kenneth-griffins-giving"
+    },
+    {
+      "flag": "NAMING_RIGHTS_DOMINANT",
+      "evidence": "Every major Griffin gift comes with a naming right: Harvard Griffin GSAS, Kenneth C. Griffin Museum of Science and Industry, Kenneth C. Griffin Department of Economics (UChicago), Griffin Court (Art Institute of Chicago), MoMA east wing. Pattern of reputation-optimized philanthropy; Harvard faculty publicly argued the naming 'dishonors core values.'",
+      "source_url": "https://www.bostonglobe.com/2023/05/02/opinion/letters-to-the-editor-harvard-gop-donor-naming-rights-dissent/"
+    }
+  ],
+  "red_flags_not_present": [
+    "LOW_PAYOUT (Citadel Group Foundation runs near-zero retained assets — structurally cannot underpay)",
+    "HIGH_OFFICER_COMP (all CGF officers zero comp)",
+    "GIVING_PLEDGE_UNFULFILLED (not applicable — he refused to sign; there is no pledge to be unfulfilled)"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 981544220,
+    "observable_giving_method": "Sum of: direct_gift announcements where 501(c)(3) receipt is confirmed (Harvard 2014 $150M; MoMA 2015 $40M; UChicago 2017 $125M; MSI 2019 $125M; Harvard 2023 $300M; MSK 2023 $200M Griffin share; Art Institute 2006 $19M; Field Museum 2018 $5.5M; Success Academy 2018 $10M) + CGF 990-PF grants_out 2019-2024 ($7.15M). EXCLUDES: Constitution 2021 $43.2M (loan, not gift); political giving; Griffin Catalyst (vehicle, not gift); self-reported $2.5B total (not independently itemized).",
+    "observable_giving_todo": [
+      "Resolve MSK Griffin/Geffen $400M split — $200M Griffin share assumed but not confirmed by MSK.",
+      "Pull additional CGF 990-PF history 2002-2018.",
+      "Attempt to identify Kenneth C. Griffin Charitable Fund's legal structure (DAF sponsor?). Search CA/IL/FL state charitable registries. If sponsor is Fidelity/Schwab/Vanguard Charitable, confirm via IRS Form 990 Schedule I matching.",
+      "Reconcile $981M observable vs. Griffin's $2.5B self-reported — gap of ~$1.5B should be walked: small gifts (Norton Museum $20M 2018; MCA Chicago $10M 2015; Navy SEAL Foundation $10M 2020; Underline Miami $5M 2021; Obama Foundation $1M 2017; National Medal of Honor Museum $30M 2023; Ukraine Math/Science $3M 2022; Chicago nonprofits ~$130M 2022; Miami-Dade $9M 2024) account for ~$218M more. Residual ~$1.3B is either (a) undisclosed Charitable Fund outflows, (b) political giving double-counted by Griffin's own messaging, or (c) pledges announced but not yet disbursed."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 2028000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.4 × $50.7B = $20.28B; tenure cap saturated (23 years). Expected = $2.03B. STRICT denominator matching the formal 10% norm.",
+    "observable_ratio_to_expected": 0.484,
+    "observable_ratio_to_current_nw": 0.0194,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 1500000000,
+      "daf_uplift_note": "Kenneth C. Griffin Charitable Fund is strongly suspected DAF-structure. Self-reported $2.5B total minus $981M observable = $1.52B gap. This is the natural upper bound for DAF-channeled giving already made (as opposed to sitting in account balances). Credit this to hidden_upper as 'likely real giving, opaque source.'",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "Griffin Catalyst is not a legal grant-making entity. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 100000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Griffin is explicitly NOT anonymity-preferring (he names everything he touches), so apply a lower cohort uplift: 0.5% of liquid wealth = 0.005 × $20.28B = $101M. Rounded to $100M as conservative ceiling.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious tithing pattern. Zero.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "Unlike Ellison, Griffin has NOT disclosed a charitable trust. No trust uncertainty to credit toward upper bound.",
+      "total_usd": 1600000000,
+      "total_method": "daf ($1.5B) + anonymous ($100M); llc/offshore/religious/trust all zero"
+    },
+    "observable_plus_hidden_ratio_to_expected": 1.274,
+    "tier": "Probably_Moderate (Tier B)",
+    "tier_rule": "Griffin's observable giving ($981M) plus plausible hidden DAF flow ($1.5B) = $2.48B, which matches his own self-reported $2.5B total and slightly exceeds the $2.03B 10%-tenure-weighted expected. He is NOT a Tier A 'verified low' case — the absolute dollar flow is real and substantial. But the tier is 'Probably Moderate' not 'Meeting Norm' because: (1) $173M+ political giving in 2020+2024 cycles alone displaces charitable giving per NBER W26616 at ~0.33/$1; (2) reputation-optimized naming pattern suggests consumption-value component; (3) no Giving Pledge commitment means no forward-looking denominator.",
+    "tier_published_caveat": "Griffin is a useful contrast to Ellison: HIGH observable dollars, but HIGH political dollars and explicit refusal to sign a percentage pledge. On the Scrooge List frame he is NOT a canonical 'Scrooge' — he gives real money — but his score is pulled up by political substitution and the opacity of his DAF-channel giving."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 55.2,
+    "components": {
+      "giving_gap_40pct": 20.6,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 15.0
+    },
+    "note": "Computed with v2 formula for continuity. DO NOT PUBLISH — we publish tiers only per PLAN.md. Giving gap based on observable $981M / expected $2.03B = 0.484; gap = 0.516 × 40 = 20.6. Tenure saturated at 23 yrs. No pledge to breach (he refused to sign). Three red flags active out of four (NO_PLEDGE, POLITICAL_HEAVY, DAF_OPACITY, NAMING_RIGHTS_DOMINANT is a soft flag) × 5 = 15."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Griffin Catalyst press contact + Citadel press office + Harvard Griffin GSAS (for naming-related framing) — all three.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: MSK 2023 $400M split — confirm Griffin's share is $200M (assumed) vs. some other allocation.",
+    "VERIFY: Kenneth C. Griffin Charitable Fund — identify legal structure. Search Fidelity/Schwab/Vanguard Charitable DAF sponsor disclosures. Check FL/IL state charitable registries.",
+    "VERIFY: Smaller gifts enumerated in Wikipedia summary (Norton $20M 2018; MCA Chicago $10M 2015; Navy SEAL Foundation $10M 2020; Underline $5M 2021; Obama Foundation $1M 2017; Medal of Honor Museum $30M 2023; Ukraine $3M 2022; Chicago nonprofits $130M 2022; Miami-Dade $9M 2024) — source-anchor each with primary announcement.",
+    "VERIFY: FEC bulk pull against Griffin's name/Citadel address to confirm or refine $173M+ political total across all cycles 2020-2024.",
+    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
+    "VERIFY: Constitution 2021 $43.2M — confirm whether the document was gifted to Crystal Bridges or is on loan (affects charitable classification).",
+    "VERIFY: Run Brave Search for post-2024 announced Griffin gifts not yet captured here (1-year freshness window).",
+    "VERIFY: Reconcile Griffin Catalyst's $2.5B self-reported total vs. Forbes 2023 $1.56B vs. Forbes 2025 $2.3B — what's the composition delta?"
+  ],
+
+  "sources_all": [
+    {"url": "https://projects.propublica.org/nonprofits/organizations/364482467", "retrieved_at": "2026-04-23", "used_for": "Citadel Group Foundation 990-PF data 2019-2024, assets, officers, EIN"},
+    {"url": "https://en.wikipedia.org/wiki/Kenneth_C._Griffin", "retrieved_at": "2026-04-23", "used_for": "Full legal name, DOB, net worth Jan 2026 ($51.2B), Forbes rank 34, full philanthropic history, $66M 2020 political total"},
+    {"url": "https://www.forbes.com/sites/zacharyfolk/2026/04/23/ken-griffins-citadel-suggests-6-billion-nyc-project-may-be-at-risk-over-mamdani-tax/", "retrieved_at": "2026-04-23", "used_for": "Forbes Apr 2026 net worth $50.7B"},
+    {"url": "https://www.bloomberg.com/billionaires/profiles/kenneth-c-griffin/", "retrieved_at": "2026-04-23", "used_for": "Citadel AUM $69B context"},
+    {"url": "https://www.insidephilanthropy.com/home/the-king-of-wall-street-south-checking-in-on-kenneth-griffins-giving", "retrieved_at": "2026-04-23", "used_for": "Kenneth C. Griffin Charitable Fund DAF-structure hypothesis; Forbes $2.3B total; CGF 2023 $990K grants"},
+    {"url": "https://www.insidephilanthropy.com/home/2019-10-25-what-the-right-hand-is-doing-the-paradoxical-giving-of-a-billionaire-mega-donor", "retrieved_at": "2026-04-23", "used_for": "Giving Pledge refusal, lifetime-and-estate-giving quote"},
+    {"url": "https://www.insidephilanthropy.com/find-a-grant/grants-g/griffin-catalyst", "retrieved_at": "2026-04-23", "used_for": "Griffin Catalyst does NOT make grants; pass-through to Charitable Fund"},
+    {"url": "https://www.griffincatalyst.org/about/", "retrieved_at": "2026-04-23", "used_for": "Griffin Catalyst self-reported $2.5B lifetime total"},
+    {"url": "https://news.harvard.edu/gazette/story/2014/02/kenneth-griffin-makes-largest-gift-in-harvard-college-history/", "retrieved_at": "2026-04-23", "used_for": "Harvard 2014 $150M financial aid gift"},
+    {"url": "https://news.harvard.edu/gazette/story/2023/04/kenneth-c-griffin-makes-gift-of-300-million-to-fas/", "retrieved_at": "2026-04-23", "used_for": "Harvard 2023 $300M FAS gift + GSAS renaming"},
+    {"url": "https://www.thecrimson.com/article/2023/5/25/griffin-gsas-harvard-donations-naming/", "retrieved_at": "2026-04-23", "used_for": "Harvard renaming 'ironclad' contract controversy"},
+    {"url": "https://www.bostonglobe.com/2023/05/02/opinion/letters-to-the-editor-harvard-gop-donor-naming-rights-dissent/", "retrieved_at": "2026-04-23", "used_for": "Former dean: naming 'dishonors Harvard's core values'"},
+    {"url": "https://news.uchicago.edu/story/uchicago-announces-125-million-gift-support-economic-scholarship", "retrieved_at": "2026-04-23", "used_for": "UChicago 2017 $125M Economics Dept gift"},
+    {"url": "https://archive.nytimes.com/artsbeat.blogs.nytimes.com/2015/12/22/40-million-moma-gift-from-kenneth-c-griffin-brings-naming-rights-to-johnson-wing/", "retrieved_at": "2026-04-23", "used_for": "MoMA 2015 $40M gift + naming rights"},
+    {"url": "https://www.chicagotribune.com/2019/10/04/the-museum-of-science-and-industry-is-getting-a-new-name-after-chicago-billionaire-ken-griffin-donates-125-million/", "retrieved_at": "2026-04-23", "used_for": "MSI 2019 $125M gift + renaming"},
+    {"url": "https://www.mskcc.org/news-releases/mskcc-announces-landmark-400-million-gift-from-kenneth-griffin-and-david-geffen", "retrieved_at": "2026-04-23", "used_for": "MSK 2023 $400M (Griffin + Geffen) joint gift"},
+    {"url": "https://www.chicagotribune.com/2006/10/13/no-hedging-on-love-for-art/", "retrieved_at": "2026-04-23", "used_for": "Art Institute of Chicago 2006 $19M Modern Wing gift"},
+    {"url": "https://www.fieldmuseum.org/about/press/field-museum-announces-55-million-gift-kenneth-c-griffin-charitable-fund", "retrieved_at": "2026-04-23", "used_for": "Field Museum $5.5M Antarctic Dinosaurs gift"},
+    {"url": "https://apnews.com/press-release/business-wire/new-york-education-new-york-city-philanthropy-charter-schools-8e3d78e839a94259845b935d2f3a6230", "retrieved_at": "2026-04-23", "used_for": "Success Academy 2018 $10M gift"},
+    {"url": "https://ballotpedia.org/Kenneth_Griffin", "retrieved_at": "2026-04-23", "used_for": "$107M 2024 political outside spending, rank 5"},
+    {"url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000003655&name=Griffin,+Kenneth+C&super_only=N&type=I", "retrieved_at": "2026-04-23", "used_for": "OpenSecrets canonical donor ID U0000003655"},
+    {"url": "https://www.artnews.com/art-news/news/billionaire-collector-kenneth-griffin-donated-100-million-2024-election-senate-leadership-fund-1234724065/", "retrieved_at": "2026-04-23", "used_for": "2024 itemization: SLF $20M, CLF $15M, Keystone $15M, MD's Future $10M"},
+    {"url": "https://apnews.com/article/ken-griffin-gop-megadonor-citadel-nikki-haley-2ede4041821f4bf7cce28bca8d1b346b", "retrieved_at": "2026-04-23", "used_for": "$5M to pro-Haley PAC; sat out presidential primary"},
+    {"url": "https://www.chicagobusiness.com/government/citadels-ken-griffin-makes-political-campaign-contributions-across-country", "retrieved_at": "2026-04-23", "used_for": "$10.7M DeSantis cumulative 2018-2022"},
+    {"url": "https://www.reuters.com/business/griffin-citadel-hedge-fund-lays-out-roadmap-future-philanthropic-giving-2023-09-13/", "retrieved_at": "2026-04-23", "used_for": "Griffin Catalyst Sept 2023 launch; $2B+ lifetime"},
+    {"url": "https://time.com/collections/time100-philanthropy-2025/7286078/ken-griffin/", "retrieved_at": "2026-04-23", "used_for": "TIME100 Philanthropy 2025 lifetime >$2B; MSK gift context"}
+  ]
+}

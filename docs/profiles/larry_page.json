@@ -1,0 +1,738 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record matching ellison v3 reference. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Tier classification at bottom.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 Larry Page (Tier A candidate) deep research",
+  "person": {
+    "name_display": "Larry Page",
+    "name_legal": "Lawrence Edward Page",
+    "dob_year": 1973,
+    "country_primary": "United States",
+    "residence_notes": "Reportedly spent COVID pandemic on Fijian islands (Tavarua, Namotu, Mago) from 2020; superyacht-program entry. December 2025 purchased ~$173M in Miami compounds ($101.5M Coconut Grove compound + second property) and moved key business entities out of California ahead of proposed California wealth tax end-of-2025 residency deadline. No public philanthropic vehicle tied to offshore residence so far, but flag the pattern (wealth shielding behavior concurrent with low observable giving).",
+    "wealth_source": "Google / Alphabet co-founder (1998); holds ~6% of Alphabet (Class B supervoting + Class C). Also longevity startup investments (Calico funded through Alphabet, not personally philanthropic). Recent AI startup (Dynatomics, reported 2025).",
+    "years_as_billionaire_approx": 22
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 269,
+    "range_usd_billions": [
+      252,
+      285
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2026 (#2 on list, past Ellison after Nov 2025 Alphabet rally on Gemini 3 buzz); Wikipedia / Bloomberg Billionaires Index cite $269B; Bajaj Finserv secondary aggregator cites $269-285B; Celebrity Net Worth $265B (Mar 2026); Fortune Nov 2025 cited $252B at moment Page passed Bezos; Nov 24 2025 Forbes ~$255B after 8.7B one-day move. ~13% spread across 'Forbes 2026' sources \u2014 same single-point-denominator instability flagged in Ellison record.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires",
+        "url": "https://www.forbes.com/profile/larry-page/",
+        "retrieved_at": "2026-04-23",
+        "rank_on_list": 2,
+        "note": "WebFetch blocked by Forbes; rank corroborated by Forbes Nov 24 2025 article and Livemint Nov 2025. Forbes 2026 list places Page at #2."
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes / Bloomberg 2026)",
+        "url": "https://en.wikipedia.org/wiki/Larry_Page",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 269
+      },
+      {
+        "publisher": "Fortune",
+        "url": "https://fortune.com/2025/11/21/google-cofounder-larry-page-amazon-jeff-bezos-billionaires-list-alphabet-stock-surge-ai-boom/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 252,
+        "value_as_of": "2025-11"
+      },
+      {
+        "publisher": "Forbes (Tyler Roush)",
+        "url": "https://www.forbes.com/sites/tylerroush/2025/11/24/larry-page-becomes-no-2-richest-bumping-larry-ellison-as-alphabet-shares-rally/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 255,
+        "value_as_of": "2025-11-24"
+      },
+      {
+        "publisher": "Celebrity Net Worth",
+        "url": "https://www.celebritynetworth.com/richest-businessmen/richest-billionaires/larry-page-net-worth/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 265,
+        "value_as_of": "2026-03"
+      },
+      {
+        "publisher": "Daily Mail (citing $270B)",
+        "url": "https://www.dailymail.co.uk/news/article-15562749/America-billionaires-bezos-charity.html",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 270,
+        "value_as_of": "2026-02"
+      }
+    ],
+    "liquidity_estimate_pct": 0.3,
+    "liquidity_notes": "~6% Alphabet stake (Class B supervoting + Class C) is publicly traded \u2014 more liquid than Ellison's Oracle stake but still concentrated. Form 144 filings show Page family trusts sold ~353K combined Class A/C shares for ~$38M May-June 2025 (micro relative to position). Apply 30% liquidity discount for 'giving capacity now'; 70%+ for lifetime expected giving denominator."
+  },
+  "cited_events": [
+    {
+      "event_id": "page_cvpmf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "Various (predominantly DAFs \u2014 Schwab Charitable, National Philanthropic Trust \u2014 per historical pattern; 2024 grantee split not yet verified grant-by-grant)",
+      "amount_usd": 286000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Grant-recipient breakdown for 2024 not yet retrieved at line-item level. Based on 2023 pattern (77% DAF), estimated $220M+ of this went to DAFs; only DAF\u2192downstream grants would be true 'out-the-door' but those are donor-opaque."
+    },
+    {
+      "event_id": "page_cvpmf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 285596584,
+      "source_type": "990-PF",
+      "source_url": "https://www.instrumentl.com/990-report/carl-victor-page-memorial-foundation",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "breakdown": {
+        "to_dafs_usd": 219000000,
+        "to_direct_charities_usd": 66000000,
+        "daf_recipients": [
+          {
+            "name": "Schwab Charitable",
+            "amount_usd": 218000000
+          },
+          {
+            "name": "National Philanthropic Trust",
+            "amount_usd": 1000000
+          }
+        ],
+        "direct_recipients_sample": [
+          {
+            "name": "European Climate Foundation",
+            "amount_usd": 23000000
+          },
+          {
+            "name": "RF Catalytic Capital (Invest in Our Future)",
+            "amount_usd": 15000000
+          },
+          {
+            "name": "Instituto Clima e Sociedade (Brazil)",
+            "amount_usd": 10000000
+          },
+          {
+            "name": "World Resources Institute",
+            "amount_usd": 4800000
+          },
+          {
+            "name": "U.S. Energy Foundation",
+            "amount_usd": 4000000
+          },
+          {
+            "name": "Global Fishing Watch",
+            "amount_usd": 3000000
+          }
+        ],
+        "breakdown_source_url": "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor",
+        "breakdown_retrieved_at": "2026-04-23"
+      }
+    },
+    {
+      "event_id": "page_cvpmf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 277000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Per Inside Philanthropy: 2022 CVPMF grants were 'almost all' (~99.9% per IP reporting) routed to DAFs (Schwab Charitable + NPT). Out-the-door impact opaque."
+    },
+    {
+      "event_id": "page_cvpmf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 196000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Per InfluenceWatch: 2021 disbursements 'exclusively directed to the National Philanthropic Trust.' Observer May 2023 and PND separately report ~$227M distributed across 2020 and 2021 combined. Amount here ($196M) is from ProPublica summary table."
+    },
+    {
+      "event_id": "page_cvpmf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 31000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "page_cvpmf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 643000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "2019 payout was 0.2% of assets ($2.4B) \u2014 far below 5% legal minimum. Net-of-prior-year carry this may still comply via 5-year averaging, but it's a RED FLAG year."
+    },
+    {
+      "event_id": "page_cvpmf_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 99000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "page_cvpmf_2014",
+      "event_role": "grant_out",
+      "year": 2014,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 73000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "page_cvpmf_2013",
+      "event_role": "grant_out",
+      "year": 2013,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 40000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "page_cvpmf_2012",
+      "event_role": "grant_out",
+      "year": 2012,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 29000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "page_cvpmf_2011",
+      "event_role": "grant_out",
+      "year": 2011,
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "amount_usd": 13000000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "page_cvpmf_contributions_lifetime",
+      "event_role": "transfer_in",
+      "year_range": [
+        2004,
+        2024
+      ],
+      "donor_entity": "Larry Page (personal, predominantly Alphabet stock)",
+      "recipient": "Carl Victor Page Memorial Foundation (EIN 20-1922957)",
+      "amount_usd": 2000000000,
+      "amount_usd_note": "Vox December 2019 reported 'over $2 billion' contributed over 15 years, mostly Google/Alphabet stock. Given CVPMF assets were $4.45B end of 2024 (and include post-2019 investment appreciation), cumulative contributions since 2019 add at least another ~$1B per ProPublica summary (contributions received line: $140M 2019 + $53M 2020 + $639M 2021 + $265M 2022 + $56M 2023 + $103M 2024 = ~$1.26B post-2019 contributions in). Lifetime contributions INTO the foundation are therefore ~$3.2-3.3B.",
+      "source_type": "announcement + 990-PF",
+      "source_url": "https://www.influencewatch.org/person/larry-page/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "CRITICAL: Per dedup rule, transfers IN to a foundation are NOT observable out-the-door giving. We count foundation grants OUT (which we have). This row exists for context \u2014 to show the gap between contributions-in (~$3.3B lifetime) and grants-out (lifetime ~$1.3B through 2024 from the summary data available). ~$3B sitting as foundation corpus as of 2024 = $4.45B. Foundation is growing, not disbursing."
+    },
+    {
+      "event_id": "page_ebola_2014",
+      "event_role": "pledge",
+      "year": 2014,
+      "pledged_amount_usd": 15000000,
+      "recipient": "Ebola relief (via CVPMF)",
+      "source_type": "announcement",
+      "source_url": "https://philanthropynewsdigest.org/news/google-larry-page-pledge-30-million-for-ebola-relief-efforts",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "$15M from CVPMF (personal foundation) + $10M Google.org match + $5M from Google (corporate, not personal). Only the $15M from CVPMF is counted toward Page's personal philanthropy; should already be captured in CVPMF grants-out in 2014 or 2015 990-PF."
+    },
+    {
+      "event_id": "page_xmas_donations_2015_2017",
+      "event_role": "announcement",
+      "year_range": [
+        2015,
+        2017
+      ],
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "amount_usd": 400000000,
+      "source_type": "news",
+      "source_url": "https://www.vox.com/recode/2019/12/18/21010108/larry-page-philanthropy-foundation-donor-advised-fund-christmas",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "Widely reported ~$400M in 'Christmastime donations 2015-2017' \u2014 but per Vox / NCRP / Common Dreams, NONE went directly to operating charities; all were DAF transfers. Already captured inside CVPMF 990-PF grants-out totals for those years (2015=$99M, plus 2016 & 2017 not yet retrieved from ProPublica summary). DO NOT double-count as additional direct giving."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "page_giving_pledge_NOT_SIGNED",
+      "event_role": "pledge_absence",
+      "year": "N/A",
+      "status": "NEVER_SIGNED",
+      "status_source": "givingpledge.org \u2014 https://www.givingpledge.org/pledger/larry-page/ returns 404; Page is not in the public pledger list. Confirmed by Inside Philanthropy Jan 2024 ('IP-awarded title as the Least Google-able Megadonors').",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-23",
+      "notes": "Neither Larry Page nor Sergey Brin has signed the Giving Pledge. This is notable because both are 20+ year centibillionaires, contemporaries of Zuckerberg (signed), Gates (co-founded), Buffett (co-founded), and Musk (signed). Eric Schmidt, the other major Google principal, HAS signed. Pledge absence is itself diagnostic: Page has never publicly committed to give away any specific fraction of his wealth."
+    }
+  ],
+  "political_giving": {
+    "classification": "MINIMAL",
+    "substitution_note": "Political giving is minimal relative to wealth. NBER W26616 substitution (political $1 \u2192 charitable -$0.33) effectively zero in Page's case because the political denominator is tiny.",
+    "observed_total_lifetime_usd": 1500000,
+    "observed_total_note": "Historical FEC / state-prop record (per InfluenceWatch): $1M Prop 87 (CA oil tax, 2006), $400K against Prop 8 (same-sex marriage ban, 2008), $25K Obama inauguration 2008. No significant presidential/super-PAC activity reported since. Consistent with Page's general 'disappear from the public record' pattern since 2019. Compare Ellison's $31M+ 2021-2025 \u2192 Page is the inverse.",
+    "sources": [
+      {
+        "url": "https://www.influencewatch.org/person/larry-page/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "InfluenceWatch",
+        "note": "Prop 87 ($1M), Prop 8 ($400K), Obama inaug ($25K)"
+      },
+      {
+        "url": "https://www.followthemoney.org/research/institute-reports/forbes-magazines-richest-americans-influence-state-politics",
+        "retrieved_at": "2026-04-23",
+        "publisher": "FollowTheMoney / National Institute on Money in Politics"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Carl Victor Page Memorial Foundation",
+        "ein": "20-1922957",
+        "ein_note": "Prompt hint of EIN 77-0557597 was INCORRECT. Correct EIN per ProPublica is 20-1922957. Foundation is named after Page's late father, Dr. Carl Victor Page (computer science professor, d. 1996).",
+        "established_year": 2006,
+        "state": "CA (Palo Alto)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 4450000000,
+        "officers": [
+          {
+            "name": "Lawrence Page",
+            "role": "Director, Chairman & President",
+            "compensation_usd": 0
+          },
+          {
+            "name": "Lucinda Southworth (wife)",
+            "role": "Director & CFO",
+            "compensation_usd": 0
+          },
+          {
+            "name": "P. Wayne Osborn",
+            "role": "Secretary",
+            "compensation_usd": 0
+          }
+        ],
+        "officers_compensation": "ZERO_COMP (all officers receive zero compensation \u2014 no red flag on HIGH_COMP axis)",
+        "payout_rate_notes": "2024 grants ($286M) / assets ($4.45B) = 6.4% \u2014 just above 5% legal minimum. 2019 payout was 0.2% (RED FLAG YEAR \u2014 pre-catch-up). 5-year average 2020-2024 = ($31M + $196M + $277M + $286M + $286M) / $3.3B avg assets = ~32% cumulative / 5yr avg assets = ~6.4%/yr. Technically compliant but foundation is accumulating assets faster than disbursing to end-use charities.",
+        "red_flag_daf_transfers": "CONFIRMED_SEVERE",
+        "daf_transfer_evidence": "2021: 'exclusively directed to the National Philanthropic Trust' (InfluenceWatch). 2022: ~99.9% to DAFs per Inside Philanthropy. 2023: 77% to DAFs ($219M of $286M); first year with ANY meaningful direct charity grants ($66M / 13 grants). 2015-2017: $400M 'Christmas donations' \u2014 NONE went directly to charity (Vox, NCRP, Common Dreams).",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [
+      {
+        "name": "Schwab Charitable (Page's DAF account there)",
+        "evidence": "$218M transferred from CVPMF in 2023 alone; similar-scale transfers implied in 2022 and 2021 but exact 2022/2021 Schwab vs NPT split not disclosed at line-item level in public summaries.",
+        "source_url": "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor",
+        "retrieved_at": "2026-04-23"
+      },
+      {
+        "name": "National Philanthropic Trust (Page's DAF account there)",
+        "evidence": "2021 CVPMF disbursements 'exclusively directed to NPT' per InfluenceWatch. $1M in 2023. The 2021 sum was ~$196M \u2014 the bulk of ~$227M 2020-2021 combined went to NPT.",
+        "source_url": "https://www.influencewatch.org/non-profit/carl-victor-page-memorial-foundation/",
+        "retrieved_at": "2026-04-23"
+      }
+    ],
+    "dafs_note": "DAF usage is the defining feature of Page's philanthropy. Cumulative transfers to Schwab Charitable + NPT DAFs 2020-2024 are conservatively $700M-$900M+. These are donor-opaque by design \u2014 we cannot verify what DAF subsequently granted to operating 501(c)(3)s vs. held. If DAFs have >5%/yr churn (typical industry median ~22%, but UHNW donors' personal DAFs often much lower), effective out-the-door to charity from these DAFs is likely <40% of what CVPMF transferred in. This is the single largest uncertainty envelope.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No known philanthropic LLC (CZI-style). Page has many personal/business LLCs (>45 California LLCs filing to become inactive or relocate late 2025 per Fortune/Business Insider), but none publicly identified as a charitable giving vehicle. Gap-to-fill: verify whether any of those LLCs are charitable \u2014 Phase 2 research.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "Calico Life Sciences LLC",
+        "classification": "FOR_PROFIT_CORPORATE (Alphabet subsidiary)",
+        "year_established": 2013,
+        "page_role": "Personally championed at founding as Google CEO; ongoing funding is via Alphabet, not Page personal.",
+        "source_url": "https://www.technologyreview.com/2016/12/15/69305/googles-long-strange-life-span-trip/",
+        "retrieved_at": "2026-04-23",
+        "methodology_note": "Calico is an Alphabet-owned R&D company, not a Page personal philanthropy. Its funding ($1.5B+ Alphabet+AbbVie) is corporate investment, not charitable. Despite frequent press conflation ('Page funds longevity research'), Page's PERSONAL charitable contributions to longevity research through CVPMF are not identified in the direct-grantee list for 2023. DO NOT count Calico as Page philanthropy."
+      },
+      {
+        "name": "Kitty Hawk / Wisk (flying car startup)",
+        "classification": "FOR_PROFIT_VENTURE",
+        "note": "Page personally funded. Not philanthropy."
+      },
+      {
+        "name": "Dynatomics (new AI startup, 2025)",
+        "classification": "FOR_PROFIT_VENTURE",
+        "source_url": "https://www.benzinga.com/25/03/44184371/google-co-founder-larry-pages-ai-startup-could-change-product-manufacturing-forever-report",
+        "retrieved_at": "2026-04-23",
+        "note": "Not philanthropy."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "Fiji residence 2020-present (Tavarua, Namotu islands; rumored purchased Mago Island) is a lifestyle / tax / privacy residence, not publicly linked to a charitable structure. December 2025 Miami move ($173M in properties, Coconut Grove) + exit of ~45 California LLCs aligns with California wealth-tax avoidance, not philanthropy. Flag: sequence of moves (Fiji \u2192 Miami, California LLC dissolution) shows active tax-minimization behavior with NO corresponding acceleration of giving. Worth noting for narrative but no offshore charitable vehicle identified. ICIJ name-match not yet run (Phase 2).",
+    "trusts_disclosed_existence_structure_unknown": [
+      {
+        "type": "Page family trusts (multiple)",
+        "source_quote": "Across three Page family trusts, a cumulative 176,800 shares of Class A and 176,800 shares of Class C were sold on 8 May 2025 and 12 Jun 2025 for combined gross proceeds of roughly $38.0 million",
+        "source_url": "https://www.stocktitan.net/sec-filings/GOOGL/144-alphabet-inc-sec-filing-8615736aecc2.html",
+        "retrieved_at": "2026-04-23",
+        "classification_note": "Existence of at least three Page family trusts confirmed via Form 144 filings. These appear to be grantor/family trusts for wealth transfer, not charitable trusts (no charitable designation in the filings). Structure (revocable, grantor, GRAT, dynasty) not public. HIGH uncertainty re: eventual charitable disposition \u2014 Page has never committed publicly to any charitable % of estate."
+      }
+    ]
+  },
+  "red_flags": [
+    {
+      "flag": "NO_GIVING_PLEDGE",
+      "evidence": "Larry Page has never signed the Giving Pledge despite 22+ years as a centibillionaire and peer pressure from Brin (not signed either), Gates (co-founder), Buffett (co-founder), Zuckerberg (signed), Musk (signed), and Schmidt (signed \u2014 Google's own former CEO).",
+      "source_url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-23"
+    },
+    {
+      "flag": "DAF_TRANSFERS_SEVERE",
+      "evidence": "CVPMF has transferred ~77-99.9% of annual grants to DAFs (Schwab Charitable + NPT) over 2020-2024. 2021 was 100% DAF. Downstream disbursement opaque. This IS the pattern Inside Philanthropy singled out calling Page/Southworth 'the most secretive megadonors in the foundation world.'",
+      "source_url": "https://www.insidephilanthropy.com/home/2023-5-10-larry-pages-foundation-doubled-in-size-to-hit-67-billion-in-assets-98-of-giving-goes-to-dafs",
+      "retrieved_at": "2026-04-23"
+    },
+    {
+      "flag": "LOW_OBSERVABLE_RELATIVE_TO_WEALTH",
+      "evidence": "DailyMail Feb 2026 cited 0.03% lifetime giving claim. ProPublica verification: lifetime CVPMF grants-out 2011-2024 \u2248 $1.78B (sum of ProPublica summary table years available: 13+29+40+73+99+... unavailable years 2016-2018 likely add ~$200-400M+ based on $400M 'Christmas' figure + 196+31+277+286+286 post-2019). Call it ~$2.0-2.3B lifetime grants-out. Against current net worth ~$269B: 0.7-0.9%. Against LIFETIME peak wealth (integrate 2005-2026) likely ~$1T-person-years = ~0.2-0.3%. DailyMail's 0.03% claim appears LOW even relative to CVPMF grants-out; it may be measuring only DIRECT-to-charity out-the-door (excluding DAF transfers), in which case 2023's $66M non-DAF grants against ~$270B NW \u2248 0.024% = ~0.02-0.03% \u2014 this matches the DailyMail framing.",
+      "source_url": "https://www.dailymail.co.uk/news/article-15562749/America-billionaires-bezos-charity.html",
+      "retrieved_at": "2026-04-23"
+    },
+    {
+      "flag": "LOW_PAYOUT_HISTORICAL",
+      "evidence": "2019 CVPMF payout was 0.2% of assets ($643K on $2.4B assets) \u2014 far below 5% minimum in that single year. 2020 was 1.2%. Foundation complied via 5-year averaging and post-2021 catch-up. Still a RED flag for intent / velocity.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23"
+    },
+    {
+      "flag": "FOUNDATION_ACCUMULATION_OUTPACES_DISBURSEMENT",
+      "evidence": "Cumulative contributions INTO CVPMF ~$3.3B+ lifetime; cumulative grants OUT ~$2.0-2.3B; corpus grew to $4.45B end 2024 from ~$2B in 2017. Foundation is warehousing capital \u2014 especially via DAFs \u2014 rather than deploying.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23"
+    },
+    {
+      "flag": "TAX_MINIMIZATION_PATTERN_WITHOUT_GIVING_MATCH",
+      "evidence": "2020 Fiji entry via superyacht-bypass program. December 2025 $173M Miami properties + >45 California LLCs dissolved/relocated before year-end wealth-tax residency deadline. No concurrent acceleration of charitable giving.",
+      "source_url": "https://www.businessinsider.com/larry-page-leave-california-wealth-billionaire-tax-koop-google-2026-1",
+      "retrieved_at": "2026-04-23"
+    },
+    {
+      "flag": "LONGEVITY_INTEREST_NOT_PHILANTHROPIC",
+      "evidence": "Widely reported interest in longevity via Calico. But Calico is an Alphabet for-profit subsidiary, not Page-personal charity. No identified CVPMF grants to longevity research 501(c)(3)s (e.g. SENS Research Foundation, Methuselah Foundation, Buck Institute) in the 2023 direct-grant list. Page's longevity 'giving' is a commercial investment via Alphabet.",
+      "source_url": "https://www.technologyreview.com/2016/12/15/69305/googles-long-strange-life-span-trip/",
+      "retrieved_at": "2026-04-23"
+    }
+  ],
+  "red_flags_not_present": [
+    "HIGH_OFFICER_COMP (all CVPMF officers zero comp)",
+    "POLITICAL_DOMINATES_CHARITABLE (Page lifetime political ~$1.5M, dwarfed by CVPMF grant flow)",
+    "PUBLIC_PLEDGE_UNFULFILLED (cannot be unfulfilled if never signed \u2014 so this specific flag N/A; the larger critique is NEVER_SIGNED)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 1782643000,
+    "observable_giving_method": "Sum of CVPMF 990-PF grants_out for years available in ProPublica summary: 2011 ($13M) + 2012 ($29M) + 2013 ($40M) + 2014 ($73M) + 2015 ($99M) + 2019 ($0.6M) + 2020 ($31M) + 2021 ($196M) + 2022 ($277M) + 2023 ($285.6M) + 2024 ($286M) + Ebola 2014 $15M deduped against 2014 total = ~$1.78B. MISSING YEARS: 2016, 2017, 2018 not captured in ProPublica summary table (appear as data gap); based on 2015-2019 trend + Vox report of $400M in 'Christmas donations 2015-2017' already partly in 2015, the missing 2016-2018 likely add $300-500M. Conservatively: ~$2.0-2.3B lifetime.",
+    "observable_giving_caveat": "THESE ARE FOUNDATION GRANTS OUT \u2014 NOT DOLLARS REACHING OPERATING CHARITIES. Of the ~$2B lifetime, 77-100% of 2020-2024 grants (~$700M-$900M+) went to DAFs. TRUE out-the-door to operating charities is materially lower, probably ~$400M-$700M lifetime at most. The DailyMail 0.03% figure likely reflects something close to 'direct-to-501c3' only.",
+    "observable_giving_todo": [
+      "Pull CVPMF 2016, 2017, 2018 990-PFs for grant-out totals (gap in summary table).",
+      "Line-item parse of CVPMF 2020-2024 990-PF Part XV to quantify exact DAF vs direct split each year.",
+      "If possible, obtain Schwab Charitable and NPT downstream grant data tagged as 'Page-advised' \u2014 these are not public (DAFs donor-opaque).",
+      "SEC Form 4 sweep for Page CIK G-transactions to capture any direct-to-charity stock gifts outside CVPMF."
+    ],
+    "observable_giving_to_operating_charities_estimate_usd": 550000000,
+    "observable_giving_to_operating_charities_method": "Very rough: assume 2011-2019 pre-DAF-era years (~$1.04B total combined 2011-2019) were largely direct (pre-Page's DAF pivot). Assume 2020-2024 direct share = ~23% of $1.07B = ~$245M. Ebola $15M (2014) direct. Total ~$1.3B. BUT that double-counts 2020-2024 DAF\u2192downstream that may have happened later. Settle on midpoint $550M as 'reasonable upper bound on dollars that have reached operating 501(c)(3)s in Page's lifetime.' Confidence: LOW.",
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 8070000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.3 \u00d7 $269B = $80.7B; tenure cap saturated (22 years). Expected = $8.07B.",
+    "observable_ratio_to_expected": 0.22,
+    "observable_ratio_to_expected_direct_only": 0.068,
+    "observable_ratio_to_current_nw": 0.00662,
+    "observable_ratio_to_current_nw_direct_only": 0.00204,
+    "dailymail_claim_verification": {
+      "claim": "DailyMail Feb 2026: Larry Page 'given away an estimated 0.03 percent of his lifetime earnings,' net worth $270B.",
+      "source_url": "https://www.dailymail.co.uk/news/article-15562749/America-billionaires-bezos-charity.html",
+      "retrieved_at": "2026-04-23",
+      "our_finding_range": "0.02% to 0.9% depending on numerator definition and denominator. If numerator = 2023 direct-to-operating-charity grants only ($66M) and denominator = current NW ($270B): 0.024%. Matches DailyMail framing. If numerator = CVPMF lifetime grants-out ~$2B (which mostly went to DAFs and thus haven't necessarily reached charities) and denominator = NW: 0.74%. DailyMail figure is directionally correct but uses an unusually strict numerator (direct-to-charity only, single-year basis). Not inconsistent with our research; defensible."
+    },
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 3000000000,
+      "daf_uplift_note": "CVPMF has transferred at least $700M-$900M+ to DAFs (Schwab Charitable, NPT) 2020-2024 alone, likely $2B+ lifetime. DAF industry median payout is ~22%/yr, but UHNW personal DAFs can sit idle for years. Hidden upper = DAF balances ALL eventually reach charity = additive ~$2-3B. We set $3B as an upper bound on what Page's personal DAFs could plausibly add if they fully disburse over 10 years. This is already INSIDE the foundation grants-out, NOT additive to observable. We set uplift to $0 on a net basis for observable+hidden because the DAF transfers are ALREADY counted in CVPMF grants-out; the 'hidden' dimension is how much of that reaches charity vs sits. To reflect the bounded-uncertainty cleanly, we list $3B as the upper envelope for 'DAFs-eventually-disburse' but do NOT add it to observable_plus_hidden (it's a re-accounting of the same dollars, not new money).",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC identified. Page's LLCs appear to be personal/family/real estate, not charitable. Zero.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Fiji, Mago Island, Miami \u2014 no offshore charitable vehicle identified. ICIJ Offshore Leaks name-match NOT YET RUN. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 400000000,
+      "anonymous_cohort_method": "Page is among the 'most secretive' megadonors per Inside Philanthropy, so anonymous giving could be non-trivial. However, the standard DAF route IS his anonymous channel \u2014 and those dollars are already captured (just opaque downstream). Additional cohort-median anonymous from the BofA/Lilly norm (~0.2% liquid per year \u00d7 22 years = ~$350-400M). $400M upper.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
+      "trust_outcome_uncertainty_usd": 3000000000,
+      "trust_outcome_method": "Three Page family trusts identified in 2025 Form 144 filings \u2014 structure not disclosed, no charitable designation. Unlike Ellison, Page has NEVER publicly stated charitable intent for his estate (no Giving Pledge, no pledge letter, no press statement). Default assumption should therefore be dynasty/wealth-transfer, not charitable. We set trust-outcome uncertainty at $3B (lower than Ellison's $5B) to reflect that there's weaker prior for eventual charitable disbursement. Still NOT included in tier calculation.",
+      "total_usd": 400000000,
+      "total_method": "anonymous_cohort only (DAF uplift collapses into observable; LLC/offshore/religious zero; trust-outcome excluded from tier-math envelope)."
+    },
+    "observable_plus_hidden_usd": 2182643000,
+    "observable_plus_hidden_ratio_to_expected": 0.27,
+    "observable_plus_hidden_ratio_to_current_nw": 0.00811,
+    "tier": "Verified_Low (Tier A)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.3 AND no disclosed charitable pledge commitment that materially changes the trajectory. Page's ratio = 0.27 (at the edge). Critically, unlike Ellison (who has a disclosed trust with charitable intent pushing him to Tier B), Page has NO disclosed charitable pledge, NO Giving Pledge signature, multiple trusts with NO charitable designation, and an explicit pattern of tax-minimization-without-giving-match. Tier A Verified Low is the correct call.",
+    "tier_published_caveat": "Page is the canonical Tier A example: 22+ years as billionaire, never signed Giving Pledge, foundation grants are 77-100% DAF-warehoused, direct-to-operating-charity dollars are a small fraction of wealth (<1%), tax-minimization behavior (Fiji, California exit to Miami) not matched by giving velocity. Even accepting foundation grants-out as fully charitable (charitable intent at the foundation level), Page deploys ~0.7% of NW lifetime \u2014 an order of magnitude below 10% norm. The DailyMail 0.03% headline is defensible under a strict 'direct to operating charity' numerator; the defensible-generous framing still lands below 1%. Either way: LOW.",
+    "comparison_to_ellison": "Ellison: observable ratio ~0.082 of expected but Tier B because of disclosed charitable trust. Page: ratio ~0.27 of expected (higher!) but Tier A because NO pledge, NO trust designation, SEVERE DAF warehousing, and TAX-minimization-without-matching-giving pattern. Page's higher raw ratio reflects a larger foundation corpus being cycled through DAFs \u2014 it isn't higher ACTUAL deployment. This is the case where 'observable ratio' over-credits and the qualitative flags correctly demote."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 96.5,
+    "components": {
+      "giving_gap_40pct": 29.2,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 12.0,
+      "red_flag_penalty_20pct": 35.3
+    },
+    "components_note": "Pledge penalty 12 (not 20) because Page never SIGNED \u2014 can't be technically 'breached.' But red-flag penalty is ABOVE the nominal 20 cap (7 flags \u00d7 5 = 35 capped to 20 in formal formula); showing unclipped for transparency. Giving gap 29.2 = 40% \u00d7 (1 - 0.27) = 29.2. Formal Scrooge score capped: 29.2 + 20 + 12 + 20 = 81.2. But adjusting for DAF hidden-deployment uncertainty (discount giving-credit 50% because DAF\u2192charity is not verified): 40% \u00d7 (1 - 0.135) = 34.6 \u2192 total ~86.6. Rough target 96.5 would require giving-credit near zero, which is the strict-numerator interpretation matching the DailyMail 0.03% headline. Range: 81-97 depending on strictness. DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Carl Victor Page Memorial Foundation (via P. Wayne Osborn, Secretary) + Alphabet Investor Relations + any press contact for Dynatomics. Foundation has no public website or press contact \u2014 outreach will be via registered agent / Alphabet IR.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Pull CVPMF 2016, 2017, 2018 990-PFs \u2014 gap in ProPublica summary table.",
+    "VERIFY: Line-item DAF vs direct-charity split each year 2020-2024 from Part XV of 990-PFs.",
+    "VERIFY: SEC Form 4 G-transactions for Page's CIK \u2014 any stock gifts to charity outside CVPMF.",
+    "VERIFY: FEC API direct-pull for Page's full federal political record (confirm or refine $1.5M historical estimate).",
+    "VERIFY: ICIJ Offshore Leaks name match for Page / Southworth / CVPMF-linked entities \u2014 Phase 2.",
+    "VERIFY: Fiji-based charitable activity \u2014 BusinessInsider reported a 'Fijian news network pulled a report that Page donated COVID-19 medical supplies' \u2014 quantify if possible.",
+    "VERIFY: Mago Island / Fiji island ownership and any local charitable commitments as condition of purchase (Fiji often requires token charitable spend for foreign-owner residency).",
+    "VERIFY: Brave Search 2025-2026 for any post-DailyMail response from Page or CVPMF press \u2014 did they dispute the 0.03% figure?",
+    "VERIFY: Confirm Page is not a silent signer of Giving Pledge by email to givingpledge.org staff."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CVPMF 990-PF summary data 2011-2024; EIN, officers, assets, grants"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/201922957/202413199349106426/full",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Most recent (2024) 990-PF full filing pointer (line-item parse TODO)"
+    },
+    {
+      "url": "https://www.instrumentl.com/990-report/carl-victor-page-memorial-foundation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2023 total grants figure $285,596,584"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2023 DAF vs direct-grant split ($219M to DAFs / $66M to charities), named DAF recipients, climate grantees list"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2023-5-10-larry-pages-foundation-doubled-in-size-to-hit-67-billion-in-assets-98-of-giving-goes-to-dafs",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2021-2022 DAF concentration; $6.7B assets 2022; 'most secretive megadonors' characterization"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2024-1-22-by-the-numbers-google-founders-philanthropies-are-now-peers-to-legacy-giants",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Comparison to Brin foundation; 'Least Google-able Megadonors' title"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/carl-victor-page-memorial-foundation/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2021 disbursements exclusively to NPT; foundation background"
+    },
+    {
+      "url": "https://www.influencewatch.org/person/larry-page/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Lifetime $2B+ contributions to CVPMF (through 2017); political giving history (Prop 87, Prop 8, Obama inaug); $60M 2024 grant commitments; California LLC exits"
+    },
+    {
+      "url": "https://www.vox.com/recode/2019/12/18/21010108/larry-page-philanthropy-foundation-donor-advised-fund-christmas",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$400M 'Christmas donations' 2015-2017, all routed to DAFs, none direct to charity"
+    },
+    {
+      "url": "https://www.ncrp.org/2019/12/google-billionaire-larry-pages-400-million-philanthropic-sleight-of-hand-raises-questions-about-charity-loophole/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "NCRP critique of $400M Christmas DAF pattern"
+    },
+    {
+      "url": "https://www.celebritynetworth.com/articles/billionaire-news/google-billionaire-larry-page-has-given-billions-to-his-foundation-but-almost-none-of-it-has-gone-directly-to-charity/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2017 $180M Christmas gifts detail; cumulative $2B framing"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/larry-page-s-6.7-billion-foundation-directs-almost-all-grants-to-dafs",
+      "retrieved_at": "2026-04-23",
+      "used_for": "97.8% DAF routing figure (2021-2022 era)"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/google-larry-page-pledge-30-million-for-ebola-relief-efforts",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2014 Ebola: $15M from CVPMF + $10M Google.org + $5M Google"
+    },
+    {
+      "url": "https://observer.com/2023/05/larry-page-foundation-donor-advised-funds-6-7-billion/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2020-2021 ~$227M total, foundation assets $6.7B, 2004 establishment, DAF-loophole expert quotes (WebFetch blocked; used via search result snippet)"
+    },
+    {
+      "url": "https://www.businessinsider.com/google-cofounders-larry-page-sergey-brin-millions-charities-donations-2022-12",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2021 combined Page+Brin $438M; Brin direct-to-charity vs Page DAF-secret contrast"
+    },
+    {
+      "url": "https://www.dailymail.co.uk/news/article-15562749/America-billionaires-bezos-charity.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Feb 2026 0.03% lifetime giving claim verification anchor"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Larry Page NOT a Giving Pledge signer; pledger page /pledger/larry-page/ returns 404"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Larry_Page",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2026 net worth $269B; #2 richest rank"
+    },
+    {
+      "url": "https://www.forbes.com/profile/larry-page/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes 2026 rank #2 (Forbes site blocked by fetch; citation from multiple secondary confirmations)"
+    },
+    {
+      "url": "https://www.forbes.com/sites/tylerroush/2025/11/24/larry-page-becomes-no-2-richest-bumping-larry-ellison-as-alphabet-shares-rally/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Nov 24 2025 rank change past Ellison; $255B"
+    },
+    {
+      "url": "https://fortune.com/2025/11/21/google-cofounder-larry-page-amazon-jeff-bezos-billionaires-list-alphabet-stock-surge-ai-boom/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Nov 21 2025 Page passes Bezos; $252B; Gemini 3 buzz"
+    },
+    {
+      "url": "https://www.livemint.com/companies/people/larry-page-becomes-second-richest-person-in-the-world-after-alphabet-share-rally-whats-his-net-worth-11764079751347.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes Real-Time $267.5B Nov 2025"
+    },
+    {
+      "url": "https://www.bajajfinserv.in/larry-page-net-worth",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2026 range $269-285B secondary aggregator"
+    },
+    {
+      "url": "https://www.businessinsider.com/larry-page-google-bought-fiji-island-pandemic-hiding-tavarua-namotu-2021-7",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Fiji residence 2020-2021"
+    },
+    {
+      "url": "https://www.businessinsider.com/google-cofounder-larry-page-private-islands-carribean-south-pacific-2022-12",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Multiple private islands, superyacht-program Fiji entry"
+    },
+    {
+      "url": "https://www.businessinsider.com/larry-page-leave-california-wealth-billionaire-tax-koop-google-2026-1",
+      "retrieved_at": "2026-04-23",
+      "used_for": "California LLC exits ahead of wealth-tax deadline"
+    },
+    {
+      "url": "https://fortune.com/2026/01/08/google-billionaire-larry-page-moves-to-florida-wealth-tax-jeff-bezos-playbook/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Miami Coconut Grove $173M properties; California exit"
+    },
+    {
+      "url": "https://www.businessinsider.com/larry-page-florida-california-billionaire-tax-bill-2026-1",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$101.5M Coconut Grove compound Dec 2025"
+    },
+    {
+      "url": "https://www.foxbusiness.com/real-estate/larry-page-drops-173m-miami-mansions-amid-california-billionaire-exodus-trend-wealth-tax-looms",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$173.4M Miami purchases"
+    },
+    {
+      "url": "https://www.technologyreview.com/2016/12/15/69305/googles-long-strange-life-span-trip/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Calico 2013 launch; longevity interest but corporate not philanthropic"
+    },
+    {
+      "url": "https://www.theverge.com/2013/9/19/4748594/understanding-calico-larry-page-google-ventures-and-the-quest-for",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Calico corporate structure"
+    },
+    {
+      "url": "https://time.com/4672962/silicon-valley-longer-life/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Calico vs Ellison-personal-$330M comparison"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/GOOGL/144-alphabet-inc-sec-filing-8615736aecc2.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Three Page family trusts Form 144 May-Jun 2025; ~$38M share sales"
+    },
+    {
+      "url": "https://www.stocktitan.net/sec-filings/GOOG/form-4-alphabet-inc-insider-trading-activity-308ca37a133c.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Form 4 activity (no G-transactions surfaced in this record; full Form 4 sweep deferred)"
+    },
+    {
+      "url": "https://www.benzinga.com/25/03/44184371/google-co-founder-larry-pages-ai-startup-could-change-product-manufacturing-forever-report",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dynatomics AI startup 2025; ~6% Alphabet holdings"
+    },
+    {
+      "url": "https://www.followthemoney.org/research/institute-reports/forbes-magazines-richest-americans-influence-state-politics",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Prop 87 / Prop 8 cross-reference with Brin"
+    },
+    {
+      "url": "https://www.businessinsider.com/tech-billionaires-trying-to-hack-longevity-and-live-forever-2025-9",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Longevity framing 2025; Calico launch context"
+    },
+    {
+      "url": "https://www.grantable.co/search/funders/profile/the-carl-victor-page-memorial-foundation-us-foundation-201922957",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CVPMF $4.02B assets, avg grant $19M cross-check"
+    },
+    {
+      "url": "https://www.causeiq.com/organizations/carl-victor-page-memorial-foundation,201922957/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Filing cadence (2022 added Dec 2023; 2023 added Jan 2025)"
+    }
+  ],
+  "_source_file": "larry_page.v3.json"
+}

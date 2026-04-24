@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile — The Scrooge List</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('scrooge-theme');if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){}})();
+</script>
+<style>
+:root{
+  --paper:#F3ECD9;--paper-mid:#E7DCC1;--paper-deep:#D8C9A4;--paper-shadow:#C9B78A;
+  --ink:#19130B;--ink-soft:#3C2F22;--ink-fade:#6E5E46;--ink-ghost:#9F8E70;
+  --rust:#8B2E1F;--rust-dark:#5D1C12;--gilt:#8C6B2D;--sepia:#735A3E;--rule:#22180E;--green:#4a6e3a;
+  --row-alt:rgba(216,201,164,.12);
+  --display:"Fraunces",ui-serif,serif;--body:"Newsreader",Georgia,serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+[data-theme="dark"]{
+  --paper:#14110A;--paper-mid:#1C1811;--paper-deep:#261F14;--paper-shadow:#3B3121;
+  --ink:#EEDCBA;--ink-soft:#C4AF82;--ink-fade:#8B7951;--ink-ghost:#605335;
+  --rust:#D14A32;--rust-dark:#A93220;--gilt:#D4A032;--sepia:#A38456;--rule:#75633F;--green:#8fb57a;
+  --row-alt:rgba(238,220,186,.04);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;font-feature-settings:"onum","liga","kern";-webkit-font-smoothing:antialiased}
+body{
+  background:
+    radial-gradient(ellipse 800px 400px at 15% 5%, rgba(139,46,31,.045), transparent 70%),
+    radial-gradient(ellipse 900px 500px at 90% 95%, rgba(140,107,45,.055), transparent 70%),
+    var(--paper);
+  min-height:100vh;transition:background-color .4s, color .4s;
+}
+[data-theme="dark"] body{background:radial-gradient(ellipse 900px 500px at 15% 5%, rgba(209,74,50,.08), transparent 70%),radial-gradient(ellipse 1000px 600px at 90% 95%, rgba(212,160,50,.09), transparent 70%),var(--paper)}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+[data-theme="dark"] .grain{opacity:.18;mix-blend-mode:screen}
+.foxing{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.5;mix-blend-mode:multiply;background-image:radial-gradient(circle at 8% 12%, rgba(140,107,45,.14), transparent 3%),radial-gradient(circle at 92% 22%, rgba(115,90,62,.1), transparent 2.5%),radial-gradient(circle at 73% 78%, rgba(139,46,31,.08), transparent 3%),radial-gradient(circle at 22% 87%, rgba(115,90,62,.11), transparent 2%)}
+
+.sheet{position:relative;z-index:3;max-width:900px;margin:0 auto;padding:40px 36px 80px;animation:fadeUp .6s ease-out both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+.nav{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px;font-family:var(--display);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft)}
+.nav a{color:var(--rust);text-decoration:none;border-bottom:1px solid var(--rust);padding-bottom:1px}
+.nav button{background:none;border:none;cursor:pointer;font:inherit;color:inherit;letter-spacing:.22em}
+.nav button:hover{color:var(--rust)}
+
+.pmast{text-align:left;padding:32px 0 20px;border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);margin-bottom:34px;position:relative}
+.pmast::before,.pmast::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--rule)}
+.pmast::before{top:3px}
+.pmast::after{bottom:3px}
+.pmast .kicker{font-family:var(--display);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--rust);margin-bottom:12px;font-variation-settings:"opsz" 9,"SOFT" 60}
+.pmast h1{font-family:var(--display);font-weight:800;font-variation-settings:"opsz" 144,"SOFT" 30;font-size:clamp(2.4rem,5vw,3.6rem);line-height:.98;letter-spacing:-.015em;color:var(--ink);margin-bottom:8px}
+.pmast .subtitle{font-family:var(--display);font-style:italic;font-size:1.05rem;color:var(--ink-fade);font-variation-settings:"opsz" 24,"SOFT" 80}
+
+.summary-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:40px}
+.summary-cell{padding:18px 14px 16px;border-right:1px solid var(--paper-shadow);font-family:var(--display)}
+.summary-cell:last-child{border-right:none}
+.summary-cell .label{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:6px;font-variation-settings:"opsz" 9,"SOFT" 50}
+.summary-cell .value{font-size:1.35rem;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink);font-variation-settings:"opsz" 48,"SOFT" 30}
+.summary-cell .value.tier-a{color:var(--rust)}
+.summary-cell .value.tier-b{color:var(--gilt)}
+.summary-cell .value.tier-c{color:var(--sepia)}
+.summary-cell .value.ontrack{color:var(--green)}
+.summary-cell .sub{font-size:.78rem;color:var(--ink-fade);margin-top:3px;font-style:italic}
+
+h2{font-family:var(--display);font-style:italic;font-weight:500;font-variation-settings:"opsz" 72,"SOFT" 60;font-size:1.75rem;margin:44px 0 4px;color:var(--ink);letter-spacing:-.005em}
+h2::before{content:"";display:block;width:36px;height:2px;background:var(--rust);margin-bottom:14px}
+h3{font-family:var(--display);font-weight:600;font-size:1.05rem;margin:24px 0 6px;color:var(--ink)}
+
+p{color:var(--ink-soft);margin-bottom:14px}
+a{color:var(--rust);text-decoration:none;border-bottom:1px solid rgba(139,46,31,.4)}
+a:hover{background:rgba(139,46,31,.08)}
+
+.callout{padding:18px 22px;margin:16px 0;border-left:3px solid var(--rust);background:rgba(139,46,31,.04)}
+.callout.info{border-left-color:var(--gilt);background:rgba(140,107,45,.05)}
+.callout.green{border-left-color:var(--green);background:rgba(74,110,58,.05)}
+[data-theme="dark"] .callout{background:rgba(209,74,50,.08)}
+[data-theme="dark"] .callout.info{background:rgba(212,160,50,.08)}
+[data-theme="dark"] .callout.green{background:rgba(143,181,122,.08)}
+.callout strong{font-family:var(--display);color:var(--ink);display:block;margin-bottom:6px}
+.callout p:last-child{margin-bottom:0}
+
+.events{margin:18px 0 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.event{display:grid;grid-template-columns:80px 1fr 120px;gap:16px;padding:14px 8px;border-bottom:1px dotted var(--ink-ghost);align-items:baseline;font-variant-numeric:tabular-nums}
+.event:last-child{border-bottom:none}
+.event .when{font-family:var(--display);color:var(--ink-fade);font-size:.92rem;font-variation-settings:"opsz" 24"}
+.event .what{color:var(--ink)}
+.event .what .recipient{color:var(--ink-soft)}
+.event .what .role{display:inline-block;margin-right:8px;padding:1px 7px;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid currentColor;color:var(--ink-fade);font-family:var(--display);border-radius:2px}
+.event .what .role.grant_out{color:var(--rust)}
+.event .what .role.direct_gift{color:var(--rust)}
+.event .what .role.transfer_in{color:var(--gilt)}
+.event .what .role.pledge,.event .what .role.pledge_amendment{color:var(--sepia)}
+.event .what .role.political{color:var(--gilt)}
+.event .what .role.private_investment_not_charity{color:var(--ink-ghost);font-style:italic}
+.event .amt{text-align:right;font-family:var(--display);font-weight:600;color:var(--ink)}
+.event .amt a{font-size:.78rem;display:block;margin-top:2px;color:var(--rust);border:none}
+
+.vehicle-list{margin:14px 0 24px;font-family:var(--display)}
+.vehicle{padding:12px 14px;margin-bottom:8px;background:var(--row-alt);border-left:2px solid var(--paper-shadow)}
+.vehicle.active{border-left-color:var(--rust)}
+.vehicle.closed{border-left-color:var(--ink-ghost);opacity:.75}
+.vehicle.opaque{border-left-color:var(--gilt)}
+.vehicle .vname{font-weight:600;color:var(--ink)}
+.vehicle .vdetail{font-size:.92rem;color:var(--ink-fade);margin-top:3px}
+
+.flags-grid{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:14px 0 24px;font-family:var(--display);font-size:.95rem}
+.flag-code{font-family:var(--mono);font-size:.82rem;background:var(--paper-deep);color:var(--rust-dark);padding:2px 8px;border-radius:2px;white-space:nowrap;align-self:start}
+.flag-text{color:var(--ink-soft)}
+
+.ror-box{padding:20px 24px;border:1px solid var(--rule);background:var(--paper-mid);margin:16px 0 24px;font-family:var(--display)}
+.ror-status{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:6px}
+.ror-text{color:var(--ink);font-style:italic;line-height:1.55}
+
+.source-log{margin:20px 0 24px;font-size:.88rem;font-family:var(--display);font-variation-settings:"opsz" 14}
+.source-log .src-row{padding:6px 0;border-bottom:1px dotted var(--ink-ghost);display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline}
+.source-log .src-row:last-child{border-bottom:none}
+.source-log .src-row a{font-size:.86rem;word-break:break-all}
+.source-log .src-row .src-when{color:var(--ink-fade);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:.82rem}
+
+.todo-list{margin:10px 0 24px 20px;color:var(--ink-soft)}
+.todo-list li{margin-bottom:6px;font-size:.92rem}
+.todo-list li::marker{color:var(--gilt)}
+
+.colophon{text-align:center;padding-top:32px;margin-top:48px;border-top:2px solid var(--rule);position:relative}
+.colophon::before{content:"";display:block;position:absolute;top:3px;left:0;right:0;height:1px;background:var(--rule)}
+.col-line{font-family:var(--display);font-size:.8rem;letter-spacing:.06em;color:var(--ink-fade);margin:14px 0 4px}
+
+@media (max-width:720px){
+  .summary-grid{grid-template-columns:repeat(2,1fr)}
+  .summary-cell{border-bottom:1px solid var(--paper-shadow)}
+  .summary-cell:nth-child(odd){border-right:1px solid var(--paper-shadow)}
+  .event{grid-template-columns:60px 1fr 90px;gap:10px;padding:12px 4px}
+  .sheet{padding:30px 20px 60px}
+}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="foxing" aria-hidden="true"></div>
+
+<main class="sheet" id="sheet">
+  <nav class="nav">
+    <a href="index.html">← The Ledger</a>
+    <span id="navName"></span>
+    <button id="themeToggle" type="button">Mode ◐</button>
+  </nav>
+
+  <div id="content">
+    <p style="text-align:center;color:var(--ink-fade);padding:80px 0">Loading profile…</p>
+  </div>
+
+  <footer class="colophon">
+    <p class="col-line"><a href="methodology.html">Methodology</a> · <a href="index.html">All subjects</a></p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  const toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', () => {
+    const cur = document.documentElement.dataset.theme || 'light';
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem('scrooge-theme', next); } catch(e) {}
+  });
+})();
+
+const params = new URLSearchParams(location.search);
+const id = params.get('id');
+if (!id) {
+  document.getElementById('content').innerHTML = '<p style="text-align:center;padding:60px 0">No subject specified. <a href="index.html">Return to the ledger.</a></p>';
+} else {
+  loadProfile(id);
+}
+
+const TIER_LABEL = {
+  'A_VERIFIED_LOW': { label: 'Tier A · Verified Low', cls: 'tier-a' },
+  'B_PROBABLY_LOW': { label: 'Tier B · Probably Low', cls: 'tier-b' },
+  'C_OPAQUE': { label: 'Tier C · Opaque', cls: 'tier-c' },
+  'ON_TRACK': { label: 'On Track · Not Scrooge', cls: 'ontrack' },
+};
+
+const fmtUsd = (usd) => {
+  if (usd == null) return '—';
+  const b = usd / 1e9;
+  if (Math.abs(b) >= 1) return '$' + b.toFixed(b >= 10 ? 1 : 2) + 'B';
+  const m = usd / 1e6;
+  return '$' + m.toFixed(0) + 'M';
+};
+const fmtNw = b => b == null ? '—' : '$' + (b >= 100 ? b.toFixed(0) : b.toFixed(1)) + 'B';
+const fmtRatio = r => r == null ? '—' : (r >= 1 ? r.toFixed(1) + '×' : (r * 100).toFixed(0) + '%');
+const esc = s => String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+async function loadProfile(id) {
+  try {
+    const res = await fetch('profiles/' + encodeURIComponent(id) + '.json');
+    if (!res.ok) throw new Error('No record for ' + id);
+    const rec = await res.json();
+    render(rec);
+  } catch (e) {
+    document.getElementById('content').innerHTML = `<p style="text-align:center;padding:60px 0;color:var(--rust)">Could not load profile: ${esc(e.message)}<br><a href="index.html">Return to the ledger.</a></p>`;
+  }
+}
+
+function render(rec) {
+  const p = rec.person || {};
+  const nw = rec.net_worth || {};
+  const rollup = rec.rollup || {};
+  const vehicles = rec.detected_vehicles || {};
+  const ror = rec.right_of_reply || {};
+  const tier = normalizeTier(rollup.tier || '');
+  const tierInfo = TIER_LABEL[tier] || { label: rollup.tier || 'Unknown', cls: '' };
+
+  document.getElementById('navName').textContent = (p.name_display || '').toUpperCase();
+  document.title = (p.name_display || 'Profile') + ' — The Scrooge List';
+
+  const observable = rollup.observable_giving_usd || 0;
+  const expected = rollup.expected_giving_usd_10pct_liquid_weighted_by_tenure || rollup.expected_giving_usd || 0;
+  const ratio = rollup.observable_ratio_to_expected;
+  const nwRange = nw.range_usd_billions;
+
+  let html = `
+    <header class="pmast">
+      <div class="kicker">${esc(tierInfo.label)} · profile</div>
+      <h1>${esc(p.name_display || 'Unknown')}</h1>
+      <div class="subtitle">${esc(p.wealth_source || '')}${p.dob_year ? ' · b. ' + p.dob_year : ''}</div>
+    </header>
+
+    <div class="summary-grid">
+      <div class="summary-cell">
+        <div class="label">Net Worth</div>
+        <div class="value">${fmtNw(nw.best_estimate_usd_billions)}</div>
+        <div class="sub">${nwRange ? 'Range $' + nwRange[0] + '–' + nwRange[1] + 'B' : ''}</div>
+      </div>
+      <div class="summary-cell">
+        <div class="label">Observable Giving</div>
+        <div class="value">${fmtUsd(observable)}</div>
+        <div class="sub">${rollup.observable_giving_method ? 'sum of cited events' : ''}</div>
+      </div>
+      <div class="summary-cell">
+        <div class="label">Ratio vs. Capacity</div>
+        <div class="value">${fmtRatio(ratio)}</div>
+        <div class="sub">vs. 10% × liquid × tenure</div>
+      </div>
+      <div class="summary-cell">
+        <div class="label">Tier</div>
+        <div class="value ${tierInfo.cls}">${esc((tierInfo.label.split('·')[0] || '').trim())}</div>
+        <div class="sub">${esc((tierInfo.label.split('·')[1] || '').trim())}</div>
+      </div>
+    </div>
+  `;
+
+  if (rollup.tier_reasoning || rollup.tier_published_caveat) {
+    html += `<div class="callout ${tierInfo.cls === 'ontrack' ? 'green' : ''}">
+      <strong>Tier reasoning</strong>
+      <p>${esc(rollup.tier_reasoning || rollup.tier_published_caveat)}</p>
+    </div>`;
+  }
+
+  // Detected vehicles
+  html += renderVehicles(vehicles);
+
+  // Cited events
+  const events = (rec.cited_events || []).concat(rec.pledges_and_announcements || []);
+  if (events.length) {
+    html += `<h2>Cited Events</h2>`;
+    html += '<p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Every dollar of observable giving (and every pledge/promise) with its source. Roles: <code>grant_out</code> and <code>direct_gift</code> count as observable; <code>transfer_in</code> is NOT counted to avoid double-counting with foundation grant-outs; <code>pledge</code> is a promise not a payment.</p>';
+    html += `<div class="events">`;
+    const sorted = [...events].sort((a, b) => {
+      const ay = a.year || (a.date ? a.date.substring(0,4) : 0);
+      const by = b.year || (b.date ? b.date.substring(0,4) : 0);
+      return (by || 0) - (ay || 0);
+    });
+    for (const ev of sorted) {
+      const when = ev.date || ev.year || (ev.year_range ? ev.year_range.join('–') : '');
+      const role = ev.event_role || '';
+      const amt = ev.amount_usd || ev.pledged_amount_usd || ev.pledged_amount_usd_at_signing_estimate;
+      const recipient = ev.recipient || '';
+      const donor = ev.donor_entity || '';
+      const note = ev.classification_note || ev.dedup_note || ev.notes || '';
+      const roleCls = role.replace(/[^a-z_]/g, '_');
+      html += `<div class="event">
+        <div class="when">${esc(when)}</div>
+        <div class="what">
+          <span class="role ${esc(roleCls)}">${esc(role)}</span>
+          ${esc(donor)}${donor && recipient ? ' → ' : ''}<span class="recipient">${esc(recipient)}</span>
+          ${note ? '<div style="font-size:.88rem;color:var(--ink-fade);margin-top:4px;font-style:italic">' + esc(note) + '</div>' : ''}
+        </div>
+        <div class="amt">
+          ${amt ? fmtUsd(amt) : '—'}
+          ${ev.source_url ? '<a href="' + esc(ev.source_url) + '" target="_blank" rel="noopener">source →</a>' : ''}
+        </div>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  // Political
+  const pol = rec.political_giving;
+  if (pol && pol.observed_total_2021_2025_usd) {
+    html += `<h2>Political Giving</h2>
+      <p>Tracked separately. <strong>${fmtUsd(pol.observed_total_2021_2025_usd)}</strong> in federal political giving 2021–2025. Not counted as philanthropy.</p>
+      <p style="font-size:.9rem;color:var(--ink-fade);font-style:italic">${esc(pol.substitution_note || pol.observed_total_note || '')}</p>`;
+    if ((pol.sources || []).length) {
+      html += `<div class="source-log">`;
+      for (const s of pol.sources) {
+        html += `<div class="src-row"><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.publisher || s.url)}</a><span class="src-when">${esc(s.event_date || s.cumulative_since || s.retrieved_at || '')}</span></div>`;
+      }
+      html += `</div>`;
+    }
+  }
+
+  // Red flags
+  const flags = rec.red_flags || [];
+  if (flags.length) {
+    html += `<h2>Red Flags</h2><div class="flags-grid">`;
+    for (const f of flags) {
+      const code = typeof f === 'string' ? f : (f.flag || '');
+      const evidence = typeof f === 'string' ? '' : (f.evidence || '');
+      const srcUrl = typeof f === 'string' ? '' : (f.source_url || '');
+      html += `<span class="flag-code">${esc(code)}</span><div class="flag-text">${esc(evidence)}${srcUrl ? ' <a href="' + esc(srcUrl) + '" target="_blank" rel="noopener">source →</a>' : ''}</div>`;
+    }
+    html += `</div>`;
+  }
+
+  const notPresent = rec.red_flags_not_present || [];
+  if (notPresent.length) {
+    html += `<div class="callout green"><strong>Absent flags (for fairness)</strong>`;
+    html += '<ul style="margin-top:6px">';
+    for (const np of notPresent) html += `<li>${esc(np)}</li>`;
+    html += '</ul></div>';
+  }
+
+  // Right of reply
+  html += `<h2>Right of Reply</h2>
+    <div class="ror-box">
+      <div class="ror-status">Status · ${esc((ror.status || 'not_yet_requested').replace(/_/g, ' '))}</div>
+      <div class="ror-text">${ror.response_text ? esc(ror.response_text) : 'No response has been received. The subject is invited to respond — see the methodology page for details on our pre-publication outreach and correction process.'}</div>
+      ${ror.response_received_date ? '<div style="font-size:.82rem;color:var(--ink-fade);margin-top:8px">Received ' + esc(ror.response_received_date) + '</div>' : ''}
+    </div>`;
+
+  // Verification TODOs
+  const todos = rec.verification_todos_before_publish || [];
+  if (todos.length) {
+    html += `<h2>Open Verification Items</h2>
+    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Known gaps in our research, disclosed up front.</p>
+    <ol class="todo-list">`;
+    for (const t of todos) html += `<li>${esc(t)}</li>`;
+    html += `</ol>`;
+  }
+
+  // All sources
+  const allSources = rec.sources_all || [];
+  if (allSources.length) {
+    html += `<h2>Source Log</h2><div class="source-log">`;
+    for (const s of allSources) {
+      html += `<div class="src-row">
+        <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>
+        <span class="src-when">${esc(s.retrieved_at || '')}${s.used_for ? ' · ' + esc(s.used_for) : ''}</span>
+      </div>`;
+    }
+    html += `</div>`;
+  }
+
+  document.getElementById('content').innerHTML = html;
+}
+
+function renderVehicles(v) {
+  let html = `<h2>Detected Vehicles</h2><div class="vehicle-list">`;
+  let any = false;
+
+  for (const f of (v.foundations_active || [])) {
+    any = true;
+    html += `<div class="vehicle active">
+      <div class="vname">${esc(f.name)}${f.ein ? ' <span style="color:var(--ink-fade);font-weight:400">· EIN ' + esc(f.ein) + '</span>' : ''}</div>
+      <div class="vdetail">Active · ${f.state ? esc(f.state) + ' · ' : ''}${f.assets_usd_latest ? 'assets ' + fmtUsd(f.assets_usd_latest) + ' · ' : ''}${f.officers_compensation ? esc(f.officers_compensation) : ''}
+      ${f.source_url ? ' · <a href="' + esc(f.source_url) + '" target="_blank" rel="noopener">source →</a>' : ''}
+      ${f.payout_rate_notes ? '<div style="margin-top:4px">' + esc(f.payout_rate_notes) + '</div>' : ''}</div>
+    </div>`;
+  }
+
+  for (const f of (v.foundations_terminated || [])) {
+    any = true;
+    html += `<div class="vehicle closed">
+      <div class="vname">${esc(f.name)} <span style="color:var(--ink-fade);font-weight:400">· terminated ${esc(f.terminated_year || '')}</span></div>
+      <div class="vdetail">${esc(f.status_note || f.focus || '')}</div>
+    </div>`;
+  }
+
+  for (const l of (v.llcs_philanthropic || [])) {
+    any = true;
+    html += `<div class="vehicle opaque">
+      <div class="vname">${esc(l.name)} <span style="color:var(--ink-fade);font-weight:400">· LLC</span></div>
+      <div class="vdetail">${esc(l.classification || l.status || 'LLC — no 990 filing requirement')}</div>
+    </div>`;
+  }
+
+  for (const fph of (v.for_profit_hybrid_vehicles || [])) {
+    any = true;
+    html += `<div class="vehicle opaque">
+      <div class="vname">${esc(fph.name)} <span style="color:var(--ink-fade);font-weight:400">· for-profit hybrid</span></div>
+      <div class="vdetail">${esc(fph.methodology_note || fph.locations || '')}${fph.source_url ? ' · <a href="' + esc(fph.source_url) + '" target="_blank" rel="noopener">source →</a>' : ''}</div>
+    </div>`;
+  }
+
+  for (const d of (v.dafs_detected || [])) {
+    any = true;
+    html += `<div class="vehicle opaque">
+      <div class="vname">${esc(d.name || 'DAF')} <span style="color:var(--ink-fade);font-weight:400">· donor-advised fund</span></div>
+      <div class="vdetail">${esc(d.sponsor || '')} ${esc(d.notes || '')}</div>
+    </div>`;
+  }
+
+  for (const t of (v.trusts_disclosed_existence_structure_unknown || [])) {
+    any = true;
+    html += `<div class="vehicle opaque">
+      <div class="vname">${esc(t.type || 'Trust')} <span style="color:var(--ink-fade);font-weight:400">· structure undisclosed</span></div>
+      <div class="vdetail">${t.source_quote ? '<em>"' + esc(t.source_quote) + '"</em><br>' : ''}${esc(t.classification_note || '')}</div>
+    </div>`;
+  }
+
+  if (v.offshore_entities && v.offshore_entities.length) {
+    for (const o of v.offshore_entities) {
+      any = true;
+      html += `<div class="vehicle opaque"><div class="vname">${esc(o.name || 'Offshore entity')}</div><div class="vdetail">${esc(o.jurisdiction || '')} ${esc(o.notes || '')}</div></div>`;
+    }
+  }
+
+  if (!any) html += `<p style="color:var(--ink-fade);font-style:italic">No opaque vehicles detected.</p>`;
+  html += `</div>`;
+  return html;
+}
+
+function normalizeTier(raw) {
+  const r = String(raw || '').toLowerCase();
+  const m = r.match(/\(tier\s*([abc]\+?)\b/);
+  const bracket = m ? m[1] : null;
+  const onTrack = /on_track|on track|model_pledger|doing_it|doing it|ceiling|high giving|probably high|a\+/.test(r);
+  if (bracket === 'a+') return 'ON_TRACK';
+  if (bracket === 'a') return onTrack ? 'ON_TRACK' : 'A_VERIFIED_LOW';
+  if (bracket === 'b') return 'B_PROBABLY_LOW';
+  if (bracket === 'c') return onTrack ? 'ON_TRACK' : 'C_OPAQUE';
+  if (onTrack) return 'ON_TRACK';
+  if (/probably_low|probably low|probably_moderate|probably moderate|probably_generous/.test(r)) return 'B_PROBABLY_LOW';
+  if (/opaque/.test(r)) return 'C_OPAQUE';
+  if (/verified_low|verified low/.test(r)) return 'A_VERIFIED_LOW';
+  return 'UNKNOWN';
+}
+</script>
+</body>
+</html>

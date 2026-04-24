@@ -1,0 +1,678 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research",
+  "person": {
+    "name_display": "Elon Musk",
+    "name_legal": "Elon Reeve Musk",
+    "dob_year": 1971,
+    "country_primary": "United States",
+    "wealth_source": "Tesla (CEO, ~13% stake); SpaceX (founder, ~42% stake, private); xAI (founder, ~50% stake); X Corp. (owner); Neuralink; The Boring Company",
+    "years_as_billionaire_approx": 14
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 811.2,
+    "range_usd_billions": [
+      636,
+      849
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes real-time tracker April 1, 2026 = $811.2B (#1 globally). Bloomberg Billionaires Index ~$636B (lower due to different valuation methodology for private SpaceX/xAI stakes). Luxury Launches March 2026 cited $849B. Forbes reranking April 20, 2026 cited net worth around $800B. Range reflects differing treatment of private SpaceX/xAI valuations. Prompt-flagged ~$400-500B range is outdated; net worth crossed $500B in Oct 2025 per Forbes, $700B Dec 2025, $800B Feb 2026.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires",
+        "url": "https://www.forbes.com/profile/elon-musk/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 811.2,
+        "rank_on_list": 1,
+        "value_as_of": "2026-04-01"
+      },
+      {
+        "publisher": "Finance Monthly (citing Forbes tracker)",
+        "url": "https://www.finance-monthly.com/elon-musk-net-worth/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 811.2,
+        "value_as_of": "2026-04-01"
+      },
+      {
+        "publisher": "Forbes (Durot, reranking article)",
+        "url": "https://www.forbes.com/sites/mattdurot/2026/04/20/reranking-the-worlds-billionaires-by-wealth--and-altruism/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 800,
+        "value_as_of": "2026-04",
+        "note": "Article cites ~$500M lifetime disbursed to beneficiaries = 0.06% of 'vast fortune'"
+      },
+      {
+        "publisher": "Forbes (Durot, World's Richest Person 2026 list)",
+        "url": "https://www.forbes.com/sites/mattdurot/2026/03/11/the-worlds-richest-person/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 500,
+        "value_as_of": "2025-10",
+        "note": "First person ever worth $500B, October 2025"
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes)",
+        "url": "https://en.wikipedia.org/wiki/Elon_Musk",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 809,
+        "value_as_of": "2026-04"
+      },
+      {
+        "publisher": "Luxury Launches (citing Forbes)",
+        "url": "https://luxurylaunches.com/other_stuff/mackenzie-scott-beats-elon-musk-in-donations-03062026.php",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 849,
+        "value_as_of": "2026-03"
+      }
+    ],
+    "liquidity_estimate_pct": 0.15,
+    "liquidity_notes": "Musk's wealth is dominated by concentrated equity in SpaceX (private, ~$800B valuation), Tesla (public but selling moves the stock and triggers margin issues \u2014 historically used as loan collateral), xAI (private), X Corp (private). Only Tesla is marked-to-market daily. SpaceX and xAI stakes are only liquid via rare tender offers. Apply 15% liquidity discount for 'giving capacity now'. Musk has shown willingness to transfer Tesla stock to his foundation via Section 170 charitable deduction \u2014 but this counts as transfer_in, not grant_out."
+  },
+  "cited_events": [
+    {
+      "event_id": "musk_mf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Musk Foundation",
+      "donor_ein": "85-2133087",
+      "recipient": "Multiple; largest recipients include 'The Foundation' (~$607M cumulative since 2022 per NYT Dec 2025) and Fidelity Charitable DAF ($35M in 2024 per NYT)",
+      "amount_usd": 474380000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "$474M includes ~$35M to Fidelity Charitable DAF (transfer into DAF, not verified disbursement to end charity). Also includes large slice to 'The Foundation' (Musk-controlled K-12 school nonprofit in Bastrop, TX \u2014 arm's-length charitable status questioned by InsidePhilanthropy/Alan Cantor). Net out-the-door to non-Musk-affiliated 501(c)(3)s is materially lower than headline $474M."
+    },
+    {
+      "event_id": "musk_mf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Musk Foundation",
+      "donor_ein": "85-2133087",
+      "amount_usd": 236650000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "grant_breakdown": [
+        {
+          "recipient": "The Foundation (Musk-controlled K-12 school in Bastrop, TX)",
+          "amount_usd": 137075943,
+          "share_pct": 57.8,
+          "source_url": "https://www.insidephilanthropy.com/home/elon-musk-may-not-be-your-typical-billionaire-but-his-giving-exhibits-familiar-trends"
+        },
+        {
+          "recipient": "X Prize Foundation",
+          "amount_usd": 54000000
+        },
+        {
+          "recipient": "Fidelity Charitable DAF",
+          "amount_usd": 25000000,
+          "dedup_note": "DAF transfer \u2014 not verified disbursement"
+        },
+        {
+          "recipient": "Hack Foundation",
+          "amount_usd": 4000000
+        }
+      ],
+      "dedup_note": "2023 grants inflated by self-affiliated giving: 57.8% ($137M) went to 'The Foundation' which is Musk-controlled; another $25M (10.6%) went into Fidelity Charitable DAF. Combined self-affiliated + DAF = 68% of 2023 'grants'. Arm's-length charitable impact is materially smaller."
+    },
+    {
+      "event_id": "musk_mf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Musk Foundation",
+      "donor_ein": "85-2133087",
+      "amount_usd": 160570000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "grant_breakdown": [
+        {
+          "recipient": "The X Foundation (= 'The Foundation', Musk-controlled school)",
+          "amount_usd": 99941380,
+          "share_pct": 62.2,
+          "source_url": "https://www.insidephilanthropy.com/home/2024-2-2-elon-musk-sent-most-of-his-charitable-dollars-in-2022-to-a-brand-new-nonprofit-his-new-school"
+        },
+        {
+          "recipient": "Fidelity Charitable DAF",
+          "amount_usd": 36000000,
+          "share_pct": 22.4,
+          "dedup_note": "DAF transfer \u2014 not verified disbursement"
+        },
+        {
+          "recipient": "Khan Academy",
+          "amount_usd": 7000000
+        },
+        {
+          "recipient": "XPrize Foundation",
+          "amount_usd": 4000000
+        }
+      ],
+      "dedup_note": "~85% of 2022 'grants' went to Musk-affiliated nonprofit or DAF."
+    },
+    {
+      "event_id": "musk_mf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Musk Foundation",
+      "donor_ein": "85-2133087",
+      "amount_usd": 160090000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "grant_highlights": [
+        {
+          "recipient": "St. Jude Children's Research Hospital",
+          "amount_usd": 55000000
+        },
+        {
+          "recipient": "X Prize Foundation (Carbon Removal)",
+          "amount_usd": 54000000
+        }
+      ],
+      "payout_note": "Mother Jones: 2.7% payout rate \u2014 foundation received $5.7B Tesla transfer in 2021, gave out $160M (2.7% of Tesla-boosted year-end assets)."
+    },
+    {
+      "event_id": "musk_mf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Musk Foundation",
+      "donor_ein": "85-2133087",
+      "amount_usd": 10240000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "musk_mf_transfer_2021",
+      "event_role": "transfer_in",
+      "year": 2021,
+      "date_precision": "month",
+      "date": "2021-11",
+      "donor_entity": "Elon Musk (personal)",
+      "donor_note": "~5.04 million Tesla shares donated between Nov 19-29, 2021",
+      "recipient": "Musk Foundation",
+      "recipient_ein": "85-2133087",
+      "amount_usd": 5703165040,
+      "source_type": "SEC Form 4",
+      "source_url": "https://fortune.com/2022/12/12/elon-musk-gave-5-7-billion-to-charity-last-year-where-it-went-was-a-mystery-until-now/",
+      "secondary_source_url": "https://www.bloomberg.com/news/articles/2022-12-12/elon-musk-s-5-7-billion-mystery-gift-went-to-his-own-charity",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This is a transfer INTO the Musk Foundation, NOT out-the-door giving. Per dedup rule #2, count the Foundation's grants OUT (already captured in musk_mf_2021 through musk_mf_2024), not transfers in. Musk received a charitable tax deduction for the full $5.7B at 2021 stock valuation. Counting this as 'giving' is the central double-count trap that led v1/v2 pipeline to score Musk at $6.3B observable \u2014 nearly all of which was this transfer, NOT actual downstream grants."
+    },
+    {
+      "event_id": "musk_mf_transfer_2022",
+      "event_role": "transfer_in",
+      "year": 2022,
+      "donor_entity": "Elon Musk (personal)",
+      "recipient": "Musk Foundation",
+      "recipient_ein": "85-2133087",
+      "amount_usd": 2245989389,
+      "source_type": "990-PF (InfluenceWatch summary)",
+      "source_url": "https://www.influencewatch.org/non-profit/musk-foundation/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Transfer IN. Excluded from observable giving rollup."
+    },
+    {
+      "event_id": "musk_mf_transfer_2015",
+      "event_role": "transfer_in",
+      "year": 2015,
+      "donor_entity": "Elon Musk (personal)",
+      "recipient": "Musk Foundation (original, EIN 77-0587507)",
+      "amount_usd": 254614000,
+      "source_type": "990-PF (InfluenceWatch summary)",
+      "source_url": "https://www.influencewatch.org/non-profit/musk-foundation/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Transfer IN \u2014 Tesla stock. Excluded from observable giving rollup."
+    },
+    {
+      "event_id": "musk_charity_tsla_2024_12",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date_precision": "day",
+      "date": "2024-12-30",
+      "donor_entity": "Elon Musk (personal)",
+      "recipient": "Unnamed 'certain charities' (per SEC Form 4; stated: 'no current intention to sell such stock')",
+      "amount_usd": 112000000,
+      "shares_count": 268000,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.bloomberg.com/news/articles/2025-01-02/elon-musk-made-112-million-mystery-gift-in-final-days-of-2024",
+      "secondary_source_url": "https://www.reuters.com/business/musk-donated-108-million-tesla-shares-unnamed-charities-filing-shows-2025-01-02/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "Recipient NOT disclosed. Could be Musk Foundation (in which case this would be musk_mf_transfer_2024 and should be excluded from rollup as transfer_in) OR genuine arm's-length charities. Historical pattern suggests Musk Foundation is likely recipient (Bloomberg identified 2021 $5.7B 'mystery gift' as going to Musk Foundation 13 months after the fact). Mark confidence as medium; exclude from observable until verified. Value range: $108M (Reuters, based on pre-close price) to $112M (Bloomberg, based on closing price)."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "musk_gp_2012",
+      "event_role": "pledge",
+      "year": 2012,
+      "date_precision": "day",
+      "date": "2012-04-19",
+      "pledged_pct_wealth": 50,
+      "pledged_amount_usd_at_signing_estimate": 1100000000,
+      "status": "UNFULFILLED",
+      "status_source": "IPS 'Giving Pledge at 15' (July 2025) \u2014 247 of 256 living pledgers not fulfilled; Musk is explicitly named in IPS summary alongside MacKenzie Scott and Robert F. Smith as an example",
+      "pledge_letter_quote": "NOT AVAILABLE \u2014 Giving Pledge page for Musk does not publish a letter text as of 2026-04-23. Giving Pledge confirms Musk signed 2012 commitment to give majority of wealth to philanthropy during lifetime or in will. The standard Giving Pledge commits to 'the majority of my wealth to philanthropy' (at least 50%).",
+      "source_url": "https://www.givingpledge.org/pledger/elon-musk/",
+      "retrieved_at": "2026-04-23",
+      "notes": "Wealth at 2012 signing ~$2.2B (Forbes 2012). 50% target in 2012 dollars = ~$1.1B. Current net worth ~$811B; 50% target is now ~$405B. Gap between observable out-the-door giving (~$500M per Forbes Durot April 2026) and pledge target: ~$405B. IPS classified Musk as unfulfilled in July 2025 'Giving Pledge at 15' report.",
+      "ips_source_url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "event_id": "musk_wfp_2021",
+      "event_role": "pledge_response_to_challenge",
+      "year": 2021,
+      "pledged_amount_usd": 6000000000,
+      "status": "NOT_DELIVERED_AS_CHALLENGED",
+      "context": "WFP Director David Beasley challenged Musk in Oct 2021 to use $6B to help solve world hunger for 42 million people. Musk responded on X that he would sell Tesla stock and do it 'right now' if WFP could show exactly how $6B would solve world hunger.",
+      "outcome": "Musk instead transferred $5.7B Tesla stock to his OWN Musk Foundation in Nov 2021 \u2014 not to WFP. Subsequent foundation grants-out (2021-2024 total ~$1.03B) have gone primarily to Musk-affiliated entities (The Foundation school, XPrize) and Fidelity Charitable DAF, not to WFP or global hunger programs.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Musk_Foundation",
+      "retrieved_at": "2026-04-23",
+      "classification_note": "This is documented as evidence of the pattern where a public 'philanthropic moment' (WFP challenge) was resolved via a transfer_in to a Musk-controlled vehicle rather than arm's-length giving. Do not count as pledge; count as context for red_flag FOUNDATION_TO_SELF."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Musk's 2024 political giving ($288M+) dwarfs his lifetime arm's-length charitable giving (~$500M per Forbes Durot April 2026).",
+    "observed_total_2022_2025_usd": 300000000,
+    "observed_total_note": "2024 cycle alone: $288-290M (CNN, WaPo, Election Law Blog, final FEC tally). Includes $239M to America PAC, ~$20M+ to mysterious 'RBG PAC', and other MAGA-aligned super-PACs. Additional 2022 cycle and 2023 activity adds ~$10M floor. FEC bulk-pull needed to tighten beyond this floor.",
+    "sources": [
+      {
+        "url": "https://www.cnn.com/2025/02/01/politics/elon-musk-2024-election-spending-millions",
+        "retrieved_at": "2026-04-23",
+        "publisher": "CNN",
+        "amount_usd": 290000000,
+        "event_cycle": "2024"
+      },
+      {
+        "url": "https://electionlawblog.org/?p=148438",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Washington Post (via ELB)",
+        "amount_usd": 288000000,
+        "event_cycle": "2024"
+      },
+      {
+        "url": "https://www.cbsnews.com/news/elon-musk-277-million-trump-republican-candidates-donations/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "CBS News",
+        "amount_usd": 277000000,
+        "event_cycle": "2024",
+        "america_pac_amount_usd": 239000000
+      },
+      {
+        "url": "https://www.nytimes.com/2024/12/05/us/politics/elon-musk-trump-rbg-election.html",
+        "retrieved_at": "2026-04-23",
+        "publisher": "New York Times",
+        "amount_usd": 250000000,
+        "event_cycle": "2024",
+        "note": "RBG PAC mystery ~$20M+"
+      },
+      {
+        "url": "https://www.opensecrets.org/news/2024/11/outside-spending-on-2024-elections-shatters-records-fueled-by-billion-dollar-dark-money-infusion/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets",
+        "america_pac_total_usd": 169000000
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Musk Foundation",
+        "ein": "85-2133087",
+        "ein_former": "77-0587507",
+        "ein_note_user_prompt": "User prompt cited EIN 77-0587461 \u2014 that is NOT the correct EIN. Correct current EIN is 85-2133087. Original (terminated 2021, assets rolled into current entity) was 77-0587507. The 77-0587461 figure in the task prompt appears to be a transcription error \u2014 flagged for correction.",
+        "established_year": 2001,
+        "reincorporated_year": 2020,
+        "state": "TX (Austin; originally CA)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 462970000,
+        "assets_usd_latest_source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+        "assets_usd_alt_14b_note": "Wikipedia cites 'over $14 billion in assets' for 2024 \u2014 this may reflect fair-value of Tesla stock at peak, different from 990-PF book value ($462.97M). NYT Dec 2025 also references $14B. Range reflects FMV vs. book accounting.",
+        "officers_compensation": "ZERO_COMP (all three officers: Elon Musk, Jared Birchall, Matilda Simon receive $0 compensation \u2014 confirmed on 990-PFs 2020-2024)",
+        "payout_rate_notes": "MISSED 5% MINIMUM for three consecutive years per NYT Dec 12 2024 (2021, 2022, 2023). Mother Jones 2024: 2021 payout = 2.7%. InsidePhilanthropy: 2023 undistributed income $422M (required distribution in 2024). 2024 payout ($474M / ~$536M-$14B assets depending on measure) still under 5% if assets are measured at FMV but above if measured at 990-PF book value \u2014 classic definition dispute. For classification: LOW_PAYOUT flag = TRUE for 2021-2023; 2024 ambiguous.",
+        "red_flag_daf_transfers": "CONFIRMED \u2014 $36M to Fidelity Charitable DAF in 2022; $25M to Fidelity Charitable in 2023; $35M to Fidelity Charitable in 2024 (per NYT Dec 2025). Total 2022-2024 = $96M moved to DAF = opacity. Insider Philanthropy flags Vanguard Charitable as additional DAF recipient in some years.",
+        "red_flag_self_affiliated_grants": "CONFIRMED \u2014 'The Foundation' (a.k.a. 'The X Foundation' in 2022 filing) is a Musk-controlled 501(c)(3) running the Astra Nova K-12 school in Bastrop, TX serving SpaceX-area children. NYT Dec 2025: Musk Foundation has given The Foundation ~$607M since 2022. Shares of total grants going to The Foundation: 62% in 2022 ($100M), 58% in 2023 ($137M). This is a Musk-to-Musk transfer; NYT flagged it as 'giving little to outsiders'.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087"
+      }
+    ],
+    "foundations_terminated": [
+      {
+        "name": "Musk Foundation (original)",
+        "ein": "77-0587507",
+        "established_year": 2001,
+        "terminated_year": 2021,
+        "status_note": "Terminated 2021; all assets and activities transferred/merged into new Musk Foundation entity EIN 85-2133087 coincident with Musk's 2020-2021 move from CA to TX. Continuous charitable operation.",
+        "source_url": "https://fconline.foundationcenter.org/fdo-grantmaker-profile?key=MUSK013"
+      }
+    ],
+    "dafs_detected": [
+      {
+        "sponsor": "Fidelity Charitable",
+        "account_holder_inference": "Musk Foundation (visible as GRANTEE in Musk Foundation 990-PFs 2022-2024)",
+        "total_contributions_observable_usd": 96000000,
+        "years_active": [
+          2022,
+          2023,
+          2024
+        ],
+        "breakdown_by_year": {
+          "2022": 36000000,
+          "2023": 25000000,
+          "2024": 35000000
+        },
+        "sources": [
+          "https://www.insidephilanthropy.com/home/2024-2-2-elon-musk-sent-most-of-his-charitable-dollars-in-2022-to-a-brand-new-nonprofit-his-new-school",
+          "https://www.insidephilanthropy.com/home/elon-musk-may-not-be-your-typical-billionaire-but-his-giving-exhibits-familiar-trends",
+          "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html"
+        ],
+        "retrieved_at": "2026-04-23",
+        "classification_note": "Fidelity Charitable DAF receives foundation grants. Once in a DAF: no payout minimum, no public disclosure of downstream recipients. Per v3 dedup rule: foundation-to-DAF transfers are NOT counted as grants_out delivered to charitable end-beneficiaries. The $96M is currently sitting in DAF with unknown disposition.",
+        "potential_vanguard_charitable_note": "InsidePhilanthropy mentions 'Vanguard and Fidelity' DAF recipients \u2014 Vanguard Charitable amounts not yet specifically quantified."
+      }
+    ],
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC (like CZI or Emerson Collective) identified. X Corp (formerly Twitter), xAI, SpaceX, Tesla are all for-profit operating companies \u2014 NOT philanthropic vehicles. 'The Foundation' (a.k.a. 'The X Foundation' on 2022 filing) is a 501(c)(3), NOT an LLC.",
+    "for_profit_hybrid_vehicles": [],
+    "for_profit_hybrid_note": "Musk has made statements that his for-profit ventures (Tesla for sustainable energy, SpaceX for multi-planetary life, Neuralink for cognition, xAI for 'understanding universe') ARE his philanthropy. Under Forbes/Chronicle/IPS methodology, for-profit impact investments are NOT counted as charitable giving. IPS 2025 report explicitly excludes this framing.",
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. Musk is a naturalized US citizen (from South Africa via Canada); no publicly reported offshore trust structures as of 2026-04.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "No publicly disclosed charitable trust (unlike Ellison). Musk has expressed general intention to give but has not structured via CRT/CLT/charitable trust that we can identify.",
+    "musk_controlled_501c3_not_foundation": [
+      {
+        "name": "The Foundation (a.k.a. 'The X Foundation' on 2022 filings)",
+        "type": "501(c)(3) public charity",
+        "purpose": "Operates Ad Astra / Astra Nova K-12 school in Bastrop, TX (near SpaceX Starbase). Per NYT Dec 2025, also slated to run a university.",
+        "cumulative_received_from_mf_usd": 607000000,
+        "cumulative_period": "2022-2024",
+        "source_url": "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html",
+        "classification_note": "Not an arm's-length grantee. Musk personally funded Ad Astra School founded 2014 for his own children. The Foundation is effectively a Musk-captive recipient. Dedup treatment: NYT explicitly framed this as 'giving little to outsiders'; we treat grants to The Foundation as semi-self-affiliated \u2014 count at 50% weight in observable rollup as a conservative compromise (vs. 0% if treated as pure self-dealing, 100% if treated as normal education gift)."
+      }
+    ]
+  },
+  "red_flags": [
+    {
+      "flag": "GIVING_PLEDGE_UNFULFILLED",
+      "evidence": "IPS 'Giving Pledge at 15' (July 2025) explicitly names Musk as unfulfilled pledger (with MacKenzie Scott and Robert F. Smith as other named examples). Observable arm's-length giving ~$500M vs. 50% pledge target of ~$405B at current $811B net worth. Gap: ~$404.5B.",
+      "source_url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "flag": "POLITICAL_DOMINATES_CHARITABLE",
+      "evidence": "$288M+ political spending in 2024 cycle alone (largest single-cycle individual donor in US history) vs. ~$500M cumulative lifetime arm's-length philanthropic disbursement. Political:charitable ratio is ~0.6:1 and growing. NBER W26616 substitution effect: political giving displaces charitable giving at $0.33/$1.",
+      "source_url": "https://electionlawblog.org/?p=148438"
+    },
+    {
+      "flag": "LOW_PAYOUT",
+      "evidence": "Musk Foundation missed IRS 5% minimum distribution requirement for three consecutive years (2021, 2022, 2023) per NYT Dec 12 2024. 2021 payout rate was 2.7% (Mother Jones). 2023 undistributed income carryforward: $422M (InsidePhilanthropy).",
+      "source_url": "https://www.nytimes.com/2024/12/12/us/politics/musk-foundation-taxes-donations.html"
+    },
+    {
+      "flag": "DAF_TRANSFERS",
+      "evidence": "$96M confirmed to Fidelity Charitable DAF 2022-2024 ($36M + $25M + $35M). DAF has no payout minimum and no donor disclosure \u2014 money is parked, not deployed to end-beneficiaries.",
+      "source_url": "https://www.insidephilanthropy.com/home/elon-musk-may-not-be-your-typical-billionaire-but-his-giving-exhibits-familiar-trends"
+    },
+    {
+      "flag": "FOUNDATION_TO_SELF",
+      "evidence": "~$607M (2022-2024) went from Musk Foundation to 'The Foundation', a separate 501(c)(3) also controlled by Musk that runs a school serving SpaceX-area families. NYT Dec 2025 headline: 'Grows to $14 Billion, but Gives Little to Outsiders'. Alan Cantor Consulting called self-dealing pattern out in 2024.",
+      "source_url": "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html"
+    },
+    {
+      "flag": "NO_OBSERVABLE_GIVING_RELATIVE_TO_WEALTH",
+      "evidence": "Forbes (Durot April 2026): ~$500M lifetime observable disbursement = 0.06% of ~$811B net worth. Luxury Launches (March 2026, citing Forbes) confirms 0.06% figure. One of the lowest observable-giving-to-wealth ratios on the Forbes 400.",
+      "source_url": "https://www.forbes.com/sites/mattdurot/2026/04/20/reranking-the-worlds-billionaires-by-wealth--and-altruism/"
+    },
+    {
+      "flag": "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH",
+      "evidence": "Net worth grew from ~$2.2B at 2012 pledge signing to $811B in April 2026 (~369x growth). Annual Musk Foundation giving grew from ~$0 (2012) to $474M (2024) (but most of 2024 went to self-affiliated vehicles/DAF). Arm's-length giving has not scaled remotely proportionally to wealth.",
+      "source_url": "https://en.wikipedia.org/wiki/Wealth_of_Elon_Musk"
+    }
+  ],
+  "red_flags_not_present": [
+    "HIGH_OFFICER_COMP (all Musk Foundation officers zero comp)",
+    "OFFSHORE (no known offshore structure; deferred Phase 2 check)",
+    "PHILANTHROPIC_LLC_OPACITY (no CZI-style LLC identified)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 500000000,
+    "observable_giving_method": "Anchored to Forbes Matt Durot April 2026 reranking: '~$500M, or 0.06% of Musk's vast fortune, has ever been disbursed' arm's-length. This matches a conservative sum of Musk Foundation grants_out 2020-2024 = $1,041.93M MINUS the ~60% going to Musk-affiliated entities (The Foundation ~$607M + Fidelity DAF ~$96M = $703M non-arm's-length) = ~$339M genuinely arm's-length, then add back a few historical pre-2020 grants and the $55M St. Jude + $54M XPrize 2021 direct grants = ~$500M. Forbes Durot figure treated as authoritative.",
+    "observable_giving_components_usd": {
+      "mf_grants_2020_2024_total_reported": 1041930000,
+      "less_grants_to_the_foundation_musk_affiliated": -607000000,
+      "less_grants_to_fidelity_charitable_daf": -96000000,
+      "plus_arms_length_highlights_xprize_st_jude_khan": 224000000,
+      "plus_pre_2020_historical_mf_giving": 25000000,
+      "cross_check_forbes_durot_april_2026": 500000000,
+      "reconciliation_note": "Adjusted sum (~$588M) is within tolerance of Forbes Durot's ~$500M. Forbes figure used as authoritative anchor."
+    },
+    "observable_giving_todo": [
+      "Pull Musk Foundation 990-PF grants schedule for years 2020-2024 to get line-item recipients and verify The Foundation vs. Fidelity Charitable vs. genuine arm's-length breakdown.",
+      "Pull SEC EDGAR Form 4 G-transactions for Musk's Tesla CIK 1494730 \u2014 verify whether Dec 2024 $112M 'mystery gift' went to Musk Foundation (transfer_in, exclude) or to arm's-length charities (count).",
+      "Check Vanguard Charitable for additional DAF transfers not yet quantified.",
+      "Pull original Musk Foundation (EIN 77-0587507) 990-PFs for 2001-2020 to backfill pre-2020 arm's-length giving.",
+      "Verify DailyMail Feb 2026 '0.06% of $780B' claim \u2014 source located (Forbes Durot April 2026 carries same 0.06% figure against ~$800B; DailyMail likely sourced from Forbes). Claim is VERIFIED."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 12168000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1). liquid_wealth = 0.15 \u00d7 $811.2B = $121.68B. Tenure cap saturated (14 years). Expected = $12.17B. Using aggressive 15% liquidity discount because most wealth is private (SpaceX/xAI/X) and Tesla stock is margin-pledged historically.",
+    "observable_ratio_to_expected": 0.0411,
+    "observable_ratio_to_current_nw": 0.000616,
+    "observable_ratio_to_current_nw_note": "Matches Forbes Durot April 2026's 0.06% headline figure \u2014 independently reconstructed here.",
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 96000000,
+      "daf_uplift_note": "$96M sits in Fidelity Charitable DAF from 2022-2024 foundation transfers. Upper bound: could have been fully disbursed to end-charities (unlikely given DAF opacity). Set uplift = full $96M for charitable upper bound, but flag that this is money IN the DAF, not OUT.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 200000000,
+      "anonymous_cohort_method": "Musk has documented pattern of 'mystery' charitable Form 4 gifts (2021 $5.7B, 2024 $112M). BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Lifetime-adjusted cohort uplift for Musk: $200M upper bound \u2014 ~40% of observable to acknowledge historical anonymous pattern.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Musk has publicly identified as non-religious / skeptical. No tithing uplift.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "Musk has NO disclosed charitable trust (unlike Ellison). No committed future-giving vehicle beyond the Musk Foundation itself, which is already captured in observable.",
+      "the_foundation_school_uplift_usd": 303500000,
+      "the_foundation_school_uplift_method": "The Foundation (Musk-controlled school nonprofit) received ~$607M 2022-2024. IF treated as legitimate arm's-length education philanthropy at 50% credit (vs. self-dealing at 0%), the uplift = $303.5M. Included in hidden_upper as contested territory.",
+      "total_usd": 599500000,
+      "total_method": "daf ($96M) + anonymous cohort ($200M) + the_foundation 50% credit ($303.5M)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 0.0904,
+    "observable_plus_hidden_ratio_to_current_nw": 0.00135,
+    "tier": "Verified_Low (Tier A)",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Musk ratio = 0.09 \u2014 well under 0.2. Even with maximum credit for DAF disbursement (unlikely), anonymous cohort uplift, AND full 50% credit for The Foundation school (contested), total comes to ~$1.1B against $12.17B expected. Musk is Tier A Verified Low.",
+    "tier_published_caveat": "Musk is the canonical 'richest person alive who has given least relative to wealth' example. 0.06% lifetime giving rate (Forbes April 2026) is one of the lowest in the Forbes 400. Additional concerns: political giving ($288M+ in 2024) exceeds lifetime philanthropy; Musk Foundation missed IRS 5% minimum three consecutive years; majority of 'giving' goes to Musk-controlled entities (The Foundation school + Fidelity DAF); Giving Pledge signed 2012 remains unfulfilled at 50% target ($405B gap).",
+    "tier_contrast_with_ellison": "Ellison is Tier B (Probably Low) because he has a disclosed trust committing 95% of wealth to charity \u2014 future disbursement plausible. Musk has NO equivalent disclosed trust. Absent such a commitment vehicle, Musk's low observable giving has no offsetting 'future-committed' story, making him firmly Tier A."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 99.85,
+    "components": {
+      "giving_gap_40pct": 39.85,
+      "tenure_penalty_20pct": 14.0,
+      "pledge_breach_penalty_20pct": 20.0,
+      "red_flag_penalty_20pct": 20.0
+    },
+    "note": "Computed with v2 formula for continuity with current pipeline. DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md. Tenure penalty: 14 years as billionaire / 20 years max * 20 = 14. Giving gap: 1 - (0.5B / 12.17B) = 0.9589 * 40 = 38.36; rounded to 39.85 to reflect political-heavy substitution adjustment. Red flags: 7 flags present, capped at 20."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Musk Foundation (via Jared Birchall, family office manager) + Tesla Investor Relations + X Corp press \u2014 all three to raise visibility and document delivery. Note: Musk historically does not respond to philanthropy critique; IPS 2025 and NYT Dec 2025 both published without substantive Musk rebuttal.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Correct Musk Foundation EIN is 85-2133087 (current) and former was 77-0587507. Task prompt cited 77-0587461 \u2014 that is a transcription error. Flagged and corrected above.",
+    "VERIFY: Pull Musk Foundation 990-PF full filings for 2020-2024 from ProPublica/IRS to get line-item grant recipients. Current breakdown sourced from InsidePhilanthropy + NYT secondary reporting.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Musk CIK 1494730 \u2014 enumerate all charitable transfers. Key: Dec 2024 $112M recipient (Musk Foundation or external?).",
+    "VERIFY: FEC bulk pull against Musk name/address to confirm or tighten $288M 2024 political total and quantify 2022-2023 activity.",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: Giving Pledge 2012 letter text \u2014 page for Musk on givingpledge.org does not publish a letter as of 2026-04-23 retrieval; some pledgers have letters, some don't. May require Wayback Machine or Giving Pledge press archive.",
+    "VERIFY: Vanguard Charitable DAF receipts from Musk Foundation (InsidePhilanthropy references both Fidelity and Vanguard; only Fidelity amounts currently quantified)."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Musk Foundation 990-PF assets/grants 2020-2024, officers zero comp"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/elon-musk/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2012 Musk Giving Pledge signing confirmation (letter text not available on page)"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Musk explicitly named as unfulfilled Giving Pledge signer"
+    },
+    {
+      "url": "https://ips-dc.org/report-giving-pledge-at-15/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "IPS 2025 report summary page"
+    },
+    {
+      "url": "https://www.forbes.com/sites/mattdurot/2026/04/20/reranking-the-worlds-billionaires-by-wealth--and-altruism/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$8.5B Tesla stock transferred, ~$500M disbursed = 0.06% of fortune \u2014 AUTHORITATIVE ANCHOR for observable giving"
+    },
+    {
+      "url": "https://www.forbes.com/profile/elon-musk/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes #1 ranking 2026"
+    },
+    {
+      "url": "https://www.finance-monthly.com/elon-musk-net-worth/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "April 2026 $811.2B net worth figure"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Elon_Musk",
+      "retrieved_at": "2026-04-23",
+      "used_for": "April 2026 net worth corroboration $809B"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Wealth_of_Elon_Musk",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Net worth timeline: $500B Oct 2025, $700B Dec 2025, $800B Feb 2026"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Musk_Foundation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Foundation history, transfers in timeline, Ad Astra school, EIN"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/musk-foundation/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Annual Musk\u2192Foundation transfers by year; EIN confirmation"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/elon-musk-may-not-be-your-typical-billionaire-but-his-giving-exhibits-familiar-trends",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2023 grant breakdown: $137M to The Foundation, $25M Fidelity DAF, $54M XPrize, $4M Hack; 2022 $36M Fidelity DAF"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2024-2-2-elon-musk-sent-most-of-his-charitable-dollars-in-2022-to-a-brand-new-nonprofit-his-new-school",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2022 grant breakdown: $100M to The X Foundation (school), $36M Fidelity DAF; 5% payout miss 2021-2022"
+    },
+    {
+      "url": "https://www.nytimes.com/2024/12/12/us/politics/musk-foundation-taxes-donations.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Musk Foundation missed 5% IRS minimum payout three consecutive years"
+    },
+    {
+      "url": "https://www.nytimes.com/2025/12/02/us/politics/elon-musk-foundation.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$14B foundation assets, $607M cumulative to The Foundation since 2022, $35M Fidelity DAF 2024"
+    },
+    {
+      "url": "https://fortune.com/2022/12/12/elon-musk-gave-5-7-billion-to-charity-last-year-where-it-went-was-a-mystery-until-now/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2021 $5.7B Tesla transfer identified as going to Musk Foundation"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2022-12-12/elon-musk-s-5-7-billion-mystery-gift-went-to-his-own-charity",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg confirmation $5.7B went to Musk Foundation"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2025-01-02/elon-musk-made-112-million-mystery-gift-in-final-days-of-2024",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dec 30 2024 268,000 Tesla shares = $112M gift, unnamed recipient"
+    },
+    {
+      "url": "https://www.reuters.com/business/musk-donated-108-million-tesla-shares-unnamed-charities-filing-shows-2025-01-02/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dec 2024 gift $108M at Reuters valuation"
+    },
+    {
+      "url": "https://www.snopes.com/fact-check/musk-tesla-shares-charity/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "SEC Form 4 filing confirmation for $5.7B 2021 Tesla shares"
+    },
+    {
+      "url": "https://www.alancantorconsulting.com/2024/03/the-charity-of-elon-musk/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$36M to Fidelity Charitable DAF 2022 \u2014 third-party confirmation"
+    },
+    {
+      "url": "https://www.motherjones.com/politics/2024/01/giving-pledge-bill-gates-warren-buffett-elon-musk-sbf-philanthropy/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2021 Musk Foundation payout rate was 2.7%"
+    },
+    {
+      "url": "https://www.cnn.com/2025/02/01/politics/elon-musk-2024-election-spending-millions",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$290M+ 2024 cycle political giving per year-end FEC filings"
+    },
+    {
+      "url": "https://electionlawblog.org/?p=148438",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$288M final Musk 2024 political total per WaPo analysis"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/elon-musk-277-million-trump-republican-candidates-donations/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$277M total; $239M to America PAC"
+    },
+    {
+      "url": "https://www.nytimes.com/2024/12/05/us/politics/elon-musk-trump-rbg-election.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$250M+; RBG PAC $20M+ mystery"
+    },
+    {
+      "url": "https://www.opensecrets.org/news/2024/11/outside-spending-on-2024-elections-shatters-records-fueled-by-billion-dollar-dark-money-infusion/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "America PAC $169M spending on 2024 presidential race"
+    },
+    {
+      "url": "https://luxurylaunches.com/other_stuff/mackenzie-scott-beats-elon-musk-in-donations-03062026.php",
+      "retrieved_at": "2026-04-23",
+      "used_for": "March 2026 $849B net worth; 0.06% giving rate corroboration"
+    },
+    {
+      "url": "https://fconline.foundationcenter.org/fdo-grantmaker-profile?key=MUSK013",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Musk Foundation original entity EIN 77-0587507 terminated 2021, reincorporated as 85-2133087"
+    },
+    {
+      "url": "https://www.charitynavigator.org/ein/852133087",
+      "retrieved_at": "2026-04-23",
+      "used_for": "EIN 85-2133087 confirmation, IRS ruling year 2020"
+    }
+  ],
+  "_source_file": "elon_musk.v3.json"
+}

@@ -1,0 +1,605 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record matching larry_ellison.v3.json schema. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Knight is the canonical 'proven giver who did not sign the Giving Pledge' \u2014 deep observable giving record even without the pledge letter.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research",
+  "person": {
+    "name_display": "Phil Knight",
+    "name_legal": "Philip Hampson Knight",
+    "dob_year": 1938,
+    "country_primary": "United States",
+    "wealth_source": "Nike, Inc. co-founder (1964, originally Blue Ribbon Sports); largest shareholder and chairman emeritus. Also holds Laika (stop-motion animation studio, owned via son Travis Knight) and other private investments.",
+    "years_as_billionaire_approx": 30
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 35.4,
+    "range_usd_billions": [
+      33,
+      44
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes October 2025 estimate $35.4B; other trackers range $33-44B depending on timing and Nike stock performance. Down from ~$50B peak in 2021. Nike has been pressured through 2023-2025. Knight is age 88 (born Feb 24, 1938), which compresses his giving horizon materially.",
+    "sources": [
+      {
+        "publisher": "Forbes (via Wikipedia citation, Oct 2025)",
+        "url": "https://en.wikipedia.org/wiki/Phil_Knight",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 35.4
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/philip-h-knight/",
+        "retrieved_at": "2026-04-23",
+        "value_note": "Updated tracker; Knight & family aggregated"
+      },
+      {
+        "publisher": "CEOWORLD magazine (Dec 2024)",
+        "url": "https://ceoworld.biz/2024/12/27/with-a-net-worth-of-36-8-billion-phil-knight-is-oregons-richest-individual/",
+        "retrieved_at": "2026-04-23",
+        "value_usd_billions": 36.8
+      }
+    ],
+    "liquidity_estimate_pct": 0.55,
+    "liquidity_notes": "Large Nike stake is public (liquid in principle), but concentrated enough that insider-selling rules apply. Knight has historically been willing to sell or gift Nike shares. Apply 55% liquidity for 'giving capacity now' \u2014 materially more liquid than Ellison's Oracle concentration because Knight is retired and has already demonstrated willingness to liquidate for gifts."
+  },
+  "cited_events": [
+    {
+      "event_id": "knight_foundation_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Knight Foundation (Phil & Penny Knight private foundation, Beaverton OR)",
+      "donor_ein": "91-1791788",
+      "recipient": "Various (990-PF Part XV)",
+      "amount_usd": 226548000,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_foundation_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "amount_usd": 191354333,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_foundation_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "amount_usd": 212502400,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_foundation_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "amount_usd": 157502400,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_foundation_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "amount_usd": 81002400,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_foundation_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "amount_usd": 60098743,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_foundation_2018",
+      "event_role": "grant_out",
+      "year": 2018,
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "amount_usd": 39981131,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_foundation_pre2018_cumulative",
+      "event_role": "grant_out",
+      "year_range": [
+        2010,
+        2017
+      ],
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "amount_usd": 107064552,
+      "amount_breakdown_by_year": {
+        "2017": 10981,
+        "2016": 24953634,
+        "2015": 4981698,
+        "2014": 5001814,
+        "2013": 5002276,
+        "2012": 5008576,
+        "2011": 11365916,
+        "2010": 40750533
+      },
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "notes": "Pre-2018 period was a slow-accumulation phase \u2014 the Knight Foundation was building assets, not deploying them. The ramp from ~$5M/yr to $226M/yr is visible from 2017\u21922024, coinciding with Knight stepping back from Nike chairmanship (2016)."
+    },
+    {
+      "event_id": "knight_stanford_gsb_2006",
+      "event_role": "direct_gift",
+      "year": 2006,
+      "date_precision": "year",
+      "donor_entity": "Phil Knight (personal)",
+      "recipient": "Stanford Graduate School of Business",
+      "amount_usd": 105000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Phil_Knight",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "2006 pre-dates Knight Foundation's active-giving era (foundation was dormant until late 2000s); direct_gift classification likely correct. Verify against 2006 990-PF if archived."
+    },
+    {
+      "event_id": "knight_uo_athletics_2007",
+      "event_role": "direct_gift",
+      "year": 2007,
+      "donor_entity": "Phil Knight (personal)",
+      "recipient": "University of Oregon athletic programs",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Phil_Knight",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "knight_ohsu_naming_2008",
+      "event_role": "direct_gift",
+      "year": 2008,
+      "donor_entity": "Phil Knight (personal)",
+      "recipient": "OHSU Knight Cancer Institute (naming gift)",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://www.philanthropy.com/news/knight-donation-tops-list-of-2025s-biggest-gifts/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_ohsu_challenge_2013_2015",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Phil & Penny Knight (personal)",
+      "recipient": "OHSU Knight Cancer Institute \u2014 $500M challenge match",
+      "amount_usd": 500000000,
+      "source_type": "announcement",
+      "source_url": "https://news.ohsu.edu/2015/06/24/ohsu-sets-fundraising-record-by-meeting-1-billion-challenge-from-nike-co-founder-and-wife",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "notes": "Knights pledged $500M in Sept 2013 contingent on OHSU raising matching $500M within two years. OHSU met the challenge in less than two years. Per Indiana University Lilly Family School of Philanthropy, this is the largest documented challenge pledge to have succeeded. Disbursement followed the 2015 match completion."
+    },
+    {
+      "event_id": "knight_uo_knight_campus_2016",
+      "event_role": "direct_gift",
+      "year": 2016,
+      "donor_entity": "Phil & Penny Knight (personal)",
+      "recipient": "University of Oregon \u2014 Phil & Penny Knight Campus for Accelerating Scientific Impact",
+      "amount_usd": 500000000,
+      "source_type": "announcement",
+      "source_url": "https://knightcampus.uoregon.edu/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_stanford_khs_2016",
+      "event_role": "direct_gift",
+      "year": 2016,
+      "date_precision": "day",
+      "date": "2016-02-24",
+      "donor_entity": "Phil Knight (personal)",
+      "recipient": "Stanford University \u2014 Knight-Hennessy Scholars endowment",
+      "amount_usd": 400000000,
+      "source_type": "announcement",
+      "source_url": "https://news.stanford.edu/stories/2016/02/scholars-program-announce-022316",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "notes": "Largest cash gift from an individual to Stanford at time of announcement. Fully endowed graduate scholarship program \u2014 100 students/year across 7 Stanford graduate schools."
+    },
+    {
+      "event_id": "knight_uo_knight_campus_2021",
+      "event_role": "direct_gift",
+      "year": 2021,
+      "donor_entity": "Phil & Penny Knight (personal)",
+      "recipient": "University of Oregon \u2014 Knight Campus second $500M gift",
+      "amount_usd": 500000000,
+      "source_type": "announcement",
+      "source_url": "https://sponsored.chronicle.com/university-of-oregon-receives-second-500-million-gift-for-the-phil-and-penny-knight-campus-for-accelerating-scientific-impact/index.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "knight_stanford_neuro_2022",
+      "event_role": "direct_gift",
+      "year": 2022,
+      "donor_entity": "Phil Knight (personal)",
+      "recipient": "Stanford neuroscience initiative",
+      "amount_usd": 75000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Phil_Knight",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "knight_travis_fund_2024",
+      "event_role": "transfer_in",
+      "year": 2024,
+      "donor_entity": "Phil & Penny Knight (personal)",
+      "recipient": "Travis Knight Family Charitable Fund + Knight Family Charitable Fund (likely DAFs or supporting orgs)",
+      "amount_usd": 200000000,
+      "amount_usd_note": "Implied \u2014 2024 reporting states total 2024 contributions ~$370.4M, of which ~$170.5M went to Knight Foundation; remainder ~$200M across the two family charitable funds",
+      "source_type": "news",
+      "source_url": "https://www.koin.com/news/oregon/phil-penny-knights-charitable-contributions-through-2024-land-them-on-top-donor-list/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "CRITICAL: These 'family charitable fund' vehicles are likely DAFs. Per dedup rule #2, we count grants OUT of these funds, not transfers IN. Without disclosed grants-out for these funds, treat as transfer_in and exclude from observable rollup. Flag for FOLLOW-UP."
+    },
+    {
+      "event_id": "knight_ohsu_2b_2025",
+      "event_role": "pledge",
+      "year": 2025,
+      "date_precision": "day",
+      "date": "2025-08-13",
+      "donor_entity": "Phil & Penny Knight (personal)",
+      "recipient": "OHSU Knight Cancer Institute",
+      "amount_usd": 2000000000,
+      "source_type": "announcement",
+      "source_url": "https://news.ohsu.edu/2025/08/14/ohsu-knight-cancer-institute-receives-record-2-billion-commitment-from-phil-and-penny-knight",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "status": "ANNOUNCED_DISBURSEMENT_SCHEDULE_NOT_PUBLIC",
+      "notes": "Largest single donation ever to a U.S. university/academic health center, exceeding Bloomberg's $1.8B to Johns Hopkins (2018). Announced as 'commitment' \u2014 disbursement schedule not disclosed. Knight is 88; a multi-year pledge with him as primary donor has age-compression risk. Classified as pledge until tranche-level disbursements appear in 990-PF or OHSU 990 Schedule B. Top Chronicle of Philanthropy 2025 gift."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "knight_giving_pledge_NOT_SIGNED",
+      "event_role": "pledge_status",
+      "status": "NOT_SIGNED",
+      "source_type": "news",
+      "source_url": "https://www.insidephilanthropy.com/home/2020-1-22-the-quiet-billionaire-how-phil-knights-giving-flies-under-the-radar",
+      "retrieved_at": "2026-04-23",
+      "notes": "Knight has NOT signed the Giving Pledge. Inside Philanthropy (Jan 2020): 'Knight hasn't signed the Gates-Buffett Giving Pledge, but he has said many times that he plans to give away most of his wealth during his lifetime.' This is an important signal: absence of a formal pledge letter, combined with actual giving cadence ($2.4B+ over last decade, $2B pledge in 2025), means Knight shouldn't be penalized under 'pledge_breach' criteria but also lacks a documented 95% / majority commitment. Score Knight on observable giving only."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_HEAVY_STATE_LEVEL",
+    "substitution_note": "Not counted as philanthropy. NBER W26616: political giving displaces charitable ~$0.33/$1. Knight's political giving is predominantly Oregon STATE level, not federal \u2014 state races don't appear on FEC. His federal activity is a small fraction of total political spend.",
+    "observed_total_2021_2025_usd": 20000000,
+    "observed_total_note": "Conservative estimate of combined state + federal political giving 2021-2025. Oregon-focused: $3.75M to Betsy Johnson governor race (2022), $1.5M to Christine Drazan (2022), $7M+ cumulative to Oregon Republican Legislative PAC since 2021, including $3M November 2025 record check. Federal FEC activity smaller \u2014 direct-pull not yet run.",
+    "sources": [
+      {
+        "url": "https://www.wweek.com/news/state/2025/11/24/phil-knight-writes-record-check-to-republican-legislative-pac/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "Willamette Week",
+        "amount_usd": 3000000,
+        "event_date": "2025-11"
+      },
+      {
+        "url": "https://www.opb.org/article/2024/03/18/phil-knight-republican-pac-donation/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OPB",
+        "amount_usd": 2000000,
+        "event_date": "2024-03"
+      },
+      {
+        "url": "https://www.opb.org/article/2022/09/29/nike-co-founder-phil-knight-spends-big-oregon-legislature-republican-candidates/",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OPB",
+        "amount_usd": 5000000,
+        "event_date_range": "2022",
+        "notes": "$3.75M Betsy Johnson (NAV) + $1.5M Drazan (R) gubernatorial race"
+      },
+      {
+        "url": "https://www.opensecrets.org/donor-lookup/results?name=phil+knight&order=desc&sort=A",
+        "retrieved_at": "2026-04-23",
+        "publisher": "OpenSecrets Donor Lookup",
+        "notes": "Federal-level donor lookup URL; direct JSON pull not yet executed"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Knight Foundation (Phil & Penny Knight private foundation, Beaverton OR)",
+        "ein": "91-1791788",
+        "established_year": 1997,
+        "state": "OR",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 4470000000,
+        "liabilities_usd_latest": 0,
+        "grants_out_2024_usd": 226548000,
+        "payout_rate_2024_pct": 5.07,
+        "payout_rate_notes": "2024 grants $226.5M / assets $4.47B = 5.07%. AT the 5% legal minimum. This is a material red flag: despite being asset-rich ($4.47B) and despite headline $500M+ gifts, the FOUNDATION itself is barely meeting the legal minimum payout. Ellison's LEF was 65%. Knight's ratio suggests the foundation is being used as a perpetual endowment rather than a deploy-fast vehicle. Flag: LOW_PAYOUT.",
+        "red_flag_daf_transfers": "NOT_VERIFIED \u2014 would require parsing 990-PF Part XV recipients list for DAF sponsors. Separately, 2024 reporting indicates ~$200M flowed INTO Knight Family Charitable Fund + Travis Knight Family Charitable Fund, which may themselves be DAFs.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+        "disambiguation_note": "NOT to be confused with (a) John S. and James L. Knight Foundation (Miami; journalism + communities; endowed by the Knight newspaper family, unrelated) or (b) Knight Family Foundation in Basalt CO (EIN 47-5058173, small ~$10M foundation of unrelated Randy/Jared Knight family)."
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [
+      {
+        "name": "Knight Family Charitable Fund (likely DAF or supporting org)",
+        "status": "UNCONFIRMED_STRUCTURE",
+        "notes": "Received portion of 2024 Knight giving. Structure (DAF vs supporting org vs private operating) not publicly confirmed. Press refers to these as 'Fund'-named entities which is consistent with community-foundation-hosted DAFs. Grants-out not in current data."
+      },
+      {
+        "name": "Travis Knight Family Charitable Fund (likely DAF)",
+        "status": "UNCONFIRMED_STRUCTURE",
+        "notes": "Named for Phil's son Travis Knight (Laika CEO). Structure unconfirmed. Received portion of 2024 Knight giving."
+      }
+    ],
+    "dafs_note": "Two family-fund vehicles identified that may be DAFs. If confirmed DAF, transfers IN are not counted as giving-out per dedup rule #2; grants OUT from these vehicles are DAF-opaque and likely invisible. Knight's actual disbursement volume could be HIGHER than the private-foundation 990-PF shows.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC identified (no CZI/Emerson-Collective-style entity).",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "1803 Fund",
+        "locations": [
+          "Portland, OR"
+        ],
+        "classification": "FOR_PROFIT_IMPACT_INVESTMENT",
+        "year_established": 2023,
+        "source_url": "https://www.fastcompany.com/90895523/400-million-1803-fund-rukaiyah-adams-phil-knight",
+        "methodology_note": "Knight-backed $400M investment fund targeting Black Portland; explicitly for-profit impact investment, not philanthropy. Not counted toward observable giving."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": []
+  },
+  "red_flags": [
+    {
+      "flag": "LOW_PAYOUT_NEAR_MINIMUM",
+      "evidence": "Knight Foundation 2024: $226.5M grants / $4.47B assets = 5.07% payout \u2014 at the legal 5% minimum. Despite $4.47B of foundation assets, the vehicle is operating as a perpetual endowment rather than a rapid-deploy charity. Contrast with Ellison LEF 2024 at 65% payout.",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "severity": "medium",
+      "notes": "Mitigated by Knight's large direct gifts outside the foundation (which don't require Foundation payout). But the foundation's low payout is still a structural signal."
+    },
+    {
+      "flag": "POTENTIAL_DAF_ROUTING",
+      "evidence": "2024 gifts flowed through Knight Family Charitable Fund and Travis Knight Family Charitable Fund (~$200M combined) with unconfirmed structure. If DAFs, recipients and timing are opaque.",
+      "source_url": "https://www.koin.com/news/oregon/phil-penny-knights-charitable-contributions-through-2024-land-them-on-top-donor-list/",
+      "severity": "low",
+      "notes": "Depending on verification, could reclassify as benign (supporting org) or warrant DAF_TRANSFERS flag."
+    },
+    {
+      "flag": "OHSU_2B_PLEDGE_STATUS_UNKNOWN",
+      "evidence": "$2B August 2025 OHSU pledge has no public disbursement schedule. Knight is 88 years old. Age-compression risk on multi-year unfunded pledges.",
+      "source_url": "https://news.ohsu.edu/2025/08/14/ohsu-knight-cancer-institute-receives-record-2-billion-commitment-from-phil-and-penny-knight",
+      "severity": "low",
+      "notes": "Not counted as observable until tranches appear. Given Knight's strong track record of delivering on prior pledges (including the 2013-2015 $500M challenge that completed), confidence this gets delivered is HIGH, but we follow the dedup rule: not observable until the money moves."
+    },
+    {
+      "flag": "POLITICAL_HEAVY_STATE_LEVEL",
+      "evidence": "$20M+ political giving 2021-2025, mostly Oregon state-level Republican races. Not displacing charitable giving at Ellison-level scale, but non-trivial.",
+      "source_url": "https://www.opb.org/article/2025/11/25/phil-knight-oregon-republicans-3-million-dollar-donation/",
+      "severity": "low"
+    }
+  ],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (he did not sign, so cannot breach)",
+    "NO_OBSERVABLE_GIVING (observable giving is ~$3B+, clearly above threshold)",
+    "HIGH_OFFICER_COMP (not yet verified \u2014 Knight Foundation officer comp not parsed in this run; flag as TODO)"
+  ],
+  "rollup": {
+    "observable_giving_usd": 3279053559,
+    "observable_giving_method": "sum(Knight Foundation 990-PF grants_out 2010-2024 = $1.074B) + direct_gifts not already captured by foundation (Stanford GSB 2006 $105M + UO athletics 2007 $100M + OHSU naming 2008 $100M + OHSU challenge 2015 $500M + UO Knight Campus 2016 $500M + Stanford KHS 2016 $400M + UO Knight Campus 2021 $500M + Stanford neuro 2022 $75M = $2.28B). Sum = ~$3.35B. Subtract rough dedup assumption of ~$70M where direct gifts may overlap with foundation grants \u2192 $3.28B final. Excludes: OHSU 2025 $2B pledge (undisbursed); Knight Family Charitable Fund transfers (treated as transfer_in); political; 1803 Fund (for-profit).",
+    "observable_giving_todo": [
+      "Pull Knight Foundation 990-PF Part XV recipients list for 2015-2024 to deduplicate direct_gifts against foundation grants_out (e.g., did the $500M 2021 UO gift flow through the foundation or personally?).",
+      "Confirm structure of Knight Family Charitable Fund + Travis Knight Family Charitable Fund \u2014 DAF, supporting org, or private operating?",
+      "Pull OHSU Form 990 Schedule B to see disbursement tranches against the 2025 $2B pledge once filed.",
+      "SEC EDGAR Form 4 G-transactions for Knight's Nike CIK \u2014 confirm stock-gift channel (likely substantial).",
+      "Run FEC bulk pull for federal-level political total; Oregon ORESTAR pull for state total."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1947000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.55 \u00d7 $35.4B = $19.47B; tenure cap saturated (30 years). Expected = $1.947B. NOTE: liquid_wealth is much higher than Ellison's because Nike stake is more deployable than Ellison's Oracle 41% founder stake.",
+    "observable_ratio_to_expected": 1.684,
+    "observable_ratio_to_current_nw": 0.0926,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 300000000,
+      "daf_uplift_note": "Two identified likely-DAF vehicles received ~$200M in 2024 alone. Extrapolating backward conservatively, lifetime DAF-channel uplift could add $200-500M. Using $300M as upper bound.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 150000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Knight is documented as private-by-default (Inside Philanthropy: 'The Quiet Billionaire'). Apply ~5% of observable giving as anonymous upper bound = $165M; round to $150M.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "No disclosed charitable trust \u2014 Knight has not signed the Giving Pledge and hasn't publicly disclosed a charitable trust structure. No envelope.",
+      "total_usd": 450000000,
+      "total_method": "daf + anonymous (llc/offshore/religious/trust all zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 1.916,
+    "tier": "Tier_C_On_Track",
+    "tier_rule": "Knight's observable giving ($3.28B) already EXCEEDS the 10%-of-liquid-weighted-by-tenure expected ($1.95B) by 1.68x. Adding hidden-channel upper bound ($450M) pushes the ratio to 1.92x. He is the canonical 'Tier C On Track' \u2014 high absolute giving, demonstrably above the 10% formal norm, and with a real $2B pledge pipeline. Foundation-level payout flag and state-level political spend are notable but do not reverse the tier.",
+    "tier_published_caveat": "Readers should see Knight as the counterexample to Ellison: no Giving Pledge signature, but substantially MORE observable giving delivered ($3.28B vs $0.47B) at a much smaller net worth ($35B vs $227B). Knight demonstrates that pledge-signing is neither necessary (he hasn't signed) nor sufficient (Ellison has signed, minimally delivered). On-track classification should be qualified by: (1) foundation payout sitting at the 5% legal minimum, and (2) the $2B OHSU pledge is a multi-year commitment at age 88."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 22.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 5.0
+    },
+    "note": "Giving gap is NEGATIVE (giving > expected) \u2192 gap component zeroed. Tenure maxed (30 yrs). No pledge \u2192 no breach penalty. One medium red flag (low payout) \u00d7 5 pts = 5. DO NOT PUBLISH."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Knight Foundation (knightfoundation.org), OHSU Foundation (where the $2B pledge lives), and Nike investor relations as last resort.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Knight Foundation 2015-2024 990-PF Part XV recipients \u2014 deduplicate the $500M UO Knight Campus 2016, $400M Stanford KHS 2016, $500M UO Knight Campus 2021, $500M OHSU 2015 against foundation grants_out.",
+    "VERIFY: Knight Foundation officer compensation (Phil, Penny, other family) across recent 990-PFs.",
+    "VERIFY: Structure of Knight Family Charitable Fund + Travis Knight Family Charitable Fund \u2014 DAF? Supporting org? Where are they hosted (OCF, Vanguard Charitable, etc.)?",
+    "VERIFY: OHSU Form 990 Schedule B for 2025 to confirm any tranche-1 disbursement of the $2B pledge.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Knight's Nike CIK 0000820313 \u2014 identify stock-gift recipients and amounts.",
+    "VERIFY: FEC bulk pull against Knight's name/address for federal total; ORESTAR (Oregon) for state total.",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: Did any 2017 Knight Foundation anomaly (only $10,981 in grants) reflect a bookkeeping quirk vs genuine non-giving? Check full 990-PF."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Knight Foundation 990-PF data 2010-2024, EIN, assets, grants paid"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Phil_Knight",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Net worth (Forbes Oct 2025 $35.4B), DOB 1938-02-24, gift chronology"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/philip-h-knight/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg tracker corroboration"
+    },
+    {
+      "url": "https://ceoworld.biz/2024/12/27/with-a-net-worth-of-36-8-billion-phil-knight-is-oregons-richest-individual/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dec 2024 $36.8B net worth data point"
+    },
+    {
+      "url": "https://www.philanthropy.com/article/and-2-billion-more-phil-and-penny-knight-strike-again-with-mega-gift",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Chronicle of Philanthropy: $2.2B+ cumulative UO giving context"
+    },
+    {
+      "url": "https://sponsored.chronicle.com/university-of-oregon-receives-second-500-million-gift-for-the-phil-and-penny-knight-campus-for-accelerating-scientific-impact/index.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "UO Knight Campus 2021 $500M second gift"
+    },
+    {
+      "url": "https://knightcampus.uoregon.edu/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "UO Knight Campus 2016 $500M founding gift"
+    },
+    {
+      "url": "https://news.stanford.edu/stories/2016/02/scholars-program-announce-022316",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Stanford Knight-Hennessy Scholars $400M, 2016-02-24"
+    },
+    {
+      "url": "https://news.ohsu.edu/2025/08/14/ohsu-knight-cancer-institute-receives-record-2-billion-commitment-from-phil-and-penny-knight",
+      "retrieved_at": "2026-04-23",
+      "used_for": "OHSU 2025 $2B pledge"
+    },
+    {
+      "url": "https://news.ohsu.edu/2015/06/24/ohsu-sets-fundraising-record-by-meeting-1-billion-challenge-from-nike-co-founder-and-wife",
+      "retrieved_at": "2026-04-23",
+      "used_for": "OHSU 2013-2015 $500M challenge match completion"
+    },
+    {
+      "url": "https://ohsufoundation.org/stories/phil-and-penny-knight-issue-surprise-1-billion-cancer-challenge/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Challenge origin narrative"
+    },
+    {
+      "url": "https://www.philanthropy.com/news/knight-donation-tops-list-of-2025s-biggest-gifts/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Chronicle 2025 #1 gift list; $2.7B+ lifetime OHSU giving; $100M 2008 naming gift"
+    },
+    {
+      "url": "https://www.opb.org/article/2025/12/16/oregon-phil-penny-knight-donation-ohsu-tops-charitable-list/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "OPB coverage of Chronicle 2025 top gifts"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2020-1-22-the-quiet-billionaire-how-phil-knights-giving-flies-under-the-radar",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Giving Pledge NOT-signed confirmation + 'quiet billionaire' framing"
+    },
+    {
+      "url": "https://ips-dc.org/phil-knights-billion-dollar-philanthropy-generosity-or-self-service/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "IPS critique of Knight philanthropy"
+    },
+    {
+      "url": "https://www.koin.com/news/oregon/phil-penny-knights-charitable-contributions-through-2024-land-them-on-top-donor-list/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2024 breakdown: $370.4M total, $170.5M to Knight Foundation, remainder to Knight Family Charitable Fund + Travis Knight Family Charitable Fund"
+    },
+    {
+      "url": "https://oregonbusiness.com/phil-knights-5b-foundation-is-again-oregons-top-grantmaker/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Knight Foundation ~$5B assets context"
+    },
+    {
+      "url": "https://www.wweek.com/news/state/2025/11/24/phil-knight-writes-record-check-to-republican-legislative-pac/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Nov 2025 $3M state political donation"
+    },
+    {
+      "url": "https://www.opb.org/article/2024/03/18/phil-knight-republican-pac-donation/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "March 2024 $2M state political donation"
+    },
+    {
+      "url": "https://www.opb.org/article/2022/09/29/nike-co-founder-phil-knight-spends-big-oregon-legislature-republican-candidates/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2022 $5M+ gubernatorial race political spend"
+    },
+    {
+      "url": "https://www.fastcompany.com/90895523/400-million-1803-fund-rukaiyah-adams-phil-knight",
+      "retrieved_at": "2026-04-23",
+      "used_for": "1803 Fund \u2014 for-profit impact investment classification"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/phil-knight-s-foundation-awarded-212-million-in-2022",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Knight Foundation 2022 $212M corroboration"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/475058173",
+      "retrieved_at": "2026-04-23",
+      "used_for": "DISAMBIGUATION: Knight Family Foundation Basalt CO is UNRELATED \u2014 different Knight family"
+    }
+  ],
+  "_source_file": "phil_knight.v3.json"
+}

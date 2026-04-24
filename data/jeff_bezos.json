@@ -1,0 +1,172 @@
+{
+  "name": "Jeff Bezos",
+  "net_worth_billions": 238.7,
+  "country": "United States",
+  "research_date": "2026-01-02T13:30:00",
+  "research_method": "Web search via Brave Search API + ProPublica 990 data",
+
+  "foundations": {
+    "category": "FOUNDATIONS",
+    "total": 942839673,
+    "confidence": "HIGH",
+    "notes": "Bezos Family Foundation disbursements 2014-2024 from ProPublica 990-PF data. Note: This is his parents' foundation, Jeff contributes to it.",
+    "findings": [
+      {
+        "amount": 361755557,
+        "recipient": "Various (via Bezos Family Foundation)",
+        "year": "2024",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/912073258",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 167033221,
+        "recipient": "Various (via Bezos Family Foundation)",
+        "year": "2023",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/912073258",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 107595983,
+        "recipient": "Various (via Bezos Family Foundation)",
+        "year": "2022",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/912073258",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 85898089,
+        "recipient": "Various (via Bezos Family Foundation)",
+        "year": "2021",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/912073258",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 79695983,
+        "recipient": "Various (via Bezos Family Foundation)",
+        "year": "2020",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/912073258",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 88187253,
+        "recipient": "Various (via Bezos Family Foundation)",
+        "year": "2019",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/912073258",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 52656587,
+        "recipient": "Various (via Bezos Family Foundation)",
+        "year": "2014-2015",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/912073258",
+        "description": "Combined earlier years",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+
+  "direct_gifts": {
+    "category": "DIRECT_GIFTS",
+    "total": 10640000000,
+    "confidence": "MEDIUM",
+    "notes": "Major pledges via Bezos Earth Fund and Day One Fund",
+    "findings": [
+      {
+        "amount": 10000000000,
+        "recipient": "Bezos Earth Fund",
+        "year": "2020",
+        "source_url": "https://www.nytimes.com/2020/02/17/technology/jeff-bezos-climate-change-earth-fund.html",
+        "description": "$10 billion pledge for climate change via Bezos Earth Fund. Note: This is a PLEDGE to be disbursed over time.",
+        "confidence": "MEDIUM"
+      },
+      {
+        "amount": 640000000,
+        "recipient": "Day One Families Fund (homelessness)",
+        "year": "2018-2024",
+        "source_url": "https://fortune.com/2023/11/21/jeff-bezos-donates-117-million-homeless-families-day-1-fund-philanthropy/",
+        "description": "Cumulative grants to homeless families from Day One Families Fund",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+
+  "llcs": {
+    "category": "PHILANTHROPIC_LLCS",
+    "total": 791000000,
+    "confidence": "MEDIUM",
+    "notes": "Bezos Earth Fund operates as a philanthropic vehicle, has disbursed $791M+ so far",
+    "findings": [
+      {
+        "amount": 791000000,
+        "recipient": "Various climate organizations",
+        "year": "2020-2021",
+        "source_url": "https://www.globalcitizen.org/en/content/jeff-bezos-earth-fund-10-billion-organizations/",
+        "description": "First tranche of Earth Fund grants to climate organizations",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+
+  "securities": {
+    "category": "SECURITIES",
+    "total": 0,
+    "confidence": "LOW",
+    "notes": "Would need to search SEC Form 4 directly - not researched in this pass",
+    "findings": []
+  },
+
+  "dafs": {
+    "category": "DAFS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No DAF activity found - Bezos uses foundation and pledge structures",
+    "findings": []
+  },
+
+  "split_interest": {
+    "category": "SPLIT_INTEREST",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No charitable trusts found",
+    "findings": []
+  },
+
+  "religious": {
+    "category": "RELIGIOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No religious giving found",
+    "findings": []
+  },
+
+  "anonymous": {
+    "category": "ANONYMOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "Anonymous giving not trackable",
+    "findings": []
+  },
+
+  "summary": {
+    "total_found_raw": 12373839673,
+    "deduplication_notes": "The $10B Earth Fund pledge is a COMMITMENT, not yet fully disbursed. The $791M is what's actually been granted so far. To avoid overcounting pledges vs disbursements, we count: Foundation disbursements ($943M) + Day One disbursements ($640M) + Earth Fund actual grants ($791M) = $2.37B in actual deployment. The $10B pledge should be noted but not counted as deployed.",
+    "duplicates_removed": 10000000000,
+    "total_after_dedup": 2373839673,
+    "total_observable_high_conf": 1582839673,
+    "total_with_medium_conf": 2373839673,
+    "giving_rate_pct": 0.99,
+    "scrooge_score_notes": "Bezos has deployed ~$2.37B in actual charitable spending. With $238.7B net worth, that's ~1% deployment. Note: $10B Earth Fund pledge exists but isn't fully disbursed yet."
+  },
+
+  "sources": [
+    "https://projects.propublica.org/nonprofits/organizations/912073258",
+    "https://www.nytimes.com/2020/02/17/technology/jeff-bezos-climate-change-earth-fund.html",
+    "https://fortune.com/2023/11/21/jeff-bezos-donates-117-million-homeless-families-day-1-fund-philanthropy/",
+    "https://www.globalcitizen.org/en/content/jeff-bezos-earth-fund-10-billion-organizations/"
+  ]
+}

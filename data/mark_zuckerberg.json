@@ -1,0 +1,181 @@
+{
+  "name": "Mark Zuckerberg",
+  "net_worth_billions": 223.0,
+  "country": "United States",
+  "research_date": "2026-01-02T12:30:00",
+  "research_method": "Web search via Brave Search API + ProPublica 990 data",
+
+  "foundations": {
+    "category": "FOUNDATIONS",
+    "total": 1870968767,
+    "confidence": "HIGH",
+    "notes": "Chan Zuckerberg Initiative Foundation disbursements 2017-2024 from ProPublica 990-PF data",
+    "findings": [
+      {
+        "amount": 388673507,
+        "recipient": "Various (via CZI Foundation)",
+        "year": "2024",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+        "description": "Annual charitable disbursements from Chan Zuckerberg Initiative Foundation",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 216049658,
+        "recipient": "Various (via CZI Foundation)",
+        "year": "2023",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 418337604,
+        "recipient": "Various (via CZI Foundation)",
+        "year": "2022",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 319722573,
+        "recipient": "Various (via CZI Foundation)",
+        "year": "2021",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 214739981,
+        "recipient": "Various (via CZI Foundation)",
+        "year": "2020",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 167849231,
+        "recipient": "Various (via CZI Foundation)",
+        "year": "2019",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 88330204,
+        "recipient": "Various (via CZI Foundation)",
+        "year": "2018",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 57265009,
+        "recipient": "Various (via CZI Foundation)",
+        "year": "2017",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+
+  "direct_gifts": {
+    "category": "DIRECT_GIFTS",
+    "total": 100000000,
+    "confidence": "HIGH",
+    "notes": "Major announced gifts before CZI was established",
+    "findings": [
+      {
+        "amount": 100000000,
+        "recipient": "Newark Public Schools",
+        "year": "2010",
+        "source_url": "https://www.nytimes.com/2010/09/23/education/23newark.html",
+        "description": "Gift to reform Newark Public Schools, announced on Oprah Winfrey Show",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+
+  "llcs": {
+    "category": "PHILANTHROPIC_LLCS",
+    "total": 7220000000,
+    "confidence": "MEDIUM",
+    "notes": "Chan Zuckerberg Initiative LLC (separate from Foundation) - self-reported $7.22B in grants since 2015",
+    "findings": [
+      {
+        "amount": 7220000000,
+        "recipient": "Various (via CZI LLC)",
+        "year": "2015-2025",
+        "source_url": "https://chanzuckerberg.com/grants-ventures/grants/",
+        "description": "CZI LLC self-reports $7.22B in grants committed since 2015. LLC structure means no 990 filing - this is their own disclosure.",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+
+  "securities": {
+    "category": "SECURITIES",
+    "total": 1900000000,
+    "confidence": "MEDIUM",
+    "notes": "Stock transfers to CZI Foundation per SEC filings",
+    "findings": [
+      {
+        "amount": 1900000000,
+        "recipient": "Chan Zuckerberg Foundation",
+        "year": "2018",
+        "source_url": "https://philanthropynewsdigest.org/news/chan-zuckerberg-donate-facebook-shares-worth-2-billion",
+        "description": "10.3 million shares of Facebook stock worth ~$1.9B transferred to CZI Foundation",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+
+  "dafs": {
+    "category": "DAFS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No DAF activity found - Zuckerberg uses LLC/Foundation structure instead",
+    "findings": []
+  },
+
+  "split_interest": {
+    "category": "SPLIT_INTEREST",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No charitable trusts found",
+    "findings": []
+  },
+
+  "religious": {
+    "category": "RELIGIOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No religious giving found",
+    "findings": []
+  },
+
+  "anonymous": {
+    "category": "ANONYMOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "Anonymous giving not trackable",
+    "findings": []
+  },
+
+  "summary": {
+    "total_found_raw": 11090968767,
+    "deduplication_notes": "The $1.9B stock transfer is the SOURCE of funds for CZI Foundation. To avoid double-counting, we should count either: (a) stock transfers IN, or (b) foundation grants OUT, not both. Since foundation grants are actual charitable deployment, we count those. Also, CZI LLC's $7.22B is separate from Foundation.",
+    "duplicates_removed": 1900000000,
+    "total_after_dedup": 9190968767,
+    "total_observable_high_conf": 1970968767,
+    "total_with_medium_conf": 9190968767,
+    "giving_rate_pct": 4.12,
+    "scrooge_score_notes": "With ~$9.2B in verifiable giving (foundation disbursements + LLC grants + Newark gift), Zuckerberg has deployed ~4.1% of current net worth. Much higher than the original pipeline's $186M."
+  },
+
+  "sources": [
+    "https://projects.propublica.org/nonprofits/organizations/455002209",
+    "https://chanzuckerberg.com/grants-ventures/grants/",
+    "https://www.nytimes.com/2010/09/23/education/23newark.html",
+    "https://philanthropynewsdigest.org/news/chan-zuckerberg-donate-facebook-shares-worth-2-billion"
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "name": "Elon Musk",
+  "net_worth_billions": 718.0,
+  "country": "United States",
+  "research_date": "2026-01-02T13:00:00",
+  "research_method": "Web search via Brave Search API + ProPublica 990 data",
+
+  "foundations": {
+    "category": "FOUNDATIONS",
+    "total": 1041918400,
+    "confidence": "HIGH",
+    "notes": "Musk Foundation disbursements 2020-2024 from ProPublica 990-PF data. Note: Foundation now has $14B+ in assets but gives relatively little.",
+    "findings": [
+      {
+        "amount": 474381752,
+        "recipient": "Various (via Musk Foundation)",
+        "year": "2024",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+        "description": "Annual charitable disbursements from Musk Foundation. Much goes to The Foundation (connected entity) and Fidelity DAF.",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 236645423,
+        "recipient": "Various (via Musk Foundation)",
+        "year": "2023",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 160567914,
+        "recipient": "Various (via Musk Foundation)",
+        "year": "2022",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 160085353,
+        "recipient": "Various (via Musk Foundation)",
+        "year": "2021",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 10237958,
+        "recipient": "Various (via Musk Foundation)",
+        "year": "2020",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
+        "description": "Annual charitable disbursements",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+
+  "direct_gifts": {
+    "category": "DIRECT_GIFTS",
+    "total": 135000000,
+    "confidence": "MEDIUM",
+    "notes": "Known direct gifts outside of foundation",
+    "findings": [
+      {
+        "amount": 55000000,
+        "recipient": "St. Jude Children's Research Hospital",
+        "year": "2021",
+        "source_url": "https://philanthropynewsdigest.org/news/elon-musk-s-2021-5.7-billion-mystery-gift-went-to-his-foundation",
+        "description": "Donation tied to Inspiration4 spaceflight fundraiser",
+        "confidence": "HIGH"
+      },
+      {
+        "amount": 50000000,
+        "recipient": "OpenAI",
+        "year": "2015-2018",
+        "source_url": "https://en.wikipedia.org/wiki/Musk_Foundation",
+        "description": "Contributions to OpenAI when it was a nonprofit (Musk co-founded it)",
+        "confidence": "MEDIUM"
+      },
+      {
+        "amount": 30000000,
+        "recipient": "South Texas schools and nonprofits",
+        "year": "2021",
+        "source_url": "https://www.forbes.com/sites/elizahaverstock/2022/02/15/elon-musk-reports-donating-57-billion-to-charity-but-there-is-no-trace-of-that-gift-yet/",
+        "description": "Donations to Rio Grande Valley communities near SpaceX facilities",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+
+  "securities": {
+    "category": "SECURITIES",
+    "total": 5700000000,
+    "confidence": "MEDIUM",
+    "notes": "Major Tesla stock transfer to Musk Foundation in 2021",
+    "findings": [
+      {
+        "amount": 5700000000,
+        "recipient": "Musk Foundation",
+        "year": "2021",
+        "source_url": "https://fortune.com/2022/12/12/elon-musk-gave-5-7-billion-to-charity-last-year-where-it-went-was-a-mystery-until-now/",
+        "description": "Tesla shares transferred to Musk Foundation. This is a contribution TO the foundation, not a grant OUT.",
+        "confidence": "HIGH"
+      }
+    ]
+  },
+
+  "dafs": {
+    "category": "DAFS",
+    "total": 71000000,
+    "confidence": "MEDIUM",
+    "notes": "Transfers from Musk Foundation to Fidelity Charitable DAF",
+    "findings": [
+      {
+        "amount": 36000000,
+        "recipient": "Fidelity Charitable (DAF)",
+        "year": "2022",
+        "source_url": "https://www.alancantorconsulting.com/2024/03/the-charity-of-elon-musk/",
+        "description": "Transfer from Musk Foundation to DAF at Fidelity",
+        "confidence": "MEDIUM"
+      },
+      {
+        "amount": 35000000,
+        "recipient": "Fidelity Charitable (DAF)",
+        "year": "2024",
+        "source_url": "https://www.bloomberg.com/news/articles/2025-11-18/elon-musk-s-foundation-gave-away-a-record-474-million-in-2024",
+        "description": "Transfer from Musk Foundation to DAF at Fidelity",
+        "confidence": "MEDIUM"
+      }
+    ]
+  },
+
+  "split_interest": {
+    "category": "SPLIT_INTEREST",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No charitable trusts found",
+    "findings": []
+  },
+
+  "llcs": {
+    "category": "PHILANTHROPIC_LLCS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No philanthropic LLCs found - Musk uses traditional foundation structure",
+    "findings": []
+  },
+
+  "religious": {
+    "category": "RELIGIOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "No religious giving found",
+    "findings": []
+  },
+
+  "anonymous": {
+    "category": "ANONYMOUS",
+    "total": 0,
+    "confidence": "ZERO",
+    "notes": "Anonymous giving not trackable",
+    "findings": []
+  },
+
+  "summary": {
+    "total_found_raw": 6947918400,
+    "deduplication_notes": "The $5.7B stock transfer went INTO the Musk Foundation. The foundation disbursements are what goes OUT. The DAF transfers are already counted in foundation disbursements. To avoid double counting: count foundation disbursements as actual charitable deployment, not stock contributions.",
+    "duplicates_removed": 5771000000,
+    "total_after_dedup": 1176918400,
+    "total_observable_high_conf": 1096918400,
+    "total_with_medium_conf": 1176918400,
+    "giving_rate_pct": 0.16,
+    "scrooge_score_notes": "Musk has deployed ~$1.18B through foundation grants + direct gifts. With $718B net worth, that's 0.16%. However, his foundation holds $14B in assets - he's contributed a lot but most sits in the foundation rather than reaching charities."
+  },
+
+  "red_flags": [
+    "Foundation consistently below 5% payout requirement",
+    "Large portion of grants go to connected entities (The Foundation) or DAFs",
+    "Signed Giving Pledge but minimal deployment relative to net worth",
+    "$14B in foundation assets vs ~$1B in actual grants"
+  ],
+
+  "sources": [
+    "https://projects.propublica.org/nonprofits/organizations/852133087",
+    "https://fortune.com/2022/12/12/elon-musk-gave-5-7-billion-to-charity-last-year-where-it-went-was-a-mystery-until-now/",
+    "https://philanthropynewsdigest.org/news/elon-musk-s-2021-5.7-billion-mystery-gift-went-to-his-foundation",
+    "https://www.forbes.com/sites/elizahaverstock/2022/02/15/elon-musk-reports-donating-57-billion-to-charity-but-there-is-no-trace-of-that-gift-yet/",
+    "https://www.alancantorconsulting.com/2024/03/the-charity-of-elon-musk/",
+    "https://en.wikipedia.org/wiki/Musk_Foundation"
+  ]
+}
