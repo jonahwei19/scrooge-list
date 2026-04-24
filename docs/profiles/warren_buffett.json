@@ -67,7 +67,8 @@
       "source_type": "announcement",
       "source_url": "https://www.nytimes.com/2006/06/25/business/26buffettcnd.html",
       "retrieved_at": "2026-04-23",
-      "notes": "Original commitment June 2006: gift 85% of Berkshire stock via annual installments to five foundations. Mechanism: convert Class A to Class B, then annual gifts of B shares decreasing by 5%/yr from initial pledged share counts (i.e. each year's gift = 0.95^n \u00d7 initial annual amount, so infinite-series total \u2248 20\u00d7 first-year gift). Gates Foundation initially received the largest share."
+      "notes": "Original commitment June 2006: gift 85% of Berkshire stock via annual installments to five foundations. Mechanism: convert Class A to Class B, then annual gifts of B shares decreasing by 5%/yr from initial pledged share counts (i.e. each year's gift = 0.95^n \u00d7 initial annual amount, so infinite-series total \u2248 20\u00d7 first-year gift). Gates Foundation initially received the largest share.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "buffett_gift_2006",
@@ -82,7 +83,8 @@
       "source_url": "https://www.reuters.com/article/buffett-berkshire-donations-idUSN0224010620100702/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "First annual gift under the 2006 commitment. Reuters: '$1.93 billion in 2006'."
+      "notes": "First annual gift under the 2006 commitment. Reuters: '$1.93 billion in 2006'.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2007",
@@ -94,7 +96,8 @@
       "source_type": "regulatory_filings_press",
       "source_url": "https://www.reuters.com/article/buffett-berkshire-donations-idUSN0224010620100702/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2008",
@@ -106,7 +109,8 @@
       "source_type": "regulatory_filings_press",
       "source_url": "https://www.reuters.com/article/buffett-berkshire-donations-idUSN0224010620100702/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2009",
@@ -118,7 +122,8 @@
       "source_type": "regulatory_filings_press",
       "source_url": "https://www.reuters.com/article/buffett-berkshire-donations-idUSN0224010620100702/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2010",
@@ -131,7 +136,8 @@
       "source_url": "https://www.reuters.com/article/buffett-berkshire-donations-idUSN0224010620100702/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Per Reuters 2010 article announcing the July 2010 $1.93B gift."
+      "notes": "Per Reuters 2010 article announcing the July 2010 $1.93B gift.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_cumulative_2006_2020",
@@ -148,7 +154,8 @@
       "source_url": "https://www.cnbc.com/2021/06/23/warren-buffett-gives-away-another-4point1-billion-resigns-as-trustee-at-gates-foundation.html",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: This event is a roll-up placeholder to represent 2011-2020 annual gifts. It is NOT additive with buffett_gift_2006/2007/2008/2009/2010 (those are itemized). Downstream rollup must use either: (a) itemized 2006-2010 + this 2011-2020 cumulative + itemized 2021+; OR (b) use the 'buffett_cumulative_through_2025' anchor ($60B+) as a single authoritative number and ignore individual events. Do NOT sum both."
+      "dedup_note": "CRITICAL: This event is a roll-up placeholder to represent 2011-2020 annual gifts. It is NOT additive with buffett_gift_2006/2007/2008/2009/2010 (those are itemized). Downstream rollup must use either: (a) itemized 2006-2010 + this 2011-2020 cumulative + itemized 2021+; OR (b) use the 'buffett_cumulative_through_2025' anchor ($60B+) as a single authoritative number and ignore individual events. Do NOT sum both.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2021",
@@ -163,7 +170,8 @@
       "source_url": "https://www.cnbc.com/2021/06/23/warren-buffett-gives-away-another-4point1-billion-resigns-as-trustee-at-gates-foundation.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Buffett announced he had given ~50% of his original Berkshire shares by this point; also resigned as trustee of the Gates Foundation on the same date."
+      "notes": "Buffett announced he had given ~50% of his original Berkshire shares by this point; also resigned as trustee of the Gates Foundation on the same date.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2023",
@@ -178,7 +186,8 @@
       "source_url": "https://markets.businessinsider.com/news/stocks/warren-buffett-philanthropy-gates-foundation-berkshire-hathaway-stock-shares-gifts-2023-6",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "June 2023 gift: ~$5B. Buffett had gifted the equivalent of 257,000 A-shares since 2006, leaving ~219,000 shares after this gift."
+      "notes": "June 2023 gift: ~$5B. Buffett had gifted the equivalent of 257,000 A-shares since 2006, leaving ~219,000 shares after this gift.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2024_june",
@@ -201,7 +210,8 @@
       "source_url": "https://qz.com/warren-buffett-berkshire-charity-donations-will-1851565942",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "June 2024 annual gift \u2014 at the time, 'biggest annual donation since he began making them in 2006'. Per-recipient $ figures from QZ (sourced from Berkshire press release)."
+      "notes": "June 2024 annual gift \u2014 at the time, 'biggest annual donation since he began making them in 2006'. Per-recipient $ figures from QZ (sourced from Berkshire press release).",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2024_november",
@@ -218,7 +228,8 @@
       "source_url": "https://www.forbes.com/sites/dereksaul/2024/11/25/never-wished-to-create-a-dynasty-warren-buffett-donates-11-billion-in-berkshire-stock-and-updates-will/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "A second 2024 gift \u2014 Thanksgiving timing. Converted 1,600 Class A into 2.4M Class B (worth ~$1.14B) distributed only to the four family foundations. Accompanied by letter re-emphasizing 'I never wished to create a dynasty' and announcing revised will directing post-death wealth to a new charitable trust run by his three children."
+      "notes": "A second 2024 gift \u2014 Thanksgiving timing. Converted 1,600 Class A into 2.4M Class B (worth ~$1.14B) distributed only to the four family foundations. Accompanied by letter re-emphasizing 'I never wished to create a dynasty' and announcing revised will directing post-death wealth to a new charitable trust run by his three children.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_gift_2025_june",
@@ -239,7 +250,8 @@
       "source_url": "https://www.cnn.com/2025/06/30/business/warren-buffett-donates-record",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Largest annual gift yet \u2014 $6B, 12.36M Class B shares. Pushed cumulative lifetime giving past $60B."
+      "notes": "Largest annual gift yet \u2014 $6B, 12.36M Class B shares. Pushed cumulative lifetime giving past $60B.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "buffett_cumulative_through_2025",
@@ -260,7 +272,8 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "CNBC July 2, 2025: 'Warren Buffett's charitable giving over the past two decades now totals around $60 billion.' Gates Foundation cumulative from Reuters Nov 2024: 'more than $43 billion'. Buffett quote: 'substantially more than my entire net worth in 2006'. This is the AUTHORITATIVE anchor number for observable giving.",
-      "dedup_note": "Use this as the single observable_giving anchor. Do NOT also sum itemized annual gifts \u2014 those are presented only for year-by-year transparency and are already inside this total."
+      "dedup_note": "Use this as the single observable_giving anchor. Do NOT also sum itemized annual gifts \u2014 those are presented only for year-by-year transparency and are already inside this total.",
+      "event_role_canonical": "reference_only"
     }
   ],
   "pledges_and_announcements": [
@@ -279,7 +292,8 @@
       "retrieved_at": "2026-04-23",
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
       "notes": "Co-founder (with Bill Gates and Melinda French Gates). Wealth at 2010 signing ~$47B. 99% target in 2010 dollars = ~$46.5B. Current net worth ~$149B; 99% target now = ~$147.5B. Lifetime giving $60B+ exceeds 2010 pledge baseline but is ~40% of current-NW target \u2014 tension because net worth compounded faster than giving.",
-      "methodology_note_for_dedup": "Two legitimate framings exist. (A) BASELINE-FIXED: pledger committed to give half of wealth-at-signing; $60B giving vs $47B signing NW = fulfilled. (B) FLOATING: pledger committed to give half of wealth-at-death; current gap is ($147B - $60B) = $87B to go with finite remaining time. Forbes/Chronicle use (A); IPS uses (B). Publish both framings side-by-side for Buffett."
+      "methodology_note_for_dedup": "Two legitimate framings exist. (A) BASELINE-FIXED: pledger committed to give half of wealth-at-signing; $60B giving vs $47B signing NW = fulfilled. (B) FLOATING: pledger committed to give half of wealth-at-death; current gap is ($147B - $60B) = $87B to go with finite remaining time. Forbes/Chronicle use (A); IPS uses (B). Publish both framings side-by-side for Buffett.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "buffett_estate_trust_2024",
@@ -295,7 +309,8 @@
       "source_url": "https://www.omahamagazine.com/giving/buffetts-6b-gift-a-historic-donation-changing-five-foundations/",
       "retrieved_at": "2026-04-23",
       "notes": "November 2024 will update: 99.5% of remaining wealth at death to a new charitable trust overseen by his three children. Gates Foundation donations to cease at death. This is a MATERIAL amendment to the original 2006 commitment (which directed ~83% to Gates) and redirects the post-lifetime giving to family-controlled vehicles.",
-      "methodology_note": "Under IPS methodology, transfers to family-controlled foundations/trusts are not fully counted as 'out-the-door' because the family retains grantmaking control. Under Forbes/Chronicle, transfers to any 501(c)(3) count. FLAG for both framings."
+      "methodology_note": "Under IPS methodology, transfers to family-controlled foundations/trusts are not fully counted as 'out-the-door' because the family retains grantmaking control. Under Forbes/Chronicle, transfers to any 501(c)(3) count. FLAG for both framings.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "buffett_children_5yr_500m_each",
@@ -308,7 +323,8 @@
       "source_type": "news",
       "source_url": "https://fortune.com/2025/11/11/warren-buffett-billionaire-philantrophy-giving-pledge-not-feasible-new-plans-for-children-wealth-distribution/",
       "retrieved_at": "2026-04-23",
-      "notes": "Nov 2025 Fortune: Buffett admits his original Giving Pledge timeline was 'not feasible' \u2014 left his three kids $500M each per year to give away ($1.5B/year collective). Novel structure: children act as pass-through grantmakers during his lifetime. This is additive to foundation gifts \u2014 each child gets $500M/yr of discretionary giving authority."
+      "notes": "Nov 2025 Fortune: Buffett admits his original Giving Pledge timeline was 'not feasible' \u2014 left his three kids $500M each per year to give away ($1.5B/year collective). Novel structure: children act as pass-through grantmakers during his lifetime. This is additive to foundation gifts \u2014 each child gets $500M/yr of discretionary giving authority.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "buffett_gates_departure_2021",
@@ -320,7 +336,8 @@
       "source_type": "announcement",
       "source_url": "https://www.cnbc.com/2021/06/23/warren-buffett-gives-away-another-4point1-billion-resigns-as-trustee-at-gates-foundation.html",
       "retrieved_at": "2026-04-23",
-      "notes": "Buffett resigned as Gates Foundation trustee June 2021 \u2014 giving continued but governance role ended. In April 2026 reporting (CNBC) Buffett signaled possible end to Gates donations entirely citing Bill Gates's Epstein ties; already formalized in Nov 2024 will update."
+      "notes": "Buffett resigned as Gates Foundation trustee June 2021 \u2014 giving continued but governance role ended. In April 2026 reporting (CNBC) Buffett signaled possible end to Gates donations entirely citing Bill Gates's Epstein ties; already formalized in Nov 2024 will update.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -478,7 +495,11 @@
     "observable_plus_hidden_ratio_to_expected": 16.49,
     "tier": "ON_TRACK / CEILING_REFERENCE",
     "tier_rule": "Buffett does not fit the Tier A/B/C (scrooge-flagged) schema. He is the positive-reference ceiling. Observable giving $60B is 4.74\u00d7 the strict 10% norm; cumulative out-the-door + committed-at-death is ~$207B against $148.9B current NW (meaning he will give away more than 100% of current net worth by published plan). Scrooge Score of 58.3 from v2 pipeline is misleading because it uses a 10%-of-wealth giving-gap formula that doesn't account for the cumulative $60B already out-the-door exceeding current NW on a basis-fixed framing.",
-    "tier_published_caveat": "Use Buffett as the anchor/ceiling in lists and methodology pages: 'Buffett's $60B+ lifetime giving, with 99.5% of remainder committed at death, is the reference standard by which we judge other pledge signers.' Ellison gap to Buffett-equivalent = 99.8% short. A billionaire's position on the Scrooge list is effectively measured by distance from Buffett."
+    "tier_published_caveat": "Use Buffett as the anchor/ceiling in lists and methodology pages: 'Buffett's $60B+ lifetime giving, with 99.5% of remainder committed at death, is the reference standard by which we judge other pledge signers.' Ellison gap to Buffett-equivalent = 99.8% short. A billionaire's position on the Scrooge list is effectively measured by distance from Buffett.",
+    "expected_5pct_tenure_usd": 253130000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 193130000000,
+    "ratio_observable_to_5pct_tenure": 0.237
   },
   "scrooge_legacy_score_internal_only": {
     "value": 58.3,

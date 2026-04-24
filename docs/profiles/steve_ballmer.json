@@ -71,7 +71,8 @@
       "source_url_secondary": "https://www.forbes.com/sites/kylemullins/2024/10/20/how-steve-ballmer-has-spent-100-million-in-a-new-twist-on-political-giving/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "confidence_note": "CRITICAL METHODOLOGY CAVEAT: Ballmer Group is an LLC, not a 501(c)(3). It does NOT file 990s. This $4.99B figure is self-reported by the Ballmer family to Forbes (which then independently verified to the extent it could). Under strict 'out-the-door to 501(c)(3)' methodology, some of this may be: (a) to for-profit impact investments (LLC grants to for-profits are NOT charity under IRS or Forbes methodology when tracked strictly); (b) to intermediaries/DAFs (e.g. documented $50M grant to Amalgamated Charitable Foundation as DAF sponsor for Growing Justice); (c) double-counted pledges vs disbursements. We cannot independently verify the breakdown because there is no 990."
+      "confidence_note": "CRITICAL METHODOLOGY CAVEAT: Ballmer Group is an LLC, not a 501(c)(3). It does NOT file 990s. This $4.99B figure is self-reported by the Ballmer family to Forbes (which then independently verified to the extent it could). Under strict 'out-the-door to 501(c)(3)' methodology, some of this may be: (a) to for-profit impact investments (LLC grants to for-profits are NOT charity under IRS or Forbes methodology when tracked strictly); (b) to intermediaries/DAFs (e.g. documented $50M grant to Amalgamated Charitable Foundation as DAF sponsor for Growing Justice); (c) double-counted pledges vs disbursements. We cannot independently verify the breakdown because there is no 990.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ballmer_uo_2022",
@@ -86,7 +87,8 @@
       "source_url": "https://www.forbes.com/sites/forbeswealthteam/2023/01/23/americas-top-givers-2023-the-25-most-philanthropic-billionaires/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Multi-year pledge. Included in Forbes $4.99B lifetime figure \u2014 DO NOT add separately to rollup to avoid double-count. Listed here for descriptive purposes only."
+      "dedup_note": "Multi-year pledge. Included in Forbes $4.99B lifetime figure \u2014 DO NOT add separately to rollup to avoid double-count. Listed here for descriptive purposes only.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ballmer_uo_2014",
@@ -98,7 +100,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ballmer_harvard_2013",
@@ -113,7 +116,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "notes": "Pre-Ballmer Group gift. Likely NOT double-counted in Forbes lifetime figure if that figure starts from 2014 Ballmer Group founding; uncertain \u2014 flag for dedup."
+      "notes": "Pre-Ballmer Group gift. Likely NOT double-counted in Forbes lifetime figure if that figure starts from 2014 Ballmer Group founding; uncertain \u2014 flag for dedup.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ballmer_cis_2023",
@@ -126,7 +130,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Ballmer_Group",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Inside Forbes $4.99B lifetime \u2014 not additive."
+      "dedup_note": "Inside Forbes $4.99B lifetime \u2014 not additive.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ballmer_strivetogether_2018",
@@ -139,7 +144,8 @@
       "source_url": "https://www.strivetogether.org/news/ballmer-group-pledges-60-million-strivetogether/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside Forbes $4.99B lifetime."
+      "dedup_note": "Inside Forbes $4.99B lifetime.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ballmer_climate_2023",
@@ -153,7 +159,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/2023-11-16-with-new-commitments-of-431-million-the-ballmers-are-now-a-top-funder-of-climate-action",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside Forbes $4.99B lifetime. CRITICAL: contains DAF transfer to Amalgamated Charitable Foundation \u2014 a known DAF sponsor. See red_flag_daf_transfers."
+      "dedup_note": "Inside Forbes $4.99B lifetime. CRITICAL: contains DAF transfer to Amalgamated Charitable Foundation \u2014 a known DAF sponsor. See red_flag_daf_transfers.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "connie_npr_2026",
@@ -169,7 +176,8 @@
       "source_url_secondary": "https://www.bloomberg.com/news/articles/2026-04-16/connie-ballmer-gives-80-million-to-npr-amid-trump-funding-cuts",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Largest single gift in NPR's history from a living donor. Announced in context of $1.1B federal public-broadcasting cuts under Trump. Connie Ballmer is former NPR Foundation board member. This gift is AFTER the Forbes $4.99B lifetime total (which was through Dec 2023), so it IS additive."
+      "notes": "Largest single gift in NPR's history from a living donor. Announced in context of $1.1B federal public-broadcasting cuts under Trump. Connie Ballmer is former NPR Foundation board member. This gift is AFTER the Forbes $4.99B lifetime total (which was through Dec 2023), so it IS additive.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -200,7 +208,8 @@
           "retrieved_at": "2026-04-23"
         }
       ],
-      "notes": "CRITICAL: Ballmer has NOT signed the Giving Pledge, despite being in the top 15 richest people. CNBC 2022 notes Ballmer said he and Gates 'drifted apart' after 2014 retirement \u2014 this is his own explanation for the absence. He and Connie have stated intent to give most of wealth to philanthropy but have never made a formal pledge. This is relevant because PLEDGE_UNFULFILLED red flag does NOT apply. He is 'pledged nothing; delivering some.'"
+      "notes": "CRITICAL: Ballmer has NOT signed the Giving Pledge, despite being in the top 15 richest people. CNBC 2022 notes Ballmer said he and Gates 'drifted apart' after 2014 retirement \u2014 this is his own explanation for the absence. He and Connie have stated intent to give most of wealth to philanthropy but have never made a formal pledge. This is relevant because PLEDGE_UNFULFILLED red flag does NOT apply. He is 'pledged nothing; delivering some.'",
+      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "ballmer_childrens_mental_health_425m",
@@ -211,7 +220,8 @@
       "recipient": "University of Oregon / Ballmer Institute for Children's Behavioral Health",
       "source_url": "https://www.philanthropy.com/news/connie-and-steve-ballmer-pledge-425-million-for-childrens-mental-health/",
       "retrieved_at": "2026-04-23",
-      "notes": "Largest single individual gift by Ballmers. Counted inside Forbes $4.99B lifetime to the extent disbursed by Dec 2023."
+      "notes": "Largest single individual gift by Ballmers. Counted inside Forbes $4.99B lifetime to the extent disbursed by Dec 2023.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -401,7 +411,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.8154,
     "tier": "Probably_Generous_but_LLC_Opaque (Tier B)",
     "tier_rule": "Observable / expected = 0.70; including hidden upper = 0.82. Under strict v3 tier rules, this is above the VERIFIED_LOW threshold (0.2) and above the 'Probably Low' threshold (0.5). Ballmer is giving at roughly 70-82% of the 10% formal norm against liquid wealth \u2014 materially more than Ellison (8%) or Zuckerberg (similar range, but via CZI LLC). The LLC opacity means we cannot verify this with 990s, but Forbes' independent reconciliation gives us medium-high confidence. Tier B rather than Tier A because: (a) the primary vehicle is LLC \u2014 no legally-mandated disclosure; (b) unknown fraction to for-profit impact investments; (c) DAF routing documented; (d) no Giving Pledge commitment creates no accountability floor for future giving at scale.",
-    "tier_published_caveat": "Ballmer is the canonical 'probably giving a lot, but we can't independently verify' case. On self-reported + Forbes-reconciled figures, he is giving at 70-80% of the 10% formal norm \u2014 among the more generous top-15 billionaires. But the LLC structure means that if self-reporting stopped tomorrow, we would have very little ability to reconstruct the giving from public records. Readers should see Ballmer as 'transparency mode choice' \u2014 a billionaire who gives meaningfully but has chosen a vehicle class that lets him stop disclosing whenever he wants."
+    "tier_published_caveat": "Ballmer is the canonical 'probably giving a lot, but we can't independently verify' case. On self-reported + Forbes-reconciled figures, he is giving at 70-80% of the 10% formal norm \u2014 among the more generous top-15 billionaires. But the LLC structure means that if self-reporting stopped tomorrow, we would have very little ability to reconstruct the giving from public records. Readers should see Ballmer as 'transparency mode choice' \u2014 a billionaire who gives meaningfully but has chosen a vehicle class that lets him stop disclosing whenever he wants.",
+    "expected_5pct_tenure_usd": 90956250000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 85886250000,
+    "ratio_observable_to_5pct_tenure": 0.0557
   },
   "scrooge_legacy_score_internal_only": {
     "value": 46.4,

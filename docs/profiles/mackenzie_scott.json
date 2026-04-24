@@ -66,7 +66,8 @@
       "source_url": "https://sodomalaw.com/mackenzie-scott-and-the-rise-of-post-divorce-philanthropy/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "classification_note": "Informational only. Not a giving event. Establishes starting wealth basis. IRC \u00a71041 tax-free nature is a key reason Scott's subsequent giving is not 'giving up tax-advantaged basis' the way founder-equity giving typically is."
+      "classification_note": "Informational only. Not a giving event. Establishes starting wealth basis. IRC \u00a71041 tax-free nature is a key reason Scott's subsequent giving is not 'giving up tax-advantaged basis' the way founder-equity giving typically is.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "scott_yield_2025",
@@ -98,7 +99,8 @@
           "retrieved_at": "2026-04-23"
         }
       ],
-      "methodology_note": "Announced via quiet edit to the fourth paragraph of a mid-October 2025 blog post. Scott self-publishes totals on Yield Giving website and Medium; she does not confirm to press. Dec 2025 round = 186 grants. Panorama Global notes ~45% of Dec 2025 grants had undisclosed amounts on Yield Giving database \u2014 Scott totals are publisher-declared but not individually reconciled."
+      "methodology_note": "Announced via quiet edit to the fourth paragraph of a mid-October 2025 blog post. Scott self-publishes totals on Yield Giving website and Medium; she does not confirm to press. Dec 2025 round = 186 grants. Panorama Global notes ~45% of Dec 2025 grants had undisclosed amounts on Yield Giving database \u2014 Scott totals are publisher-declared but not individually reconciled.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "scott_yield_2024",
@@ -110,7 +112,8 @@
       "source_type": "announcement_arithmetic",
       "source_url": "https://people.com/since-jeff-bezos-divorce-mackenzie-scott-given-away-over-19-billion-11709699",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "scott_yield_2023",
@@ -121,7 +124,8 @@
       "source_type": "announcement",
       "source_url": "https://www.forbes.com/sites/phoebeliu/2023/12/08/mackenzie-scott-has-donated-22-billion-to-charity-this-year/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "scott_yield_2019_2022",
@@ -136,7 +140,8 @@
       "source_type": "announcement_arithmetic",
       "source_url": "https://www.cnbc.com/2025/12/13/mackenzie-scott-revealed-her-total-charitable-donations-for-2025.html",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "scott_cumulative_headline_2026",
@@ -153,7 +158,8 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "yield_giving_headline": "$26,000,000,000+ in 2,700+ gifts to non-profit teams",
-      "methodology_note": "This is the canonical rollup number Scott publishes. Sub-events scott_yield_2019_2022 + scott_yield_2023 + scott_yield_2024 + scott_yield_2025 add to ~$26.3B. Do NOT double-count this cumulative row against the per-year rows in observable_giving \u2014 use per-year rows, treat cumulative row as validation only. Panorama Global notes ~45% of individual grant amounts on database are undisclosed, so the $26.3B aggregate is Scott-declared but not bottom-up reconcilable from the public gift list."
+      "methodology_note": "This is the canonical rollup number Scott publishes. Sub-events scott_yield_2019_2022 + scott_yield_2023 + scott_yield_2024 + scott_yield_2025 add to ~$26.3B. Do NOT double-count this cumulative row against the per-year rows in observable_giving \u2014 use per-year rows, treat cumulative row as validation only. Panorama Global notes ~45% of individual grant amounts on database are undisclosed, so the $26.3B aggregate is Scott-declared but not bottom-up reconcilable from the public gift list.",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -172,7 +178,8 @@
       "source_url": "https://www.givingpledge.org/pledger/mackenzie-scott/",
       "retrieved_at": "2026-04-23",
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
-      "ips_note": "IPS PDF WebFetch returned encoded binary rather than parsed text at fetch time; Scott is NOT on IPS's 'pledgers who have not fulfilled' list per corroborating secondary coverage and Fortune's characterization of her as 'most generous philanthropist' ranking. TODO: pull IPS PDF via local parser to cite exact Scott entry."
+      "ips_note": "IPS PDF WebFetch returned encoded binary rather than parsed text at fetch time; Scott is NOT on IPS's 'pledgers who have not fulfilled' list per corroborating secondary coverage and Fortune's characterization of her as 'most generous philanthropist' ranking. TODO: pull IPS PDF via local parser to cite exact Scott entry.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -278,7 +285,11 @@
     "observable_plus_hidden_ratio_to_expected": 11.72,
     "tier": "On_Track (Model_Pledger)",
     "tier_rule": "Scott passes ALL positive-tier criteria by a wide margin: observable giving (>$26B) exceeds the 10% norm by 11x; cumulative giving represents ~72% of 2019 wealth basis and ~69% of current net worth; Giving Pledge commitment ('safe is empty') is demonstrably being executed against at ~$3.75B/year run-rate; she is explicitly highlighted by Fortune, IPS-aligned commentary, and The Conversation as the ANTI-Ellison example of what pledge fulfillment looks like. The only reason she is not classed as FULFILLED is that her pledge language ('safe is empty') is functionally asymptotic \u2014 she has not, in fact, emptied the safe, because Amazon stock appreciation has outpaced her liquidation.",
-    "tier_published_caveat": "Scott is the canonical methodological edge case for the Scrooge List: she is simultaneously one of the MOST observed (detailed grant-recipient database) and one of the MOST opaque (no foundation, undated DAF inflows, family-office LLC) billionaires in the US cohort. Her exclusion from Chronicle of Philanthropy's Philanthropy 50 (2024, 2025, 2026) despite giving more than the list's #1 ranked donor in 2025 ($7.1B vs. Bloomberg's $4.3B) is, by itself, evidence that standard philanthropy-tracking infrastructure is broken. The scrooge-list methodology choice to credit Scott's self-published grants-to-501(c)(3) totals is a deliberate departure from Chronicle methodology and should be flagged in methodology prose."
+    "tier_published_caveat": "Scott is the canonical methodological edge case for the Scrooge List: she is simultaneously one of the MOST observed (detailed grant-recipient database) and one of the MOST opaque (no foundation, undated DAF inflows, family-office LLC) billionaires in the US cohort. Her exclusion from Chronicle of Philanthropy's Philanthropy 50 (2024, 2025, 2026) despite giving more than the list's #1 ranked donor in 2025 ($7.1B vs. Bloomberg's $4.3B) is, by itself, evidence that standard philanthropy-tracking infrastructure is broken. The scrooge-list methodology choice to credit Scott's self-published grants-to-501(c)(3) totals is a deliberate departure from Chronicle methodology and should be flagged in methodology prose.",
+    "expected_5pct_tenure_usd": 11305000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": -14995000000,
+    "ratio_observable_to_5pct_tenure": 2.3264
   },
   "scrooge_legacy_score_internal_only": {
     "value": 8.0,

@@ -59,7 +59,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2023",
@@ -71,7 +72,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2022",
@@ -83,7 +85,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2021",
@@ -95,7 +98,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2020",
@@ -107,7 +111,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2019",
@@ -119,7 +124,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2018",
@@ -131,7 +137,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2017",
@@ -143,7 +150,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2016",
@@ -155,7 +163,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_2015",
@@ -167,7 +176,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/472351448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_pf_transfer_2020",
@@ -180,7 +190,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/will-this-81-year-old-trading-billionaires-fortune-seed-a-new-megafunder",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This is a transfer INTO the Peterffy Foundation (in shares), NOT out-the-door giving. Per dedup rule #2, we count grants OUT (captured in peterffy_pf_2020 through peterffy_pf_2024), not transfers in. Explains why 2020+ grants-out jumped ~20x vs. 2019. Classified as transfer_in and excluded from observable rollup."
+      "dedup_note": "CRITICAL: This is a transfer INTO the Peterffy Foundation (in shares), NOT out-the-door giving. Per dedup rule #2, we count grants OUT (captured in peterffy_pf_2020 through peterffy_pf_2024), not transfers in. Explains why 2020+ grants-out jumped ~20x vs. 2019. Classified as transfer_in and excluded from observable rollup.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "peterffy_bff_2015_2024",
@@ -197,7 +208,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/810899116",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Peterffy is Chairman & CEO (zero comp). Classification unclear \u2014 Inside Philanthropy describes it as a 'Balance for Freedom' vehicle; NTEE categorization is 'Corporate Foundations.' Activity collapsed after 2018. Possible the operating mission shifted or was wound down de facto; no 2025 data yet."
+      "notes": "Peterffy is Chairman & CEO (zero comp). Classification unclear \u2014 Inside Philanthropy describes it as a 'Balance for Freedom' vehicle; NTEE categorization is 'Corporate Foundations.' Activity collapsed after 2018. Possible the operating mission shifted or was wound down de facto; no 2025 data yet.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "peterffy_vanderbilt_2003",
@@ -213,7 +225,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "corroborating_source": "https://news.vanderbilt.edu/2021/04/22/financial-markets-research-center-renamed-for-hans-stoll/",
-      "dedup_note": "Pre-dates Peterffy Foundation (2014) and Balance for Freedom (2016) \u2014 cannot be duplicated against either. Standalone direct personal gift."
+      "dedup_note": "Pre-dates Peterffy Foundation (2014) and Balance for Freedom (2016) \u2014 cannot be duplicated against either. Standalone direct personal gift.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -224,7 +237,8 @@
       "source_url": "https://www.givingpledge.org/pledger-list/",
       "corroborating_source": "https://www.insidephilanthropy.com/home/will-this-81-year-old-trading-billionaires-fortune-seed-a-new-megafunder",
       "retrieved_at": "2026-04-24",
-      "notes": "Peterffy has not signed the Giving Pledge. Verified: his name does not appear on the Giving Pledge pledger list. Inside Philanthropy (2025): 'if he has a second life as a major charitable donor, he has kept it tightly under wraps.' No public successor commitment of comparable magnitude identified."
+      "notes": "Peterffy has not signed the Giving Pledge. Verified: his name does not appear on the Giving Pledge pledger list. Inside Philanthropy (2025): 'if he has a second life as a major charitable donor, he has kept it tightly under wraps.' No public successor commitment of comparable magnitude identified.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "peterffy_hungarian_order_2017",
@@ -235,7 +249,8 @@
       "award": "Grand Cross of the Hungarian Order of Merit",
       "source_url": "https://abouthungary.hu/news-in-brief/pm-orban-presents-hungarian-thomas-peterffy-with-the-grand-cross-of-the-hungarian-order-of-merit",
       "retrieved_at": "2026-04-24",
-      "notes": "Recognition, not a donation. No publicly documented major philanthropic gift to Hungarian causes identified. Peterffy's primary Hungary-related 'giving back' appears to be locating Interactive Brokers' Central European operations in Budapest (2021) \u2014 a for-profit decision, not charity. Inside Philanthropy notes one Peterffy Foundation grant to Order of Malta American Association to support Hungarian language/culture revitalization among at-risk youth in Transylvania, Romania \u2014 amount not disclosed separately from foundation totals."
+      "notes": "Recognition, not a donation. No publicly documented major philanthropic gift to Hungarian causes identified. Peterffy's primary Hungary-related 'giving back' appears to be locating Interactive Brokers' Central European operations in Budapest (2021) \u2014 a for-profit decision, not charity. Inside Philanthropy notes one Peterffy Foundation grant to Order of Malta American Association to support Hungarian language/culture revitalization among at-risk youth in Transylvania, Romania \u2014 amount not disclosed separately from foundation totals.",
+      "event_role_canonical": "reference_only"
     },
     {
       "event_id": "peterffy_pba_medal_2025",
@@ -246,7 +261,8 @@
       "award": "Lead Medalist, 41st Annual American Free Enterprise Day",
       "source_url": "https://www.pba.edu/news/palm-beach-atlantic-honors-thomas-peterffy-as-american-free-enterprise-main-medalist/",
       "retrieved_at": "2026-04-24",
-      "notes": "Recognition event; no publicly disclosed accompanying gift to PBA. Peterffy's address reportedly centered on his immigration story, not philanthropy commitments."
+      "notes": "Recognition event; no publicly disclosed accompanying gift to PBA. Peterffy's address reportedly centered on his immigration story, not philanthropy commitments.",
+      "event_role_canonical": "reference_only"
     },
     {
       "event_id": "peterffy_mar_a_lago_jet_2026",
@@ -261,7 +277,8 @@
       "source_url": "https://dnyuz.com/2026/02/03/meet-the-palm-beach-billionaire-who-paid-2-million-for-a-private-white-house-visit-with-trump/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Correcting common misreporting \u2014 some secondary sources imply Peterffy paid $2M for a Mar-a-Lago lunch. The $2M was paid by Wertheim; Peterffy only donated the jet. Excluded from observable giving as amount is not quantified and benefit was a local scholarship fund, not a research or programmatic grant."
+      "dedup_note": "Correcting common misreporting \u2014 some secondary sources imply Peterffy paid $2M for a Mar-a-Lago lunch. The $2M was paid by Wertheim; Peterffy only donated the jet. Excluded from observable giving as amount is not quantified and benefit was a local scholarship fund, not a research or programmatic grant.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "political_giving": {
@@ -417,7 +434,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.0721,
     "tier": "Verified_Low (Tier A)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Peterffy: ($49M + $160M) / $2.90B = 7.2%, well below 20% threshold. Unlike Ellison \u2014 who has a disclosed trust that introduces outcome uncertainty \u2014 Peterffy has made no comparable public commitment. He qualifies for the strictest tier classification.",
-    "tier_published_caveat": "Peterffy is a structural example of the 'private billionaire' archetype: $82.9B fortune, public political engagement ($20M+ GOP), minimal public philanthropy ($49M lifetime observable), no Giving Pledge, no disclosed charitable trust. The Peterffy Foundation is a family vehicle run by his children ($172M assets, $7M/yr out) \u2014 impressive in absolute terms, negligible relative to his net worth (0.2% of fortune). Balance for Freedom Inc is effectively dormant. Default prior absent new disclosure: primarily dynastic wealth."
+    "tier_published_caveat": "Peterffy is a structural example of the 'private billionaire' archetype: $82.9B fortune, public political engagement ($20M+ GOP), minimal public philanthropy ($49M lifetime observable), no Giving Pledge, no disclosed charitable trust. The Peterffy Foundation is a family vehicle run by his children ($172M assets, $7M/yr out) \u2014 impressive in absolute terms, negligible relative to his net worth (0.2% of fortune). Balance for Freedom Inc is effectively dormant. Default prior absent new disclosure: primarily dynastic wealth.",
+    "expected_5pct_tenure_usd": 29015000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 28966028841,
+    "ratio_observable_to_5pct_tenure": 0.0017
   },
   "scrooge_legacy_score_internal_only": {
     "value": 98.3,

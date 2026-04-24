@@ -59,7 +59,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "saban_sff_2023",
@@ -71,7 +72,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "saban_sff_2022",
@@ -83,7 +85,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "saban_sff_2021",
@@ -95,7 +98,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "saban_sff_2020",
@@ -107,7 +111,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "saban_sff_2019",
@@ -119,7 +124,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "saban_chla_2003",
@@ -134,7 +140,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "CHLA states this was 'the largest single gift of its kind to a children's hospital in North America' at the time. Research building and Smith Research Tower provide 150,000+ sq ft of lab space.",
-      "dedup_note": "This $40M may be partially captured in SFF 990-PFs 2003+; pre-2011 SFF 990-PF data not in current pull. Flag: potential partial double-count with SFF aggregate if later years' Saban-lifetime totals include this. For the 2019-2024 SFF window used in rollup, there is no overlap \u2014 gift predates the window."
+      "dedup_note": "This $40M may be partially captured in SFF 990-PFs 2003+; pre-2011 SFF 990-PF data not in current pull. Flag: potential partial double-count with SFF aggregate if later years' Saban-lifetime totals include this. For the 2019-2024 SFF window used in rollup, there is no overlap \u2014 gift predates the window.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "saban_brookings_2002",
@@ -149,7 +156,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Described as the largest donation in Brookings history at the time. Plus additional pledged funds. In 2014 Brookings dropped 'Saban' from the center's official name (now simply Center for Middle East Policy); Saban Forum continued through 2017 before pausing in 2018.",
-      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window \u2014 no overlap."
+      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window \u2014 no overlap.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "saban_academymuseum_2017",
@@ -164,7 +172,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Forbes profile confirms this was a pledge. Status of disbursement as of 2026-04 not verified from 990-PF detail. Museum opened September 2021. Assume the pledge has been substantially paid by now but specific SFF grant lines to Academy Museum not verified in current pull.",
-      "dedup_note": "Pledge likely paid through SFF 2017-2021 990-PFs (currently uncaptured years 2011-2018) and/or personal. Some portion plausibly sits inside the 2019-2021 SFF grants already in rollup \u2014 cannot verify without recipient-level SFF data. Flag for partial double-count risk."
+      "dedup_note": "Pledge likely paid through SFF 2017-2021 990-PFs (currently uncaptured years 2011-2018) and/or personal. Some portion plausibly sits inside the 2019-2021 SFF grants already in rollup \u2014 cannot verify without recipient-level SFF data. Flag for partial double-count risk.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "saban_fidf_lifetime_pre2018",
@@ -181,7 +190,8 @@
       "source_url": "https://www.hollywoodreporter.com/movies/movie-features/haim-cheryl-saban-talk-power-philanthropy-israel-2020-presidential-race-1222856/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Figure spans ~2 decades, overlapping partially with SFF 2019 grants in rollup. Saban has chaired record-breaking FIDF galas (2014 $33M raised; 2015 $34M; 2017 $53.8M Beverly Hills gala). Large fraction of this figure is pre-2019, so minimal overlap with the 2019-2024 SFF window \u2014 but some recurring annual giving likely continues inside the window and is captured in SFF grants."
+      "dedup_note": "Figure spans ~2 decades, overlapping partially with SFF 2019 grants in rollup. Saban has chaired record-breaking FIDF galas (2014 $33M raised; 2015 $34M; 2017 $53.8M Beverly Hills gala). Large fraction of this figure is pre-2019, so minimal overlap with the 2019-2024 SFF window \u2014 but some recurring annual giving likely continues inside the window and is captured in SFF grants.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "saban_soroka_2007",
@@ -194,7 +204,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Haim_Saban",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window \u2014 no overlap."
+      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window \u2014 no overlap.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "saban_lifetime_self_reported_2019",
@@ -207,7 +218,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "notes": "Sabans publicly stated $420M lifetime giving across ~1,000 causes as of July 2019. Declared philosophy: '50-50 \u2014 for every dollar we give in America, we give a dollar in Israel.' Focus areas: healthcare, LA cultural, female empowerment, veterans, US-Israel relations. Celebrity Net Worth reports a higher (unsourced) $1B lifetime figure.",
-      "dedup_note": "This is a LIFETIME aggregate through 2019. It subsumes CHLA $40M (2003), Brookings $13M (2002), Soroka $14M (2007), pre-2019 FIDF contributions, and pre-2019 SFF grants. For the rollup, we should NOT sum the aggregate AND the detailed gifts \u2014 we treat the aggregate as the best estimate of pre-2019 giving and add post-2019 SFF grants on top."
+      "dedup_note": "This is a LIFETIME aggregate through 2019. It subsumes CHLA $40M (2003), Brookings $13M (2002), Soroka $14M (2007), pre-2019 FIDF contributions, and pre-2019 SFF grants. For the rollup, we should NOT sum the aggregate AND the detailed gifts \u2014 we treat the aggregate as the best estimate of pre-2019 giving and add post-2019 SFF grants on top.",
+      "event_role_canonical": "announcement"
     }
   ],
   "pledges_and_announcements": [
@@ -218,7 +230,8 @@
       "source_type": "registry",
       "source_url": "https://www.givingpledge.org/pledger/haim-saban/",
       "retrieved_at": "2026-04-24",
-      "notes": "Direct URL at Giving Pledge registry returns 404. Wikipedia and Hollywood Reporter 2019 profile do not mention Saban signing. Verified NOT on the 256-name pledger list as of 2026-04."
+      "notes": "Direct URL at Giving Pledge registry returns 404. Wikipedia and Hollywood Reporter 2019 profile do not mention Saban signing. Verified NOT on the 256-name pledger list as of 2026-04.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -405,7 +418,11 @@
     "observable_plus_hidden_ratio_to_expected": 2.72,
     "tier": "Moderate_Giver (Tier C)",
     "tier_rule": "Observable / expected = 2.39\u00d7 \u2014 Saban is giving at ~24% of liquid wealth, well above the 10% formal norm. He is NOT low-giving by the Scrooge rubric. However, he is ALSO notably NOT a Giving Pledge signatory, has large parallel political giving (displacement), and his giving is concentrated in Israel-advocacy and US-Israel policy institutions that some readers will view as hybrid philanthropy/politics.",
-    "tier_published_caveat": "Saban is an interesting control case: proves the Scrooge List isn't just 'didn't sign the Giving Pledge = Tier A.' Saban didn't sign and still gives above the 10% norm. Flag him as 'Moderate Giver, politically-heavy, policy-influence-heavy' \u2014 not a Scrooge target. Core narrative: the Giving Pledge is one signal but not the only one."
+    "tier_published_caveat": "Saban is an interesting control case: proves the Scrooge List isn't just 'didn't sign the Giving Pledge = Tier A.' Saban didn't sign and still gives above the 10% norm. Flag him as 'Moderate Giver, politically-heavy, policy-influence-heavy' \u2014 not a Scrooge target. Core narrative: the Giving Pledge is one signal but not the only one.",
+    "expected_5pct_tenure_usd": 2475000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 2002350000,
+    "ratio_observable_to_5pct_tenure": 0.191
   },
   "scrooge_legacy_score_internal_only": {
     "value": 28.0,

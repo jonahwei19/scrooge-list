@@ -61,7 +61,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Assets fell from $10.4M (2019) to $1.19M (2024). Foundation being wound down; Leonard's death 06/14/2025 noted in 2024 filing officer list."
+      "note": "Assets fell from $10.4M (2019) to $1.19M (2024). Foundation being wound down; Leonard's death 06/14/2025 noted in 2024 filing officer list.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "lauder_inc_2023",
@@ -73,7 +74,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "lauder_inc_2022",
@@ -85,7 +87,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "lauder_inc_2021",
@@ -97,7 +100,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "lauder_inc_2020",
@@ -109,7 +113,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "lauder_inc_2019",
@@ -121,7 +126,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/136153743",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "lauder_levf_2015",
@@ -134,7 +140,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/134139448",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Last year with extracted data. ProPublica flags organization as 'not listed in IRS most recent list' \u2014 likely wound down or reorganized after Evelyn Lauder's 2011 death."
+      "note": "Last year with extracted data. ProPublica flags organization as 'not listed in IRS most recent list' \u2014 likely wound down or reorganized after Evelyn Lauder's 2011 death.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "lauder_levf_2014",
@@ -146,7 +153,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/134139448",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "lauder_met_cubist_2013",
@@ -163,7 +171,8 @@
       "source_url_secondary": "https://www.npr.org/sections/thetwo-way/2013/04/10/176725793/a-transformational-gift-new-yorks-met-will-receive-1-billion-cubism-collection",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "structure_note": "Announced 2013-04-09 as a promised gift; Lauder retained some works in life (a common structure for major art gifts). Collection shown at Met in 2014 exhibition 'Cubism: The Leonard A. Lauder Collection.' Treat as DIRECT_GIFT with completion over 2013-2025 (works transferred progressively; bequest may have completed remaining transfers at death)."
+      "structure_note": "Announced 2013-04-09 as a promised gift; Lauder retained some works in life (a common structure for major art gifts). Collection shown at Met in 2014 exhibition 'Cubism: The Leonard A. Lauder Collection.' Treat as DIRECT_GIFT with completion over 2013-2025 (works transferred progressively; bequest may have completed remaining transfers at death).",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "lauder_whitney_2008",
@@ -178,7 +187,8 @@
       "source_url_secondary": "https://philanthropynewsdigest.org/news/whitney-museum-receives-131-million-gift",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Whitney's largest-ever gift at the time; Gansevoort Street building later named in Lauder's honor. Given via American Contemporary Art Foundation, a separate 501(c)(3) vehicle of Lauder's that we have NOT yet pulled 990 data for (EIN unknown \u2014 not located in ProPublica search; may be classified differently)."
+      "note": "Whitney's largest-ever gift at the time; Gansevoort Street building later named in Lauder's honor. Given via American Contemporary Art Foundation, a separate 501(c)(3) vehicle of Lauder's that we have NOT yet pulled 990 data for (EIN unknown \u2014 not located in ProPublica search; may be classified differently).",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "lauder_whitney_art_2002",
@@ -193,7 +203,8 @@
       "source_url": "https://whitney.org/leonard-a-lauder",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "NOT added to observable_giving rollup (unpriced). Noted for context. Listed ballpark in posthumous coverage as part of total art giving; if ever priced at even $200M (conservative for 125 major 20th-c. works), would increase observable by that amount."
+      "dedup_note": "NOT added to observable_giving rollup (unpriced). Noted for context. Listed ballpark in posthumous coverage as part of total art giving; if ever priced at even $200M (conservative for 125 major 20th-c. works), would increase observable by that amount.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "lauder_penn_nursing_2022",
@@ -208,7 +219,8 @@
       "source_url": "https://almanac.upenn.edu/articles/125-million-gift-from-leonard-a-lauder-for-tuition-free-program-to-prepare-nurse-practitioners-to-provide-primary-care-in-underserved-us-communities",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Largest-ever gift to an American nursing school. Structured for ~140 tuition-free fellows by 2027, two-year commitment to underserved communities. Structure (endowed professorship + ongoing operating support) suggests this was likely a multi-year pledge; disbursement schedule not in public announcement."
+      "note": "Largest-ever gift to an American nursing school. Structured for ~140 tuition-free fellows by 2027, two-year commitment to underserved communities. Structure (endowed professorship + ongoing operating support) suggests this was likely a multi-year pledge; disbursement schedule not in public announcement.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "lauder_addf_family_2023",
@@ -226,7 +238,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "status": "COMMITTED_PARTIALLY_DISBURSED",
-      "note": "ADDF was co-founded 1998 by Leonard and Ronald Lauder in honor of their mother Est\u00e9e's Alzheimer's. The $200M (April 2023) is described as 'committed' \u2014 funding schedule unclear. Lauder brothers + family have given smaller amounts over 25 years."
+      "note": "ADDF was co-founded 1998 by Leonard and Ronald Lauder in honor of their mother Est\u00e9e's Alzheimer's. The $200M (April 2023) is described as 'committed' \u2014 funding schedule unclear. Lauder brothers + family have given smaller amounts over 25 years.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "lauder_lifetime_ballpark_obituary",
@@ -243,7 +256,8 @@
       "source_url": "https://www.philanthropy.com/news/leonard-lauder-philanthropist-who-globalized-family-cosmetic-business-dies-at-age-92/",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "dedup_note": "CONTEXT ONLY. Our itemized observable ($1.1B Met + $131M Whitney + $125M Penn + $75M ADDF share + ~$18M Lauder Foundation Inc rollup + $9.25M Leonard+Evelyn 2014-15 partial) = ~$1.46B. The obituary $2B is 37% higher, suggesting another ~$540M of gifts we have NOT itemized (likely pre-2019 Leonard+Evelyn Foundation giving 2001-2013 + sub-announcement gifts + smaller foundations not yet located)."
+      "dedup_note": "CONTEXT ONLY. Our itemized observable ($1.1B Met + $131M Whitney + $125M Penn + $75M ADDF share + ~$18M Lauder Foundation Inc rollup + $9.25M Leonard+Evelyn 2014-15 partial) = ~$1.46B. The obituary $2B is 37% higher, suggesting another ~$540M of gifts we have NOT itemized (likely pre-2019 Leonard+Evelyn Foundation giving 2001-2013 + sub-announcement gifts + smaller foundations not yet located).",
+      "event_role_canonical": "reference_only"
     }
   ],
   "pledges_and_announcements": [
@@ -255,7 +269,8 @@
       "status_source": "Direct URL check: https://www.givingpledge.org/pledger/leonard-lauder returns 404. Same for https://www.givingpledge.org/pledger/ronald-lauder. No Lauder family member found in Giving Pledge signatory lists by Brave Search or Wikipedia pledger-list cross-check.",
       "source_url": "https://www.givingpledge.org/pledger/leonard-lauder",
       "retrieved_at": "2026-04-24",
-      "note": "Verified not a Giving Pledge signatory. His brother Ronald Lauder also has not signed. This is POSITIVE for Leonard's record relative to the pledge-breach penalty: he did not make a public 50% promise and therefore cannot be scored as having broken one. He should NOT receive the PLEDGE_UNFULFILLED red flag."
+      "note": "Verified not a Giving Pledge signatory. His brother Ronald Lauder also has not signed. This is POSITIVE for Leonard's record relative to the pledge-breach penalty: he did not make a public 50% promise and therefore cannot be scored as having broken one. He should NOT receive the PLEDGE_UNFULFILLED red flag.",
+      "event_role_canonical": "no_pledge"
     }
   ],
   "political_giving": {
@@ -420,7 +435,11 @@
     "observable_plus_hidden_ratio_to_expected": 14.13,
     "tier": "On_Track (Tier C \u2014 verified meaningful giving)",
     "tier_rule": "Leonard meets the 10% annual norm on observable alone ($1.46B vs $291M expected = 5x). He meets the lifetime norm (~$1.45B observable \u2248 $1.45B expected). The Met Cubist collection is methodologically the most important caveat: a sophisticated version of this methodology would discount appraisal-based non-cash art gifts by 20-40% relative to cash gifts because the donor retains tax benefits and the museum's realized value is non-fungible. Even with a 40% haircut on the $1.1B Met gift (=$440M recognized), total observable falls to ~$800M \u2014 still 2.75x expected. Posthumous status further secures the tier: Leonard gave AT LEAST 15% of his lifetime peak wealth observably before death, with additional bequests likely in progress.",
-    "tier_published_caveat": "Leonard Lauder is the canonical example of 'art-heavy lifetime giving that appears ON-TRACK even though the headline number depends on a single appraisal-based non-cash gift.' Readers should see his $1.1B Met Cubist collection as an IMPORTANT but CONTINGENT piece of the observable total \u2014 a stricter valuation approach would materially shift the ratio."
+    "tier_published_caveat": "Leonard Lauder is the canonical example of 'art-heavy lifetime giving that appears ON-TRACK even though the headline number depends on a single appraisal-based non-cash gift.' Readers should see his $1.1B Met Cubist collection as an IMPORTANT but CONTINGENT piece of the observable total \u2014 a stricter valuation approach would materially shift the ratio.",
+    "expected_5pct_tenure_usd": 4365000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 2901503098,
+    "ratio_observable_to_5pct_tenure": 0.3353
   },
   "scrooge_legacy_score_internal_only": {
     "value": 18.0,

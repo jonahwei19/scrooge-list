@@ -69,7 +69,8 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "daf_transfer_amount_usd": 82500000,
-      "daf_transfer_note": "~$82.5M of the $126.3M grants_out went to the GeForce Fund DAF at Schwab Charitable (DAFgiving360) \u2014 a DAF controlled by the Huangs themselves. Per IPS / Inside Philanthropy methodology, intra-vehicle transfers to a donor's own DAF should NOT be counted as out-the-door giving for tier calculation. Net of DAF: ~$43.8M in 2024 went to external 501(c)(3)s."
+      "daf_transfer_note": "~$82.5M of the $126.3M grants_out went to the GeForce Fund DAF at Schwab Charitable (DAFgiving360) \u2014 a DAF controlled by the Huangs themselves. Per IPS / Inside Philanthropy methodology, intra-vehicle transfers to a donor's own DAF should NOT be counted as out-the-door giving for tier calculation. Net of DAF: ~$43.8M in 2024 went to external 501(c)(3)s.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "huang_jhlhf_2023",
@@ -82,7 +83,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "daf_transfer_note": "Fortune Nov 2024 notes 'vast majority' of 2023 foundation grants went to GeForce Fund DAF (same DAF). Exact split not disclosed in available summaries. Assume ~70% DAF = ~$42M DAF-routed, ~$18M net external."
+      "daf_transfer_note": "Fortune Nov 2024 notes 'vast majority' of 2023 foundation grants went to GeForce Fund DAF (same DAF). Exact split not disclosed in available summaries. Assume ~70% DAF = ~$42M DAF-routed, ~$18M net external.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "huang_jhlhf_2022",
@@ -95,7 +97,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "2022 OSU $50M pledge announced this year \u2014 likely booked partially or wholly through this foundation grant total. Treat OSU $50M as INSIDE foundation grants to avoid double-count; do not add as separate direct gift."
+      "dedup_note": "2022 OSU $50M pledge announced this year \u2014 likely booked partially or wholly through this foundation grant total. Treat OSU $50M as INSIDE foundation grants to avoid double-count; do not add as separate direct gift.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "huang_jhlhf_2021",
@@ -107,7 +110,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "huang_jhlhf_2020",
@@ -119,7 +123,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "huang_jhlhf_2007_2019_cumulative",
@@ -135,7 +140,8 @@
       "source_type": "press",
       "source_url": "https://www.investmentnews.com/ria-news/nvidia-ceo-huangs-multibillion-dollar-charitable-windfall-puts-philanthropic-strategy-in-focus/254856",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "huang_stanford_30m_2008",
@@ -150,7 +156,8 @@
       "source_url": "https://engineering.stanford.edu/news/jen-hsun-huang-nvidia-co-founder-invests-next-generation-stanford-engineers",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "2008 gift predates foundation growth. Gift was made personally or via early foundation grants. Treat as outside the 2020-2024 grant_out window \u2014 additive but PRE-billionaire-era."
+      "dedup_note": "2008 gift predates foundation growth. Gift was made personally or via early foundation grants. Treat as outside the 2020-2024 grant_out window \u2014 additive but PRE-billionaire-era.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "huang_osu_50m_2022",
@@ -163,7 +170,8 @@
       "source_url": "https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "PLEDGED in 2022; disbursement schedule unclear. Groundbreaking April 2024, building opens 2026. This $50M is very likely captured INSIDE the 2022-2024 JHLHF grants_out totals \u2014 DO NOT add separately to observable_giving to avoid double-counting."
+      "dedup_note": "PLEDGED in 2022; disbursement schedule unclear. Groundbreaking April 2024, building opens 2026. This $50M is very likely captured INSIDE the 2022-2024 JHLHF grants_out totals \u2014 DO NOT add separately to observable_giving to avoid double-counting.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "huang_ohsu_5m",
@@ -180,7 +188,8 @@
       "source_url": "https://fororegonstate.org/stay-informed/impact-stories/detail/50-million-gift-by-nvidia-founder-and-spouse",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Inside 990-PF grants history. Captured in huang_jhlhf_2007_2019_cumulative. Do not double-count."
+      "dedup_note": "Inside 990-PF grants history. Captured in huang_jhlhf_2007_2019_cumulative. Do not double-count.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "huang_oneida_2m_2019",
@@ -193,7 +202,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Jensen_Huang",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Inside 990-PF 2019 grants. Captured in huang_jhlhf_2007_2019_cumulative."
+      "dedup_note": "Inside 990-PF 2019 grants. Captured in huang_jhlhf_2007_2019_cumulative.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "huang_cca_22p5m_2025",
@@ -208,7 +218,8 @@
       "source_url": "https://sfstandard.com/2025/02/20/nvidia-ceo-saves-arts-college-cca/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "This gift will be booked in JHLHF 2025 990-PF (not yet filed/available as of 2026-04). Add as 2025 direct_gift pending 2025 990-PF verification."
+      "dedup_note": "This gift will be booked in JHLHF 2025 990-PF (not yet filed/available as of 2026-04). Add as 2025 direct_gift pending 2025 990-PF verification.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "huang_sfopera_5m_annual_2025",
@@ -224,7 +235,8 @@
       "source_url": "https://www.sfopera.com/press/press-releases/Huang-commitment-to-SFO/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Treat 2025 tranche as pledged (not yet verifiable in 990-PF). Will show in 2025 JHLHF 990-PF when filed. Multi-year tail is future commitment, not observable."
+      "dedup_note": "Treat 2025 tranche as pledged (not yet verifiable in 990-PF). Will show in 2025 JHLHF 990-PF when filed. Multi-year tail is future commitment, not observable.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "huang_trust_to_foundation_2025",
@@ -240,7 +252,8 @@
       "source_url": "https://www.cnbc.com/2025/06/12/nvidia-stock-jensen-huang-charitable-foundation.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This is a transfer INTO JHLHF, NOT out-the-door giving. Per dedup rule #2, count foundation grants_out, not transfers_in. Exclude from observable rollup to avoid double-count with future JHLHF 2025 990-PF grant total."
+      "dedup_note": "CRITICAL: This is a transfer INTO JHLHF, NOT out-the-door giving. Per dedup rule #2, count foundation grants_out, not transfers_in. Exclude from observable rollup to avoid double-count with future JHLHF 2025 990-PF grant total.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "huang_sec_form4_contributions_recurring",
@@ -256,7 +269,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Jensen_Huang",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "EXCLUDE from observable_giving. These are transfers_in to donor-controlled vehicles. The NYT $2B figure is the single most important reason Huang is NOT Tier A \u2014 there is ~$2B already pre-committed inside his vehicles awaiting deployment."
+      "dedup_note": "EXCLUDE from observable_giving. These are transfers_in to donor-controlled vehicles. The NYT $2B figure is the single most important reason Huang is NOT Tier A \u2014 there is ~$2B already pre-committed inside his vehicles awaiting deployment.",
+      "event_role_canonical": "transfer_in"
     }
   ],
   "pledges_and_announcements": [
@@ -269,7 +283,8 @@
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-23",
       "notes": "Neither Jensen Huang nor Lori Huang appears on the Giving Pledge signer roster as of April 2026. Lifestyles Magazine Sept 2025 explicitly confirms: Huang has 'eschewed formal affiliations with the Giving Pledge and steered clear of major philanthropic conferences.' NOT a PLEDGE_UNFULFILLED red flag (never signed).",
-      "secondary_source_url": "https://lifestylesmagazine.com/latest-news/10-7-billion-is-currently-earmarked-for-future-philanthropic-giving-by-jensen-and-lori-huangs-nonprofit/"
+      "secondary_source_url": "https://lifestylesmagazine.com/latest-news/10-7-billion-is-currently-earmarked-for-future-philanthropic-giving-by-jensen-and-lori-huangs-nonprofit/",
+      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "huang_osu_pledge_2022",
@@ -280,7 +295,8 @@
       "recipient": "Oregon State University",
       "source_url": "https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center",
       "retrieved_at": "2026-04-23",
-      "classification_note": "Building groundbreaking April 2024, opens 2026. Captured inside JHLHF 2022-2024 grants_out."
+      "classification_note": "Building groundbreaking April 2024, opens 2026. Captured inside JHLHF 2022-2024 grants_out.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "huang_sfopera_multiyear_2025",
@@ -291,7 +307,8 @@
       "status": "FIRST_TRANCHE_PLEDGED",
       "recipient": "San Francisco Opera",
       "source_url": "https://www.sfopera.com/press/press-releases/Huang-commitment-to-SFO/",
-      "retrieved_at": "2026-04-23"
+      "retrieved_at": "2026-04-23",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -441,7 +458,11 @@
     "observable_plus_hidden_ratio_to_expected_economic_tenure": 1.406,
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2 under the formal-tenure denominator. Huang's ratio is 0.47 \u2014 above the 0.20 threshold, so he is NOT Tier A. But he is clearly below the 10% norm under formal tenure (6.3% gross, 4.8% net-of-DAF). Tier B is the right classification: meaningful giving ramp, structural LOW_PAYOUT + DAF_TRANSFERS red flags, substantial ~$2B in pre-positioned charitable dollars still inside donor-controlled vehicles.",
-    "tier_published_caveat": "Readers should see Huang as a 'recently-minted mega-billionaire whose giving infrastructure has not scaled to match his wealth.' The foundation is actively ramping ($126M in 2024, required ~$369M in 2025). But structural issues remain: 65% of foundation payout goes to his own DAF, not to operating charities; GeForce Fund grantees are not disclosed; LOW_PAYOUT flag is active. Under economic-tenure (3yr) analysis he looks better (ratio 1.4x expected); under formal-tenure analysis he looks worse (0.47x expected). Both views are legitimate. Do NOT classify as 'unfulfilled pledge' \u2014 he never signed the Giving Pledge."
+    "tier_published_caveat": "Readers should see Huang as a 'recently-minted mega-billionaire whose giving infrastructure has not scaled to match his wealth.' The foundation is actively ramping ($126M in 2024, required ~$369M in 2025). But structural issues remain: 65% of foundation payout goes to his own DAF, not to operating charities; GeForce Fund grantees are not disclosed; LOW_PAYOUT flag is active. Under economic-tenure (3yr) analysis he looks better (ratio 1.4x expected); under formal-tenure analysis he looks worse (0.47x expected). Both views are legitimate. Do NOT classify as 'unfulfilled pledge' \u2014 he never signed the Giving Pledge.",
+    "expected_5pct_tenure_usd": 26775000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 26437000000,
+    "ratio_observable_to_5pct_tenure": 0.0126
   },
   "scrooge_legacy_score_internal_only": {
     "value": 78.5,

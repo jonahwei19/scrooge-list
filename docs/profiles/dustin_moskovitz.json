@@ -59,7 +59,8 @@
       "secondary_source_url": "https://www.instrumentl.com/990-report/good-ventures-foundation",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "2024 total charitable disbursements from Good Ventures Foundation 990-PF per Instrumentl parse. Fortune Nov 2025 independently cites 'over $600M in 2025 alone' and '$593M in 2024 through Open Philanthropy recommendations' \u2014 the difference between $593M OP-recommended grants and $357.5M GVF 990-PF grants is accounted for by OP-recommended grants that flow through other vehicles (Coefficient Giving Advisors 501(c)(3), donor-advised funds, OP Action Fund 501(c)(4))."
+      "note": "2024 total charitable disbursements from Good Ventures Foundation 990-PF per Instrumentl parse. Fortune Nov 2025 independently cites 'over $600M in 2025 alone' and '$593M in 2024 through Open Philanthropy recommendations' \u2014 the difference between $593M OP-recommended grants and $357.5M GVF 990-PF grants is accounted for by OP-recommended grants that flow through other vehicles (Coefficient Giving Advisors 501(c)(3), donor-advised funds, OP Action Fund 501(c)(4)).",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "moskovitz_gvf_2022",
@@ -72,7 +73,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "Per secondary reporting citing GVF 990-PF filings."
+      "note": "Per secondary reporting citing GVF 990-PF filings.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "moskovitz_gvf_2021",
@@ -84,7 +86,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "moskovitz_op_directed_cumulative_2014_2025",
@@ -102,7 +105,8 @@
       "secondary_source_url": "https://en.wikipedia.org/wiki/Coefficient_Giving",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "This is the umbrella cumulative figure. Do NOT double-add it to the annual GVF grant_out rows above. The cumulative $4B directed by OP/CG materially OVERLAPS with GVF 990-PF totals since GVF is OP's primary funder. In rollup we use the org-published cumulative ($5B Good Ventures since 2011 per goodventures.org + $4B OP directed) as the observable figure rather than summing annual rows."
+      "dedup_note": "This is the umbrella cumulative figure. Do NOT double-add it to the annual GVF grant_out rows above. The cumulative $4B directed by OP/CG materially OVERLAPS with GVF 990-PF totals since GVF is OP's primary funder. In rollup we use the org-published cumulative ($5B Good Ventures since 2011 per goodventures.org + $4B OP directed) as the observable figure rather than summing annual rows.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "moskovitz_gv_cumulative_5b",
@@ -119,7 +123,8 @@
       "source_url": "https://www.goodventures.org/our-giving/",
       "secondary_source_url": "https://en.wikipedia.org/wiki/Good_Ventures",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "moskovitz_malaria_consortium_cumulative",
@@ -136,7 +141,8 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside the $5B cumulative above. Not additive; documented here for program-level specificity."
+      "dedup_note": "Inside the $5B cumulative above. Not additive; documented here for program-level specificity.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "moskovitz_evidence_action_cumulative",
@@ -152,7 +158,8 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside the $5B cumulative above. Not additive."
+      "dedup_note": "Inside the $5B cumulative above. Not additive.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "moskovitz_helen_keller_cumulative",
@@ -168,7 +175,8 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside the $5B cumulative above. Not additive."
+      "dedup_note": "Inside the $5B cumulative above. Not additive.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "moskovitz_openai_nonprofit_2017",
@@ -181,7 +189,8 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside the $5B cumulative. Notable because OpenAI has since reorganized; historically counted as charitable at time of grant."
+      "dedup_note": "Inside the $5B cumulative. Notable because OpenAI has since reorganized; historically counted as charitable at time of grant.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "moskovitz_anthropic_stake_to_nonprofit",
@@ -195,7 +204,8 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Likely additive to the $5B Good Ventures cumulative, since it's a 2025 personal transaction not necessarily booked inside GVF's grant totals. Flag for deduplication when 2025 GVF 990-PF is published."
+      "dedup_note": "Likely additive to the $5B Good Ventures cumulative, since it's a 2025 personal transaction not necessarily booked inside GVF's grant totals. Flag for deduplication when 2025 GVF 990-PF is published.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "moskovitz_gvf_endowment_transfer",
@@ -212,7 +222,8 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This is a transfer INTO Good Ventures Foundation, NOT out-the-door giving. Per dedup rule #2, we count GVF's grants OUT (captured in moskovitz_gv_cumulative_5b), not the transfers in. Recorded here for context and to show total wealth committed to philanthropy infrastructure is much larger than current Forbes personal net worth."
+      "dedup_note": "CRITICAL: This is a transfer INTO Good Ventures Foundation, NOT out-the-door giving. Per dedup rule #2, we count GVF's grants OUT (captured in moskovitz_gv_cumulative_5b), not the transfers in. Recorded here for context and to show total wealth committed to philanthropy infrastructure is much larger than current Forbes personal net worth.",
+      "event_role_canonical": "transfer_in"
     }
   ],
   "pledges_and_announcements": [
@@ -229,7 +240,8 @@
       "source_url": "https://www.givingpledge.org/pledger/dustin-moskovitz-and-cari-tuna/",
       "retrieved_at": "2026-04-23",
       "notes": "Signed 2010 at age 26 (Dustin) and 25 (Cari \u2014 youngest individual signatory in Giving Pledge history). Wealth at signing ~$1.4B (Forbes 2010). At 50% target in 2010 dollars = ~$700M. Observable giving of ~$5B already exceeds the 2010 pledge target by ~7x. At current net worth ~$10.2B, 50% target = ~$5.1B \u2014 they are essentially at/through the floor of the pledge already, with $7.94B still inside the foundation earmarked for future grantmaking.",
-      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "moskovitz_gwwc_pledge",
@@ -244,7 +256,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/Dustin_Moskovitz",
       "retrieved_at": "2026-04-23",
-      "notes": "Moskovitz also signed the Giving What We Can pledge (10% of income to effective charity), reinforcing explicit EA alignment."
+      "notes": "Moskovitz also signed the Giving What We Can pledge (10% of income to effective charity), reinforcing explicit EA alignment.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "moskovitz_20b_framing_2025",
@@ -255,7 +268,8 @@
       "source_type": "news",
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
-      "notes": "Not an incremental new pledge \u2014 a reframing of the combined giving trajectory. Good Ventures explicitly states intent to spend most/all funds during founders' lifetimes."
+      "notes": "Not an incremental new pledge \u2014 a reframing of the combined giving trajectory. Good Ventures explicitly states intent to spend most/all funds during founders' lifetimes.",
+      "event_role_canonical": "announcement"
     }
   ],
   "political_giving": {
@@ -424,7 +438,11 @@
     "observable_plus_hidden_ratio_to_expected": 5.94,
     "tier": "On_Track (Tier A+ / 'Doing It')",
     "tier_rule": "VERIFIED_HIGH requires observable / expected > 1.0 AND transparency posture. Moskovitz satisfies both at ~6x the 10%-liquid expectation and with best-in-class grantmaking disclosure. This is the CANONICAL POSITIVE CASE for the Scrooge List \u2014 the contrast point that makes the list not just a hit piece on tech billionaires. LLC structure (Coefficient Giving LLC) demonstrates that LLC \u2260 opacity; the deciding variable is disclosure behavior, not vehicle choice.",
-    "tier_published_caveat": "Readers should see Moskovitz/Tuna as the canonical example of 'signed the Giving Pledge young and actually delivered.' Cumulative $5B in observable grants + $7.94B committed inside a transparent foundation + explicit spend-down intent + ~$10B already moved out of personal balance sheet into the philanthropic orbit. At $10.2B current personal net worth, they have given away or committed roughly double their Forbes personal net worth to charity already."
+    "tier_published_caveat": "Readers should see Moskovitz/Tuna as the canonical example of 'signed the Giving Pledge young and actually delivered.' Cumulative $5B in observable grants + $7.94B committed inside a transparent foundation + explicit spend-down intent + ~$10B already moved out of personal balance sheet into the philanthropic orbit. At $10.2B current personal net worth, they have given away or committed roughly double their Forbes personal net worth to charity already.",
+    "expected_5pct_tenure_usd": 4207500000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": -792500000,
+    "ratio_observable_to_5pct_tenure": 1.1884
   },
   "scrooge_legacy_score_internal_only": {
     "value": 0.0,

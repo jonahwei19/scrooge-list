@@ -18,6 +18,14 @@ import sys
 from pathlib import Path
 from collections import Counter
 
+# Share the canonical event-role universe + normalization map with the aggregator.
+from aggregate_v3 import (
+    CANONICAL_EVENT_ROLES,
+    ROLE_NORMALIZATION,
+    canonical_role,
+    OBSERVABLE_ROLES,
+)
+
 HERE = Path(__file__).parent
 DATA_DIR = HERE / "data"
 
@@ -25,8 +33,8 @@ REQUIRED_TOP = [
     "person", "net_worth", "rollup", "detected_vehicles",
     "sources_all", "schema_version",
 ]
-REQUIRED_PERSON = ["name_display", "country_primary"]
-REQUIRED_NW = ["best_estimate_usd_billions", "as_of"]
+REQUIRED_PERSON = ["name_display", "country_primary", "years_as_billionaire_approx"]
+REQUIRED_NW = ["best_estimate_usd_billions", "as_of", "liquidity_estimate_pct"]
 
 URL_RE = re.compile(r"^https?://\S+$")
 
@@ -55,7 +63,7 @@ def check(rec: dict, path: Path) -> tuple[list[str], list[str]]:
         if not (isinstance(s, dict) and s.get("retrieved_at")):
             warnings.append(f"sources_all[{i}] missing retrieved_at")
 
-    # Event source URLs
+    # Event source URLs + canonical event_role enforcement
     for fld in ("cited_events", "pledges_and_announcements"):
         for i, ev in enumerate(rec.get(fld, []) or []):
             if not isinstance(ev, dict):
@@ -63,10 +71,43 @@ def check(rec: dict, path: Path) -> tuple[list[str], list[str]]:
             url = ev.get("source_url")
             if url and not URL_RE.match(url):
                 errors.append(f"{fld}[{i}] invalid source_url: {url!r}")
-            if not ev.get("event_role"):
+            raw_role = ev.get("event_role")
+            if not raw_role:
                 warnings.append(f"{fld}[{i}] missing event_role")
+            else:
+                canon = canonical_role(raw_role)
+                if canon is None:
+                    errors.append(
+                        f"{fld}[{i}] unknown event_role {raw_role!r} — not in CANONICAL_EVENT_ROLES"
+                        f" and no entry in ROLE_NORMALIZATION. Add a mapping in aggregate_v3.py"
+                        f" or correct the source record."
+                    )
+                elif canon not in CANONICAL_EVENT_ROLES:
+                    errors.append(f"{fld}[{i}] canonical_role {canon!r} not in CANONICAL_EVENT_ROLES")
             if not ev.get("source_url") and ev.get("amount_usd"):
                 warnings.append(f"{fld}[{i}] amount with no source_url")
+
+    # Amount arithmetic: sum of grant_out + direct_gift event amounts should
+    # land within ±20% of rollup.observable_giving_usd. This catches agents
+    # who wrote an observable total that doesn't match their own event list
+    # (common failure mode when a research agent estimated by vibes).
+    rollup_obs = (rec.get("rollup") or {}).get("observable_giving_usd")
+    if rollup_obs and rollup_obs > 0:
+        event_sum = 0.0
+        for ev in (rec.get("cited_events") or []):
+            if not isinstance(ev, dict):
+                continue
+            canon = canonical_role(ev.get("event_role"))
+            amt = ev.get("amount_usd")
+            if canon in OBSERVABLE_ROLES and isinstance(amt, (int, float)) and amt > 0:
+                event_sum += amt
+        if event_sum > 0:
+            drift = abs(event_sum - rollup_obs) / rollup_obs
+            if drift > 0.20:
+                warnings.append(
+                    f"observable total drifts from event sum: rollup ${rollup_obs/1e6:.0f}M "
+                    f"vs sum(grant_out+direct_gift) ${event_sum/1e6:.0f}M — {drift*100:.0f}% gap"
+                )
 
     # Rollup sanity
     rollup = rec.get("rollup", {}) or {}

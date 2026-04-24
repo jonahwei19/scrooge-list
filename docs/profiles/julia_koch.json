@@ -69,7 +69,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Julia is listed as Director/President/Secretary on 2024 filing. Attributable to Julia's post-2019 decision-making."
+      "note": "Julia is listed as Director/President/Secretary on 2024 filing. Attributable to Julia's post-2019 decision-making.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dhkcf_2023",
@@ -81,7 +82,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dhkcf_2022",
@@ -93,7 +95,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dhkcf_2021",
@@ -105,7 +108,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dhkcf_2020",
@@ -117,7 +121,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dhkcf_2019",
@@ -130,7 +135,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "attribution_note": "2019 was David's death year (Aug 23). Giving was essentially zero \u2014 foundation was dormant during transition."
+      "attribution_note": "2019 was David's death year (Aug 23). Giving was essentially zero \u2014 foundation was dormant during transition.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "jkff_nyu_langone_2024",
@@ -147,7 +153,8 @@
       "source_url": "https://nyulangone.org/news/julia-koch-family-foundation-gives-transformative-75-million-gift-new-state-art-nyu-langone-health-ambulatory-care-center-west-palm-beach",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "classification_note": "NYU Langone IS a 501(c)(3). Even though the Julia Koch Family Foundation is organized as a 501(c)(4), this is a documented out-the-door grant to a charitable recipient \u2014 countable as observable charity. However, (c)(4) structure means giving is NOT deductible to the donor and the foundation is not obligated to disclose grants on a 990-PF. Confirmed via NYU press release, not by a 990 grants list."
+      "classification_note": "NYU Langone IS a 501(c)(3). Even though the Julia Koch Family Foundation is organized as a 501(c)(4), this is a documented out-the-door grant to a charitable recipient \u2014 countable as observable charity. However, (c)(4) structure means giving is NOT deductible to the donor and the foundation is not obligated to disclose grants on a 990-PF. Confirmed via NYU press release, not by a 990 grants list.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "jkpf_contributions_in_2023",
@@ -160,7 +167,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/873659591",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Per dedup rule #2, transfers INTO a 501(c)(4) are NOT observable charity. (c)(4)s can legally spend up to 49% on politics. We require downstream 501(c)(3) grant evidence to count these dollars. Listed here for transparency about flow, not counted in rollup."
+      "dedup_note": "Per dedup rule #2, transfers INTO a 501(c)(4) are NOT observable charity. (c)(4)s can legally spend up to 49% on politics. We require downstream 501(c)(3) grant evidence to count these dollars. Listed here for transparency about flow, not counted in rollup.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "jkpf_expenses_2023",
@@ -173,7 +181,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/873659591",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Reported as total expenses on Form 990. 501(c)(4) Form 990 does NOT require a grants-paid schedule parseable like 990-PF Part XV. 'Expenses' here includes salaries, overhead, and any grants or political activity. Cannot be counted as charitable without downstream recipient verification. Inside Philanthropy and PND cite 'JKPF gave $90.6M in grants in 2023' but this is uncorroborated by a line-item schedule."
+      "dedup_note": "Reported as total expenses on Form 990. 501(c)(4) Form 990 does NOT require a grants-paid schedule parseable like 990-PF Part XV. 'Expenses' here includes salaries, overhead, and any grants or political activity. Cannot be counted as charitable without downstream recipient verification. Inside Philanthropy and PND cite 'JKPF gave $90.6M in grants in 2023' but this is uncorroborated by a line-item schedule.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "jkpf_expenses_2024",
@@ -186,7 +195,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/873659591",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Same (c)(4) verification problem. Flagged for downstream check."
+      "dedup_note": "Same (c)(4) verification problem. Flagged for downstream check.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "jkff_contributions_in_2024",
@@ -199,7 +209,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/921599313",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "2024 contributions $754K (investment income only). 2023 contributions $55M. $36.7M expenses in 2024 \u2014 presumably the $75M NYU Langone gift was paid across multiple years OR through a different vehicle; attribution split between JKFF and JKPF is not disclosable from the summary tax data."
+      "note": "2024 contributions $754K (investment income only). 2023 contributions $55M. $36.7M expenses in 2024 \u2014 presumably the $75M NYU Langone gift was paid across multiple years OR through a different vehicle; attribution split between JKFF and JKPF is not disclosable from the summary tax data.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "mjkf_2024",
@@ -212,7 +223,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/873681616",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Mary Julia Koch is Julia's daughter, not Julia herself. Director of this (c)(4). Separate vehicle, financials shown for completeness \u2014 NOT attributed to Julia's observable giving. $22.5M in contributions and $12.4M in expenses 2024."
+      "note": "Mary Julia Koch is Julia's daughter, not Julia herself. Director of this (c)(4). Separate vehicle, financials shown for completeness \u2014 NOT attributed to Julia's observable giving. $22.5M in contributions and $12.4M in expenses 2024.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "david_koch_pre_2019_lifetime",
@@ -228,7 +240,8 @@
       "source_url": "https://www.foxbusiness.com/business-leaders/david-koch-spent-billions-giving-back-to-charity-heres-where-it-all-went",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "attribution_note": "CRITICAL METHODOLOGY: David's pre-death lifetime giving is NOT attributable to Julia. These gifts were made and paid before Julia became the primary donor decision-maker. Included here for context and to document the 'stepped-down' pattern post-2019 \u2014 David's giving during the 2011-2018 period averaged ~$10M/yr through DHKCF plus larger one-off gifts; post-2019 DHKCF giving collapsed to <$5K in 2019 and remained under $4M through 2024."
+      "attribution_note": "CRITICAL METHODOLOGY: David's pre-death lifetime giving is NOT attributable to Julia. These gifts were made and paid before Julia became the primary donor decision-maker. Included here for context and to document the 'stepped-down' pattern post-2019 \u2014 David's giving during the 2011-2018 period averaged ~$10M/yr through DHKCF plus larger one-off gifts; post-2019 DHKCF giving collapsed to <$5K in 2019 and remained under $4M through 2024.",
+      "event_role_canonical": "reference_only"
     }
   ],
   "pledges_and_announcements": [
@@ -241,7 +254,8 @@
       "source_url": "https://www.givingpledge.org/pledger-list/",
       "retrieved_at": "2026-04-24",
       "notes": "Julia Koch is not listed on the Giving Pledge pledger list as of 2026-04. Corroborated by IBTimes April 2024 list of richest non-signatories (ranked #6 at $60.1B at that time). David H. Koch also did NOT sign the Giving Pledge during his lifetime \u2014 unlike his brother Charles, who also has NOT signed (see charles_koch.v3.json). The Koch family has explicitly declined the Pledge framework.",
-      "corroboration_url": "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315"
+      "corroboration_url": "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315",
+      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "dhk_foundation_legacy_statement",
@@ -249,7 +263,8 @@
       "source_url": "https://www.davidkochfoundation.org/",
       "retrieved_at": "2026-04-24",
       "quote": "committed to advancing the philanthropic legacy of David H. Koch, enriching the lives of individuals around the world through science and medical research, education, public policy, and the arts",
-      "notes": "Foundation describes cumulative post-1982 giving as 'nearly $200 million' on davidkochfoundation.org. This is the cumulative total through the foundation's lifetime \u2014 not annual giving. Cumulative $200M across 40+ years vs. ~$1.3B lifetime giving total means the vast majority of David's giving was personal/direct, not via DHKCF."
+      "notes": "Foundation describes cumulative post-1982 giving as 'nearly $200 million' on davidkochfoundation.org. This is the cumulative total through the foundation's lifetime \u2014 not annual giving. Cumulative $200M across 40+ years vs. ~$1.3B lifetime giving total means the vast majority of David's giving was personal/direct, not via DHKCF.",
+      "event_role_canonical": "reference_only"
     }
   ],
   "political_giving": {
@@ -445,7 +460,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.294,
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Julia is at 0.29 \u2014 above the strict threshold but well below parity. She is Tier B 'Probably Low' because: (1) verified 501(c)(3) giving is only ~$85M cumulative post-2019, (2) 501(c)(4) 'giving' of $150M+ cannot be confirmed as charity without downstream verification, (3) dominant capital deployment (NYU $75M vs. $1B+ sports-team stakes) suggests philanthropy is not a primary budget line, (4) no Giving Pledge commitment makes future trajectory unpredictable.",
-    "tier_published_caveat": "Julia Koch should be presented as the canonical 'estate-transition dropoff' case: when a primary philanthropist (David) dies, the widow-controlled foundation can wind down rather than scale up. Observable giving post-2019 is a small fraction of David's pre-2019 ~$30-60M/yr rate, despite Julia's net worth being multiples higher than David's was. Also: she uses (c)(4) vehicles rather than (c)(3) foundations, which creates opacity and is structurally identical to the pattern flagged in Charles Koch's profile."
+    "tier_published_caveat": "Julia Koch should be presented as the canonical 'estate-transition dropoff' case: when a primary philanthropist (David) dies, the widow-controlled foundation can wind down rather than scale up. Observable giving post-2019 is a small fraction of David's pre-2019 ~$30-60M/yr rate, despite Julia's net worth being multiples higher than David's was. Also: she uses (c)(4) vehicles rather than (c)(3) foundations, which creates opacity and is structurally identical to the pattern flagged in Charles Koch's profile.",
+    "expected_5pct_tenure_usd": 4263000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 4178539751,
+    "ratio_observable_to_5pct_tenure": 0.0198
   },
   "scrooge_legacy_score_internal_only": {
     "value": 87.1,

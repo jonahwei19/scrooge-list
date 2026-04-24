@@ -61,7 +61,8 @@
       "source_type": "990",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "reference_only"
     },
     {
       "event_id": "kaiser_gkff_grants_2024",
@@ -74,7 +75,8 @@
       "source_type": "990",
       "source_url": "https://www.instrumentl.com/990-report/george-kaiser-family-foundation-3b47c134-fe33-49af-95d1-b2300f5ca101",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kaiser_gkff_expenses_2024",
@@ -86,7 +88,8 @@
       "source_type": "990",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kaiser_gkff_expenses_2023",
@@ -97,7 +100,8 @@
       "source_type": "990",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kaiser_gkff_expenses_2022",
@@ -108,7 +112,8 @@
       "source_type": "990",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kaiser_gkff_expenses_2021",
@@ -119,7 +124,8 @@
       "source_type": "990",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kaiser_gkff_expenses_2020",
@@ -130,7 +136,8 @@
       "source_type": "990",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kaiser_gkff_expenses_2019",
@@ -141,7 +148,8 @@
       "source_type": "990",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kaiser_gkff_expenses_2018",
@@ -152,7 +160,8 @@
       "source_type": "990",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/731574370",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kaiser_gathering_place_2018",
@@ -167,7 +176,8 @@
       "source_url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-partners-give-350-million-for-park",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This $200M is captured WITHIN GKFF's 2013-2018 annual expenses already counted above. Do NOT add to rollup as separate additive event. Included here for event-level visibility only."
+      "dedup_note": "CRITICAL: This $200M is captured WITHIN GKFF's 2013-2018 annual expenses already counted above. Do NOT add to rollup as separate additive event. Included here for event-level visibility only.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kaiser_bob_dylan_archive_2016",
@@ -181,7 +191,8 @@
       "source_url": "https://forward.com/culture/501368/bob-dylan-archives-tulsa-oklahoma-jewish-george-kaiser-woody-guthrie/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Captured within GKFF 2016 expenses \u2014 do NOT add separately to rollup."
+      "dedup_note": "Captured within GKFF 2016 expenses \u2014 do NOT add separately to rollup.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kaiser_ou_tulsa_medicine_pre2015",
@@ -197,7 +208,8 @@
       "source_url": "https://en.wikipedia.org/wiki/George_Kaiser",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Captured within GKFF historical expenses \u2014 do NOT add separately to rollup."
+      "dedup_note": "Captured within GKFF historical expenses \u2014 do NOT add separately to rollup.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kaiser_tulsa_remote_program_ongoing",
@@ -214,7 +226,8 @@
       "source_url": "https://www.brookings.edu/articles/work-from-anywhere-as-a-public-policy-three-findings-from-the-tulsa-remote-program/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Captured within GKFF annual expenses \u2014 do NOT add separately."
+      "dedup_note": "Captured within GKFF annual expenses \u2014 do NOT add separately.",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -234,7 +247,8 @@
       "pledge_commitment_summary": "Virtually all of his financial resources to charitable purposes, primarily through GKFF, focused on breaking intergenerational poverty via early childhood development, family healthcare, teen pregnancy prevention, alternatives to incarceration, and basic needs.",
       "source_url": "https://www.givingpledge.org/pledger/george-b-kaiser/",
       "retrieved_at": "2026-04-24",
-      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -372,7 +386,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.608,
     "tier": "On_Track (Tier C-plus)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2 \u2014 Kaiser fails this (ratio ~0.6). NOT a scrooge case. Closer to the 'pledge signer actually delivering' end of the distribution. Distinctive features: (1) GKFF pays out as a public charity running its own programs, not warehousing in a DAF, (2) signature projects (Gathering Place, Educare) have outside-validated impact, (3) net worth has not ballooned since pledge signing \u2014 the pledge 'denominator surge' that traps Ellison/Zuckerberg/Musk has not happened to Kaiser, (4) no for-profit pivot, no political-heavy substitution. Historical structural critique (supporting-org payout loophole, pre-2010 sub-1% payouts, Solyndra) is real but the current 15-year post-pledge track record is materially better than the median 2010 pledger.",
-    "tier_published_caveat": "Kaiser is the 'model pledge signer that delivers' case in this cohort \u2014 alongside the Arnolds, Moskovitz/Tuna, Laurene Powell Jobs. Caveats worth surfacing in profile: (a) supporting-organization structure is a real structural critique that the Senate Finance Committee flagged in 2005 and that has not gone away; (b) Solyndra is the dominant ethics-adjacent story; (c) Tulsa geographic concentration limits cause-optimization by GiveWell-style frameworks but is Kaiser's explicit intent."
+    "tier_published_caveat": "Kaiser is the 'model pledge signer that delivers' case in this cohort \u2014 alongside the Arnolds, Moskovitz/Tuna, Laurene Powell Jobs. Caveats worth surfacing in profile: (a) supporting-organization structure is a real structural critique that the Senate Finance Committee flagged in 2005 and that has not gone away; (b) Solyndra is the dominant ethics-adjacent story; (c) Tulsa geographic concentration limits cause-optimization by GiveWell-style frameworks but is Kaiser's explicit intent.",
+    "expected_5pct_tenure_usd": 6480000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 4842030089,
+    "ratio_observable_to_5pct_tenure": 0.2528
   },
   "scrooge_legacy_score_internal_only": {
     "value": 32.1,

@@ -65,7 +65,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "skoll_foundation_2023",
@@ -77,7 +78,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "skoll_foundation_2022",
@@ -89,7 +91,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "skoll_foundation_2021",
@@ -101,7 +104,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "skoll_foundation_2020",
@@ -114,7 +118,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "2020 elevated relative to trend due to COVID-19 response giving ($20M January + $100M April announced for pandemic response)."
+      "notes": "2020 elevated relative to trend due to COVID-19 response giving ($20M January + $100M April announced for pandemic response).",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "skoll_foundation_2019",
@@ -126,7 +131,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "skoll_fund_2019_2024_sister_entity",
@@ -143,7 +149,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/770528216",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: The Skoll Fund (EIN 77-0528216) and Skoll Foundation (EIN 11-3659133) share staff, officers, and offices but are legally distinct entities (Fund is a public charity, Foundation is a private foundation). Skoll Foundation regularly makes transfers INTO the Skoll Fund. Some portion of this expense total overlaps with Skoll Foundation grant_out receipts. Per dedup rule, count Skoll Foundation grant_outs (which may include transfers to Skoll Fund) AND Skoll Fund grant_outs to ultimate recipients, but subtract the intra-family transfer. Exact deduplication requires parsing Schedule I grant recipient lists \u2014 pending. Conservative approach: count only Skoll Foundation grants_out 2019-2024 ($568.6M total) in observable rollup; treat Skoll Fund as potential uplift."
+      "dedup_note": "CRITICAL: The Skoll Fund (EIN 77-0528216) and Skoll Foundation (EIN 11-3659133) share staff, officers, and offices but are legally distinct entities (Fund is a public charity, Foundation is a private foundation). Skoll Foundation regularly makes transfers INTO the Skoll Fund. Some portion of this expense total overlaps with Skoll Foundation grant_out receipts. Per dedup rule, count Skoll Foundation grant_outs (which may include transfers to Skoll Fund) AND Skoll Fund grant_outs to ultimate recipients, but subtract the intra-family transfer. Exact deduplication requires parsing Schedule I grant recipient lists \u2014 pending. Conservative approach: count only Skoll Foundation grants_out 2019-2024 ($568.6M total) in observable rollup; treat Skoll Fund as potential uplift.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "skoll_gtf_2009_2018_lifetime",
@@ -166,7 +173,8 @@
         "2015": 17824973,
         "2018": 2036352,
         "note": "Only 2014, 2015, 2018 charitable disbursements extractable from ProPublica. Other years implied from total $100M budget deployed."
-      }
+      },
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "skoll_covid_2020_announcement",
@@ -181,7 +189,8 @@
       "source_url": "https://www.forbes.com/sites/kerryadolan/2020/06/24/how-the-billionaire-behind-the-movie-contagion-is-working-to-stop-this-pandemic-and-the-next-one/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Counted INSIDE skoll_foundation_2020 ($131.4M grant_out). Do not add separately."
+      "dedup_note": "Counted INSIDE skoll_foundation_2020 ($131.4M grant_out). Do not add separately.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "skoll_oxford_skoll_centre_2003",
@@ -194,7 +203,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Skoll_Foundation",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Founding endowment for Skoll Centre at Oxford, which hosts the Skoll World Forum. Additional operational support since. Pre-window (2003); not in 2019-2024 observable rollup."
+      "notes": "Founding endowment for Skoll Centre at Oxford, which hosts the Skoll World Forum. Additional operational support since. Pre-window (2003); not in 2019-2024 observable rollup.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "skoll_ebay_foundation_pre_ipo",
@@ -208,7 +218,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Jeffrey_Skoll",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Transfer INTO eBay Foundation, not out-the-door. Not in observable rollup."
+      "dedup_note": "Transfer INTO eBay Foundation, not out-the-door. Not in observable rollup.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "skoll_to_foundation_1999_2024_lifetime",
@@ -225,7 +236,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Jeffrey_Skoll",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Transfers INTO the Skoll giving entities. Per dedup rule #2, count entity grant_outs, not transfers_in. Exclude from observable rollup."
+      "dedup_note": "Transfers INTO the Skoll giving entities. Per dedup rule #2, count entity grant_outs, not transfers_in. Exclude from observable rollup.",
+      "event_role_canonical": "transfer_in"
     }
   ],
   "pledges_and_announcements": [
@@ -244,7 +256,8 @@
       "source_url": "https://www.givingpledge.org/pledger/jeff-skoll/",
       "retrieved_at": "2026-04-24",
       "notes": "At 2010 signing, Skoll's NW was ~$2B per Forbes. 'Almost all' target implies ~$2B+ lifetime giving from 2010 baseline. As of 2026, observable giving (Foundation + Fund + SGTF) easily clears $1.2B, with Skoll-claimed lifetime totals higher. IPS Giving Pledge at 15 report lists Skoll among Jewish pledgers profiled; does NOT list him among the 9 fulfilled pledgers but does not flag him as unfulfilled \u2014 he sits in the 'on track / probably on track' middle category given declining net worth and high observable giving ratio.",
-      "ips_source": "https://ips-dc.org/report-giving-pledge-at-15/"
+      "ips_source": "https://ips-dc.org/report-giving-pledge-at-15/",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "skoll_aid_fund_2025",
@@ -258,7 +271,8 @@
       "source_type": "news",
       "source_url": "https://labusinessjournal.com/wealthiest-angelenos-2025/20-jeffrey-skoll-2/",
       "retrieved_at": "2026-04-24",
-      "notes": "Announced at Skoll World Forum April 2025. Will flow through Skoll Foundation \u2014 watch 2025 990-PF for disbursement."
+      "notes": "Announced at Skoll World Forum April 2025. Will flow through Skoll Foundation \u2014 watch 2025 990-PF for disbursement.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -417,7 +431,11 @@
     "observable_plus_hidden_usd": 1300000000,
     "tier": "On_Track (Tier A equivalent \u2014 model pledge signer)",
     "tier_rule": "Skoll is the canonical counter-example to Ellison: same 2010 pledge cohort, but observable giving ratio is ~130x higher as a share of net worth (26.7% vs 0.2%). Net worth has DECLINED from giving rather than surged. No red flags triggered. Pledge language ('almost all') supports continued trajectory. Classification: ON_TRACK / model pledge signer, analogous to Moskovitz in v3 cohort.",
-    "tier_published_caveat": "Skoll should be published as a positive example: declining net worth, no red flags, 26.7% of current wealth already given, pledge on credible trajectory. Contrast directly with Ellison in profile copy. Only soft concern is HIGH_OFFICER_COMP at Skoll Foundation ($853K CEO) \u2014 worth noting but not disqualifying."
+    "tier_published_caveat": "Skoll should be published as a positive example: declining net worth, no red flags, 26.7% of current wealth already given, pledge on credible trajectory. Contrast directly with Ellison in profile copy. Only soft concern is HIGH_OFFICER_COMP at Skoll Foundation ($853K CEO) \u2014 worth noting but not disqualifying.",
+    "expected_5pct_tenure_usd": 3780000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 2580000000,
+    "ratio_observable_to_5pct_tenure": 0.3175
   },
   "scrooge_legacy_score_internal_only": {
     "value": 12.0,

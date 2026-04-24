@@ -11,13 +11,21 @@ This is tracked as CONTEXT, not charitable giving.
 Research shows $1 political → $0.33 less charitable (NBER 26616).
 """
 
+import os
 import requests
 import time
 from typing import List, Dict, Optional
 from dataclasses import dataclass, asdict
 
-# FEC API key (public, rate-limited)
-FEC_API_KEY = "DEMO_KEY"  # Replace with real key for production
+# Read from env at runtime. Get a real key at https://api.open.fec.gov/developers/
+# and set FEC_API_KEY in your shell. DEMO_KEY only works for a handful of requests
+# per hour — do not publish numbers that depended on it.
+#
+# DORMANT: this module is scaffolding only — not currently wired into the v3
+# data generation flow (data/*.v3.json records are produced by research agents,
+# not by the category modules). Before relying on it, thread it through an
+# ingestion script and validate the results end-to-end.
+FEC_API_KEY = os.environ.get("FEC_API_KEY") or "DEMO_KEY"
 
 
 @dataclass

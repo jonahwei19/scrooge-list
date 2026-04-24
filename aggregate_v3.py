@@ -2,8 +2,14 @@
 """
 Aggregates all data/*.v3.json files into docs/scrooge_latest_v3.json.
 
-Only reads v3 schema records (not legacy). Computes tier-ranked lists and
-preserves every source URL for downstream display.
+Reads v3 schema records, computes a deterministic capacity benchmark
+(5% of liquid wealth per year of billionaire tenure, uncapped) and
+the absolute dollar shortfall vs. that benchmark. Tier A is ranked by
+shortfall descending — i.e., largest undisbursed capacity first.
+
+Also canonicalizes the 50+ variant event_role strings written by
+research agents down to a 10-value canonical set, so downstream
+deduplication and display are consistent.
 
 Run: python3 aggregate_v3.py
 """
@@ -19,6 +25,124 @@ HERE = Path(__file__).parent
 DATA_DIR = HERE / "data"
 OUT_JSON = HERE / "docs" / "scrooge_latest_v3.json"
 PROFILES_DIR = HERE / "docs" / "profiles"
+
+
+# 10 canonical event roles. Everything else normalizes into one of these
+# via ROLE_NORMALIZATION, or is flagged as unknown by the validator.
+CANONICAL_EVENT_ROLES = {
+    "grant_out",              # $ out of a donor's foundation to charity
+    "direct_gift",            # $ direct from donor to charity (not via foundation)
+    "transfer_in",            # $ in to donor's own vehicle — not giving yet
+    "pledge",                 # stated commitment to give
+    "no_pledge",              # documented declining / absence of a pledge
+    "announcement",           # stated intention without a specific $ / counterparty
+    "political",              # political contribution — substitution signal, not charity
+    "private_investment",     # not charity (trust restructuring, PE, etc.)
+    "corporate_gift",         # company-attributed, not personal
+    "reference_only",         # context (asset snapshots, rollups, recognitions)
+}
+
+ROLE_NORMALIZATION = {
+    # grant_out family
+    "grant_out_cumulative":                  "grant_out",
+    "grant_out_via_affiliated_foundation":   "grant_out",
+    "expense_out":                           "grant_out",
+    "charitable_expenditures_total":         "grant_out",
+    "program_funding":                       "grant_out",
+    # direct_gift family
+    "direct_gift_announced":                 "direct_gift",
+    "direct_gift_cumulative":                "direct_gift",
+    "in_kind_donation_minor":                "direct_gift",
+    "conservation_easement":                 "direct_gift",
+    # pledge (affirmative) family
+    "pledge_status":                         "pledge",
+    "pledge_status_check":                   "pledge",
+    "pledge_amendment":                      "pledge",
+    "pledge_fulfilled":                      "pledge",
+    "pledge_informal":                       "pledge",
+    "informal_commitment":                   "pledge",
+    "pledge_response_to_challenge":          "pledge",
+    "pledge_adjacent":                       "pledge",
+    "pledge_reaffirmation":                  "pledge",
+    # no_pledge family
+    "pledge_absent":                         "no_pledge",
+    "pledge_absence":                        "no_pledge",
+    "pledge_absence_verified":               "no_pledge",
+    "pledge_declined":                       "no_pledge",
+    "pledge_not_signed":                     "no_pledge",
+    "pledge_NOT_SIGNED":                     "no_pledge",
+    "pledge_refusal":                        "no_pledge",
+    "pledge_nonsignatory":                   "no_pledge",
+    "pledge_nonsigner":                      "no_pledge",
+    "public_statement_not_pledge":           "no_pledge",
+    # announcement family
+    "announcement_rollup":                   "announcement",
+    "announcement_aggregate":                "announcement",
+    "vehicle_announcement":                  "announcement",
+    "announcement_vehicle_launch":           "announcement",
+    # non-charity
+    "transfer_in_political_not_charity":     "political",
+    "trust_restructuring_not_charity":       "private_investment",
+    "private_investment_not_charity":        "private_investment",
+    "corporate_gift_not_personal":           "corporate_gift",
+    # ambiguous inflows
+    "transfer_in_or_pledge_ambiguous":       "transfer_in",
+    # reference-only / informational
+    "foundation_assets_snapshot":            "reference_only",
+    "recognition":                           "reference_only",
+    "mission_statement":                     "reference_only",
+    "contextual_total_not_counted":          "reference_only",
+    "cumulative_disclosure":                 "reference_only",
+    "summary_rollup_external":               "reference_only",
+    "self_reported_lifetime":                "reference_only",
+    "self_reported_total":                   "reference_only",
+    "public_statement":                      "reference_only",
+    "reference_only_not_attributable":       "reference_only",
+    "aggregate_claim":                       "reference_only",
+    "dailymail_claim_verification":          "reference_only",
+    "event":                                 "reference_only",
+    "direct_gift_rollup_anchor":             "reference_only",
+}
+
+
+def canonical_role(raw):
+    if not raw:
+        return None
+    if raw in CANONICAL_EVENT_ROLES:
+        return raw
+    return ROLE_NORMALIZATION.get(raw)
+
+
+# Event roles that COUNT toward observable giving when summing.
+# Everything else (transfers in, pledges, announcements, political, private, corporate, reference) is excluded.
+OBSERVABLE_ROLES = {"grant_out", "direct_gift"}
+
+
+def compute_expected_5pct_tenure(rec) -> int | None:
+    """Canonical capacity benchmark:
+        expected = best_estimate_nw_usd × liquidity_pct × 5% × years_as_billionaire
+
+    Rationale: a stable 5%/year of *liquid* wealth is a defensible
+    "should-have-given" floor for any billionaire who has had time to give.
+    Uncapped tenure: someone who has been a billionaire for 40 years carries
+    eight times the expectation of someone who has been one for 5.
+
+    The absolute dollar value of (expected − observable) is the headline
+    number — Musk not giving 5%/yr against $800B+ of liquid Tesla stock is
+    worse in absolute terms than Peterffy not giving 5%/yr against $83B,
+    even if the ratios look similar.
+    """
+    nw = rec.get("net_worth", {}) or {}
+    p = rec.get("person", {}) or {}
+    best_nw_b = nw.get("best_estimate_usd_billions")
+    liq = nw.get("liquidity_estimate_pct")
+    years = p.get("years_as_billionaire_approx")
+    if best_nw_b is None or liq is None or years is None:
+        return None
+    try:
+        return int(float(best_nw_b) * 1e9 * float(liq) * 0.05 * float(years))
+    except (TypeError, ValueError):
+        return None
 
 
 def load_v3_records() -> list[dict]:
@@ -70,6 +194,19 @@ def extract_summary(rec: dict) -> dict:
     tier_raw = rollup.get("tier", "unknown")
     tier_norm = normalize_tier(tier_raw)
 
+    # NEW canonical benchmark: 5% × liquidity × net_worth × years_as_billionaire, uncapped.
+    # This is the headline number for the v3 ranking.
+    expected_5pct_tenure_usd = compute_expected_5pct_tenure(rec)
+    if expected_5pct_tenure_usd is not None and observable_usd is not None:
+        shortfall_5pct_usd = expected_5pct_tenure_usd - observable_usd
+        try:
+            ratio_to_5pct = round(observable_usd / expected_5pct_tenure_usd, 4) if expected_5pct_tenure_usd else None
+        except ZeroDivisionError:
+            ratio_to_5pct = None
+    else:
+        shortfall_5pct_usd = None
+        ratio_to_5pct = None
+
     return {
         "id": p.get("name_display", "unknown").lower().replace(" ", "_"),
         "name_display": p.get("name_display"),
@@ -84,7 +221,13 @@ def extract_summary(rec: dict) -> dict:
         "liquidity_estimate_pct": nw.get("liquidity_estimate_pct"),
 
         "observable_usd": observable_usd,
+        # Legacy per-record 10%-of-liquid-weighted-by-tenure expected figure (from agent JSON).
+        # Preserved for back-compat and comparison; not used for ranking.
         "expected_usd": expected_usd,
+        # NEW canonical benchmark (derived in aggregator, not from JSON):
+        "expected_5pct_tenure_usd": expected_5pct_tenure_usd,
+        "shortfall_5pct_usd": shortfall_5pct_usd,
+        "ratio_observable_to_5pct_tenure": ratio_to_5pct,
         "hidden_upper_usd": hidden_upper,
         "ratio_observable_to_expected": ratio_to_expected,
         "ratio_observable_to_nw": ratio_to_nw,
@@ -175,17 +318,23 @@ TIER_ORDER = {
 
 
 def rank_within_tier(rows: list[dict]) -> list[dict]:
-    """Within each tier, sort by observable-ratio-to-expected ascending (lowest = most Scrooge).
-    For Tier A, ordinal rank is published. For other tiers, alphabetical."""
+    """Within Tier A, sort by absolute shortfall_5pct_usd descending — i.e. the
+    largest undisbursed-capacity-in-dollars comes first. This reframes the
+    list from 'who gave the lowest fraction' (which rewards smaller fortunes)
+    to 'who left the most capacity on the table' (which reflects actual scale).
+
+    Tier B and C are also shortfall-sorted for legibility; they do not get a
+    published ordinal rank. On Track stays alphabetical.
+    """
     by_tier: dict[str, list[dict]] = {}
     for r in rows:
         by_tier.setdefault(r["tier"], []).append(r)
 
     out = []
     for tier, members in by_tier.items():
-        if tier == "A_VERIFIED_LOW":
+        if tier in ("A_VERIFIED_LOW", "B_PROBABLY_LOW", "C_OPAQUE"):
             members.sort(
-                key=lambda x: (x.get("ratio_observable_to_expected") or 1.0, -(x.get("net_worth_best_usd_b") or 0))
+                key=lambda x: (-(x.get("shortfall_5pct_usd") or 0), (x.get("name_display") or "").lower())
             )
         else:
             members.sort(key=lambda x: (x.get("name_display") or "").lower())
@@ -196,9 +345,41 @@ def rank_within_tier(rows: list[dict]) -> list[dict]:
     return out
 
 
+def annotate_with_canonical(rec: dict) -> dict:
+    """Return a shallow-copied record with canonical fields added without
+    destroying agent-written originals. Adds:
+      - event_role_canonical on each cited_event / pledges_and_announcements entry
+      - rollup.expected_5pct_tenure_usd / shortfall_5pct_usd / ratio_observable_to_5pct_tenure
+    """
+    import copy
+    rec = copy.deepcopy(rec)
+    for bucket in ("cited_events", "pledges_and_announcements"):
+        for ev in rec.get(bucket) or []:
+            if isinstance(ev, dict):
+                raw = ev.get("event_role")
+                ev["event_role_canonical"] = canonical_role(raw)
+
+    rollup = rec.setdefault("rollup", {})
+    exp = compute_expected_5pct_tenure(rec)
+    obs = rollup.get("observable_giving_usd") or rollup.get("observable_usd")
+    rollup["expected_5pct_tenure_usd"] = exp
+    rollup["expected_5pct_tenure_method"] = "5% × net_worth_best × liquidity_pct × years_as_billionaire (uncapped tenure); computed by aggregate_v3.py"
+    if exp and obs is not None:
+        rollup["shortfall_5pct_usd"] = exp - obs
+        try:
+            rollup["ratio_observable_to_5pct_tenure"] = round(obs / exp, 4) if exp else None
+        except ZeroDivisionError:
+            rollup["ratio_observable_to_5pct_tenure"] = None
+    return rec
+
+
 def copy_profiles(records: list[dict]):
     """Copy each v3 record into docs/profiles/<id>.json so the static site can fetch them.
-    Necessary because GitHub Pages serves docs/ as the site root — relative ../data paths don't resolve."""
+    Necessary because GitHub Pages serves docs/ as the site root — relative ../data paths don't resolve.
+
+    Adds canonical event_role annotations and the 5%/yr-tenure benchmark so profile pages
+    can display the derived numbers without recomputing client-side.
+    """
     PROFILES_DIR.mkdir(exist_ok=True, parents=True)
     # wipe stale files first
     for old in PROFILES_DIR.glob("*.json"):
@@ -206,9 +387,10 @@ def copy_profiles(records: list[dict]):
     for rec in records:
         p = rec.get("person", {})
         pid = p.get("name_display", "unknown").lower().replace(" ", "_")
+        annotated = annotate_with_canonical(rec)
         out = PROFILES_DIR / f"{pid}.json"
         with out.open("w") as f:
-            json.dump(rec, f, indent=2, default=str)
+            json.dump(annotated, f, indent=2, default=str)
 
 
 def main():
@@ -225,7 +407,8 @@ def main():
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "generator": "aggregate_v3.py",
         "cohort": "US Tier A launch cohort",
-        "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
+        "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal, ranked by $ shortfall vs. 5%-per-year-of-tenure capacity benchmark, uncapped), B_PROBABLY_LOW, C_OPAQUE, ON_TRACK. See docs/methodology.html.",
+        "ranking_basis": "shortfall_5pct_usd = (net_worth_best × liquidity_pct × 0.05 × years_as_billionaire) − observable_giving_usd. Computed in aggregator, not read from source JSON.",
         "legal_disclaimer": "Every figure is an estimate of OBSERVABLE giving from the cited sources. Does not measure total giving. Subjects have been offered a right-of-reply; responses are published on individual profiles. Corrections welcome — see methodology page.",
         "tier_counts": {t: sum(1 for r in ranked if r["tier"] == t) for t in TIER_ORDER},
         "count": len(ranked),
@@ -240,10 +423,15 @@ def main():
     for t, n in out["tier_counts"].items():
         if n:
             print(f"  {t}: {n}")
-    print("\nTier A Verified Low (ordinal):")
+    print("\nTier A Verified Low (ranked by $ shortfall vs. 5%/yr-tenure benchmark):")
     for r in ranked:
         if r["tier"] == "A_VERIFIED_LOW":
-            print(f"  #{r['tier_rank']} {r['name_display']:<24} NW ${r['net_worth_best_usd_b']}B  obs ${(r['observable_usd'] or 0)/1e6:.0f}M  ratio {r.get('ratio_observable_to_expected')}")
+            sf = r.get("shortfall_5pct_usd")
+            exp = r.get("expected_5pct_tenure_usd")
+            obs = r.get("observable_usd") or 0
+            sf_s = f"${sf/1e9:.1f}B" if sf else "—"
+            exp_s = f"${exp/1e9:.1f}B" if exp else "—"
+            print(f"  #{r['tier_rank']} {r['name_display']:<22} NW ${r['net_worth_best_usd_b']}B  obs ${obs/1e6:.0f}M  exp {exp_s}  shortfall {sf_s}")
 
 
 if __name__ == "__main__":

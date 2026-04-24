@@ -63,7 +63,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_tf_2023",
@@ -75,7 +76,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_tf_2022",
@@ -87,7 +89,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_tf_2021",
@@ -99,7 +102,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_tf_2020",
@@ -111,7 +115,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_tf_2019",
@@ -123,7 +128,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742316617",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_aff_2024",
@@ -137,7 +143,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Anschutz Family Foundation is a separate, smaller entity run by family (including Sue Anschutz-Rodgers) with Colorado rural focus. Distinct from The Anschutz Foundation."
+      "note": "Anschutz Family Foundation is a separate, smaller entity run by family (including Sue Anschutz-Rodgers) with Colorado rural focus. Distinct from The Anschutz Foundation.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_aff_2023",
@@ -149,7 +156,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_aff_2022",
@@ -161,7 +169,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_aff_2021",
@@ -173,7 +182,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_aff_2020",
@@ -185,7 +195,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_aff_2019",
@@ -197,7 +208,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/742132676",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "anschutz_cu_2018",
@@ -212,7 +224,8 @@
       "source_url": "https://news.cuanschutz.edu/news-stories/120-million-gift-from-the-anschutz-foundation-fuels-research-and-innovation",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This gift is ATTRIBUTED in press release to 'The Anschutz Foundation and its founder and chair, Philip Anschutz.' If paid through EIN 74-2316617, it is already inside anschutz_tf_2018 (not yet pulled) grants_out total and MUST NOT be double-counted. Pre-2019 foundation 990-PFs show ~$52M/yr baseline grants \u2014 a $120M one-time gift is consistent with the 2018 grant total being elevated. Flag for verification."
+      "dedup_note": "CRITICAL: This gift is ATTRIBUTED in press release to 'The Anschutz Foundation and its founder and chair, Philip Anschutz.' If paid through EIN 74-2316617, it is already inside anschutz_tf_2018 (not yet pulled) grants_out total and MUST NOT be double-counted. Pre-2019 foundation 990-PFs show ~$52M/yr baseline grants \u2014 a $120M one-time gift is consistent with the 2018 grant total being elevated. Flag for verification.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "anschutz_cu_cumulative_2000_2018",
@@ -229,7 +242,8 @@
       "source_url": "https://news.cuanschutz.edu/news-stories/120-million-gift-from-the-anschutz-foundation-fuels-research-and-innovation",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: This cumulative figure overlaps with The Anschutz Foundation's grants_out 2000-2018 (not yet pulled into this file). If we pull pre-2019 990-PFs, we MUST subtract CU gifts from this event to avoid double-counting. For current 2019-2024 window, this event is historical context only and NOT added to observable rollup."
+      "dedup_note": "CRITICAL: This cumulative figure overlaps with The Anschutz Foundation's grants_out 2000-2018 (not yet pulled into this file). If we pull pre-2019 990-PFs, we MUST subtract CU gifts from this event to avoid double-counting. For current 2019-2024 window, this event is historical context only and NOT added to observable rollup.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "anschutz_cu_2006_naming",
@@ -243,7 +257,8 @@
       "source_url": "https://www.newswise.com/articles/university-gift-spurs-naming-of-the-anschutz-medical-campus",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Same as anschutz_cu_cumulative_2000_2018 \u2014 captured inside pre-2019 Anschutz Foundation grants_out. Do not double-count."
+      "dedup_note": "Same as anschutz_cu_cumulative_2000_2018 \u2014 captured inside pre-2019 Anschutz Foundation grants_out. Do not double-count.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -254,7 +269,8 @@
       "verified_at": "2026-04-24",
       "source_url": "https://www.givingpledge.org/signatories",
       "verification_method": "Manual check of givingpledge.org signatory list \u2014 Philip Anschutz does NOT appear. No press record of a pledge signing exists in 2010-2026 window. Anschutz is notoriously privacy-focused; the absence is consistent with his public posture.",
-      "notes": "CRITICAL for methodology: Anschutz is NOT a Giving Pledge signatory. He cannot be flagged as GIVING_PLEDGE_UNFULFILLED. Absence of pledge means there is no explicit self-declared target to measure against; he is measured only against the 10% liquid-wealth norm."
+      "notes": "CRITICAL for methodology: Anschutz is NOT a Giving Pledge signatory. He cannot be flagged as GIVING_PLEDGE_UNFULFILLED. Absence of pledge means there is no explicit self-declared target to measure against; he is measured only against the 10% liquid-wealth norm.",
+      "event_role_canonical": "no_pledge"
     }
   ],
   "political_giving": {
@@ -422,7 +438,11 @@
     "observable_plus_hidden_ratio_to_expected_note": "Observable $439M + hidden_upper $1.82B = $2.26B vs expected $2.55B strict norm = 89%. Essentially at the 10% norm if hidden_upper (which is mostly just pre-2019 foundation history we haven't pulled yet) is credited. CRITICAL: 'pre_2019_foundation_uplift' is not speculative \u2014 it's observable data not yet pulled. Pulling it would convert this from Tier B to likely Tier C (not Scrooge).",
     "tier": "Probably_Low_To_Baseline (Tier B, leaning C on full data pull)",
     "tier_rule": "Observable 6-year window ($439M) / expected ($2.55B) = 17% \u2014 below 20% VERIFIED_LOW threshold. With pre-2019 foundation grants pulled (estimated $1.5B uplift), lifetime observable rises to ~$1.94B = 76% of expected \u2014 well above Scrooge threshold. Anschutz is a genuine long-tenure philanthropist with $73M/yr consistent foundation giving and $300M+ to a single named institution (CU Anschutz Medical Campus). His privacy and conservative-cause giving create headline-Scrooge surface appearance, but the actual dollar deployment is not Scrooge-like.",
-    "tier_published_caveat": "Anschutz is the opposite of the 'signed the pledge, hasn't followed through' case (Ellison). He did NOT sign the Giving Pledge and therefore made no public commitment, but he has consistently deployed $50-82M/yr through his foundation for 40+ years, plus $300M+ to a named medical campus. The legitimate Scrooge concerns here are: (1) ideology of recipients (anti-LGBTQ-adjacent Christian causes), (2) low payout rate several recent years (3.9-4.7%), (3) politics-over-charity displacement signaled by $1.9M 2024 political giving. None of these make him a quantitative Scrooge \u2014 they make him an ideologically contentious philanthropist."
+    "tier_published_caveat": "Anschutz is the opposite of the 'signed the pledge, hasn't followed through' case (Ellison). He did NOT sign the Giving Pledge and therefore made no public commitment, but he has consistently deployed $50-82M/yr through his foundation for 40+ years, plus $300M+ to a named medical campus. The legitimate Scrooge concerns here are: (1) ideology of recipients (anti-LGBTQ-adjacent Christian causes), (2) low payout rate several recent years (3.9-4.7%), (3) politics-over-charity displacement signaled by $1.9M 2024 political giving. None of these make him a quantitative Scrooge \u2014 they make him an ideologically contentious philanthropist.",
+    "expected_5pct_tenure_usd": 5610000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 5170570000,
+    "ratio_observable_to_5pct_tenure": 0.0783
   },
   "scrooge_legacy_score_internal_only": {
     "value": 48.0,

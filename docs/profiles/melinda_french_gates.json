@@ -61,7 +61,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "FLAG: $257.5M went to National Philanthropic Trust \u2014 this is a major DAF sponsor. Per v3 dedup rules, grants into DAFs should be flagged as DAF_TRANSFER and not credited as end-of-pipeline charitable giving until NPT disburses. That $257.5M is ~53% of PPF's 2024 grants. This is a significant DAF-intermediated portion."
+      "dedup_note": "FLAG: $257.5M went to National Philanthropic Trust \u2014 this is a major DAF sponsor. Per v3 dedup rules, grants into DAFs should be flagged as DAF_TRANSFER and not credited as end-of-pipeline charitable giving until NPT disburses. That $257.5M is ~53% of PPF's 2024 grants. This is a significant DAF-intermediated portion.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "mfg_ppf_2023",
@@ -73,7 +74,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "mfg_ppf_2022",
@@ -86,7 +88,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "PPF established Oct 2022 \u2014 partial-year activity."
+      "notes": "PPF established Oct 2022 \u2014 partial-year activity.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "mfg_gf_transfer_2024",
@@ -116,7 +119,8 @@
           "received_2024_usd": 982228982
         }
       ],
-      "capitalization_note": "Three 2023/2024-vintage foundations each received ~$982M in contributions in FY2024 \u2014 total ~$2.95B capitalization visible in 990s, which is a subset of the $12.5B commitment. Remaining ~$9.5B landing location not yet fully traced in public 990s; plausibly a combination of direct grants via PPF, Pivotal Ventures LLC, and/or capitalization of other entities not yet filed."
+      "capitalization_note": "Three 2023/2024-vintage foundations each received ~$982M in contributions in FY2024 \u2014 total ~$2.95B capitalization visible in 990s, which is a subset of the $12.5B commitment. Remaining ~$9.5B landing location not yet fully traced in public 990s; plausibly a combination of direct grants via PPF, Pivotal Ventures LLC, and/or capitalization of other entities not yet filed.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "mfg_cascade_transfer_2021",
@@ -132,7 +136,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Divorce-settlement securities transfer: AutoNation (2.94M sh), Canadian National Railway (14.1M sh), Coca-Cola FEMSA (25.8M sh), Grupo Televisa (155.4M sh). This is a wealth_transfer, NOT charitable giving. Recorded here for provenance of her billionaire wealth only.",
-      "classification_note": "NOT counted as philanthropy."
+      "classification_note": "NOT counted as philanthropy.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "mfg_wellcome_leap_2025",
@@ -147,7 +152,8 @@
       "source_url": "https://wellcomeleap.org/pivotal_partnership_news/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "TODO: verify whether this $50M Pivotal contribution appears inside PPF 2025 990-PF (expected Nov 2026) \u2014 if so, do not double-count. For now flagged as ANNOUNCED, not yet visible in ProPublica 2025 data."
+      "dedup_note": "TODO: verify whether this $50M Pivotal contribution appears inside PPF 2025 990-PF (expected Nov 2026) \u2014 if so, do not double-count. For now flagged as ANNOUNCED, not yet visible in ProPublica 2025 data.",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -162,7 +168,8 @@
       "pledge_letter_quote": "The only responsible thing to do with a fortune this size is give it away\u2014as thoughtfully and impactfully as possible.",
       "source_url": "https://www.givingpledge.org/pledger/melinda-french-gates/",
       "retrieved_at": "2026-04-24",
-      "notes": "Wealth at signing (2010): joint-and-co-held with Bill Gates, not separately enumerated. Updated her pledge letter in 2022 to remove sole-Gates-Foundation destination language (see next event)."
+      "notes": "Wealth at signing (2010): joint-and-co-held with Bill Gates, not separately enumerated. Updated her pledge letter in 2022 to remove sole-Gates-Foundation destination language (see next event).",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "mfg_gp_update_2022",
@@ -174,7 +181,8 @@
       "source_url": "https://fortune.com/2022/02/02/melinda-french-gates-gates-foundation-giving-pledge/",
       "retrieved_at": "2026-04-24",
       "notes": "Feb 2022 pledge-letter update: dropped language specifying Gates Foundation as destination of bulk of her wealth. Signaled intent to deploy outside the joint foundation \u2014 which materialized two years later with her May 2024 resignation.",
-      "classification_note": "Amendment preserves 50% commitment but unbundles destination from Gates Foundation."
+      "classification_note": "Amendment preserves 50% commitment but unbundles destination from Gates Foundation.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "mfg_1b_women_2024",
@@ -203,7 +211,8 @@
         "M.V. Lee Badgett"
       ],
       "deployment_status_2026_04": "Action for Women's Health open call winners (80+ orgs at $1M-$5M each, ~$250M total) announced late 2025; $240M to 12 leaders substantially deployed per 2024 990-PF data; remaining components in progress.",
-      "deployment_evidence_url": "https://leverforchange.org/article/press-release/afwh-awardees-announcement/"
+      "deployment_evidence_url": "https://leverforchange.org/article/press-release/afwh-awardees-announcement/",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "mfg_wellcome_leap_2025_pledge",
@@ -216,7 +225,8 @@
       "source_url": "https://www.pivotal.com/media/wellcome-leap-and-pivotal-commit-100-million-to-womens-health-research",
       "retrieved_at": "2026-04-24",
       "status": "ANNOUNCED",
-      "notes": "Programs start 2026. Duplicates mfg_wellcome_leap_2025 (cited_events) \u2014 this row is the announcement/pledge, the other is the grant classification."
+      "notes": "Programs start 2026. Duplicates mfg_wellcome_leap_2025 (cited_events) \u2014 this row is the announcement/pledge, the other is the grant classification.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "mfg_gp_ips_critique_2025",
@@ -227,7 +237,8 @@
       "source_type": "news",
       "source_url": "https://fortune.com/2025/12/04/melinda-french-gates-rips-billionaire-class-giving-pledge/",
       "retrieved_at": "2026-04-24",
-      "notes": "December 2025 Fortune interview: French Gates publicly stated Giving Pledge has 'fallen short' and urged fellow billionaires to deploy more aggressively. As one of three co-founders of the pledge, her public critique is consequential for the credibility of the entire Giving Pledge norm. Supports classifying her own giving as ON_TRACK rather than laggard."
+      "notes": "December 2025 Fortune interview: French Gates publicly stated Giving Pledge has 'fallen short' and urged fellow billionaires to deploy more aggressively. As one of three co-founders of the pledge, her public critique is consequential for the credibility of the entire Giving Pledge norm. Supports classifying her own giving as ON_TRACK rather than laggard.",
+      "event_role_canonical": "reference_only"
     }
   ],
   "political_giving": {
@@ -451,7 +462,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.85,
     "tier": "ON_TRACK (Tier C \u2014 publicly committed and actively deploying)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. MFG ratio: ~0.85 \u2014 well above the low threshold. She is actively deploying at roughly 42% of the strict 10%/year norm on observable alone, rising to 85% with LLC + anonymous uplift. Given (a) her 5-year standalone tenure, (b) her $12.5B transfer only landed in June 2024, and (c) public critique of OTHER pledgers' slowness, she fits 'on-track deployer' profile.",
-    "tier_published_caveat": "MFG is a counterexample to the pledge-unfulfilled pattern: she co-founded the Giving Pledge, publicly criticizes laggards (Dec 2025 Fortune), and has deployed $487M in 2024 alone. Main observability concern is the Pivotal Ventures LLC opacity \u2014 some unknown portion of her giving is invisible to 990 reporting. On balance: ON_TRACK, NOT a Scrooge candidate."
+    "tier_published_caveat": "MFG is a counterexample to the pledge-unfulfilled pattern: she co-founded the Giving Pledge, publicly criticizes laggards (Dec 2025 Fortune), and has deployed $487M in 2024 alone. Main observability concern is the Pivotal Ventures LLC opacity \u2014 some unknown portion of her giving is invisible to 990 reporting. On balance: ON_TRACK, NOT a Scrooge candidate.",
+    "expected_5pct_tenure_usd": 6460000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 5917000000,
+    "ratio_observable_to_5pct_tenure": 0.0841
   },
   "scrooge_legacy_score_internal_only": {
     "value": 35.0,

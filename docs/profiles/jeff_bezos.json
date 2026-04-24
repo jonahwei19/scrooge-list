@@ -58,7 +58,8 @@
       "source_type": "announcement",
       "source_url": "https://www.nytimes.com/2021/09/20/business/jeff-bezos-earth-fund.html",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_earth_fund_2021_cop26",
@@ -74,7 +75,8 @@
       "source_url": "https://www.cnbc.com/2021/09/20/jeff-bezos-pledges-1-billion-to-conservation-through-bezos-earth-fund.html",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "May overlap with later 'cumulative disbursed' figures. Use cumulative_disbursed_2026 (~$2.3B) as canonical rollup, NOT additive sum of announcements."
+      "dedup_note": "May overlap with later 'cumulative disbursed' figures. Use cumulative_disbursed_2026 (~$2.3B) as canonical rollup, NOT additive sum of announcements.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_earth_fund_2022_grassroots",
@@ -86,7 +88,8 @@
       "source_type": "announcement",
       "source_url": "https://www.seattletimes.com/business/bezos-earth-fund-announces-nearly-204-million-in-additional-donations-with-focus-on-grassroots-climate-groups/",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_earth_fund_2024_alt_protein",
@@ -98,7 +101,8 @@
       "source_type": "news",
       "source_url": "https://www.forbes.com/sites/mollybohannon/2024/03/12/bezos-earth-fund-invests-60-million-in-centers-to-improve-alternative-meats/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_earth_fund_cumulative_2026",
@@ -114,7 +118,8 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "note": "Fortune April 2026 corroborates ~$2.3B cumulative disbursed through Earth Fund. This is the CANONICAL rollup number for Earth Fund observable giving; supersedes sum of individual announcements which overlap/double-count.",
-      "corroborating_source": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/"
+      "corroborating_source": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_earth_fund_foundation_2024_990",
@@ -127,7 +132,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/931868994",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This $13.9M is the FOUNDATION (501(c)(3)) arm, which only became tax-exempt in Jan 2024 and reports $223K in total assets. The $2.3B cumulative Earth Fund disbursement runs through the LLC (Fellowship Ventures LLC) which does not file public 990s. The $13.9M 990-PF figure is INCLUDED within the $2.3B cumulative total; do NOT additively sum."
+      "dedup_note": "CRITICAL: This $13.9M is the FOUNDATION (501(c)(3)) arm, which only became tax-exempt in Jan 2024 and reports $223K in total assets. The $2.3B cumulative Earth Fund disbursement runs through the LLC (Fellowship Ventures LLC) which does not file public 990s. The $13.9M 990-PF figure is INCLUDED within the $2.3B cumulative total; do NOT additively sum.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_d1ff_2018",
@@ -139,7 +145,8 @@
       "source_url": "https://endhomelessness.org/blog/day-1-fund-will-serve-will/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "24 organizations, inaugural year"
+      "note": "24 organizations, inaugural year",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_d1ff_2019",
@@ -151,7 +158,8 @@
       "source_url": "https://familyaidboston.org/2019/12/06/familyaid-boston-receives-5-million-bezos-day-1-families-fund-grant-to-help-solve-homelessness/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "32 organizations"
+      "note": "32 organizations",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_d1ff_2020",
@@ -163,7 +171,8 @@
       "source_url": "https://safehaven.org/safe-haven-family-shelter-receives-1-25-million-bezos-day-1-families-fund-grant-to-end-homelessness/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "42 organizations"
+      "note": "42 organizations",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_d1ff_2023",
@@ -175,7 +184,8 @@
       "source_url": "https://people.com/bezos-day-1-families-fund-announces-2023-grantees-8404924",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "38 organizations from 23 states, DC, and Puerto Rico"
+      "note": "38 organizations from 23 states, DC, and Puerto Rico",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_d1ff_2024",
@@ -189,7 +199,8 @@
       "source_url": "https://philanthropynewsdigest.org/news/bezos-day-one-fund-awards-110.5-million-for-homeless-families",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "40 organizations"
+      "note": "40 organizations",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_d1ff_2025",
@@ -201,7 +212,8 @@
       "source_url": "https://www.bezosdayonefund.org/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "32 recipients from 20 states, DC, and Guam \u2014 eighth annual round"
+      "note": "32 recipients from 20 states, DC, and Guam \u2014 eighth annual round",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_d1ff_cumulative_2024",
@@ -217,7 +229,8 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "note": "Fund's own disclosure: 248 grants totaling 'nearly $750M' to organizations in all 50 states, DC, and Puerto Rico (through Nov 2024). Adding 2025 round (~$102.5M) brings cumulative to ~$850M through 2025 \u2014 matches Fortune 2026 figure.",
-      "dedup_note": "CANONICAL Day 1 Families Fund rollup. Do NOT also count individual annual rounds additively \u2014 they are subsumed in this cumulative."
+      "dedup_note": "CANONICAL Day 1 Families Fund rollup. Do NOT also count individual annual rounds additively \u2014 they are subsumed in this cumulative.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "bezos_smithsonian_pledge",
@@ -234,7 +247,8 @@
       "source_url": "https://www.si.edu/newsdesk/releases/smithsonian-receive-historic-200-million-donation-jeff-bezos",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "corroborating_source": "https://fortune.com/article/mackenzie-scott-26-billion-donations-net-worth-amazon-shares/"
+      "corroborating_source": "https://fortune.com/article/mackenzie-scott-26-billion-donations-net-worth-amazon-shares/",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "bezos_cca_parton_2022",
@@ -249,7 +263,8 @@
       "source_url": "https://www.cnbc.com/2022/11/16/dolly-parton-receives-100-million-dollar-award-from-jeff-bezos.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Courage & Civility is NOT an endowment \u2014 it's a direct gift from Bezos/S\u00e1nchez personally to the recipient who then regrants. Counted as observable direct_gift because recipient is explicitly charitable. Do not dedupe against Earth Fund or D1FF."
+      "dedup_note": "Courage & Civility is NOT an endowment \u2014 it's a direct gift from Bezos/S\u00e1nchez personally to the recipient who then regrants. Counted as observable direct_gift because recipient is explicitly charitable. Do not dedupe against Earth Fund or D1FF.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "bezos_cca_jones_andres_2021",
@@ -261,7 +276,8 @@
       "source_type": "announcement",
       "source_url": "https://www.forbes.com/sites/kenrickcai/2021/07/20/jeff-bezos-says-hell-give-away-200-million-in-new-philanthropic-initiative-for-leaders-with-civility/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "bezos_cca_longoria_2024",
@@ -273,7 +289,8 @@
       "source_type": "announcement",
       "source_url": "https://fortune.com/2026/04/21/jeff-bezos-gave-eva-longoria-admiral-behind-osama-bin-laden-capture-100-million-you-dont-need-wealth-to-give-back/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "bezos_cca_mcraven_2024",
@@ -286,7 +303,8 @@
       "source_url": "https://fortune.com/2026/04/21/jeff-bezos-gave-eva-longoria-admiral-behind-osama-bin-laden-capture-100-million-you-dont-need-wealth-to-give-back/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Fortune April 2026 frames Longoria + McRaven as the 'two $50M Courage & Civility Awards in 2024'; article title's '$100M' refers to the combined 2024 prize pool."
+      "dedup_note": "Fortune April 2026 frames Longoria + McRaven as the 'two $50M Courage & Civility Awards in 2024'; article title's '$100M' refers to the combined 2024 prize pool.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "bezos_stock_gifts_2025_march",
@@ -302,7 +320,8 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "note": "Financial Post: Bezos 'given away nearly 930,000 shares to nonprofits in 2025' with ~$60M March tranche. Likely flows to Bezos Earth Fund Foundation and/or Day 1 Fund structures.",
-      "dedup_note": "POTENTIAL DOUBLE-COUNT against Earth Fund cumulative or D1FF cumulative \u2014 the stock gifts may be the funding mechanism, not incremental outlays. Flag for SEC Form 4 direct parse in Phase 1.2."
+      "dedup_note": "POTENTIAL DOUBLE-COUNT against Earth Fund cumulative or D1FF cumulative \u2014 the stock gifts may be the funding mechanism, not incremental outlays. Flag for SEC Form 4 direct parse in Phase 1.2.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -321,7 +340,8 @@
       "retrieved_at": "2026-04-23",
       "corroborating_source": "https://www.cnbc.com/2025/07/15/jeff-bezos-taps-tom-taylor-earth-fund.html",
       "pledge_letter_quote": "The Earth Fund was created by a commitment of $10 billion from Jeff Bezos in 2020 to be disbursed as grants to address climate and nature within the current decade.",
-      "notes": "Lauren S\u00e1nchez Bezos stepped in as Vice Chair to accelerate disbursement; Tom Taylor (former Amazon Alexa head) hired as CEO in July 2025 explicitly to increase 'operational execution.'"
+      "notes": "Lauren S\u00e1nchez Bezos stepped in as Vice Chair to accelerate disbursement; Tom Taylor (former Amazon Alexa head) hired as CEO in July 2025 explicitly to increase 'operational execution.'",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "bezos_d1ff_pledge_2018",
@@ -334,7 +354,8 @@
       "source_type": "announcement",
       "source_url": "https://people.com/bezos-day-1-families-fund-announces-2023-grantees-8404924",
       "retrieved_at": "2026-04-23",
-      "notes": "The $2B launch commitment covers both Families Fund and Academies Fund jointly. Bezos Academy operates ~40+ tuition-free preschools across the US as of 2025, funded via Day 1 Academies Fund \u2014 spend exact figure not publicly disclosed."
+      "notes": "The $2B launch commitment covers both Families Fund and Academies Fund jointly. Bezos Academy operates ~40+ tuition-free preschools across the US as of 2025, funded via Day 1 Academies Fund \u2014 spend exact figure not publicly disclosed.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "bezos_majority_wealth_interview_2022",
@@ -348,7 +369,8 @@
       "retrieved_at": "2026-04-23",
       "quote_paraphrased": "Bezos told CNN in Nov 2022 he intends to give away 'the majority' of his wealth during his lifetime, acknowledging the difficulty of doing so effectively.",
       "corroborating_source": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/",
-      "classification_note": "NOT a Giving Pledge signature. No legally binding or publicly documented commitment beyond 'majority' verbal intent. Inside Philanthropy and Fortune both characterize it as less formal than the Giving Pledge."
+      "classification_note": "NOT a Giving Pledge signature. No legally binding or publicly documented commitment beyond 'majority' verbal intent. Inside Philanthropy and Fortune both characterize it as less formal than the Giving Pledge.",
+      "event_role_canonical": "no_pledge"
     }
   ],
   "giving_pledge_status": {
@@ -578,7 +600,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.323,
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "Observable ($3.45B) + hidden_upper ($0.8B) = $4.25B vs. expected $13.17B \u2192 32% of the 10% norm. Above Tier A VERIFIED_LOW threshold (< 20%). Signed-pledge-but-behind OR spoken-pledge-but-structurally-on-track dynamics put him in Tier B. Compared to Ellison (Tier B at 0.262% of current NW observable vs. 10% norm), Bezos is MUCH further along on observable dollars (1.44% of current NW) \u2014 $3.45B is more than Ellison, Zuckerberg, and Musk's observable totals combined. The 'probably low' classification reflects the GAP between current ~$3.5B and 10%-of-liquid-wealth benchmark of $13B, not an accusation of zero giving.",
-    "tier_published_caveat": "Bezos is the canonical example of 'biggest pledge in philanthropic history, behind schedule to deliver.' $2.3B Earth Fund disbursed through 2026 against $10B by 2030 target; $850M Day 1 Fund through 2025 against open-ended $2B; Smithsonian $200M fulfilled. His challenge is not whether he gives \u2014 he demonstrably does \u2014 but whether the pace matches the pledge and the wealth."
+    "tier_published_caveat": "Bezos is the canonical example of 'biggest pledge in philanthropic history, behind schedule to deliver.' $2.3B Earth Fund disbursed through 2026 against $10B by 2030 target; $850M Day 1 Fund through 2025 against open-ended $2B; Smithsonian $200M fulfilled. His challenge is not whether he gives \u2014 he demonstrably does \u2014 but whether the pace matches the pledge and the wealth.",
+    "expected_5pct_tenure_usd": 184338000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 180888000000,
+    "ratio_observable_to_5pct_tenure": 0.0187
   },
   "scrooge_legacy_score_internal_only": {
     "value": 73.8,

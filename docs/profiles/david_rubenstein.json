@@ -58,7 +58,8 @@
       "source_url": "https://www.npr.org/2007/12/18/17371559/magna-carta-copy-sells-at-auction-for-21-3-million",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: The $21.3M purchase is NOT a charitable gift \u2014 it is a private asset purchase that Rubenstein LOANS to the Archives. The $13.5M separate gift for the Rubenstein Gallery IS a charitable gift (captured as separate event rubenstein_archives_gallery_2011). Published 'lifetime giving' totals that include $21.3M are inflating by treating a loaned private asset as a donation."
+      "dedup_note": "CRITICAL: The $21.3M purchase is NOT a charitable gift \u2014 it is a private asset purchase that Rubenstein LOANS to the Archives. The $13.5M separate gift for the Rubenstein Gallery IS a charitable gift (captured as separate event rubenstein_archives_gallery_2011). Published 'lifetime giving' totals that include $21.3M are inflating by treating a loaned private asset as a donation.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_archives_gallery_2011",
@@ -70,7 +71,8 @@
       "source_type": "announcement",
       "source_url": "https://www.archives.gov/press/press-releases/2013/nr13-129.html",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_washington_monument_2012",
@@ -84,7 +86,8 @@
       "source_url": "https://www.doi.gov/news/pressreleases/Philanthropist-David-Rubenstein-Donates-7-pt-5-Million-to-Repair-Damage-to-Washington-Monument",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Emblematic 'patriotic philanthropy' gift. Matched federal funds. Patriotic Millionaires use this gift as their central example of PR-driven giving that provides political cover for tax-policy self-interest (see POLITICAL_PATRIOTIC_PR_PATTERN flag)."
+      "notes": "Emblematic 'patriotic philanthropy' gift. Matched federal funds. Patriotic Millionaires use this gift as their central example of PR-driven giving that provides political cover for tax-policy self-interest (see POLITICAL_PATRIOTIC_PR_PATTERN flag).",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_washington_monument_elevator",
@@ -97,7 +100,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_kennedy_center_lifetime",
@@ -114,7 +118,8 @@
       "source_url": "https://www.kennedy-center.org/news-room/press-release-landing-page/david-rubenstein-to-retire-as-kennedy-center-chairman/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Rubenstein served as Kennedy Center Board Chair. Philanthropic intent is genuine, but the vehicle is a single high-visibility institution with his name attached (not cause-diversified)."
+      "notes": "Rubenstein served as Kennedy Center Board Chair. Philanthropic intent is genuine, but the vehicle is a single high-visibility institution with his name attached (not cause-diversified).",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_lincoln_memorial_2016",
@@ -126,7 +131,8 @@
       "source_type": "announcement",
       "source_url": "https://www.nationalparks.org/news-and-updates/press-releases/david-rubenstein-donates-18-5-million-to-the-national-park-foundation-to-restore-the-lincoln-memorial",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_jefferson_memorial_2019",
@@ -138,7 +144,8 @@
       "source_type": "announcement",
       "source_url": "https://www.nps.gov/nama/learn/news/patriotic-philanthropist-david-rubenstein-donates-10-million-for-thomas-jefferson-memorial.htm",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_library_of_congress_2020",
@@ -150,7 +157,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_arlington_house_2014",
@@ -162,7 +170,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_monticello_lifetime",
@@ -178,7 +187,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_mount_vernon_2013",
@@ -190,7 +200,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_montpelier_2014",
@@ -202,7 +213,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_iwo_jima_2015",
@@ -214,7 +226,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_smithsonian_zoo_lifetime",
@@ -230,7 +243,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_smithsonian_renwick",
@@ -243,7 +257,8 @@
       "source_type": "news",
       "source_url": "https://www.davidrubenstein.com/philanthropy/",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_national_gallery_lifetime",
@@ -259,7 +274,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_nmaahc_2016",
@@ -271,7 +287,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_duke_lifetime",
@@ -287,7 +304,8 @@
       "source_type": "institution_page",
       "source_url": "https://100.duke.edu/story/david-rubenstein/",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_harvard_kennedy_school",
@@ -303,7 +321,8 @@
       "source_type": "institution_page",
       "source_url": "https://www.hks.harvard.edu/about/david-m-rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_university_chicago_lifetime",
@@ -319,7 +338,8 @@
       "source_type": "news",
       "source_url": "https://mag.uchicago.edu/law-policy-society/chartered-philanthropy",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_johns_hopkins_lifetime",
@@ -335,7 +355,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_msk_lifetime",
@@ -350,7 +371,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_ias_commons_2015",
@@ -362,7 +384,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_holocaust_museum_2022",
@@ -374,7 +397,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_bay_psalm_book_2013",
@@ -388,7 +412,8 @@
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "EXCLUDED from observable giving rollup \u2014 purchase of a private asset that is loaned, not donated."
+      "dedup_note": "EXCLUDED from observable giving rollup \u2014 purchase of a private asset that is loaned, not donated.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_emancipation_proclamation_2012",
@@ -402,7 +427,8 @@
       "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "dedup_note": "EXCLUDED from observable giving rollup \u2014 loaned private asset."
+      "dedup_note": "EXCLUDED from observable giving rollup \u2014 loaned private asset.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rubenstein_rubenstein_foundation_2011_2024",
@@ -419,7 +445,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "attribution_note": "CRITICAL: The trustee name 'David B Rubenstein' may not be David M. Rubenstein the Carlyle co-founder. Middle initial differs (B vs M). Haverford PA is not Rubenstein's primary residence (he lives in Bethesda MD / DC area). This foundation may belong to a different Rubenstein. DO NOT credit these grants to David M. Rubenstein without further verification. Included with low confidence."
+      "attribution_note": "CRITICAL: The trustee name 'David B Rubenstein' may not be David M. Rubenstein the Carlyle co-founder. Middle initial differs (B vs M). Haverford PA is not Rubenstein's primary residence (he lives in Bethesda MD / DC area). This foundation may belong to a different Rubenstein. DO NOT credit these grants to David M. Rubenstein without further verification. Included with low confidence.",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -436,7 +463,8 @@
       "source_url": "https://www.givingpledge.org/pledger/david-m-rubenstein/",
       "retrieved_at": "2026-04-24",
       "notes": "Pledged 'more than half' (standard Giving Pledge minimum). At 2010 wealth of ~$3B, target was ~$1.5B. Current wealth ~$4.5B means target is now ~$2.25B+. Observable direct giving of ~$500M-$600M is ~25-40% of the pledge target \u2014 not fulfilled, but materially on the path. IPS 2025 report publicly praises him as one of the few honoring the spirit.",
-      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -566,7 +594,11 @@
     "observable_plus_hidden_ratio_to_expected": 2.5,
     "tier": "On_Track (Tier C)",
     "tier_rule": "Observable giving ($512M) is 227% of the strict 10%-liquid-wealth formal norm ($225M) \u2014 well above the ON_TRACK threshold (typically 100%) and the VERIFIED_LOW threshold (<20%). Rubenstein is genuinely giving at scale RELATIVE TO HIS WEALTH. He is ~12% of lifetime net worth deployed, tracking toward 50%+ over remaining lifespan if current pace continues. IPS publicly confirms he honors the spirit of the pledge.",
-    "tier_published_caveat": "Rubenstein presents a methodology edge case: by raw dollars-given / wealth ratio he is Tier C ('On Track'), but the POLITICAL_PATRIOTIC_PR_PATTERN red flag raises a legitimate question about NET civic contribution when carried-interest lobbying is netted against monument giving. The Scrooge List convention (per CLAUDE.md) is to use raw observable ratios for tier assignment and surface the behavioral pattern via red_flags rather than re-tiering. Readers should see both signals: (a) Rubenstein gives at a higher % of wealth than ~95% of US billionaires, AND (b) his specific pattern of small-high-visibility gifts is the textbook case study for the Patriotic Millionaires critique of elite philanthropy."
+    "tier_published_caveat": "Rubenstein presents a methodology edge case: by raw dollars-given / wealth ratio he is Tier C ('On Track'), but the POLITICAL_PATRIOTIC_PR_PATTERN red flag raises a legitimate question about NET civic contribution when carried-interest lobbying is netted against monument giving. The Scrooge List convention (per CLAUDE.md) is to use raw observable ratios for tier assignment and surface the behavioral pattern via red_flags rather than re-tiering. Readers should see both signals: (a) Rubenstein gives at a higher % of wealth than ~95% of US billionaires, AND (b) his specific pattern of small-high-visibility gifts is the textbook case study for the Patriotic Millionaires critique of elite philanthropy.",
+    "expected_5pct_tenure_usd": 2250000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 1738230000,
+    "ratio_observable_to_5pct_tenure": 0.2275
   },
   "scrooge_legacy_score_internal_only": {
     "value": 28.0,

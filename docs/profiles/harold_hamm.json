@@ -66,7 +66,8 @@
       "source_url": "https://www.grantmakers.io/profiles/v0/461256191-harold-hamm-foundation/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Grantmakers.io: 10 grants, median $5K, max $4M. Total distributions $4.5M vs assets $16M \u2192 28% payout rate. Minor red flag: America First Policy Institute grant ($497K) is a 501(c)(3) but explicitly political-aligned think tank \u2014 blurs the political/charitable line."
+      "notes": "Grantmakers.io: 10 grants, median $5K, max $4M. Total distributions $4.5M vs assets $16M \u2192 28% payout rate. Minor red flag: America First Policy Institute grant ($497K) is a 501(c)(3) but explicitly political-aligned think tank \u2014 blurs the political/charitable line.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "hamm_hhf_2024_propublica",
@@ -79,7 +80,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "CONFLICT with hamm_hhf_2024 ($4.5M per Grantmakers.io vs $2.64M per ProPublica). Difference likely reflects different 990-PF line items (grants paid vs. total charitable disbursements including program expenses, or different fiscal-year cutoffs). For rollup use the Grantmakers.io figure of $4.5M as it matches the listed grant-recipient sum; flag for manual 990-PF verification."
+      "dedup_note": "CONFLICT with hamm_hhf_2024 ($4.5M per Grantmakers.io vs $2.64M per ProPublica). Difference likely reflects different 990-PF line items (grants paid vs. total charitable disbursements including program expenses, or different fiscal-year cutoffs). For rollup use the Grantmakers.io figure of $4.5M as it matches the listed grant-recipient sum; flag for manual 990-PF verification.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "hamm_hhf_2023",
@@ -91,7 +93,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "hamm_hhf_2022",
@@ -104,7 +107,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Large 2022 spike. Likely drivers: (a) final disbursement of pledged $34M 2018 gift to Harold Hamm Diabetes Center ($3.4M/yr over 10 yr would only be $3.4M, so this is not explained by that alone); (b) $12M gift to University of Mary for Hamm School of Engineering announced Feb 2022; (c) possible one-time contribution tied to Continental Resources take-private transaction. Recipient breakdown not yet retrieved at year-level from ProPublica; manual 990-PF parse required."
+      "notes": "Large 2022 spike. Likely drivers: (a) final disbursement of pledged $34M 2018 gift to Harold Hamm Diabetes Center ($3.4M/yr over 10 yr would only be $3.4M, so this is not explained by that alone); (b) $12M gift to University of Mary for Hamm School of Engineering announced Feb 2022; (c) possible one-time contribution tied to Continental Resources take-private transaction. Recipient breakdown not yet retrieved at year-level from ProPublica; manual 990-PF parse required.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "hamm_hhf_2021",
@@ -116,7 +120,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "hamm_hhf_2020",
@@ -128,7 +133,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "hamm_ou_diabetes_2007",
@@ -142,7 +148,8 @@
       "source_url": "https://www.ou.edu/web/news_events/articles/news_2018/the-harold-hamm-foundation-donates--34m-to-harold-hamm-diabetes-",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Personal gift predating Harold Hamm Foundation (established 2013). Additive to foundation totals, not double-counted."
+      "dedup_note": "Personal gift predating Harold Hamm Foundation (established 2013). Additive to foundation totals, not double-counted.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "hamm_und_2012",
@@ -157,7 +164,8 @@
       "source_url": "https://blogs.und.edu/uletter/2012/09/und-announces-14-million-in-private-public-partnership-funding-and-the-naming-of-the-harold-hamm-school-of-geology-and-geological-engineering-at-the-college-of-engineering-and-mines/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Private $10M portion of a $14M total (with $4M from ND Industrial Commission/Oil & Gas Research Program). Largest non-alumnus gift in UND history at the time. Predates Harold Hamm Foundation \u2014 personal/corporate money."
+      "notes": "Private $10M portion of a $14M total (with $4M from ND Industrial Commission/Oil & Gas Research Program). Largest non-alumnus gift in UND history at the time. Predates Harold Hamm Foundation \u2014 personal/corporate money.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "hamm_hhf_ou_2018",
@@ -173,7 +181,8 @@
       "source_url": "https://www.ou.edu/web/news_events/articles/news_2018/the-harold-hamm-foundation-donates--34m-to-harold-hamm-diabetes-",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This $34M gift was paid THROUGH the Harold Hamm Foundation over 10 years. It is therefore spread across hamm_hhf_2018 through hamm_hhf_2027 annual grants_out \u2014 do NOT add it on top of the 990-PF grant totals. Included here for narrative/traceability; excluded from observable rollup to avoid double-count."
+      "dedup_note": "CRITICAL: This $34M gift was paid THROUGH the Harold Hamm Foundation over 10 years. It is therefore spread across hamm_hhf_2018 through hamm_hhf_2027 annual grants_out \u2014 do NOT add it on top of the 990-PF grant totals. Included here for narrative/traceability; excluded from observable rollup to avoid double-count.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "hamm_umary_2022",
@@ -188,7 +197,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Harold_Hamm",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Likely a component of the 2022 HHF grants_out spike ($37.8M). If paid through HHF, already counted in hamm_hhf_2022. If Continental Resources corporate contribution, additive. Split not yet confirmed; mark for verification."
+      "dedup_note": "Likely a component of the 2022 HHF grants_out spike ($37.8M). If paid through HHF, already counted in hamm_hhf_2022. If Continental Resources corporate contribution, additive. Split not yet confirmed; mark for verification.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "hamm_ou_gala_2025",
@@ -203,7 +213,8 @@
       "source_url": "https://www.ou.edu/news/articles/2025/october/gala-raises-millions-for-ou-health-harold-hamm-diabetes-center",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "The $4.7M was raised by the gala from many donors, NOT a direct Hamm gift. Hamm received the inaugural Crystal Seed Sower Award (recognition for cumulative $25M+ to OU). Included for context only. NOT counted as Hamm giving \u2014 risk of misattribution by published lists."
+      "dedup_note": "The $4.7M was raised by the gala from many donors, NOT a direct Hamm gift. Hamm received the inaugural Crystal Seed Sower Award (recognition for cumulative $25M+ to OU). Included for context only. NOT counted as Hamm giving \u2014 risk of misattribution by published lists.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -221,7 +232,8 @@
       "source_url": "https://www.givingpledge.org/pledger/harold-hamm/",
       "retrieved_at": "2026-04-24",
       "notes": "CORRECTION vs. task brief: task prompt said 'NOT signed (verify)' \u2014 Hamm HAS signed the Giving Pledge (April 2011). Signed jointly with then-spouse Sue Ann Hamm; they subsequently divorced (one of the largest divorce settlements in US history). Sue Ann (now Sue Ann Arnall) is listed separately on the pledger list. Net worth at signing ~$11.5B (CNN 2015 retrospective). Pledge letter does not state an explicit percentage but secondary sources cite 90%+ commitment. 90% target in 2011 dollars = ~$10.4B. Current net worth ~$17B; 90% target is now ~$15.3B. Gap between observable giving-out and pledge target: ~$15B.",
-      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -388,7 +400,11 @@
     "observable_plus_hidden_ratio_to_expected_note": "With trust_outcome_uncertainty included, ratio exceeds 1.0. This is because the STRICT expected-giving denominator ($170M) assumes only 10% liquid wealth. The comparable denominator for 'lifetime expected' would be $850M, giving ratio = 1.88. Either way the trust uncertainty is the dominant term.",
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "Observable giving (~$80M) = 47% of the strict 10% expected ($170M) and ~9% of the widened lifetime 10% expected ($850M). Without the trust, Hamm is on the borderline between Tier A and Tier B. With the trust (large, private, undisclosed disposition) and with a SIGNED Giving Pledge (unfulfilled), he lands in Tier B \u2014 'signed the pledge, has done some giving, nowhere near proportional.' The political-heavy pattern and the 2024 cycle where political \u2248 charitable push him toward Tier B rather than Tier C.",
-    "tier_published_caveat": "Readers should see Hamm as a case study in 'political-charitable substitution': $4.3M to Trump PACs and $2.2M+ in industry lobbying vehicles (DEPA, Windfall) in parallel with $4.5M HHF distributions in 2024. The 2022 HHF spike ($37.8M) is a one-off around the take-private transaction; it is NOT a sustained giving level. Hamm has signed the Giving Pledge but observable giving is ~0.5% of current net worth."
+    "tier_published_caveat": "Readers should see Hamm as a case study in 'political-charitable substitution': $4.3M to Trump PACs and $2.2M+ in industry lobbying vehicles (DEPA, Windfall) in parallel with $4.5M HHF distributions in 2024. The 2022 HHF spike ($37.8M) is a one-off around the take-private transaction; it is NOT a sustained giving level. Hamm has signed the Giving Pledge but observable giving is ~0.5% of current net worth.",
+    "expected_5pct_tenure_usd": 1530000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 1449800000,
+    "ratio_observable_to_5pct_tenure": 0.0524
   },
   "scrooge_legacy_score_internal_only": {
     "value": 85.4,

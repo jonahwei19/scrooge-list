@@ -66,7 +66,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
       "retrieved_at": "2026-04-23",
-      "confidence": "high (WFF total) / medium (Rob's pro-rata share)"
+      "confidence": "high (WFF total) / medium (Rob's pro-rata share)",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "wff_2023",
@@ -79,7 +80,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
       "retrieved_at": "2026-04-23",
-      "confidence": "high (total) / medium (prorata)"
+      "confidence": "high (total) / medium (prorata)",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "wff_2022",
@@ -92,7 +94,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
       "retrieved_at": "2026-04-23",
-      "confidence": "high (total) / medium (prorata)"
+      "confidence": "high (total) / medium (prorata)",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "wff_2021",
@@ -105,7 +108,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
       "retrieved_at": "2026-04-23",
-      "confidence": "high (total) / medium (prorata)"
+      "confidence": "high (total) / medium (prorata)",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "wff_2020",
@@ -118,7 +122,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
       "retrieved_at": "2026-04-23",
-      "confidence": "high (total) / medium (prorata)"
+      "confidence": "high (total) / medium (prorata)",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "wff_2019",
@@ -131,7 +136,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
       "retrieved_at": "2026-04-23",
-      "confidence": "high (total) / medium (prorata)"
+      "confidence": "high (total) / medium (prorata)",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "rmwf_2024",
@@ -144,7 +150,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "100% attributable to Rob Walton (his personal + Melani's vehicle). Zero officer compensation. Focus: conservation (African Parks), Arizona quality-of-life, ASU sustainability."
+      "notes": "100% attributable to Rob Walton (his personal + Melani's vehicle). Zero officer compensation. Focus: conservation (African Parks), Arizona quality-of-life, ASU sustainability.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "rmwf_2023",
@@ -156,7 +163,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "rmwf_2022",
@@ -168,7 +176,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "rmwf_2021",
@@ -180,7 +189,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "rmwf_2020",
@@ -192,7 +202,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "rmwf_2019",
@@ -204,7 +215,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "rmwf_africanparks_2021",
@@ -220,7 +232,8 @@
       "source_url": "https://www.africanparks.org/rob-and-melani-walton-foundation-make-transformational-gift-preserve-30-million-hectares",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "DEDUP FLAG: $100M pledge announced 2021-09. Paid through RMWF, so should already be captured inside rmwf_2021 and subsequent years' grants_out totals as the pledge disburses. DO NOT add this row on top of RMWF 990-PF totals. Listed here for provenance only \u2014 set amount_usd in rollup to 0 to avoid double-count."
+      "dedup_note": "DEDUP FLAG: $100M pledge announced 2021-09. Paid through RMWF, so should already be captured inside rmwf_2021 and subsequent years' grants_out totals as the pledge disburses. DO NOT add this row on top of RMWF 990-PF totals. Listed here for provenance only \u2014 set amount_usd in rollup to 0 to avoid double-count.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rmwf_asu_2016",
@@ -234,7 +247,8 @@
       "source_url": "https://news.asu.edu/content/asu-use-275m-walton-investment-accelerate-sustainability-efforts",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Flows through WFF (named as 'Rob and Melani Walton Fund of the WFF'), so captured in WFF 2016 grants_out (not in our current 2019-2024 window). Listed for provenance. Also: ASU received subsequent $115M in 2025 per AZ Free News \u2014 deferred verification."
+      "dedup_note": "Flows through WFF (named as 'Rob and Melani Walton Fund of the WFF'), so captured in WFF 2016 grants_out (not in our current 2019-2024 window). Listed for provenance. Also: ASU received subsequent $115M in 2025 per AZ Free News \u2014 deferred verification.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "rmwf_azhumane_2022",
@@ -249,7 +263,8 @@
       "source_url": "https://www.azhumane.org/news/rob-and-melani-walton-foundation-makes-5m-gift/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Captured inside rmwf_2022 990-PF total. Do not double-count."
+      "dedup_note": "Captured inside rmwf_2022 990-PF total. Do not double-count.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -261,7 +276,8 @@
       "quote": "I certainly salute them. We have chosen not to do that and to go our own way with our philanthropy.",
       "source_url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving",
       "retrieved_at": "2026-04-23",
-      "notes": "Rob Walton (and all living Walton siblings \u2014 Jim, Alice, and late brother John's estate) have explicitly declined to sign the Giving Pledge. This is a deliberate family position, not an oversight. Under the scrooge methodology this is NOT itself a red flag \u2014 declining is more honest than signing-and-not-fulfilling \u2014 but it removes a public accountability hook."
+      "notes": "Rob Walton (and all living Walton siblings \u2014 Jim, Alice, and late brother John's estate) have explicitly declined to sign the Giving Pledge. This is a deliberate family position, not an oversight. Under the scrooge methodology this is NOT itself a red flag \u2014 declining is more honest than signing-and-not-fulfilling \u2014 but it removes a public accountability hook.",
+      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "walton_siblings_wff_pledge_2008_2013",
@@ -276,7 +292,8 @@
       "status_note": "Per Wikipedia, Rob and siblings pledged ~$2B to WFF between 2008-2013. Pledge was to the family foundation (a transfer_in), which has since disbursed well above that amount in grants_out in the years since. Pro-rata 1/3 share imputed to Rob.",
       "source_url": "https://en.wikipedia.org/wiki/S._Robson_Walton",
       "retrieved_at": "2026-04-23",
-      "dedup_note": "Transfer INTO WFF, not grant_out. Per dedup rule #2, we count WFF's grants_out, not the transfers in. This row is provenance-only; not added to observable_giving."
+      "dedup_note": "Transfer INTO WFF, not grant_out. Per dedup rule #2, we count WFF's grants_out, not the transfers in. This row is provenance-only; not added to observable_giving.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -425,7 +442,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.845,
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Rob Walton's observable alone clears 53% of expected giving \u2014 the WFF + RMWF flows are real and substantial. With hidden upper he reaches ~85% of expected. He is NOT a Tier A Verified Low case. But at $143B net worth he is still below the 10% formal norm and has made very visible political bets ($17M in one cycle) while his lifetime giving is ~1% of current NW. Classification: Probably Low (Tier B) \u2014 gives meaningfully but far below capacity.",
-    "tier_published_caveat": "Readers should see Rob Walton as the canonical example of 'old-money dynasty \u2014 substantial joint-family foundation giving, no Giving Pledge signature, surging political giving, and individual wealth compounding faster than individual generosity.' Observable giving ~$1.5B over 6 years is 0.18%/yr of current NW and 53% of the 10% formal norm. He has NOT signed the Giving Pledge (by choice) so cannot be 'in breach' of it \u2014 the comparable reference class is other non-signers with similar wealth and similar observable giving rates."
+    "tier_published_caveat": "Readers should see Rob Walton as the canonical example of 'old-money dynasty \u2014 substantial joint-family foundation giving, no Giving Pledge signature, surging political giving, and individual wealth compounding faster than individual generosity.' Observable giving ~$1.5B over 6 years is 0.18%/yr of current NW and 53% of the 10% formal norm. He has NOT signed the Giving Pledge (by choice) so cannot be 'in breach' of it \u2014 the comparable reference class is other non-signers with similar wealth and similar observable giving rates.",
+    "expected_5pct_tenure_usd": 50085000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 48563850852,
+    "ratio_observable_to_5pct_tenure": 0.0304
   },
   "scrooge_legacy_score_internal_only": {
     "value": 75.4,

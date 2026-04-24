@@ -61,7 +61,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "cuban_mcf_2023",
@@ -73,7 +74,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "cuban_mcf_2022",
@@ -85,7 +87,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "cuban_mcf_2021",
@@ -97,7 +100,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "cuban_mcf_2020",
@@ -109,7 +113,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "cuban_mcf_2019",
@@ -121,7 +126,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "cuban_mcf_2011_2018_cumulative",
@@ -147,7 +153,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "MCF grants-out 2011-2018 aggregated from ProPublica year-by-year financial summary. Pre-2011 data not retrieved (foundation tax-exempt since April 2003; 2003-2010 period is a TODO)."
+      "notes": "MCF grants-out 2011-2018 aggregated from ProPublica year-by-year financial summary. Pre-2011 data not retrieved (foundation tax-exempt since April 2003; 2003-2010 period is a TODO).",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "cuban_heroes_rec_2022_2024",
@@ -168,7 +175,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/872356979",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Small operational recreational-center foundation (separate EIN from main MCF). Tax-exempt since March 2023. Operates Heroes Basketball center in Southern Dallas (remodeled former YWCA). Immaterial dollar amount but included for completeness."
+      "notes": "Small operational recreational-center foundation (separate EIN from main MCF). Tax-exempt since March 2023. Operates Heroes Basketball center in Southern Dallas (remodeled former YWCA). Immaterial dollar amount but included for completeness.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "cuban_iu_media_tech_2015",
@@ -183,7 +191,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "NOT YET verified whether paid through MCF 2015 990-PF (2015 MCF grants_out only $1.3M, suggesting this gift was personal/direct \u2014 likely additive, not double-counted). Flag for future verification."
+      "dedup_note": "NOT YET verified whether paid through MCF 2015 990-PF (2015 MCF grants_out only $1.3M, suggesting this gift was personal/direct \u2014 likely additive, not double-counted). Flag for future verification.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "cuban_iu_rugby_2024",
@@ -196,7 +205,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "MCF 2024 grants_out total $3.4M; $6M rugby gift exceeds that and is directly tied to Indiana athletics (a non-501c3 university athletic program may receive gifts through university foundation \u2014 still classifies as charitable). Treat as additive direct_gift. CAVEAT: athletic/NIL-adjacent giving sits in a gray zone \u2014 some analysts would exclude this from 'public benefit' philanthropy."
+      "dedup_note": "MCF 2024 grants_out total $3.4M; $6M rugby gift exceeds that and is directly tied to Indiana athletics (a non-501c3 university athletic program may receive gifts through university foundation \u2014 still classifies as charitable). Treat as additive direct_gift. CAVEAT: athletic/NIL-adjacent giving sits in a gray zone \u2014 some analysts would exclude this from 'public benefit' philanthropy.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "cuban_iu_athletics_2025",
@@ -210,7 +220,8 @@
       "source_url": "https://www.cnbc.com/2026/01/18/mark-cuban-indiana-football-donor-how-to-build-successful-teams.html",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "classification_note": "NIL-directed giving is contested as 'philanthropy.' NCAA NIL collectives are often 501(c)(3) pass-throughs to athletes; IRS revoked exempt status for several such collectives in 2023. If amount later disclosed, re-evaluate classification."
+      "classification_note": "NIL-directed giving is contested as 'philanthropy.' NCAA NIL collectives are often 501(c)(3) pass-throughs to athletes; IRS revoked exempt status for several such collectives in 2023. If amount later disclosed, re-evaluate classification.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "cuban_eff_2012",
@@ -224,7 +235,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "cuban_fallen_patriot_2003_match",
@@ -238,7 +250,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Per dedup rule #2, this transfer_in is NOT counted in observable rollup. Fallen Patriot Fund disbursements flow through MCF 990-PF grants-out (already captured in cuban_mcf_* events). Total FPF cumulative disbursements reported as '$5M+' by press but already inside MCF's $37M cumulative grants-out since 2003."
+      "dedup_note": "Per dedup rule #2, this transfer_in is NOT counted in observable rollup. Fallen Patriot Fund disbursements flow through MCF 990-PF grants-out (already captured in cuban_mcf_* events). Total FPF cumulative disbursements reported as '$5M+' by press but already inside MCF's $37M cumulative grants-out since 2003.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "cuban_delonte_west_2020",
@@ -251,7 +264,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
-      "confidence": "low"
+      "confidence": "low",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -263,7 +277,8 @@
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-24",
       "corroborating_source_url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html",
-      "notes": "Cuban has NEVER signed the Giving Pledge despite (a) 26 years as a billionaire, (b) frequent public commentary on wealth/taxes, and (c) extensive media platform (Shark Tank, podcasts, X). This is a notable absence \u2014 many lower-profile billionaires have signed. Cuban has not publicly explained the non-signature. Inside Philanthropy notes he 'has not signed the Giving Pledge or indicated how much of his fortune he will eventually give to philanthropy.'"
+      "notes": "Cuban has NEVER signed the Giving Pledge despite (a) 26 years as a billionaire, (b) frequent public commentary on wealth/taxes, and (c) extensive media platform (Shark Tank, podcasts, X). This is a notable absence \u2014 many lower-profile billionaires have signed. Cuban has not publicly explained the non-signature. Inside Philanthropy notes he 'has not signed the Giving Pledge or indicated how much of his fortune he will eventually give to philanthropy.'",
+      "event_role_canonical": "pledge"
     }
   ],
   "cost_plus_drugs_context": {
@@ -450,7 +465,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.553,
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Cuban fails this: $49M + $150M = $199M hidden-inclusive vs. $360M expected = 55%. Above the Tier A cutoff. However, below the Tier C 'Verified Adequate' threshold of 1.0. Classification: Tier B Probably Low \u2014 observable giving is materially below the 10%-of-liquid norm (14% of expected) even with generous hidden-channel uplift, but the gap is not extreme enough to be Tier A 'Verified Low' at the confidence the evidence warrants.",
-    "tier_published_caveat": "Cuban is the canonical 'public-facing generous persona, light documented giving' case. Readers who follow him on Shark Tank / X would guess he gives ~$100M+/year; the 990-PF record shows MCF averaged ~$4M/year 2019-2024. The hidden upper bound plausibly reaches ~$200M cumulative \u2014 respectable but still below 1% of current net worth after 26 years as a billionaire. Rhetoric-action gap is real; the scale is smaller than Ellison's but in the same direction."
+    "tier_published_caveat": "Cuban is the canonical 'public-facing generous persona, light documented giving' case. Readers who follow him on Shark Tank / X would guess he gives ~$100M+/year; the 990-PF record shows MCF averaged ~$4M/year 2019-2024. The hidden upper bound plausibly reaches ~$200M cumulative \u2014 respectable but still below 1% of current net worth after 26 years as a billionaire. Rhetoric-action gap is real; the scale is smaller than Ellison's but in the same direction.",
+    "expected_5pct_tenure_usd": 4680000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 4631055295,
+    "ratio_observable_to_5pct_tenure": 0.0105
   },
   "scrooge_legacy_score_internal_only": {
     "value": 72.3,

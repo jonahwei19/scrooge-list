@@ -253,8 +253,17 @@ function render(rec) {
   document.title = (p.name_display || 'Profile') + ' — The Scrooge List';
 
   const observable = rollup.observable_giving_usd || 0;
-  const expected = rollup.expected_giving_usd_10pct_liquid_weighted_by_tenure || rollup.expected_giving_usd || 0;
-  const ratio = rollup.observable_ratio_to_expected;
+  // Prefer the aggregator-derived 5%-per-year benchmark (canonical for v3 ranking);
+  // fall back to the agent-written legacy field for any record that missed the refresh.
+  const expected = rollup.expected_5pct_tenure_usd
+    || rollup.expected_giving_usd_10pct_liquid_weighted_by_tenure
+    || rollup.expected_giving_usd
+    || 0;
+  const shortfall = (rollup.shortfall_5pct_usd != null)
+    ? rollup.shortfall_5pct_usd
+    : (expected ? Math.max(0, expected - observable) : null);
+  const ratio = rollup.ratio_observable_to_5pct_tenure
+    || rollup.observable_ratio_to_expected;
   const nwRange = nw.range_usd_billions;
 
   let html = `
@@ -276,9 +285,9 @@ function render(rec) {
         <div class="sub">${rollup.observable_giving_method ? 'sum of cited events' : ''}</div>
       </div>
       <div class="summary-cell">
-        <div class="label">Ratio vs. Capacity</div>
-        <div class="value">${fmtRatio(ratio)}</div>
-        <div class="sub">vs. 10% × liquid × tenure</div>
+        <div class="label">Undisbursed Shortfall</div>
+        <div class="value">${fmtUsd(shortfall)}</div>
+        <div class="sub">vs. 5%/yr × liquid × tenure</div>
       </div>
       <div class="summary-cell">
         <div class="label">Tier</div>
@@ -299,21 +308,19 @@ function render(rec) {
     const obsWidth = (obsPct / trackMax) * 100;
     const totalWidth = (totalPct / trackMax) * 100;
     const capPos = (100 / trackMax) * 100;
-    const tierAPos = (20 / trackMax) * 100;
 
     html += `<div class="cibar">
       <div class="cibar-legend">
         <span><span class="sw obs"></span>Observable</span>
         <span><span class="sw hidden"></span>Hidden upper bound</span>
-        <span><span class="sw cap"></span>Capacity (10% of liquid)</span>
+        <span><span class="sw cap"></span>Capacity (5%/yr × liquid × tenure)</span>
       </div>
       <div class="cibar-track" title="${obsPct.toFixed(1)}% observable, +${hiddenPct.toFixed(1)}% hidden upper, vs 100% capacity">
         <div class="hidden" style="width:${totalWidth}%"></div>
         <div class="obs" style="width:${obsWidth}%"></div>
-        <div class="tick tier-a" style="left:${tierAPos}%"><span class="tick-label" style="left:${tierAPos}%">20% · Tier A threshold</span></div>
-        <div class="tick cap" style="left:${capPos}%"><span class="tick-label" style="left:${capPos}%">100% · Capacity</span></div>
+        <div class="tick cap" style="left:${capPos}%"><span class="tick-label" style="left:${capPos}%">100% · Benchmark</span></div>
       </div>
-      <p class="cibar-caption">Observable giving equals <strong>${fmtRatio(ratio)}</strong> of the 10%-of-liquid-wealth capacity benchmark (${fmtUsd(expected)}). Hidden upper bound adds ${fmtUsd(hiddenUpper)} — the maximum we think could plausibly be flowing through opaque vehicles without contradicting public evidence.</p>
+      <p class="cibar-caption">Observable giving equals <strong>${fmtRatio(ratio)}</strong> of the 5%-per-year-of-tenure capacity benchmark (${fmtUsd(expected)}). The dollar shortfall is <strong>${fmtUsd(shortfall)}</strong>. Hidden upper bound adds ${fmtUsd(hiddenUpper)} — the maximum we think could plausibly be flowing through opaque vehicles without contradicting public evidence.</p>
     </div>`;
   }
 

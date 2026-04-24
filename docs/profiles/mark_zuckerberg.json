@@ -73,7 +73,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "CZI Foundation 2024 filing: total expenses $323.0M; charitable disbursements $388.7M; total contributions received (transfer_in) $690.5M."
+      "notes": "CZI Foundation 2024 filing: total expenses $323.0M; charitable disbursements $388.7M; total contributions received (transfer_in) $690.5M.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "zuck_czif_2023",
@@ -85,7 +86,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "zuck_czif_2022",
@@ -97,7 +99,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "zuck_czif_2021",
@@ -109,7 +112,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "zuck_czif_2020",
@@ -121,7 +125,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "zuck_czif_2019",
@@ -133,7 +138,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "zuck_czif_2018",
@@ -145,7 +151,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "zuck_czif_2017",
@@ -157,7 +164,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "zuck_czif_transfers_in_2017_2024",
@@ -183,7 +191,8 @@
         "2018": 2200000000,
         "2017": 1900000000
       },
-      "dedup_note": "CRITICAL: These are transfers INTO CZIF (contributions received), NOT out-the-door giving. Per dedup rule, only grants_out count toward observable giving. Double-counting risk if these rows are added to zuck_czif_YYYY grant_out events. ~$5.29B transfers in vs. ~$1.87B grants out 2017-2024 \u2014 ~$3.4B sits inside the foundation as undeployed assets, consistent with CZIF's $7.5B 2024 asset base."
+      "dedup_note": "CRITICAL: These are transfers INTO CZIF (contributions received), NOT out-the-door giving. Per dedup rule, only grants_out count toward observable giving. Double-counting risk if these rows are added to zuck_czif_YYYY grant_out events. ~$5.29B transfers in vs. ~$1.87B grants out 2017-2024 \u2014 ~$3.4B sits inside the foundation as undeployed assets, consistent with CZIF's $7.5B 2024 asset base.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "zuck_svcf_2012",
@@ -199,7 +208,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Silicon_Valley_Community_Foundation",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "This is a transfer INTO a DAF (SVCF). Under v3 methodology this is a transfer_in-equivalent for the Zuckerberg CZI DAF bucket \u2014 the DAF receives it but grants-out from SVCF Zuckerberg DAF accounts are donor-opaque. We record as direct_gift because it left Zuckerberg's control AND is tax-deductible, but the ultimate disbursement path is not publicly traceable."
+      "dedup_note": "This is a transfer INTO a DAF (SVCF). Under v3 methodology this is a transfer_in-equivalent for the Zuckerberg CZI DAF bucket \u2014 the DAF receives it but grants-out from SVCF Zuckerberg DAF accounts are donor-opaque. We record as direct_gift because it left Zuckerberg's control AND is tax-deductible, but the ultimate disbursement path is not publicly traceable.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "zuck_svcf_2013",
@@ -215,7 +225,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Same as zuck_svcf_2012 \u2014 transfer into DAF. Counted as direct_gift (tax-deductible transfer out of personal holdings) but grants-out-of-DAF are opaque."
+      "dedup_note": "Same as zuck_svcf_2012 \u2014 transfer into DAF. Counted as direct_gift (tax-deductible transfer out of personal holdings) but grants-out-of-DAF are opaque.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "zuck_newark_2010",
@@ -230,7 +241,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "classification_note": "Pre-CZI gift. Widely criticized ex-post for poor outcomes but documented at announcement."
+      "classification_note": "Pre-CZI gift. Widely criticized ex-post for poor outcomes but documented at announcement.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "zuck_ebola_2014",
@@ -242,7 +254,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "zuck_sf_general_2015",
@@ -255,7 +268,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "zuck_ctcl_2020",
@@ -268,7 +282,8 @@
       "source_url": "https://www.latimes.com/opinion/story/2024-05-30/election-mark-zuckerberg-priscilla-chan-donation-grants",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "classification_note": "The so-called 'Zuckerbucks'. Both recipients are 501(c)(3) nonpartisan nonprofits \u2014 counts as charitable under Forbes/Chronicle methodology despite political framing in partisan press. Zuckerberg discontinued this category post-2020."
+      "classification_note": "The so-called 'Zuckerbucks'. Both recipients are 501(c)(3) nonpartisan nonprofits \u2014 counts as charitable under Forbes/Chronicle methodology despite political framing in partisan press. Zuckerberg discontinued this category post-2020.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "zuck_sacramento_2026",
@@ -283,7 +298,8 @@
       "source_url": "https://fortune.com/2026/02/09/mark-zuckerberg-meta-50-million-donation-sacramento-tech-talent-pipeline-stem-facilities/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "classification_note": "Joint gift with Meta corporate \u2014 Zuckerberg's personal share not disclosed. If we assume 50/50 split, personal credit ~$25M. Conservative: count $25M to Zuckerberg personal."
+      "classification_note": "Joint gift with Meta corporate \u2014 Zuckerberg's personal share not disclosed. If we assume 50/50 split, personal credit ~$25M. Conservative: count $25M to Zuckerberg personal.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -298,7 +314,8 @@
       "pledge_letter_quote": "We've had so much opportunity in our lives, and we feel a deep responsibility to make the world a better place for future generations. [...] We salute the Giving Pledge movement, and are proud to be part of its declaration that those who have been fortunate should give back at least half of their wealth during their lifetimes.",
       "source_url": "https://www.givingpledge.org/pledger/mark-zuckerberg",
       "retrieved_at": "2026-04-23",
-      "notes": "Giving Pledge official page shows year signed = 2015 (the year the public pledger letter was published). Wikipedia says Mark signed in 2012. Difference likely reflects private vs. public signing. Pledge target = 50% of lifetime wealth. At current net worth $230B, 50% target = $115B. At 2015 signing value ~$45B, 50% target = $22.5B in 2015 dollars."
+      "notes": "Giving Pledge official page shows year signed = 2015 (the year the public pledger letter was published). Wikipedia says Mark signed in 2012. Difference likely reflects private vs. public signing. Pledge target = 50% of lifetime wealth. At current net worth $230B, 50% target = $115B. At 2015 signing value ~$45B, 50% target = $22.5B in 2015 dollars.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "zuck_99pct_meta_2015",
@@ -313,7 +330,8 @@
       "recipient": "Chan Zuckerberg Initiative (LLC + 501(c)(3) foundation + 501(c)(4) + DAF)",
       "source_url": "https://en.wikipedia.org/wiki/Chan_Zuckerberg_Initiative",
       "retrieved_at": "2026-04-23",
-      "classification_note": "CRITICAL METHODOLOGY POINT: The 2015 '99% of Meta shares' pledge is NOT a Giving Pledge commitment and NOT a commitment to a 501(c)(3). It is a commitment to CZI, whose primary vehicle is the Chan Zuckerberg Initiative, LLC \u2014 a FOR-PROFIT limited liability company. Per Wikipedia and multiple commentators: as an LLC, CZI can invest in for-profit companies, make political donations, lobby, and is NOT required to disclose its pay, grants, or any financials. IPS explicitly excludes LLC giving from generosity measures. Under Forbes/Chronicle/IPS methodology, the 99% pledge is NOT counted as charitable giving until and unless transferred to a 501(c)(3) / DAF / equivalent charitable structure. Currently ~$5.29B has flowed into CZIF (the 501(c)(3) arm) per ProPublica \u2014 that is ~2.3% of the 99% notional commitment at today's net worth."
+      "classification_note": "CRITICAL METHODOLOGY POINT: The 2015 '99% of Meta shares' pledge is NOT a Giving Pledge commitment and NOT a commitment to a 501(c)(3). It is a commitment to CZI, whose primary vehicle is the Chan Zuckerberg Initiative, LLC \u2014 a FOR-PROFIT limited liability company. Per Wikipedia and multiple commentators: as an LLC, CZI can invest in for-profit companies, make political donations, lobby, and is NOT required to disclose its pay, grants, or any financials. IPS explicitly excludes LLC giving from generosity measures. Under Forbes/Chronicle/IPS methodology, the 99% pledge is NOT counted as charitable giving until and unless transferred to a 501(c)(3) / DAF / equivalent charitable structure. Currently ~$5.29B has flowed into CZIF (the 501(c)(3) arm) per ProPublica \u2014 that is ~2.3% of the 99% notional commitment at today's net worth.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "zuck_czi_cumulative_grants_announcement",
@@ -324,7 +342,8 @@
       "source_type": "organizational_self_report",
       "source_url": "https://chanzuckerberg.com/grants-ventures/",
       "retrieved_at": "2026-04-23",
-      "classification_note": "SELF-REPORTED, UNAUDITED. CZI's $7.22B headline aggregates across CZI LLC (opaque), CZIF 501(c)(3), CZI DAF at SVCF, and CZI Advocacy 501(c)(4). ProPublica 990-PF confirms ~$1.87B in 501(c)(3) grants_out 2017-2024 \u2014 only ~26% of the self-reported total. The remaining ~74% ($5.35B) flowed through opaque LLC / DAF / c4 channels where neither recipients nor structures are independently verifiable. Under our v3 methodology, LLC-channel grants are NOT counted as charitable giving. DAF-channel grants are partial-observable (the SVCF transfer is counted as direct_gift but SVCF does not disclose which recipients got which Zuckerberg DAF dollars)."
+      "classification_note": "SELF-REPORTED, UNAUDITED. CZI's $7.22B headline aggregates across CZI LLC (opaque), CZIF 501(c)(3), CZI DAF at SVCF, and CZI Advocacy 501(c)(4). ProPublica 990-PF confirms ~$1.87B in 501(c)(3) grants_out 2017-2024 \u2014 only ~26% of the self-reported total. The remaining ~74% ($5.35B) flowed through opaque LLC / DAF / c4 channels where neither recipients nor structures are independently verifiable. Under our v3 methodology, LLC-channel grants are NOT counted as charitable giving. DAF-channel grants are partial-observable (the SVCF transfer is counted as direct_gift but SVCF does not disclose which recipients got which Zuckerberg DAF dollars).",
+      "event_role_canonical": "announcement"
     },
     {
       "event_id": "zuck_czi_biohub_2016",
@@ -335,7 +354,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/Chan_Zuckerberg_Initiative",
       "retrieved_at": "2026-04-23",
-      "notes": "Most of this disbursement would flow through CZIF as grants_out over time and should already be captured in the annual CZIF totals. Flagging here for dedup."
+      "notes": "Most of this disbursement would flow through CZIF as grants_out over time and should already be captured in the annual CZIF totals. Flagging here for dedup.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "zuck_czi_science_3b_2016",
@@ -347,7 +367,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/Chan_Zuckerberg_Initiative",
       "retrieved_at": "2026-04-23",
-      "notes": "$3B over 10 years science commitment. 10-year window runs 2016-2026. Partial-tracked: CZIF grants_out 2017-2024 sum ~$1.87B and CZI LLC disbursements separately self-reported. Does NOT double-count with CZIF events above."
+      "notes": "$3B over 10 years science commitment. 10-year window runs 2016-2026. Partial-tracked: CZIF grants_out 2017-2024 sum ~$1.87B and CZI LLC disbursements separately self-reported. Does NOT double-count with CZIF events above.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -546,7 +567,11 @@
     "observable_plus_hidden_ratio_to_expected": 1.889,
     "tier": "Tier_C_Opaque",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2 \u2014 Zuckerberg clears this comfortably (1.89x) IF self-reported $7.22B is accepted. Tier A/B/C classification here depends on how much weight is given to self-reported-unverifiable vs. independently-verified dollars. Independently verified: ~$4.37B (ratio 1.05x expected, passes 10% of liquid benchmark). But the 99% Meta pledge targets ~$227B (99% of net worth) \u2014 and observed+hidden together is $7.8B \u2014 only 3.4% of the 99% pledge target. Classification: Tier C (OPAQUE) \u2014 not verifiable-low, not verifiable-high, depends critically on how the LLC-channel dollars are resolved.",
-    "tier_published_caveat": "Zuckerberg is the canonical LLC_OPACITY case. His 990-PF grants alone (~$1.87B 2017-2024) would place him mid-tier. The 99% Meta shares pledge, if fully disbursed to 501(c)(3)s over his lifetime, would make him one of the largest philanthropists in history. As of 2026-04, only ~2.3% of that notional has reached the 501(c)(3) arm of CZI. The rest sits in a for-profit LLC whose grantees we cannot independently verify. Readers should understand this as: 'Signed the Giving Pledge, structured primary giving vehicle as a for-profit LLC, self-reports large aggregate giving \u2014 external verification confirms less than 30% of the self-report.'"
+    "tier_published_caveat": "Zuckerberg is the canonical LLC_OPACITY case. His 990-PF grants alone (~$1.87B 2017-2024) would place him mid-tier. The 99% Meta shares pledge, if fully disbursed to 501(c)(3)s over his lifetime, would make him one of the largest philanthropists in history. As of 2026-04, only ~2.3% of that notional has reached the 501(c)(3) arm of CZI. The rest sits in a for-profit LLC whose grantees we cannot independently verify. Readers should understand this as: 'Signed the Giving Pledge, structured primary giving vehicle as a for-profit LLC, self-reports large aggregate giving \u2014 external verification confirms less than 30% of the self-report.'",
+    "expected_5pct_tenure_usd": 41400000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 37035000000,
+    "ratio_observable_to_5pct_tenure": 0.1054
   },
   "scrooge_legacy_score_internal_only": {
     "value": 72.5,

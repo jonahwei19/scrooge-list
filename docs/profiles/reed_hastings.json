@@ -57,7 +57,8 @@
       "source_url": "https://variety.com/2024/digital/news/reed-hastings-netflix-stock-silicon-valley-community-foundation-1235891145/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This is a transfer INTO the Hastings Fund DAF, NOT out-the-door giving. 2M Netflix shares. Per dedup rule #2, we count DAF grants OUT (which are donor-opaque at SVCF and not directly attributable to the Hastings Fund in SVCF's aggregate 990). If the Hastings pass-through to UNCF/Morehouse/Spelman or any other charity occurred post-2024, it would flow from this DAF balance \u2014 counting both the $1.1B inflow and later DAF-sourced grants would double-count. CONSERVATIVE CHOICE: we count this $1.1B as 'committed charitable' for tier calculation under an 'inflows count if donor is transparent about intent' variant, but flag prominently."
+      "dedup_note": "CRITICAL: This is a transfer INTO the Hastings Fund DAF, NOT out-the-door giving. 2M Netflix shares. Per dedup rule #2, we count DAF grants OUT (which are donor-opaque at SVCF and not directly attributable to the Hastings Fund in SVCF's aggregate 990). If the Hastings pass-through to UNCF/Morehouse/Spelman or any other charity occurred post-2024, it would flow from this DAF balance \u2014 counting both the $1.1B inflow and later DAF-sourced grants would double-count. CONSERVATIVE CHOICE: we count this $1.1B as 'committed charitable' for tier calculation under an 'inflows count if donor is transparent about intent' variant, but flag prominently.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "hastings_svcf_dec2024",
@@ -72,7 +73,8 @@
       "source_url": "https://variety.com/2024/digital/news/reed-hastings-500-million-netflix-shares-gift-silicon-valley-community-foundation-1236087080/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Second 2024 DAF transfer (790,000 Netflix shares). Same dedup concern as hastings_svcf_jan2024. Combined 2024 DAF transfers: $1.6B."
+      "dedup_note": "Second 2024 DAF transfer (790,000 Netflix shares). Same dedup concern as hastings_svcf_jan2024. Combined 2024 DAF transfers: $1.6B.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "hastings_svcf_2016_founding",
@@ -87,7 +89,8 @@
       "source_url": "https://philanthropynewsdigest.org/news/reed-hastings-creates-100-million-education-fund",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Founding contribution to Hastings Fund DAF. Earmarked for education \u2014 first grants went to Hispanic Foundation of Silicon Valley and UNCF ($1.5M initial disbursement). DAF inflow, not final outflow."
+      "dedup_note": "Founding contribution to Hastings Fund DAF. Earmarked for education \u2014 first grants went to Hispanic Foundation of Silicon Valley and UNCF ($1.5M initial disbursement). DAF inflow, not final outflow.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "hastings_uncf_morehouse_spelman_2020",
@@ -103,7 +106,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Largest single HBCU individual gift on record at announcement. Task description said '$100M to UNCF + HBCUs' \u2014 correct amount is $120M total, split 3 ways. Press language ambiguous on vehicle; most likely flowed from Hastings Fund DAF (this is how their grants typically route per Chronicle of Philanthropy). If so, this is a DAF-outflow and is additive to DAF-inflow rows only if we don't also count the inflows. CONSERVATIVE CHOICE: count this $120M as observable-direct AND treat DAF inflows as committed-but-not-disbursed \u2014 no double-counting because the $100M 2016 founding inflow predates this outflow and $1.1B/$500M 2024 inflows postdate it.",
-      "classification_note": "NOT the same as 'Netflix Fund for Black Community' ($100M corporate Netflix Inc. treasury initiative in 2020 \u2014 separate entity, not Hastings personal)."
+      "classification_note": "NOT the same as 'Netflix Fund for Black Community' ($100M corporate Netflix Inc. treasury initiative in 2020 \u2014 separate entity, not Hastings personal).",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "hastings_bowdoin_ai_2025",
@@ -118,7 +122,8 @@
       "source_url": "https://www.bowdoin.edu/news/2025/03/announcing-the-hastings-initiative-for-ai-and-humanity.html",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Largest gift in Bowdoin's 231-year history. Announced March 2025. Funds ten new faculty + AI ethics research. Probably sourced from Hastings Fund DAF balance \u2014 if so, this is a pass-through from the 2024 $1.6B inflows, not additive."
+      "dedup_note": "Largest gift in Bowdoin's 231-year history. Announced March 2025. Funds ten new faculty + AI ethics research. Probably sourced from Hastings Fund DAF balance \u2014 if so, this is a pass-through from the 2024 $1.6B inflows, not additive.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "hastings_gavi_2020",
@@ -133,7 +138,8 @@
       "source_url": "https://www.gavi.org/news/media-room/reed-hastings-and-patty-quillin-support-gavi-us-30-million-donation",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "First private-sector gift in Gavi's COVID drive. Likely DAF-sourced."
+      "dedup_note": "First private-sector gift in Gavi's COVID drive. Likely DAF-sourced.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "hastings_total_2024_chronicle",
@@ -145,7 +151,8 @@
       "source_url": "https://www.philanthropy.com/news/netflix-co-founder-reed-hastings-has-given-1-6-billion-this-year/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Chronicle of Philanthropy reports Hastings gave $1.6B of stock in 2024 to unnamed charity/charities per SEC Form 4 filings. This equals the sum of hastings_svcf_jan2024 ($1.1B) + hastings_svcf_dec2024 ($500M). Do NOT double-count with the transfer_in rows. This row exists only as an external cross-check."
+      "dedup_note": "Chronicle of Philanthropy reports Hastings gave $1.6B of stock in 2024 to unnamed charity/charities per SEC Form 4 filings. This equals the sum of hastings_svcf_jan2024 ($1.1B) + hastings_svcf_dec2024 ($500M). Do NOT double-count with the transfer_in rows. This row exists only as an external cross-check.",
+      "event_role_canonical": "reference_only"
     }
   ],
   "pledges_and_announcements": [
@@ -166,7 +173,8 @@
       "source_url": "https://www.givingpledge.org/pledger/reed-hastings-and-patty-quillin/",
       "retrieved_at": "2026-04-24",
       "notes": "Signed September 2012 as one of 11 families that year. Joint pledge with wife Patty Quillin. Shortest-worded Giving Pledge letter in the cohort (~55 words).",
-      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -284,7 +292,9 @@
     "observable_plus_hidden_ratio_to_expected_outflows": 0.62,
     "tier": "Opaque (Tier C) OR On Track (Tier B) \u2014 methodology-dependent",
     "tier_rule": "Under INFLOWS-counting methodology (Forbes/Chronicle standard): Hastings has given ~29% of current net worth and 4.2x the 10% expected norm \u2014 this would place him in a HIGH_GENEROSITY tier above 'On Track'. Under OUTFLOWS-counting methodology (IPS/transparency-first): only ~$200M is end-recipient verifiable, giving ratio drops to 0.49x expected and only 3.4% of net worth \u2014 this is Tier B 'On Track' or 'Probably Low' depending on how strictly we treat unverifiable inflows. SCROOGE LIST DEFAULT: we publish as Tier C 'Opaque' because the DAF structure genuinely prevents readers from knowing whether $1.5B has moved to real charities or is sitting warehoused at SVCF indefinitely.",
-    "tier_published_caveat": "Hastings is the canonical 'DAF-heavy Giving Pledger' \u2014 publicly committed, structurally liquid, and has moved large dollar amounts out of his personal balance sheet into a charitable vehicle. Readers should know that $1.7B has been committed but only ~$200M has been verifiably delivered to end recipients as of 2026-04. The DAF may be disbursing at a healthy rate; we simply can't see it. This is a transparency concern, not (necessarily) a generosity concern."
+    "tier_published_caveat": "Hastings is the canonical 'DAF-heavy Giving Pledger' \u2014 publicly committed, structurally liquid, and has moved large dollar amounts out of his personal balance sheet into a charitable vehicle. Readers should know that $1.7B has been committed but only ~$200M has been verifiably delivered to end recipients as of 2026-04. The DAF may be disbursing at a healthy rate; we simply can't see it. This is a transparency concern, not (necessarily) a generosity concern.",
+    "expected_5pct_tenure_usd": 2842000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py"
   },
   "scrooge_legacy_score_internal_only": {
     "value_inflows_method": 22.5,

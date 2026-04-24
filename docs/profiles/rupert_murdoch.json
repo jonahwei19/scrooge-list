@@ -62,7 +62,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Murdoch_Children%27s_Research_Institute",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "attribution_note": "Described as 'Rupert Murdoch and his family' \u2014 in practice, Dame Elisabeth Murdoch (Rupert's mother) became patron and was the dominant philanthropic force. How much of the A$5M was Rupert personally vs. family/News Corp is not disclosed. Treated here as half attributable to Rupert."
+      "attribution_note": "Described as 'Rupert Murdoch and his family' \u2014 in practice, Dame Elisabeth Murdoch (Rupert's mother) became patron and was the dominant philanthropic force. How much of the A$5M was Rupert personally vs. family/News Corp is not disclosed. Treated here as half attributable to Rupert.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "murdoch_foundation_1996_2015",
@@ -81,7 +82,8 @@
       "secondary_source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "The Inside Philanthropy $6M estimate covers ~2005\u20132007; ProPublica shows $0 grants 2011\u20132015. Combined figure ~$6M is a cumulative lifetime upper bound for Murdoch Foundation Inc (EIN 13-3756893). Officers listed as K Rupert Murdoch (Chair), Arthur Siskind, Elisabeth/James/Lachlan Murdoch, Prudence MacLeod \u2014 all zero comp."
+      "dedup_note": "The Inside Philanthropy $6M estimate covers ~2005\u20132007; ProPublica shows $0 grants 2011\u20132015. Combined figure ~$6M is a cumulative lifetime upper bound for Murdoch Foundation Inc (EIN 13-3756893). Officers listed as K Rupert Murdoch (Chair), Arthur Siskind, Elisabeth/James/Lachlan Murdoch, Prudence MacLeod \u2014 all zero comp.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "murdoch_rick_warren_peace_2007",
@@ -95,7 +97,8 @@
       "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "dedup_note": "May be inside the Murdoch Foundation grant total \u2014 source does not specify vehicle. Counted once conservatively; if later found inside the $6M foundation bucket, subtract to avoid double-count."
+      "dedup_note": "May be inside the Murdoch Foundation grant total \u2014 source does not specify vehicle. Counted once conservatively; if later found inside the $6M foundation bucket, subtract to avoid double-count.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "murdoch_thatcher_chelsea_pensioners_2013",
@@ -107,7 +110,8 @@
       "source_type": "secondary_press",
       "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "murdoch_tony_blair_faith_foundation",
@@ -122,7 +126,8 @@
       "source_type": "secondary_press",
       "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
       "retrieved_at": "2026-04-24",
-      "confidence": "low"
+      "confidence": "low",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "murdoch_milly_dowler_2011",
@@ -136,7 +141,8 @@
       "source_url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/rupert-murdoch-html",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Sometimes characterized as News Corp / News International settlement, not personal giving. Press accounts vary; conservatively counted as half personal."
+      "dedup_note": "Sometimes characterized as News Corp / News International settlement, not personal giving. Press accounts vary; conservatively counted as half personal.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "murdoch_bushfire_personal_2020",
@@ -152,7 +158,8 @@
       "source_url": "https://www.smh.com.au/business/companies/rupert-murdoch-s-news-corp-pledges-5-million-to-bushfire-relief-20200114-p53rag.html",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Separate from News Corp's own A$5M corporate pledge. Rupert + Jerry personal is A$2M \u2248 US$1.4M at Jan-2020 rates."
+      "dedup_note": "Separate from News Corp's own A$5M corporate pledge. Rupert + Jerry personal is A$2M \u2248 US$1.4M at Jan-2020 rates.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "murdoch_herald_sun_2024_pledge",
@@ -166,7 +173,8 @@
       "source_url": "https://www.linkedin.com/posts/heraldsun_rupert-murdoch-herald-sun-donate-300k-to-activity-7273456696356696065-nBt3",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "dedup_note": "May be corporate Herald Sun giving rather than Rupert personal. Counted at 50% attribution."
+      "dedup_note": "May be corporate Herald Sun giving rather than Rupert personal. Counted at 50% attribution.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -177,7 +185,8 @@
       "source_url": "https://www.givingpledge.org/signatories",
       "retrieved_at": "2026-04-24",
       "notes": "Verified: Rupert Murdoch is NOT listed as a Giving Pledge signatory. No Murdoch family member on the current pledger roster. This is consistent with Forbes assigning Murdoch their lowest possible philanthropy score (1/5).",
-      "secondary_source_url": "https://www.insidephilanthropy.com/home/will-philanthropy-get-a-cut-of-the-3-3-billion-murdoch-succession-deal"
+      "secondary_source_url": "https://www.insidephilanthropy.com/home/will-philanthropy-get-a-cut-of-the-3-3-billion-murdoch-succession-deal",
+      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "murdoch_succession_settlement_2025",
@@ -190,7 +199,8 @@
       "source_type": "news",
       "source_url": "https://fortune.com/2025/09/08/rupert-murdoch-settlement-trust-lachlan-james-fox-news-wall-street-journal/",
       "retrieved_at": "2026-04-24",
-      "classification_note": "This is an intra-family wealth transfer to settle a trust-control lawsuit, NOT charitable giving. Included here for context because Inside Philanthropy has suggested the payouts may boost downstream family philanthropy (James/Kathryn Quadrivium has a precedent of redeploying such proceeds). Rupert's personal philanthropy was not altered by the deal. NOT counted in observable giving."
+      "classification_note": "This is an intra-family wealth transfer to settle a trust-control lawsuit, NOT charitable giving. Included here for context because Inside Philanthropy has suggested the payouts may boost downstream family philanthropy (James/Kathryn Quadrivium has a precedent of redeploying such proceeds). Rupert's personal philanthropy was not altered by the deal. NOT counted in observable giving.",
+      "event_role_canonical": "private_investment"
     }
   ],
   "political_giving": {
@@ -367,7 +377,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.0676,
     "tier": "Verified_Low (Tier A)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Murdoch: ($8M + $15M) / $340.5M = 6.76% \u2014 well below 0.2 threshold. Unlike Ellison, he has no Giving Pledge commitment, no disclosed charitable trust, and no philanthropic LLC that would force us up to 'Probably Low'. The evidence is consistent and convergent: Forbes' lowest philanthropy score, a dormant foundation, no pledge, no announced major gifts in 20+ years. This is a canonical Tier A Verified Low case.",
-    "tier_published_caveat": "Readers should see Murdoch as the canonical counterexample to the 'billionaires quietly give a lot' narrative: his personal philanthropy is vanishingly small in both absolute and percentage terms, his foundation is dormant, and he has declined the Giving Pledge. The large News Corp/Fox corporate giving footprint is not his personal wealth. The $3.3B 2025 settlement moved $1.1B into each of three children's hands \u2014 family downstream giving (especially Quadrivium) may grow, but that is not Rupert's giving."
+    "tier_published_caveat": "Readers should see Murdoch as the canonical counterexample to the 'billionaires quietly give a lot' narrative: his personal philanthropy is vanishingly small in both absolute and percentage terms, his foundation is dormant, and he has declined the Giving Pledge. The large News Corp/Fox corporate giving footprint is not his personal wealth. The $3.3B 2025 settlement moved $1.1B into each of three children's hands \u2014 family downstream giving (especially Quadrivium) may grow, but that is not Rupert's giving.",
+    "expected_5pct_tenure_usd": 5958750000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 5950750000,
+    "ratio_observable_to_5pct_tenure": 0.0013
   },
   "scrooge_legacy_score_internal_only": {
     "value": 99.6,

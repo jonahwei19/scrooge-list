@@ -60,7 +60,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ellison_lef_2023",
@@ -72,7 +73,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ellison_lef_2022",
@@ -84,7 +86,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ellison_lef_2021",
@@ -96,7 +99,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ellison_lef_2020",
@@ -108,7 +112,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ellison_lef_2019",
@@ -120,7 +125,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/943269827",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ellison_usc_2016",
@@ -135,7 +141,8 @@
       "source_url": "https://www.forbes.com/sites/katevinton/2016/05/12/oracle-founder-larry-ellison-donates-200-million-to-usc-for-cancer-treatment-center/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "TODO: verify whether this $200M was paid through LEF (in which case it would be inside the 2016 LEF 990-PF grant total, not additive) or from personal assets. LEF 2016 data not yet retrieved. If through LEF, this event would be rolled into ellison_lef_2016 once that year's 990 is pulled. If personal, it is additive."
+      "dedup_note": "TODO: verify whether this $200M was paid through LEF (in which case it would be inside the 2016 LEF 990-PF grant total, not additive) or from personal assets. LEF 2016 data not yet retrieved. If through LEF, this event would be rolled into ellison_lef_2016 once that year's 990 is pulled. If personal, it is additive.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ellison_emf_transfers_1997_2013",
@@ -152,7 +159,8 @@
       "source_url": "https://fortune.com/2025/09/23/oracle-founder-larry-ellison-pledged-give-away-95-percent-of-393b-fortune-leadership-changes-mystery/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: This is a transfer INTO Ellison Medical Foundation, NOT out-the-door giving. Per dedup rule #2, we count EMF's grants OUT (which we do not yet have), not the transfers in. Double-counting risk if EMF's grant-outs are later found and this row is also counted. Mark as transfer_in and exclude from observable rollup."
+      "dedup_note": "CRITICAL: This is a transfer INTO Ellison Medical Foundation, NOT out-the-door giving. Per dedup rule #2, we count EMF's grants OUT (which we do not yet have), not the transfers in. Double-counting risk if EMF's grant-outs are later found and this row is also counted. Mark as transfer_in and exclude from observable rollup.",
+      "event_role_canonical": "transfer_in"
     }
   ],
   "pledges_and_announcements": [
@@ -168,7 +176,8 @@
       "source_url": "https://www.givingpledge.org/pledger/larry-ellison/",
       "retrieved_at": "2026-04-23",
       "notes": "Wealth at signing ~$12B (Forbes 2010 estimate). 95% target in 2010 dollars = ~$11.4B. Current net worth is ~$227B; 95% target is now ~$216B. Gap between documented giving-out and pledge target: ~$215B.",
-      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "ellison_gp_amendment_2025",
@@ -179,7 +188,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/larry-ellison-wants-for-profits-to-solve-big-problems-heres-what-that-mindset-overlooks",
       "retrieved_at": "2026-04-23",
       "quote_paraphrased_by_ip": "I believed and continue to believe that practicing philanthropy by giving to nonprofit organizations that pursue public good is important. But there are additional ways that I would like to invest my time and resources in giving back to the world we share.",
-      "notes": "Inside Philanthropy describes this as Ellison 'amending' his 2010 Giving Pledge to include for-profit ventures through Ellison Institute of Technology. Standard Forbes/Chronicle/IPS methodology does not count for-profit investment as philanthropy."
+      "notes": "Inside Philanthropy describes this as Ellison 'amending' his 2010 Giving Pledge to include for-profit ventures through Ellison Institute of Technology. Standard Forbes/Chronicle/IPS methodology does not count for-profit investment as philanthropy.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "ellison_eit_oxford_1p3b",
@@ -191,7 +201,8 @@
       "source_type": "news",
       "source_url": "https://www.nytimes.com/2025/08/12/business/larry-ellison-oracle-philanthropy.html",
       "retrieved_at": "2026-04-23",
-      "classification_note": "Ellison Institute explicitly described by NYT as for-profit ventures alongside research. Classification under Forbes/IPS methodology: NOT counted as charitable giving until disbursed to a 501(c)(3) or foreign equivalent. Flag for reclassification when disbursement evidence appears."
+      "classification_note": "Ellison Institute explicitly described by NYT as for-profit ventures alongside research. Classification under Forbes/IPS methodology: NOT counted as charitable giving until disbursed to a 501(c)(3) or foreign equivalent. Flag for reclassification when disbursement evidence appears.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "ellison_eit_100m_2025",
@@ -203,7 +214,8 @@
       "source_url": "https://www.hindustantimes.com/business/larry-ellisons-philanthropy-comes-into-focus-amid-surge-in-net-worth-101758788421357-amp.html",
       "retrieved_at": "2026-04-23",
       "confidence": "low",
-      "classification_note": "Same for-profit hybrid concern as ellison_eit_oxford_1p3b"
+      "classification_note": "Same for-profit hybrid concern as ellison_eit_oxford_1p3b",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "ellison_paramount_2025",
@@ -215,7 +227,8 @@
       "source_type": "news",
       "source_url": "https://fortune.com/2025/12/23/larry-ellison-40-billion-pledge-son-paramount-philanthropy-capitalism/",
       "retrieved_at": "2026-04-23",
-      "classification_note": "Fortune explicitly: 'not a charitable donation in the classic sense.' Included here for context on where Ellison's capital is being deployed; NOT counted as philanthropy."
+      "classification_note": "Fortune explicitly: 'not a charitable donation in the classic sense.' Included here for context on where Ellison's capital is being deployed; NOT counted as philanthropy.",
+      "event_role_canonical": "private_investment"
     }
   ],
   "political_giving": {
@@ -364,7 +377,11 @@
     "observable_plus_hidden_ratio_to_expected": 1.04,
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Ellison fails this test only because the trust_outcome_uncertainty is large \u2014 he has publicly stated that virtually all his wealth is in a trust with charitable intent. Without that disclosed trust, he would be Tier A Verified Low. WITH the trust, he's Tier B 'Probably Low' \u2014 publicly committed to giving but has not yet done so, and the trust's ultimate disposition is private.",
-    "tier_published_caveat": "Readers should see Ellison as the canonical example of 'signed the Giving Pledge, hasn't followed through yet.' Observable giving ~$467M is 0.2% of current net worth and 8% of the 10% formal norm. The trust could still make good; as of 2026-04, it has not."
+    "tier_published_caveat": "Readers should see Ellison as the canonical example of 'signed the Giving Pledge, hasn't followed through yet.' Observable giving ~$467M is 0.2% of current net worth and 8% of the 10% formal norm. The trust could still make good; as of 2026-04, it has not.",
+    "expected_5pct_tenure_usd": 71125000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 70657500000,
+    "ratio_observable_to_5pct_tenure": 0.0066
   },
   "scrooge_legacy_score_internal_only": {
     "value": 97.95,

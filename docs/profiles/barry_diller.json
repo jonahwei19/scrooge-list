@@ -60,7 +60,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "diller_dvfff_2023",
@@ -72,7 +73,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "diller_dvfff_2022",
@@ -84,7 +86,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "diller_oldfdn_2021",
@@ -98,7 +101,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "diller_oldfdn_2020",
@@ -110,7 +114,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "diller_oldfdn_2019",
@@ -124,7 +129,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "diller_littleisland_direct_construction",
@@ -142,7 +148,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Little_Island_at_Pier_55",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL dedup: Pier55 Inc 990s show contributions of $25.2M (2015) + $9.0M (2017) + $25.0M (2018) + $39.6M (2019) + $61.6M (2021) + $35.6M (2024) = $196.0M observable contributions-in through 2024. Some portion (exactly $13.4M confirmed in 2021) came through The Diller Foundation grants-out and is ALSO counted in diller_oldfdn_2021 above. To avoid double-counting, we count: (A) the Diller Foundation grants-out total in diller_oldfdn_* events, and (B) Pier55 contributions-in NET of that foundation pass-through. Construction cost $231.3M and Pier55 receipts through 2024 are consistent if Diller contributed directly to Pier55 in amounts not passing through the foundation. We classify this as direct_gift for the $231.3M construction spend and apply dedup by subtracting $13.4M (confirmed 2021 foundation pass-through) and any other foundation-to-Pier55 grants from the rollup."
+      "dedup_note": "CRITICAL dedup: Pier55 Inc 990s show contributions of $25.2M (2015) + $9.0M (2017) + $25.0M (2018) + $39.6M (2019) + $61.6M (2021) + $35.6M (2024) = $196.0M observable contributions-in through 2024. Some portion (exactly $13.4M confirmed in 2021) came through The Diller Foundation grants-out and is ALSO counted in diller_oldfdn_2021 above. To avoid double-counting, we count: (A) the Diller Foundation grants-out total in diller_oldfdn_* events, and (B) Pier55 contributions-in NET of that foundation pass-through. Construction cost $231.3M and Pier55 receipts through 2024 are consistent if Diller contributed directly to Pier55 in amounts not passing through the foundation. We classify this as direct_gift for the $231.3M construction spend and apply dedup by subtracting $13.4M (confirmed 2021 foundation pass-through) and any other foundation-to-Pier55 grants from the rollup.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "diller_littleisland_maintenance",
@@ -160,7 +167,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/Little_Island_at_Pier_55",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "diller_highline_2011",
@@ -175,7 +183,8 @@
       "source_url": "https://www.philanthropy.com/article/20-million-gift-to-support-n-y-s-high-line-park/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "cumulative_note": "Prior gifts ($15M across 2 earlier donations) per Huffington Post and Philanthropy News Digest \u2014 likely already captured within older Diller Foundation 990-PF grants_out pre-2019."
+      "cumulative_note": "Prior gifts ($15M across 2 earlier donations) per Huffington Post and Philanthropy News Digest \u2014 likely already captured within older Diller Foundation 990-PF grants_out pre-2019.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "diller_mptf_2012",
@@ -189,7 +198,8 @@
       "source_type": "news",
       "source_url": "https://www.hollywoodreporter.com/news/general-news/barry-diller-donation-mptf-333259/",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "diller_sol_museum",
@@ -205,7 +215,8 @@
       "source_type": "donor_registry",
       "source_url": "https://www.statueofliberty.org/statue-of-liberty/statue-of-liberty-museum/major-donors-6/",
       "retrieved_at": "2026-04-24",
-      "confidence": "low"
+      "confidence": "low",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "diller_shed_arts",
@@ -221,7 +232,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/The_Shed_(arts_center)",
       "retrieved_at": "2026-04-24",
-      "confidence": "low"
+      "confidence": "low",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -238,7 +250,8 @@
       "status_reasoning": "Cumulative observable giving via both foundations + Little Island direct ~$300-400M, plus MPTF $30M, High Line $35M, other. Full lifetime observable giving likely in $400-500M range. This is ~15-19% of current 50% pledge target, but Diller's net worth has grown modestly (not 30x like Ellison). If he continues at 2020-2021 foundation giving rate ($27M/yr) plus Little Island maintenance draws, he is on pace to fulfill 50% lifetime. NOT flagged as unfulfilled in IPS 2025 report's detailed fail list (would require cross-check).",
       "pledge_letter_quote": "I don't think there's another group like it anywhere \u2014 a room full of very complex personalities \u2014 of drive and aspiration \u2014 of ego and curiosity \u2014 all engaged in wanting to help solve problems for others, to make the world a fairer better place.",
       "source_url": "https://www.givingpledge.org/pledger/barry-diller-and-diane-von-furstenberg/",
-      "retrieved_at": "2026-04-24"
+      "retrieved_at": "2026-04-24",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -389,7 +402,11 @@
     "observable_plus_hidden_ratio_to_expected": 2.72,
     "tier": "Probably_Adequate (Tier C)",
     "tier_rule": "Observable $390M is 2.1x the 10% norm. Unlike Ellison, Diller is NOT a pledge-unfulfilled case; observable + committed giving exceeds expected threshold. However, cause-mix is narrow (NYC arts + own-class amenities) and includes the public-space-privatization critique. Not 'low' (not a Scrooge); not 'high-impact' (not giving at Bill Gates levels in absolute or marginal-utility terms). Classification 'Probably Adequate' fits: he has given materially, on pace with or above 10% norm, but the giving is concentrated in legacy-monument projects in his home city.",
-    "tier_published_caveat": "Diller is the counter-example to the pledge-unfulfilled archetype: modest-by-billionaire-standards net worth, roughly on pace with his Giving Pledge commitment, concrete large-dollar disbursements. The critique is qualitative (cause selection) not quantitative. Readers should understand 'Tier C / Probably Adequate' as 'not a Scrooge' not as 'exemplary.'"
+    "tier_published_caveat": "Diller is the counter-example to the pledge-unfulfilled archetype: modest-by-billionaire-standards net worth, roughly on pace with his Giving Pledge commitment, concrete large-dollar disbursements. The critique is qualitative (cause selection) not quantitative. Readers should understand 'Tier C / Probably Adequate' as 'not a Scrooge' not as 'exemplary.'",
+    "expected_5pct_tenure_usd": 1855000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 1465000000,
+    "ratio_observable_to_5pct_tenure": 0.2102
   },
   "scrooge_legacy_score_internal_only": {
     "value": 28.0,

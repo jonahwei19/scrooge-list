@@ -158,9 +158,12 @@ function renderCohort(bs) {
 
   const totalNw = bs.reduce((s, b) => s + (b.net_worth_best_usd_b || 0), 0);
   const totalObs = bs.reduce((s, b) => s + (b.observable_usd || 0) / 1e9, 0);
-  const totalExp = bs.reduce((s, b) => s + (b.expected_usd || 0) / 1e9, 0);
+  const totalExp = bs.reduce((s, b) => s + (b.expected_5pct_tenure_usd || 0) / 1e9, 0);
   const globalRatio = totalObs / totalExp;
-  const medianRatio = median(bs.map(b => b.ratio_observable_to_expected).filter(r => r != null));
+  const medianRatio = median(bs.map(b => b.ratio_observable_to_5pct_tenure).filter(r => r != null));
+  const scroogeShortfall = bs
+    .filter(b => b.tier === 'A_VERIFIED_LOW' || b.tier === 'B_PROBABLY_LOW' || b.tier === 'C_OPAQUE')
+    .reduce((s, b) => s + Math.max(0, (b.shortfall_5pct_usd || 0) / 1e9), 0);
 
   // Pledge stats
   const pledgeSigned = bs.filter(b => (b.red_flags || []).some(f =>
@@ -196,16 +199,16 @@ function renderCohort(bs) {
   const tierCounts = ['A_VERIFIED_LOW', 'B_PROBABLY_LOW', 'C_OPAQUE', 'ON_TRACK'].map(t => (byTier[t] || []).length);
   const tierTotal = tierCounts.reduce((a,b) => a+b, 0) || 1;
 
-  // Biggest gaps (dollar terms)
+  // Biggest gaps (dollar terms) — use canonical 5%/year shortfall
   const biggestGaps = [...bs]
-    .filter(b => b.expected_usd && b.observable_usd != null)
-    .sort((a, b) => (b.expected_usd - b.observable_usd) - (a.expected_usd - a.observable_usd))
-    .slice(0, 8);
+    .filter(b => b.shortfall_5pct_usd != null && b.shortfall_5pct_usd > 0)
+    .sort((a, b) => (b.shortfall_5pct_usd) - (a.shortfall_5pct_usd))
+    .slice(0, 10);
 
-  // Overachievers (biggest positive ratio)
+  // Overachievers (biggest positive ratio vs 5%/yr benchmark)
   const overachievers = [...bs]
-    .filter(b => b.ratio_observable_to_expected != null)
-    .sort((a, b) => b.ratio_observable_to_expected - a.ratio_observable_to_expected)
+    .filter(b => b.ratio_observable_to_5pct_tenure != null)
+    .sort((a, b) => b.ratio_observable_to_5pct_tenure - a.ratio_observable_to_5pct_tenure)
     .slice(0, 5);
 
   let html = '';
@@ -214,7 +217,7 @@ function renderCohort(bs) {
     <div class="stat-cell"><div class="big">${n}</div><div class="label">Subjects Researched</div></div>
     <div class="stat-cell"><div class="big">$${totalNw.toFixed(0)}B</div><div class="label">Combined Net Worth</div></div>
     <div class="stat-cell"><div class="big gilt">$${totalObs.toFixed(0)}B</div><div class="label">Combined Observable Giving</div></div>
-    <div class="stat-cell"><div class="big rust">${(globalRatio * 100).toFixed(0)}%</div><div class="label">vs. 10% benchmark</div></div>
+    <div class="stat-cell"><div class="big rust">$${scroogeShortfall.toFixed(0)}B</div><div class="label">Scrooge-Tier Shortfall (A+B+C)</div></div>
   </div>`;
 
   html += `<h2>Tier Distribution</h2>
@@ -231,8 +234,8 @@ function renderCohort(bs) {
       <span><span class="sw ok"></span>On Track (${tierCounts[3]})</span>
     </div>
     <div class="callout"><strong>Reading this</strong>${globalRatio >= 1
-      ? 'Aggregate observable giving across the cohort <em>exceeds</em> the 10%-of-liquid-wealth benchmark — because On Track subjects (Buffett, Scott, Bloomberg) carry huge out-the-door totals that mask the individual gaps.'
-      : 'Aggregate observable giving <em>falls short</em> of the benchmark.'} Median subject ratio is <strong>${(medianRatio * 100).toFixed(0)}%</strong> of benchmark — the typical subject is below the norm even if the aggregate isn\'t.</div>`;
+      ? ' Aggregate observable giving across the cohort <em>exceeds</em> the 5%-per-year benchmark — because On Track subjects (Buffett, Scott, Bloomberg) carry huge out-the-door totals that mask the individual gaps.'
+      : ' Aggregate observable giving <em>falls short</em> of the 5%-per-year-of-tenure benchmark.'} Median subject ratio is <strong>${(medianRatio * 100).toFixed(0)}%</strong> of benchmark — the typical subject is well below the norm even when the aggregate isn\'t.</div>`;
 
   html += `<h2>Most Common Red Flags</h2>
     <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Count of subjects with each flag. Bar width = share of 51-subject cohort.</p>`;
@@ -245,19 +248,18 @@ function renderCohort(bs) {
     </div>`;
   }
 
-  html += `<h2>Biggest Dollar Gaps (Observable − Expected)</h2>
-    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Subjects whose observable giving falls furthest short of the 10%-of-liquid-wealth capacity benchmark in absolute dollars. Pure size effect — Musk dominates.</p>
+  html += `<h2>Biggest Undisbursed Capacity</h2>
+    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Subjects whose observable giving falls furthest short of the 5%-per-year-of-tenure capacity benchmark in absolute dollars. This is the published v3 ranking basis — scale matters.</p>
     <table class="data-table">
-      <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Benchmark</th><th class="num">Gap</th></tr></thead>
+      <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Benchmark</th><th class="num">Shortfall</th></tr></thead>
       <tbody>`;
   for (const b of biggestGaps) {
-    const gap = (b.expected_usd || 0) - (b.observable_usd || 0);
     html += `<tr onclick="location.href='profile.html?id=${b.id}'" style="cursor:pointer">
       <td><strong>${b.name_display}</strong></td>
       <td class="num">${fmtNw(b.net_worth_best_usd_b)}</td>
       <td class="num">${fmtUsd(b.observable_usd)}</td>
-      <td class="num">${fmtUsd(b.expected_usd)}</td>
-      <td class="num" style="color:var(--rust)">${fmtUsd(gap)}</td>
+      <td class="num">${fmtUsd(b.expected_5pct_tenure_usd)}</td>
+      <td class="num" style="color:var(--rust)"><strong>${fmtUsd(b.shortfall_5pct_usd)}</strong></td>
     </tr>`;
   }
   html += `</tbody></table>`;
@@ -268,7 +270,7 @@ function renderCohort(bs) {
       <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Ratio</th></tr></thead>
       <tbody>`;
   for (const b of overachievers) {
-    const r = b.ratio_observable_to_expected;
+    const r = b.ratio_observable_to_5pct_tenure;
     const rStr = r >= 1 ? r.toFixed(1) + '×' : (r * 100).toFixed(0) + '%';
     html += `<tr onclick="location.href='profile.html?id=${b.id}'" style="cursor:pointer">
       <td><strong>${b.name_display}</strong></td>

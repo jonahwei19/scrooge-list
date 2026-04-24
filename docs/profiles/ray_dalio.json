@@ -63,7 +63,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Charitable disbursements from Dalio Foundation Inc 2024 990-PF."
+      "notes": "Charitable disbursements from Dalio Foundation Inc 2024 990-PF.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2023",
@@ -75,7 +76,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2022",
@@ -87,7 +89,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2021",
@@ -99,7 +102,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2020",
@@ -111,7 +115,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2019",
@@ -123,7 +128,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2015",
@@ -135,7 +141,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2014",
@@ -147,7 +154,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2013",
@@ -159,7 +167,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2012",
@@ -171,7 +180,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_foundation_2011",
@@ -183,7 +193,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dalio_nyp_health_justice_2020",
@@ -198,7 +209,8 @@
       "source_url": "https://www.prnewswire.com/news-releases/newyork-presbyterian-launches-dalio-center-for-health-justice-301150719.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Likely captured within 2020 Dalio Foundation grant_out ($33.6M) if paid from the foundation, but more likely spread across multiple years or paid from a separate personal/family-fund vehicle. Leave as standalone direct_gift and flag for dedup when Dalio Foundation 2020 grant recipient list is parsed. If double-counted, subtract from direct_gifts."
+      "dedup_note": "Likely captured within 2020 Dalio Foundation grant_out ($33.6M) if paid from the foundation, but more likely spread across multiple years or paid from a separate personal/family-fund vehicle. Leave as standalone direct_gift and flag for dedup when Dalio Foundation 2020 grant recipient list is parsed. If double-counted, subtract from direct_gifts.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "dalio_oceanx_bloomberg_2018",
@@ -214,7 +226,8 @@
       "source_url": "https://www.cnbc.com/2018/06/05/ray-dalio-james-cameron-launch-oceanx.html",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Joint with Bloomberg. Dalio share likely recorded through Dalio Foundation grants in subsequent years. Currently flagged as a pledge; roll into grants_out when specific payment years are identified."
+      "dedup_note": "Joint with Bloomberg. Dalio share likely recorded through Dalio Foundation grants in subsequent years. Currently flagged as a pledge; roll into grants_out when specific payment years are identified.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "dalio_ct_partnership_2019",
@@ -229,7 +242,8 @@
       "source_type": "announcement",
       "source_url": "https://ctmirror.org/2020/06/03/ct-and-dalio-philanthropies-to-formally-dissolve-education-partnership-on-friday/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "dalio_ct_trump_accounts_2025",
@@ -244,7 +258,8 @@
       "source_url": "https://www.businesswire.com/news/home/20251217847942/en/Dalios-Double-Down-on-Connecticuts-Youth",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "classification_note": "Press framed as philanthropy \u2014 Dalio Philanthropies seeded children's investment accounts. CNBC/CT Mirror note the accounts were created by the 2025 Trump administration legislation; they are tax-advantaged savings accounts for children, not partisan gifts. Count under observable pledges once payment starts. For now, pledge only."
+      "classification_note": "Press framed as philanthropy \u2014 Dalio Philanthropies seeded children's investment accounts. CNBC/CT Mirror note the accounts were created by the 2025 Trump administration legislation; they are tax-advantaged savings accounts for children, not partisan gifts. Count under observable pledges once payment starts. For now, pledge only.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "dalio_woods_hole_2012",
@@ -257,7 +272,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/OceanX",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "dalio_ct_lifetime_2025",
@@ -273,7 +289,8 @@
       "source_url": "https://www.businesswire.com/news/home/20251217847942/en/Dalios-Double-Down-on-Connecticuts-Youth",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "This $280M lifetime CT figure OVERLAPS with Dalio Foundation grants_out. Use for narrative context only. DO NOT add to observable rollup (would double-count)."
+      "dedup_note": "This $280M lifetime CT figure OVERLAPS with Dalio Foundation grants_out. Use for narrative context only. DO NOT add to observable rollup (would double-count).",
+      "event_role_canonical": "reference_only"
     }
   ],
   "pledges_and_announcements": [
@@ -295,7 +312,8 @@
       ],
       "source_url": "https://givingpledge.org/pledger?pledgerId=185",
       "retrieved_at": "2026-04-23",
-      "notes": "Pledge committed to giving 'more than half' of wealth in lifetime. Dalio's net worth at 2011 signing was ~$10B \u2014 50% target in 2011 dollars ~$5B. Current net worth ~$20B; 50% target now ~$10B. With ~$1B+ already distributed in grants from Dalio Foundation (per Wikipedia) and $7B+ contributed to Dalio Philanthropies vehicles, pledge is notably more on-track than most signers."
+      "notes": "Pledge committed to giving 'more than half' of wealth in lifetime. Dalio's net worth at 2011 signing was ~$10B \u2014 50% target in 2011 dollars ~$5B. Current net worth ~$20B; 50% target now ~$10B. With ~$1B+ already distributed in grants from Dalio Foundation (per Wikipedia) and $7B+ contributed to Dalio Philanthropies vehicles, pledge is notably more on-track than most signers.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -451,7 +469,11 @@
     "observable_plus_hidden_ratio_to_expected": 2.24,
     "tier": "On_Track (Tier C)",
     "tier_rule": "ON_TRACK requires (observable + hidden_upper) / expected > 1.0 AND pledge progress visible. Dalio passes: observable_plus_hidden_ratio = 2.24 (substantially above 1.0). Observable-only ratio is 0.42 (below 1.0) but the Dalio Family Fund Inc omission materially understates observable \u2014 once that $4B-asset entity's grants_out are retrieved, observable should rise to ~$2-3B range, putting observable-only ratio at 1.5-2.0. Dalio is the canonical example of a SIGNED PLEDGER WHO IS ACTUALLY GIVING \u2014 contrast with Ellison (Tier B) and Zuckerberg (Tier C/D).",
-    "tier_published_caveat": "Readers should see Dalio as a signed Giving Pledge member who is materially delivering on the commitment. Key nuances: (1) the $7B+ 'Dalio Philanthropies' lifetime figure includes transfers INTO the foundations and family fund, not just grants OUT \u2014 actual charitable deployment is lower. (2) LOW_PAYOUT flag on Dalio Foundation Inc 2021-2024 is real \u2014 the foundation has ballooned from $740M to $1.67B in assets while grant cadence slowed. (3) Connecticut partnership governance collapse in 2020 is a genuine governance flag. (4) Observable giving is understated in this file because Dalio Family Fund Inc 990s are not yet retrieved."
+    "tier_published_caveat": "Readers should see Dalio as a signed Giving Pledge member who is materially delivering on the commitment. Key nuances: (1) the $7B+ 'Dalio Philanthropies' lifetime figure includes transfers INTO the foundations and family fund, not just grants OUT \u2014 actual charitable deployment is lower. (2) LOW_PAYOUT flag on Dalio Foundation Inc 2021-2024 is real \u2014 the foundation has ballooned from $740M to $1.67B in assets while grant cadence slowed. (3) Connecticut partnership governance collapse in 2020 is a genuine governance flag. (4) Observable giving is understated in this file because Dalio Family Fund Inc 990s are not yet retrieved.",
+    "expected_5pct_tenure_usd": 9800000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 9216500000,
+    "ratio_observable_to_5pct_tenure": 0.0595
   },
   "scrooge_legacy_score_internal_only": {
     "value": 38.0,

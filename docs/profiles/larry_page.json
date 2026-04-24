@@ -80,7 +80,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Grant-recipient breakdown for 2024 not yet retrieved at line-item level. Based on 2023 pattern (77% DAF), estimated $220M+ of this went to DAFs; only DAF\u2192downstream grants would be true 'out-the-door' but those are donor-opaque."
+      "dedup_note": "Grant-recipient breakdown for 2024 not yet retrieved at line-item level. Based on 2023 pattern (77% DAF), estimated $220M+ of this went to DAFs; only DAF\u2192downstream grants would be true 'out-the-door' but those are donor-opaque.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2023",
@@ -134,7 +135,8 @@
         ],
         "breakdown_source_url": "https://www.insidephilanthropy.com/home/larry-page-steps-out-of-the-shadows-as-a-climate-donor",
         "breakdown_retrieved_at": "2026-04-23"
-      }
+      },
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2022",
@@ -147,7 +149,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Per Inside Philanthropy: 2022 CVPMF grants were 'almost all' (~99.9% per IP reporting) routed to DAFs (Schwab Charitable + NPT). Out-the-door impact opaque."
+      "dedup_note": "Per Inside Philanthropy: 2022 CVPMF grants were 'almost all' (~99.9% per IP reporting) routed to DAFs (Schwab Charitable + NPT). Out-the-door impact opaque.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2021",
@@ -160,7 +163,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Per InfluenceWatch: 2021 disbursements 'exclusively directed to the National Philanthropic Trust.' Observer May 2023 and PND separately report ~$227M distributed across 2020 and 2021 combined. Amount here ($196M) is from ProPublica summary table."
+      "dedup_note": "Per InfluenceWatch: 2021 disbursements 'exclusively directed to the National Philanthropic Trust.' Observer May 2023 and PND separately report ~$227M distributed across 2020 and 2021 combined. Amount here ($196M) is from ProPublica summary table.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2020",
@@ -172,7 +176,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2019",
@@ -185,7 +190,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "2019 payout was 0.2% of assets ($2.4B) \u2014 far below 5% legal minimum. Net-of-prior-year carry this may still comply via 5-year averaging, but it's a RED FLAG year."
+      "dedup_note": "2019 payout was 0.2% of assets ($2.4B) \u2014 far below 5% legal minimum. Net-of-prior-year carry this may still comply via 5-year averaging, but it's a RED FLAG year.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2015",
@@ -197,7 +203,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2014",
@@ -209,7 +216,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2013",
@@ -221,7 +229,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2012",
@@ -233,7 +242,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_2011",
@@ -245,7 +255,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "page_cvpmf_contributions_lifetime",
@@ -262,7 +273,8 @@
       "source_url": "https://www.influencewatch.org/person/larry-page/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: Per dedup rule, transfers IN to a foundation are NOT observable out-the-door giving. We count foundation grants OUT (which we have). This row exists for context \u2014 to show the gap between contributions-in (~$3.3B lifetime) and grants-out (lifetime ~$1.3B through 2024 from the summary data available). ~$3B sitting as foundation corpus as of 2024 = $4.45B. Foundation is growing, not disbursing."
+      "dedup_note": "CRITICAL: Per dedup rule, transfers IN to a foundation are NOT observable out-the-door giving. We count foundation grants OUT (which we have). This row exists for context \u2014 to show the gap between contributions-in (~$3.3B lifetime) and grants-out (lifetime ~$1.3B through 2024 from the summary data available). ~$3B sitting as foundation corpus as of 2024 = $4.45B. Foundation is growing, not disbursing.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "page_ebola_2014",
@@ -274,7 +286,8 @@
       "source_url": "https://philanthropynewsdigest.org/news/google-larry-page-pledge-30-million-for-ebola-relief-efforts",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "$15M from CVPMF (personal foundation) + $10M Google.org match + $5M from Google (corporate, not personal). Only the $15M from CVPMF is counted toward Page's personal philanthropy; should already be captured in CVPMF grants-out in 2014 or 2015 990-PF."
+      "dedup_note": "$15M from CVPMF (personal foundation) + $10M Google.org match + $5M from Google (corporate, not personal). Only the $15M from CVPMF is counted toward Page's personal philanthropy; should already be captured in CVPMF grants-out in 2014 or 2015 990-PF.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "page_xmas_donations_2015_2017",
@@ -289,7 +302,8 @@
       "source_url": "https://www.vox.com/recode/2019/12/18/21010108/larry-page-philanthropy-foundation-donor-advised-fund-christmas",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Widely reported ~$400M in 'Christmastime donations 2015-2017' \u2014 but per Vox / NCRP / Common Dreams, NONE went directly to operating charities; all were DAF transfers. Already captured inside CVPMF 990-PF grants-out totals for those years (2015=$99M, plus 2016 & 2017 not yet retrieved from ProPublica summary). DO NOT double-count as additional direct giving."
+      "dedup_note": "Widely reported ~$400M in 'Christmastime donations 2015-2017' \u2014 but per Vox / NCRP / Common Dreams, NONE went directly to operating charities; all were DAF transfers. Already captured inside CVPMF 990-PF grants-out totals for those years (2015=$99M, plus 2016 & 2017 not yet retrieved from ProPublica summary). DO NOT double-count as additional direct giving.",
+      "event_role_canonical": "announcement"
     }
   ],
   "pledges_and_announcements": [
@@ -301,7 +315,8 @@
       "status_source": "givingpledge.org \u2014 https://www.givingpledge.org/pledger/larry-page/ returns 404; Page is not in the public pledger list. Confirmed by Inside Philanthropy Jan 2024 ('IP-awarded title as the Least Google-able Megadonors').",
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-23",
-      "notes": "Neither Larry Page nor Sergey Brin has signed the Giving Pledge. This is notable because both are 20+ year centibillionaires, contemporaries of Zuckerberg (signed), Gates (co-founded), Buffett (co-founded), and Musk (signed). Eric Schmidt, the other major Google principal, HAS signed. Pledge absence is itself diagnostic: Page has never publicly committed to give away any specific fraction of his wealth."
+      "notes": "Neither Larry Page nor Sergey Brin has signed the Giving Pledge. This is notable because both are 20+ year centibillionaires, contemporaries of Zuckerberg (signed), Gates (co-founded), Buffett (co-founded), and Musk (signed). Eric Schmidt, the other major Google principal, HAS signed. Pledge absence is itself diagnostic: Page has never publicly committed to give away any specific fraction of his wealth.",
+      "event_role_canonical": "no_pledge"
     }
   ],
   "political_giving": {
@@ -506,7 +521,11 @@
     "tier": "Verified_Low (Tier A)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.3 AND no disclosed charitable pledge commitment that materially changes the trajectory. Page's ratio = 0.27 (at the edge). Critically, unlike Ellison (who has a disclosed trust with charitable intent pushing him to Tier B), Page has NO disclosed charitable pledge, NO Giving Pledge signature, multiple trusts with NO charitable designation, and an explicit pattern of tax-minimization-without-giving-match. Tier A Verified Low is the correct call.",
     "tier_published_caveat": "Page is the canonical Tier A example: 22+ years as billionaire, never signed Giving Pledge, foundation grants are 77-100% DAF-warehoused, direct-to-operating-charity dollars are a small fraction of wealth (<1%), tax-minimization behavior (Fiji, California exit to Miami) not matched by giving velocity. Even accepting foundation grants-out as fully charitable (charitable intent at the foundation level), Page deploys ~0.7% of NW lifetime \u2014 an order of magnitude below 10% norm. The DailyMail 0.03% headline is defensible under a strict 'direct to operating charity' numerator; the defensible-generous framing still lands below 1%. Either way: LOW.",
-    "comparison_to_ellison": "Ellison: observable ratio ~0.082 of expected but Tier B because of disclosed charitable trust. Page: ratio ~0.27 of expected (higher!) but Tier A because NO pledge, NO trust designation, SEVERE DAF warehousing, and TAX-minimization-without-matching-giving pattern. Page's higher raw ratio reflects a larger foundation corpus being cycled through DAFs \u2014 it isn't higher ACTUAL deployment. This is the case where 'observable ratio' over-credits and the qualitative flags correctly demote."
+    "comparison_to_ellison": "Ellison: observable ratio ~0.082 of expected but Tier B because of disclosed charitable trust. Page: ratio ~0.27 of expected (higher!) but Tier A because NO pledge, NO trust designation, SEVERE DAF warehousing, and TAX-minimization-without-matching-giving pattern. Page's higher raw ratio reflects a larger foundation corpus being cycled through DAFs \u2014 it isn't higher ACTUAL deployment. This is the case where 'observable ratio' over-credits and the qualitative flags correctly demote.",
+    "expected_5pct_tenure_usd": 88770000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 86987357000,
+    "ratio_observable_to_5pct_tenure": 0.0201
   },
   "scrooge_legacy_score_internal_only": {
     "value": 96.5,

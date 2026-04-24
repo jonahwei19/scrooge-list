@@ -55,7 +55,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "knight_foundation_2023",
@@ -67,7 +68,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "knight_foundation_2022",
@@ -79,7 +81,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "knight_foundation_2021",
@@ -91,7 +94,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "knight_foundation_2020",
@@ -103,7 +107,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "knight_foundation_2019",
@@ -115,7 +120,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "knight_foundation_2018",
@@ -127,7 +133,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "knight_foundation_pre2018_cumulative",
@@ -153,7 +160,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Pre-2018 period was a slow-accumulation phase \u2014 the Knight Foundation was building assets, not deploying them. The ramp from ~$5M/yr to $226M/yr is visible from 2017\u21922024, coinciding with Knight stepping back from Nike chairmanship (2016)."
+      "notes": "Pre-2018 period was a slow-accumulation phase \u2014 the Knight Foundation was building assets, not deploying them. The ramp from ~$5M/yr to $226M/yr is visible from 2017\u21922024, coinciding with Knight stepping back from Nike chairmanship (2016).",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "knight_stanford_gsb_2006",
@@ -167,7 +175,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Phil_Knight",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "2006 pre-dates Knight Foundation's active-giving era (foundation was dormant until late 2000s); direct_gift classification likely correct. Verify against 2006 990-PF if archived."
+      "dedup_note": "2006 pre-dates Knight Foundation's active-giving era (foundation was dormant until late 2000s); direct_gift classification likely correct. Verify against 2006 990-PF if archived.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "knight_uo_athletics_2007",
@@ -179,7 +188,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Phil_Knight",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "knight_ohsu_naming_2008",
@@ -191,7 +201,8 @@
       "source_type": "announcement",
       "source_url": "https://www.philanthropy.com/news/knight-donation-tops-list-of-2025s-biggest-gifts/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "knight_ohsu_challenge_2013_2015",
@@ -205,7 +216,8 @@
       "source_url": "https://news.ohsu.edu/2015/06/24/ohsu-sets-fundraising-record-by-meeting-1-billion-challenge-from-nike-co-founder-and-wife",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Knights pledged $500M in Sept 2013 contingent on OHSU raising matching $500M within two years. OHSU met the challenge in less than two years. Per Indiana University Lilly Family School of Philanthropy, this is the largest documented challenge pledge to have succeeded. Disbursement followed the 2015 match completion."
+      "notes": "Knights pledged $500M in Sept 2013 contingent on OHSU raising matching $500M within two years. OHSU met the challenge in less than two years. Per Indiana University Lilly Family School of Philanthropy, this is the largest documented challenge pledge to have succeeded. Disbursement followed the 2015 match completion.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "knight_uo_knight_campus_2016",
@@ -217,7 +229,8 @@
       "source_type": "announcement",
       "source_url": "https://knightcampus.uoregon.edu/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "knight_stanford_khs_2016",
@@ -232,7 +245,8 @@
       "source_url": "https://news.stanford.edu/stories/2016/02/scholars-program-announce-022316",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Largest cash gift from an individual to Stanford at time of announcement. Fully endowed graduate scholarship program \u2014 100 students/year across 7 Stanford graduate schools."
+      "notes": "Largest cash gift from an individual to Stanford at time of announcement. Fully endowed graduate scholarship program \u2014 100 students/year across 7 Stanford graduate schools.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "knight_uo_knight_campus_2021",
@@ -244,7 +258,8 @@
       "source_type": "announcement",
       "source_url": "https://sponsored.chronicle.com/university-of-oregon-receives-second-500-million-gift-for-the-phil-and-penny-knight-campus-for-accelerating-scientific-impact/index.html",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "knight_stanford_neuro_2022",
@@ -256,7 +271,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Phil_Knight",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "knight_travis_fund_2024",
@@ -270,7 +286,8 @@
       "source_url": "https://www.koin.com/news/oregon/phil-penny-knights-charitable-contributions-through-2024-land-them-on-top-donor-list/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: These 'family charitable fund' vehicles are likely DAFs. Per dedup rule #2, we count grants OUT of these funds, not transfers IN. Without disclosed grants-out for these funds, treat as transfer_in and exclude from observable rollup. Flag for FOLLOW-UP."
+      "dedup_note": "CRITICAL: These 'family charitable fund' vehicles are likely DAFs. Per dedup rule #2, we count grants OUT of these funds, not transfers IN. Without disclosed grants-out for these funds, treat as transfer_in and exclude from observable rollup. Flag for FOLLOW-UP.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "knight_ohsu_2b_2025",
@@ -286,7 +303,8 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "status": "ANNOUNCED_DISBURSEMENT_SCHEDULE_NOT_PUBLIC",
-      "notes": "Largest single donation ever to a U.S. university/academic health center, exceeding Bloomberg's $1.8B to Johns Hopkins (2018). Announced as 'commitment' \u2014 disbursement schedule not disclosed. Knight is 88; a multi-year pledge with him as primary donor has age-compression risk. Classified as pledge until tranche-level disbursements appear in 990-PF or OHSU 990 Schedule B. Top Chronicle of Philanthropy 2025 gift."
+      "notes": "Largest single donation ever to a U.S. university/academic health center, exceeding Bloomberg's $1.8B to Johns Hopkins (2018). Announced as 'commitment' \u2014 disbursement schedule not disclosed. Knight is 88; a multi-year pledge with him as primary donor has age-compression risk. Classified as pledge until tranche-level disbursements appear in 990-PF or OHSU 990 Schedule B. Top Chronicle of Philanthropy 2025 gift.",
+      "event_role_canonical": "pledge"
     }
   ],
   "pledges_and_announcements": [
@@ -297,7 +315,8 @@
       "source_type": "news",
       "source_url": "https://www.insidephilanthropy.com/home/2020-1-22-the-quiet-billionaire-how-phil-knights-giving-flies-under-the-radar",
       "retrieved_at": "2026-04-23",
-      "notes": "Knight has NOT signed the Giving Pledge. Inside Philanthropy (Jan 2020): 'Knight hasn't signed the Gates-Buffett Giving Pledge, but he has said many times that he plans to give away most of his wealth during his lifetime.' This is an important signal: absence of a formal pledge letter, combined with actual giving cadence ($2.4B+ over last decade, $2B pledge in 2025), means Knight shouldn't be penalized under 'pledge_breach' criteria but also lacks a documented 95% / majority commitment. Score Knight on observable giving only."
+      "notes": "Knight has NOT signed the Giving Pledge. Inside Philanthropy (Jan 2020): 'Knight hasn't signed the Gates-Buffett Giving Pledge, but he has said many times that he plans to give away most of his wealth during his lifetime.' This is an important signal: absence of a formal pledge letter, combined with actual giving cadence ($2.4B+ over last decade, $2B pledge in 2025), means Knight shouldn't be penalized under 'pledge_breach' criteria but also lacks a documented 95% / majority commitment. Score Knight on observable giving only.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -454,7 +473,11 @@
     "observable_plus_hidden_ratio_to_expected": 1.916,
     "tier": "Tier_C_On_Track",
     "tier_rule": "Knight's observable giving ($3.28B) already EXCEEDS the 10%-of-liquid-weighted-by-tenure expected ($1.95B) by 1.68x. Adding hidden-channel upper bound ($450M) pushes the ratio to 1.92x. He is the canonical 'Tier C On Track' \u2014 high absolute giving, demonstrably above the 10% formal norm, and with a real $2B pledge pipeline. Foundation-level payout flag and state-level political spend are notable but do not reverse the tier.",
-    "tier_published_caveat": "Readers should see Knight as the counterexample to Ellison: no Giving Pledge signature, but substantially MORE observable giving delivered ($3.28B vs $0.47B) at a much smaller net worth ($35B vs $227B). Knight demonstrates that pledge-signing is neither necessary (he hasn't signed) nor sufficient (Ellison has signed, minimally delivered). On-track classification should be qualified by: (1) foundation payout sitting at the 5% legal minimum, and (2) the $2B OHSU pledge is a multi-year commitment at age 88."
+    "tier_published_caveat": "Readers should see Knight as the counterexample to Ellison: no Giving Pledge signature, but substantially MORE observable giving delivered ($3.28B vs $0.47B) at a much smaller net worth ($35B vs $227B). Knight demonstrates that pledge-signing is neither necessary (he hasn't signed) nor sufficient (Ellison has signed, minimally delivered). On-track classification should be qualified by: (1) foundation payout sitting at the 5% legal minimum, and (2) the $2B OHSU pledge is a multi-year commitment at age 88.",
+    "expected_5pct_tenure_usd": 29205000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 25925946441,
+    "ratio_observable_to_5pct_tenure": 0.1123
   },
   "scrooge_legacy_score_internal_only": {
     "value": 22.0,

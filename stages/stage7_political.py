@@ -47,7 +47,7 @@ def search_fec_donations(name: str) -> Dict:
                 "per_page": 100,
                 "sort_hide_null": True,
                 "sort": "-contribution_receipt_amount",
-                "api_key": "DEMO_KEY",  # Demo key for testing
+                "api_key": __import__("os").environ.get("FEC_API_KEY") or "DEMO_KEY",  # legacy v1; DORMANT
             }
 
             resp = requests.get(url, params=params, timeout=15)

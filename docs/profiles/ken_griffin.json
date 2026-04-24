@@ -57,7 +57,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "CGF operates as near-pure pass-through: 2024 revenue $2.37M \u2192 charitable disbursements $2.38M \u2192 net assets $1,362. This is NOT Griffin's primary vehicle \u2014 it is a small Citadel-firm-branded entity. Primary giving runs through the Kenneth C. Griffin Charitable Fund (structure not public)."
+      "notes": "CGF operates as near-pure pass-through: 2024 revenue $2.37M \u2192 charitable disbursements $2.38M \u2192 net assets $1,362. This is NOT Griffin's primary vehicle \u2014 it is a small Citadel-firm-branded entity. Primary giving runs through the Kenneth C. Griffin Charitable Fund (structure not public).",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "griffin_cgf_2023",
@@ -69,7 +70,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "griffin_cgf_2022",
@@ -81,7 +83,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "griffin_cgf_2021",
@@ -93,7 +96,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "griffin_cgf_2020",
@@ -105,7 +109,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "griffin_cgf_2019",
@@ -117,7 +122,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "griffin_harvard_2014",
@@ -131,7 +137,8 @@
       "source_type": "announcement",
       "source_url": "https://news.harvard.edu/gazette/story/2014/02/kenneth-griffin-makes-largest-gift-in-harvard-college-history/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_moma_2015",
@@ -145,7 +152,8 @@
       "source_type": "announcement",
       "source_url": "https://archive.nytimes.com/artsbeat.blogs.nytimes.com/2015/12/22/40-million-moma-gift-from-kenneth-c-griffin-brings-naming-rights-to-johnson-wing/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_uchicago_2017",
@@ -159,7 +167,8 @@
       "source_type": "announcement",
       "source_url": "https://news.uchicago.edu/story/uchicago-announces-125-million-gift-support-economic-scholarship",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_msi_2019",
@@ -173,7 +182,8 @@
       "source_type": "announcement",
       "source_url": "https://www.chicagotribune.com/2019/10/04/the-museum-of-science-and-industry-is-getting-a-new-name-after-chicago-billionaire-ken-griffin-donates-125-million/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_harvard_2023",
@@ -188,7 +198,8 @@
       "source_url": "https://news.harvard.edu/gazette/story/2023/04/kenneth-c-griffin-makes-gift-of-300-million-to-fas/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "controversy_note": "Extensive controversy over naming. Per Harvard Crimson, GSAS administrators told students the contract is 'ironclad' and only two names are permissible. LGBTQ+ student clubs were mandated to include 'Griffin' in their names. Former dean publicly argued in Boston Globe that the naming 'dishonors Harvard's core values' given Griffin's political giving."
+      "controversy_note": "Extensive controversy over naming. Per Harvard Crimson, GSAS administrators told students the contract is 'ironclad' and only two names are permissible. LGBTQ+ student clubs were mandated to include 'Griffin' in their names. Former dean publicly argued in Boston Globe that the naming 'dishonors Harvard's core values' given Griffin's political giving.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_msk_2023",
@@ -205,7 +216,8 @@
       "source_url": "https://www.mskcc.org/news-releases/mskcc-announces-landmark-400-million-gift-from-kenneth-griffin-and-david-geffen",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Co-donation with Geffen. Split assumption should be revisited if MSK publishes exact allocation."
+      "dedup_note": "Co-donation with Geffen. Split assumption should be revisited if MSK publishes exact allocation.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_artic_2006",
@@ -220,7 +232,8 @@
       "source_url": "https://www.chicagotribune.com/2006/10/13/no-hedging-on-love-for-art/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Joint gift with ex-wife Anne Dias Griffin (divorced 2015). Attribution to Ken Griffin alone is standard in philanthropy press."
+      "dedup_note": "Joint gift with ex-wife Anne Dias Griffin (divorced 2015). Attribution to Ken Griffin alone is standard in philanthropy press.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_field_museum",
@@ -234,7 +247,8 @@
       "source_type": "announcement",
       "source_url": "https://www.fieldmuseum.org/about/press/field-museum-announces-55-million-gift-kenneth-c-griffin-charitable-fund",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_success_academy_2018",
@@ -248,7 +262,8 @@
       "source_type": "announcement",
       "source_url": "https://apnews.com/press-release/business-wire/new-york-education-new-york-city-philanthropy-charter-schools-8e3d78e839a94259845b935d2f3a6230",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "griffin_constitution_2021",
@@ -263,7 +278,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Kenneth_C._Griffin",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "classification_note": "Auction purchase of personal collectible asset that is loaned to a museum. Philanthropy value depends on whether the asset is permanently gifted (charitable) or remains Griffin's personal property on loan (not charitable). Current reporting describes it as a loan. DO NOT count in observable_giving until ownership transfer is verified."
+      "classification_note": "Auction purchase of personal collectible asset that is loaned to a museum. Philanthropy value depends on whether the asset is permanently gifted (charitable) or remains Griffin's personal property on loan (not charitable). Current reporting describes it as a loan. DO NOT count in observable_giving until ownership transfer is verified.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -276,7 +292,8 @@
       "quote": "You will clearly see me give away my wealth over my lifetime, and when I pass away.",
       "source_url": "https://www.insidephilanthropy.com/home/2019-10-25-what-the-right-hand-is-doing-the-paradoxical-giving-of-a-billionaire-mega-donor",
       "retrieved_at": "2026-04-23",
-      "notes": "Griffin is NOT a Giving Pledge signatory. This means he has no public commitment to a percentage of wealth for charity. His stated intent is to give during life and via estate, without a formal threshold."
+      "notes": "Griffin is NOT a Giving Pledge signatory. This means he has no public commitment to a percentage of wealth for charity. His stated intent is to give during life and via estate, without a formal threshold.",
+      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "griffin_catalyst_2023",
@@ -289,7 +306,8 @@
       "source_type": "news",
       "source_url": "https://www.reuters.com/business/griffin-citadel-hedge-fund-lays-out-roadmap-future-philanthropic-giving-2023-09-13/",
       "retrieved_at": "2026-04-23",
-      "notes": "Griffin launched Griffin Catalyst in Sept 2023 as a 'civic engagement initiative' and public-facing brand for his philanthropy. Per Inside Philanthropy, Griffin Catalyst does NOT itself make grants \u2014 it is a clearinghouse/brand; actual giving still runs through the Kenneth C. Griffin Charitable Fund. Not a legal entity that files a 990."
+      "notes": "Griffin launched Griffin Catalyst in Sept 2023 as a 'civic engagement initiative' and public-facing brand for his philanthropy. Per Inside Philanthropy, Griffin Catalyst does NOT itself make grants \u2014 it is a clearinghouse/brand; actual giving still runs through the Kenneth C. Griffin Charitable Fund. Not a legal entity that files a 990.",
+      "event_role_canonical": "announcement"
     },
     {
       "event_id": "griffin_lifetime_self_reported",
@@ -299,7 +317,8 @@
       "source_type": "self_reported",
       "source_url": "https://www.griffincatalyst.org/about/",
       "retrieved_at": "2026-04-23",
-      "notes": "Griffin Catalyst's own About page claims 'Ken has donated more than $2.5 billion to advance initiatives with the power to transform lives.' Forbes 2023 list cited $1.56B; Reuters Sept 2023 said 'more than $2 billion.' Inside Philanthropy March 2025 cited Forbes figure of '$2.3 billion and counting.' We use this as an UPPER BOUND self-reported total \u2014 not as observable_giving \u2014 because the composition of this $2.5B (direct 501(c)(3) gifts vs. Charitable-Fund-internal transfers vs. political vs. personal-use art purchases) is not independently verifiable."
+      "notes": "Griffin Catalyst's own About page claims 'Ken has donated more than $2.5 billion to advance initiatives with the power to transform lives.' Forbes 2023 list cited $1.56B; Reuters Sept 2023 said 'more than $2 billion.' Inside Philanthropy March 2025 cited Forbes figure of '$2.3 billion and counting.' We use this as an UPPER BOUND self-reported total \u2014 not as observable_giving \u2014 because the composition of this $2.5B (direct 501(c)(3) gifts vs. Charitable-Fund-internal transfers vs. political vs. personal-use art purchases) is not independently verifiable.",
+      "event_role_canonical": "reference_only"
     }
   ],
   "political_giving": {
@@ -458,7 +477,11 @@
     "observable_plus_hidden_ratio_to_expected": 1.274,
     "tier": "Probably_Moderate (Tier B)",
     "tier_rule": "Griffin's observable giving ($981M) plus plausible hidden DAF flow ($1.5B) = $2.48B, which matches his own self-reported $2.5B total and slightly exceeds the $2.03B 10%-tenure-weighted expected. He is NOT a Tier A 'verified low' case \u2014 the absolute dollar flow is real and substantial. But the tier is 'Probably Moderate' not 'Meeting Norm' because: (1) $173M+ political giving in 2020+2024 cycles alone displaces charitable giving per NBER W26616 at ~0.33/$1; (2) reputation-optimized naming pattern suggests consumption-value component; (3) no Giving Pledge commitment means no forward-looking denominator.",
-    "tier_published_caveat": "Griffin is a useful contrast to Ellison: HIGH observable dollars, but HIGH political dollars and explicit refusal to sign a percentage pledge. On the Scrooge List frame he is NOT a canonical 'Scrooge' \u2014 he gives real money \u2014 but his score is pulled up by political substitution and the opacity of his DAF-channel giving."
+    "tier_published_caveat": "Griffin is a useful contrast to Ellison: HIGH observable dollars, but HIGH political dollars and explicit refusal to sign a percentage pledge. On the Scrooge List frame he is NOT a canonical 'Scrooge' \u2014 he gives real money \u2014 but his score is pulled up by political substitution and the opacity of his DAF-channel giving.",
+    "expected_5pct_tenure_usd": 23322000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 22340455780,
+    "ratio_observable_to_5pct_tenure": 0.0421
   },
   "scrooge_legacy_score_internal_only": {
     "value": 55.2,

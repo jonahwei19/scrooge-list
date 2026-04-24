@@ -67,7 +67,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "druck_found_2023",
@@ -79,7 +80,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "druck_found_2022",
@@ -91,7 +93,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "druck_found_2021",
@@ -103,7 +106,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "druck_found_2020",
@@ -115,7 +119,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "druck_found_2019",
@@ -127,7 +132,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "druck_transfer_2009",
@@ -140,7 +146,8 @@
       "source_url": "https://philanthropynewsdigest.org/news/druckenmiller-foundation-announces-705-million-in-gifts-from-founders",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This $705M was a TRANSFER INTO the foundation (earning the #1 spot on Chronicle of Philanthropy's 2010 Philanthropy 50). Under v3 dedup rule #2, we count foundation grants_out, NOT transfers in, to avoid double-counting. Excluded from observable rollup. Counted here for completeness \u2014 the foundation's endowment ($1.77B in 2024) is largely funded from these and subsequent contributions."
+      "dedup_note": "CRITICAL: This $705M was a TRANSFER INTO the foundation (earning the #1 spot on Chronicle of Philanthropy's 2010 Philanthropy 50). Under v3 dedup rule #2, we count foundation grants_out, NOT transfers in, to avoid double-counting. Excluded from observable rollup. Counted here for completeness \u2014 the foundation's endowment ($1.77B in 2024) is largely funded from these and subsequent contributions.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "druck_nyu_2009",
@@ -156,7 +163,8 @@
       "source_url": "https://nyulangone.org/news/nyu-langone-receives-100-million-gift-establish-neuroscience-institute",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Paid from Druckenmiller Foundation. If 2009 990-PF grants_out are later pulled, this $100M will be inside that total \u2014 do NOT double-count. Current observable rollup (2019-2024) does not include 2009, so this adds to direct_gifts."
+      "dedup_note": "Paid from Druckenmiller Foundation. If 2009 990-PF grants_out are later pulled, this $100M will be inside that total \u2014 do NOT double-count. Current observable rollup (2019-2024) does not include 2009, so this adds to direct_gifts.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "druck_msk_2022",
@@ -172,7 +180,8 @@
       "source_url": "https://www.mskcc.org/news-releases/druckenmiller-news",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Paid from Druckenmiller Foundation. This $100M IS inside the 2022 grants_out total of $173.9M. DO NOT add separately \u2014 keeping this event for provenance, but it is a subset of druck_found_2022."
+      "dedup_note": "Paid from Druckenmiller Foundation. This $100M IS inside the 2022 grants_out total of $173.9M. DO NOT add separately \u2014 keeping this event for provenance, but it is a subset of druck_found_2022.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "druck_hcz_cumulative",
@@ -189,7 +198,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/2014-1-22-whos-the-harlem-childrens-zone-100-million-donor-html",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Overlaps with foundation grants_out for 2019-2024. The 2006-2018 portion ($~80M estimated) is NOT captured in the observable 2019-2024 window and should add to cumulative figures. The 2019+ portion IS inside foundation grants_out \u2014 do not double-count. Druckenmiller chaired HCZ board; he is HCZ's largest donor by far."
+      "dedup_note": "Overlaps with foundation grants_out for 2019-2024. The 2006-2018 portion ($~80M estimated) is NOT captured in the observable 2019-2024 window and should add to cumulative figures. The 2019+ portion IS inside foundation grants_out \u2014 do not double-count. Druckenmiller chaired HCZ board; he is HCZ's largest donor by far.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "druck_bluemeridian_2017_2021",
@@ -206,7 +216,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/2022-3-1-six-things-to-know-about-this-billionaire-hedge-fund-managers-philanthropy",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Inside Philanthropy confirmed $151M from Druckenmillers to Blue Meridian between 2017-2021. This IS inside the foundation's 2017-2021 grants_out \u2014 do not double-count against foundation totals. Kept for provenance. Druckenmiller is the current Blue Meridian board chair."
+      "dedup_note": "Inside Philanthropy confirmed $151M from Druckenmillers to Blue Meridian between 2017-2021. This IS inside the foundation's 2017-2021 grants_out \u2014 do not double-count against foundation totals. Kept for provenance. Druckenmiller is the current Blue Meridian board chair.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "druck_nyu_add_2017_2021",
@@ -223,7 +234,8 @@
       "source_url": "https://www.insidephilanthropy.com/find-a-grant/grants-d/druckenmiller-foundation",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "$48M additional NYU support 2017-2021 per Inside Philanthropy. Inside 2017-2021 foundation grants_out. Do not double-count."
+      "dedup_note": "$48M additional NYU support 2017-2021 per Inside Philanthropy. Inside 2017-2021 foundation grants_out. Do not double-count.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "druck_bowdoin_cumulative",
@@ -240,7 +252,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/2022-3-1-six-things-to-know-about-this-billionaire-hedge-fund-managers-philanthropy",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Mix of foundation-paid and personal. Portion within 2019-2024 foundation window IS inside grants_out. Earlier portion adds to cumulative giving."
+      "dedup_note": "Mix of foundation-paid and personal. Portion within 2019-2024 foundation window IS inside grants_out. Earlier portion adds to cumulative giving.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -253,7 +266,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/2023-3-1-a-conversation-with-stanley-druckenmiller-on-giving-priorities-big-bets-and-feeling-incredibly-privileged",
       "retrieved_at": "2026-04-24",
       "quote": "I don't really see the purpose of my signing the Giving Pledge. People worth hundreds of billions of dollars saying they're going to give half of their worth away \u2014 I don't think that really moves the needle on drawing in other philanthropists. Maybe because of my Pittsburgh background, I enjoy Andrew Carnegie's approach of being as anonymous as possible.",
-      "notes": "CRITICAL CORRECTION: Druckenmiller did NOT sign the Giving Pledge in 2010 or any year. He has publicly stated he declined. He is NOT on the official Giving Pledge list at givingpledge.org. His critique: that the Pledge is performative for ultra-high-net-worth donors who will never disburse. This makes him a rare case of a 'verified on-track' giver who is NOT a pledger \u2014 evidence that pledge-signing and actual giving are orthogonal. Under IPS methodology he cannot be classified as 'pledge unfulfilled' because there is no pledge."
+      "notes": "CRITICAL CORRECTION: Druckenmiller did NOT sign the Giving Pledge in 2010 or any year. He has publicly stated he declined. He is NOT on the official Giving Pledge list at givingpledge.org. His critique: that the Pledge is performative for ultra-high-net-worth donors who will never disburse. This makes him a rare case of a 'verified on-track' giver who is NOT a pledger \u2014 evidence that pledge-signing and actual giving are orthogonal. Under IPS methodology he cannot be classified as 'pledge unfulfilled' because there is no pledge.",
+      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "druck_duquesne_closure_2010",
@@ -264,7 +278,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/Stanley_Druckenmiller",
       "retrieved_at": "2026-04-24",
-      "notes": "Druckenmiller closed Duquesne Capital Management in August 2010 (then $12B AUM) explicitly citing desire to spend more time on philanthropy. Reconstituted as Duquesne Family Office. This is a rare case of a hedge fund manager voluntarily stepping back from the business to focus on giving."
+      "notes": "Druckenmiller closed Duquesne Capital Management in August 2010 (then $12B AUM) explicitly citing desire to spend more time on philanthropy. Reconstituted as Duquesne Family Office. This is a rare case of a hedge fund manager voluntarily stepping back from the business to focus on giving.",
+      "event_role_canonical": "announcement"
     }
   ],
   "political_giving": {
@@ -383,7 +398,11 @@
     "observable_plus_hidden_ratio_to_expected": 1.72,
     "tier": "Verified_On_Track (Tier A)",
     "tier_rule": "VERIFIED_ON_TRACK requires observable / expected > 0.5 AND no red flags. Druckenmiller: 0.78 on 2019-2024 window alone (already well above 0.5); 1.72 when pre-2019 publicly-filed foundation giving is added back; zero red flags. Textbook 'Tier A fulfilling' case.",
-    "tier_published_caveat": "Druckenmiller is the structural counter-example to the Giving Pledge signers clustering in Tier B/C. He declined to sign the Pledge, yet has exceeded what the 10% norm expects of him. Observable giving is 6.6% of current net worth AND represents a still-growing foundation endowment \u2014 the $1.77B foundation assets will disburse regardless of his personal spending decisions."
+    "tier_published_caveat": "Druckenmiller is the structural counter-example to the Giving Pledge signers clustering in Tier B/C. He declined to sign the Pledge, yet has exceeded what the 10% norm expects of him. Observable giving is 6.6% of current net worth AND represents a still-growing foundation endowment \u2014 the $1.77B foundation assets will disburse regardless of his personal spending decisions.",
+    "expected_5pct_tenure_usd": 8500000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 7837137188,
+    "ratio_observable_to_5pct_tenure": 0.078
   },
   "scrooge_legacy_score_internal_only": {
     "value": 8.0,

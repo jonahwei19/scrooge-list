@@ -62,7 +62,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "attribution_note": "Abigail P. Johnson is one of several Johnson-family directors; she receives $0 compensation. Full amount is a FAMILY foundation grant, not Abigail-personal. For the Scrooge rollup we attribute the full grant_out to the Johnson-family observable (single-subject view) but flag fractional attribution if comparing to Abby-only personal resources."
+      "attribution_note": "Abigail P. Johnson is one of several Johnson-family directors; she receives $0 compensation. Full amount is a FAMILY foundation grant, not Abigail-personal. For the Scrooge rollup we attribute the full grant_out to the Johnson-family observable (single-subject view) but flag fractional attribution if comparing to Abby-only personal resources.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ecjf_2023",
@@ -74,7 +75,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ecjf_2022",
@@ -86,7 +88,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ecjf_2021",
@@ -98,7 +101,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ecjf_2020",
@@ -111,7 +115,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Anomalously low year (likely timing of large grants made in 2015 and 2022; ECJF's grant pattern is lumpy rather than annuitized)."
+      "note": "Anomalously low year (likely timing of large grants made in 2015 and 2022; ECJF's grant pattern is lumpy rather than annuitized).",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ecjf_2019",
@@ -123,7 +128,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ff_2024",
@@ -137,7 +143,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "attribution_note": "CRITICAL CAVEAT: The Fidelity Foundation is funded historically by Fidelity Investments (the company) plus Johnson family contributions. Trustees include Abigail P. Johnson (unpaid), Elizabeth L. Johnson, Edward C. Johnson IV, Ross E. Sherbrooke. Classifying the full $167.8M as Abigail-personal overstates her individual generosity; it is primarily company-funded institutional philanthropy that she helps govern. Fractional attribution (~15-25% of total) may be appropriate for single-subject personal scoring. We include the full amount here for the Johnson-family observable and flag the attribution for downstream scoring."
+      "attribution_note": "CRITICAL CAVEAT: The Fidelity Foundation is funded historically by Fidelity Investments (the company) plus Johnson family contributions. Trustees include Abigail P. Johnson (unpaid), Elizabeth L. Johnson, Edward C. Johnson IV, Ross E. Sherbrooke. Classifying the full $167.8M as Abigail-personal overstates her individual generosity; it is primarily company-funded institutional philanthropy that she helps govern. Fractional attribution (~15-25% of total) may be appropriate for single-subject personal scoring. We include the full amount here for the Johnson-family observable and flag the attribution for downstream scoring.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ff_2023",
@@ -149,7 +156,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ff_2022",
@@ -161,7 +169,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ff_2021",
@@ -173,7 +182,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ff_2020",
@@ -185,7 +195,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ff_2019",
@@ -197,7 +208,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "abby_ecjf_npf_2015",
@@ -212,7 +224,8 @@
       "source_url": "https://www.bostonglobe.com/business/2017/04/11/fidelity-johnson-family-donated-nearly-million-national-parks/N7bTKKEpNNuYswWm7nqxsJ/story.html",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "POSSIBLE DOUBLE-COUNT if pre-2019 ECJF 990-PFs are later pulled: this $29.7M gift would appear in ECJF's 2015 grants_out and we would need to subtract from this direct-gift row. As of now, we have not pulled ECJF 2015 990 \u2014 flag for verification. Boston Globe notes the family declined comment and NPF staff declined to comment (confirming family preference for privacy)."
+      "dedup_note": "POSSIBLE DOUBLE-COUNT if pre-2019 ECJF 990-PFs are later pulled: this $29.7M gift would appear in ECJF's 2015 grants_out and we would need to subtract from this direct-gift row. As of now, we have not pulled ECJF 2015 990 \u2014 flag for verification. Boston Globe notes the family declined comment and NPF staff declined to comment (confirming family preference for privacy).",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "fidelity_uncf_2023",
@@ -226,7 +239,8 @@
       "source_url": "https://uncf.org/news/uncf-receives-its-largest-corporate-gift-to-support-underserved-students",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "classification_note": "EXCLUDED from personal observable giving. This is a CORPORATE gift from Fidelity Investments (FMR LLC) \u2014 a for-profit company that Abigail leads but does not solely own. Corporate philanthropy is not personal philanthropy under Forbes/IPS methodology. Listed here for context on Abigail-adjacent generosity signals. The family owns ~40% of Fidelity, so a naive pass-through share would be ~$76M, but corporate gifts deducted against company earnings do not materially reduce family wealth in the way a personal foundation transfer does."
+      "classification_note": "EXCLUDED from personal observable giving. This is a CORPORATE gift from Fidelity Investments (FMR LLC) \u2014 a for-profit company that Abigail leads but does not solely own. Corporate philanthropy is not personal philanthropy under Forbes/IPS methodology. Listed here for context on Abigail-adjacent generosity signals. The family owns ~40% of Fidelity, so a naive pass-through share would be ~$76M, but corporate gifts deducted against company earnings do not materially reduce family wealth in the way a personal foundation transfer does.",
+      "event_role_canonical": "corporate_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -237,7 +251,8 @@
       "status_verified_at": "2026-04-24",
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-24",
-      "notes": "Neither Abigail Johnson nor any Johnson-family member associated with Fidelity appears on the Giving Pledge signatory list. The Johnson family is historically private and has made no public pledge comparable to Gates/Buffett/Ellison 95% commitments. Absence of a pledge means NO pledge-breach penalty, but also no public-commitment anchor for expected giving."
+      "notes": "Neither Abigail Johnson nor any Johnson-family member associated with Fidelity appears on the Giving Pledge signatory list. The Johnson family is historically private and has made no public pledge comparable to Gates/Buffett/Ellison 95% commitments. Absence of a pledge means NO pledge-breach penalty, but also no public-commitment anchor for expected giving.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -392,7 +407,11 @@
     "observable_plus_hidden_ratio_to_expected_less_strict": 1.15,
     "tier": "Mid (Tier B) \u2014 attribution-ambiguous",
     "tier_rule": "Under strict-liquidity expected, observable alone (even attributed wholly to Abigail+family) clears the 10% norm \u2014 technically NOT Scrooge-tier-worthy. Under less-strict liquidity OR under Abigail-personal-only attribution (30% fractional), she drops to 14-47% of expected \u2014 middling. The CORRECT tier here depends on a judgment call about (a) how to handle private-company illiquidity and (b) how to handle family-foundation fractional attribution. We assign Tier B 'Mid \u2014 attribution-ambiguous' and flag that the answer flips based on methodology choices. This is NOT a clear Scrooge case; it is a clear 'genuinely hard to classify' case \u2014 the quiet-heir archetype that resists simple ranking.",
-    "tier_published_caveat": "Readers should see Abigail Johnson as the canonical EXAMPLE of why fractional attribution and private-company illiquidity matter. Her family's observable giving ($816M over 6 years via Edward C. Johnson Fund + Fidelity Foundation) is substantial in absolute terms but small relative to $35B net worth. She has NOT signed the Giving Pledge, so there is no public commitment to measure against. Absence of a lever does not mean absence of generosity; it means absence of measurable accountability. Treat as 'quiet \u2014 probably mid \u2014 unknowable upper bound'."
+    "tier_published_caveat": "Readers should see Abigail Johnson as the canonical EXAMPLE of why fractional attribution and private-company illiquidity matter. Her family's observable giving ($816M over 6 years via Edward C. Johnson Fund + Fidelity Foundation) is substantial in absolute terms but small relative to $35B net worth. She has NOT signed the Giving Pledge, so there is no public commitment to measure against. Absence of a lever does not mean absence of generosity; it means absence of measurable accountability. Treat as 'quiet \u2014 probably mid \u2014 unknowable upper bound'.",
+    "expected_5pct_tenure_usd": 6562500000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 5746400000,
+    "ratio_observable_to_5pct_tenure": 0.1244
   },
   "scrooge_legacy_score_internal_only": {
     "value": 42.0,

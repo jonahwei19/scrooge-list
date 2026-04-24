@@ -69,7 +69,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_sff_2023",
@@ -81,7 +82,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_sff_2022",
@@ -93,7 +95,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_sff_2021",
@@ -105,7 +108,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_sff_2020",
@@ -117,7 +121,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_sff_2019",
@@ -129,7 +134,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_ewsfsi_2024",
@@ -143,7 +149,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "THIS IS THE OPERATIONAL 501(c)(3) BEHIND SCHMIDT SCIENCES / SCHMIDT FUTURES / SCSP. Officers include Stuart Feldman (President Schmidt Sciences, $683K comp) and Michael Gable (EVP SCSP, $419K comp). Grants OUT from this entity include payments to Schmidt-affiliated recipient entities; risk of intra-family recycling deserves audit if full 990-PF recipient list is parsed."
+      "dedup_note": "THIS IS THE OPERATIONAL 501(c)(3) BEHIND SCHMIDT SCIENCES / SCHMIDT FUTURES / SCSP. Officers include Stuart Feldman (President Schmidt Sciences, $683K comp) and Michael Gable (EVP SCSP, $419K comp). Grants OUT from this entity include payments to Schmidt-affiliated recipient entities; risk of intra-family recycling deserves audit if full 990-PF recipient list is parsed.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_ewsfsi_2023",
@@ -155,7 +162,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_ewsfsi_2022",
@@ -167,7 +175,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_ewsfsi_2021",
@@ -179,7 +188,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_ewsfsi_2020",
@@ -191,7 +201,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_ewsfsi_2019",
@@ -203,7 +214,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schmidt_broad_2021",
@@ -217,7 +229,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/2022-3-31-risk-capital-in-action-a-deep-dive-into-eric-and-wendy-schmidts-giving",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "TODO: verify which foundation wrote the check. If from EWSFSI or SFF, it is already inside the 2021 grants_out totals and must not be double-counted. Leave flagged pending full 990-PF grant recipient parsing."
+      "dedup_note": "TODO: verify which foundation wrote the check. If from EWSFSI or SFF, it is already inside the 2021 grants_out totals and must not be double-counted. Leave flagged pending full 990-PF grant recipient parsing.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schmidt_princeton_hall_2019",
@@ -230,7 +243,8 @@
       "source_url": "https://alumni.princeton.edu/stories/eric-and-wendy-schmidt-endow-new-professorship-indigenous-studies-princeton",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "dedup_note": "Likely inside SFF or EWSFSI grant totals. Flag pending recipient parsing."
+      "dedup_note": "Likely inside SFF or EWSFSI grant totals. Flag pending recipient parsing.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schmidt_chronicle_2021_contrib",
@@ -244,7 +258,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/2022-3-31-risk-capital-in-action-a-deep-dive-into-eric-and-wendy-schmidts-giving",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: This is a transfer INTO their foundations, NOT out-the-door giving. Per dedup rule, we count grants_out from the foundations (which we do), not the contributions in. Excluded from observable rollup. Forbes Philanthropy Score 2 for Schmidt = 1-4.99% of wealth in lifetime out-the-door gifts, per Inside Philanthropy's reading of Forbes."
+      "dedup_note": "CRITICAL: This is a transfer INTO their foundations, NOT out-the-door giving. Per dedup rule, we count grants_out from the foundations (which we do), not the contributions in. Excluded from observable rollup. Forbes Philanthropy Score 2 for Schmidt = 1-4.99% of wealth in lifetime out-the-door gifts, per Inside Philanthropy's reading of Forbes.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "schmidt_chronicle_2024_p50",
@@ -256,7 +271,8 @@
       "source_url": "https://www.philanthropy.com/article/in-a-year-of-record-breaking-giving-bloomberg-tops-philanthropy-50-rankings/",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "dedup_note": "Chronicle's 2025 Philanthropy 50 (covering 2024 giving) lists Eric and Wendy Schmidt at $774.9M. Chronicle methodology historically mixes pledges, contributions to own vehicles, and grants out \u2014 NOT deduplicated. Flagged as ambiguous. Combined SFF+EWSFSI 2024 grants_out = $517M; the $774.9M delta likely includes new contributions into vehicles and/or Schmidt Sciences commitments. DO NOT sum with foundation grant-outs."
+      "dedup_note": "Chronicle's 2025 Philanthropy 50 (covering 2024 giving) lists Eric and Wendy Schmidt at $774.9M. Chronicle methodology historically mixes pledges, contributions to own vehicles, and grants out \u2014 NOT deduplicated. Flagged as ambiguous. Combined SFF+EWSFSI 2024 grants_out = $517M; the $774.9M delta likely includes new contributions into vehicles and/or Schmidt Sciences commitments. DO NOT sum with foundation grant-outs.",
+      "event_role_canonical": "transfer_in"
     }
   ],
   "pledges_and_announcements": [
@@ -267,7 +283,8 @@
       "status_source": "Direct check of Giving Pledge pledger list 2026-04-24 \u2014 Schmidt name absent. Inside Philanthropy (2022) and multiple recent profiles confirm the Schmidts have NOT signed the Giving Pledge.",
       "source_url": "https://www.givingpledge.org/pledger-list/",
       "retrieved_at": "2026-04-24",
-      "correction_note": "CORRECTION FROM RESEARCH BRIEF: The task brief stated 'Giving Pledge \u2014 SIGNED (2021? verify year)' but this is INCORRECT. Neither Eric Schmidt nor Wendy Schmidt appears on the official Giving Pledge list. Likely brief-confusion with their 2019 $1B 'philanthropic commitment' announcement (which is NOT a Giving Pledge signature) or the 2021 Broad Institute $150M gift."
+      "correction_note": "CORRECTION FROM RESEARCH BRIEF: The task brief stated 'Giving Pledge \u2014 SIGNED (2021? verify year)' but this is INCORRECT. Neither Eric Schmidt nor Wendy Schmidt appears on the official Giving Pledge list. Likely brief-confusion with their 2019 $1B 'philanthropic commitment' announcement (which is NOT a Giving Pledge signature) or the 2021 Broad Institute $150M gift.",
+      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "schmidt_2019_1b_commitment",
@@ -280,7 +297,8 @@
       "source_type": "announcement",
       "source_url": "https://www.prnewswire.com/news-releases/eric-and-wendy-schmidt-announce-new-1-billion-philanthropic-commitment-to-identify-develop-and-support-global-talent-working-in-service-of-others-300957008.html",
       "retrieved_at": "2026-04-24",
-      "notes": "The $1B 'talent commitment' was announced to Schmidt Futures \u2014 which is operated by Futures Action Network LLC (NOT a 501c3). Partial fulfillment visible through the 501c3 EWSFSI grants-out, but Schmidt Futures itself does not file public 990s. This announcement is sometimes mistaken for a Giving Pledge signature; it is NOT."
+      "notes": "The $1B 'talent commitment' was announced to Schmidt Futures \u2014 which is operated by Futures Action Network LLC (NOT a 501c3). Partial fulfillment visible through the 501c3 EWSFSI grants-out, but Schmidt Futures itself does not file public 990s. This announcement is sometimes mistaken for a Giving Pledge signature; it is NOT.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "schmidt_ai2050_2021",
@@ -292,7 +310,8 @@
       "status": "IN_PROGRESS",
       "source_type": "announcement",
       "source_url": "https://www.schmidtsciences.org/ai2050-early-career-fellows-2024/",
-      "retrieved_at": "2026-04-24"
+      "retrieved_at": "2026-04-24",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "schmidt_sciences_launch_2024",
@@ -304,7 +323,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Schmidt_Sciences",
       "retrieved_at": "2026-04-24",
       "notes": "Schmidt Sciences was established in 2024 as a spin-off of Schmidt Futures' scientific arm. Stuart Feldman is co-CEO of both. This is the PRIMARY science-giving vehicle going forward.",
-      "brief_correction_note": "Task brief claimed Schmidt Sciences has 'received ~$5B in commitments' \u2014 could not corroborate. Public sources document $1B+ cumulative disbursed, $125M AI2050, $10M AI safety (2025), plus ocean/astronomy/biosciences programs of unquantified size. A $5B lifetime cumulative number is plausible IF counting all Schmidt-affiliated vehicle spending since 2006, but not specifically to Schmidt Sciences."
+      "brief_correction_note": "Task brief claimed Schmidt Sciences has 'received ~$5B in commitments' \u2014 could not corroborate. Public sources document $1B+ cumulative disbursed, $125M AI2050, $10M AI safety (2025), plus ocean/astronomy/biosciences programs of unquantified size. A $5B lifetime cumulative number is plausible IF counting all Schmidt-affiliated vehicle spending since 2006, but not specifically to Schmidt Sciences.",
+      "event_role_canonical": "announcement"
     },
     {
       "event_id": "schmidt_ocean_institute_falkor_too",
@@ -318,7 +338,8 @@
       "amount_usd_note": "Vessel retrofit + equipment described as multi-million-dollar venture; exact capital figure not disclosed.",
       "source_type": "announcement",
       "source_url": "https://schmidtocean.org/rv-falkor/",
-      "retrieved_at": "2026-04-24"
+      "retrieved_at": "2026-04-24",
+      "event_role_canonical": "announcement"
     }
   ],
   "political_giving": {
@@ -511,7 +532,11 @@
     "observable_plus_hidden_ratio_to_expected": 1.401,
     "tier": "On_Track (Tier D)",
     "tier_rule": "Observable giving ($2.09B) already EXCEEDS the 10%-of-liquid-wealth formal norm ($1.98B) \u2014 ratio 1.058. Adding the DUAL_VEHICLE_AMBIGUITY LLC uplift and anonymous cohort estimate pushes observable+hidden to ~$2.77B, 1.40x of expected. Schmidt is materially OVER the 10% norm on observable alone. Tier D 'On Track' is the honest classification \u2014 he is not a 'scrooge.'",
-    "tier_published_caveat": "Schmidt is the canonical example of 'wealthy technologist giving at a pace consistent with the 10% norm, through a mix of 501(c)(3) foundations AND an LLC.' Two caveats worth flagging in the published profile: (1) The LLC portion (Schmidt Futures via Futures Action Network) has opaque grantee lists \u2014 we cannot verify what share of LLC spend hits verifiable charities vs. for-profit impact investment vs. policy influence. (2) Significant portion of his giving flows to science policy infrastructure (SCSP, NSCAI work) where 'philanthropy' and 'policy influence' overlap \u2014 generosity tier is defensible, but the 'to whom' question deserves transparency."
+    "tier_published_caveat": "Schmidt is the canonical example of 'wealthy technologist giving at a pace consistent with the 10% norm, through a mix of 501(c)(3) foundations AND an LLC.' Two caveats worth flagging in the published profile: (1) The LLC portion (Schmidt Futures via Futures Action Network) has opaque grantee lists \u2014 we cannot verify what share of LLC spend hits verifiable charities vs. for-profit impact investment vs. policy influence. (2) Significant portion of his giving flows to science policy infrastructure (SCSP, NSCAI work) where 'philanthropy' and 'policy influence' overlap \u2014 generosity tier is defensible, but the 'to whom' question deserves transparency.",
+    "expected_5pct_tenure_usd": 17820000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 15725024460,
+    "ratio_observable_to_5pct_tenure": 0.1176
   },
   "scrooge_legacy_score_internal_only": {
     "value": 35.0,

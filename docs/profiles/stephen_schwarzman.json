@@ -63,7 +63,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schwarzman_saschf_2023",
@@ -75,7 +76,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schwarzman_saschf_2022",
@@ -87,7 +89,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schwarzman_saschf_2021",
@@ -99,7 +102,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schwarzman_saschf_2020",
@@ -111,7 +115,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schwarzman_saschf_2019",
@@ -123,7 +128,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schwarzman_saschf_2018",
@@ -135,7 +141,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "schwarzman_nypl_2008",
@@ -149,7 +156,8 @@
       "source_url": "https://www.philanthropy.com/news/financier-pledges-100-million-gift-to-help-new-york-public-library-expand/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Made before SASCHF was established (2015). Personal gift, additive to later foundation activity."
+      "dedup_note": "Made before SASCHF was established (2015). Personal gift, additive to later foundation activity.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schwarzman_tsinghua_2013",
@@ -164,7 +172,8 @@
       "source_url": "https://philanthropynewsdigest.org/news/private-equity-tycoon-gives-100-million-to-establish-china-scholarship-fund",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Made before SASCHF was established (2015). Personal gift. Endowment total since grown past $600M with additional Schwarzman + other donor contributions; counted only at Schwarzman's personal $100M founding gift."
+      "dedup_note": "Made before SASCHF was established (2015). Personal gift. Endowment total since grown past $600M with additional Schwarzman + other donor contributions; counted only at Schwarzman's personal $100M founding gift.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schwarzman_yale_2015",
@@ -179,7 +188,8 @@
       "source_url": "https://news.yale.edu/2015/05/11/150-million-gift-stephen-schwarzman-establish-first-its-kind-campus-center-yale-universit",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Announced May 2015; SASCHF was formed in July 2015. Unclear whether disbursement flowed through SASCHF or was direct. TODO: pull SASCHF 2015/2016 990-PF recipient list to verify. If through SASCHF, subtract to avoid double-count."
+      "dedup_note": "Announced May 2015; SASCHF was formed in July 2015. Unclear whether disbursement flowed through SASCHF or was direct. TODO: pull SASCHF 2015/2016 990-PF recipient list to verify. If through SASCHF, subtract to avoid double-count.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schwarzman_icsf_2015",
@@ -194,7 +204,8 @@
       "source_url": "https://www.prnewswire.com/news-releases/the-archdiocese-of-new-york-announces-record-gift-of-40-million-from-christine--stephen-a-schwarzman-for-inner-city-scholarship-funds-new-endowment-campaign-300146053.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Announced Sept 2015; SASCHF was formed July 2015. Potential overlap with SASCHF 2015-2018 grants. TODO: verify from 990-PF recipients."
+      "dedup_note": "Announced Sept 2015; SASCHF was formed July 2015. Potential overlap with SASCHF 2015-2018 grants. TODO: verify from 990-PF recipients.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schwarzman_mit_2018",
@@ -209,7 +220,8 @@
       "source_url": "https://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "MIT gift is multi-year pledge. SASCHF 990-PFs 2018-2024 total $413M in grants out \u2014 the MIT disbursement schedule almost certainly flows partially through SASCHF. Marking as direct_gift pledge for headline; the SASCHF grant_out rows are the actual flow. DO NOT sum both for observable giving \u2014 pick one bucket. We use SASCHF 990-PF totals as the observable flow and treat this $350M as announced but already captured in 2018-2024 grants_out rollup."
+      "dedup_note": "MIT gift is multi-year pledge. SASCHF 990-PFs 2018-2024 total $413M in grants out \u2014 the MIT disbursement schedule almost certainly flows partially through SASCHF. Marking as direct_gift pledge for headline; the SASCHF grant_out rows are the actual flow. DO NOT sum both for observable giving \u2014 pick one bucket. We use SASCHF 990-PF totals as the observable flow and treat this $350M as announced but already captured in 2018-2024 grants_out rollup.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schwarzman_oxford_2019",
@@ -224,7 +236,8 @@
       "source_url": "https://www.ox.ac.uk/news/2019-06-19-university-announces-unprecedented-investment-humanities",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Multi-year pledge; disbursement via SASCHF is likely (SASCHF grants paid 2019-2024 ~$413M). Same bucket issue as MIT \u2014 treat pledge as announcement headline, SASCHF 990-PF rows as the actual flow. Do not double-count."
+      "dedup_note": "Multi-year pledge; disbursement via SASCHF is likely (SASCHF grants paid 2019-2024 ~$413M). Same bucket issue as MIT \u2014 treat pledge as announcement headline, SASCHF 990-PF rows as the actual flow. Do not double-count.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schwarzman_abington_2018",
@@ -237,7 +250,8 @@
       "source_url": "https://www.inquirer.com/philly/education/stephen-schwarzman-25m-gift-abington-high-school-original-agreement-demands-20180411.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Controversial gift \u2014 originally conditioned on renaming school 'Abington Schwarzman High School' + portraits + naming across 6 campus sites. After public outcry, Schwarzman withdrew most demands."
+      "notes": "Controversial gift \u2014 originally conditioned on renaming school 'Abington Schwarzman High School' + portraits + naming across 6 campus sites. After public outcry, Schwarzman withdrew most demands.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schwarzman_amc_2021",
@@ -249,7 +263,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Stephen_A._Schwarzman",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "schwarzman_natlibisrael_2018",
@@ -261,7 +276,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Stephen_A._Schwarzman",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -281,7 +297,8 @@
       "source_url": "https://www.givingpledge.org/pledger/stephen-a-schwarzman/",
       "retrieved_at": "2026-04-23",
       "notes": "Schwarzman has been publicly explicit that the bulk of his giving will happen posthumously via the Stephen A. Schwarzman Foundation, which Fortune (Feb 2026) reports he plans to grow into a US top-10 foundation. Current foundation assets ~$65M (2024) vs pledged majority of $47.8B = ~$24B target. Gap: $23.9B.",
-      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "schwarzman_top10foundation_2026",
@@ -296,7 +313,8 @@
       "source_type": "news",
       "source_url": "https://fortune.com/2026/02/16/stephen-schwarzman-blackstone-ceo-48-billion-fortune-to-philanthropic-foundation-focused-on-ai/",
       "retrieved_at": "2026-04-23",
-      "classification_note": "POSTHUMOUS BEQUEST INTENT \u2014 not counted in observable giving. Fortune explicitly: foundation will receive 'substantial majority' of fortune upon death. Flag for reclassification upon actual transfer. Until transfer, this is intent only."
+      "classification_note": "POSTHUMOUS BEQUEST INTENT \u2014 not counted in observable giving. Fortune explicitly: foundation will receive 'substantial majority' of fortune upon death. Flag for reclassification upon actual transfer. Until transfer, this is intent only.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "schwarzman_usatf_2024",
@@ -308,7 +326,8 @@
       "source_url": "https://www.usatffoundation.org/stephen-a-schwarzman-pledges-additional-15-million-to-usatf-foundation-in-support-of-elite-track-field-athletes/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Likely to flow through SASCHF; already captured in 2024 grant totals."
+      "dedup_note": "Likely to flow through SASCHF; already captured in 2024 grant totals.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -459,7 +478,11 @@
     "observable_plus_hidden_ratio_to_expected": 6.9,
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "Observable ratio 0.55 of expected \u2014 halfway to the 10% norm. On observable-only he is NOT far from fulfillment. The big uncertainty is posthumous execution of the Giving Pledge commitment. Without the posthumous promise he would sit in Tier B 'Probably Low'; with it he could end at Tier A Verified-Higher posthumously. Currently Tier B is correct: observable giving is real and meaningful but well short of the 10% norm, the pledge is signed but explicitly deferred to death, and political giving dwarfs alternative philanthropic deployment.",
-    "tier_published_caveat": "Schwarzman is the canonical 'named gift' philanthropist. Observable $1.05B is ~2% of current net worth and 55% of the 10% formal norm. He has given substantially more than Ellison or Zuckerberg observably but is pursuing the classical posthumous-foundation strategy Buffett critiqued. Political giving ($78M+ since 2020) approaches philanthropic giving on an annual basis."
+    "tier_published_caveat": "Schwarzman is the canonical 'named gift' philanthropist. Observable $1.05B is ~2% of current net worth and 55% of the 10% formal norm. He has given substantially more than Ellison or Zuckerberg observably but is pursuing the classical posthumous-foundation strategy Buffett critiqued. Political giving ($78M+ since 2020) approaches philanthropic giving on an annual basis.",
+    "expected_5pct_tenure_usd": 17208000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 16154500000,
+    "ratio_observable_to_5pct_tenure": 0.0612
   },
   "scrooge_legacy_score_internal_only": {
     "value": 76.0,

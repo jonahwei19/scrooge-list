@@ -64,7 +64,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Sharp spike vs surrounding years. Foundation assets only ~$11.7M at end of 2024 \u2014 implies funding passed through quickly (possible DAF transfer or large one-time pledge payment). Grant recipients not disclosed in ProPublica summary; 990-PF Schedule B would resolve."
+      "notes": "Sharp spike vs surrounding years. Foundation assets only ~$11.7M at end of 2024 \u2014 implies funding passed through quickly (possible DAF transfer or large one-time pledge payment). Grant recipients not disclosed in ProPublica summary; 990-PF Schedule B would resolve.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ross_smrf_2024",
@@ -76,7 +77,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ross_smrf_2022",
@@ -88,7 +90,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ross_smrf_2021",
@@ -100,7 +103,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ross_smrf_2020",
@@ -112,7 +116,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ross_smrf_2019",
@@ -124,7 +129,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "ross_umich_2004_bschool",
@@ -138,7 +144,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Stephen_M._Ross",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Naming gift for business school; at the time one of the largest B-school gifts ever."
+      "notes": "Naming gift for business school; at the time one of the largest B-school gifts ever.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ross_umich_2013_200m",
@@ -153,7 +160,8 @@
       "source_url": "https://news.umich.edu/u-michigan-to-receive-200-million-from-prominent-real-estate-developer-stephen-m-ross/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Largest single gift in U-M history at the time. Athletics campus renamed Stephen M. Ross Athletic Campus. Widely cited as the largest athletics gift ever to a U.S. university at the time of announcement."
+      "notes": "Largest single gift in U-M history at the time. Athletics campus renamed Stephen M. Ross Athletic Campus. Widely cited as the largest athletics gift ever to a U.S. university at the time of announcement.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ross_wri_2014_30m",
@@ -166,7 +174,8 @@
       "source_type": "announcement",
       "source_url": "https://www.wri.org/news/stephen-ross-makes-over-30-million-gift-wri-advance-sustainable-cities",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ross_rise_2015_founding",
@@ -179,7 +188,8 @@
       "source_url": "https://www.influencewatch.org/non-profit/ross-initiative-in-sports-for-equality-rise/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "notes": "Founding commitment cited as $30M total since 2015. Split: estimated $17M pre-2020 founding + base, $13M 2020 additional (see ross_rise_2020_13m). Total commitment $30M as of June 2020 statement. If commitments not yet fully disbursed, treat as pledge vs grant distinction."
+      "notes": "Founding commitment cited as $30M total since 2015. Split: estimated $17M pre-2020 founding + base, $13M 2020 additional (see ross_rise_2020_13m). Total commitment $30M as of June 2020 statement. If commitments not yet fully disbursed, treat as pledge vs grant distinction.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ross_umich_2017_50m",
@@ -194,7 +204,8 @@
       "source_url": "https://news.umich.edu/stephen-ross-gives-additional-50-million-to-u-m-bringing-total-lifetime-giving-to-378-million/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "University of Michigan press release confirms lifetime giving reaches $378M with this gift."
+      "notes": "University of Michigan press release confirms lifetime giving reaches $378M with this gift.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ross_umich_2020_dci",
@@ -209,7 +220,8 @@
       "source_url": "https://detroit.umich.edu/news-stories/stephen-ross-announces-100-million-gift-to-detroit-center-for-innovation/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Launch gift for 190,000 sq ft research/education center on former Wayne County Jail site, partnered with Dan Gilbert's land contribution. Multi-year pledge."
+      "notes": "Launch gift for 190,000 sq ft research/education center on former Wayne County Jail site, partnered with Dan Gilbert's land contribution. Multi-year pledge.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ross_wri_2020_63p5m",
@@ -223,7 +235,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Brings cumulative WRI Ross Center commitment to $100M (with 2014 $30.5M plus prior smaller).",
-      "dedup_note": "If any portion was paid through SMRF foundation (EIN 387104084), 2020 SMRF grant_out $3.0M would need to be checked against this; unlikely given WRI's $63.5M far exceeds SMRF's 2020 disbursement."
+      "dedup_note": "If any portion was paid through SMRF foundation (EIN 387104084), 2020 SMRF grant_out $3.0M would need to be checked against this; unlikely given WRI's $63.5M far exceeds SMRF's 2020 disbursement.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "ross_rise_2020_13m",
@@ -239,7 +252,8 @@
       "source_url": "https://philanthropynewsdigest.org/news/stephen-ross-pledges-13-million-to-help-end-racism-through-sports",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Four-year commitment announced post-George Floyd. Brings total RISE commitments to $30M since 2015 founding."
+      "notes": "Four-year commitment announced post-George Floyd. Brings total RISE commitments to $30M since 2015 founding.",
+      "event_role_canonical": "pledge"
     }
   ],
   "pledges_and_announcements": [
@@ -256,7 +270,8 @@
       "retrieved_at": "2026-04-24",
       "notes": "Signed 2013. Net worth at signing estimated ~$3-4B (Forbes 2013). 'Substantial majority' = conservatively 50%+ = ~$1.5-2B at 2013. Current net worth $17B; 50% target = ~$8.5B. Documented observable giving lifetime ~$665M (see rollup). Gap ~$7.8B against 50% floor.",
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
-      "focus_areas": "Education, arts, healthcare, sustainable urban development"
+      "focus_areas": "Education, arts, healthcare, sustainable urban development",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "ross_vanderbilt_50m",
@@ -270,7 +285,8 @@
       "source_url": "https://en.wikipedia.org/wiki/Stephen_M._Ross",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "notes": "Reported as $50M toward Vanderbilt's $520M West Palm graduate campus plan. Disbursement schedule not verified."
+      "notes": "Reported as $50M toward Vanderbilt's $520M West Palm graduate campus plan. Disbursement schedule not verified.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -458,7 +474,11 @@
     "observable_plus_hidden_ratio_to_expected_10pct": 6.59,
     "tier": "Probably_Low (Tier B)",
     "tier_rule": "Under the standard 10%-of-liquid norm, Ross's observable giving ($665M) EXCEEDS the $425M floor \u2014 suggests NOT a Scrooge by that metric. Under his own 2013 pledge commitment ('substantial majority' \u2192 50%+), the $2.125B target is unmet (31% of expected). Tier B reflects this tension: visible mid-hundreds-of-millions of documented giving, but a pledge commitment that implies ~5-10x current lifetime total. Worth watching the 2023 SMRF spike and any post-2024 gift announcements.",
-    "tier_published_caveat": "Ross is not a classic Scrooge case. He has given $478M lifetime to University of Michigan alone (largest donor in UM history), $100M cumulative to WRI, $30M to RISE, $100M to DCI. The Scrooge lens flags him because: (1) signed Giving Pledge but hasn't approached the 'substantial majority' threshold given his $17B fortune, (2) heavy political-fundraiser role for Trump, (3) wealth is locked in illiquid sports/real estate assets, (4) 2024 foundation payout anomaly."
+    "tier_published_caveat": "Ross is not a classic Scrooge case. He has given $478M lifetime to University of Michigan alone (largest donor in UM history), $100M cumulative to WRI, $30M to RISE, $100M to DCI. The Scrooge lens flags him because: (1) signed Giving Pledge but hasn't approached the 'substantial majority' threshold given his $17B fortune, (2) heavy political-fundraiser role for Trump, (3) wealth is locked in illiquid sports/real estate assets, (4) 2024 foundation payout anomaly.",
+    "expected_5pct_tenure_usd": 3825000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 3159283150,
+    "ratio_observable_to_5pct_tenure": 0.174
   },
   "scrooge_legacy_score_internal_only": {
     "value": 56.0,

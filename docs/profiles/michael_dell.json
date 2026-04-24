@@ -72,7 +72,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Charitable disbursements per 990-PF. Inside Philanthropy reports 2024 grantmaking of ~$308M (different definition possibly including DAF sub-granting); reconcile before publish."
+      "notes": "Charitable disbursements per 990-PF. Inside Philanthropy reports 2024 grantmaking of ~$308M (different definition possibly including DAF sub-granting); reconcile before publish.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dell_msdf_2023",
@@ -84,7 +85,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dell_msdf_2022",
@@ -96,7 +98,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dell_msdf_2021",
@@ -108,7 +111,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dell_msdf_2020",
@@ -120,7 +124,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dell_msdf_2019",
@@ -132,7 +137,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "dell_stock_gift_2023",
@@ -155,7 +161,8 @@
       "secondary_source_url": "https://www.forbes.com/sites/phoebeliu/2023/10/20/michael-dell-just-made-his-biggest-ever-donation-of-dell-stock/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "This is a transfer INTO MSDF ($140M) and into DAFs ($210M). Per dedup rule #2, we count grants OUT of the foundation (which we have via 990-PF) and grants OUT of DAFs (which are donor-opaque and not visible). The $140M portion is already captured in MSDF's subsequent grant_out flows; the $210M DAF portion is observable only as a transfer, not as final giving. Mark as transfer_in and EXCLUDE from observable rollup to avoid double-counting with MSDF grants; flag $210M DAF portion as potential hidden giving (destination unknown)."
+      "dedup_note": "This is a transfer INTO MSDF ($140M) and into DAFs ($210M). Per dedup rule #2, we count grants OUT of the foundation (which we have via 990-PF) and grants OUT of DAFs (which are donor-opaque and not visible). The $140M portion is already captured in MSDF's subsequent grant_out flows; the $210M DAF portion is observable only as a transfer, not as final giving. Mark as transfer_in and EXCLUDE from observable rollup to avoid double-counting with MSDF grants; flag $210M DAF portion as potential hidden giving (destination unknown).",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "dell_msdf_endowment_grants_2023_2024",
@@ -175,7 +182,8 @@
       "source_url": "https://www.insidephilanthropy.com/home/sign-of-the-times-the-dells-grow-their-foundation-by-a-cool-5-billion",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "CRITICAL: $5B grew MSDF endowment from ~$1.5B (2022) to $7.5B+ (2024). This is transfer INTO foundation, not out-the-door giving. Observable giving is the foundation's grants_out, not the endowment injection. Under Forbes/IPS methodology, endowment transfers are NOT counted as philanthropy until distributed to charity. Excluded from observable rollup."
+      "dedup_note": "CRITICAL: $5B grew MSDF endowment from ~$1.5B (2022) to $7.5B+ (2024). This is transfer INTO foundation, not out-the-door giving. Observable giving is the foundation's grants_out, not the endowment injection. Under Forbes/IPS methodology, endowment transfers are NOT counted as philanthropy until distributed to charity. Excluded from observable rollup.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "dell_ut_austin_dellmed_2013",
@@ -189,7 +197,8 @@
       "source_url": "https://www.texastribune.org/2026/04/21/texas-austin-dell-michael-susan-billion-research-medical-university/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Likely flows through MSDF 2013 990-PF; pre-2019 990-PF data not yet pulled. Would be captured in MSDF pre-2019 grants_out. Flag for dedup once MSDF 2013 990-PF is retrieved."
+      "dedup_note": "Likely flows through MSDF 2013 990-PF; pre-2019 990-PF data not yet pulled. Would be captured in MSDF pre-2019 grants_out. Flag for dedup once MSDF 2013 990-PF is retrieved.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "dell_ut_austin_compsci_hall",
@@ -203,7 +212,8 @@
       "source_url": "https://www.texastribune.org/2026/04/21/texas-austin-dell-michael-susan-billion-research-medical-university/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Likely flows through MSDF pre-2019 grants."
+      "dedup_note": "Likely flows through MSDF pre-2019 grants.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "dell_ut_austin_dellscholars_100m",
@@ -217,7 +227,8 @@
       "source_url": "https://www.texastribune.org/2026/04/21/texas-austin-dell-michael-susan-billion-research-medical-university/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Likely captured in MSDF grants_out; pull MSDF historical 990-PF to dedup."
+      "dedup_note": "Likely captured in MSDF grants_out; pull MSDF historical 990-PF to dedup.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "dell_msdf_charter_120m_2024",
@@ -230,7 +241,8 @@
       "source_url": "https://time.com/collections/time100-philanthropy-2025/7286083/michael-dell-susan-dell/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Within MSDF 2024 $218.9M grants_out per 990-PF. Do NOT add separately."
+      "dedup_note": "Within MSDF 2024 $218.9M grants_out per 990-PF. Do NOT add separately.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -244,7 +256,8 @@
         "https://www.insidephilanthropy.com/home/sign-of-the-times-the-dells-grow-their-foundation-by-a-cool-5-billion",
         "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315"
       ],
-      "retrieved_at": "2026-04-23"
+      "retrieved_at": "2026-04-23",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "dell_ut_austin_750m_2026",
@@ -260,7 +273,8 @@
       "secondary_source_url": "https://www.cnbc.com/2026/04/21/michael-susan-dell-ut-austin-donation-medical-campus.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Brings Dell lifetime UT Austin giving past $1B. Structure (personal vs MSDF) not disclosed. Will flow through MSDF grants_out in future 990-PFs if foundation-routed. Not counted in observable until disbursed."
+      "notes": "Brings Dell lifetime UT Austin giving past $1B. Structure (personal vs MSDF) not disclosed. Will flow through MSDF grants_out in future 990-PFs if foundation-routed. Not counted in observable until disbursed.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "dell_trump_accounts_2025",
@@ -278,7 +292,8 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "classification_note": "AMBIGUOUS_CLASSIFICATION: Trump Accounts are private investment accounts in the child's name (not a 501(c)(3) recipient). Forbes (Erb, Dec 2025) analyzed the tax treatment: the contribution is likely structured as gifts to individual minor accounts, NOT a charitable deduction to a 501(c)(3). Under strict Forbes/IPS/Chronicle methodology, transfers into individual investment accounts do NOT count as charitable giving. However, the recipient-selection logic (low-income ZIP codes, children) has a charitable flavor. Conservative treatment: EXCLUDE from observable charitable giving pending clarification of IRS/legal structure. Flag for reclassification when disbursement mechanism is clarified (could route through a 501(c)(3) 'Invest America Foundation' or similar, in which case it would count).",
-      "tax_source_url": "https://www.forbes.com/sites/kellyphillipserb/2025/12/05/is-it-deductible-the-tax-rules-around-the-dells-625-billion-contribution-to-trump-accounts/"
+      "tax_source_url": "https://www.forbes.com/sites/kellyphillipserb/2025/12/05/is-it-deductible-the-tax-rules-around-the-dells-625-billion-contribution-to-trump-accounts/",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "dell_lifetime_giving_quote",
@@ -288,7 +303,8 @@
       "notes": "Susan Dell stated in 2025: the Dells have 'given away over $3 billion over the past 26 years, mostly to children's causes.' This self-report is a rough upper bound claim. Our MSDF 990-PF sum 2019-2024 alone = $1.064B; pre-2019 MSDF 990-PF data not yet pulled. The $3B self-report is roughly consistent with cumulative MSDF grants_out 1999-2024 given lower annual grantmaking in the 2000s-2010s.",
       "source_url": "https://en.wikipedia.org/wiki/Michael_Dell",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "reference_only"
     }
   ],
   "political_giving": {
@@ -423,7 +439,11 @@
     "observable_plus_hidden_ratio_to_expected": 0.756,
     "tier": "On_Track (Tier C)",
     "tier_rule": "Tier A (Verified Low) requires observable + hidden < 0.2 \u00d7 expected \u2014 Dell fails this (observable alone is 0.225). Tier B (Probably Low) requires 0.2-0.5 \u2014 Dell is in this range ONLY if we don't backfill MSDF 1999-2018 and don't credit DAF transfers. With reasonable backfill (observable + hidden \u2248 $3.57B), Dell's ratio is ~0.76 of expected, landing in Tier C 'On Track' or 'Moderate Giver.' CRITICAL factor: MSDF is a 25-year-old serious working foundation with zero-comp principals, global operations, and a $5B 2023-2024 endowment injection signaling future scale-up. Dell is a HIGH-GIVING case relative to Tier A billionaires.",
-    "tier_published_caveat": "Readers should see Dell as the anti-Ellison: did NOT sign Giving Pledge but HAS built a serious working foundation over 25 years, zero-comp principals, broad operations. Key tensions: (1) $5B endowment injection accumulating faster than deploying (low payout ratio watch); (2) $210M DAF transfer opacity; (3) $6.25B Trump Accounts pledge is NOT conventional charity. Dell is notable for doing real philanthropy without the public commitment apparatus (Pledge, LLC, splashy vehicles)."
+    "tier_published_caveat": "Readers should see Dell as the anti-Ellison: did NOT sign Giving Pledge but HAS built a serious working foundation over 25 years, zero-comp principals, broad operations. Key tensions: (1) $5B endowment injection accumulating faster than deploying (low payout ratio watch); (2) $210M DAF transfer opacity; (3) $6.25B Trump Accounts pledge is NOT conventional charity. Dell is notable for doing real philanthropy without the public commitment apparatus (Pledge, LLC, splashy vehicles).",
+    "expected_5pct_tenure_usd": 80325000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 79260800000,
+    "ratio_observable_to_5pct_tenure": 0.0132
   },
   "scrooge_legacy_score_internal_only": {
     "value": 52.0,

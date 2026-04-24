@@ -79,26 +79,37 @@ body{
   font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;
   color:var(--ink-soft);padding:0 4px 14px;
 }
-.masthead-top .volume{color:var(--rust)}
 .theme-toggle{
   background:none;border:none;padding:2px 0;cursor:pointer;
   font-family:var(--display);font-size:.78rem;letter-spacing:.26em;text-transform:uppercase;
   color:var(--ink-soft);transition:color .2s;
 }
-.theme-toggle:hover{color:var(--rust)}
-.masthead-rule{background:var(--rule);width:100%}
-.masthead-rule.top{height:3px}
-.masthead-rule.thin{height:1px;margin-top:3px}
-.masthead-rule.bottom{height:2px;margin-top:3px}
-.title{text-align:center;margin:28px 0 10px;font-family:var(--display);font-weight:900;font-variation-settings:"opsz" 144,"SOFT" 30;line-height:.88;letter-spacing:-.02em}
-.title .article{display:block;font-weight:400;font-style:italic;font-size:clamp(1.4rem,2.4vw,2rem);color:var(--ink-fade);font-variation-settings:"opsz" 40,"SOFT" 80;margin-bottom:4px;letter-spacing:.02em}
-.title .main{display:block;font-size:clamp(3.8rem,10.5vw,9rem);color:var(--ink)}
-.title .main::first-letter{color:var(--rust)}
-.deck{text-align:center;font-family:var(--display);font-style:italic;font-variation-settings:"opsz" 18,"SOFT" 100;font-size:clamp(1.05rem,1.6vw,1.35rem);color:var(--ink-soft);max-width:720px;margin:18px auto 24px;line-height:1.4}
-
-.epigraph{max-width:720px;margin:54px auto 52px;text-align:center}
-.epigraph p{font-family:var(--display);font-style:italic;font-variation-settings:"opsz" 24,"SOFT" 100;font-size:clamp(1.05rem,1.55vw,1.3rem);color:var(--ink-soft);line-height:1.5}
-.epigraph cite{display:block;margin-top:14px;font-family:var(--display);font-style:normal;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--rust)}
+.theme-toggle:hover{color:var(--ink)}
+.masthead-rule{background:var(--rule);width:100%;height:1px;margin-bottom:26px;opacity:.6}
+.wordmark{
+  font-family:var(--display);font-weight:600;
+  font-variation-settings:"opsz" 72,"SOFT" 40;
+  font-size:clamp(1.35rem,2.2vw,1.85rem);
+  line-height:1;letter-spacing:-.006em;color:var(--ink);
+  margin:0 0 14px;
+}
+.wordmark .article{font-weight:400;font-style:italic;font-variation-settings:"opsz" 36,"SOFT" 80;color:var(--ink-fade);margin-right:.24em}
+.deck{
+  font-family:var(--display);
+  font-variation-settings:"opsz" 72,"SOFT" 50;
+  font-weight:400;
+  font-size:clamp(1.65rem,3vw,2.5rem);
+  line-height:1.2;letter-spacing:-.012em;
+  color:var(--ink);max-width:860px;margin:0 0 18px;
+}
+.deck em{font-style:italic;color:var(--ink-soft);font-variation-settings:"opsz" 72,"SOFT" 100}
+.subdeck{
+  font-family:var(--body);
+  font-size:1.02rem;line-height:1.55;
+  color:var(--ink-soft);max-width:700px;margin:0 0 44px;
+}
+.subdeck a{color:var(--ink);border-bottom:1px solid var(--ink-ghost);text-decoration:none}
+.subdeck a:hover{color:var(--rust);border-bottom-color:var(--rust)}
 
 .ledger-strip{
   display:grid;grid-template-columns:repeat(4,1fr);
@@ -111,11 +122,10 @@ body{
 .stat-value.tier-a{color:var(--rust)}
 .stat-label{font-family:var(--display);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-fade);margin-top:10px}
 
-.section-head{display:flex;align-items:center;gap:22px;margin:0 0 12px}
-.section-head::before,.section-head::after{content:"";flex:1;height:1px;background:var(--rule);opacity:.4}
-.section-head h2{font-family:var(--display);font-weight:400;font-style:italic;font-variation-settings:"opsz" 72,"SOFT" 70;font-size:clamp(1.6rem,2.5vw,2.2rem);letter-spacing:-.005em;color:var(--ink);white-space:nowrap}
-.section-head h2 .orn{color:var(--rust);font-size:1rem;font-style:normal;margin:0 .3em}
-.section-sub{text-align:center;font-family:var(--display);font-style:italic;font-variation-settings:"opsz" 18;color:var(--ink-fade);margin:0 0 24px;font-size:1rem;max-width:720px;margin-left:auto;margin-right:auto}
+.section-head{display:flex;align-items:baseline;gap:18px;margin:0 0 10px}
+.section-head::after{content:"";flex:1;height:1px;background:var(--rule);opacity:.35;transform:translateY(-6px)}
+.section-head h2{font-family:var(--display);font-weight:500;font-variation-settings:"opsz" 72,"SOFT" 55;font-size:clamp(1.5rem,2.3vw,2rem);letter-spacing:-.008em;color:var(--ink);white-space:nowrap;line-height:1}
+.section-sub{font-family:var(--body);color:var(--ink-fade);margin:0 0 26px;font-size:.98rem;max-width:720px;line-height:1.55}
 
 .frontispiece-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);margin-bottom:64px}
 .offender{padding:32px 26px;border-right:1px solid var(--paper-shadow);min-height:280px;cursor:pointer;transition:background .2s;text-decoration:none;color:inherit;display:block}
@@ -129,6 +139,7 @@ body{
 .offender dt{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-fade);font-variation-settings:"opsz" 9,"SOFT" 50}
 .offender dd{font-size:.95rem;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
 .offender dd.flags{color:var(--rust);font-style:italic;text-align:left}
+.offender dd.shortfall{color:var(--rust);font-weight:700;font-size:1.02rem}
 
 .tier-table{width:100%;border-collapse:collapse;margin:0 0 64px;border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);font-family:var(--display);font-variation-settings:"opsz" 18,"SOFT" 30}
 .tier-table thead th{padding:14px 14px 12px;text-align:left;font-family:var(--display);font-variation-settings:"opsz" 9,"SOFT" 60;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;border-bottom:1px solid var(--rule);white-space:nowrap}
@@ -147,6 +158,11 @@ body{
 .tier-table.sortable thead th[data-sort]::after{content:"↕";position:absolute;right:6px;opacity:.3;font-size:.78rem}
 .tier-table.sortable thead th[data-sort].asc::after{content:"↑";opacity:1;color:var(--rust)}
 .tier-table.sortable thead th[data-sort].desc::after{content:"↓";opacity:1;color:var(--rust)}
+.tier-c-table td.num.claimed{color:var(--ink-soft);font-style:italic;position:relative}
+.tier-c-table td.num.claimed::before{content:"“";position:absolute;left:2px;top:-2px;color:var(--ink-ghost);font-size:1.2em;opacity:.7}
+.tier-c-table td.num.claimed::after{content:"”";margin-left:2px;color:var(--ink-ghost);opacity:.7}
+.tier-c-table .vehicle-main{color:var(--ink);font-variation-settings:"opsz" 9,"SOFT" 50;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+.tier-c-table .vehicle-sub{color:var(--ink-fade);font-style:italic;text-transform:none;letter-spacing:0;font-size:.82rem}
 
 .searchbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:0 0 40px;padding-bottom:20px;border-bottom:1px dotted var(--ink-ghost);flex-wrap:wrap}
 .searchbar input[type="search"]{
@@ -175,9 +191,8 @@ body{
 body.saint-view .tiers-scrooge{display:none}
 body:not(.saint-view) .saint-hero{display:none}
 body.saint-view .how-to-read,body.saint-view .pattern-filters,body.saint-view .distribution{display:none}
-body.saint-view #tierOnTrack thead th[data-sort="ratio"]{color:var(--green)}
+body.saint-view #tierOnTrack thead th[data-sort="observable"]{color:var(--green)}
 body.saint-view .section-head h2{color:var(--green)}
-body.saint-view .section-head h2 .orn{color:var(--green)}
 
 .saint-hero{margin:0 0 20px;padding:18px 22px;border:1px solid var(--green);background:rgba(74,110,58,.06);border-left:4px solid var(--green)}
 .saint-hero h2{font-family:var(--display);font-weight:400;font-style:italic;font-variation-settings:"opsz" 72,"SOFT" 70;font-size:clamp(1.5rem,2.3vw,2rem);margin:0 0 6px;color:var(--ink)}
@@ -271,27 +286,19 @@ body.saint-view .section-head h2 .orn{color:var(--green)}
 
 <main class="sheet">
   <div class="masthead-top">
-    <span class="volume">Vol. I · No. 1</span>
-    <span>April MMXXVI</span>
+    <span class="issue">Updated April 2026</span>
     <button class="theme-toggle" id="themeToggle" type="button">
       <span class="theme-glyph">◐</span>
       <span class="theme-label">Mode</span>
     </button>
   </div>
-  <div class="masthead-rule top"></div><div class="masthead-rule thin"></div>
+  <div class="masthead-rule"></div>
 
-  <h1 class="title">
-    <span class="article">The</span>
-    <span class="main">Scrooge List</span>
-  </h1>
-  <div class="masthead-rule bottom"></div>
+  <h1 class="wordmark"><span class="article">The</span>Scrooge List</h1>
 
-  <p class="deck">An inverse Forbes ledger. <span id="cohortCount">—</span> billionaires, tiered by how little of their fortunes we can find deployed for charity — with every dollar cited to its source.</p>
+  <p class="deck"><span id="cohortCount">—</span> US billionaires, tiered by how much of their giving we can <em>document</em>.</p>
 
-  <div class="epigraph">
-    <p>“<em>We identified $X in documented giving.</em>” Never the other way around. Where our sources cannot see, we do not speculate — we mark a tier and invite correction.</p>
-    <cite>The House Rule</cite>
-  </div>
+  <p class="subdeck">Every dollar is source-linked. Where the record is opaque, we mark the tier and say so — never the other way around. <a href="methodology.html">How we sort</a>.</p>
 
   <div class="ledger-strip" id="ledgerStrip">
     <!-- populated by JS -->
@@ -300,7 +307,7 @@ body.saint-view .section-head h2 .orn{color:var(--green)}
   <div class="distribution">
     <div class="dist-caption">
       <span class="dist-title">The distribution</span>
-      <span class="dist-sub">Each dot is one subject. Horizontal position is observable giving as a share of the capacity benchmark (log scale). Hover for names.</span>
+      <span class="dist-sub">Each dot is one subject. Horizontal position is observable giving as a share of the 5%-per-year capacity benchmark (log scale). The absolute dollar shortfall drives the ranking — this chart shows the ratio distribution for shape, not the ranking basis. Hover for names.</span>
     </div>
     <svg id="distPlot" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Distribution of observable giving ratios"></svg>
     <div class="dist-legend">
@@ -349,55 +356,55 @@ body.saint-view .section-head h2 .orn{color:var(--green)}
       <li><strong>Tier A is the strong claim.</strong> Each subject has low observable giving AND we could not identify an opaque vehicle (DAF, LLC, offshore trust) that would plausibly close the gap. Click through for the evidence chain.</li>
       <li><strong>Tier B is a softer claim.</strong> Observable giving is low, but at least one opaque vehicle exists. We cannot prove hidden generosity is absent — only that we cannot find it in public records.</li>
       <li><strong>Tier C is "we cannot say."</strong> Most giving here flows through an LLC or DAF that does not require public disclosure.</li>
-      <li><strong>On Track is calibration.</strong> Observable giving clears the 10%-of-liquid-wealth benchmark — they are not Scrooges, and we show them to make the tier boundaries legible.</li>
+      <li><strong>On Track is calibration.</strong> Observable giving clears the 5%-of-liquid-wealth-per-year benchmark — they are not Scrooges, and we show them to make the tier boundaries legible.</li>
     </ol>
   </div>
 
   <div class="saint-hero">
     <h2>The Saints — subjects above the benchmark</h2>
-    <p>Same cohort, inverted frame. These subjects' observable giving clears the 10%-of-liquid-wealth-per-decade capacity benchmark, with 990-PF filings or published LLC grant databases to back it up. Sorted by ratio to benchmark (highest first). For the Scrooges, flip the toggle above.</p>
+    <p>Same cohort, inverted frame. These subjects' observable giving clears the 5%-per-year capacity benchmark, with 990-PF filings or published LLC grant databases to back it up. Sorted by total observable giving (largest first). For the Scrooges, flip the toggle above.</p>
   </div>
 
   <div class="tiers-scrooge">
-    <div class="section-head"><h2><span class="orn">❧</span> Tier A · The Verified Low <span class="orn">❧</span></h2></div>
-    <p class="section-sub">Ranked ordinally. Low observable giving, and no opaque vehicle that could plausibly close the gap. Subjects here are the strongest claims the list makes.</p>
+    <div class="section-head"><h2>Tier A · Verified Low</h2></div>
+    <p class="section-sub">Ranked ordinally by <strong>absolute dollar shortfall</strong> vs. the 5%-per-year capacity benchmark (see <a href="methodology.html">methodology</a>). Low observable giving, and no opaque vehicle that could plausibly close the gap.</p>
     <div class="frontispiece-grid" id="tierA"></div>
 
-    <div class="section-head"><h2><span class="orn">❧</span> Tier B · Probably Low <span class="orn">❧</span></h2></div>
-    <p class="section-sub">Observable giving is low relative to capacity, but at least one opaque vehicle exists. Presented alphabetically, not ranked.</p>
+    <div class="section-head"><h2>Tier B · Probably Low</h2></div>
+    <p class="section-sub">Observable giving is low relative to capacity, but at least one opaque vehicle exists. Sorted by dollar shortfall, not ranked ordinally.</p>
     <table class="tier-table sortable" id="tierB">
       <thead><tr>
         <th data-sort="name">Name</th>
         <th class="num" data-sort="net_worth">Net Worth</th>
         <th class="num" data-sort="observable">Observable</th>
-        <th class="num" data-sort="ratio">Ratio</th>
+        <th class="num" data-sort="shortfall">Shortfall</th>
         <th>Pattern</th>
       </tr></thead>
       <tbody></tbody>
     </table>
 
-    <div class="section-head"><h2><span class="orn">❧</span> Tier C · Opaque <span class="orn">❧</span></h2></div>
-    <p class="section-sub">Most giving flows through LLCs or DAFs that do not require public disclosure. The published figure is a floor.</p>
-    <table class="tier-table sortable" id="tierC">
+    <div class="section-head"><h2>Tier C · Opaque</h2></div>
+    <p class="section-sub">An LLC, DAF, or private vehicle sits between the donor and any disclosed giving — so the numbers below are <em>claimed by the vehicle</em>, not auditable from public filings. A Tier C shortfall is a floor, not a ceiling.</p>
+    <table class="tier-table sortable tier-c-table" id="tierC">
       <thead><tr>
         <th data-sort="name">Name</th>
         <th class="num" data-sort="net_worth">Net Worth</th>
-        <th class="num" data-sort="observable">Observable</th>
-        <th class="num" data-sort="ratio">Ratio</th>
-        <th>Pattern</th>
+        <th class="num" data-sort="observable">Claimed giving</th>
+        <th class="num" data-sort="shortfall">Apparent shortfall</th>
+        <th>Opaque vehicle</th>
       </tr></thead>
       <tbody></tbody>
     </table>
   </div>
 
-  <div class="section-head"><h2><span class="orn">❧</span> On Track · Not Scrooges <span class="orn">❧</span></h2></div>
-  <p class="section-sub">Shown for calibration — these are not Scrooges. Observable giving is near or above the 10%-of-liquid-wealth benchmark, confirmed through 990-PFs or published LLC grant databases.</p>
+  <div class="section-head"><h2>On Track · Calibration reference</h2></div>
+  <p class="section-sub">Shown for calibration — these are not Scrooges. Observable giving is near or above the 5%-per-year capacity benchmark, confirmed through 990-PFs or published LLC grant databases.</p>
   <table class="tier-table sortable" id="tierOnTrack">
     <thead><tr>
       <th data-sort="name">Name</th>
       <th class="num" data-sort="net_worth">Net Worth</th>
       <th class="num" data-sort="observable">Observable</th>
-      <th class="num" data-sort="ratio">Ratio</th>
+      <th class="num" data-sort="shortfall">Shortfall</th>
       <th>Notes</th>
     </tr></thead>
     <tbody></tbody>
@@ -573,15 +580,15 @@ function renderStats(data) {
   const bs = data.billionaires || [];
   const tierACount = bs.filter(b => b.tier === 'A_VERIFIED_LOW').length;
   const tierBCount = bs.filter(b => b.tier === 'B_PROBABLY_LOW').length;
-  const totalNw = bs.reduce((s, b) => s + (b.net_worth_best_usd_b || 0), 0);
-  const scroogeTiers = bs.filter(b => b.tier === 'A_VERIFIED_LOW' || b.tier === 'B_PROBABLY_LOW');
+  const scroogeTiers = bs.filter(b => b.tier === 'A_VERIFIED_LOW' || b.tier === 'B_PROBABLY_LOW' || b.tier === 'C_OPAQUE');
+  const totalShortfall = scroogeTiers.reduce((s, b) => s + Math.max(0, b.shortfall_5pct_usd || 0), 0);
   const pledgeUnfulfilled = bs.filter(b => (b.red_flags || []).some(f =>
     (typeof f === 'string' ? f : f.flag || '') === 'GIVING_PLEDGE_UNFULFILLED')).length;
 
   strip.innerHTML = `
     <div class="stat"><div class="stat-value tier-a">${tierACount}</div><div class="stat-label">Tier A · Verified Low</div></div>
     <div class="stat"><div class="stat-value">${tierBCount}</div><div class="stat-label">Tier B · Probably Low</div></div>
-    <div class="stat"><div class="stat-value">$${totalNw.toFixed(0)}B</div><div class="stat-label">Cohort Net Worth</div></div>
+    <div class="stat"><div class="stat-value">$${(totalShortfall/1e9).toFixed(0)}B</div><div class="stat-label">Undisbursed Shortfall · Tier A–C</div></div>
     <div class="stat"><div class="stat-value">${pledgeUnfulfilled}</div><div class="stat-label">Giving Pledge Unmet</div></div>
   `;
 }
@@ -600,8 +607,8 @@ function renderDistribution(bs) {
     {r: 0.001, label: '0.1%'},
     {r: 0.01, label: '1%'},
     {r: 0.1, label: '10%'},
-    {r: 0.2, label: '20% · Tier A', threshold: true},
-    {r: 1, label: '100% · capacity', threshold: true},
+    {r: 0.2, label: '20%'},
+    {r: 1, label: '100% · benchmark', threshold: true},
     {r: 10, label: '10×'},
   ];
 
@@ -617,8 +624,8 @@ function renderDistribution(bs) {
 
   // Jitter Y for dots that stack at similar x
   const byX = new Map();
-  const dots = bs.filter(b => b.ratio_observable_to_expected != null).map(b => {
-    const r = b.ratio_observable_to_expected;
+  const dots = bs.filter(b => b.ratio_observable_to_5pct_tenure != null).map(b => {
+    const r = b.ratio_observable_to_5pct_tenure;
     const x = xOf(r);
     const bucket = Math.round(x / 16) * 16;
     const count = byX.get(bucket) || 0;
@@ -653,7 +660,8 @@ function renderTierA(list) {
   if (!list.length) { grid.innerHTML = '<p class="section-sub" style="grid-column:1/-1;padding:40px">No Tier A subjects identified in current cohort.</p>'; return; }
   grid.innerHTML = list.map((b, i) => {
     const rank = b.tier_rank || (i + 1);
-    const ratio = b.ratio_observable_to_expected;
+    const shortfall = b.shortfall_5pct_usd;
+    const expected = b.expected_5pct_tenure_usd;
     const flagsData = (b.red_flags || []).map(f => typeof f === 'string' ? f : (f.flag || '')).join(',');
     return `<a class="offender" href="${profileLink(b.id)}" data-flags="${escHtml(flagsData)}">
       <div class="rank"><sup>${ordinalSup(rank).replace(rank,'').replace('<sup>','').replace('</sup>','')}</sup>${rank}</div>
@@ -662,7 +670,8 @@ function renderTierA(list) {
       <dl>
         <dt>Net Worth</dt><dd>${fmtNw(b.net_worth_best_usd_b)}</dd>
         <dt>Observable</dt><dd>${fmtUsd(b.observable_usd)}</dd>
-        <dt>Ratio vs. Capacity</dt><dd>${fmtRatio(ratio)}</dd>
+        <dt>Expected (5%/yr × tenure)</dt><dd>${fmtUsd(expected)}</dd>
+        <dt>Undisbursed shortfall</dt><dd class="shortfall">${fmtUsd(shortfall)}</dd>
         <dt>Pattern</dt><dd class="flags">${patternChips(b) || '—'}</dd>
       </dl>
     </a>`;
@@ -673,23 +682,52 @@ const SORT_KEYS = {
   name: b => (b.name_display || '').toLowerCase(),
   net_worth: b => -(b.net_worth_best_usd_b || 0),
   observable: b => -(b.observable_usd || 0),
-  ratio: b => b.ratio_observable_to_expected == null ? Infinity : b.ratio_observable_to_expected,
+  ratio: b => b.ratio_observable_to_5pct_tenure == null ? Infinity : b.ratio_observable_to_5pct_tenure,
+  shortfall: b => -(b.shortfall_5pct_usd || 0),
 };
 
 function installSortableTable(id, list) {
   const table = document.getElementById(id);
   const tbody = table.querySelector('tbody');
-  let state = { key: 'name', dir: 'asc' };
+  // Default sort: shortfall desc for scrooge-tier tables (biggest $ gap first);
+  // ratio desc for On Track (biggest overachievers first, in saint-view);
+  // name asc otherwise.
+  const defaultState = (id === 'tierB' || id === 'tierC')
+    ? { key: 'shortfall', dir: 'desc' }
+    : (id === 'tierOnTrack' ? { key: 'observable', dir: 'desc' } : { key: 'name', dir: 'asc' });
+  let state = { ...defaultState };
 
   function rowFor(b) {
     const flagsData = (b.red_flags || []).map(f => typeof f === 'string' ? f : (f.flag || '')).join(',');
+    const isTierC = id === 'tierC';
+    const lastCell = isTierC ? vehicleCell(b) : (patternChips(b) || '—');
+    const obsCls = isTierC ? 'num claimed' : 'num';
+    const shortCls = isTierC ? 'num claimed' : 'num';
     return `<tr onclick="location.href='${profileLink(b.id)}'" data-flags="${escHtml(flagsData)}">
       <td class="name">${b.name_display}</td>
       <td class="num">${fmtNw(b.net_worth_best_usd_b)}</td>
-      <td class="num">${fmtUsd(b.observable_usd)}</td>
-      <td class="num">${fmtRatio(b.ratio_observable_to_expected)}</td>
-      <td class="flags">${patternChips(b) || '—'}</td>
+      <td class="${obsCls}">${fmtUsd(b.observable_usd)}</td>
+      <td class="${shortCls}">${fmtUsd(b.shortfall_5pct_usd)}</td>
+      <td class="flags">${lastCell}</td>
     </tr>`;
+  }
+
+  function vehicleCell(b) {
+    const v = b.detected_vehicles || {};
+    const parts = [];
+    if (v.llcs_philanthropic_count) parts.push('LLC');
+    if (v.dafs_detected) parts.push('DAF');
+    if (v.for_profit_hybrids_count) parts.push('for-profit hybrid');
+    if (v.offshore_count) parts.push('offshore');
+    if (!parts.length && v.foundations_active_count) parts.push(`${v.foundations_active_count} foundation${v.foundations_active_count>1?'s':''}`);
+    const flagSet = (b.red_flags || []).map(f => typeof f === 'string' ? f : (f.flag || ''));
+    const narrow = [];
+    if (flagSet.some(f => f.includes('LOW_PAYOUT'))) narrow.push('low payout');
+    if (flagSet.some(f => f.includes('POLITICAL_HEAVY') || f.includes('POLITICAL_DOMINATES'))) narrow.push('political-heavy');
+    if (flagSet.some(f => f.includes('NO_GIVING_PLEDGE'))) narrow.push('no pledge');
+    const main = parts.join(' · ') || '—';
+    const sub = narrow.length ? ` <span class="vehicle-sub">· ${narrow.join(', ')}</span>` : '';
+    return `<span class="vehicle-main">${main}</span>${sub}`;
   }
 
   function render() {

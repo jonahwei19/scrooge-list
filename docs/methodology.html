@@ -213,9 +213,9 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   <table class="data-table">
     <thead><tr><th>Tier</th><th>Who Belongs</th><th>Published As</th></tr></thead>
     <tbody>
-      <tr><td><span class="tier-a">A — Verified Low</span></td><td>Low observable giving <em>and</em> no material opaque vehicle (DAF, LLC, offshore trust) that could plausibly close the gap.</td><td>Ordinal rank — but only where confidence intervals do not overlap.</td></tr>
-      <tr><td><span class="tier-b">B — Probably Low</span></td><td>Low observable giving relative to capacity, but at least one opaque vehicle exists, so hidden giving is possible.</td><td>Alphabetical. No ordinal rank.</td></tr>
-      <tr><td><span class="tier-c">C — Opaque</span></td><td>Most giving flows through vehicles (LLCs, DAFs) that do not require public disclosure; the published figure is a floor.</td><td>Alphabetical.</td></tr>
+      <tr><td><span class="tier-a">A — Verified Low</span></td><td>Low observable giving <em>and</em> no material opaque vehicle (DAF, LLC, offshore trust) that could plausibly close the gap.</td><td>Ordinal rank — by absolute dollar shortfall vs. the capacity benchmark.</td></tr>
+      <tr><td><span class="tier-b">B — Probably Low</span></td><td>Low observable giving relative to capacity, but at least one opaque vehicle exists, so hidden giving is possible.</td><td>Sorted by dollar shortfall; no published ordinal rank.</td></tr>
+      <tr><td><span class="tier-c">C — Opaque</span></td><td>Most giving flows through vehicles (LLCs, DAFs) that do not require public disclosure; the published figure is a floor.</td><td>Sorted by dollar shortfall; no published ordinal rank.</td></tr>
       <tr><td><span class="tier-ok">On Track</span></td><td>Observable giving is near or above the capacity benchmark.</td><td>Shown for calibration. Not Scrooges.</td></tr>
     </tbody>
   </table>
@@ -224,13 +224,29 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
 
   <h2>The Capacity Benchmark</h2>
   <div class="formula">
-    <strong>Expected Giving = 10% × Liquid Wealth × min(Years as Billionaire / 10, 1)</strong>
-    <span class="bullet">•</span> Liquid wealth: net worth × liquidity factor (0.20 – 0.85 depending on asset mix)<br>
-    <span class="bullet">•</span> Tenure cap: scales down for recent billionaires (AI-boom founders, etc.)<br>
-    <span class="bullet">•</span> Observable / Expected &lt; 0.20 is the <em>Verified Low</em> threshold (Tier A/B)
+    <strong>Expected Giving = 5% × Liquid Wealth × Years as Billionaire</strong>
+    <span class="bullet">•</span> Liquid wealth: net worth × liquidity factor (0.15 – 0.85 depending on asset mix)<br>
+    <span class="bullet">•</span> <strong>Tenure is not capped.</strong> A 40-year billionaire carries eight times the expectation of a 5-year one.<br>
+    <span class="bullet">•</span> The headline ranking is <strong>absolute dollar shortfall</strong> = Expected − Observable, <em>not</em> the ratio.
   </div>
 
-  <p>The 10% coefficient is deliberately strict. It is below the lifetime-pledge benchmark (50% minimum, per the Giving Pledge) and above the IRS private-foundation legal minimum (5% annual payout). It approximates the aggregate generosity rate observed across HNW cohorts in the Bank of America–Lilly School of Philanthropy studies.</p>
+  <p>The 5%-per-year coefficient is deliberately conservative. It matches the IRS private-foundation legal minimum payout rate (5% annual), sits below the lifetime-pledge benchmark (50% minimum, per the Giving Pledge, which implies ≈2.5%/yr across a 20-year horizon), and approximates the aggregate sustainable giving rate for an endowment held forever. Deploying 5% of liquid wealth annually is the mildest version of the pledge ethic.</p>
+
+  <h2>Why Absolute Shortfall, Not Ratio</h2>
+  <p>An earlier draft of this list ranked Tier A by the ratio of observable giving to expected capacity — i.e., fraction. That gave counter-intuitive results. Ira Rennert (<em>$3.8B</em> net worth, <em>30 years</em> as a billionaire, <em>$13M</em> observable giving) ranked <em>above</em> Elon Musk (<em>$811B</em>, <em>14 years</em>, <em>$500M</em> observable) because Rennert's ratio was marginally lower.</p>
+
+  <p>The ratio framing flattens scale. A $500M gift from someone with $811B of wealth is not philanthropically equivalent to a $500M gift from someone with $2B — and a <em>$170B-undisbursed-capacity</em> gap is not equivalent to a <em>$2B-undisbursed</em> gap. The absolute dollar shortfall is what matters to the underlying question: how much charitable capacity is being left on the table?</p>
+
+  <div class="callout">
+    <strong>Worked example.</strong> Under this methodology:
+    <ul>
+      <li><strong>Larry Page</strong> — $269B net worth, ~33% liquid, 20 years → expected ≈ <strong>$89B</strong>; observable $1.8B → shortfall <strong>~$87B</strong>. Ranks #1.</li>
+      <li><strong>Elon Musk</strong> — $811B net worth, ~21% liquid, 14 years → expected ≈ <strong>$85B</strong>; observable $500M → shortfall <strong>~$85B</strong>. Ranks #2.</li>
+      <li><strong>Thomas Peterffy</strong> — $83B net worth, mostly liquid, ~40 years → expected ≈ <strong>$29B</strong>; observable $49M → shortfall <strong>~$29B</strong>. Ranks #3.</li>
+      <li><strong>Ira Rennert</strong> — $3.8B, low liquidity, 30 years → expected ≈ <strong>$0.9B</strong>; observable $13M → shortfall <strong>~$0.8B</strong>. Last in Tier A.</li>
+    </ul>
+    The ratio figures remain visible on each profile as a calibration tool, but the published ranking is by dollar shortfall.
+  </div>
 
   <h2>What We Cannot See — The Honest Error Bar</h2>
   <div class="callout">

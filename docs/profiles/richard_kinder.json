@@ -65,7 +65,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Total charitable disbursements per ProPublica summary of Kinder Foundation 990-PF."
+      "notes": "Total charitable disbursements per ProPublica summary of Kinder Foundation 990-PF.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kinder_kf_2023",
@@ -77,7 +78,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kinder_kf_2022",
@@ -89,7 +91,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kinder_kf_2021",
@@ -101,7 +104,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kinder_kf_2020",
@@ -113,7 +117,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kinder_kf_2019",
@@ -125,7 +130,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kinder_kf_2015",
@@ -137,7 +143,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "kinder_rice_kinder_institute_2026",
@@ -152,7 +159,8 @@
       "source_url": "https://news.rice.edu/news/2026/rices-kinder-institute-secures-future-and-advances-solutions-houston-55m-kinder",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "March 2026 announcement; will appear in Kinder Foundation 2026 990-PF when filed. Will be captured in kinder_kf_2026 grant_out total (not yet filed). Listed here separately as direct_gift for event granularity. DO NOT double-count if and when 2026 990-PF data is added."
+      "dedup_note": "March 2026 announcement; will appear in Kinder Foundation 2026 990-PF when filed. Will be captured in kinder_kf_2026 grant_out total (not yet filed). Listed here separately as direct_gift for event granularity. DO NOT double-count if and when 2026 990-PF data is added.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_md_anderson_tch_2025",
@@ -168,7 +176,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "One of the largest philanthropic gifts to an American pediatric hospital.",
-      "dedup_note": "Will be captured in 2025 Kinder Foundation 990-PF when filed (likely 2026-07 onward). Disbursement may span multiple years. When kinder_kf_2025 row is added, this event must be netted out to avoid double-counting."
+      "dedup_note": "Will be captured in 2025 Kinder Foundation 990-PF when filed (likely 2026-07 onward). Disbursement may span multiple years. When kinder_kf_2025 row is added, this event must be netted out to avoid double-counting.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_buffalo_bayou_east_2022",
@@ -184,7 +193,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Largest single donation in Houston parks history. Already captured in kinder_kf_2022 grant_out total ($55.8M); NOTE the 2022 Kinder Foundation 990-PF total ($55.8M) is LOWER than this single announcement ($100M), which indicates the $100M is a multi-year pledge/pass-through via Buffalo Bayou Partnership, not disbursed all in 2022.",
-      "dedup_note": "KEEP as announcement-level event. Do NOT add $100M to the 2022 rollup total \u2014 the 2022 990-PF grants-out of $55.8M is what actually left the foundation. $100M is the multi-year commitment."
+      "dedup_note": "KEEP as announcement-level event. Do NOT add $100M to the 2022 rollup total \u2014 the 2022 990-PF grants-out of $55.8M is what actually left the foundation. $100M is the multi-year commitment.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_rice_kinder_institute_2022",
@@ -197,7 +207,8 @@
       "source_url": "https://news.rice.edu/news/2022/50m-kinder-foundation-grant-will-expand-kinder-institutes-work-solve-challenges-facing",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Already captured in kinder_kf_2022 990-PF grant_out total or paid multi-year. Listed separately for event-level visibility."
+      "dedup_note": "Already captured in kinder_kf_2022 990-PF grant_out total or paid multi-year. Listed separately for event-level visibility.",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_memorial_park_2018",
@@ -209,7 +220,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_mfah_2015",
@@ -221,7 +233,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_missouri_democracy_2015",
@@ -233,7 +246,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_bayou_greenways_2013",
@@ -245,7 +259,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_buffalo_bayou_park_2010",
@@ -257,7 +272,8 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "event_role_canonical": "direct_gift"
     },
     {
       "event_id": "kinder_rice_cumulative",
@@ -274,7 +290,8 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Per 2026 Rice press release: 'Including the latest gift, the Kinder Foundation has now given more than $135 million to the institute.' Well above the $50M+ threshold flagged in research brief.",
-      "dedup_note": "Summary row \u2014 individual gifts (2022 $50M, 2026 $55M, earlier $30M) are already captured. DO NOT add this $135M to rollup; it's a sum-of-parts for context."
+      "dedup_note": "Summary row \u2014 individual gifts (2022 $50M, 2026 $55M, earlier $30M) are already captured. DO NOT add this $135M to rollup; it's a sum-of-parts for context.",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -293,7 +310,8 @@
       ],
       "source_url": "https://www.givingpledge.org/pledger/rich-and-nancy-kinder/",
       "retrieved_at": "2026-04-24",
-      "notes": "RESEARCH BRIEF CORRECTION: User prompt cited 2014 signing; actual year is 2011 per Giving Pledge website and multiple independent sources. Wealth at 2011 signing ~$5B (pre-Kinder Morgan IPO consolidation). 95% target at signing ~$4.75B. Current net worth $13B; 95% target now ~$12.35B. Gap between observable foundation giving (~$850M through 2024) and 95% target is ~$11.5B \u2014 but pledge is lifetime-OR-estate, so bulk can land at death via Kinder Foundation bequest."
+      "notes": "RESEARCH BRIEF CORRECTION: User prompt cited 2014 signing; actual year is 2011 per Giving Pledge website and multiple independent sources. Wealth at 2011 signing ~$5B (pre-Kinder Morgan IPO consolidation). 95% target at signing ~$4.75B. Current net worth $13B; 95% target now ~$12.35B. Gap between observable foundation giving (~$850M through 2024) and 95% target is ~$11.5B \u2014 but pledge is lifetime-OR-estate, so bulk can land at death via Kinder Foundation bequest.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "kinder_houston_10b_2025",
@@ -307,7 +325,8 @@
       "source_type": "news",
       "source_url": "https://fortune.com/2025/10/21/houston-billionaire-couple-nancy-rich-kinder-donating-95-percent-fortune/",
       "retrieved_at": "2026-04-24",
-      "notes": "Oct 2025 announcement at Emancipation Park groundbreaking: Kinders committed $10B (95% of then-$11.2B net worth) to Houston charities, with bulk expected to pass via Kinder Foundation bequest. Reaffirmation of 2011 Giving Pledge with explicit geographic focus."
+      "notes": "Oct 2025 announcement at Emancipation Park groundbreaking: Kinders committed $10B (95% of then-$11.2B net worth) to Houston charities, with bulk expected to pass via Kinder Foundation bequest. Reaffirmation of 2011 Giving Pledge with explicit geographic focus.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -405,7 +424,11 @@
     "observable_plus_hidden_ratio_to_expected": 1.27,
     "tier": "On_Track (Tier C)",
     "tier_rule": "Observable giving ($858M) exceeds 10%-of-liquid-wealth expectation ($715M). Giving velocity is rising ($31M in 2015 to $60M in 2024). Zero red flags. Pledge signed 2011 and reaffirmed Oct 2025 with explicit $10B Houston commitment. Published tier: 'On Track' \u2014 Kinders are actively delivering on their pledge through a well-run operating foundation, with a credible estate-bequest path for the remainder. This is the canonical counter-example to Ellison: same Giving Pledge signers, dramatically different observable behavior.",
-    "tier_published_caveat": "Readers should see Kinder as the canonical example of 'signed the Giving Pledge, actually doing it.' Observable giving exceeds the 10% formal norm. The remaining 93% of wealth is committed via estate bequest to an existing operating foundation \u2014 this is higher-credibility than opaque trust structures. Main uncertainty: whether lifetime vs. estate split is suboptimal (estate-only giving delays impact by decades). Counterfactual: if Kinder stopped giving today, Houston loses its largest private parks/arts/education funder."
+    "tier_published_caveat": "Readers should see Kinder as the canonical example of 'signed the Giving Pledge, actually doing it.' Observable giving exceeds the 10% formal norm. The remaining 93% of wealth is committed via estate bequest to an existing operating foundation \u2014 this is higher-credibility than opaque trust structures. Main uncertainty: whether lifetime vs. estate split is suboptimal (estate-only giving delays impact by decades). Counterfactual: if Kinder stopped giving today, Houston loses its largest private parks/arts/education funder.",
+    "expected_5pct_tenure_usd": 7150000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 6291596317,
+    "ratio_observable_to_5pct_tenure": 0.1201
   },
   "scrooge_legacy_score_internal_only": {
     "value": 0.0,

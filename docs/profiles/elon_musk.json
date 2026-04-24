@@ -83,7 +83,8 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "$474M includes ~$35M to Fidelity Charitable DAF (transfer into DAF, not verified disbursement to end charity). Also includes large slice to 'The Foundation' (Musk-controlled K-12 school nonprofit in Bastrop, TX \u2014 arm's-length charitable status questioned by InsidePhilanthropy/Alan Cantor). Net out-the-door to non-Musk-affiliated 501(c)(3)s is materially lower than headline $474M."
+      "dedup_note": "$474M includes ~$35M to Fidelity Charitable DAF (transfer into DAF, not verified disbursement to end charity). Also includes large slice to 'The Foundation' (Musk-controlled K-12 school nonprofit in Bastrop, TX \u2014 arm's-length charitable status questioned by InsidePhilanthropy/Alan Cantor). Net out-the-door to non-Musk-affiliated 501(c)(3)s is materially lower than headline $474M.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "musk_mf_2023",
@@ -117,7 +118,8 @@
           "amount_usd": 4000000
         }
       ],
-      "dedup_note": "2023 grants inflated by self-affiliated giving: 57.8% ($137M) went to 'The Foundation' which is Musk-controlled; another $25M (10.6%) went into Fidelity Charitable DAF. Combined self-affiliated + DAF = 68% of 2023 'grants'. Arm's-length charitable impact is materially smaller."
+      "dedup_note": "2023 grants inflated by self-affiliated giving: 57.8% ($137M) went to 'The Foundation' which is Musk-controlled; another $25M (10.6%) went into Fidelity Charitable DAF. Combined self-affiliated + DAF = 68% of 2023 'grants'. Arm's-length charitable impact is materially smaller.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "musk_mf_2022",
@@ -152,7 +154,8 @@
           "amount_usd": 4000000
         }
       ],
-      "dedup_note": "~85% of 2022 'grants' went to Musk-affiliated nonprofit or DAF."
+      "dedup_note": "~85% of 2022 'grants' went to Musk-affiliated nonprofit or DAF.",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "musk_mf_2021",
@@ -175,7 +178,8 @@
           "amount_usd": 54000000
         }
       ],
-      "payout_note": "Mother Jones: 2.7% payout rate \u2014 foundation received $5.7B Tesla transfer in 2021, gave out $160M (2.7% of Tesla-boosted year-end assets)."
+      "payout_note": "Mother Jones: 2.7% payout rate \u2014 foundation received $5.7B Tesla transfer in 2021, gave out $160M (2.7% of Tesla-boosted year-end assets).",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "musk_mf_2020",
@@ -187,7 +191,8 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "event_role_canonical": "grant_out"
     },
     {
       "event_id": "musk_mf_transfer_2021",
@@ -205,7 +210,8 @@
       "secondary_source_url": "https://www.bloomberg.com/news/articles/2022-12-12/elon-musk-s-5-7-billion-mystery-gift-went-to-his-own-charity",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This is a transfer INTO the Musk Foundation, NOT out-the-door giving. Per dedup rule #2, count the Foundation's grants OUT (already captured in musk_mf_2021 through musk_mf_2024), not transfers in. Musk received a charitable tax deduction for the full $5.7B at 2021 stock valuation. Counting this as 'giving' is the central double-count trap that led v1/v2 pipeline to score Musk at $6.3B observable \u2014 nearly all of which was this transfer, NOT actual downstream grants."
+      "dedup_note": "CRITICAL: This is a transfer INTO the Musk Foundation, NOT out-the-door giving. Per dedup rule #2, count the Foundation's grants OUT (already captured in musk_mf_2021 through musk_mf_2024), not transfers in. Musk received a charitable tax deduction for the full $5.7B at 2021 stock valuation. Counting this as 'giving' is the central double-count trap that led v1/v2 pipeline to score Musk at $6.3B observable \u2014 nearly all of which was this transfer, NOT actual downstream grants.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "musk_mf_transfer_2022",
@@ -219,7 +225,8 @@
       "source_url": "https://www.influencewatch.org/non-profit/musk-foundation/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Transfer IN. Excluded from observable giving rollup."
+      "dedup_note": "Transfer IN. Excluded from observable giving rollup.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "musk_mf_transfer_2015",
@@ -232,7 +239,8 @@
       "source_url": "https://www.influencewatch.org/non-profit/musk-foundation/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Transfer IN \u2014 Tesla stock. Excluded from observable giving rollup."
+      "dedup_note": "Transfer IN \u2014 Tesla stock. Excluded from observable giving rollup.",
+      "event_role_canonical": "transfer_in"
     },
     {
       "event_id": "musk_charity_tsla_2024_12",
@@ -249,7 +257,8 @@
       "secondary_source_url": "https://www.reuters.com/business/musk-donated-108-million-tesla-shares-unnamed-charities-filing-shows-2025-01-02/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Recipient NOT disclosed. Could be Musk Foundation (in which case this would be musk_mf_transfer_2024 and should be excluded from rollup as transfer_in) OR genuine arm's-length charities. Historical pattern suggests Musk Foundation is likely recipient (Bloomberg identified 2021 $5.7B 'mystery gift' as going to Musk Foundation 13 months after the fact). Mark confidence as medium; exclude from observable until verified. Value range: $108M (Reuters, based on pre-close price) to $112M (Bloomberg, based on closing price)."
+      "dedup_note": "Recipient NOT disclosed. Could be Musk Foundation (in which case this would be musk_mf_transfer_2024 and should be excluded from rollup as transfer_in) OR genuine arm's-length charities. Historical pattern suggests Musk Foundation is likely recipient (Bloomberg identified 2021 $5.7B 'mystery gift' as going to Musk Foundation 13 months after the fact). Mark confidence as medium; exclude from observable until verified. Value range: $108M (Reuters, based on pre-close price) to $112M (Bloomberg, based on closing price).",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -267,7 +276,8 @@
       "source_url": "https://www.givingpledge.org/pledger/elon-musk/",
       "retrieved_at": "2026-04-23",
       "notes": "Wealth at 2012 signing ~$2.2B (Forbes 2012). 50% target in 2012 dollars = ~$1.1B. Current net worth ~$811B; 50% target is now ~$405B. Gap between observable out-the-door giving (~$500M per Forbes Durot April 2026) and pledge target: ~$405B. IPS classified Musk as unfulfilled in July 2025 'Giving Pledge at 15' report.",
-      "ips_source_url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+      "ips_source_url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "musk_wfp_2021",
@@ -280,7 +290,8 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/Musk_Foundation",
       "retrieved_at": "2026-04-23",
-      "classification_note": "This is documented as evidence of the pattern where a public 'philanthropic moment' (WFP challenge) was resolved via a transfer_in to a Musk-controlled vehicle rather than arm's-length giving. Do not count as pledge; count as context for red_flag FOUNDATION_TO_SELF."
+      "classification_note": "This is documented as evidence of the pattern where a public 'philanthropic moment' (WFP challenge) was resolved via a transfer_in to a Musk-controlled vehicle rather than arm's-length giving. Do not count as pledge; count as context for red_flag FOUNDATION_TO_SELF.",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -493,7 +504,11 @@
     "tier": "Verified_Low (Tier A)",
     "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Musk ratio = 0.09 \u2014 well under 0.2. Even with maximum credit for DAF disbursement (unlikely), anonymous cohort uplift, AND full 50% credit for The Foundation school (contested), total comes to ~$1.1B against $12.17B expected. Musk is Tier A Verified Low.",
     "tier_published_caveat": "Musk is the canonical 'richest person alive who has given least relative to wealth' example. 0.06% lifetime giving rate (Forbes April 2026) is one of the lowest in the Forbes 400. Additional concerns: political giving ($288M+ in 2024) exceeds lifetime philanthropy; Musk Foundation missed IRS 5% minimum three consecutive years; majority of 'giving' goes to Musk-controlled entities (The Foundation school + Fidelity DAF); Giving Pledge signed 2012 remains unfulfilled at 50% target ($405B gap).",
-    "tier_contrast_with_ellison": "Ellison is Tier B (Probably Low) because he has a disclosed trust committing 95% of wealth to charity \u2014 future disbursement plausible. Musk has NO equivalent disclosed trust. Absent such a commitment vehicle, Musk's low observable giving has no offsetting 'future-committed' story, making him firmly Tier A."
+    "tier_contrast_with_ellison": "Ellison is Tier B (Probably Low) because he has a disclosed trust committing 95% of wealth to charity \u2014 future disbursement plausible. Musk has NO equivalent disclosed trust. Absent such a commitment vehicle, Musk's low observable giving has no offsetting 'future-committed' story, making him firmly Tier A.",
+    "expected_5pct_tenure_usd": 85176000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "shortfall_5pct_usd": 84676000000,
+    "ratio_observable_to_5pct_tenure": 0.0059
   },
   "scrooge_legacy_score_internal_only": {
     "value": 99.85,
