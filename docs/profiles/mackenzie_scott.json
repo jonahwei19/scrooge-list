@@ -289,7 +289,10 @@
     "expected_5pct_tenure_usd": 11305000000,
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": -14995000000,
-    "ratio_observable_to_5pct_tenure": 2.3264
+    "ratio_observable_to_5pct_tenure": 2.3264,
+    "observable_from_events_usd": 52600000000,
+    "observable_drift_pct": 1.0,
+    "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
     "value": 8.0,

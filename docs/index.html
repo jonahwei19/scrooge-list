@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Scrooge List — A Ledger of Undisbursed Fortunes</title>
-<meta name="description" content="An inverse Forbes list: billionaires tiered by how little of their fortune has been deployed for charity, with every dollar cited to its source.">
-<meta property="og:title" content="The Scrooge List — A Ledger of Undisbursed Fortunes">
-<meta property="og:description" content="Billionaires tiered by how little of their fortunes we can find deployed for charity. Every dollar cited. Honest error bars.">
+<title>The Scrooge List — US billionaires who haven't given what they could</title>
+<meta name="description" content="US philanthropy rewards pledging, naming foundations, and parking capital in LLCs more than the act of giving. This ledger names the billionaires where that gap is widest, sourced to the documents.">
+<meta property="og:title" content="The Scrooge List — US billionaires who haven't given what they could">
+<meta property="og:description" content="A ledger of US billionaires exploiting the gap between performative and actual philanthropy. Sourced, tiered, and open to correction.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Scrooge List">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Scrooge List">
-<meta name="twitter:description" content="Billionaires tiered by how little of their fortunes we can find deployed for charity — with every dollar cited to its source.">
+<meta name="twitter:description" content="US billionaires who haven't given what they could. Named, sourced, tiered.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -116,8 +116,10 @@ body{
   border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);
   margin:0 0 56px;
 }
-.stat{padding:22px 16px 20px;text-align:center;border-right:1px solid var(--paper-shadow)}
+.stat{padding:22px 16px 20px;text-align:center;border-right:1px solid var(--paper-shadow);display:block;text-decoration:none;color:inherit;transition:background .15s,transform .15s}
 .stat:last-child{border-right:none}
+.stat:hover{background:var(--row-hover)}
+.stat:hover .stat-label{color:var(--ink)}
 .stat-value{font-family:var(--display);font-variation-settings:"opsz" 72,"SOFT" 30;font-weight:600;font-size:clamp(1.8rem,3.2vw,2.6rem);line-height:1;color:var(--ink);font-variant-numeric:tabular-nums lining-nums;letter-spacing:-.01em}
 .stat-value.tier-a{color:var(--rust)}
 .stat-label{font-family:var(--display);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-fade);margin-top:10px}
@@ -213,7 +215,37 @@ body.saint-view .section-head h2{color:var(--green)}
 .dist-caption{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:14px}
 .dist-title{font-family:var(--display);font-style:italic;font-variation-settings:"opsz" 48;font-size:1.2rem;color:var(--ink)}
 .dist-sub{font-family:var(--display);font-style:italic;font-size:.88rem;color:var(--ink-fade);max-width:650px;line-height:1.5}
-#distPlot{width:100%;height:180px;background:var(--paper-mid);border:1px solid var(--paper-shadow)}
+.dist-body{display:grid;grid-template-columns:1fr 280px;gap:16px;align-items:stretch}
+#distPlot{width:100%;height:260px;background:var(--paper-mid);border:1px solid var(--paper-shadow)}
+.dist-info{
+  border:1px solid var(--paper-shadow);background:var(--paper-mid);
+  padding:16px 18px;font-family:var(--display);color:var(--ink);
+  display:flex;flex-direction:column;justify-content:center;min-height:260px;
+}
+.dist-info .di-empty{font-style:italic;color:var(--ink-fade);font-size:.92rem;line-height:1.5;text-align:center}
+.dist-info .di-tier{font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-fade);font-variation-settings:"opsz" 9,"SOFT" 60;margin-bottom:6px}
+.dist-info .di-tier.a{color:var(--rust)}
+.dist-info .di-tier.b{color:var(--gilt)}
+.dist-info .di-tier.c{color:var(--sepia)}
+.dist-info .di-tier.ok{color:var(--green)}
+.dist-info .di-name{font-family:var(--display);font-weight:700;font-variation-settings:"opsz" 72,"SOFT" 30;font-size:1.25rem;line-height:1.1;color:var(--ink);margin-bottom:2px;letter-spacing:-.01em}
+.dist-info .di-meta{font-family:var(--display);font-style:italic;color:var(--ink-fade);font-size:.85rem;margin-bottom:12px}
+.dist-info .di-stats{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.88rem;margin-bottom:12px}
+.dist-info .di-stats dt{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-fade);font-variation-settings:"opsz" 9,"SOFT" 50;align-self:baseline}
+.dist-info .di-stats dd{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
+.dist-info .di-ratio-bar{height:4px;background:var(--paper-shadow);margin-bottom:12px;position:relative}
+.dist-info .di-ratio-fill{position:absolute;left:0;top:0;bottom:0;background:var(--ink)}
+.dist-info .di-ratio-fill.a{background:var(--rust)}
+.dist-info .di-ratio-fill.b{background:var(--gilt)}
+.dist-info .di-ratio-fill.c{background:var(--sepia)}
+.dist-info .di-ratio-fill.ok{background:var(--green)}
+.dist-info .di-flags{font-size:.78rem;line-height:1.4;color:var(--ink-soft);font-style:italic}
+.dist-info .di-cta{margin-top:10px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rust)}
+@media (max-width:900px){
+  .dist-body{grid-template-columns:1fr}
+  .dist-info{min-height:0}
+}
+#distPlot .dot-circle-active{r:7;opacity:1;stroke-width:2}
 #distPlot .axis{stroke:var(--rule);stroke-width:.5;opacity:.5}
 #distPlot .grid{stroke:var(--ink-ghost);stroke-width:.5;stroke-dasharray:2 3;opacity:.5}
 #distPlot .tickline{stroke:var(--gilt);stroke-width:1.5}
@@ -296,9 +328,9 @@ body.saint-view .section-head h2{color:var(--green)}
 
   <h1 class="wordmark"><span class="article">The</span>Scrooge List</h1>
 
-  <p class="deck"><span id="cohortCount">—</span> US billionaires, tiered by how much of their giving we can <em>document</em>.</p>
+  <p class="deck"><span id="cohortCount">—</span> US billionaires who <em>haven't given what they could</em>.</p>
 
-  <p class="subdeck">Every dollar is source-linked. Where the record is opaque, we mark the tier and say so — never the other way around. <a href="methodology.html">How we sort</a>.</p>
+  <p class="subdeck">US philanthropy rewards the <em>signal</em> of giving — pledges, foundations named after you, capital parked in LLCs — more than the act of giving. This is a ledger of the billionaires where that gap is widest, sourced to the documents and tiered by how visible the not-giving is. <a href="methodology.html">How we sort</a>.</p>
 
   <div class="ledger-strip" id="ledgerStrip">
     <!-- populated by JS -->
@@ -307,9 +339,14 @@ body.saint-view .section-head h2{color:var(--green)}
   <div class="distribution">
     <div class="dist-caption">
       <span class="dist-title">The distribution</span>
-      <span class="dist-sub">Each dot is one subject. Horizontal position is observable giving as a share of the 5%-per-year capacity benchmark (log scale). The absolute dollar shortfall drives the ranking — this chart shows the ratio distribution for shape, not the ranking basis. Hover for names.</span>
+      <span class="dist-sub">Each dot is one subject. Horizontal position is observable giving as a share of the 5%-per-year capacity benchmark (log scale). Hover a dot for the case; click to open the profile.</span>
     </div>
-    <svg id="distPlot" viewBox="0 0 1200 180" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Distribution of observable giving ratios"></svg>
+    <div class="dist-body">
+      <svg id="distPlot" viewBox="0 0 1200 220" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Distribution of observable giving ratios"></svg>
+      <aside class="dist-info" id="distInfo" aria-live="polite">
+        <div class="di-empty">Hover a dot to see the subject.<br>Click to open the profile.</div>
+      </aside>
+    </div>
     <div class="dist-legend">
       <span><span class="dot tier-a"></span>Tier A</span>
       <span><span class="dot tier-b"></span>Tier B</span>
@@ -366,11 +403,11 @@ body.saint-view .section-head h2{color:var(--green)}
   </div>
 
   <div class="tiers-scrooge">
-    <div class="section-head"><h2>Tier A · Verified Low</h2></div>
+    <div class="section-head" id="tier-a-section"><h2>Tier A · Verified Low</h2></div>
     <p class="section-sub">Ranked ordinally by <strong>absolute dollar shortfall</strong> vs. the 5%-per-year capacity benchmark (see <a href="methodology.html">methodology</a>). Low observable giving, and no opaque vehicle that could plausibly close the gap.</p>
     <div class="frontispiece-grid" id="tierA"></div>
 
-    <div class="section-head"><h2>Tier B · Probably Low</h2></div>
+    <div class="section-head" id="tier-b-section"><h2>Tier B · Probably Low</h2></div>
     <p class="section-sub">Observable giving is low relative to capacity, but at least one opaque vehicle exists. Sorted by dollar shortfall, not ranked ordinally.</p>
     <table class="tier-table sortable" id="tierB">
       <thead><tr>
@@ -383,7 +420,7 @@ body.saint-view .section-head h2{color:var(--green)}
       <tbody></tbody>
     </table>
 
-    <div class="section-head"><h2>Tier C · Opaque</h2></div>
+    <div class="section-head" id="tier-c-section"><h2>Tier C · Opaque</h2></div>
     <p class="section-sub">An LLC, DAF, or private vehicle sits between the donor and any disclosed giving — so the numbers below are <em>claimed by the vehicle</em>, not auditable from public filings. A Tier C shortfall is a floor, not a ceiling.</p>
     <table class="tier-table sortable tier-c-table" id="tierC">
       <thead><tr>
@@ -586,20 +623,31 @@ function renderStats(data) {
     (typeof f === 'string' ? f : f.flag || '') === 'GIVING_PLEDGE_UNFULFILLED')).length;
 
   strip.innerHTML = `
-    <div class="stat"><div class="stat-value tier-a">${tierACount}</div><div class="stat-label">Tier A · Verified Low</div></div>
-    <div class="stat"><div class="stat-value">${tierBCount}</div><div class="stat-label">Tier B · Probably Low</div></div>
-    <div class="stat"><div class="stat-value">$${(totalShortfall/1e9).toFixed(0)}B</div><div class="stat-label">Undisbursed Shortfall · Tier A–C</div></div>
-    <div class="stat"><div class="stat-value">${pledgeUnfulfilled}</div><div class="stat-label">Giving Pledge Unmet</div></div>
+    <a class="stat" href="#tier-a-section" data-stat="tier-a"><div class="stat-value tier-a">${tierACount}</div><div class="stat-label">Tier A · Verified Low</div></a>
+    <a class="stat" href="#tier-b-section" data-stat="tier-b"><div class="stat-value">${tierBCount}</div><div class="stat-label">Tier B · Probably Low</div></a>
+    <a class="stat" href="#tier-a-section" data-stat="shortfall"><div class="stat-value">$${(totalShortfall/1e9).toFixed(0)}B</div><div class="stat-label">Undisbursed Shortfall · Tier A–C</div></a>
+    <a class="stat" href="#pattern-pledge" data-stat="pledge"><div class="stat-value">${pledgeUnfulfilled}</div><div class="stat-label">Giving Pledge Unmet</div></a>
   `;
+
+  // Clicking the pledge stat activates the pattern filter too
+  const pledgeStat = strip.querySelector('[data-stat="pledge"]');
+  if (pledgeStat) {
+    pledgeStat.addEventListener('click', (e) => {
+      e.preventDefault();
+      const btn = document.querySelector('.pf-btn[data-pattern="GIVING_PLEDGE_UNFULFILLED"]');
+      if (btn) btn.click();
+      document.getElementById('tier-b-section')?.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  }
 }
 
 function renderDistribution(bs) {
   const svg = document.getElementById('distPlot');
-  const W = 1200, H = 180, PAD_L = 40, PAD_R = 30, PAD_T = 30, PAD_B = 40;
+  const info = document.getElementById('distInfo');
+  const W = 1200, H = 220, PAD_L = 40, PAD_R = 30, PAD_T = 30, PAD_B = 40;
   const plotW = W - PAD_L - PAD_R;
   const plotH = H - PAD_T - PAD_B;
 
-  // Log scale: x = log10(ratio). Domain: [-3, 1.5] (ratios 0.001 to ~30).
   const minLog = -3, maxLog = 1.5;
   const xOf = r => PAD_L + ((Math.log10(Math.max(r || 0.001, 0.001)) - minLog) / (maxLog - minLog)) * plotW;
 
@@ -613,24 +661,21 @@ function renderDistribution(bs) {
   ];
 
   let html = '';
-  // Axis line
   html += `<line class="axis" x1="${PAD_L}" y1="${H - PAD_B}" x2="${W - PAD_R}" y2="${H - PAD_B}"/>`;
-  // Gridlines + ticks
   for (const t of ticks) {
     const x = xOf(t.r);
     html += `<line class="${t.threshold ? 'tickline thresh' : 'tickline'}" x1="${x}" y1="${PAD_T}" x2="${x}" y2="${H - PAD_B}"/>`;
     html += `<text class="ticktext" x="${x}" y="${H - PAD_B + 14}" text-anchor="middle">${t.label}</text>`;
   }
 
-  // Jitter Y for dots that stack at similar x
   const byX = new Map();
   const dots = bs.filter(b => b.ratio_observable_to_5pct_tenure != null).map(b => {
     const r = b.ratio_observable_to_5pct_tenure;
     const x = xOf(r);
-    const bucket = Math.round(x / 16) * 16;
+    const bucket = Math.round(x / 18) * 18;
     const count = byX.get(bucket) || 0;
     byX.set(bucket, count + 1);
-    const y = (H - PAD_B) - 12 - (count * 11) % (plotH - 14);
+    const y = (H - PAD_B) - 14 - (count * 12) % (plotH - 16);
     return { x, y, b, r };
   });
 
@@ -639,17 +684,81 @@ function renderDistribution(bs) {
     'C_OPAQUE': 'c', 'ON_TRACK': 'ok'
   }[t] || 'b');
 
+  const tierLabel = t => ({
+    'A_VERIFIED_LOW': 'Tier A · Verified Low',
+    'B_PROBABLY_LOW': 'Tier B · Probably Low',
+    'C_OPAQUE': 'Tier C · Opaque',
+    'ON_TRACK': 'On Track · Calibration'
+  }[t] || 'Unclassified');
+
+  const flagLabels = {
+    'GIVING_PLEDGE_UNFULFILLED': 'Giving Pledge signed but unmet',
+    'GIVING_PLEDGE_UNFULFILLED_TO_DATE': 'Pledge delivery behind schedule',
+    'NO_GIVING_PLEDGE_SIGNATURE': 'Never signed the Giving Pledge',
+    'NO_GIVING_PLEDGE': 'Never signed the Giving Pledge',
+    'POLITICAL_DOMINATES_CHARITABLE': 'Political giving exceeds charitable',
+    'POLITICAL_HEAVY': 'Political giving is the dominant channel',
+    'LLC_OPACITY': 'Core vehicle is an LLC · no 990 disclosure',
+    'FOR_PROFIT_PIVOT': 'Primary vehicle is for-profit',
+    'DAF_TRANSFERS': 'Heavy reliance on donor-advised funds',
+    'LOW_PAYOUT': 'Foundation payout below 5% minimum',
+  };
+
+  const obsUsd = b => b.observable_usd;
+  const ratioStr = r => r >= 1 ? r.toFixed(2) + '×' : (r * 100).toFixed(1) + '%';
+
+  function summarize(b) {
+    const flags = (b.red_flags || []).map(f => typeof f === 'string' ? f : f.flag);
+    for (const f of flags) { if (flagLabels[f]) return flagLabels[f]; }
+    return flags[0] ? flags[0].toLowerCase().replace(/_/g, ' ') : '—';
+  }
+
   for (const d of dots) {
     const cls = tierClass(d.b.tier);
-    const pct = d.r >= 1 ? d.r.toFixed(2) + '×' : (d.r * 100).toFixed(1) + '%';
-    html += `<a href="${profileLink(d.b.id)}">
-      <circle class="dot-circle ${cls}" cx="${d.x}" cy="${d.y}" r="4.5">
-        <title>${escXml(d.b.name_display)} — ${pct}</title>
-      </circle>
+    html += `<a href="${profileLink(d.b.id)}" data-id="${escHtml(d.b.id)}">
+      <circle class="dot-circle ${cls}" data-id="${escHtml(d.b.id)}" cx="${d.x}" cy="${d.y}" r="5"></circle>
     </a>`;
   }
 
   svg.innerHTML = html;
+
+  const byId = Object.fromEntries(dots.map(d => [d.b.id, d]));
+  function show(d) {
+    if (!d) return;
+    const cls = tierClass(d.b.tier);
+    const pct = ratioStr(d.r);
+    const barPct = Math.max(2, Math.min(100, Math.log10(Math.max(d.r, 0.001)) / maxLog * 100 + 66));
+    info.innerHTML = `
+      <div class="di-tier ${cls}">${tierLabel(d.b.tier)}</div>
+      <div class="di-name">${escHtml(d.b.name_display)}</div>
+      <div class="di-meta">${escHtml(d.b.wealth_source || '')}</div>
+      <div class="di-ratio-bar"><div class="di-ratio-fill ${cls}" style="width:${barPct}%"></div></div>
+      <dl class="di-stats">
+        <dt>Net worth</dt><dd>${fmtNw(d.b.net_worth_best_usd_b)}</dd>
+        <dt>${d.b.tier === 'C_OPAQUE' ? 'Claimed giving' : 'Observable'}</dt><dd>${fmtUsd(obsUsd(d.b))}</dd>
+        <dt>Ratio vs. benchmark</dt><dd>${pct}</dd>
+      </dl>
+      <div class="di-flags">${summarize(d.b)}</div>
+      <div class="di-cta">Click dot → profile →</div>
+    `;
+  }
+
+  function clearActive() {
+    svg.querySelectorAll('.dot-circle-active').forEach(c => c.classList.remove('dot-circle-active'));
+  }
+
+  svg.querySelectorAll('circle[data-id]').forEach(circle => {
+    circle.addEventListener('mouseenter', () => {
+      clearActive();
+      circle.classList.add('dot-circle-active');
+      show(byId[circle.dataset.id]);
+    });
+    circle.addEventListener('focus', () => {
+      clearActive();
+      circle.classList.add('dot-circle-active');
+      show(byId[circle.dataset.id]);
+    });
+  });
 }
 
 function escXml(s) { return String(s || '').replace(/[<>&"]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c])); }

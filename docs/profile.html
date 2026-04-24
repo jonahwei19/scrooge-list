@@ -324,6 +324,19 @@ function render(rec) {
     </div>`;
   }
 
+  // Reconciliation: when the agent's rollup diverges materially from the
+  // event-sum, surface it. Transparency over hiding.
+  const fromEvents = rollup.observable_from_events_usd;
+  const drift = rollup.observable_drift_pct;
+  if (fromEvents && observable && drift != null && drift >= 0.20) {
+    const direction = fromEvents > observable ? 'higher' : 'lower';
+    html += `<div class="callout">
+      <strong>Reconciliation note</strong>
+      <p>Published observable giving (<strong>${fmtUsd(observable)}</strong>) is the published attribution figure. The strict sum of canonical <em>grant_out</em> + <em>direct_gift</em> events listed below is <strong>${fmtUsd(fromEvents)}</strong> — ${direction} by ${(drift*100).toFixed(0)}%.</p>
+      <p style="font-style:italic;color:var(--ink-fade);font-size:.9rem">A gap in either direction is usually attribution judgment: lifetime totals cited in sources but not decomposed into discrete events (rollup &gt; events), or family-foundation portions excluded from personal attribution (rollup &lt; events). The event list below is the auditable trail.</p>
+    </div>`;
+  }
+
   if (rollup.tier_reasoning || rollup.tier_published_caveat) {
     html += `<div class="callout ${tierInfo.cls === 'ontrack' ? 'green' : ''}">
       <strong>Tier reasoning</strong>

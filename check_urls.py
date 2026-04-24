@@ -31,8 +31,20 @@ HERE = Path(__file__).parent
 DATA_DIR = HERE / "data"
 
 
-UA = "ScroogeListURLCheck/1.0 (+https://github.com/jonahwei19/scrooge-list)"
-HEADERS = {"User-Agent": UA, "Accept": "*/*"}
+# Bloomberg, OpenSecrets, Reuters, etc. aggressively reject non-browser UAs with 403/401.
+# Use a common Safari UA so the liveness check reflects whether a human browser could
+# reach the URL, not whether a bot can. This is a liveness check, not a scrape — we
+# don't download the content, we just confirm the endpoint exists.
+UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) "
+    "AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
+)
+HEADERS = {
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+}
 
 
 def collect_urls(rec: dict) -> list[tuple[str, str]]:

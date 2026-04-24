@@ -207,6 +207,25 @@ def extract_summary(rec: dict) -> dict:
         shortfall_5pct_usd = None
         ratio_to_5pct = None
 
+    # Reconciliation: what does the event list alone support?
+    # This is the strict "sum of cited, countable charitable outflows" figure.
+    # It will often diverge from rollup.observable_giving_usd (the agent's
+    # considered judgment) — we publish both and show the delta on profiles.
+    event_sum = 0.0
+    for ev in (rec.get("cited_events") or []):
+        if not isinstance(ev, dict):
+            continue
+        if canonical_role(ev.get("event_role")) in OBSERVABLE_ROLES:
+            amt = ev.get("amount_usd")
+            if isinstance(amt, (int, float)) and amt > 0:
+                event_sum += amt
+    observable_from_events_usd = int(event_sum) if event_sum > 0 else 0
+    if observable_usd and observable_from_events_usd:
+        drift_abs = abs(observable_from_events_usd - observable_usd)
+        observable_drift_pct = round(drift_abs / observable_usd, 3)
+    else:
+        observable_drift_pct = None
+
     return {
         "id": p.get("name_display", "unknown").lower().replace(" ", "_"),
         "name_display": p.get("name_display"),
@@ -221,6 +240,11 @@ def extract_summary(rec: dict) -> dict:
         "liquidity_estimate_pct": nw.get("liquidity_estimate_pct"),
 
         "observable_usd": observable_usd,
+        # Event-sum reconciliation: sum of canonical grant_out + direct_gift
+        # amount_usd. When it diverges materially from observable_usd, the
+        # drift is surfaced on the profile page.
+        "observable_from_events_usd": observable_from_events_usd,
+        "observable_drift_pct": observable_drift_pct,
         # Legacy per-record 10%-of-liquid-weighted-by-tenure expected figure (from agent JSON).
         # Preserved for back-compat and comparison; not used for ranking.
         "expected_usd": expected_usd,
@@ -370,6 +394,25 @@ def annotate_with_canonical(rec: dict) -> dict:
             rollup["ratio_observable_to_5pct_tenure"] = round(obs / exp, 4) if exp else None
         except ZeroDivisionError:
             rollup["ratio_observable_to_5pct_tenure"] = None
+
+    # Reconciliation figures — see extract_summary() for rationale.
+    event_sum = 0.0
+    for ev in (rec.get("cited_events") or []):
+        if not isinstance(ev, dict):
+            continue
+        if canonical_role(ev.get("event_role")) in OBSERVABLE_ROLES:
+            amt = ev.get("amount_usd")
+            if isinstance(amt, (int, float)) and amt > 0:
+                event_sum += amt
+    rollup["observable_from_events_usd"] = int(event_sum) if event_sum > 0 else 0
+    if obs and event_sum > 0:
+        rollup["observable_drift_pct"] = round(abs(event_sum - obs) / obs, 3)
+        rollup["observable_reconciliation_note"] = (
+            "Published `observable_giving_usd` reflects agent judgment about attributable giving. "
+            "`observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. "
+            "A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) "
+            "or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
+        )
     return rec
 
 
