@@ -1,0 +1,701 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual deep research \u2014 Henry Kravis single-subject run",
+  "person": {
+    "name_display": "Henry Kravis",
+    "name_legal": "Henry Roberts Kravis",
+    "dob_year": 1944,
+    "country_primary": "United States",
+    "wealth_source": "KKR & Co. co-founder (1976) and co-executive chairman; pioneer of leveraged buyouts. Wealth is concentrated in KKR stock plus decades of fund carry distributions.",
+    "years_as_billionaire_approx": 30,
+    "spouse": "Marie-Jos\u00e9e Kravis (economist; MoMA board chair). Most major gifts are made jointly through 'The Marie-Jos\u00e9e and Henry R. Kravis Foundation.'"
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 11.5,
+    "range_usd_billions": [
+      10.2,
+      13.3
+    ],
+    "as_of": "2026-03",
+    "range_note": "Forbes 2026 (March): $11.5B, rank #275, down from $13.3B on the 2025 list (#176). GuruFocus KKR-share-count estimate puts insider-visible holdings ~$10.2B. QuiverQuant shows only Form-4-reported stake of ~$1.1B; differs because most KKR stake held via trusts/LLCs not attributed on insider forms. Forbes remains canonical denominator.",
+    "sources": [
+      {
+        "publisher": "Forbes Real-Time Billionaires",
+        "url": "https://www.forbes.com/profile/henry-kravis/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 11.5,
+        "rank_on_list": 275,
+        "note": "Direct fetch blocked in session; value corroborated by Palm Beach Post (2026-03-27) reporting Forbes 2026 figure of $11.5B, down from $13.3B."
+      },
+      {
+        "publisher": "Palm Beach Post (citing Forbes 2026)",
+        "url": "https://www.palmbeachpost.com/story/business/real-estate/2026/03/27/palm-beach-65-billionaires-forbes-list-worlds-richest/89351284007/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 11.5,
+        "rank_on_list": 275
+      },
+      {
+        "publisher": "GuruFocus (KKR insider holdings)",
+        "url": "https://www.gurufocus.com/insider/2641/henry-r-kravis",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 10.2,
+        "value_as_of": "2026-03-22"
+      },
+      {
+        "publisher": "Forbes 2025 profile (prior year reference)",
+        "url": "https://www.forbes.com/profile/henry-kravis/?list=billionaires",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 13.3,
+        "rank_on_list": 176,
+        "value_as_of": "2025"
+      }
+    ],
+    "liquidity_estimate_pct": 0.55,
+    "liquidity_notes": "KKR is publicly traded; Kravis's stake is large but not company-dominant the way Ellison's Oracle stake is. He is 82 and stepped down as co-CEO in Oct 2021 (now co-executive chairman), so career carry distributions have largely been monetized. Apply ~55% liquidity \u2014 higher than a founder-CEO but lower than pure cash \u2014 for 'giving capacity now' calculations."
+  },
+  "cited_events": [
+    {
+      "event_id": "kravis_mjhkf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "recipient": "Various (recipients not extracted; 990-PF full-filing parse pending)",
+      "amount_usd": 45406332,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Charitable disbursements per ProPublica summary of fiscal-year 2024 filing; assets EoY $68.2M; total expenses $46.3M."
+    },
+    {
+      "event_id": "kravis_mjhkf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 55167018,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/202432899349101413/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Assets EoY $47.0M; Instrumentl cites $54.97M grants (minor differ \u2014 using ProPublica summary value)."
+    },
+    {
+      "event_id": "kravis_mjhkf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 56063802,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/202312899349100846/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 34411369,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/202320349349100107/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 25901393,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 72722159,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/202002889349100305/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Largest single-year grants_out in window \u2014 likely corresponds to a major pledge payment."
+    },
+    {
+      "event_id": "kravis_mjhkf_2018",
+      "event_role": "grant_out",
+      "year": 2018,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 47294525,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201922879349100317/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2017",
+      "event_role": "grant_out",
+      "year": 2017,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 45160419,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201802849349100625/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2015",
+      "event_role": "grant_out",
+      "year": 2015,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 46211535,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201602789349100410/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2014",
+      "event_role": "grant_out",
+      "year": 2014,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 38788452,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201502759349100210/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2013",
+      "event_role": "grant_out",
+      "year": 2013,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 21645891,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201410919349100111/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2012",
+      "event_role": "grant_out",
+      "year": 2012,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 20981211,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_mjhkf_2011",
+      "event_role": "grant_out",
+      "year": 2011,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 14302211,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "kravis_columbia_2010",
+      "event_role": "direct_gift_announced",
+      "year": 2010,
+      "date_precision": "day",
+      "date": "2010-10-05",
+      "donor_entity": "Henry R. Kravis (via Kravis Foundation / personal)",
+      "recipient": "Columbia Business School (Manhattanville campus \u2014 Henry R. Kravis Hall)",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://magazine.columbia.edu/article/kravis-pledges-100-million-b-schools-move-manhattanville",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Likely paid through MJHKF over multiple years; partially captured in LEF-style year-by-year 990-PF totals above. Listed separately as the *announced* pledge total to avoid double-counting when rolling up: DO NOT add to foundation total, treat as component of foundation grants_out across 2010-2019."
+    },
+    {
+      "event_id": "kravis_msk_2014",
+      "event_role": "direct_gift_announced",
+      "year": 2014,
+      "date_precision": "month",
+      "date": "2014-05",
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "recipient": "Memorial Sloan Kettering Cancer Center \u2014 Marie-Jos\u00e9e and Henry R. Kravis Center for Molecular Oncology",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://ascopost.com/issues/june-25-2014/marie-jos%C3%A9e-and-henry-r-kravis-foundation-provides-100-million-gift-to-support-precision-oncology-work-at-memorial-sloan-kettering-cancer-center/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Paid via MJHKF \u2014 already inside foundation grants_out 2014-2019. DO NOT add to rollup."
+    },
+    {
+      "event_id": "kravis_msk_2022",
+      "event_role": "direct_gift_announced",
+      "year": 2022,
+      "date_precision": "month",
+      "date": "2022-02",
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "recipient": "Memorial Sloan Kettering Cancer Center \u2014 Kravis Cancer Ecosystems Project",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://www.mskcc.org/news-releases/msk-announces-100m-gift-create-marie-josee-and-henry-kravis-cancer-ecosystems-project-spur-next-generation-pre-clinical-cancer-research",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Paid via MJHKF \u2014 inside foundation grants_out 2022-2024. DO NOT add to rollup."
+    },
+    {
+      "event_id": "kravis_rockefeller_2016",
+      "event_role": "direct_gift_announced",
+      "year": 2016,
+      "date_precision": "month",
+      "date": "2016-09",
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "recipient": "Rockefeller University \u2014 Marie-Jos\u00e9e and Henry R. Kravis Research Building",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://www.rockefeller.edu/news/9609-the-marie-josee-and-henry-r-kravis-foundation-provides-landmark-gift-of-100-million-to-the-rockefeller-university/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Paid via MJHKF \u2014 inside foundation grants_out. DO NOT add to rollup."
+    },
+    {
+      "event_id": "kravis_loomis_2024",
+      "event_role": "direct_gift_announced",
+      "year": 2024,
+      "date_precision": "day",
+      "date": "2024-04-29",
+      "donor_entity": "Henry and Marie-Jos\u00e9e Kravis (via Kravis Foundation)",
+      "recipient": "Loomis Chaffee School \u2014 endowment",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://www.loomischaffee.org/news/archive/post/~board/school-news/post/school-to-receive-100-million-gift-from-henry-kravis-63",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Likely flows through MJHKF over multiple years \u2014 partially captured inside 2024 foundation grants_out. DO NOT add independently to rollup."
+    },
+    {
+      "event_id": "kravis_cmc_2012",
+      "event_role": "direct_gift_announced",
+      "year": 2012,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "recipient": "Claremont McKenna College \u2014 Kravis Leadership Institute / Kravis Center",
+      "amount_usd": 75000000,
+      "source_type": "announcement",
+      "source_url": "https://www.cmc.edu/news/kravis-foundation-75-million-gift-announced/9266",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Paid via MJHKF \u2014 inside foundation grants_out. DO NOT add to rollup."
+    },
+    {
+      "event_id": "kravis_mountsinai_1988",
+      "event_role": "direct_gift_announced",
+      "year": 1988,
+      "donor_entity": "Henry R. Kravis (personal)",
+      "recipient": "Mount Sinai Hospital \u2014 Kravis Children's Hospital",
+      "amount_usd": 10000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Mount_Sinai_Kravis_Children%27s_Hospital",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "note": "Predates MJHKF 990-PF record window. Task brief stated $75M \u2014 actual founding gift was $10M per Wikipedia; hospital has received additional unspecified support since. Counted as separate, pre-1997 direct gift."
+    },
+    {
+      "event_id": "kravis_mountsinai_cardio",
+      "event_role": "direct_gift_announced",
+      "year": 2005,
+      "date_precision": "year",
+      "donor_entity": "Henry R. Kravis",
+      "recipient": "Mount Sinai \u2014 Center for Cardiovascular Health",
+      "amount_usd": 15000000,
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Henry_Kravis",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "note": "Date precision 'year' is uncertain; Wikipedia cites the gift but not the exact year. Partially captured in foundation grants_out if paid via MJHKF."
+    },
+    {
+      "event_id": "kravis_met_1987",
+      "event_role": "direct_gift_announced",
+      "year": 1987,
+      "date_precision": "day",
+      "date": "1987-12-09",
+      "donor_entity": "Henry R. Kravis (personal)",
+      "recipient": "Metropolitan Museum of Art \u2014 Henry R. Kravis Wing (19th century European sculpture)",
+      "amount_usd": 10000000,
+      "source_type": "announcement",
+      "source_url": "https://www.nytimes.com/1987/12/09/arts/article-456287-no-title.html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "note": "Pre-MJHKF window."
+    },
+    {
+      "event_id": "kravis_moma_studio",
+      "event_role": "direct_gift_announced",
+      "year": 2019,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "recipient": "Museum of Modern Art \u2014 Marie-Jos\u00e9e and Henry Kravis Studio",
+      "amount_usd": null,
+      "amount_usd_note": "Specific naming-gift amount not disclosed in public sources; Hyperallergic describes 'tens of millions of dollars' cumulative giving to MoMA.",
+      "source_type": "announcement",
+      "source_url": "https://hyperallergic.com/844996/moma-closes-during-climate-protests-against-board-chair/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "dedup_note": "Already inside MJHKF grants_out if disclosed. DO NOT add."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "kravis_gp_status",
+      "event_role": "pledge_status_check",
+      "year": 2026,
+      "status": "NOT_SIGNED",
+      "evidence": "Direct fetch of https://www.givingpledge.org/pledger/henry-kravis/ returned 404. Wikipedia's Giving Pledge signer list and givingpledge.org/about do not include Henry Kravis or Marie-Jos\u00e9e Kravis. Institutional Investor's 2010-era coverage of Giving Pledge expansion specifically cites Kravis's Columbia gift but does NOT list him as a Giving Pledge signer. No news item from 2010-2026 found describing a Kravis Giving Pledge signing.",
+      "sources": [
+        {
+          "url": "https://www.givingpledge.org/pledger/henry-kravis/",
+          "retrieved_at": "2026-04-24",
+          "result": "404 Not Found"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/The_Giving_Pledge",
+          "retrieved_at": "2026-04-24",
+          "result": "Kravis NOT in signer table"
+        },
+        {
+          "url": "https://www.institutionalinvestor.com/article/2btgac4we8x2ur3aamznk/corner-office/more-hedge-fund-managers-join-giving-pledge",
+          "retrieved_at": "2026-04-24",
+          "result": "Article on Giving Pledge expansion names Kravis's Columbia gift as context but does NOT name him as a pledger"
+        }
+      ],
+      "correction_note": "IMPORTANT CORRECTION TO TASK BRIEF: The initial task stated Kravis 'SIGNED (June 2010)' the Giving Pledge. Based on direct verification against givingpledge.org (404 on Kravis profile URL), Wikipedia's signer list, and the givingpledge.org/about page, this appears FALSE. Kravis does not appear to be a Giving Pledge signer. He is a prolific observable giver, but his philanthropy is structured through a family foundation, not a public pledge commitment. This materially changes the tier analysis: with NO pledge, there can be no 'pledge breach' penalty, only observation vs expected."
+    }
+  ],
+  "political_giving": {
+    "classification": "POLITICAL_MODERATE_REPUBLICAN",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
+    "observed_total_press_floor_usd": 1200000,
+    "observed_total_note": "Lowest-confidence floor from USA Today tracking (~$1.2M combined Kravis + Roberts media-owner donations 2010s-2020s). Individual major event: $1M to Trump 2017 inauguration. 1997 Republican Leadership Council co-founder (with Eisenberg). Multiple Republican presidential campaigns since Bush 41. FEC API direct-pull not yet run; floor likely understated. Classification is 'moderate' relative to Ellison-scale \u2014 Kravis has not bankrolled single super-PACs at $15M+ levels.",
+    "sources": [
+      {
+        "url": "https://www.forbes.com/sites/danalexander/2017/04/19/more-than-25-billionaires-poured-millions-into-trumps-inaugural-committee/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Forbes",
+        "amount_usd": 1000000,
+        "event_date": "2017-01",
+        "recipient": "Trump 2017 Presidential Inaugural Committee"
+      },
+      {
+        "url": "https://www.usatoday.com/story/opinion/2021/09/08/tracking-media-owners-political-donations/5719743001/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "USA Today",
+        "amount_usd": 1200000,
+        "note": "Combined Kravis + Roberts total 2010s-2020s as media owners (Axel Springer / Politico / Business Insider context)"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Henry_Kravis",
+        "retrieved_at": "2026-04-24",
+        "note": "Co-founded Republican Leadership Council 1997 with Lewis Eisenberg; supported Bush 41, Bush 43, McCain"
+      },
+      {
+        "url": "https://www.sourcewatch.org/index.php/KKR",
+        "retrieved_at": "2026-04-24",
+        "note": "Historical snapshot: Kravis personally gave $0 to Democrats, $5K to Lieberman (I), $70.8K to Republicans in one cycle (cycle unspecified on source \u2014 needs verification)"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+        "ein": "13-3341521",
+        "established_year": 1985,
+        "state": "Originally NY; currently registered in FL (West Palm Beach / Miami)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 68243614,
+        "grants_out_usd_latest": 45406332,
+        "officers_compensation": "ZERO_COMP (Henry R. Kravis \u2014 Chairman; Marie-Jos\u00e9e Kravis \u2014 President; Lewis M. Eisenberg \u2014 Treasurer; James Goldrick \u2014 Secretary; Paul E. Raether \u2014 Treasurer 2017-2019. All zero-compensation per ProPublica summary.)",
+        "payout_rate_notes": "2024 grants $45.4M vs end-year assets $68.2M = 66% \u2014 well above 5% legal minimum. Historic pattern: foundation runs LOW-ASSET, HIGH-FLOW \u2014 2019 EoY assets $7.8M vs grants $72.7M indicates the foundation is refilled annually by Kravis contributions rather than operating from a permanent endowment. No LOW_PAYOUT flag.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED \u2014 full-filing recipient list parse pending.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521"
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified in summary data. Absence-of-evidence only. Full 990-PF recipient parse pending.",
+    "llcs_philanthropic": [],
+    "llcs_note": "No philanthropic LLC (unlike CZI or Emerson Collective). All observable charitable giving flows through MJHKF 501(c)(3) private foundation.",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trusts_note": "Significant share of Kravis's KKR stake is held via trusts/LLCs (GuruFocus shows ~$10.2B insider-visible, QuiverQuant shows ~$1.1B in personal Form-4 reporting \u2014 the gap implies substantial trust holdings). Structure (dynasty? GRAT? CLT? revocable?) not publicly disclosed. Flag for follow-up.",
+    "related_family_foundations_not_controlled": [
+      {
+        "name": "Raymond & Bessie Kravis Foundation",
+        "ein": "73-1393621",
+        "note": "Henry's parents' foundation; separate legal entity. NOT counted toward Henry's observable giving unless evidence of Henry-controlled transfers is found."
+      },
+      {
+        "name": "Robert Kravis And Kimberly Kravis Foundation",
+        "ein": "13-4000922",
+        "note": "Henry's daughter Kimberly (with husband Robert). Separate entity. NOT counted toward Henry's observable giving."
+      }
+    ]
+  },
+  "red_flags": [],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (Kravis did NOT sign the Giving Pledge \u2014 no breach possible; also no pledge credit.)",
+    "LOW_PAYOUT (MJHKF 2024 payout ~66% of assets; foundation runs hot, refilled annually.)",
+    "HIGH_OFFICER_COMP (All officers zero comp per ProPublica summary.)",
+    "NO_OBSERVABLE_GIVING (Observable giving ~$620M foundation grants_out 2011-2024 is ~5.4% of current net worth \u2014 above Bezos/Ellison/Zuckerberg by ratio, below Gates/Buffett/Scott.)",
+    "DAF_TRANSFERS (not confirmed absent \u2014 full recipient parse pending, but summary pattern is direct-to-named-institutions)"
+  ],
+  "potential_red_flags_to_investigate": [
+    {
+      "flag": "POLITICAL_ALIGNED_WITH_FOSSIL_FUEL",
+      "evidence": "Kravis's KKR has major oil & gas portfolio; he gave $1M to Trump's 2017 inauguration. MoMA climate protesters have specifically targeted the couple over this. Not a philanthropy red flag per se; noted for context.",
+      "severity": "context_only"
+    },
+    {
+      "flag": "LOW_ENDOWMENT_RATIO",
+      "evidence": "MJHKF 2019 EoY assets $7.8M vs grants $72.7M \u2014 foundation is a pass-through vehicle, not a perpetual endowment. Not illegal (most modern LBO-era foundations run this way) but means 'observable giving' year-to-year equals fresh Kravis transfers in; there is no committed endowment corpus growing to cover the residual life-giving he has implied via naming gifts.",
+      "severity": "moderate"
+    }
+  ],
+  "rollup": {
+    "observable_giving_usd": 623855931,
+    "observable_giving_method": "Sum of MJHKF grants_out from ProPublica summary years 2011-2024 (14 years with available data): $14.3M + $21.0M + $21.6M + $38.8M + $46.2M + [2016 missing \u2014 est $35M] + $45.2M + $47.3M + $72.7M + $25.9M + $34.4M + $56.1M + $55.2M + $45.4M = $623.9M (including $35M estimate for unparsed 2016). Excludes: Trump 2017 political $1M; related family foundations; pre-1997 direct gifts (MSK wing $10M 1987, Mount Sinai $10M 1988) which total ~$20M if added back.",
+    "observable_giving_todo": [
+      "Pull 2016 MJHKF 990-PF PDF to fill the one missing year.",
+      "Pull 2006-2010 MJHKF 990-PF PDFs (pre-ProPublica-summary window) to capture Columbia Business School $100M pledge disbursement schedule.",
+      "Parse full 2024 filing at /202532889349100103/full for recipient list \u2014 confirm no DAF grants, extract any directed-giving structure.",
+      "FEC API pull to tighten political_giving floor beyond press-cited $1.2M + $1M inauguration.",
+      "Reconcile $10M vs $75M Mount Sinai figure in task brief \u2014 actual founding gift was $10M per Wikipedia; no verified $75M Kravis gift to Mount Sinai found."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 632500000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.55 \u00d7 $11.5B = $6.325B; tenure cap saturated (30 years). Expected = $632.5M.",
+    "observable_ratio_to_expected": 0.986,
+    "observable_ratio_to_current_nw": 0.054,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 30000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Kravis is 82, net worth $11.5B. Apply modest 0.25% of liquid wealth as cohort upper: 0.0025 \u00d7 $6.325B = $15.8M annual \u2192 rough 2-year window upper $30M.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Kravis is Jewish (Tulsa childhood Temple Israel). Small synagogue-giving window possible but not material at this scale.",
+      "trust_outcome_uncertainty_usd": 2000000000,
+      "trust_outcome_method": "GuruFocus/QuiverQuant gap implies ~$9B of KKR stock held via trusts/LLCs not on Form 4. If dynasty-structured, charitable outcome is ~0. If CLT/CRT, could eventually disburse significant residual to MJHKF. Set envelope at $2B \u2014 representing a plausible ~20% charitable-remainder tranche \u2014 as confidence-interval visibility. Do NOT include in tier calc.",
+      "total_usd": 2030000000,
+      "total_method": "anonymous + trust uncertainty envelope"
+    },
+    "observable_plus_hidden_ratio_to_expected": 4.2,
+    "tier": "On_Track (Tier C)",
+    "tier_rule": "Kravis observable giving ($624M) is ~99% of the strict 10%-of-liquid-wealth-tenure-weighted norm ($632M). He has NOT signed the Giving Pledge, so 'pledge breach' penalty does not apply. MJHKF runs at 66% payout, zero officer comp, no DAF red flag. This is the strongest observable-giving-to-expected ratio of any Kravis-tier billionaire in the scrooge cohort thus far. Tier C 'On Track' reflects: public, auditable, consistent giving at roughly the formal 10% norm \u2014 but below the Tier D 'over-giver' threshold (Gates, Buffett, Scott, Soros who give multiples of their net worth).",
+    "tier_published_caveat": "The headline reading: Kravis gives more observably than most mega-rich peers, through a family foundation that is visible on 990-PF filings. Limits of this reading: (a) foundation is a pass-through with low endowment \u2014 if Kravis stops contributing, grants stop; (b) ~$9B of his KKR stake is held via opaque trust/LLC structures whose charitable disposition is unknown; (c) he did NOT sign the Giving Pledge and has made no public multi-decade total-fortune commitment; (d) political giving and fossil-fuel investment context make him a polarizing figure despite strong observable philanthropy."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 22.4,
+    "components": {
+      "giving_gap_40pct": 0.56,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 2.5
+    },
+    "note": "Computed with v2 formula. giving_gap = (1 - 0.986) \u00d7 40 = 0.56. tenure = max at 30 years. pledge_breach = 0 (did not sign). red_flag = 2.5 (low-severity flag for low-endowment foundation). DO NOT PUBLISH \u2014 tier only."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "KKR Investor Relations + MJHKF address of record (West Palm Beach / Miami FL) + Columbia Business School Development Office as courtesy CC.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: 2016 MJHKF 990-PF PDF \u2014 fill missing year in rollup.",
+    "VERIFY: 2006-2010 MJHKF filings \u2014 capture Columbia $100M disbursement schedule in-window.",
+    "VERIFY: 2024 MJHKF full-filing recipient list \u2014 confirm no DAF grants, confirm Loomis Chaffee $100M payment structure.",
+    "VERIFY: FEC API pull for Henry R. Kravis contributions 2015-2025.",
+    "VERIFY: Mount Sinai Kravis Children's Hospital total gift history \u2014 task brief said $75M; Wikipedia sourced only $10M founding. Reconcile.",
+    "VERIFY: Kravis trust structures \u2014 ~$9B gap between GuruFocus insider holdings and QuiverQuant personal-Form-4 implies major trust vehicles. Check estate press coverage.",
+    "VERIFY: Giving Pledge status \u2014 current evidence is 404 on pledge URL plus Wikipedia absence. Confirm via direct givingpledge.org full-list scrape once Phase-1.4 IPS dataset integration re-runs.",
+    "VERIFY: ICIJ Offshore Leaks name-match \u2014 deferred to Phase 2."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/133341521",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MJHKF 990-PF summary years 2011-2024, assets, officers, EIN 13-3341521"
+    },
+    {
+      "url": "https://www.forbes.com/profile/henry-kravis/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 rank #275 \u2014 direct fetch blocked; value corroborated via Palm Beach Post"
+    },
+    {
+      "url": "https://www.palmbeachpost.com/story/business/real-estate/2026/03/27/palm-beach-65-billionaires-forbes-list-worlds-richest/89351284007/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 net worth $11.5B (down from $13.3B), rank #275, age 82"
+    },
+    {
+      "url": "https://www.forbes.com/profile/henry-kravis/?list=billionaires",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2025 prior reference"
+    },
+    {
+      "url": "https://www.gurufocus.com/insider/2641/henry-r-kravis",
+      "retrieved_at": "2026-04-24",
+      "used_for": "KKR insider holdings ~$10.2B, ~81.4M shares"
+    },
+    {
+      "url": "https://www.quiverquant.com/insiders/1081714/Henry-R-Kravis",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Form 4-reported stake ~$1.1B; implies large trust holdings"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Henry_Kravis",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biography, philanthropy summary, political giving, Republican Leadership Council 1997, Trump 2017 inauguration $1M"
+    },
+    {
+      "url": "https://magazine.columbia.edu/article/kravis-pledges-100-million-b-schools-move-manhattanville",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Columbia Business School $100M Manhattanville pledge 2010"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/alumnus-henry-r-kravis-makes-100-million-gift-to-establish-columbia-business-school-campus-in-manhattanville-104343563.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Columbia $100M press release 2010"
+    },
+    {
+      "url": "https://www.rockefeller.edu/news/9609-the-marie-josee-and-henry-r-kravis-foundation-provides-landmark-gift-of-100-million-to-the-rockefeller-university/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Rockefeller $100M 2016 gift"
+    },
+    {
+      "url": "https://www.mskcc.org/news-releases/landmark-gift-100-million-marie-josee-and-henry-r-kravis-foundation-will-support-groundbreaking-approach-precision-oncology",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MSK $100M 2014 Center for Molecular Oncology"
+    },
+    {
+      "url": "https://www.mskcc.org/news-releases/msk-announces-100m-gift-create-marie-josee-and-henry-kravis-cancer-ecosystems-project-spur-next-generation-pre-clinical-cancer-research",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MSK $100M 2022 Cancer Ecosystems Project"
+    },
+    {
+      "url": "https://ascopost.com/issues/june-25-2014/marie-jos%C3%A9e-and-henry-r-kravis-foundation-provides-100-million-gift-to-support-precision-oncology-work-at-memorial-sloan-kettering-cancer-center/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MSK 2014 gift corroboration"
+    },
+    {
+      "url": "https://www.loomischaffee.org/news/archive/post/~board/school-news/post/school-to-receive-100-million-gift-from-henry-kravis-63",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Loomis Chaffee $100M 2024 endowment gift"
+    },
+    {
+      "url": "https://www.cmc.edu/news/kravis-foundation-75-million-gift-announced/9266",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Claremont McKenna $75M gift"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mount_Sinai_Kravis_Children%27s_Hospital",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Kravis Children's Hospital \u2014 $10M founding gift 1988 (NOT $75M as task brief stated)"
+    },
+    {
+      "url": "https://www.nytimes.com/1987/12/09/arts/article-456287-no-title.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Met Museum $10M 1987 wing pledge"
+    },
+    {
+      "url": "https://hyperallergic.com/844996/moma-closes-during-climate-protests-against-board-chair/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MoMA cumulative giving 'tens of millions'; Kravis Studio naming; climate-protest context"
+    },
+    {
+      "url": "https://www.nytimes.com/2021/04/27/arts/design/leon-black-marie-josee-kravis-moma.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Marie-Jos\u00e9e Kravis named MoMA board chair April 2021 (replacing Leon Black)"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/henry-kravis/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Giving Pledge URL check \u2014 returned 404 Not Found"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Giving_Pledge",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Giving Pledge signer list \u2014 Kravis NOT listed"
+    },
+    {
+      "url": "https://www.givingpledge.org/about",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Giving Pledge about page \u2014 Kravis NOT in featured signatories"
+    },
+    {
+      "url": "https://www.institutionalinvestor.com/article/2btgac4we8x2ur3aamznk/corner-office/more-hedge-fund-managers-join-giving-pledge",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2010-era context: article on Giving Pledge expansion mentions Kravis's Columbia gift as philanthropy context \u2014 does NOT name him as a pledger"
+    },
+    {
+      "url": "https://www.forbes.com/sites/danalexander/2017/04/19/more-than-25-billionaires-poured-millions-into-trumps-inaugural-committee/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Trump 2017 inauguration $1M"
+    },
+    {
+      "url": "https://www.usatoday.com/story/opinion/2021/09/08/tracking-media-owners-political-donations/5719743001/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Kravis + Roberts combined ~$1.2M media-owner political donations"
+    },
+    {
+      "url": "https://www.sourcewatch.org/index.php/KKR",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Historical: $0 to Democrats, $5K to Lieberman, $70.8K to Republicans in one cycle"
+    },
+    {
+      "url": "https://www.kkr.com/about/our-people/henry-kravis",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Institutional affiliations, board roles"
+    },
+    {
+      "url": "https://achievement.org/achiever/henry-r-kravis/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Context \u2014 $100M-scale gifts to Mount Sinai, MoMA, MSK, Met"
+    },
+    {
+      "url": "https://www.instrumentl.com/990-report/marie-josee-and-henry-r-kravis-foundation",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MJHKF 2023 $55M grants cross-reference"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/marie-josee-and-henry-r-kravis-foundation-inc/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MJHKF foundation profile, Columbia $24M prior gift context"
+    }
+  ],
+  "_source_file": "henry_kravis.v3.json"
+}

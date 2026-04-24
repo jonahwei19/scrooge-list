@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T14:27:03.828204Z",
+  "generated_at": "2026-04-24T14:35:49.481554Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
@@ -7,12 +7,12 @@
   "tier_counts": {
     "A_VERIFIED_LOW": 4,
     "B_PROBABLY_LOW": 15,
-    "C_OPAQUE": 2,
+    "C_OPAQUE": 3,
     "MODERATE": 0,
-    "ON_TRACK": 7,
+    "ON_TRACK": 10,
     "UNKNOWN": 0
   },
-  "count": 28,
+  "count": 32,
   "billionaires": [
     {
       "id": "thomas_peterffy",
@@ -942,6 +942,54 @@
       "tier_rank": null
     },
     {
+      "id": "len_blavatnik",
+      "name_display": "Len Blavatnik",
+      "name_legal": "Sir Leonard Valentinovich Blavatnik",
+      "country": "United States (also United Kingdom, Greece)",
+      "wealth_source": "Access Industries (founded 1986). Fortune built through post-Soviet aluminum (Sual/Rusal) and oil (Tyumen Oil / TNK-BP joint venture with Viktor Vekselberg and Mikhail Fridman's Alfa Group; sold 50% stake to Rosneft in 2013 for ~$28B gross, ~$7B personal). Now chairman of Warner Music Group (acquired 2011), ~21% stake in LyondellBasell, owner of DAZN, significant real estate and venture portfolio.",
+      "years_as_billionaire_approx": 20,
+      "net_worth_best_usd_b": 29.9,
+      "net_worth_range_usd_b": [
+        26.5,
+        40
+      ],
+      "net_worth_as_of": "2026-03",
+      "liquidity_estimate_pct": 0.45,
+      "observable_usd": 812693182,
+      "expected_usd": 1345500000,
+      "hidden_upper_usd": 240000000,
+      "ratio_observable_to_expected": 0.604,
+      "ratio_observable_to_nw": 0.0272,
+      "tier": "C_OPAQUE",
+      "tier_raw": "Probably_Not_Low (Tier C / mid-tier)",
+      "tier_reasoning": "Readers should see Blavatnik as the canonical example of 'significant named giving to elite institutions (Oxford, Harvard, Yale, Tate, TAU) concurrent with wealth sourced from post-Soviet aluminum/oil privatizations and a $7B TNK-BP sale to Rosneft.' The scale of giving ($800M+ observable) is real; the reputation-laundering allegation is documented in credible press and cited here without Scrooge adjudicating it. Not a Scrooge, not a saint \u2014 a legitimate data point readers can interpret.",
+      "pledge_signed": false,
+      "red_flags": [
+        "NO_GIVING_PLEDGE",
+        "REPUTATION_LAUNDERING_ALLEGATION",
+        "POLITICAL_GIVING_HEAVY",
+        "PLEDGE_UNDERDISBURSED_WMG_SJF"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 4,
+        "foundations_active_names": [
+          "Blavatnik Family Foundation",
+          "Blavatnik Family Foundation 2020",
+          "Warner Music Group Blavatnik Family Foundation Social Justice Fund",
+          "Blavatnik Archive Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 38,
+      "event_count": 28,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "len_blavatnik.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "mark_zuckerberg",
       "name_display": "Mark Zuckerberg",
       "name_legal": "Mark Elliot Zuckerberg",
@@ -991,6 +1039,50 @@
       "tier_rank": null
     },
     {
+      "id": "david_rubenstein",
+      "name_display": "David Rubenstein",
+      "name_legal": "David Mark Rubenstein",
+      "country": "United States",
+      "wealth_source": "Carlyle Group co-founder (1987); private equity carried interest; Declaration Partners family office (~$2B AUM, 2017-); principal owner Baltimore Orioles (2024-)",
+      "years_as_billionaire_approx": 20,
+      "net_worth_best_usd_b": 4.5,
+      "net_worth_range_usd_b": [
+        3.7,
+        4.5
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.5,
+      "observable_usd": 511770000,
+      "expected_usd": 225000000,
+      "hidden_upper_usd": 50000000,
+      "ratio_observable_to_expected": 2.27,
+      "ratio_observable_to_nw": 0.114,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C)",
+      "tier_reasoning": "Rubenstein presents a methodology edge case: by raw dollars-given / wealth ratio he is Tier C ('On Track'), but the POLITICAL_PATRIOTIC_PR_PATTERN red flag raises a legitimate question about NET civic contribution when carried-interest lobbying is netted against monument giving. The Scrooge List convention (per CLAUDE.md) is to use raw observable ratios for tier assignment and surface the behavioral pattern via red_flags rather than re-tiering. Readers should see both signals: (a) Rubenstein gives at a higher % of wealth than ~95% of US billionaires, AND (b) his specific pattern of small-high-visibility gifts is the textbook case study for the Patriotic Millionaires critique of elite philanthropy.",
+      "pledge_signed": false,
+      "red_flags": [
+        "POLITICAL_PATRIOTIC_PR_PATTERN",
+        "LOANED_NOT_DONATED_ASSETS_INFLATE_LIFETIME_TOTAL",
+        "CARRIED_INTEREST_BENEFICIARY_WHILE_LOBBYING_AGAINST_REFORM"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Rubenstein Foundation (David B Rubenstein Et Al Ttee)"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 24,
+      "event_count": 28,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "david_rubenstein.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "dustin_moskovitz",
       "name_display": "Dustin Moskovitz",
       "name_legal": "Dustin Aaron Moskovitz",
@@ -1029,6 +1121,46 @@
       "event_count": 14,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "dustin_moskovitz.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "henry_kravis",
+      "name_display": "Henry Kravis",
+      "name_legal": "Henry Roberts Kravis",
+      "country": "United States",
+      "wealth_source": "KKR & Co. co-founder (1976) and co-executive chairman; pioneer of leveraged buyouts. Wealth is concentrated in KKR stock plus decades of fund carry distributions.",
+      "years_as_billionaire_approx": 30,
+      "net_worth_best_usd_b": 11.5,
+      "net_worth_range_usd_b": [
+        10.2,
+        13.3
+      ],
+      "net_worth_as_of": "2026-03",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 623855931,
+      "expected_usd": 632500000,
+      "hidden_upper_usd": 2030000000,
+      "ratio_observable_to_expected": 0.986,
+      "ratio_observable_to_nw": 0.054,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier C)",
+      "tier_reasoning": "The headline reading: Kravis gives more observably than most mega-rich peers, through a family foundation that is visible on 990-PF filings. Limits of this reading: (a) foundation is a pass-through with low endowment \u2014 if Kravis stops contributing, grants stop; (b) ~$9B of his KKR stake is held via opaque trust/LLC structures whose charitable disposition is unknown; (c) he did NOT sign the Giving Pledge and has made no public multi-decade total-fortune commitment; (d) political giving and fossil-fuel investment context make him a polarizing figure despite strong observable philanthropy.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "The Marie-Jos\u00e9e and Henry R. Kravis Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 30,
+      "event_count": 24,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "henry_kravis.v3.json",
       "tier_rank": null
     },
     {
@@ -1197,6 +1329,52 @@
       "event_count": 19,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "phil_knight.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "pierre_omidyar",
+      "name_display": "Pierre Omidyar",
+      "name_legal": "Pierre Morad Omidyar",
+      "country": "United States",
+      "wealth_source": "eBay founder (1995); remaining ~4% eBay + ~5% PayPal (post-2015 spinoff) stakes; also Omidyar Network hybrid philanthropy/investment platform",
+      "years_as_billionaire_approx": 28,
+      "net_worth_best_usd_b": 10.6,
+      "net_worth_range_usd_b": [
+        8.7,
+        11.8
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 2000000000,
+      "expected_usd": 583000000,
+      "hidden_upper_usd": 50000000,
+      "ratio_observable_to_expected": 3.43,
+      "ratio_observable_to_nw": 0.189,
+      "tier": "ON_TRACK",
+      "tier_raw": "On_Track (Tier A \u2014 transparent LLC case)",
+      "tier_reasoning": "Readers should see Omidyar as: (1) a transparent-LLC example showing the structure itself isn't the problem \u2014 CZI/Ballmer could disclose like this and choose not to; (2) a Giving Pledge signer whose net worth has actually DECLINED from peak, one of very few for whom this is true; (3) 'on track' not 'fulfilled' \u2014 giving is ~17% of fortune per IPS 2025, pledge target is 50%+, still meaningful gap remaining.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 7,
+        "foundations_active_names": [
+          "Omidyar Network Fund Inc",
+          "Democracy Fund Inc",
+          "Humanity United",
+          "Humanity United Action",
+          "Democracy Fund Voice",
+          "Luminate Foundation Inc",
+          "First Look Institute Inc (formerly First Look Media Works)"
+        ],
+        "llcs_philanthropic_count": 2,
+        "for_profit_hybrids_count": 1,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 19,
+      "event_count": 22,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "pierre_omidyar.v3.json",
       "tier_rank": null
     },
     {

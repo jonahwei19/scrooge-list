@@ -1,0 +1,604 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
+  "generated_at": "2026-04-24",
+  "generated_by": "scrooge v3 manual reference run — single-subject deep research (Rubenstein)",
+
+  "person": {
+    "name_display": "David Rubenstein",
+    "name_legal": "David Mark Rubenstein",
+    "dob_year": 1949,
+    "country_primary": "United States",
+    "wealth_source": "Carlyle Group co-founder (1987); private equity carried interest; Declaration Partners family office (~$2B AUM, 2017-); principal owner Baltimore Orioles (2024-)",
+    "years_as_billionaire_approx": 20
+  },
+
+  "net_worth": {
+    "best_estimate_usd_billions": 4.5,
+    "range_usd_billions": [3.7, 4.5],
+    "as_of": "2026-04",
+    "range_note": "Forbes mid-2024 profile $3.7B; Celebrity Net Worth Oct 2025 $4.5B; April 2026 Caproasia coverage reiterates $4.5B. Forbes 2026 Real-Time profile not fetched successfully (fetch error) but Rubenstein is NOT on the top-400 Forbes US list tier where net-worth volatility is high. The $3.7B-$4.5B band is tight by billionaire-research standards. Critically: Rubenstein is 1-2 orders of magnitude less wealthy than Ellison/Musk/Zuckerberg — this changes the denominator of every 'giving as % of wealth' calculation.",
+    "sources": [
+      {
+        "publisher": "Forbes (mid-2024, via Wikipedia citation)",
+        "url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 3.7
+      },
+      {
+        "publisher": "Celebrity Net Worth",
+        "url": "https://www.celebritynetworth.com/richest-businessmen/ceos/david-rubenstein-net-worth/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 4.5,
+        "value_as_of": "2025-10"
+      },
+      {
+        "publisher": "Caproasia",
+        "url": "https://www.caproasia.com/2026/04/21/united-states-477-billion-private-equity-firm-carlyle-group-billionaire-co-founder-co-chairman-david-rubeinstein-with-4-5-billion-fortune-on-reputation-of-private-equity-his-2-billion-family-of/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 4.5,
+        "value_as_of": "2026-04"
+      }
+    ],
+    "liquidity_estimate_pct": 0.50,
+    "liquidity_notes": "Wealth is a mix of carried-interest from decades of Carlyle fund vintages (partially realized, partially accrued), Carlyle public stock (ticker CG — Rubenstein is a major holder but not controlling), Declaration Partners family office ($2B AUM), and the Baltimore Orioles equity ($1.725B deal 2024, Rubenstein leads but group includes Bloomberg, Hill, Ripken — Rubenstein's share likely ~60-70% or ~$1B-$1.2B of the team). Orioles equity is illiquid; CG stock is liquid; carried interest partially liquid over time. Apply 50% liquidity discount — higher than Ellison (25%) because Rubenstein has harvested decades of PE realizations rather than holding a founder's concentrated public stake."
+  },
+
+  "cited_events": [
+    {
+      "event_id": "rubenstein_magna_carta_2007",
+      "event_role": "direct_gift",
+      "year": 2007,
+      "date_precision": "month",
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "National Archives (long-term loan + $13.5M gift for Rubenstein Gallery)",
+      "amount_usd": 21300000,
+      "amount_usd_note": "Purchase price for 1297 Magna Carta at Sotheby's auction Dec 2007. $19M hammer + fees = $21.3M total. Loaned (not yet donated) to National Archives; Rubenstein retains ownership. A subsequent $13.5M gift in 2011 funded the gallery housing it.",
+      "source_type": "announcement",
+      "source_url": "https://www.npr.org/2007/12/18/17371559/magna-carta-copy-sells-at-auction-for-21-3-million",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: The $21.3M purchase is NOT a charitable gift — it is a private asset purchase that Rubenstein LOANS to the Archives. The $13.5M separate gift for the Rubenstein Gallery IS a charitable gift (captured as separate event rubenstein_archives_gallery_2011). Published 'lifetime giving' totals that include $21.3M are inflating by treating a loaned private asset as a donation."
+    },
+    {
+      "event_id": "rubenstein_archives_gallery_2011",
+      "event_role": "direct_gift",
+      "year": 2011,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "National Archives Foundation — David M. Rubenstein Gallery",
+      "amount_usd": 13500000,
+      "source_type": "announcement",
+      "source_url": "https://www.archives.gov/press/press-releases/2013/nr13-129.html",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "rubenstein_washington_monument_2012",
+      "event_role": "direct_gift",
+      "year": 2012,
+      "date_precision": "month",
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "National Park Service / National Park Foundation — Washington Monument earthquake repair",
+      "amount_usd": 7500000,
+      "source_type": "announcement",
+      "source_url": "https://www.doi.gov/news/pressreleases/Philanthropist-David-Rubenstein-Donates-7-pt-5-Million-to-Repair-Damage-to-Washington-Monument",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Emblematic 'patriotic philanthropy' gift. Matched federal funds. Patriotic Millionaires use this gift as their central example of PR-driven giving that provides political cover for tax-policy self-interest (see POLITICAL_PATRIOTIC_PR_PATTERN flag)."
+    },
+    {
+      "event_id": "rubenstein_washington_monument_elevator",
+      "event_role": "direct_gift",
+      "year": 2014,
+      "date_precision": "year",
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Washington Monument elevator refurbishment",
+      "amount_usd": 3000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_kennedy_center_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [2010, 2025],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "John F. Kennedy Center for the Performing Arts",
+      "amount_usd": 111000000,
+      "amount_usd_note": "Aggregate cumulative giving to Kennedy Center 2010-2025, per Kennedy Center press release naming him largest individual contributor. Includes $50M 2013 expansion gift.",
+      "source_type": "announcement",
+      "source_url": "https://www.kennedy-center.org/news-room/press-release-landing-page/david-rubenstein-to-retire-as-kennedy-center-chairman/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Rubenstein served as Kennedy Center Board Chair. Philanthropic intent is genuine, but the vehicle is a single high-visibility institution with his name attached (not cause-diversified)."
+    },
+    {
+      "event_id": "rubenstein_lincoln_memorial_2016",
+      "event_role": "direct_gift",
+      "year": 2016,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "National Park Foundation — Lincoln Memorial restoration",
+      "amount_usd": 18500000,
+      "source_type": "announcement",
+      "source_url": "https://www.nationalparks.org/news-and-updates/press-releases/david-rubenstein-donates-18-5-million-to-the-national-park-foundation-to-restore-the-lincoln-memorial",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "rubenstein_jefferson_memorial_2019",
+      "event_role": "direct_gift",
+      "year": 2019,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "National Park Foundation — Thomas Jefferson Memorial",
+      "amount_usd": 10000000,
+      "source_type": "announcement",
+      "source_url": "https://www.nps.gov/nama/learn/news/patriotic-philanthropist-david-rubenstein-donates-10-million-for-thomas-jefferson-memorial.htm",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "rubenstein_library_of_congress_2020",
+      "event_role": "direct_gift",
+      "year": 2020,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Library of Congress — Thomas Jefferson Building",
+      "amount_usd": 10000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_arlington_house_2014",
+      "event_role": "direct_gift",
+      "year": 2014,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "National Park Foundation — Arlington House (Robert E. Lee Memorial)",
+      "amount_usd": 12000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_monticello_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [2013, 2015],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Thomas Jefferson Foundation (Monticello)",
+      "amount_usd": 20000000,
+      "amount_usd_note": "Aggregate across multiple gifts 2013-2015.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_mount_vernon_2013",
+      "event_role": "direct_gift",
+      "year": 2013,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Mount Vernon — Fred W. Smith National Library for the Study of George Washington",
+      "amount_usd": 10000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_montpelier_2014",
+      "event_role": "direct_gift",
+      "year": 2014,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Montpelier (James Madison) restoration",
+      "amount_usd": 10000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_iwo_jima_2015",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Marine Corps War Memorial (Iwo Jima) — National Park Foundation",
+      "amount_usd": 5370000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_smithsonian_zoo_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [2011, 2024],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Smithsonian National Zoo — giant panda and elephant research",
+      "amount_usd": 22000000,
+      "amount_usd_note": "Aggregate across $4.5M (2011), $2M (2013), $10M (2024), and intermediate gifts.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_smithsonian_renwick",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Smithsonian American Art Museum — Renwick Gallery renovation",
+      "amount_usd": 5400000,
+      "amount_usd_note": "davidrubenstein.com lists $5.4M. NOTE: Wikipedia list appears to conflate this with a larger $54M figure; $5.4M is the consistent figure across primary sources. Flagged for verification.",
+      "source_type": "news",
+      "source_url": "https://www.davidrubenstein.com/philanthropy/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_national_gallery_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [2016, 2021],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "National Gallery of Art",
+      "amount_usd": 20000000,
+      "amount_usd_note": "$10M East Building (2016) + $10M operations (2021).",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_nmaahc_2016",
+      "event_role": "direct_gift",
+      "year": 2016,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Smithsonian National Museum of African American History and Culture",
+      "amount_usd": 10000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_duke_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [2002, 2017],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Duke University (various — Arts Center, Library, Sanford School, scholarships, athletics)",
+      "amount_usd": 100000000,
+      "amount_usd_note": "Duke's own Centennial page states 'over $100 million' cumulative. Named gifts include $25M Arts Center (2015), $20M first-gen scholarships (2017), $13.6M Libraries (2011), $15M Innovation & Entrepreneurship (2012), $10M Athletics (2012), $10M Sanford fellowships (2013), $1.9M Jewish Life (2014), $5M Sanford School (2002), $5.75M public policy (2009).",
+      "source_type": "institution_page",
+      "source_url": "https://100.duke.edu/story/david-rubenstein/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "rubenstein_harvard_kennedy_school",
+      "event_role": "direct_gift",
+      "year_range": [2008, 2020],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Harvard Kennedy School — Rubenstein Fund / fellowships / campus",
+      "amount_usd": 60000000,
+      "amount_usd_note": "Cumulative per HKS profile page. Note: task brief cited $40M — HKS page says $60M; using $60M as source-confirmed.",
+      "source_type": "institution_page",
+      "source_url": "https://www.hks.harvard.edu/about/david-m-rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "rubenstein_university_chicago_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [2010, 2026],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "University of Chicago (Law School Scholars Program, Rubenstein Forum, Ida Noyes Hall)",
+      "amount_usd": 111000000,
+      "amount_usd_note": "~$61M Law School Scholars cumulative 2010-2022 + ~$50M Ida Noyes Hall 2026 + Forum lead gift. Rounded aggregate.",
+      "source_type": "news",
+      "source_url": "https://mag.uchicago.edu/law-policy-society/chartered-philanthropy",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_johns_hopkins_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [2015, 2021],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Johns Hopkins — Department of Otolaryngology (hearing research)",
+      "amount_usd": 30000000,
+      "amount_usd_note": "$15M (2015) + $15M (2021).",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_msk_lifetime",
+      "event_role": "direct_gift",
+      "year_range": [2012, 2016],
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Memorial Sloan Kettering — pancreatic cancer research",
+      "amount_usd": 25000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_ias_commons_2015",
+      "event_role": "direct_gift",
+      "year": 2015,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Institute for Advanced Study (Princeton) — Rubenstein Commons",
+      "amount_usd": 20000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_holocaust_museum_2022",
+      "event_role": "direct_gift",
+      "year": 2022,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "US Holocaust Memorial Museum — David M. Rubenstein National Institute for Holocaust Documentation",
+      "amount_usd": 15000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
+    {
+      "event_id": "rubenstein_bay_psalm_book_2013",
+      "event_role": "direct_gift",
+      "year": 2013,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Long-term loan — Bay Psalm Book to Old South Church / various institutions",
+      "amount_usd": 14100000,
+      "amount_usd_note": "Purchase at Sotheby's 2013. Same structural issue as Magna Carta: document is owned by Rubenstein and LOANED for display, not donated. NOT a charitable gift under standard accounting.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "EXCLUDED from observable giving rollup — purchase of a private asset that is loaned, not donated."
+    },
+    {
+      "event_id": "rubenstein_emancipation_proclamation_2012",
+      "event_role": "direct_gift",
+      "year": 2012,
+      "donor_entity": "David Rubenstein (personal)",
+      "recipient": "Loan — Emancipation Proclamation to Smithsonian / White House",
+      "amount_usd": 2000000,
+      "amount_usd_note": "Purchase price. LOANED, not donated.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "dedup_note": "EXCLUDED from observable giving rollup — loaned private asset."
+    },
+    {
+      "event_id": "rubenstein_rubenstein_foundation_2011_2024",
+      "event_role": "grant_out",
+      "year_range": [2011, 2024],
+      "donor_entity": "Rubenstein Foundation (David B Rubenstein Et Al Ttee)",
+      "donor_ein": "25-6887967",
+      "amount_usd": 5582553,
+      "amount_usd_note": "Aggregate 990-PF grants paid 2011-2024 by a small Rubenstein family foundation in Haverford PA. Trustees are David B Rubenstein (likely not the Carlyle co-founder himself — may be a son or other family member) and Michele A Kreisler. Assets $6.5M (2024). Separately-tracked; may or may not be attributable to David M. Rubenstein. Included for completeness but flagged low attribution confidence.",
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "attribution_note": "CRITICAL: The trustee name 'David B Rubenstein' may not be David M. Rubenstein the Carlyle co-founder. Middle initial differs (B vs M). Haverford PA is not Rubenstein's primary residence (he lives in Bethesda MD / DC area). This foundation may belong to a different Rubenstein. DO NOT credit these grants to David M. Rubenstein without further verification. Included with low confidence."
+    }
+  ],
+
+  "pledges_and_announcements": [
+    {
+      "event_id": "rubenstein_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "pledged_pct_wealth": 50,
+      "pledged_amount_usd_at_signing_estimate": 1500000000,
+      "status": "PRAISED_FOR_HONORING_SPIRIT",
+      "status_source": "IPS Giving Pledge at 15 (July 2025) specifically names Rubenstein alongside Benioff, Buffett, MacKenzie Scott, and Ted Turner as signatories 'honoring the spirit of the pledge' — in contrast to the ~247/256 living pledgers who have not fulfilled.",
+      "pledge_letter_quote": "I had already made arrangements to ensure that a good deal more than half of my resources would have gone to philanthropic purposes.",
+      "pledge_letter_quote_2": "I want to see the benefits of my giving [while alive].",
+      "source_url": "https://www.givingpledge.org/pledger/david-m-rubenstein/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Pledged 'more than half' (standard Giving Pledge minimum). At 2010 wealth of ~$3B, target was ~$1.5B. Current wealth ~$4.5B means target is now ~$2.25B+. Observable direct giving of ~$500M-$600M is ~25-40% of the pledge target — not fulfilled, but materially on the path. IPS 2025 report publicly praises him as one of the few honoring the spirit.",
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    }
+  ],
+
+  "political_giving": {
+    "classification": "POLITICAL_LIGHT_BUT_LOBBYING_HEAVY",
+    "substitution_note": "Rubenstein is atypical: per ProPublica investigation, he largely AVOIDS direct campaign contributions and instead uses charitable-donor credibility + Capitol Hill relationships to influence tax policy. Direct political-giving dollar totals are therefore misleadingly low and UNDERSTATE his political footprint.",
+    "observed_total_2021_2025_usd": null,
+    "observed_total_note": "FEC direct-pull not yet run. Per ProPublica 2022 investigation, Rubenstein 'avoided political giving' as a deliberate strategy — his leverage was relationship-based (Library of Congress dinners hosting Congress members) rather than PAC-based. A pure $-count would underestimate his influence on tax policy.",
+    "carried_interest_lobbying_pattern": {
+      "pattern_source": "ProPublica 'How Philanthropist David Rubenstein Helped Save a Tax Break Billionaires Love'",
+      "source_url": "https://www.propublica.org/article/how-david-rubenstein-helped-save-the-carried-interest-tax-loophole",
+      "retrieved_at": "2026-04-24",
+      "lobbying_mechanism": "Direct personal meetings with Senate Finance Committee members 2007 and 2010; hosting congressional dinners at Library of Congress (an institution he funds); positioning as 'the perfect good guy' PE lobbyist due to philanthropic reputation",
+      "personal_financial_benefit_2011_usd": 20000000,
+      "personal_financial_benefit_2011_2014_usd": 50000000,
+      "beneficiary_note": "The carried-interest loophole has survived every reform attempt since 2010 despite bipartisan criticism. Rubenstein's personal tax savings from this single provision exceeded $50M across 4 years — i.e., the same order of magnitude as his cumulative patriotic-philanthropy gifts to the NPS during the same period."
+    },
+    "sources": [
+      {
+        "url": "https://www.propublica.org/article/how-david-rubenstein-helped-save-the-carried-interest-tax-loophole",
+        "retrieved_at": "2026-04-24",
+        "publisher": "ProPublica"
+      },
+      {
+        "url": "https://www.philanthropy.com/article/how-billionaire-donor-rubenstein-has-fought-to-save-tax-loophole/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Chronicle of Philanthropy"
+      }
+    ]
+  },
+
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Rubenstein Foundation (David B Rubenstein Et Al Ttee)",
+        "ein": "25-6887967",
+        "established_year": 2006,
+        "state": "PA (Haverford)",
+        "status": "active",
+        "latest_990_year": 2024,
+        "assets_usd_latest": 6499049,
+        "grants_paid_2024_usd": 88300,
+        "grants_paid_2023_usd": 2753245,
+        "grants_paid_range_2011_2024_usd": 5582553,
+        "officers_compensation": "ZERO_COMP",
+        "attribution_confidence": "LOW — trustee name 'David B Rubenstein' may not be David M. Rubenstein (Carlyle). Middle initial and PA location (vs DC/MD) suggest this may be a different Rubenstein family. Needs verification before counting.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967"
+      }
+    ],
+    "foundations_terminated": [],
+    "foundations_note": "KEY FINDING: David M. Rubenstein has NO large private foundation in his own name. He gives almost entirely via DIRECT GIFTS — checks written from personal accounts to recipient institutions. This is structurally different from Ellison (LEF at $117M assets), Gates Foundation, Buffett's Berkshire→Gates pipeline, etc. Consequences: (a) no 990-PF payout rate to flag, (b) no officer compensation to flag, (c) no DAF transfers to flag, (d) no assets-vs-grants gap to flag — but also (e) no intermediary warehousing of committed capital — gifts are actually disbursed when announced. This cuts BOTH ways on the Scrooge analysis.",
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified. Absence-of-evidence only. IPS 2021 finding that 68% of Giving Pledge signers use DAFs does not necessarily apply here given his direct-gift preference.",
+    "llcs_philanthropic": [],
+    "llcs_note": "Declaration Partners ($2B AUM, 2017-) is Rubenstein's family office / for-profit investment vehicle — NOT a philanthropic LLC.",
+    "for_profit_hybrid_vehicles": [],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. Carlyle Group has historical offshore-fund structures that are not personal to Rubenstein.",
+    "trusts_disclosed_existence_structure_unknown": [],
+    "trust_note": "No public disclosure of a trust structure holding Rubenstein's wealth. Absence of disclosure is not evidence of absence; UHNW individuals at his wealth level typically use trust structures.",
+    "baseball_team_ownership": [
+      {
+        "entity": "Baltimore Orioles",
+        "acquisition_year": 2024,
+        "purchase_price_usd": 1725000000,
+        "rubenstein_role": "Principal owner / control of Rubenstein-led investor group",
+        "classification": "PRIVATE_ASSET_NOT_PHILANTHROPY",
+        "source_url": "https://www.espn.com/mlb/story/_/id/39820434/david-rubenstein-unanimously-approved-new-orioles-owner",
+        "retrieved_at": "2026-04-24",
+        "notes": "The task brief explicitly flags that this is NOT philanthropy. Included here for completeness / context on capital allocation. Consumes ~$1B+ of Rubenstein's liquid net worth that could otherwise be deployed charitably."
+      }
+    ]
+  },
+
+  "red_flags": [
+    {
+      "flag": "POLITICAL_PATRIOTIC_PR_PATTERN",
+      "evidence": "Rubenstein is the canonical case in the Patriotic Millionaires literature (Morris Pearl 2016, Medium essay; Common Dreams 2016) of using high-visibility named monument gifts ($7.5M Washington Monument, $18.5M Lincoln Memorial, $10M Jefferson Memorial, Magna Carta gallery) as reputational cover while lobbying to preserve the carried-interest tax loophole — which personally saved him >$50M across 2011-2014 per ProPublica. Individual gifts are small relative to his wealth (patriotic monument gifts total ~$60-80M — a fraction of a single year's carried-interest savings) but generate disproportionate press attention. The pattern is NOT the absence of giving; it is the ratio of press-per-dollar combined with adjacent tax-policy lobbying that benefits him personally.",
+      "source_url": "https://www.propublica.org/article/how-david-rubenstein-helped-save-the-carried-interest-tax-loophole",
+      "secondary_source_url": "https://patrioticmillionaires.org/perspectives/patriotic-philanthropy/"
+    },
+    {
+      "flag": "LOANED_NOT_DONATED_ASSETS_INFLATE_LIFETIME_TOTAL",
+      "evidence": "Rubenstein's publicly-cited 'philanthropy' regularly includes the purchase prices of historical documents he OWNS and loans to institutions: Magna Carta ($21.3M, 2007), Emancipation Proclamation (~$2M, 2012), Bay Psalm Book ($14.1M, 2013), among others. These are private-asset purchases, not charitable gifts. Including them in 'lifetime giving' inflates his philanthropic total by ~$40M+ while retaining the assets as personal property. Standard charitable-giving accounting excludes loaned assets.",
+      "source_url": "https://www.usnews.com/news/blogs/washington-whispers/2013/12/11/so-how-do-you-buy-the-magna-carta-billionaire-david-rubenstein-explains",
+      "retrieved_at": "2026-04-24"
+    },
+    {
+      "flag": "CARRIED_INTEREST_BENEFICIARY_WHILE_LOBBYING_AGAINST_REFORM",
+      "evidence": "ProPublica documented Rubenstein personally lobbying Congress to preserve the carried-interest tax break in 2007 and 2010; his personal savings exceed $50M across 2011-2014. In the same period, he gave ~$80-100M in patriotic-monument gifts. The net public benefit of the overall pattern is ambiguous: philanthropy flows to monuments AND tax revenue is foregone that would have flowed to general public-good spending.",
+      "source_url": "https://www.propublica.org/article/how-david-rubenstein-helped-save-the-carried-interest-tax-loophole"
+    }
+  ],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED — IPS 2025 explicitly names Rubenstein as honoring the spirit of the pledge",
+    "LOW_PAYOUT — no large private foundation to flag",
+    "HIGH_OFFICER_COMP — small family foundation has zero-comp officers",
+    "DAF_TRANSFERS — no DAF activity identified",
+    "NO_OBSERVABLE_GIVING — observable giving of $500M+ is ~15% of net worth, well above the NO_OBSERVABLE_GIVING threshold",
+    "POLITICAL_HEAVY (dollar terms) — Rubenstein's direct political giving is unusually light; his leverage is relationship-based"
+  ],
+
+  "rollup": {
+    "observable_giving_usd": 511770000,
+    "observable_giving_method": "Sum of named direct_gift events EXCLUDING (a) loaned asset purchases (Magna Carta $21.3M, Bay Psalm Book $14.1M, Emancipation Proclamation $2M), and (b) the $5.6M Rubenstein Foundation 990-PF total (low attribution confidence). Captured: Kennedy Center ($111M), Duke ($100M), University of Chicago ($111M), Harvard Kennedy School ($60M), Johns Hopkins ($30M), Monticello ($20M), National Gallery ($20M), Holocaust Museum ($15M), IAS Commons ($20M), MSK ($25M), Smithsonian Zoo ($22M), Archives Gallery ($13.5M), Montpelier ($10M), Mount Vernon ($10M), NMAAHC ($10M), Lincoln Memorial ($18.5M), Jefferson Memorial ($10M), Library of Congress ($10M), Arlington House ($12M), Washington Monument ($7.5M + $3M elevator), Iwo Jima ($5.37M), Renwick ($5.4M). Aggregate: ~$511.77M.",
+    "observable_giving_todo": [
+      "Verify Rubenstein Foundation EIN 25-6887967 attribution (David B vs David M Rubenstein) — may add or remove $5.6M.",
+      "Pull complete davidrubenstein.com philanthropy page systematically — many smaller gifts ($1M+ range) likely not captured.",
+      "Run Brave Search for announced gifts 2023-2026 to catch recent announcements.",
+      "Verify Renwick Gallery figure — Wikipedia says $54M, davidrubenstein.com says $5.4M; 10x discrepancy needs resolving.",
+      "Reconcile whether Kennedy Center $111M lifetime total includes the $50M expansion gift or is additive."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 225000000,
+    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.50 × $4.5B = $2.25B; tenure cap saturated (20 years). Expected = $225M. NOTE the much smaller denominator vs Ellison — Rubenstein's expected giving is $225M vs Ellison's $5.69B because Rubenstein is 50x less wealthy.",
+    "observable_ratio_to_expected": 2.27,
+    "observable_ratio_to_current_nw": 0.114,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC. Zero.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked. Zero until checked.",
+      "anonymous_cohort_uplift_usd": 50000000,
+      "anonymous_cohort_method": "Rubenstein's style is the OPPOSITE of anonymous giving — nearly every gift is named. Apply minimal cohort uplift: 0.2% of liquid wealth = 0.002 × $2.25B = $4.5M; widen to $50M for conservative confidence interval covering undisclosed family-office charitable activity.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "Rubenstein is Jewish and has given to Jewish causes ($1.9M Duke Jewish Life, $15M Holocaust Museum, $1.5M Jewish Museum of Maryland) but these are included in observable. No evidence of separate tithing-norm religious giving. Zero uplift.",
+      "total_usd": 50000000,
+      "total_method": "anonymous only (all other categories zero)"
+    },
+    "observable_plus_hidden_ratio_to_expected": 2.50,
+    "tier": "On_Track (Tier C)",
+    "tier_rule": "Observable giving ($512M) is 227% of the strict 10%-liquid-wealth formal norm ($225M) — well above the ON_TRACK threshold (typically 100%) and the VERIFIED_LOW threshold (<20%). Rubenstein is genuinely giving at scale RELATIVE TO HIS WEALTH. He is ~12% of lifetime net worth deployed, tracking toward 50%+ over remaining lifespan if current pace continues. IPS publicly confirms he honors the spirit of the pledge.",
+    "tier_published_caveat": "Rubenstein presents a methodology edge case: by raw dollars-given / wealth ratio he is Tier C ('On Track'), but the POLITICAL_PATRIOTIC_PR_PATTERN red flag raises a legitimate question about NET civic contribution when carried-interest lobbying is netted against monument giving. The Scrooge List convention (per CLAUDE.md) is to use raw observable ratios for tier assignment and surface the behavioral pattern via red_flags rather than re-tiering. Readers should see both signals: (a) Rubenstein gives at a higher % of wealth than ~95% of US billionaires, AND (b) his specific pattern of small-high-visibility gifts is the textbook case study for the Patriotic Millionaires critique of elite philanthropy."
+  },
+
+  "scrooge_legacy_score_internal_only": {
+    "value": 28.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 20.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 8.0
+    },
+    "note": "Giving exceeds expected (gap = 0). Tenure penalty saturates (20 years). Pledge breach = 0 (IPS-confirmed honoring). Red flags = 8 (3 flags × ~2.7 points, below 5pt/flag cap for single-pattern behavioral flags). Low score reflects that by raw math Rubenstein is genuinely giving — the Scrooge List should not treat him as a headline Scrooge even though his public pattern invites critique. DO NOT PUBLISH number — tiers only per PLAN.md."
+  },
+
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "David Rubenstein's public office (via Carlyle Group Corporate Communications + Declaration Partners press + Rubenstein's assistant at davidrubenstein.com site). He is unusually accessible (media-friendly, hosts The David Rubenstein Show) and likely to respond.",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+
+  "verification_todos_before_publish": [
+    "VERIFY: Rubenstein Foundation (EIN 25-6887967) attribution — is 'David B Rubenstein' the Carlyle co-founder or a different family member?",
+    "VERIFY: Renwick Gallery figure discrepancy ($5.4M vs $54M across sources).",
+    "VERIFY: Resolve whether Kennedy Center $111M includes 2013 $50M expansion or is additive.",
+    "VERIFY: Pull FEC bulk data on Rubenstein's personal political giving to confirm the 'light but lobbying-heavy' finding.",
+    "VERIFY: Run Brave Search for 2024-2026 announced Rubenstein gifts — his pace of giving continues and post-2022 items may be missing.",
+    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
+    "VERIFY: Declaration Partners family office structure — is any portion charitable?",
+    "VERIFY: Confirm Forbes 2026 net worth directly from Forbes Real-Time profile (WebFetch failed in this research run)."
+  ],
+
+  "sources_all": [
+    {"url": "https://en.wikipedia.org/wiki/David_Rubenstein", "retrieved_at": "2026-04-24", "used_for": "Net worth, biography, comprehensive gift list"},
+    {"url": "https://www.davidrubenstein.com/philanthropy/", "retrieved_at": "2026-04-24", "used_for": "Self-published philanthropy inventory"},
+    {"url": "https://www.givingpledge.org/pledger/david-m-rubenstein/", "retrieved_at": "2026-04-24", "used_for": "2010 pledge letter, 'more than half' commitment"},
+    {"url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf", "retrieved_at": "2026-04-24", "used_for": "IPS explicit praise of Rubenstein as honoring the spirit of the pledge"},
+    {"url": "https://projects.propublica.org/nonprofits/organizations/256887967", "retrieved_at": "2026-04-24", "used_for": "Rubenstein Foundation 990-PF data 2011-2024 (low-attribution)"},
+    {"url": "https://www.doi.gov/news/pressreleases/Philanthropist-David-Rubenstein-Donates-7-pt-5-Million-to-Repair-Damage-to-Washington-Monument", "retrieved_at": "2026-04-24", "used_for": "Washington Monument $7.5M 2012 gift"},
+    {"url": "https://www.npr.org/2007/12/18/17371559/magna-carta-copy-sells-at-auction-for-21-3-million", "retrieved_at": "2026-04-24", "used_for": "Magna Carta $21.3M purchase 2007"},
+    {"url": "https://www.archives.gov/press/press-releases/2013/nr13-129.html", "retrieved_at": "2026-04-24", "used_for": "Archives Rubenstein Gallery opening / $13.5M gift"},
+    {"url": "https://www.nationalparks.org/news-and-updates/press-releases/david-rubenstein-donates-18-5-million-to-the-national-park-foundation-to-restore-the-lincoln-memorial", "retrieved_at": "2026-04-24", "used_for": "Lincoln Memorial $18.5M 2016"},
+    {"url": "https://www.nps.gov/nama/learn/news/patriotic-philanthropist-david-rubenstein-donates-10-million-for-thomas-jefferson-memorial.htm", "retrieved_at": "2026-04-24", "used_for": "Jefferson Memorial $10M 2019"},
+    {"url": "https://100.duke.edu/story/david-rubenstein/", "retrieved_at": "2026-04-24", "used_for": "Duke cumulative giving >$100M"},
+    {"url": "https://www.hks.harvard.edu/about/david-m-rubenstein", "retrieved_at": "2026-04-24", "used_for": "Harvard Kennedy School $60M"},
+    {"url": "https://mag.uchicago.edu/law-policy-society/chartered-philanthropy", "retrieved_at": "2026-04-24", "used_for": "University of Chicago cumulative giving"},
+    {"url": "https://www.kennedy-center.org/news-room/press-release-landing-page/david-rubenstein-to-retire-as-kennedy-center-chairman/", "retrieved_at": "2026-04-24", "used_for": "Kennedy Center $111M cumulative"},
+    {"url": "https://www.propublica.org/article/how-david-rubenstein-helped-save-the-carried-interest-tax-loophole", "retrieved_at": "2026-04-24", "used_for": "Carried-interest lobbying, $50M 4-year personal tax benefit"},
+    {"url": "https://www.philanthropy.com/article/how-billionaire-donor-rubenstein-has-fought-to-save-tax-loophole/", "retrieved_at": "2026-04-24", "used_for": "Chronicle secondary source on carried-interest lobbying"},
+    {"url": "https://patrioticmillionaires.org/perspectives/patriotic-philanthropy/", "retrieved_at": "2026-04-24", "used_for": "POLITICAL_PATRIOTIC_PR_PATTERN — primary critique source"},
+    {"url": "https://medium.com/@Morris_Pearl/patriotic-philanthropy-1086117bfe1b", "retrieved_at": "2026-04-24", "used_for": "Morris Pearl 2016 essay — Patriotic Millionaires chair"},
+    {"url": "https://www.commondreams.org/newswire/2016/04/18/patriotic-millionaires-chair-slams-new-yorker-patriotic-philanthropy", "retrieved_at": "2026-04-24", "used_for": "Patriotic Millionaires 2016 critique of New Yorker coverage"},
+    {"url": "https://www.celebritynetworth.com/richest-businessmen/ceos/david-rubenstein-net-worth/", "retrieved_at": "2026-04-24", "used_for": "$4.5B net worth October 2025"},
+    {"url": "https://www.caproasia.com/2026/04/21/united-states-477-billion-private-equity-firm-carlyle-group-billionaire-co-founder-co-chairman-david-rubeinstein-with-4-5-billion-fortune-on-reputation-of-private-equity-his-2-billion-family-of/", "retrieved_at": "2026-04-24", "used_for": "April 2026 net worth reiteration $4.5B; Declaration Partners $2B AUM"},
+    {"url": "https://www.espn.com/mlb/story/_/id/39820434/david-rubenstein-unanimously-approved-new-orioles-owner", "retrieved_at": "2026-04-24", "used_for": "Baltimore Orioles 2024 purchase $1.725B (NOT philanthropy)"},
+    {"url": "https://www.insidephilanthropy.com/home/2023-4-13-remind-people-of-our-history-checking-in-with-patriotic-philanthropist-david-rubenstein", "retrieved_at": "2026-04-24", "used_for": "Inside Philanthropy context on patriotic philanthropy framing"},
+    {"url": "https://www.usnews.com/news/blogs/washington-whispers/2013/12/11/so-how-do-you-buy-the-magna-carta-billionaire-david-rubenstein-explains", "retrieved_at": "2026-04-24", "used_for": "Magna Carta purchase structure — loaned, not donated"}
+  ]
+}

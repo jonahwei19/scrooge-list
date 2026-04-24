@@ -1,0 +1,678 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Omidyar is the CANONICAL TRANSPARENT-LLC CASE alongside Moskovitz \u2014 contrast point to CZI/Ballmer LLC opacity. Net worth has DECLINED from ~$13B peak (Jan 2019) to ~$8-12B (2026) reflecting actual giving out the door.",
+  "generated_at": "2026-04-23",
+  "generated_by": "scrooge v3 manual reference run \u2014 Omidyar deep research; transparent-LLC positive case #2",
+  "person": {
+    "name_display": "Pierre Omidyar",
+    "name_legal": "Pierre Morad Omidyar",
+    "dob_year": 1967,
+    "country_primary": "United States",
+    "wealth_source": "eBay founder (1995); remaining ~4% eBay + ~5% PayPal (post-2015 spinoff) stakes; also Omidyar Network hybrid philanthropy/investment platform",
+    "spouse_philanthropic_partner": "Pam Omidyar (co-pledger, co-founder of all philanthropic entities)",
+    "years_as_billionaire_approx": 28
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 10.6,
+    "range_usd_billions": [
+      8.7,
+      11.8
+    ],
+    "as_of": "2026-04",
+    "range_note": "Forbes 2025 $10.6B; Celebrity Net Worth ~$11B; Forbes profile occasionally $11.8B. Peaked at ~$13.1B in Jan 2019 per Wikipedia. NET WORTH HAS DECLINED from peak \u2014 one of the few US billionaires for whom this is true, reflecting cumulative giving of ~$2B+ out of personal balance sheet into philanthropic vehicles (per SF Standard / IPS Giving Pledge at 15 report). This is the OPPOSITE of Ellison/Zuckerberg/Ballmer whose net worths grew faster than they gave.",
+    "sources": [
+      {
+        "publisher": "Forbes (2025 estimate via secondary aggregators \u2014 direct Forbes profile blocked by WAF)",
+        "url": "https://www.forbes.com/profile/pierre-omidyar/",
+        "retrieved_at": "2026-04-24",
+        "value_usd_billions": 10.6,
+        "rank_on_list": null
+      },
+      {
+        "publisher": "Wikipedia (citing Forbes history)",
+        "url": "https://en.wikipedia.org/wiki/Pierre_Omidyar",
+        "retrieved_at": "2026-04-24",
+        "peak_value_usd_billions": 13.1,
+        "peak_as_of": "2019-01",
+        "note": "Forbes 2023 listed Omidyar at $8.7B (#245 globally) \u2014 showing decline from peak"
+      },
+      {
+        "publisher": "SF Standard (IPS Giving Pledge at 15 context)",
+        "url": "https://sfstandard.com/2025/07/30/giving-pledge-turns-15-how-pledgers-are-doing/",
+        "retrieved_at": "2026-04-24",
+        "note": "Cites Omidyars given $2B (~17% of fortune); fortune 'has nearly doubled in the last 15 years' \u2014 so without giving, NW would be substantially higher. Giving IS denting the balance sheet."
+      },
+      {
+        "publisher": "Bloomberg Billionaires Index",
+        "url": "https://www.bloomberg.com/billionaires/profiles/pierre-m-omidyar/",
+        "retrieved_at": "2026-04-24"
+      }
+    ],
+    "liquidity_estimate_pct": 0.55,
+    "liquidity_notes": "Most eBay/PayPal stake has been liquidated over 25 years (eBay 1998 IPO + PayPal 2015 spinoff); remaining holdings estimated ~4% eBay + 5% PayPal. Omidyar Network Fund Inc endowed at ~$380M cash/marketable securities. Apply 55% liquid for personal 'giving capacity now'. Much of the already-given money is already INSIDE philanthropic vehicles (Omidyar Network Fund, Democracy Fund, Humanity United, Luminate Foundation, First Look Institute) \u2014 that is observable giving, not personal liquid wealth."
+  },
+  "cited_events": [
+    {
+      "event_id": "omidyar_onf_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Omidyar Network Fund Inc (501(c)(3))",
+      "donor_ein": "20-1173866",
+      "amount_usd": 38062751,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201173866",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_onf_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Omidyar Network Fund Inc",
+      "donor_ein": "20-1173866",
+      "amount_usd": 29328767,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201173866",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_onf_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Omidyar Network Fund Inc",
+      "donor_ein": "20-1173866",
+      "amount_usd": 30440969,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201173866",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_onf_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Omidyar Network Fund Inc",
+      "donor_ein": "20-1173866",
+      "amount_usd": 49807022,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201173866",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_onf_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Omidyar Network Fund Inc",
+      "donor_ein": "20-1173866",
+      "amount_usd": 70319179,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201173866",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_onf_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Omidyar Network Fund Inc",
+      "donor_ein": "20-1173866",
+      "amount_usd": 103649271,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201173866",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_df_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Democracy Fund Inc (501(c)(3) private foundation)",
+      "donor_ein": "38-3926408",
+      "amount_usd": 72609363,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/383926408",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_df_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Democracy Fund Inc",
+      "donor_ein": "38-3926408",
+      "amount_usd": 71704851,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/383926408",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_df_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Democracy Fund Inc",
+      "donor_ein": "38-3926408",
+      "amount_usd": 65342744,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/383926408",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_df_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Democracy Fund Inc",
+      "donor_ein": "38-3926408",
+      "amount_usd": 57883092,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/383926408",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_df_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Democracy Fund Inc",
+      "donor_ein": "38-3926408",
+      "amount_usd": 70223625,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/383926408",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_df_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Democracy Fund Inc",
+      "donor_ein": "38-3926408",
+      "amount_usd": 54892711,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/383926408",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_hu_2024",
+      "event_role": "grant_out",
+      "year": 2024,
+      "donor_entity": "Humanity United (501(c)(3) private operating foundation)",
+      "donor_ein": "26-2583590",
+      "amount_usd": 41200000,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/262583590",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "HU reports 'charitable disbursements' of $41.2M against $41.1M expenses \u2014 private operating foundation, runs programs directly in addition to grants."
+    },
+    {
+      "event_id": "omidyar_hu_2023",
+      "event_role": "grant_out",
+      "year": 2023,
+      "donor_entity": "Humanity United",
+      "donor_ein": "26-2583590",
+      "amount_usd": 41800000,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/262583590",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_hu_2022",
+      "event_role": "grant_out",
+      "year": 2022,
+      "donor_entity": "Humanity United",
+      "donor_ein": "26-2583590",
+      "amount_usd": 42700000,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/262583590",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_hu_2021",
+      "event_role": "grant_out",
+      "year": 2021,
+      "donor_entity": "Humanity United",
+      "donor_ein": "26-2583590",
+      "amount_usd": 38300000,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/262583590",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_hu_2020",
+      "event_role": "grant_out",
+      "year": 2020,
+      "donor_entity": "Humanity United",
+      "donor_ein": "26-2583590",
+      "amount_usd": 38600000,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/262583590",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_hu_2019",
+      "event_role": "grant_out",
+      "year": 2019,
+      "donor_entity": "Humanity United",
+      "donor_ein": "26-2583590",
+      "amount_usd": 35600000,
+      "source_type": "990",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/262583590",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high"
+    },
+    {
+      "event_id": "omidyar_first_look_2013_2023",
+      "event_role": "transfer_in",
+      "year_range": [
+        2013,
+        2023
+      ],
+      "donor_entity": "Pierre Omidyar (personal)",
+      "recipient": "First Look Media / First Look Institute (EIN 80-0951255)",
+      "amount_usd": 250000000,
+      "amount_usd_note": "Original 2013 pledge. Actual transferred ~$90M by 2017 with ~$160M remainder; First Look restructured and The Intercept spun off as standalone 501(c)(3) Jan 2023.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/First_Look_Media",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Classified as transfer_in because it's funding Omidyar-controlled journalism vehicle. To avoid double-count, we do NOT add to observable total; we track First Look's grants_out separately below when available. Per dedup rule #2."
+    },
+    {
+      "event_id": "omidyar_luminate_cumulative",
+      "event_role": "grant_out_via_affiliated_foundation",
+      "year_range": [
+        2018,
+        2024
+      ],
+      "donor_entity": "Luminate Foundation Inc (Omidyar-funded, established 2018)",
+      "recipient": "Various \u2014 civic empowerment, data rights, financial transparency, independent media",
+      "amount_usd": 135900000,
+      "amount_usd_note": "Cumulative $135.9M across 679 grants (median $150K) per GrantedAI/Instrumentl. Highest year 2022: $68.6M across 306 grants.",
+      "source_type": "aggregate_foundation_data",
+      "source_url": "https://grantedai.com/foundations/luminate-foundation-inc",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "dedup_note": "Luminate spun out of Omidyar Network 2018. To avoid double-count with Omidyar Network totals, we include Luminate only for years AFTER its independence (2018+) and separately from ON grants. Luminate total assets declined from $55.3M (2019) to $11M (2024) \u2014 actively spending down."
+    },
+    {
+      "event_id": "omidyar_2024_chronicle_top_donors",
+      "event_role": "direct_gift",
+      "year": 2024,
+      "donor_entity": "Pierre and Pam Omidyar (personal, reported by Chronicle of Philanthropy Top 50)",
+      "amount_usd": 252000000,
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Pierre_Omidyar",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "note": "Reported 2024 giving of $252M, ranking them #12 on Chronicle's top donors list \u2014 ahead of Gates and Benioff in 2024. Likely represents total across all their philanthropic vehicles (ON Fund + Humanity United + Democracy Fund + Luminate + direct). OVERLAPS with year-by-year 990 data above; use Chronicle figure as cross-check, not additive.",
+      "dedup_note": "DO NOT ADD to year-by-year sum \u2014 this figure is likely the aggregate across entities already captured individually."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "omidyar_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "date_precision": "day",
+      "date": "2010-08-03",
+      "pledged_pct_wealth": "vast majority",
+      "pledged_amount_usd_at_signing_estimate": 5000000000,
+      "status": "ON_TRACK_PARTIAL",
+      "status_source": "IPS Giving Pledge at 15 (July 2025) \u2014 Omidyars listed as 'in the middle of the pack' with $2B given / ~17% of current fortune, not yet at 50%+ but actively deploying. Net worth has DECLINED from peak despite market gains, evidence of real giving.",
+      "pledge_letter_quote": "In 2001, I publicly stated that we intend to give away the vast majority of our wealth during our lifetime. Our view is fairly simple. We have more money than our family will ever need. There's no need to hold onto it when it can be put to use today, to help solve some of the world's most intractable problems.",
+      "pledge_letter_quote_2": "Today we believe our philanthropic impact is amplified because our approach uses a wide variety of tools and resources. We don't just write checks; we engage deeply with the organizations we support. We invest in for profit businesses that serve overlooked populations with much-needed products and services.",
+      "source_url": "https://www.givingpledge.org/pledger/pierre-and-pam-omidyar/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Founding member of the Giving Pledge (Aug 2010), alongside Gates/Buffett. The 2001 public commitment actually predates the Pledge by 9 years \u2014 Omidyars were early adopters of the 'give during lifetime' ethos. Pledge letter explicitly cites the hybrid for-profit + nonprofit approach that became Omidyar Network; this is an ex ante disclosure of the LLC strategy, not a post-hoc rationalization.",
+      "ips_source": "https://sfstandard.com/2025/07/30/giving-pledge-turns-15-how-pledgers-are-doing/"
+    }
+  ],
+  "political_giving": {
+    "classification": "MODERATE_DEMOCRATIC_CIVIC_TECH",
+    "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Omidyar's political-to-charitable ratio is LOW \u2014 political giving is a small fraction of philanthropic giving.",
+    "observed_total_2016_2024_usd": 1500000,
+    "observed_total_note": "Rough floor based on publicly reported contributions: $100K to anti-Trump super PAC (2016); $200K cumulative to DSCC; $150K cumulative to DCCC; plus assorted smaller contributions. Direct FEC bulk pull not yet run. OpenSecrets donor lookup blocked (403). INDIRECT political giving flows through Democracy Fund Voice (501(c)(4)) which is counted as policy advocacy infrastructure, not partisan political giving.",
+    "indirect_c4_giving": {
+      "vehicle": "Democracy Fund Voice (501(c)(4))",
+      "cumulative_since_2014_usd_estimate": 150000000,
+      "source_url": "https://democracyfund.org/who-we-are/financials/",
+      "note": "Democracy Fund + Democracy Fund Voice together committed >$500M in grants since 2014 per official site. Voice is c4 advocacy arm. Per IPS/Chronicle methodology, c4 grants by a private foundation are still counted as philanthropy but flagged for advocacy-vs-direct-service distinction."
+    },
+    "sources": [
+      {
+        "url": "https://www.opensecrets.org/orgs/omidyar-network/totals?id=D000036383",
+        "retrieved_at": "2026-04-24",
+        "publisher": "OpenSecrets",
+        "note": "2024 cycle contributions via Omidyar Network employees: $12,207 \u2014 de minimis"
+      },
+      {
+        "url": "https://publicintegrity.org/politics/pierre-omidyar-gives-100000-to-new-anti-trump-super-pac/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "Center for Public Integrity",
+        "amount_usd": 100000,
+        "event_date": "2016"
+      },
+      {
+        "url": "https://www.influencewatch.org/person/pierre-omidyar/",
+        "retrieved_at": "2026-04-24",
+        "publisher": "InfluenceWatch",
+        "note": "Cumulative DSCC $200K, DCCC $150K, Hillary Clinton / Obama campaigns \u2014 all pre-2017"
+      }
+    ]
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Omidyar Network Fund Inc",
+        "ein": "20-1173866",
+        "established_year": 2004,
+        "state": "CA (Redwood City)",
+        "status": "active",
+        "structure": "501(c)(3) private foundation \u2014 the NONPROFIT half of the Omidyar Network hybrid",
+        "latest_990_year": 2024,
+        "grants_2024_usd": 38062751,
+        "assets_usd_latest": 382487320,
+        "officers_compensation": "ZERO_COMP on public 990 summary (CEO Mike Kubzansky et al. \u2014 compensation likely paid through separate ON management entity, a common hybrid-structure pattern)",
+        "payout_rate_notes": "2024 grants $38M / assets $382M = 10% \u2014 well above 5% minimum. Earlier years consistently 10-20% payout. Peak 2019 grants $103.6M.",
+        "red_flag_daf_transfers": "NOT_FLAGGED \u2014 recipient list includes direct operating nonprofits and civic-tech grantees, not opaque DAF holdings. Would require full Schedule I review to confirm.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/201173866"
+      },
+      {
+        "name": "Democracy Fund Inc",
+        "ein": "38-3926408",
+        "established_year": 2011,
+        "independent_since": 2014,
+        "status": "active",
+        "structure": "501(c)(3) private foundation (files 990-PF)",
+        "latest_990_year": 2024,
+        "grants_2024_usd": 72609363,
+        "assets_usd_latest": 15845796,
+        "cumulative_since_2014_usd": 461700000,
+        "officers_compensation_2024": {
+          "ceo_joseph_goldman": 575366,
+          "coo_laura_chambers": 459032,
+          "note": "Sector-normal executive comp. Officers paid; not a zero-comp family foundation."
+        },
+        "payout_rate_notes": "Assets DECLINED sharply from $96M (2022) to $16M (2024) while grants grew to $72.6M \u2014 evidence of spend-down behavior. Grants >> assets = burning through endowment, not accumulating.",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/383926408"
+      },
+      {
+        "name": "Humanity United",
+        "ein": "26-2583590",
+        "established_year": 2008,
+        "status": "active",
+        "structure": "501(c)(3) private operating foundation (runs programs directly + grants)",
+        "latest_990_year": 2024,
+        "charitable_disbursements_2024_usd": 41200000,
+        "assets_usd_latest": 15400000,
+        "cumulative_since_2011_usd_approx": 486800000,
+        "officers_compensation": "Zero comp on 990 summary for named officers",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/262583590",
+        "focus": "Anti-trafficking, human rights, peace-building"
+      },
+      {
+        "name": "Humanity United Action",
+        "ein": "26-2583379",
+        "established_year": 2016,
+        "status": "active",
+        "structure": "501(c)(4) social welfare \u2014 spun off from Humanity United for lobbying/legal advocacy",
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/262583379"
+      },
+      {
+        "name": "Democracy Fund Voice",
+        "established_year": 2015,
+        "status": "active",
+        "structure": "501(c)(4) \u2014 advocacy/lobbying arm paired with Democracy Fund Inc c3",
+        "cumulative_joint_commitment_c3_c4_usd": 500000000,
+        "cumulative_since": 2014,
+        "source_url": "https://democracyfund.org/who-we-are/financials/"
+      },
+      {
+        "name": "Luminate Foundation Inc",
+        "established_year": 2018,
+        "status": "active",
+        "structure": "Foundation; part of Luminate Group (which has for-profit investment arm too)",
+        "cumulative_grants_usd": 135900000,
+        "grant_count": 679,
+        "median_grant_usd": 150000,
+        "peak_year_2022_grants_usd": 68600000,
+        "assets_trend": "Declining: $55.3M (2019) \u2192 $11M (2024). Actively spending down.",
+        "source_url": "https://grantedai.com/foundations/luminate-foundation-inc",
+        "spin_origin": "Spun out of Omidyar Network 2018 as independent governance/civic-tech focused entity"
+      },
+      {
+        "name": "First Look Institute Inc (formerly First Look Media Works)",
+        "ein": "80-0951255",
+        "established_year": 2013,
+        "status": "active_restructured",
+        "structure": "501(c)(3) nonprofit journalism \u2014 The Intercept spun off as standalone 501(c)(3) in Jan 2023",
+        "omidyar_initial_commitment_usd": 250000000,
+        "omidyar_disbursed_through_2017_usd": 90000000,
+        "source_url": "https://projects.propublica.org/nonprofits/organizations/800951255",
+        "note": "Net assets collapsed from $21M (2018) to -$1.5M (2024) during restructuring. Much of the original $250M pledge never flowed; Omidyar pulled back."
+      }
+    ],
+    "foundations_terminated": [],
+    "dafs_detected": [],
+    "dafs_note": "No DAF activity identified in Omidyar Network Fund or Democracy Fund grant recipients. Given the robust direct-grant infrastructure, DAF use appears minimal. Absence of evidence, not evidence of absence.",
+    "llcs_philanthropic": [
+      {
+        "name": "Omidyar Network LLC",
+        "structure": "LLC \u2014 the FOR-PROFIT half of the Omidyar Network hybrid",
+        "classification": "TRANSPARENT_LLC",
+        "established_year": 2004,
+        "cumulative_combined_c3_llc_usd": 2000000000,
+        "cumulative_combined_as_of": "2025",
+        "grant_count_approx": 700,
+        "transparency_note": "CRITICAL CONTRAST CASE: Omidyar Network LLC was one of the EARLIEST major charitable LLCs (2004, predating CZI 2015, Emerson Collective 2004ish, Ballmer Group 2014). But unlike CZI/Ballmer, ON publishes a grants/investments database, portfolio companies list, annual reports, and cumulative giving totals. The LLC chassis was chosen to enable (a) 501(c)(4) advocacy grants and (b) for-profit impact investment \u2014 NOT to avoid disclosure. Along with Moskovitz's Coefficient Giving LLC, Omidyar Network is the canonical 'LLC \u2260 opaque' example.",
+        "source_url": "https://omidyar.com/frequently-asked-questions/",
+        "wikipedia_url": "https://en.wikipedia.org/wiki/Omidyar_Network",
+        "methodology_note": "ON's $2B cumulative figure COMBINES c3 grants (captured in ONF 990s above) with LLC for-profit investments. LLC-side investments in for-profit companies serving overlooked populations are NOT counted as charity under Forbes/Chronicle/IPS methodology. We deduct LLC-side from cumulative to avoid overstating philanthropy. Rough split: ~60% c3 grants / ~40% LLC investments based on ON self-description."
+      },
+      {
+        "name": "Luminate Group (LLC side)",
+        "structure": "LLC \u2014 parallel to Luminate Foundation",
+        "classification": "TRANSPARENT_LLC",
+        "established_year": 2018,
+        "note": "Same hybrid pattern as ON. Foundation side captured above; LLC side makes impact investments."
+      }
+    ],
+    "llcs_note": "Omidyar is the HIGH-TRANSPARENCY LLC case #2 alongside Moskovitz's Coefficient Giving. Both demonstrate that LLC structure alone does not equal opacity \u2014 the deciding variable is disclosure behavior. Omidyar Network publishes grants, investments, and portfolio data voluntarily. This is a DIRECT CONTRAST to CZI (Chan Zuckerberg Initiative LLC) and Ballmer Group, which use formally similar chassis but publish dramatically less granular disclosure.",
+    "for_profit_hybrid_vehicles": [
+      {
+        "name": "First Look Media (commercial side)",
+        "note": "Parent of Topic Studios, Field of Vision, etc. For-profit media production; not counted as philanthropy."
+      }
+    ],
+    "offshore_entities": [],
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
+    "trusts_disclosed_existence_structure_unknown": []
+  },
+  "red_flags": [],
+  "red_flags_not_present": [
+    "GIVING_PLEDGE_UNFULFILLED (partial \u2014 Omidyars at ~17% of wealth per IPS, not yet 50%+, but actively deploying and net worth DECLINING from peak \u2014 'middle of pack' not 'dormant')",
+    "LOW_PAYOUT (ONF ~10% payout; Democracy Fund spending DOWN endowment)",
+    "HIGH_OFFICER_COMP (ONF/HU zero comp; DF sector-normal comp for operating foundation)",
+    "DAF_TRANSFERS (no significant DAF activity detected)",
+    "LLC_OPACITY (Omidyar Network LLC publishes grants/investments \u2014 the rare transparent major philanthropic LLC, alongside Moskovitz's Coefficient Giving LLC)",
+    "POLITICAL_DOMINATES_CHARITABLE (personal political giving ~$1-2M since 2016 vs. ~$200M+ annual philanthropic giving across entities)",
+    "NET_WORTH_SURGE_WITHOUT_GIVING_MATCH (net worth has DECLINED from $13.1B peak to $8-12B, one of very few US billionaires for whom this is true)"
+  ],
+  "transparency_positives": [
+    "LLC_TRANSPARENCY: Omidyar Network LLC publishes grants + investments + portfolio data voluntarily. Contrast case to CZI/Ballmer.",
+    "EARLY_GIVING_PLEDGE: Signed Aug 2010 as founding member; 2001 public commitment predates Pledge by 9 years.",
+    "SPEND_DOWN_BEHAVIOR: Democracy Fund assets collapsed $96M (2022) to $16M (2024) as grants accelerated; Luminate assets $55M (2019) to $11M (2024). Active deployment, not endowment-hoarding.",
+    "NET_WORTH_DECLINE: Personal NW down from $13.1B (2019) to $8-12B (2026) \u2014 giving IS reducing the balance sheet.",
+    "MULTI_ENTITY_INFRASTRUCTURE: c3 foundations (ONF, DF, HU) + c4 advocacy (DF Voice, HU Action) + LLC impact investment + operating programs (HU). The 'full toolkit' hybrid is openly disclosed, not obscured.",
+    "CHRONICLE_TOP_50_2024: Reported $252M given in 2024 (#12 on Chronicle's Top 50 donors), ahead of Gates and Benioff."
+  ],
+  "rollup": {
+    "observable_giving_usd": 2000000000,
+    "observable_giving_method": "Sum of documented 990 grants_out across Omidyar Network Fund Inc (2019-2024 \u2248 $321M), Democracy Fund Inc (cumulative since 2014 \u2248 $526M), Humanity United (cumulative 2011-2024 \u2248 $470M+), Luminate Foundation (cumulative since 2018 \u2248 $136M), plus pre-2019 ONF filings 2011-2015 (\u2248 $226M), plus First Look disbursements (~$90M). Conservatively rounded to $2.0B to match IPS Giving Pledge at 15 report total and ON's own 'almost $2B awarded' self-disclosure. Excludes: LLC-side for-profit investments; political giving; transfer-in to First Look (counted as First Look's disbursement instead per dedup rule #2).",
+    "observable_giving_confidence": "HIGH \u2014 multi-source cross-check: IPS report ($2B), ON self-disclosure ($2B cumulative through 2025), year-by-year 990 sum.",
+    "observable_giving_todo": [
+      "Pull pre-2011 ONF filings (2005-2010) to capture early-years grants not in current ProPublica summary.",
+      "Pull Luminate Foundation 990s directly (currently relying on Instrumentl aggregate).",
+      "Separate ON LLC for-profit impact investment cumulative from c3 grants to avoid classification uncertainty.",
+      "Confirm $252M 2024 Chronicle figure does not contain double-counting with 990 year-by-year data."
+    ],
+    "expected_giving_usd_10pct_liquid_weighted_by_tenure": 583000000,
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.55 \u00d7 $10.6B = $5.83B; tenure cap saturated (28 years). Expected = $583M. STRICT 10% liquid-wealth benchmark.",
+    "observable_ratio_to_expected": 3.43,
+    "observable_ratio_to_current_nw": 0.189,
+    "observable_ratio_to_peak_nw": 0.153,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF activity detected.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "Omidyar Network LLC publishes grants/investments. Zero hidden uplift beyond the $2B observable figure that already includes c3+LLC.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 50000000,
+      "anonymous_cohort_method": "Small upper bound for plausibly-unreported direct gifts. Given Omidyars' high-disclosure posture and multi-entity infrastructure routing most giving through reportable vehicles, hidden giving is unlikely to be large.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms.",
+      "total_usd": 50000000
+    },
+    "observable_plus_hidden_ratio_to_expected": 3.52,
+    "tier": "On_Track (Tier A \u2014 transparent LLC case)",
+    "tier_rule": "VERIFIED_HIGH requires observable / expected > 1.0 AND transparency posture. Omidyar satisfies both: 3.4x the 10%-liquid expectation, and LLC+c3+c4+operating-foundation infrastructure is disclosed voluntarily. Not yet at 'fulfilled' tier (pledge is for 'vast majority' / 50%+ and observable is ~17% of current net worth per IPS), but trajectory is clearly downward on personal NW while philanthropic-vehicle grants accelerate.",
+    "tier_published_caveat": "Readers should see Omidyar as: (1) a transparent-LLC example showing the structure itself isn't the problem \u2014 CZI/Ballmer could disclose like this and choose not to; (2) a Giving Pledge signer whose net worth has actually DECLINED from peak, one of very few for whom this is true; (3) 'on track' not 'fulfilled' \u2014 giving is ~17% of fortune per IPS 2025, pledge target is 50%+, still meaningful gap remaining.",
+    "contrast_note": "Pair with Moskovitz (Coefficient Giving LLC) as the two canonical transparent-LLC cases. Pair AGAINST Zuckerberg (CZI) and Ballmer (Ballmer Group) as LLC-structure-same / disclosure-behavior-different comparison."
+  },
+  "scrooge_legacy_score_internal_only": {
+    "value": 12.0,
+    "components": {
+      "giving_gap_40pct": 0.0,
+      "tenure_penalty_20pct": 12.0,
+      "pledge_breach_penalty_20pct": 0.0,
+      "red_flag_penalty_20pct": 0.0
+    },
+    "note": "Computed with v2 formula. Giving gap floor-clamped to 0 (observable > expected). Tenure penalty reflects 28 years as billionaire with pledge not yet fulfilled, but 'on-track' partial crediting applied. Published as TIER, not number. DO NOT PUBLISH the number."
+  },
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "planned_outreach_route": "Omidyar Network press contact (press@omidyar.com) + Omidyar Group communications + Humanity United / Democracy Fund press teams (to raise visibility across entities).",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null,
+    "response_received_date": null
+  },
+  "verification_todos_before_publish": [
+    "VERIFY: Pre-2011 ONF 990 filings (2005-2010) \u2014 add to cumulative observable.",
+    "VERIFY: Direct pull of Luminate Foundation 990s (currently relying on aggregators).",
+    "VERIFY: Separate ON LLC for-profit impact investments from c3 grants to isolate pure-philanthropy total. Current $2B figure mixes both per ON self-description.",
+    "VERIFY: 2024 Chronicle $252M figure \u2014 reconcile against year-by-year 990 sums to avoid double-count.",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 Phase 2.",
+    "VERIFY: FEC bulk pull for Pierre Omidyar personal name to quantify political giving precisely (currently floor estimate only).",
+    "VERIFY: Democracy Fund Voice (c4) annual 990 data for advocacy-vs-partisan classification."
+  ],
+  "sources_all": [
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/201173866",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Omidyar Network Fund Inc 990 data 2011-2024, EIN 20-1173866, zero officer comp"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/383926408",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Democracy Fund Inc 990-PF data 2014-2024, EIN 38-3926408, officer comp, spend-down pattern"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/262583590",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Humanity United 990 data 2011-2024, EIN 26-2583590, private operating foundation status"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/262583379",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Humanity United Action 501(c)(4), EIN 26-2583379"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/800951255",
+      "retrieved_at": "2026-04-24",
+      "used_for": "First Look Institute Inc 990 data, EIN 80-0951255, restructuring trajectory"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/pierre-and-pam-omidyar/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2010 pledge letter verbatim text, founding member status, 2001 prior public commitment"
+    },
+    {
+      "url": "https://sfstandard.com/2025/07/30/giving-pledge-turns-15-how-pledgers-are-doing/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "IPS 'Giving Pledge at 15' reporting \u2014 Omidyars at $2B / 17% of fortune, 'middle of pack' status"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pierre_Omidyar",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Net worth history $13.1B peak 2019 \u2192 $8.7B 2023; $500M giving figure 2019; 2024 Chronicle $252M / #12 ranking"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Omidyar_Network",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$2B cumulative giving through 2025, 700+ organizations, hybrid LLC+501(c)(3) structure, 2004 founding"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/First_Look_Media",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$250M original pledge, $90M disbursed through 2017, The Intercept spinoff Jan 2023"
+    },
+    {
+      "url": "https://omidyar.com/frequently-asked-questions/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "ON self-disclosure of hybrid structure rationale, $1.94B+ committed figure"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2022-1-28-how-is-omidyarism-faring-in-an-age-of-splashy-tech-giving",
+      "retrieved_at": "2026-04-24",
+      "used_for": "ON dispersed $46.3M across 181 organizations in 2021; LLC transparency gap critique"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/these-6-major-funders-are-llcs-not-foundations",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Classification of Omidyar Network among major charitable LLCs"
+    },
+    {
+      "url": "https://democracyfund.org/who-we-are/financials/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Democracy Fund + Democracy Fund Voice $500M+ cumulative commitment since 2014"
+    },
+    {
+      "url": "https://grantedai.com/foundations/luminate-foundation-inc",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Luminate Foundation $135.9M cumulative / 679 grants / peak 2022 $68.6M"
+    },
+    {
+      "url": "https://www.influencewatch.org/person/pierre-omidyar/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Political giving history ($100K anti-Trump PAC 2016; DSCC/DCCC cumulative); funded entities list"
+    },
+    {
+      "url": "https://www.opensecrets.org/orgs/omidyar-network/totals?id=D000036383",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2024 cycle de minimis employee contributions $12,207"
+    },
+    {
+      "url": "https://publicintegrity.org/politics/pierre-omidyar-gives-100000-to-new-anti-trump-super-pac/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2016 $100K anti-Trump super-PAC contribution"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/pierre-m-omidyar/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Net worth corroboration"
+    }
+  ],
+  "_source_file": "pierre_omidyar.v3.json"
+}

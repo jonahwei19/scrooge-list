@@ -140,6 +140,19 @@ body{
 .tier-table.sortable thead th[data-sort].asc::after{content:"↑";opacity:1;color:var(--rust)}
 .tier-table.sortable thead th[data-sort].desc::after{content:"↓";opacity:1;color:var(--rust)}
 
+.searchbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:0 0 40px;padding-bottom:20px;border-bottom:1px dotted var(--ink-ghost);flex-wrap:wrap}
+.searchbar input[type="search"]{
+  flex:1;min-width:220px;max-width:400px;
+  padding:10px 14px;background:var(--paper-mid);border:1px solid var(--paper-shadow);
+  font-family:var(--display);font-size:.95rem;color:var(--ink);
+  outline:none;transition:border-color .2s;
+}
+.searchbar input[type="search"]:focus{border-color:var(--rust)}
+.searchbar .download-row{font-family:var(--display);font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-fade)}
+.searchbar .download-row a{color:var(--rust);text-decoration:none;border-bottom:1px solid rgba(139,46,31,.4);padding:2px 0}
+.searchbar .download-row a:hover{background:rgba(139,46,31,.08)}
+.dimmed{opacity:.25;transition:opacity .2s}
+
 .chip{display:inline-block;padding:2px 9px 3px;margin:0 4px 4px 0;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;border:1px solid currentColor;font-family:var(--display);font-variation-settings:"opsz" 9,"SOFT" 50;line-height:1.4}
 .chip.rust{color:var(--rust)}
 .chip.gilt{color:var(--gilt)}
@@ -204,6 +217,17 @@ body{
     <!-- populated by JS -->
   </div>
 
+  <div class="searchbar">
+    <input type="search" id="searchInput" placeholder="Filter by name…" aria-label="Filter subjects by name">
+    <span class="download-row">
+      <a href="scrooge_latest_v3.csv" download>CSV</a>
+      ·
+      <a href="scrooge_latest_v3.json" download>JSON</a>
+      ·
+      <a href="methodology.html">Methodology</a>
+    </span>
+  </div>
+
   <div class="section-head"><h2><span class="orn">❧</span> Tier A · The Verified Low <span class="orn">❧</span></h2></div>
   <p class="section-sub">Ranked ordinally. Low observable giving, and no opaque vehicle that could plausibly close the gap.</p>
   <div class="frontispiece-grid" id="tierA"></div>
@@ -255,7 +279,8 @@ body{
 
   <div class="callout green">
     <strong>Corrections welcome</strong>
-    <p>Every Tier A subject is contacted before publication and given a one-week window to respond. Responses are published verbatim on individual profiles. If you can document giving we have missed — with a source we can link — we will update the record and acknowledge it.</p>
+    <p>Every Tier A and Tier B subject is contacted before publication and given a one-week window to respond. Responses are published verbatim on individual profiles. If you can document giving we have missed — with a source we can link — we will update the record and acknowledge it.</p>
+    <p>Submit via <a href="https://github.com/jonahwei19/scrooge-list/issues/new">GitHub issues</a> (preferred) or open a pull request against the profile JSON. Please include the citation URL.</p>
   </div>
 
   <footer class="colophon">
@@ -274,6 +299,21 @@ body{
     document.documentElement.dataset.theme = next;
     try { localStorage.setItem('scrooge-theme', next); } catch(e) {}
   });
+
+  // Live filter by name across every card/row
+  const searchInput = document.getElementById('searchInput');
+  function applyFilter() {
+    const q = (searchInput.value || '').trim().toLowerCase();
+    document.querySelectorAll('.offender').forEach(el => {
+      const name = (el.querySelector('.name')?.textContent || '').toLowerCase();
+      el.classList.toggle('dimmed', q && !name.includes(q));
+    });
+    document.querySelectorAll('.tier-table tbody tr').forEach(el => {
+      const name = (el.querySelector('.name')?.textContent || '').toLowerCase();
+      el.classList.toggle('dimmed', q && !name.includes(q));
+    });
+  }
+  searchInput.addEventListener('input', applyFilter);
 })();
 
 const ordinalSup = n => {
