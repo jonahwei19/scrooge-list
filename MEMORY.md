@@ -1,14 +1,19 @@
 # Scrooge List — Memory
 
-## State as of 2026-04-24 (after v3 publish build)
+## State as of 2026-04-24 (after v3 publish build — 35-subject cohort)
 
-**v3 build shipped.** 21 US billionaires researched end-to-end via parallel subagents; each has a `data/<slug>.v3.json` with every dollar URL-cited. Aggregated into `docs/scrooge_latest_v3.json` and per-subject `docs/profiles/<slug>.json`. Tier-based index + profile + methodology HTML is live.
+**v3 build shipped.** 35 US billionaires researched end-to-end via parallel subagents; each has a `data/<slug>.v3.json` with every dollar URL-cited. Aggregated into `docs/scrooge_latest_v3.json` (+ CSV), per-subject `docs/profiles/<slug>.json`. Tier-based index + profile + methodology HTML is live with search, sortable tables, confidence-interval bars, and Open Graph metadata.
 
-**Tier distribution (v3):**
-- Tier A Verified Low (2): Elon Musk ($811B NW, $500M obs, 4.1% of benchmark), Larry Page
-- Tier B Probably Low (11): Ellison, Bezos, Brin, Huang, Ballmer, Schwarzman, Koch, Rob/Jim/Alice Walton, Griffin
-- Tier C Opaque (1): Zuckerberg (CZI LLC)
-- On Track (7): Buffett, Scott, Bloomberg, Dell, Knight, Dalio, Moskovitz
+**Tier distribution (35 subjects):**
+- Tier A Verified Low (4): Peterffy, Murdoch, Musk, Page — ordinal rank published
+- Tier B Probably Low (15): Ellison, Bezos, Brin, Huang, Ballmer, Schwarzman, Koch, Rob/Jim/Alice Walton, Griffin, Hamm, Julia Koch, Adelson, Cohen — alphabetical
+- Tier C Opaque (4): Zuckerberg, Blavatnik, Malone, Powell Jobs — alphabetical
+- On Track (12): Buffett, Scott, Bloomberg, Dell, Knight, Dalio, Moskovitz, Omidyar, Kravis, Rubenstein, Cooperman, Druckenmiller — calibration reference
+
+**Three archetypes surfaced:**
+- "Transparent LLC": Moskovitz (Coefficient Giving), Omidyar (Omidyar Network) — prove LLC ≠ opacity
+- "Opaque LLC": Zuckerberg (CZI), Powell Jobs (Emerson), Ballmer (Ballmer Group) — structural opacity by choice
+- "Political substitution dominant": Koch ($5.3B c4 over decade vs $1.1B c3), Adelson ($557M political household vs declining foundation)
 
 **Legacy v1/v2 state (still do not trust):**
 - `docs/scrooge_latest.json` (v1/v2) — still present but misleading; 97.8% of records scored ≥90 because non-hardcoded billionaires defaulted to $0 observable.

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T14:35:49.481554Z",
+  "generated_at": "2026-04-24T14:42:48.490117Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal ranked), B_PROBABLY_LOW, C_OPAQUE, MODERATE, ON_TRACK. See docs/methodology.html.",
@@ -7,12 +7,12 @@
   "tier_counts": {
     "A_VERIFIED_LOW": 4,
     "B_PROBABLY_LOW": 15,
-    "C_OPAQUE": 3,
+    "C_OPAQUE": 4,
     "MODERATE": 0,
-    "ON_TRACK": 10,
+    "ON_TRACK": 12,
     "UNKNOWN": 0
   },
-  "count": 32,
+  "count": 35,
   "billionaires": [
     {
       "id": "thomas_peterffy",
@@ -942,6 +942,50 @@
       "tier_rank": null
     },
     {
+      "id": "laurene_powell_jobs",
+      "name_display": "Laurene Powell Jobs",
+      "name_legal": "Laurene Powell Jobs",
+      "country": "United States",
+      "wealth_source": "Inherited from Steve Jobs (d. Oct 2011) via Steven P. Jobs Trust \u2014 principally Apple shares and 7.3% Disney stake from Pixar sale. Holdings diversified post-2011 (half Disney stake sold 2017 for ~$7B pre-tax; annual ~10% Apple sell-down through 2021). Operates Emerson Collective LLC as unified investment + philanthropy + media vehicle.",
+      "years_as_billionaire_approx": 14,
+      "net_worth_best_usd_b": 14.3,
+      "net_worth_range_usd_b": [
+        11.9,
+        15.6
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.55,
+      "observable_usd": 1216800000,
+      "expected_usd": 1101100000,
+      "hidden_upper_usd": 6100000000,
+      "ratio_observable_to_expected": 1.105,
+      "ratio_observable_to_nw": 0.0851,
+      "tier": "C_OPAQUE",
+      "tier_raw": "Ambiguous_Opaque (Tier C)",
+      "tier_reasoning": "Readers should see LPJ as the canonical 'opaque LLC' case alongside CZI. Observable Waverley 990-PF giving ($1.22B since 2019) meets the formal 10%-of-liquid expectation. Her public statements and the $3.5B Waverley climate pledge indicate intent to give substantially more. But Emerson Collective LLC's grant pipeline is structurally invisible, and her $28B-AUM LLC could be deploying $0 or $10B+ in true charitable flow with no way to distinguish from outside. This is a METHODOLOGY problem, not a moral judgment: the U.S. tax code permits this opacity.",
+      "pledge_signed": true,
+      "red_flags": [
+        "LLC_OPACITY",
+        "NO_GIVING_PLEDGE_SIGNATURE",
+        "FOR_PROFIT_HYBRID_COMMINGLING"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Waverley Street Foundation (formerly Emerson Collective Foundation)"
+        ],
+        "llcs_philanthropic_count": 1,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 19,
+      "event_count": 10,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "laurene_powell_jobs.v3.json",
+      "tier_rank": null
+    },
+    {
       "id": "len_blavatnik",
       "name_display": "Len Blavatnik",
       "name_legal": "Sir Leonard Valentinovich Blavatnik",
@@ -1161,6 +1205,50 @@
       "event_count": 24,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "henry_kravis.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "leon_cooperman",
+      "name_display": "Leon Cooperman",
+      "name_legal": "Leon G. Cooperman",
+      "country": "United States",
+      "wealth_source": "Omega Advisors hedge fund founder (1991-2018, converted to family office); prior 25-year career at Goldman Sachs, rose to chairman/CEO of Goldman Sachs Asset Management",
+      "years_as_billionaire_approx": 20,
+      "net_worth_best_usd_b": 3.3,
+      "net_worth_range_usd_b": [
+        2.5,
+        3.7
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.85,
+      "observable_usd": 230447565,
+      "expected_usd": 280500000,
+      "hidden_upper_usd": 1570000000,
+      "ratio_observable_to_expected": 0.821,
+      "ratio_observable_to_nw": 0.0698,
+      "tier": "ON_TRACK",
+      "tier_raw": "Probably_On_Track (Tier C)",
+      "tier_reasoning": "Cooperman is the canonical example of 'Giving Pledge signer who is actually giving.' Net worth is small ($3.3B vs. Ellison's $227B), which makes the pledge target reachable within an ordinary human lifetime. Public persona as philanthropy-defender-in-chief aligns with observable disbursements. The structural risk is dynasty-foundation compounding rather than lifetime deployment \u2014 watch LTCFF payout rate over the next decade.",
+      "pledge_signed": false,
+      "red_flags": [
+        "SEC_INSIDER_TRADING_SETTLEMENT",
+        "PAYOUT_AT_LEGAL_FLOOR",
+        "FOUNDATION_DYNASTY_STRUCTURE"
+      ],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Leon and Toby Cooperman Family Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 17,
+      "event_count": 22,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "leon_cooperman.v3.json",
       "tier_rank": null
     },
     {
@@ -1420,6 +1508,46 @@
       "event_count": 18,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "ray_dalio.v3.json",
+      "tier_rank": null
+    },
+    {
+      "id": "stanley_druckenmiller",
+      "name_display": "Stanley Druckenmiller",
+      "name_legal": "Stanley Freeman Druckenmiller",
+      "country": "United States",
+      "wealth_source": "Duquesne Capital (founded 1981, closed 2010 with $12B AUM); former lead portfolio manager at Soros Fund Management (1988-2000, including the 1992 Black Wednesday sterling trade); now runs Duquesne Family Office (~$10.8B AUM per Bloomberg Dec 2024)",
+      "years_as_billionaire_approx": 20,
+      "net_worth_best_usd_b": 10.0,
+      "net_worth_range_usd_b": [
+        6.9,
+        12.0
+      ],
+      "net_worth_as_of": "2026-04",
+      "liquidity_estimate_pct": 0.85,
+      "observable_usd": 662862812,
+      "expected_usd": 850000000,
+      "hidden_upper_usd": 800000000,
+      "ratio_observable_to_expected": 0.78,
+      "ratio_observable_to_nw": 0.0663,
+      "tier": "ON_TRACK",
+      "tier_raw": "Verified_On_Track (Tier A)",
+      "tier_reasoning": "Druckenmiller is the structural counter-example to the Giving Pledge signers clustering in Tier B/C. He declined to sign the Pledge, yet has exceeded what the 10% norm expects of him. Observable giving is 6.6% of current net worth AND represents a still-growing foundation endowment \u2014 the $1.77B foundation assets will disburse regardless of his personal spending decisions.",
+      "pledge_signed": false,
+      "red_flags": [],
+      "detected_vehicles": {
+        "foundations_active_count": 1,
+        "foundations_active_names": [
+          "Druckenmiller Foundation"
+        ],
+        "llcs_philanthropic_count": 0,
+        "for_profit_hybrids_count": 0,
+        "offshore_count": 0,
+        "dafs_detected": false
+      },
+      "sources_count": 26,
+      "event_count": 15,
+      "right_of_reply_status": "not_yet_requested",
+      "_source_file": "stanley_druckenmiller.v3.json",
       "tier_rank": null
     },
     {
