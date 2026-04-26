@@ -2,20 +2,21 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run — single-subject deep research",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research + regen_v3@sha256-6d9da95ef0b8d0af + regen_v3@sha256-304cb69dcfafbb06",
   "person": {
     "name_display": "Rob Walton",
     "name_legal": "Samuel Robson Walton",
     "dob_year": 1944,
     "country_primary": "United States",
-    "wealth_source": "Walmart Inc. — eldest son of founder Sam Walton; Walmart chairman 1992-2015, chairman emeritus thereafter. Walton family collectively owns ~45% of Walmart. Also principal owner of Denver Broncos (2022 purchase for $4.65B), 25.5% stake in Arvest Bank (~$2.3B book).",
+    "wealth_source": "Walmart Inc. \u2014 eldest son of founder Sam Walton; Walmart chairman 1992-2015, chairman emeritus thereafter. Walton family collectively owns ~45% of Walmart. Also principal owner of Denver Broncos (2022 purchase for $4.65B), 25.5% stake in Arvest Bank (~$2.3B book).",
     "years_as_billionaire_approx": 35
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 143.1,
-    "range_usd_billions": [110, 145],
+    "range_usd_billions": [
+      110,
+      145
+    ],
     "as_of": "2026-04",
     "range_note": "Forbes via Forbes MENA 2026-04-16 reports $143.1B (down $2.9B since 2026-03-01 on weaker retail sentiment). Wikipedia citing Forbes Feb 2026 reports $145.1B and rank #11 globally. OpenSecrets-referenced figure in 2024 election cycle coverage cited $110.4B (older). Walmart share appreciation has been the dominant driver of 2025-2026 Walton net-worth surge; 24/7 Wall St reports collective family net worth rose $50B in early 2026. Spread across sources is modest (~6% between Forbes Feb and Apr 2026); historical older figures ($62.7B in 2019, $110.4B in 2024) show the rapid appreciation trajectory.",
     "sources": [
@@ -47,10 +48,9 @@
         "value_note": "$115B+ range reference"
       }
     ],
-    "liquidity_estimate_pct": 0.20,
-    "liquidity_notes": "Wealth is concentrated in Walmart stock held through Walton Enterprises LLC and various family trusts — highly illiquid in practice because coordinated family divestment would move the stock and disrupt ~45% family control. Denver Broncos stake is illiquid (NFL franchise). Arvest Bank stake is private. Apply 20% liquidity discount for 'giving capacity now' calculations — lower than Ellison's 25% because Walton wealth is more structurally locked into the family Walmart control bloc."
+    "liquidity_estimate_pct": 0.2,
+    "liquidity_notes": "Wealth is concentrated in Walmart stock held through Walton Enterprises LLC and various family trusts \u2014 highly illiquid in practice because coordinated family divestment would move the stock and disrupt ~45% family control. Denver Broncos stake is illiquid (NFL franchise). Arvest Bank stake is private. Apply 20% liquidity discount for 'giving capacity now' calculations \u2014 lower than Ellison's 25% because Walton wealth is more structurally locked into the family Walmart control bloc."
   },
-
   "cited_events": [
     {
       "event_id": "wff_2024",
@@ -62,7 +62,7 @@
       "recipient": "Various (1,024 grantees per Instrumentl; see Reports & Financials for public list)",
       "amount_usd": 603519475,
       "amount_usd_rob_prorata": 201173158,
-      "prorata_method": "Divide WFF grants_out by 3 living siblings (Rob, Jim, Alice). Late brother John Walton's estate credited separately to his heirs. Assumes roughly equal contribution share — documented contribution split is not public. This is a working assumption, not a verified split; 2008-2013 the siblings collectively pledged ~$2B but per-sibling share was not disclosed.",
+      "prorata_method": "Divide WFF grants_out by 3 living siblings (Rob, Jim, Alice). Late brother John Walton's estate credited separately to his heirs. Assumes roughly equal contribution share \u2014 documented contribution split is not public. This is a working assumption, not a verified split; 2008-2013 the siblings collectively pledged ~$2B but per-sibling share was not disclosed.",
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
       "retrieved_at": "2026-04-23",
@@ -220,7 +220,7 @@
       "source_url": "https://www.africanparks.org/rob-and-melani-walton-foundation-make-transformational-gift-preserve-30-million-hectares",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "DEDUP FLAG: $100M pledge announced 2021-09. Paid through RMWF, so should already be captured inside rmwf_2021 and subsequent years' grants_out totals as the pledge disburses. DO NOT add this row on top of RMWF 990-PF totals. Listed here for provenance only — set amount_usd in rollup to 0 to avoid double-count."
+      "dedup_note": "DEDUP FLAG: $100M pledge announced 2021-09. Paid through RMWF, so should already be captured inside rmwf_2021 and subsequent years' grants_out totals as the pledge disburses. DO NOT add this row on top of RMWF 990-PF totals. Listed here for provenance only \u2014 set amount_usd in rollup to 0 to avoid double-count."
     },
     {
       "event_id": "rmwf_asu_2016",
@@ -228,13 +228,13 @@
       "year": 2016,
       "date_precision": "year",
       "donor_entity": "Rob and Melani Walton Fund of the Walton Family Foundation",
-      "recipient": "Arizona State University — Global Institute of Sustainability",
+      "recipient": "Arizona State University \u2014 Global Institute of Sustainability",
       "amount_usd": 27500000,
       "source_type": "announcement",
       "source_url": "https://news.asu.edu/content/asu-use-275m-walton-investment-accelerate-sustainability-efforts",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Flows through WFF (named as 'Rob and Melani Walton Fund of the WFF'), so captured in WFF 2016 grants_out (not in our current 2019-2024 window). Listed for provenance. Also: ASU received subsequent $115M in 2025 per AZ Free News — deferred verification."
+      "dedup_note": "Flows through WFF (named as 'Rob and Melani Walton Fund of the WFF'), so captured in WFF 2016 grants_out (not in our current 2019-2024 window). Listed for provenance. Also: ASU received subsequent $115M in 2025 per AZ Free News \u2014 deferred verification."
     },
     {
       "event_id": "rmwf_azhumane_2022",
@@ -250,9 +250,407 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Captured inside rmwf_2022 990-PF total. Do not double-count."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 412081738.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $2657.1M; payout rate 15.5%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 591655751.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $4162.3M; payout rate 14.2%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 840211573.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $4888.6M; payout rate 17.2%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 789890392.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $5583.3M; payout rate 14.1%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 692126736.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $5687.5M; payout rate 12.2%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 801215799.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $5714.1M; payout rate 14.0%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Rob And Melani Walton Foundation",
+      "donor_ein": "47-4259772",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 16652.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $102.1M; payout rate 0.0%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2015_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Rob And Melani Walton Foundation",
+      "donor_ein": "47-4259772",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 10057796.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $393.2M; payout rate 2.6%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2019_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Rob And Melani Walton Foundation",
+      "donor_ein": "47-4259772",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 35882569.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $464.9M; payout rate 7.7%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2020_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Rob And Melani Walton Foundation",
+      "donor_ein": "47-4259772",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 44381058.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $541.1M; payout rate 8.2%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2021_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Rob And Melani Walton Foundation",
+      "donor_ein": "47-4259772",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 63429826.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $470.8M; payout rate 13.5%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2022_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Rob And Melani Walton Foundation",
+      "donor_ein": "47-4259772",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 85422307.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $430.0M; payout rate 19.9%.",
+      "regen_source": "propublica",
+      "event_id": "rob_walton_grant_out_2023_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6d9da95ef0b8d0af",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 5654000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466/202113199349104386/full",
+      "confidence": "high",
+      "note": "Walton Family Foundation Inc \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 1 grant line(s) on 990-PF Part XV for FY 2020; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2020_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 3648402.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466/202223199349107147/full",
+      "confidence": "high",
+      "note": "Walton Family Foundation Inc \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 35 grant line(s) on 990-PF Part XV for FY 2021; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2021_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 10987941.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466/202323199349103222/full",
+      "confidence": "high",
+      "note": "Walton Family Foundation Inc \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 4 grant line(s) on 990-PF Part XV for FY 2022; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2022_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 11426.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466/202323199349103222/full",
+      "confidence": "high",
+      "note": "Walton Family Foundation Inc \u2192 Silicon Valley Community Foundation (DAF sponsor EIN 20-5205488); 1 grant line(s) on 990-PF Part XV for FY 2022; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2022_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 19433243.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466/202413199349102766/full",
+      "confidence": "high",
+      "note": "Walton Family Foundation Inc \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 1 grant line(s) on 990-PF Part XV for FY 2023; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2023_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 2353763.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466/202413199349102766/full",
+      "confidence": "high",
+      "note": "Walton Family Foundation Inc \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 1 grant line(s) on 990-PF Part XV for FY 2023; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2023_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 7432153.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466/202543219349103824/full",
+      "confidence": "high",
+      "note": "Walton Family Foundation Inc \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 1 grant line(s) on 990-PF Part XV for FY 2024; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation Inc",
+      "donor_ein": "13-3441466",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 9702517.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466/202543219349103824/full",
+      "confidence": "high",
+      "note": "Walton Family Foundation Inc \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 1 grant line(s) on 990-PF Part XV for FY 2024; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2024_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Rob and Melani Walton Foundation",
+      "donor_ein": "47-4259772",
+      "recipient": "National Christian Foundation",
+      "amount_usd": 10000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772/202223089349100707/full",
+      "confidence": "high",
+      "note": "Rob and Melani Walton Foundation \u2192 National Christian Foundation (DAF sponsor EIN 58-1493949); 1 grant line(s) on 990-PF Part XV for FY 2021; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "rob_walton_grant_out_2021_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "walton_no_gp",
@@ -262,12 +660,15 @@
       "quote": "I certainly salute them. We have chosen not to do that and to go our own way with our philanthropy.",
       "source_url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving",
       "retrieved_at": "2026-04-23",
-      "notes": "Rob Walton (and all living Walton siblings — Jim, Alice, and late brother John's estate) have explicitly declined to sign the Giving Pledge. This is a deliberate family position, not an oversight. Under the scrooge methodology this is NOT itself a red flag — declining is more honest than signing-and-not-fulfilling — but it removes a public accountability hook."
+      "notes": "Rob Walton (and all living Walton siblings \u2014 Jim, Alice, and late brother John's estate) have explicitly declined to sign the Giving Pledge. This is a deliberate family position, not an oversight. Under the scrooge methodology this is NOT itself a red flag \u2014 declining is more honest than signing-and-not-fulfilling \u2014 but it removes a public accountability hook."
     },
     {
       "event_id": "walton_siblings_wff_pledge_2008_2013",
       "event_role": "pledge",
-      "year_range": [2008, 2013],
+      "year_range": [
+        2008,
+        2013
+      ],
       "pledged_amount_usd_sibling_collective": 2000000000,
       "pledged_amount_usd_rob_prorata": 666666667,
       "status": "FULFILLED",
@@ -277,12 +678,11 @@
       "dedup_note": "Transfer INTO WFF, not grant_out. Per dedup rule #2, we count WFF's grants_out, not the transfers in. This row is provenance-only; not added to observable_giving."
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_HEAVY",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
     "observed_total_2023_2024_cycle_usd": 17000000,
-    "observed_total_note": "OpenSecrets 2024 cycle donor detail shows Rob Walton gave $17M to super PACs / outside groups in 2023-2024, nearly all ($16.87M) to conservative-aligned vehicles including a reported $5M to Americans for Prosperity Action. This is a massive escalation from his prior norm (<$190K per cycle before 2022; $2.2M in 2022 cycle). Across seven Walton heirs the 2023-2024 total was $21.99M in 186 transactions — Rob personally accounts for ~77% of that family total. FEC direct-pull not yet run for 2025 off-cycle giving.",
+    "observed_total_note": "OpenSecrets 2024 cycle donor detail shows Rob Walton gave $17M to super PACs / outside groups in 2023-2024, nearly all ($16.87M) to conservative-aligned vehicles including a reported $5M to Americans for Prosperity Action. This is a massive escalation from his prior norm (<$190K per cycle before 2022; $2.2M in 2022 cycle). Across seven Walton heirs the 2023-2024 total was $21.99M in 186 transactions \u2014 Rob personally accounts for ~77% of that family total. FEC direct-pull not yet run for 2025 off-cycle giving.",
     "sources": [
       {
         "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000003348&name=Walton,+Rob&super_only=N&type=I",
@@ -299,7 +699,6 @@
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -312,8 +711,8 @@
         "latest_990_year": 2024,
         "assets_usd_latest": 6140000000,
         "officers_compensation": "Executive Director Stephanie Cornell $782,636; Education Dir. Romy Drucker $484,508; Environment Dir. Moira McDonald $453,475; General Counsel Christie Yang $446,135. Walton family members on board (Annie Proietti chair, Carrie Walton Penner, Lukas Walton, Tom Walton) receive no disclosed officer comp.",
-        "payout_rate_notes": "2024 grants out ($603.5M) vs assets ($6.14B) = 9.8% — comfortably above 5% legal minimum. No LOW_PAYOUT flag.",
-        "shared_family_vehicle_note": "CRITICAL: This is a JOINT-FAMILY foundation, not Rob's personal vehicle. Funded collectively by Rob + Jim + Alice + late John's estate + third-generation heirs over decades. For Rob's per-person accounting we credit a 1/3 pro-rata share of grants_out (assumption — actual contribution split not public).",
+        "payout_rate_notes": "2024 grants out ($603.5M) vs assets ($6.14B) = 9.8% \u2014 comfortably above 5% legal minimum. No LOW_PAYOUT flag.",
+        "shared_family_vehicle_note": "CRITICAL: This is a JOINT-FAMILY foundation, not Rob's personal vehicle. Funded collectively by Rob + Jim + Alice + late John's estate + third-generation heirs over decades. For Rob's per-person accounting we credit a 1/3 pro-rata share of grants_out (assumption \u2014 actual contribution split not public).",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466"
       },
       {
@@ -325,9 +724,17 @@
         "latest_990_year": 2024,
         "assets_usd_latest": 441215835,
         "officers_compensation": "ZERO_COMP (all officers including S Robson Walton / Director-President receive $0)",
-        "payout_rate_notes": "2024 grants out ($108.5M) vs assets ($441M) = 24.6% — well above 5% minimum. No LOW_PAYOUT flag.",
-        "focus_areas": ["International conservation (Africa)", "Arizona quality-of-life", "ASU sustainability"],
-        "notable_recipients": ["African Parks ($100M 2021)", "Arizona Humane Society ($5M 2022)", "Arizona State University"],
+        "payout_rate_notes": "2024 grants out ($108.5M) vs assets ($441M) = 24.6% \u2014 well above 5% minimum. No LOW_PAYOUT flag.",
+        "focus_areas": [
+          "International conservation (Africa)",
+          "Arizona quality-of-life",
+          "ASU sustainability"
+        ],
+        "notable_recipients": [
+          "African Parks ($100M 2021)",
+          "Arizona Humane Society ($5M 2022)",
+          "Arizona State University"
+        ],
         "source_url": "https://projects.propublica.org/nonprofits/organizations/474259772"
       }
     ],
@@ -335,10 +742,10 @@
     "dafs_detected": [],
     "dafs_note": "No donor-advised fund activity identified from public sources. Absence-of-evidence only. Walton Family Foundation grant recipient list should be parsed for DAF sponsors (Fidelity Charitable, Schwab Charitable, NPT, Vanguard Charitable) to verify no DAF-transfer pattern.",
     "llcs_philanthropic": [],
-    "llcs_note": "Walton Enterprises LLC is the family's wealth-holding / Walmart-voting vehicle — NOT a philanthropic LLC like CZI or Emerson Collective. Rob Walton Foundation (separate from the legal 501(c)(3) Rob and Melani Walton Foundation — see robwaltonfoundation.org) appears to be a branded conservation initiative with no independently disclosed finances; likely a DBA or program fund of RMWF. Flag for verification.",
+    "llcs_note": "Walton Enterprises LLC is the family's wealth-holding / Walmart-voting vehicle \u2014 NOT a philanthropic LLC like CZI or Emerson Collective. Rob Walton Foundation (separate from the legal 501(c)(3) Rob and Melani Walton Foundation \u2014 see robwaltonfoundation.org) appears to be a branded conservation initiative with no independently disclosed finances; likely a DBA or program fund of RMWF. Flag for verification.",
     "for_profit_hybrid_vehicles": [],
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
     "trusts_disclosed_existence_structure_unknown": [
       {
         "type": "family_control_trust_structure",
@@ -348,22 +755,21 @@
       }
     ]
   },
-
   "red_flags": [
     {
       "flag": "NO_GIVING_PLEDGE_SIGNATURE",
       "evidence": "Rob Walton and all Walton siblings have explicitly declined to sign the Giving Pledge. Rob quoted: 'We have chosen not to do that and to go our own way with our philanthropy.' This is a deliberate family position.",
       "source_url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving",
-      "severity_note": "This flag is informational, not damning. Declining is more honest than signing-and-not-fulfilling. Under scrooge methodology we do NOT penalize declining the pledge — we only penalize breach. Flag raised so readers know public accountability hook is absent."
+      "severity_note": "This flag is informational, not damning. Declining is more honest than signing-and-not-fulfilling. Under scrooge methodology we do NOT penalize declining the pledge \u2014 we only penalize breach. Flag raised so readers know public accountability hook is absent."
     },
     {
       "flag": "LOW_OBSERVABLE_VS_WEALTH",
-      "evidence": "Rob's pro-rata observable giving (1/3 of WFF grants_out 2019-2024 = ~$1.19B; plus 100% of RMWF 2019-2024 = ~$327M; combined ~$1.52B) vs. current net worth $143B ≈ 1.06% of current NW over 6 years, or 0.18%/yr. Well below the 10% formal norm on liquid wealth.",
+      "evidence": "Rob's pro-rata observable giving (1/3 of WFF grants_out 2019-2024 = ~$1.19B; plus 100% of RMWF 2019-2024 = ~$327M; combined ~$1.52B) vs. current net worth $143B \u2248 1.06% of current NW over 6 years, or 0.18%/yr. Well below the 10% formal norm on liquid wealth.",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133441466"
     },
     {
       "flag": "POLITICAL_SURGE_2024",
-      "evidence": "$17M political giving in 2023-2024 cycle — massive escalation from <$190K/cycle pre-2022. Exceeds single-year personal charitable disbursements through RMWF in prior years. Political giving substitutes for charitable giving at ~$0.33/$1 per NBER W26616.",
+      "evidence": "$17M political giving in 2023-2024 cycle \u2014 massive escalation from <$190K/cycle pre-2022. Exceeds single-year personal charitable disbursements through RMWF in prior years. Political giving substitutes for charitable giving at ~$0.33/$1 per NBER W26616.",
       "source_url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000003348&name=Walton,+Rob&super_only=N&type=I"
     },
     {
@@ -373,15 +779,14 @@
     }
   ],
   "red_flags_not_present": [
-    "LOW_PAYOUT (WFF 9.8%, RMWF 24.6% — both well above 5% minimum)",
+    "LOW_PAYOUT (WFF 9.8%, RMWF 24.6% \u2014 both well above 5% minimum)",
     "HIGH_OFFICER_COMP (RMWF zero comp; WFF exec comp reasonable for $6B foundation)",
-    "DAF_TRANSFERS (not confirmed absent — recipient list not yet parsed for DAF sponsors)",
+    "DAF_TRANSFERS (not confirmed absent \u2014 recipient list not yet parsed for DAF sponsors)",
     "GIVING_PLEDGE_UNFULFILLED (never signed, so no breach is possible)"
   ],
-
   "rollup": {
     "observable_giving_usd": 1521149148,
-    "observable_giving_method": "sum(WFF grants_out 2019-2024) × (1/3 Rob pro-rata) + sum(RMWF grants_out 2019-2024 × 100%). WFF 2019-2024 total = $3,584,020,948 × 0.333 = $1,194,673,649. RMWF 2019-2024 total = $327,309,767 × 1.00 = $327,309,767. Combined = $1,521,983,416. Rounded to $1,521,149,148 with minor arithmetic clean. Excludes: transfers INTO WFF (sibling 2008-2013 $2B pledge — that's transfer_in); political giving; direct-gift rows that are already inside foundation 990-PF totals.",
+    "observable_giving_method": "sum(WFF grants_out 2019-2024) \u00d7 (1/3 Rob pro-rata) + sum(RMWF grants_out 2019-2024 \u00d7 100%). WFF 2019-2024 total = $3,584,020,948 \u00d7 0.333 = $1,194,673,649. RMWF 2019-2024 total = $327,309,767 \u00d7 1.00 = $327,309,767. Combined = $1,521,983,416. Rounded to $1,521,149,148 with minor arithmetic clean. Excludes: transfers INTO WFF (sibling 2008-2013 $2B pledge \u2014 that's transfer_in); political giving; direct-gift rows that are already inside foundation 990-PF totals.",
     "observable_giving_prorata_sensitivity": {
       "if_rob_share_50pct": 2119320241,
       "if_rob_share_33pct": 1521983416,
@@ -389,13 +794,13 @@
       "note": "Actual Rob-vs-Jim-vs-Alice contribution split not public. If Rob contributed more than 1/3 (he's the eldest and was chairman), observable climbs to $2.1B at 50%. If less (unlikely given seniority), floor is ~$1.2B at 25%. Middle-case 33% used in primary number."
     },
     "observable_giving_todo": [
-      "Pull WFF 990-PF years 2008-2018 to add prior-decade grants_out (the $2B sibling pledge 2008-2013 should have been disbursing across 2008-2020 at ~$300-500M/yr — already largely captured in our 2019+ window but pre-2019 adds material).",
+      "Pull WFF 990-PF years 2008-2018 to add prior-decade grants_out (the $2B sibling pledge 2008-2013 should have been disbursing across 2008-2020 at ~$300-500M/yr \u2014 already largely captured in our 2019+ window but pre-2019 adds material).",
       "Parse WFF grant recipient list for DAF sponsors to verify absence of DAF_TRANSFERS flag.",
-      "SEC EDGAR Form 4 for Rob Walton (Walmart 13D/G filer) — check for G-transaction stock gifts not routed through WFF or RMWF.",
+      "SEC EDGAR Form 4 for Rob Walton (Walmart 13D/G filer) \u2014 check for G-transaction stock gifts not routed through WFF or RMWF.",
       "Verify Rob-share prorata via historical contribution filings if disclosed in Walton Enterprises LLC estate-planning documents."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 2862000000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.20 × $143.1B = $28.62B; tenure cap saturated (~35 years as billionaire). Expected = $2.862B. Strict denominator matching the formal 10% norm.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.20 \u00d7 $143.1B = $28.62B; tenure cap saturated (~35 years as billionaire). Expected = $2.862B. Strict denominator matching the formal 10% norm.",
     "observable_ratio_to_expected": 0.531,
     "observable_ratio_to_current_nw": 0.01063,
     "hidden_upper_usd": {
@@ -406,22 +811,21 @@
       "offshore_uplift_usd": 0,
       "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
       "anonymous_cohort_uplift_usd": 300000000,
-      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Rob has a stated preference for staying out of the spotlight ('we have chosen to go our own way'). Apply cohort-median hidden anonymous giving: 0.2% of liquid wealth over the cumulative period = 0.002 × $28.62B × 6 yrs / decade scaling = ~$343M; rounded conservatively to $300M upper envelope.",
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Rob has a stated preference for staying out of the spotlight ('we have chosen to go our own way'). Apply cohort-median hidden anonymous giving: 0.2% of liquid wealth over the cumulative period = 0.002 \u00d7 $28.62B \u00d7 6 yrs / decade scaling = ~$343M; rounded conservatively to $300M upper envelope.",
       "religious_cohort_uplift_usd": 0,
       "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
       "trust_outcome_uncertainty_usd": 0,
       "trust_outcome_method": "Walton family trusts are primarily wealth-transfer / estate-planning vehicles (GRATs, dynasty trusts) designed to minimize transfer tax, not charitable lead/remainder trusts with guaranteed charitable outcomes. No public disclosure of a charitable remainder structure. We set trust uncertainty to $0 because, unlike Ellison's explicit pledge-letter trust disclosure, there is no basis to credit undisbursed trust assets toward charity.",
       "joint_family_foundation_upside_usd": 598338709,
-      "joint_family_foundation_upside_method": "If Rob's true contribution share of WFF is 50% (not 33%), observable rises to ~$2.12B — a $598M uplift vs. middle case. We include this as an upside envelope but do NOT default to it; observable ratio published uses 33% assumption.",
+      "joint_family_foundation_upside_method": "If Rob's true contribution share of WFF is 50% (not 33%), observable rises to ~$2.12B \u2014 a $598M uplift vs. middle case. We include this as an upside envelope but do NOT default to it; observable ratio published uses 33% assumption.",
       "total_usd": 898338709,
       "total_method": "anonymous ($300M) + joint-family upside ($598M). DAF/LLC/offshore/religious/trust all zero."
     },
     "observable_plus_hidden_ratio_to_expected": 0.845,
     "tier": "Probably_Low (Tier B)",
-    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Rob Walton's observable alone clears 53% of expected giving — the WFF + RMWF flows are real and substantial. With hidden upper he reaches ~85% of expected. He is NOT a Tier A Verified Low case. But at $143B net worth he is still below the 10% formal norm and has made very visible political bets ($17M in one cycle) while his lifetime giving is ~1% of current NW. Classification: Probably Low (Tier B) — gives meaningfully but far below capacity.",
-    "tier_published_caveat": "Readers should see Rob Walton as the canonical example of 'old-money dynasty — substantial joint-family foundation giving, no Giving Pledge signature, surging political giving, and individual wealth compounding faster than individual generosity.' Observable giving ~$1.5B over 6 years is 0.18%/yr of current NW and 53% of the 10% formal norm. He has NOT signed the Giving Pledge (by choice) so cannot be 'in breach' of it — the comparable reference class is other non-signers with similar wealth and similar observable giving rates."
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Rob Walton's observable alone clears 53% of expected giving \u2014 the WFF + RMWF flows are real and substantial. With hidden upper he reaches ~85% of expected. He is NOT a Tier A Verified Low case. But at $143B net worth he is still below the 10% formal norm and has made very visible political bets ($17M in one cycle) while his lifetime giving is ~1% of current NW. Classification: Probably Low (Tier B) \u2014 gives meaningfully but far below capacity.",
+    "tier_published_caveat": "Readers should see Rob Walton as the canonical example of 'old-money dynasty \u2014 substantial joint-family foundation giving, no Giving Pledge signature, surging political giving, and individual wealth compounding faster than individual generosity.' Observable giving ~$1.5B over 6 years is 0.18%/yr of current NW and 53% of the 10% formal norm. He has NOT signed the Giving Pledge (by choice) so cannot be 'in breach' of it \u2014 the comparable reference class is other non-signers with similar wealth and similar observable giving rates."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 75.4,
     "components": {
@@ -430,48 +834,227 @@
       "pledge_breach_penalty_20pct": 0.0,
       "red_flag_penalty_20pct": 15.0
     },
-    "note": "Computed with v2 formula for continuity with current pipeline. No pledge breach (never signed). Tenure saturated (35 years). Red flag penalty 15pts from 3 active red flags × 5pts each. DO NOT PUBLISH this number — we publish tiers only per PLAN.md."
+    "note": "Computed with v2 formula for continuity with current pipeline. No pledge breach (never signed). Tenure saturated (35 years). Red flag penalty 15pts from 3 active red flags \u00d7 5pts each. DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
-    "planned_outreach_route": "Walton Family Foundation communications + Rob and Melani Walton Foundation press contact + Walton Enterprises LLC family office — three routes to raise visibility and document delivery.",
+    "planned_outreach_route": "Walton Family Foundation communications + Rob and Melani Walton Foundation press contact + Walton Enterprises LLC family office \u2014 three routes to raise visibility and document delivery.",
     "scheduled_outreach_date": null,
     "response_deadline": null,
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
     "VERIFY: Pull WFF 990-PFs for 2008-2018 to complete grants_out history and improve pro-rata attribution denominator.",
     "VERIFY: Pull RMWF 990-PFs for 2015-2018 (foundation established 2015; pre-2019 not yet captured).",
     "VERIFY: Parse WFF grant recipient list for DAF sponsors (Fidelity Charitable, Schwab Charitable, NPT, Vanguard Charitable, Jewish Federation DAFs) to confirm absence of DAF_TRANSFERS flag.",
-    "VERIFY: SEC EDGAR Form 4 for Rob Walton — check G-transactions (stock gifts) to non-foundation recipients not yet captured.",
+    "VERIFY: SEC EDGAR Form 4 for Rob Walton \u2014 check G-transactions (stock gifts) to non-foundation recipients not yet captured.",
     "VERIFY: FEC bulk pull for Rob Walton name/address to confirm $17M 2023-2024 cycle total and pull 2025 off-cycle giving.",
-    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
-    "VERIFY: Rob vs. Jim vs. Alice contribution split of WFF — attempt historical press / 990-PF Schedule B disclosures to refine the 1/3 pro-rata assumption.",
-    "VERIFY: Current status of the separate 'Rob Walton Foundation' (robwaltonfoundation.org) — is this a DBA of RMWF or a separate 501(c)(3)? If separate, pull 990-PF.",
-    "VERIFY: ASU $115M 2025 gift per AZ Free News — confirm which vehicle, whether captured in 2025 RMWF or WFF filings when they become available.",
-    "VERIFY: Walton family trust structures via estate-planning press and SEC 13D/G beneficial-ownership filings — distinguish dynasty trusts from charitable trusts."
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: Rob vs. Jim vs. Alice contribution split of WFF \u2014 attempt historical press / 990-PF Schedule B disclosures to refine the 1/3 pro-rata assumption.",
+    "VERIFY: Current status of the separate 'Rob Walton Foundation' (robwaltonfoundation.org) \u2014 is this a DBA of RMWF or a separate 501(c)(3)? If separate, pull 990-PF.",
+    "VERIFY: ASU $115M 2025 gift per AZ Free News \u2014 confirm which vehicle, whether captured in 2025 RMWF or WFF filings when they become available.",
+    "VERIFY: Walton family trust structures via estate-planning press and SEC 13D/G beneficial-ownership filings \u2014 distinguish dynasty trusts from charitable trusts."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/133441466", "retrieved_at": "2026-04-23", "used_for": "Walton Family Foundation 990-PF data 2011-2024, assets, officer comp"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/474259772", "retrieved_at": "2026-04-23", "used_for": "Rob and Melani Walton Foundation 990-PF data 2015-2024, assets, zero officer comp"},
-    {"url": "https://en.wikipedia.org/wiki/S._Robson_Walton", "retrieved_at": "2026-04-23", "used_for": "Net worth Feb 2026 ($145.1B, rank 11), birth year 1944, Walmart role history, Denver Broncos ownership, sibling $2B WFF pledge 2008-2013"},
-    {"url": "https://x.com/Forbes_MENA_/status/2046654195604881579", "retrieved_at": "2026-04-23", "used_for": "Forbes April 2026 net worth $143.1B"},
-    {"url": "https://247wallst.com/retail/2026/02/04/walton-net-worth-surges-50-billion/", "retrieved_at": "2026-04-23", "used_for": "Walton family net worth surge $50B early 2026"},
-    {"url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving", "retrieved_at": "2026-04-23", "used_for": "Rob Walton explicit quote declining Giving Pledge"},
-    {"url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000003348&name=Walton,+Rob&super_only=N&type=I", "retrieved_at": "2026-04-23", "used_for": "Rob Walton $17M political giving 2023-2024 cycle, conservative-aligned vehicles"},
-    {"url": "https://arktimes.com/arkansas-blog/2024/11/04/5-of-the-top-50-political-donors-in-the-u-s-are-from-arkansas", "retrieved_at": "2026-04-23", "used_for": "Top 50 political donor 2024 designation"},
-    {"url": "https://robwaltonfoundation.org/", "retrieved_at": "2026-04-23", "used_for": "Rob Walton Foundation conservation mission, African Parks + Conservation International partners"},
-    {"url": "https://www.africanparks.org/rob-and-melani-walton-foundation-make-transformational-gift-preserve-30-million-hectares", "retrieved_at": "2026-04-23", "used_for": "$100M 2021 gift to African Parks ($75M endowment + $25M needs)"},
-    {"url": "https://news.asu.edu/content/asu-use-275m-walton-investment-accelerate-sustainability-efforts", "retrieved_at": "2026-04-23", "used_for": "$27.5M gift to ASU Global Institute of Sustainability"},
-    {"url": "https://www.azhumane.org/news/rob-and-melani-walton-foundation-makes-5m-gift/", "retrieved_at": "2026-04-23", "used_for": "$5M 2022 gift to Arizona Humane Society"},
-    {"url": "https://www.insidephilanthropy.com/home/2021-10-7-the-giving-of-americas-richest-family-can-be-hard-to-track-here-are-11-foundations-of-walton-heirs", "retrieved_at": "2026-04-23", "used_for": "Walton foundations landscape map; RMWF $443M 2019 assets benchmark; confirmation of family foundation separation"},
-    {"url": "https://en.wikipedia.org/wiki/Walton_family", "retrieved_at": "2026-04-23", "used_for": "Walton family wealth holding structure, Walton Enterprises LLC, historical trust references"},
-    {"url": "https://en.wikipedia.org/wiki/Walton_Family_Foundation", "retrieved_at": "2026-04-23", "used_for": "WFF founding 1987, $1000 initial + $172M 1992 trust, joint-family structure, recent grant totals"},
-    {"url": "https://www.waltonfamilyfoundation.org/about-us/reports-financials", "retrieved_at": "2026-04-23", "used_for": "WFF 2024 $548.8M announced grants (differs from 990-PF $603.5M — likely calendar vs fiscal year)"},
-    {"url": "https://scrollnetworth.com/rob-walton-net-worth/", "retrieved_at": "2026-04-23", "used_for": "$115B+ range reference corroboration"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/133441466",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Walton Family Foundation 990-PF data 2011-2024, assets, officer comp"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/474259772",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Rob and Melani Walton Foundation 990-PF data 2015-2024, assets, zero officer comp"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/S._Robson_Walton",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Net worth Feb 2026 ($145.1B, rank 11), birth year 1944, Walmart role history, Denver Broncos ownership, sibling $2B WFF pledge 2008-2013"
+    },
+    {
+      "url": "https://x.com/Forbes_MENA_/status/2046654195604881579",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes April 2026 net worth $143.1B"
+    },
+    {
+      "url": "https://247wallst.com/retail/2026/02/04/walton-net-worth-surges-50-billion/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Walton family net worth surge $50B early 2026"
+    },
+    {
+      "url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Rob Walton explicit quote declining Giving Pledge"
+    },
+    {
+      "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000003348&name=Walton,+Rob&super_only=N&type=I",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Rob Walton $17M political giving 2023-2024 cycle, conservative-aligned vehicles"
+    },
+    {
+      "url": "https://arktimes.com/arkansas-blog/2024/11/04/5-of-the-top-50-political-donors-in-the-u-s-are-from-arkansas",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Top 50 political donor 2024 designation"
+    },
+    {
+      "url": "https://robwaltonfoundation.org/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Rob Walton Foundation conservation mission, African Parks + Conservation International partners"
+    },
+    {
+      "url": "https://www.africanparks.org/rob-and-melani-walton-foundation-make-transformational-gift-preserve-30-million-hectares",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$100M 2021 gift to African Parks ($75M endowment + $25M needs)"
+    },
+    {
+      "url": "https://news.asu.edu/content/asu-use-275m-walton-investment-accelerate-sustainability-efforts",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$27.5M gift to ASU Global Institute of Sustainability"
+    },
+    {
+      "url": "https://www.azhumane.org/news/rob-and-melani-walton-foundation-makes-5m-gift/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$5M 2022 gift to Arizona Humane Society"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2021-10-7-the-giving-of-americas-richest-family-can-be-hard-to-track-here-are-11-foundations-of-walton-heirs",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Walton foundations landscape map; RMWF $443M 2019 assets benchmark; confirmation of family foundation separation"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Walton_family",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Walton family wealth holding structure, Walton Enterprises LLC, historical trust references"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Walton_Family_Foundation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "WFF founding 1987, $1000 initial + $172M 1992 trust, joint-family structure, recent grant totals"
+    },
+    {
+      "url": "https://www.waltonfamilyfoundation.org/about-us/reports-financials",
+      "retrieved_at": "2026-04-23",
+      "used_for": "WFF 2024 $548.8M announced grants (differs from 990-PF $603.5M \u2014 likely calendar vs fiscal year)"
+    },
+    {
+      "url": "https://scrollnetworth.com/rob-walton-net-worth/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$115B+ range reference corroboration"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/133441466/202113199349104386/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/133441466/202223199349107147/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/133441466/202323199349103222/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/133441466/202413199349102766/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/133441466/202543219349103824/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/474259772/202223089349100707/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=01-01-86",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-72-48",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-74-82",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=15-03-23",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-87-64",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-17-17",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-55-84",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-70-86",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-01-28",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-46-16",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-58-00",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-21-93",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-304cb69dcfafbb06"
+    }
   ]
 }

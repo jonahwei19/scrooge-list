@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record following Ellison v3 reference. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Richard Kinder)",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Richard Kinder) + regen_v3@sha256-30cea1997160dc80 + regen_v3@sha256-67b34abc3afc4998",
   "person": {
     "name_display": "Richard Kinder",
     "name_legal": "Richard Dan Kinder",
@@ -539,6 +539,96 @@
       "url": "https://philanthropynewsdigest.org/news/kinders-announce-10-billion-commitment-to-houston-organizations",
       "retrieved_at": "2026-04-24",
       "used_for": "$10B Houston commitment announcement"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82011823",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100617916",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=00-15-10",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-05-02",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-66-58",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-20-63",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-38-92",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-48-39",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-99-54",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=41-60-62",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-30-13",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-29-92",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-00-31",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-61-73",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-67b34abc3afc4998"
     }
   ],
   "_source_file": "richard_kinder.v3.json"

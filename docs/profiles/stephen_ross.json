@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching larry_ellison.v3.json schema. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 single-subject deep research \u2014 Stephen M. Ross",
+  "generated_by": "scrooge v3 single-subject deep research \u2014 Stephen M. Ross + regen_v3@sha256-1f5657265dd7ec79",
   "person": {
     "name_display": "Stephen Ross",
     "name_legal": "Stephen Michael Ross",
@@ -254,6 +254,26 @@
       "confidence": "high",
       "notes": "Four-year commitment announced post-George Floyd. Brings total RISE commitments to $30M since 2015 founding.",
       "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Stephen M Ross Foundation",
+      "donor_ein": "38-7104084",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 1851.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/387104084",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $1.0M; payout rate 0.2%.",
+      "regen_source": "propublica",
+      "event_id": "stephen_ross_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1f5657265dd7ec79",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -479,7 +499,7 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 3159283150,
     "ratio_observable_to_5pct_tenure": 0.174,
-    "observable_from_events_usd": 614216850,
+    "observable_from_events_usd": 614218701,
     "observable_drift_pct": 0.077,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
@@ -618,6 +638,210 @@
       "url": "https://www.bloomberg.com/news/articles/2019-08-08/trump-s-hamptons-fundraisers-put-high-profile-donors-in-a-bind",
       "retrieved_at": "2026-04-24",
       "used_for": "Hamptons fundraiser context"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/194069",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/223073",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/20155108",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100617815",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82002433",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82004751",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100305438",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82005910",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82005932",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82005991",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82005992",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82005993",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82006207",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82006465",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82086329",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82001922",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/169300",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82000689",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82005918",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82011410",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/184858",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-18-14",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-05-62",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-16-93",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=10-78-98",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-30-97",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-60-62",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-11-24",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-67-51",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-68-33",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-34-08",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-97-81",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-65-17",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ab2807d12f9065e7"
     }
   ],
   "summary_150_words": "Stephen Ross (b. 1940, Related Companies founder, ~94% owner of Miami Dolphins) is worth ~$17B in 2026. He signed the Giving Pledge in 2013, committing 'substantial majority' of assets to charity. Observable lifetime giving is ~$665M: $478M to University of Michigan alone (largest donor in UM history, including $200M in 2013 split between Ross School of Business and athletics \u2014 the biggest athletics gift at the time), $100M cumulative to WRI Ross Center for Sustainable Cities, $30M founding RISE (Ross Initiative in Sports for Equality) in 2015, and $100M for University of Michigan's Detroit Center for Innovation (2020). The Stephen M Ross Foundation (EIN 38-7104084, NH) shows erratic payouts \u2014 $38.9M in 2023, then just $396K in 2024 (below 5% IRS minimum). Political: major Trump-era Republican donor, host of the notorious 2019 Hamptons fundraiser ($250K/plate) and primary funder of NYC's anti-progressive Common Sense NYC super-PAC. Tier B \u2014 real giving, real pledge gap, real political substitution.",

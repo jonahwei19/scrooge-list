@@ -1,0 +1,4 @@
+# regen_v3 runtime dependencies.
+# Pin loosely; these are all key-free.
+requests
+yfinance        # historical close prices for SEC Form 4 G-transaction valuation

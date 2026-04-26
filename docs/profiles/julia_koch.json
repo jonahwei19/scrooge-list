@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire v3 record \u2014 Julia Koch. Widow of David H. Koch (d. 2019); inherited control of his 42% stake in Koch Industries and chair/president of the David H. Koch Charitable Foundation. KEY METHODOLOGICAL ISSUE: David's pre-2019 lifetime giving (~$1.3B per Forbes 400 2018) is NOT attributable to Julia's post-inheritance record; we count the David H. Koch Charitable Foundation's post-2019 grants-out plus any Julia-specific vehicles. SECOND KEY ISSUE: The three Julia-related philanthropy vehicles (Julia Koch Family Foundation EIN 92-1599313; Julia Koch Family Philanthropy Fund EIN 87-3659591; Mary Julia Koch Foundation EIN 87-3681616) are all classified 501(c)(4) social-welfare organizations per ProPublica \u2014 NOT 501(c)(3) private foundations. Donations to 501(c)(4)s are not tax-deductible for the donor and these vehicles can legally spend up to 49% of activity on political/lobbying. This requires the same treatment applied to Charles Koch's CCKc4 and Stand Together \u2014 501(c)(4) transfers are NOT observable charitable giving without evidence of downstream 501(c)(3) disbursement.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 Julia Koch estate-transition case study",
+  "generated_by": "scrooge v3 manual reference run \u2014 Julia Koch estate-transition case study + regen_v3@sha256-95784f6d18e6eba1 + regen_v3@sha256-75d4b7224df57ac9",
   "person": {
     "name_display": "Julia Koch",
     "name_legal": "Julia Margaret Flesher Koch",
@@ -242,6 +242,46 @@
       "confidence": "high",
       "attribution_note": "CRITICAL METHODOLOGY: David's pre-death lifetime giving is NOT attributable to Julia. These gifts were made and paid before Julia became the primary donor decision-maker. Included here for context and to document the 'stepped-down' pattern post-2019 \u2014 David's giving during the 2011-2018 period averaged ~$10M/yr through DHKCF plus larger one-off gifts; post-2019 DHKCF giving collapsed to <$5K in 2019 and remained under $4M through 2024.",
       "event_role_canonical": "reference_only"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "David H Koch Charitable Foundation",
+      "donor_ein": "48-0926946",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 4718.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $30.6M; payout rate 0.0%.",
+      "regen_source": "propublica",
+      "event_id": "julia_koch_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95784f6d18e6eba1",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "The Mary Julia Koch Foundation",
+      "donor_ein": "87-3681616",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 5000050.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/873681616",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $2.7M; payout rate 187.9%.",
+      "regen_source": "propublica",
+      "event_id": "julia_koch_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95784f6d18e6eba1",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -465,8 +505,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 4178539751,
     "ratio_observable_to_5pct_tenure": 0.0198,
-    "observable_from_events_usd": 197698289,
-    "observable_drift_pct": 1.341,
+    "observable_from_events_usd": 202703057,
+    "observable_drift_pct": 1.4,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -575,6 +615,84 @@
       "url": "https://www.bloomberg.com/billionaires/profiles/julia-f-koch/",
       "retrieved_at": "2026-04-24",
       "used_for": "Bloomberg Billionaires Index net worth corroboration"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-32-02",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-92-51",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-57-42",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-10-27",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-29-43",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=41-55-96",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-74-51",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-52-89",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-80-64",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-02-93",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-05-89",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-31-80",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
     }
   ],
   "_source_file": "julia_koch.v3.json"

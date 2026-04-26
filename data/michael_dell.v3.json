@@ -2,8 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching ellison.v3 schema. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run — single-subject deep research",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research + regen_v3@sha256-3cf3e20805caa5c8 + regen_v3@sha256-dbe68fa7f07805d0",
   "person": {
     "name_display": "Michael Dell",
     "name_legal": "Michael Saul Dell",
@@ -12,10 +11,12 @@
     "wealth_source": "Dell Technologies founder/CEO (~45-50% stake); also Broadcom stake (from 2023 VMware sale to Broadcom for $68B); DFO Management / MSD Capital family office; Secureworks stake",
     "years_as_billionaire_approx": 34
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 135.0,
-    "range_usd_billions": [112, 151],
+    "range_usd_billions": [
+      112,
+      151
+    ],
     "as_of": "2026-04",
     "range_note": "Forbes 2026 lists him at #13; Bloomberg 2025 ~$151B (10th richest); Inside Philanthropy Nov 2025 cited ~$112B post-net-worth-doubling. Bajaj tracker ~$135B. Dell's stake is heavily concentrated in Dell Technologies (liquid equity but large block) plus private DFO holdings. Mid-point ~$135B used as best estimate.",
     "sources": [
@@ -24,7 +25,7 @@
         "url": "https://www.forbes.com/profile/michael-dell/",
         "retrieved_at": "2026-04-23",
         "rank_on_list": 13,
-        "value_note": "Forbes 2026 profile — exact figure behind bot-wall; Forbes index lists rank #13. Bajaj tracker and Bloomberg cross-cites ~$135B range."
+        "value_note": "Forbes 2026 profile \u2014 exact figure behind bot-wall; Forbes index lists rank #13. Bajaj tracker and Bloomberg cross-cites ~$135B range."
       },
       {
         "publisher": "Bloomberg Billionaires Index (via Wikipedia)",
@@ -55,9 +56,8 @@
       }
     ],
     "liquidity_estimate_pct": 0.35,
-    "liquidity_notes": "~50% stake in Dell Technologies (public, but concentrated block — divestment would move stock); Broadcom stake (public, more liquid as minority); DFO/MSD Capital family office holdings are private. Apply 35% liquidity discount for 'giving capacity now' calculations — higher than Ellison's 25% because Dell's positions are somewhat more diversified post-Broadcom."
+    "liquidity_notes": "~50% stake in Dell Technologies (public, but concentrated block \u2014 divestment would move stock); Broadcom stake (public, more liquid as minority); DFO/MSD Capital family office holdings are private. Apply 35% liquidity discount for 'giving capacity now' calculations \u2014 higher than Ellison's 25% because Dell's positions are somewhat more diversified post-Broadcom."
   },
-
   "cited_events": [
     {
       "event_id": "dell_msdf_2024",
@@ -139,7 +139,10 @@
       "event_role": "transfer_in",
       "year": 2023,
       "date_precision": "day",
-      "date_range": ["2023-10-13", "2023-10-19"],
+      "date_range": [
+        "2023-10-13",
+        "2023-10-19"
+      ],
       "donor_entity": "Michael Dell (personal)",
       "recipient_split": {
         "Michael_Susan_Dell_Foundation": 140000000,
@@ -157,7 +160,10 @@
     {
       "event_id": "dell_msdf_endowment_grants_2023_2024",
       "event_role": "transfer_in",
-      "year_range": [2023, 2024],
+      "year_range": [
+        2023,
+        2024
+      ],
       "donor_entity": "Michael & Susan Dell (personal)",
       "recipient": "Michael & Susan Dell Foundation",
       "amount_usd": 5000000000,
@@ -177,7 +183,7 @@
       "year": 2013,
       "donor_entity": "Michael & Susan Dell Foundation",
       "donor_ein": "36-4336415",
-      "recipient": "University of Texas at Austin — Dell Medical School (founding gift)",
+      "recipient": "University of Texas at Austin \u2014 Dell Medical School (founding gift)",
       "amount_usd": 50000000,
       "source_type": "news/foundation announcement",
       "source_url": "https://www.texastribune.org/2026/04/21/texas-austin-dell-michael-susan-billion-research-medical-university/",
@@ -191,7 +197,7 @@
       "year_approx": 2005,
       "date_precision": "year_range",
       "donor_entity": "Michael & Susan Dell (likely via MSDF)",
-      "recipient": "University of Texas at Austin — Dell Computer Science Hall",
+      "recipient": "University of Texas at Austin \u2014 Dell Computer Science Hall",
       "amount_usd": 10000000,
       "source_type": "news",
       "source_url": "https://www.texastribune.org/2026/04/21/texas-austin-dell-michael-susan-billion-research-medical-university/",
@@ -205,7 +211,7 @@
       "year_approx": 2018,
       "date_precision": "year_range",
       "donor_entity": "Michael & Susan Dell Foundation",
-      "recipient": "UT for Me — Powered by Dell Scholars program (UT Austin)",
+      "recipient": "UT for Me \u2014 Powered by Dell Scholars program (UT Austin)",
       "amount_usd": 100000000,
       "source_type": "news",
       "source_url": "https://www.texastribune.org/2026/04/21/texas-austin-dell-michael-susan-billion-research-medical-university/",
@@ -225,9 +231,46 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Within MSDF 2024 $218.9M grants_out per 990-PF. Do NOT add separately."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Michael & Susan Dell Foundation",
+      "donor_ein": "36-4336415",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 139536766.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $761.6M; payout rate 18.3%.",
+      "regen_source": "propublica",
+      "event_id": "michael_dell_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-3cf3e20805caa5c8",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Michael & Susan Dell Foundation",
+      "donor_ein": "36-4336415",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 199819479.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $5415.3M; payout rate 3.7%.",
+      "regen_source": "propublica",
+      "event_id": "michael_dell_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-3cf3e20805caa5c8",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "dell_giving_pledge_status",
@@ -249,7 +292,7 @@
       "date": "2026-04-21",
       "pledged_amount_usd": 750000000,
       "status": "ANNOUNCED_NOT_DISBURSED",
-      "recipient": "UT Austin — Dell Medical Center (AI-native hospital, opens 2030) + UT Dell Campus for Advanced Research",
+      "recipient": "UT Austin \u2014 Dell Medical Center (AI-native hospital, opens 2030) + UT Dell Campus for Advanced Research",
       "source_type": "news",
       "source_url": "https://news.utexas.edu/2026/04/21/michael-and-susan-dell-surpass-1-billion-in-giving-to-ut-austin/",
       "secondary_source_url": "https://www.cnbc.com/2026/04/21/michael-susan-dell-ut-austin-donation-medical-campus.html",
@@ -265,7 +308,7 @@
       "date": "2025-12-02",
       "pledged_amount_usd": 6250000000,
       "status": "ANNOUNCED",
-      "recipient": "Invest America / 'Trump Accounts' — $250 per account to ~25M children in ZIP codes with median income <$150k, for children age 10 or under. Accounts invest in US index funds; distributions taxed on withdrawal.",
+      "recipient": "Invest America / 'Trump Accounts' \u2014 $250 per account to ~25M children in ZIP codes with median income <$150k, for children age 10 or under. Accounts invest in US index funds; distributions taxed on withdrawal.",
       "source_type": "news",
       "source_url": "https://www.cnbc.com/2025/12/02/michael-susan-dell-trump-accounts.html",
       "secondary_source_url": "https://www.npr.org/2025/12/03/nx-s1-5628402/michael-and-susan-dell-pledge-6-25-billion-to-fund-trump-accounts",
@@ -286,12 +329,11 @@
       "confidence": "medium"
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_LIGHT",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
     "observed_total_2020_2024_usd": null,
-    "observed_total_note": "No major super-PAC giving identified in press review. CIO.com (older) cites modest $2,500-$5,000 donations to Texas Republicans (McCaul, Lamar Smith, Carter) plus Dell corporate PAC. OpenSecrets donor lookup returned 226 records but direct scrape failed — deferred to Phase 1.3 FEC integration. Dell's political profile appears moderate-to-low relative to his net worth, consistent with his public positioning as bipartisan/technocratic. Dell serves on Trump's Council of Advisors on Science and Technology (2026 reappointment) — access signals political engagement but not large-dollar donation pattern.",
+    "observed_total_note": "No major super-PAC giving identified in press review. CIO.com (older) cites modest $2,500-$5,000 donations to Texas Republicans (McCaul, Lamar Smith, Carter) plus Dell corporate PAC. OpenSecrets donor lookup returned 226 records but direct scrape failed \u2014 deferred to Phase 1.3 FEC integration. Dell's political profile appears moderate-to-low relative to his net worth, consistent with his public positioning as bipartisan/technocratic. Dell serves on Trump's Council of Advisors on Science and Technology (2026 reappointment) \u2014 access signals political engagement but not large-dollar donation pattern.",
     "sources": [
       {
         "url": "https://www.opensecrets.org/donor-lookup/results?cand=&cycle=&employ=dell&name=michael+dell&order=desc&sort=D&state=&zip=",
@@ -306,7 +348,6 @@
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -321,7 +362,7 @@
         "assets_usd_growth_note": "Assets grew ~5x from 2022 ($1.52B) to 2024 ($7.77B) following $5B in personal contributions from the Dells in Dec 2023 ($3.6B cash+stock) and 2024 ($1.4B). Per Inside Philanthropy, this was timed with Dell's post-Broadcom VMware-sale liquidity event.",
         "grants_2024_usd": 218900000,
         "grants_to_assets_pct_2024": 0.028,
-        "payout_rate_notes": "2024 grants_out ($218.9M) / average assets (~$6.4B between 2023 $5.26B and 2024 $7.53B year-end) ≈ 3.4%. BELOW the 5% legal minimum for a single year. HOWEVER: IRS 5% rule is on a rolling/distributable-amount basis, and a foundation that just received a large contribution has a 12-month grace window plus can count 'qualifying distributions' toward future obligations. Inside Philanthropy flags: the Dells added $5B to endowment but grantmaking only rose to $308M (their number, which likely includes DAF sub-granting) — in absolute growth terms, the foundation is accumulating wealth faster than it is deploying it. Flag LOW_PAYOUT_RATIO as watch item; NOT a hard legal violation given grace period.",
+        "payout_rate_notes": "2024 grants_out ($218.9M) / average assets (~$6.4B between 2023 $5.26B and 2024 $7.53B year-end) \u2248 3.4%. BELOW the 5% legal minimum for a single year. HOWEVER: IRS 5% rule is on a rolling/distributable-amount basis, and a foundation that just received a large contribution has a 12-month grace window plus can count 'qualifying distributions' toward future obligations. Inside Philanthropy flags: the Dells added $5B to endowment but grantmaking only rose to $308M (their number, which likely includes DAF sub-granting) \u2014 in absolute growth terms, the foundation is accumulating wealth faster than it is deploying it. Flag LOW_PAYOUT_RATIO as watch item; NOT a hard legal violation given grace period.",
         "officers_compensation_2024": {
           "Michael_S_Dell_President": 0,
           "Susan_L_Dell_1st_VP": 0,
@@ -332,7 +373,7 @@
           "Marita_Kurian_VP": 323515
         },
         "compensation_flag": "NORMAL. Michael and Susan Dell receive zero compensation. Staff compensation for a $7.5B foundation with global operations (US, India, Africa, Israel) is within industry norms for grantmaking foundations of this size.",
-        "red_flag_daf_transfers": "CONFIRMED. Oct 2023 Michael Dell personal stock gift of $350M split $140M to MSDF + $210M to UNSPECIFIED DAFs (per PND, Forbes, Philanthropy News Digest). This is a DAF red flag because DAF disbursements are donor-opaque — we cannot verify whether the $210M was onward-granted to 501(c)(3)s or warehoused indefinitely. The DAFs themselves are not named; MSDF 990-PF grant recipients list should be checked for DAF beneficiary transfers as additional signal.",
+        "red_flag_daf_transfers": "CONFIRMED. Oct 2023 Michael Dell personal stock gift of $350M split $140M to MSDF + $210M to UNSPECIFIED DAFs (per PND, Forbes, Philanthropy News Digest). This is a DAF red flag because DAF disbursements are donor-opaque \u2014 we cannot verify whether the $210M was onward-granted to 501(c)(3)s or warehoused indefinitely. The DAFs themselves are not named; MSDF 990-PF grant recipients list should be checked for DAF beneficiary transfers as additional signal.",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
         "source_url_990pf_2023": "https://www.dell.org/wp-content/uploads/2025/11/2023-Form-990-PF-for-Michael-and-Susan-Dell-Foundation.pdf"
       }
@@ -351,23 +392,22 @@
     ],
     "dafs_note": "At least one confirmed DAF transfer ($210M in 2023). Specific DAF sponsors not named. Subsequent disbursements from these DAFs are not publicly observable. Apply hidden_upper uplift conservatively; warehouse risk non-zero.",
     "llcs_philanthropic": [],
-    "llcs_note": "DFO Management / MSD Capital is Michael Dell's family office / personal investment vehicle — NOT a philanthropic LLC like CZI or Emerson Collective. No philanthropic LLC structure identified.",
+    "llcs_note": "DFO Management / MSD Capital is Michael Dell's family office / personal investment vehicle \u2014 NOT a philanthropic LLC like CZI or Emerson Collective. No philanthropic LLC structure identified.",
     "for_profit_hybrid_vehicles": [],
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. Dell's DFO family office is Delaware/Austin-based per public disclosures; no prominent offshore structure identified in press.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. Dell's DFO family office is Delaware/Austin-based per public disclosures; no prominent offshore structure identified in press.",
     "trusts_disclosed_existence_structure_unknown": [],
     "trusts_note": "No public disclosure of a charitable trust structure analogous to Ellison's. Dell Technologies proxy filings reference standard family trusts for stock holdings but no charitable remainder/lead trust has been publicly disclosed."
   },
-
   "red_flags": [
     {
       "flag": "DAF_TRANSFERS",
-      "evidence": "Oct 2023 stock gift: $210M of $350M total routed to unspecified donor-advised funds (60% of gift). DAF disbursements are donor-opaque — no downstream verification possible.",
+      "evidence": "Oct 2023 stock gift: $210M of $350M total routed to unspecified donor-advised funds (60% of gift). DAF disbursements are donor-opaque \u2014 no downstream verification possible.",
       "source_url": "https://philanthropynewsdigest.org/news/michael-dell-donates-350-million-in-stock-to-foundation-and-dafs"
     },
     {
       "flag": "LOW_PAYOUT_RATIO_WATCH",
-      "evidence": "MSDF 2024 grants_out ($218.9M) vs assets ($7.77B) = ~2.8%. Foundation received $5B injection in 2023-2024 but grantmaking only rose to $218.9M (990-PF) or $308M (IP reported). IRS 5% rule has grace periods post-contribution but this pattern — asset accumulation faster than deployment — is the 'warehousing-via-foundation' pattern IPS critiques.",
+      "evidence": "MSDF 2024 grants_out ($218.9M) vs assets ($7.77B) = ~2.8%. Foundation received $5B injection in 2023-2024 but grantmaking only rose to $218.9M (990-PF) or $308M (IP reported). IRS 5% rule has grace periods post-contribution but this pattern \u2014 asset accumulation faster than deployment \u2014 is the 'warehousing-via-foundation' pattern IPS critiques.",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415"
     },
     {
@@ -387,44 +427,42 @@
     "NO_OBSERVABLE_GIVING (MSDF has $1B+ observable grants 2019-2024)",
     "OFFSHORE_OPACITY (none identified; not confirmed absent)"
   ],
-
   "rollup": {
     "observable_giving_usd": 1064200000,
     "observable_giving_method": "sum(MSDF 990-PF grants_out 2019-2024). Excludes: $5B endowment injection 2023-2024 (transfer_in); $350M Oct 2023 stock gift (transfer_in, $140M portion to MSDF is captured in 2024 MSDF grants_out as it disburses, $210M DAF portion is donor-opaque); $6.25B Trump Accounts pledge (ambiguous classification, not yet disbursed, likely not 501(c)(3)); $750M UT Austin Apr 2026 pledge (not yet disbursed); pre-2019 MSDF grants (not yet pulled).",
     "observable_giving_todo": [
       "Pull MSDF 990-PF years 1999-2018 to add to observable; likely adds ~$1.5-2B based on foundation age and grant cadence.",
       "Verify $140M Oct 2023 MSDF-bound stock gift is captured in MSDF 2024 grants_out (not double-count).",
-      "Verify $210M Oct 2023 DAF recipient(s) — if named in SEC Form 4 footnotes or subsequent disclosures, track downstream.",
-      "Reconcile MSDF $218.9M (990-PF) vs $308M (IP 2024 reported grantmaking) — may differ by timing of stock gift in-kind valuation.",
+      "Verify $210M Oct 2023 DAF recipient(s) \u2014 if named in SEC Form 4 footnotes or subsequent disclosures, track downstream.",
+      "Reconcile MSDF $218.9M (990-PF) vs $308M (IP 2024 reported grantmaking) \u2014 may differ by timing of stock gift in-kind valuation.",
       "Track $6.25B Trump Accounts disbursement structure: if routed through a 501(c)(3) Invest America foundation, reclassify as direct_gift observable giving; if routed as gifts to individual accounts, keep EXCLUDED.",
       "Run SEC EDGAR Form 4 for Michael Dell CIK 1383812 for pre-2023 and post-2023 G-transactions."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 4725000000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.35 × $135B = $47.25B; tenure cap saturated (34 years, well over 10). Expected = $4.73B.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.35 \u00d7 $135B = $47.25B; tenure cap saturated (34 years, well over 10). Expected = $4.73B.",
     "observable_ratio_to_expected": 0.225,
     "observable_ratio_to_current_nw": 0.0079,
     "hidden_upper_usd": {
       "daf_uplift_usd": 210000000,
-      "daf_uplift_note": "Confirmed $210M transferred to unnamed DAFs in Oct 2023. Under standard DAF-opacity treatment, this full amount goes to hidden upper bound (we cannot verify disbursement). May be double-counted as transfer_in — net treatment: include full $210M as hidden-giving upper bound.",
+      "daf_uplift_note": "Confirmed $210M transferred to unnamed DAFs in Oct 2023. Under standard DAF-opacity treatment, this full amount goes to hidden upper bound (we cannot verify disbursement). May be double-counted as transfer_in \u2014 net treatment: include full $210M as hidden-giving upper bound.",
       "llc_uplift_usd": 0,
       "llc_uplift_note": "No philanthropic LLC. Zero uplift.",
       "offshore_uplift_usd": 0,
       "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
       "anonymous_cohort_uplift_usd": 500000000,
-      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Dell's public posture (per IP: 'not the billionaire couple on the front page' — quiet philanthropy, Susan chairs foundation) skews toward anonymous giving. Apply 0.2% of liquid wealth as upper: 0.002 × $135B × 0.35 liquidity = $95M; but amplify ~5x given IP's explicit characterization of quiet posture = $500M.",
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Dell's public posture (per IP: 'not the billionaire couple on the front page' \u2014 quiet philanthropy, Susan chairs foundation) skews toward anonymous giving. Apply 0.2% of liquid wealth as upper: 0.002 \u00d7 $135B \u00d7 0.35 liquidity = $95M; but amplify ~5x given IP's explicit characterization of quiet posture = $500M.",
       "religious_cohort_uplift_usd": 0,
       "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
       "pre_2019_msdf_backfill_usd": 1800000000,
-      "pre_2019_msdf_method": "MSDF founded 1999; grants 1999-2018 not yet pulled. Extrapolate from 1999-2018 average assets (~$1-1.5B) × ~5-10% grantmaking rate × 20 years = ~$1.5-2B. Middle estimate $1.8B. REVISE when MSDF 1999-2018 990-PF data retrieved.",
+      "pre_2019_msdf_method": "MSDF founded 1999; grants 1999-2018 not yet pulled. Extrapolate from 1999-2018 average assets (~$1-1.5B) \u00d7 ~5-10% grantmaking rate \u00d7 20 years = ~$1.5-2B. Middle estimate $1.8B. REVISE when MSDF 1999-2018 990-PF data retrieved.",
       "total_usd": 2510000000,
       "total_method": "daf + anonymous + pre_2019_msdf (llc/offshore/religious all zero)"
     },
     "observable_plus_hidden_ratio_to_expected": 0.756,
     "tier": "On_Track (Tier C)",
-    "tier_rule": "Tier A (Verified Low) requires observable + hidden < 0.2 × expected — Dell fails this (observable alone is 0.225). Tier B (Probably Low) requires 0.2-0.5 — Dell is in this range ONLY if we don't backfill MSDF 1999-2018 and don't credit DAF transfers. With reasonable backfill (observable + hidden ≈ $3.57B), Dell's ratio is ~0.76 of expected, landing in Tier C 'On Track' or 'Moderate Giver.' CRITICAL factor: MSDF is a 25-year-old serious working foundation with zero-comp principals, global operations, and a $5B 2023-2024 endowment injection signaling future scale-up. Dell is a HIGH-GIVING case relative to Tier A billionaires.",
+    "tier_rule": "Tier A (Verified Low) requires observable + hidden < 0.2 \u00d7 expected \u2014 Dell fails this (observable alone is 0.225). Tier B (Probably Low) requires 0.2-0.5 \u2014 Dell is in this range ONLY if we don't backfill MSDF 1999-2018 and don't credit DAF transfers. With reasonable backfill (observable + hidden \u2248 $3.57B), Dell's ratio is ~0.76 of expected, landing in Tier C 'On Track' or 'Moderate Giver.' CRITICAL factor: MSDF is a 25-year-old serious working foundation with zero-comp principals, global operations, and a $5B 2023-2024 endowment injection signaling future scale-up. Dell is a HIGH-GIVING case relative to Tier A billionaires.",
     "tier_published_caveat": "Readers should see Dell as the anti-Ellison: did NOT sign Giving Pledge but HAS built a serious working foundation over 25 years, zero-comp principals, broad operations. Key tensions: (1) $5B endowment injection accumulating faster than deploying (low payout ratio watch); (2) $210M DAF transfer opacity; (3) $6.25B Trump Accounts pledge is NOT conventional charity. Dell is notable for doing real philanthropy without the public commitment apparatus (Pledge, LLC, splashy vehicles)."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 52.0,
     "components": {
@@ -433,9 +471,8 @@
       "pledge_breach_penalty_20pct": 0.0,
       "red_flag_penalty_20pct": 20.0
     },
-    "note": "Computed with v2 formula for continuity. Giving gap is small (observable/expected = 0.225; gap = 1 - 0.225 = 0.775 but when hidden is credited, gap drops to 0.24, so weighted component = 0.2 × 40 = 8). Tenure saturated. No pledge signed, so no breach penalty. 4 red flags × 5 = 20. DO NOT PUBLISH — tiers only per PLAN.md."
+    "note": "Computed with v2 formula for continuity. Giving gap is small (observable/expected = 0.225; gap = 1 - 0.225 = 0.775 but when hidden is credited, gap drops to 0.24, so weighted component = 0.2 \u00d7 40 = 8). Tenure saturated. No pledge signed, so no breach penalty. 4 red flags \u00d7 5 = 20. DO NOT PUBLISH \u2014 tiers only per PLAN.md."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
     "planned_outreach_route": "Michael & Susan Dell Foundation press contact (dell.org) + DFO Management + Dell Technologies IR",
@@ -444,49 +481,263 @@
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
     "VERIFY: Pull MSDF 990-PF years 1999-2018 to extend observable giving window back to foundation founding.",
     "VERIFY: Reconcile MSDF 2024 grants_out: 990-PF $218.9M vs IP-reported $308M. Understand the gap (likely DAF sub-granting, pledge accrual, or in-kind timing).",
-    "VERIFY: Specific DAF sponsors that received $210M in Oct 2023 — check SEC Form 4 footnotes and subsequent disclosures.",
-    "VERIFY: Track $6.25B Trump Accounts disbursement mechanism — is there a 501(c)(3) Invest America intermediary? If yes, reclassify.",
-    "VERIFY: Track $750M UT Austin Apr 2026 disbursement — through MSDF or personal? Timing?",
+    "VERIFY: Specific DAF sponsors that received $210M in Oct 2023 \u2014 check SEC Form 4 footnotes and subsequent disclosures.",
+    "VERIFY: Track $6.25B Trump Accounts disbursement mechanism \u2014 is there a 501(c)(3) Invest America intermediary? If yes, reclassify.",
+    "VERIFY: Track $750M UT Austin Apr 2026 disbursement \u2014 through MSDF or personal? Timing?",
     "VERIFY: Run FEC bulk pull on Michael Dell to replace CIO.com anecdote with hard total.",
-    "VERIFY: SEC EDGAR Form 4 G-transactions for Michael Dell CIK 1383812 — identify all pre-2023 and post-2023 stock gifts.",
-    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
-    "VERIFY: Net worth reconciliation — Forbes 2026 profile (bot-walled), Bloomberg $151B, IP $112B, Bajaj $135B. Use Forbes figure when scraped."
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Michael Dell CIK 1383812 \u2014 identify all pre-2023 and post-2023 stock gifts.",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: Net worth reconciliation \u2014 Forbes 2026 profile (bot-walled), Bloomberg $151B, IP $112B, Bajaj $135B. Use Forbes figure when scraped."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/364336415", "retrieved_at": "2026-04-23", "used_for": "MSDF 990-PF data 2019-2024, assets, officers, EIN 36-4336415"},
-    {"url": "https://www.dell.org/wp-content/uploads/2025/11/2023-Form-990-PF-for-Michael-and-Susan-Dell-Foundation.pdf", "retrieved_at": "2026-04-23", "used_for": "MSDF 2023 990-PF (full)"},
-    {"url": "https://www.dell.org/wp-content/uploads/2025/11/AMENDED-2022-Form-990-PF-for-Michael-and-Susan-Dell-Foundation-Website.pdf", "retrieved_at": "2026-04-23", "used_for": "MSDF 2022 990-PF (amended)"},
-    {"url": "https://www.forbes.com/profile/michael-dell/", "retrieved_at": "2026-04-23", "used_for": "Forbes 2026 rank #13 (bot-walled net worth value)"},
-    {"url": "https://en.wikipedia.org/wiki/Michael_Dell", "retrieved_at": "2026-04-23", "used_for": "Bloomberg $151B 2025; DOB 1965; $3B lifetime giving self-report; Trump Accounts context"},
-    {"url": "https://www.bajajfinserv.in/michael-dell-net-worth", "retrieved_at": "2026-04-23", "used_for": "Net worth ~$135B tracker"},
-    {"url": "https://finance.yahoo.com/markets/stocks/articles/michael-dell-among-top-net-100115979.html", "retrieved_at": "2026-04-23", "used_for": "Dell back in top 10 post-$6.25B gift (April 2026)"},
-    {"url": "https://www.insidephilanthropy.com/home/sign-of-the-times-the-dells-grow-their-foundation-by-a-cool-5-billion", "retrieved_at": "2026-04-23", "used_for": "$5B endowment injection 2023-2024 ($3.6B Dec 2023 + $1.4B 2024); Giving Pledge not signed; $112B net worth context; MSDF operations"},
-    {"url": "https://www.vox.com/2019/4/22/18491577/founders-giving-pledge-tech-philanthropy-billionaires", "retrieved_at": "2026-04-23", "used_for": "Dell not Giving Pledge signatory (2019)"},
-    {"url": "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315", "retrieved_at": "2026-04-23", "used_for": "Dell among richest non-signers"},
-    {"url": "https://time.com/collections/time100-philanthropy-2025/7286083/michael-dell-susan-dell/", "retrieved_at": "2026-04-23", "used_for": "$120M 2024 charter schools + $100M Dell Catalyst"},
-    {"url": "https://philanthropynewsdigest.org/news/michael-dell-donates-350-million-in-stock-to-foundation-and-dafs", "retrieved_at": "2026-04-23", "used_for": "Oct 2023 $350M stock gift: $140M MSDF + $210M DAFs"},
-    {"url": "https://ceoworld.biz/2023/10/24/billionaire-michael-dell-gifted-350-million-worth-of-dell-technologies-stock/", "retrieved_at": "2026-04-23", "used_for": "Oct 2023 stock gift corroboration; first Dell stock gift since 2006"},
-    {"url": "https://www.forbes.com/sites/phoebeliu/2023/10/20/michael-dell-just-made-his-biggest-ever-donation-of-dell-stock/", "retrieved_at": "2026-04-23", "used_for": "Oct 2023 5.15M shares in 5 installments Oct 13-19; 40% to family foundation"},
-    {"url": "https://observer.com/2023/12/michael-dell-donates-billions-dell-stock/", "retrieved_at": "2026-04-23", "used_for": "Dec 2023 pledge up to $1.7B Dell stock"},
-    {"url": "https://www.cnbc.com/2025/12/02/michael-susan-dell-trump-accounts.html", "retrieved_at": "2026-04-23", "used_for": "$6.25B Trump Accounts pledge announcement"},
-    {"url": "https://www.npr.org/2025/12/03/nx-s1-5628402/michael-and-susan-dell-pledge-6-25-billion-to-fund-trump-accounts", "retrieved_at": "2026-04-23", "used_for": "Trump Accounts pledge, low-income ZIP code targeting"},
-    {"url": "https://www.nytimes.com/2025/12/02/business/dell-children-trump-accounts.html", "retrieved_at": "2026-04-23", "used_for": "$250 per account × 25M children = $6.25B math"},
-    {"url": "https://time.com/7338155/dell-trump-accounts-donation-children-parents/", "retrieved_at": "2026-04-23", "used_for": "Trump Accounts eligibility and context"},
-    {"url": "https://www.forbes.com/sites/kellyphillipserb/2025/12/05/is-it-deductible-the-tax-rules-around-the-dells-625-billion-contribution-to-trump-accounts/", "retrieved_at": "2026-04-23", "used_for": "Tax analysis: Trump Accounts likely NOT charitable deduction"},
-    {"url": "https://fortune.com/article/michael-susan-dell-trump-accounts-invest-america/", "retrieved_at": "2026-04-23", "used_for": "Dell's giving philosophy quotes; Invest America structure"},
-    {"url": "https://www.bloomberg.com/news/articles/2025-12-02/michael-dell-gives-6-25-billion-to-launch-trump-accounts-for-25-million-kids", "retrieved_at": "2026-04-23", "used_for": "Trump Accounts structure and OBBBA context"},
-    {"url": "https://news.utexas.edu/2026/04/21/michael-and-susan-dell-surpass-1-billion-in-giving-to-ut-austin/", "retrieved_at": "2026-04-23", "used_for": "First $1B UT Austin donor; $750M April 2026 gift"},
-    {"url": "https://www.cnbc.com/2026/04/21/michael-susan-dell-ut-austin-donation-medical-campus.html", "retrieved_at": "2026-04-23", "used_for": "$750M UT Austin medical campus gift; $50M 2013 Dell Medical School founding gift"},
-    {"url": "https://www.texastribune.org/2026/04/21/texas-austin-dell-michael-susan-billion-research-medical-university/", "retrieved_at": "2026-04-23", "used_for": "UT Austin gift breakdown: $10M CS Hall + $50M Dell Med School + $100M UT for Me + $750M 2026"},
-    {"url": "https://www.kut.org/health/2026-04-21/ut-austin-dell-medical-center-hospital-michael-susan-dell-foundation-donation", "retrieved_at": "2026-04-23", "used_for": "Dell Medical Center opens 2030; first $1B UT donor"},
-    {"url": "https://www.opensecrets.org/donor-lookup/results?cand=&cycle=&employ=dell&name=michael+dell&order=desc&sort=D&state=&zip=", "retrieved_at": "2026-04-23", "used_for": "226 individual contribution records (direct scrape deferred to Phase 1.3)"},
-    {"url": "https://www.cio.com/article/300269/tech-industry-leaders-and-their-political-donations.html", "retrieved_at": "2026-04-23", "used_for": "Modest Texas Republican giving pattern (historical)"},
-    {"url": "https://www.influencewatch.org/person/michael-dell/", "retrieved_at": "2026-04-23", "used_for": "2010 SEC complaint context ($4M personal settlement)"},
-    {"url": "https://www.gsb.stanford.edu/faculty-research/case-studies/michael-susan-dell-foundation-technology-enables-social-impact", "retrieved_at": "2026-04-23", "used_for": "MSDF founding context (1999); strategy"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/364336415",
+      "retrieved_at": "2026-04-23",
+      "used_for": "MSDF 990-PF data 2019-2024, assets, officers, EIN 36-4336415"
+    },
+    {
+      "url": "https://www.dell.org/wp-content/uploads/2025/11/2023-Form-990-PF-for-Michael-and-Susan-Dell-Foundation.pdf",
+      "retrieved_at": "2026-04-23",
+      "used_for": "MSDF 2023 990-PF (full)"
+    },
+    {
+      "url": "https://www.dell.org/wp-content/uploads/2025/11/AMENDED-2022-Form-990-PF-for-Michael-and-Susan-Dell-Foundation-Website.pdf",
+      "retrieved_at": "2026-04-23",
+      "used_for": "MSDF 2022 990-PF (amended)"
+    },
+    {
+      "url": "https://www.forbes.com/profile/michael-dell/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes 2026 rank #13 (bot-walled net worth value)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Michael_Dell",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg $151B 2025; DOB 1965; $3B lifetime giving self-report; Trump Accounts context"
+    },
+    {
+      "url": "https://www.bajajfinserv.in/michael-dell-net-worth",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Net worth ~$135B tracker"
+    },
+    {
+      "url": "https://finance.yahoo.com/markets/stocks/articles/michael-dell-among-top-net-100115979.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dell back in top 10 post-$6.25B gift (April 2026)"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/sign-of-the-times-the-dells-grow-their-foundation-by-a-cool-5-billion",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$5B endowment injection 2023-2024 ($3.6B Dec 2023 + $1.4B 2024); Giving Pledge not signed; $112B net worth context; MSDF operations"
+    },
+    {
+      "url": "https://www.vox.com/2019/4/22/18491577/founders-giving-pledge-tech-philanthropy-billionaires",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dell not Giving Pledge signatory (2019)"
+    },
+    {
+      "url": "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dell among richest non-signers"
+    },
+    {
+      "url": "https://time.com/collections/time100-philanthropy-2025/7286083/michael-dell-susan-dell/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$120M 2024 charter schools + $100M Dell Catalyst"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/michael-dell-donates-350-million-in-stock-to-foundation-and-dafs",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Oct 2023 $350M stock gift: $140M MSDF + $210M DAFs"
+    },
+    {
+      "url": "https://ceoworld.biz/2023/10/24/billionaire-michael-dell-gifted-350-million-worth-of-dell-technologies-stock/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Oct 2023 stock gift corroboration; first Dell stock gift since 2006"
+    },
+    {
+      "url": "https://www.forbes.com/sites/phoebeliu/2023/10/20/michael-dell-just-made-his-biggest-ever-donation-of-dell-stock/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Oct 2023 5.15M shares in 5 installments Oct 13-19; 40% to family foundation"
+    },
+    {
+      "url": "https://observer.com/2023/12/michael-dell-donates-billions-dell-stock/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dec 2023 pledge up to $1.7B Dell stock"
+    },
+    {
+      "url": "https://www.cnbc.com/2025/12/02/michael-susan-dell-trump-accounts.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$6.25B Trump Accounts pledge announcement"
+    },
+    {
+      "url": "https://www.npr.org/2025/12/03/nx-s1-5628402/michael-and-susan-dell-pledge-6-25-billion-to-fund-trump-accounts",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Trump Accounts pledge, low-income ZIP code targeting"
+    },
+    {
+      "url": "https://www.nytimes.com/2025/12/02/business/dell-children-trump-accounts.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$250 per account \u00d7 25M children = $6.25B math"
+    },
+    {
+      "url": "https://time.com/7338155/dell-trump-accounts-donation-children-parents/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Trump Accounts eligibility and context"
+    },
+    {
+      "url": "https://www.forbes.com/sites/kellyphillipserb/2025/12/05/is-it-deductible-the-tax-rules-around-the-dells-625-billion-contribution-to-trump-accounts/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Tax analysis: Trump Accounts likely NOT charitable deduction"
+    },
+    {
+      "url": "https://fortune.com/article/michael-susan-dell-trump-accounts-invest-america/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dell's giving philosophy quotes; Invest America structure"
+    },
+    {
+      "url": "https://www.bloomberg.com/news/articles/2025-12-02/michael-dell-gives-6-25-billion-to-launch-trump-accounts-for-25-million-kids",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Trump Accounts structure and OBBBA context"
+    },
+    {
+      "url": "https://news.utexas.edu/2026/04/21/michael-and-susan-dell-surpass-1-billion-in-giving-to-ut-austin/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "First $1B UT Austin donor; $750M April 2026 gift"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/04/21/michael-susan-dell-ut-austin-donation-medical-campus.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$750M UT Austin medical campus gift; $50M 2013 Dell Medical School founding gift"
+    },
+    {
+      "url": "https://www.texastribune.org/2026/04/21/texas-austin-dell-michael-susan-billion-research-medical-university/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "UT Austin gift breakdown: $10M CS Hall + $50M Dell Med School + $100M UT for Me + $750M 2026"
+    },
+    {
+      "url": "https://www.kut.org/health/2026-04-21/ut-austin-dell-medical-center-hospital-michael-susan-dell-foundation-donation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dell Medical Center opens 2030; first $1B UT donor"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?cand=&cycle=&employ=dell&name=michael+dell&order=desc&sort=D&state=&zip=",
+      "retrieved_at": "2026-04-23",
+      "used_for": "226 individual contribution records (direct scrape deferred to Phase 1.3)"
+    },
+    {
+      "url": "https://www.cio.com/article/300269/tech-industry-leaders-and-their-political-donations.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Modest Texas Republican giving pattern (historical)"
+    },
+    {
+      "url": "https://www.influencewatch.org/person/michael-dell/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2010 SEC complaint context ($4M personal settlement)"
+    },
+    {
+      "url": "https://www.gsb.stanford.edu/faculty-research/case-studies/michael-susan-dell-foundation-technology-enables-social-impact",
+      "retrieved_at": "2026-04-23",
+      "used_for": "MSDF founding context (1999); strategy"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/169073",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101504415",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100309440",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-87-59",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-75-33",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-54-89",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-20-98",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-48-44",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-65-28",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-68-63",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-69-46",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-75-09",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-82-14",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-86-67",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-41-75",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    }
   ]
 }

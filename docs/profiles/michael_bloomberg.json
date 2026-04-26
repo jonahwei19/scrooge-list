@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file. Bloomberg is the CEILING control case \u2014 high-giving pledge signer classified by IPS as one of the few plausibly 'on track.' Use to calibrate Tier C boundary and sanity-check the denominator.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 HIGH GIVING control/calibration case",
+  "generated_by": "scrooge v3 manual reference run \u2014 HIGH GIVING control/calibration case + regen_v3@sha256-582eef30e2e617b5 + regen_v3@sha256-af45ceb083e9c8a7",
   "person": {
     "name_display": "Michael Bloomberg",
     "name_legal": "Michael Rubens Bloomberg",
@@ -330,6 +330,86 @@
       "confidence": "medium",
       "notes": "Lifetime total through end-2025 per bloomberg.org/about page: $25.4B with $4.3B deployed in 2025 (Brave Search snippet). Implies 2025 annual giving ~$4.3B \u2014 higher than 2024 ($3.7B). No independent press corroboration of the 2025 annual figure yet retrieved.",
       "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Bloomberg Family Foundation Inc",
+      "donor_ein": "20-5602483",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 457937221.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $7156.5M; payout rate 6.4%.",
+      "regen_source": "propublica",
+      "event_id": "michael_bloomberg_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-582eef30e2e617b5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Bloomberg Family Foundation Inc. (dba Bloomberg Philanthropies)",
+      "donor_ein": "20-5602483",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 20000000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483/202103199349102935/full",
+      "confidence": "high",
+      "note": "Bloomberg Family Foundation Inc. (dba Bloomberg Philanthropies) \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 2 grant line(s) on 990-PF Part XV for FY 2020; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "michael_bloomberg_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Bloomberg Family Foundation Inc. (dba Bloomberg Philanthropies)",
+      "donor_ein": "20-5602483",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 20000000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483/202223189349104212/full",
+      "confidence": "high",
+      "note": "Bloomberg Family Foundation Inc. (dba Bloomberg Philanthropies) \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 1 grant line(s) on 990-PF Part XV for FY 2021; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "michael_bloomberg_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Bloomberg Family Foundation Inc. (dba Bloomberg Philanthropies)",
+      "donor_ein": "20-5602483",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 10000000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/205602483/202323189349101732/full",
+      "confidence": "high",
+      "note": "Bloomberg Family Foundation Inc. (dba Bloomberg Philanthropies) \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 1 grant line(s) on 990-PF Part XV for FY 2022; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "michael_bloomberg_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -486,8 +566,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 3425000000,
     "ratio_observable_to_5pct_tenure": 0.8603,
-    "observable_from_events_usd": 13309671965,
-    "observable_drift_pct": 0.369,
+    "observable_from_events_usd": 13817609186,
+    "observable_drift_pct": 0.345,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -669,6 +749,60 @@
       "url": "https://ejewishphilanthropy.com/your-daily-phil-bloomberg-again-tops-biggest-donor-list-giving-3-7b-in-2024/",
       "retrieved_at": "2026-04-23",
       "used_for": "2024 top-donor corroboration"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/205602483/202103199349102935/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/205602483/202223189349104212/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/205602483/202323189349101732/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-84-94",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-30-87",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-57-41",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-35-55",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-57-51",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-56-05",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-af45ceb083e9c8a7"
     }
   ],
   "_source_file": "michael_bloomberg.v3.json"

@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 Harold Hamm single-subject deep research",
+  "generated_by": "scrooge v3 manual reference run \u2014 Harold Hamm single-subject deep research + regen_v3@sha256-b718f51f2d3b76b9 + regen_v3@sha256-c4a00d978fb86052",
   "person": {
     "name_display": "Harold Hamm",
     "name_legal": "Harold Glenn Hamm",
@@ -205,6 +205,44 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "The $4.7M was raised by the gala from many donors, NOT a direct Hamm gift. Hamm received the inaugural Crystal Seed Sower Award (recognition for cumulative $25M+ to OU). Included for context only. NOT counted as Hamm giving \u2014 risk of misattribution by published lists."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2016,
+      "date_precision": "year",
+      "donor_entity": "Harold Hamm Foundation",
+      "donor_ein": "46-1256191",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 1051926.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2016; end-year assets $0.2M; payout rate 466.1%.",
+      "regen_source": "propublica",
+      "event_id": "harold_hamm_grant_out_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b718f51f2d3b76b9",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Harold Hamm Foundation",
+      "donor_ein": "46-1256191",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 2083292.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2024; end-year assets $11.1M; payout rate 18.8%.",
+      "regen_source": "propublica",
+      "event_id": "harold_hamm_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b718f51f2d3b76b9",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -522,6 +560,84 @@
       "url": "https://horatioalger.org/members/detail/harold-hamm/",
       "retrieved_at": "2026-04-24",
       "used_for": "Hamm biography, Horatio Alger membership"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=01-08-14",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-02-13",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-74-39",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=07-04-54",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-14-90",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=15-99-44",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-17-65",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-62-10",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-33-26",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-53-57",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-27-70",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-31-03",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c4a00d978fb86052"
     }
   ]
 }

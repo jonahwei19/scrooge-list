@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Scott methodological edge case)",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Scott methodological edge case) + regen_v3@sha256-c6d6ee888e772aee + regen_v3@sha256-95e0226079564a9d",
   "person": {
     "name_display": "MacKenzie Scott",
     "name_legal": "MacKenzie Scott (formerly MacKenzie Bezos; formerly MacKenzie Tuttle)",
@@ -160,6 +160,25 @@
       "yield_giving_headline": "$26,000,000,000+ in 2,700+ gifts to non-profit teams",
       "methodology_note": "This is the canonical rollup number Scott publishes. Sub-events scott_yield_2019_2022 + scott_yield_2023 + scott_yield_2024 + scott_yield_2025 add to ~$26.3B. Do NOT double-count this cumulative row against the per-year rows in observable_giving \u2014 use per-year rows, treat cumulative row as validation only. Panorama Global notes ~45% of individual grant amounts on database are undisclosed, so the $26.3B aggregate is Scott-declared but not bottom-up reconcilable from the public gift list.",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": 2025,
+      "date_precision": "year",
+      "donor_entity": "MacKenzie Scott",
+      "recipient": "Lost Horse LLC",
+      "amount_usd": 26000000000.0,
+      "source_type": "philanthropic_llc_commitment",
+      "source_url": "https://www.ceotodaymagazine.com/2025/02/mackenzie-scotts-monumental-donations-a-legacy-of-philanthropy/",
+      "confidence": "high",
+      "note": "Lost Horse LLC (Seattle, est. late 2019) is MacKenzie Scott's family-office vehicle that orchestrates her giving (paid out via DAFs and direct grants). Cumulative announced giving \u2248$26B as of 2025 (including $7.2B in 2025 alone). Unusual \u2014 Lost Horse is opaque but Scott self-publishes a recipient database (yieldgiving.com).",
+      "regen_source": "llcs",
+      "event_id": "mackenzie_scott_transfer_in_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "transfer_in"
     }
   ],
   "pledges_and_announcements": [
@@ -451,6 +470,108 @@
       "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
       "retrieved_at": "2026-04-23",
       "used_for": "IPS report reference (PDF parsing failed at fetch; flagged for local re-parse in verification TODOs)"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100333085",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100334819",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100309656",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "ceotodaymagazine.com",
+      "url": "https://www.ceotodaymagazine.com/2025/02/mackenzie-scotts-monumental-donations-a-legacy-of-philanthropy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=01-68-60",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-02-03",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-93-56",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-71-80",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-80-29",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=10-46-48",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-73-30",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-17-56",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-96-90",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-28-00",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-40-05",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-93-04",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
     }
   ],
   "_source_file": "mackenzie_scott.v3.json"

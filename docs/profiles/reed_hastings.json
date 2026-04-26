@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching larry_ellison.v3.json schema. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political). Tier classification happens downstream. CRITICAL caveat for Hastings: most giving is routed through the Hastings Fund \u2014 a donor-advised fund (DAF) at Silicon Valley Community Foundation (SVCF). We observe inflows to the DAF (announced via SEC Form 4 and press) but NOT outflows to ultimate charities (DAFs are donor-opaque by design). Announced direct gifts like UNCF/Morehouse/Spelman are the pass-through destinations from that DAF. See dedup_note on each event.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research on Reed Hastings",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research on Reed Hastings + regen_v3@sha256-84f2e39380a340a7 + regen_v3@sha256-0074ffb7a26d23c7",
   "person": {
     "name_display": "Reed Hastings",
     "name_legal": "Wilmot Reed Hastings Jr.",
@@ -462,6 +462,90 @@
       "url": "https://chartergrowthfund.org/person/reed-hastings/",
       "retrieved_at": "2026-04-24",
       "used_for": "Charter Growth Fund board"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101509862",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=00-63-76",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=01-50-72",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-94-82",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-86-80",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-28-26",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-13-64",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-36-87",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-20-56",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-53-30",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-79-01",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-85-00",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-08-52",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0074ffb7a26d23c7"
     }
   ],
   "summary_150w": "Reed Hastings (Netflix co-founder, b. 1960, net worth ~$5.8B April 2026 after selling down to <1% of Netflix) is the canonical DAF-heavy Giving Pledger. Signed the Pledge in 2012 with wife Patty Quillin ('a majority of our assets'). Routes essentially all giving through the Hastings Fund \u2014 a donor-advised fund at Silicon Valley Community Foundation, founded 2016 with $100M and augmented by $1.1B (Jan 2024) and $500M (Dec 2024) Netflix-stock transfers. Announced end-recipient pass-throughs: $120M to UNCF/Morehouse/Spelman (2020), $50M to Bowdoin (2025), $30M to Gavi (2020). No private foundation (no 990-PF, no payout requirement, no recipient disclosure). Political giving: $28M+ 2020-2025, mostly Democratic plus heavy charter-school advocacy. Under inflows-counting methodology he is HIGH_GENEROSITY (29% of net worth committed); under outflows-counting methodology he is Tier B/C because ~$1.5B of DAF balance has unverified end disposition. Published as Tier C Opaque \u2014 commitment is real, delivery is unprovable.",

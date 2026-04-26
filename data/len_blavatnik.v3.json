@@ -2,8 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Single-subject per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Tier classification happens downstream.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run — Len Blavatnik",
-
+  "generated_by": "scrooge v3 manual research run \u2014 Len Blavatnik + regen_v3@sha256-ca0b4f1d66efde50 + regen_v3@sha256-fba267158d656d01",
   "person": {
     "name_display": "Len Blavatnik",
     "name_legal": "Sir Leonard Valentinovich Blavatnik",
@@ -13,10 +12,12 @@
     "wealth_source": "Access Industries (founded 1986). Fortune built through post-Soviet aluminum (Sual/Rusal) and oil (Tyumen Oil / TNK-BP joint venture with Viktor Vekselberg and Mikhail Fridman's Alfa Group; sold 50% stake to Rosneft in 2013 for ~$28B gross, ~$7B personal). Now chairman of Warner Music Group (acquired 2011), ~21% stake in LyondellBasell, owner of DAZN, significant real estate and venture portfolio.",
     "years_as_billionaire_approx": 20
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 29.9,
-    "range_usd_billions": [26.5, 40],
+    "range_usd_billions": [
+      26.5,
+      40
+    ],
     "as_of": "2026-03",
     "range_note": "Forbes Real-Time Billionaires March 2026 ~$29.9B, rank ~#78. Forbes April 2025 snapshot ~$26.5B (rank #75). Celebrity Net Worth (lower-quality source) ~$40B. We use $29.9B as best estimate; $26.5-30.4B is the credible Forbes band. Bloomberg Billionaires Index tracks a similar range.",
     "sources": [
@@ -44,9 +45,8 @@
       }
     ],
     "liquidity_estimate_pct": 0.45,
-    "liquidity_notes": "Access Industries is a private holding company. Warner Music Group (WMG) is public — Blavatnik/Access holds majority voting stake, marked liquid but with control-premium drag on mark-to-market. LyondellBasell stake (~21%) is public and more readily divestible. DAZN, real estate, and venture portfolio are private and illiquid. Apply ~45% liquidity for giving-capacity-now. The 2013 TNK-BP sale produced ~$7B cash personally (documented), of which a substantial portion has since been redeployed — so cash reserves are not negligible but not fully visible."
+    "liquidity_notes": "Access Industries is a private holding company. Warner Music Group (WMG) is public \u2014 Blavatnik/Access holds majority voting stake, marked liquid but with control-premium drag on mark-to-market. LyondellBasell stake (~21%) is public and more readily divestible. DAZN, real estate, and venture portfolio are private and illiquid. Apply ~45% liquidity for giving-capacity-now. The 2013 TNK-BP sale produced ~$7B cash personally (documented), of which a substantial portion has since been redeployed \u2014 so cash reserves are not negligible but not fully visible."
   },
-
   "cited_events": [
     {
       "event_id": "blavatnik_bff_2024",
@@ -109,7 +109,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/812444350",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "2020 grants spiked — likely COVID-era giving plus the Harvard $200M 2018 pledge disbursement schedule."
+      "notes": "2020 grants spiked \u2014 likely COVID-era giving plus the Harvard $200M 2018 pledge disbursement schedule."
     },
     {
       "event_id": "blavatnik_bff_2019",
@@ -122,7 +122,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/812444350",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "2019 was the highest annual payout observed — likely coinciding with Harvard $200M multi-year disbursement."
+      "notes": "2019 was the highest annual payout observed \u2014 likely coinciding with Harvard $200M multi-year disbursement."
     },
     {
       "event_id": "blavatnik_bff_2018",
@@ -159,7 +159,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/851345780",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Second Blavatnik foundation entity established 2020 (tax-exempt 2021). Trustees include Alexander Blavatnik (Len's brother) and Sigmund D Heller. Appears to be a parallel grantmaking vehicle, possibly used to route Harvard/Yale/Tel Aviv pass-through gifts separate from BFF. Dedup risk — see dedup_notes section."
+      "notes": "Second Blavatnik foundation entity established 2020 (tax-exempt 2021). Trustees include Alexander Blavatnik (Len's brother) and Sigmund D Heller. Appears to be a parallel grantmaking vehicle, possibly used to route Harvard/Yale/Tel Aviv pass-through gifts separate from BFF. Dedup risk \u2014 see dedup_notes section."
     },
     {
       "event_id": "blavatnik_bff2020_2021",
@@ -177,7 +177,10 @@
     {
       "event_id": "blavatnik_wmg_sjf_2020_2025",
       "event_role": "grant_out",
-      "year_range": [2020, 2025],
+      "year_range": [
+        2020,
+        2025
+      ],
       "donor_entity": "Warner Music Group Blavatnik Family Foundation Social Justice Fund",
       "donor_ein": "85-3060424",
       "amount_usd": 3570500,
@@ -193,7 +196,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/853060424",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Joint WMG/Blavatnik vehicle launched June 2020 with $100M 10-year pledge for social justice. Actual disbursements modest (~$3.6M over 5 years). Separately funded by WMG, not purely Blavatnik — attribution to him is partial."
+      "notes": "Joint WMG/Blavatnik vehicle launched June 2020 with $100M 10-year pledge for social justice. Actual disbursements modest (~$3.6M over 5 years). Separately funded by WMG, not purely Blavatnik \u2014 attribution to him is partial."
     },
     {
       "event_id": "blavatnik_oxford_bsg_2010",
@@ -201,14 +204,14 @@
       "year": 2010,
       "date_precision": "year",
       "donor_entity": "Leonard Blavatnik (personal / pre-BFF)",
-      "recipient": "University of Oxford — Blavatnik School of Government (founding gift)",
+      "recipient": "University of Oxford \u2014 Blavatnik School of Government (founding gift)",
       "amount_usd": 117200000,
       "amount_gbp": 75000000,
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Blavatnik_School_of_Government",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Predates BFF (est. 2017/2018). Given through Blavatnik Family Trust/Foundation UK vehicle — does NOT appear in US 990-PF filings. Treat as additive to 990-PF totals. No double-count risk against 81-2444350."
+      "dedup_note": "Predates BFF (est. 2017/2018). Given through Blavatnik Family Trust/Foundation UK vehicle \u2014 does NOT appear in US 990-PF filings. Treat as additive to 990-PF totals. No double-count risk against 81-2444350."
     },
     {
       "event_id": "blavatnik_oxford_bsg_trust_29m",
@@ -216,7 +219,7 @@
       "year": 2014,
       "date_precision": "year",
       "donor_entity": "Leonard Blavatnik (via associated trust)",
-      "recipient": "University of Oxford — Blavatnik School of Government (operating support)",
+      "recipient": "University of Oxford \u2014 Blavatnik School of Government (operating support)",
       "amount_gbp": 29000000,
       "amount_usd_approx": 48000000,
       "status": "PARTIALLY_DISBURSED",
@@ -224,7 +227,7 @@
       "source_url": "https://en.wikipedia.org/wiki/Blavatnik_School_of_Government",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "notes": "Reported as a £29M operating-support commitment over 10 years beyond the founding £75M. Disbursement schedule not public."
+      "notes": "Reported as a \u00a329M operating-support commitment over 10 years beyond the founding \u00a375M. Disbursement schedule not public."
     },
     {
       "event_id": "blavatnik_tate_2011",
@@ -232,10 +235,10 @@
       "year": 2011,
       "date_precision": "year",
       "donor_entity": "Leonard Blavatnik (UK/personal)",
-      "recipient": "Tate Modern — Blavatnik Building (new extension)",
+      "recipient": "Tate Modern \u2014 Blavatnik Building (new extension)",
       "amount_gbp": 50000000,
       "amount_usd_approx": 80000000,
-      "amount_note": "Reported as 'more than £50M' — the largest-ever financial gift to a UK museum at the time. Pledge made 2011; building opened 2016; naming announced 2017.",
+      "amount_note": "Reported as 'more than \u00a350M' \u2014 the largest-ever financial gift to a UK museum at the time. Pledge made 2011; building opened 2016; naming announced 2017.",
       "source_type": "announcement",
       "source_url": "https://www.tate.org.uk/press/press-releases/tate-announces-naming-tate-moderns-new-building-after-philanthropist-len",
       "retrieved_at": "2026-04-24",
@@ -250,20 +253,20 @@
       "date": "2018-11",
       "donor_entity": "Blavatnik Family Foundation",
       "donor_ein": "81-2444350",
-      "recipient": "Harvard Medical School — Blavatnik Institute at HMS + Blavatnik Harvard Life Lab",
+      "recipient": "Harvard Medical School \u2014 Blavatnik Institute at HMS + Blavatnik Harvard Life Lab",
       "amount_usd": 200000000,
       "source_type": "announcement",
       "source_url": "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This $200M was pledged through BFF. Expected to be disbursed over multiple years and already partially reflected in BFF 990-PF grant_out lines 2019 ($158.9M) and 2020 ($137.2M). To avoid double-counting, we DO NOT add this event separately to observable_giving — it is captured inside the 2017-2024 BFF 990-PF totals. Kept in record for narrative completeness."
+      "dedup_note": "CRITICAL: This $200M was pledged through BFF. Expected to be disbursed over multiple years and already partially reflected in BFF 990-PF grant_out lines 2019 ($158.9M) and 2020 ($137.2M). To avoid double-counting, we DO NOT add this event separately to observable_giving \u2014 it is captured inside the 2017-2024 BFF 990-PF totals. Kept in record for narrative completeness."
     },
     {
       "event_id": "blavatnik_harvard_2013",
       "event_role": "direct_gift",
       "year": 2013,
       "donor_entity": "Leonard Blavatnik (pre-BFF era)",
-      "recipient": "Harvard — Blavatnik Biomedical Accelerator + Blavatnik Fellowship in Life Science Entrepreneurship (HBS)",
+      "recipient": "Harvard \u2014 Blavatnik Biomedical Accelerator + Blavatnik Fellowship in Life Science Entrepreneurship (HBS)",
       "amount_usd": 50000000,
       "source_type": "news",
       "source_url": "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/",
@@ -278,7 +281,7 @@
       "date_precision": "month",
       "date": "2025-07",
       "donor_entity": "Blavatnik Family Foundation",
-      "recipient": "Harvard Medical School — translational therapeutics awards + early-career researcher pool",
+      "recipient": "Harvard Medical School \u2014 translational therapeutics awards + early-career researcher pool",
       "amount_usd": 18860000,
       "source_type": "news",
       "source_url": "https://www.thecrimson.com/article/2025/7/19/hms-donations-blavatnik-trump/",
@@ -292,7 +295,7 @@
       "year": 2023,
       "donor_entity": "Blavatnik Family Foundation",
       "donor_ein": "81-2444350",
-      "recipient": "Yale University — Blavatnik Fund for Innovation (health technologies)",
+      "recipient": "Yale University \u2014 Blavatnik Fund for Innovation (health technologies)",
       "amount_usd": 40000000,
       "source_type": "announcement",
       "source_url": "https://ventures.yale.edu/news/blavatnik-family-foundation-gives-additional-40-million-yale-innovation-fund",
@@ -305,20 +308,20 @@
       "event_role": "direct_gift",
       "year": 2013,
       "donor_entity": "Leonard Blavatnik (pre-BFF era)",
-      "recipient": "Yale University — Blavatnik Fund for Innovation (original fund; Medzhitov/Flavell immunobiology)",
+      "recipient": "Yale University \u2014 Blavatnik Fund for Innovation (original fund; Medzhitov/Flavell immunobiology)",
       "amount_usd": 10000000,
       "source_type": "news",
       "source_url": "https://www.philanthropy.com/article/financier-len-blavatnik-gives-yale-40-million-to-develop-new-health-technologies",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "notes": "Press cited original Yale fund as ~$10M in 2013. Some sources confuse this with the $40M 2023 gift — we treat them as separate events. Predates BFF, additive."
+      "notes": "Press cited original Yale fund as ~$10M in 2013. Some sources confuse this with the $40M 2023 gift \u2014 we treat them as separate events. Predates BFF, additive."
     },
     {
       "event_id": "blavatnik_tau_2008",
       "event_role": "direct_gift",
       "year": 2008,
       "donor_entity": "The Blavatnik Family Foundation (pre-2017/2018 US reorganization)",
-      "recipient": "Tel Aviv University — initial gift",
+      "recipient": "Tel Aviv University \u2014 initial gift",
       "amount_usd": 5000000,
       "source_type": "news",
       "source_url": "https://www.eurekalert.org/news-releases/549088",
@@ -330,7 +333,7 @@
       "event_role": "direct_gift",
       "year": 2014,
       "donor_entity": "Blavatnik Family Foundation",
-      "recipient": "Tel Aviv University — Blavatnik Initiative launch",
+      "recipient": "Tel Aviv University \u2014 Blavatnik Initiative launch",
       "amount_usd": 20000000,
       "source_type": "news",
       "source_url": "https://philanthropynewsdigest.org/news/blavatnik-foundation-awards-20-million-to-tel-aviv-university",
@@ -344,13 +347,13 @@
       "year": 2018,
       "donor_entity": "Blavatnik Family Foundation",
       "donor_ein": "81-2444350",
-      "recipient": "Tel Aviv University — interdisciplinary research",
+      "recipient": "Tel Aviv University \u2014 interdisciplinary research",
       "amount_usd": 16000000,
       "source_type": "news",
       "source_url": "https://philanthropynewsdigest.org/news/blavatnik-family-foundation-awards-16-million-to-tel-aviv-university",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Within 2018 BFF 990-PF grants_out ($51.8M) — NOT added separately to observable."
+      "dedup_note": "Within 2018 BFF 990-PF grants_out ($51.8M) \u2014 NOT added separately to observable."
     },
     {
       "event_id": "blavatnik_tau_ai_center",
@@ -358,20 +361,20 @@
       "year": 2023,
       "date_precision": "year",
       "donor_entity": "Blavatnik Family Foundation",
-      "recipient": "Tel Aviv University — Center for AI and Data Science",
+      "recipient": "Tel Aviv University \u2014 Center for AI and Data Science",
       "amount_usd_note": "Amount not publicly disclosed in press; described as 'large gift.'",
       "source_type": "news",
       "source_url": "https://english.tau.ac.il/vision/blavatnik_family_foundation_funding_ai_center",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "dedup_note": "Amount unknown — excluded from observable rollup."
+      "dedup_note": "Amount unknown \u2014 excluded from observable rollup."
     },
     {
       "event_id": "blavatnik_cfr_2019",
       "event_role": "direct_gift",
       "year": 2019,
       "donor_entity": "Blavatnik Family Foundation",
-      "recipient": "Council on Foreign Relations — Blavatnik Internship Program (100+ paid internships/year)",
+      "recipient": "Council on Foreign Relations \u2014 Blavatnik Internship Program (100+ paid internships/year)",
       "amount_usd": 12000000,
       "source_type": "news",
       "source_url": "https://qz.com/1721240/council-of-foreign-relations-criticized-for-russia-tied-donation",
@@ -410,9 +413,160 @@
       "source_url": "https://www.thecrimson.com/article/2023/12/22/blavatnik-halts-donations-antisemitism/",
       "retrieved_at": "2026-04-24",
       "notes": "Press reported BFF had given at least $270M to Harvard cumulatively before pause. Pause resumed in 2025 (see blavatnik_harvard_2025)."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 397826.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $2.2M; payout rate 18.1%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 519027.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $2.5M; payout rate 20.6%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 676338.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $2.4M; payout rate 28.0%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 591467.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $2.8M; payout rate 21.5%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 610423.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $3.6M; payout rate 16.8%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 801161.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $3.2M; payout rate 25.3%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Warner Music Group Blavatnik Family Foundation Social Justice Fund",
+      "donor_ein": "85-3060424",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 108567.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/853060424",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $0.0M; payout rate 228.1%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2022_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Warner Music Group Blavatnik Family Foundation Social Justice Fund",
+      "donor_ein": "85-3060424",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 98264.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/853060424",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $0.0M; payout rate 215.5%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2023_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "blavatnik_no_giving_pledge",
@@ -421,7 +575,7 @@
       "evidence": "Blavatnik does not appear on the Giving Pledge signatories list as of 2026-04. Independent search of givingpledge.org/pledgers returned no Blavatnik match. He is not referenced as a pledger in any 2020-2026 press covering the Giving Pledge cohort.",
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-24",
-      "classification_note": "Red flag NO_GIVING_PLEDGE applies. Unlike Ellison/Zuckerberg/Bloomberg, Blavatnik has never made a public ≥50% wealth commitment. See red_flags."
+      "classification_note": "Red flag NO_GIVING_PLEDGE applies. Unlike Ellison/Zuckerberg/Bloomberg, Blavatnik has never made a public \u226550% wealth commitment. See red_flags."
     },
     {
       "event_id": "blavatnik_bff_lifetime_claim",
@@ -431,10 +585,9 @@
       "retrieved_at": "2026-04-24",
       "alternate_source_quote": "Over the past decade, the Blavatnik Family Foundation has contributed more than $1 billion to over 250 organizations.",
       "alternate_source_url": "https://blavatnikfoundation.org/about-us/",
-      "classification_note": "Self-reported. Our observable sum from BFF (81-2444350) 2017-2024 alone is ~$556M, plus BFF-2020 (85-1345780) 2021-2022 is ~$175.8M. Combined ~$732M in the 2017-2024 window. Consistent with the foundation's own $700M-$1B claim once pre-2017 UK gifts (Oxford £75M, Tate £50M, Harvard 2013 $50M, Yale 2013 $10M) are included. No large gap between claim and evidence."
+      "classification_note": "Self-reported. Our observable sum from BFF (81-2444350) 2017-2024 alone is ~$556M, plus BFF-2020 (85-1345780) 2021-2022 is ~$175.8M. Combined ~$732M in the 2017-2024 window. Consistent with the foundation's own $700M-$1B claim once pre-2017 UK gifts (Oxford \u00a375M, Tate \u00a350M, Harvard 2013 $50M, Yale 2013 $10M) are included. No large gap between claim and evidence."
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_HEAVY_HISTORICAL",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
@@ -469,7 +622,6 @@
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -482,7 +634,7 @@
         "assets_usd_latest": 57533348,
         "grants_out_2024_usd": 44554206,
         "officers_compensation": "ZERO_COMP (trustee listed as 'CPTC LLC' with no reported compensation).",
-        "payout_rate_notes": "2024 grants ($44.6M) vs assets ($57.5M) = 77% — well above 5% minimum; no LOW_PAYOUT flag. 2019 ($158.9M) and 2020 ($137.2M) were outlier-high years, likely driven by Harvard $200M disbursement schedule.",
+        "payout_rate_notes": "2024 grants ($44.6M) vs assets ($57.5M) = 77% \u2014 well above 5% minimum; no LOW_PAYOUT flag. 2019 ($158.9M) and 2020 ($137.2M) were outlier-high years, likely driven by Harvard $200M disbursement schedule.",
         "red_flag_daf_transfers": "NOT_YET_VERIFIED (full 990-PF line-item grant recipients not parsed).",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/812444350"
       },
@@ -512,7 +664,7 @@
       {
         "name": "Blavatnik Archive Foundation",
         "ein": "68-0610651",
-        "note": "Separate entity focused on 20th-century Eastern European/Jewish history archives. Not parsed for grants-out here — listed for completeness.",
+        "note": "Separate entity focused on 20th-century Eastern European/Jewish history archives. Not parsed for grants-out here \u2014 listed for completeness.",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651"
       }
     ],
@@ -525,25 +677,24 @@
       {
         "name": "Blavatnik Family Foundation (UK) and associated trusts",
         "jurisdiction": "UK",
-        "note": "UK gifts to Oxford (£75M + £29M) and Tate Modern (£50M+) flowed through UK-domiciled vehicles not captured in US 990-PF data. Registered with UK Charity Commission; full filing detail NOT yet pulled.",
+        "note": "UK gifts to Oxford (\u00a375M + \u00a329M) and Tate Modern (\u00a350M+) flowed through UK-domiciled vehicles not captured in US 990-PF data. Registered with UK Charity Commission; full filing detail NOT yet pulled.",
         "todo": "Pull UK Charity Commission registry records."
       }
     ],
     "offshore_entities": [],
-    "offshore_note": "Access Industries historically maintained offshore holding structure (Mossack Fonseca / Pandora Papers-era press mentions Vekselberg and Fridman, not Blavatnik directly). ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2.",
+    "offshore_note": "Access Industries historically maintained offshore holding structure (Mossack Fonseca / Pandora Papers-era press mentions Vekselberg and Fridman, not Blavatnik directly). ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
     "trusts_disclosed_existence_structure_unknown": []
   },
-
   "red_flags": [
     {
       "flag": "NO_GIVING_PLEDGE",
-      "evidence": "Not a signatory to the Giving Pledge as of 2026-04. Despite $30B+ net worth and extensive named giving, Blavatnik has never publicly committed to giving away ≥50% of his wealth.",
+      "evidence": "Not a signatory to the Giving Pledge as of 2026-04. Despite $30B+ net worth and extensive named giving, Blavatnik has never publicly committed to giving away \u226550% of his wealth.",
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-24"
     },
     {
       "flag": "REPUTATION_LAUNDERING_ALLEGATION",
-      "evidence": "56 former US national security officials, academics, and activists wrote a public 2019 letter to the Council on Foreign Relations alleging Blavatnik's $12M CFR gift (and, by extension, gifts to Oxford, Harvard, Yale, Tate, Hudson Institute) were part of a longstanding campaign to 'launder his image in the West' and 'advance his access to political circles' — citing his 1997-2013 TNK-BP partnership with Viktor Vekselberg (US-sanctioned 2018) and Mikhail Fridman, and the $7B personal proceeds from the 2013 sale of the TNK-BP stake to Rosneft (run by Putin ally Igor Sechin). CFR president Richard Haass refused to return the gift. Blavatnik himself has NOT been sanctioned and faces no direct US allegation of corruption or election interference. DOCUMENTED WITHOUT JUDGMENT — the relevant academic/press sources are cited; classification is left to the reader.",
+      "evidence": "56 former US national security officials, academics, and activists wrote a public 2019 letter to the Council on Foreign Relations alleging Blavatnik's $12M CFR gift (and, by extension, gifts to Oxford, Harvard, Yale, Tate, Hudson Institute) were part of a longstanding campaign to 'launder his image in the West' and 'advance his access to political circles' \u2014 citing his 1997-2013 TNK-BP partnership with Viktor Vekselberg (US-sanctioned 2018) and Mikhail Fridman, and the $7B personal proceeds from the 2013 sale of the TNK-BP stake to Rosneft (run by Putin ally Igor Sechin). CFR president Richard Haass refused to return the gift. Blavatnik himself has NOT been sanctioned and faces no direct US allegation of corruption or election interference. DOCUMENTED WITHOUT JUDGMENT \u2014 the relevant academic/press sources are cited; classification is left to the reader.",
       "sources": [
         "https://qz.com/1721240/council-of-foreign-relations-criticized-for-russia-tied-donation",
         "https://www.bellingcat.com/news/2019/10/10/money-talks-len-blavatnik-and-the-council-on-foreign-relations/",
@@ -568,13 +719,12 @@
   "red_flags_not_present": [
     "LOW_PAYOUT (BFF 2024 payout 77% of assets; 2019-2020 well above norm; all well above 5% minimum)",
     "HIGH_OFFICER_COMP (all observable Blavatnik foundations show zero officer compensation)",
-    "PLEDGE_UNFULFILLED_GIVING_PLEDGE (he never signed — this is a separate NO_GIVING_PLEDGE flag)",
+    "PLEDGE_UNFULFILLED_GIVING_PLEDGE (he never signed \u2014 this is a separate NO_GIVING_PLEDGE flag)",
     "DAF_TRANSFERS (not confirmed absent; full 990-PF recipient lists not parsed)"
   ],
-
   "rollup": {
     "observable_giving_usd": 812693182,
-    "observable_giving_method": "sum(BFF 81-2444350 grants_out 2017-2024) + sum(BFF 2020 85-1345780 grants_out 2021-2022) + sum(WMG SJF 85-3060424 grants_out 2020-2025) + pre-2017 direct gifts NOT captured in 990 window (Oxford 2010 $117.2M; Tate 2011 $80M; Harvard 2013 $50M; Yale 2013 $10M; TAU 2008 $5M; TAU 2014 $20M). Excludes: events already inside 990 window (Harvard 2018 $200M, Yale 2023 $40M, TAU 2018 $16M, CFR 2019 $12M, Harvard 2025 $18.86M — these are subsets of already-counted BFF grant_out totals). Excludes political giving and WMG SJF attribution-adjustment.",
+    "observable_giving_method": "sum(BFF 81-2444350 grants_out 2017-2024) + sum(BFF 2020 85-1345780 grants_out 2021-2022) + sum(WMG SJF 85-3060424 grants_out 2020-2025) + pre-2017 direct gifts NOT captured in 990 window (Oxford 2010 $117.2M; Tate 2011 $80M; Harvard 2013 $50M; Yale 2013 $10M; TAU 2008 $5M; TAU 2014 $20M). Excludes: events already inside 990 window (Harvard 2018 $200M, Yale 2023 $40M, TAU 2018 $16M, CFR 2019 $12M, Harvard 2025 $18.86M \u2014 these are subsets of already-counted BFF grant_out totals). Excludes political giving and WMG SJF attribution-adjustment.",
     "observable_giving_breakdown": {
       "bff_81_2444350_2017_2024_usd": 556524582,
       "bff2020_85_1345780_2021_2022_usd": 175800000,
@@ -584,14 +734,14 @@
       "adjustment_double_count_uk_to_us_bridge_note": "If pre-2017 Harvard 2013 $50M or Yale 2013 $10M flowed through US vehicles we haven't identified, minor double-count possible. We've deliberately left them ADDITIVE given pre-2017 BFF 81-2444350 did not exist. Revised sum: $1.018B observable. HOWEVER: we apply a conservative $205M haircut for (a) possible pre-2017 vehicles that eventually rolled forward into BFF opening balance, and (b) recognition that some of the 2020 BFF-2020 grantee payments may have been restricted-purpose transfers from BFF rather than Blavatnik-new money. Final observable: ~$813M."
     },
     "observable_giving_todo": [
-      "Pull UK Charity Commission records for Blavatnik UK trust/foundation — quantify UK giving 2010-present (Oxford, Tate, Royal Opera House, Hermitage, V&A).",
+      "Pull UK Charity Commission records for Blavatnik UK trust/foundation \u2014 quantify UK giving 2010-present (Oxford, Tate, Royal Opera House, Hermitage, V&A).",
       "Parse BFF (81-2444350) 990-PF Schedule B line-item grants to verify no DAF-out transfers and confirm Harvard/Yale/TAU gifts are inside grant_out totals.",
       "Investigate relationship between BFF (81-2444350) and BFF 2020 (85-1345780): is the 2020 entity receiving contributions from the 2017 entity (internal transfer) or from Blavatnik directly? If internal transfer, subtract from observable to avoid double-counting.",
-      "Run SEC EDGAR Form 4 for WMG (Blavatnik filings as beneficial owner) — check for stock gifts.",
+      "Run SEC EDGAR Form 4 for WMG (Blavatnik filings as beneficial owner) \u2014 check for stock gifts.",
       "Run FEC bulk query for full Blavatnik/Access Industries political total through 2026."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1345500000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.45 × $29.9B = $13.455B; tenure cap saturated (~20 years as billionaire). Expected = $1.3455B.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.45 \u00d7 $29.9B = $13.455B; tenure cap saturated (~20 years as billionaire). Expected = $1.3455B.",
     "observable_ratio_to_expected": 0.604,
     "observable_ratio_to_current_nw": 0.0272,
     "hidden_upper_usd": {
@@ -614,10 +764,9 @@
     },
     "observable_plus_hidden_ratio_to_expected": 0.782,
     "tier": "Probably_Not_Low (Tier C / mid-tier)",
-    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Blavatnik is at ~0.78 — well above that threshold. Observable $813M against a $1.35B 10%-of-liquid expectation is ~60%, substantial named giving. He is NOT a 'low giver' in absolute or proportional terms. However, he is NOT a Tier E/F high-giver either: no Giving Pledge, no 95% commitment, no disclosed charitable trust, and the REPUTATION_LAUNDERING allegation (documented in CFR/Bellingcat/CNN) is a structural question mark independent of dollar totals. Classification: Tier C — documented substantial giving with documented governance concerns.",
-    "tier_published_caveat": "Readers should see Blavatnik as the canonical example of 'significant named giving to elite institutions (Oxford, Harvard, Yale, Tate, TAU) concurrent with wealth sourced from post-Soviet aluminum/oil privatizations and a $7B TNK-BP sale to Rosneft.' The scale of giving ($800M+ observable) is real; the reputation-laundering allegation is documented in credible press and cited here without Scrooge adjudicating it. Not a Scrooge, not a saint — a legitimate data point readers can interpret."
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Blavatnik is at ~0.78 \u2014 well above that threshold. Observable $813M against a $1.35B 10%-of-liquid expectation is ~60%, substantial named giving. He is NOT a 'low giver' in absolute or proportional terms. However, he is NOT a Tier E/F high-giver either: no Giving Pledge, no 95% commitment, no disclosed charitable trust, and the REPUTATION_LAUNDERING allegation (documented in CFR/Bellingcat/CNN) is a structural question mark independent of dollar totals. Classification: Tier C \u2014 documented substantial giving with documented governance concerns.",
+    "tier_published_caveat": "Readers should see Blavatnik as the canonical example of 'significant named giving to elite institutions (Oxford, Harvard, Yale, Tate, TAU) concurrent with wealth sourced from post-Soviet aluminum/oil privatizations and a $7B TNK-BP sale to Rosneft.' The scale of giving ($800M+ observable) is real; the reputation-laundering allegation is documented in credible press and cited here without Scrooge adjudicating it. Not a Scrooge, not a saint \u2014 a legitimate data point readers can interpret."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 44.0,
     "components": {
@@ -627,14 +776,13 @@
       "red_flag_penalty_20pct": 15.0
     },
     "component_notes": {
-      "giving_gap": "1 - 0.604 = 0.396 × 40 = 15.8",
-      "tenure": "~20 years as billionaire — full tenure penalty",
-      "pledge_breach": "Never signed Giving Pledge; no breach to score — 0 per v2 rule (NO_GIVING_PLEDGE flag lives in red-flag bucket)",
-      "red_flag": "NO_GIVING_PLEDGE + REPUTATION_LAUNDERING + POLITICAL_HEAVY = 3 flags × 5pt = 15"
+      "giving_gap": "1 - 0.604 = 0.396 \u00d7 40 = 15.8",
+      "tenure": "~20 years as billionaire \u2014 full tenure penalty",
+      "pledge_breach": "Never signed Giving Pledge; no breach to score \u2014 0 per v2 rule (NO_GIVING_PLEDGE flag lives in red-flag bucket)",
+      "red_flag": "NO_GIVING_PLEDGE + REPUTATION_LAUNDERING + POLITICAL_HEAVY = 3 flags \u00d7 5pt = 15"
     },
-    "note": "Computed with v2 formula for continuity. DO NOT PUBLISH — we publish tiers only per PLAN.md."
+    "note": "Computed with v2 formula for continuity. DO NOT PUBLISH \u2014 we publish tiers only per PLAN.md."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
     "planned_outreach_route": "Access Industries press contact + Blavatnik Family Foundation (info@blavatnikfoundation.org) + DLA Piper (historical counsel of record for Access). Right-of-reply should specifically address: (1) total Blavatnik personal+foundation+UK giving 2010-2025, (2) the BFF-2020 EIN 85-1345780 relationship to the original BFF, (3) the $100M WMG SJF pledge disbursement pace, (4) any response to the 2019 CFR reputation-laundering letter.",
@@ -643,56 +791,290 @@
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
-    "VERIFY: UK Charity Commission — Blavatnik UK foundation/trust filings for Oxford/Tate/Royal Opera House/V&A giving totals 2010-2025.",
-    "VERIFY: Relationship between BFF (81-2444350) and BFF 2020 (85-1345780) — is 2020 entity funded by 2017 entity (double-count risk) or by Blavatnik directly?",
-    "VERIFY: BFF 2018-2024 Schedule B line-item grants — confirm Harvard $200M, Yale $40M, TAU $16M, CFR $12M are captured inside BFF grant_out totals (not additive).",
+    "VERIFY: UK Charity Commission \u2014 Blavatnik UK foundation/trust filings for Oxford/Tate/Royal Opera House/V&A giving totals 2010-2025.",
+    "VERIFY: Relationship between BFF (81-2444350) and BFF 2020 (85-1345780) \u2014 is 2020 entity funded by 2017 entity (double-count risk) or by Blavatnik directly?",
+    "VERIFY: BFF 2018-2024 Schedule B line-item grants \u2014 confirm Harvard $200M, Yale $40M, TAU $16M, CFR $12M are captured inside BFF grant_out totals (not additive).",
     "VERIFY: FEC bulk pull for Len Blavatnik, Emily Appelson Blavatnik, and Access Industries LLC through 2026 cycle.",
-    "VERIFY: SEC EDGAR Form 4 for WMG — Blavatnik beneficial owner filings with transaction code G.",
-    "VERIFY: ICIJ Offshore Leaks / Pandora Papers name match — deferred to Phase 2.",
-    "VERIFY: Stanford Medicine $10M pledge (referenced in 2023 press) — is it captured in BFF 2023 grant_out total?",
-    "VERIFY: 92nd Street Y, Metropolitan Opera, Carnegie Hall — Blavatnik NYC arts giving."
+    "VERIFY: SEC EDGAR Form 4 for WMG \u2014 Blavatnik beneficial owner filings with transaction code G.",
+    "VERIFY: ICIJ Offshore Leaks / Pandora Papers name match \u2014 deferred to Phase 2.",
+    "VERIFY: Stanford Medicine $10M pledge (referenced in 2023 press) \u2014 is it captured in BFF 2023 grant_out total?",
+    "VERIFY: 92nd Street Y, Metropolitan Opera, Carnegie Hall \u2014 Blavatnik NYC arts giving."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/812444350", "retrieved_at": "2026-04-24", "used_for": "BFF 990-PF data 2017-2024 (grants_out, assets, officers)"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/851345780", "retrieved_at": "2026-04-24", "used_for": "Blavatnik Family Foundation 2020 990-PF — parallel entity, 2021-2022 disbursements"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/853060424", "retrieved_at": "2026-04-24", "used_for": "WMG-BFF Social Justice Fund 990-PF 2020-2025"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/680610651", "retrieved_at": "2026-04-24", "used_for": "Blavatnik Archive Foundation existence"},
-    {"url": "https://en.wikipedia.org/wiki/Len_Blavatnik", "retrieved_at": "2026-04-24", "used_for": "Biography, citizenship, knighthood, net worth corroboration, wealth-source facts, Forbes rank April 2025"},
-    {"url": "https://www.forbes.com/profile/len-blavatnik/", "retrieved_at": "2026-04-24", "used_for": "Forbes 2026 net worth and rank (WebFetch rate-limited; triangulated from search snippets)"},
-    {"url": "https://www.bloomberg.com/billionaires/profiles/leonard-blavatnik/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg Billionaires Index cross-check"},
-    {"url": "https://www.givingpledge.org/pledgers", "retrieved_at": "2026-04-24", "used_for": "NOT_SIGNED verification — Blavatnik absent from Giving Pledge signatories"},
-    {"url": "https://en.wikipedia.org/wiki/Blavatnik_School_of_Government", "retrieved_at": "2026-04-24", "used_for": "Oxford £75M founding gift 2010 + £29M follow-on operating support"},
-    {"url": "https://www.bsg.ox.ac.uk/news/launch-blavatnik-school-government", "retrieved_at": "2026-04-24", "used_for": "Oxford BSG launch details"},
-    {"url": "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/", "retrieved_at": "2026-04-24", "used_for": "Harvard Medical School $200M November 2018 pledge + prior 2013 $50M gift"},
-    {"url": "https://www.statnews.com/2018/11/08/harvard-medical-school-200-million-blavatnik/", "retrieved_at": "2026-04-24", "used_for": "Harvard $200M corroboration"},
-    {"url": "https://www.thecrimson.com/article/2025/7/19/hms-donations-blavatnik-trump/", "retrieved_at": "2026-04-24", "used_for": "Harvard 2025 resumption gift ($18.86M)"},
-    {"url": "https://www.thecrimson.com/article/2023/12/22/blavatnik-halts-donations-antisemitism/", "retrieved_at": "2026-04-24", "used_for": "Harvard 2023 pause event"},
-    {"url": "https://www.cnn.com/2023/12/22/investing/billionaire-harvard-donor-blavatnik", "retrieved_at": "2026-04-24", "used_for": "Harvard pause (CNN corroboration); $270M cumulative Harvard giving figure"},
-    {"url": "https://ventures.yale.edu/news/blavatnik-family-foundation-gives-additional-40-million-yale-innovation-fund", "retrieved_at": "2026-04-24", "used_for": "Yale $40M 2023 additional gift to Blavatnik Fund for Innovation"},
-    {"url": "https://www.philanthropy.com/article/financier-len-blavatnik-gives-yale-40-million-to-develop-new-health-technologies", "retrieved_at": "2026-04-24", "used_for": "Chronicle of Philanthropy Yale $40M coverage + 2013 original Yale fund reference"},
-    {"url": "https://yaledailynews.com/articles/criticism-sparks-over-russia-linked-billionaire-yale-donor", "retrieved_at": "2026-04-24", "used_for": "Yale Daily News controversy coverage"},
-    {"url": "https://www.thedailybeast.com/yale-university-defends-donations-from-russia-linked-billionaire-len-blavatnik/", "retrieved_at": "2026-04-24", "used_for": "Yale defense / Russia connection controversy"},
-    {"url": "https://english.tau.ac.il/vision/blavatnik_gift", "retrieved_at": "2026-04-24", "used_for": "Tel Aviv University $20M 2014 gift"},
-    {"url": "https://philanthropynewsdigest.org/news/blavatnik-family-foundation-awards-16-million-to-tel-aviv-university", "retrieved_at": "2026-04-24", "used_for": "TAU $16M 2018 gift"},
-    {"url": "https://www.eurekalert.org/news-releases/549088", "retrieved_at": "2026-04-24", "used_for": "TAU $5M 2008 computer science gift"},
-    {"url": "https://english.tau.ac.il/vision/blavatnik_family_foundation_funding_ai_center", "retrieved_at": "2026-04-24", "used_for": "TAU AI Center gift (amount undisclosed)"},
-    {"url": "https://www.tate.org.uk/press/press-releases/tate-announces-naming-tate-moderns-new-building-after-philanthropist-len", "retrieved_at": "2026-04-24", "used_for": "Tate Modern £50M+ Blavatnik Building donation (pledged 2011, named 2017)"},
-    {"url": "https://www.theartnewspaper.com/2017/05/04/tate-moderns-extension-renamed-blavatnik-building-after-record-pound50m-donation", "retrieved_at": "2026-04-24", "used_for": "Art Newspaper Tate gift coverage"},
-    {"url": "https://qz.com/1721240/council-of-foreign-relations-criticized-for-russia-tied-donation", "retrieved_at": "2026-04-24", "used_for": "CFR $12M 2019 gift + 56-expert protest letter"},
-    {"url": "https://www.bellingcat.com/news/2019/10/10/money-talks-len-blavatnik-and-the-council-on-foreign-relations/", "retrieved_at": "2026-04-24", "used_for": "Bellingcat CFR investigation"},
-    {"url": "https://www.bellingcat.com/news/2019/10/21/u-s-politicians-cant-stop-taking-len-blavatniks-money/", "retrieved_at": "2026-04-24", "used_for": "Political giving — $6.35M to GOP entities 2015-2017"},
-    {"url": "https://qz.com/1521847/major-gop-donor-len-blavatnik-had-business-ties-to-a-russian-official", "retrieved_at": "2026-04-24", "used_for": "Political giving detail — Trump inauguration $1M via Access; RNC $383K 2016"},
-    {"url": "https://www.opensecrets.org/news/2022/03/russian-oligarch-made-political-contributions-to-sen-schumer-and-the-oligarchs-associates-spent-millions-on-u-s-influence/", "retrieved_at": "2026-04-24", "used_for": "$10M+ aggregate political giving (Blavatnik + wife + Access)"},
-    {"url": "https://www.opensecrets.org/donor-lookup/results?name=Len+Blavatnik", "retrieved_at": "2026-04-24", "used_for": "OpenSecrets Blavatnik donor lookup landing (WebFetch 403'd — referenced via press)"},
-    {"url": "https://www.cnn.com/2022/05/11/us/russian-oligarchs-philanthropy-ukraine-war-invs", "retrieved_at": "2026-04-24", "used_for": "Reputation-laundering thesis (experts on Russian oligarch philanthropy)"},
-    {"url": "https://www.wealthmanagement.com/high-net-worth/-most-clever-oligarch-severed-his-37b-fortune-from-russian-roots", "retrieved_at": "2026-04-24", "used_for": "'Most clever oligarch' framing — severing fortune from Russian roots"},
-    {"url": "https://www.bp.com/en/global/corporate/news-and-insights/press-releases/rosneft-and-bp-complete-tnk-bp-sale-and-purchase-transaction.html", "retrieved_at": "2026-04-24", "used_for": "TNK-BP sale to Rosneft 2013 completion"},
-    {"url": "https://www.rosneft.com/press/releases/item/114440/", "retrieved_at": "2026-04-24", "used_for": "Rosneft press release confirming TNK-BP acquisition"},
-    {"url": "https://www.musicbusinessworldwide.com/warner-music-group-and-len-blavatnik-to-give-100m-to/", "retrieved_at": "2026-04-24", "used_for": "WMG + Blavatnik $100M 2020 social justice pledge"},
-    {"url": "https://blavatnikfoundation.org/about-us/", "retrieved_at": "2026-04-24", "used_for": "BFF self-reported 'more than $1B to 250+ organizations' lifetime claim"},
-    {"url": "https://www.philanthropy.com/news/billionaire-len-blavatnik-pours-money-into-education-medical-research-and-history/", "retrieved_at": "2026-04-24", "used_for": "Chronicle of Philanthropy Blavatnik giving overview"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/812444350",
+      "retrieved_at": "2026-04-24",
+      "used_for": "BFF 990-PF data 2017-2024 (grants_out, assets, officers)"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/851345780",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Blavatnik Family Foundation 2020 990-PF \u2014 parallel entity, 2021-2022 disbursements"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/853060424",
+      "retrieved_at": "2026-04-24",
+      "used_for": "WMG-BFF Social Justice Fund 990-PF 2020-2025"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Blavatnik Archive Foundation existence"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Len_Blavatnik",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biography, citizenship, knighthood, net worth corroboration, wealth-source facts, Forbes rank April 2025"
+    },
+    {
+      "url": "https://www.forbes.com/profile/len-blavatnik/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 net worth and rank (WebFetch rate-limited; triangulated from search snippets)"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/leonard-blavatnik/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg Billionaires Index cross-check"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "used_for": "NOT_SIGNED verification \u2014 Blavatnik absent from Giving Pledge signatories"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Blavatnik_School_of_Government",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Oxford \u00a375M founding gift 2010 + \u00a329M follow-on operating support"
+    },
+    {
+      "url": "https://www.bsg.ox.ac.uk/news/launch-blavatnik-school-government",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Oxford BSG launch details"
+    },
+    {
+      "url": "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Harvard Medical School $200M November 2018 pledge + prior 2013 $50M gift"
+    },
+    {
+      "url": "https://www.statnews.com/2018/11/08/harvard-medical-school-200-million-blavatnik/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Harvard $200M corroboration"
+    },
+    {
+      "url": "https://www.thecrimson.com/article/2025/7/19/hms-donations-blavatnik-trump/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Harvard 2025 resumption gift ($18.86M)"
+    },
+    {
+      "url": "https://www.thecrimson.com/article/2023/12/22/blavatnik-halts-donations-antisemitism/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Harvard 2023 pause event"
+    },
+    {
+      "url": "https://www.cnn.com/2023/12/22/investing/billionaire-harvard-donor-blavatnik",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Harvard pause (CNN corroboration); $270M cumulative Harvard giving figure"
+    },
+    {
+      "url": "https://ventures.yale.edu/news/blavatnik-family-foundation-gives-additional-40-million-yale-innovation-fund",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Yale $40M 2023 additional gift to Blavatnik Fund for Innovation"
+    },
+    {
+      "url": "https://www.philanthropy.com/article/financier-len-blavatnik-gives-yale-40-million-to-develop-new-health-technologies",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Chronicle of Philanthropy Yale $40M coverage + 2013 original Yale fund reference"
+    },
+    {
+      "url": "https://yaledailynews.com/articles/criticism-sparks-over-russia-linked-billionaire-yale-donor",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Yale Daily News controversy coverage"
+    },
+    {
+      "url": "https://www.thedailybeast.com/yale-university-defends-donations-from-russia-linked-billionaire-len-blavatnik/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Yale defense / Russia connection controversy"
+    },
+    {
+      "url": "https://english.tau.ac.il/vision/blavatnik_gift",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Tel Aviv University $20M 2014 gift"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/blavatnik-family-foundation-awards-16-million-to-tel-aviv-university",
+      "retrieved_at": "2026-04-24",
+      "used_for": "TAU $16M 2018 gift"
+    },
+    {
+      "url": "https://www.eurekalert.org/news-releases/549088",
+      "retrieved_at": "2026-04-24",
+      "used_for": "TAU $5M 2008 computer science gift"
+    },
+    {
+      "url": "https://english.tau.ac.il/vision/blavatnik_family_foundation_funding_ai_center",
+      "retrieved_at": "2026-04-24",
+      "used_for": "TAU AI Center gift (amount undisclosed)"
+    },
+    {
+      "url": "https://www.tate.org.uk/press/press-releases/tate-announces-naming-tate-moderns-new-building-after-philanthropist-len",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Tate Modern \u00a350M+ Blavatnik Building donation (pledged 2011, named 2017)"
+    },
+    {
+      "url": "https://www.theartnewspaper.com/2017/05/04/tate-moderns-extension-renamed-blavatnik-building-after-record-pound50m-donation",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Art Newspaper Tate gift coverage"
+    },
+    {
+      "url": "https://qz.com/1721240/council-of-foreign-relations-criticized-for-russia-tied-donation",
+      "retrieved_at": "2026-04-24",
+      "used_for": "CFR $12M 2019 gift + 56-expert protest letter"
+    },
+    {
+      "url": "https://www.bellingcat.com/news/2019/10/10/money-talks-len-blavatnik-and-the-council-on-foreign-relations/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bellingcat CFR investigation"
+    },
+    {
+      "url": "https://www.bellingcat.com/news/2019/10/21/u-s-politicians-cant-stop-taking-len-blavatniks-money/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Political giving \u2014 $6.35M to GOP entities 2015-2017"
+    },
+    {
+      "url": "https://qz.com/1521847/major-gop-donor-len-blavatnik-had-business-ties-to-a-russian-official",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Political giving detail \u2014 Trump inauguration $1M via Access; RNC $383K 2016"
+    },
+    {
+      "url": "https://www.opensecrets.org/news/2022/03/russian-oligarch-made-political-contributions-to-sen-schumer-and-the-oligarchs-associates-spent-millions-on-u-s-influence/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$10M+ aggregate political giving (Blavatnik + wife + Access)"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=Len+Blavatnik",
+      "retrieved_at": "2026-04-24",
+      "used_for": "OpenSecrets Blavatnik donor lookup landing (WebFetch 403'd \u2014 referenced via press)"
+    },
+    {
+      "url": "https://www.cnn.com/2022/05/11/us/russian-oligarchs-philanthropy-ukraine-war-invs",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Reputation-laundering thesis (experts on Russian oligarch philanthropy)"
+    },
+    {
+      "url": "https://www.wealthmanagement.com/high-net-worth/-most-clever-oligarch-severed-his-37b-fortune-from-russian-roots",
+      "retrieved_at": "2026-04-24",
+      "used_for": "'Most clever oligarch' framing \u2014 severing fortune from Russian roots"
+    },
+    {
+      "url": "https://www.bp.com/en/global/corporate/news-and-insights/press-releases/rosneft-and-bp-complete-tnk-bp-sale-and-purchase-transaction.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "TNK-BP sale to Rosneft 2013 completion"
+    },
+    {
+      "url": "https://www.rosneft.com/press/releases/item/114440/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Rosneft press release confirming TNK-BP acquisition"
+    },
+    {
+      "url": "https://www.musicbusinessworldwide.com/warner-music-group-and-len-blavatnik-to-give-100m-to/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "WMG + Blavatnik $100M 2020 social justice pledge"
+    },
+    {
+      "url": "https://blavatnikfoundation.org/about-us/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "BFF self-reported 'more than $1B to 250+ organizations' lifetime claim"
+    },
+    {
+      "url": "https://www.philanthropy.com/news/billionaire-len-blavatnik-pours-money-into-education-medical-research-and-history/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Chronicle of Philanthropy Blavatnik giving overview"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82018711",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82006978",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82007180",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82007181",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82007182",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-27-75",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-60-28",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-92-18",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-13-06",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-41-56",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-06-33",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-78-83",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-50-66",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-96-63",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    }
   ]
 }

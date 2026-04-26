@@ -12,6 +12,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+<script>
+(function(){try{var t=localStorage.getItem('scrooge-theme');if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){}})();
+</script>
 <style>
 :root{
   --paper:#F3ECD9;
@@ -30,6 +33,11 @@
   --display:"Fraunces",ui-serif,"Times New Roman",Georgia,serif;
   --body:"Newsreader",Georgia,"Times New Roman",serif;
 }
+[data-theme="dark"]{
+  --paper:#14110A;--paper-mid:#1C1811;--paper-deep:#261F14;--paper-shadow:#3B3121;
+  --ink:#EEDCBA;--ink-soft:#C4AF82;--ink-fade:#8B7951;--ink-ghost:#605335;
+  --rust:#D14A32;--rust-dark:#A93220;--gilt:#D4A032;--sepia:#A38456;--rule:#75633F;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{
   background:var(--paper);color:var(--ink);
@@ -43,8 +51,16 @@ body{
     radial-gradient(ellipse 800px 400px at 15% 5%, rgba(139,46,31,.045), transparent 70%),
     radial-gradient(ellipse 900px 500px at 90% 95%, rgba(140,107,45,.055), transparent 70%),
     var(--paper);
-  min-height:100vh;
+  min-height:100vh;transition:background-color .4s, color .4s;
 }
+[data-theme="dark"] body{background:radial-gradient(ellipse 900px 500px at 15% 5%, rgba(209,74,50,.08), transparent 70%),radial-gradient(ellipse 1000px 600px at 90% 95%, rgba(212,160,50,.09), transparent 70%),var(--paper)}
+[data-theme="dark"] .grain{opacity:.18;mix-blend-mode:screen}
+[data-theme="dark"] .data-table tbody tr:nth-child(even){background:rgba(238,220,186,.04)}
+[data-theme="dark"] .formula{background:var(--paper-mid)}
+[data-theme="dark"] .callout{background:rgba(209,74,50,.08)}
+[data-theme="dark"] .callout.info{background:rgba(212,160,50,.08)}
+[data-theme="dark"] .callout.green{background:rgba(143,181,122,.08)}
+[data-theme="dark"] .tier-ok{color:var(--green,#8fb57a)}
 .grain{
   position:fixed;inset:0;pointer-events:none;z-index:2;
   opacity:.55;mix-blend-mode:multiply;
@@ -73,6 +89,13 @@ body{
   font-size:.95rem;border-bottom:1px solid var(--rust);padding-bottom:1px;
 }
 .back:hover{background:rgba(139,46,31,.08)}
+.topnav{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+#themeToggle{
+  background:none;border:none;cursor:pointer;
+  font-family:var(--display);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ink-soft);padding:4px 0;
+}
+#themeToggle:hover{color:var(--rust)}
 .masthead{
   text-align:center;padding:44px 0 12px;margin-top:20px;
   border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);
@@ -132,7 +155,7 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   font-family:var(--display);font-variation-settings:"opsz" 24,"SOFT" 30;
   font-variant-numeric:oldstyle-nums;font-size:1rem;line-height:1.9;color:var(--ink-soft);
 }
-.formula strong{
+.formula > strong:first-child{
   display:block;font-family:var(--display);font-size:1.15rem;
   color:var(--ink);font-weight:700;margin-bottom:12px;font-style:italic;
 }
@@ -160,7 +183,7 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
 .callout{padding:20px 24px;margin:24px 0;border-left:3px solid var(--rust);background:rgba(139,46,31,.04)}
 .callout.info{border-left-color:var(--gilt);background:rgba(140,107,45,.05)}
 .callout.green{border-left-color:#2d5a1f;background:rgba(45,90,31,.06)}
-.callout strong{font-family:var(--display);color:var(--ink);display:block;margin-bottom:8px;font-size:1.02rem}
+.callout > strong{font-family:var(--display);color:var(--ink);display:block;margin-bottom:8px;font-size:1.02rem}
 .callout ul{margin:10px 0 0 22px}
 .callout p:last-child{margin-bottom:0}
 .source-list{
@@ -189,7 +212,10 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
 <div class="foxing" aria-hidden="true"></div>
 
 <main class="sheet">
-  <a class="back" href="index.html">← Return to the Ledger</a>
+  <div class="topnav">
+    <a class="back" href="index.html">← Return to the Ledger</a>
+    <button id="themeToggle" type="button">Mode ◐</button>
+  </div>
 
   <header class="masthead">
     <div class="kicker">A Note on Method · Vol. II · April MMXXVI</div>
@@ -386,5 +412,17 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   </footer>
 </main>
 
+<script>
+(function(){
+  const toggle = document.getElementById('themeToggle');
+  if (!toggle) return;
+  toggle.addEventListener('click', () => {
+    const cur = document.documentElement.dataset.theme || 'light';
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = next;
+    try { localStorage.setItem('scrooge-theme', next); } catch(e) {}
+  });
+})();
+</script>
 </body>
 </html>

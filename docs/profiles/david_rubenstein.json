@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Rubenstein)",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Rubenstein) + regen_v3@sha256-61c2d5ca2e28a7d3 + regen_v3@sha256-7d8eaaf9ce38079e",
   "person": {
     "name_display": "David Rubenstein",
     "name_legal": "David Mark Rubenstein",
@@ -447,6 +447,126 @@
       "confidence": "low",
       "attribution_note": "CRITICAL: The trustee name 'David B Rubenstein' may not be David M. Rubenstein the Carlyle co-founder. Middle initial differs (B vs M). Haverford PA is not Rubenstein's primary residence (he lives in Bethesda MD / DC area). This foundation may belong to a different Rubenstein. DO NOT credit these grants to David M. Rubenstein without further verification. Included with low confidence.",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Rubenstein Foundation",
+      "donor_ein": "25-6887967",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 95136.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $5.3M; payout rate 1.8%.",
+      "regen_source": "propublica",
+      "event_id": "david_rubenstein_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61c2d5ca2e28a7d3",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Rubenstein Foundation",
+      "donor_ein": "25-6887967",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 635937.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $7.1M; payout rate 9.0%.",
+      "regen_source": "propublica",
+      "event_id": "david_rubenstein_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61c2d5ca2e28a7d3",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Rubenstein Foundation",
+      "donor_ein": "25-6887967",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 352039.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $7.0M; payout rate 5.0%.",
+      "regen_source": "propublica",
+      "event_id": "david_rubenstein_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61c2d5ca2e28a7d3",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Rubenstein Foundation",
+      "donor_ein": "25-6887967",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 297223.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $9.1M; payout rate 3.3%.",
+      "regen_source": "propublica",
+      "event_id": "david_rubenstein_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61c2d5ca2e28a7d3",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Rubenstein Foundation",
+      "donor_ein": "25-6887967",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 399201.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $8.8M; payout rate 4.6%.",
+      "regen_source": "propublica",
+      "event_id": "david_rubenstein_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61c2d5ca2e28a7d3",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Rubenstein Foundation",
+      "donor_ein": "25-6887967",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 2800577.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/256887967",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $6.4M; payout rate 44.0%.",
+      "regen_source": "propublica",
+      "event_id": "david_rubenstein_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61c2d5ca2e28a7d3",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -599,8 +719,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 1738230000,
     "ratio_observable_to_5pct_tenure": 0.2275,
-    "observable_from_events_usd": 692252553,
-    "observable_drift_pct": 0.353,
+    "observable_from_events_usd": 696832666,
+    "observable_drift_pct": 0.362,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -751,6 +871,78 @@
       "url": "https://www.usnews.com/news/blogs/washington-whispers/2013/12/11/so-how-do-you-buy-the-magna-carta-billionaire-david-rubenstein-explains",
       "retrieved_at": "2026-04-24",
       "used_for": "Magna Carta purchase structure \u2014 loaned, not donated"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100613230",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100628531",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-04-89",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-24-65",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=07-01-52",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-13-91",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-28-68",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-29-52",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-57-66",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-80-19",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-87-28",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7d8eaaf9ce38079e"
     }
   ],
   "_source_file": "david_rubenstein.v3.json"

@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching ellison v3 reference. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Tier classification at bottom.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 Larry Page (Tier A candidate) deep research",
+  "generated_by": "scrooge v3 manual reference run \u2014 Larry Page (Tier A candidate) deep research + regen_v3@sha256-ebca1f91bf266f81 + regen_v3@sha256-a920f1b772ab57fb",
   "person": {
     "name_display": "Larry Page",
     "name_legal": "Lawrence Edward Page",
@@ -304,6 +304,243 @@
       "confidence": "medium",
       "dedup_note": "Widely reported ~$400M in 'Christmastime donations 2015-2017' \u2014 but per Vox / NCRP / Common Dreams, NONE went directly to operating charities; all were DAF transfers. Already captured inside CVPMF 990-PF grants-out totals for those years (2015=$99M, plus 2016 & 2017 not yet retrieved from ProPublica summary). DO NOT double-count as additional direct giving.",
       "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 13929107.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $2395.2M; payout rate 0.6%.",
+      "regen_source": "propublica",
+      "event_id": "larry_page_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 46230236.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $2656.1M; payout rate 1.7%.",
+      "regen_source": "propublica",
+      "event_id": "larry_page_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 218206135.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $3530.7M; payout rate 6.2%.",
+      "regen_source": "propublica",
+      "event_id": "larry_page_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 309013185.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $3826.2M; payout rate 8.1%.",
+      "regen_source": "propublica",
+      "event_id": "larry_page_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 315831379.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $4024.3M; payout rate 7.8%.",
+      "regen_source": "propublica",
+      "event_id": "larry_page_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 118250.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957/202043189349104059/full",
+      "confidence": "high",
+      "note": "The Carl Victor Page Memorial Foundation \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 1 grant line(s) on 990-PF Part XV for FY 2019; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "larry_page_grant_out_2019_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 1096584.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957/202413199349106426/full",
+      "confidence": "high",
+      "note": "The Carl Victor Page Memorial Foundation \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 1 grant line(s) on 990-PF Part XV for FY 2023; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "larry_page_grant_out_2023_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "Schwab Charitable Fund",
+      "amount_usd": 218000000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957/202413199349106426/full",
+      "confidence": "high",
+      "note": "The Carl Victor Page Memorial Foundation \u2192 Schwab Charitable Fund (DAF sponsor EIN 31-1640316); 1 grant line(s) on 990-PF Part XV for FY 2023; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "larry_page_grant_out_2023_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "donor_ein": "20-1922957",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 236262880.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/201922957/202513189349105506/full",
+      "confidence": "high",
+      "note": "The Carl Victor Page Memorial Foundation \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 2 grant line(s) on 990-PF Part XV for FY 2024; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "larry_page_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date_precision": "day",
+      "donor_entity": "Larry Page",
+      "recipient": "Foundation (unspecified)",
+      "amount_usd": 976.5179901123047,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1288776/000112760215023332/form4.xml",
+      "confidence": "low",
+      "note": "SEC Form 4 code G \u2014 36 shares of GOOGLE INC. on 2015-05-21 ($0.0M (valued at issuer close on transaction date)). Direct gifts to charity are exempt from Form 4 reporting.",
+      "regen_source": "sec",
+      "event_id": "larry_page_direct_gift_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date_precision": "day",
+      "donor_entity": "Larry Page",
+      "recipient": "Foundation (unspecified)",
+      "amount_usd": 633730.0109863281,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1288776/000112760215025867/form4.xml",
+      "confidence": "low",
+      "note": "SEC Form 4 code G \u2014 20,000 shares of GOOGLE INC. on 2015-08-10 ($0.6M (valued at issuer close on transaction date)). Direct gifts to charity are exempt from Form 4 reporting.",
+      "regen_source": "sec",
+      "event_id": "larry_page_direct_gift_2015_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date_precision": "day",
+      "donor_entity": "Larry Page",
+      "recipient": "Foundation (unspecified)",
+      "amount_usd": 2382374.954223633,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1288776/000112760215025055/form4.xml",
+      "confidence": "low",
+      "note": "SEC Form 4 code G \u2014 75,000 shares of GOOGLE INC. on 2015-08-07 ($2.4M (valued at issuer close on transaction date)). Direct gifts to charity are exempt from Form 4 reporting.",
+      "regen_source": "sec",
+      "event_id": "larry_page_direct_gift_2015_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -526,8 +763,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 86987357000,
     "ratio_observable_to_5pct_tenure": 0.0201,
-    "observable_from_events_usd": 1330239584,
-    "observable_drift_pct": 0.254,
+    "observable_from_events_usd": 2691944421,
+    "observable_drift_pct": 0.51,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -754,6 +991,138 @@
       "url": "https://www.causeiq.com/organizations/carl-victor-page-memorial-foundation,201922957/",
       "retrieved_at": "2026-04-23",
       "used_for": "Filing cadence (2022 added Dec 2023; 2023 added Jan 2025)"
+    },
+    {
+      "publisher": "sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1288776/000112760215025867/form4.xml",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81"
+    },
+    {
+      "publisher": "sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1288776/000112760215025862/form4.xml",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81"
+    },
+    {
+      "publisher": "sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1288776/000112760215025055/form4.xml",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81"
+    },
+    {
+      "publisher": "sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1288776/000112760215023332/form4.xml",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ebca1f91bf266f81"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/201922957/202043189349104059/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/201922957/202103169349105140/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/201922957/202233189349106028/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/201922957/202343189349105924/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/201922957/202513189349105506/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-01-24",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-29-41",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-48-81",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=41-13-16",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-25-21",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-25-26",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-55-54",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-00-98",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-12-67",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-09-60",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-47-06",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-82-99",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a920f1b772ab57fb"
     }
   ],
   "_source_file": "larry_page.v3.json"

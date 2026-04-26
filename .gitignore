@@ -8,3 +8,5 @@ scrooge_raw_data.json
 *.log
 # outreach emails are drafts — stash locally, do not commit
 outreach/*.txt
+# ICIJ Offshore Leaks bulk CSVs (~626 MB extracted) — auto-downloaded by regen_v3/leaks.py
+regen_v3/data/icij/

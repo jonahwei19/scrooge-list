@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 Ballmer Group LLC opacity test case",
+  "generated_by": "scrooge v3 manual reference run \u2014 Ballmer Group LLC opacity test case + regen_v3@sha256-221f8f598c386c92 + regen_v3@sha256-eae67171dcb5ad33",
   "person": {
     "name_display": "Steve Ballmer",
     "name_legal": "Steven Anthony Ballmer",
@@ -145,6 +145,7 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Inside Forbes $4.99B lifetime.",
+      "source_verification_status": "dead_link_rotted",
       "event_role_canonical": "grant_out"
     },
     {
@@ -178,6 +179,25 @@
       "confidence": "high",
       "notes": "Largest single gift in NPR's history from a living donor. Announced in context of $1.1B federal public-broadcasting cuts under Trump. Connie Ballmer is former NPR Foundation board member. This gift is AFTER the Forbes $4.99B lifetime total (which was through Dec 2023), so it IS additive.",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Steve Ballmer",
+      "recipient": "Ballmer Group LLC",
+      "amount_usd": 4000000000.0,
+      "source_type": "philanthropic_llc_commitment",
+      "source_url": "https://en.wikipedia.org/wiki/Ballmer_Group",
+      "confidence": "medium",
+      "note": "Ballmer Group LLC self-reported cumulative giving of \u2248$4B since 2015 founding (\u2248$767M in 2024 alone per its own annual update). 501(c)(4) + DAF blend; LLC structure opaque \u2014 figure is donor self-disclosure, not a 990 audit number.",
+      "regen_source": "llcs",
+      "event_id": "steve_ballmer_transfer_in_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-eae67171dcb5ad33",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "transfer_in"
     }
   ],
   "pledges_and_announcements": [
@@ -543,7 +563,8 @@
     {
       "url": "https://www.strivetogether.org/news/ballmer-group-pledges-60-million-strivetogether/",
       "retrieved_at": "2026-04-23",
-      "used_for": "StriveTogether $60M 2018 pledge"
+      "used_for": "StriveTogether $60M 2018 pledge",
+      "source_verification_status": "dead_link_rotted"
     },
     {
       "url": "https://en.wikipedia.org/wiki/USAFacts",
@@ -609,6 +630,12 @@
       "url": "https://fortune.com/2025/07/08/billionaire-bill-gates-billionaire-poorer-than-microsoft-assistant-steve-ballmer-net-worth-philanthropy/",
       "retrieved_at": "2026-04-23",
       "used_for": "Ballmer now wealthier than Gates following Gates' giving"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82004636",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-eae67171dcb5ad33"
     }
   ],
   "_source_file": "steve_ballmer.v3.json"

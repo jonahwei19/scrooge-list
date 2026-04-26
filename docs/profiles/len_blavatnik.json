@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Single-subject per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Tier classification happens downstream.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run \u2014 Len Blavatnik",
+  "generated_by": "scrooge v3 manual research run \u2014 Len Blavatnik + regen_v3@sha256-ca0b4f1d66efde50 + regen_v3@sha256-fba267158d656d01",
   "person": {
     "name_display": "Len Blavatnik",
     "name_legal": "Sir Leonard Valentinovich Blavatnik",
@@ -439,6 +439,166 @@
       "retrieved_at": "2026-04-24",
       "notes": "Press reported BFF had given at least $270M to Harvard cumulatively before pause. Pause resumed in 2025 (see blavatnik_harvard_2025).",
       "event_role_canonical": "reference_only"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 397826.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $2.2M; payout rate 18.1%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 519027.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $2.5M; payout rate 20.6%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 676338.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $2.4M; payout rate 28.0%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 591467.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $2.8M; payout rate 21.5%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 610423.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $3.6M; payout rate 16.8%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Blavatnik Archive Foundation",
+      "donor_ein": "68-0610651",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 801161.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/680610651",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $3.2M; payout rate 25.3%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Warner Music Group Blavatnik Family Foundation Social Justice Fund",
+      "donor_ein": "85-3060424",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 108567.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/853060424",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $0.0M; payout rate 228.1%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2022_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Warner Music Group Blavatnik Family Foundation Social Justice Fund",
+      "donor_ein": "85-3060424",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 98264.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/853060424",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $0.0M; payout rate 215.5%.",
+      "regen_source": "propublica",
+      "event_id": "len_blavatnik_grant_out_2023_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca0b4f1d66efde50",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -646,8 +806,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 12642306818,
     "ratio_observable_to_5pct_tenure": 0.0604,
-    "observable_from_events_usd": 1024955082,
-    "observable_drift_pct": 0.261,
+    "observable_from_events_usd": 1028758155,
+    "observable_drift_pct": 0.266,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -874,6 +1034,90 @@
       "url": "https://www.philanthropy.com/news/billionaire-len-blavatnik-pours-money-into-education-medical-research-and-history/",
       "retrieved_at": "2026-04-24",
       "used_for": "Chronicle of Philanthropy Blavatnik giving overview"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82018711",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82006978",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82007180",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82007181",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82007182",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-27-75",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-60-28",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-92-18",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-13-06",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-41-56",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-06-33",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-78-83",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-50-66",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-96-63",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fba267158d656d01"
     }
   ],
   "_source_file": "len_blavatnik.v3.json"

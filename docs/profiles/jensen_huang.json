@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching Ellison v3 reference. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification downstream.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Huang)",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Huang) + regen_v3@sha256-99da3c801e8db2fe + regen_v3@sha256-5a6a8a1a9b600621",
   "person": {
     "name_display": "Jensen Huang",
     "name_legal": "Jen-Hsun Huang",
@@ -271,6 +271,126 @@
       "confidence": "medium",
       "dedup_note": "EXCLUDE from observable_giving. These are transfers_in to donor-controlled vehicles. The NYT $2B figure is the single most important reason Huang is NOT Tier A \u2014 there is ~$2B already pre-committed inside his vehicles awaiting deployment.",
       "event_role_canonical": "transfer_in"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Jen Hsun & Lori Huang Foundation",
+      "donor_ein": "26-1551239",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 1166806.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $30.5M; payout rate 3.8%.",
+      "regen_source": "propublica",
+      "event_id": "jensen_huang_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-99da3c801e8db2fe",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Jen Hsun & Lori Huang Foundation",
+      "donor_ein": "26-1551239",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 17746356.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $380.0M; payout rate 4.7%.",
+      "regen_source": "propublica",
+      "event_id": "jensen_huang_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-99da3c801e8db2fe",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2017,
+      "date_precision": "year",
+      "donor_entity": "The Jen-Hsun and Lori Huang Foundation",
+      "donor_ein": "26-1551239",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 277000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239/201823169349101012/full",
+      "confidence": "high",
+      "note": "The Jen-Hsun and Lori Huang Foundation \u2192 Silicon Valley Community Foundation (DAF sponsor EIN 20-5205488); 1 grant line(s) on 990-PF Part XV for FY 2017; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "jensen_huang_grant_out_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "The Jen-Hsun and Lori Huang Foundation",
+      "donor_ein": "26-1551239",
+      "recipient": "Schwab Charitable Fund",
+      "amount_usd": 55334119.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239/202303179349101610/full",
+      "confidence": "high",
+      "note": "The Jen-Hsun and Lori Huang Foundation \u2192 Schwab Charitable Fund (DAF sponsor EIN 31-1640316); 1 grant line(s) on 990-PF Part XV for FY 2022; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "jensen_huang_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "The Jen-Hsun and Lori Huang Foundation",
+      "donor_ein": "26-1551239",
+      "recipient": "Schwab Charitable Fund",
+      "amount_usd": 46475550.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239/202423109349100542/full",
+      "confidence": "high",
+      "note": "The Jen-Hsun and Lori Huang Foundation \u2192 Schwab Charitable Fund (DAF sponsor EIN 31-1640316); 1 grant line(s) on 990-PF Part XV for FY 2023; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "jensen_huang_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "The Jen-Hsun and Lori Huang Foundation",
+      "donor_ein": "26-1551239",
+      "recipient": "Schwab Charitable Fund",
+      "amount_usd": 82498025.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239/202523219349107292/full",
+      "confidence": "high",
+      "note": "The Jen-Hsun and Lori Huang Foundation \u2192 Schwab Charitable Fund (DAF sponsor EIN 31-1640316); 2 grant line(s) on 990-PF Part XV for FY 2024; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "jensen_huang_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -463,8 +583,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 26437000000,
     "ratio_observable_to_5pct_tenure": 0.0126,
-    "observable_from_events_usd": 472300000,
-    "observable_drift_pct": 0.397,
+    "observable_from_events_usd": 675797856,
+    "observable_drift_pct": 0.999,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -635,6 +755,114 @@
       "url": "https://www.nbcnews.com/business/personal-finance/jensen-huangs-charitable-foundation-balloons-nvidia-stock-gains-rcna212755",
       "retrieved_at": "2026-04-23",
       "used_for": "FoundationMark estimate: $123M 2024 required, $369M 2025 required"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/261551239/201640539349100204/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/261551239/201823169349101012/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/261551239/202303179349101610/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/261551239/202423109349100542/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/261551239/202523219349107292/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/10007926",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/232278",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101418482",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-93-08",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-05-96",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-44-29",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=41-45-95",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-99-22",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-33-42",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-79-61",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-83-42",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-60-18",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5a6a8a1a9b600621"
     }
   ],
   "_source_file": "jensen_huang.v3.json"

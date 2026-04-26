@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research (Geffen)",
+  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research (Geffen) + regen_v3@sha256-c436ad2c7d5a29e0 + regen_v3@sha256-33431d3259a8cb18",
   "person": {
     "name_display": "David Geffen",
     "name_legal": "David Lawrence Geffen",
@@ -314,6 +314,26 @@
       "naming_right": "David H. Koch Center \u2014 specific naming TBD (gift funds expansion of research/clinical programs)",
       "dedup_note": "Geffen's share may already be inside DGF 2023 grants_out ($130M) or 2024 ($112.8M). HIGH DEDUP RISK. Part XV parse required.",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "The David Geffen Foundation",
+      "donor_ein": "95-4085811",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 34498634.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954085811",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $554.4M; payout rate 6.2%.",
+      "regen_source": "propublica",
+      "event_id": "david_geffen_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c436ad2c7d5a29e0",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -439,8 +459,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 6426500000,
     "ratio_observable_to_5pct_tenure": 0.1624,
-    "observable_from_events_usd": 1446678858,
-    "observable_drift_pct": 0.161,
+    "observable_from_events_usd": 1481177492,
+    "observable_drift_pct": 0.189,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -597,6 +617,18 @@
       "url": "https://www.scmp.com/magazines/style/entertainment/article/3258395/david-geffen-really-richest-man-hollywood-us8-billion-net-worth-dreamworks-co-founder-was-linked",
       "retrieved_at": "2026-04-24",
       "used_for": "2025 $8B net worth low-end range"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-48-43",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33431d3259a8cb18"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33431d3259a8cb18"
     }
   ],
   "_source_file": "david_geffen.v3.json"

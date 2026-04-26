@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching Ellison v3 reference. Every dollar has source_url + retrieved_at. Events scoped by event_role. Tier classification happens downstream.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research + regen_v3@sha256-7001c9c7cdd64155 + regen_v3@sha256-7fc2c3a0f9dc1c59",
   "person": {
     "name_display": "Steve Cohen",
     "name_legal": "Steven A. Cohen",
@@ -298,6 +298,46 @@
       "confidence": "medium",
       "dedup_note": "Cohen served on Robin Hood board 2004-2014 (stepped down to emeritus). Gifts likely flowed both personally and through SACF. Portion overlapping with SACF 2011-2014 grant-outs is already captured. Treat this row as narrative-only; do not add.",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 87625605.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/061627638",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $459.3M; payout rate 19.1%.",
+      "regen_source": "propublica",
+      "event_id": "steve_cohen_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7001c9c7cdd64155",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Steven & Alexandra Cohen Foundation Inc",
+      "donor_ein": "06-1627638",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 131128413.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/061627638",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $527.6M; payout rate 24.9%.",
+      "regen_source": "propublica",
+      "event_id": "steve_cohen_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7001c9c7cdd64155",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -489,8 +529,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 13563400000,
     "ratio_observable_to_5pct_tenure": 0.0565,
-    "observable_from_events_usd": 1302880000,
-    "observable_drift_pct": 0.605,
+    "observable_from_events_usd": 1521634018,
+    "observable_drift_pct": 0.875,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -617,6 +657,96 @@
       "url": "https://www.bloomberg.com/news/articles/2014-05-01/steven-cohen-stepping-down-from-board-of-robin-hood-foundation",
       "retrieved_at": "2026-04-24",
       "used_for": "Robin Hood board tenure 2004-2014"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/061627638",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7001c9c7cdd64155"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101738694",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=00-94-71",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-65-66",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-78-40",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=07-14-56",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=07-17-60",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-03-82",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-06-02",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-90-12",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=41-91-58",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-21-16",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-37-07",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-31-31",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7fc2c3a0f9dc1c59"
     }
   ],
   "_source_file": "steve_cohen.v3.json"

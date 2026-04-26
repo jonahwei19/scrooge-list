@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 \u2014 single-subject deep research (Melinda French Gates)",
+  "generated_by": "scrooge v3 \u2014 single-subject deep research (Melinda French Gates) + regen_v3@sha256-e734f00e32f712b1",
   "person": {
     "name_display": "Melinda French Gates",
     "name_legal": "Melinda Ann French Gates",
@@ -154,6 +154,86 @@
       "confidence": "medium",
       "dedup_note": "TODO: verify whether this $50M Pivotal contribution appears inside PPF 2025 990-PF (expected Nov 2026) \u2014 if so, do not double-count. For now flagged as ANNOUNCED, not yet visible in ProPublica 2025 data.",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Pivotal Philanthropies Foundation",
+      "donor_ein": "88-2918646",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 17872184.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $625.6M; payout rate 2.9%.",
+      "regen_source": "propublica",
+      "event_id": "melinda_french_gates_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e734f00e32f712b1",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Pivotal Philanthropies Foundation",
+      "donor_ein": "88-2918646",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 119318149.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $604.1M; payout rate 19.7%.",
+      "regen_source": "propublica",
+      "event_id": "melinda_french_gates_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e734f00e32f712b1",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Pivotal Philanthropies Foundation",
+      "donor_ein": "88-2918646",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 3000000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646/202543219349106604/full",
+      "confidence": "high",
+      "note": "Pivotal Philanthropies Foundation \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 1 grant line(s) on 990-PF Part XV for FY 2024; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "melinda_french_gates_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Pivotal Philanthropies Foundation",
+      "donor_ein": "88-2918646",
+      "recipient": "National Philanthropic Trust",
+      "amount_usd": 257500000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646/202543219349106604/full",
+      "confidence": "high",
+      "note": "Pivotal Philanthropies Foundation \u2192 National Philanthropic Trust (DAF sponsor EIN 23-2017646); 3 grant line(s) on 990-PF Part XV for FY 2024; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "melinda_french_gates_grant_out_2024_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -239,6 +319,44 @@
       "retrieved_at": "2026-04-24",
       "notes": "December 2025 Fortune interview: French Gates publicly stated Giving Pledge has 'fallen short' and urged fellow billionaires to deploy more aggressively. As one of three co-founders of the pledge, her public critique is consequential for the credibility of the entire Giving Pledge norm. Supports classifying her own giving as ON_TRACK rather than laggard.",
       "event_role_canonical": "reference_only"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Melinda French Gates",
+      "recipient": "Pivotal Ventures LLC",
+      "amount_usd": 1000000000.0,
+      "source_type": "philanthropic_llc_commitment",
+      "source_url": "https://www.pivotal.com/articles/melinda-french-gates-announces-1billlion-commitment-to-advance-women-globally",
+      "confidence": "medium",
+      "note": "Pivotal Ventures LLC: 2019 commitment of $1B over 10 years for gender-equality work in the U.S. LLC blends VC-style investing with philanthropy and advocacy \u2014 disclosure is partial.",
+      "regen_source": "llcs",
+      "event_id": "melinda_french_gates_pledge_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Melinda French Gates",
+      "recipient": "Pivotal Ventures LLC",
+      "amount_usd": 1000000000.0,
+      "source_type": "philanthropic_llc_commitment",
+      "source_url": "https://variety.com/2024/biz/news/melinda-french-gates-1-billion-women-pivotal-ventures-1236017610/",
+      "confidence": "medium",
+      "note": "Pivotal: May-2024 additional $1B commitment over 2 years for reproductive rights and women's causes globally. Brings cumulative Pivotal commitments to \u2248$2B.",
+      "regen_source": "llcs",
+      "event_id": "melinda_french_gates_pledge_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -467,8 +585,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 5917000000,
     "ratio_observable_to_5pct_tenure": 0.0841,
-    "observable_from_events_usd": 593000000,
-    "observable_drift_pct": 0.092,
+    "observable_from_events_usd": 990690333,
+    "observable_drift_pct": 0.824,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -622,7 +740,8 @@
     {
       "url": "https://www.philanthropy.com/article/melinda-french-gates-announces-where-1-billion-in_new-funds-will-go-to-help-women-and-girls",
       "retrieved_at": "2026-04-24",
-      "used_for": "$1B allocation detail via Chronicle of Philanthropy"
+      "used_for": "$1B allocation detail via Chronicle of Philanthropy",
+      "source_verification_status": "dead_link_rotted_or_typo"
     },
     {
       "url": "https://amherstbulletin.com/2024/06/06/umass-retired-professor-awarded-20-million-from-melinda-french-gates-philanthropic-foundation-55420217/",
@@ -633,6 +752,96 @@
       "url": "https://www.geekwire.com/2025/melinda-french-gates-offers-her-thoughts-as-gates-foundation-makes-plans-to-sunset-in-2045/",
       "retrieved_at": "2026-04-24",
       "used_for": "2025 context on Gates Foundation's 2045 sunset plan and MFG's commentary"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/882918646/202543219349106604/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "variety.com",
+      "url": "https://variety.com/2024/biz/news/melinda-french-gates-1-billion-women-pivotal-ventures-1236017610/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-37-13",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-39-36",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-43-81",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-27-85",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-86-93",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-87-13",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=41-68-55",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-20-90",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-82-06",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-61-77",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-78-71",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-76-88",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34657245e50c2f07"
     }
   ],
   "_source_file": "melinda_french_gates.v3.json"

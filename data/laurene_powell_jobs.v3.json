@@ -1,23 +1,24 @@
 {
   "schema_version": "v3.0.0-draft",
-  "schema_notes": "Per-billionaire record — canonical LLC-archetype case. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Tier classification happens downstream.",
+  "schema_notes": "Per-billionaire record \u2014 canonical LLC-archetype case. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Tier classification happens downstream.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run — single-subject deep research (LLC archetype)",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (LLC archetype) + regen_v3@sha256-aac882a077cc4e7d + regen_v3@sha256-21de1b7e12eeb870",
   "person": {
     "name_display": "Laurene Powell Jobs",
     "name_legal": "Laurene Powell Jobs",
     "dob_year": 1963,
     "country_primary": "United States",
-    "wealth_source": "Inherited from Steve Jobs (d. Oct 2011) via Steven P. Jobs Trust — principally Apple shares and 7.3% Disney stake from Pixar sale. Holdings diversified post-2011 (half Disney stake sold 2017 for ~$7B pre-tax; annual ~10% Apple sell-down through 2021). Operates Emerson Collective LLC as unified investment + philanthropy + media vehicle.",
+    "wealth_source": "Inherited from Steve Jobs (d. Oct 2011) via Steven P. Jobs Trust \u2014 principally Apple shares and 7.3% Disney stake from Pixar sale. Holdings diversified post-2011 (half Disney stake sold 2017 for ~$7B pre-tax; annual ~10% Apple sell-down through 2021). Operates Emerson Collective LLC as unified investment + philanthropy + media vehicle.",
     "years_as_billionaire_approx": 14
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 14.3,
-    "range_usd_billions": [11.9, 15.6],
+    "range_usd_billions": [
+      11.9,
+      15.6
+    ],
     "as_of": "2026-04",
-    "range_note": "Forbes 2026 profile ~$14.3B; Bloomberg Billionaires Index (July 2025) ~$11.9B; August 2025 Forbes snapshot $15.6B (rank 136). Spread is ~30% — typical for inherited diversified wealth where public mark-to-market is partial (Apple/Disney sold down; other holdings private).",
+    "range_note": "Forbes 2026 profile ~$14.3B; Bloomberg Billionaires Index (July 2025) ~$11.9B; August 2025 Forbes snapshot $15.6B (rank 136). Spread is ~30% \u2014 typical for inherited diversified wealth where public mark-to-market is partial (Apple/Disney sold down; other holdings private).",
     "sources": [
       {
         "publisher": "Forbes Real-Time Billionaires",
@@ -38,13 +39,15 @@
         "publisher": "Wikipedia (citing Forbes)",
         "url": "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs",
         "retrieved_at": "2026-04-24",
-        "value_range_usd_billions": [11.9, 15.6]
+        "value_range_usd_billions": [
+          11.9,
+          15.6
+        ]
       }
     ],
     "liquidity_estimate_pct": 0.55,
-    "liquidity_notes": "Inherited stake has been actively diversified. Disney position halved in 2017 ($7B pre-tax proceeds); Apple position sold down ~10%/yr through 2021. Emerson Collective reportedly manages ~$28B AUM (includes non-Powell Jobs capital and illiquid venture positions, per Inside Philanthropy). Treat 55% liquidity estimate as conservative — proceeds from Apple/Disney divestments are presumptively in diversified public securities and private equity. Apply 55% liquidity discount for giving-capacity now; 70%+ for lifetime expected-giving denominator."
+    "liquidity_notes": "Inherited stake has been actively diversified. Disney position halved in 2017 ($7B pre-tax proceeds); Apple position sold down ~10%/yr through 2021. Emerson Collective reportedly manages ~$28B AUM (includes non-Powell Jobs capital and illiquid venture positions, per Inside Philanthropy). Treat 55% liquidity estimate as conservative \u2014 proceeds from Apple/Disney divestments are presumptively in diversified public securities and private equity. Apply 55% liquidity discount for giving-capacity now; 70%+ for lifetime expected-giving denominator."
   },
-
   "cited_events": [
     {
       "event_id": "lpj_waverley_2024",
@@ -59,7 +62,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Waverley Street is the 501(c)(3) arm of Laurene Powell Jobs's philanthropy. Its grants_out are observable. Emerson Collective LLC (the parent) gives separately and is NOT observable — see hidden_upper."
+      "dedup_note": "Waverley Street is the 501(c)(3) arm of Laurene Powell Jobs's philanthropy. Its grants_out are observable. Emerson Collective LLC (the parent) gives separately and is NOT observable \u2014 see hidden_upper."
     },
     {
       "event_id": "lpj_waverley_2023",
@@ -126,7 +129,10 @@
     {
       "event_id": "lpj_xq_100m_2015_2016",
       "event_role": "direct_gift",
-      "year_range": [2015, 2016],
+      "year_range": [
+        2015,
+        2016
+      ],
       "donor_entity": "Emerson Collective LLC (via XQ Super School Project)",
       "recipient": "10 XQ Super Schools",
       "amount_usd": 100000000,
@@ -134,7 +140,7 @@
       "source_url": "https://philanthropynewsdigest.org/news/winners-of-100-million-xq-super-school-project-announced",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "XQ Institute is a separate 501(c)(3); these grants may be inside XQ's 990 filings (not pulled here) OR may be direct LLC-to-school gifts. Since XQ itself is an Emerson creature, this $100M is reported as an announced commitment. Wikipedia says XQ total giving is 'at least $200M' cumulative as of ~2019-2022. Not double-counted with Waverley grants (different pipelines — XQ pre-dates Waverley)."
+      "dedup_note": "XQ Institute is a separate 501(c)(3); these grants may be inside XQ's 990 filings (not pulled here) OR may be direct LLC-to-school gifts. Since XQ itself is an Emerson creature, this $100M is reported as an announced commitment. Wikipedia says XQ total giving is 'at least $200M' cumulative as of ~2019-2022. Not double-counted with Waverley grants (different pipelines \u2014 XQ pre-dates Waverley)."
     },
     {
       "event_id": "lpj_waverley_pledge_3p5b_2021",
@@ -143,17 +149,111 @@
       "date_precision": "month",
       "date": "2021-09",
       "donor_entity": "Laurene Powell Jobs / Waverley Street Foundation",
-      "recipient": "Climate causes (regenerative agriculture, renewable energy, community resilience) — 10-year spenddown",
+      "recipient": "Climate causes (regenerative agriculture, renewable energy, community resilience) \u2014 10-year spenddown",
       "amount_usd": 3500000000,
       "status": "IN_PROGRESS",
       "status_source": "Waverley is a spend-down foundation with a 2035 deadline. Cumulative grants-paid 2019-2024: ~$1.02B observable of the $3.5B target. Annual grant pace ($306M in 2024) would hit target by mid-2030s, consistent with plan.",
       "source_type": "announcement",
       "source_url": "https://www.cbsnews.com/news/aurene-powell-jobs-steve-jobs-widow-3-55b-donation-climate-change-underserved/",
       "retrieved_at": "2026-04-24",
-      "notes": "NOT a Giving Pledge-style 50% commitment — a targeted $3.5B climate pledge. Distinct from personal philanthropy."
+      "notes": "NOT a Giving Pledge-style 50% commitment \u2014 a targeted $3.5B climate pledge. Distinct from personal philanthropy."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation",
+      "donor_ein": "81-3242506",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 102776767.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $2988.0M; payout rate 3.4%.",
+      "regen_source": "propublica",
+      "event_id": "laurene_powell_jobs_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-aac882a077cc4e7d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation",
+      "donor_ein": "81-3242506",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 146313164.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $2993.0M; payout rate 4.9%.",
+      "regen_source": "propublica",
+      "event_id": "laurene_powell_jobs_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-aac882a077cc4e7d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation",
+      "donor_ein": "81-3242506",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 193913087.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $2844.6M; payout rate 6.8%.",
+      "regen_source": "propublica",
+      "event_id": "laurene_powell_jobs_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-aac882a077cc4e7d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation",
+      "donor_ein": "81-3242506",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 270382133.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $2784.0M; payout rate 9.7%.",
+      "regen_source": "propublica",
+      "event_id": "laurene_powell_jobs_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-aac882a077cc4e7d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation (formerly Emerson Collective Foundation)",
+      "donor_ein": "81-3242506",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 10000000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506/202133199349107018/full",
+      "confidence": "high",
+      "note": "Waverley Street Foundation (formerly Emerson Collective Foundation) \u2192 Silicon Valley Community Foundation (DAF sponsor EIN 20-5205488); 2 grant line(s) on 990-PF Part XV for FY 2020; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "laurene_powell_jobs_grant_out_2020_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "lpj_no_giving_pledge",
@@ -163,7 +263,7 @@
       "status_source": "Steve Jobs famously declined the Giving Pledge (2010). Laurene Powell Jobs has also declined, telling Bloomberg: 'Whether someone signs something is not what's important. It's what they do and how they do it that matters.' IPS 2025 Giving Pledge report does not list her.",
       "quote_source_url": "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs",
       "retrieved_at": "2026-04-24",
-      "notes": "Absence of Giving Pledge signature is material context: LPJ's $3.5B climate pledge (2021) and public statements about wealth ('it ends with me', 2020 NYT) substitute for a formal Giving Pledge letter. For Scrooge List taxonomy, she is NOT a pledge-breach case — she never made the pledge. However, note the methodological parallel: her wealth-ends-with-me statements carry moral weight similar to a pledge."
+      "notes": "Absence of Giving Pledge signature is material context: LPJ's $3.5B climate pledge (2021) and public statements about wealth ('it ends with me', 2020 NYT) substitute for a formal Giving Pledge letter. For Scrooge List taxonomy, she is NOT a pledge-breach case \u2014 she never made the pledge. However, note the methodological parallel: her wealth-ends-with-me statements carry moral weight similar to a pledge."
     },
     {
       "event_id": "lpj_wealth_ends_with_me_2020",
@@ -174,9 +274,26 @@
       "retrieved_at": "2026-04-24",
       "quote": "It's not right for individuals to accumulate such massive wealth, equivalent to that of millions of others combined. I'm not interested in legacy wealth buildings, and my children know that. If I live long enough, it ends with me.",
       "notes": "New York Times interview 2020. Functions as informal public commitment to lifetime spend-down. Not legally binding; the Emerson Collective LLC structure gives her full discretion over pace and recipients, including whether to disburse to 501(c)(3)s or to for-profit impact investments."
+    },
+    {
+      "event_role": "pledge",
+      "year": 2004,
+      "date_precision": "year",
+      "donor_entity": "Laurene Powell Jobs",
+      "recipient": "Emerson Collective LLC",
+      "amount_usd": null,
+      "source_type": "philanthropic_llc_commitment",
+      "source_url": "https://en.wikipedia.org/wiki/Emerson_Collective",
+      "confidence": "medium",
+      "note": "Emerson Collective LLC, founded 2004 as Laurene Powell Jobs's primary vehicle. CJR and Inside Philanthropy both note Emerson is 'notoriously lacking in transparency on hard giving figures'; reported assets \u2248$1.8B. LLC is opaque \u2014 capacity signal only.",
+      "regen_source": "llcs",
+      "event_id": "laurene_powell_jobs_pledge_2004_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_SIGNIFICANT_DEMOCRATIC",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. LPJ's political pattern is partisan-Democratic and multi-cycle.",
@@ -203,11 +320,10 @@
         "url": "https://www.opensecrets.org/donor-lookup/results?name=Laurene+Powell+Jobs&order=desc&sort=N",
         "retrieved_at": "2026-04-24",
         "publisher": "OpenSecrets",
-        "note": "Donor lookup page — full FEC itemization requires Phase 1.3 FEC API pull"
+        "note": "Donor lookup page \u2014 full FEC itemization requires Phase 1.3 FEC API pull"
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -220,7 +336,7 @@
         "latest_990_year": 2024,
         "assets_usd_latest": 2740000000,
         "grants_paid_2024_usd": 306200000,
-        "payout_rate_notes": "2024 grants ($306.2M) vs assets ($2.74B) = 11.2% — well above 5% legal minimum. Spend-down trajectory accelerating (from $84.8M in 2020 to $306.2M in 2024). No LOW_PAYOUT flag.",
+        "payout_rate_notes": "2024 grants ($306.2M) vs assets ($2.74B) = 11.2% \u2014 well above 5% legal minimum. Spend-down trajectory accelerating (from $84.8M in 2020 to $306.2M in 2024). No LOW_PAYOUT flag.",
         "officers_compensation": "Jared Blumenfeld (Pres) $920K; Jagadha Sivan (COO) $659K; Lande Ajose (MD) $600K; GC $542K; Head Global Programs $352K. ELEVATED but not extreme for $2.74B foundation. Powell Jobs herself receives zero compensation.",
         "red_flag_officer_comp": "ELEVATED (president $920K is above typical foundation norms but not at anomalous extremes for this asset size)",
         "red_flag_daf_transfers": "NOT_YET_VERIFIED (would require parsing grant recipients list)",
@@ -229,20 +345,20 @@
     ],
     "foundations_terminated": [],
     "dafs_detected": [],
-    "dafs_note": "No DAF activity identified from press. However, Emerson Collective LLC is functionally a DAF-equivalent black box for non-Waverley giving — see LLC section. Absence-of-evidence only.",
+    "dafs_note": "No DAF activity identified from press. However, Emerson Collective LLC is functionally a DAF-equivalent black box for non-Waverley giving \u2014 see LLC section. Absence-of-evidence only.",
     "llcs_philanthropic": [
       {
         "name": "Emerson Collective LLC",
-        "ein": "not_public_required (LLC — no 990 filing)",
+        "ein": "not_public_required (LLC \u2014 no 990 filing)",
         "established_year": 2011,
         "state": "CA",
         "location": "Palo Alto",
         "status": "active",
-        "classification": "OPAQUE_LLC — canonical case alongside Chan Zuckerberg Initiative, Ballmer Group",
+        "classification": "OPAQUE_LLC \u2014 canonical case alongside Chan Zuckerberg Initiative, Ballmer Group",
         "assets_usd_reported_approx": 28000000000,
         "assets_note": "Inside Philanthropy and related coverage cite ~$28B AUM for Emerson Collective as a whole; this number commingles LPJ's personal wealth with venture positions and is NOT equivalent to $28B in philanthropic endowment. Treat as upper bound on LLC's deployable capital.",
         "methodology_note": "LLCs are NOT required to file 990s. Grants, political giving, venture investment, media investment, and advocacy spending are commingled and undisclosed. The Waverley Street Foundation (501(c)(3)) is a SUBSET of LPJ philanthropy; LLC-channel giving is strictly additional but unobservable. Inside Philanthropy named LPJ 'Least Transparent Mega-Giver' of 2019 on this basis.",
-        "friend_quote": "Laura Arrillaga-Andreessen (fellow philanthropist): 'If you total up in your mind all of the philanthropic investments that Laurene has made that the public knows about, that is probably a fraction of 1 percent of what she actually does.' This is a single-source qualitative claim from a friend, not an audited figure — but it is the strongest available signal of LLC-channel giving being dominant.",
+        "friend_quote": "Laura Arrillaga-Andreessen (fellow philanthropist): 'If you total up in your mind all of the philanthropic investments that Laurene has made that the public knows about, that is probably a fraction of 1 percent of what she actually does.' This is a single-source qualitative claim from a friend, not an audited figure \u2014 but it is the strongest available signal of LLC-channel giving being dominant.",
         "source_url": "https://en.wikipedia.org/wiki/Emerson_Collective",
         "related_ventures": [
           {
@@ -260,14 +376,14 @@
           {
             "name": "XQ Institute",
             "role": "Founded 2015 by Powell Jobs and Russlynn Ali; funded via Emerson Collective",
-            "classification": "501(c)(3) subsidiary — separate EIN",
+            "classification": "501(c)(3) subsidiary \u2014 separate EIN",
             "cumulative_grants_approx_usd": 200000000,
             "source_url": "https://en.m.wikipedia.org/wiki/XQ_Institute"
           },
           {
             "name": "College Track",
-            "role": "Co-founded 1997 by Powell Jobs — predates Emerson",
-            "classification": "501(c)(3) — separate EIN",
+            "role": "Co-founded 1997 by Powell Jobs \u2014 predates Emerson",
+            "classification": "501(c)(3) \u2014 separate EIN",
             "source_url": "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs"
           }
         ]
@@ -275,7 +391,7 @@
     ],
     "llcs_note": "Emerson Collective is the CANONICAL LLC-archetype case for the Scrooge List alongside CZI (Chan Zuckerberg). LPJ's lifetime charitable giving via LLC is unmeasurable by design. Our methodology counts ONLY Waverley Street 990-PF grants and publicly announced direct gifts; LLC giving goes into hidden_upper with widest uncertainty band.",
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
     "trusts_disclosed_existence_structure_unknown": [
       {
         "type": "Steven P. Jobs Trust",
@@ -287,11 +403,10 @@
       }
     ]
   },
-
   "red_flags": [
     {
       "flag": "LLC_OPACITY",
-      "evidence": "Emerson Collective LLC (founded 2011) is the primary vehicle for LPJ philanthropy and investing. LLCs are not required to file 990s. Inside Philanthropy named LPJ 'Least Transparent Mega-Giver' of 2019. Fellow philanthropist Laura Arrillaga-Andreessen says known giving is 'a fraction of 1 percent' of actual giving. The Waverley Street 501(c)(3) ($2.74B assets, $306M 2024 grants) is observable but is a SUBSET — total LPJ giving through the LLC channel is by design unmeasurable.",
+      "evidence": "Emerson Collective LLC (founded 2011) is the primary vehicle for LPJ philanthropy and investing. LLCs are not required to file 990s. Inside Philanthropy named LPJ 'Least Transparent Mega-Giver' of 2019. Fellow philanthropist Laura Arrillaga-Andreessen says known giving is 'a fraction of 1 percent' of actual giving. The Waverley Street 501(c)(3) ($2.74B assets, $306M 2024 grants) is observable but is a SUBSET \u2014 total LPJ giving through the LLC channel is by design unmeasurable.",
       "source_url": "https://www.influencewatch.org/non-profit/emerson-collective/"
     },
     {
@@ -307,35 +422,34 @@
     }
   ],
   "red_flags_not_present": [
-    "GIVING_PLEDGE_UNFULFILLED (never signed — not applicable)",
+    "GIVING_PLEDGE_UNFULFILLED (never signed \u2014 not applicable)",
     "LOW_PAYOUT (Waverley 2024 payout 11.2% of assets, above 5% minimum)",
-    "NO_OBSERVABLE_GIVING (observable giving >$1B cumulative — well above $100M threshold)",
+    "NO_OBSERVABLE_GIVING (observable giving >$1B cumulative \u2014 well above $100M threshold)",
     "POLITICAL_DOMINATES_CHARITABLE ($6M political over ~8 years vs ~$306M/yr charitable)"
   ],
-
   "rollup": {
     "observable_giving_usd": 1216800000,
     "observable_giving_method": "sum(Waverley 990-PF grants_out 2019-2024) = $1.017B + XQ Super School Project announced $100M + College Track + XQ additional giving $100M (Wikipedia: XQ 'at least $200M' cumulative, $100M already counted in Super School announcement). Total ~$1.22B observable. Excludes: Emerson Collective LLC giving (unobservable); political giving; Atlantic/Monumental for-profit investments.",
     "observable_giving_todo": [
-      "Pull XQ Institute 990 (separate EIN) to quantify actual grants_out — may deduplicate or expand XQ $100M announcement figure.",
-      "Pull College Track 990 (separate EIN, founded 1997) — grants-in from Emerson Collective LLC or LPJ personal would be observable from their receipt side.",
+      "Pull XQ Institute 990 (separate EIN) to quantify actual grants_out \u2014 may deduplicate or expand XQ $100M announcement figure.",
+      "Pull College Track 990 (separate EIN, founded 1997) \u2014 grants-in from Emerson Collective LLC or LPJ personal would be observable from their receipt side.",
       "Pull archived 990-PFs for Emerson Collective Foundation (the pre-rename entity, same EIN 81-3242506) 2016-2018.",
-      "Run SEC EDGAR Form 4 G-transactions for Disney and Apple CIKs filtered to Steven P. Jobs Trust / Laurene Powell Jobs — any direct stock gifts to charity not captured above.",
+      "Run SEC EDGAR Form 4 G-transactions for Disney and Apple CIKs filtered to Steven P. Jobs Trust / Laurene Powell Jobs \u2014 any direct stock gifts to charity not captured above.",
       "Run FEC bulk API against LPJ's name/address to replace $6M political floor with tight number."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1101100000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.55 × $14.3B = $7.865B; tenure cap saturated (14 years > 10). Expected = $786.5M — BUT tenure-weighted expectation for 14 years exceeds 10-year normalization. Using formal 10% × $7.865B × 1.0 = $786.5M. Adjusted upward to $1.101B to account for accumulated tenure past year 10 (the 'you've had the money long enough' correction = 14/10 × $786.5M = $1.101B). This is a STRICT denominator for LPJ's long-tenure, mid-wealth position.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.55 \u00d7 $14.3B = $7.865B; tenure cap saturated (14 years > 10). Expected = $786.5M \u2014 BUT tenure-weighted expectation for 14 years exceeds 10-year normalization. Using formal 10% \u00d7 $7.865B \u00d7 1.0 = $786.5M. Adjusted upward to $1.101B to account for accumulated tenure past year 10 (the 'you've had the money long enough' correction = 14/10 \u00d7 $786.5M = $1.101B). This is a STRICT denominator for LPJ's long-tenure, mid-wealth position.",
     "observable_ratio_to_expected": 1.105,
     "observable_ratio_to_current_nw": 0.0851,
     "hidden_upper_usd": {
       "daf_uplift_usd": 0,
       "daf_uplift_note": "No DAF evidence. Zero uplift.",
       "llc_uplift_usd": 3000000000,
-      "llc_uplift_method": "Emerson Collective LLC is the canonical opaque vehicle. Upper-bound estimate: LLC philanthropic spend = observable Waverley giving ($1.22B) × 2-4x multiplier per Arrillaga-Andreessen 'fraction of 1 percent' quote. A literal reading of her quote yields a 100x+ multiplier (observable is 1% of real); we sharply discount this to 2-4x ($2.4B-$4.9B) given the quote is self-serving and uncorroborated. Midpoint: $3B LLC hidden uplift. Confidence: LOW.",
+      "llc_uplift_method": "Emerson Collective LLC is the canonical opaque vehicle. Upper-bound estimate: LLC philanthropic spend = observable Waverley giving ($1.22B) \u00d7 2-4x multiplier per Arrillaga-Andreessen 'fraction of 1 percent' quote. A literal reading of her quote yields a 100x+ multiplier (observable is 1% of real); we sharply discount this to 2-4x ($2.4B-$4.9B) given the quote is self-serving and uncorroborated. Midpoint: $3B LLC hidden uplift. Confidence: LOW.",
       "offshore_uplift_usd": 0,
       "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
       "anonymous_cohort_uplift_usd": 100000000,
-      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. LPJ has explicitly stated philanthropy operates 'almost entirely anonymously' (Bloomberg 2022). However, the LLC channel already captures most of this — adding an ADDITIONAL $100M for personal anonymous gifts outside Emerson. Confidence: LOW.",
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. LPJ has explicitly stated philanthropy operates 'almost entirely anonymously' (Bloomberg 2022). However, the LLC channel already captures most of this \u2014 adding an ADDITIONAL $100M for personal anonymous gifts outside Emerson. Confidence: LOW.",
       "religious_cohort_uplift_usd": 0,
       "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
       "trust_outcome_uncertainty_usd": 3000000000,
@@ -345,10 +459,9 @@
     },
     "observable_plus_hidden_ratio_to_expected": 6.64,
     "tier": "Ambiguous_Opaque (Tier C)",
-    "tier_rule": "Tier C OPAQUE applies when the LLC/trust channel dominates and the true giving level cannot be resolved to Tier A (Verified Low) or Tier B (Verified High) from public data alone. LPJ fails cleanly into either low-giver or high-giver buckets: observable ($1.22B) already exceeds strict 10%-of-liquid expected (~$1.10B) → NOT a low-giver candidate. But the LLC's true giving volume (plausibly $3-15B+ over tenure) cannot be verified. She could be a genuine Tier A-high-giver (giving 3-4x observable), OR observable could be the full picture and the 'fraction of 1 percent' friend-quote is hyperbole. WITHOUT the LLC: she's marginally above 10% expected (barely a generous giver). WITH plausible LLC uplift: she's a clear high-giver. The uncertainty envelope IS the finding.",
+    "tier_rule": "Tier C OPAQUE applies when the LLC/trust channel dominates and the true giving level cannot be resolved to Tier A (Verified Low) or Tier B (Verified High) from public data alone. LPJ fails cleanly into either low-giver or high-giver buckets: observable ($1.22B) already exceeds strict 10%-of-liquid expected (~$1.10B) \u2192 NOT a low-giver candidate. But the LLC's true giving volume (plausibly $3-15B+ over tenure) cannot be verified. She could be a genuine Tier A-high-giver (giving 3-4x observable), OR observable could be the full picture and the 'fraction of 1 percent' friend-quote is hyperbole. WITHOUT the LLC: she's marginally above 10% expected (barely a generous giver). WITH plausible LLC uplift: she's a clear high-giver. The uncertainty envelope IS the finding.",
     "tier_published_caveat": "Readers should see LPJ as the canonical 'opaque LLC' case alongside CZI. Observable Waverley 990-PF giving ($1.22B since 2019) meets the formal 10%-of-liquid expectation. Her public statements and the $3.5B Waverley climate pledge indicate intent to give substantially more. But Emerson Collective LLC's grant pipeline is structurally invisible, and her $28B-AUM LLC could be deploying $0 or $10B+ in true charitable flow with no way to distinguish from outside. This is a METHODOLOGY problem, not a moral judgment: the U.S. tax code permits this opacity."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 45.0,
     "components": {
@@ -357,9 +470,8 @@
       "pledge_breach_penalty_20pct": 0.0,
       "red_flag_penalty_20pct": 15.0
     },
-    "note": "Computed with v2 formula. giving_gap = 0 because observable > expected. tenure_penalty = 14 years / 20 max × 20pct = 14. pledge_breach = 0 (never signed). red_flag_penalty = 3 flags × 5 = 15. DO NOT PUBLISH — tiers only. Score is low because she meets the observable bar; the hidden tier dominates interpretation."
+    "note": "Computed with v2 formula. giving_gap = 0 because observable > expected. tenure_penalty = 14 years / 20 max \u00d7 20pct = 14. pledge_breach = 0 (never signed). red_flag_penalty = 3 flags \u00d7 5 = 15. DO NOT PUBLISH \u2014 tiers only. Score is low because she meets the observable bar; the hidden tier dominates interpretation."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
     "planned_outreach_route": "Emerson Collective press / Laurene Powell Jobs press contact (press@emersoncollective.com or similar) + Waverley Street Foundation press contact.",
@@ -373,38 +485,202 @@
       "Will the Steven P. Jobs Trust disburse to charity on Laurene Powell Jobs's death, and is that commitment documented?"
     ]
   },
-
   "verification_todos_before_publish": [
-    "VERIFY: XQ Institute 990 — pull separate EIN, cross-check $100M Super School announcement against actual grants_out.",
-    "VERIFY: College Track 990 — pull separate EIN, quantify grants_in from Emerson Collective (would confirm LLC-channel giving in at least one direction).",
-    "VERIFY: Waverley Street pre-2019 990-PFs (2016-2018) — the foundation was then named 'Emerson Collective Foundation' but had the same EIN. Add any grants_out for observable total.",
-    "VERIFY: 2023 grants figure — Inside Philanthropy reported $424M but ProPublica summary showed $237.5M. Pull actual 990-PF document to reconcile.",
-    "VERIFY: SEC EDGAR Form 4 G-transactions for Steven P. Jobs Trust holdings in DIS/AAPL — any stock gifts to Waverley or other 501(c)(3)s.",
-    "VERIFY: FEC bulk pull of LPJ donations — refine $6M political total; search for itemized 2023-2024 super-PAC gifts.",
-    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
-    "VERIFY: Emerson Collective official press response — request LLC-channel aggregate giving number, even if top-line only.",
+    "VERIFY: XQ Institute 990 \u2014 pull separate EIN, cross-check $100M Super School announcement against actual grants_out.",
+    "VERIFY: College Track 990 \u2014 pull separate EIN, quantify grants_in from Emerson Collective (would confirm LLC-channel giving in at least one direction).",
+    "VERIFY: Waverley Street pre-2019 990-PFs (2016-2018) \u2014 the foundation was then named 'Emerson Collective Foundation' but had the same EIN. Add any grants_out for observable total.",
+    "VERIFY: 2023 grants figure \u2014 Inside Philanthropy reported $424M but ProPublica summary showed $237.5M. Pull actual 990-PF document to reconcile.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Steven P. Jobs Trust holdings in DIS/AAPL \u2014 any stock gifts to Waverley or other 501(c)(3)s.",
+    "VERIFY: FEC bulk pull of LPJ donations \u2014 refine $6M political total; search for itemized 2023-2024 super-PAC gifts.",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
+    "VERIFY: Emerson Collective official press response \u2014 request LLC-channel aggregate giving number, even if top-line only.",
     "VERIFY: Re-run Brave Search for post-2025 announcements (1-year freshness window)."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/813242506", "retrieved_at": "2026-04-24", "used_for": "Waverley Street Foundation 990-PF data 2019-2024 — grants paid, assets, officer compensation"},
-    {"url": "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs", "retrieved_at": "2026-04-24", "used_for": "Biography, net worth, inheritance trust, Giving Pledge decline quote, political giving 2016, Monumental divestment 2025"},
-    {"url": "https://en.wikipedia.org/wiki/Emerson_Collective", "retrieved_at": "2026-04-24", "used_for": "Emerson Collective LLC founding, structure, LLC-opacity methodology"},
-    {"url": "https://www.influencewatch.org/non-profit/emerson-collective/", "retrieved_at": "2026-04-24", "used_for": "Emerson Collective LLC opacity analysis; 'Least Transparent Mega-Giver 2019' designation"},
-    {"url": "https://www.bloomberg.com/billionaires/profiles/laurene-p-jobs/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg net worth $11.9B July 2025 rank 244"},
-    {"url": "https://www.forbes.com/profile/laurene-powell-jobs/", "retrieved_at": "2026-04-24", "used_for": "Forbes 2026 current profile — net worth ~$14.3B, rank ~136"},
-    {"url": "https://www.cbsnews.com/news/aurene-powell-jobs-steve-jobs-widow-3-55b-donation-climate-change-underserved/", "retrieved_at": "2026-04-24", "used_for": "Waverley $3.5B climate pledge Sept 2021"},
-    {"url": "https://www.insidephilanthropy.com/home/2024-2-22-laurene-powell-jobs-climate-funder-ramps-up-giving-and-adds-prominent-board-members", "retrieved_at": "2026-04-24", "used_for": "Waverley 2023 grantmaking detail; board composition"},
-    {"url": "https://www.philanthropy.com/news/the-head-of-laurene-powell-jobss-climate-foundation-has-more-than-3-billion-to-spend-and-a-deadline/", "retrieved_at": "2026-04-24", "used_for": "Waverley spend-down deadline context"},
-    {"url": "https://philanthropynewsdigest.org/news/winners-of-100-million-xq-super-school-project-announced", "retrieved_at": "2026-04-24", "used_for": "XQ $100M Super School Project announcement"},
-    {"url": "https://en.m.wikipedia.org/wiki/XQ_Institute", "retrieved_at": "2026-04-24", "used_for": "XQ Institute founding 2015, cumulative $200M+ giving"},
-    {"url": "https://variety.com/2017/digital/news/laurene-powell-jobs-the-atlantic-acquisition-1202509397/", "retrieved_at": "2026-04-24", "used_for": "Atlantic majority-stake acquisition July 2017"},
-    {"url": "https://variety.com/2017/digital/news/laurene-powell-jobs-disney-shares-1201975438/", "retrieved_at": "2026-04-24", "used_for": "Disney divestment 2017 — half stake sold for ~$7B pre-tax"},
-    {"url": "https://fortune.com/2024/09/26/laurene-powell-jobs-kamala-harris-biggest-donor-friends/", "retrieved_at": "2026-04-24", "used_for": "LPJ 2024 political giving to Harris/Biden, friendship context"},
-    {"url": "https://www.opensecrets.org/donor-lookup/results?name=Laurene+Powell+Jobs&order=desc&sort=N", "retrieved_at": "2026-04-24", "used_for": "OpenSecrets donor lookup (Phase 1.3 FEC pull pending)"},
-    {"url": "https://www.newser.com/story/287558/laurene-powell-jobs-on-family-wealth-it-ends-with-me.html", "retrieved_at": "2026-04-24", "used_for": "LPJ 'wealth ends with me' 2020 NYT interview quote"},
-    {"url": "https://www.emersoncollective.com/articles/q-and-a-with-ec-founder-and-president-laurene-powell-jobs", "retrieved_at": "2026-04-24", "used_for": "Emerson Collective self-description; LPJ on anonymous giving"},
-    {"url": "https://nonprofitquarterly.org/does-the-emerson-collective-square-with-philanthropic-accountability/", "retrieved_at": "2026-04-24", "used_for": "Emerson Collective accountability critique"},
-    {"url": "https://www.instrumentl.com/990-report/emerson-collective-foundation", "retrieved_at": "2026-04-24", "used_for": "Waverley 2024 $282.1M / 144 grants figure (reconcile against ProPublica $306.2M)"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Waverley Street Foundation 990-PF data 2019-2024 \u2014 grants paid, assets, officer compensation"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biography, net worth, inheritance trust, Giving Pledge decline quote, political giving 2016, Monumental divestment 2025"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Emerson_Collective",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Emerson Collective LLC founding, structure, LLC-opacity methodology"
+    },
+    {
+      "url": "https://www.influencewatch.org/non-profit/emerson-collective/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Emerson Collective LLC opacity analysis; 'Least Transparent Mega-Giver 2019' designation"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/laurene-p-jobs/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg net worth $11.9B July 2025 rank 244"
+    },
+    {
+      "url": "https://www.forbes.com/profile/laurene-powell-jobs/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes 2026 current profile \u2014 net worth ~$14.3B, rank ~136"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/aurene-powell-jobs-steve-jobs-widow-3-55b-donation-climate-change-underserved/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Waverley $3.5B climate pledge Sept 2021"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2024-2-22-laurene-powell-jobs-climate-funder-ramps-up-giving-and-adds-prominent-board-members",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Waverley 2023 grantmaking detail; board composition"
+    },
+    {
+      "url": "https://www.philanthropy.com/news/the-head-of-laurene-powell-jobss-climate-foundation-has-more-than-3-billion-to-spend-and-a-deadline/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Waverley spend-down deadline context"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/winners-of-100-million-xq-super-school-project-announced",
+      "retrieved_at": "2026-04-24",
+      "used_for": "XQ $100M Super School Project announcement"
+    },
+    {
+      "url": "https://en.m.wikipedia.org/wiki/XQ_Institute",
+      "retrieved_at": "2026-04-24",
+      "used_for": "XQ Institute founding 2015, cumulative $200M+ giving"
+    },
+    {
+      "url": "https://variety.com/2017/digital/news/laurene-powell-jobs-the-atlantic-acquisition-1202509397/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Atlantic majority-stake acquisition July 2017"
+    },
+    {
+      "url": "https://variety.com/2017/digital/news/laurene-powell-jobs-disney-shares-1201975438/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Disney divestment 2017 \u2014 half stake sold for ~$7B pre-tax"
+    },
+    {
+      "url": "https://fortune.com/2024/09/26/laurene-powell-jobs-kamala-harris-biggest-donor-friends/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "LPJ 2024 political giving to Harris/Biden, friendship context"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=Laurene+Powell+Jobs&order=desc&sort=N",
+      "retrieved_at": "2026-04-24",
+      "used_for": "OpenSecrets donor lookup (Phase 1.3 FEC pull pending)"
+    },
+    {
+      "url": "https://www.newser.com/story/287558/laurene-powell-jobs-on-family-wealth-it-ends-with-me.html",
+      "retrieved_at": "2026-04-24",
+      "used_for": "LPJ 'wealth ends with me' 2020 NYT interview quote"
+    },
+    {
+      "url": "https://www.emersoncollective.com/articles/q-and-a-with-ec-founder-and-president-laurene-powell-jobs",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Emerson Collective self-description; LPJ on anonymous giving"
+    },
+    {
+      "url": "https://nonprofitquarterly.org/does-the-emerson-collective-square-with-philanthropic-accountability/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Emerson Collective accountability critique"
+    },
+    {
+      "url": "https://www.instrumentl.com/990-report/emerson-collective-foundation",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Waverley 2024 $282.1M / 144 grants figure (reconcile against ProPublica $306.2M)"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/813242506/202133199349107018/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/powell-jobs-to-invest-3.5-billion-in-climate-action-over-ten-years",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-17-68",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-75-98",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-49-86",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-54-76",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-83-66",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-61-42",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-22-00",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-78-47",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-94-30",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-31-08",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-47-87",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-61-03",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    }
   ]
 }

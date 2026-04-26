@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification downstream.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run \u2014 Mark Cuban single-subject deep research",
+  "generated_by": "scrooge v3 manual research run \u2014 Mark Cuban single-subject deep research + regen_v3@sha256-61107f461e1c4e07 + regen_v3@sha256-e8b3d50dc456dd75",
   "person": {
     "name_display": "Mark Cuban",
     "name_legal": "Mark Cuban",
@@ -266,6 +266,66 @@
       "retrieved_at": "2026-04-24",
       "confidence": "low",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban Foundation",
+      "donor_ein": "26-0063142",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 1285282.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $26.1M; payout rate 4.9%.",
+      "regen_source": "propublica",
+      "event_id": "mark_cuban_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61107f461e1c4e07",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban Heroes Recreational Centers Foundation",
+      "donor_ein": "87-2356979",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 18095.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/872356979",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $0.0M; payout rate 975.5%.",
+      "regen_source": "propublica",
+      "event_id": "mark_cuban_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61107f461e1c4e07",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban Heroes Recreational Centers Foundation",
+      "donor_ein": "87-2356979",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 27007.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/872356979",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $0.0M; payout rate 274.2%.",
+      "regen_source": "propublica",
+      "event_id": "mark_cuban_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-61107f461e1c4e07",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -470,8 +530,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 4631055295,
     "ratio_observable_to_5pct_tenure": 0.0105,
-    "observable_from_events_usd": 48644705,
-    "observable_drift_pct": 0.006,
+    "observable_from_events_usd": 49975089,
+    "observable_drift_pct": 0.021,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -608,6 +668,72 @@
       "url": "https://www.bloomberg.com/billionaires/profiles/mark-cuban/",
       "retrieved_at": "2026-04-24",
       "used_for": "Bloomberg Billionaires Index corroboration"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-42-76",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-64-68",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=07-11-09",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=07-25-51",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-32-00",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-39-43",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-07-99",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-26-84",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-73-50",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-81-21",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-e8b3d50dc456dd75"
     }
   ],
   "summary_150_words": "Mark Cuban (b. 1958; $6B, Forbes 2026) is the canonical case of public-facing generous persona with light documented giving. Observable lifetime charity through the Mark Cuban Foundation (EIN 26-0063142, est. 2003) totals ~$37.3M grants-out 2011-2024 \u2014 averaging $4M/year. Add direct gifts (Indiana University: $5M 2015, $6M 2024; EFF $250K 2012) and the Heroes Recreational Centers Foundation (~$45K), and observable giving reaches ~$49M \u2014 about 0.8% of current net worth after 26 years as a billionaire, or 14% of the 10%-of-liquid-wealth norm. Cuban has NOT signed the Giving Pledge, unusual given his public platform. His Cost Plus Drugs (for-profit PBC) delivers real consumer savings but does not count as charity. Direct political giving is negligible (~$7K lifetime per OpenSecrets). Rhetoric-action gap is the defining feature: publicly supports higher billionaire taxes, has made no reciprocal voluntary commitment. Tier B Probably Low.",

@@ -2,22 +2,23 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run — single-subject deep research (Scott methodological edge case)",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Scott methodological edge case) + regen_v3@sha256-c6d6ee888e772aee + regen_v3@sha256-95e0226079564a9d",
   "person": {
     "name_display": "MacKenzie Scott",
     "name_legal": "MacKenzie Scott (formerly MacKenzie Bezos; formerly MacKenzie Tuttle)",
     "dob_year": 1970,
     "country_primary": "United States",
-    "wealth_source": "Amazon divorce settlement 2019 — received ~25% of the couple's Amazon shares (~4% of Amazon outstanding, ~19.7M shares at settlement), tax-free under IRC §1041. No operating-company role. Author. Post-divorce wealth managed through family office Lost Horse LLC (Seattle, est. late 2019).",
+    "wealth_source": "Amazon divorce settlement 2019 \u2014 received ~25% of the couple's Amazon shares (~4% of Amazon outstanding, ~19.7M shares at settlement), tax-free under IRC \u00a71041. No operating-company role. Author. Post-divorce wealth managed through family office Lost Horse LLC (Seattle, est. late 2019).",
     "years_as_billionaire_approx": 7
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 38.0,
-    "range_usd_billions": [31, 43],
+    "range_usd_billions": [
+      31,
+      43
+    ],
     "as_of": "2026-04",
-    "range_note": "Forbes 2026 profile ranks Scott #84. Fortune Feb 2026 cited $42.7B; Forbes real-time snapshot Nov 2025 $34B (rank #58). Fortune 2026 article cited $38.9B. Range reflects Amazon volatility and Scott's ongoing liquidation — she has sold/donated ~58M of her original ~139M shares (reduced stake ~42%) even as Amazon share price has more than doubled. Note: 'net worth holding flat despite huge giving' is the central paradox in Scott coverage.",
+    "range_note": "Forbes 2026 profile ranks Scott #84. Fortune Feb 2026 cited $42.7B; Forbes real-time snapshot Nov 2025 $34B (rank #58). Fortune 2026 article cited $38.9B. Range reflects Amazon volatility and Scott's ongoing liquidation \u2014 she has sold/donated ~58M of her original ~139M shares (reduced stake ~42%) even as Amazon share price has more than doubled. Note: 'net worth holding flat despite huge giving' is the central paradox in Scott coverage.",
     "sources": [
       {
         "publisher": "Forbes 2026 Billionaires List",
@@ -48,9 +49,8 @@
       }
     ],
     "liquidity_estimate_pct": 0.85,
-    "liquidity_notes": "Scott's wealth is almost entirely Amazon public stock plus the proceeds of ongoing liquidation managed by Lost Horse LLC. No operating-company lock-up. No founder-voting-stake constraint. She has demonstrated capacity to liquidate large blocks (~58M shares since 2019, ~$12.6B). Apply 85% liquidity — among the highest for any 10-figure US fortune."
+    "liquidity_notes": "Scott's wealth is almost entirely Amazon public stock plus the proceeds of ongoing liquidation managed by Lost Horse LLC. No operating-company lock-up. No founder-voting-stake constraint. She has demonstrated capacity to liquidate large blocks (~58M shares since 2019, ~$12.6B). Apply 85% liquidity \u2014 among the highest for any 10-figure US fortune."
   },
-
   "cited_events": [
     {
       "event_id": "scott_divorce_1041_2019",
@@ -61,12 +61,12 @@
       "donor_entity": "Jeff Bezos (marital property division)",
       "recipient": "MacKenzie Scott (personal)",
       "amount_usd": 36000000000,
-      "amount_usd_note": "~25% of couple's Amazon stake, ~4% of Amazon outstanding, ~19.7M shares; tax-free under IRC §1041 marital transfer rules. Widely cited as 'largest divorce settlement in history' at time of close.",
+      "amount_usd_note": "~25% of couple's Amazon stake, ~4% of Amazon outstanding, ~19.7M shares; tax-free under IRC \u00a71041 marital transfer rules. Widely cited as 'largest divorce settlement in history' at time of close.",
       "source_type": "news",
       "source_url": "https://sodomalaw.com/mackenzie-scott-and-the-rise-of-post-divorce-philanthropy/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "classification_note": "Informational only. Not a giving event. Establishes starting wealth basis. IRC §1041 tax-free nature is a key reason Scott's subsequent giving is not 'giving up tax-advantaged basis' the way founder-equity giving typically is."
+      "classification_note": "Informational only. Not a giving event. Establishes starting wealth basis. IRC \u00a71041 tax-free nature is a key reason Scott's subsequent giving is not 'giving up tax-advantaged basis' the way founder-equity giving typically is."
     },
     {
       "event_id": "scott_yield_2025",
@@ -74,19 +74,31 @@
       "year": 2025,
       "date_precision": "year",
       "donor_entity": "MacKenzie Scott (via Yield Giving / Lost Horse LLC / DAFs)",
-      "recipient": "225+ organizations (per NYT) / 120+ organizations (per Fortune) — discrepancy likely reflects Dec 2025 announcement (186 grants) plus earlier-year rounds",
+      "recipient": "225+ organizations (per NYT) / 120+ organizations (per Fortune) \u2014 discrepancy likely reflects Dec 2025 announcement (186 grants) plus earlier-year rounds",
       "amount_usd": 7100000000,
       "source_type": "announcement",
       "source_url": "https://www.cnbc.com/2025/12/13/mackenzie-scott-revealed-her-total-charitable-donations-for-2025.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "corroborating_sources": [
-        {"url": "https://www.cbsnews.com/news/mackenzie-scott-donations-nonprofits-2025/", "retrieved_at": "2026-04-23"},
-        {"url": "https://www.nytimes.com/2025/12/09/business/mackenzie-scott-philanthropy.html", "retrieved_at": "2026-04-23"},
-        {"url": "https://www.alliancemagazine.org/blog/mackenzie-scott-gave-7-billion-in-2025-nears-bill-gates-total-lifetime-philanthropy/", "retrieved_at": "2026-04-23"},
-        {"url": "https://panoramaglobal.org/knowledge-center/articles/understanding-mackenzie-scotts-december-2025-giving/", "retrieved_at": "2026-04-23"}
+        {
+          "url": "https://www.cbsnews.com/news/mackenzie-scott-donations-nonprofits-2025/",
+          "retrieved_at": "2026-04-23"
+        },
+        {
+          "url": "https://www.nytimes.com/2025/12/09/business/mackenzie-scott-philanthropy.html",
+          "retrieved_at": "2026-04-23"
+        },
+        {
+          "url": "https://www.alliancemagazine.org/blog/mackenzie-scott-gave-7-billion-in-2025-nears-bill-gates-total-lifetime-philanthropy/",
+          "retrieved_at": "2026-04-23"
+        },
+        {
+          "url": "https://panoramaglobal.org/knowledge-center/articles/understanding-mackenzie-scotts-december-2025-giving/",
+          "retrieved_at": "2026-04-23"
+        }
       ],
-      "methodology_note": "Announced via quiet edit to the fourth paragraph of a mid-October 2025 blog post. Scott self-publishes totals on Yield Giving website and Medium; she does not confirm to press. Dec 2025 round = 186 grants. Panorama Global notes ~45% of Dec 2025 grants had undisclosed amounts on Yield Giving database — Scott totals are publisher-declared but not individually reconciled."
+      "methodology_note": "Announced via quiet edit to the fourth paragraph of a mid-October 2025 blog post. Scott self-publishes totals on Yield Giving website and Medium; she does not confirm to press. Dec 2025 round = 186 grants. Panorama Global notes ~45% of Dec 2025 grants had undisclosed amounts on Yield Giving database \u2014 Scott totals are publisher-declared but not individually reconciled."
     },
     {
       "event_id": "scott_yield_2024",
@@ -94,7 +106,7 @@
       "year": 2024,
       "donor_entity": "MacKenzie Scott (via Yield Giving / Lost Horse LLC / DAFs)",
       "amount_usd": 2000000000,
-      "amount_usd_note": "Approximate residual — Yield Giving cumulative reached ~$19.2B by end-2024 per 'given $19B since divorce' headlines from mid-2025 retrospectives; subtracting prior-year running totals yields ~$2B for 2024. Confidence lower than other years because Scott's year-over-year breakdowns rely on cumulative-minus-prior arithmetic, not a 2024-specific disclosure.",
+      "amount_usd_note": "Approximate residual \u2014 Yield Giving cumulative reached ~$19.2B by end-2024 per 'given $19B since divorce' headlines from mid-2025 retrospectives; subtracting prior-year running totals yields ~$2B for 2024. Confidence lower than other years because Scott's year-over-year breakdowns rely on cumulative-minus-prior arithmetic, not a 2024-specific disclosure.",
       "source_type": "announcement_arithmetic",
       "source_url": "https://people.com/since-jeff-bezos-divorce-mackenzie-scott-given-away-over-19-billion-11709699",
       "retrieved_at": "2026-04-23",
@@ -114,7 +126,10 @@
     {
       "event_id": "scott_yield_2019_2022",
       "event_role": "grant_out",
-      "year_range": [2019, 2022],
+      "year_range": [
+        2019,
+        2022
+      ],
       "donor_entity": "MacKenzie Scott (via Lost Horse LLC / DAFs)",
       "amount_usd": 15000000000,
       "amount_usd_note": "Residual: cumulative declared $26.3B (end-2025) minus 2025 ($7.1B) minus 2024 (~$2B) minus 2023 ($2.2B) = ~$15B across Dec-2020 through end-2022. Sub-year split publicly reported: $4.2B Dec 2020, $2.7B June 2021, additional 2022 tranches. High confidence in the ROLLUP; medium confidence in per-year attribution.",
@@ -126,7 +141,10 @@
     {
       "event_id": "scott_cumulative_headline_2026",
       "event_role": "grant_out_cumulative",
-      "year_range": [2019, 2025],
+      "year_range": [
+        2019,
+        2025
+      ],
       "donor_entity": "MacKenzie Scott (via Yield Giving network: Lost Horse LLC + DAFs)",
       "recipient": "2,700+ nonprofit organizations",
       "amount_usd": 26300000000,
@@ -135,10 +153,27 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "yield_giving_headline": "$26,000,000,000+ in 2,700+ gifts to non-profit teams",
-      "methodology_note": "This is the canonical rollup number Scott publishes. Sub-events scott_yield_2019_2022 + scott_yield_2023 + scott_yield_2024 + scott_yield_2025 add to ~$26.3B. Do NOT double-count this cumulative row against the per-year rows in observable_giving — use per-year rows, treat cumulative row as validation only. Panorama Global notes ~45% of individual grant amounts on database are undisclosed, so the $26.3B aggregate is Scott-declared but not bottom-up reconcilable from the public gift list."
+      "methodology_note": "This is the canonical rollup number Scott publishes. Sub-events scott_yield_2019_2022 + scott_yield_2023 + scott_yield_2024 + scott_yield_2025 add to ~$26.3B. Do NOT double-count this cumulative row against the per-year rows in observable_giving \u2014 use per-year rows, treat cumulative row as validation only. Panorama Global notes ~45% of individual grant amounts on database are undisclosed, so the $26.3B aggregate is Scott-declared but not bottom-up reconcilable from the public gift list."
+    },
+    {
+      "event_role": "transfer_in",
+      "year": 2025,
+      "date_precision": "year",
+      "donor_entity": "MacKenzie Scott",
+      "recipient": "Lost Horse LLC",
+      "amount_usd": 26000000000.0,
+      "source_type": "philanthropic_llc_commitment",
+      "source_url": "https://www.ceotodaymagazine.com/2025/02/mackenzie-scotts-monumental-donations-a-legacy-of-philanthropy/",
+      "confidence": "high",
+      "note": "Lost Horse LLC (Seattle, est. late 2019) is MacKenzie Scott's family-office vehicle that orchestrates her giving (paid out via DAFs and direct grants). Cumulative announced giving \u2248$26B as of 2025 (including $7.2B in 2025 alone). Unusual \u2014 Lost Horse is opaque but Scott self-publishes a recipient database (yieldgiving.com).",
+      "regen_source": "llcs",
+      "event_id": "mackenzie_scott_transfer_in_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "scott_gp_2019",
@@ -158,7 +193,6 @@
       "ips_note": "IPS PDF WebFetch returned encoded binary rather than parsed text at fetch time; Scott is NOT on IPS's 'pledgers who have not fulfilled' list per corroborating secondary coverage and Fortune's characterization of her as 'most generous philanthropist' ranking. TODO: pull IPS PDF via local parser to cite exact Scott entry."
     }
   ],
-
   "political_giving": {
     "classification": "MINIMAL_NOT_TRACKED",
     "substitution_note": "No significant political giving identified for Scott in the current news-search sweep. Scott is not a known political donor in the Ellison/Musk/Thiel sense; she has not funded partisan super-PACs at scale. Null signal, not a claim of zero.",
@@ -166,10 +200,9 @@
     "observed_total_note": "FEC API direct-pull not yet run (Phase 1.3). Placeholder zero; expect to remain at or near zero upon verification.",
     "sources": []
   },
-
   "detected_vehicles": {
     "foundations_active": [],
-    "foundations_note": "Scott does NOT maintain a private foundation or any 501(c)(3) bearing her name. This is confirmed by Inside Philanthropy: 'Scott does not use a foundation that would require 990s with grants lists.' Absence of 990-PF is by design, not an oversight — it is the central methodological puzzle.",
+    "foundations_note": "Scott does NOT maintain a private foundation or any 501(c)(3) bearing her name. This is confirmed by Inside Philanthropy: 'Scott does not use a foundation that would require 990s with grants lists.' Absence of 990-PF is by design, not an oversight \u2014 it is the central methodological puzzle.",
     "foundations_terminated": [],
     "dafs_detected": [
       {
@@ -188,7 +221,7 @@
         "retrieved_at": "2026-04-23"
       }
     ],
-    "dafs_note": "KEY METHODOLOGY POINT: Scott is simultaneously one of the most TRANSPARENT and most OPAQUE billionaires on the Forbes list. She publishes grants OUT in detail (2,700+ recipients, $26.3B cumulative, names and dollar amounts for ~55% of grants on the Yield Giving database). But grants IN to her DAFs — i.e. when she transfers Amazon stock into a Fidelity Charitable / Vanguard Charitable / similar sponsor account — she does not disclose by year. This is the specific reason Chronicle of Philanthropy excludes her from the Philanthropy 50: Chronicle methodology requires donors to disclose the YEAR of DAF inflows, and Scott refuses to supply that. The $26.3B 'given' figure is therefore the rate at which her DAFs (plus Lost Horse LLC direct distribution) are disbursing to final 501(c)(3) recipients, not the rate at which Scott is relinquishing economic control of her wealth.",
+    "dafs_note": "KEY METHODOLOGY POINT: Scott is simultaneously one of the most TRANSPARENT and most OPAQUE billionaires on the Forbes list. She publishes grants OUT in detail (2,700+ recipients, $26.3B cumulative, names and dollar amounts for ~55% of grants on the Yield Giving database). But grants IN to her DAFs \u2014 i.e. when she transfers Amazon stock into a Fidelity Charitable / Vanguard Charitable / similar sponsor account \u2014 she does not disclose by year. This is the specific reason Chronicle of Philanthropy excludes her from the Philanthropy 50: Chronicle methodology requires donors to disclose the YEAR of DAF inflows, and Scott refuses to supply that. The $26.3B 'given' figure is therefore the rate at which her DAFs (plus Lost Horse LLC direct distribution) are disbursing to final 501(c)(3) recipients, not the rate at which Scott is relinquishing economic control of her wealth.",
     "llcs_philanthropic": [
       {
         "name": "Lost Horse LLC",
@@ -202,23 +235,22 @@
           "https://altss.com/profile/lost-horse-llc-mackenzie-scott-family-office"
         ],
         "retrieved_at": "2026-04-23",
-        "methodology_note": "Lost Horse is distinct from CZI / Emerson Collective etc. in that Scott's public story emphasizes giving TO nonprofits (unrestricted grants), not strategic for-profit investing. Inside Philanthropy 2024 notes that Scott has started making some for-profit/hybrid investments through LLC vehicles, and that these are 'inherently opaque' and may never be fully accounted for — but the dollar volume appears small relative to the nonprofit giving through Yield."
+        "methodology_note": "Lost Horse is distinct from CZI / Emerson Collective etc. in that Scott's public story emphasizes giving TO nonprofits (unrestricted grants), not strategic for-profit investing. Inside Philanthropy 2024 notes that Scott has started making some for-profit/hybrid investments through LLC vehicles, and that these are 'inherently opaque' and may never be fully accounted for \u2014 but the dollar volume appears small relative to the nonprofit giving through Yield."
       }
     ],
-    "llcs_note": "Yield Giving is NOT a separate legal entity — it is the public communications / grants-database front-end for distributions coming out of Lost Horse LLC and her DAFs. Yield = website + publication vehicle; Lost Horse = operating LLC; DAFs = tax-deductible transfer vehicles.",
+    "llcs_note": "Yield Giving is NOT a separate legal entity \u2014 it is the public communications / grants-database front-end for distributions coming out of Lost Horse LLC and her DAFs. Yield = website + publication vehicle; Lost Horse = operating LLC; DAFs = tax-deductible transfer vehicles.",
     "for_profit_hybrid_vehicles": [],
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. No public reporting of offshore structures.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. No public reporting of offshore structures.",
     "trusts_disclosed_existence_structure_unknown": []
   },
-
   "red_flags": [],
   "red_flags_not_present": [
-    "GIVING_PLEDGE_UNFULFILLED (Scott is one of the most-forward pledge fulfillers — IPS 2025 context and Fortune Mar 2026 coverage treat her as the anti-Ellison example)",
+    "GIVING_PLEDGE_UNFULFILLED (Scott is one of the most-forward pledge fulfillers \u2014 IPS 2025 context and Fortune Mar 2026 coverage treat her as the anti-Ellison example)",
     "LOW_PAYOUT (No foundation exists; payout rate is not applicable. Yield Giving reports full disbursement to 501(c)(3) recipients each year.)",
     "HIGH_OFFICER_COMP (No foundation. Lost Horse LLC compensation is private but irrelevant to payout rate test.)",
     "POLITICAL_DOMINATES_CHARITABLE (No meaningful political giving observed.)",
-    "NO_OBSERVABLE_GIVING (Observable giving $26.3B is ~69% of current net worth — the opposite of the red flag.)"
+    "NO_OBSERVABLE_GIVING (Observable giving $26.3B is ~69% of current net worth \u2014 the opposite of the red flag.)"
   ],
   "red_flags_noteworthy_but_not_scored": [
     {
@@ -232,23 +264,22 @@
       "source_url": "https://panoramaglobal.org/knowledge-center/articles/understanding-mackenzie-scotts-december-2025-giving/"
     }
   ],
-
   "rollup": {
     "observable_giving_usd": 26300000000,
-    "observable_giving_method": "Scott's self-published cumulative total through Yield Giving (2019 through end-2025), cross-checked against per-year press announcements. Per-year rows (scott_yield_2019_2022 + scott_yield_2023 + scott_yield_2024 + scott_yield_2025) sum to ~$26.3B and match the scott_cumulative_headline_2026 row — used as validation, not additive. Methodology departs from Chronicle of Philanthropy: Chronicle excludes Scott because she won't date her DAF inflows; we include her because our observable-giving definition is 'dollars landing in a 501(c)(3)', which Scott demonstrably publishes.",
-    "observable_giving_caveat": "$26.3B is DISBURSED from Scott-controlled vehicles to final 501(c)(3) recipients. It is NOT the same number as 'economic control relinquished' (which would be gross transfers INTO Lost Horse + DAFs — Scott does not disclose the latter). Under a stricter Chronicle-style methodology, Scott's observable would be $0 for years in which she did not verify DAF inflow timing. We reject that methodology as hostile to actual giving measurement.",
+    "observable_giving_method": "Scott's self-published cumulative total through Yield Giving (2019 through end-2025), cross-checked against per-year press announcements. Per-year rows (scott_yield_2019_2022 + scott_yield_2023 + scott_yield_2024 + scott_yield_2025) sum to ~$26.3B and match the scott_cumulative_headline_2026 row \u2014 used as validation, not additive. Methodology departs from Chronicle of Philanthropy: Chronicle excludes Scott because she won't date her DAF inflows; we include her because our observable-giving definition is 'dollars landing in a 501(c)(3)', which Scott demonstrably publishes.",
+    "observable_giving_caveat": "$26.3B is DISBURSED from Scott-controlled vehicles to final 501(c)(3) recipients. It is NOT the same number as 'economic control relinquished' (which would be gross transfers INTO Lost Horse + DAFs \u2014 Scott does not disclose the latter). Under a stricter Chronicle-style methodology, Scott's observable would be $0 for years in which she did not verify DAF inflow timing. We reject that methodology as hostile to actual giving measurement.",
     "observable_giving_todo": [
       "Parse Yield Giving grants database CSV to get bottom-up recipient-level roll-up; compare to $26.3B headline figure and flag the ~45% undisclosed-amount gap.",
       "Attempt SEC Form 4 search for G-transactions against Amazon stock attributable to Scott's CIK; any unlabeled G-transactions post-2019 would be direct 501(c)(3) stock gifts.",
       "Check Amazon proxy filings for stock-ownership drops attributable to Scott's personal holdings as an additional cross-check on disposals."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 2261800000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.85 × $38B = $32.3B; tenure = 7 years → weight 0.7. Expected = $32.3B × 10% × 0.7 = $2.26B. Scott's observable $26.3B is ~11.6x this strict tenure-adjusted 10% norm.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.85 \u00d7 $38B = $32.3B; tenure = 7 years \u2192 weight 0.7. Expected = $32.3B \u00d7 10% \u00d7 0.7 = $2.26B. Scott's observable $26.3B is ~11.6x this strict tenure-adjusted 10% norm.",
     "observable_ratio_to_expected": 11.63,
     "observable_ratio_to_current_nw": 0.692,
     "hidden_upper_usd": {
       "daf_uplift_usd": 0,
-      "daf_uplift_note": "DAFs are PRESENT but the uncertainty is about INFLOW TIMING, not about whether dollars are reaching charity. Since observable_giving already captures outflows to 501(c)(3) recipients, the DAF hidden uplift here is zero — we are not missing giving, we are merely unable to date the intermediate transfer step. Zero uplift.",
+      "daf_uplift_note": "DAFs are PRESENT but the uncertainty is about INFLOW TIMING, not about whether dollars are reaching charity. Since observable_giving already captures outflows to 501(c)(3) recipients, the DAF hidden uplift here is zero \u2014 we are not missing giving, we are merely unable to date the intermediate transfer step. Zero uplift.",
       "llc_uplift_usd": 200000000,
       "llc_uplift_note": "Inside Philanthropy 2024 end-of-year essay analysis notes Scott has begun making some for-profit/hybrid investments through Lost Horse LLC that are not listed on the Yield Giving database. Dollar volume appears modest relative to the nonprofit giving. Set an envelope of $200M to acknowledge existence without overweighting.",
       "offshore_uplift_usd": 0,
@@ -264,10 +295,9 @@
     },
     "observable_plus_hidden_ratio_to_expected": 11.72,
     "tier": "On_Track (Model_Pledger)",
-    "tier_rule": "Scott passes ALL positive-tier criteria by a wide margin: observable giving (>$26B) exceeds the 10% norm by 11x; cumulative giving represents ~72% of 2019 wealth basis and ~69% of current net worth; Giving Pledge commitment ('safe is empty') is demonstrably being executed against at ~$3.75B/year run-rate; she is explicitly highlighted by Fortune, IPS-aligned commentary, and The Conversation as the ANTI-Ellison example of what pledge fulfillment looks like. The only reason she is not classed as FULFILLED is that her pledge language ('safe is empty') is functionally asymptotic — she has not, in fact, emptied the safe, because Amazon stock appreciation has outpaced her liquidation.",
+    "tier_rule": "Scott passes ALL positive-tier criteria by a wide margin: observable giving (>$26B) exceeds the 10% norm by 11x; cumulative giving represents ~72% of 2019 wealth basis and ~69% of current net worth; Giving Pledge commitment ('safe is empty') is demonstrably being executed against at ~$3.75B/year run-rate; she is explicitly highlighted by Fortune, IPS-aligned commentary, and The Conversation as the ANTI-Ellison example of what pledge fulfillment looks like. The only reason she is not classed as FULFILLED is that her pledge language ('safe is empty') is functionally asymptotic \u2014 she has not, in fact, emptied the safe, because Amazon stock appreciation has outpaced her liquidation.",
     "tier_published_caveat": "Scott is the canonical methodological edge case for the Scrooge List: she is simultaneously one of the MOST observed (detailed grant-recipient database) and one of the MOST opaque (no foundation, undated DAF inflows, family-office LLC) billionaires in the US cohort. Her exclusion from Chronicle of Philanthropy's Philanthropy 50 (2024, 2025, 2026) despite giving more than the list's #1 ranked donor in 2025 ($7.1B vs. Bloomberg's $4.3B) is, by itself, evidence that standard philanthropy-tracking infrastructure is broken. The scrooge-list methodology choice to credit Scott's self-published grants-to-501(c)(3) totals is a deliberate departure from Chronicle methodology and should be flagged in methodology prose."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 8.0,
     "components": {
@@ -276,9 +306,8 @@
       "pledge_breach_penalty_20pct": 0.0,
       "red_flag_penalty_20pct": 0.0
     },
-    "note": "Computed with v2 formula for continuity. Giving gap is zero because Scott is over-delivering vs. 10% norm. Tenure penalty partial because she's only 7 years as a billionaire. Pledge breach zero (model pledger). Red flags zero. DO NOT PUBLISH this number — we publish tiers only per PLAN.md. For reference, v2 scrooge_score on the sample output table was 52.5 and is now understood to be miscalibrated: the v2 pipeline did not properly credit Scott's cumulative $17.1B observable against her $36B net worth, and used a punitive rather than rewarding curve. v3 reference implementation fixes this."
+    "note": "Computed with v2 formula for continuity. Giving gap is zero because Scott is over-delivering vs. 10% norm. Tenure penalty partial because she's only 7 years as a billionaire. Pledge breach zero (model pledger). Red flags zero. DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md. For reference, v2 scrooge_score on the sample output table was 52.5 and is now understood to be miscalibrated: the v2 pipeline did not properly credit Scott's cumulative $17.1B observable against her $36B net worth, and used a punitive rather than rewarding curve. v3 reference implementation fixes this."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
     "planned_outreach_route": "Yield Giving press email (yieldgiving.com contact form) + Lost Horse LLC via Seattle registered agent. Realistic expectation per Chronicle and Fortune reporting: Scott's team does not respond to press inquiries. Document the outreach and non-response; do not hold publication.",
@@ -287,43 +316,247 @@
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
     "VERIFY: Pull the full Yield Giving grants database (CSV if available; otherwise scrape HTML) to bottom-up reconcile the $26.3B headline figure and quantify the ~45% undisclosed-amount gap.",
     "VERIFY: Pull IPS Giving Pledge at 15 PDF via local parser (WebFetch returned binary). Confirm Scott is classed as on-track / exemplary, not on the 247-of-256 unfulfilled list.",
     "VERIFY: SEC Form 4 G-transactions against Scott's CIK for stock gifts not captured in dollar totals (Scott gives cash AND stock; stock gifts may be separately reportable).",
-    "VERIFY: Amazon proxy filings for Scott's post-divorce stock-ownership arc (139M shares → ~81M shares per Bloomberg 2025).",
-    "VERIFY: FEC bulk pull for Scott's political giving floor — expected to be ~zero, document for completeness.",
-    "VERIFY: Forbes 2026 profile actual rank and net worth (WebFetch returned 403 at retrieval; rank #84 confirmed via Brave Search snippet — consider resolving via cached Wayback or mobile client).",
+    "VERIFY: Amazon proxy filings for Scott's post-divorce stock-ownership arc (139M shares \u2192 ~81M shares per Bloomberg 2025).",
+    "VERIFY: FEC bulk pull for Scott's political giving floor \u2014 expected to be ~zero, document for completeness.",
+    "VERIFY: Forbes 2026 profile actual rank and net worth (WebFetch returned 403 at retrieval; rank #84 confirmed via Brave Search snippet \u2014 consider resolving via cached Wayback or mobile client).",
     "CLASSIFY: Whether Scott's 'safe is empty' language counts as a percentage pledge for IPS-compatible analysis, or whether she should be flagged as 'pledged, no target' which is its own edge-case category."
   ],
-
   "sources_all": [
-    {"url": "https://www.forbes.com/profile/mackenzie-scott/", "retrieved_at": "2026-04-23", "used_for": "Forbes 2026 rank #84 (WebFetch 403; rank sourced from Brave Search snippet)"},
-    {"url": "https://www.givingpledge.org/pledger/mackenzie-scott/", "retrieved_at": "2026-04-23", "used_for": "2019 pledge letter, 'safe is empty' verbatim text, pledge-without-target structure"},
-    {"url": "https://yieldgiving.com/", "retrieved_at": "2026-04-23", "used_for": "Cumulative giving headline ($26B+ in 2,700+ gifts); self-published database reference"},
-    {"url": "https://www.cnbc.com/2025/12/13/mackenzie-scott-revealed-her-total-charitable-donations-for-2025.html", "retrieved_at": "2026-04-23", "used_for": "2025 $7.1B total; cumulative $26.3B since 2019"},
-    {"url": "https://www.cbsnews.com/news/mackenzie-scott-donations-nonprofits-2025/", "retrieved_at": "2026-04-23", "used_for": "$7.1B 2025 figure corroboration"},
-    {"url": "https://www.nytimes.com/2025/12/09/business/mackenzie-scott-philanthropy.html", "retrieved_at": "2026-04-23", "used_for": "Quiet-edit announcement methodology; 225 additional orgs in 2025 (per NYT count)"},
-    {"url": "https://www.alliancemagazine.org/blog/mackenzie-scott-gave-7-billion-in-2025-nears-bill-gates-total-lifetime-philanthropy/", "retrieved_at": "2026-04-23", "used_for": "Gates-comparison framing; 2025 cumulative"},
-    {"url": "https://panoramaglobal.org/knowledge-center/articles/understanding-mackenzie-scotts-december-2025-giving/", "retrieved_at": "2026-04-23", "used_for": "186 grants in Dec 2025; ~45% undisclosed-amount gap methodology note"},
-    {"url": "https://www.cnbc.com/2026/03/13/philanthropy-charity-wealthy.html", "retrieved_at": "2026-04-23", "used_for": "Mar 2026 CNBC 'biggest names missing from top philanthropists list' — Scott notably absent (WebFetch 403; title + framing from search snippet)"},
-    {"url": "https://fortune.com/2026/03/11/mackenzie-scott-philanthropy-2025-list-vs-jeff-bezos-giving-chronicle-of-philanthropy/", "retrieved_at": "2026-04-23", "used_for": "Chronicle exclusion reasoning: DAF inflow disclosure refusal"},
-    {"url": "https://www.independent.co.uk/news/world/americas/michael-bloomberg-bill-gates-chronicle-of-philanthropy-b2937929.html", "retrieved_at": "2026-04-23", "used_for": "DAF likely-inclusion language"},
-    {"url": "https://ejewishphilanthropy.com/bloomberg-again-named-top-philanthropist-despite-being-outspent-by-dells-and-scott/", "retrieved_at": "2026-04-23", "used_for": "Scott outspent Bloomberg but excluded"},
-    {"url": "https://theconversation.com/gifts-from-top-50-us-philanthropists-jumped-to-22-4b-in-2025-mike-bloomberg-bill-gates-and-the-estate-of-paul-allen-lead-a-list-of-the-biggest-givers-276825", "retrieved_at": "2026-04-23", "used_for": "North Carolina State prof (Schmitz) quote: 'I find it odd that MacKenzie Scott isn't on this list.'"},
-    {"url": "https://fortune.com/2026/02/26/mackenzie-scott-more-generous-philanthropist-than-ex-husband-jeff-bezos-amazon-founder-billionaire/", "retrieved_at": "2026-04-23", "used_for": "Net worth $38.9B current; $7.2B 2025 (Fortune variant of $7.1B); Bezos lifetime comparison"},
-    {"url": "https://fortune.com/article/mackenzie-scott-26-billion-donations-net-worth-amazon-shares/", "retrieved_at": "2026-04-23", "used_for": "Amazon stake arc: ~42% of shares sold/donated, 58M shares ~$12.6B; Forbes 'Most Generous 2025' rank #3; ~40% of NW donated"},
-    {"url": "https://people.com/since-jeff-bezos-divorce-mackenzie-scott-given-away-over-19-billion-11709699", "retrieved_at": "2026-04-23", "used_for": "$36B divorce settlement figure; mid-2025 cumulative $19B anchor for 2024 residual arithmetic"},
-    {"url": "https://sodomalaw.com/mackenzie-scott-and-the-rise-of-post-divorce-philanthropy/", "retrieved_at": "2026-04-23", "used_for": "4% Amazon stake, IRC §1041 tax-free context"},
-    {"url": "https://www.timesnownews.com/business-economy/companies/why-jeff-bezos-ex-wife-mackenzie-scott-is-selling-amazon-shares-to-give-away-billions-article-153244555", "retrieved_at": "2026-04-23", "used_for": "Holdings arc 139M → 81.1M shares (Bloomberg citation)"},
-    {"url": "https://www.inc.com/leila-sheridan/how-much-mackenzie-scott-net-worth/91306802", "retrieved_at": "2026-04-23", "used_for": "Nov 2025 Forbes real-time $34B rank #58"},
-    {"url": "https://www.devex.com/organizations/lost-horse-llc-199841", "retrieved_at": "2026-04-23", "used_for": "Lost Horse LLC family-office identity, 2019 establishment"},
-    {"url": "https://altss.com/profile/lost-horse-llc-mackenzie-scott-family-office", "retrieved_at": "2026-04-23", "used_for": "Lost Horse LLC scope: liquidity planning + Yield Giving disbursement"},
-    {"url": "https://www.forbes.com/sites/phoebeliu/2023/12/08/mackenzie-scott-has-donated-22-billion-to-charity-this-year/", "retrieved_at": "2026-04-23", "used_for": "2023 $2.2B total; Delaware-registered Lost Horse LLC note"},
-    {"url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/mackenzie-scott", "retrieved_at": "2026-04-23", "used_for": "No foundation / no tax-exempt org; Yield = website, 'value by giving up control'"},
-    {"url": "https://www.insidephilanthropy.com/home/2022-12-15-mackenzie-scotts-website-and-grants-database-has-arrived-heres-what-we-learned", "retrieved_at": "2026-04-23", "used_for": "Yield database launched Dec 2022 with 1,604 grantees; no 990s required because no foundation"},
-    {"url": "https://www.insidephilanthropy.com/home/four-takeaways-from-mackenzie-scotts-2024-end-of-year-essay", "retrieved_at": "2026-04-23", "used_for": "For-profit/hybrid LLC investment noted — justifies modest llc_uplift envelope"},
-    {"url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf", "retrieved_at": "2026-04-23", "used_for": "IPS report reference (PDF parsing failed at fetch; flagged for local re-parse in verification TODOs)"}
+    {
+      "url": "https://www.forbes.com/profile/mackenzie-scott/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes 2026 rank #84 (WebFetch 403; rank sourced from Brave Search snippet)"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/mackenzie-scott/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2019 pledge letter, 'safe is empty' verbatim text, pledge-without-target structure"
+    },
+    {
+      "url": "https://yieldgiving.com/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Cumulative giving headline ($26B+ in 2,700+ gifts); self-published database reference"
+    },
+    {
+      "url": "https://www.cnbc.com/2025/12/13/mackenzie-scott-revealed-her-total-charitable-donations-for-2025.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2025 $7.1B total; cumulative $26.3B since 2019"
+    },
+    {
+      "url": "https://www.cbsnews.com/news/mackenzie-scott-donations-nonprofits-2025/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$7.1B 2025 figure corroboration"
+    },
+    {
+      "url": "https://www.nytimes.com/2025/12/09/business/mackenzie-scott-philanthropy.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Quiet-edit announcement methodology; 225 additional orgs in 2025 (per NYT count)"
+    },
+    {
+      "url": "https://www.alliancemagazine.org/blog/mackenzie-scott-gave-7-billion-in-2025-nears-bill-gates-total-lifetime-philanthropy/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Gates-comparison framing; 2025 cumulative"
+    },
+    {
+      "url": "https://panoramaglobal.org/knowledge-center/articles/understanding-mackenzie-scotts-december-2025-giving/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "186 grants in Dec 2025; ~45% undisclosed-amount gap methodology note"
+    },
+    {
+      "url": "https://www.cnbc.com/2026/03/13/philanthropy-charity-wealthy.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Mar 2026 CNBC 'biggest names missing from top philanthropists list' \u2014 Scott notably absent (WebFetch 403; title + framing from search snippet)"
+    },
+    {
+      "url": "https://fortune.com/2026/03/11/mackenzie-scott-philanthropy-2025-list-vs-jeff-bezos-giving-chronicle-of-philanthropy/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Chronicle exclusion reasoning: DAF inflow disclosure refusal"
+    },
+    {
+      "url": "https://www.independent.co.uk/news/world/americas/michael-bloomberg-bill-gates-chronicle-of-philanthropy-b2937929.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "DAF likely-inclusion language"
+    },
+    {
+      "url": "https://ejewishphilanthropy.com/bloomberg-again-named-top-philanthropist-despite-being-outspent-by-dells-and-scott/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Scott outspent Bloomberg but excluded"
+    },
+    {
+      "url": "https://theconversation.com/gifts-from-top-50-us-philanthropists-jumped-to-22-4b-in-2025-mike-bloomberg-bill-gates-and-the-estate-of-paul-allen-lead-a-list-of-the-biggest-givers-276825",
+      "retrieved_at": "2026-04-23",
+      "used_for": "North Carolina State prof (Schmitz) quote: 'I find it odd that MacKenzie Scott isn't on this list.'"
+    },
+    {
+      "url": "https://fortune.com/2026/02/26/mackenzie-scott-more-generous-philanthropist-than-ex-husband-jeff-bezos-amazon-founder-billionaire/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Net worth $38.9B current; $7.2B 2025 (Fortune variant of $7.1B); Bezos lifetime comparison"
+    },
+    {
+      "url": "https://fortune.com/article/mackenzie-scott-26-billion-donations-net-worth-amazon-shares/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Amazon stake arc: ~42% of shares sold/donated, 58M shares ~$12.6B; Forbes 'Most Generous 2025' rank #3; ~40% of NW donated"
+    },
+    {
+      "url": "https://people.com/since-jeff-bezos-divorce-mackenzie-scott-given-away-over-19-billion-11709699",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$36B divorce settlement figure; mid-2025 cumulative $19B anchor for 2024 residual arithmetic"
+    },
+    {
+      "url": "https://sodomalaw.com/mackenzie-scott-and-the-rise-of-post-divorce-philanthropy/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "4% Amazon stake, IRC \u00a71041 tax-free context"
+    },
+    {
+      "url": "https://www.timesnownews.com/business-economy/companies/why-jeff-bezos-ex-wife-mackenzie-scott-is-selling-amazon-shares-to-give-away-billions-article-153244555",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Holdings arc 139M \u2192 81.1M shares (Bloomberg citation)"
+    },
+    {
+      "url": "https://www.inc.com/leila-sheridan/how-much-mackenzie-scott-net-worth/91306802",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Nov 2025 Forbes real-time $34B rank #58"
+    },
+    {
+      "url": "https://www.devex.com/organizations/lost-horse-llc-199841",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Lost Horse LLC family-office identity, 2019 establishment"
+    },
+    {
+      "url": "https://altss.com/profile/lost-horse-llc-mackenzie-scott-family-office",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Lost Horse LLC scope: liquidity planning + Yield Giving disbursement"
+    },
+    {
+      "url": "https://www.forbes.com/sites/phoebeliu/2023/12/08/mackenzie-scott-has-donated-22-billion-to-charity-this-year/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2023 $2.2B total; Delaware-registered Lost Horse LLC note"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/mackenzie-scott",
+      "retrieved_at": "2026-04-23",
+      "used_for": "No foundation / no tax-exempt org; Yield = website, 'value by giving up control'"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2022-12-15-mackenzie-scotts-website-and-grants-database-has-arrived-heres-what-we-learned",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Yield database launched Dec 2022 with 1,604 grantees; no 990s required because no foundation"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/four-takeaways-from-mackenzie-scotts-2024-end-of-year-essay",
+      "retrieved_at": "2026-04-23",
+      "used_for": "For-profit/hybrid LLC investment noted \u2014 justifies modest llc_uplift envelope"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-23",
+      "used_for": "IPS report reference (PDF parsing failed at fetch; flagged for local re-parse in verification TODOs)"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100333085",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100334819",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100309656",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "ceotodaymagazine.com",
+      "url": "https://www.ceotodaymagazine.com/2025/02/mackenzie-scotts-monumental-donations-a-legacy-of-philanthropy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=01-68-60",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-02-03",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-93-56",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-71-80",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-80-29",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=10-46-48",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-73-30",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-17-56",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-96-90",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-28-00",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-40-05",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-93-04",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95e0226079564a9d"
+    }
   ]
 }

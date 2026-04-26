@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research",
+  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research + regen_v3@sha256-dbe57dabc569a193 + regen_v3@sha256-33d8bc295104af41",
   "person": {
     "name_display": "Miriam Adelson",
     "name_legal": "Miriam Ochshorn Adelson",
@@ -335,6 +335,146 @@
       "confidence": "medium",
       "dedup_note": "Likely flowed through AFF \u2014 already inside 2019 AFF grants_out of $117.3M. Do NOT add separately.",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Dr Miriam And Sheldon G Adelson Medical Research Foundation",
+      "donor_ein": "04-7023433",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 52180846.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/047023433",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $0.6M; payout rate 8312.1%.",
+      "regen_source": "propublica",
+      "event_id": "miriam_adelson_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe57dabc569a193",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 48687859.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/047024330",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $0.0M; payout rate 144264.6%.",
+      "regen_source": "propublica",
+      "event_id": "miriam_adelson_grant_out_2015_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe57dabc569a193",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2018,
+      "date_precision": "year",
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 1825000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/047024330/201933199349104703/full",
+      "confidence": "high",
+      "note": "Adelson Family Foundation \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 1 grant line(s) on 990-PF Part XV for FY 2018; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "miriam_adelson_grant_out_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 100000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/047024330/202043169349102224/full",
+      "confidence": "high",
+      "note": "Adelson Family Foundation \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 1 grant line(s) on 990-PF Part XV for FY 2019; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "miriam_adelson_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 500000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/047024330/202103169349105100/full",
+      "confidence": "high",
+      "note": "Adelson Family Foundation \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 1 grant line(s) on 990-PF Part XV for FY 2020; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "miriam_adelson_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "recipient": "Fidelity Investments Charitable Gift Fund",
+      "amount_usd": 250000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/047024330/202243189349104944/full",
+      "confidence": "high",
+      "note": "Adelson Family Foundation \u2192 Fidelity Investments Charitable Gift Fund (DAF sponsor EIN 11-0303001); 1 grant line(s) on 990-PF Part XV for FY 2021; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "miriam_adelson_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Adelson Family Foundation",
+      "donor_ein": "04-7024330",
+      "recipient": "Vanguard Charitable Endowment Program",
+      "amount_usd": 255000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/047024330/202513219349106496/full",
+      "confidence": "high",
+      "note": "Adelson Family Foundation \u2192 Vanguard Charitable Endowment Program (DAF sponsor EIN 23-2888152); 1 grant line(s) on 990-PF Part XV for FY 2024; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "miriam_adelson_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -600,8 +740,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 2223334891,
     "ratio_observable_to_5pct_tenure": 0.274,
-    "observable_from_events_usd": 1437166109,
-    "observable_drift_pct": 0.713,
+    "observable_from_events_usd": 1540964814,
+    "observable_drift_pct": 0.836,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -735,6 +875,72 @@
       "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000310&name=Adelson,+Miriam+O.&super_only=N&type=I",
       "retrieved_at": "2026-04-24",
       "used_for": "OpenSecrets Miriam profile (citation target \u2014 direct fetch 403'd)"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/047023433",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe57dabc569a193"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/047024330",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe57dabc569a193"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/047024330/201933199349104703/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/047024330/202043169349102224/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/047024330/202103169349105100/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/047024330/202243189349104944/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/047024330/202513219349106496/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-85-15",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-35-51",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-30-38",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-61-09",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33d8bc295104af41"
     }
   ],
   "_source_file": "miriam_adelson.v3.json"

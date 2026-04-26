@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching larry_ellison.v3.json schema. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Knight is the canonical 'proven giver who did not sign the Giving Pledge' \u2014 deep observable giving record even without the pledge letter.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research + regen_v3@sha256-ed0be3930c554daf + regen_v3@sha256-a51af5aba0eadf31",
   "person": {
     "name_display": "Phil Knight",
     "name_legal": "Philip Hampson Knight",
@@ -287,6 +287,101 @@
       "confidence": "high",
       "status": "ANNOUNCED_DISBURSEMENT_SCHEDULE_NOT_PUBLIC",
       "notes": "Largest single donation ever to a U.S. university/academic health center, exceeding Bloomberg's $1.8B to Johns Hopkins (2018). Announced as 'commitment' \u2014 disbursement schedule not disclosed. Knight is 88; a multi-year pledge with him as primary donor has age-compression risk. Classified as pledge until tranche-level disbursements appear in 990-PF or OHSU 990 Schedule B. Top Chronicle of Philanthropy 2025 gift."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 87236354.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $2272.6M; payout rate 3.8%.",
+      "regen_source": "propublica",
+      "event_id": "phil_knight_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ed0be3930c554daf",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 108143367.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $3232.4M; payout rate 3.3%.",
+      "regen_source": "propublica",
+      "event_id": "phil_knight_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ed0be3930c554daf",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 202443977.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $3435.5M; payout rate 5.9%.",
+      "regen_source": "propublica",
+      "event_id": "phil_knight_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ed0be3930c554daf",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 252585656.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $3385.6M; payout rate 7.5%.",
+      "regen_source": "propublica",
+      "event_id": "phil_knight_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ed0be3930c554daf",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Knight Foundation",
+      "donor_ein": "91-1791788",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 244066344.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/911791788",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $4230.1M; payout rate 5.8%.",
+      "regen_source": "propublica",
+      "event_id": "phil_knight_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ed0be3930c554daf",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -600,6 +695,138 @@
       "url": "https://projects.propublica.org/nonprofits/organizations/475058173",
       "retrieved_at": "2026-04-23",
       "used_for": "DISAMBIGUATION: Knight Family Foundation Basalt CO is UNRELATED \u2014 different Knight family"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82000440",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82003583",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82004146",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82001932",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101823673",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101820903",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101815898",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=00-24-32",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-78-29",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-36-40",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-97-18",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-04-29",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=15-12-11",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-49-12",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-60-88",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-64-63",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-61-23",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-56-14",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-01-15",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-06-22",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-72-03",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a51af5aba0eadf31"
     }
   ]
 }

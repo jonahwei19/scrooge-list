@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching ellison.v3 schema. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research + regen_v3@sha256-3cf3e20805caa5c8 + regen_v3@sha256-dbe68fa7f07805d0",
   "person": {
     "name_display": "Michael Dell",
     "name_legal": "Michael Saul Dell",
@@ -243,6 +243,46 @@
       "confidence": "high",
       "dedup_note": "Within MSDF 2024 $218.9M grants_out per 990-PF. Do NOT add separately.",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Michael & Susan Dell Foundation",
+      "donor_ein": "36-4336415",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 139536766.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $761.6M; payout rate 18.3%.",
+      "regen_source": "propublica",
+      "event_id": "michael_dell_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-3cf3e20805caa5c8",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Michael & Susan Dell Foundation",
+      "donor_ein": "36-4336415",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 199819479.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $5415.3M; payout rate 3.7%.",
+      "regen_source": "propublica",
+      "event_id": "michael_dell_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-3cf3e20805caa5c8",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -444,8 +484,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 79260800000,
     "ratio_observable_to_5pct_tenure": 0.0132,
-    "observable_from_events_usd": 1344200000,
-    "observable_drift_pct": 0.263,
+    "observable_from_events_usd": 1683556245,
+    "observable_drift_pct": 0.582,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -627,6 +667,102 @@
       "url": "https://www.gsb.stanford.edu/faculty-research/case-studies/michael-susan-dell-foundation-technology-enables-social-impact",
       "retrieved_at": "2026-04-23",
       "used_for": "MSDF founding context (1999); strategy"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/169073",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101504415",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100309440",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-87-59",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-75-33",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=21-54-89",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-20-98",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-48-44",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-65-28",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-68-63",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-69-46",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-75-09",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-82-14",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-86-67",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-41-75",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-dbe68fa7f07805d0"
     }
   ],
   "_source_file": "michael_dell.v3.json"

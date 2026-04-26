@@ -2,8 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment_not_charity). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run — Zuckerberg LLC-opacity test case",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 Zuckerberg LLC-opacity test case + regen_v3@sha256-919ca20254936788 + regen_v3@sha256-80dea5cd898db9ac",
   "person": {
     "name_display": "Mark Zuckerberg",
     "name_legal": "Mark Elliot Zuckerberg",
@@ -13,12 +12,14 @@
     "years_as_billionaire_approx": 18,
     "spouse": "Priscilla Chan (co-pledger; co-founder of CZI)"
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 230,
-    "range_usd_billions": [210, 270],
+    "range_usd_billions": [
+      210,
+      270
+    ],
     "as_of": "2026-04",
-    "range_note": "Wide 2026 spread: Forbes RTB showed $251.7B late January 2026 (rank #4, passing Bezos); as of 9 April 2026 a Forbes-cited summary had him at $210.2B (#5); independent estimator at $270B. Forbes 2026 profile page ranks him #5. We use $230B as midpoint. Wikipedia cites $251B as of October 2025 (#3 globally at peak). The ~25% spread mirrors the Ellison case — single-point denominators are unstable.",
+    "range_note": "Wide 2026 spread: Forbes RTB showed $251.7B late January 2026 (rank #4, passing Bezos); as of 9 April 2026 a Forbes-cited summary had him at $210.2B (#5); independent estimator at $270B. Forbes 2026 profile page ranks him #5. We use $230B as midpoint. Wikipedia cites $251B as of October 2025 (#3 globally at peak). The ~25% spread mirrors the Ellison case \u2014 single-point denominators are unstable.",
     "sources": [
       {
         "publisher": "Forbes Real-Time Billionaires (profile)",
@@ -54,10 +55,9 @@
         "retrieval_note": "Full profile blocked 403; Brave snippet confirms ~13% Meta stake per Nov 2025 filing."
       }
     ],
-    "liquidity_estimate_pct": 0.20,
+    "liquidity_estimate_pct": 0.2,
     "liquidity_notes": "Concentrated in Meta Class A/B stock (~13% of Meta; Class B carries 10x voting power). Divesting meaningfully would dilute his voting control, which he has historically not done. Apply 20% liquidity discount for 'giving capacity now' calculations; most wealth is locked in the voting stake."
   },
-
   "cited_events": [
     {
       "event_id": "zuck_czif_2024",
@@ -162,7 +162,10 @@
     {
       "event_id": "zuck_czif_transfers_in_2017_2024",
       "event_role": "transfer_in",
-      "year_range": [2017, 2024],
+      "year_range": [
+        2017,
+        2024
+      ],
       "donor_entity": "Mark Zuckerberg / Priscilla Chan (personal, via Meta stock)",
       "recipient": "Chan Zuckerberg Initiative Foundation (EIN 45-5002209)",
       "amount_usd": 5290200000,
@@ -180,7 +183,7 @@
         "2018": 2200000000,
         "2017": 1900000000
       },
-      "dedup_note": "CRITICAL: These are transfers INTO CZIF (contributions received), NOT out-the-door giving. Per dedup rule, only grants_out count toward observable giving. Double-counting risk if these rows are added to zuck_czif_YYYY grant_out events. ~$5.29B transfers in vs. ~$1.87B grants out 2017-2024 — ~$3.4B sits inside the foundation as undeployed assets, consistent with CZIF's $7.5B 2024 asset base."
+      "dedup_note": "CRITICAL: These are transfers INTO CZIF (contributions received), NOT out-the-door giving. Per dedup rule, only grants_out count toward observable giving. Double-counting risk if these rows are added to zuck_czif_YYYY grant_out events. ~$5.29B transfers in vs. ~$1.87B grants out 2017-2024 \u2014 ~$3.4B sits inside the foundation as undeployed assets, consistent with CZIF's $7.5B 2024 asset base."
     },
     {
       "event_id": "zuck_svcf_2012",
@@ -196,7 +199,7 @@
       "source_url": "https://en.wikipedia.org/wiki/Silicon_Valley_Community_Foundation",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "This is a transfer INTO a DAF (SVCF). Under v3 methodology this is a transfer_in-equivalent for the Zuckerberg CZI DAF bucket — the DAF receives it but grants-out from SVCF Zuckerberg DAF accounts are donor-opaque. We record as direct_gift because it left Zuckerberg's control AND is tax-deductible, but the ultimate disbursement path is not publicly traceable."
+      "dedup_note": "This is a transfer INTO a DAF (SVCF). Under v3 methodology this is a transfer_in-equivalent for the Zuckerberg CZI DAF bucket \u2014 the DAF receives it but grants-out from SVCF Zuckerberg DAF accounts are donor-opaque. We record as direct_gift because it left Zuckerberg's control AND is tax-deductible, but the ultimate disbursement path is not publicly traceable."
     },
     {
       "event_id": "zuck_svcf_2013",
@@ -212,7 +215,7 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Same as zuck_svcf_2012 — transfer into DAF. Counted as direct_gift (tax-deductible transfer out of personal holdings) but grants-out-of-DAF are opaque."
+      "dedup_note": "Same as zuck_svcf_2012 \u2014 transfer into DAF. Counted as direct_gift (tax-deductible transfer out of personal holdings) but grants-out-of-DAF are opaque."
     },
     {
       "event_id": "zuck_newark_2010",
@@ -265,7 +268,7 @@
       "source_url": "https://www.latimes.com/opinion/story/2024-05-30/election-mark-zuckerberg-priscilla-chan-donation-grants",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "classification_note": "The so-called 'Zuckerbucks'. Both recipients are 501(c)(3) nonpartisan nonprofits — counts as charitable under Forbes/Chronicle methodology despite political framing in partisan press. Zuckerberg discontinued this category post-2020."
+      "classification_note": "The so-called 'Zuckerbucks'. Both recipients are 501(c)(3) nonpartisan nonprofits \u2014 counts as charitable under Forbes/Chronicle methodology despite political framing in partisan press. Zuckerberg discontinued this category post-2020."
     },
     {
       "event_id": "zuck_sacramento_2026",
@@ -280,10 +283,232 @@
       "source_url": "https://fortune.com/2026/02/09/mark-zuckerberg-meta-50-million-donation-sacramento-tech-talent-pipeline-stem-facilities/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "classification_note": "Joint gift with Meta corporate — Zuckerberg's personal share not disclosed. If we assume 50/50 split, personal credit ~$25M. Conservative: count $25M to Zuckerberg personal."
+      "classification_note": "Joint gift with Meta corporate \u2014 Zuckerberg's personal share not disclosed. If we assume 50/50 split, personal credit ~$25M. Conservative: count $25M to Zuckerberg personal."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Chan Zuckerberg Initiative Foundation",
+      "donor_ein": "45-5002209",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 810.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $0.1M; payout rate 0.8%.",
+      "regen_source": "propublica",
+      "event_id": "mark_zuckerberg_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-919ca20254936788",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Chan Zuckerberg Initiative Foundation",
+      "donor_ein": "45-5002209",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 202050278.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $5513.0M; payout rate 3.7%.",
+      "regen_source": "propublica",
+      "event_id": "mark_zuckerberg_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-919ca20254936788",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Chan Zuckerberg Initiative Foundation",
+      "donor_ein": "45-5002209",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 188316055.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $6404.0M; payout rate 2.9%.",
+      "regen_source": "propublica",
+      "event_id": "mark_zuckerberg_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-919ca20254936788",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Chan Zuckerberg Initiative Foundation",
+      "donor_ein": "45-5002209",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 882420515.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $7102.4M; payout rate 12.4%.",
+      "regen_source": "propublica",
+      "event_id": "mark_zuckerberg_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-919ca20254936788",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Chan Zuckerberg Initiative Foundation",
+      "donor_ein": "45-5002209",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 127622894.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $6319.7M; payout rate 2.0%.",
+      "regen_source": "propublica",
+      "event_id": "mark_zuckerberg_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-919ca20254936788",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Chan Zuckerberg Initiative Foundation",
+      "donor_ein": "45-5002209",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 900000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209/202103199349108890/full",
+      "confidence": "high",
+      "note": "Chan Zuckerberg Initiative Foundation \u2192 Silicon Valley Community Foundation (DAF sponsor EIN 20-5205488); 2 grant line(s) on 990-PF Part XV for FY 2020; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "mark_zuckerberg_grant_out_2020_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Chan Zuckerberg Initiative Foundation",
+      "donor_ein": "45-5002209",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 2050000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209/202233199349108343/full",
+      "confidence": "high",
+      "note": "Chan Zuckerberg Initiative Foundation \u2192 Silicon Valley Community Foundation (DAF sponsor EIN 20-5205488); 1 grant line(s) on 990-PF Part XV for FY 2021; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "mark_zuckerberg_grant_out_2021_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date_precision": "day",
+      "donor_entity": "Mark Zuckerberg",
+      "recipient": "Foundation (unspecified)",
+      "amount_usd": 157121133.0834961,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1548760/000095010325014304/dp236823_4-zuckerberg1031.xml",
+      "confidence": "low",
+      "note": "SEC Form 4 code G \u2014 242,340 shares of Meta Platforms, Inc. on 2025-10-31 ($157.1M (valued at issuer close on transaction date)). Direct gifts to charity are exempt from Form 4 reporting.",
+      "regen_source": "sec",
+      "event_id": "mark_zuckerberg_direct_gift_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date_precision": "day",
+      "donor_entity": "Mark Zuckerberg",
+      "recipient": "Foundation (unspecified)",
+      "amount_usd": 257399478.7574463,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1548760/000095010325014304/dp236823_4-zuckerberg1031.xml",
+      "confidence": "low",
+      "note": "SEC Form 4 code G \u2014 397,007 shares of Meta Platforms, Inc. on 2025-10-31 ($257.4M (valued at issuer close on transaction date)). Direct gifts to charity are exempt from Form 4 reporting.",
+      "regen_source": "sec",
+      "event_id": "mark_zuckerberg_direct_gift_2025_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date_precision": "day",
+      "donor_entity": "Mark Zuckerberg",
+      "recipient": "Foundation (unspecified)",
+      "amount_usd": 297759223.9470215,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1548760/000095010325009864/dp232583_4-zuckerberg0801.xml",
+      "confidence": "low",
+      "note": "SEC Form 4 code G \u2014 397,007 shares of Meta Platforms, Inc. on 2025-08-01 ($297.8M (valued at issuer close on transaction date)). Direct gifts to charity are exempt from Form 4 reporting.",
+      "regen_source": "sec",
+      "event_id": "mark_zuckerberg_direct_gift_2025_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date_precision": "day",
+      "donor_entity": "Mark Zuckerberg",
+      "recipient": "Foundation (unspecified)",
+      "amount_usd": 414520611.8409424,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1548760/000095010325014304/dp236823_4-zuckerberg1031.xml",
+      "confidence": "low",
+      "note": "SEC Form 4 code G \u2014 639,347 shares of Meta Platforms, Inc. on 2025-10-31 ($414.5M (valued at issuer close on transaction date)). Direct gifts to charity are exempt from Form 4 reporting.",
+      "regen_source": "sec",
+      "event_id": "mark_zuckerberg_direct_gift_2025_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date_precision": "day",
+      "donor_entity": "Mark Zuckerberg",
+      "recipient": "Foundation (unspecified)",
+      "amount_usd": 10186236766.2583,
+      "source_type": "SEC Form 4",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1548760/000095010325005792/dp228558_4-zuckerberg0502.xml",
+      "confidence": "low",
+      "note": "SEC Form 4 code G \u2014 17,061,801 shares of Meta Platforms, Inc. on 2025-05-02 ($10186.2M (valued at issuer close on transaction date)). Direct gifts to charity are exempt from Form 4 reporting.",
+      "regen_source": "sec",
+      "event_id": "mark_zuckerberg_direct_gift_2025_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "zuck_gp_2012",
@@ -311,7 +536,7 @@
       "recipient": "Chan Zuckerberg Initiative (LLC + 501(c)(3) foundation + 501(c)(4) + DAF)",
       "source_url": "https://en.wikipedia.org/wiki/Chan_Zuckerberg_Initiative",
       "retrieved_at": "2026-04-23",
-      "classification_note": "CRITICAL METHODOLOGY POINT: The 2015 '99% of Meta shares' pledge is NOT a Giving Pledge commitment and NOT a commitment to a 501(c)(3). It is a commitment to CZI, whose primary vehicle is the Chan Zuckerberg Initiative, LLC — a FOR-PROFIT limited liability company. Per Wikipedia and multiple commentators: as an LLC, CZI can invest in for-profit companies, make political donations, lobby, and is NOT required to disclose its pay, grants, or any financials. IPS explicitly excludes LLC giving from generosity measures. Under Forbes/Chronicle/IPS methodology, the 99% pledge is NOT counted as charitable giving until and unless transferred to a 501(c)(3) / DAF / equivalent charitable structure. Currently ~$5.29B has flowed into CZIF (the 501(c)(3) arm) per ProPublica — that is ~2.3% of the 99% notional commitment at today's net worth."
+      "classification_note": "CRITICAL METHODOLOGY POINT: The 2015 '99% of Meta shares' pledge is NOT a Giving Pledge commitment and NOT a commitment to a 501(c)(3). It is a commitment to CZI, whose primary vehicle is the Chan Zuckerberg Initiative, LLC \u2014 a FOR-PROFIT limited liability company. Per Wikipedia and multiple commentators: as an LLC, CZI can invest in for-profit companies, make political donations, lobby, and is NOT required to disclose its pay, grants, or any financials. IPS explicitly excludes LLC giving from generosity measures. Under Forbes/Chronicle/IPS methodology, the 99% pledge is NOT counted as charitable giving until and unless transferred to a 501(c)(3) / DAF / equivalent charitable structure. Currently ~$5.29B has flowed into CZIF (the 501(c)(3) arm) per ProPublica \u2014 that is ~2.3% of the 99% notional commitment at today's net worth."
     },
     {
       "event_id": "zuck_czi_cumulative_grants_announcement",
@@ -322,7 +547,7 @@
       "source_type": "organizational_self_report",
       "source_url": "https://chanzuckerberg.com/grants-ventures/",
       "retrieved_at": "2026-04-23",
-      "classification_note": "SELF-REPORTED, UNAUDITED. CZI's $7.22B headline aggregates across CZI LLC (opaque), CZIF 501(c)(3), CZI DAF at SVCF, and CZI Advocacy 501(c)(4). ProPublica 990-PF confirms ~$1.87B in 501(c)(3) grants_out 2017-2024 — only ~26% of the self-reported total. The remaining ~74% ($5.35B) flowed through opaque LLC / DAF / c4 channels where neither recipients nor structures are independently verifiable. Under our v3 methodology, LLC-channel grants are NOT counted as charitable giving. DAF-channel grants are partial-observable (the SVCF transfer is counted as direct_gift but SVCF does not disclose which recipients got which Zuckerberg DAF dollars)."
+      "classification_note": "SELF-REPORTED, UNAUDITED. CZI's $7.22B headline aggregates across CZI LLC (opaque), CZIF 501(c)(3), CZI DAF at SVCF, and CZI Advocacy 501(c)(4). ProPublica 990-PF confirms ~$1.87B in 501(c)(3) grants_out 2017-2024 \u2014 only ~26% of the self-reported total. The remaining ~74% ($5.35B) flowed through opaque LLC / DAF / c4 channels where neither recipients nor structures are independently verifiable. Under our v3 methodology, LLC-channel grants are NOT counted as charitable giving. DAF-channel grants are partial-observable (the SVCF transfer is counted as direct_gift but SVCF does not disclose which recipients got which Zuckerberg DAF dollars)."
     },
     {
       "event_id": "zuck_czi_biohub_2016",
@@ -348,12 +573,11 @@
       "notes": "$3B over 10 years science commitment. 10-year window runs 2016-2026. Partial-tracked: CZIF grants_out 2017-2024 sum ~$1.87B and CZI LLC disbursements separately self-reported. Does NOT double-count with CZIF events above."
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_MINIMAL",
-    "substitution_note": "Zuckerberg is notably NOT a political-heavy donor relative to peers. The $420M 'Zuckerbucks' 2020 gift was to nonpartisan 501(c)(3) election administration nonprofits, not political spending — counted as charitable above. His 2024 'shift to libertarianism' did not materialize as large FEC donations.",
+    "substitution_note": "Zuckerberg is notably NOT a political-heavy donor relative to peers. The $420M 'Zuckerbucks' 2020 gift was to nonpartisan 501(c)(3) election administration nonprofits, not political spending \u2014 counted as charitable above. His 2024 'shift to libertarianism' did not materialize as large FEC donations.",
     "observed_total_2021_2025_usd": 250000,
-    "observed_total_note": "Minimum floor from OpenSecrets Donor Lookup. Personal federal candidate/committee donations by Mark + Priscilla total 'at least $159,600' (OpenSecrets 2023 snapshot) — cumulative. CZI org-level contributions were $75,990 in 2024 cycle. Rounded to $250K as conservative upper on personal + CZI-attributed political 2021-2025.",
+    "observed_total_note": "Minimum floor from OpenSecrets Donor Lookup. Personal federal candidate/committee donations by Mark + Priscilla total 'at least $159,600' (OpenSecrets 2023 snapshot) \u2014 cumulative. CZI org-level contributions were $75,990 in 2024 cycle. Rounded to $250K as conservative upper on personal + CZI-attributed political 2021-2025.",
     "sources": [
       {
         "url": "https://www.opensecrets.org/news/2023/07/cage-fight-elon-musk-mark-zuckerberg-money-in-politics/",
@@ -377,7 +601,6 @@
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -394,8 +617,8 @@
         "charitable_disbursements_2024": 388700000,
         "total_contributions_received_2024": 690500000,
         "officers_compensation": "Mark Zuckerberg (Trustee) receives $0 compensation. Top compensated: Director of AI $961K, VP Science $692K, VP Science $635K (2024). No officer compensation flags at trustee level; high executive salaries reflect science-research staffing norms, not governance pay.",
-        "payout_rate_notes": "2024 grants_out $388.7M vs assets $7.5B = 5.2% — just above 5% legal minimum. Borderline LOW_PAYOUT flag given CZIF held $7B+ of net assets against a 99%-of-Meta-shares notional pledge.",
-        "red_flag_daf_transfers": "NOT_YET_VERIFIED — CZI operates its own DAF at Silicon Valley Community Foundation; unclear from ProPublica summary whether any CZIF grants flow into the CZI-at-SVCF DAF. Plausible based on shared brand; would constitute foundation→DAF recycling flagged under DAF_TRANSFERS.",
+        "payout_rate_notes": "2024 grants_out $388.7M vs assets $7.5B = 5.2% \u2014 just above 5% legal minimum. Borderline LOW_PAYOUT flag given CZIF held $7B+ of net assets against a 99%-of-Meta-shares notional pledge.",
+        "red_flag_daf_transfers": "NOT_YET_VERIFIED \u2014 CZI operates its own DAF at Silicon Valley Community Foundation; unclear from ProPublica summary whether any CZIF grants flow into the CZI-at-SVCF DAF. Plausible based on shared brand; would constitute foundation\u2192DAF recycling flagged under DAF_TRANSFERS.",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209"
       },
       {
@@ -404,7 +627,7 @@
         "established_year": 2016,
         "tax_status": "501(c)(3) research institute",
         "status": "active (RECIPIENT of CZI grants, not a donor vehicle)",
-        "note": "Listed for completeness. Not a donor-side vehicle — appears as a CZI grantee.",
+        "note": "Listed for completeness. Not a donor-side vehicle \u2014 appears as a CZI grantee.",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/811669175"
       },
       {
@@ -438,19 +661,19 @@
         ]
       }
     ],
-    "dafs_note": "Zuckerberg operates at least one DAF (CZI DAF at SVCF) with at least $1.49B disclosed transfers in. DAFs are donor-opaque by design — grants-out are attributed to SVCF in public filings, not Zuckerberg. Hidden lower bound only.",
+    "dafs_note": "Zuckerberg operates at least one DAF (CZI DAF at SVCF) with at least $1.49B disclosed transfers in. DAFs are donor-opaque by design \u2014 grants-out are attributed to SVCF in public filings, not Zuckerberg. Hidden lower bound only.",
     "llcs_philanthropic": [
       {
         "name": "Chan Zuckerberg Initiative, LLC",
-        "ein": "none (LLC — does not file 990)",
+        "ein": "none (LLC \u2014 does not file 990)",
         "established_year": 2015,
         "state": "DE (incorporated), CA (operates Palo Alto)",
         "status": "active",
-        "legal_form": "Limited Liability Company — FOR-PROFIT, NOT tax-exempt",
-        "filing_requirement": "NONE — LLCs do not file Form 990, do not disclose compensation, do not disclose grant recipients, can invest in for-profit companies, can make political donations, can lobby. Per Wikipedia: 'is therefore not a tax-exempt organization as many philanthropies are.'",
+        "legal_form": "Limited Liability Company \u2014 FOR-PROFIT, NOT tax-exempt",
+        "filing_requirement": "NONE \u2014 LLCs do not file Form 990, do not disclose compensation, do not disclose grant recipients, can invest in for-profit companies, can make political donations, can lobby. Per Wikipedia: 'is therefore not a tax-exempt organization as many philanthropies are.'",
         "self_reported_grants_cumulative_usd": 7220000000,
         "self_reported_ventures_cumulative_usd": 300000000,
-        "self_reported_note": "$7.22B is CZI aggregate (LLC + Foundation + DAF + Advocacy) per chanzuckerberg.com. The LLC-only slice is not separately disclosed. ProPublica-verifiable 501(c)(3) grants 2017-2024 sum ~$1.87B, so ~$5.35B of the $7.22B aggregate flows through LLC/DAF/c4 — unverifiable channels.",
+        "self_reported_note": "$7.22B is CZI aggregate (LLC + Foundation + DAF + Advocacy) per chanzuckerberg.com. The LLC-only slice is not separately disclosed. ProPublica-verifiable 501(c)(3) grants 2017-2024 sum ~$1.87B, so ~$5.35B of the $7.22B aggregate flows through LLC/DAF/c4 \u2014 unverifiable channels.",
         "classification": "LLC_OPACITY + FOR_PROFIT_PIVOT",
         "methodology_note": "IPS (July 2025 Giving Pledge at 15 report) explicitly excludes LLC giving from generosity measures. Under v3 methodology, CZI LLC disbursements are NOT counted as charitable giving until independently verifiable as grants to 501(c)(3)s. Self-reported aggregate not admissible.",
         "source_urls": [
@@ -460,7 +683,7 @@
         ]
       }
     ],
-    "llcs_note": "CZI LLC is the canonical philanthropic LLC — the 2015 announcement of the vehicle is frequently cited as the point at which Silicon Valley-style 'giving LLCs' became normalized, replacing the traditional private foundation model. This is the single most important LLC_OPACITY test case in the scrooge v3 dataset.",
+    "llcs_note": "CZI LLC is the canonical philanthropic LLC \u2014 the 2015 announcement of the vehicle is frequently cited as the point at which Silicon Valley-style 'giving LLCs' became normalized, replacing the traditional private foundation model. This is the single most important LLC_OPACITY test case in the scrooge v3 dataset.",
     "for_profit_hybrid_vehicles": [
       {
         "name": "CZI Ventures (inside CZI LLC)",
@@ -471,10 +694,9 @@
       }
     ],
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2. No public reporting of Zuckerberg in Panama/Pandora Papers. Absence of evidence only.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2. No public reporting of Zuckerberg in Panama/Pandora Papers. Absence of evidence only.",
     "trusts_disclosed_existence_structure_unknown": []
   },
-
   "red_flags": [
     {
       "flag": "LLC_OPACITY",
@@ -488,9 +710,9 @@
     },
     {
       "flag": "GIVING_PLEDGE_UNFULFILLED_TO_DATE",
-      "evidence": "Giving Pledge 50% commitment (signed 2012/2015). At current $230B net worth, 50% target = $115B. Observable verified charitable giving (CZIF grants_out + personal direct gifts + SVCF DAF transfers) ~$4.37B — roughly 3.8% of the 50% target. Even crediting the self-reported $7.22B CZI aggregate as if it were fully charitable would hit 6.3%.",
+      "evidence": "Giving Pledge 50% commitment (signed 2012/2015). At current $230B net worth, 50% target = $115B. Observable verified charitable giving (CZIF grants_out + personal direct gifts + SVCF DAF transfers) ~$4.37B \u2014 roughly 3.8% of the 50% target. Even crediting the self-reported $7.22B CZI aggregate as if it were fully charitable would hit 6.3%.",
       "source_url": "https://www.givingpledge.org/pledger/mark-zuckerberg",
-      "note": "NOT a definitive UNFULFILLED — Zuckerberg is young (b.1984) and the pledge is lifetime. But at current age 41 and 18 years as billionaire, on-track pace would require much higher annual flow."
+      "note": "NOT a definitive UNFULFILLED \u2014 Zuckerberg is young (b.1984) and the pledge is lifetime. But at current age 41 and 18 years as billionaire, on-track pace would require much higher annual flow."
     },
     {
       "flag": "DAF_TRANSFERS_OPACITY",
@@ -499,7 +721,7 @@
     },
     {
       "flag": "BORDERLINE_LOW_PAYOUT_CZIF",
-      "evidence": "CZIF 2024 grants_out $388.7M vs assets $7.5B = 5.2% — just barely above the 5% legal minimum for private foundations. This is a warehousing flag: CZIF has $7B+ net assets (larger than most operating foundations) but is only barely clearing minimum distribution.",
+      "evidence": "CZIF 2024 grants_out $388.7M vs assets $7.5B = 5.2% \u2014 just barely above the 5% legal minimum for private foundations. This is a warehousing flag: CZIF has $7B+ net assets (larger than most operating foundations) but is only barely clearing minimum distribution.",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209"
     },
     {
@@ -514,7 +736,6 @@
     "NO_OBSERVABLE_GIVING (CZIF alone has deployed $1.87B 2017-2024, well above the $100M floor)",
     "GIVING_PLEDGE_ABSENT (signed 2012/2015)"
   ],
-
   "rollup": {
     "observable_giving_usd": 4365000000,
     "observable_giving_method": "sum(CZIF 990-PF grants_out 2017-2024 = $1,871M) + personal direct_gifts (Newark $100M + Ebola $25M + SF General $75M + CTCL $420M + Sacramento personal share $25M = $645M) + DAF transfers to SVCF ($1,490M) + CZI DAF-at-SVCF and c4 Advocacy and other pre-2017 CZIF grants reasonable attributed ~$359M reconciling to self-report. Rounded $4.365B. Does NOT include $7.22B CZI self-reported aggregate. Does NOT double-count transfers_in to CZIF against grants_out from CZIF.",
@@ -523,14 +744,14 @@
     "observable_giving_todo": [
       "Pull SVCF 990 to see whether Zuckerberg-advised DAF accounts disclose any grant-level detail.",
       "Pull CZIF 990-PF years 2013-2016 (pre-current-window).",
-      "Pull SEC EDGAR Form 4 G-transactions for Zuckerberg's CIK (0001548760) — verify stock gifts to SVCF, CZIF, and any non-CZI recipients.",
+      "Pull SEC EDGAR Form 4 G-transactions for Zuckerberg's CIK (0001548760) \u2014 verify stock gifts to SVCF, CZIF, and any non-CZI recipients.",
       "Pull CZI Advocacy c4 990 grant detail to separate issue-advocacy spending from 501(c)(3) pass-through grants.",
-      "Dedup $420M CTCL 2020 gift against CZIF 2020 grants_out $214.7M — verify whether CTCL was a CZIF grant or came from personal funds / SVCF DAF."
+      "Dedup $420M CTCL 2020 gift against CZIF 2020 grants_out $214.7M \u2014 verify whether CTCL was a CZIF grant or came from personal funds / SVCF DAF."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 4140000000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.20 × $230B = $46B; tenure cap saturated (18 years). Expected = $4.6B × 0.9 adjustment for range-midpoint conservatism = $4.14B. Strict denominator.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.20 \u00d7 $230B = $46B; tenure cap saturated (18 years). Expected = $4.6B \u00d7 0.9 adjustment for range-midpoint conservatism = $4.14B. Strict denominator.",
     "observable_ratio_to_expected": 1.054,
-    "observable_ratio_to_current_nw": 0.0190,
+    "observable_ratio_to_current_nw": 0.019,
     "hidden_upper_usd": {
       "daf_uplift_usd": 500000000,
       "daf_uplift_note": "SVCF CZI DAF accounts have unknown grants-out. $1.49B+ disclosed transfers in; plausibly up to $500M of cumulative grants-out not yet captured in observable. Conservative upper.",
@@ -547,10 +768,9 @@
     },
     "observable_plus_hidden_ratio_to_expected": 1.889,
     "tier": "Tier_C_Opaque",
-    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2 — Zuckerberg clears this comfortably (1.89x) IF self-reported $7.22B is accepted. Tier A/B/C classification here depends on how much weight is given to self-reported-unverifiable vs. independently-verified dollars. Independently verified: ~$4.37B (ratio 1.05x expected, passes 10% of liquid benchmark). But the 99% Meta pledge targets ~$227B (99% of net worth) — and observed+hidden together is $7.8B — only 3.4% of the 99% pledge target. Classification: Tier C (OPAQUE) — not verifiable-low, not verifiable-high, depends critically on how the LLC-channel dollars are resolved.",
-    "tier_published_caveat": "Zuckerberg is the canonical LLC_OPACITY case. His 990-PF grants alone (~$1.87B 2017-2024) would place him mid-tier. The 99% Meta shares pledge, if fully disbursed to 501(c)(3)s over his lifetime, would make him one of the largest philanthropists in history. As of 2026-04, only ~2.3% of that notional has reached the 501(c)(3) arm of CZI. The rest sits in a for-profit LLC whose grantees we cannot independently verify. Readers should understand this as: 'Signed the Giving Pledge, structured primary giving vehicle as a for-profit LLC, self-reports large aggregate giving — external verification confirms less than 30% of the self-report.'"
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2 \u2014 Zuckerberg clears this comfortably (1.89x) IF self-reported $7.22B is accepted. Tier A/B/C classification here depends on how much weight is given to self-reported-unverifiable vs. independently-verified dollars. Independently verified: ~$4.37B (ratio 1.05x expected, passes 10% of liquid benchmark). But the 99% Meta pledge targets ~$227B (99% of net worth) \u2014 and observed+hidden together is $7.8B \u2014 only 3.4% of the 99% pledge target. Classification: Tier C (OPAQUE) \u2014 not verifiable-low, not verifiable-high, depends critically on how the LLC-channel dollars are resolved.",
+    "tier_published_caveat": "Zuckerberg is the canonical LLC_OPACITY case. His 990-PF grants alone (~$1.87B 2017-2024) would place him mid-tier. The 99% Meta shares pledge, if fully disbursed to 501(c)(3)s over his lifetime, would make him one of the largest philanthropists in history. As of 2026-04, only ~2.3% of that notional has reached the 501(c)(3) arm of CZI. The rest sits in a for-profit LLC whose grantees we cannot independently verify. Readers should understand this as: 'Signed the Giving Pledge, structured primary giving vehicle as a for-profit LLC, self-reports large aggregate giving \u2014 external verification confirms less than 30% of the self-report.'"
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 72.5,
     "components": {
@@ -559,58 +779,227 @@
       "pledge_breach_penalty_20pct": 12.5,
       "red_flag_penalty_20pct": 20.0
     },
-    "note": "Computed with v2 formula for continuity with current pipeline. Giving-gap = 0 because observable already exceeds 10%-of-liquid expected. Pledge-breach proration: 50% Giving Pledge not met in absolute terms even if on-track; 99% Meta pledge barely begun. Red-flag penalty maxed due to LLC_OPACITY + DAF_TRANSFERS + BORDERLINE_LOW_PAYOUT + FOR_PROFIT_PIVOT + SOCIAL_ADVOCACY_WINDDOWN. DO NOT PUBLISH this number — we publish tiers only per PLAN.md."
+    "note": "Computed with v2 formula for continuity with current pipeline. Giving-gap = 0 because observable already exceeds 10%-of-liquid expected. Pledge-breach proration: 50% Giving Pledge not met in absolute terms even if on-track; 99% Meta pledge barely begun. Red-flag penalty maxed due to LLC_OPACITY + DAF_TRANSFERS + BORDERLINE_LOW_PAYOUT + FOR_PROFIT_PIVOT + SOCIAL_ADVOCACY_WINDDOWN. DO NOT PUBLISH this number \u2014 we publish tiers only per PLAN.md."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
-    "planned_outreach_route": "CZI Press (press@chanzuckerberg.com) + Meta Communications + Priscilla Chan office at CZI — all three to raise visibility.",
+    "planned_outreach_route": "CZI Press (press@chanzuckerberg.com) + Meta Communications + Priscilla Chan office at CZI \u2014 all three to raise visibility.",
     "scheduled_outreach_date": null,
     "response_deadline": null,
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
-    "VERIFY: Giving Pledge signing year — 2012 (Wikipedia) or 2015 (givingpledge.org)? Reconcile.",
+    "VERIFY: Giving Pledge signing year \u2014 2012 (Wikipedia) or 2015 (givingpledge.org)? Reconcile.",
     "VERIFY: Pull CZIF 990-PF years 2013-2016 (before 2017 starting window).",
-    "VERIFY: Pull SEC EDGAR Form 4 G-transactions for Zuckerberg's CIK (~0001548760 or similar) — enumerate every Meta stock gift and its recipient 2012-2026.",
-    "VERIFY: 2020 CTCL $420M — funded from personal, SVCF DAF, or CZIF? ProPublica 2020 CZIF grants_out $214.7M is too small to contain the full $420M, so at least some portion is personal / DAF — confirm exact split.",
+    "VERIFY: Pull SEC EDGAR Form 4 G-transactions for Zuckerberg's CIK (~0001548760 or similar) \u2014 enumerate every Meta stock gift and its recipient 2012-2026.",
+    "VERIFY: 2020 CTCL $420M \u2014 funded from personal, SVCF DAF, or CZIF? ProPublica 2020 CZIF grants_out $214.7M is too small to contain the full $420M, so at least some portion is personal / DAF \u2014 confirm exact split.",
     "VERIFY: SVCF 990 for Zuckerberg-advised DAF sub-account grants-out disclosure (rare but sometimes annotated).",
-    "VERIFY: CZI Advocacy c4 grant detail — separate lobbying/issue-advocacy from pass-through charitable.",
-    "VERIFY: Chan Zuckerberg Foundation (EIN 81-4339427) — prompt referenced this but ProPublica lookup returned 404 on that EIN. Likely not an active filer or the EIN is wrong; verify in IRS BMF.",
+    "VERIFY: CZI Advocacy c4 grant detail \u2014 separate lobbying/issue-advocacy from pass-through charitable.",
+    "VERIFY: Chan Zuckerberg Foundation (EIN 81-4339427) \u2014 prompt referenced this but ProPublica lookup returned 404 on that EIN. Likely not an active filer or the EIN is wrong; verify in IRS BMF.",
     "VERIFY: FEC API bulk pull for Mark + Priscilla 2021-2025 to tighten $250K political floor.",
-    "VERIFY: CZI LLC independent verification of $7.22B self-report — does CZI publish a grants database with recipients? (grants-ventures/grants page says database is retroactive to 2018; deep-scrape for recipient-level totals would close part of the opacity gap.)"
+    "VERIFY: CZI LLC independent verification of $7.22B self-report \u2014 does CZI publish a grants database with recipients? (grants-ventures/grants page says database is retroactive to 2018; deep-scrape for recipient-level totals would close part of the opacity gap.)"
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/455002209", "retrieved_at": "2026-04-23", "used_for": "CZIF 990-PF 2017-2024 grants_out, transfers_in, assets, officer comp"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/813742328", "retrieved_at": "2026-04-23", "used_for": "CZI Advocacy c4 2024 financials, officer comp"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/811669175", "retrieved_at": "2026-04-23", "used_for": "CZ Biohub EIN verification (grantee)"},
-    {"url": "https://www.givingpledge.org/pledger/mark-zuckerberg", "retrieved_at": "2026-04-23", "used_for": "Giving Pledge letter verbatim, 50% commitment"},
-    {"url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg", "retrieved_at": "2026-04-23", "used_for": "Net worth Oct 2025 $251B; philanthropy timeline 2010-2015; Giving Pledge 2012; SVCF 2013 $990M gift"},
-    {"url": "https://en.wikipedia.org/wiki/Chan_Zuckerberg_Initiative", "retrieved_at": "2026-04-23", "used_for": "CZI founding Dec 2015; LLC-not-foundation structure; 99% FB shares pledge; legal/regulatory implications of LLC form"},
-    {"url": "https://en.wikipedia.org/wiki/Silicon_Valley_Community_Foundation", "retrieved_at": "2026-04-23", "used_for": "2012 $500M / 2013 $990M FB share gifts to SVCF DAF"},
-    {"url": "https://chanzuckerberg.com/", "retrieved_at": "2026-04-23", "used_for": "$7.22B self-reported grants cumulative; $300M ventures"},
-    {"url": "https://chanzuckerberg.com/grants-ventures/grants/", "retrieved_at": "2026-04-23", "used_for": "$7.22B confirmation; grants database retroactive to 2018"},
-    {"url": "https://chanzuckerberg.com/grants-ventures/", "retrieved_at": "2026-04-23", "used_for": "Four-entity structure: LLC + Foundation + DAF at SVCF + Advocacy c4"},
-    {"url": "https://www.instrumentl.com/990-report/chan-zuckerberg-foundation", "retrieved_at": "2026-04-23", "used_for": "CZIF assets $7.499B corroboration"},
-    {"url": "https://www.influencewatch.org/for-profit/chan-zuckerberg-initiative/", "retrieved_at": "2026-04-23", "used_for": "CZI classified as for-profit LLC; political giving; grantee specifics incl. $24M to FWD.us Education Fund"},
-    {"url": "https://www.forbes.com/sites/tylerroush/2026/01/29/mark-zuckerberg-passes-jeff-bezos-for-no-4-richest-as-meta-stock-soars-on-earnings-beat/", "retrieved_at": "2026-04-23", "used_for": "$251.7B Jan 29 2026 peak; Forbes RTB source"},
-    {"url": "https://www.forbes.com/profile/mark-zuckerberg/", "retrieved_at": "2026-04-23", "used_for": "2026 rank #5"},
-    {"url": "https://www.bloomberg.com/billionaires/profiles/mark-e-zuckerberg/", "retrieved_at": "2026-04-23", "used_for": "~13% Meta stake Nov 2025 filing (snippet only — full page blocked)"},
-    {"url": "https://www.registrationwala.com/knowledge-base/post/public-awareness/top-10-richest-persons-in-the-world", "retrieved_at": "2026-04-23", "used_for": "$210.2B April 2026 data point (third-party citing Forbes)"},
-    {"url": "https://fortune.com/2026/02/09/mark-zuckerberg-meta-50-million-donation-sacramento-tech-talent-pipeline-stem-facilities/", "retrieved_at": "2026-04-23", "used_for": "Feb 2026 $50M joint Zuckerberg-Meta Sacramento STEM gift"},
-    {"url": "https://www.latimes.com/opinion/story/2024-05-30/election-mark-zuckerberg-priscilla-chan-donation-grants", "retrieved_at": "2026-04-23", "used_for": "2020 $420M CTCL / CEIR donation detail"},
-    {"url": "https://eu.usatoday.com/story/news/politics/elections/2024/04/03/republicans-banning-outside-groups-funding-election-zuckerberg/73119478007/", "retrieved_at": "2026-04-23", "used_for": "Zuckerbucks political context"},
-    {"url": "https://www.opensecrets.org/news/2023/07/cage-fight-elon-musk-mark-zuckerberg-money-in-politics/", "retrieved_at": "2026-04-23", "used_for": "Personal federal political giving $159,600 cumulative through 2023"},
-    {"url": "https://www.opensecrets.org/orgs/chan-zuckerberg-initiative/summary?id=D000072039", "retrieved_at": "2026-04-23", "used_for": "CZI org-level 2024 political $75,990"},
-    {"url": "https://www.opensecrets.org/donor-lookup/results?name=mark+zuckerberg", "retrieved_at": "2026-04-23", "used_for": "Donor lookup confirmation (minimal direct FEC giving)"},
-    {"url": "https://www.theguardian.com/technology/2025/feb/19/mark-zuckerberg-chan-dei", "retrieved_at": "2026-04-23", "used_for": "Feb 2025 CZI DEI elimination announcement"},
-    {"url": "https://observer.com/2025/02/chan-zuckerberg-initiative-cut-dei-efforts/", "retrieved_at": "2026-04-23", "used_for": "Feb 2025 CZI science-first refocus"},
-    {"url": "https://philanthropynewsdigest.org/news/chan-zuckerberg-initiative-scrubs-dei-ends-social-advocacy-funding", "retrieved_at": "2026-04-23", "used_for": "Social advocacy funding wind-down"},
-    {"url": "https://sfstandard.com/2025/05/13/nonprofits-furious-chan-zuckerberg-initiative-slashes-funding/", "retrieved_at": "2026-04-23", "used_for": "May 2025 Bay Area nonprofit funding slash"},
-    {"url": "https://fortune.com/2025/12/22/billionaire-philanthropy-divide-mark-zuckerberg-immigration-reform-mackenzie-scott-dei/", "retrieved_at": "2026-04-23", "used_for": "Dec 2025 FWD.us formalized-break April 2025 + broader framing"},
-    {"url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf", "retrieved_at": "2026-04-23", "used_for": "IPS 2025 methodology — LLCs excluded from generosity (PDF binary — full page parse failed; used for methodology reference only)"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/455002209",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CZIF 990-PF 2017-2024 grants_out, transfers_in, assets, officer comp"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/813742328",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CZI Advocacy c4 2024 financials, officer comp"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/811669175",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CZ Biohub EIN verification (grantee)"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/mark-zuckerberg",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Giving Pledge letter verbatim, 50% commitment"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Net worth Oct 2025 $251B; philanthropy timeline 2010-2015; Giving Pledge 2012; SVCF 2013 $990M gift"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chan_Zuckerberg_Initiative",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CZI founding Dec 2015; LLC-not-foundation structure; 99% FB shares pledge; legal/regulatory implications of LLC form"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Silicon_Valley_Community_Foundation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2012 $500M / 2013 $990M FB share gifts to SVCF DAF"
+    },
+    {
+      "url": "https://chanzuckerberg.com/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$7.22B self-reported grants cumulative; $300M ventures"
+    },
+    {
+      "url": "https://chanzuckerberg.com/grants-ventures/grants/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$7.22B confirmation; grants database retroactive to 2018"
+    },
+    {
+      "url": "https://chanzuckerberg.com/grants-ventures/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Four-entity structure: LLC + Foundation + DAF at SVCF + Advocacy c4"
+    },
+    {
+      "url": "https://www.instrumentl.com/990-report/chan-zuckerberg-foundation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CZIF assets $7.499B corroboration"
+    },
+    {
+      "url": "https://www.influencewatch.org/for-profit/chan-zuckerberg-initiative/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CZI classified as for-profit LLC; political giving; grantee specifics incl. $24M to FWD.us Education Fund"
+    },
+    {
+      "url": "https://www.forbes.com/sites/tylerroush/2026/01/29/mark-zuckerberg-passes-jeff-bezos-for-no-4-richest-as-meta-stock-soars-on-earnings-beat/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$251.7B Jan 29 2026 peak; Forbes RTB source"
+    },
+    {
+      "url": "https://www.forbes.com/profile/mark-zuckerberg/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2026 rank #5"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/mark-e-zuckerberg/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "~13% Meta stake Nov 2025 filing (snippet only \u2014 full page blocked)"
+    },
+    {
+      "url": "https://www.registrationwala.com/knowledge-base/post/public-awareness/top-10-richest-persons-in-the-world",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$210.2B April 2026 data point (third-party citing Forbes)"
+    },
+    {
+      "url": "https://fortune.com/2026/02/09/mark-zuckerberg-meta-50-million-donation-sacramento-tech-talent-pipeline-stem-facilities/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Feb 2026 $50M joint Zuckerberg-Meta Sacramento STEM gift"
+    },
+    {
+      "url": "https://www.latimes.com/opinion/story/2024-05-30/election-mark-zuckerberg-priscilla-chan-donation-grants",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2020 $420M CTCL / CEIR donation detail"
+    },
+    {
+      "url": "https://eu.usatoday.com/story/news/politics/elections/2024/04/03/republicans-banning-outside-groups-funding-election-zuckerberg/73119478007/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Zuckerbucks political context"
+    },
+    {
+      "url": "https://www.opensecrets.org/news/2023/07/cage-fight-elon-musk-mark-zuckerberg-money-in-politics/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Personal federal political giving $159,600 cumulative through 2023"
+    },
+    {
+      "url": "https://www.opensecrets.org/orgs/chan-zuckerberg-initiative/summary?id=D000072039",
+      "retrieved_at": "2026-04-23",
+      "used_for": "CZI org-level 2024 political $75,990"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=mark+zuckerberg",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Donor lookup confirmation (minimal direct FEC giving)"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2025/feb/19/mark-zuckerberg-chan-dei",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Feb 2025 CZI DEI elimination announcement"
+    },
+    {
+      "url": "https://observer.com/2025/02/chan-zuckerberg-initiative-cut-dei-efforts/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Feb 2025 CZI science-first refocus"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/chan-zuckerberg-initiative-scrubs-dei-ends-social-advocacy-funding",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Social advocacy funding wind-down"
+    },
+    {
+      "url": "https://sfstandard.com/2025/05/13/nonprofits-furious-chan-zuckerberg-initiative-slashes-funding/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "May 2025 Bay Area nonprofit funding slash"
+    },
+    {
+      "url": "https://fortune.com/2025/12/22/billionaire-philanthropy-divide-mark-zuckerberg-immigration-reform-mackenzie-scott-dei/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Dec 2025 FWD.us formalized-break April 2025 + broader framing"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-23",
+      "used_for": "IPS 2025 methodology \u2014 LLCs excluded from generosity (PDF binary \u2014 full page parse failed; used for methodology reference only)"
+    },
+    {
+      "publisher": "sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1548760/000095010325014304/dp236823_4-zuckerberg1031.xml",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-919ca20254936788"
+    },
+    {
+      "publisher": "sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1548760/000095010325009864/dp232583_4-zuckerberg0801.xml",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-919ca20254936788"
+    },
+    {
+      "publisher": "sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1548760/000095010325005792/dp228558_4-zuckerberg0502.xml",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-919ca20254936788"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/455002209/202103199349108890/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/455002209/202233199349108343/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac"
+    },
+    {
+      "publisher": "money.cnn.com",
+      "url": "https://money.cnn.com/2015/12/01/technology/zuckerberg-facebook-stock-daughter/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=02-98-92",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-77-78",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-80-24",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-80dea5cd898db9ac"
+    }
   ]
 }

@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record \u2014 canonical LLC-archetype case. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Tier classification happens downstream.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (LLC archetype)",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (LLC archetype) + regen_v3@sha256-aac882a077cc4e7d + regen_v3@sha256-21de1b7e12eeb870",
   "person": {
     "name_display": "Laurene Powell Jobs",
     "name_legal": "Laurene Powell Jobs",
@@ -165,6 +165,106 @@
       "retrieved_at": "2026-04-24",
       "notes": "NOT a Giving Pledge-style 50% commitment \u2014 a targeted $3.5B climate pledge. Distinct from personal philanthropy.",
       "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation",
+      "donor_ein": "81-3242506",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 102776767.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $2988.0M; payout rate 3.4%.",
+      "regen_source": "propublica",
+      "event_id": "laurene_powell_jobs_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-aac882a077cc4e7d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation",
+      "donor_ein": "81-3242506",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 146313164.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $2993.0M; payout rate 4.9%.",
+      "regen_source": "propublica",
+      "event_id": "laurene_powell_jobs_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-aac882a077cc4e7d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation",
+      "donor_ein": "81-3242506",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 193913087.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $2844.6M; payout rate 6.8%.",
+      "regen_source": "propublica",
+      "event_id": "laurene_powell_jobs_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-aac882a077cc4e7d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation",
+      "donor_ein": "81-3242506",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 270382133.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $2784.0M; payout rate 9.7%.",
+      "regen_source": "propublica",
+      "event_id": "laurene_powell_jobs_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-aac882a077cc4e7d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Waverley Street Foundation (formerly Emerson Collective Foundation)",
+      "donor_ein": "81-3242506",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 10000000.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506/202133199349107018/full",
+      "confidence": "high",
+      "note": "Waverley Street Foundation (formerly Emerson Collective Foundation) \u2192 Silicon Valley Community Foundation (DAF sponsor EIN 20-5205488); 2 grant line(s) on 990-PF Part XV for FY 2020; \u2192DAF (opaque downstream \u2014 end-recipient not disclosed by sponsor).",
+      "regen_source": "dafs",
+      "event_id": "laurene_powell_jobs_grant_out_2020_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
     }
   ],
   "pledges_and_announcements": [
@@ -189,6 +289,25 @@
       "quote": "It's not right for individuals to accumulate such massive wealth, equivalent to that of millions of others combined. I'm not interested in legacy wealth buildings, and my children know that. If I live long enough, it ends with me.",
       "notes": "New York Times interview 2020. Functions as informal public commitment to lifetime spend-down. Not legally binding; the Emerson Collective LLC structure gives her full discretion over pace and recipients, including whether to disburse to 501(c)(3)s or to for-profit impact investments.",
       "event_role_canonical": "reference_only"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2004,
+      "date_precision": "year",
+      "donor_entity": "Laurene Powell Jobs",
+      "recipient": "Emerson Collective LLC",
+      "amount_usd": null,
+      "source_type": "philanthropic_llc_commitment",
+      "source_url": "https://en.wikipedia.org/wiki/Emerson_Collective",
+      "confidence": "medium",
+      "note": "Emerson Collective LLC, founded 2004 as Laurene Powell Jobs's primary vehicle. CJR and Inside Philanthropy both note Emerson is 'notoriously lacking in transparency on hard giving figures'; reported assets \u2248$1.8B. LLC is opaque \u2014 capacity signal only.",
+      "regen_source": "llcs",
+      "event_id": "laurene_powell_jobs_pledge_2004_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -362,8 +481,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 4288700000,
     "ratio_observable_to_5pct_tenure": 0.221,
-    "observable_from_events_usd": 1116700000,
-    "observable_drift_pct": 0.082,
+    "observable_from_events_usd": 1840085151,
+    "observable_drift_pct": 0.512,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -495,6 +614,96 @@
       "url": "https://www.instrumentl.com/990-report/emerson-collective-foundation",
       "retrieved_at": "2026-04-24",
       "used_for": "Waverley 2024 $282.1M / 144 grants figure (reconcile against ProPublica $306.2M)"
+    },
+    {
+      "publisher": "projects.propublica.org",
+      "url": "https://projects.propublica.org/nonprofits/organizations/813242506/202133199349107018/full",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/powell-jobs-to-invest-3.5-billion-in-climate-action-over-ten-years",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-17-68",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-75-98",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-49-86",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-54-76",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-83-66",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-61-42",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-22-00",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-78-47",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-94-30",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-31-08",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-47-87",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-61-03",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-21de1b7e12eeb870"
     }
   ],
   "_source_file": "laurene_powell_jobs.v3.json"

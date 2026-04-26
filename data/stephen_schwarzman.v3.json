@@ -2,8 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run — single-subject deep research (Schwarzman)",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Schwarzman) + regen_v3@sha256-91a741d107fb10e2 + regen_v3@sha256-8009d87f8e962fd5",
   "person": {
     "name_display": "Stephen Schwarzman",
     "name_legal": "Stephen Allen Schwarzman",
@@ -12,10 +11,12 @@
     "wealth_source": "Blackstone Inc. co-founder, chairman & CEO; owns ~19% of publicly-traded Blackstone; also large annual compensation/dividend income ($1.2B in 2025)",
     "years_as_billionaire_approx": 18
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 47.8,
-    "range_usd_billions": [43, 55],
+    "range_usd_billions": [
+      43,
+      55
+    ],
     "as_of": "2026-04",
     "range_note": "Forbes May 2025 ~$43B; Forbes 2026 rank #46-52 range; Fortune March 2026 ~$44.2B; Bloomberg Billionaires Index 2026 ~$47.8B; some trackers put him toward $55B. Highly correlated with Blackstone stock price.",
     "sources": [
@@ -46,10 +47,9 @@
         "value_usd_billions": 48
       }
     ],
-    "liquidity_estimate_pct": 0.40,
-    "liquidity_notes": "~19% of Blackstone is public stock (liquid but concentrated — material divestment would move the price). Also has massive annual compensation stream ($253M in 2022, $1.2B in 2025) — effectively a high-velocity cash generator. Liquidity discount ~40% is higher than Ellison (25%) because Schwarzman has been consistently selling/gifting stock and his income stream is enormous. Personal investment holdings via Blackstone family office are private."
+    "liquidity_estimate_pct": 0.4,
+    "liquidity_notes": "~19% of Blackstone is public stock (liquid but concentrated \u2014 material divestment would move the price). Also has massive annual compensation stream ($253M in 2022, $1.2B in 2025) \u2014 effectively a high-velocity cash generator. Liquidity discount ~40% is higher than Ellison (25%) because Schwarzman has been consistently selling/gifting stock and his income stream is enormous. Personal investment holdings via Blackstone family office are private."
   },
-
   "cited_events": [
     {
       "event_id": "schwarzman_saschf_2024",
@@ -143,7 +143,7 @@
       "year": 2008,
       "date_precision": "year",
       "donor_entity": "Stephen Schwarzman (personal, pre-SASCHF existed)",
-      "recipient": "New York Public Library — main building renamed Stephen A. Schwarzman Building",
+      "recipient": "New York Public Library \u2014 main building renamed Stephen A. Schwarzman Building",
       "amount_usd": 100000000,
       "source_type": "announcement",
       "source_url": "https://www.philanthropy.com/news/financier-pledges-100-million-gift-to-help-new-york-public-library-expand/",
@@ -158,7 +158,7 @@
       "date_precision": "month",
       "date": "2013-04",
       "donor_entity": "Stephen Schwarzman (personal)",
-      "recipient": "Tsinghua University — Schwarzman Scholars endowment ($100M personal + he led $200M fundraising for total $300M+ endowment)",
+      "recipient": "Tsinghua University \u2014 Schwarzman Scholars endowment ($100M personal + he led $200M fundraising for total $300M+ endowment)",
       "amount_usd": 100000000,
       "source_type": "announcement",
       "source_url": "https://philanthropynewsdigest.org/news/private-equity-tycoon-gives-100-million-to-establish-china-scholarship-fund",
@@ -172,8 +172,8 @@
       "year": 2015,
       "date_precision": "month",
       "date": "2015-05",
-      "donor_entity": "Stephen Schwarzman (personal — pre-SASCHF or via newly-formed SASCHF)",
-      "recipient": "Yale University — Schwarzman Center (renovated Commons/Memorial Hall)",
+      "donor_entity": "Stephen Schwarzman (personal \u2014 pre-SASCHF or via newly-formed SASCHF)",
+      "recipient": "Yale University \u2014 Schwarzman Center (renovated Commons/Memorial Hall)",
       "amount_usd": 150000000,
       "source_type": "announcement",
       "source_url": "https://news.yale.edu/2015/05/11/150-million-gift-stephen-schwarzman-establish-first-its-kind-campus-center-yale-universit",
@@ -188,7 +188,7 @@
       "date_precision": "day",
       "date": "2015-09-21",
       "donor_entity": "Stephen and Christine Schwarzman (personal)",
-      "recipient": "Archdiocese of New York — Inner-City Scholarship Fund 'Kids Are Our Capital' endowment",
+      "recipient": "Archdiocese of New York \u2014 Inner-City Scholarship Fund 'Kids Are Our Capital' endowment",
       "amount_usd": 40000000,
       "source_type": "announcement",
       "source_url": "https://www.prnewswire.com/news-releases/the-archdiocese-of-new-york-announces-record-gift-of-40-million-from-christine--stephen-a-schwarzman-for-inner-city-scholarship-funds-new-endowment-campaign-300146053.html",
@@ -202,14 +202,14 @@
       "year": 2018,
       "date_precision": "day",
       "date": "2018-10-15",
-      "donor_entity": "Stephen Schwarzman (pledge announcement — disbursement likely through SASCHF)",
-      "recipient": "MIT — Stephen A. Schwarzman College of Computing",
+      "donor_entity": "Stephen Schwarzman (pledge announcement \u2014 disbursement likely through SASCHF)",
+      "recipient": "MIT \u2014 Stephen A. Schwarzman College of Computing",
       "amount_usd": 350000000,
       "source_type": "announcement",
       "source_url": "https://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "MIT gift is multi-year pledge. SASCHF 990-PFs 2018-2024 total $413M in grants out — the MIT disbursement schedule almost certainly flows partially through SASCHF. Marking as direct_gift pledge for headline; the SASCHF grant_out rows are the actual flow. DO NOT sum both for observable giving — pick one bucket. We use SASCHF 990-PF totals as the observable flow and treat this $350M as announced but already captured in 2018-2024 grants_out rollup."
+      "dedup_note": "MIT gift is multi-year pledge. SASCHF 990-PFs 2018-2024 total $413M in grants out \u2014 the MIT disbursement schedule almost certainly flows partially through SASCHF. Marking as direct_gift pledge for headline; the SASCHF grant_out rows are the actual flow. DO NOT sum both for observable giving \u2014 pick one bucket. We use SASCHF 990-PF totals as the observable flow and treat this $350M as announced but already captured in 2018-2024 grants_out rollup."
     },
     {
       "event_id": "schwarzman_oxford_2019",
@@ -218,13 +218,13 @@
       "date_precision": "month",
       "date": "2019-06",
       "donor_entity": "Stephen Schwarzman (multi-year pledge, likely through SASCHF)",
-      "recipient": "Oxford University — Stephen A. Schwarzman Centre for the Humanities (£150M initial + £25M uplift 2022 = £175M; NBC cited $188M, lifestyle mag $185M)",
+      "recipient": "Oxford University \u2014 Stephen A. Schwarzman Centre for the Humanities (\u00a3150M initial + \u00a325M uplift 2022 = \u00a3175M; NBC cited $188M, lifestyle mag $185M)",
       "amount_usd": 188000000,
       "source_type": "announcement",
       "source_url": "https://www.ox.ac.uk/news/2019-06-19-university-announces-unprecedented-investment-humanities",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Multi-year pledge; disbursement via SASCHF is likely (SASCHF grants paid 2019-2024 ~$413M). Same bucket issue as MIT — treat pledge as announcement headline, SASCHF 990-PF rows as the actual flow. Do not double-count."
+      "dedup_note": "Multi-year pledge; disbursement via SASCHF is likely (SASCHF grants paid 2019-2024 ~$413M). Same bucket issue as MIT \u2014 treat pledge as announcement headline, SASCHF 990-PF rows as the actual flow. Do not double-count."
     },
     {
       "event_id": "schwarzman_abington_2018",
@@ -237,7 +237,7 @@
       "source_url": "https://www.inquirer.com/philly/education/stephen-schwarzman-25m-gift-abington-high-school-original-agreement-demands-20180411.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Controversial gift — originally conditioned on renaming school 'Abington Schwarzman High School' + portraits + naming across 6 campus sites. After public outcry, Schwarzman withdrew most demands."
+      "notes": "Controversial gift \u2014 originally conditioned on renaming school 'Abington Schwarzman High School' + portraits + naming across 6 campus sites. After public outcry, Schwarzman withdrew most demands."
     },
     {
       "event_id": "schwarzman_amc_2021",
@@ -262,9 +262,122 @@
       "source_url": "https://en.wikipedia.org/wiki/Stephen_A._Schwarzman",
       "retrieved_at": "2026-04-23",
       "confidence": "medium"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Stephen A Schwarzman Education Foundation",
+      "donor_ein": "45-4757735",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 40194807.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/454757735",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $26.1M; payout rate 153.8%.",
+      "regen_source": "propublica",
+      "event_id": "stephen_schwarzman_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-91a741d107fb10e2",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Stephen A Schwarzman Education Foundation",
+      "donor_ein": "45-4757735",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 16281105.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/454757735",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $15.9M; payout rate 102.4%.",
+      "regen_source": "propublica",
+      "event_id": "stephen_schwarzman_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-91a741d107fb10e2",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Stephen A Schwarzman Education Foundation",
+      "donor_ein": "45-4757735",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 27491294.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/454757735",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $8.9M; payout rate 309.9%.",
+      "regen_source": "propublica",
+      "event_id": "stephen_schwarzman_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-91a741d107fb10e2",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Stephen A Schwarzman Education Foundation",
+      "donor_ein": "45-4757735",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 25621111.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/454757735",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $9.8M; payout rate 262.0%.",
+      "regen_source": "propublica",
+      "event_id": "stephen_schwarzman_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-91a741d107fb10e2",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Stephen A Schwarzman Education Foundation",
+      "donor_ein": "45-4757735",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 20610808.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/454757735",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $17.1M; payout rate 120.2%.",
+      "regen_source": "propublica",
+      "event_id": "stephen_schwarzman_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-91a741d107fb10e2",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Stephen A Schwarzman Education Foundation",
+      "donor_ein": "45-4757735",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 26988825.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/454757735",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $15.8M; payout rate 171.2%.",
+      "regen_source": "propublica",
+      "event_id": "stephen_schwarzman_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-91a741d107fb10e2",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "schwarzman_gp_2020",
@@ -275,9 +388,9 @@
       "pledged_pct_wealth": 50,
       "pledged_pct_wealth_note": "Giving Pledge minimum threshold is 'majority' (>50%). Schwarzman's letter does not state a specific percentage.",
       "pledged_amount_usd_at_signing_estimate": 17000000000,
-      "pledged_amount_method": "50% × Schwarzman's Jan 2020 estimated net worth (~$17.7B Forbes 2020). Floor only.",
+      "pledged_amount_method": "50% \u00d7 Schwarzman's Jan 2020 estimated net worth (~$17.7B Forbes 2020). Floor only.",
       "status": "UNFULFILLED",
-      "status_source": "IPS Giving Pledge at 15 (July 2025) — only 1 living 2010 pledger (Laura+John Arnold) has fulfilled. Schwarzman signed 2020 but has not fulfilled.",
+      "status_source": "IPS Giving Pledge at 15 (July 2025) \u2014 only 1 living 2010 pledger (Laura+John Arnold) has fulfilled. Schwarzman signed 2020 but has not fulfilled.",
       "pledge_letter_quote": "My philanthropy has brought a tremendous sense of joy and meaning to my life and I anticipate I will find more ways to give back during my lifetime.",
       "source_url": "https://www.givingpledge.org/pledger/stephen-a-schwarzman/",
       "retrieved_at": "2026-04-23",
@@ -297,14 +410,14 @@
       "source_type": "news",
       "source_url": "https://fortune.com/2026/02/16/stephen-schwarzman-blackstone-ceo-48-billion-fortune-to-philanthropic-foundation-focused-on-ai/",
       "retrieved_at": "2026-04-23",
-      "classification_note": "POSTHUMOUS BEQUEST INTENT — not counted in observable giving. Fortune explicitly: foundation will receive 'substantial majority' of fortune upon death. Flag for reclassification upon actual transfer. Until transfer, this is intent only."
+      "classification_note": "POSTHUMOUS BEQUEST INTENT \u2014 not counted in observable giving. Fortune explicitly: foundation will receive 'substantial majority' of fortune upon death. Flag for reclassification upon actual transfer. Until transfer, this is intent only."
     },
     {
       "event_id": "schwarzman_usatf_2024",
       "event_role": "pledge",
       "year": 2024,
       "pledged_amount_usd": 15000000,
-      "recipient": "USATF Foundation — elite track & field athletes",
+      "recipient": "USATF Foundation \u2014 elite track & field athletes",
       "source_type": "announcement",
       "source_url": "https://www.usatffoundation.org/stephen-a-schwarzman-pledges-additional-15-million-to-usatf-foundation-in-support-of-elite-track-field-athletes/",
       "retrieved_at": "2026-04-23",
@@ -312,12 +425,11 @@
       "dedup_note": "Likely to flow through SASCHF; already captured in 2024 grant totals."
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_HEAVY",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1. Schwarzman's pattern is more severe than most: ~$40M in 2024 cycle alone, comparable to or larger than SASCHF annual grants.",
     "observed_total_2020_2025_usd": 78500000,
-    "observed_total_note": "Sum: 2020 cycle $33.5M ($15M SLF + $3M AFA + ~$15.5M other) + 2024 cycle $40M + 2025 $5M MAGA Inc. Floor only — FEC bulk pull not yet executed. True number likely higher.",
+    "observed_total_note": "Sum: 2020 cycle $33.5M ($15M SLF + $3M AFA + ~$15.5M other) + 2024 cycle $40M + 2025 $5M MAGA Inc. Floor only \u2014 FEC bulk pull not yet executed. True number likely higher.",
     "sources": [
       {
         "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000361&name=Schwarzman,+Stephen+A.&super_only=S&type=I",
@@ -363,7 +475,6 @@
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -376,8 +487,8 @@
         "assets_usd_latest": 65328451,
         "assets_peak_usd": 124200000,
         "assets_peak_year": 2021,
-        "officers_compensation": "MIXED — Schwarzman himself ZERO_COMP; Amy Stursberg (Director) $560,000 in 2024; Molly Tilton (Program Manager) $191,031; John A Magliano (Treasurer) $150,000. Total officer comp ~$991K on $78.5M grants = 1.3%. Below HIGH_COMP flag threshold (10%).",
-        "payout_rate_notes": "2024 grants $78.5M vs assets $65.3M = 120% payout — asset base turns over fast because Schwarzman appears to fund annual giving directly rather than accumulate a large corpus. No LOW_PAYOUT flag.",
+        "officers_compensation": "MIXED \u2014 Schwarzman himself ZERO_COMP; Amy Stursberg (Director) $560,000 in 2024; Molly Tilton (Program Manager) $191,031; John A Magliano (Treasurer) $150,000. Total officer comp ~$991K on $78.5M grants = 1.3%. Below HIGH_COMP flag threshold (10%).",
+        "payout_rate_notes": "2024 grants $78.5M vs assets $65.3M = 120% payout \u2014 asset base turns over fast because Schwarzman appears to fund annual giving directly rather than accumulate a large corpus. No LOW_PAYOUT flag.",
         "red_flag_daf_transfers": "NOT_YET_VERIFIED",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
         "grant_total_2018_2024_usd": 413400000
@@ -402,11 +513,10 @@
     "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN.",
     "trusts_disclosed_existence_structure_unknown": []
   },
-
   "red_flags": [
     {
       "flag": "GIVING_PLEDGE_UNFULFILLED",
-      "evidence": "Signed Giving Pledge Jan 2020. As of Apr 2026, observable lifetime giving ~$900M–$1B vs. 50% pledge target $24B at current $48B net worth. Fortune Feb 2026 explicitly states the 'substantial majority' transfer will happen upon death — i.e. not yet fulfilled. Schwarzman has stated publicly that the wealth will transfer to SASCHF posthumously rather than during his lifetime.",
+      "evidence": "Signed Giving Pledge Jan 2020. As of Apr 2026, observable lifetime giving ~$900M\u2013$1B vs. 50% pledge target $24B at current $48B net worth. Fortune Feb 2026 explicitly states the 'substantial majority' transfer will happen upon death \u2014 i.e. not yet fulfilled. Schwarzman has stated publicly that the wealth will transfer to SASCHF posthumously rather than during his lifetime.",
       "source_url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
     },
     {
@@ -429,22 +539,21 @@
     "LOW_PAYOUT (SASCHF 2024 payout 120% of assets)",
     "HIGH_OFFICER_COMP (~1.3% of grants; Schwarzman himself zero comp)",
     "DAF_TRANSFERS (no DAF activity identified; not confirmed absent)",
-    "NO_OBSERVABLE_GIVING (clearly false — ~$900M-$1B observable lifetime)"
+    "NO_OBSERVABLE_GIVING (clearly false \u2014 ~$900M-$1B observable lifetime)"
   ],
-
   "rollup": {
     "observable_giving_usd": 1053500000,
-    "observable_giving_method": "sum(SASCHF 990-PF grants_out 2018-2024 = $413.4M) + pre-SASCHF direct_gifts (NYPL 2008 $100M + Tsinghua 2013 $100M + Yale 2015 $150M + ICSF 2015 $40M + Abington 2018 $25M + NatLib Israel 2018 $10M + Animal Medical Center 2021 $25M = $450M personal direct). Subtotal: $863M. PLUS multi-year pledges (MIT $350M, Oxford $188M) are likely disbursed THROUGH SASCHF — already counted in SASCHF row, DO NOT re-add. Rounding up for undocumented smaller gifts: $1.05B. Excludes: political giving; posthumous pledge.",
+    "observable_giving_method": "sum(SASCHF 990-PF grants_out 2018-2024 = $413.4M) + pre-SASCHF direct_gifts (NYPL 2008 $100M + Tsinghua 2013 $100M + Yale 2015 $150M + ICSF 2015 $40M + Abington 2018 $25M + NatLib Israel 2018 $10M + Animal Medical Center 2021 $25M = $450M personal direct). Subtotal: $863M. PLUS multi-year pledges (MIT $350M, Oxford $188M) are likely disbursed THROUGH SASCHF \u2014 already counted in SASCHF row, DO NOT re-add. Rounding up for undocumented smaller gifts: $1.05B. Excludes: political giving; posthumous pledge.",
     "observable_giving_todo": [
       "Pull SASCHF 990-PF Schedule I recipients 2015-2024 to deduplicate Yale 2015, ICSF 2015, MIT 2018-ongoing, Oxford 2019-ongoing against direct_gift entries. The current $1.05B figure may be slightly inflated or slightly deflated depending on timing.",
-      "Pull Stephen A Schwarzman Education Foundation (EIN 45-4757735) 990-PFs — not yet captured in rollup.",
-      "Run SEC EDGAR Form 4 for Schwarzman's Blackstone CIK — check G-transaction stock gifts to SASCHF or 501(c)(3)s.",
+      "Pull Stephen A Schwarzman Education Foundation (EIN 45-4757735) 990-PFs \u2014 not yet captured in rollup.",
+      "Run SEC EDGAR Form 4 for Schwarzman's Blackstone CIK \u2014 check G-transaction stock gifts to SASCHF or 501(c)(3)s.",
       "Run FEC bulk pull against Schwarzman's name/address to confirm or refine $78.5M political total."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 1912000000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.40 × $47.8B = $19.12B; tenure cap saturated (18 years). Expected = $1.91B.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.40 \u00d7 $47.8B = $19.12B; tenure cap saturated (18 years). Expected = $1.91B.",
     "observable_ratio_to_expected": 0.551,
-    "observable_ratio_to_current_nw": 0.0220,
+    "observable_ratio_to_current_nw": 0.022,
     "hidden_upper_usd": {
       "daf_uplift_usd": 0,
       "daf_uplift_note": "No DAF evidence.",
@@ -453,20 +562,19 @@
       "offshore_uplift_usd": 0,
       "offshore_uplift_note": "Not yet checked.",
       "anonymous_cohort_uplift_usd": 100000000,
-      "anonymous_cohort_method": "Schwarzman gives highly visibly (every major gift named). Anonymous giving likely very low. Conservative cohort-median: ~0.2% of liquid wealth × small amplifier = ~$100M upper.",
+      "anonymous_cohort_method": "Schwarzman gives highly visibly (every major gift named). Anonymous giving likely very low. Conservative cohort-median: ~0.2% of liquid wealth \u00d7 small amplifier = ~$100M upper.",
       "religious_cohort_uplift_usd": 40000000,
-      "religious_note": "Schwarzman supports Catholic education (ICSF $40M 2015 already captured) and Jewish institutions (NatLib Israel, etc.) — does not profess single religious tithing norm. Upper cohort adjustment $40M.",
+      "religious_note": "Schwarzman supports Catholic education (ICSF $40M 2015 already captured) and Jewish institutions (NatLib Israel, etc.) \u2014 does not profess single religious tithing norm. Upper cohort adjustment $40M.",
       "posthumous_pledge_uncertainty_usd": 12000000000,
-      "posthumous_pledge_method": "If Schwarzman follows through on 'substantial majority to foundation upon death' (Fortune Feb 2026) and his foundation becomes US top-10, that's ~$24B of $48B net worth. As uncertainty envelope for the 10-year probable disbursement schedule post-death, we use half of pledged target = $12B. NOT counted in observable or published tier — shown as confidence interval only.",
+      "posthumous_pledge_method": "If Schwarzman follows through on 'substantial majority to foundation upon death' (Fortune Feb 2026) and his foundation becomes US top-10, that's ~$24B of $48B net worth. As uncertainty envelope for the 10-year probable disbursement schedule post-death, we use half of pledged target = $12B. NOT counted in observable or published tier \u2014 shown as confidence interval only.",
       "total_usd": 12140000000,
       "total_method": "anonymous + religious + posthumous uncertainty"
     },
-    "observable_plus_hidden_ratio_to_expected": 6.90,
+    "observable_plus_hidden_ratio_to_expected": 6.9,
     "tier": "Probably_Low (Tier B)",
-    "tier_rule": "Observable ratio 0.55 of expected — halfway to the 10% norm. On observable-only he is NOT far from fulfillment. The big uncertainty is posthumous execution of the Giving Pledge commitment. Without the posthumous promise he would sit in Tier B 'Probably Low'; with it he could end at Tier A Verified-Higher posthumously. Currently Tier B is correct: observable giving is real and meaningful but well short of the 10% norm, the pledge is signed but explicitly deferred to death, and political giving dwarfs alternative philanthropic deployment.",
+    "tier_rule": "Observable ratio 0.55 of expected \u2014 halfway to the 10% norm. On observable-only he is NOT far from fulfillment. The big uncertainty is posthumous execution of the Giving Pledge commitment. Without the posthumous promise he would sit in Tier B 'Probably Low'; with it he could end at Tier A Verified-Higher posthumously. Currently Tier B is correct: observable giving is real and meaningful but well short of the 10% norm, the pledge is signed but explicitly deferred to death, and political giving dwarfs alternative philanthropic deployment.",
     "tier_published_caveat": "Schwarzman is the canonical 'named gift' philanthropist. Observable $1.05B is ~2% of current net worth and 55% of the 10% formal norm. He has given substantially more than Ellison or Zuckerberg observably but is pursuing the classical posthumous-foundation strategy Buffett critiqued. Political giving ($78M+ since 2020) approaches philanthropic giving on an annual basis."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 76.0,
     "components": {
@@ -477,55 +585,188 @@
     },
     "note": "Computed with v2 formula for continuity. DO NOT PUBLISH this number."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
-    "planned_outreach_route": "Blackstone Inc. Investor Relations + Stephen A. Schwarzman Foundation (c/o Amy Stursberg, Executive Director) — redundant routing for document delivery.",
+    "planned_outreach_route": "Blackstone Inc. Investor Relations + Stephen A. Schwarzman Foundation (c/o Amy Stursberg, Executive Director) \u2014 redundant routing for document delivery.",
     "scheduled_outreach_date": null,
     "response_deadline": null,
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
     "VERIFY: SASCHF 990-PF Schedule I recipient lists 2015-2024 to deduplicate Yale/ICSF/MIT/Oxford direct_gift entries against SASCHF grant_out rows.",
-    "VERIFY: Pull Stephen A Schwarzman Education Foundation (EIN 45-4757735) 990-PFs — add to rollup.",
-    "VERIFY: SEC EDGAR Form 4 G-transactions for Schwarzman's CIK — any stock gifts to SASCHF or external 501(c)(3)s.",
+    "VERIFY: Pull Stephen A Schwarzman Education Foundation (EIN 45-4757735) 990-PFs \u2014 add to rollup.",
+    "VERIFY: SEC EDGAR Form 4 G-transactions for Schwarzman's CIK \u2014 any stock gifts to SASCHF or external 501(c)(3)s.",
     "VERIFY: FEC bulk pull to confirm/refine $78.5M political total 2020-2025.",
     "VERIFY: Abington High School 2004 stadium donation dollar amount (not yet confirmed dollar figure).",
-    "VERIFY: Tsinghua Schwarzman Scholars endowment — subsequent Schwarzman contributions beyond 2013 $100M founding gift. Endowment is now >$600M; how much is Schwarzman vs. other donors?",
-    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
+    "VERIFY: Tsinghua Schwarzman Scholars endowment \u2014 subsequent Schwarzman contributions beyond 2013 $100M founding gift. Endowment is now >$600M; how much is Schwarzman vs. other donors?",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
     "VERIFY: Run Brave Search for post-Feb-2026 announced Schwarzman gifts."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/474634539", "retrieved_at": "2026-04-23", "used_for": "SASCHF 990-PF data 2018-2024, assets, officers, EIN"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/454757735", "retrieved_at": "2026-04-23", "used_for": "Stephen A Schwarzman Education Foundation existence, EIN"},
-    {"url": "https://www.givingpledge.org/pledger/stephen-a-schwarzman/", "retrieved_at": "2026-04-23", "used_for": "2020 pledge letter, quote"},
-    {"url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf", "retrieved_at": "2026-04-23", "used_for": "Pledge fulfillment classification (only 1 living 2010 pledger fulfilled; Schwarzman unfulfilled)"},
-    {"url": "https://fortune.com/2026/02/16/stephen-schwarzman-blackstone-ceo-48-billion-fortune-to-philanthropic-foundation-focused-on-ai/", "retrieved_at": "2026-04-23", "used_for": "$48B net worth; posthumous-bequest strategy; top-10 foundation ambition; AI focus"},
-    {"url": "https://www.forbes.com/profile/stephen-schwarzman/", "retrieved_at": "2026-04-23", "used_for": "Forbes 2026 net worth and rank (~#46-52)"},
-    {"url": "https://www.bloomberg.com/billionaires/profiles/stephen-a-schwarzman/", "retrieved_at": "2026-04-23", "used_for": "Bloomberg Billionaires Index 2026 $47.8B"},
-    {"url": "https://fortune.com/2026/03/02/blackstone-ceo-stephen-schwarzman-pay-bump-1-2-million-go-back-less-pressure-on-himself/", "retrieved_at": "2026-04-23", "used_for": "2025 comp $1.2B; net worth corroboration $44.2B"},
-    {"url": "https://en.wikipedia.org/wiki/Stephen_A._Schwarzman", "retrieved_at": "2026-04-23", "used_for": "DOB (1947-02-14); major gift timeline; 2020 cycle political giving ($15M SLF, $3M America First, $33.5M total GOP)"},
-    {"url": "https://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015", "retrieved_at": "2026-04-23", "used_for": "MIT $350M Schwarzman College of Computing 2018"},
-    {"url": "https://news.yale.edu/2015/05/11/150-million-gift-stephen-schwarzman-establish-first-its-kind-campus-center-yale-universit", "retrieved_at": "2026-04-23", "used_for": "Yale $150M 2015-05 Schwarzman Center"},
-    {"url": "https://philanthropynewsdigest.org/news/private-equity-tycoon-gives-100-million-to-establish-china-scholarship-fund", "retrieved_at": "2026-04-23", "used_for": "Tsinghua Schwarzman Scholars $100M personal 2013-04"},
-    {"url": "https://www.schwarzmanscholars.org/events-and-news/schwarzman-scholars-endowment-achieves-300-million-fundraising-milestone/", "retrieved_at": "2026-04-23", "used_for": "Scholars endowment growth beyond $300M"},
-    {"url": "https://www.ox.ac.uk/news/2019-06-19-university-announces-unprecedented-investment-humanities", "retrieved_at": "2026-04-23", "used_for": "Oxford Schwarzman Centre £150M 2019"},
-    {"url": "https://www.campaign.ox.ac.uk/news/25-million-uplift-for-stephen-a-schwarzman-centre-for-the-humanities", "retrieved_at": "2026-04-23", "used_for": "Oxford £25M uplift 2022, total £175M"},
-    {"url": "https://cherwell.org/2025/10/01/oxford-schwarzman-centre-opens/", "retrieved_at": "2026-04-23", "used_for": "Oxford Schwarzman Centre opened Oct 2025"},
-    {"url": "https://www.nbcnews.com/business/business-news/why-hedge-fund-billionaire-chose-oxford-record-188-million-gift-n1020396", "retrieved_at": "2026-04-23", "used_for": "Oxford $188M USD framing 2019"},
-    {"url": "https://www.philanthropy.com/news/financier-pledges-100-million-gift-to-help-new-york-public-library-expand/", "retrieved_at": "2026-04-23", "used_for": "NYPL $100M 2008"},
-    {"url": "https://www.prnewswire.com/news-releases/the-archdiocese-of-new-york-announces-record-gift-of-40-million-from-christine--stephen-a-schwarzman-for-inner-city-scholarship-funds-new-endowment-campaign-300146053.html", "retrieved_at": "2026-04-23", "used_for": "ICSF $40M 2015-09-21"},
-    {"url": "https://www.inquirer.com/philly/education/stephen-schwarzman-25m-gift-abington-high-school-original-agreement-demands-20180411.html", "retrieved_at": "2026-04-23", "used_for": "Abington $25M 2018 with naming conditions"},
-    {"url": "https://www.usatffoundation.org/stephen-a-schwarzman-pledges-additional-15-million-to-usatf-foundation-in-support-of-elite-track-field-athletes/", "retrieved_at": "2026-04-23", "used_for": "USATF $15M pledge 2024"},
-    {"url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000361&name=Schwarzman,+Stephen+A.&super_only=S&type=I", "retrieved_at": "2026-04-23", "used_for": "2024 political super-PAC giving detail"},
-    {"url": "https://americansfortaxfairness.org/billionaire-kingmakers/", "retrieved_at": "2026-04-23", "used_for": "2024 cycle $40M, 12th-largest donor"},
-    {"url": "https://www.cnn.com/2024/05/25/politics/stephen-schwarzman-trump-vote-election/index.html", "retrieved_at": "2026-04-23", "used_for": "Schwarzman backs Trump May 2024"},
-    {"url": "https://alternativecreditinvestor.com/2026/01/02/blackstones-steve-schwarzman-among-major-donors-to-trumps-super-pac/", "retrieved_at": "2026-04-23", "used_for": "$5M MAGA Inc. Dec 2025"},
-    {"url": "https://simplywall.st/stocks/us/diversified-financials/nyse-bx/blackstone/news/how-investors-may-respond-to-blackstone-bx-ceo-schwarzmans-5/amp", "retrieved_at": "2026-04-23", "used_for": "$5M MAGA Inc. confirmation"},
-    {"url": "https://www.cnbc.com/2022/11/16/trump-2024-campaign-blackstones-steve-schwarzman-wont-help-trump.html", "retrieved_at": "2026-04-23", "used_for": "Nov 2022 initial disavowal of Trump 2024"},
-    {"url": "https://www.insidephilanthropy.com/home/will-stephen-schwarzman-create-a-philanthropy-bigger-than-the-ford-foundation", "retrieved_at": "2026-04-23", "used_for": "Inside Philanthropy profile of Schwarzman philanthropic strategy"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/474634539",
+      "retrieved_at": "2026-04-23",
+      "used_for": "SASCHF 990-PF data 2018-2024, assets, officers, EIN"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/454757735",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Stephen A Schwarzman Education Foundation existence, EIN"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger/stephen-a-schwarzman/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2020 pledge letter, quote"
+    },
+    {
+      "url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Pledge fulfillment classification (only 1 living 2010 pledger fulfilled; Schwarzman unfulfilled)"
+    },
+    {
+      "url": "https://fortune.com/2026/02/16/stephen-schwarzman-blackstone-ceo-48-billion-fortune-to-philanthropic-foundation-focused-on-ai/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$48B net worth; posthumous-bequest strategy; top-10 foundation ambition; AI focus"
+    },
+    {
+      "url": "https://www.forbes.com/profile/stephen-schwarzman/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Forbes 2026 net worth and rank (~#46-52)"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/stephen-a-schwarzman/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Bloomberg Billionaires Index 2026 $47.8B"
+    },
+    {
+      "url": "https://fortune.com/2026/03/02/blackstone-ceo-stephen-schwarzman-pay-bump-1-2-million-go-back-less-pressure-on-himself/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2025 comp $1.2B; net worth corroboration $44.2B"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Stephen_A._Schwarzman",
+      "retrieved_at": "2026-04-23",
+      "used_for": "DOB (1947-02-14); major gift timeline; 2020 cycle political giving ($15M SLF, $3M America First, $33.5M total GOP)"
+    },
+    {
+      "url": "https://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015",
+      "retrieved_at": "2026-04-23",
+      "used_for": "MIT $350M Schwarzman College of Computing 2018"
+    },
+    {
+      "url": "https://news.yale.edu/2015/05/11/150-million-gift-stephen-schwarzman-establish-first-its-kind-campus-center-yale-universit",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Yale $150M 2015-05 Schwarzman Center"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/private-equity-tycoon-gives-100-million-to-establish-china-scholarship-fund",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Tsinghua Schwarzman Scholars $100M personal 2013-04"
+    },
+    {
+      "url": "https://www.schwarzmanscholars.org/events-and-news/schwarzman-scholars-endowment-achieves-300-million-fundraising-milestone/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Scholars endowment growth beyond $300M"
+    },
+    {
+      "url": "https://www.ox.ac.uk/news/2019-06-19-university-announces-unprecedented-investment-humanities",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Oxford Schwarzman Centre \u00a3150M 2019"
+    },
+    {
+      "url": "https://www.campaign.ox.ac.uk/news/25-million-uplift-for-stephen-a-schwarzman-centre-for-the-humanities",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Oxford \u00a325M uplift 2022, total \u00a3175M"
+    },
+    {
+      "url": "https://cherwell.org/2025/10/01/oxford-schwarzman-centre-opens/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Oxford Schwarzman Centre opened Oct 2025"
+    },
+    {
+      "url": "https://www.nbcnews.com/business/business-news/why-hedge-fund-billionaire-chose-oxford-record-188-million-gift-n1020396",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Oxford $188M USD framing 2019"
+    },
+    {
+      "url": "https://www.philanthropy.com/news/financier-pledges-100-million-gift-to-help-new-york-public-library-expand/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "NYPL $100M 2008"
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/the-archdiocese-of-new-york-announces-record-gift-of-40-million-from-christine--stephen-a-schwarzman-for-inner-city-scholarship-funds-new-endowment-campaign-300146053.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "ICSF $40M 2015-09-21"
+    },
+    {
+      "url": "https://www.inquirer.com/philly/education/stephen-schwarzman-25m-gift-abington-high-school-original-agreement-demands-20180411.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Abington $25M 2018 with naming conditions"
+    },
+    {
+      "url": "https://www.usatffoundation.org/stephen-a-schwarzman-pledges-additional-15-million-to-usatf-foundation-in-support-of-elite-track-field-athletes/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "USATF $15M pledge 2024"
+    },
+    {
+      "url": "https://www.opensecrets.org/outside-spending/donor_detail/2024?id=U0000000361&name=Schwarzman,+Stephen+A.&super_only=S&type=I",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2024 political super-PAC giving detail"
+    },
+    {
+      "url": "https://americansfortaxfairness.org/billionaire-kingmakers/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "2024 cycle $40M, 12th-largest donor"
+    },
+    {
+      "url": "https://www.cnn.com/2024/05/25/politics/stephen-schwarzman-trump-vote-election/index.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Schwarzman backs Trump May 2024"
+    },
+    {
+      "url": "https://alternativecreditinvestor.com/2026/01/02/blackstones-steve-schwarzman-among-major-donors-to-trumps-super-pac/",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$5M MAGA Inc. Dec 2025"
+    },
+    {
+      "url": "https://simplywall.st/stocks/us/diversified-financials/nyse-bx/blackstone/news/how-investors-may-respond-to-blackstone-bx-ceo-schwarzmans-5/amp",
+      "retrieved_at": "2026-04-23",
+      "used_for": "$5M MAGA Inc. confirmation"
+    },
+    {
+      "url": "https://www.cnbc.com/2022/11/16/trump-2024-campaign-blackstones-steve-schwarzman-wont-help-trump.html",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Nov 2022 initial disavowal of Trump 2024"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/will-stephen-schwarzman-create-a-philanthropy-bigger-than-the-ford-foundation",
+      "retrieved_at": "2026-04-23",
+      "used_for": "Inside Philanthropy profile of Schwarzman philanthropic strategy"
+    },
+    {
+      "publisher": "sec.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/1393066/000095014223000594/es230335284_4-lalonde.xml",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-91a741d107fb10e2"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-82-89",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-8009d87f8e962fd5"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-26-39",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-8009d87f8e962fd5"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-70-73",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-8009d87f8e962fd5"
+    }
   ]
 }

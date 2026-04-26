@@ -2,25 +2,26 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run — single-subject deep research (Geffen)",
-
+  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research (Geffen) + regen_v3@sha256-c436ad2c7d5a29e0 + regen_v3@sha256-33431d3259a8cb18",
   "person": {
     "name_display": "David Geffen",
     "name_legal": "David Lawrence Geffen",
     "dob_year": 1943,
     "country_primary": "United States",
-    "wealth_source": "Entertainment industry founder — Asylum Records, Geffen Records (sold to MCA 1990 for ~$550M in shares, ~$670M from Matsushita's 1991 MCA acquisition), DGC Records, Geffen Pictures, co-founder DreamWorks SKG (1994) with Spielberg and Katzenberg. Major art collection (reported $2.3B). Substantial real estate and Warner Bros. Discovery stake.",
+    "wealth_source": "Entertainment industry founder \u2014 Asylum Records, Geffen Records (sold to MCA 1990 for ~$550M in shares, ~$670M from Matsushita's 1991 MCA acquisition), DGC Records, Geffen Pictures, co-founder DreamWorks SKG (1994) with Spielberg and Katzenberg. Major art collection (reported $2.3B). Substantial real estate and Warner Bros. Discovery stake.",
     "years_as_billionaire_approx": 30
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 9.3,
-    "range_usd_billions": [8.0, 9.4],
+    "range_usd_billions": [
+      8.0,
+      9.4
+    ],
     "as_of": "2026-04",
     "range_note": "Forbes 2026 profile ~$9.3B (rank #372). SCMP/other 2025 sources cited ~$8B. CEO Today/iTechmirror 2025-26 ~$9.4B. Tight range (~15% spread) relative to tech billionaires. Wealth is comparatively diversified (art collection ~$2.3B, real estate, WBD stock, cash from media sales).",
     "sources": [
       {
-        "publisher": "Forbes Real-Time Billionaires (via iTechmirror/CEO Today aggregators — direct Forbes page blocked in this retrieval)",
+        "publisher": "Forbes Real-Time Billionaires (via iTechmirror/CEO Today aggregators \u2014 direct Forbes page blocked in this retrieval)",
         "url": "https://www.forbes.com/profile/david-geffen/",
         "retrieved_at": "2026-04-24",
         "value_usd_billions": 9.3,
@@ -39,9 +40,8 @@
       }
     ],
     "liquidity_estimate_pct": 0.55,
-    "liquidity_notes": "Geffen's wealth is unusually liquid for a billionaire at this scale. Post-MCA/Matsushita and DreamWorks sales (1990s-2006), a large share is cash/public equities/art. Art (~$2.3B) is partially liquid (blue-chip pieces are marketable at auction but with transaction costs). Apply 55% liquidity — higher than tech founders (20-30%) because wealth is already largely monetized. For expected-giving denominator use ~55%."
+    "liquidity_notes": "Geffen's wealth is unusually liquid for a billionaire at this scale. Post-MCA/Matsushita and DreamWorks sales (1990s-2006), a large share is cash/public equities/art. Art (~$2.3B) is partially liquid (blue-chip pieces are marketable at auction but with transaction costs). Apply 55% liquidity \u2014 higher than tech founders (20-30%) because wealth is already largely monetized. For expected-giving denominator use ~55%."
   },
-
   "cited_events": [
     {
       "event_id": "geffen_dgf_2024",
@@ -125,10 +125,10 @@
       "year": 2002,
       "date_precision": "month",
       "date": "2002-05",
-      "donor_entity": "David Geffen (personal — 2002 predates DGF scale-up)",
-      "recipient": "UCLA School of Medicine — renamed David Geffen School of Medicine at UCLA",
+      "donor_entity": "David Geffen (personal \u2014 2002 predates DGF scale-up)",
+      "recipient": "UCLA School of Medicine \u2014 renamed David Geffen School of Medicine at UCLA",
       "amount_usd": 200000000,
-      "amount_usd_note": "$200M unrestricted — largest single donation to a U.S. medical school at the time",
+      "amount_usd_note": "$200M unrestricted \u2014 largest single donation to a U.S. medical school at the time",
       "source_type": "announcement",
       "source_url": "https://philanthropynewsdigest.org/news/dreamworks-co-founder-david-geffen-gives-200-million-to-ucla-medical-school",
       "secondary_source_url": "https://en.wikipedia.org/wiki/David_Geffen_School_of_Medicine_at_UCLA",
@@ -143,7 +143,7 @@
       "date_precision": "month",
       "date": "2012-12",
       "donor_entity": "David Geffen",
-      "recipient": "UCLA — David Geffen Medical Scholarship Fund",
+      "recipient": "UCLA \u2014 David Geffen Medical Scholarship Fund",
       "amount_usd": 100000000,
       "source_type": "announcement",
       "source_url": "https://www.uclahealth.org/news/release/david-geffen-give-100-million-to-create-scholarship-fund",
@@ -163,7 +163,7 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "naming_right": "David Geffen Theater",
-      "dedup_note": "Granted through DGF — will be inside DGF 2013 Part XV. Do NOT add on top of DGF grants_out total for that year once 2013 990 is retrieved."
+      "dedup_note": "Granted through DGF \u2014 will be inside DGF 2013 Part XV. Do NOT add on top of DGF grants_out total for that year once 2013 990 is retrieved."
     },
     {
       "event_id": "geffen_lincoln_center_2015",
@@ -172,7 +172,7 @@
       "date_precision": "month",
       "date": "2015-03",
       "donor_entity": "David Geffen (announced as personal pledge, 8 annual installments)",
-      "recipient": "Lincoln Center — Avery Fisher Hall renovation (renamed David Geffen Hall)",
+      "recipient": "Lincoln Center \u2014 Avery Fisher Hall renovation (renamed David Geffen Hall)",
       "amount_usd": 100000000,
       "amount_usd_note": "Pledged March 2015, payable in 8 annual installments. Naming in perpetuity.",
       "source_type": "announcement",
@@ -190,7 +190,7 @@
       "date_precision": "month",
       "date": "2016-04",
       "donor_entity": "David Geffen / David Geffen Foundation",
-      "recipient": "Museum of Modern Art (MoMA) — expansion campaign",
+      "recipient": "Museum of Modern Art (MoMA) \u2014 expansion campaign",
       "amount_usd": 100000000,
       "source_type": "announcement",
       "source_url": "https://news.artnet.com/art-world/david-geffen-100-millon-moma-gift-479240",
@@ -206,7 +206,7 @@
       "year": 2015,
       "date_precision": "year",
       "donor_entity": "David Geffen / David Geffen Foundation",
-      "recipient": "UCLA — Geffen Academy at UCLA (grades 6-12 school, opened 2017)",
+      "recipient": "UCLA \u2014 Geffen Academy at UCLA (grades 6-12 school, opened 2017)",
       "amount_usd": 100000000,
       "amount_usd_note": "$100M gift announced 2015, $70M for renovation/construction/start-up. School opened 2017.",
       "source_type": "announcement",
@@ -222,7 +222,7 @@
       "date_precision": "month",
       "date": "2017-10",
       "donor_entity": "David Geffen / David Geffen Foundation",
-      "recipient": "Los Angeles County Museum of Art (LACMA) — Zumthor-designed building",
+      "recipient": "Los Angeles County Museum of Art (LACMA) \u2014 Zumthor-designed building",
       "amount_usd": 150000000,
       "amount_usd_note": "Pledged Oct 2017; building (David Geffen Galleries) opened May 2026.",
       "source_type": "announcement",
@@ -255,7 +255,7 @@
       "date_precision": "month",
       "date": "2021-06",
       "donor_entity": "David Geffen / David Geffen Foundation",
-      "recipient": "Yale — David Geffen School of Drama (formerly Yale School of Drama)",
+      "recipient": "Yale \u2014 David Geffen School of Drama (formerly Yale School of Drama)",
       "amount_usd": 150000000,
       "amount_usd_note": "Eliminates tuition for all degree/certificate students in perpetuity. 'Largest gift in the history of American theater' per school.",
       "source_type": "announcement",
@@ -285,21 +285,39 @@
       "year": 2023,
       "date_precision": "month",
       "date": "2023-12",
-      "donor_entity": "David Geffen (co-gift with Ken Griffin / Citadel) — The David Geffen Foundation + Griffin",
+      "donor_entity": "David Geffen (co-gift with Ken Griffin / Citadel) \u2014 The David Geffen Foundation + Griffin",
       "recipient": "Memorial Sloan Kettering Cancer Center",
       "amount_usd_combined": 400000000,
       "amount_usd_geffen_share": 200000000,
-      "amount_usd_geffen_share_note": "Individual shares NOT publicly disclosed. $400M is combined. For Scrooge accounting, 50/50 split assumed ($200M each) as working estimate. Flagged — replace with exact share if disclosed.",
+      "amount_usd_geffen_share_note": "Individual shares NOT publicly disclosed. $400M is combined. For Scrooge accounting, 50/50 split assumed ($200M each) as working estimate. Flagged \u2014 replace with exact share if disclosed.",
       "source_type": "announcement",
       "source_url": "https://www.mskcc.org/news-releases/mskcc-announces-landmark-400-million-gift-from-kenneth-griffin-and-david-geffen",
       "secondary_source_url": "https://www.philanthropy.com/news/memorial-sloan-kettering-lands-400-million-from-david-geffen-and-ken-griffin/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "naming_right": "David H. Koch Center — specific naming TBD (gift funds expansion of research/clinical programs)",
+      "naming_right": "David H. Koch Center \u2014 specific naming TBD (gift funds expansion of research/clinical programs)",
       "dedup_note": "Geffen's share may already be inside DGF 2023 grants_out ($130M) or 2024 ($112.8M). HIGH DEDUP RISK. Part XV parse required."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "The David Geffen Foundation",
+      "donor_ein": "95-4085811",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 34498634.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954085811",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $554.4M; payout rate 6.2%.",
+      "regen_source": "propublica",
+      "event_id": "david_geffen_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c436ad2c7d5a29e0",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "geffen_gp_NOT_SIGNED",
@@ -310,19 +328,21 @@
       "source_url": "https://www.dogoodla.org/blog/article/impressive-number-so-cal-philanthropists-have-signed-gates-buffetts-giving-pledge",
       "secondary_source_url": "https://en.wikipedia.org/wiki/David_Geffen",
       "retrieved_at": "2026-04-24",
-      "notes": "CORRECTION TO USER BRIEF: User research request stated Geffen signed the Giving Pledge in 2012. This is INCORRECT. Geffen does NOT appear on the Giving Pledge pledger list (https://www.givingpledge.org/pledgers), is not on the Do-Good-LA SoCal-signatories list, and Wikipedia notes he has not formally signed. Forbes has described him as having 'pledged to give whatever money he makes from now on to charity' — that is a self-statement, not a Giving Pledge signature. Net effect on tier: raises the 'observed vs promised' bar LESS than for Ellison (no formal pledge to fall short of), but MORE than 'no public commitment at all' (Forbes-quoted informal commitment still exists). No PLEDGE_UNFULFILLED flag. No PLEDGE_BREACH penalty."
+      "notes": "CORRECTION TO USER BRIEF: User research request stated Geffen signed the Giving Pledge in 2012. This is INCORRECT. Geffen does NOT appear on the Giving Pledge pledger list (https://www.givingpledge.org/pledgers), is not on the Do-Good-LA SoCal-signatories list, and Wikipedia notes he has not formally signed. Forbes has described him as having 'pledged to give whatever money he makes from now on to charity' \u2014 that is a self-statement, not a Giving Pledge signature. Net effect on tier: raises the 'observed vs promised' bar LESS than for Ellison (no formal pledge to fall short of), but MORE than 'no public commitment at all' (Forbes-quoted informal commitment still exists). No PLEDGE_UNFULFILLED flag. No PLEDGE_BREACH penalty."
     },
     {
       "event_id": "geffen_forbes_informal_commitment",
       "event_role": "informal_commitment",
-      "year_range": [2015, 2023],
+      "year_range": [
+        2015,
+        2023
+      ],
       "source_quote": "According to Forbes, Geffen has pledged to give whatever money he makes from now on to charity.",
       "source_url": "https://en.wikipedia.org/wiki/David_Geffen",
       "retrieved_at": "2026-04-24",
       "notes": "Self-statement via Forbes reporting, not a formal Giving Pledge. Cannot be tracked or enforced. Included for completeness only."
     }
   ],
-
   "political_giving": {
     "classification": "LOW_POLITICAL (verification pending)",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33 per $1.",
@@ -330,7 +350,6 @@
     "observed_total_note": "FEC API direct-pull not yet run. Geffen historically a significant Democratic donor (Obama-era bundler, Clinton super-PAC contributions) but 2021-2025 magnitude not quantified here. Lower priority than Ellison case because Geffen political giving is far below his charitable giving and does not present the same substitution concern.",
     "sources": []
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -344,29 +363,28 @@
         "grants_out_usd_latest": 112789776,
         "officers_compensation": "J Dallas Dishman (Executive Director): $409,000 salary + $86,981 other = ~$496K total. David Geffen (Trustee): $0.",
         "officers_comp_notes": "ED compensation is within normal range for a foundation granting ~$113M/yr. Not HIGH_COMP-flag territory (<<10% of grants).",
-        "payout_rate_notes": "2024 grants paid $112.8M / assets $332.7M = ~34% of assets. Well above the 5% legal minimum — NO LOW_PAYOUT flag. Over the 6-year window 2019-2024, grants_out totalled ~$551M; assets declined from $561M (2019) to $333M (2024), consistent with steady draw-down. Pattern: DGF is being spent down rather than permanently endowed.",
+        "payout_rate_notes": "2024 grants paid $112.8M / assets $332.7M = ~34% of assets. Well above the 5% legal minimum \u2014 NO LOW_PAYOUT flag. Over the 6-year window 2019-2024, grants_out totalled ~$551M; assets declined from $561M (2019) to $333M (2024), consistent with steady draw-down. Pattern: DGF is being spent down rather than permanently endowed.",
         "red_flag_daf_transfers": "NOT_YET_VERIFIED (requires Part XV grantee parse)",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/954085811"
       }
     ],
     "foundations_terminated": [],
     "dafs_detected": [],
-    "dafs_note": "No donor-advised fund activity identified. Absence-of-evidence only. Most of Geffen's major naming-rights gifts were announced directly to named institutions (UCLA, Yale, MoMA, LACMA, MSK, Lincoln Center) — not routed through intermediate DAF vehicles. Low likelihood of hidden DAF dominance.",
+    "dafs_note": "No donor-advised fund activity identified. Absence-of-evidence only. Most of Geffen's major naming-rights gifts were announced directly to named institutions (UCLA, Yale, MoMA, LACMA, MSK, Lincoln Center) \u2014 not routed through intermediate DAF vehicles. Low likelihood of hidden DAF dominance.",
     "llcs_philanthropic": [],
     "llcs_note": "No philanthropic LLC identified (unlike CZI, Emerson Collective).",
     "for_profit_hybrid_vehicles": [],
     "offshore_entities": [],
-    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN — deferred to Phase 2.",
+    "offshore_note": "ICIJ Offshore Leaks name-match NOT YET RUN \u2014 deferred to Phase 2.",
     "trusts_disclosed_existence_structure_unknown": [],
     "art_holdings_as_philanthropy_potential": {
       "notes": "Geffen's ~$2.3B art collection (blue-chip: Pollock, de Kooning, Jasper Johns etc.) is a latent philanthropic asset. Art gifts to museums receive fair-market-value deduction (MSK Pollock and de Kooning sales in 2006 were LIQUIDATIONS, not gifts). No evidence of major art bequest to MoMA, LACMA, or other institution named. Track as potential upper-bound estate disposition, not as observed giving."
     }
   },
-
   "red_flags": [
     {
       "flag": "NAMING_RIGHTS_DOMINANT",
-      "evidence": "Nearly every major gift has Geffen's name on the building/institution: David Geffen School of Medicine at UCLA (2002), Geffen Academy at UCLA (2015), David Geffen Hall at Lincoln Center (2015), David Geffen Wing at MoMA (2016), David Geffen Galleries at LACMA (2017), David Geffen School of Drama at Yale (2021), David Geffen Theater at Academy Museum (2013), David Geffen Medical Scholarship Fund (2012). This is not a disqualifying pattern — it is common among UHNW donors — but the consistency (8+ naming rights for 8+ major gifts) indicates naming is a functional precondition, not a byproduct. Raises a transparency/motive flag without negating the dollars.",
+      "evidence": "Nearly every major gift has Geffen's name on the building/institution: David Geffen School of Medicine at UCLA (2002), Geffen Academy at UCLA (2015), David Geffen Hall at Lincoln Center (2015), David Geffen Wing at MoMA (2016), David Geffen Galleries at LACMA (2017), David Geffen School of Drama at Yale (2021), David Geffen Theater at Academy Museum (2013), David Geffen Medical Scholarship Fund (2012). This is not a disqualifying pattern \u2014 it is common among UHNW donors \u2014 but the consistency (8+ naming rights for 8+ major gifts) indicates naming is a functional precondition, not a byproduct. Raises a transparency/motive flag without negating the dollars.",
       "source_url": "https://en.wikipedia.org/wiki/David_Geffen"
     },
     {
@@ -376,26 +394,25 @@
     }
   ],
   "red_flags_not_present": [
-    "GIVING_PLEDGE_UNFULFILLED (Geffen has not signed the Giving Pledge — cannot be unfulfilled)",
+    "GIVING_PLEDGE_UNFULFILLED (Geffen has not signed the Giving Pledge \u2014 cannot be unfulfilled)",
     "LOW_PAYOUT (DGF 2024 grants-to-assets ratio ~34%; well above 5% minimum)",
-    "HIGH_OFFICER_COMP (ED comp ~$496K on $113M grants = 0.4% — normal)",
+    "HIGH_OFFICER_COMP (ED comp ~$496K on $113M grants = 0.4% \u2014 normal)",
     "DAF_TRANSFERS (no DAF activity identified; not confirmed absent)",
     "POLITICAL_DOMINATES_CHARITABLE (not yet verified; no evidence to date that political giving approaches charitable giving magnitude)",
     "FOR_PROFIT_PIVOT (no for-profit hybrid vehicles)"
   ],
-
   "rollup": {
     "observable_giving_usd": 1246000000,
-    "observable_giving_method": "sum(DGF 990-PF grants_out 2019-2024) = $550.7M + pre-2019 major direct_gifts that are NOT yet deduped against DGF Part XV: UCLA 2002 ($200M) + UCLA 2012 ($100M) + Academy Museum 2013 ($25M) + Lincoln Center 2015 ($100M, multi-year) + UCLA Academy 2015 ($100M) + MoMA 2016 ($100M) + LACMA 2017 ($150M) + Yale 2021 ($150M, likely inside DGF post-2021 totals — SUBTRACTED) + Columbia 2021 ($75M) + MSK 2023 (Geffen share est. $200M, likely inside DGF 2023/2024 — SUBTRACTED) + UCLA 2019 ($46M, likely inside DGF — SUBTRACTED). Working sum AFTER subtracting likely-already-captured recent gifts: $550.7M (DGF 2019-2024) + $200M (UCLA 2002) + $100M (UCLA 2012) + $25M (Academy 2013) + $100M (Lincoln 2015, multi-year pre-2019) + $100M (UCLA Academy 2015) + $100M (MoMA 2016) + $150M (LACMA 2017, assume half pre-2019) ≈ $1.246B. CRITICAL: This figure has deliberate dedup subtractions for post-2019 announced gifts to avoid double-counting DGF grants_out. Upper-bound (naive additive) could be ~$1.7B; lower bound ~$1.0B. Flag: Part XV parse will tighten this.",
+    "observable_giving_method": "sum(DGF 990-PF grants_out 2019-2024) = $550.7M + pre-2019 major direct_gifts that are NOT yet deduped against DGF Part XV: UCLA 2002 ($200M) + UCLA 2012 ($100M) + Academy Museum 2013 ($25M) + Lincoln Center 2015 ($100M, multi-year) + UCLA Academy 2015 ($100M) + MoMA 2016 ($100M) + LACMA 2017 ($150M) + Yale 2021 ($150M, likely inside DGF post-2021 totals \u2014 SUBTRACTED) + Columbia 2021 ($75M) + MSK 2023 (Geffen share est. $200M, likely inside DGF 2023/2024 \u2014 SUBTRACTED) + UCLA 2019 ($46M, likely inside DGF \u2014 SUBTRACTED). Working sum AFTER subtracting likely-already-captured recent gifts: $550.7M (DGF 2019-2024) + $200M (UCLA 2002) + $100M (UCLA 2012) + $25M (Academy 2013) + $100M (Lincoln 2015, multi-year pre-2019) + $100M (UCLA Academy 2015) + $100M (MoMA 2016) + $150M (LACMA 2017, assume half pre-2019) \u2248 $1.246B. CRITICAL: This figure has deliberate dedup subtractions for post-2019 announced gifts to avoid double-counting DGF grants_out. Upper-bound (naive additive) could be ~$1.7B; lower bound ~$1.0B. Flag: Part XV parse will tighten this.",
     "observable_giving_todo": [
-      "Pull DGF 990-PF Part XV grantee lists for 2019-2024 — identify which announced gifts (Yale, LACMA, MSK, UCLA 2019, Lincoln Center installments) flow through DGF to avoid double-count.",
-      "Pull DGF 990-PF Part XV for years 1987-2018 — pre-current-window grants_out total. DGF was founded 1987 and has been a primary vehicle; pre-2019 grants could add $500M-$1B.",
+      "Pull DGF 990-PF Part XV grantee lists for 2019-2024 \u2014 identify which announced gifts (Yale, LACMA, MSK, UCLA 2019, Lincoln Center installments) flow through DGF to avoid double-count.",
+      "Pull DGF 990-PF Part XV for years 1987-2018 \u2014 pre-current-window grants_out total. DGF was founded 1987 and has been a primary vehicle; pre-2019 grants could add $500M-$1B.",
       "Verify Columbia Business School $75M 2021 gift via primary source (currently Wikipedia-only).",
-      "Verify Geffen's specific share of the MSK 2023 co-gift — shares were not publicly disclosed.",
+      "Verify Geffen's specific share of the MSK 2023 co-gift \u2014 shares were not publicly disclosed.",
       "Run SEC Form 4 G-transactions for any Geffen CIK holdings (e.g., WBD) for stock gifts to DGF or direct to charity."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 511500000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1). liquid_wealth = 0.55 × $9.3B = $5.115B. Tenure cap saturated (30 years). Expected = $511.5M. Strict 10% norm.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1). liquid_wealth = 0.55 \u00d7 $9.3B = $5.115B. Tenure cap saturated (30 years). Expected = $511.5M. Strict 10% norm.",
     "observable_ratio_to_expected": 2.436,
     "observable_ratio_to_current_nw": 0.134,
     "hidden_upper_usd": {
@@ -406,20 +423,19 @@
       "offshore_uplift_usd": 0,
       "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
       "anonymous_cohort_uplift_usd": 50000000,
-      "anonymous_cohort_method": "Geffen's giving is highly public and naming-rights-dominant — reduces prior on significant anonymous giving. Apply small uplift (~$50M) as cohort baseline.",
+      "anonymous_cohort_method": "Geffen's giving is highly public and naming-rights-dominant \u2014 reduces prior on significant anonymous giving. Apply small uplift (~$50M) as cohort baseline.",
       "religious_cohort_uplift_usd": 0,
       "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero.",
       "trust_outcome_uncertainty_usd": 500000000,
-      "trust_outcome_method": "No formal trust disclosure. Geffen has stated to Forbes that future earnings will go to charity (informal). Conservative uncertainty envelope ~$500M representing plausible future disbursements if the informal commitment holds. DO NOT include in tier calc — flag for transparency.",
+      "trust_outcome_method": "No formal trust disclosure. Geffen has stated to Forbes that future earnings will go to charity (informal). Conservative uncertainty envelope ~$500M representing plausible future disbursements if the informal commitment holds. DO NOT include in tier calc \u2014 flag for transparency.",
       "total_usd": 550000000,
       "total_method": "anonymous + trust-uncertainty (daf/llc/offshore/religious all zero)"
     },
     "observable_plus_hidden_ratio_to_expected": 3.51,
     "tier": "On_Track (Tier C)",
-    "tier_rule": "ON_TRACK requires (observable) / expected >= 1.0 with no disqualifying flags. Geffen's observable giving (~$1.25B) is ~2.4x his expected $511.5M 10% norm. He has no GIVING_PLEDGE_UNFULFILLED, no POLITICAL_DOMINATES_CHARITABLE, no LOW_PAYOUT, no FOR_PROFIT_PIVOT. NAMING_RIGHTS_DOMINANT is a PATTERN flag — it qualifies the character of giving but does not remove the dollars. GEOGRAPHIC_CONCENTRATION similarly a pattern flag.",
-    "tier_published_caveat": "Geffen is on track on dollars-out — observable giving exceeds the 10% norm. Readers should understand the giving is heavily directed at prestige naming opportunities at wealthy institutions (UCLA, Yale, MoMA, LACMA, Lincoln Center, MSK). Impact-per-dollar is a separate question from quantity-given. The Scrooge List measures the latter; the PATTERN flags surface the former for reader judgment."
+    "tier_rule": "ON_TRACK requires (observable) / expected >= 1.0 with no disqualifying flags. Geffen's observable giving (~$1.25B) is ~2.4x his expected $511.5M 10% norm. He has no GIVING_PLEDGE_UNFULFILLED, no POLITICAL_DOMINATES_CHARITABLE, no LOW_PAYOUT, no FOR_PROFIT_PIVOT. NAMING_RIGHTS_DOMINANT is a PATTERN flag \u2014 it qualifies the character of giving but does not remove the dollars. GEOGRAPHIC_CONCENTRATION similarly a pattern flag.",
+    "tier_published_caveat": "Geffen is on track on dollars-out \u2014 observable giving exceeds the 10% norm. Readers should understand the giving is heavily directed at prestige naming opportunities at wealthy institutions (UCLA, Yale, MoMA, LACMA, Lincoln Center, MSK). Impact-per-dollar is a separate question from quantity-given. The Scrooge List measures the latter; the PATTERN flags surface the former for reader judgment."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 18.0,
     "components": {
@@ -428,9 +444,8 @@
       "pledge_breach_penalty_20pct": 0.0,
       "red_flag_penalty_20pct": 10.0
     },
-    "note": "giving_gap = max(0, 1 - observable/expected) = max(0, 1 - 2.436) = 0. tenure_penalty = 20 (30+ years as billionaire, saturated). pledge_breach = 0 (not a Giving Pledge signer, can't breach). red_flag_penalty = 2 flags × 5 = 10. Total = 30 × weights — reconciling to 18 with observable exceeding expected. Computed for continuity; DO NOT PUBLISH — we publish tiers only per PLAN.md."
+    "note": "giving_gap = max(0, 1 - observable/expected) = max(0, 1 - 2.436) = 0. tenure_penalty = 20 (30+ years as billionaire, saturated). pledge_breach = 0 (not a Giving Pledge signer, can't breach). red_flag_penalty = 2 flags \u00d7 5 = 10. Total = 30 \u00d7 weights \u2014 reconciling to 18 with observable exceeding expected. Computed for continuity; DO NOT PUBLISH \u2014 we publish tiers only per PLAN.md."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
     "planned_outreach_route": "The David Geffen Foundation (c/o J Dallas Dishman, ED) + Geffen's publicist of record.",
@@ -439,45 +454,154 @@
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
-    "VERIFY: Parse DGF 990-PF Part XV grantee lists 2019-2024 to deduplicate announced gifts (Yale, LACMA, MSK, Columbia, UCLA 2019 $46M) against DGF grants_out totals. This will tighten observable estimate by ±$300M.",
+    "VERIFY: Parse DGF 990-PF Part XV grantee lists 2019-2024 to deduplicate announced gifts (Yale, LACMA, MSK, Columbia, UCLA 2019 $46M) against DGF grants_out totals. This will tighten observable estimate by \u00b1$300M.",
     "VERIFY: Pull DGF 990-PFs 1987-2018 to add pre-window grants_out. Likely adds $300M-$800M.",
-    "VERIFY: Columbia Business School $75M 2021 — primary source (Wikipedia-only currently).",
-    "VERIFY: MSK 2023 Geffen share — split with Griffin not disclosed; confirm via later disclosure or foundation filings.",
+    "VERIFY: Columbia Business School $75M 2021 \u2014 primary source (Wikipedia-only currently).",
+    "VERIFY: MSK 2023 Geffen share \u2014 split with Griffin not disclosed; confirm via later disclosure or foundation filings.",
     "VERIFY: FEC bulk pull for Geffen political giving 2021-2025.",
-    "VERIFY: SEC Form 4 G-transactions for Geffen CIK — any stock gifts to DGF not captured in 990-PF.",
-    "VERIFY: ICIJ Offshore Leaks name match — deferred to Phase 2.",
+    "VERIFY: SEC Form 4 G-transactions for Geffen CIK \u2014 any stock gifts to DGF not captured in 990-PF.",
+    "VERIFY: ICIJ Offshore Leaks name match \u2014 deferred to Phase 2.",
     "VERIFY: Forbes 2026 profile direct scrape (Forbes.com blocked in this retrieval; using aggregators)."
   ],
-
-  "summary_150_words": "David Geffen (83, DreamWorks/Geffen Records co-founder) is Forbes 2026 #372 at ~$9.3B. Unlike most Scrooge-adjacent billionaires, Geffen's observable giving EXCEEDS his 10%-liquid-wealth norm: the David Geffen Foundation (EIN 95-4085811) has disbursed ~$551M over 2019-2024, and major named gifts — UCLA Medical School ($200M 2002, $100M 2012, $46M 2019), Yale Drama ($150M 2021), Lincoln Center Hall ($100M 2015), MoMA ($100M 2016), LACMA ($150M 2017), MSK co-gift with Griffin ($400M combined 2023), UCLA Academy ($100M 2015) — total roughly $1.25B after dedup, vs. $512M expected. He did NOT sign the Giving Pledge (corrects user brief). PATTERN flag: NAMING_RIGHTS_DOMINANT — nearly every major gift renames a building or institution. GEOGRAPHIC_CONCENTRATION flag: giving is all elite US coastal cultural/educational institutions. Tier: On Track (Tier C) with two PATTERN flags. Dollars are there; the character of giving is a separate reader judgment.",
-
+  "summary_150_words": "David Geffen (83, DreamWorks/Geffen Records co-founder) is Forbes 2026 #372 at ~$9.3B. Unlike most Scrooge-adjacent billionaires, Geffen's observable giving EXCEEDS his 10%-liquid-wealth norm: the David Geffen Foundation (EIN 95-4085811) has disbursed ~$551M over 2019-2024, and major named gifts \u2014 UCLA Medical School ($200M 2002, $100M 2012, $46M 2019), Yale Drama ($150M 2021), Lincoln Center Hall ($100M 2015), MoMA ($100M 2016), LACMA ($150M 2017), MSK co-gift with Griffin ($400M combined 2023), UCLA Academy ($100M 2015) \u2014 total roughly $1.25B after dedup, vs. $512M expected. He did NOT sign the Giving Pledge (corrects user brief). PATTERN flag: NAMING_RIGHTS_DOMINANT \u2014 nearly every major gift renames a building or institution. GEOGRAPHIC_CONCENTRATION flag: giving is all elite US coastal cultural/educational institutions. Tier: On Track (Tier C) with two PATTERN flags. Dollars are there; the character of giving is a separate reader judgment.",
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/954085811", "retrieved_at": "2026-04-24", "used_for": "DGF 990-PF data 2019-2024, assets, officers, grants_out"},
-    {"url": "https://en.wikipedia.org/wiki/David_Geffen", "retrieved_at": "2026-04-24", "used_for": "Biographical data, wealth source, DOB, gift timeline, informal Forbes giving statement, non-signer status"},
-    {"url": "https://en.wikipedia.org/wiki/David_Geffen_School_of_Medicine_at_UCLA", "retrieved_at": "2026-04-24", "used_for": "UCLA 2002 $200M renaming event"},
-    {"url": "https://en.wikipedia.org/wiki/David_Geffen_Hall", "retrieved_at": "2026-04-24", "used_for": "Lincoln Center 2015 $100M 8-installment pledge"},
-    {"url": "https://philanthropynewsdigest.org/news/dreamworks-co-founder-david-geffen-gives-200-million-to-ucla-medical-school", "retrieved_at": "2026-04-24", "used_for": "UCLA 2002 $200M primary announcement"},
-    {"url": "https://www.uclahealth.org/news/release/david-geffen-give-100-million-to-create-scholarship-fund", "retrieved_at": "2026-04-24", "used_for": "UCLA 2012 $100M Medical Scholarship Fund"},
-    {"url": "https://newsroom.ucla.edu/releases/david-geffen-gift-expands-medical-scholarships", "retrieved_at": "2026-04-24", "used_for": "UCLA 2019 $46M Medical Scholarships top-up"},
-    {"url": "https://variety.com/2015/biz/news/david-geffen-donates-100-million-for-naming-rights-to-lincoln-center-venue-1201446864/", "retrieved_at": "2026-04-24", "used_for": "Lincoln Center 2015 $100M naming + 8-installment detail"},
-    {"url": "https://news.artnet.com/art-world/david-geffen-100-millon-moma-gift-479240", "retrieved_at": "2026-04-24", "used_for": "MoMA 2016 $100M gift + David Geffen Wing naming"},
-    {"url": "https://www.philanthropy.com/news/david-geffen-gives-100-million-to-the-museum-of-modern-art/", "retrieved_at": "2026-04-24", "used_for": "MoMA 2016 Chronicle of Philanthropy corroboration"},
-    {"url": "https://www.lacma.org/press/david-geffen-pledges-historic-150-million-building-lacma-campaign", "retrieved_at": "2026-04-24", "used_for": "LACMA 2017 $150M pledge primary"},
-    {"url": "https://unframed.lacma.org/2017/10/04/david-geffen-pledges-historic-150-million-building-lacma-campaign", "retrieved_at": "2026-04-24", "used_for": "LACMA 2017 Unframed blog detail"},
-    {"url": "https://unframed.lacma.org/2026/04/23/join-day-free-family-fun-celebrate-lacma-david-geffen-galleries", "retrieved_at": "2026-04-24", "used_for": "LACMA David Geffen Galleries 2026 opening confirmation"},
-    {"url": "https://news.yale.edu/2021/06/30/gift-david-geffen-yales-drama-school-goes-tuition-free", "retrieved_at": "2026-04-24", "used_for": "Yale Drama 2021 $150M — primary announcement"},
-    {"url": "https://www.drama.yale.edu/about-us/david-geffen-announcement/", "retrieved_at": "2026-04-24", "used_for": "Yale Drama renaming + perpetual tuition-free"},
-    {"url": "https://www.mskcc.org/news-releases/mskcc-announces-landmark-400-million-gift-from-kenneth-griffin-and-david-geffen", "retrieved_at": "2026-04-24", "used_for": "MSK 2023 $400M Griffin-Geffen co-gift (primary)"},
-    {"url": "https://www.philanthropy.com/news/memorial-sloan-kettering-lands-400-million-from-david-geffen-and-ken-griffin/", "retrieved_at": "2026-04-24", "used_for": "MSK 2023 Chronicle of Philanthropy corroboration"},
-    {"url": "https://philanthropynewsdigest.org/news/david-geffen-foundation-awards-25-million-for-construction-of-academy-museum-of-motion-pictures", "retrieved_at": "2026-04-24", "used_for": "Academy Museum 2013 $25M + David Geffen Theater naming"},
-    {"url": "https://newsroom.ucla.edu/releases/david-geffen-donates-100-million-to-launch-innovative-ucla-school-for-grades-6-through-12", "retrieved_at": "2026-04-24", "used_for": "Geffen Academy at UCLA 2015 $100M"},
-    {"url": "https://www.dogoodla.org/blog/article/impressive-number-so-cal-philanthropists-have-signed-gates-buffetts-giving-pledge", "retrieved_at": "2026-04-24", "used_for": "Confirmation Geffen NOT a Giving Pledge signatory"},
-    {"url": "https://www.givingpledge.org/pledgers", "retrieved_at": "2026-04-24", "used_for": "Geffen not present on official pledger list"},
-    {"url": "https://www.forbes.com/profile/david-geffen/", "retrieved_at": "2026-04-24", "used_for": "Forbes profile (retrieval blocked; aggregators used for $9.3B #372 2026)"},
-    {"url": "https://www.bloomberg.com/billionaires/profiles/david-geffen/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg Billionaires Index profile reference"},
-    {"url": "https://www.itechmirror.com/david-geffen-net-worth/", "retrieved_at": "2026-04-24", "used_for": "Net worth aggregator ($9.3B / #372 2026)"},
-    {"url": "https://www.scmp.com/magazines/style/entertainment/article/3258395/david-geffen-really-richest-man-hollywood-us8-billion-net-worth-dreamworks-co-founder-was-linked", "retrieved_at": "2026-04-24", "used_for": "2025 $8B net worth low-end range"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/954085811",
+      "retrieved_at": "2026-04-24",
+      "used_for": "DGF 990-PF data 2019-2024, assets, officers, grants_out"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/David_Geffen",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biographical data, wealth source, DOB, gift timeline, informal Forbes giving statement, non-signer status"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/David_Geffen_School_of_Medicine_at_UCLA",
+      "retrieved_at": "2026-04-24",
+      "used_for": "UCLA 2002 $200M renaming event"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/David_Geffen_Hall",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Lincoln Center 2015 $100M 8-installment pledge"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/dreamworks-co-founder-david-geffen-gives-200-million-to-ucla-medical-school",
+      "retrieved_at": "2026-04-24",
+      "used_for": "UCLA 2002 $200M primary announcement"
+    },
+    {
+      "url": "https://www.uclahealth.org/news/release/david-geffen-give-100-million-to-create-scholarship-fund",
+      "retrieved_at": "2026-04-24",
+      "used_for": "UCLA 2012 $100M Medical Scholarship Fund"
+    },
+    {
+      "url": "https://newsroom.ucla.edu/releases/david-geffen-gift-expands-medical-scholarships",
+      "retrieved_at": "2026-04-24",
+      "used_for": "UCLA 2019 $46M Medical Scholarships top-up"
+    },
+    {
+      "url": "https://variety.com/2015/biz/news/david-geffen-donates-100-million-for-naming-rights-to-lincoln-center-venue-1201446864/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Lincoln Center 2015 $100M naming + 8-installment detail"
+    },
+    {
+      "url": "https://news.artnet.com/art-world/david-geffen-100-millon-moma-gift-479240",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MoMA 2016 $100M gift + David Geffen Wing naming"
+    },
+    {
+      "url": "https://www.philanthropy.com/news/david-geffen-gives-100-million-to-the-museum-of-modern-art/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MoMA 2016 Chronicle of Philanthropy corroboration"
+    },
+    {
+      "url": "https://www.lacma.org/press/david-geffen-pledges-historic-150-million-building-lacma-campaign",
+      "retrieved_at": "2026-04-24",
+      "used_for": "LACMA 2017 $150M pledge primary"
+    },
+    {
+      "url": "https://unframed.lacma.org/2017/10/04/david-geffen-pledges-historic-150-million-building-lacma-campaign",
+      "retrieved_at": "2026-04-24",
+      "used_for": "LACMA 2017 Unframed blog detail"
+    },
+    {
+      "url": "https://unframed.lacma.org/2026/04/23/join-day-free-family-fun-celebrate-lacma-david-geffen-galleries",
+      "retrieved_at": "2026-04-24",
+      "used_for": "LACMA David Geffen Galleries 2026 opening confirmation"
+    },
+    {
+      "url": "https://news.yale.edu/2021/06/30/gift-david-geffen-yales-drama-school-goes-tuition-free",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Yale Drama 2021 $150M \u2014 primary announcement"
+    },
+    {
+      "url": "https://www.drama.yale.edu/about-us/david-geffen-announcement/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Yale Drama renaming + perpetual tuition-free"
+    },
+    {
+      "url": "https://www.mskcc.org/news-releases/mskcc-announces-landmark-400-million-gift-from-kenneth-griffin-and-david-geffen",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MSK 2023 $400M Griffin-Geffen co-gift (primary)"
+    },
+    {
+      "url": "https://www.philanthropy.com/news/memorial-sloan-kettering-lands-400-million-from-david-geffen-and-ken-griffin/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "MSK 2023 Chronicle of Philanthropy corroboration"
+    },
+    {
+      "url": "https://philanthropynewsdigest.org/news/david-geffen-foundation-awards-25-million-for-construction-of-academy-museum-of-motion-pictures",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Academy Museum 2013 $25M + David Geffen Theater naming"
+    },
+    {
+      "url": "https://newsroom.ucla.edu/releases/david-geffen-donates-100-million-to-launch-innovative-ucla-school-for-grades-6-through-12",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Geffen Academy at UCLA 2015 $100M"
+    },
+    {
+      "url": "https://www.dogoodla.org/blog/article/impressive-number-so-cal-philanthropists-have-signed-gates-buffetts-giving-pledge",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Confirmation Geffen NOT a Giving Pledge signatory"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Geffen not present on official pledger list"
+    },
+    {
+      "url": "https://www.forbes.com/profile/david-geffen/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Forbes profile (retrieval blocked; aggregators used for $9.3B #372 2026)"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/david-geffen/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg Billionaires Index profile reference"
+    },
+    {
+      "url": "https://www.itechmirror.com/david-geffen-net-worth/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Net worth aggregator ($9.3B / #372 2026)"
+    },
+    {
+      "url": "https://www.scmp.com/magazines/style/entertainment/article/3258395/david-geffen-really-richest-man-hollywood-us8-billion-net-worth-dreamworks-co-founder-was-linked",
+      "retrieved_at": "2026-04-24",
+      "used_for": "2025 $8B net worth low-end range"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-48-43",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33431d3259a8cb18"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-33431d3259a8cb18"
+    }
   ]
 }

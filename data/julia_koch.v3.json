@@ -1,29 +1,30 @@
 {
   "schema_version": "v3.0.0-draft",
-  "schema_notes": "Per-billionaire v3 record — Julia Koch. Widow of David H. Koch (d. 2019); inherited control of his 42% stake in Koch Industries and chair/president of the David H. Koch Charitable Foundation. KEY METHODOLOGICAL ISSUE: David's pre-2019 lifetime giving (~$1.3B per Forbes 400 2018) is NOT attributable to Julia's post-inheritance record; we count the David H. Koch Charitable Foundation's post-2019 grants-out plus any Julia-specific vehicles. SECOND KEY ISSUE: The three Julia-related philanthropy vehicles (Julia Koch Family Foundation EIN 92-1599313; Julia Koch Family Philanthropy Fund EIN 87-3659591; Mary Julia Koch Foundation EIN 87-3681616) are all classified 501(c)(4) social-welfare organizations per ProPublica — NOT 501(c)(3) private foundations. Donations to 501(c)(4)s are not tax-deductible for the donor and these vehicles can legally spend up to 49% of activity on political/lobbying. This requires the same treatment applied to Charles Koch's CCKc4 and Stand Together — 501(c)(4) transfers are NOT observable charitable giving without evidence of downstream 501(c)(3) disbursement.",
+  "schema_notes": "Per-billionaire v3 record \u2014 Julia Koch. Widow of David H. Koch (d. 2019); inherited control of his 42% stake in Koch Industries and chair/president of the David H. Koch Charitable Foundation. KEY METHODOLOGICAL ISSUE: David's pre-2019 lifetime giving (~$1.3B per Forbes 400 2018) is NOT attributable to Julia's post-inheritance record; we count the David H. Koch Charitable Foundation's post-2019 grants-out plus any Julia-specific vehicles. SECOND KEY ISSUE: The three Julia-related philanthropy vehicles (Julia Koch Family Foundation EIN 92-1599313; Julia Koch Family Philanthropy Fund EIN 87-3659591; Mary Julia Koch Foundation EIN 87-3681616) are all classified 501(c)(4) social-welfare organizations per ProPublica \u2014 NOT 501(c)(3) private foundations. Donations to 501(c)(4)s are not tax-deductible for the donor and these vehicles can legally spend up to 49% of activity on political/lobbying. This requires the same treatment applied to Charles Koch's CCKc4 and Stand Together \u2014 501(c)(4) transfers are NOT observable charitable giving without evidence of downstream 501(c)(3) disbursement.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run — Julia Koch estate-transition case study",
-
+  "generated_by": "scrooge v3 manual reference run \u2014 Julia Koch estate-transition case study + regen_v3@sha256-95784f6d18e6eba1 + regen_v3@sha256-75d4b7224df57ac9",
   "person": {
     "name_display": "Julia Koch",
     "name_legal": "Julia Margaret Flesher Koch",
     "dob_year": 1962,
     "country_primary": "United States",
-    "wealth_source": "Inherited 42% stake in Koch Industries (second-largest privately held U.S. company, ~$125B annual revenue) from husband David H. Koch upon his death August 23, 2019. Also family-office holdings, NY sports-team stakes (15% BSE Global acquired June 2024 — Brooklyn Nets, NY Liberty; 10% NY Giants acquired October 2025).",
+    "wealth_source": "Inherited 42% stake in Koch Industries (second-largest privately held U.S. company, ~$125B annual revenue) from husband David H. Koch upon his death August 23, 2019. Also family-office holdings, NY sports-team stakes (15% BSE Global acquired June 2024 \u2014 Brooklyn Nets, NY Liberty; 10% NY Giants acquired October 2025).",
     "years_as_billionaire_approx": 7,
     "spouse_deceased": {
       "name": "David H. Koch",
       "death_date": "2019-08-23",
       "lifetime_giving_usd": 1300000000,
-      "lifetime_giving_source": "Forbes 400 2018 — $1.3B across health care ($596.8M), education ($370.6M), arts ($292.5M). NOT attributable to Julia's post-2019 record."
+      "lifetime_giving_source": "Forbes 400 2018 \u2014 $1.3B across health care ($596.8M), education ($370.6M), arts ($292.5M). NOT attributable to Julia's post-2019 record."
     }
   },
-
   "net_worth": {
     "best_estimate_usd_billions": 81.2,
-    "range_usd_billions": [74.2, 81.2],
+    "range_usd_billions": [
+      74.2,
+      81.2
+    ],
     "as_of": "2026-04",
-    "range_note": "Silicon Review April 2026 profile cites $81.2B (up $7B YoY from higher energy prices post-Strait-of-Hormuz closure). Wikipedia cites $74.2B (May 2025). IBTimes 2024 pledger list cited $60.1B. Forbes.com profile page could not be fetched directly (consistent blocking pattern on Forbes). Net worth is an estimate of equity value in privately held Koch Industries — less volatile than public-equity billionaires but no public market price.",
+    "range_note": "Silicon Review April 2026 profile cites $81.2B (up $7B YoY from higher energy prices post-Strait-of-Hormuz closure). Wikipedia cites $74.2B (May 2025). IBTimes 2024 pledger list cited $60.1B. Forbes.com profile page could not be fetched directly (consistent blocking pattern on Forbes). Net worth is an estimate of equity value in privately held Koch Industries \u2014 less volatile than public-equity billionaires but no public market price.",
     "sources": [
       {
         "publisher": "The Silicon Review (April 2026)",
@@ -51,9 +52,8 @@
       }
     ],
     "liquidity_estimate_pct": 0.15,
-    "liquidity_notes": "Koch Industries is privately held; no public market for shares. Same 15% liquidity discount applied to Charles Koch — shares ARE transferable (David's estate transition demonstrates this) but pricing is internal and there is no exit venue for a large block. Tenure as billionaire in her own right is ~7 years (since Aug 2019 inheritance), so tenure cap does NOT saturate under a 10-year norm."
+    "liquidity_notes": "Koch Industries is privately held; no public market for shares. Same 15% liquidity discount applied to Charles Koch \u2014 shares ARE transferable (David's estate transition demonstrates this) but pricing is internal and there is no exit venue for a large block. Tenure as billionaire in her own right is ~7 years (since Aug 2019 inheritance), so tenure cap does NOT saturate under a 10-year norm."
   },
-
   "cited_events": [
     {
       "event_id": "dhkcf_2024",
@@ -130,7 +130,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "attribution_note": "2019 was David's death year (Aug 23). Giving was essentially zero — foundation was dormant during transition."
+      "attribution_note": "2019 was David's death year (Aug 23). Giving was essentially zero \u2014 foundation was dormant during transition."
     },
     {
       "event_id": "jkff_nyu_langone_2024",
@@ -141,13 +141,13 @@
       "donor_entity": "Julia Koch Family Foundation",
       "donor_ein": "92-1599313",
       "donor_classification": "501(c)(4) civic league / social welfare org (NOT 501(c)(3); donations to donor not tax-deductible)",
-      "recipient": "NYU Langone Health — Julia Koch Family Ambulatory Care Center, West Palm Beach FL",
+      "recipient": "NYU Langone Health \u2014 Julia Koch Family Ambulatory Care Center, West Palm Beach FL",
       "amount_usd": 75000000,
       "source_type": "announcement",
       "source_url": "https://nyulangone.org/news/julia-koch-family-foundation-gives-transformative-75-million-gift-new-state-art-nyu-langone-health-ambulatory-care-center-west-palm-beach",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "classification_note": "NYU Langone IS a 501(c)(3). Even though the Julia Koch Family Foundation is organized as a 501(c)(4), this is a documented out-the-door grant to a charitable recipient — countable as observable charity. However, (c)(4) structure means giving is NOT deductible to the donor and the foundation is not obligated to disclose grants on a 990-PF. Confirmed via NYU press release, not by a 990 grants list."
+      "classification_note": "NYU Langone IS a 501(c)(3). Even though the Julia Koch Family Foundation is organized as a 501(c)(4), this is a documented out-the-door grant to a charitable recipient \u2014 countable as observable charity. However, (c)(4) structure means giving is NOT deductible to the donor and the foundation is not obligated to disclose grants on a 990-PF. Confirmed via NYU press release, not by a 990 grants list."
     },
     {
       "event_id": "jkpf_contributions_in_2023",
@@ -199,7 +199,7 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/921599313",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "2024 contributions $754K (investment income only). 2023 contributions $55M. $36.7M expenses in 2024 — presumably the $75M NYU Langone gift was paid across multiple years OR through a different vehicle; attribution split between JKFF and JKPF is not disclosable from the summary tax data."
+      "note": "2024 contributions $754K (investment income only). 2023 contributions $55M. $36.7M expenses in 2024 \u2014 presumably the $75M NYU Langone gift was paid across multiple years OR through a different vehicle; attribution split between JKFF and JKPF is not disclosable from the summary tax data."
     },
     {
       "event_id": "mjkf_2024",
@@ -212,12 +212,15 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/873681616",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Mary Julia Koch is Julia's daughter, not Julia herself. Director of this (c)(4). Separate vehicle, financials shown for completeness — NOT attributed to Julia's observable giving. $22.5M in contributions and $12.4M in expenses 2024."
+      "note": "Mary Julia Koch is Julia's daughter, not Julia herself. Director of this (c)(4). Separate vehicle, financials shown for completeness \u2014 NOT attributed to Julia's observable giving. $22.5M in contributions and $12.4M in expenses 2024."
     },
     {
       "event_id": "david_koch_pre_2019_lifetime",
       "event_role": "reference_only_not_attributable",
-      "year_range": [1980, 2019],
+      "year_range": [
+        1980,
+        2019
+      ],
       "donor_entity": "David H. Koch (personal + David H. Koch Charitable Foundation)",
       "recipient": "Various (MIT $100M+, Memorial Sloan Kettering $150M, Lincoln Center $100M, Smithsonian $35M, American Museum of Natural History $20M, NewYork-Presbyterian, MD Anderson, etc.)",
       "amount_usd": 1300000000,
@@ -225,10 +228,47 @@
       "source_url": "https://www.foxbusiness.com/business-leaders/david-koch-spent-billions-giving-back-to-charity-heres-where-it-all-went",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "attribution_note": "CRITICAL METHODOLOGY: David's pre-death lifetime giving is NOT attributable to Julia. These gifts were made and paid before Julia became the primary donor decision-maker. Included here for context and to document the 'stepped-down' pattern post-2019 — David's giving during the 2011-2018 period averaged ~$10M/yr through DHKCF plus larger one-off gifts; post-2019 DHKCF giving collapsed to <$5K in 2019 and remained under $4M through 2024."
+      "attribution_note": "CRITICAL METHODOLOGY: David's pre-death lifetime giving is NOT attributable to Julia. These gifts were made and paid before Julia became the primary donor decision-maker. Included here for context and to document the 'stepped-down' pattern post-2019 \u2014 David's giving during the 2011-2018 period averaged ~$10M/yr through DHKCF plus larger one-off gifts; post-2019 DHKCF giving collapsed to <$5K in 2019 and remained under $4M through 2024."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "David H Koch Charitable Foundation",
+      "donor_ein": "48-0926946",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 4718.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $30.6M; payout rate 0.0%.",
+      "regen_source": "propublica",
+      "event_id": "julia_koch_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95784f6d18e6eba1",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "The Mary Julia Koch Foundation",
+      "donor_ein": "87-3681616",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 5000050.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/873681616",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $2.7M; payout rate 187.9%.",
+      "regen_source": "propublica",
+      "event_id": "julia_koch_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-95784f6d18e6eba1",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
-
   "pledges_and_announcements": [
     {
       "event_id": "julia_koch_gp_status",
@@ -238,7 +278,7 @@
       "source_type": "pledge_registry_gap",
       "source_url": "https://www.givingpledge.org/pledger-list/",
       "retrieved_at": "2026-04-24",
-      "notes": "Julia Koch is not listed on the Giving Pledge pledger list as of 2026-04. Corroborated by IBTimes April 2024 list of richest non-signatories (ranked #6 at $60.1B at that time). David H. Koch also did NOT sign the Giving Pledge during his lifetime — unlike his brother Charles, who also has NOT signed (see charles_koch.v3.json). The Koch family has explicitly declined the Pledge framework.",
+      "notes": "Julia Koch is not listed on the Giving Pledge pledger list as of 2026-04. Corroborated by IBTimes April 2024 list of richest non-signatories (ranked #6 at $60.1B at that time). David H. Koch also did NOT sign the Giving Pledge during his lifetime \u2014 unlike his brother Charles, who also has NOT signed (see charles_koch.v3.json). The Koch family has explicitly declined the Pledge framework.",
       "corroboration_url": "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315"
     },
     {
@@ -247,15 +287,14 @@
       "source_url": "https://www.davidkochfoundation.org/",
       "retrieved_at": "2026-04-24",
       "quote": "committed to advancing the philanthropic legacy of David H. Koch, enriching the lives of individuals around the world through science and medical research, education, public policy, and the arts",
-      "notes": "Foundation describes cumulative post-1982 giving as 'nearly $200 million' on davidkochfoundation.org. This is the cumulative total through the foundation's lifetime — not annual giving. Cumulative $200M across 40+ years vs. ~$1.3B lifetime giving total means the vast majority of David's giving was personal/direct, not via DHKCF."
+      "notes": "Foundation describes cumulative post-1982 giving as 'nearly $200 million' on davidkochfoundation.org. This is the cumulative total through the foundation's lifetime \u2014 not annual giving. Cumulative $200M across 40+ years vs. ~$1.3B lifetime giving total means the vast majority of David's giving was personal/direct, not via DHKCF."
     }
   ],
-
   "political_giving": {
     "classification": "POLITICAL_MODERATE_VIA_FAMILY_NETWORK",
     "substitution_note": "NBER W26616: political giving displaces charitable giving at ~$0.33/$1. Julia has stepped back from direct political giving compared to David's pre-2019 activity, but the Koch network remains a dominant GOP/libertarian funder via Americans for Prosperity Action ($40M from Koch Industries 2023-2024) and CCKc4 (Chase Koch, Charles's son). Julia's direct personal FEC activity appears limited.",
     "observed_total_2020_2025_usd": 360100,
-    "observed_total_note": "OpenSecrets donor lookup cited $360,100 in direct contributions to NRCC jointly from Julia, Charles, Elizabeth, David (before death), and Chase Koch. Julia's individual share is a fraction of this, likely <$100K. The Koch family's real political influence runs through Koch Industries' corporate PAC and Americans for Prosperity Action super-PAC — neither primarily attributable to Julia personally.",
+    "observed_total_note": "OpenSecrets donor lookup cited $360,100 in direct contributions to NRCC jointly from Julia, Charles, Elizabeth, David (before death), and Chase Koch. Julia's individual share is a fraction of this, likely <$100K. The Koch family's real political influence runs through Koch Industries' corporate PAC and Americans for Prosperity Action super-PAC \u2014 neither primarily attributable to Julia personally.",
     "sources": [
       {
         "url": "https://www.opensecrets.org/donor-lookup/results?name=julia+koch",
@@ -266,17 +305,16 @@
         "url": "https://www.opensecrets.org/orgs/koch-industries/recipients?id=d000000186",
         "retrieved_at": "2026-04-24",
         "publisher": "OpenSecrets",
-        "note": "Koch Industries PAC — not Julia's personal giving"
+        "note": "Koch Industries PAC \u2014 not Julia's personal giving"
       },
       {
         "url": "https://www.exposedbycmd.org/2024/11/05/koch-super-pac-shatters-its-election-spending-record/",
         "retrieved_at": "2026-04-24",
         "publisher": "CMD / ExposedbyCMD",
-        "note": "AFP Action super-PAC shattered spending record 2024 — Charles Koch-controlled, not Julia"
+        "note": "AFP Action super-PAC shattered spending record 2024 \u2014 Charles Koch-controlled, not Julia"
       }
     ]
   },
-
   "detected_vehicles": {
     "foundations_active": [
       {
@@ -290,8 +328,8 @@
         "assets_usd_latest": 1512449,
         "assets_usd_peak": 71071429,
         "assets_peak_year": 2011,
-        "officers_compensation": "ZERO_COMP (Julia F Koch President/Director/Secretary; Terra R Eck and Megan Reichenberger Treasurer — all $0)",
-        "payout_rate_notes": "2024 disbursements $2.1M vs. assets $1.5M = 140% payout (foundation is in terminal wind-down). However assets fell from $71M (2011) to $1.5M (2024) — a 98% wind-down over 13 years. David's wealth was clearly NOT routed through this foundation in later years; it was kept small on purpose. Post-2019 under Julia's control it averages ~$1.6M/yr in grants — trivial relative to her $81B net worth.",
+        "officers_compensation": "ZERO_COMP (Julia F Koch President/Director/Secretary; Terra R Eck and Megan Reichenberger Treasurer \u2014 all $0)",
+        "payout_rate_notes": "2024 disbursements $2.1M vs. assets $1.5M = 140% payout (foundation is in terminal wind-down). However assets fell from $71M (2011) to $1.5M (2024) \u2014 a 98% wind-down over 13 years. David's wealth was clearly NOT routed through this foundation in later years; it was kept small on purpose. Post-2019 under Julia's control it averages ~$1.6M/yr in grants \u2014 trivial relative to her $81B net worth.",
         "red_flag_daf_transfers": "NOT_YET_VERIFIED",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946"
       },
@@ -307,7 +345,14 @@
         "contributions_received_2023": 55000000,
         "expenses_2024": 36706825,
         "expenses_2023": 5058598,
-        "officers": ["Julia F Koch (Director)", "Gregory W Flesher (President)", "Laci L Boyle (Secretary)", "Martin Kwedar (Secretary)", "Megan Reichenberger (Treasurer)", "Terra R Eck (Treasurer)"],
+        "officers": [
+          "Julia F Koch (Director)",
+          "Gregory W Flesher (President)",
+          "Laci L Boyle (Secretary)",
+          "Martin Kwedar (Secretary)",
+          "Megan Reichenberger (Treasurer)",
+          "Terra R Eck (Treasurer)"
+        ],
         "officers_compensation": "ZERO_COMP",
         "source_url": "https://projects.propublica.org/nonprofits/organizations/921599313",
         "c4_classification_flag": "Donations to donor not tax-deductible. (c)(4)s can spend up to 49% on politics/lobbying. Grant-out detail not required on Form 990 (unlike 990-PF Part XV). Cannot confirm charitable disbursement without recipient-side verification. NYU Langone $75M 2024 gift IS confirmed from recipient side (NYU press release)."
@@ -325,7 +370,12 @@
         "contributions_received_2024": 78940000,
         "expenses_2024": 22620000,
         "expenses_2023": 91120000,
-        "officers": ["Julia F Koch (Director)", "Gregory W Flesher (President)", "Martin Kwedar (Secretary)", "Terra R Eck (Treasurer)"],
+        "officers": [
+          "Julia F Koch (Director)",
+          "Gregory W Flesher (President)",
+          "Martin Kwedar (Secretary)",
+          "Terra R Eck (Treasurer)"
+        ],
         "source_url": "https://projects.propublica.org/nonprofits/organizations/873659591",
         "c4_classification_flag": "Same (c)(4) verification problem as JKFF. $91M in 2023 expenses is large and reportedly grants-out per PND/Instrumentl, but 990 schedule-of-grants is not mandatory for (c)(4) and cannot be independently verified at line-item level."
       },
@@ -340,7 +390,10 @@
         "assets_usd_latest": 13455311,
         "contributions_received_2024": 22499551,
         "expenses_2024": 12361727,
-        "officers": ["Mary Julia Koch (Director)", "Gregory W Flesher (President)"],
+        "officers": [
+          "Mary Julia Koch (Director)",
+          "Gregory W Flesher (President)"
+        ],
         "source_url": "https://projects.propublica.org/nonprofits/organizations/873681616",
         "attribution_note": "Mary Julia Koch is Julia's daughter. Listed here for structural completeness but NOT attributed to Julia's observable giving."
       }
@@ -362,7 +415,6 @@
       }
     ]
   },
-
   "red_flags": [
     {
       "flag": "NO_GIVING_PLEDGE_SIGNATURE",
@@ -371,12 +423,12 @@
     },
     {
       "flag": "ESTATE_TRANSITION_GIVING_COLLAPSE",
-      "evidence": "David H. Koch Charitable Foundation disbursed $10M+/yr during 2011-2017 (David alive, actively directing). Post-2019 under Julia's sole control: $5,861 (2019), $2.0M (2020), $1.0M (2021), $3.1M (2022), $630K (2023), $2.1M (2024). The foundation has been wound down (assets $71M in 2011 → $1.5M in 2024, a 98% decline). Major NEW giving has shifted to three (c)(4) vehicles where disbursement cannot be independently verified.",
+      "evidence": "David H. Koch Charitable Foundation disbursed $10M+/yr during 2011-2017 (David alive, actively directing). Post-2019 under Julia's sole control: $5,861 (2019), $2.0M (2020), $1.0M (2021), $3.1M (2022), $630K (2023), $2.1M (2024). The foundation has been wound down (assets $71M in 2011 \u2192 $1.5M in 2024, a 98% decline). Major NEW giving has shifted to three (c)(4) vehicles where disbursement cannot be independently verified.",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946"
     },
     {
       "flag": "501C4_SOCIAL_WELFARE_SUBSTITUTION",
-      "evidence": "All three post-2022 Julia Koch philanthropy vehicles (JKFF EIN 92-1599313, JKPF EIN 87-3659591, MJKF EIN 87-3681616) are classified 501(c)(4) social welfare organizations — NOT 501(c)(3) private foundations. (c)(4)s: (1) cannot offer the donor a charitable deduction, (2) may spend up to 49% on political/lobbying, (3) are not required to disclose grant recipients. Same structural pattern Charles Koch uses via CCKc4 and Stand Together. Creates a 'dark giving' channel that looks like philanthropy but is not verifiable as 501(c)(3) charity.",
+      "evidence": "All three post-2022 Julia Koch philanthropy vehicles (JKFF EIN 92-1599313, JKPF EIN 87-3659591, MJKF EIN 87-3681616) are classified 501(c)(4) social welfare organizations \u2014 NOT 501(c)(3) private foundations. (c)(4)s: (1) cannot offer the donor a charitable deduction, (2) may spend up to 49% on political/lobbying, (3) are not required to disclose grant recipients. Same structural pattern Charles Koch uses via CCKc4 and Stand Together. Creates a 'dark giving' channel that looks like philanthropy but is not verifiable as 501(c)(3) charity.",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/921599313"
     },
     {
@@ -386,29 +438,28 @@
     },
     {
       "flag": "PREFERS_SPORTS_TEAMS_OVER_CHARITY",
-      "evidence": "Post-2019 capital deployment: $75M charitable (NYU Langone 2024) vs. 15% BSE Global stake June 2024 (Brooklyn Nets, NY Liberty; multi-billion implied valuation) and 10% NY Giants October 2025 (implied valuation $10B — Koch family share ~$1B). Personal investment dwarfs documented charitable outflow by an order of magnitude.",
+      "evidence": "Post-2019 capital deployment: $75M charitable (NYU Langone 2024) vs. 15% BSE Global stake June 2024 (Brooklyn Nets, NY Liberty; multi-billion implied valuation) and 10% NY Giants October 2025 (implied valuation $10B \u2014 Koch family share ~$1B). Personal investment dwarfs documented charitable outflow by an order of magnitude.",
       "source_url": "https://thesiliconreview.com/2026/04/julia-koch-net-worth-giants-nets-liberty"
     }
   ],
   "red_flags_not_present": [
-    "GIVING_PLEDGE_UNFULFILLED (Julia never signed — can't be unfulfilled)",
-    "LOW_PAYOUT (DHKCF 2024 payout > 100% — foundation is winding down, not hoarding)",
+    "GIVING_PLEDGE_UNFULFILLED (Julia never signed \u2014 can't be unfulfilled)",
+    "LOW_PAYOUT (DHKCF 2024 payout > 100% \u2014 foundation is winding down, not hoarding)",
     "HIGH_OFFICER_COMP (all listed officers $0)",
     "POLITICAL_HEAVY (Julia personally is a relatively small direct political giver; family-network giving runs through Charles/AFP channels)"
   ],
-
   "rollup": {
     "observable_giving_usd": 84460249,
     "observable_giving_method": "sum(DHKCF 501(c)(3) grants-out 2019-2024 = $8.96M) + JKFF-to-NYU-Langone 2024 $75M direct-gift-confirmed-by-recipient. EXCLUDES: JKFF/JKPF/MJKF total (c)(4) expenses where downstream 501(c)(3) disbursement is not verified; David's pre-2019 lifetime giving (not attributable to Julia).",
     "observable_giving_todo": [
       "VERIFY: JKFF/JKPF actual grants-out line-items. Must cross-check every large recipient hospital/museum/university's press releases and 990 Schedule B contributions received for 2023 and 2024 against these (c)(4)s. If $91M JKPF 2023 expenses is genuinely grants-to-charity, we'd see it in recipient 990s.",
-      "VERIFY: David H. Koch Charitable Foundation's terminal grant recipients 2020-2024 — are these grants going to 501(c)(3)s or to Americans for Prosperity Foundation / Stand Together / other Koch-network (c)(3)s that then fund political advocacy?",
+      "VERIFY: David H. Koch Charitable Foundation's terminal grant recipients 2020-2024 \u2014 are these grants going to 501(c)(3)s or to Americans for Prosperity Foundation / Stand Together / other Koch-network (c)(3)s that then fund political advocacy?",
       "VERIFY: Did David's estate include a testamentary charitable bequest? No public reporting, but a charitable residuary trust would be a major (unobserved) future giving commitment.",
       "VERIFY: Run FEC bulk pull for Julia Koch personal political giving 2020-2025 to tighten the $360K shared-family total.",
-      "VERIFY: Cross-reference DHKCF's 2011-2017 $10M/yr pattern — was David funding this in pass-through mode (contributions in ≈ grants out + asset reduction)? 2011 shows $5.5M contributions received; later years show $0 contributions with asset draw-down. Suggests no ongoing top-up."
+      "VERIFY: Cross-reference DHKCF's 2011-2017 $10M/yr pattern \u2014 was David funding this in pass-through mode (contributions in \u2248 grants out + asset reduction)? 2011 shows $5.5M contributions received; later years show $0 contributions with asset draw-down. Suggests no ongoing top-up."
     ],
     "expected_giving_usd_10pct_liquid_weighted_by_tenure": 852000000,
-    "expected_giving_method": "10% × liquid_wealth × min(years_as_bil/10, 1) where liquid_wealth = 0.15 × $81.2B = $12.18B; tenure weight = 7/10 = 0.7. Expected = $852M. Tenure NOT saturated because Julia's decision-making tenure is 7 years (from Aug 2019). Using a generous tenure weight — a stricter counter would argue she should be expected to maintain David's established ~$30-60M/yr giving rate from day one.",
+    "expected_giving_method": "10% \u00d7 liquid_wealth \u00d7 min(years_as_bil/10, 1) where liquid_wealth = 0.15 \u00d7 $81.2B = $12.18B; tenure weight = 7/10 = 0.7. Expected = $852M. Tenure NOT saturated because Julia's decision-making tenure is 7 years (from Aug 2019). Using a generous tenure weight \u2014 a stricter counter would argue she should be expected to maintain David's established ~$30-60M/yr giving rate from day one.",
     "observable_ratio_to_expected": 0.0991,
     "observable_ratio_to_current_nw": 0.00104,
     "hidden_upper_usd": {
@@ -421,20 +472,19 @@
       "c4_uplift_usd": 113740000,
       "c4_uplift_method": "IF the JKFF+JKPF (c)(4) expenses were entirely charitable grants-out (upper bound assumption): JKFF $36.7M (2024) + JKPF $91.1M (2023) + JKPF $22.6M (2024) = $150.4M over 2023-2024. Minus the $75M NYU gift already counted in observable = $75.4M. Plus an illustrative one-year extrapolation for 2025 = ~$113.7M total hidden upper assuming 100% charitable disbursement. Under conservative c4-accounting assumption of 51%-charitable-49%-political split (the legal maximum political share), hidden charity uplift = $57.7M. We report the upper bound but flag: this is LOW CONFIDENCE because (c)(4)s are donor-opaque by design.",
       "anonymous_cohort_uplift_usd": 50000000,
-      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Julia serves on MSK, Met, Venetian Heritage boards — typical amount per board-seat annual commitment ~$500K-$2M; anonymous giving via these channels estimated at $50M over 5-year post-David window.",
+      "anonymous_cohort_method": "BofA/Lilly 2024: 69% of older HNW donors give anonymously at least sometimes. Julia serves on MSK, Met, Venetian Heritage boards \u2014 typical amount per board-seat annual commitment ~$500K-$2M; anonymous giving via these channels estimated at $50M over 5-year post-David window.",
       "religious_cohort_uplift_usd": 0,
       "religious_note": "No publicly disclosed religious tithing obligation.",
       "trust_outcome_uncertainty_usd": 2000000000,
-      "trust_outcome_method": "David's estate plan / Julia's own estate plan may include a testamentary charitable bequest (many UHNW widows do, motivated partly by estate-tax minimization). No public disclosure. Set an uncertainty envelope of ~$2B — roughly what a 10% charitable bequest of Julia's current net worth would imply, not counted in tier calculation.",
+      "trust_outcome_method": "David's estate plan / Julia's own estate plan may include a testamentary charitable bequest (many UHNW widows do, motivated partly by estate-tax minimization). No public disclosure. Set an uncertainty envelope of ~$2B \u2014 roughly what a 10% charitable bequest of Julia's current net worth would imply, not counted in tier calculation.",
       "total_usd": 165740000,
       "total_method": "c4_upper + anonymous_cohort (trust excluded from tier calc; religious/DAF/LLC/offshore all zero)"
     },
     "observable_plus_hidden_ratio_to_expected": 0.294,
     "tier": "Probably_Low (Tier B)",
-    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Julia is at 0.29 — above the strict threshold but well below parity. She is Tier B 'Probably Low' because: (1) verified 501(c)(3) giving is only ~$85M cumulative post-2019, (2) 501(c)(4) 'giving' of $150M+ cannot be confirmed as charity without downstream verification, (3) dominant capital deployment (NYU $75M vs. $1B+ sports-team stakes) suggests philanthropy is not a primary budget line, (4) no Giving Pledge commitment makes future trajectory unpredictable.",
+    "tier_rule": "VERIFIED_LOW requires (observable + hidden_upper) / expected < 0.2. Julia is at 0.29 \u2014 above the strict threshold but well below parity. She is Tier B 'Probably Low' because: (1) verified 501(c)(3) giving is only ~$85M cumulative post-2019, (2) 501(c)(4) 'giving' of $150M+ cannot be confirmed as charity without downstream verification, (3) dominant capital deployment (NYU $75M vs. $1B+ sports-team stakes) suggests philanthropy is not a primary budget line, (4) no Giving Pledge commitment makes future trajectory unpredictable.",
     "tier_published_caveat": "Julia Koch should be presented as the canonical 'estate-transition dropoff' case: when a primary philanthropist (David) dies, the widow-controlled foundation can wind down rather than scale up. Observable giving post-2019 is a small fraction of David's pre-2019 ~$30-60M/yr rate, despite Julia's net worth being multiples higher than David's was. Also: she uses (c)(4) vehicles rather than (c)(3) foundations, which creates opacity and is structurally identical to the pattern flagged in Charles Koch's profile."
   },
-
   "scrooge_legacy_score_internal_only": {
     "value": 87.1,
     "components": {
@@ -443,9 +493,8 @@
       "pledge_breach_penalty_20pct": 0.0,
       "red_flag_penalty_20pct": 20.0
     },
-    "note": "Pledge-breach = 0 because Julia never signed. Giving gap high because $85M observable vs $852M expected = 90% gap. Tenure penalty partial (7 years, not saturated at 10). Red-flag penalty maxed (5 flags including c4-substitution and estate-transition-dropoff). DO NOT PUBLISH — tiers only."
+    "note": "Pledge-breach = 0 because Julia never signed. Giving gap high because $85M observable vs $852M expected = 90% gap. Tenure penalty partial (7 years, not saturated at 10). Red-flag penalty maxed (5 flags including c4-substitution and estate-transition-dropoff). DO NOT PUBLISH \u2014 tiers only."
   },
-
   "right_of_reply": {
     "status": "not_yet_requested",
     "planned_outreach_route": "David H. Koch Foundation (press@davidkochfoundation.org if listed; otherwise PO Box 780007 Wichita KS 67278); Julia Koch Family Foundation via Gregory W Flesher (President); Koch Industries media relations as backup.",
@@ -454,32 +503,172 @@
     "response_text": null,
     "response_received_date": null
   },
-
   "verification_todos_before_publish": [
-    "VERIFY: Cross-check JKPF 2023 $91M expenses — was this a single payout to JKFF (intra-family transfer, not charity), or actual grants to 501(c)(3) organizations? If to JKFF, this is circular and observable giving falls.",
-    "VERIFY: DHKCF 2011-2017 $10M/yr — were these grants to 501(c)(3) charities or to Americans for Prosperity Foundation and other Koch-network (c)(3) advocacy vehicles?",
+    "VERIFY: Cross-check JKPF 2023 $91M expenses \u2014 was this a single payout to JKFF (intra-family transfer, not charity), or actual grants to 501(c)(3) organizations? If to JKFF, this is circular and observable giving falls.",
+    "VERIFY: DHKCF 2011-2017 $10M/yr \u2014 were these grants to 501(c)(3) charities or to Americans for Prosperity Foundation and other Koch-network (c)(3) advocacy vehicles?",
     "VERIFY: Pull JKFF/JKPF full 990 forms (not just summary) from ProPublica to extract Schedule B contributors and any grants schedule. 501(c)(4)s often voluntarily disclose donor breakdown.",
-    "VERIFY: David's estate — was a testamentary charitable bequest made? Probate records in NY (David's state of residence) or via Koch family spokespeople.",
+    "VERIFY: David's estate \u2014 was a testamentary charitable bequest made? Probate records in NY (David's state of residence) or via Koch family spokespeople.",
     "VERIFY: Does Julia's name appear on any IRS 990 Schedule B as a donor to Americans for Prosperity Foundation, Stand Together, or other Koch-network (c)(3)s?",
-    "VERIFY: Gregory W Flesher (Julia's brother per reporting) — is he compensated by any of these (c)(4) structures? Summary shows $0, but full-form check recommended."
+    "VERIFY: Gregory W Flesher (Julia's brother per reporting) \u2014 is he compensated by any of these (c)(4) structures? Summary shows $0, but full-form check recommended."
   ],
-
   "sources_all": [
-    {"url": "https://projects.propublica.org/nonprofits/organizations/480926946", "retrieved_at": "2026-04-24", "used_for": "David H. Koch Charitable Foundation 990-PF data 2011-2024; officers; EIN 48-0926946"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/921599313", "retrieved_at": "2026-04-24", "used_for": "Julia Koch Family Foundation 990 data; EIN 92-1599313; 501(c)(4) classification"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/873659591", "retrieved_at": "2026-04-24", "used_for": "Julia Koch Family Philanthropy Fund 990 data; EIN 87-3659591; 501(c)(4) classification"},
-    {"url": "https://projects.propublica.org/nonprofits/organizations/873681616", "retrieved_at": "2026-04-24", "used_for": "Mary Julia Koch Foundation 990 data; EIN 87-3681616"},
-    {"url": "https://nyulangone.org/news/julia-koch-family-foundation-gives-transformative-75-million-gift-new-state-art-nyu-langone-health-ambulatory-care-center-west-palm-beach", "retrieved_at": "2026-04-24", "used_for": "$75M 2024-02-21 NYU Langone gift (recipient-verified)"},
-    {"url": "https://en.wikipedia.org/wiki/Julia_Koch", "retrieved_at": "2026-04-24", "used_for": "Biography; inheritance structure; net worth corroboration; board positions"},
-    {"url": "https://thesiliconreview.com/2026/04/julia-koch-net-worth-giants-nets-liberty", "retrieved_at": "2026-04-24", "used_for": "Current 2026 net worth $81.2B; sports team stakes; NY Giants 10% October 2025"},
-    {"url": "https://www.insidephilanthropy.com/home/2024-3-28-is-julia-koch-gearing-up-for-big-time-philanthropy", "retrieved_at": "2026-04-24", "used_for": "Julia Koch Family Foundation 2023 launch; net worth at article time $64.3B; philanthropic focus"},
-    {"url": "https://www.davidkochfoundation.org/", "retrieved_at": "2026-04-24", "used_for": "David H. Koch Foundation mission statement; 'nearly $200M' cumulative giving figure"},
-    {"url": "https://www.foxbusiness.com/business-leaders/david-koch-spent-billions-giving-back-to-charity-heres-where-it-all-went", "retrieved_at": "2026-04-24", "used_for": "David's $1.3B lifetime giving; major gifts (MIT $100M, MSK $150M, Lincoln Center $100M, Smithsonian $35M)"},
-    {"url": "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315", "retrieved_at": "2026-04-24", "used_for": "Julia Koch confirmed NOT a Giving Pledge signatory"},
-    {"url": "https://www.givingpledge.org/pledger-list/", "retrieved_at": "2026-04-24", "used_for": "Giving Pledge registry — Julia Koch absent"},
-    {"url": "https://www.opensecrets.org/donor-lookup/results?name=julia+koch", "retrieved_at": "2026-04-24", "used_for": "Julia Koch federal political giving (combined family $360K to NRCC)"},
-    {"url": "https://en.wikipedia.org/wiki/Koch_family_foundations", "retrieved_at": "2026-04-24", "used_for": "David H. Koch Charitable Foundation historical $200M cumulative; recipient list"},
-    {"url": "https://www.exposedbycmd.org/2024/11/05/koch-super-pac-shatters-its-election-spending-record/", "retrieved_at": "2026-04-24", "used_for": "Koch network 2024 political spending context (AFP Action)"},
-    {"url": "https://www.bloomberg.com/billionaires/profiles/julia-f-koch/", "retrieved_at": "2026-04-24", "used_for": "Bloomberg Billionaires Index net worth corroboration"}
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/480926946",
+      "retrieved_at": "2026-04-24",
+      "used_for": "David H. Koch Charitable Foundation 990-PF data 2011-2024; officers; EIN 48-0926946"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/921599313",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Julia Koch Family Foundation 990 data; EIN 92-1599313; 501(c)(4) classification"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/873659591",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Julia Koch Family Philanthropy Fund 990 data; EIN 87-3659591; 501(c)(4) classification"
+    },
+    {
+      "url": "https://projects.propublica.org/nonprofits/organizations/873681616",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Mary Julia Koch Foundation 990 data; EIN 87-3681616"
+    },
+    {
+      "url": "https://nyulangone.org/news/julia-koch-family-foundation-gives-transformative-75-million-gift-new-state-art-nyu-langone-health-ambulatory-care-center-west-palm-beach",
+      "retrieved_at": "2026-04-24",
+      "used_for": "$75M 2024-02-21 NYU Langone gift (recipient-verified)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Julia_Koch",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Biography; inheritance structure; net worth corroboration; board positions"
+    },
+    {
+      "url": "https://thesiliconreview.com/2026/04/julia-koch-net-worth-giants-nets-liberty",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Current 2026 net worth $81.2B; sports team stakes; NY Giants 10% October 2025"
+    },
+    {
+      "url": "https://www.insidephilanthropy.com/home/2024-3-28-is-julia-koch-gearing-up-for-big-time-philanthropy",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Julia Koch Family Foundation 2023 launch; net worth at article time $64.3B; philanthropic focus"
+    },
+    {
+      "url": "https://www.davidkochfoundation.org/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "David H. Koch Foundation mission statement; 'nearly $200M' cumulative giving figure"
+    },
+    {
+      "url": "https://www.foxbusiness.com/business-leaders/david-koch-spent-billions-giving-back-to-charity-heres-where-it-all-went",
+      "retrieved_at": "2026-04-24",
+      "used_for": "David's $1.3B lifetime giving; major gifts (MIT $100M, MSK $150M, Lincoln Center $100M, Smithsonian $35M)"
+    },
+    {
+      "url": "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Julia Koch confirmed NOT a Giving Pledge signatory"
+    },
+    {
+      "url": "https://www.givingpledge.org/pledger-list/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Giving Pledge registry \u2014 Julia Koch absent"
+    },
+    {
+      "url": "https://www.opensecrets.org/donor-lookup/results?name=julia+koch",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Julia Koch federal political giving (combined family $360K to NRCC)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Koch_family_foundations",
+      "retrieved_at": "2026-04-24",
+      "used_for": "David H. Koch Charitable Foundation historical $200M cumulative; recipient list"
+    },
+    {
+      "url": "https://www.exposedbycmd.org/2024/11/05/koch-super-pac-shatters-its-election-spending-record/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Koch network 2024 political spending context (AFP Action)"
+    },
+    {
+      "url": "https://www.bloomberg.com/billionaires/profiles/julia-f-koch/",
+      "retrieved_at": "2026-04-24",
+      "used_for": "Bloomberg Billionaires Index net worth corroboration"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-32-02",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-92-51",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=11-57-42",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-10-27",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-29-43",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=41-55-96",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-74-51",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-52-89",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-80-64",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-02-93",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-05-89",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-31-80",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-75d4b7224df57ac9"
+    }
   ]
 }

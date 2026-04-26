@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record following Ellison v3 reference. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Griffin)",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Griffin) + regen_v3@sha256-bbd07e9e3102a93f + regen_v3@sha256-28a6e385ab5bf311",
   "person": {
     "name_display": "Ken Griffin",
     "name_legal": "Kenneth Cordele Griffin",
@@ -280,6 +280,45 @@
       "confidence": "medium",
       "classification_note": "Auction purchase of personal collectible asset that is loaned to a museum. Philanthropy value depends on whether the asset is permanently gifted (charitable) or remains Griffin's personal property on loan (not charitable). Current reporting describes it as a loan. DO NOT count in observable_giving until ownership transfer is verified.",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Citadel Group Foundation",
+      "donor_ein": "36-4482467",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 259515.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/364482467",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $0.4M; payout rate 68.4%.",
+      "regen_source": "propublica",
+      "event_id": "ken_griffin_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-bbd07e9e3102a93f",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Ken Griffin",
+      "recipient": "Griffin Catalyst",
+      "amount_usd": 2500000000.0,
+      "source_type": "philanthropic_llc_commitment",
+      "source_url": "https://www.griffincatalyst.org/about/",
+      "confidence": "medium",
+      "note": "Griffin Catalyst (est. Sep 2023) is the umbrella label for Ken Griffin's philanthropic and civic activity; described as a 'civic engagement initiative,' not a formal grantmaker. Self-reported lifetime giving >$2.5B. Structure ambiguous \u2014 sits over multiple underlying vehicles.",
+      "regen_source": "llcs",
+      "event_id": "ken_griffin_transfer_in_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "transfer_in"
     }
   ],
   "pledges_and_announcements": [
@@ -482,7 +521,7 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 22340455780,
     "ratio_observable_to_5pct_tenure": 0.0421,
-    "observable_from_events_usd": 1024855220,
+    "observable_from_events_usd": 1025114735,
     "observable_drift_pct": 0.044,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
@@ -644,6 +683,102 @@
       "url": "https://time.com/collections/time100-philanthropy-2025/7286078/ken-griffin/",
       "retrieved_at": "2026-04-23",
       "used_for": "TIME100 Philanthropy 2025 lifetime >$2B; MSK gift context"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82001650",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100901494",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101701435",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-66-60",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-64-44",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-04-61",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-69-58",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-92-02",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-63-03",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-32-83",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-03-77",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-30-29",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-87-35",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-31-19",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=51-12-98",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-28a6e385ab5bf311"
     }
   ],
   "_source_file": "ken_griffin.v3.json"

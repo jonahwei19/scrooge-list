@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire v3 record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political). Classification for Tier A/B/C happens downstream.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual deep-research run \u2014 Haim Saban",
+  "generated_by": "scrooge v3 manual deep-research run \u2014 Haim Saban + regen_v3@sha256-f8ad4fb442a67760 + regen_v3@sha256-b9d1482aedfc878a",
   "person": {
     "name_display": "Haim Saban",
     "name_legal": "Haim Saban",
@@ -208,6 +208,25 @@
       "confidence": "medium",
       "notes": "Sabans publicly stated $420M lifetime giving across ~1,000 causes as of July 2019. Declared philosophy: '50-50 \u2014 for every dollar we give in America, we give a dollar in Israel.' Focus areas: healthcare, LA cultural, female empowerment, veterans, US-Israel relations. Celebrity Net Worth reports a higher (unsourced) $1B lifetime figure.",
       "dedup_note": "This is a LIFETIME aggregate through 2019. It subsumes CHLA $40M (2003), Brookings $13M (2002), Soroka $14M (2007), pre-2019 FIDF contributions, and pre-2019 SFF grants. For the rollup, we should NOT sum the aggregate AND the detailed gifts \u2014 we treat the aggregate as the best estimate of pre-2019 giving and add post-2019 SFF grants on top."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "The Saban Family Foundation",
+      "donor_ein": "95-4769273",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 9934864.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $24.0M; payout rate 41.5%.",
+      "regen_source": "propublica",
+      "event_id": "haim_saban_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f8ad4fb442a67760",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -546,6 +565,18 @@
       "url": "https://www.influencewatch.org/non-profit/friends-of-the-israel-defense-forces-fidf/",
       "retrieved_at": "2026-04-24",
       "used_for": "FIDF organizational context"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-13-68",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b9d1482aedfc878a"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b9d1482aedfc878a"
     }
   ]
 }
