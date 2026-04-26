@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 Harold Hamm single-subject deep research + regen_v3@sha256-b718f51f2d3b76b9 + regen_v3@sha256-c4a00d978fb86052",
+  "generated_by": "scrooge v3 manual reference run \u2014 Harold Hamm single-subject deep research + regen_v3@sha256-b718f51f2d3b76b9 + regen_v3@sha256-c4a00d978fb86052 + regen_v3@sha256-5c8469de1ebb3f89",
   "person": {
     "name_display": "Harold Hamm",
     "name_legal": "Harold Glenn Hamm",
@@ -243,6 +243,386 @@
       "regen_run_id": "sha256-b718f51f2d3b76b9",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "Bismarck university",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "http://www.okenergytoday.com/2022/10/hamms-10-million-gift-to-bismarck-university-to-boost-engineering/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm made a $10 million donation to a Bismarck university to support engineering.",
+      "extraction_evidence": "Oklahoma billionaire Harold Hamm's recent $10 million donation to a Bismarck university",
+      "regen_query": "\"Harold Hamm\" gift OR donation million",
+      "event_id": "harold_hamm_direct_gift_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Continental Resources",
+      "recipient": "University of Mary",
+      "amount_usd": 12000000,
+      "source_type": "news_article",
+      "source_url": "https://bismarcktribune.com/news/local/bismarck/u-mary-continental-resources-announce-12-million-gift-for-engineering-school/article_6384ee20-b9ba-519d-882b-d686685fe77e.html",
+      "confidence": "high",
+      "extraction_note": "Continental Resources announced a $12 million gift to University of Mary for an engineering school.",
+      "extraction_evidence": "Continental Resources announce $12 million gift for engineering school",
+      "regen_query": "\"Harold Hamm\" \"University of Mary\" OR \"Hamm School of Engineering\" 2022 gift $12 million",
+      "event_id": "harold_hamm_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "Theodore Roosevelt Presidential Library",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://bismarcktribune.com/news/state-and-regional/govt-and-politics/article_0c4f4f84-8b83-11ed-bdea-7f1d4f7636f9.html",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm is donating $50 million for the planned Theodore Roosevelt Presidential Library in western North Dakota, announced by Gov. Doug Burgum.",
+      "extraction_evidence": "Oil industry giant Harold Hamm is donating $50 million for the planned Theodore Roosevelt Presidential Library",
+      "regen_query": "\"Harold Hamm\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "harold_hamm_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "corporate_gift",
+      "year": 2021,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Continental Resources",
+      "recipient": "unspecified",
+      "amount_usd": 25000000,
+      "source_type": "other",
+      "source_url": "https://depausa.org/wp-content/uploads/2021/12/Hamm-Institute-Announcement-12-2021.pdf",
+      "confidence": "high",
+      "extraction_note": "Continental Resources (chaired by Harold Hamm) contributed $25 million.",
+      "extraction_evidence": "$25 million from Continental Resources",
+      "regen_query": "\"The Harold Hamm Foundation\" 990-PF",
+      "event_id": "harold_hamm_corporate_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "University of North Dakota",
+      "amount_usd": 10000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Harold_Hamm",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm and Continental Resources donated $10 million to the University of North Dakota's College of Engineering and Mines to create the Harold Hamm School of Geology and Geological Engineering.",
+      "extraction_evidence": "Hamm and Continental Resources donated $10 million to the University of North Dakota's College of Engineering and Mines",
+      "regen_query": "\"Harold Hamm\" donates million",
+      "event_id": "harold_hamm_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": 2020,
+      "date": "2020-07-01",
+      "date_precision": "day",
+      "donor_entity": "Harold Hamm",
+      "recipient": "his children's trusts",
+      "amount_usd": 761000000,
+      "source_type": "news_article",
+      "source_url": "https://energynow.com/2022/02/shale-king-harold-hamm-is-passing-billions-to-his-heirs-tax-free/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm refinanced loans to his children's trusts at a principal value of $761 million each on July 1, 2020.",
+      "extraction_evidence": "Hamm refinanced loans to his children's trusts, at a principal value of $761 million each, on July 1, 2020.",
+      "regen_query": "\"Harold Hamm\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "harold_hamm_transfer_in_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": "2023-08-22",
+      "date_precision": "day",
+      "donor_entity": "Harold Hamm",
+      "recipient": "Trump",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.eenews.net/articles/harold-hamm-gives-to-trump-after-avoiding-him/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm made a donation to Trump on August 22, following a change of heart after previously avoiding him.",
+      "extraction_evidence": "The Aug. 22 donation came just over a week after a Georgia grand jury indicted Trump",
+      "regen_query": "\"Harold Hamm\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "harold_hamm_political_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date": "2021-12",
+      "date_precision": "month",
+      "donor_entity": "Harold Hamm Foundation",
+      "recipient": "Oklahoma State University",
+      "amount_usd": 25000000,
+      "source_type": "other",
+      "source_url": "https://grokipedia.com/page/Harold_Hamm",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm Foundation donated $25 million to Oklahoma State University in December 2021 to establish the Hamm Institute for American Energy.",
+      "extraction_evidence": "Harold Hamm Foundation and Continental Resources donated a combined $50 million to Oklahoma State University, with $25 million contributed by each entity.",
+      "regen_query": "\"Harold Hamm\" assets contributed \"The Harold Hamm Foundation\"",
+      "event_id": "harold_hamm_direct_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm Foundation",
+      "recipient": "Oklahoma State University",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/oklahoma-state-receives-50-million-to-establish-energy-institute",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm Foundation contributed to a combined $50 million gift to Oklahoma State University to establish the Hamm Institute for American Energy.",
+      "extraction_evidence": "$50 million gift from the Harold Hamm Foundation and Continental Resources to create the Hamm Institute",
+      "regen_query": "\"Harold Hamm\" gift OR donation million",
+      "event_id": "harold_hamm_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold and Sue Ann Hamm Foundation",
+      "recipient": "University of Oklahoma",
+      "amount_usd": 10000000,
+      "source_type": "other",
+      "source_url": "https://kids.kiddle.co/Harold_Hamm",
+      "confidence": "high",
+      "extraction_note": "The Harold and Sue Ann Hamm Foundation donated $10 million to create the Harold Hamm Diabetes Center at the University of Oklahoma.",
+      "extraction_evidence": "his foundation, the Harold and Sue Ann Hamm Foundation, donated $10 million to create this center",
+      "regen_query": "\"The Harold Hamm Foundation\" 990-PF",
+      "event_id": "harold_hamm_grant_out_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Harold Hamm Foundation",
+      "recipient": "Oklahoma State University",
+      "amount_usd": 50000000,
+      "source_type": "university_press",
+      "source_url": "https://news.okstate.edu/articles/communications/2021/historic_donation_establishes_hamm_institute_for_american_energy_at_oklahoma_state_university.html",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm Foundation and Continental Resources announced a combined $50 million gift to establish the Hamm Institute for American Energy at Oklahoma State University.",
+      "extraction_evidence": "The Harold Hamm Foundation and Continental Resources announced Wednesday a combined $50 million gift creating the Hamm Institute for American Energy",
+      "regen_query": "\"Harold Hamm\" gift OR donation million",
+      "event_id": "harold_hamm_direct_gift_2021_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2018,
+      "date": null,
+      "date_precision": "month",
+      "donor_entity": "Harold Hamm",
+      "recipient": "America First Action",
+      "amount_usd": 500000,
+      "source_type": "news_article",
+      "source_url": "https://psmag.com/magazine/trump-and-friends-cash-in/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm donated $500,000 to Trump-backed super PAC America First Action in January 2018.",
+      "extraction_evidence": "Hamm personally donated $500,000 to Trump-backed super PAC America First Action",
+      "regen_query": "\"Harold Hamm\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "harold_hamm_political_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "Trump Victory PAC",
+      "amount_usd": 320000,
+      "source_type": "news_article",
+      "source_url": "https://thehill.com/policy/energy-environment/4961820-oil-bigwigs-open-wallets-for-trump-after-billion-dollar-request/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm gave $320,000 to Trump Victory PAC in 2020.",
+      "extraction_evidence": "Hamm gave a total of $320,000 to the Trump Victory PAC, the former president's joint fundraising PAC, in 2020",
+      "regen_query": "\"Harold Hamm\" FEC OR PAC contribution",
+      "event_id": "harold_hamm_political_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2016,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "Trump Victory PAC",
+      "amount_usd": 449400,
+      "source_type": "news_article",
+      "source_url": "https://thehill.com/policy/energy-environment/4961820-oil-bigwigs-open-wallets-for-trump-after-billion-dollar-request/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm gave $449,400 to Trump Victory PAC in 2016.",
+      "extraction_evidence": "a total of $449,400 in 2016",
+      "regen_query": "\"Harold Hamm\" FEC OR PAC contribution",
+      "event_id": "harold_hamm_political_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "Sue Ann Arnall",
+      "amount_usd": 1000000000,
+      "source_type": "blog",
+      "source_url": "https://www.arensonlaw.com/blog/harold-hamms-ex-turns-down-nearly-1-billion-divorce-payment/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm wrote a check for nearly $1 billion to his ex-wife Sue Ann Arnall as a divorce payment.",
+      "extraction_evidence": "Harold Hamm wrote a check for nearly $1B to his ex-wife",
+      "regen_query": "\"Harold Hamm\" \"Sue Ann Hamm\" OR \"Sue Ann Arnall\" divorce settlement giving pledge 2015-2020",
+      "event_id": "harold_hamm_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm Foundation",
+      "recipient": "Oklahoma State University",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://www.citynewsokc.com/business/hamm-institute-awards-eight-seed-grants-to-advance-energy-innovation-at-oklahoma-state-university/article_2e6ca865-7c54-4407-8eae-33d7956774ff.html",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm Foundation provided $25 million in initial funding for the Hamm Institute at Oklahoma State University.",
+      "extraction_evidence": "$25 million from the Harold Hamm Foundation",
+      "regen_query": "\"The Harold Hamm Foundation\" grants",
+      "event_id": "harold_hamm_grant_out_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date": "2015-02-27",
+      "date_precision": "day",
+      "donor_entity": "Harold Hamm",
+      "recipient": "Sue Ann Arnall",
+      "amount_usd": 1000000000,
+      "source_type": "news_article",
+      "source_url": "https://www.cnbc.com/2015/02/27/hamm-my-big-fat-divorce-check-got-the-job-done.html",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm paid nearly $1 billion to ex-wife Sue Ann Arnall as part of divorce settlement.",
+      "extraction_evidence": "his nearly $1 billion check to ex-wife Sue Ann Arnall helped put his divorce in the rearview mirror",
+      "regen_query": "\"Harold Hamm\" \"Sue Ann Hamm\" OR \"Sue Ann Arnall\" divorce settlement giving pledge 2015-2020",
+      "event_id": "harold_hamm_direct_gift_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2012,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "Restore Our Future",
+      "amount_usd": 985000,
+      "source_type": "other",
+      "source_url": "https://www.desmog.com/harold-hamm/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm donated $985,000 to Restore Our Future, a super PAC supporting Mitt Romney in 2012.",
+      "extraction_evidence": "donated $985,000 to Restore Our Future",
+      "regen_query": "\"Harold Hamm\" FEC OR PAC contribution",
+      "event_id": "harold_hamm_political_2012_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "Team Stand for America PAC",
+      "amount_usd": 16600,
+      "source_type": "news_article",
+      "source_url": "https://www.oklahoman.com/story/news/politics/government/2023/05/07/donald-trump-harold-hamm-okc-donates-nikki-haley-presidential-campaign/70180786007/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm donated $16,600 to Team Stand for America PAC according to Federal Election Commission records.",
+      "extraction_evidence": "$16,600 to the Team Stand for America PAC (political action committee)",
+      "regen_query": "\"Harold Hamm\" FEC OR PAC contribution",
+      "event_id": "harold_hamm_political_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "unspecified",
+      "amount_usd": 430150,
+      "source_type": "news_article",
+      "source_url": "https://www.reuters.com/article/business/romney-energy-adviser-hamm-exceeded-campaign-donation-limits-idUSL1E8KDC29/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm and his wife Sue Ann have given $430,150 to candidates, PACs and political parties since 1999, with more than half during the election cycle referenced.",
+      "extraction_evidence": "Hamm and his wife, Sue Ann, have in total given $430,150 to candidates, PACs and political parties since 1999",
+      "regen_query": "\"Harold Hamm\" FEC OR PAC contribution",
+      "event_id": "harold_hamm_political_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -261,6 +641,120 @@
       "retrieved_at": "2026-04-24",
       "notes": "CORRECTION vs. task brief: task prompt said 'NOT signed (verify)' \u2014 Hamm HAS signed the Giving Pledge (April 2011). Signed jointly with then-spouse Sue Ann Hamm; they subsequently divorced (one of the largest divorce settlements in US history). Sue Ann (now Sue Ann Arnall) is listed separately on the pledger list. Net worth at signing ~$11.5B (CNN 2015 retrospective). Pledge letter does not state an explicit percentage but secondary sources cite 90%+ commitment. 90% target in 2011 dollars = ~$10.4B. Current net worth ~$17B; 90% target is now ~$15.3B. Gap between observable giving-out and pledge target: ~$15B.",
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://horatioalger.org/members/detail/harold-hamm/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm is identified as a signer of The Giving Pledge.",
+      "extraction_evidence": "A signer of The Giving Pledge, Hamm has given generously to causes",
+      "regen_query": "\"Harold Hamm\" \"giving pledge\"",
+      "event_id": "harold_hamm_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2016,
+      "date": "2016-06-14",
+      "date_precision": "day",
+      "donor_entity": "Harold Hamm",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/pictures/fihh45hkjl/harold-hamm/",
+      "confidence": "medium",
+      "extraction_note": "Harold Hamm is listed among billionaires who signed the Giving Pledge, indicating a commitment to give away the majority of his wealth.",
+      "extraction_evidence": "Harold Hamm - 2016-06-14 - Forbes 400 Billionaires Who've Signed the Giving Pledge",
+      "regen_query": "\"Harold Hamm\" \"giving pledge\"",
+      "event_id": "harold_hamm_pledge_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2013,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.oklahoman.com/story/opinion/editorials/2013/10/31/harold-hamm-is-truly-an-algeresque-story/60870082007/",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm signed the Giving Pledge, committing to give away most of his fortune.",
+      "extraction_evidence": "he will give away most of his fortune after signing the \"Giving Pledge\"",
+      "regen_query": "\"Harold Hamm\" \"giving pledge\"",
+      "event_id": "harold_hamm_pledge_2013_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm Foundation",
+      "recipient": "Harold Hamm Diabetes Center at OU Medicine",
+      "amount_usd": 34000000,
+      "source_type": "other",
+      "source_url": "https://www.oufoundation.org/pn2/",
+      "confidence": "high",
+      "extraction_note": "The Harold Hamm Foundation made a 10-year, $34 million pledge commitment to the Harold Hamm Diabetes Center at OU Medicine.",
+      "extraction_evidence": "10-year, $34 million commitment from the Harold Hamm Foundation",
+      "regen_query": "\"Harold Hamm Foundation\" \"OU Foundation\" OR \"University of Oklahoma Foundation\" diabetes research grant 2018-2024",
+      "event_id": "harold_hamm_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Harold Hamm",
+      "recipient": "unspecified",
+      "amount_usd": 1000000000,
+      "source_type": "news_article",
+      "source_url": "https://www.sierraclub.org/sierra/oil-tycoons-open-money-floodgates-trump",
+      "confidence": "medium",
+      "extraction_note": "Snippet references a $1 billion donation by oil tycoons (including Hamm) to Trump, but does not explicitly confirm Hamm personally made this pledge.",
+      "extraction_evidence": "$1 billion donation",
+      "regen_query": "\"Harold Hamm\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "harold_hamm_pledge_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2021,
+      "date": "2021-12-15",
+      "date_precision": "day",
+      "donor_entity": "Harold Hamm",
+      "recipient": "Oklahoma State University",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://www.worldoil.com/news/2021/12/15/harold-hamm-pledges-50-million-to-found-energy-research-institute",
+      "confidence": "high",
+      "extraction_note": "Harold Hamm pledged $50 million to Oklahoma State University for a new energy research center.",
+      "extraction_evidence": "Billionaire oil wildcatter Harold Hamm is donating $50 million for a new research center at Oklahoma State University",
+      "regen_query": "\"Harold Hamm\" pledges OR commits OR announces",
+      "event_id": "harold_hamm_pledge_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -638,6 +1132,306 @@
       "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c4a00d978fb86052"
+    },
+    {
+      "publisher": "okenergytoday.com",
+      "url": "http://www.okenergytoday.com/2022/10/hamms-10-million-gift-to-bismarck-university-to-boost-engineering/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "bismarcktribune.com",
+      "url": "https://bismarcktribune.com/news/local/bismarck/u-mary-continental-resources-announce-12-million-gift-for-engineering-school/article_6384ee20-b9ba-519d-882b-d686685fe77e.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "bismarcktribune.com",
+      "url": "https://bismarcktribune.com/news/state-and-regional/govt-and-politics/article_0c4f4f84-8b83-11ed-bdea-7f1d4f7636f9.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "bismarcktribune.com",
+      "url": "https://bismarcktribune.com/news/state-and-regional/govt-and-politics/oil-tycoon-harold-hamm-donates-50m-to-theodore-roosevelt-presidential-library/article_0c4f4f84-8b83-11ed-bdea-7f1d4f7636f9.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "depausa.org",
+      "url": "https://depausa.org/wp-content/uploads/2021/12/Hamm-Institute-Announcement-12-2021.pdf",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "elitebiographies.com",
+      "url": "https://elitebiographies.com/biography/harold-hamm/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "energynow.com",
+      "url": "https://energynow.com/2022/02/shale-king-harold-hamm-is-passing-billions-to-his-heirs-tax-free/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "governorswindenergycoalition.org",
+      "url": "https://governorswindenergycoalition.org/in-oklahoma-a-war-over-wind-power/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "grokipedia.com",
+      "url": "https://grokipedia.com/page/Harold_Hamm",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "issuu.com",
+      "url": "https://issuu.com/umary/docs/momentum_spring_2022_web/s/15515417",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "kids.kiddle.co",
+      "url": "https://kids.kiddle.co/Harold_Hamm",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/50-million-cash-gift-from-harold-hamm-to-library/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "news.okstate.edu",
+      "url": "https://news.okstate.edu/articles/communications/2021/historic_donation_establishes_hamm_institute_for_american_energy_at_oklahoma_state_university.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/harold-hamm-donates-50-million-for-theodore-roosevelt-library",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/harold-hamm-foundation-awards-34-million-to-diabetes-center",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/oklahoma-state-receives-50-million-to-establish-energy-institute",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "psmag.com",
+      "url": "https://psmag.com/magazine/trump-and-friends-cash-in/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "scholars.horatioalger.org",
+      "url": "https://scholars.horatioalger.org/members/detail/harold-hamm/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "theconcordian.org",
+      "url": "https://theconcordian.org/who-is-harold-hamm-founders-day-weekend-peaks-student-curiosity-about-prominent-donors/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "thehill.com",
+      "url": "https://thehill.com/policy/energy-environment/4961820-oil-bigwigs-open-wallets-for-trump-after-billion-dollar-request/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "arensonlaw.com",
+      "url": "https://www.arensonlaw.com/blog/harold-hamms-ex-turns-down-nearly-1-billion-divorce-payment/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "citynewsokc.com",
+      "url": "https://www.citynewsokc.com/business/hamm-institute-awards-eight-seed-grants-to-advance-energy-innovation-at-oklahoma-state-university/article_2e6ca865-7c54-4407-8eae-33d7956774ff.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "cnbc.com",
+      "url": "https://www.cnbc.com/2015/02/27/hamm-my-big-fat-divorce-check-got-the-job-done.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "desmog.com",
+      "url": "https://www.desmog.com/harold-hamm/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "eenews.net",
+      "url": "https://www.eenews.net/articles/harold-hamm-gives-to-trump-after-avoiding-him/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/2010/11/24/billionaire-harold-hamm-entrepreneur-continental-resources-oil-gas-oklahoma-self-made-10.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/pictures/fihh45hkjl/harold-hamm/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "givingpledge.org",
+      "url": "https://www.givingpledge.org/pledger-list/?pledgerId=376",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "govtech.com",
+      "url": "https://www.govtech.com/education/higher-ed/planned-osu-energy-institute-gets-50m-from",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "greateroklahomacity.com",
+      "url": "https://www.greateroklahomacity.com/news/2018/11/15/press-release/harold-hamm-foundation-donates-34-million-to-harold-hamm-diabetes-center-at-ou-medicine/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "hartenergy.com",
+      "url": "https://www.hartenergy.com/exclusives/harold-hamm-continental-resources-pledge-50-million-create-osu-energy-institute-197915",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "kfyrtv.com",
+      "url": "https://www.kfyrtv.com/2022/02/02/umary-receives-12-million-donation-single-largest-its-history/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "normantranscript.com",
+      "url": "https://www.normantranscript.com/opinion/letters_to_the_editor/letter-to-the-editor-windfall-coalition-cares-about-oil-and-gas-industry-not-budget-shortfall/article_714f715e-23ae-5ccc-a510-6eb91372c195.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "oklahomaminerals.com",
+      "url": "https://www.oklahomaminerals.com/hamm-gives-game-changing-50mm-donation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "oklahomaminerals.com",
+      "url": "https://www.oklahomaminerals.com/harold-hamm-donates-50-million-to-launch-osu",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "oklahoman.com",
+      "url": "https://www.oklahoman.com/story/news/2021/12/15/harold-hamm-continental-resources-oklahoma-state-university-energy-research-institute-donation/8907723002/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "oklahoman.com",
+      "url": "https://www.oklahoman.com/story/news/politics/government/2023/05/07/donald-trump-harold-hamm-okc-donates-nikki-haley-presidential-campaign/70180786007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "oklahoman.com",
+      "url": "https://www.oklahoman.com/story/opinion/editorials/2013/10/31/harold-hamm-is-truly-an-algeresque-story/60870082007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "oufoundation.org",
+      "url": "https://www.oufoundation.org/pn2/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "reuters.com",
+      "url": "https://www.reuters.com/article/business/epic-divorce-of-u-s-oil-baron-may-end-after-ex-wife-deposits-check-idUSKBN0KH2BK/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "reuters.com",
+      "url": "https://www.reuters.com/article/business/romney-energy-adviser-hamm-exceeded-campaign-donation-limits-idUSL1E8KDC29/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "sierraclub.org",
+      "url": "https://www.sierraclub.org/sierra/oil-tycoons-open-money-floodgates-trump",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "theguardian.com",
+      "url": "https://www.theguardian.com/money/2015/jan/13/harold-hamm-sue-arnall-divorce-settlement-bn-dollars",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "trlibrary.com",
+      "url": "https://www.trlibrary.com/press/press-releases/harold-hamm-donates-50-million-to-trpl",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "umary.edu",
+      "url": "https://www.umary.edu/about/news/all-stories/harold-hamm-foundation-donates-10m-and-continental-resources-donates-2m",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "umary.edu",
+      "url": "https://www.umary.edu/about/news/all-stories/harold-hamm-monsignor-shea-and-dignitaries-christen-hamm-school-engineering",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "umary.edu",
+      "url": "https://www.umary.edu/about/news/all-stories/significant-donation-university-mary-moves-plan-forward-new-athletics",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "umary.edu",
+      "url": "https://www.umary.edu/donors/ways-to-give/vision-2030",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "wikidata.org",
+      "url": "https://www.wikidata.org/wiki/Q203807",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
+    },
+    {
+      "publisher": "worldoil.com",
+      "url": "https://www.worldoil.com/news/2021/12/15/harold-hamm-pledges-50-million-to-found-energy-research-institute",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-5c8469de1ebb3f89"
     }
   ]
 }

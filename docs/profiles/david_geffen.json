@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research (Geffen) + regen_v3@sha256-c436ad2c7d5a29e0 + regen_v3@sha256-33431d3259a8cb18",
+  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research (Geffen) + regen_v3@sha256-c436ad2c7d5a29e0 + regen_v3@sha256-33431d3259a8cb18 + regen_v3@sha256-36f866aa59289a7b",
   "person": {
     "name_display": "David Geffen",
     "name_legal": "David Lawrence Geffen",
@@ -334,6 +334,386 @@
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2023,
+      "date": "2023-12-12",
+      "date_precision": "day",
+      "donor_entity": "David Geffen",
+      "recipient": "Memorial Sloan Kettering Cancer Center",
+      "amount_usd": 200000000,
+      "source_type": "news_article",
+      "source_url": "https://abc17news.com/news/national-world/cnn-national/2024/02/02/david-geffen-fast-facts-3/",
+      "confidence": "high",
+      "extraction_note": "David Geffen and Ken Griffin announced a combined $400 million donation to Memorial Sloan Kettering Cancer Center on December 12, 2023. Geffen's share is estimated at $200 million (half of the total).",
+      "extraction_evidence": "Geffen and Ken Griffin will donate $400 million to Memorial Sloan Kettering Cancer Center",
+      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
+      "event_id": "david_geffen_direct_gift_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Memorial Sloan Kettering Cancer Center",
+      "amount_usd": 400000000,
+      "source_type": "news_article",
+      "source_url": "https://ashpublications.org/ashclinicalnews/news/7788/MSKCC-Receives-400-Million-Donation",
+      "confidence": "high",
+      "extraction_note": "David Geffen made a $400 million gift to MSKCC, the largest donation in the center's history.",
+      "extraction_evidence": "MSKCC received a $400 million gift from Ken Griffin and David Geffen, the largest donation in MSKCC history",
+      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
+      "event_id": "david_geffen_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "UCLA",
+      "amount_usd": 100000000,
+      "source_type": "university_press",
+      "source_url": "https://chancellor.ucla.edu/messages/geffen-academy-at-ucla-launches-with-100-million-gift",
+      "confidence": "high",
+      "extraction_note": "David Geffen donated $100 million to enable the creation of the Geffen Academy at UCLA.",
+      "extraction_evidence": "David Geffen, who has donated $100 million, which will allow us to move forward with important startup work",
+      "regen_query": "\"David Geffen\" \"Geffen Academy\" UCLA 2015 2016 2017 construction disbursement schedule",
+      "event_id": "david_geffen_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen Foundation",
+      "recipient": "Yale School of Drama",
+      "amount_usd": 150000000,
+      "source_type": "other",
+      "source_url": "https://forhumanity.yale.edu/how-to-give/schools-units/david-geffen-school-drama",
+      "confidence": "high",
+      "extraction_note": "The David Geffen Foundation made an extraordinary gift of $150 million to Yale School of Drama to make tuition free in perpetuity for all drama students.",
+      "extraction_evidence": "extraordinary gift of $150 million from the David Geffen Foundation, tuition is now free in perpetuity for all drama students",
+      "regen_query": "\"David Geffen Foundation\" \"Yale\" \"School of Drama\" 2021 2022 2023 2024 Part XV",
+      "event_id": "david_geffen_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "David Geffen Foundation",
+      "recipient": "UCLA Foundation (Geffen Playhouse)",
+      "amount_usd": 300000,
+      "source_type": "990-PF",
+      "source_url": "https://grantexec.com/foundations/954085811",
+      "confidence": "high",
+      "extraction_note": "The David Geffen Foundation made a $300K grant to UCLA Foundation (Geffen Playhouse) for general support in 2022.",
+      "extraction_evidence": "UCLA FOUNDATION (GEFFEN PLAYHOUSE) GENERAL SUPPORT \u00b7 2022 \u00b7 $300K",
+      "regen_query": "\"The David Geffen Foundation\" 990-PF",
+      "event_id": "david_geffen_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Columbia Business School",
+      "amount_usd": 75000000,
+      "source_type": "news_article",
+      "source_url": "https://labusinessjournal.com/special-editions/wealthiest-angelenos/wealthiest-2022/4-david-geffen-2/",
+      "confidence": "high",
+      "extraction_note": "Geffen made a $75 million donation to Columbia Business School to support new facilities in Manhattan.",
+      "extraction_evidence": "made a $75 million donation to Columbia Business School to support new facilities in Manhattan",
+      "regen_query": "\"David Geffen\" \"Columbia Business School\" $75 million 2021 gift announcement",
+      "event_id": "david_geffen_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "UCLA Medical School",
+      "amount_usd": 46000000,
+      "source_type": "university_press",
+      "source_url": "https://medschool.ucla.edu/news-article/david-geffen-adds-46-million-to-landmark-medical",
+      "confidence": "high",
+      "extraction_note": "David Geffen added $46 million to UCLA medical scholarships program.",
+      "extraction_evidence": "David Geffen adds $46 million to landmark medical scholarships program",
+      "regen_query": "\"David Geffen\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "david_geffen_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Columbia Business School",
+      "amount_usd": null,
+      "source_type": "university_press",
+      "source_url": "https://neighbors.columbia.edu/news/david-geffen-joins-henry-r-kravis-support-columbia-business-school",
+      "confidence": "high",
+      "extraction_note": "David Geffen made a gift to Columbia Business School, with one of two new buildings to be named David Geffen Hall.",
+      "extraction_evidence": "one of two new Business School buildings will be named David Geffen Hall",
+      "regen_query": "\"David Geffen\" \"Columbia Business School\" $75 million 2021 gift announcement",
+      "event_id": "david_geffen_direct_gift_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen Foundation",
+      "recipient": "Academy of Motion Picture Arts and Sciences",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/david-geffen-foundation-awards-25-million-for-construction-of-academy-museum-of-motion-pictures",
+      "confidence": "high",
+      "extraction_note": "The David Geffen Foundation awarded $25 million to the Academy of Motion Picture Arts and Sciences for the Academy Museum of Motion Pictures construction.",
+      "extraction_evidence": "David Geffen Foundation Awards $25 Million for Construction of Academy Museum of Motion Pictures",
+      "regen_query": "\"The David Geffen Foundation\" grants",
+      "event_id": "david_geffen_grant_out_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2017,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "UCLA",
+      "amount_usd": 100000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/david-geffen-gives-100-million-to-ucla-for-prep-school",
+      "confidence": "high",
+      "extraction_note": "David Geffen gave $100 million to UCLA to support the Geffen Academy, including facility renovations, curriculum development, financial aid, and a $30 million endowment.",
+      "extraction_evidence": "The gift will support facility renovations, curriculum development, and other activities needed to open the Geffen Academy at UCLA in time for the 2017-18 school year",
+      "regen_query": "\"David Geffen\" \"Geffen Academy\" UCLA 2015 2016 2017 construction disbursement schedule",
+      "event_id": "david_geffen_direct_gift_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2026,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Los Angeles County Museum of Art",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://unframed.lacma.org/2026/02/05/lacma-david-geffen-galleries-will-open-april-19-2026",
+      "confidence": "medium",
+      "extraction_note": "The snippet announces the opening of LACMA's David Geffen Galleries, indicating a major gift or naming gift from David Geffen to the museum, though no specific amount is stated.",
+      "extraction_evidence": "Los Angeles County Museum of Art's David Geffen Galleries will open on April 19",
+      "regen_query": "\"David Geffen\" \"LACMA\" \"David Geffen Galleries\" disbursement 2018 2019 2020 2021 2022 2023 2024",
+      "event_id": "david_geffen_direct_gift_2026_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2023,
+      "date": "2023-04",
+      "date_precision": "month",
+      "donor_entity": "David Geffen",
+      "recipient": "Memorial Sloan Kettering Hospital",
+      "amount_usd": 400000000,
+      "source_type": "news_article",
+      "source_url": "https://www.bloomberg.com/billionaires/profiles/kenneth-c-griffin/",
+      "confidence": "high",
+      "extraction_note": "David Geffen gave $400 million jointly with Ken Griffin to Memorial Sloan Kettering Hospital in April 2023.",
+      "extraction_evidence": "$400 million given jointly with David Geffen to the Memorial Sloan Kettering Hospital",
+      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
+      "event_id": "david_geffen_direct_gift_2023_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "David Geffen Foundation",
+      "recipient": "David Geffen School of Drama at Yale",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.drama.yale.edu/admissions/financial-aid/",
+      "confidence": "high",
+      "extraction_note": "The David Geffen Foundation made an extremely generous gift in 2021 to support full tuition scholarships for all students at the David Geffen School of Drama.",
+      "extraction_evidence": "extremely generous gift from the David Geffen Foundation in 2021",
+      "regen_query": "\"David Geffen Foundation\" \"Yale\" \"School of Drama\" 2021 2022 2023 2024 Part XV",
+      "event_id": "david_geffen_direct_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen Foundation",
+      "recipient": "David Geffen School of Drama at Yale",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.drama.yale.edu/admissions/international-student-applicants/",
+      "confidence": "high",
+      "extraction_note": "The David Geffen Foundation made a generous donation that funds full tuition scholarships for all students in degree and certificate programs at the David Geffen School of Drama.",
+      "extraction_evidence": "Thanks to a generous donation from the David Geffen Foundation all students in degree and certificate programs receive full tuition scholarships",
+      "regen_query": "\"David Geffen Foundation\" \"Yale\" \"School of Drama\" 2021 2022 2023 2024 Part XV",
+      "event_id": "david_geffen_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "David Geffen",
+      "recipient": "Geffen Academy at UCLA",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.geffenacademy.ucla.edu/giving",
+      "confidence": "high",
+      "extraction_note": "David Geffen made a visionary gift in 2015 that established the Geffen Academy at UCLA.",
+      "extraction_evidence": "David Geffen, whose visionary gift in 2015 established an unparalleled educational opportunity",
+      "regen_query": "\"David Geffen\" \"Geffen Academy\" UCLA 2015 2016 2017 construction disbursement schedule",
+      "event_id": "david_geffen_direct_gift_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Academy of Motion Picture Arts and Sciences",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/david-geffen-donates-25-million-434730/",
+      "confidence": "high",
+      "extraction_note": "David Geffen donated $25 million to the Academy of Motion Picture Arts and Sciences for its new movie museum.",
+      "extraction_evidence": "David Geffen has donated $25 million to the Academy of Motion Picture Arts and Sciences for its new movie museum",
+      "regen_query": "\"David Geffen\" \"Academy Museum\" \"David Geffen Theater\" $25 million 2013 DGF vehicle",
+      "event_id": "david_geffen_direct_gift_x_regen7",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2023,
+      "date": "2023-08",
+      "date_precision": "month",
+      "donor_entity": "David Geffen",
+      "recipient": "LACMA",
+      "amount_usd": 750000000,
+      "source_type": "other",
+      "source_url": "https://www.lacma.org/support/building-lacma",
+      "confidence": "medium",
+      "extraction_note": "David Geffen Galleries building project with $750 million goal met and exceeded as of August 2023.",
+      "extraction_evidence": "$750 million goal met and exceeded as of August 2023",
+      "regen_query": "\"David Geffen\" \"LACMA\" \"David Geffen Galleries\" disbursement 2018 2019 2020 2021 2022 2023 2024",
+      "event_id": "david_geffen_direct_gift_2023_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Memorial Sloan Kettering Cancer Center",
+      "amount_usd": 200000000,
+      "source_type": "press_release",
+      "source_url": "https://www.mskcc.org/news-releases/mskcc-announces-landmark-400-million-gift-from-kenneth-griffin-and-david-geffen",
+      "confidence": "high",
+      "extraction_note": "David Geffen is named as one of two donors of a $400 million gift to MSK; assuming equal split of $200 million each.",
+      "extraction_evidence": "$400 million gift from Kenneth C. Griffin and David Geffen, Founder of The David Geffen",
+      "regen_query": "\"David Geffen\" gift OR donation million",
+      "event_id": "david_geffen_direct_gift_x_regen8",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen Co",
+      "recipient": "unspecified",
+      "amount_usd": 20900,
+      "source_type": "other",
+      "source_url": "https://www.opensecrets.org/orgs/david-geffen-co/summary?id=D000033059",
+      "confidence": "high",
+      "extraction_note": "David Geffen Co made political contributions of $20,900 in the 2024 cycle.",
+      "extraction_evidence": "Contributions in the 2024 cycle: $20,900.",
+      "regen_query": "\"David Geffen\" FEC OR PAC contribution",
+      "event_id": "david_geffen_political_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
     }
   ],
   "pledges_and_announcements": [
@@ -361,6 +741,206 @@
       "retrieved_at": "2026-04-24",
       "notes": "Self-statement via Forbes reporting, not a formal Giving Pledge. Cannot be tracked or enforced. Included for completeness only.",
       "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Columbia Business School",
+      "amount_usd": 75000000,
+      "source_type": "news_article",
+      "source_url": "https://finance.yahoo.com/news/columbia-business-school-gets-75-232327451.html",
+      "confidence": "high",
+      "extraction_note": "David Geffen pledged $75 million to Columbia Business School for its new campus.",
+      "extraction_evidence": "David Geffen has pledged $75 million to support the",
+      "regen_query": "\"David Geffen\" \"Columbia Business School\" $75 million 2021 gift announcement",
+      "event_id": "david_geffen_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2021,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen Foundation",
+      "recipient": "Columbia Business School",
+      "amount_usd": 75000000,
+      "source_type": "other",
+      "source_url": "https://giving.columbia.edu/columbia-business-schools-new-manhattanville-campus",
+      "confidence": "high",
+      "extraction_note": "David Geffen Foundation pledged $75 million to support Columbia Business School's new facilities on the Manhattanville campus.",
+      "extraction_evidence": "David Geffen has pledged $75 million to support the School's new facilities",
+      "regen_query": "\"David Geffen\" \"Columbia Business School\" $75 million 2021 gift announcement",
+      "event_id": "david_geffen_pledge_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "LACMA",
+      "amount_usd": 150000000,
+      "source_type": "news_article",
+      "source_url": "https://laist.com/news/entertainment/david-geffen-pledges-lacma",
+      "confidence": "high",
+      "extraction_note": "David Geffen pledged $150 million to help build a new LACMA building, the largest single-person cash gift in the museum's history.",
+      "extraction_evidence": "David Geffen has pledged $150 million to help erect a new building for LACMA",
+      "regen_query": "\"David Geffen\" pledges OR commits OR announces",
+      "event_id": "david_geffen_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "unspecified",
+      "amount_usd": 20000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/david-geffen-commits-20-million-for-dementia-research-support",
+      "confidence": "high",
+      "extraction_note": "David Geffen commits $20 million over ten years for dementia research and support, specifically for frontotemporal degeneration.",
+      "extraction_evidence": "David Geffen Commits $20 Million for Dementia Research, Support",
+      "regen_query": "\"David Geffen\" pledges OR commits OR announces",
+      "event_id": "david_geffen_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Columbia Business School",
+      "amount_usd": 75000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/david-geffen-commits-75-million-to-columbia-business-school",
+      "confidence": "high",
+      "extraction_note": "David Geffen committed $75 million to Columbia Business School for new facilities on Columbia University's Manhattanville campus.",
+      "extraction_evidence": "$75 million commitment from entertainment executive David Geffen in support of the school's new facilities",
+      "regen_query": "\"David Geffen\" pledges OR commits OR announces",
+      "event_id": "david_geffen_announcement_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2013,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen Foundation",
+      "recipient": "Academy Museum of Motion Pictures",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://variety.com/2013/film/awards/geffen-foundation-commits-25-million-to-academy-museum-1200334205/",
+      "confidence": "high",
+      "extraction_note": "The David Geffen Foundation committed $25 million to the Academy Museum of Motion Pictures, described as the largest pledge to date for the project.",
+      "extraction_evidence": "$25 million commitment from the David Geffen Foundation",
+      "regen_query": "\"David Geffen\" pledges OR commits OR announces",
+      "event_id": "david_geffen_pledge_2013_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2023,
+      "date": "2023-12-12",
+      "date_precision": "day",
+      "donor_entity": "David Geffen",
+      "recipient": "Memorial Sloan Kettering Cancer Center",
+      "amount_usd": 200000000,
+      "source_type": "news_article",
+      "source_url": "https://www.bloomberg.com/news/articles/2023-12-12/billionaires-griffin-geffen-give-nyc-s-msk-cancer-center-400-million-gift",
+      "confidence": "high",
+      "extraction_note": "David Geffen pledged $400 million jointly with Ken Griffin to Memorial Sloan Kettering Cancer Center; attributing $200 million to Geffen as his share of the joint pledge.",
+      "extraction_evidence": "Billionaires Ken Griffin and David Geffen pledged $400 million to the Memorial Sloan Kettering Cancer Center",
+      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
+      "event_id": "david_geffen_pledge_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "Memorial Sloan Kettering Cancer Center",
+      "amount_usd": 200000000,
+      "source_type": "news_article",
+      "source_url": "https://www.cancerhealth.com/article/billionaires-gift-memorial-sloan-kettering-cancer-center-largestever-donation-ken-griffin-david-geffen",
+      "confidence": "high",
+      "extraction_note": "David Geffen pledged $400 million jointly with Ken Griffin to Memorial Sloan Kettering Cancer Center; attributing $200 million to Geffen as his half of the pledge.",
+      "extraction_evidence": "Billionaires Ken Griffin and David Geffen have pledged $400 million to MSK",
+      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
+      "event_id": "david_geffen_pledge_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Geffen",
+      "recipient": "UCLA",
+      "amount_usd": 100000000,
+      "source_type": "university_press",
+      "source_url": "https://www.universityofcalifornia.edu/press-room/geffens-100m-gift-medical-students",
+      "confidence": "high",
+      "extraction_note": "David Geffen made a $100M gift to fund costs for medical students at UCLA.",
+      "extraction_evidence": "Geffen's $100M gift for medical students; Donation will fully fund costs for select students",
+      "regen_query": "\"David Geffen\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "david_geffen_announcement_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2019,
+      "date": "2019-12-03",
+      "date_precision": "day",
+      "donor_entity": "David Geffen",
+      "recipient": "UCLA's David Geffen School of Medicine",
+      "amount_usd": 46000000,
+      "source_type": "news_article",
+      "source_url": "https://www.uscannenbergmedia.com/2019/12/03/billionaire-david-geffen-donates-another-46-million-to-uclas-medical-school-for-merit-based-scholarships/",
+      "confidence": "high",
+      "extraction_note": "David Geffen announced an additional $46 million gift to UCLA's medical school for merit-based scholarships.",
+      "extraction_evidence": "UCLA announced an additional $46 million gift",
+      "regen_query": "\"David Geffen\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "david_geffen_announcement_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
     }
   ],
   "political_giving": {
@@ -459,8 +1039,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 6426500000,
     "ratio_observable_to_5pct_tenure": 0.1624,
-    "observable_from_events_usd": 1481177492,
-    "observable_drift_pct": 0.189,
+    "observable_from_events_usd": 3952477492,
+    "observable_drift_pct": 2.172,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -629,6 +1209,444 @@
       "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-33431d3259a8cb18"
+    },
+    {
+      "publisher": "abc17news.com",
+      "url": "https://abc17news.com/news/national-world/cnn-national/2024/02/02/david-geffen-fast-facts-3/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "ashpublications.org",
+      "url": "https://ashpublications.org/ashclinicalnews/news/7788/MSKCC-Receives-400-Million-Donation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "chancellor.ucla.edu",
+      "url": "https://chancellor.ucla.edu/messages/geffen-academy-at-ucla-launches-with-100-million-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "deadline.com",
+      "url": "https://deadline.com/2013/04/david-geffen-foundation-donates-25m-to-academy-museum-of-motion-pictures-theater-to-be-named-for-him-470041/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "deadline.com",
+      "url": "https://deadline.com/2015/11/david-geffen-100-million-gift-to-ucla-for-college-prep-program-1201619297/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/columbia-business-school-gets-75-232327451.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "forhumanity.yale.edu",
+      "url": "https://forhumanity.yale.edu/how-to-give/schools-units/david-geffen-school-drama",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "giving.columbia.edu",
+      "url": "https://giving.columbia.edu/columbia-business-schools-new-manhattanville-campus",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "grantexec.com",
+      "url": "https://grantexec.com/foundations/954085811",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "grokipedia.com",
+      "url": "https://grokipedia.com/page/David_Geffen_Hall",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "labusinessjournal.com",
+      "url": "https://labusinessjournal.com/special-editions/wealthiest-angelenos/wealthiest-2022/4-david-geffen-2/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "laist.com",
+      "url": "https://laist.com/news/entertainment/david-geffen-pledges-lacma",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "medschool.ucla.edu",
+      "url": "https://medschool.ucla.edu/news-article/david-geffen-adds-46-million-to-landmark-medical",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "neighbors.columbia.edu",
+      "url": "https://neighbors.columbia.edu/news/david-geffen-joins-henry-r-kravis-support-columbia-business-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "news.artnet.com",
+      "url": "https://news.artnet.com/art-world/david-geffen-donates-100-million-to-lincoln-center-renovation-273978",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "news.artnet.com",
+      "url": "https://news.artnet.com/art-world/david-geffen-makes-150-million-gift-lacma-new-peter-zumthor-building-1105184",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "news.artnet.com",
+      "url": "https://news.artnet.com/market/moma-secret-weapon-massive-400m-expansion-1671187",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "observer.com",
+      "url": "https://observer.com/2023/12/ken-griffin-david-geffen-record-donation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-geffen-commits-20-million-for-dementia-research-support",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-geffen-commits-75-million-to-columbia-business-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-geffen-gives-100-million-to-museum-of-modern-art",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-geffen-gives-100-million-to-ucla-for-prep-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-geffen-pledges-150-million-to-los-angeles-county-museum-of-art",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/lincoln-center-receives-100-million-from-david-geffen",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "poetsandquants.com",
+      "url": "https://poetsandquants.com/2021/09/21/columbia-business-school-gets-75-million-from-david-geffen-for-its-new-campus/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "slate.com",
+      "url": "https://slate.com/business/2015/03/david-geffen-gives-100-million-to-lincoln-center-why-the-sale-of-naming-rights-is-corrupting-cultural-philanthropy.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "unframed.lacma.org",
+      "url": "https://unframed.lacma.org/2026/02/05/lacma-david-geffen-galleries-will-open-april-19-2026",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "variety.com",
+      "url": "https://variety.com/2013/film/awards/geffen-foundation-commits-25-million-to-academy-museum-1200334205/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "artnews.com",
+      "url": "https://www.artnews.com/art-collectors/top-200-profiles/david-geffen/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "artnews.com",
+      "url": "https://www.artnews.com/art-news/news/david-geffen-donates-100-m-to-moma-6207/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "awardsdaily.com",
+      "url": "https://www.awardsdaily.com/2013/04/08/academys-new-theater-to-be-named-after-david-geffen/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "bloomberg.com",
+      "url": "https://www.bloomberg.com/billionaires/profiles/kenneth-c-griffin/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2023-12-12/billionaires-griffin-geffen-give-nyc-s-msk-cancer-center-400-million-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "cancerhealth.com",
+      "url": "https://www.cancerhealth.com/article/billionaires-gift-memorial-sloan-kettering-cancer-center-largestever-donation-ken-griffin-david-geffen",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "canyon-news.com",
+      "url": "https://www.canyon-news.com/david-geffen-malibu-compound-sold-dodgers-owner-mark-walter/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "cbsnews.com",
+      "url": "https://www.cbsnews.com/news/yale-drama-school-to-eliminate-tuition-after-geffen-donation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "cnn.com",
+      "url": "https://www.cnn.com/us/david-geffen-fast-facts",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "columbiaspectator.com",
+      "url": "https://www.columbiaspectator.com/news/2021/10/20/business-school-receives-75-million-donation-from-entertainment-mogul-prepares-to-move-to-manhattanville-in-january/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "crainsnewyork.com",
+      "url": "https://www.crainsnewyork.com/article/20160421/ARTS/160429962/david-geffen-s-100-million-donation-is-the-largest-donation-during-the-museum-s-campaign-to-renovate-and-expand",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "discoverthenetworks.org",
+      "url": "https://www.discoverthenetworks.org/individuals/david-geffen/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "drama.yale.edu",
+      "url": "https://www.drama.yale.edu/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "drama.yale.edu",
+      "url": "https://www.drama.yale.edu/about-us/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "drama.yale.edu",
+      "url": "https://www.drama.yale.edu/admissions/financial-aid/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "drama.yale.edu",
+      "url": "https://www.drama.yale.edu/admissions/international-student-applicants/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "drama.yale.edu",
+      "url": "https://www.drama.yale.edu/admissions/tuition-and-living-expenses/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/profile/david-geffen/?list=forbes-400",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/hanktucker/2021/09/21/billionaire-music-mogul-david-geffen-pledges-75-million-to-columbia-business-school/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/janelevere/2022/11/30/new-york-philharmonics-revamped-david-geffen-hall-opens-at-lincoln-center-welcoming-local-community/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/kerenblankfeld/2016/04/22/david-geffen-makes-100-million-gift-to-moma/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/kristinstoller/2019/12/03/billionaire-dreamworks-cofounder-david-geffen-donates-46-million-to-ucla-medical-school/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2023/12/12/billionaires-griffin-and-geffen-donating-400-million-to-memorial-sloan-kettering-cancer-center-largest-in-hospitals-history/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/zackfriedman/2021/06/30/david-geffen-gifts-150-million-to-yale-drama-making-the-school-tuition-free/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "geffenacademy.ucla.edu",
+      "url": "https://www.geffenacademy.ucla.edu/about-us/our-campus",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "geffenacademy.ucla.edu",
+      "url": "https://www.geffenacademy.ucla.edu/giving",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "hollywoodreporter.com",
+      "url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/david-geffen-donates-25-million-434730/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "hollywoodreporter.com",
+      "url": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/david-geffen-gifts-ucla-100m-839550/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "lacma.org",
+      "url": "https://www.lacma.org/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "lacma.org",
+      "url": "https://www.lacma.org/support/building-lacma",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "latimes.com",
+      "url": "https://www.latimes.com/entertainment/arts/culture/la-et-cm-david-geffen-moma-20160420-story.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "latimes.com",
+      "url": "https://www.latimes.com/local/education/la-me-geffen-ucla-20151112-story.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "npr.org",
+      "url": "https://www.npr.org/2015/03/07/391435838/lincoln-center-venue-renamed-for-david-geffen",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2016/04/22/arts/design/museum-of-modern-art-receives-100-million-from-david-geffen.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2017/10/03/arts/music/lincoln-center-geffen-hall.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "opensecrets.org",
+      "url": "https://www.opensecrets.org/orgs/david-geffen-co/summary?id=D000033059",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "pressherald.com",
+      "url": "https://www.pressherald.com/2016/04/22/entertainment-mogul-david-geffen-gives-museum-of-modern-art-100-million/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "reddit.com",
+      "url": "https://www.reddit.com/r/todayilearned/comments/y464wu/til_that_before_lincoln_center_could_reward_david/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "streetinsider.com",
+      "url": "https://www.streetinsider.com/Reuters/Ken+Griffins+Citadel+to+return+about+$7+billion+in+profit+to+investors+-source/22517735.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "thewrap.com",
+      "url": "https://www.thewrap.com/billionaire-donors-david-geffens-150-million-yale-drama-school/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "ucla.edu",
+      "url": "https://www.ucla.edu/about/notable-bruins/53-david-geffen",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "universityofcalifornia.edu",
+      "url": "https://www.universityofcalifornia.edu/news/david-geffen-donates-100m-launch-school-grades-6-12",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "universityofcalifornia.edu",
+      "url": "https://www.universityofcalifornia.edu/press-room/geffens-100m-gift-medical-students",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "uscannenbergmedia.com",
+      "url": "https://www.uscannenbergmedia.com/2019/12/03/billionaire-david-geffen-donates-another-46-million-to-uclas-medical-school-for-merit-based-scholarships/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
+    },
+    {
+      "publisher": "x.com",
+      "url": "https://x.com/business/status/1734574565546717413",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b"
     }
   ],
   "_source_file": "david_geffen.v3.json"

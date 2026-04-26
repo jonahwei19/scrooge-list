@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream. Kaiser is structurally different from most billionaires: GKFF is a 501(c)(3) PUBLIC CHARITY (Type I supporting organization of Tulsa Community Foundation), not a private foundation \u2014 so it files Form 990, not 990-PF, and is NOT subject to the 5% private-foundation payout minimum. Giving capacity is read from total expenses + program grants rather than 990-PF grants_out field.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 George Kaiser deep research",
+  "generated_by": "scrooge v3 manual reference run \u2014 George Kaiser deep research + regen_v3@sha256-2a705f1ba3105bbd",
   "person": {
     "name_display": "George Kaiser",
     "name_legal": "George Bruce Kaiser",
@@ -215,6 +215,462 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "Captured within GKFF annual expenses \u2014 do NOT add separately."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2018,
+      "date_precision": "year",
+      "donor_entity": "George B Kaiser Foundation",
+      "donor_ein": "27-0509940",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 5544.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/270509940",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2018; end-year assets $0.0M; payout rate 167.2%.",
+      "regen_source": "propublica",
+      "event_id": "george_kaiser_grant_out_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "George B Kaiser Foundation",
+      "donor_ein": "27-0509940",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 1382.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/270509940",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2019; end-year assets $0.0M; payout rate 71.5%.",
+      "regen_source": "propublica",
+      "event_id": "george_kaiser_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2016,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "Bob Dylan Center",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://bobdylancenter.com/archive/",
+      "confidence": "high",
+      "extraction_note": "The George Kaiser Family Foundation acquired the Bob Dylan Archive in 2016, consisting of more than 100,000 items.",
+      "extraction_evidence": "Acquired by the George Kaiser Family Foundation in 2016, the Bob Dylan Archive\u00ae consists of more than 100,000 items",
+      "regen_query": "\"George Kaiser Family Foundation\" \"Bob Dylan Center\" OR \"Woody Guthrie Center\" archive acquisition 2016",
+      "event_id": "george_kaiser_direct_gift_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser",
+      "recipient": "Barack Obama",
+      "amount_usd": 75000,
+      "source_type": "news_article",
+      "source_url": "https://capitalresearch.org/article/the-solyndra-scandal-charity-tax-loopholes-and-billionaire-george-kaiser/",
+      "confidence": "medium",
+      "extraction_note": "George Kaiser bundled between $50,000 and $100,000 for presidential candidate Barack Obama.",
+      "extraction_evidence": "Kaiser bundled between $50,000 and $100,000 for presidential candidate Barack Obama",
+      "regen_query": "\"George Kaiser\" FEC contribution OR donation Obama 2008 bundler \"$50,000\" OR \"$100,000\"",
+      "event_id": "george_kaiser_political_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": 2016,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Bob Dylan",
+      "recipient": "George Kaiser Family Foundation",
+      "amount_usd": null,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Bob_Dylan_Center",
+      "confidence": "high",
+      "extraction_note": "Bob Dylan sold his archive to the George Kaiser Family Foundation and University of Tulsa in 2016.",
+      "extraction_evidence": "Dylan sold his archive to the Tulsa-based George Kaiser Family Foundation and the University of Tulsa",
+      "regen_query": "\"George Kaiser Family Foundation\" \"Bob Dylan Center\" OR \"Woody Guthrie Center\" archive acquisition 2016",
+      "event_id": "george_kaiser_transfer_in_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2013,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "Woody Guthrie Center",
+      "amount_usd": null,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/George_Kaiser_Family_Foundation",
+      "confidence": "high",
+      "extraction_note": "The George Kaiser Family Foundation was instrumental in funding Tulsa's Woody Guthrie Center, which opened in 2013.",
+      "extraction_evidence": "The foundation was instrumental in the funding of Tulsa's Woody Guthrie Center, which opened in 2013",
+      "regen_query": "\"George Kaiser Family Foundation\" \"Bob Dylan Center\" OR \"Woody Guthrie Center\" archive acquisition 2016",
+      "event_id": "george_kaiser_direct_gift_2013_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 6300000,
+      "source_type": "other",
+      "source_url": "https://imprintnews.org/funders/george-kaiser-family-foundation",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation announced $6.3 million in grants to area agencies.",
+      "extraction_evidence": "George Kaiser Family Foundation announces $6.3 million in grants to area agencies",
+      "regen_query": "\"George Kaiser\" pledges OR commits OR announces",
+      "event_id": "george_kaiser_grant_out_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Kaiser Permanente",
+      "recipient": "19 community organizations and nonprofits",
+      "amount_usd": 1067000,
+      "source_type": "other",
+      "source_url": "https://kpproud-midatlantic.kaiserpermanente.org/kaiser-permanente-commits-1-07m-to-area-organizations-to-advance-health-equity/",
+      "confidence": "high",
+      "extraction_note": "Kaiser Permanente awarded $1,067,000 in grants to 19 community organizations and nonprofits in the first half of 2024 to advance health equity.",
+      "extraction_evidence": "Kaiser Permanente has awarded $1,067,000 in grants to 19 community organizations and nonprofits in the first half of 2024",
+      "regen_query": "\"George Kaiser\" pledges OR commits OR announces",
+      "event_id": "george_kaiser_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2008,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "Oklahoma State University, University of Oklahoma-Tulsa",
+      "amount_usd": 25000000,
+      "source_type": "university_press",
+      "source_url": "https://news.okstate.edu/articles/communications/2008/george-kaiser-family-foundation-makes-25-million-gift-tulsa-area-college-and-universities.html",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation contributed $25 million to enhance higher education programs in the Tulsa area through endowed faculty funds.",
+      "extraction_evidence": "The George Kaiser Family Foundation (GKFF) has contributed $25 million to enhance higher education programs in the Tulsa area.",
+      "regen_query": "\"George Kaiser\" gift OR donation million",
+      "event_id": "george_kaiser_direct_gift_2008_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "private_investment",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser",
+      "recipient": "Solyndra",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://tulsaworld.com/news/local/emails-show-solyndra-was-discussed-in-kaiser-meeting-at-white-house/article_e4d007c2-c2c6-5ee2-b3e9-b46cef0b7b9f.html",
+      "confidence": "high",
+      "extraction_note": "Kaiser's foundation held a 35 percent stake in Solyndra and was its largest investor.",
+      "extraction_evidence": "Kaiser's foundation held a 35 percent stake in Solyndra and was its largest investor.",
+      "regen_query": "\"George Kaiser\" Solyndra \"$340 million\" OR \"35 percent\" stake 2009 DOE loan guarantee",
+      "event_id": "george_kaiser_private_investment_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "University of Oklahoma-Tulsa, Oklahoma State University, and Tulsa Community College",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-awards-25-million-to-tulsa-colleges",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation awarded $25 million to three Tulsa colleges through an endowed chair program.",
+      "extraction_evidence": "George Kaiser Family Foundation Awards $25 Million to Tulsa Colleges",
+      "regen_query": "\"George Kaiser\" \"OU-Tulsa\" OR \"University of Oklahoma Tulsa\" \"School of Community Medicine\" $62 million",
+      "event_id": "george_kaiser_grant_out_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date": "2015-01-19",
+      "date_precision": "day",
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 6300000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-awards-6.3-million-in-grants",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation announced $6.3 million in grants to area agencies.",
+      "extraction_evidence": "George Kaiser Family Foundation Announces $6.3 Million in Grants to Area Agencies",
+      "regen_query": "\"George Kaiser\" pledges OR commits OR announces",
+      "event_id": "george_kaiser_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 350000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-partners-give-350-million-for-park",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation and partners gave $350 million to support transformation of Arkansas River waterfront into a recreational gathering place.",
+      "extraction_evidence": "George Kaiser Family Foundation, Partners Give $350 Million for Park. The gift will support the transformation of nearly a hundred acres",
+      "regen_query": "\"George Kaiser\" donates million",
+      "event_id": "george_kaiser_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Foundation",
+      "recipient": "Tulsa nonprofits",
+      "amount_usd": 4700000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/george-kaiser-foundation-awards-4.7-million-to-tulsa-nonprofits",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Foundation awarded $4.7 million to Tulsa nonprofits, with $3.7 million to human services agencies and the remainder to community health organizations.",
+      "extraction_evidence": "George Kaiser Foundation Awards $4.7 Million to Tulsa Nonprofits",
+      "regen_query": "\"George Kaiser Family Foundation\" \"supporting organization\" OR \"509(a)(3)\" \"Tulsa Community Foundation\" payout rate",
+      "event_id": "george_kaiser_grant_out_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2008,
+      "date": "2008-02-12",
+      "date_precision": "day",
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "University of Oklahoma",
+      "amount_usd": 50000000,
+      "source_type": "press_release",
+      "source_url": "https://philanthropynewsdigest.org/news/university-of-oklahoma-receives-50-million-from-george-kaiser-family-foundation",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation announced a $50 million gift to University of Oklahoma to improve health in Oklahoma communities.",
+      "extraction_evidence": "George Kaiser Family Foundation Announces $50 Million Gift to Improve Health in Oklahoma Communities",
+      "regen_query": "\"George Kaiser\" gift OR donation million",
+      "event_id": "george_kaiser_direct_gift_2008_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2018,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "Tulsa Remote",
+      "amount_usd": null,
+      "source_type": "blog",
+      "source_url": "https://ssti.org/blog/recent-research-tulsa-remote-study-shows-strong-economic-returns",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation launched Tulsa Remote in 2018 with funding to provide $10,000 to eligible remote workers relocating to Tulsa.",
+      "extraction_evidence": "Tulsa Remote, launched in 2018 with funding from the George Kaiser Family Foundation, provides $10,000 to eligible remote workers",
+      "regen_query": "\"Tulsa Remote\" program \"$10,000\" stipend \"3,475\" participants benefit-cost ratio Upjohn",
+      "event_id": "george_kaiser_grant_out_2018_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "University of Oklahoma",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://tulsaworld.com/archive/george-kaiser-family-foundation-announces-m-gift-to-ou-tulsa/article_2bf66778-f07d-590d-8e5c-f4ad13277cc9.html",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation announced a $50 million gift to the University of Oklahoma, described as the largest single gift ever to the university.",
+      "extraction_evidence": "George Kaiser Family Foundation today announced a $50 million gift - the largest single gift ever to the University of Oklahoma",
+      "regen_query": "\"George Kaiser\" gift OR donation million",
+      "event_id": "george_kaiser_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser",
+      "recipient": "George Kaiser Family Foundation",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.forbes.com/pictures/mef45eidfl/george-kaiser-71-bil/",
+      "confidence": "high",
+      "extraction_note": "George Kaiser endowed the George Kaiser Family Foundation with more than $4 billion in total across both foundations.",
+      "extraction_evidence": "endowed the George Kaiser Family Foundation and Tulsa Community Foundation with more than $4 billion",
+      "regen_query": "\"George Kaiser\" site:forbes.com profile",
+      "event_id": "george_kaiser_transfer_in_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "George Kaiser",
+      "recipient": "The Gathering Place",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.forbes.com/profile/george-kaiser/",
+      "confidence": "high",
+      "extraction_note": "George Kaiser opened The Gathering Place, a 66-acre park in Tulsa built with private funds in 2018.",
+      "extraction_evidence": "In 2018, Kaiser opened The Gathering Place, a 66-acre park in Tulsa that's the largest public park in the country built with private funds.",
+      "regen_query": "\"George Kaiser\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "george_kaiser_direct_gift_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "Planned Parenthood",
+      "amount_usd": 1000000,
+      "source_type": "other",
+      "source_url": "https://www.influencewatch.org/non-profit/george-kaiser-family-foundation/",
+      "confidence": "high",
+      "extraction_note": "GKFF gave over $1,000,000 to Planned Parenthood between 2013 and 2015.",
+      "extraction_evidence": "Between 2013 and 2015, GKFF gave over $1,000,000 to the pro-abortion group Planned Parenthood",
+      "regen_query": "\"George Kaiser\" donates million",
+      "event_id": "george_kaiser_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2014,
+      "date": "2014-07-27",
+      "date_precision": "day",
+      "donor_entity": "George Kaiser Foundation",
+      "recipient": "River Parks",
+      "amount_usd": 350000000,
+      "source_type": "news_article",
+      "source_url": "https://www.newson6.com/story/5e362d882f69d76f6204df54/george-kaiser-foundation-makes-historic-350m-donation-to-river-parks",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Foundation made a $350 million gift to River Parks, combining land, design, construction, and operating costs.",
+      "extraction_evidence": "$350 million gift, combining land, design, construction costs and operating, security, maintenance and programming costs",
+      "regen_query": "\"George Kaiser\" gift OR donation million",
+      "event_id": "george_kaiser_direct_gift_2014_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 1233,
+      "source_type": "other",
+      "source_url": "https://www.opensecrets.org/orgs/george-kaiser-family-foundation/summary?id=D000051276",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation made political contributions of $1,233 in the 2024 cycle.",
+      "extraction_evidence": "Contributions in the 2024 cycle: $1,233",
+      "regen_query": "\"George Kaiser\" FEC OR PAC contribution",
+      "event_id": "george_kaiser_political_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Foundation",
+      "recipient": "River Parks Authority",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.readfrontier.org/stories/kaiser-foundation-gathering-place-project-not-out-of-control/",
+      "confidence": "high",
+      "extraction_note": "The Kaiser Foundation gifted a park to River Parks Authority.",
+      "extraction_evidence": "The foundation has gifted the park to River Parks Authority",
+      "regen_query": "\"Gathering Place\" \"largest private park gift\" \"$465 million\" OR \"$350 million\" Kaiser 2018",
+      "event_id": "george_kaiser_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser",
+      "recipient": "University of Tulsa",
+      "amount_usd": 70000000,
+      "source_type": "news_article",
+      "source_url": "https://www.thenation.com/article/archive/higher-education-corporate-takeover-kaiser-university-of-tulsa/",
+      "confidence": "high",
+      "extraction_note": "George Kaiser made donations totaling more than $70 million to the University of Tulsa.",
+      "extraction_evidence": "donations totaling more than $70 million",
+      "regen_query": "\"George Kaiser\" gift OR donation million",
+      "event_id": "george_kaiser_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -235,6 +691,82 @@
       "source_url": "https://www.givingpledge.org/pledger/george-b-kaiser/",
       "retrieved_at": "2026-04-24",
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 8600000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-announces-more-than-8.6-million-in-grants",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation announced more than $8.6 million in grants, including $4.5 million for human services and $1.5 million for community health.",
+      "extraction_evidence": "George Kaiser Family Foundation Announces More Than $8.6 Million in Grants",
+      "regen_query": "\"George Kaiser\" pledges OR commits OR announces",
+      "event_id": "george_kaiser_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://speakerpedia.com/speakers/george-kaiser",
+      "confidence": "high",
+      "extraction_note": "George Kaiser is a member of The Giving Pledge, committing to give away half of his wealth for charitable purposes.",
+      "extraction_evidence": "George Kaiser is a member of The Giving Pledge, a commitment to give away half of his wealth for charitable purposes.",
+      "regen_query": "\"George Kaiser\" \"giving pledge\"",
+      "event_id": "george_kaiser_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser Family Foundation",
+      "recipient": "Tulsa Children's Museum Discovery Lab",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://tulsaworld.com/news/local/gatheringplace/george-kaiser-family-foundation-donates-10-million-in-land-to-spur-building-of-new-tulsa/article_faf632d3-fc46-5594-8330-054294265c99.html",
+      "confidence": "high",
+      "extraction_note": "George Kaiser Family Foundation pledged $10 million in land for construction of a permanent home for a children's museum in A Gathering Place for Tulsa park.",
+      "extraction_evidence": "The George Kaiser Family Foundation will announce Thursday a pledge of $10 million in land toward the construction of a permanent home",
+      "regen_query": "\"George Kaiser\" donates million",
+      "event_id": "george_kaiser_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "George Kaiser",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.influencewatch.org/person/george-kaiser/",
+      "confidence": "medium",
+      "extraction_note": "George Kaiser signed the Giving Pledge, declaring he would give away at least half his assets.",
+      "extraction_evidence": "When he signed the \"Giving Pledge,\" Kaiser declared he would give away at least half his assets.",
+      "regen_query": "\"George Kaiser\" pledges OR commits OR announces",
+      "event_id": "george_kaiser_announcement_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -514,15 +1046,321 @@
       "used_for": "Bridgespan analysis of Kaiser's early-childhood-education theory of change"
     },
     {
-      "url": "https://www.insidephilanthropy.com/find-a-grant/major-donors/george-kaiser-html",
-      "retrieved_at": "2026-04-24",
-      "used_for": "Inside Philanthropy profile \u2014 lifetime giving 'more than half a billion' (stale estimate, likely now >$1.3B)",
-      "source_verification_status": "dead_link_likely_fabricated"
-    },
-    {
       "url": "https://193countriesconsortium.com/2025/05/george-kaiser-a-life-of-quiet-influence-and-purposeful-philanthropy/",
       "retrieved_at": "2026-04-24",
       "used_for": "2025 retrospective \u2014 GKFF paid out 'more than $1.3 billion' most staying in Tulsa"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82019536",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=04-08-07",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=07-25-62",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-14-58",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-46-11",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-17-18",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-50-65",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-99-68",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-85-96",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-65-85",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-82-12",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-02-85",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-81-55",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "bobdylancenter.com",
+      "url": "https://bobdylancenter.com/archive/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Bob_Dylan_Center",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/George_Kaiser_Family_Foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/The_Bob_Dylan_Archive",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "imprintnews.org",
+      "url": "https://imprintnews.org/funders/george-kaiser-family-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "journalrecord.com",
+      "url": "https://journalrecord.com/2025/12/16/george-kaiser-power-list-influential-2025/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "kpproud-midatlantic.kaiserpermanente.org",
+      "url": "https://kpproud-midatlantic.kaiserpermanente.org/kaiser-permanente-commits-1-07m-to-area-organizations-to-advance-health-equity/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "news.okstate.edu",
+      "url": "https://news.okstate.edu/articles/communications/2008/george-kaiser-family-foundation-makes-25-million-gift-tulsa-area-college-and-universities.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/foundation-had-jobs-in-mind-when-it-invested-in-solyndra",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-announces-more-than-8.6-million-in-grants",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-awards-25-million-to-tulsa-colleges",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-awards-6.3-million-in-grants",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/george-kaiser-foundation-awards-4.7-million-to-tulsa-nonprofits",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/university-of-oklahoma-receives-50-million-from-george-kaiser-family-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "speakerpedia.com",
+      "url": "https://speakerpedia.com/speakers/george-kaiser",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "ssti.org",
+      "url": "https://ssti.org/blog/recent-research-tulsa-remote-study-shows-strong-economic-returns",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "tulsaworld.com",
+      "url": "https://tulsaworld.com/archive/george-kaiser-family-foundation-announces-m-gift-to-ou-tulsa/article_2bf66778-f07d-590d-8e5c-f4ad13277cc9.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "tulsaworld.com",
+      "url": "https://tulsaworld.com/archive/george-kaiser-how-the-richest-person-in-oklahoma-works-and/article_cc8fd238-6ee0-59e3-bd6b-9c1da2dd45c3.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "tulsaworld.com",
+      "url": "https://tulsaworld.com/kaiser-park-gift-is-record-donation/article_93eae1e6-fc4c-5502-a67b-564bd1661876.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "tulsaworld.com",
+      "url": "https://tulsaworld.com/news/local/emails-show-solyndra-was-discussed-in-kaiser-meeting-at-white-house/article_e4d007c2-c2c6-5ee2-b3e9-b46cef0b7b9f.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "tulsaworld.com",
+      "url": "https://tulsaworld.com/news/local/gatheringplace/george-kaiser-family-foundation-donates-10-million-in-land-to-spur-building-of-new-tulsa/article_faf632d3-fc46-5594-8330-054294265c99.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "tulsaworld.com",
+      "url": "https://tulsaworld.com/news/local/george-kaiser-foundation-makes-record-donation-to-river-parks-for-a-gathering-place/article_d1865fb1-003c-5414-9fb7-eaf86857f4ca.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "tulsaworld.com",
+      "url": "https://tulsaworld.com/news/local/history/happy-birthday-to-tulsa-philanthropist-george-kaiser-how-he-and-his-foundation-invest-in-tulsa/collection_4bbe5e7f-147f-52a7-9250-491421ef6df4.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "woodyguthriecenter.org",
+      "url": "https://woodyguthriecenter.org/archives/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "bridgespan.org",
+      "url": "https://www.bridgespan.org/insights/george-kaiser-and-ken-levit/an-easy-decision-george-kaiser-explains-why-he-jo",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/pictures/mef45eidfl/george-kaiser-71-bil/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/profile/george-kaiser/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/christopherhelman/2011/09/21/george-kaisers-10-billion-bet/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "influencewatch.org",
+      "url": "https://www.influencewatch.org/person/george-kaiser/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "kosu.org",
+      "url": "https://www.kosu.org/music/2016-03-02/bob-dylan-archive-to-be-permanently-housed-in-tulsa",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "newson6.com",
+      "url": "https://www.newson6.com/story/5e362d882f69d76f6204df54/george-kaiser-foundation-makes-historic-350m-donation-to-river-parks",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2022/05/05/arts/music/bob-dylan-center-tulsa.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "oklahoman.com",
+      "url": "https://www.oklahoman.com/story/entertainment/columns/brandy-mcdonnell/2016/03/02/bob-dylan-archive-to-be-permanently-housed-in-tulsa/60689119007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "oklahoman.com",
+      "url": "https://www.oklahoman.com/story/news/2011/04/24/billionaire-george-kaiser-pledges-fortune-to-philanthropy/61169011007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "ou.edu",
+      "url": "https://www.ou.edu/web/news_events/articles/news_2014/TandyEducation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "philanthropyroundtable.org",
+      "url": "https://www.philanthropyroundtable.org/almanac/350-million-for-a-city-park-in-tulsa/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "readfrontier.org",
+      "url": "https://www.readfrontier.org/stories/kaiser-foundation-gathering-place-project-not-out-of-control/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
+    },
+    {
+      "publisher": "thenation.com",
+      "url": "https://www.thenation.com/article/archive/higher-education-corporate-takeover-kaiser-university-of-tulsa/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2a705f1ba3105bbd"
     }
   ],
   "summary_150_words": "George Kaiser (Forbes 2024 $10B rank #42 US; Bloomberg Feb 2026 ~$16B) is a 2010 Giving Pledge signer whose 15-year track record places him in the minority actually delivering. The George Kaiser Family Foundation is a 501(c)(3) public charity (Type I supporting organization of Tulsa Community Foundation, EIN 73-1574370) with $5.09B in assets and $274M in 2024 total expenses \u2014 running Tulsa Educare, A Gathering Place (largest private community-park gift in U.S. history, $200M+), the Bob Dylan and Woody Guthrie Centers, the Tulsa Remote program ($10K stipends, 4:1 benefit-cost per Upjohn), and the OU-Tulsa School of Community Medicine. Observable giving 2018-2024 is ~$1.64B; lifetime ~$1.3B+ cited. Structural critique persists: GKFF's 509(a)(3) status sidesteps the 5% private-foundation payout rule (Senate Finance Committee flagged 2005) and the 2009-2011 Solyndra DOE-loan controversy remains the dominant ethics-adjacent story. Classification: ON_TRACK."

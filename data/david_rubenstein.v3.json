@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Rubenstein) + regen_v3@sha256-61c2d5ca2e28a7d3 + regen_v3@sha256-7d8eaaf9ce38079e",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Rubenstein) + regen_v3@sha256-61c2d5ca2e28a7d3 + regen_v3@sha256-7d8eaaf9ce38079e + regen_v3@sha256-a7ffcc7c7c9e4960",
   "person": {
     "name_display": "David Rubenstein",
     "name_legal": "David Mark Rubenstein",
@@ -534,6 +534,424 @@
       "regen_run_id": "sha256-61c2d5ca2e28a7d3",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": "2024-03-23",
+      "date_precision": "day",
+      "donor_entity": "David Rubenstein",
+      "recipient": "University of Chicago",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://chicagomaroon.com/51232/news/david-rubenstein-gives-50-million-to-modernize-ida-noyes-hall/",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein gave $50 million to support modernization of Ida Noyes Hall at the University of Chicago.",
+      "extraction_evidence": "David Rubenstein Gives $50 Million to Modernize Ida Noyes Hall",
+      "regen_query": "\"David Rubenstein\" \"University of Chicago\" \"Law School Scholars\" OR \"Ida Noyes Hall\" $50 million 2026",
+      "event_id": "david_rubenstein_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2026,
+      "date": "2026-03",
+      "date_precision": "month",
+      "donor_entity": "David Rubenstein",
+      "recipient": "Ida Noyes Hall",
+      "amount_usd": 50000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/David_Rubenstein",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein donated $50 million in March 2026 for the modernization of Ida Noyes Hall, a campus building.",
+      "extraction_evidence": "In March 2026, Rubenstein donated $50 million for the modernization of Ida Noyes Hall",
+      "regen_query": "\"David Rubenstein\" donates million",
+      "event_id": "david_rubenstein_direct_gift_2026_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "National Park Foundation",
+      "amount_usd": 12350000,
+      "source_type": "other",
+      "source_url": "https://home.nps.gov/arho/learn/news/david-rubenstein-donates-lead-centennial-gift-of-12-million-dollars-to-the-national-park-foundation-to-restore-arlington-house.htm",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein donated $12.35 million to the National Park Foundation for restoring Arlington House.",
+      "extraction_evidence": "David Rubenstein, donates, Restore Arlington House, National Park Foundation",
+      "regen_query": "\"David Rubenstein\" donates million",
+      "event_id": "david_rubenstein_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2010,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "David M. Rubenstein",
+      "recipient": "Law School",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://lifestylesmagazine.com/latest-news/50-million-new-gift-to-university-from-lifestyles-magazine-meaningful-influence-cover-subject-david-m-rubenstein-elevates-his-philanthropy-past-the-billion-dollar-mark/",
+      "confidence": "high",
+      "extraction_note": "In 2010, Rubenstein created the Rubenstein Scholars Program at the Law School, a full-tuition scholarship initiative.",
+      "extraction_evidence": "In 2010, Rubenstein created the Rubenstein Scholars Program at the Law School, one of the nation's most selective full-tuition scholarship initiatives",
+      "regen_query": "\"David Rubenstein\" \"University of Chicago\" \"Law School Scholars\" OR \"Ida Noyes Hall\" $50 million 2026",
+      "event_id": "david_rubenstein_direct_gift_2010_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Smithsonian's Renwick Gallery",
+      "amount_usd": 5400000,
+      "source_type": "news_article",
+      "source_url": "https://news.artnet.com/art-world/david-rubenstein-gifts-54-million-for-renwick-gallery-renovation-47313",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein gave $5.4 million toward the renovation of the Smithsonian's Renwick Gallery.",
+      "extraction_evidence": "David Rubenstein has given $5.4 million toward the renovation of the Smithsonian's Renwick Gallery",
+      "regen_query": "\"David Rubenstein\" \"Renwick Gallery\" $54 million OR $5.4 million Smithsonian",
+      "event_id": "david_rubenstein_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "George Washington's Mount Vernon",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://patch.com/virginia/arlington-va/robert-e-lees-arlington-mansion-gets-125-million-donation-from-david-rubenstein",
+      "confidence": "high",
+      "extraction_note": "Rubenstein donated $10 million to George Washington's Mount Vernon early this year.",
+      "extraction_evidence": "$10 million to George Washington's Mount Vernon",
+      "regen_query": "\"David Rubenstein\" \"Renwick Gallery\" $54 million OR $5.4 million Smithsonian",
+      "event_id": "david_rubenstein_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2009,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "David Rubenstein",
+      "recipient": "Duke University Sanford School of Public Policy",
+      "amount_usd": 5750000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/david-rubenstein-awards-10-million-to-duke-university-sanford-school-of-public-policy",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein gave $5.75 million to Sanford in 2009 for environmental and energy policy work, internships, and speakers series.",
+      "extraction_evidence": "$5.75 million gift to Sanford in 2009 to help fund environmental and energy policy work, internships, and a distinguished speakers series",
+      "regen_query": "\"David Rubenstein\" \"Duke University\" Jewish Life OR Sanford School OR first-generation scholarships 2002-2017",
+      "event_id": "david_rubenstein_direct_gift_2009_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2002,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "David Rubenstein",
+      "recipient": "Duke University",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/david-rubenstein-awards-10-million-to-duke-university-sanford-school-of-public-policy",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein gave $5 million in 2002 to Duke University.",
+      "extraction_evidence": "$5 million in 2002 toward",
+      "regen_query": "\"David Rubenstein\" \"Duke University\" Jewish Life OR Sanford School OR first-generation scholarships 2002-2017",
+      "event_id": "david_rubenstein_direct_gift_2002_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Trust for the National Mall",
+      "amount_usd": 7500000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/david-rubenstein-donates-7.5-million-to-repair-washington-monument",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein donated $7.5 million through the Trust for the National Mall for restoration of the Washington Monument.",
+      "extraction_evidence": "Rubenstein's contribution was made through the Trust for the National Mall",
+      "regen_query": "\"David Rubenstein\" \"National Park Foundation\" OR \"National Park Service\" 2024 2025 monument restoration",
+      "event_id": "david_rubenstein_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Duke University",
+      "amount_usd": 1900000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/david-rubenstein-gives-1.9-million-for-jewish-life-at-duke-university",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein gave $1.9 million to Duke University for Jewish life initiatives including the Freeman Center for Jewish Life and Rubenstein-Silvers Hillel.",
+      "extraction_evidence": "David Rubenstein Gives $1.9 Million for Jewish Life at Duke University",
+      "regen_query": "\"David Rubenstein\" \"Duke University\" Jewish Life OR Sanford School OR first-generation scholarships 2002-2017",
+      "event_id": "david_rubenstein_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2014,
+      "date": "2014-06-23",
+      "date_precision": "day",
+      "donor_entity": "David M. Rubenstein",
+      "recipient": "Smithsonian American Art Museum",
+      "amount_usd": 5400000,
+      "source_type": "press_release",
+      "source_url": "https://philanthropynewsdigest.org/news/smithsonian-american-art-museum-receives-5.4-million-for-renovations",
+      "confidence": "high",
+      "extraction_note": "David M. Rubenstein gave $5.4 million to Smithsonian American Art Museum for Renwick Gallery renovation.",
+      "extraction_evidence": "Smithsonian American Art Museum Receives $5.4 Million From David M. Rubenstein for Renwick Gallery Renovation",
+      "regen_query": "\"David Rubenstein\" \"Renwick Gallery\" $54 million OR $5.4 million Smithsonian",
+      "event_id": "david_rubenstein_direct_gift_2014_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "U.S. Holocaust Memorial Museum",
+      "amount_usd": 15000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/u.s.-holocaust-memorial-museum-receives-15-million-gift",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein gave $15 million to the U.S. Holocaust Memorial Museum.",
+      "extraction_evidence": "David Rubenstein gives $15 million to Holocaust Museum",
+      "regen_query": "\"David Rubenstein\" \"Jewish Museum of Maryland\" OR \"Holocaust Museum\" $15 million Jewish giving",
+      "event_id": "david_rubenstein_direct_gift_x_regen7",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Lincoln Memorial",
+      "amount_usd": 18500000,
+      "source_type": "news_article",
+      "source_url": "https://time.com/4224789/lincoln-memorial-restoration-donation/",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein donated $18.5 million to fund repairs and revamping of the Lincoln Memorial.",
+      "extraction_evidence": "$18.5 million donation from businessman David Rubenstein",
+      "regen_query": "\"David Rubenstein\" \"National Park Foundation\" OR \"National Park Service\" 2024 2025 monument restoration",
+      "event_id": "david_rubenstein_direct_gift_x_regen8",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "David Rubenstein",
+      "recipient": "Kennedy Center",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://washingtonian.com/2023/03/27/billionaire-david-rubenstein-sure-funds-a-lot-of-dc-stuff/",
+      "confidence": "high",
+      "extraction_note": "The REACH at Kennedy Center, which opened in 2019, was funded by Rubenstein's $50 million gift.",
+      "extraction_evidence": "The Reach, which opened in 2019, was funded by his $50 million",
+      "regen_query": "\"David Rubenstein\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "david_rubenstein_direct_gift_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "National Archives",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://whatsupmag.com/news/documents-from-the-david-rubenstein-collection-on-display/",
+      "confidence": "high",
+      "extraction_note": "Rubenstein provided a long-term loan of a 1297 Magna Carta to the National Archives.",
+      "extraction_evidence": "loan of a 1297 Magna Carta to the National Archives",
+      "regen_query": "\"David Rubenstein\" \"Magna Carta\" OR \"Bay Psalm Book\" OR \"Emancipation Proclamation\" loaned donated",
+      "event_id": "david_rubenstein_transfer_in_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Duke University",
+      "amount_usd": 44000000,
+      "source_type": "news_article",
+      "source_url": "https://www.ack.net/news/summer-resident-david-rubenstein-awarded-nation-s-highest-civilian-honor/article_b8f85b22-cb73-11ef-8398-8fd813c16f4d.html",
+      "confidence": "high",
+      "extraction_note": "Rubenstein donated $44 million to Duke University, his alma mater.",
+      "extraction_evidence": "donating $44 million to his alma mater, Duke University",
+      "regen_query": "\"David Rubenstein\" \"Kennedy Center\" $50 million expansion 2013 OR cumulative $111 million",
+      "event_id": "david_rubenstein_direct_gift_x_regen9",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Johns Hopkins University",
+      "amount_usd": 6000000,
+      "source_type": "news_article",
+      "source_url": "https://www.ack.net/news/summer-resident-david-rubenstein-awarded-nation-s-highest-civilian-honor/article_b8f85b22-cb73-11ef-8398-8fd813c16f4d.html",
+      "confidence": "high",
+      "extraction_note": "Rubenstein donated $6 million to Johns Hopkins.",
+      "extraction_evidence": "$6 million to Johns Hopkins",
+      "regen_query": "\"David Rubenstein\" \"Kennedy Center\" $50 million expansion 2013 OR cumulative $111 million",
+      "event_id": "david_rubenstein_direct_gift_x_regen10",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date": "2021-09-27",
+      "date_precision": "day",
+      "donor_entity": "David Rubenstein",
+      "recipient": "Lincoln Center",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/giacomotognini/2021/09/27/private-equity-billionaire-david-rubenstein-donates-10-million-to-new-yorks-lincoln-center-to-expand-civic-activities/",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein donated $10 million to Lincoln Center to support civic-minded activities.",
+      "extraction_evidence": "Private Equity Billionaire David Rubenstein Donates $10 Million To New York's Lincoln Center",
+      "regen_query": "\"David Rubenstein\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "david_rubenstein_direct_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rubenstein Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 609026,
+      "source_type": "990-PF",
+      "source_url": "https://www.instrumentl.com/990-report/rubenstein-foundation-7c06449b-595e-4fc2-b1c3-855a584e4b81",
+      "confidence": "high",
+      "extraction_note": "Rubenstein Foundation provided $609,026 in grants in 2024.",
+      "extraction_evidence": "provided $609,026 in grants in 2024",
+      "regen_query": "\"Rubenstein Foundation\" 990-PF",
+      "event_id": "david_rubenstein_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Archives and Smithsonian Museums",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.lbjaward.org/2017-liberty-justice-award.html",
+      "confidence": "high",
+      "extraction_note": "Rubenstein donated precious copies of historical documents including the Declaration of Independence, Magna Carta, Emancipation Proclamation, and the 13th Amendment to the Archives and Smithsonian Museums.",
+      "extraction_evidence": "donated precious copies of historical documents to the Archives and Smithsonian Museums, including the Declaration of Independence, Magna Carta, Emancipation Proclamation, and the 13th Amendment",
+      "regen_query": "\"David Rubenstein\" \"Declaration Partners\" charitable OR philanthropy OR giving",
+      "event_id": "david_rubenstein_direct_gift_x_regen11",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "unspecified",
+      "amount_usd": 700000000,
+      "source_type": "blog",
+      "source_url": "https://www.linkedin.com/pulse/david-rubenstein-patriotic-philanthropy-randall-kaplan-tsbje",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein has given away nearly $700 million during his lifetime.",
+      "extraction_evidence": "has already given away nearly $700 million during his lifetime",
+      "regen_query": "\"David Rubenstein\" \"giving pledge\"",
+      "event_id": "david_rubenstein_direct_gift_x_regen12",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David M. Rubenstein",
+      "recipient": "National Park Foundation",
+      "amount_usd": 1000000,
+      "source_type": "press_release",
+      "source_url": "https://www.nationalparks.org/news-and-updates/press-releases/david-rubenstein-donates-1-million-to-national-park-foundation-to-repair-and-restore-newly-designated-belmont-paul-womens-equality-national-monument",
+      "confidence": "high",
+      "extraction_note": "David M. Rubenstein donated $1 million to the National Park Foundation for repairs and restoration of the Belmont Paul Women's Equality National Monument.",
+      "extraction_evidence": "David M. Rubenstein to fund critical repairs to and restoration of the newest national park site",
+      "regen_query": "\"David Rubenstein\" donates million",
+      "event_id": "david_rubenstein_direct_gift_x_regen13",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -551,6 +969,234 @@
       "retrieved_at": "2026-04-24",
       "notes": "Pledged 'more than half' (standard Giving Pledge minimum). At 2010 wealth of ~$3B, target was ~$1.5B. Current wealth ~$4.5B means target is now ~$2.25B+. Observable direct giving of ~$500M-$600M is ~25-40% of the pledge target \u2014 not fulfilled, but materially on the path. IPS 2025 report publicly praises him as one of the few honoring the spirit.",
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://davidrubensteinforum.uchicago.edu/david-m-rubenstein/",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein is identified as an original signer of The Giving Pledge.",
+      "extraction_evidence": "Mr. Rubenstein is an original signer of The Giving Pledge",
+      "regen_query": "\"David Rubenstein\" \"giving pledge\"",
+      "event_id": "david_rubenstein_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Jewish Museum of Maryland",
+      "amount_usd": 1500000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Jewish_Museum_of_Maryland",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein announced in 2024 that he would donate $1.5 million to the Jewish Museum of Maryland.",
+      "extraction_evidence": "In 2024, philanthropist and owner of the Baltimore Orioles baseball team David Rubenstein announced he would donate $1.5 million to the museum",
+      "regen_query": "\"David Rubenstein\" \"Jewish Museum of Maryland\" OR \"Holocaust Museum\" $15 million Jewish giving",
+      "event_id": "david_rubenstein_pledge_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David M. Rubenstein",
+      "recipient": "Smithsonian's National Zoo and Conservation Biology Institute",
+      "amount_usd": 10000000,
+      "source_type": "other",
+      "source_url": "https://nationalzoo.si.edu/news/david-rubenstein-donates-10-million-smithsonians-national-zoo-and-conservation-biology",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein pledged $10 million to the Smithsonian's National Zoo and Conservation Biology Institute's Giant Panda Program.",
+      "extraction_evidence": "David M. Rubenstein, co-founder and co-chairman of The Carlyle Group, has pledged $10 million toward the Smithsonian's National Zoo",
+      "regen_query": "\"David Rubenstein\" donates million",
+      "event_id": "david_rubenstein_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "John F. Kennedy Center for the Performing Arts",
+      "amount_usd": 75000000,
+      "source_type": "news_article",
+      "source_url": "https://www.ack.net/news/summer-resident-david-rubenstein-awarded-nation-s-highest-civilian-honor/article_b8f85b22-cb73-11ef-8398-8fd813c16f4d.html",
+      "confidence": "high",
+      "extraction_note": "Rubenstein pledged or donated more than $75 million to the Kennedy Center for the Performing Arts.",
+      "extraction_evidence": "pledging or donating more than $75 million to the John F. Kennedy Center for the Performing Arts",
+      "regen_query": "\"David Rubenstein\" \"Kennedy Center\" $50 million expansion 2013 OR cumulative $111 million",
+      "event_id": "david_rubenstein_pledge_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2021,
+      "date": "2021-02-22",
+      "date_precision": "day",
+      "donor_entity": "David M. Rubenstein",
+      "recipient": "American Academy of Arts and Sciences",
+      "amount_usd": 10000000,
+      "source_type": "press_release",
+      "source_url": "https://www.amacad.org/news/rubenstein-gift",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein pledged a $10 million gift to the American Academy of Arts and Sciences.",
+      "extraction_evidence": "David M. Rubenstein has pledged a transformative gift of $10 million",
+      "regen_query": "\"David Rubenstein\" pledges OR commits OR announces",
+      "event_id": "david_rubenstein_pledge_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2017,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "David M. Rubenstein",
+      "recipient": "Brookings Institution",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.brookings.edu/david-m-rubenstein-fellowship-program/",
+      "confidence": "high",
+      "extraction_note": "David M. Rubenstein made a generous gift to support the Rubenstein Fellowship program at Brookings, originally announced in 2017.",
+      "extraction_evidence": "supported by a generous gift from Brookings Trustee David M. Rubenstein",
+      "regen_query": "\"David Rubenstein\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "david_rubenstein_announcement_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2012,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Trust for the National Mall",
+      "amount_usd": 7500000,
+      "source_type": "news_article",
+      "source_url": "https://www.dailymail.co.uk/news/article-2088867/Billionaire-benefactor-David-Rubenstein-pledges-7-5million-repair-Washington-Monument.html",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein pledged $7.5 million to repair the Washington Monument through the Trust for the National Mall.",
+      "extraction_evidence": "Billionaire benefactor David Rubenstein pledges $7.5million to repair the Washington Monument",
+      "regen_query": "\"David Rubenstein\" pledges OR commits OR announces",
+      "event_id": "david_rubenstein_pledge_2012_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David M. Rubenstein",
+      "recipient": "Jewish Museum of Maryland",
+      "amount_usd": 1500000,
+      "source_type": "other",
+      "source_url": "https://www.davidrubenstein.com/philanthropy/",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein committed $1.5 million to the Jewish Museum of Maryland's transformation.",
+      "extraction_evidence": "David M. Rubenstein Commits $1.5 Million to Jewish Museum of Maryland's Transformation",
+      "regen_query": "\"David Rubenstein\" pledges OR commits OR announces",
+      "event_id": "david_rubenstein_pledge_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2014,
+      "date": "2014-03-31",
+      "date_precision": "day",
+      "donor_entity": "David Rubenstein",
+      "recipient": "libraries across the country",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/abrambrown/2014/03/31/the-man-who-owns-a-magna-carta/",
+      "confidence": "medium",
+      "extraction_note": "Rubenstein announced plans to loan the Bay Psalm Book to libraries across the country, but this is a loan announcement rather than a direct gift.",
+      "extraction_evidence": "will soon be loaned out to libraries across the country",
+      "regen_query": "\"David Rubenstein\" \"Magna Carta\" OR \"Bay Psalm Book\" OR \"Emancipation Proclamation\" loaned donated",
+      "event_id": "david_rubenstein_announcement_2014_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "Kennedy Center",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://www.ksl.com/article/27912220/kennedy-center-raises-90-million-for-expansion",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein, Kennedy Center Chairman, made a pledge of $50 million when the Kennedy Center expansion project was announced in January.",
+      "extraction_evidence": "Kennedy Center Chairman David Rubenstein made an earlier pledge of $50 million when the project was announced in January",
+      "regen_query": "\"David Rubenstein\" \"Kennedy Center\" $50 million expansion 2013 OR cumulative $111 million",
+      "event_id": "david_rubenstein_pledge_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2013,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "David Rubenstein",
+      "recipient": "John F. Kennedy Center for the Performing Arts",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://www.philanthropy.com/news/no-21-david-rubenstein/",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein pledged $50 million to the Kennedy Center in 2013.",
+      "extraction_evidence": "He pledged the biggest amount, $50-million, to the John F. Kennedy Center for the Performing Arts",
+      "regen_query": "\"David Rubenstein\" \"Kennedy Center\" $50 million expansion 2013 OR cumulative $111 million",
+      "event_id": "david_rubenstein_pledge_2013_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2016,
+      "date": "2016-12-02",
+      "date_precision": "day",
+      "donor_entity": "David Rubenstein",
+      "recipient": "Washington Monument",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.washingtontimes.com/news/2016/dec/2/washington-monument-david-rubenstein-pledges-milli/",
+      "confidence": "high",
+      "extraction_note": "David Rubenstein pledged millions to fund repairs to the Washington Monument's elevator.",
+      "extraction_evidence": "David Rubenstein pledged millions to fund its repairs",
+      "regen_query": "\"David Rubenstein\" pledges OR commits OR announces",
+      "event_id": "david_rubenstein_pledge_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -902,6 +1548,432 @@
       "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7d8eaaf9ce38079e"
+    },
+    {
+      "publisher": "abcnews.go.com",
+      "url": "https://abcnews.go.com/blogs/politics/2012/01/billionaire-david-rubenstein-gives-7-5-million-to-repair-washington-monument",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "chicagomaroon.com",
+      "url": "https://chicagomaroon.com/51232/news/david-rubenstein-gives-50-million-to-modernize-ida-noyes-hall/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "davidrubensteinforum.uchicago.edu",
+      "url": "https://davidrubensteinforum.uchicago.edu/david-m-rubenstein/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Jewish_Museum_of_Maryland",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "fi.edu",
+      "url": "https://fi.edu/en/awards/laureates/david-m-rubenstein",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "home.nps.gov",
+      "url": "https://home.nps.gov/arho/learn/news/david-rubenstein-donates-lead-centennial-gift-of-12-million-dollars-to-the-national-park-foundation-to-restore-arlington-house.htm",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "jmoreliving.com",
+      "url": "https://jmoreliving.com/2024/09/12/os-owner-and-billionaire-david-m-rubenstein-commits-1-5-million-to-jewish-museum-of-marylands-transformation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/50-million-new-gift-to-university-from-lifestyles-magazine-meaningful-influence-cover-subject-david-m-rubenstein-elevates-his-philanthropy-past-the-billion-dollar-mark/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "nationalzoo.si.edu",
+      "url": "https://nationalzoo.si.edu/news/david-rubenstein-donates-10-million-smithsonians-national-zoo-and-conservation-biology",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "news.artnet.com",
+      "url": "https://news.artnet.com/art-world/david-rubenstein-gifts-54-million-for-renwick-gallery-renovation-47313",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "news.artnet.com",
+      "url": "https://news.artnet.com/art-world/elizabeth-broun-retires-from-smithsonian-477086",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "news.uchicago.edu",
+      "url": "https://news.uchicago.edu/story/50-million-gift-revitalize-historic-ida-noyes-hall-space-students-visitors",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "news.uchicago.edu",
+      "url": "https://news.uchicago.edu/story/david-m-rubenstein-awarded-presidential-medal-freedom",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "news.uchicago.edu",
+      "url": "https://news.uchicago.edu/story/david-rubenstein-jd73-renews-transformative-gift-law-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "patch.com",
+      "url": "https://patch.com/virginia/arlington-va/robert-e-lees-arlington-mansion-gets-125-million-donation-from-david-rubenstein",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "patriciamorse.substack.com",
+      "url": "https://patriciamorse.substack.com/p/ida-noyes-hall-a-love-letter",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "patrioticmillionaires.org",
+      "url": "https://patrioticmillionaires.org/news/common-dreams-in-new-book-former-blackrock-exec-reveals-how-gop-tax-scam-robs-middle-class-and-rewards-wealthy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropydelaware.org",
+      "url": "https://philanthropydelaware.org/event-3996894",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-rubenstein-awards-10-million-to-duke-university-sanford-school-of-public-policy",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-rubenstein-commits-13-million-to-uchicago-law-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-rubenstein-donates-7.5-million-to-repair-washington-monument",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-rubenstein-gives-1.9-million-for-jewish-life-at-duke-university",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-rubenstein-pledges-10-million-for-jefferson-memorial-upgrades",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/david-rubenstein-pledges-10-million-to-library-of-congress",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/smithsonian-american-art-museum-receives-5.4-million-for-renovations",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/u.s.-holocaust-memorial-museum-receives-15-million-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "time.com",
+      "url": "https://time.com/4224789/lincoln-memorial-restoration-donation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "today.duke.edu",
+      "url": "https://today.duke.edu/2013/04/rubensteinrelease",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "washingtonian.com",
+      "url": "https://washingtonian.com/2023/03/27/billionaire-david-rubenstein-sure-funds-a-lot-of-dc-stuff/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "whatsupmag.com",
+      "url": "https://whatsupmag.com/news/documents-from-the-david-rubenstein-collection-on-display/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "ack.net",
+      "url": "https://www.ack.net/news/summer-resident-david-rubenstein-awarded-nation-s-highest-civilian-honor/article_b8f85b22-cb73-11ef-8398-8fd813c16f4d.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "amacad.org",
+      "url": "https://www.amacad.org/news/rubenstein-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "bernstein.com",
+      "url": "https://www.bernstein.com/our-insights/insights/legacy/videos/a-great-responsibility.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "bizjournals.com",
+      "url": "https://www.bizjournals.com/washington/blog/top-shelf/2015/11/renovating-the-renwick-a-project-with-no-easy.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "bizjournals.com",
+      "url": "https://www.bizjournals.com/washington/morning_call/2015/12/renwick-gallery-signs-stirring-up-consternation.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "bridgespan.org",
+      "url": "https://www.bridgespan.org/insights/philanthropist-david-rubenstein-recommends-giving-more-than-money",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "brookings.edu",
+      "url": "https://www.brookings.edu/david-m-rubenstein-fellowship-program/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "cbsnews.com",
+      "url": "https://www.cbsnews.com/chicago/news/university-of-chicago-gift-reimagine-ida-noyes-hall/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "commondreams.org",
+      "url": "https://www.commondreams.org/newswire/2018/04/17/new-book-former-blackrock-exec-reveals-how-gop-tax-scam-robs-middle-class-and",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "dailymail.co.uk",
+      "url": "https://www.dailymail.co.uk/news/article-2088867/Billionaire-benefactor-David-Rubenstein-pledges-7-5million-repair-Washington-Monument.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/abrambrown/2014/03/31/the-man-who-owns-a-magna-carta/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/carlieporterfield/2022/05/02/inspired-by-ukraine-billionaire-david-rubenstein-donates-15-million-to-us-holocaust-museum/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/giacomotognini/2021/09/27/private-equity-billionaire-david-rubenstein-donates-10-million-to-new-yorks-lincoln-center-to-expand-civic-activities/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/michaeltnietzel/2026/03/24/university-of-chicago-board-chair-gives-the-institution-50-million/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "hamiltonproject.org",
+      "url": "https://www.hamiltonproject.org/people/david-m-rubenstein/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "hpherald.com",
+      "url": "https://www.hpherald.com/evening_digest/u-of-c-trustee-chair-gives-50-million-for-ida-noyes-hall-renovation/article_c5c6c831-60a4-4925-ba82-fb64deaa86d5.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "instrumentl.com",
+      "url": "https://www.instrumentl.com/990-report/rubenstein-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "instrumentl.com",
+      "url": "https://www.instrumentl.com/990-report/rubenstein-foundation-7c06449b-595e-4fc2-b1c3-855a584e4b81",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "jewishtimes.com",
+      "url": "https://www.jewishtimes.com/for-david-rubenstein-success-is-serendipitous/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "jns.org",
+      "url": "https://www.jns.org/15-million-gift-to-help-us-holocaust-museum-digitize-and-expand-collections/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "junipersquare.com",
+      "url": "https://www.junipersquare.com/podcasts/todd-rich",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "ksl.com",
+      "url": "https://www.ksl.com/article/27912220/kennedy-center-raises-90-million-for-expansion",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "kxan.com",
+      "url": "https://www.kxan.com/business/press-releases/ein-presswire/742716470/david-rubenstein-to-donate-1-5-million-to-jewish-museum-of-maryland/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "lbjaward.org",
+      "url": "https://www.lbjaward.org/2017-liberty-justice-award.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "linkedin.com",
+      "url": "https://www.linkedin.com/pulse/david-rubenstein-patriotic-philanthropy-randall-kaplan-tsbje",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "nationalparks.org",
+      "url": "https://www.nationalparks.org/news-and-updates/press-releases/david-rubenstein-donates-1-million-to-national-park-foundation-to-repair-and-restore-newly-designated-belmont-paul-womens-equality-national-monument",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "nationalparks.org",
+      "url": "https://www.nationalparks.org/news-and-updates/press-releases/david-rubenstein-to-donate-5-37-million-to-the-national-park-foundation-to-restore-u-s-marine-corps-iwo-jima-memorial",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "nationalparks.org",
+      "url": "https://www.nationalparks.org/news-and-updates/press-releases/patriotic-philanthropist-david-rubenstein-donates-10-million-to-create-state-of-the-art-museum-and-enhance-visitor-experience-at-thomas-jefferson-memorial-in-washington-dc",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "nps.gov",
+      "url": "https://www.nps.gov/nama/learn/news/rubenstein-lincoln-memorial-donation.htm",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/news/gifts-roundup-movie-mogul-gives-100-million-to-ucla/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/news/no-21-david-rubenstein/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/opinion/stop-appealing-to-billionaire-egos-with-naming-rights/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/david-rubenstein-donates-1-million-to-national-park-foundation-to-repair-and-restore-newly-designated-belmont-paul-womens-equality-national-monument-300250148.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "si.edu",
+      "url": "https://www.si.edu/newsdesk/releases/david-rubenstein-donates-10-million-smithsonians-national-zoo-and-conservation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "si.edu",
+      "url": "https://www.si.edu/newsdesk/releases/smithsonian-american-art-museum-receives-54-million-david-m-rubenstein-renwick-gallery-reno",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "si.edu",
+      "url": "https://www.si.edu/newsdesk/releases/smithsonian-announces-10-million-gift-david-rubenstein-national-museum-african-american-his",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "ushmm.org",
+      "url": "https://www.ushmm.org/information/press/press-releases/david-m-rubenstein-15-million-gift-supports-national-institute-for-holocau",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "washingtonjewishweek.com",
+      "url": "https://www.washingtonjewishweek.com/for-david-rubenstein-success-is-serendipitous/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "washingtontimes.com",
+      "url": "https://www.washingtontimes.com/news/2016/dec/2/washington-monument-david-rubenstein-pledges-milli/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "whitehousehistory.org",
+      "url": "https://www.whitehousehistory.org/rubenstein-center/david-m-rubenstein",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
+    },
+    {
+      "publisher": "whitehousehistory.org",
+      "url": "https://www.whitehousehistory.org/rubenstein-center/david-m-rubenstein?campaign=420949",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a7ffcc7c7c9e4960"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research",
+  "generated_by": "scrooge v3 manual research run \u2014 single-subject deep research + regen_v3@sha256-399fe61e3e4177e4",
   "person": {
     "name_display": "Leon Cooperman",
     "name_legal": "Leon G. Cooperman",
@@ -300,6 +300,386 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "Likely already inside LTCFF 2024 grants_out ($19.2M). EXCLUDED from observable rollup to avoid double-count. Notable: amount announced exceeds LTCFF 2024 total, so some portion may have come from personal or was multi-year pledge."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2016,
+      "date_precision": "year",
+      "donor_entity": "Leon And Toby Cooperman Family Foundation",
+      "donor_ein": "13-3102941",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 15785661.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2016; end-year assets $313.2M; payout rate 5.0%.",
+      "regen_source": "propublica",
+      "event_id": "leon_cooperman_grant_out_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "Leon And Toby Cooperman Family Foundation",
+      "donor_ein": "13-3102941",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 23860545.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2020; end-year assets $409.3M; payout rate 5.8%.",
+      "regen_source": "propublica",
+      "event_id": "leon_cooperman_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "Leon And Toby Cooperman Family Foundation",
+      "donor_ein": "13-3102941",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 30004531.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2022; end-year assets $399.5M; payout rate 7.5%.",
+      "regen_source": "propublica",
+      "event_id": "leon_cooperman_grant_out_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "Leon And Toby Cooperman Family Foundation",
+      "donor_ein": "13-3102941",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 36121128.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2023; end-year assets $415.1M; payout rate 8.7%.",
+      "regen_source": "propublica",
+      "event_id": "leon_cooperman_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "Leon And Toby Cooperman Family Foundation",
+      "donor_ein": "13-3102941",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 20445435.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133102941",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2024; end-year assets $433.7M; payout rate 4.7%.",
+      "regen_source": "propublica",
+      "event_id": "leon_cooperman_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Toby & Leon Cooperman Sinai Residences Boca Raton",
+      "amount_usd": 500000,
+      "source_type": "news_article",
+      "source_url": "https://bocaratonobserver.com/culture/features/a-life-of-purpose/",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman donated $500,000 toward a $5 million renovation of the Toby & Leon Cooperman Sinai Residences Boca Raton in April.",
+      "extraction_evidence": "In April, they donated $500,000 toward a $5 million renovation of the Toby & Leon Cooperman Sinai Residences Boca Raton",
+      "regen_query": "\"Leon Cooperman\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "leon_cooperman_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Cooperman College Scholars",
+      "amount_usd": 25000000,
+      "source_type": "other",
+      "source_url": "https://citiesofpromise.com/promise-programs/cooperman-college-scholars/",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman made a $25 million investment to support academically talented students from Essex County, N.J. through the Cooperman College Scholars program.",
+      "extraction_evidence": "$25-million investment to support academically talented, highly motivated students from Essex County, N.J.",
+      "regen_query": "\"Cooperman College Scholars\" \"Leon Cooperman\" Essex County New Jersey scholarship fund 2015",
+      "event_id": "leon_cooperman_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman and Toby Cooperman",
+      "recipient": "Jewish Community Foundation of MetroWest New Jersey",
+      "amount_usd": 20000000,
+      "source_type": "news_article",
+      "source_url": "https://forward.com/news/350514/",
+      "confidence": "high",
+      "extraction_note": "A bequest of a $20 million life insurance policy by Cooperman and his wife to the Jewish Community Foundation of MetroWest New Jersey, described as the largest gift ever received by the charity.",
+      "extraction_evidence": "A bequest of a $20 million life insurance policy by Cooperman and his wife, Toby Cooperman, to Jewish Community Foundation of MetroWest New Jersey",
+      "regen_query": "\"Leon Cooperman\" \"Jewish Community Foundation of MetroWest\" $20 million 2024 LTCFF",
+      "event_id": "leon_cooperman_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2012,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman and Toby Cooperman",
+      "recipient": "Jewish Community Foundation of MetroWest NJ",
+      "amount_usd": 20000000,
+      "source_type": "blog",
+      "source_url": "https://grantpros2011.wordpress.com/2012/02/20/jewish-community-foundation-of-metrowest-new-jersey-receives-20-million-from-local-couple/",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman and his wife Toby made the largest single contribution the Jewish Community Foundation of MetroWest NJ has ever received.",
+      "extraction_evidence": "Leon Cooperman and his wife, Toby, have made what is believed to be the largest single contribution the Jewish Community Foundation of MetroWest NJ has ever received",
+      "regen_query": "\"Leon Cooperman\" \"Jewish Community Foundation of MetroWest\" $20 million 2024 LTCFF",
+      "event_id": "leon_cooperman_direct_gift_2012_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon and Toby Cooperman",
+      "recipient": "Hunter College",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://hunter.cuny.edu/projects/cooperman-library-5th-floor/",
+      "confidence": "high",
+      "extraction_note": "Leon and Toby Cooperman made a major gift to support the interior renovation of the 5th floor library at Hunter College.",
+      "extraction_evidence": "Thanks to a major gift from Leon and Toby Cooperman, the interior renovation of the 5th floor library",
+      "regen_query": "\"Leon and Toby Cooperman\" \"Hunter College\" \"Cooperman Library\" 2014 gift LTCFF routed",
+      "event_id": "leon_cooperman_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Hunter College",
+      "amount_usd": 30000000,
+      "source_type": "news_article",
+      "source_url": "https://jewishstandard.timesofisrael.com/the-coopermans-put-millions-into-philanthropy/",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman donated more than $30 million to Hunter College (his alma mater) for scholarships and the library.",
+      "extraction_evidence": "He's donated more than $30 million to his alma mater for scholarships and the library.",
+      "regen_query": "\"Leon Cooperman\" donates million",
+      "event_id": "leon_cooperman_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Boca Regional",
+      "amount_usd": 25000000,
+      "source_type": "other",
+      "source_url": "https://keepingthepromise.brrh.com/latest-news/2019/december/toby-and-leon-cooperman-make-transformative-25-m/",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman (along with Toby Cooperman) made a $25 million gift to Boca Regional's Keeping the Promise Capital Campaign.",
+      "extraction_evidence": "Toby and Leon Cooperman have made a $25 million gift",
+      "regen_query": "\"Leon Cooperman\" gift OR donation million",
+      "event_id": "leon_cooperman_direct_gift_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2019,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Mike Bloomberg",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://markets.businessinsider.com/news/stocks/leon-cooperman-announces-support-of-mike-bloomberg-amid-warren-feud-2019-11-1028674589",
+      "confidence": "medium",
+      "extraction_note": "Cooperman announced he will help fund Bloomberg's presidential campaign bid.",
+      "extraction_evidence": "he'll help fund Bloomberg's bid",
+      "regen_query": "\"Leon Cooperman\" pledges OR commits OR announces",
+      "event_id": "leon_cooperman_political_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Jewish Services for the Developmentally Disabled",
+      "amount_usd": 2000000,
+      "source_type": "news_article",
+      "source_url": "https://njjewishnews.timesofisrael.com/introducing-the-cooperman-barnabas-medical-center/amp/",
+      "confidence": "high",
+      "extraction_note": "The Cooperman family donated $2 million to the Jewish Services for the Developmentally Disabled center in Livingston.",
+      "extraction_evidence": "family's name has been added to the new center of the Jewish Services for the Developmentally Disabled after a $2 million gift",
+      "regen_query": "\"Leon Cooperman\" \"Jewish Community Foundation of MetroWest\" $20 million 2024 LTCFF",
+      "event_id": "leon_cooperman_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "JCC MetroWest",
+      "amount_usd": 6000000,
+      "source_type": "news_article",
+      "source_url": "https://njjewishnews.timesofisrael.com/introducing-the-cooperman-barnabas-medical-center/amp/",
+      "confidence": "high",
+      "extraction_note": "JCC MetroWest in West Orange received $6 million from the Cooperman family.",
+      "extraction_evidence": "JCC MetroWest and Daughters of Israel, both in West Orange, were recipients of $6 million",
+      "regen_query": "\"Leon Cooperman\" \"Jewish Community Foundation of MetroWest\" $20 million 2024 LTCFF",
+      "event_id": "leon_cooperman_direct_gift_x_regen7",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Daughters of Israel",
+      "amount_usd": 1000000,
+      "source_type": "news_article",
+      "source_url": "https://njjewishnews.timesofisrael.com/introducing-the-cooperman-barnabas-medical-center/amp/",
+      "confidence": "high",
+      "extraction_note": "Daughters of Israel in West Orange received $1 million from the Cooperman family.",
+      "extraction_evidence": "Daughters of Israel, both in West Orange, were recipients of $6 million and $1 million respectively",
+      "regen_query": "\"Leon Cooperman\" \"Jewish Community Foundation of MetroWest\" $20 million 2024 LTCFF",
+      "event_id": "leon_cooperman_direct_gift_x_regen8",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date": "2021-09-30",
+      "date_precision": "day",
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Saint Barnabas Medical Center",
+      "amount_usd": 100000000,
+      "source_type": "press_release",
+      "source_url": "https://philanthropynewsdigest.org/news/cooperman-family-awards-100-million-to-saint-barnabas-medical-center",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman and his family awarded $100 million to Saint Barnabas Medical Center as a direct gift to support healthcare in their community.",
+      "extraction_evidence": "Saint Barnabas Medical Center receives $100 million from Cooperman family.",
+      "regen_query": "\"Leon Cooperman\" \"Cooperman Barnabas Medical Center\" 2021 gift pledge payment schedule",
+      "event_id": "leon_cooperman_direct_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Jewish Federation of South Palm Beach County",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/jewish-federation-of-south-palm-beach-receives-10-million-gift",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman (with spouse Toby) made a $10 million endowment gift to the Jewish Federation of South Palm Beach County.",
+      "extraction_evidence": "$10 million endowment gift from Boca Raton philanthropists and Giving Pledge signatories Toby and Leon Cooperman.",
+      "regen_query": "\"Leon Cooperman\" pledges OR commits OR announces",
+      "event_id": "leon_cooperman_direct_gift_x_regen9",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": 2005,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Leon and Toby Cooperman Family Foundation",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/2010/08/09/leon-cooperman-billionaire-personal-finance-tax-charity.html",
+      "confidence": "high",
+      "extraction_note": "In 2005, Leon Cooperman transferred half his stake in an income stream to his family foundation.",
+      "extraction_evidence": "In 2005 Cooperman handed half his stake in the growing income stream to his Leon and Toby Cooperman Family Foundation",
+      "regen_query": "\"Leon Cooperman\" assets contributed \"Leon and Toby Cooperman Family Foundation\"",
+      "event_id": "leon_cooperman_transfer_in_2005_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "New Jersey hospital",
+      "amount_usd": 100000000,
+      "source_type": "news_article",
+      "source_url": "https://www.foxbusiness.com/markets/leon-cooperman-and-family-donate-100m-to-hospital",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman and his wife Toby donated $100 million to a New Jersey hospital.",
+      "extraction_evidence": "Leon Cooperman and his wife Toby have donated $100 million to a New Jersey hospital",
+      "regen_query": "\"Leon Cooperman\" donates million",
+      "event_id": "leon_cooperman_direct_gift_x_regen10",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -331,6 +711,196 @@
       "retrieved_at": "2026-04-24",
       "quote_paraphrased": "Cooperman has stated he will give away half of his wealth in his lifetime and the other half to his children to form a foundation as his legacy.",
       "notes": "Prompt flags Cooperman's 'give away ALL' intent as watchable. Jewish Standard reporting indicates the more precise framing is: half in lifetime, half through a family foundation that continues giving after death. Functionally, 100% of wealth eventually goes to charitable purposes under this plan \u2014 but the downstream-foundation-for-kids model has historically been a structure where heirs retain de facto control and compensation, so this is not equivalent to a clean 100% charitable commitment. Watchable but not counted above 50% floor."
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Columbia Business School",
+      "amount_usd": 25000000,
+      "source_type": "press_release",
+      "source_url": "https://business.columbia.edu/press-releases/cbs-press-releases/leon-cooperman-gives-school-25-million-manhattanville-campus",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman gave $25 million to Columbia Business School for the Manhattanville campus.",
+      "extraction_evidence": "Leon Cooperman Gives School $25 Million for Manhattanville",
+      "regen_query": "\"Leon Cooperman\" \"Columbia Business School\" \"Manhattanville\" 2011 $25 million gift source",
+      "event_id": "leon_cooperman_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://givingpledge.org/pledger?pledgerId=182",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman agreed to take the Giving Pledge, committing to give away a significant portion of his wealth to philanthropic causes.",
+      "extraction_evidence": "we enthusiastically agree to take the Giving Pledge",
+      "regen_query": "\"Leon Cooperman\" \"giving pledge\"",
+      "event_id": "leon_cooperman_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Columbia Business School",
+      "amount_usd": 25000000,
+      "source_type": "university_press",
+      "source_url": "https://news.columbia.edu/news/leon-cooperman-gives-school-25-million-manhattanville-campus",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman pledged $25 million to support construction of Columbia Business School's new home in Manhattanville.",
+      "extraction_evidence": "has pledged a gift of $25 million to support the construction of the School's new home in Manhattanville",
+      "regen_query": "\"Leon Cooperman\" gift OR donation million",
+      "event_id": "leon_cooperman_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2015,
+      "date": "2015-04-24",
+      "date_precision": "day",
+      "donor_entity": "Leon Cooperman",
+      "recipient": "TCNJ",
+      "amount_usd": null,
+      "source_type": "university_press",
+      "source_url": "https://news.tcnj.edu/2015/04/24/tcnj-welcomes-cooperman-college-scholars/",
+      "confidence": "medium",
+      "extraction_note": "Leon Cooperman and his wife announced support for the new Cooperman program for academically talented high school seniors from Essex County.",
+      "extraction_evidence": "Leon Cooperman and his wife, Toby, support academically talented, highly motivated...",
+      "regen_query": "\"Leon Cooperman\" pledges OR commits OR announces",
+      "event_id": "leon_cooperman_announcement_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2012,
+      "date": "2012-04-23",
+      "date_precision": "day",
+      "donor_entity": "Leon G. Cooperman",
+      "recipient": "Columbia",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://poetsandquants.com/2012/04/23/columbia-gets-25-million-gift/",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman pledged $25 million to Columbia to support construction of a new school building.",
+      "extraction_evidence": "Leon G. Cooperman has pledged a gift of $25 million to support the construction of the school's new",
+      "regen_query": "\"Leon Cooperman\" \"Columbia Business School\" \"Manhattanville\" 2011 $25 million gift source",
+      "event_id": "leon_cooperman_pledge_2012_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Saint Barnabas Medical Center",
+      "amount_usd": 100000000,
+      "source_type": "news_article",
+      "source_url": "https://www.benzinga.com/topic/leon-cooperman",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman announced his family will donate $100 million to Saint Barnabas Medical Center in New Jersey.",
+      "extraction_evidence": "his family will be donating $100 million to Saint Barnabas Medical Center in New Jersey",
+      "regen_query": "\"Leon Cooperman\" pledges OR commits OR announces",
+      "event_id": "leon_cooperman_pledge_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2015,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Columbia University",
+      "amount_usd": 6000000,
+      "source_type": "news_article",
+      "source_url": "https://www.clearadmit.com/2015/09/generous-columbia-alum-donates-additional-25-million-for-new-manhattanville-campus/",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman pledged an additional $6 million to Columbia University on top of his existing $25 million gift.",
+      "extraction_evidence": "Leon Cooperman '67 and Mario Gabelli '67 each pledged an additional $6 million to their existing gifts of $25 million and $15 million",
+      "regen_query": "\"Leon Cooperman\" \"Columbia Business School\" \"Manhattanville\" 2011 $25 million gift source",
+      "event_id": "leon_cooperman_pledge_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2018,
+      "date": "2018-07-25",
+      "date_precision": "day",
+      "donor_entity": "Leon Cooperman",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.cnbc.com/2018/07/25/buffett-says-too-few-wall-street-investors-giving-fortunes-away-hopes.html",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman vowed to give away his entire fortune on CNBC.",
+      "extraction_evidence": "Leon Cooperman vowed to give away his entire fortune Tuesday on CNBC",
+      "regen_query": "\"Leon Cooperman\" \"giving pledge\"",
+      "event_id": "leon_cooperman_pledge_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/hanktucker/2023/01/13/billionaire-leon-cooperman-shares-value-investing-wisdom-and-2023-stock-picks/",
+      "confidence": "high",
+      "extraction_note": "Cooperman states he has taken two giving pledges and is giving away 100% of his money.",
+      "extraction_evidence": "I've taken two giving pledges and I'm giving away 100% of my money.",
+      "regen_query": "\"Leon Cooperman\" pledges OR commits OR announces",
+      "event_id": "leon_cooperman_pledge_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "no_pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Columbia University",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.thedailybeast.com/billionaire-leon-cooperman-pledges-to-end-columbia-university-donations-over-israel-war-response",
+      "confidence": "high",
+      "extraction_note": "Cooperman announced an end to his philanthropy at Columbia University in response to the campus' ties to Israel.",
+      "extraction_evidence": "Leon Cooperman announced an end to his philanthropy the same day hundreds of university affiliates walked out",
+      "regen_query": "\"Leon Cooperman\" pledges OR commits OR announces",
+      "event_id": "leon_cooperman_no_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -533,12 +1103,6 @@
       "used_for": "'Nearing the billion-dollar mark' lifetime giving characterization; half-in-lifetime, half-to-kids-foundation model"
     },
     {
-      "url": "https://www.insidephilanthropy.com/home/2022-5-31-a-look-at-how-and-where-the-leon-and-toby-cooperman-family-foundation-gives",
-      "retrieved_at": "2026-04-24",
-      "used_for": "LTCFF giving pattern analysis",
-      "source_verification_status": "dead_link_likely_fabricated"
-    },
-    {
       "url": "https://www.gurufocus.com/insider/388/leon-g-cooperman",
       "retrieved_at": "2026-04-24",
       "used_for": "Net worth estimate $3.61B 2026"
@@ -557,6 +1121,312 @@
       "url": "https://en.wikipedia.org/wiki/Cooperman_Barnabas_Medical_Center",
       "retrieved_at": "2026-04-24",
       "used_for": "Hospital rename verification"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-54-81",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=48-26-04",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "bocaratonobserver.com",
+      "url": "https://bocaratonobserver.com/culture/features/a-life-of-purpose/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "business.columbia.edu",
+      "url": "https://business.columbia.edu/press-releases/cbs-press-releases/leon-cooperman-gives-school-25-million-manhattanville-campus",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "citiesofpromise.com",
+      "url": "https://citiesofpromise.com/promise-programs/cooperman-college-scholars/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "forward.com",
+      "url": "https://forward.com/news/350514/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "grantpros2011.wordpress.com",
+      "url": "https://grantpros2011.wordpress.com/2012/02/20/jewish-community-foundation-of-metrowest-new-jersey-receives-20-million-from-local-couple/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "horatioalger.org",
+      "url": "https://horatioalger.org/members/detail/leon-g-cooperman/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "hunter.cuny.edu",
+      "url": "https://hunter.cuny.edu/projects/cooperman-library-5th-floor/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "library.hunter.cuny.edu",
+      "url": "https://library.hunter.cuny.edu/leon-toby-cooperman-library",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "markets.businessinsider.com",
+      "url": "https://markets.businessinsider.com/news/stocks/leon-cooperman-announces-support-of-mike-bloomberg-amid-warren-feud-2019-11-1028674589",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "news.tcnj.edu",
+      "url": "https://news.tcnj.edu/2015/04/24/tcnj-welcomes-cooperman-college-scholars/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "nj1015.com",
+      "url": "https://nj1015.com/a-name-change-for-saint-barnabas-medical-center-in-livingston-nj/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "njbiz.com",
+      "url": "https://njbiz.com/100m-donation-gives-rise-cooperman-barnabas-medical-center/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "njbmagazine.com",
+      "url": "https://njbmagazine.com/njb-news-now/100m-gift-and-name-change-for-saint-barnabas-medical-center/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "njjewishnews.timesofisrael.com",
+      "url": "https://njjewishnews.timesofisrael.com/couples-gift-thought-to-be-largest-ever-to-community-fund/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "njjewishnews.timesofisrael.com",
+      "url": "https://njjewishnews.timesofisrael.com/introducing-the-cooperman-barnabas-medical-center/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "njjewishnews.timesofisrael.com",
+      "url": "https://njjewishnews.timesofisrael.com/introducing-the-cooperman-barnabas-medical-center/amp/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "patch.com",
+      "url": "https://patch.com/new-york/upper-east-side-nyc/hunter-college-celebrates-opening-new-indoor-outdoor-library",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/columbia-business-school-receives-25-million-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/cooperman-family-awards-100-million-to-saint-barnabas-medical-center",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/cooperman-family-pledges-25-million-to-saint-barnabas-medical-center",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/jewish-federation-of-south-palm-beach-receives-10-million-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/leon-toby-cooperman-give-25-million-to-boca-raton-regional",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/toby-and-leon-g.-cooperman-pledge-25-million-to-hunter-college",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "poetsandquants.com",
+      "url": "https://poetsandquants.com/2012/04/23/columbia-gets-25-million-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "wiki2.org",
+      "url": "https://wiki2.org/en/Leon_G._Cooperman",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "benzinga.com",
+      "url": "https://www.benzinga.com/topic/leon-cooperman",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2021-09-30/leon-cooperman-foundation-donates-100-million-to-n-j-hospital",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "cgaa.org",
+      "url": "https://www.cgaa.org/article/leon-cooperman",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "clearadmit.com",
+      "url": "https://www.clearadmit.com/2015/09/generous-columbia-alum-donates-additional-25-million-for-new-manhattanville-campus/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "cnbc.com",
+      "url": "https://www.cnbc.com/2018/07/25/buffett-says-too-few-wall-street-investors-giving-fortunes-away-hopes.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/2010/08/09/leon-cooperman-billionaire-personal-finance-tax-charity.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/profile/leon-g-cooperman/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/edwindurgy/2012/04/23/great-sense-of-gratitude-inspires-25-million-gift-from-hedge-fund-billionaire-to-alma-mater/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/hanktucker/2023/01/13/billionaire-leon-cooperman-shares-value-investing-wisdom-and-2023-stock-picks/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/sarahyoung/2024/09/18/inside-billionaire-leon-coopermans-efforts-to-revitalize-downtown-newark/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/video/0a20f92a-d57a-473a-bf79-bd101c40db17/inside-this-billionaires-efforts-to-revitalize-new-jerseys-largest-city/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "foxbusiness.com",
+      "url": "https://www.foxbusiness.com/markets/leon-cooperman-and-family-donate-100m-to-hospital",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "haaretz.com",
+      "url": "https://www.haaretz.com/israel-news/business/2016-09-21/ty-article/leon-cooperman-a-major-jewish-philanthropist-charged-with-insider-trading/0000017f-e6ac-da9b-a1ff-eeefda700000",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "nbcnewyork.com",
+      "url": "https://www.nbcnewyork.com/news/local/100m-gift-for-new-jersey-hospital-from-famed-wall-street-financier/3299548/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "nj.com",
+      "url": "https://www.nj.com/healthfit/2021/09/this-nj-hospital-will-be-renamed-after-receiving-a-100m-donation.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "northjersey.com",
+      "url": "https://www.northjersey.com/story/news/health/2021/09/30/saint-barnabas-hospital-leon-cooperman-donation/5929117001/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/news/hedge-fund-chief-turns-over-20-million-policy-to-jewish-charity/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/columbia-business-school-receives-25-million-gift-toward-new-facilities-and-social-enterprise-program-168636526.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "roi-nj.com",
+      "url": "https://www.roi-nj.com/2021/09/30/healthcare/cooperman-on-philanthropy-and-the-4-things-the-wealthy-can-do-with-money/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "roi-nj.com",
+      "url": "https://www.roi-nj.com/2021/09/30/healthcare/rwjbh-to-rename-flagship-facility-cooperman-barnabas-medical-center-in-honor-of-historic-100m-donation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "rwjbh.org",
+      "url": "https://www.rwjbh.org/100-million-reasons/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "rwjbh.org",
+      "url": "https://www.rwjbh.org/blog/2021/december/a-game-changing-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "rwjbh.org",
+      "url": "https://www.rwjbh.org/blog/2021/october/saint-barnabas-medical-center-will-be-renamed-af/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
+    },
+    {
+      "publisher": "thedailybeast.com",
+      "url": "https://www.thedailybeast.com/billionaire-leon-cooperman-pledges-to-end-columbia-university-donations-over-israel-war-response",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4"
     }
   ]
 }

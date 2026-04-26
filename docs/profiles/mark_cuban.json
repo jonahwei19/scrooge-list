@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification downstream.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run \u2014 Mark Cuban single-subject deep research + regen_v3@sha256-61107f461e1c4e07 + regen_v3@sha256-e8b3d50dc456dd75",
+  "generated_by": "scrooge v3 manual research run \u2014 Mark Cuban single-subject deep research + regen_v3@sha256-61107f461e1c4e07 + regen_v3@sha256-e8b3d50dc456dd75 + regen_v3@sha256-2e0b5aeb80885fb1",
   "person": {
     "name_display": "Mark Cuban",
     "name_legal": "Mark Cuban",
@@ -326,6 +326,366 @@
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "unspecified",
+      "amount_usd": 750000,
+      "source_type": "news_article",
+      "source_url": "https://bleacherreport.com/articles/10072531-mark-cuban-to-match-mavs-750k-fine-for-resting-players-donate-money-to-charity",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban announced he would match the Mavericks' $750K fine with a donation to an unspecified charity.",
+      "extraction_evidence": "he would match that fine with a donation to an unspecified charity",
+      "regen_query": "\"Mark Cuban\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "mark_cuban_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2012,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban",
+      "recipient": "Electronic Frontier Foundation",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://brandzmagazine.com/mark-cuban-predicts-ai-era-will-push-companies/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban funded the Electronic Frontier Foundation's 'Mark Cuban Chair to Eliminate Stupid Patents' in 2012.",
+      "extraction_evidence": "In 2012, he funded the Electronic Frontier Foundation's 'Mark Cuban Chair to Eliminate Stupid Patents'",
+      "regen_query": "\"Mark Cuban\" \"Electronic Frontier Foundation\" \"stupid patents\" chair 2012",
+      "event_id": "mark_cuban_direct_gift_2012_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "Indiana University",
+      "amount_usd": 6000000,
+      "source_type": "news_article",
+      "source_url": "https://frontofficesports.com/mark-cuban-indiana-football-transfer-portal/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban gave $6 million in October to fund Indiana University's rugby club.",
+      "extraction_evidence": "he gave $6 million in October to fund the school's rugby club",
+      "regen_query": "\"Mark Cuban\" donates million",
+      "event_id": "mark_cuban_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "private_investment",
+      "year": 2018,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "LuminAID",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://polsky.uchicago.edu/2018/05/21/getting-mark-cubans-money-the-sharks-47-biggest-shark-tank-investments/",
+      "confidence": "medium",
+      "extraction_note": "Mark Cuban made an investment in LuminAID on Shark Tank, ranked as his 31st biggest investment.",
+      "extraction_evidence": "Social New Venture Challenge alum LuminAID ranked as Mark Cuban's 31st biggest investment on ABC's Shark Tank.",
+      "regen_query": "\"Mark Cuban\" \"Shark Tank\" portfolio companies charitable giving OR impact OR CSR 2015-2025",
+      "event_id": "mark_cuban_private_investment_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "private_investment"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "Delonte West",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://slamonline.com/nba/mark-cuban-aids-delonte-west-after-viral-photo-emerges/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban offered to pay for Delonte West's drug rehabilitation treatment and took him to a hotel.",
+      "extraction_evidence": "Cuban sought to reach out to West, has since taken him to a hotel and offered to pay for his treatment at a drug rehabilitation facility.",
+      "regen_query": "\"Mark Cuban\" \"Delonte West\" 2020 hotel rehabilitation gift amount",
+      "event_id": "mark_cuban_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "Indiana University rugby club",
+      "amount_usd": 8000000,
+      "source_type": "news_article",
+      "source_url": "https://sports.yahoo.com/articles/lets-just-happier-last-mark-200122067.html",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban donated more than $8 million to Indiana University's rugby club, which he played in as a student.",
+      "extraction_evidence": "He's also donated more than $8 million to the school's rugby club",
+      "regen_query": "\"Mark Cuban\" \"Indiana University\" \"media\" OR \"rugby\" OR \"athletics\" gift 2015 2024",
+      "event_id": "mark_cuban_direct_gift_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2013,
+      "date": "2013-01-31",
+      "date_precision": "day",
+      "donor_entity": "Mark Cuban",
+      "recipient": "The Electronic Frontier Foundation",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://techcrunch.com/2013/01/31/mark-cubans-awesome-justification-for-endowing-a-chair-for-eliminating-stupid-patents/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban endowed a chair at The Electronic Frontier Foundation called 'The Mark Cuban Chair to Eliminate Stupid Patents.'",
+      "extraction_evidence": "newly endowed chair at digital civil rights organization, The Electronic Frontier Foundation, dubbed 'The Mark Cuban Chair to Eliminate Stupid Patents.'",
+      "regen_query": "\"Mark Cuban\" \"Electronic Frontier Foundation\" \"stupid patents\" chair 2012",
+      "event_id": "mark_cuban_direct_gift_2013_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "unspecified",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://thehill.com/blogs/in-the-know/in-the-know/407457-mark-cuban-donating-10m-after-investigation-into-workplace/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban is donating $10M following an NBA investigation into workplace misconduct allegations at the Mavericks office.",
+      "extraction_evidence": "Mark Cuban donating $10M after investigation into workplace misconduct",
+      "regen_query": "\"Mark Cuban\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "mark_cuban_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": "2020-06-11",
+      "date_precision": "day",
+      "donor_entity": "Mark Cuban",
+      "recipient": "National Association of Black Journalists",
+      "amount_usd": 100000,
+      "source_type": "news_article",
+      "source_url": "https://www.cnbc.com/2020/06/11/mark-cuban-donates-100000-to-national-association-of-black-journalists.html",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban donated $100,000 to the National Association of Black Journalists Covid-19 Relief Fund.",
+      "extraction_evidence": "Mark Cuban has contributed $100,000 to the National Association of Black Journalists Covid-19 Relief Fund",
+      "regen_query": "\"Mark Cuban\" \"Dallas Mavericks\" charitable giving 100 organizations 2020",
+      "event_id": "mark_cuban_direct_gift_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date": "2021-10-19",
+      "date_precision": "day",
+      "donor_entity": "Mark Cuban Foundation",
+      "recipient": "Dallas County mental health program",
+      "amount_usd": 277000,
+      "source_type": "news_article",
+      "source_url": "https://www.dallasnews.com/news/2021/10/19/mark-cuban-honored-by-dallas-county-for-donation-to-mental-health-program/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban Foundation donated $277,000 to support security for on-site housing in a mental health initiative.",
+      "extraction_evidence": "$277,000 donation from the Mark Cuban Foundation will help provide security for on-site housing",
+      "regen_query": "\"Mark Cuban\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "mark_cuban_direct_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "Indiana University",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://www.espn.com/mens-college-basketball/story/_/id/13020731/mark-cuban-gift-provide-indiana-hoosiers-new-video-center",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban donated $5 million to Indiana University for a state-of-the-art technology center.",
+      "extraction_evidence": "Cuban had made a $5 million donation for a state-of-the-art technology center",
+      "regen_query": "\"Mark Cuban\" gift OR donation million",
+      "event_id": "mark_cuban_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 1996,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "Orrin Hatch",
+      "amount_usd": 6000,
+      "source_type": "news_article",
+      "source_url": "https://www.espn.com/nba/story/_/id/30210730/election-2020-how-sports-owners-hide-political-donations-players-fans",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban made two donations totaling $6,000 in 1996 to support U.S. Sen. Orrin Hatch, a Republican from Utah.",
+      "extraction_evidence": "two donations totaling $6,000 in 1996 to support U.S. Sen. Orrin Hatch",
+      "regen_query": "\"Mark Cuban\" FEC OR PAC contribution",
+      "event_id": "mark_cuban_political_1996_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban Foundation",
+      "recipient": "Fallen Patriot Fund",
+      "amount_usd": 5000000,
+      "source_type": "other",
+      "source_url": "https://www.fallenpatriotfund.org/",
+      "confidence": "medium",
+      "extraction_note": "The Fallen Patriot Fund of The Mark Cuban Foundation has distributed more than $5 Million in grants to date to families of service members and first responders.",
+      "extraction_evidence": "The Fallen Patriot Fund has distributed more than $5 Million in grants to date",
+      "regen_query": "\"Mark Cuban Foundation\" grants",
+      "event_id": "mark_cuban_grant_out_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "corporate_gift",
+      "year": 2020,
+      "date": "2020-03-18",
+      "date_precision": "day",
+      "donor_entity": "Mark Cuban",
+      "recipient": "Mavericks employees and employees of his other companies",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/doylerader/2020/03/18/dallas-mavericks-mavs-foundation-donate-100000-to-north-texas-nonprofits-covid-19/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban announced full reimbursement for breakfast and lunch from local independent eateries for Mavericks employees and employees of his other companies.",
+      "extraction_evidence": "all Mavericks employees and those of his other companies will receive full reimbursement for ordering breakfast and lunch from local independent eateries",
+      "regen_query": "\"Mark Cuban\" \"Dallas Mavericks\" charitable giving 100 organizations 2020",
+      "event_id": "mark_cuban_corporate_gift_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "corporate_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2015,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban",
+      "recipient": "Indiana University",
+      "amount_usd": 6000000,
+      "source_type": "news_article",
+      "source_url": "https://www.irishstar.com/sport/college-football/curt-cignetti-mark-cuban-indiana-36569962",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban donated $6 million to Indiana University to help fund the Hoosiers rugby club in 2015.",
+      "extraction_evidence": "another $6 million to help fund the Hoosiers rugby club back in 2015",
+      "regen_query": "\"Mark Cuban\" \"Indiana University\" \"media\" OR \"rugby\" OR \"athletics\" gift 2015 2024",
+      "event_id": "mark_cuban_direct_gift_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban",
+      "recipient": "University of Indiana",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://www.marca.com/en/lifestyle/celebrity-net-worth/2026/01/19/696e558d268e3e70398b45ae.html",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban invested $5 million in the University in 2025 to help create a video and broadcasting hub at Assembly Hall.",
+      "extraction_evidence": "In 2025, he invested $5 million in the University and helped create a cutting-edge video and broadcasting hub at Assembly Hall.",
+      "regen_query": "\"Mark Cuban\" donates million",
+      "event_id": "mark_cuban_direct_gift_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2026,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "Indiana",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.reddit.com/r/georgiabulldogs/comments/1q6p8gx/how_do_we_compete_with_this_billionaire_indiana/",
+      "confidence": "medium",
+      "extraction_note": "Mark Cuban is donating to Indiana for the 2026 transfer portal class.",
+      "extraction_evidence": "Billionaire Indiana alumnus Mark Cuban is donating to the Hoosiers 2026 transfer portal class",
+      "regen_query": "\"Mark Cuban\" gift OR donation million",
+      "event_id": "mark_cuban_direct_gift_2026_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban",
+      "recipient": "organizations that help those affected by domestic violence and encourage the hiring of women in leadership roles",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://www.usatoday.com/story/sports/nba/mavericks/2018/09/19/mark-cuban-dallas-mavericks-fined-investigation-sexual-harassment/1358207002/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban agreed to donate $10 million to organizations helping domestic violence victims and promoting women in leadership.",
+      "extraction_evidence": "Mark Cuban agreed to donate $10 million to organizations that help those affected by domestic violence and encourage the hiring of women in leadership roles",
+      "regen_query": "\"Mark Cuban\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "mark_cuban_direct_gift_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
     }
   ],
   "pledges_and_announcements": [
@@ -338,6 +698,126 @@
       "retrieved_at": "2026-04-24",
       "corroborating_source_url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html",
       "notes": "Cuban has NEVER signed the Giving Pledge despite (a) 26 years as a billionaire, (b) frequent public commentary on wealth/taxes, and (c) extensive media platform (Shark Tank, podcasts, X). This is a notable absence \u2014 many lower-profile billionaires have signed. Cuban has not publicly explained the non-signature. Inside Philanthropy notes he 'has not signed the Giving Pledge or indicated how much of his fortune he will eventually give to philanthropy.'",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "unspecified",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://bleacherreport.com/articles/2796621-report-mark-cuban-donating-10m-to-charity-after-nba-found-workplace-misconduct",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban announced a $10 million donation to organizations promoting women in leadership and combating domestic violence.",
+      "extraction_evidence": "Mark Cuban will donate $10 million to organizations that promote women in leadership roles and combat domestic violence",
+      "regen_query": "\"Mark Cuban\" \"Dallas Mavericks\" charitable giving 100 organizations 2020",
+      "event_id": "mark_cuban_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2020,
+      "date": "2020-03-20",
+      "date_precision": "day",
+      "donor_entity": "Mark Cuban",
+      "recipient": "North Texas nonprofits",
+      "amount_usd": 100000,
+      "source_type": "news_article",
+      "source_url": "https://mavsmoneyball.com/2020/3/20/21186581/nba-coronavirus-response-dallas-mavericks-donate-north-texas-nonprofits-healthcare-workers",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban announced the Dallas Mavericks will donate $100,000 monthly to North Texas nonprofits during COVID-19 until games resume.",
+      "extraction_evidence": "donating $100,000 to North Texas nonprofits to help them help those in need during these trying times",
+      "regen_query": "\"Mark Cuban\" \"Dallas Mavericks\" charitable giving 100 organizations 2020",
+      "event_id": "mark_cuban_announcement_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban Foundation",
+      "recipient": "Fallen Patriot Fund",
+      "amount_usd": 1000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/mark-cuban-foundation-to-aid-families-of-u.s.-casualties-in-iraq",
+      "confidence": "medium",
+      "extraction_note": "Mark Cuban Foundation announced a dollar-to-dollar match of contributions to its Fallen Patriot Fund, up to $1 million.",
+      "extraction_evidence": "The Mark Cuban Foundation will provide a dollar-to-dollar match of all contributions to its Fallen Patriot Fund, up to $1 million.",
+      "regen_query": "\"Mark Cuban Foundation\" \"Fallen Patriot Fund\" grants recipients 2003-2024",
+      "event_id": "mark_cuban_announcement_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "no_pledge",
+      "year": 2022,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.cnbc.com/2022/11/27/worlds-richest-people-who-havent-signed-giving-pledge-bezos-to-brin.html",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban is among the world's richest people who have not signed the Giving Pledge.",
+      "extraction_evidence": "Seven of the world's 11 wealthiest people haven't signed the Giving Pledge",
+      "regen_query": "\"Mark Cuban\" \"Giving Pledge\" signed OR \"did not sign\" OR \"hasn't signed\" 2010-2026",
+      "event_id": "mark_cuban_no_pledge_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "no_pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2024,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Mark Cuban",
+      "recipient": "Indiana University rugby program",
+      "amount_usd": 6000000,
+      "source_type": "news_article",
+      "source_url": "https://www.essentiallysports.com/nba-active-ncaa-college-football-basketball-news-how-much-money-has-mark-cuban-donated-to-indiana-university-billionaire-s-contribution-explored/",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban committed $6 million to Indiana's rugby program in 2024.",
+      "extraction_evidence": "In 2024, Cuban committed roughly $6 million to Indiana's rugby program",
+      "regen_query": "\"Mark Cuban\" \"Indiana University\" \"media\" OR \"rugby\" OR \"athletics\" gift 2015 2024",
+      "event_id": "mark_cuban_pledge_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mark Cuban",
+      "recipient": "unspecified",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://www.yahoo.com/entertainment/mark-cuban-pledges-10m-women-011825862.html",
+      "confidence": "high",
+      "extraction_note": "Mark Cuban pledged $10 million to organizations supporting women's leadership and development in sports and combating domestic violence.",
+      "extraction_evidence": "Cuban has agreed to contribute $10 million to organizations that are committed to supporting the leadership and development of women in the sports industry and combating domestic violence",
+      "regen_query": "\"Mark Cuban\" pledges OR commits OR announces",
+      "event_id": "mark_cuban_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1",
+      "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "pledge"
     }
   ],
@@ -530,8 +1010,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 4631055295,
     "ratio_observable_to_5pct_tenure": 0.0105,
-    "observable_from_events_usd": 49975089,
-    "observable_drift_pct": 0.021,
+    "observable_from_events_usd": 106102089,
+    "observable_drift_pct": 1.168,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -734,6 +1214,318 @@
       "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e8b3d50dc456dd75"
+    },
+    {
+      "publisher": "bleacherreport.com",
+      "url": "https://bleacherreport.com/articles/10072531-mark-cuban-to-match-mavs-750k-fine-for-resting-players-donate-money-to-charity",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "bleacherreport.com",
+      "url": "https://bleacherreport.com/articles/2796621-report-mark-cuban-donating-10m-to-charity-after-nba-found-workplace-misconduct",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "boingboing.net",
+      "url": "https://boingboing.net/2012/12/20/eff-creates-the-mark-cuban-c.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "brandzmagazine.com",
+      "url": "https://brandzmagazine.com/mark-cuban-predicts-ai-era-will-push-companies/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "frontofficesports.com",
+      "url": "https://frontofficesports.com/mark-cuban-indiana-football-transfer-portal/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "ipwatchdog.com",
+      "url": "https://ipwatchdog.com/2015/11/10/a-patent-conversation-with-mark-cuban/id=63090/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "iuhoosiers.com",
+      "url": "https://iuhoosiers.com/news/2015/6/20/varsityclub_0620153330",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "mavsmoneyball.com",
+      "url": "https://mavsmoneyball.com/2020/3/20/21186581/nba-coronavirus-response-dallas-mavericks-donate-north-texas-nonprofits-healthcare-workers",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/mark-cuban-foundation-to-aid-families-of-u.s.-casualties-in-iraq",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "polsky.uchicago.edu",
+      "url": "https://polsky.uchicago.edu/2018/05/21/getting-mark-cubans-money-the-sharks-47-biggest-shark-tank-investments/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "slamonline.com",
+      "url": "https://slamonline.com/nba/mark-cuban-aids-delonte-west-after-viral-photo-emerges/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "sports.yahoo.com",
+      "url": "https://sports.yahoo.com/articles/lets-just-happier-last-mark-200122067.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "techcrunch.com",
+      "url": "https://techcrunch.com/2013/01/31/mark-cubans-awesome-justification-for-endowing-a-chair-for-eliminating-stupid-patents/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "thehill.com",
+      "url": "https://thehill.com/blogs/in-the-know/in-the-know/407457-mark-cuban-donating-10m-after-investigation-into-workplace/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "thesportsrush.com",
+      "url": "https://thesportsrush.com/nba-news-mark-cuban-got-him-a-hotel-mavericks-owner-tracked-down-delonte-west-and-will-pay-for-his-rehab/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "timesofindia.indiatimes.com",
+      "url": "https://timesofindia.indiatimes.com/technology/tech-news/billionaire-investor-mark-cuban-says-ai-will-make-companies-stop-filing-for-patents-because-the-second-you-file-your-patent-every-llm-is-/articleshow/128150327.cms",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "benzinga.com",
+      "url": "https://www.benzinga.com/news/topics/26/01/49985638/lets-just-say-they-are-happier-this-year-than-last-year-mark-cuban-increases-indiana-universitys-nil-funding-amid-schools-cfp-run",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "businessinsider.com",
+      "url": "https://www.businessinsider.com/mark-cuban-delonte-west-homeless-photo-health-struggles-2020-9",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "businessinsider.com",
+      "url": "https://www.businessinsider.com/mark-cuban-net-worth-2018-9",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "cbssports.com",
+      "url": "https://www.cbssports.com/college-football/news/indiana-football-mark-cuban-nil-donation-transfer-portal/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "cbssports.com",
+      "url": "https://www.cbssports.com/nba/news/delonte-west-enters-florida-rehab-facility-after-mavs-owner-mark-cuban-reaches-out-to-help-him-per-report/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "celebritynetworth.com",
+      "url": "https://www.celebritynetworth.com/richest-businessmen/richest-billionaires/mark-cuban-net-worth/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "cleveland.com",
+      "url": "https://www.cleveland.com/entertainment/2020/09/delonte-west-gets-assist-from-mark-cuban-as-former-cavaliers-player-falls-on-hard-times.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "cnbc.com",
+      "url": "https://www.cnbc.com/2020/06/11/mark-cuban-donates-100000-to-national-association-of-black-journalists.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "dallascitynews.net",
+      "url": "https://www.dallascitynews.net/mavs-owner-mark-cuban-donates-1-million-to-support-dpd",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "dallasnews.com",
+      "url": "https://www.dallasnews.com/news/2021/10/19/mark-cuban-honored-by-dallas-county-for-donation-to-mental-health-program/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "eff.org",
+      "url": "https://www.eff.org/issues/stupid-patent-month",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "eff.org",
+      "url": "https://www.eff.org/issues/stupid-patent-month?page=2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "eff.org",
+      "url": "https://www.eff.org/press/releases/staff-attorney-daniel-nazer-becomes-new-mark-cuban-chair-eliminate-stupid-patents",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "espn.com",
+      "url": "https://www.espn.com/mens-college-basketball/story/_/id/13020731/mark-cuban-gift-provide-indiana-hoosiers-new-video-center",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "espn.com",
+      "url": "https://www.espn.com/nba/story/_/id/29997795/dallas-mavericks-owner-mark-cuban-reaches-help-former-nba-player-delonte-west",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "espn.com",
+      "url": "https://www.espn.com/nba/story/_/id/30210730/election-2020-how-sports-owners-hide-political-donations-players-fans",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "essentiallysports.com",
+      "url": "https://www.essentiallysports.com/nba-active-ncaa-college-football-basketball-news-how-much-money-has-mark-cuban-donated-to-indiana-university-billionaire-s-contribution-explored/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "fallenpatriotfund.org",
+      "url": "https://www.fallenpatriotfund.org/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/doylerader/2020/03/18/dallas-mavericks-mavs-foundation-donate-100000-to-north-texas-nonprofits-covid-19/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/doylerader/2020/09/28/mark-cuban-helps-former-nba-player-delonte-west-after-viral-panhandling-photo/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "irishstar.com",
+      "url": "https://www.irishstar.com/sport/college-football/curt-cignetti-mark-cuban-indiana-36569962",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "irishstar.com",
+      "url": "https://www.irishstar.com/sport/college-football/mark-cuban-indiana-donation-nil-36531236",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "marca.com",
+      "url": "https://www.marca.com/en/lifestyle/celebrity-net-worth/2026/01/19/696e558d268e3e70398b45ae.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "ms.now",
+      "url": "https://www.ms.now/stephanie-ruhle/watch/mark-cuban-donates-10m-after-sexual-harassment-exposed-in-his-company-1325062211837",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "nba.com",
+      "url": "https://www.nba.com/news/report-mark-cuban-helps-delonte-west",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "profootballnetwork.com",
+      "url": "https://www.profootballnetwork.com/cfb/curt-cignettis-honest-on-mark-cuban-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "reddit.com",
+      "url": "https://www.reddit.com/r/georgiabulldogs/comments/1q6p8gx/how_do_we_compete_with_this_billionaire_indiana/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "reddit.com",
+      "url": "https://www.reddit.com/r/nba/comments/xvkrj9/mark_cuban_reveals_delonte_west_is_still/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "samaritanmag.com",
+      "url": "https://www.samaritanmag.com/news/dallas-mavericks-owner-mark-cuban-donates-10-million-womens-causes-after-misconduct",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "sportingnews.com",
+      "url": "https://www.sportingnews.com/us/ncaa-football/news/how-much-mark-cuban-donated-indiana-nil-funding/afbaba2e473cfb56806a2f09",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "thedailyhoosier.com",
+      "url": "https://www.thedailyhoosier.com/mark-cuban-told-cbs-sports-he-gave-big-number-donation-to-iu-athletics/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "usatoday.com",
+      "url": "https://www.usatoday.com/story/sports/nba/mavericks/2018/09/19/mark-cuban-dallas-mavericks-fined-investigation-sexual-harassment/1358207002/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "wired.com",
+      "url": "https://www.wired.com/2012/12/eff-patent-donation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "yahoo.com",
+      "url": "https://www.yahoo.com/entertainment/mark-cuban-pledges-10m-women-011825862.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "yardbarker.com",
+      "url": "https://www.yardbarker.com/general_sports/articles/how_much_money_has_mark_cuban_donated_to_indiana_university_billionaires_contribution_explored/s1_17730_43353881",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
+    },
+    {
+      "publisher": "yro.slashdot.org",
+      "url": "https://yro.slashdot.org/story/12/12/19/2219200/the-mark-cuban-chair-to-eliminate-stupid-patents",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-2e0b5aeb80885fb1"
     }
   ],
   "summary_150_words": "Mark Cuban (b. 1958; $6B, Forbes 2026) is the canonical case of public-facing generous persona with light documented giving. Observable lifetime charity through the Mark Cuban Foundation (EIN 26-0063142, est. 2003) totals ~$37.3M grants-out 2011-2024 \u2014 averaging $4M/year. Add direct gifts (Indiana University: $5M 2015, $6M 2024; EFF $250K 2012) and the Heroes Recreational Centers Foundation (~$45K), and observable giving reaches ~$49M \u2014 about 0.8% of current net worth after 26 years as a billionaire, or 14% of the 10%-of-liquid-wealth norm. Cuban has NOT signed the Giving Pledge, unusual given his public platform. His Cost Plus Drugs (for-profit PBC) delivers real consumer savings but does not count as charity. Direct political giving is negligible (~$7K lifetime per OpenSecrets). Rhetoric-action gap is the defining feature: publicly supports higher billionaire taxes, has made no reciprocal voluntary commitment. Tier B Probably Low.",

@@ -16,7 +16,7 @@
 </script>
 <style>
 :root{
-  --paper:#F3ECD9;--paper-mid:#E7DCC1;--paper-deep:#D8C9A4;--paper-shadow:#C9B78A;
+  --paper:#FDFAF2;--paper-mid:#F7F0DC;--paper-deep:#ECDFBE;--paper-shadow:#D8C9A6;
   --ink:#19130B;--ink-soft:#3C2F22;--ink-fade:#6E5E46;--ink-ghost:#9F8E70;
   --rust:#8B2E1F;--rust-dark:#5D1C12;--gilt:#8C6B2D;--sepia:#735A3E;--rule:#22180E;--green:#4a6e3a;
   --row-alt:rgba(216,201,164,.12);
@@ -39,9 +39,9 @@ body{
   min-height:100vh;transition:background-color .4s, color .4s;
 }
 [data-theme="dark"] body{background:radial-gradient(ellipse 900px 500px at 15% 5%, rgba(209,74,50,.08), transparent 70%),radial-gradient(ellipse 1000px 600px at 90% 95%, rgba(212,160,50,.09), transparent 70%),var(--paper)}
-.grain{position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.55;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.13;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.32 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
 [data-theme="dark"] .grain{opacity:.18;mix-blend-mode:screen}
-.foxing{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.5;mix-blend-mode:multiply;background-image:radial-gradient(circle at 8% 12%, rgba(140,107,45,.14), transparent 3%),radial-gradient(circle at 92% 22%, rgba(115,90,62,.1), transparent 2.5%),radial-gradient(circle at 73% 78%, rgba(139,46,31,.08), transparent 3%),radial-gradient(circle at 22% 87%, rgba(115,90,62,.11), transparent 2%)}
+.foxing{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.13;mix-blend-mode:multiply;background-image:radial-gradient(circle at 8% 12%, rgba(140,107,45,.14), transparent 3%),radial-gradient(circle at 92% 22%, rgba(115,90,62,.1), transparent 2.5%),radial-gradient(circle at 73% 78%, rgba(139,46,31,.08), transparent 3%),radial-gradient(circle at 22% 87%, rgba(115,90,62,.11), transparent 2%)}
 
 .sheet{position:relative;z-index:3;max-width:900px;margin:0 auto;padding:40px 36px 80px;animation:fadeUp .6s ease-out both}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -51,34 +51,33 @@ body{
 .nav button{background:none;border:none;cursor:pointer;font:inherit;color:inherit;letter-spacing:.22em}
 .nav button:hover{color:var(--rust)}
 
-.pmast{text-align:left;padding:32px 0 20px;border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);margin-bottom:34px;position:relative}
-.pmast::before,.pmast::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--rule)}
-.pmast::before{top:3px}
-.pmast::after{bottom:3px}
-.pmast .kicker{font-family:var(--display);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--rust);margin-bottom:12px;font-variation-settings:"opsz" 9,"SOFT" 60}
-.pmast h1{font-family:var(--display);font-weight:800;font-variation-settings:"opsz" 144,"SOFT" 30;font-size:clamp(2.4rem,5vw,3.6rem);line-height:.98;letter-spacing:-.015em;color:var(--ink);margin-bottom:8px}
-.pmast .subtitle{font-family:var(--display);font-style:italic;font-size:1.05rem;color:var(--ink-fade);font-variation-settings:"opsz" 24,"SOFT" 80}
+.pmast{text-align:left;padding:36px 0 26px;border-top:2px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:40px;position:relative}
+.pmast::before{content:"";position:absolute;left:0;right:0;height:1px;background:var(--rule);top:3px}
+.pmast .kicker{font-family:var(--display);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--rust);margin-bottom:14px;font-variation-settings:"opsz" 9,"SOFT" 60}
+.pmast h1{font-family:var(--display);font-weight:800;font-variation-settings:"opsz" 144,"SOFT" 30;font-size:clamp(2.4rem,5vw,3.6rem);line-height:.98;letter-spacing:-.015em;color:var(--ink);margin-bottom:14px}
+.pmast .subtitle{font-family:var(--display);font-style:italic;font-size:1.05rem;line-height:1.5;color:var(--ink-fade);font-variation-settings:"opsz" 24,"SOFT" 80;max-width:780px}
 
-.summary-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:40px}
-.summary-cell{padding:18px 14px 16px;border-right:1px solid var(--paper-shadow);font-family:var(--display)}
+.summary-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:64px}
+.summary-cell{padding:24px 18px 22px;border-right:1px solid var(--paper-shadow);font-family:var(--display)}
 .summary-cell:last-child{border-right:none}
-.summary-cell .label{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:6px;font-variation-settings:"opsz" 9,"SOFT" 50}
-.summary-cell .value{font-size:1.35rem;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink);font-variation-settings:"opsz" 48,"SOFT" 30}
+.summary-cell .label{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:9px;font-variation-settings:"opsz" 9,"SOFT" 50}
+.summary-cell .value{font-size:1.45rem;font-weight:600;font-variant-numeric:tabular-nums;color:var(--ink);font-variation-settings:"opsz" 48,"SOFT" 30;line-height:1.05}
 .summary-cell .value.tier-a{color:var(--rust)}
 .summary-cell .value.tier-b{color:var(--gilt)}
 .summary-cell .value.tier-c{color:var(--sepia)}
 .summary-cell .value.ontrack{color:var(--green)}
-.summary-cell .sub{font-size:.78rem;color:var(--ink-fade);margin-top:3px;font-style:italic}
+.summary-cell .sub{font-size:.78rem;color:var(--ink-fade);margin-top:6px;font-style:italic;line-height:1.4}
 
-h2{font-family:var(--display);font-style:italic;font-weight:500;font-variation-settings:"opsz" 72,"SOFT" 60;font-size:1.75rem;margin:44px 0 4px;color:var(--ink);letter-spacing:-.005em}
-h2::before{content:"";display:block;width:36px;height:2px;background:var(--rust);margin-bottom:14px}
-h3{font-family:var(--display);font-weight:600;font-size:1.05rem;margin:24px 0 6px;color:var(--ink)}
+h2{font-family:var(--display);font-style:italic;font-weight:500;font-variation-settings:"opsz" 72,"SOFT" 60;font-size:1.75rem;margin:72px 0 6px;color:var(--ink);letter-spacing:-.005em;padding-top:20px;border-top:1px solid var(--rule);position:relative}
+h2:first-of-type{margin-top:48px}
+h2::before{content:"";display:block;width:36px;height:2px;background:var(--rust);margin:-21px 0 16px}
+h3{font-family:var(--display);font-weight:600;font-size:1.05rem;margin:30px 0 8px;color:var(--ink)}
 
-p{color:var(--ink-soft);margin-bottom:14px}
+p{color:var(--ink-soft);margin-bottom:16px;line-height:1.65}
 a{color:var(--rust);text-decoration:none;border-bottom:1px solid rgba(139,46,31,.4)}
 a:hover{background:rgba(139,46,31,.08)}
 
-.callout{padding:18px 22px;margin:16px 0;border-left:3px solid var(--rust);background:rgba(139,46,31,.04)}
+.callout{padding:22px 26px;margin:24px 0 36px;border-left:3px solid var(--rust);background:rgba(139,46,31,.04);line-height:1.6}
 .callout.info{border-left-color:var(--gilt);background:rgba(140,107,45,.05)}
 .callout.green{border-left-color:var(--green);background:rgba(74,110,58,.05)}
 [data-theme="dark"] .callout{background:rgba(209,74,50,.08)}
@@ -87,10 +86,10 @@ a:hover{background:rgba(139,46,31,.08)}
 .callout > strong{font-family:var(--display);color:var(--ink);display:block;margin-bottom:6px}
 .callout p:last-child{margin-bottom:0}
 
-.events{margin:18px 0 28px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.event{display:grid;grid-template-columns:80px 1fr 120px;gap:16px;padding:14px 8px;border-bottom:1px dotted var(--ink-ghost);align-items:baseline;font-variant-numeric:tabular-nums}
+.events{margin:24px 0 36px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.event{display:grid;grid-template-columns:90px 1fr 130px;gap:18px;padding:18px 10px;border-bottom:1px dotted var(--ink-ghost);align-items:baseline;font-variant-numeric:tabular-nums}
 .event:last-child{border-bottom:none}
-.event .when{font-family:var(--display);color:var(--ink-fade);font-size:.92rem;font-variation-settings:"opsz" 24"}
+.event .when{font-family:var(--display);color:var(--ink-fade);font-size:.92rem;font-variation-settings:"opsz" 24}
 .event .what{color:var(--ink)}
 .event .what .recipient{color:var(--ink-soft)}
 .event .what .role{display:inline-block;margin-right:8px;padding:1px 7px;font-size:.65rem;letter-spacing:.12em;text-transform:uppercase;border:1px solid currentColor;color:var(--ink-fade);font-family:var(--display);border-radius:2px}
@@ -103,33 +102,33 @@ a:hover{background:rgba(139,46,31,.08)}
 .event .amt{text-align:right;font-family:var(--display);font-weight:600;color:var(--ink)}
 .event .amt a{font-size:.78rem;display:block;margin-top:2px;color:var(--rust);border:none}
 
-.vehicle-list{margin:14px 0 24px;font-family:var(--display)}
-.vehicle{padding:12px 14px;margin-bottom:8px;background:var(--row-alt);border-left:2px solid var(--paper-shadow)}
+.vehicle-list{margin:20px 0 36px;font-family:var(--display)}
+.vehicle{padding:16px 18px;margin-bottom:12px;background:var(--row-alt);border-left:2px solid var(--paper-shadow);line-height:1.55}
 .vehicle.active{border-left-color:var(--rust)}
 .vehicle.closed{border-left-color:var(--ink-ghost);opacity:.75}
 .vehicle.opaque{border-left-color:var(--gilt)}
 .vehicle .vname{font-weight:600;color:var(--ink)}
 .vehicle .vdetail{font-size:.92rem;color:var(--ink-fade);margin-top:3px}
 
-.flags-grid{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:14px 0 24px;font-family:var(--display);font-size:.95rem}
-.flag-code{font-family:var(--mono);font-size:.82rem;background:var(--paper-deep);color:var(--rust-dark);padding:2px 8px;border-radius:2px;white-space:nowrap;align-self:start}
+.flags-grid{display:grid;grid-template-columns:auto 1fr;gap:14px 22px;margin:20px 0 36px;font-family:var(--display);font-size:.95rem;line-height:1.55}
+.flag-code{font-family:var(--mono);font-size:.82rem;background:var(--paper-deep);color:var(--rust-dark);padding:3px 10px;border-radius:2px;white-space:nowrap;align-self:start}
 .flag-text{color:var(--ink-soft)}
 
-.ror-box{padding:20px 24px;border:1px solid var(--rule);background:var(--paper-mid);margin:16px 0 24px;font-family:var(--display)}
-.ror-status{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:6px}
-.ror-text{color:var(--ink);font-style:italic;line-height:1.55}
+.ror-box{padding:22px 26px;border:1px solid var(--rule);background:var(--paper-mid);margin:20px 0 36px;font-family:var(--display)}
+.ror-status{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:8px}
+.ror-text{color:var(--ink);font-style:italic;line-height:1.6}
 
-.source-log{margin:20px 0 24px;font-size:.88rem;font-family:var(--display);font-variation-settings:"opsz" 14}
-.source-log .src-row{padding:6px 0;border-bottom:1px dotted var(--ink-ghost);display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline}
+.source-log{margin:24px 0 36px;font-size:.88rem;font-family:var(--display);font-variation-settings:"opsz" 14}
+.source-log .src-row{padding:12px 0;border-bottom:1px dotted var(--ink-ghost);display:flex;flex-direction:column;gap:4px}
 .source-log .src-row:last-child{border-bottom:none}
-.source-log .src-row a{font-size:.86rem;word-break:break-all}
-.source-log .src-row .src-when{color:var(--ink-fade);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:.82rem}
+.source-log .src-row a{font-size:.86rem;line-height:1.45;overflow-wrap:anywhere;word-break:normal;display:inline-block;max-width:100%}
+.source-log .src-row .src-when{color:var(--ink-fade);font-variant-numeric:tabular-nums;font-size:.78rem;letter-spacing:.02em;text-transform:uppercase;font-style:italic}
 
-.todo-list{margin:10px 0 24px 20px;color:var(--ink-soft)}
-.todo-list li{margin-bottom:6px;font-size:.92rem}
+.todo-list{margin:14px 0 36px 22px;color:var(--ink-soft)}
+.todo-list li{margin-bottom:9px;font-size:.92rem;line-height:1.55}
 .todo-list li::marker{color:var(--gilt)}
 
-.cibar{margin:10px 0 32px;font-family:var(--display)}
+.cibar{margin:18px 0 48px;font-family:var(--display);position:relative}
 .cibar-legend{display:flex;gap:20px;flex-wrap:wrap;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:10px;font-variation-settings:"opsz" 9,"SOFT" 50}
 .cibar-legend .sw{display:inline-block;width:14px;height:12px;vertical-align:middle;margin-right:6px}
 .cibar-legend .sw.obs{background:var(--rust)}
@@ -139,18 +138,56 @@ a:hover{background:rgba(139,46,31,.08)}
 .cibar-track .obs{position:absolute;left:0;top:0;bottom:0;background:var(--rust);transition:width .6s ease}
 .cibar-track .hidden{position:absolute;left:0;top:0;bottom:0;background:repeating-linear-gradient(45deg,rgba(139,46,31,.18) 0 4px,transparent 4px 8px);transition:width .6s ease}
 [data-theme="dark"] .cibar-track .hidden{background:repeating-linear-gradient(45deg,rgba(209,74,50,.28) 0 4px,transparent 4px 8px)}
-.cibar-track .tick{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--gilt)}
-.cibar-track .tick.cap{background:var(--gilt);width:2px}
-.cibar-track .tick.tier-a{background:var(--ink-ghost)}
+.cibar-track .tick{position:absolute;top:-3px;bottom:-3px;width:14px;background:transparent;transform:translateX(-6px);cursor:pointer}
+.cibar-track .tick::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:var(--gilt)}
+.cibar-track .tick.tier-a::before{background:var(--ink-ghost)}
+.cibar-track .obs,.cibar-track .hidden{cursor:pointer}
 .cibar-track .tick-label{position:absolute;top:100%;margin-top:4px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-fade);transform:translateX(-50%);white-space:nowrap}
 .cibar-caption{margin-top:36px;font-size:.88rem;color:var(--ink-soft);font-style:italic;line-height:1.55}
 
-.timeline{margin:8px 0 28px;padding:20px 4px 12px;background:var(--paper-mid);border:1px solid var(--paper-shadow)}
+.timeline{margin:18px 0 40px;padding:26px 14px 18px;background:var(--paper-mid);border:1px solid var(--paper-shadow);position:relative}
+.tt-tip{
+  position:absolute;left:0;top:0;
+  min-width:240px;max-width:320px;
+  padding:12px 14px 11px;
+  background:var(--paper);border:1px solid var(--rule);
+  font-family:var(--display);color:var(--ink);
+  font-size:.88rem;line-height:1.4;
+  box-shadow:0 6px 18px rgba(34,24,14,.18);
+  pointer-events:none;
+  opacity:0;transform:translateY(2px);
+  transition:opacity .12s ease,transform .12s ease;
+  z-index:10;
+}
+.tt-tip.show{opacity:1;transform:translateY(0)}
+.tt-tip .tt-row1{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:4px}
+.tt-tip .tt-year{font-family:var(--display);font-weight:600;font-variation-settings:"opsz" 36;font-size:1.05rem;color:var(--ink);font-variant-numeric:lining-nums tabular-nums;letter-spacing:.02em}
+.tt-tip .tt-kind{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-fade);font-variation-settings:"opsz" 9,"SOFT" 50}
+.tt-tip .tt-kind.k-out{color:var(--rust)}
+.tt-tip .tt-kind.k-xfer{color:var(--gilt)}
+.tt-tip .tt-kind.k-pledge{color:var(--sepia)}
+.tt-tip .tt-total{font-family:var(--display);font-weight:700;font-variation-settings:"opsz" 72,"SOFT" 30;font-size:1.5rem;color:var(--ink);font-variant-numeric:tabular-nums oldstyle-nums;line-height:1;margin-bottom:8px;letter-spacing:-.012em}
+.tt-tip .tt-list{list-style:none;margin:0;padding:0}
+.tt-tip .tt-list li{display:flex;justify-content:space-between;gap:14px;padding:3px 0;font-size:.84rem;line-height:1.35;border-bottom:1px dotted var(--ink-ghost)}
+.tt-tip .tt-list li:last-child{border-bottom:none}
+.tt-tip .rcpt{color:var(--ink-soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}
+.tt-tip .rcpt-amt{color:var(--ink);font-variant-numeric:tabular-nums oldstyle-nums;font-weight:600;white-space:nowrap}
+.tt-tip .tt-more{margin-top:6px;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-fade);font-style:italic}
+[data-theme="dark"] .tt-tip{box-shadow:0 6px 22px rgba(0,0,0,.6)}
 .timeline svg{width:100%;height:160px;display:block}
-.timeline .bar{fill:var(--rust);transition:opacity .15s}
+.timeline .bar{fill:var(--rust);transition:opacity .15s,filter .15s;cursor:pointer}
 .timeline .bar.transfer{fill:var(--gilt)}
 .timeline .bar.pledge{fill:var(--sepia);opacity:.5}
-.timeline .bar:hover{opacity:.8}
+.timeline .bar:hover{opacity:1;filter:brightness(.9)}
+.timeline .bar:focus{outline:none;filter:brightness(.85)}
+.timeline .yeartick{cursor:pointer;fill:transparent}
+.timeline .yeartick:hover ~ .yearlabel,.timeline .bar:hover ~ .yearlabel{fill:var(--ink)}
+.timeline .yeartext.active{fill:var(--rust);font-weight:700}
+.event{transition:background .25s,box-shadow .25s,border-color .25s}
+.event.flash-year{background:rgba(139,46,31,.08);box-shadow:inset 3px 0 0 var(--rust);}
+.event.flash-year:nth-child(even){background:rgba(139,46,31,.12)}
+[data-theme="dark"] .event.flash-year{background:rgba(209,74,50,.12);box-shadow:inset 3px 0 0 var(--rust)}
+.events-anchor{display:block;height:0;visibility:hidden;margin-top:-100px;padding-top:100px}
 .timeline .axis{stroke:var(--ink-ghost);stroke-width:.5;opacity:.6}
 .timeline .yeartext,.timeline .amttext{font-family:var(--display);font-size:10px;fill:var(--ink-fade);font-variation-settings:"opsz" 9,"SOFT" 60}
 .timeline .yeartext{letter-spacing:.08em}
@@ -310,18 +347,28 @@ function render(rec) {
     const totalWidth = (totalPct / trackMax) * 100;
     const capPos = (100 / trackMax) * 100;
 
+    const tenureYrs = (rec.years_as_billionaire_approx != null) ? rec.years_as_billionaire_approx : null;
+    const liquidPct = (rec.liquidity_estimate_pct != null) ? rec.liquidity_estimate_pct : null;
+    const nwBest = rec.net_worth_best_usd_b ? rec.net_worth_best_usd_b * 1e9 : null;
+    const cibarPayload = {
+      obs:    { amount: observable, pct: obsPct,    pctOfCap: (observable/expected)*100 },
+      hidden: { amount: hiddenUpper, pct: hiddenPct, pctOfCap: (hiddenUpper/expected)*100 },
+      cap:    { amount: expected, pct: 100, tenure: tenureYrs, liquidPct: liquidPct, nw: nwBest },
+      shortfall: shortfall, ratio: ratio,
+    };
     html += `<div class="cibar">
       <div class="cibar-legend">
         <span><span class="sw obs"></span>Observable</span>
         <span><span class="sw hidden"></span>Hidden upper bound</span>
         <span><span class="sw cap"></span>Capacity (5%/yr × liquid × tenure)</span>
       </div>
-      <div class="cibar-track" title="${obsPct.toFixed(1)}% observable, +${hiddenPct.toFixed(1)}% hidden upper, vs 100% capacity">
-        <div class="hidden" style="width:${totalWidth}%"></div>
-        <div class="obs" style="width:${obsWidth}%"></div>
-        <div class="tick cap" style="left:${capPos}%"><span class="tick-label" style="left:${capPos}%">100% · Benchmark</span></div>
+      <div class="cibar-track" id="cibarTrack" data-payload='${esc(JSON.stringify(cibarPayload))}'>
+        <div class="hidden" data-zone="hidden" tabindex="0" style="width:${totalWidth}%"></div>
+        <div class="obs" data-zone="obs" tabindex="0" style="width:${obsWidth}%"></div>
+        <div class="tick cap" data-zone="cap" tabindex="0" style="left:${capPos}%"><span class="tick-label" style="left:${capPos}%">100% · Benchmark</span></div>
       </div>
-      <p class="cibar-caption">Observable giving equals <strong>${fmtRatio(ratio)}</strong> of the 5%-per-year-of-tenure capacity benchmark (${fmtUsd(expected)}). The dollar shortfall is <strong>${fmtUsd(shortfall)}</strong>. Hidden upper bound adds ${fmtUsd(hiddenUpper)} — the maximum we think could plausibly be flowing through opaque vehicles without contradicting public evidence.</p>
+      <div class="tt-tip" id="cibarTip" role="tooltip" aria-hidden="true"></div>
+      <p class="cibar-caption">Observable giving equals <strong>${fmtRatio(ratio)}</strong> of the 5%-per-year-of-tenure capacity benchmark (${fmtUsd(expected)}). The dollar shortfall is <strong>${fmtUsd(shortfall)}</strong>. Hidden upper bound adds ${fmtUsd(hiddenUpper)} — the maximum we think could plausibly be flowing through opaque vehicles without contradicting public evidence. <em>Hover any segment for the breakdown.</em></p>
     </div>`;
   }
 
@@ -362,6 +409,7 @@ function render(rec) {
       const by = b.year || (b.date ? b.date.substring(0,4) : 0);
       return (by || 0) - (ay || 0);
     });
+    let lastYearAnchored = null;
     for (const ev of sorted) {
       const when = ev.date || ev.year || (ev.year_range ? ev.year_range.join('–') : '');
       const role = ev.event_role || '';
@@ -370,7 +418,12 @@ function render(rec) {
       const donor = ev.donor_entity || '';
       const note = ev.classification_note || ev.dedup_note || ev.notes || '';
       const roleCls = role.replace(/[^a-z_]/g, '_');
-      html += `<div class="event">
+      let evYear = ev.year || (ev.date ? parseInt(String(ev.date).substring(0, 4)) : null);
+      if (!evYear && ev.year_range) evYear = ev.year_range[0];
+      const yearAttr = evYear ? ` data-year="${evYear}"` : '';
+      const anchor = (evYear && evYear !== lastYearAnchored) ? `<span class="events-anchor" id="year-events-${evYear}"></span>` : '';
+      if (evYear) lastYearAnchored = evYear;
+      html += `${anchor}<div class="event"${yearAttr}>
         <div class="when">${esc(when)}</div>
         <div class="what">
           <span class="role ${esc(roleCls)}">${esc(role)}</span>
@@ -454,26 +507,268 @@ function render(rec) {
   }
 
   document.getElementById('content').innerHTML = html;
+  wireTimelineClicks();
+  wireCibarHover();
+}
+
+function wireTimelineClicks() {
+  const tl = document.querySelector('.timeline');
+  if (!tl) return;
+  const tip = document.getElementById('tlTip');
+  let flashTimer = null;
+
+  function jumpToYear(year) {
+    if (!year) return;
+    const anchor = document.getElementById('year-events-' + year);
+    const matches = document.querySelectorAll('.event[data-year="' + year + '"]');
+    document.querySelectorAll('.event.flash-year').forEach(el => el.classList.remove('flash-year'));
+    matches.forEach(el => el.classList.add('flash-year'));
+    if (anchor) anchor.scrollIntoView({behavior:'smooth', block:'start'});
+    else if (matches[0]) matches[0].scrollIntoView({behavior:'smooth', block:'center'});
+    if (flashTimer) clearTimeout(flashTimer);
+    flashTimer = setTimeout(() => {
+      document.querySelectorAll('.event.flash-year').forEach(el => el.classList.remove('flash-year'));
+    }, 4500);
+  }
+
+  function hideTip() {
+    if (!tip) return;
+    tip.classList.remove('show');
+    tip.setAttribute('aria-hidden', 'true');
+  }
+
+  function buildTipHtml(year, kind) {
+    const d = (window.__timelineDetail || {})[year + '|' + kind];
+    if (!d) return '';
+    const kindLabel = kind === 'out' ? 'Observable out' : kind === 'transfer' ? 'Transfer in to vehicle' : 'Pledge / announcement';
+    const kindCls = kind === 'out' ? 'k-out' : kind === 'transfer' ? 'k-xfer' : 'k-pledge';
+    const items = d.items.slice(0, 4);
+    const more = d.items.length - items.length;
+    const listHtml = items.map(it => {
+      const arrow = kind === 'transfer' ? '←' : '→';
+      const target = it.recipient || (kind === 'transfer' ? (it.donor || '—') : '—');
+      const flow = kind === 'transfer' && it.donor
+        ? `${esc(it.donor)} ${arrow} ${esc(target)}`
+        : `${arrow} ${esc(target)}`;
+      return `<li><span class="rcpt">${flow}</span><span class="rcpt-amt">${fmtUsd(it.amount)}</span></li>`;
+    }).join('');
+    return `
+      <div class="tt-row1"><span class="tt-year">${year}</span><span class="tt-kind ${kindCls}">${kindLabel}</span></div>
+      <div class="tt-total">${fmtUsd(d.total)}</div>
+      <ul class="tt-list">${listHtml}</ul>
+      ${more > 0 ? `<div class="tt-more">+${more} more — click for full evidence</div>` : '<div class="tt-more">Click to jump to evidence</div>'}
+    `;
+  }
+
+  function positionTip(rect) {
+    if (!tip || !tip.classList.contains('show')) return;
+    const tlRect = tl.getBoundingClientRect();
+    const tipW = tip.offsetWidth, tipH = tip.offsetHeight;
+    let left = rect.left - tlRect.left + rect.width / 2 - tipW / 2;
+    left = Math.max(8, Math.min(left, tlRect.width - tipW - 8));
+    let top = rect.top - tlRect.top - tipH - 12; // above the bar
+    if (top < 4) top = rect.bottom - tlRect.top + 12; // flip below if no room above
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+  }
+
+  function showTip(target) {
+    if (!tip) return;
+    const year = target.getAttribute('data-year');
+    let kind = target.getAttribute('data-kind');
+    if (!kind) {
+      // .yeartick (axis) — pick the largest kind for that year
+      const d = window.__timelineDetail || {};
+      const candidates = ['out', 'transfer', 'pledge'].map(k => ({k, v: d[year+'|'+k]?.total || 0})).sort((a,b) => b.v - a.v);
+      kind = candidates[0].k;
+      if (!d[year+'|'+kind]) return;
+    }
+    const html = buildTipHtml(year, kind);
+    if (!html) return;
+    tip.innerHTML = html;
+    tip.classList.add('show');
+    tip.setAttribute('aria-hidden', 'false');
+    positionTip(target.getBoundingClientRect());
+  }
+
+  tl.addEventListener('mouseover', e => {
+    const target = e.target.closest('[data-year]');
+    if (!target) return;
+    showTip(target);
+  });
+  tl.addEventListener('mouseout', e => {
+    const to = e.relatedTarget;
+    if (to && (to.closest && (to.closest('.timeline') || to.closest('.tt-tip')))) return;
+    hideTip();
+  });
+  tl.addEventListener('focusin', e => {
+    const target = e.target.closest('[data-year]');
+    if (!target) return;
+    showTip(target);
+  });
+  tl.addEventListener('focusout', () => hideTip());
+
+  tl.addEventListener('click', e => {
+    const target = e.target.closest('[data-year]');
+    if (!target) return;
+    e.preventDefault();
+    hideTip();
+    jumpToYear(target.getAttribute('data-year'));
+  });
+  tl.addEventListener('keydown', e => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const target = e.target.closest('[data-year]');
+    if (!target) return;
+    e.preventDefault();
+    hideTip();
+    jumpToYear(target.getAttribute('data-year'));
+  });
+}
+
+function wireCibarHover() {
+  const cibar = document.querySelector('.cibar');
+  const track = document.getElementById('cibarTrack');
+  const tip = document.getElementById('cibarTip');
+  if (!cibar || !track || !tip) return;
+
+  let payload;
+  try { payload = JSON.parse(track.dataset.payload || '{}'); }
+  catch { return; }
+
+  function buildTipHtml(zone) {
+    if (zone === 'obs') {
+      const d = payload.obs;
+      const pct = (d.pctOfCap || 0).toFixed(1);
+      return `
+        <div class="tt-row1"><span class="tt-year">Observable</span><span class="tt-kind k-out">documented giving</span></div>
+        <div class="tt-total">${fmtUsd(d.amount)}</div>
+        <ul class="tt-list">
+          <li><span class="rcpt">% of capacity benchmark</span><span class="rcpt-amt">${pct}%</span></li>
+        </ul>
+        <div class="tt-more">Cited grants, foundation 990s, announced gifts</div>`;
+    }
+    if (zone === 'hidden') {
+      const d = payload.hidden;
+      const pct = (d.pctOfCap || 0).toFixed(1);
+      return `
+        <div class="tt-row1"><span class="tt-year">Hidden upper bound</span><span class="tt-kind k-xfer">opaque vehicles</span></div>
+        <div class="tt-total">${fmtUsd(d.amount)}</div>
+        <ul class="tt-list">
+          <li><span class="rcpt">% of capacity benchmark</span><span class="rcpt-amt">${pct}%</span></li>
+        </ul>
+        <div class="tt-more">DAFs, LLCs, dynasty trusts &mdash; max plausible without contradicting evidence</div>`;
+    }
+    if (zone === 'cap') {
+      const d = payload.cap;
+      const tenure = d.tenure != null ? `${d.tenure} yrs` : '—';
+      const liquid = d.liquidPct != null ? `${(d.liquidPct*100).toFixed(0)}%` : '—';
+      const nw = d.nw ? fmtUsd(d.nw) : '—';
+      return `
+        <div class="tt-row1"><span class="tt-year">Capacity</span><span class="tt-kind k-pledge">benchmark</span></div>
+        <div class="tt-total">${fmtUsd(d.amount)}</div>
+        <ul class="tt-list">
+          <li><span class="rcpt">Net worth</span><span class="rcpt-amt">${nw}</span></li>
+          <li><span class="rcpt">Liquid share</span><span class="rcpt-amt">${liquid}</span></li>
+          <li><span class="rcpt">Tenure as billionaire</span><span class="rcpt-amt">${tenure}</span></li>
+          <li><span class="rcpt">Shortfall vs. observable</span><span class="rcpt-amt">${fmtUsd(payload.shortfall)}</span></li>
+        </ul>
+        <div class="tt-more">5% of liquid net worth × tenure</div>`;
+    }
+    return '';
+  }
+
+  function positionTip(rect) {
+    if (!tip.classList.contains('show')) return;
+    const cRect = cibar.getBoundingClientRect();
+    const tipW = tip.offsetWidth, tipH = tip.offsetHeight;
+    let left = rect.left - cRect.left + rect.width / 2 - tipW / 2;
+    left = Math.max(8, Math.min(left, cRect.width - tipW - 8));
+    let top = rect.top - cRect.top - tipH - 12;
+    if (top < 4) top = rect.bottom - cRect.top + 12;
+    tip.style.left = left + 'px';
+    tip.style.top = top + 'px';
+  }
+
+  function showTip(target) {
+    const zone = target.getAttribute('data-zone');
+    if (!zone) return;
+    const html = buildTipHtml(zone);
+    if (!html) return;
+    tip.innerHTML = html;
+    tip.classList.add('show');
+    tip.setAttribute('aria-hidden', 'false');
+    positionTip(target.getBoundingClientRect());
+  }
+  function hideTip() {
+    tip.classList.remove('show');
+    tip.setAttribute('aria-hidden', 'true');
+  }
+
+  track.addEventListener('mouseover', e => {
+    const target = e.target.closest('[data-zone]');
+    if (!target) return;
+    showTip(target);
+  });
+  track.addEventListener('mouseout', e => {
+    const to = e.relatedTarget;
+    if (to && to.closest && (to.closest('.cibar-track') || to.closest('.tt-tip'))) return;
+    hideTip();
+  });
+  track.addEventListener('focusin', e => {
+    const target = e.target.closest('[data-zone]');
+    if (!target) return;
+    showTip(target);
+  });
+  track.addEventListener('focusout', () => hideTip());
 }
 
 function renderTimeline(rec) {
-  // Bucket all cited events by year + role.
   const events = (rec.cited_events || []).concat(rec.pledges_and_announcements || []);
   const by = new Map();
+  // Per-(year, kind) detail: amount + recipient breakdown
+  const KIND_OUT = 'out', KIND_XFER = 'transfer', KIND_PLEDGE = 'pledge';
+  const kindOf = role => {
+    if (role === 'grant_out' || role === 'direct_gift') return KIND_OUT;
+    if (role === 'transfer_in') return KIND_XFER;
+    if (role === 'pledge' || role === 'pledge_amendment') return KIND_PLEDGE;
+    return null;
+  };
+  const detail = {}; // detail['2024|out'] = { total, role, items:[{recipient,donor,amount,note,sourceUrl}] }
+
   for (const ev of events) {
     let year = ev.year || (ev.date ? parseInt(String(ev.date).substring(0, 4)) : null);
     if (!year && ev.year_range) year = ev.year_range[0];
     if (!year || year < 1995 || year > 2030) continue;
     const role = ev.event_role || 'other';
+    const kind = kindOf(role);
+    if (!kind) continue;
     const amt = ev.amount_usd || ev.pledged_amount_usd || 0;
     if (!amt) continue;
-    const key = year + '|' + role;
-    by.set(key, (by.get(key) || 0) + amt);
+    const sumKey = year + '|' + role;
+    by.set(sumKey, (by.get(sumKey) || 0) + amt);
+    const dKey = year + '|' + kind;
+    if (!detail[dKey]) detail[dKey] = { total: 0, kind, year, items: [] };
+    detail[dKey].total += amt;
+    detail[dKey].items.push({
+      recipient: ev.recipient || '',
+      donor: ev.donor_entity || '',
+      amount: amt,
+      role,
+      note: ev.classification_note || ev.notes || '',
+      sourceUrl: ev.source_url || '',
+    });
   }
   if (by.size < 3) return '';
 
   const years = Array.from(new Set(Array.from(by.keys()).map(k => parseInt(k.split('|')[0])))).sort((a, b) => a - b);
   if (years.length < 3) return '';
+
+  // Sort each detail bucket's items by amount desc
+  for (const k of Object.keys(detail)) {
+    detail[k].items.sort((a, b) => b.amount - a.amount);
+  }
+  // Stash for hover lookup
+  window.__timelineDetail = detail;
 
   const yMin = years[0], yMax = years[years.length - 1];
   const roles = ['grant_out', 'direct_gift', 'transfer_in', 'pledge', 'pledge_amendment'];
@@ -491,45 +786,43 @@ function renderTimeline(rec) {
   const yearCount = yMax - yMin + 1;
   const barWidth = Math.min(28, (plotW / yearCount) * 0.8);
   const xOf = y => PAD_L + ((y - yMin) / Math.max(1, yMax - yMin)) * plotW;
-
   const hOf = amt => (amt / maxAmt) * plotH;
 
   let inner = `<line class="axis" x1="${PAD_L}" y1="${H - PAD_B}" x2="${W - PAD_R}" y2="${H - PAD_B}"/>`;
-
-  // ticks every 2 years
   for (let y = yMin; y <= yMax; y += Math.max(1, Math.floor(yearCount / 8))) {
     const x = xOf(y);
     inner += `<text class="yeartext" x="${x}" y="${H - PAD_B + 14}" text-anchor="middle">${y}</text>`;
   }
-
-  // bars: stack grant_out + direct_gift as one "giving" color,
-  // transfer_in separately, pledges lighter
-  const roleClass = r => r === 'transfer_in' ? 'transfer' : (r === 'pledge' || r === 'pledge_amendment' ? 'pledge' : '');
 
   for (const yt of yearTotals) {
     const givingOut = (yt.buckets.grant_out || 0) + (yt.buckets.direct_gift || 0);
     const transferIn = yt.buckets.transfer_in || 0;
     const pledge = (yt.buckets.pledge || 0) + (yt.buckets.pledge_amendment || 0);
     const cx = xOf(yt.year);
+    const totalThisYear = givingOut + transferIn + pledge;
     if (givingOut > 0) {
       const h = hOf(givingOut);
-      inner += `<rect class="bar" x="${cx - barWidth / 2}" y="${H - PAD_B - h}" width="${barWidth}" height="${h}"><title>${yt.year} · ${fmtUsd(givingOut)} out</title></rect>`;
+      inner += `<rect class="bar" data-year="${yt.year}" data-kind="${KIND_OUT}" tabindex="0" x="${cx - barWidth / 2}" y="${H - PAD_B - h}" width="${barWidth}" height="${h}"></rect>`;
     }
     if (transferIn > 0) {
       const h = hOf(transferIn);
       const offset = givingOut > 0 ? -barWidth / 2 - 2 : 0;
-      inner += `<rect class="bar transfer" x="${cx - barWidth / 2 + offset}" y="${H - PAD_B - h}" width="${Math.max(4, barWidth / 2)}" height="${h}"><title>${yt.year} · ${fmtUsd(transferIn)} transfer in</title></rect>`;
+      inner += `<rect class="bar transfer" data-year="${yt.year}" data-kind="${KIND_XFER}" tabindex="0" x="${cx - barWidth / 2 + offset}" y="${H - PAD_B - h}" width="${Math.max(4, barWidth / 2)}" height="${h}"></rect>`;
     }
     if (pledge > 0 && !givingOut) {
       const h = hOf(pledge);
-      inner += `<rect class="bar pledge" x="${cx - barWidth / 2}" y="${H - PAD_B - h}" width="${barWidth}" height="${h}"><title>${yt.year} · ${fmtUsd(pledge)} pledge</title></rect>`;
+      inner += `<rect class="bar pledge" data-year="${yt.year}" data-kind="${KIND_PLEDGE}" tabindex="0" x="${cx - barWidth / 2}" y="${H - PAD_B - h}" width="${barWidth}" height="${h}"></rect>`;
+    }
+    if (totalThisYear > 0) {
+      inner += `<rect class="yeartick" data-year="${yt.year}" tabindex="0" x="${cx - barWidth / 2}" y="${H - PAD_B}" width="${barWidth}" height="22"></rect>`;
     }
   }
 
   return `<h2>Giving Timeline</h2>
-    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Per-year sum of cited events. Out-the-door giving (grants, direct gifts) in rust; transfers into intermediaries in gold; pledges in faded.</p>
+    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Per-year sum of cited events. Out-the-door giving (grants, direct gifts) in rust; transfers into intermediaries in gold; pledges in faded. <strong>Hover</strong> a bar for the recipients; <strong>click</strong> to jump to that year's evidence.</p>
     <div class="timeline">
       <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">${inner}</svg>
+      <div class="tt-tip" id="tlTip" role="tooltip" aria-hidden="true"></div>
       <div class="timeline-legend">
         <span><span class="sw grant_out"></span>Observable out</span>
         <span><span class="sw transfer_in"></span>Transfer in</span>

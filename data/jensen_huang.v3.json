@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching Ellison v3 reference. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification downstream.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Huang) + regen_v3@sha256-99da3c801e8db2fe + regen_v3@sha256-5a6a8a1a9b600621",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Huang) + regen_v3@sha256-99da3c801e8db2fe + regen_v3@sha256-5a6a8a1a9b600621 + regen_v3@sha256-1fbba143ceeff3ce",
   "person": {
     "name_display": "Jensen Huang",
     "name_legal": "Jen-Hsun Huang",
@@ -371,6 +371,215 @@
       "regen_run_id": "sha256-5a6a8a1a9b600621",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jensen Huang",
+      "recipient": "Stanford University",
+      "amount_usd": 30000000,
+      "source_type": "other",
+      "source_url": "https://andsimple.co/cases/jensen-huang-ai-nvidia-philanthropy/",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang donated $30 million to Stanford University to build the Jen-Hsun Huang Engineering Centre.",
+      "extraction_evidence": "Jensen Huang donated $30 million to build the Jen-Hsun Huang Engineering Centre",
+      "regen_query": "\"Jensen Huang\" donates million",
+      "event_id": "jensen_huang_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jensen Huang",
+      "recipient": "Jen-Hsun and Lori Huang Foundation",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.finance-monthly.com/jensen-huang-nvidia-14b-gift/",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang and Lori donated 370,000 NVIDIA shares to launch the Jen-Hsun and Lori Huang Foundation.",
+      "extraction_evidence": "He and Lori donated 370,000 NVIDIA shares to launch the Jen-Hsun and Lori Huang Foundation",
+      "regen_query": "\"Jensen Huang\" donates million",
+      "event_id": "jensen_huang_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2007,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Jensen Huang and Lori Huang",
+      "recipient": "Jen-Hsun & Lori Huang Foundation",
+      "amount_usd": 300000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Jensen_Huang",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang and his wife established the Jen-Hsun & Lori Huang Foundation in 2007 with an initial donation of Nvidia stock valued at $300 million.",
+      "extraction_evidence": "established the Jen-Hsun & Lori Huang Foundation in 2007 with an initial donation of Nvidia stock valued at $300 million",
+      "regen_query": "\"Jensen Huang\" donates million",
+      "event_id": "jensen_huang_direct_gift_2007_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jensen Huang",
+      "recipient": "Oregon State University",
+      "amount_usd": 50000000,
+      "source_type": "other",
+      "source_url": "https://fororegonstate.org/stay-informed/impact-stories/detail/50-million-gift-by-nvidia-founder-and-spouse",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang and spouse made a $50 million gift to Oregon State University to help launch a research center.",
+      "extraction_evidence": "$50 Million Gift by NVIDIA Founder and Spouse Helps Launch Oregon State University Research Center",
+      "regen_query": "\"The Jen-Hsun and Lori Huang Foundation\" 990-PF",
+      "event_id": "jensen_huang_grant_out_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date": "2024-04-12",
+      "date_precision": "day",
+      "donor_entity": "Jensen Huang",
+      "recipient": "Oregon State University",
+      "amount_usd": 213000000,
+      "source_type": "other",
+      "source_url": "https://fororegonstate.org/stay-informed/impact-stories/detail/Huang_Complex_groundbreaking",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang and Lori Mills Huang made a $213 million gift to Oregon State University for the Jen-Hsun Huang and Lori Mills Huang Collaborative Innovation Complex.",
+      "extraction_evidence": "Jen-Hsun Huang and Lori Mills Huang Collaborative Innovation Complex: a new $213 million, 143,000-square-foot advanced research and education facility",
+      "regen_query": "\"Jen-Hsun Huang\" \"Oregon State University\" \"Collaborative Innovation Complex\" groundbreaking 2024",
+      "event_id": "jensen_huang_direct_gift_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jensen Huang",
+      "recipient": "OSU",
+      "amount_usd": 50000000,
+      "source_type": "other",
+      "source_url": "https://futurumgroup.com/insights/nvidias-jensen-huang-donates-50m-for-an-osu-ai-tech-center/",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang donated $50 million to OSU for an AI tech center.",
+      "extraction_evidence": "$50 million donation to OSU, the Huangs and NVIDIA will deliver huge compute power",
+      "regen_query": "\"Jensen Huang\" gift OR donation million",
+      "event_id": "jensen_huang_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jensen Huang",
+      "recipient": "San Francisco Opera",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://sfstandard.com/2025/11/20/jensen-huang-nvidia-arts-patron-sf-opera-monkey-king/",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang and his wife are making a donation of $5 million a year for multiple years to the San Francisco Opera.",
+      "extraction_evidence": "making a previously unreported donation of $5 million a year for multiple years to the San Francisco Opera",
+      "regen_query": "\"Jensen Huang\" donates million",
+      "event_id": "jensen_huang_direct_gift_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2007,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Jensen Huang",
+      "recipient": "unspecified",
+      "amount_usd": 12600000,
+      "source_type": "news_article",
+      "source_url": "https://www.benzinga.com/news/education/25/06/45983347/jensen-huang-gave-12-6-million-to-charity-then-nvidias-stock-made-it-billions",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang donated 370,000 Nvidia shares worth $12.6 million to charity.",
+      "extraction_evidence": "Huang donated 370,000 Nvidia shares worth $12.6 million",
+      "regen_query": "\"Jensen Huang\" donates million",
+      "event_id": "jensen_huang_direct_gift_2007_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jensen Huang",
+      "recipient": "California College of the Arts",
+      "amount_usd": 22500000,
+      "source_type": "news_article",
+      "source_url": "https://www.businessinsider.com/jensen-huang-net-worth?op=1",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang and spouse gave $22.5 million to the California College of the Arts.",
+      "extraction_evidence": "They've also given $22.5 million to the California College of the Arts.",
+      "regen_query": "\"Jensen Huang\" \"California College of the Arts\" $22.5 million 2025",
+      "event_id": "jensen_huang_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "The Jen-Hsun and Lori Huang Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 126000000,
+      "source_type": "other",
+      "source_url": "https://www.facebook.com/bloombergbusiness/posts/the-jen-hsun-and-lori-huang-foundation-donated-more-than-126-million-last-year-a/1266482305337860/",
+      "confidence": "medium",
+      "extraction_note": "The Jen-Hsun and Lori Huang Foundation donated more than $126 million, though the specific year and recipients are not provided in the available snippet.",
+      "extraction_evidence": "The Jen-Hsun and Lori Huang Foundation donated more than 126 million",
+      "regen_query": "\"The Jen-Hsun and Lori Huang Foundation\" grants",
+      "event_id": "jensen_huang_grant_out_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jensen Huang",
+      "recipient": "Oneida Baptist Institute",
+      "amount_usd": 2000000,
+      "source_type": "news_article",
+      "source_url": "https://www.newsbytesapp.com/news/business/who-is-nvidia-ceo-and-co-founder-jensen-huang/story",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang and his wife Lori donated $2 million to Oneida Baptist Institute to build a female dormitory and classroom building.",
+      "extraction_evidence": "He and his wife Lori later donated $2 million to the school to build a female dormitory and a classroom building",
+      "regen_query": "\"Jensen Huang\" \"Oneida Baptist Institute\" dormitory $2 million Kentucky",
+      "event_id": "jensen_huang_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -406,6 +615,120 @@
       "recipient": "San Francisco Opera",
       "source_url": "https://www.sfopera.com/press/press-releases/Huang-commitment-to-SFO/",
       "retrieved_at": "2026-04-23"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2025,
+      "date": "2025-12-01",
+      "date_precision": "day",
+      "donor_entity": "Jensen Huang",
+      "recipient": "San Francisco Opera",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://dnyuz.com/2025/12/01/san-francisco-opera-has-a-hit-with-huang-ruos-spectacular-monkey-king/",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang and his wife announced a $5 million gift to San Francisco Opera to help fund the production of the 'Monkey King.'",
+      "extraction_evidence": "Jensen Huang, and his wife, Lori Huang, announced a $5-million gift to San Francisco Opera",
+      "regen_query": "\"Jensen Huang\" \"San Francisco Opera\" \"Monkey King\" $5 million 2025",
+      "event_id": "jensen_huang_announcement_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": "2025-11-20",
+      "date_precision": "day",
+      "donor_entity": "Jensen Huang",
+      "recipient": "San Francisco Opera",
+      "amount_usd": 5000000,
+      "source_type": "blog",
+      "source_url": "https://irontongue.blogspot.com/2025/12/a-new-major-benefactor-at-san-francisco.html",
+      "confidence": "high",
+      "extraction_note": "Jensen Huang announced a multi-year commitment of $5 million per year to San Francisco Opera.",
+      "extraction_evidence": "the Huangs announced a multi-year commitment of $5 million a year to the San Francisco Opera",
+      "regen_query": "\"Jensen Huang\" \"San Francisco Opera\" \"Monkey King\" $5 million 2025",
+      "event_id": "jensen_huang_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2025,
+      "date": "2025-01-06",
+      "date_precision": "day",
+      "donor_entity": "Jensen Huang",
+      "recipient": "California College of the Arts",
+      "amount_usd": 22000000,
+      "source_type": "news_article",
+      "source_url": "https://news.artnet.com/art-world/nividia-fundraising-campaign-california-college-arts-2614873",
+      "confidence": "high",
+      "extraction_note": "Nvidia CEO Jensen Huang commits more than $22 million to California art school.",
+      "extraction_evidence": "Nvidia Chief Commits More Than $22 Million to Save Ailing California Art School",
+      "regen_query": "\"Jensen Huang\" pledges OR commits OR announces",
+      "event_id": "jensen_huang_announcement_2025_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jensen Huang and Lori Huang",
+      "recipient": "San Francisco Opera",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://operawire.com/?p=104905",
+      "confidence": "high",
+      "extraction_note": "Jensen and Lori Huang announced a $5 million multi-year gift to San Francisco Opera during a special event.",
+      "extraction_evidence": "the Huangs announced that they will contribute $5 million",
+      "regen_query": "\"Jensen Huang\" \"San Francisco Opera\" \"Monkey King\" $5 million 2025",
+      "event_id": "jensen_huang_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2007,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Jen-Hsun and Lori Huang Foundation",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.britannica.com/money/Jensen-Huang",
+      "confidence": "medium",
+      "extraction_note": "Jensen Huang and his wife founded the Jen-Hsun and Lori Huang Foundation in 2007, which made donations to alma maters, public health initiatives, and Bay Area organizations.",
+      "extraction_evidence": "In 2007 Huang and his wife founded the philanthropic Jen-Hsun and Lori Huang Foundation, which made donations to the Huangs' alma maters, to public health initiatives, and to various San Francisco Bay Area organizations.",
+      "regen_query": "\"Jensen Huang\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "jensen_huang_announcement_2007_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2025,
+      "date": "2025-10-30",
+      "date_precision": "day",
+      "donor_entity": "Nvidia Corp.",
+      "recipient": "South Korean government and Korea's large companies",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202602090007",
+      "confidence": "high",
+      "extraction_note": "Nvidia announced a pledge to supply 260,000 GPUs to the South Korean government and Korea's large companies.",
+      "extraction_evidence": "Nvidia pledges to supply 260,000 GPUs to the South Korean government and Korea's large companies",
+      "regen_query": "\"Jensen Huang\" pledges OR commits OR announces",
+      "event_id": "jensen_huang_announcement_2025_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -833,6 +1156,234 @@
       "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5a6a8a1a9b600621"
+    },
+    {
+      "publisher": "andsimple.co",
+      "url": "https://andsimple.co/cases/jensen-huang-ai-nvidia-philanthropy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "billionairenetworth.com",
+      "url": "https://billionairenetworth.com/billionaires/jensen-huang",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "dnyuz.com",
+      "url": "https://dnyuz.com/2025/12/01/san-francisco-opera-has-a-hit-with-huang-ruos-spectacular-monkey-king/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "fourweekmba.com",
+      "url": "https://fourweekmba.com/jen-hsun-huang-net-worth/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "fpm.oregonstate.edu",
+      "url": "https://fpm.oregonstate.edu/project-delivery/jen-hsun-huang-lori-mills-huang-collaborative-innovation-complex",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "futurumgroup.com",
+      "url": "https://futurumgroup.com/insights/nvidias-jensen-huang-donates-50m-for-an-osu-ai-tech-center/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "huangcomplex.oregonstate.edu",
+      "url": "https://huangcomplex.oregonstate.edu/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "indianexpress.com",
+      "url": "https://indianexpress.com/article/technology/tech-news-technology/7-unknown-facts-about-nvidia-ceo-jensen-huang-8639333/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "irontongue.blogspot.com",
+      "url": "https://irontongue.blogspot.com/2025/12/a-new-major-benefactor-at-san-francisco.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "kids.kiddle.co",
+      "url": "https://kids.kiddle.co/Jensen_Huang",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "moto-perpetuo.com",
+      "url": "https://moto-perpetuo.com/nvidia-ceo-jensen-huang-commitment-san-francisco-opera/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "narratives.insidehighered.com",
+      "url": "https://narratives.insidehighered.com/oregon-state-collaborative-innovation-complex/index.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "news.artnet.com",
+      "url": "https://news.artnet.com/art-world/nividia-fundraising-campaign-california-college-arts-2614873",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "observer.com",
+      "url": "https://observer.com/2024/06/nvidia-jensen-huang-net-worth-philanthropy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "observer.com",
+      "url": "https://observer.com/2025/02/nvidia-jensen-huang-donates-nonprofit-arts-college/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "operawire.com",
+      "url": "https://operawire.com/?p=104905",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "operawire.com",
+      "url": "https://operawire.com/san-francisco-opera-earns-major-multi-year-gift-from-jensen-lori-huang/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "skillnation.in",
+      "url": "https://skillnation.in/posts/nvidia-ceo-arts-college-donation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "benzinga.com",
+      "url": "https://www.benzinga.com/markets/tech/25/12/49200174/jensen-huang-was-mistakenly-sent-to-a-kentucky-reform-school-where-he-cleaned-bathrooms-while-his-brother-worked-on-tobacco-farms",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "benzinga.com",
+      "url": "https://www.benzinga.com/news/education/25/06/45983347/jensen-huang-gave-12-6-million-to-charity-then-nvidias-stock-made-it-billions",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2025-02-28/nvidia-nvda-ceo-huang-gives-22-5-million-to-save-unsung-arts-college",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2025-11-26/nvidia-s-rally-means-ceo-s-foundation-must-double-giving-again",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "britannica.com",
+      "url": "https://www.britannica.com/money/Jensen-Huang",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "businessinsider.com",
+      "url": "https://www.businessinsider.com/jensen-huang-net-worth?op=1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "celebritynetworth.com",
+      "url": "https://www.celebritynetworth.com/articles/billionaire-news/nvidia-jensen-charity/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "craincurrency.com",
+      "url": "https://www.craincurrency.com/philanthropy/nvidia-ceo-jensen-huang-gives-225-million-save-cash-starved-arts-college",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "facebook.com",
+      "url": "https://www.facebook.com/bloombergbusiness/posts/the-jen-hsun-and-lori-huang-foundation-donated-more-than-126-million-last-year-a/1266482305337860/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "factsnippet.com",
+      "url": "https://www.factsnippet.com/site/facts-about-jensen-huang.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "finance-monthly.com",
+      "url": "https://www.finance-monthly.com/jensen-huang-nvidia-14b-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "kedglobal.com",
+      "url": "https://www.kedglobal.com/korean-chipmakers/newsView/ked202602090007",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "latimes.com",
+      "url": "https://www.latimes.com/entertainment-arts/story/2025-12-01/la-et-cm-monkey-king-review-san-francisco-opera",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "newsbytesapp.com",
+      "url": "https://www.newsbytesapp.com/news/business/who-is-nvidia-ceo-and-co-founder-jensen-huang/story",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "sfchronicle.com",
+      "url": "https://www.sfchronicle.com/bayarea/article/jensen-huang-sf-opera-21200130.php",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "techi.com",
+      "url": "https://www.techi.com/jensen-huang-net-worth/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "tradelineinc.com",
+      "url": "https://www.tradelineinc.com/news/2024-6/oregon-state-university-breaks-ground-huang-collaborative-innovation-complex",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "tryalma.com",
+      "url": "https://www.tryalma.com/learn/jensen-huang-immigration-story",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "veniccio.com",
+      "url": "https://www.veniccio.com/blogs/news/nvidia-ceo-jensen-huang-gives-major-multi-year-donation-to-san-francisco-opera",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
+    },
+    {
+      "publisher": "zgf.com",
+      "url": "https://www.zgf.com/work/5754-oregon-state-university-jen-hsun-huang-and-lori-mills-huang-collaborative-innovation-complex",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-1fbba143ceeff3ce"
     }
   ]
 }

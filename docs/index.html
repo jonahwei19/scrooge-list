@@ -21,7 +21,7 @@
 </script>
 <style>
 :root{
-  --paper:#F3ECD9;--paper-mid:#E7DCC1;--paper-deep:#D8C9A4;--paper-shadow:#C9B78A;
+  --paper:#FDFAF2;--paper-mid:#F7F0DC;--paper-deep:#ECDFBE;--paper-shadow:#D8C9A6;
   --ink:#19130B;--ink-soft:#3C2F22;--ink-fade:#6E5E46;--ink-ghost:#9F8E70;
   --rust:#8B2E1F;--rust-dark:#5D1C12;--rust-ink:#4A1409;
   --gilt:#8C6B2D;--sepia:#735A3E;--rule:#22180E;
@@ -58,12 +58,12 @@ body{
     var(--paper);
 }
 .grain{
-  position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.55;mix-blend-mode:multiply;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  position:fixed;inset:0;pointer-events:none;z-index:2;opacity:.13;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.32 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 [data-theme="dark"] .grain{opacity:.18;mix-blend-mode:screen;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.92 0 0 0 0 0.82 0 0 0 0 0.64 0 0 0 1 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
 .foxing{
-  position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.5;mix-blend-mode:multiply;
+  position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.13;mix-blend-mode:multiply;
   background-image:
     radial-gradient(circle at 8% 12%, rgba(140,107,45,.14), transparent 3%),
     radial-gradient(circle at 92% 22%, rgba(115,90,62,.1), transparent 2.5%),
@@ -91,7 +91,10 @@ body{
   font-variation-settings:"opsz" 72,"SOFT" 40;
   font-size:clamp(1.35rem,2.2vw,1.85rem);
   line-height:1;letter-spacing:-.006em;color:var(--ink);
-  margin:0 0 14px;
+  margin:0 0 36px;
+}
+.wordmark::after{
+  content:"";display:block;width:52px;height:1px;background:var(--ink-fade);opacity:.5;margin-top:16px;
 }
 .wordmark .article{font-weight:400;font-style:italic;font-variation-settings:"opsz" 36,"SOFT" 80;color:var(--ink-fade);margin-right:.24em}
 .deck{
@@ -255,6 +258,28 @@ body.saint-view .section-head h2{color:var(--green)}
   font-family:var(--display);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;
   font-variation-settings:"opsz" 9,"SOFT" 60;
 }
+.ledger-row.ledger-head{
+  border-bottom:1px solid var(--rule);padding:6px 6px 8px;
+  font-family:var(--display);font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink-fade);font-variation-settings:"opsz" 9,"SOFT" 60;
+  background:transparent;
+}
+.ledger-row.ledger-head:hover{background:transparent}
+.ledger-row.ledger-head .ledger-name,
+.ledger-row.ledger-head .ledger-pct{
+  font-family:var(--display);font-weight:500;font-style:normal;
+  font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-fade);
+  font-variation-settings:"opsz" 9,"SOFT" 60;
+}
+.ledger-track-axis{
+  display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  font-family:var(--display);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-fade);font-variation-settings:"opsz" 9,"SOFT" 60;
+  border-bottom:1px solid var(--ink-ghost);padding-bottom:4px;
+  font-variant-numeric:tabular-nums;
+}
+.ledger-track-axis .axis-label{flex:1;text-align:center;letter-spacing:.08em;text-transform:none;font-style:italic;color:var(--ink-soft);font-size:.7rem}
+.ledger-track-axis .axis-tick.r{color:var(--rust)}
 .ledger-row.divider span{
   display:inline-block;padding-right:12px;background:var(--paper);position:relative;
 }
@@ -393,14 +418,9 @@ body.saint-view .section-head h2{color:var(--green)}
 
   <h1 class="wordmark"><span class="article">The</span>Scrooge List</h1>
 
-  <p class="deck"><span id="cohortCount">—</span> US billionaires who <em>haven't given what they could</em>.</p>
+  <p class="deck">There is a perverse incentive in philanthropy: the more you give, the more likely you are to make a mistake, get criticized, and <em>give less</em>. Those who do not give do not get criticized.</p>
 
-  <p class="subdeck">US philanthropy rewards the <em>signal</em> of giving — pledges, foundations named after you, capital parked in LLCs — more than the act of giving. This is a ledger of the billionaires where that gap is widest, sourced to the documents and tiered by how visible the not-giving is. <a href="methodology.html">How we sort</a>.</p>
-
-  <blockquote class="marley">
-    <p>“Mankind was my business. The common welfare was my business; charity, mercy, forbearance, and benevolence, were, all, my business. The dealings of my trade were but a drop of water in the comprehensive ocean of my business.”</p>
-    <cite>Jacob Marley’s ghost · <em>A Christmas Carol</em>, 1843</cite>
-  </blockquote>
+  <p class="subdeck">With science funding cut and public goods retreating, philanthropic capital matters more than ever. This project makes the <span id="cohortCount">—</span> US Scrooges more transparent. <a href="methodology.html">How we sort</a>.</p>
 
   <div class="ledger-strip" id="ledgerStrip">
     <!-- populated by JS -->
@@ -763,7 +783,17 @@ function renderDistribution(bs) {
     return (b.shortfall_5pct_usd || 0) - (a.shortfall_5pct_usd || 0);
   });
 
-  let html = '';
+  let html = `<div class="ledger-row ledger-head" aria-hidden="true">
+    <span class="ledger-name">Subject</span>
+    <span class="ledger-rank">#</span>
+    <span class="ledger-track-axis">
+      <span class="axis-tick l">0%</span>
+      <span class="axis-label">Observable giving ÷ (5% × liquid × tenure) capacity</span>
+      <span class="axis-tick r">100% · benchmark</span>
+    </span>
+    <span class="ledger-pct">% of cap</span>
+    <span class="ledger-meta">Flag</span>
+  </div>`;
   let lastTier = null;
   let tierRank = 0;
   rows.forEach(b => {

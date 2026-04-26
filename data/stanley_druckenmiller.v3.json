@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire v3 record, schema matches larry_ellison.v3.json. Every dollar has source_url + retrieved_at. Druckenmiller is the textbook counter-example to Ellison: did NOT sign the Giving Pledge (explicitly declined), yet has given multiples of what he is expected to have given under the 10% norm. Tier A VERIFIED ON TRACK / FULFILLING.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research + regen_v3@sha256-09b1c02b37684e76",
   "person": {
     "name_display": "Stanley Druckenmiller",
     "name_legal": "Stanley Freeman Druckenmiller",
@@ -175,24 +175,6 @@
       "dedup_note": "Paid from Druckenmiller Foundation. This $100M IS inside the 2022 grants_out total of $173.9M. DO NOT add separately \u2014 keeping this event for provenance, but it is a subset of druck_found_2022."
     },
     {
-      "event_id": "druck_hcz_cumulative",
-      "event_role": "direct_gift",
-      "year_range": [
-        2006,
-        2021
-      ],
-      "donor_entity": "Druckenmiller Foundation + personal",
-      "recipient": "Harlem Children's Zone",
-      "amount_usd": 100000000,
-      "amount_usd_note": "~$100M cumulative estimate. Confirmed components: $25M in 2006, $46M+ across 2009-2011 per Inside Philanthropy.",
-      "source_type": "announcement",
-      "source_url": "https://www.insidephilanthropy.com/home/2014-1-22-whos-the-harlem-childrens-zone-100-million-donor-html",
-      "retrieved_at": "2026-04-24",
-      "confidence": "medium",
-      "dedup_note": "Overlaps with foundation grants_out for 2019-2024. The 2006-2018 portion ($~80M estimated) is NOT captured in the observable 2019-2024 window and should add to cumulative figures. The 2019+ portion IS inside foundation grants_out \u2014 do not double-count. Druckenmiller chaired HCZ board; he is HCZ's largest donor by far.",
-      "source_verification_status": "dead_link_likely_fabricated"
-    },
-    {
       "event_id": "druck_bluemeridian_2017_2021",
       "event_role": "direct_gift",
       "year_range": [
@@ -242,6 +224,139 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "Mix of foundation-paid and personal. Portion within 2019-2024 foundation window IS inside grants_out. Earlier portion adds to cumulative giving."
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "Druckenmiller Foundation",
+      "donor_ein": "13-3735187",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 51924088.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2015; end-year assets $1080.1M; payout rate 4.8%.",
+      "regen_source": "propublica",
+      "event_id": "stanley_druckenmiller_grant_out_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "Druckenmiller Foundation",
+      "donor_ein": "13-3735187",
+      "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+      "amount_usd": 96941930.0,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
+      "confidence": "high",
+      "note": "ProPublica 990-PF aggregate for fiscal-year 2021; end-year assets $1579.8M; payout rate 6.1%.",
+      "regen_source": "propublica",
+      "event_id": "stanley_druckenmiller_grant_out_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "amount_usd": 200000,
+      "confidence": "high",
+      "date": null,
+      "date_precision": "month",
+      "donor_entity": "Stanley Druckenmiller",
+      "event_role": "political",
+      "extraction_evidence": "contributed $200,000 to the group in late September",
+      "extraction_note": "Druckenmiller contributed $200,000 to Nikki Haley's Super PAC in late September 2024, according to FEC filings.",
+      "recipient": "Nikki Haley's Super PAC (SFA Fund Inc.)",
+      "source_type": "news_article",
+      "source_url": "https://dailycaller.com/2024/02/01/dem-donors-gop-billionaires-wall-street-execs-new-filings-show-gave-nikki-haleys-super-pac-sfa-fund-inc/",
+      "year": 2024,
+      "regen_query": "\"Stanley Druckenmiller\" FEC OR PAC contribution",
+      "event_id": "stanley_druckenmiller_political_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "amount_usd": 705000000,
+      "confidence": "high",
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Stanley Druckenmiller",
+      "event_role": "direct_gift",
+      "extraction_evidence": "Druckenmiller donated $705 million to foundations that support medical research, education, and anti-poverty",
+      "extraction_note": "Druckenmiller donated $705 million to foundations supporting medical research, education, and anti-poverty in 2009.",
+      "recipient": "foundations supporting medical research, education, and anti-poverty",
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Stanley_Druckenmiller",
+      "year": 2009,
+      "regen_query": "\"Stanley Druckenmiller\" donates million",
+      "event_id": "stanley_druckenmiller_direct_gift_2009_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "amount_usd": 100000000,
+      "confidence": "high",
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Fiona and Stanley Druckenmiller",
+      "event_role": "direct_gift",
+      "extraction_evidence": "Druckenmillers commit $100 million to Memorial Sloan Kettering",
+      "extraction_note": "The Druckenmillers committed $100 million to Memorial Sloan Kettering to support early-stage, innovative translational research through the Fiona and Stanley Druckenmiller Presidential Innovation Fund.",
+      "recipient": "Memorial Sloan Kettering",
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/druckenmillers-commit-100-million-to-memorial-sloan-kettering",
+      "year": null,
+      "regen_query": "\"Stanley Druckenmiller\" pledges OR commits OR announces",
+      "event_id": "stanley_druckenmiller_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "amount_usd": 100000000,
+      "confidence": "high",
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stanley Druckenmiller",
+      "event_role": "grant_out",
+      "extraction_evidence": "$100 million grant for a neurological institute at New York University's Langone Medical Center",
+      "extraction_note": "Stanley Druckenmiller made a $100 million grant for a neurological institute at NYU's Langone Medical Center.",
+      "recipient": "New York University's Langone Medical Center",
+      "source_type": "other",
+      "source_url": "https://www.bridgespan.org/insights/stanley-druckenmiller",
+      "year": null,
+      "regen_query": "\"Stanley Druckenmiller\" donates million",
+      "event_id": "stanley_druckenmiller_grant_out_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "amount_usd": null,
+      "confidence": "medium",
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stanley Druckenmiller",
+      "event_role": "political",
+      "extraction_evidence": "Contributions from just three billionaires, Nelson Peltz, Jeffrey Yass and Stanley Druckenmiller...added up to almost $1 million for the pro-Scott Opportunity Matters Fund Action PAC",
+      "extraction_note": "Stanley Druckenmiller made a contribution to the pro-Scott Opportunity Matters Fund Action PAC in the first half of 2023, as part of a group of three billionaires whose combined contributions totaled almost $1 million.",
+      "recipient": "Opportunity Matters Fund Action PAC",
+      "source_type": "news_article",
+      "source_url": "https://www.cnbc.com/2023/07/31/gop-billionaires-flood-tim-scott-pacs-as-desantis-campaign-stalls.html",
+      "year": 2023,
+      "regen_query": "\"Stanley Druckenmiller\" FEC OR PAC contribution",
+      "event_id": "stanley_druckenmiller_political_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -266,6 +381,44 @@
       "source_url": "https://en.wikipedia.org/wiki/Stanley_Druckenmiller",
       "retrieved_at": "2026-04-24",
       "notes": "Druckenmiller closed Duquesne Capital Management in August 2010 (then $12B AUM) explicitly citing desire to spend more time on philanthropy. Reconstituted as Duquesne Family Office. This is a rare case of a hedge fund manager voluntarily stepping back from the business to focus on giving."
+    },
+    {
+      "amount_usd": 705000000,
+      "confidence": "high",
+      "date": "2018-12-05",
+      "date_precision": "day",
+      "donor_entity": "Druckenmiller Foundation",
+      "event_role": "announcement",
+      "extraction_evidence": "Druckenmiller Foundation Announces $705 Million in Gifts From Founders",
+      "extraction_note": "Druckenmiller Foundation announced $705 million in gifts from founders.",
+      "recipient": "unspecified",
+      "source_type": "other",
+      "source_url": "https://www.influencewatch.org/person/stanley-druckenmiller/",
+      "year": 2018,
+      "regen_query": "\"Stanley Druckenmiller\" pledges OR commits OR announces",
+      "event_id": "stanley_druckenmiller_announcement_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "amount_usd": 705000000,
+      "confidence": "high",
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stanley Druckenmiller",
+      "event_role": "pledge",
+      "extraction_evidence": "Stanley Druckenmiller and wife Fiona, who pledged $705 million to their Druckenmiller Foundation",
+      "extraction_note": "Stanley Druckenmiller and wife Fiona pledged $705 million to their Druckenmiller Foundation.",
+      "recipient": "Druckenmiller Foundation",
+      "source_type": "news_article",
+      "source_url": "https://www.institutionalinvestor.com/article/2btgac4we8x2ur3aamznk/corner-office/more-hedge-fund-managers-join-giving-pledge",
+      "year": null,
+      "regen_query": "\"Stanley Druckenmiller\" \"giving pledge\"",
+      "event_id": "stanley_druckenmiller_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -465,12 +618,6 @@
       "used_for": "$705M 2009 founders' contribution (transfer_in)"
     },
     {
-      "url": "https://www.insidephilanthropy.com/home/2014-1-22-whos-the-harlem-childrens-zone-100-million-donor-html",
-      "retrieved_at": "2026-04-24",
-      "used_for": "HCZ cumulative ~$100M, $25M in 2006, $46M 2009-2011",
-      "source_verification_status": "dead_link_likely_fabricated"
-    },
-    {
       "url": "https://hcz.org/druckenmiller/",
       "retrieved_at": "2026-04-24",
       "used_for": "Harlem Children's Zone Druckenmiller relationship and board chair role"
@@ -544,6 +691,54 @@
       "url": "https://www.instrumentl.com/990-report/druckenmiller-foundation",
       "retrieved_at": "2026-04-24",
       "used_for": "Foundation 990 summary corroboration"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-28-29",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76"
+    },
+    {
+      "publisher": "dailycaller.com",
+      "url": "https://dailycaller.com/2024/02/01/dem-donors-gop-billionaires-wall-street-execs-new-filings-show-gave-nikki-haleys-super-pac-sfa-fund-inc/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76"
+    },
+    {
+      "publisher": "bridgespan.org",
+      "url": "https://www.bridgespan.org/insights/stanley-druckenmiller-steps-into-the-philanthropy-spotlight",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76"
+    },
+    {
+      "publisher": "devex.com",
+      "url": "https://www.devex.com/organizations/druckenmiller-foundation-31063",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76"
+    },
+    {
+      "publisher": "goodreturns.in",
+      "url": "https://www.goodreturns.in/stanley-druckenmiller-net-worth-and-biography-blnr327.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76"
+    },
+    {
+      "publisher": "influencewatch.org",
+      "url": "https://www.influencewatch.org/person/stanley-druckenmiller/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76"
+    },
+    {
+      "publisher": "institutionalinvestor.com",
+      "url": "https://www.institutionalinvestor.com/article/2btgac4we8x2ur3aamznk/corner-office/more-hedge-fund-managers-join-giving-pledge",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76"
+    },
+    {
+      "publisher": "politico.com",
+      "url": "https://www.politico.com/news/2023/07/31/chris-christie-super-pac-2024-campaign-00109070",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-09b1c02b37684e76"
     }
   ],
   "summary_150_words": "Stanley Druckenmiller (Duquesne Capital founder, ex-Soros, ~$10B net worth per Bloomberg) is the textbook counter-example to the Giving Pledge critique. He explicitly DECLINED to sign the Pledge, calling it performative and citing Andrew Carnegie's anonymity ethic \u2014 yet the Druckenmiller Foundation (EIN 13-3735187, est. 1993) holds $1.77B in assets and has disbursed $663M over 2019-2024 alone, at a 7.7% payout rate with 2.2% overhead and zero officer compensation. He chairs Blue Meridian Partners (collaborative $4.5B+ poverty fund, $151M from his foundation 2017-2021); gave $100M to NYU Langone Neuroscience (2009), $100M to MSK Druckenmiller Presidential Innovation Fund (2022), ~$100M cumulative to Harlem Children's Zone (board chair), and $40M+ to Bowdoin. Zero red flags, no DAF transfers, minimal political giving (~$2.5M/decade, establishment-Republican primary donor who voted neither in 2024). Tier A Verified On Track \u2014 has given more than the 10% norm expects of him, without signing any pledge."

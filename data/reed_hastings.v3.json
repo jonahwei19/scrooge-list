@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record matching larry_ellison.v3.json schema. Every dollar has source_url + retrieved_at. Events scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political). Tier classification happens downstream. CRITICAL caveat for Hastings: most giving is routed through the Hastings Fund \u2014 a donor-advised fund (DAF) at Silicon Valley Community Foundation (SVCF). We observe inflows to the DAF (announced via SEC Form 4 and press) but NOT outflows to ultimate charities (DAFs are donor-opaque by design). Announced direct gifts like UNCF/Morehouse/Spelman are the pass-through destinations from that DAF. See dedup_note on each event.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research on Reed Hastings + regen_v3@sha256-84f2e39380a340a7 + regen_v3@sha256-0074ffb7a26d23c7",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research on Reed Hastings + regen_v3@sha256-84f2e39380a340a7 + regen_v3@sha256-0074ffb7a26d23c7 + regen_v3@sha256-853c935b2898ca54",
   "person": {
     "name_display": "Reed Hastings",
     "name_legal": "Wilmot Reed Hastings Jr.",
@@ -146,6 +146,595 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Chronicle of Philanthropy reports Hastings gave $1.6B of stock in 2024 to unnamed charity/charities per SEC Form 4 filings. This equals the sum of hastings_svcf_jan2024 ($1.1B) + hastings_svcf_dec2024 ($500M). Do NOT double-count with the transfer_in rows. This row exists only as an external cross-check."
+    },
+    {
+      "event_role": "transfer_in",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "unspecified",
+      "amount_usd": 1100000000,
+      "source_type": "news_article",
+      "source_url": "https://biztoc.com/x/00f08f332d29288b",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings donated $1.1 billion in shares to a foundation with $10 billion in assets.",
+      "extraction_evidence": "Reed Hastings donated to a foundation with $10 billion in assets after gifts from tech founders",
+      "regen_query": "\"Reed Hastings\" foundation transfer assets contributed",
+      "event_id": "reed_hastings_transfer_in_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 1100000000,
+      "source_type": "news_article",
+      "source_url": "https://biztoc.com/x/b1eb3d5263125779",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings donated 2 million shares of Netflix stock worth approximately $1.1 billion to the Silicon Valley Community Foundation.",
+      "extraction_evidence": "Reed Hastings has given 2 million shares of the streaming company \u2014 currently worth about $1.1 billion \u2014 to the Silicon Valley Community Foundation.",
+      "regen_query": "\"Reed Hastings\" foundation grants",
+      "event_id": "reed_hastings_grant_out_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2018,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Democratic rival to Newsom",
+      "amount_usd": 7000000,
+      "source_type": "news_article",
+      "source_url": "https://calmatters.org/politics/2021/05/newsom-recall-campaigns-funding/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings gave $7 million to a committee backing a Democratic rival to Newsom in 2018.",
+      "extraction_evidence": "Hastings gave $7 million to a committee backing a Democratic rival to Newsom in 2018",
+      "regen_query": "Reed Hastings \"Gavin Newsom\" recall 2021 OR \"No on Recall\" donation committee",
+      "event_id": "reed_hastings_political_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Spelman College",
+      "amount_usd": 40000000,
+      "source_type": "news_article",
+      "source_url": "https://deadline.com/2020/06/netflix-reed-hastings-wife-patty-quillin-donation-historically-black-colleges-spelman-morehouse-1202961402/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings and wife Patty Quillin donated $40 million to Spelman College as part of a $120M gift to three HBCUs.",
+      "extraction_evidence": "The donation reflects $40 million gifts to each of the three recipients",
+      "regen_query": "Reed Hastings \"Morehouse College\" OR \"Spelman College\" OR \"UNCF\" 2020 gift $40 million education endowment",
+      "event_id": "reed_hastings_direct_gift_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Harris super PAC",
+      "amount_usd": 7000000,
+      "source_type": "news_article",
+      "source_url": "https://eu.usatoday.com/story/news/factcheck/2024/07/31/netflix-reed-hastings-7-million-harris-fact-check/74599948007/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings donated $7 million to a super PAC affiliated with Harris.",
+      "extraction_evidence": "Reed Hastings, the company's co-founder and former CEO, donated to a super PAC affiliated with Harris.",
+      "regen_query": "\"Reed Hastings\" FEC OR PAC contribution",
+      "event_id": "reed_hastings_political_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "unspecified",
+      "amount_usd": 1100000000,
+      "source_type": "news_article",
+      "source_url": "https://finance.yahoo.com/news/netflix-reed-hastings-didn-t-215738339.html",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings gave 2 million shares (valued at $1.1 billion) to an unnamed entity via a bona fide gift transaction.",
+      "extraction_evidence": "Hastings giving the 2 million shares to an unnamed entity. The filing includes a transaction code marked \"G,\" which indicates a \"bona fide gift.\"",
+      "regen_query": "\"Reed Hastings\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "reed_hastings_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.resetera.com/threads/reed-hastings-grants-1-1-billion-of-netflix-stock-to-unnamed-beneficiary-as-a-gift.810690/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings granted 2 million shares of Netflix stock to the Silicon Valley Community Foundation as a gift.",
+      "extraction_evidence": "Hastings granted the 2 million shares to the Silicon Valley Community Foundation",
+      "regen_query": "Reed Hastings SEC Form 4 2016 2017 2018 2019 2020 2021 2022 2023 stock gift charitable",
+      "event_id": "reed_hastings_transfer_in_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2021,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Newsom recall campaign",
+      "amount_usd": 3000000,
+      "source_type": "news_article",
+      "source_url": "https://laist.com/news/politics/a-look-at-who-is-bankrolling-the-newsom-recall-campaigns",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings contributed $3 million to the Newsom recall campaign.",
+      "extraction_evidence": "Hastings. \"I'm surprised, with the trouble that [Newsom is] in, that it was only $3 million,\" she said.",
+      "regen_query": "Reed Hastings \"Gavin Newsom\" recall 2021 OR \"No on Recall\" donation committee",
+      "event_id": "reed_hastings_political_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings and Patty Quillin",
+      "recipient": "Tougaloo College",
+      "amount_usd": 5000000,
+      "source_type": "other",
+      "source_url": "https://lifestylesmagazine.com/latest-news/10-million-gift-from-reed-hastings-and-patty-quillin/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings and Patty Quillin gave $5 million to Tougaloo College for endowment and scholarship funding.",
+      "extraction_evidence": "$5 million will go to Tougaloo College to bolster the school's endowment and provide annual scholarship funding",
+      "regen_query": "\"Patty Quillin\" OR \"Patricia Quillin\" Hastings Fund donation OR gift separate from Reed",
+      "event_id": "reed_hastings_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Morehouse College",
+      "amount_usd": 40000000,
+      "source_type": "news_article",
+      "source_url": "https://news.morehouse.edu/inside-morehouse/morehouse-college-student-success-program-receives-40-million-donation-from-philanthropists-patty-quillin-and-reed-hastings",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings donated $40 million to Morehouse College's Student Success Program.",
+      "extraction_evidence": "Quillin and Hastings are also donating $40 million each to Spelman College and the UNCF",
+      "regen_query": "Reed Hastings \"Morehouse College\" OR \"Spelman College\" OR \"UNCF\" 2020 gift $40 million education endowment",
+      "event_id": "reed_hastings_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Bowdoin College",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/bowdoin-college-receives-50-million-from-reed-hastings",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings made a $50 million gift to Bowdoin College for an AI-focused initiative.",
+      "extraction_evidence": "$50 million gift from alumnus, Netflix co-founder, and Giving Pledge signatory Reed Hastings",
+      "regen_query": "Reed Hastings Bowdoin College 1983 alumni fund OR capital campaign OR reunion gift",
+      "event_id": "reed_hastings_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "United Negro College Fund",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/reed-hastings-creates-100-million-education-fund",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings' education fund made inaugural grants totaling $1.5 million split between UNCF and Hispanic Foundation of Silicon Valley.",
+      "extraction_evidence": "inaugural grants totaling $1.5 million to the United Negro College Fund and Hispanic Foundation of Silicon Valley",
+      "regen_query": "\"Reed Hastings\" pledges OR commits OR announces",
+      "event_id": "reed_hastings_grant_out_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2017,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Reed Hastings",
+      "recipient": "Shirley Weber",
+      "amount_usd": 2000,
+      "source_type": "news_article",
+      "source_url": "https://sandiegofreepress.org/2018/05/an-open-letter-to-the-california-charter-schools-association/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings contributed $2,000 to San Diego Assembly Woman Shirley Weber since January 2017.",
+      "extraction_evidence": "Reed Hastings contributed $2,000 to San Diego Assembly Women Shirley Weber",
+      "regen_query": "Reed Hastings \"California Charter Schools Association\" OR \"CCSA\" donation OR sponsorship 2018 2019 2020",
+      "event_id": "reed_hastings_political_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2016,
+      "date": "2016-01-12",
+      "date_precision": "day",
+      "donor_entity": "Reed Hastings",
+      "recipient": "United Negro College Fund",
+      "amount_usd": 750000,
+      "source_type": "news_article",
+      "source_url": "https://techcrunch.com/2016/01/12/netflix-ceo-reed-hastings-announces-100m-philanthropic-education-fund/",
+      "confidence": "medium",
+      "extraction_note": "Reed Hastings announced the Hastings Fund with initial gifts totaling $1.5 million split between UNCF and Hispanic Foundation of Silicon Valley.",
+      "extraction_evidence": "two gifts totaling $1.5 million for the United Negro College Fund and the Hispanic Foundation of Silicon Valley",
+      "regen_query": "\"Reed Hastings\" foundation 990-PF",
+      "event_id": "reed_hastings_grant_out_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "UNCF, Spelman College and Morehouse College",
+      "amount_usd": 120000000,
+      "source_type": "other",
+      "source_url": "https://uncf.org/annual-report-2021/historic-financial-support-ignited-with-patty-quillen-and-reed-hastings-120-million-gift",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings provided a $120 million gift to UNCF, Spelman College and Morehouse College, described as the single largest philanthropic investment in HBCU history at that time.",
+      "extraction_evidence": "Patty Quillin and Reed Hastings provided a $120 million gift to UNCF, Spelman College and Morehouse College.",
+      "regen_query": "\"Patty Quillin\" OR \"Patricia Quillin\" Hastings Fund donation OR gift separate from Reed",
+      "event_id": "reed_hastings_direct_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings and Patty Quillin",
+      "recipient": "Tougaloo College",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://variety.com/2022/digital/news/reed-hastings-donate-10-million-tougaloo-hbcu-1235186140/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings and his wife Patty Quillin are personally donating $10 million to Tougaloo College, an HBCU in Mississippi.",
+      "extraction_evidence": "Reed Hastings and his wife, Patty Quillin, are personally donating $10 million to Tougaloo College",
+      "regen_query": "\"Patty Quillin\" OR \"Patricia Quillin\" Hastings Fund donation OR gift separate from Reed",
+      "event_id": "reed_hastings_direct_gift_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Minerva University",
+      "amount_usd": 20000000,
+      "source_type": "news_article",
+      "source_url": "https://variety.com/2023/digital/news/netflix-reed-hastings-grant-minerva-university-1235487161/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings donating $20 million to Minerva University, a next-generation institution of higher education.",
+      "extraction_evidence": "Netflix founder and co-CEO Reed Hastings is donating $20 million to Minerva University",
+      "regen_query": "\"Reed Hastings\" donates million",
+      "event_id": "reed_hastings_direct_gift_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 500000000,
+      "source_type": "news_article",
+      "source_url": "https://variety.com/2024/digital/news/reed-hastings-500-million-netflix-shares-gift-silicon-valley-community-foundation-1236087080/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings gave 790,000 Netflix shares worth nearly $500 million to the Silicon Valley Community Foundation.",
+      "extraction_evidence": "Reed Hastings has given away 790,000 shares of Netflix -- worth nearly $500 million -- as a gift to the Silicon Valley Community Foundation",
+      "regen_query": "\"Reed Hastings\" foundation 990-PF",
+      "event_id": "reed_hastings_direct_gift_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Silicon Valley Community Foundation",
+      "amount_usd": 1100000000,
+      "source_type": "news_article",
+      "source_url": "https://variety.com/2024/digital/news/reed-hastings-netflix-stock-silicon-valley-community-foundation-1235891145/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings gave 2 million shares of Netflix stock worth approximately $1.1 billion to the Silicon Valley Community Foundation.",
+      "extraction_evidence": "Reed Hastings, Netflix's co-founder and executive chairman, has given 2 million shares of the streaming company \u2014 currently worth about $1.1 billion \u2014 to the Silicon Valley Community Foundation.",
+      "regen_query": "\"Reed Hastings\" foundation grants",
+      "event_id": "reed_hastings_grant_out_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2026,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "White Stork",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://variety.com/2026/tv/news/netflix-reed-hastings-donates-5-million-ukraine-charity-1236670831/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings donated $5 million to Ukraine charity White Stork.",
+      "extraction_evidence": "Reed Hastings, the co-founder, chairman and former CEO of Netflix, has donated $5 million to Ukraine charity White Stork.",
+      "regen_query": "\"Reed Hastings\" donates million",
+      "event_id": "reed_hastings_direct_gift_2026_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Bowdoin College",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.bowdoin.edu/hastings-ai-initiative/index.html",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings made a transformative gift to Bowdoin College to establish an initiative for AI and Humanity.",
+      "extraction_evidence": "With a transformative gift from Reed Hastings '83, Bowdoin aims to establish itself as a leading voice",
+      "regen_query": "\"Hastings Initiative for AI and Humanity\" Bowdoin 2025 endowment OR faculty OR research center",
+      "event_id": "reed_hastings_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Democratic PAC",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://www.businessinsider.com/tech-execs-2020-political-donations-reed-hastings-dustin-moskovitz-report-2020-11",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings and his wife Patty Quillin donated more than $5 million, mostly to a Democratic PAC supporting close Senate races ahead of the 2020 election.",
+      "extraction_evidence": "Reed Hastings, who \u2014 along with his wife, Patty Quillin \u2014 donated more than $5 million, mostly to a Democratic PAC",
+      "regen_query": "\"Reed Hastings\" FEC OR PAC contribution",
+      "event_id": "reed_hastings_political_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Kamala Harris presidential campaign",
+      "amount_usd": 7000000,
+      "source_type": "news_article",
+      "source_url": "https://www.essence.com/news/netflix-co-founder-donates-7-million-harris-campaign/",
+      "confidence": "high",
+      "extraction_note": "Netflix co-founder Reed Hastings donated $7 million to the Kamala Harris presidential campaign.",
+      "extraction_evidence": "Netflix co-founder Reed Hastings donated $7 million to the Kamala Harris presidential campaign.",
+      "regen_query": "Reed Hastings \"Kamala Harris\" 2024 OR \"Harris for President\" donation maximum",
+      "event_id": "reed_hastings_political_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": "2020-06-17",
+      "date_precision": "day",
+      "donor_entity": "Reed Hastings",
+      "recipient": "Morehouse College, Spelman College, UNCF",
+      "amount_usd": 140000000,
+      "source_type": "news_article",
+      "source_url": "https://www.gpb.org/news/2020/06/17/netflix-ceo-wife-donate-record-120-million-atlanta-hbcus-uncf",
+      "confidence": "high",
+      "extraction_note": "Netflix CEO Reed Hastings and wife Patty Quillin made a $140 million donation to fund student scholarships at Morehouse College, Spelman College, and UNCF.",
+      "extraction_evidence": "Netflix CEO Reed Hastings and his wife, Patty Quillin, are making the single-largest individual donation to fund student scholarships",
+      "regen_query": "Reed Hastings \"Morehouse College\" OR \"Spelman College\" OR \"UNCF\" 2020 gift $40 million education endowment",
+      "event_id": "reed_hastings_direct_gift_2020_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2016,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Reed Hastings",
+      "recipient": "United Negro College Fund",
+      "amount_usd": 1500000,
+      "source_type": "news_article",
+      "source_url": "https://www.latimes.com/california/story/2020-06-17/netflix-ceo-reed-hastings-donates-120-million-to-support-historically-black-colleges-and-universities",
+      "confidence": "high",
+      "extraction_note": "In 2016, Reed Hastings created a $100 million Hastings Fund toward education, with $1.5 million going to the United Negro College Fund.",
+      "extraction_evidence": "In 2016, he created a $100-million Hastings Fund toward education, $1.5 million of which went toward the United Negro College Fund.",
+      "regen_query": "\"Reed Hastings\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "reed_hastings_direct_gift_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Antonio Villaraigosa",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.latimes.com/projects/california-recall-election-money-newsom-vs-jenner-cox/",
+      "confidence": "medium",
+      "extraction_note": "Hastings donated millions to Democrat Antonio Villaraigosa when he opposed Newsom.",
+      "extraction_evidence": "The streaming mogul donated millions to rival Democrat Antonio Villaraigosa when he opposed Newsom",
+      "regen_query": "Reed Hastings \"Gavin Newsom\" recall 2021 OR \"No on Recall\" donation committee",
+      "event_id": "reed_hastings_political_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "New Schools Venture Fund",
+      "amount_usd": 10000000,
+      "source_type": "blog",
+      "source_url": "https://www.newschools.org/blog/venture-philanthropy/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings donated more than $10 million to the New Schools Venture Fund, a Silicon Valley philanthropy focused on education entrepreneurs.",
+      "extraction_evidence": "he has donated more than $ 10 million",
+      "regen_query": "Reed Hastings \"NewSchools Venture Fund\" board donation OR investment 2015 2016 2017 2018 2019 2020",
+      "event_id": "reed_hastings_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Historically Black Colleges and Universities",
+      "amount_usd": 120000000,
+      "source_type": "other",
+      "source_url": "https://www.peacecorpsconnect.org/forward-reed-hastings-gift/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings and wife Patty Quillin announced a $120 million gift to Historically Black Colleges and Universities.",
+      "extraction_evidence": "He and wife Patty Quillin announced that they were giving $120 million to Historically Black Colleges and Universities.",
+      "regen_query": "\"Reed Hastings\" gift OR donation million",
+      "event_id": "reed_hastings_direct_gift_x_regen7",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Hastings Fund",
+      "recipient": "unspecified",
+      "amount_usd": 1500000,
+      "source_type": "news_article",
+      "source_url": "https://www.philanthropy.com/article/netflix-chief-launches-100-million-education-foundation/",
+      "confidence": "high",
+      "extraction_note": "The first two grants from the Hastings Fund totaling $1.5 million will support college access for minority students.",
+      "extraction_evidence": "The first two grants from the Hastings Fund, totaling $1.5 million, will support college access for minority students",
+      "regen_query": "site:philanthropy.com \"Reed Hastings\" OR \"Hastings Fund\" 2020 2021 2022 2023 2024 2025 grant",
+      "event_id": "reed_hastings_grant_out_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "unspecified",
+      "amount_usd": 1000000,
+      "source_type": "news_article",
+      "source_url": "https://www.philanthropy.com/article/netflix-co-founder-reed-hastings-gives-1-million-to-improve-policing-gifts-roundup",
+      "confidence": "medium",
+      "extraction_note": "Reed Hastings gave $1 million to improve policing, though the specific recipient organization is not named in the snippet.",
+      "extraction_evidence": "Netflix Co-Founder Reed Hastings Gives $1 Million to Improve Policing",
+      "regen_query": "site:philanthropy.com \"Reed Hastings\" OR \"Hastings Fund\" 2020 2021 2022 2023 2024 2025 grant",
+      "event_id": "reed_hastings_direct_gift_x_regen8",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Reed Hastings",
+      "recipient": "Tougaloo College",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://www.santacruzworks.org/news/reed-hastings-patty-quillin-to-donate-10m-to-tougaloo-college-and-brown-university",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings and wife Patty Quillin are donating $10 million total to fund scholarship programs at Tougaloo College and Brown University in 2020.",
+      "extraction_evidence": "Reed Hastings and his wife, producer Patty Quillin, are donating $10 million to fund scholarship programs at Tougaloo College and Brown University",
+      "regen_query": "\"Patty Quillin\" OR \"Patricia Quillin\" Hastings Fund donation OR gift separate from Reed",
+      "event_id": "reed_hastings_direct_gift_2020_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -167,6 +756,139 @@
       "retrieved_at": "2026-04-24",
       "notes": "Signed September 2012 as one of 11 families that year. Joint pledge with wife Patty Quillin. Shortest-worded Giving Pledge letter in the cohort (~55 words).",
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2017,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "The Hastings Fund",
+      "amount_usd": 100000000,
+      "source_type": "other",
+      "source_url": "https://jointventure.org/read-more-profiles/1524-meet-reed-hastings-netflix-and-2017-david-packard-award-recipient",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings founded The Hastings Fund with $100 million in philanthropic capital.",
+      "extraction_evidence": "Hastings founded his own $100 million philanthropic foundation, The Hastings Fund",
+      "regen_query": "Reed Hastings \"Hispanic Foundation of Silicon Valley\" OR \"HFSV\" donation 2016 2017 2018",
+      "event_id": "reed_hastings_announcement_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2015,
+      "date": "2015-02-20",
+      "date_precision": "day",
+      "donor_entity": "Reed Hastings",
+      "recipient": "Rocketship Education",
+      "amount_usd": 2000000,
+      "source_type": "news_article",
+      "source_url": "https://www.bizjournals.com/sanjose/news/2015/02/20/netflix-ceo-reed-hastings-pledges-2-million-to.html",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings pledged $2 million to Rocketship Education to support its Bay Area growth.",
+      "extraction_evidence": "Reed Hastings is giving $2 million to the Redwood City-based nonprofit Rocketship Education",
+      "regen_query": "\"Reed Hastings\" pledges OR commits OR announces",
+      "event_id": "reed_hastings_pledge_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2025,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Bowdoin College",
+      "amount_usd": null,
+      "source_type": "university_press",
+      "source_url": "https://www.bowdoin.edu/news/2025/03/announcing-the-hastings-initiative-for-ai-and-humanity.html",
+      "confidence": "medium",
+      "extraction_note": "Announcement of the Hastings Initiative for AI and Humanity at Bowdoin College, supporting faculty work with AI in teaching, research, and artistic work.",
+      "extraction_evidence": "Announcing the Hastings Initiative for AI and Humanity",
+      "regen_query": "\"Hastings Initiative for AI and Humanity\" Bowdoin 2025 endowment OR faculty OR research center",
+      "event_id": "reed_hastings_announcement_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2020,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Reed Hastings",
+      "recipient": "The Giving Pledge",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.businessinsider.com/netflix-reed-hastings-donated-stock-billion-silicon-valley-community-foundation-2024-1",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings and his wife signed The Giving Pledge in 2020, committing to give away most of their wealth.",
+      "extraction_evidence": "In 2020 Hastings and his wife Patty ... signed The Giving Pledge",
+      "regen_query": "\"Reed Hastings\" \"giving pledge\"",
+      "event_id": "reed_hastings_pledge_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings and Patty Quillin",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.givingpledge.org/pledger/reed-hastings-and-patty-quillin/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings and Patty Quillin pledged a majority of their assets to be invested in others through The Giving Pledge.",
+      "extraction_evidence": "We are thrilled to join with other fortunate people to pledge a majority of our assets to be invested in others",
+      "regen_query": "\"Reed Hastings\" \"giving pledge\"",
+      "event_id": "reed_hastings_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2020,
+      "date": "2020-06-17",
+      "date_precision": "day",
+      "donor_entity": "Reed Hastings",
+      "recipient": "historically Black colleges and universities",
+      "amount_usd": 120000000,
+      "source_type": "news_article",
+      "source_url": "https://www.latimes.com/california/story/2020-06-17/netflix-ceo-reed-hastings-donates-120-million-to-support-historically-black-colleges-and-universities",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings announced a $120 million donation to support historically Black colleges and universities on Wednesday (June 17, 2020).",
+      "extraction_evidence": "The donation announced Wednesday is not Hastings' first gift to benefit historically Black colleges and universities.",
+      "regen_query": "\"Reed Hastings\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "reed_hastings_announcement_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Hastings Fund",
+      "amount_usd": 100000000,
+      "source_type": "news_article",
+      "source_url": "https://www.philanthropy.com/article/netflix-chief-launches-100-million-education-foundation/",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings announced the launch of a $100 million education foundation.",
+      "extraction_evidence": "Reed Hastings announced through Facebook on Tuesday the launch of a $100 million education foundation",
+      "regen_query": "site:philanthropy.com \"Reed Hastings\" OR \"Hastings Fund\" 2020 2021 2022 2023 2024 2025 grant",
+      "event_id": "reed_hastings_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -535,6 +1257,468 @@
       "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0074ffb7a26d23c7"
+    },
+    {
+      "publisher": "biztoc.com",
+      "url": "https://biztoc.com/x/00f08f332d29288b",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "biztoc.com",
+      "url": "https://biztoc.com/x/b1eb3d5263125779",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "calmatters.org",
+      "url": "https://calmatters.org/politics/2021/05/newsom-recall-campaigns-funding/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "deadline.com",
+      "url": "https://deadline.com/2020/06/netflix-reed-hastings-wife-patty-quillin-donation-historically-black-colleges-spelman-morehouse-1202961402/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "eu.usatoday.com",
+      "url": "https://eu.usatoday.com/story/news/factcheck/2024/07/31/netflix-reed-hastings-7-million-harris-fact-check/74599948007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/netflix-reed-hastings-didn-t-215738339.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "impactwealth.org",
+      "url": "https://impactwealth.org/netflixs-reed-hastings-philanthropy-makes-historic-1-1-billion-donation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "jointventure.org",
+      "url": "https://jointventure.org/read-more-profiles/1524-meet-reed-hastings-netflix-and-2017-david-packard-award-recipient",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "laist.com",
+      "url": "https://laist.com/news/politics/a-look-at-who-is-bankrolling-the-newsom-recall-campaigns",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/10-million-gift-from-reed-hastings-and-patty-quillin/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "m.economictimes.com",
+      "url": "https://m.economictimes.com/news/international/us/us-presidential-election-2024-who-has-donated-massive-7-million-to-kamala-harris-how-much-has-she-collected-so-far-details-here/amp_articleshow/112069043.cms",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "mediaconnect.com",
+      "url": "https://mediaconnect.com/fact-check-netflix-did-not-donate-7-million-to-kamala-harris-campaign",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "news.ballotpedia.org",
+      "url": "https://news.ballotpedia.org/2021/05/28/newsom-recall-update-37-filed-candidates-a-new-poll-and-a-3-million-donation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "news.morehouse.edu",
+      "url": "https://news.morehouse.edu/inside-morehouse/morehouse-college-student-success-program-receives-40-million-donation-from-philanthropists-patty-quillin-and-reed-hastings",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/bowdoin-college-receives-50-million-from-reed-hastings",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "sandiegofreepress.org",
+      "url": "https://sandiegofreepress.org/2018/05/an-open-letter-to-the-california-charter-schools-association/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "techcrunch.com",
+      "url": "https://techcrunch.com/2016/01/12/netflix-ceo-reed-hastings-announces-100m-philanthropic-education-fund/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "thegrio.com",
+      "url": "https://thegrio.com/2020/06/17/netflix-ceo-reed-hastings-40-million-hbcu/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "uncf.org",
+      "url": "https://uncf.org/annual-report-2021/historic-financial-support-ignited-with-patty-quillen-and-reed-hastings-120-million-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "variety.com",
+      "url": "https://variety.com/2022/digital/news/reed-hastings-donate-10-million-tougaloo-hbcu-1235186140/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "variety.com",
+      "url": "https://variety.com/2023/digital/news/netflix-reed-hastings-grant-minerva-university-1235487161/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "variety.com",
+      "url": "https://variety.com/2024/biz/news/netflix-reed-hastings-donates-7-million-kamala-harris-campaign-1236085318/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "variety.com",
+      "url": "https://variety.com/2026/tv/news/netflix-reed-hastings-donates-5-million-ukraine-charity-1236670831/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "bizjournals.com",
+      "url": "https://www.bizjournals.com/sanjose/news/2015/02/20/netflix-ceo-reed-hastings-pledges-2-million-to.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "bowdoin.edu",
+      "url": "https://www.bowdoin.edu/hastings-ai-initiative/index.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "bowdoin.edu",
+      "url": "https://www.bowdoin.edu/news/2018/06/slideshow-reunion-2018-day-three.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "bowdoin.edu",
+      "url": "https://www.bowdoin.edu/news/2020/06/reed-hastings-83-makes-120-million-gift-to-black-colleges-and-education-fund.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "bowdoin.edu",
+      "url": "https://www.bowdoin.edu/news/2021/05/alumni-council-announces-nine-award-recipients.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "bowdoin.edu",
+      "url": "https://www.bowdoin.edu/news/2024/01/bowdoin-to-award-common-good-alumni-council-awards-at-reunion-convocation.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "bowdoin.edu",
+      "url": "https://www.bowdoin.edu/news/2024/07/alumni-council-recognizes-ten-alumni.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "bowdoin.edu",
+      "url": "https://www.bowdoin.edu/president/community-messages/2025/03-24.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "brown.edu",
+      "url": "https://www.brown.edu/news/2022-02-21/tougaloo",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "businessinsider.com",
+      "url": "https://www.businessinsider.com/netflix-reed-hastings-donated-stock-billion-silicon-valley-community-foundation-2024-1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "businessinsider.com",
+      "url": "https://www.businessinsider.com/reed-hastings-all-in-on-kamala-harris-7-million-donation-2024-7",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "businessinsider.com",
+      "url": "https://www.businessinsider.com/tech-execs-2020-political-donations-reed-hastings-dustin-moskovitz-report-2020-11",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "cnbctv18.com",
+      "url": "https://www.cnbctv18.com/business/companies/netflix-co-founder-reed-hastings-donates-shares-worth-11-billion-to-charity-18922331.htm",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "dailymail.co.uk",
+      "url": "https://www.dailymail.co.uk/news/article-8432373/Netflix-CEO-Reed-Hastings-donates-120-Million-historically-black-colleges-universities.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "essence.com",
+      "url": "https://www.essence.com/news/netflix-co-founder-donates-7-million-harris-campaign/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "factcheck.org",
+      "url": "https://www.factcheck.org/2024/07/netflix-chairman-not-the-company-reportedly-donated-to-super-pac-supporting-harris/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "factcheck.org",
+      "url": "https://www.factcheck.org/person/reed-hastings/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/michaeltnietzel/2025/03/24/reed-hastings-gives-bowdoin-college-50-million-its-largest-gift-ever/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/michelatindera/2021/09/15/these-billionaires-spent-the-most-on-the-california-recall-election/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "foxbusiness.com",
+      "url": "https://www.foxbusiness.com/lifestyle/netflix-co-founder-reed-hastings-gifts-1-1-billion-in-shares-charity",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "globenewswire.com",
+      "url": "https://www.globenewswire.com/news-release/2020/06/17/2049557/0/en/Patty-Quillin-and-Reed-Hastings-Give-120-Million-to-Support-Historically-Black-Colleges-and-Universities.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "gpb.org",
+      "url": "https://www.gpb.org/news/2020/06/17/netflix-ceo-wife-donate-record-120-million-atlanta-hbcus-uncf",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "hollywoodreporter.com",
+      "url": "https://www.hollywoodreporter.com/business/business-news/netflix-reed-hastings-donating-hbcus-charity-philanthropy-1235169243/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "hollywoodreporter.com",
+      "url": "https://www.hollywoodreporter.com/business/business-news/netflix-reed-hastings-donation-ai-humanity-bowdoin-college-1236171130/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "hollywoodreporter.com",
+      "url": "https://www.hollywoodreporter.com/business/digital/reed-hastings-patty-quillin-brown-tougaloo-donation-1235096504/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "hollywoodreporter.com",
+      "url": "https://www.hollywoodreporter.com/news/general-news/netflix-reed-hastings-kamala-harris-donation-1235956558/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "imdb.com",
+      "url": "https://www.imdb.com/news/ni64720815/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "imdb.com",
+      "url": "https://www.imdb.com/news/ni65722935/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "influencewatch.org",
+      "url": "https://www.influencewatch.org/person/reed-hastings/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "latimes.com",
+      "url": "https://www.latimes.com/california/story/2020-06-17/netflix-ceo-reed-hastings-donates-120-million-to-support-historically-black-colleges-and-universities",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "latimes.com",
+      "url": "https://www.latimes.com/california/story/2021-08-13/recall-reed-hastings-gavin-newsom",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "latimes.com",
+      "url": "https://www.latimes.com/projects/california-recall-election-money-newsom-vs-jenner-cox/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "maginative.com",
+      "url": "https://www.maginative.com/article/netflixs-reed-hastings-commits-50m-to-bowdoin-college-for-ai-ethics-initiative/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "mercurynews.com",
+      "url": "https://www.mercurynews.com/2021/05/21/netflix-ceo-pumps-3-million-into-defending-newsom-against-recall-effort/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "newsbytesapp.com",
+      "url": "https://www.newsbytesapp.com/news/entertainment/reed-hastings-goes-all-in-donates-7m-to-support-kamala-harris/story",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "newschools.org",
+      "url": "https://www.newschools.org/blog/venture-philanthropy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2020/06/17/business/netflix-reed-hastings-hbcus.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2021/09/11/us/politics/gavin-newsom-recall-election.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "peacecorpsconnect.org",
+      "url": "https://www.peacecorpsconnect.org/forward-reed-hastings-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/harry-and-linda-fath-pledge-50-million-to-cincinnati-catholic-school-for-boys",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/netflix-chief-launches-100-million-education-foundation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/netflix-co-founder-reed-hastings-gives-1-million-to-improve-policing-gifts-roundup",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/news/netflix-co-founder-reed-hastings-and-wife-patty-quillin-give-120-million-to-spelman-morehouse-and-uncf-gifts-roundup/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/reed-hastings-gifts-50-million-to-create-artificial-intelligence-and-humanity-initiative-at-bowdoin-college-302409151.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "reddit.com",
+      "url": "https://www.reddit.com/r/Bowdoin/comments/1jixbzp/bowdoin_college_is_receiving_a_50_million_gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "resetera.com",
+      "url": "https://www.resetera.com/threads/reed-hastings-grants-1-1-billion-of-netflix-stock-to-unnamed-beneficiary-as-a-gift.810690/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "reuters.com",
+      "url": "https://www.reuters.com/world/us/netflix-co-founder-hastings-gives-7-mln-pro-harris-pac-source-says-2024-07-24/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "santacruzworks.org",
+      "url": "https://www.santacruzworks.org/news/reed-hastings-patty-quillin-to-donate-10m-to-tougaloo-college-and-brown-university",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "theinformation.com",
+      "url": "https://www.theinformation.com/articles/reed-hastings-backs-pro-kamala-harris-pac-with-7-million-donation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "theverge.com",
+      "url": "https://www.theverge.com/2024/1/30/24055379/reed-hastings-donates-1-1-billion-of-his-netflix-shares-to-charity",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "vox.com",
+      "url": "https://www.vox.com/recode/2020/6/17/21293692/reed-hastings-morehouse-spelman-united-negro-college-fund-hbcu",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "vox.com",
+      "url": "https://www.vox.com/recode/2021/5/21/22446799/gavin-newsom-reed-hastings-netflix-donation-california-governor-recall",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "yahoo.com",
+      "url": "https://www.yahoo.com/entertainment/netflix-reed-hastings-wife-patty-190031726.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
+    },
+    {
+      "publisher": "yahoo.com",
+      "url": "https://www.yahoo.com/entertainment/thr-philanthropist-reed-hastings-why-130000175.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54"
     }
   ],
   "summary_150w": "Reed Hastings (Netflix co-founder, b. 1960, net worth ~$5.8B April 2026 after selling down to <1% of Netflix) is the canonical DAF-heavy Giving Pledger. Signed the Pledge in 2012 with wife Patty Quillin ('a majority of our assets'). Routes essentially all giving through the Hastings Fund \u2014 a donor-advised fund at Silicon Valley Community Foundation, founded 2016 with $100M and augmented by $1.1B (Jan 2024) and $500M (Dec 2024) Netflix-stock transfers. Announced end-recipient pass-throughs: $120M to UNCF/Morehouse/Spelman (2020), $50M to Bowdoin (2025), $30M to Gavi (2020). No private foundation (no 990-PF, no payout requirement, no recipient disclosure). Political giving: $28M+ 2020-2025, mostly Democratic plus heavy charter-school advocacy. Under inflows-counting methodology he is HIGH_GENEROSITY (29% of net worth committed); under outflows-counting methodology he is Tier B/C because ~$1.5B of DAF balance has unverified end disposition. Published as Tier C Opaque \u2014 commitment is real, delivery is unprovable."

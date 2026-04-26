@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record. Every dollar has source_url + retrieved_at. Events canonically scoped by event_role. Classification for Tier A/B/C happens downstream. NOTE: Leonard Lauder died 2025-06-14. This is a posthumous record; net-worth denominator is frozen at time of death. Forbes profile for a deceased individual typically delists; Bloomberg shows final figure.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual deep research \u2014 single-subject + regen_v3@sha256-fc434da0c68e6ccd + regen_v3@sha256-bc1a13d5cfef6fb3",
+  "generated_by": "scrooge v3 manual deep research \u2014 single-subject + regen_v3@sha256-fc434da0c68e6ccd + regen_v3@sha256-bc1a13d5cfef6fb3 + regen_v3@sha256-7aaa8dffbe5c10cf",
   "person": {
     "name_display": "Leonard Lauder",
     "name_legal": "Leonard Alan Lauder",
@@ -278,6 +278,486 @@
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": "2024-02-14",
+      "date_precision": "day",
+      "donor_entity": "Leonard A. Lauder",
+      "recipient": "University of Pennsylvania",
+      "amount_usd": 125000000,
+      "source_type": "university_press",
+      "source_url": "https://almanac.upenn.edu/articles/125-million-gift-from-leonard-a-lauder-for-tuition-free-program-to-prepare-nurse-practitioners-to-provide-primary-care-in-underserved-us-communities",
+      "confidence": "high",
+      "extraction_note": "Leonard A. Lauder donated $125 million to the University of Pennsylvania to create a tuition-free program for nurse practitioners in underserved communities.",
+      "extraction_evidence": "$125 million donation by Leonard A. Lauder, Chairman Emeritus of the Est\u00e9e Lauder Companies, to create",
+      "regen_query": "\"Leonard Lauder\" gift OR donation million",
+      "event_id": "leonard_lauder_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Hunter College School of Nursing",
+      "amount_usd": 52000000,
+      "source_type": "other",
+      "source_url": "https://apicciano.commons.gc.cuny.edu/2022/11/18/leonard-lauder-to-donate-52-million-gift-to-hunter-college-to-support-nursing-education/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder announced a $52 million gift to Hunter College's School of Nursing in honor of his late wife Evelyn.",
+      "extraction_evidence": "Leonard Lauder, the chairman emeritus of the Est\u00e9e Lauder Companies, is giving $52 million to Hunter College's School of Nursing",
+      "regen_query": "\"Leonard Lauder\" gift OR donation million",
+      "event_id": "leonard_lauder_direct_gift_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "University of Pennsylvania",
+      "amount_usd": 125000000,
+      "source_type": "news_article",
+      "source_url": "https://austinpost.com/business/2025/06/16/leonard-lauder-dies-at-92",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder made a $125 million donation to the University of Pennsylvania in 2020 to create a tuition-free program for nurse practitioners.",
+      "extraction_evidence": "In 2020, Lauder made a $125 million donation to the University of Pennsylvania to create a tuition-free program to educate nurse practitioners",
+      "regen_query": "\"Leonard Lauder\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "leonard_lauder_direct_gift_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Lauder family",
+      "recipient": "Alzheimer's Drug Discovery Foundation (ADDF)",
+      "amount_usd": 200000000,
+      "source_type": "news_article",
+      "source_url": "https://cosmeticsbusiness.com/lauder-family-pledges-200-million-to-the-development-of-drugs-to-treat-alzheimer-s-208017",
+      "confidence": "high",
+      "extraction_note": "The Lauder family donated $200 million to the Alzheimer's Drug Discovery Foundation to support development of new treatments.",
+      "extraction_evidence": "The Lauder family has donated US$200m to the Alzheimer's Drug Discovery Foundation (ADDF)",
+      "regen_query": "\"Leonard Lauder\" pledges OR commits OR announces",
+      "event_id": "leonard_lauder_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "unspecified",
+      "amount_usd": 2000000000,
+      "source_type": "news_article",
+      "source_url": "https://ejewishphilanthropy.com/leonard-lauder-who-supercharged-his-familys-cosmetics-firm-and-became-an-arts-patron-dies-at-92/",
+      "confidence": "medium",
+      "extraction_note": "Leonard Lauder donated approximately $2 billion in his lifetime, primarily in education, culture, and science.",
+      "extraction_evidence": "donated some $2 billion in his lifetime, mainly in the fields of education, culture and science",
+      "regen_query": "\"Leonard Lauder\" donates million",
+      "event_id": "leonard_lauder_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "The Metropolitan Museum of Art",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://galeriemagazine.com/leonard-lauders-400-million-collection-is-headed-to-auction/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder donated 78 pieces of Cubist art to The Metropolitan Museum of Art.",
+      "extraction_evidence": "his donation of 78 pieces of Cubist art to The Metropolitan Museum of Art",
+      "regen_query": "\"Leonard Lauder\" art collection bequest will estate 2025 2026 \"Metropolitan Museum\"",
+      "event_id": "leonard_lauder_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2014,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leonard Lauder",
+      "recipient": "The Metropolitan Museum of Art",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://juddtully.net/articles/tracing-the-provenance-of-leonard-lauders-epic-cubist-gift-to-the-met/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder gifted a Cubist art collection to the Met, with an exhibition planned for fall 2014 featuring works including a 1913 Picasso.",
+      "extraction_evidence": "Lauder's Cubist legacy in its full glory in fall 2014 in an exhibition",
+      "regen_query": "\"Leonard Lauder\" \"Cubist collection\" Met 2013 2014 2015 transfer completion",
+      "event_id": "leonard_lauder_direct_gift_2014_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 2018,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "unspecified",
+      "amount_usd": 100000,
+      "source_type": "news_article",
+      "source_url": "https://readsludge.com/2018/12/11/mystery-donor-revealed-republican-estee-lauder-heir-spent-100000-to-boost-green-party-candidate/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder, GOP megadonor and Est\u00e9e Lauder heir, gave $100,000 to a Texas-based super PAC.",
+      "extraction_evidence": "A businessman and GOP megadonor gave big bucks to an obscure Texas-based super PAC that typically backs Republicans",
+      "regen_query": "\"Leonard Lauder\" investigation OR expos\u00e9 OR revealed OR leaked \"donor-advised fund\" OR \"tax shelter\"",
+      "event_id": "leonard_lauder_political_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonardo Leo",
+      "recipient": "Texas A&M",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://theintercept.com/2024/05/29/leonard-leo-donor-law-schools/",
+      "confidence": "medium",
+      "extraction_note": "Leonardo Leo redirected a $25 million research center plan from Cornell to Texas A&M.",
+      "extraction_evidence": "Right-wing megadonor Leonardo Leo's plan for a $25 million research center at Cornell fell apart. So he took his money to Texas A&M.",
+      "regen_query": "\"Leonard Lauder\" site:propublica.org OR site:icij.org OR site:occrp.org OR site:reuters.com/investigates OR site:theintercept.com",
+      "event_id": "leonard_lauder_direct_gift_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2013,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Metropolitan Museum of Art",
+      "amount_usd": 1000000000,
+      "source_type": "news_article",
+      "source_url": "https://thesciencesurvey.com/arts-entertainment/2026/03/08/revolution-in-art-a-review-of-the-new-installation-of-cubist-masterpieces-at-the-metropolitan-museum-of-art-from-the-leonard-a-lauder-cubist-collection/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder donated his Cubist art collection to the Metropolitan Museum of Art in 2013, valued at over one billion dollars.",
+      "extraction_evidence": "In 2013, he donated his collection of Cubist pieces to the Metropolitan Museum of Art, with the gift being valued at over one billion dollars.",
+      "regen_query": "\"Leonard Lauder\" art collection bequest will estate 2025 2026 \"Metropolitan Museum\"",
+      "event_id": "leonard_lauder_direct_gift_2013_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2004,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "The Leonard and Evelyn Lauder Foundation",
+      "recipient": "Whitney Museum of American Art",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://whitney.org/collection/works/21851",
+      "confidence": "high",
+      "extraction_note": "The Leonard and Evelyn Lauder Foundation provided funds for the purchase of Edward Ruscha's Oxydol artwork by the Whitney Museum in 2004.",
+      "extraction_evidence": "purchase, with funds from The Leonard and Evelyn Lauder Foundation, and Diane and Thomas Tuft 2004.566",
+      "regen_query": "\"Leonard And Evelyn Lauder Foundation\" 990-PF",
+      "event_id": "leonard_lauder_grant_out_2004_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2013,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Metropolitan Museum",
+      "amount_usd": 22000000,
+      "source_type": "news_article",
+      "source_url": "https://www.artsjournal.com/culturegrrl/2013/04/cubist-infusion-leonard-lauders-transformational-gift-to-the-metropolitan-museum.html",
+      "confidence": "medium",
+      "extraction_note": "Leonard Lauder contributed to a $22-million endowment for the Leonard A. Lauder Research Center for Modern Art at the Metropolitan Museum.",
+      "extraction_evidence": "a $22-million endowment, contributed by Lauder and other Met trustees and patrons",
+      "regen_query": "\"Leonard Lauder\" \"Cubist collection\" Met 2013 2014 2015 transfer completion",
+      "event_id": "leonard_lauder_grant_out_2013_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Metropolitan Museum of Art",
+      "amount_usd": 1000000000,
+      "source_type": "blog",
+      "source_url": "https://www.aspeninstitute.org/blog-posts/leonard-lauders-other-art-collection/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder contributed a $1 billion Cubism collection to the Metropolitan Museum of Art.",
+      "extraction_evidence": "$1 billion Cubism collection to the Metropolitan Museum of Art",
+      "regen_query": "\"Leonard Lauder\" \"Aspen Institute\" OR \"NYC cultural institutions\" gift donation 2010-2024",
+      "event_id": "leonard_lauder_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "private_investment",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "David Walentas",
+      "amount_usd": 6000000,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/kirkogunrinde/2026/04/05/six-lessons-from-a-david-walentas-billionaire-who-once-sold-his-blood-to-buy-food/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder provided a $6 million private loan to David Walentas for DUMBO real estate development.",
+      "extraction_evidence": "cosmetics billionaires Ronald and Leonard Lauder to back him with $6 million in private loans",
+      "regen_query": "\"Leonard Lauder\" site:forbes.com profile",
+      "event_id": "leonard_lauder_private_investment_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "private_investment"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Democratic candidates running for Congress",
+      "amount_usd": 100000,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/michelatindera/2020/10/14/meet-the-only-billionaire-couple-whos-given-to-trump-and-biden-ronald-lauder/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder donated more than $100,000 in the 2020 election cycle to Democratic candidates running for Congress.",
+      "extraction_evidence": "Leonard Lauder...has donated more than $100,000 this election cycle to Democratic candidates running for Congress",
+      "regen_query": "\"Leonard Lauder\" site:forbes.com profile",
+      "event_id": "leonard_lauder_direct_gift_2020_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2002,
+      "date": "2002-08-03",
+      "date_precision": "day",
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Whitney Museum of American Art",
+      "amount_usd": 200000000,
+      "source_type": "news_article",
+      "source_url": "https://www.nytimes.com/2002/08/03/arts/with-huge-gift-the-whitney-is-no-longer-a-poor-cousin.html",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder, as a Whitney Museum trustee, joined forces with other trustees to give 86 artworks valued at $200 million to the Whitney Museum.",
+      "extraction_evidence": "Whitney Museum of American Art trustees join forces to give it trove of 86 paintings, sculptures and prints valued at $200 million",
+      "regen_query": "\"Leonard Lauder\" \"Whitney Museum\" 2002 125 works donation appraisal value",
+      "event_id": "leonard_lauder_direct_gift_2002_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2008,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Whitney Museum of American Art",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.nytimes.com/2008/03/19/arts/design/19muse.html?_r=0",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder's American Contemporary Art Foundation was responsible for the largest single group of art in a gift to the Whitney Museum, including major works by Rothko, Kline, Warhol and Pollock.",
+      "extraction_evidence": "Lauder's American Contemporary Art Foundation was responsible for the largest single group of art in that gift, including major works by Mark Rothko, Franz Kline, Warhol and Pollock",
+      "regen_query": "\"Leonard Lauder\" \"American Contemporary Art Foundation\" Whitney 2008",
+      "event_id": "leonard_lauder_direct_gift_2008_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2013,
+      "date": "2013-04-10",
+      "date_precision": "day",
+      "donor_entity": "Leonard A. Lauder",
+      "recipient": "Metropolitan Museum of Art",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.nytimes.com/2013/04/10/arts/design/leonard-lauder-is-giving-his-cubist-collection-to-the-met.html",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art.",
+      "extraction_evidence": "Leonard A. Lauder, the cosmetics tycoon, will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art",
+      "regen_query": "\"Leonard Lauder\" \"Cubist collection\" Met 2013 2014 2015 transfer completion",
+      "event_id": "leonard_lauder_direct_gift_2013_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2017,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "The Metropolitan Museum of Art",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.nytimes.com/2017/07/04/arts/design/putting-doubts-to-rest-about-leonard-lauders-gift-to-the-met.html",
+      "confidence": "medium",
+      "extraction_note": "Leonard Lauder made a gift to the Met with contractual terms requiring the museum to create a suitable home for the Lauder material by 2025.",
+      "extraction_evidence": "the Met has until 2025 to create a suitable home for the Lauder material",
+      "regen_query": "\"Leonard Lauder\" art collection bequest will estate 2025 2026 \"Metropolitan Museum\"",
+      "event_id": "leonard_lauder_direct_gift_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2026,
+      "date": "2026-04-13",
+      "date_precision": "day",
+      "donor_entity": "Leonard Lauder and Judy Lauder",
+      "recipient": "West Palm Beach science center",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://www.palmbeachdailynews.com/story/news/2026/04/13/lauder-gift-of-10m-to-aid-science-centers-expansion-in-w-palm-beach/89550893007/",
+      "confidence": "high",
+      "extraction_note": "A $10 million gift in the name of Leonard Lauder and his widow Judy to help expand a West Palm Beach science center.",
+      "extraction_evidence": "$10 million gift in the name of the late cosmetics billionaire Leonard Lauder and his widow, Judy",
+      "regen_query": "\"Leonard Lauder\" gift OR donation million",
+      "event_id": "leonard_lauder_direct_gift_2026_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "unspecified",
+      "amount_usd": 52000000,
+      "source_type": "news_article",
+      "source_url": "https://www.philanthropy.com/news/billionaire-leonard-lauder-gives-52-million-for-nurse-practitioner-program/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder gave $52 million to expand a school's nurse-practitioner graduate program.",
+      "extraction_evidence": "Leonard Lauder gave $52 million to expand the school's nurse-practitioner graduate program.",
+      "regen_query": "site:philanthropy.com \"Leonard Lauder\" obituary 2025 lifetime giving total",
+      "event_id": "leonard_lauder_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Portland Museum of Art",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://www.pressherald.com/2025/06/17/leonard-lauder-who-gifted-millions-to-maine-causes-dies-at-92/",
+      "confidence": "high",
+      "extraction_note": "Snippet mentions a couple's gift of $5 million celebrated at Portland Museum of Art.",
+      "extraction_evidence": "Couple's gift of $5 million celebrated at Portland Museum of Art",
+      "regen_query": "\"Leonard Lauder\" \"Judy Glickman Lauder\" joint gift OR donation 2015-2025",
+      "event_id": "leonard_lauder_direct_gift_x_regen7",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 2017,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Trump Victory",
+      "amount_usd": 100000,
+      "source_type": "news_article",
+      "source_url": "https://www.thedp.com/article/2024/04/penn-former-donors-political-support-president-2024-trump-biden",
+      "confidence": "high",
+      "extraction_note": "Lauder contributed $100,000 to the Trump Victory joint fundraising committee in 2017.",
+      "extraction_evidence": "Lauder contributed $100,000 to the Trump Victory joint fundraising committee in 2017 and 2019.",
+      "regen_query": "\"Leonard Lauder\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "leonard_lauder_political_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Trump Victory",
+      "amount_usd": 100000,
+      "source_type": "news_article",
+      "source_url": "https://www.thedp.com/article/2024/04/penn-former-donors-political-support-president-2024-trump-biden",
+      "confidence": "high",
+      "extraction_note": "Lauder contributed $100,000 to the Trump Victory joint fundraising committee in 2019.",
+      "extraction_evidence": "Lauder contributed $100,000 to the Trump Victory joint fundraising committee in 2017 and 2019.",
+      "regen_query": "\"Leonard Lauder\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "leonard_lauder_political_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
     }
   ],
   "pledges_and_announcements": [
@@ -291,6 +771,126 @@
       "retrieved_at": "2026-04-24",
       "note": "Verified not a Giving Pledge signatory. His brother Ronald Lauder also has not signed. This is POSITIVE for Leonard's record relative to the pledge-breach penalty: he did not make a public 50% promise and therefore cannot be scored as having broken one. He should NOT receive the PLEDGE_UNFULFILLED red flag.",
       "event_role_canonical": "no_pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "University of Pennsylvania Nursing",
+      "amount_usd": null,
+      "source_type": "university_press",
+      "source_url": "https://almanac.upenn.edu/articles/penn-nursing-2024-lauder-fellows",
+      "confidence": "medium",
+      "extraction_note": "Penn Nursing announces the third cohort of the Leonard A. Lauder Community Care Nurse Practitioner Program, indicating an established giving program.",
+      "extraction_evidence": "Penn Nursing announces its third cohort of fellows of the Leonard A. Lauder Community Care Nurse Practitioner Program.",
+      "regen_query": "\"Leonard Lauder\" pledges OR commits OR announces",
+      "event_id": "leonard_lauder_announcement_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Metropolitan Museum",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://eu.palmbeachdailynews.com/story/news/local/2025/06/15/cosmetics-giant-leonard-lauder-dies-at-92/84221141007/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder pledged his 78-piece collection of Cubist art to the Metropolitan Museum.",
+      "extraction_evidence": "pledging his 78-piece collection of Cubist art to the Metropolitan Museum",
+      "regen_query": "\"Leonard Alan Lauder\" https://www.forbes.com/profile/leonard-lauder/",
+      "event_id": "leonard_lauder_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2013,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Metropolitan Museum of Art",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://palmerpb.com/2025/10/30/the-leonard-a-lauder-collection-at-sothebys/",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder promised his Cubist Collection of eighty works to the Met in 2013.",
+      "extraction_evidence": "Mr. Lauder promised his Cubist Collection of eighty works to the Met in 2013",
+      "regen_query": "\"Leonard Lauder\" \"Cubist collection\" Met 2013 2014 2015 transfer completion",
+      "event_id": "leonard_lauder_pledge_2013_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leonard A. Lauder",
+      "recipient": "Alzheimer's Drug Discovery Foundation",
+      "amount_usd": 200000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/lauder-family-commits-200-million-for-alzheimer-s-drug-development",
+      "confidence": "high",
+      "extraction_note": "The Lauder family announced a $200 million commitment to the Alzheimer's Drug Discovery Foundation for drug development.",
+      "extraction_evidence": "The Alzheimer's Drug Discovery Foundation (ADDF) has announced a $200 million commitment from the families of Leonard A. and Ronald S.",
+      "regen_query": "\"Leonard Lauder\" pledges OR commits OR announces",
+      "event_id": "leonard_lauder_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Lauder family",
+      "recipient": "Alzheimer's Drug Discovery Foundation",
+      "amount_usd": 200000000,
+      "source_type": "other",
+      "source_url": "https://www.facebook.com/TheADDF/",
+      "confidence": "high",
+      "extraction_note": "The Lauder family committed a historic $200 million gift to support development of novel methods to prevent Alzheimer's disease.",
+      "extraction_evidence": "the #Lauder family has committed a historic $200 million",
+      "regen_query": "\"Lauder family\" \"Alzheimer's Drug Discovery Foundation\" \"200 million\" 2023 individual shares",
+      "event_id": "leonard_lauder_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2013,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Leonard Lauder",
+      "recipient": "Metropolitan Museum of Art",
+      "amount_usd": 1000000000,
+      "source_type": "news_article",
+      "source_url": "https://www.nytimes.com/2024/12/18/arts/design/leonard-lauder-philanthropy-metropolitan-museum-whitney.html",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder promised the Metropolitan Museum of Art 78 Cubist paintings, drawings and sculptures worth more than $1 billion.",
+      "extraction_evidence": "Lauder promised the Metropolitan Museum of Art 78 Cubist paintings, drawings and sculptures worth more than $1 billion",
+      "regen_query": "\"Leonard Lauder\" donates million",
+      "event_id": "leonard_lauder_pledge_2013_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
     }
   ],
   "political_giving": {
@@ -460,8 +1060,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 2901503098,
     "ratio_observable_to_5pct_tenure": 0.3353,
-    "observable_from_events_usd": 1413879087,
-    "observable_drift_pct": 0.034,
+    "observable_from_events_usd": 6229979087,
+    "observable_drift_pct": 3.257,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -678,6 +1278,444 @@
       "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-bc1a13d5cfef6fb3"
+    },
+    {
+      "publisher": "almanac.upenn.edu",
+      "url": "https://almanac.upenn.edu/articles/penn-nursing-2024-lauder-fellows",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "apicciano.commons.gc.cuny.edu",
+      "url": "https://apicciano.commons.gc.cuny.edu/2022/11/18/leonard-lauder-to-donate-52-million-gift-to-hunter-college-to-support-nursing-education/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "apnews.com",
+      "url": "https://apnews.com/article/alzheimers-estee-lauder-donation-40f654d8593c9d9d5877be83a4a57ab0",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artreview.com",
+      "url": "https://artreview.com/leonard-lauder-art-collector-and-cosmetics-heir-1933-2025/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "austinpost.com",
+      "url": "https://austinpost.com/business/2025/06/16/leonard-lauder-dies-at-92",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "cosmeticsbusiness.com",
+      "url": "https://cosmeticsbusiness.com/lauder-family-pledges-200-million-to-the-development-of-drugs-to-treat-alzheimer-s-208017",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "doerrvaluations.co.uk",
+      "url": "https://doerrvaluations.co.uk/2025/11/20/the-leonard-lauder-auction/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "ejewishphilanthropy.com",
+      "url": "https://ejewishphilanthropy.com/leonard-lauder-who-supercharged-his-familys-cosmetics-firm-and-became-an-arts-patron-dies-at-92/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "eu.palmbeachdailynews.com",
+      "url": "https://eu.palmbeachdailynews.com/story/entertainment/society/2023/04/17/we-would-not-be-here-without-the-vision-and-outstanding-commitment-and-leadership-of-the-lauder-fami/70093750007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "eu.palmbeachdailynews.com",
+      "url": "https://eu.palmbeachdailynews.com/story/news/local/2025/06/15/cosmetics-giant-leonard-lauder-dies-at-92/84221141007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "eu.usatoday.com",
+      "url": "https://eu.usatoday.com/story/life/beauty/2025/06/16/leonard-lauder-dead/84233154007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "galeriemagazine.com",
+      "url": "https://galeriemagazine.com/leonard-lauders-400-million-collection-is-headed-to-auction/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "hyperallergic.com",
+      "url": "https://hyperallergic.com/cosmetics-billionaire-and-arts-patron-leonard-lauder-dies-at-92/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "juddtully.net",
+      "url": "https://juddtully.net/articles/tracing-the-provenance-of-leonard-lauders-epic-cubist-gift-to-the-met/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "magazine.wharton.upenn.edu",
+      "url": "https://magazine.wharton.upenn.edu/issues/fall-winter-2025/remembering-leonard-lauder-w54/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "mainejewishmuseum.org",
+      "url": "https://mainejewishmuseum.org/maine-jewish-hall-of-fame/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "news.artnet.com",
+      "url": "https://news.artnet.com/market/leonard-lauder-legacy-2659211",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "observer.com",
+      "url": "https://observer.com/2023/04/ronald-and-leonard-lauder-donate-200-million-to-alzheimers-research/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "palmerpb.com",
+      "url": "https://palmerpb.com/2025/10/30/the-leonard-a-lauder-collection-at-sothebys/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/large-gifts-to-universities-totaled-nearly-4-billion-in-2022",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/lauder-family-commits-200-million-for-alzheimer-s-drug-development",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/penn-receives-125-million-gift-from-leonard-lauder-for-nursing-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "readsludge.com",
+      "url": "https://readsludge.com/2018/12/11/mystery-donor-revealed-republican-estee-lauder-heir-spent-100000-to-boost-green-party-candidate/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "theintercept.com",
+      "url": "https://theintercept.com/2024/05/29/leonard-leo-donor-law-schools/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "theintercept.com",
+      "url": "https://theintercept.com/2024/07/02/leonard-leo-missouri-attorney-general/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "thepenngazette.com",
+      "url": "https://thepenngazette.com/125-million-for-nursing-education/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "thesciencesurvey.com",
+      "url": "https://thesciencesurvey.com/arts-entertainment/2026/03/08/revolution-in-art-a-review-of-the-new-installation-of-cubist-masterpieces-at-the-metropolitan-museum-of-art-from-the-leonard-a-lauder-cubist-collection/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "whitney.org",
+      "url": "https://whitney.org/collection/works/21851",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "alzdiscovery.org",
+      "url": "https://www.alzdiscovery.org/news-room/announcements/alzheimers-drug-discovery-foundation-honors-lauder-family-in-recognition-of-historic-gift-and-25-years-of-dedication-to-curing-alzheimers-disease-at-sixteenth-annual-connoisseurs-dinner",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artforum.com",
+      "url": "https://www.artforum.com/news/met-museum-s-financial-troubles-delay-exhibition-of-leonard-lauder-s-cubist-art-gift-69374",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artnews.com",
+      "url": "https://www.artnews.com/art-collectors/top-200-profiles/leonard-a-lauder/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artnews.com",
+      "url": "https://www.artnews.com/art-news/market/leonard-lauder-collector-memoir-excerpt-1234579828/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artnews.com",
+      "url": "https://www.artnews.com/art-news/news/leonard-lauder-and-joel-shapiro-both-pass-away-national-gallerys-rubens-painting-questioned-lenin-statue-removed-from-city-of-osh-morning-links-for-june-16-2025-1234745198/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artnews.com",
+      "url": "https://www.artnews.com/art-news/news/leonard-lauder-dead-estee-lauder-art-collecting-1234745163/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artnews.com",
+      "url": "https://www.artnews.com/art-news/news/metropolitan-museum-names-stephanie-dalessandro-new-curator-of-modern-art-7995/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artsjournal.com",
+      "url": "https://www.artsjournal.com/culturegrrl/2013/04/cubist-infusion-leonard-lauders-transformational-gift-to-the-metropolitan-museum.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "artsjournal.com",
+      "url": "https://www.artsjournal.com/culturegrrl/2025/07/lauding-lauder-the-consummate-museum-benefactor-dies-at-92.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "aspeninstitute.org",
+      "url": "https://www.aspeninstitute.org/blog-posts/leonard-lauders-other-art-collection/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "aspeninstitute.org",
+      "url": "https://www.aspeninstitute.org/programs/international-partners/remembering-leonard-lauder-internationalpartners/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2023-04-04/lauder-family-pledges-200-million-for-alzheimer-s-drug-research",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "facebook.com",
+      "url": "https://www.facebook.com/TheADDF/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "fiercebiotech.com",
+      "url": "https://www.fiercebiotech.com/biotech/alzheimers-drug-discovery-foundation-gets-200m-push-new-drugs-market",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/2008/03/22/lauder-whitney-beauty-face-markets-cx_mlm_0319autofacescan03.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/profile/leonard-lauder/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/kirkogunrinde/2026/04/05/six-lessons-from-a-david-walentas-billionaire-who-once-sold-his-blood-to-buy-food/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/maryroeloffs/2025/11/18/cosmetics-billionaires-500-million-art-collection-up-for-auction-today-with-works-by-van-gogh-klimt-mattise/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/michaeltnietzel/2022/11/17/leonard-lauder-gives-hunter-college-52-million-its-largest-gift-ever/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/michelatindera/2020/10/14/meet-the-only-billionaire-couple-whos-given-to-trump-and-biden-ronald-lauder/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "medalofphilanthropy.org",
+      "url": "https://www.medalofphilanthropy.org/evelyn-and-leonard-lauder/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "medpagetoday.com",
+      "url": "https://www.medpagetoday.com/special-reports/exclusives/97226",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "metmuseum.org",
+      "url": "https://www.metmuseum.org/press-releases/cubism-the-leonard-lauder-collection-2014-exhibitions",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "nursing.upenn.edu",
+      "url": "https://www.nursing.upenn.edu/live/news/2340-announcing-the-2023-lauder-fellows",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2002/08/03/arts/with-huge-gift-the-whitney-is-no-longer-a-poor-cousin.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2008/03/19/arts/19iht-19muse.11244785.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2008/03/19/arts/design/19muse.html?_r=0",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2013/04/10/arts/design/leonard-lauder-is-giving-his-cubist-collection-to-the-met.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2017/07/04/arts/design/putting-doubts-to-rest-about-leonard-lauders-gift-to-the-met.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2024/12/18/arts/design/leonard-lauder-philanthropy-metropolitan-museum-whitney.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "palmbeachdailynews.com",
+      "url": "https://www.palmbeachdailynews.com/story/news/2022/03/14/palm-beacher-lauder-gives-125-m-penn-fellows-program-create-army-community-nurses/9424901002/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "palmbeachdailynews.com",
+      "url": "https://www.palmbeachdailynews.com/story/news/2026/04/13/lauder-gift-of-10m-to-aid-science-centers-expansion-in-w-palm-beach/89550893007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/billionaire-cosmetics-heir-gives-125-million-to-u-of-pennsylvania-nursing-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/news/billionaire-leonard-lauder-gives-52-million-for-nurse-practitioner-program/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "pressherald.com",
+      "url": "https://www.pressherald.com/2025/06/17/leonard-lauder-who-gifted-millions-to-maine-causes-dies-at-92/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/cox-science-center-and-aquarium-announces-the-judy-and-leonard-lauder-hall-of-science-302741644.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/lauder-family-donates-200-million-to-alzheimers-drug-discovery-foundation-for-development-of-novel-methods-to-prevent-diagnose-treat-and-cure-alzheimers-disease-301788702.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "theartnewspaper.com",
+      "url": "https://www.theartnewspaper.com/2014/10/01/leonard-lauder-the-man-who-put-cubism-in-the-met",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "thecompanyikeepbook.com",
+      "url": "https://www.thecompanyikeepbook.com/my-journey",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "thedp.com",
+      "url": "https://www.thedp.com/article/2024/04/penn-former-donors-political-support-president-2024-trump-biden",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "townandcountrymag.com",
+      "url": "https://www.townandcountrymag.com/leisure/arts-and-culture/a69095744/leonard-lauder-auction-home-curation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "townandcountrymag.com",
+      "url": "https://www.townandcountrymag.com/society/money-and-power/news/a5680/whitney-museum-leonard-lauder/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "vogue.co.uk",
+      "url": "https://www.vogue.co.uk/article/leonard-lauder-donates-1-billion-art-collection-to-the-met-museum",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "washingtontimes.com",
+      "url": "https://www.washingtontimes.com/news/2023/apr/4/lauder-family-pledges-200m-to-its-alzheimers-drug-/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
+    },
+    {
+      "publisher": "wjhl.com",
+      "url": "https://www.wjhl.com/business/press-releases/cision/20230404DC60472/lauder-family-donates-200-million-to-alzheimers-drug-discovery-foundation-for-development-of-novel-methods-to-prevent-diagnose-treat-and-cure-alzheimers-disease/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf"
     }
   ],
   "summary_150_words": "Leonard Lauder (1933-2025), Est\u00e9e Lauder heir and Chairman Emeritus, died June 14, 2025 at 92 with a net worth of $9.7B (Forbes) to $15.6B (Bloomberg). Unlike his brother Ronald, Leonard never signed the Giving Pledge \u2014 both /pledger URLs return 404. But unlike Ellison, he delivered: observable lifetime giving totals ~$1.46B itemized ($1.1B 2013 Met Cubist collection, $131M 2008 Whitney endowment, $125M 2022 Penn nurse practitioner program, $75M attributed share of $200M 2023 ADDF family gift, plus foundation disbursements). This meets both the 10% annual norm and lifetime giving norm on ~$15B peak wealth. His small Lauder Foundation Inc ($520K grants 2024, spending down) was the minor channel; direct museum and university gifts were the primary vehicle. Foundation officers all zero-comp. Major methodology caveat: 75% of observable is the 2013 non-cash Met gift at appraisal value \u2014 comparable-basket rebuild could range $600M-$2B. Tier: On Track.",

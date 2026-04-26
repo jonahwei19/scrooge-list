@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research + regen_v3@sha256-6d9da95ef0b8d0af + regen_v3@sha256-304cb69dcfafbb06",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research + regen_v3@sha256-6d9da95ef0b8d0af + regen_v3@sha256-304cb69dcfafbb06 + regen_v3@sha256-0f4daf477196d710",
   "person": {
     "name_display": "Rob Walton",
     "name_legal": "Samuel Robson Walton",
@@ -649,6 +649,310 @@
       "regen_run_id": "sha256-304cb69dcfafbb06",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "super PACs and other outside groups",
+      "amount_usd": 17000000,
+      "source_type": "news_article",
+      "source_url": "https://arktimes.com/arkansas-blog/2024/11/04/5-of-the-top-50-political-donors-in-the-u-s-are-from-arkansas",
+      "confidence": "high",
+      "extraction_note": "Rob Walton gave $17 million to super PACs and other outside groups, primarily to conservative causes.",
+      "extraction_evidence": "Rob Walton gave $17 million to super PACs and other outside groups",
+      "regen_query": "\"Rob Walton\" \"$17 million\" OR \"17M\" political 2024 cycle OpenSecrets top donor",
+      "event_id": "rob_walton_political_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "Arizona State University",
+      "amount_usd": 115000000,
+      "source_type": "news_article",
+      "source_url": "https://biztoc.com/x/5102a286083617aa",
+      "confidence": "high",
+      "extraction_note": "Rob Walton is donating $115 million to Arizona State University to establish a conservation school.",
+      "extraction_evidence": "Rob Walton, son of Walmart founder Sam Walton and the former chairman of the retail giant, is donating $115 million to Arizona State University (ASU)",
+      "regen_query": "\"Rob Walton\" donates million",
+      "event_id": "rob_walton_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "Arizona State University",
+      "amount_usd": 115000000,
+      "source_type": "news_article",
+      "source_url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2025/09/24/broncos-news-rob-walton-asu-115-million-donation/86308985007/",
+      "confidence": "high",
+      "extraction_note": "Rob Walton donated $115 million to ASU to establish a conservation school.",
+      "extraction_evidence": "Rob Walton donated $115 million to ASU to establish a conservation school.",
+      "regen_query": "\"Rob Walton\" donates million",
+      "event_id": "rob_walton_direct_gift_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob and Melani Walton Foundation",
+      "recipient": "ASU Sustainability Teachers Academies",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://collegeofglobalfutures.asu.edu/teachers-academy/",
+      "confidence": "high",
+      "extraction_note": "The ASU Sustainability Teachers Academies were founded through a generous investment from the Rob and Melani Walton Foundation.",
+      "extraction_evidence": "The ASU Sustainability Teachers Academies were founded through a generous investment from the Rob and Melani Walton Foundation",
+      "regen_query": "\"Rob and Melani Walton Foundation\" Arizona \"quality of life\" OR \"ASU\" OR \"sustainability\" 2022 2023 2024",
+      "event_id": "rob_walton_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "transfer_in",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "Walton Family Foundation",
+      "amount_usd": 2000000000,
+      "source_type": "other",
+      "source_url": "https://kids.kiddle.co/S._Robson_Walton",
+      "confidence": "high",
+      "extraction_note": "Rob Walton and his siblings donated approximately $2 billion to the Walton Family Foundation between 2008 and 2013.",
+      "extraction_evidence": "Between 2008 and 2013, they donated about $2 billion to help different causes",
+      "regen_query": "\"Walton Family Foundation\" \"Rob Walton\" OR \"Jim Walton\" OR \"Alice Walton\" contribution transfer 2008 2009 2010 2011 2012 2013 \"$2 billion\"",
+      "event_id": "rob_walton_transfer_in_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob and Melani Walton Fund of the Walton Family Foundation",
+      "recipient": "Arizona State University",
+      "amount_usd": 27500000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/arizona-state-university-announces-27.5-million-commitment-from-walmart-chairman",
+      "confidence": "high",
+      "extraction_note": "Arizona State University announced a five-year, $27.5 million commitment from the Rob and Melani Walton Fund of the Walton Family Foundation in support of the Global Institute of Sustainability.",
+      "extraction_evidence": "five-year, $27.5 million commitment from the Rob and Melani Walton Fund of the Walton Family Foundation",
+      "regen_query": "\"Rob Walton\" pledges OR commits OR announces",
+      "event_id": "rob_walton_grant_out_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton Foundation",
+      "recipient": "African Parks Network, Frankfurt Zoological Society, Wildlife Conservation Society",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://robwaltonfoundation.org/news/identifying-keystone-protected-areas-in-africa",
+      "confidence": "medium",
+      "extraction_note": "The Rob Walton Foundation supported a research collaboration on identifying keystone protected areas in Africa.",
+      "extraction_evidence": "supported by the Rob Walton Foundation",
+      "regen_query": "\"Rob Walton Foundation\" (site:robwaltonfoundation.org OR site:waltonfamilyfoundation.org) conservation Africa Asia",
+      "event_id": "rob_walton_grant_out_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "AFP Action",
+      "amount_usd": 10000000,
+      "source_type": "blog",
+      "source_url": "https://substack.perfectunion.us/p/koch-super-pac-is-spending-big-for",
+      "confidence": "high",
+      "extraction_note": "Rob Walton gave $10 million to AFP Action this election cycle.",
+      "extraction_evidence": "Rob Walton...gave...each giving $10 million",
+      "regen_query": "\"Rob Walton\" \"Americans for Prosperity Action\" OR \"AFP\" 2023 2024 super PAC donation",
+      "event_id": "rob_walton_political_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2021,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Rob Walton",
+      "recipient": "African Parks",
+      "amount_usd": 100000000,
+      "source_type": "other",
+      "source_url": "https://www.africanparks.org/the-parks/nkhotakota/partners",
+      "confidence": "high",
+      "extraction_note": "Rob Walton (via RWF) made a US$100 million five-year commitment to African Parks in 2021, described as the largest endowment gift in African Parks' history.",
+      "extraction_evidence": "In 2021, the RWF made a transformational US$100 million five-year commitment, the largest endowment gift in African Parks' history.",
+      "regen_query": "\"Rob Walton\" \"African Parks\" 2021 gift endowment conservation",
+      "event_id": "rob_walton_grant_out_2021_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "AFP Action",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.exposedbycmd.org/2024/11/05/koch-super-pac-shatters-its-election-spending-record/",
+      "confidence": "medium",
+      "extraction_note": "Tax documents show Rob Walton (along with Jim C. and Alice L. Walton) together donated at least $25 million to AFP Action this cycle.",
+      "extraction_evidence": "Robert S., Jim C. and Alice L. Walton \u2014 together have donated at least $25 million to AFP Action",
+      "regen_query": "\"Rob Walton\" \"Americans for Prosperity Action\" OR \"AFP\" 2023 2024 super PAC donation",
+      "event_id": "rob_walton_political_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "unspecified",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://www.factcheck.org/2024/01/americans-for-prosperity-7/",
+      "confidence": "high",
+      "extraction_note": "Rob Walton gave $5 million to a political organization (Americans for Prosperity).",
+      "extraction_evidence": "Rob and Jim Walton, brothers and heirs to the Walmart fortune, who gave $5 million each",
+      "regen_query": "\"Rob Walton\" \"Americans for Prosperity Action\" OR \"AFP\" 2023 2024 super PAC donation",
+      "event_id": "rob_walton_political_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Walton Family Foundation Inc",
+      "recipient": "unspecified",
+      "amount_usd": 25600,
+      "source_type": "990-PF",
+      "source_url": "https://www.instrumentl.com/990-report/walton-family-foundation-inc",
+      "confidence": "high",
+      "extraction_note": "Walton Family Foundation Inc provided $25,600 in grants in 2024.",
+      "extraction_evidence": "provided $25,600 in grants in 2024",
+      "regen_query": "\"Walton Family Foundation Inc\" 990-PF",
+      "event_id": "rob_walton_grant_out_2024_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robb Walton",
+      "recipient": "politicians",
+      "amount_usd": 1571,
+      "source_type": "other",
+      "source_url": "https://www.opensecrets.org/federal-lobbying/lobbyists/contributions?cycle=2024&id=Y0000053034L",
+      "confidence": "high",
+      "extraction_note": "Robb Walton contributed $1,571 to politicians in 2024.",
+      "extraction_evidence": "contributed $1,571 to politicians in 2024",
+      "regen_query": "\"Rob Walton\" FEC OR PAC contribution",
+      "event_id": "rob_walton_political_2024_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2023,
+      "date": "2023-04",
+      "date_precision": "month",
+      "donor_entity": "Rob Walton",
+      "recipient": "unspecified",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://www.opensecrets.org/news/2024/01/koch-network-super-pac-ramping-up-political-activity-2024-election/",
+      "confidence": "high",
+      "extraction_note": "Rob Walton made a $5 million political contribution in April 2023.",
+      "extraction_evidence": "The brothers each made a contribution of $5 million in April 2023",
+      "regen_query": "\"Rob Walton\" \"Americans for Prosperity Action\" OR \"AFP\" 2023 2024 super PAC donation",
+      "event_id": "rob_walton_political_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Walton Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 2001417,
+      "source_type": "other",
+      "source_url": "https://www.opensecrets.org/orgs/walton-family-foundation/summary?id=D000072017",
+      "confidence": "high",
+      "extraction_note": "Walton Family Foundation made political contributions totaling $2,001,417 in the 2024 cycle.",
+      "extraction_evidence": "Contributions in the 2024 cycle: $2,001,417",
+      "regen_query": "\"Rob Walton\" FEC OR PAC contribution",
+      "event_id": "rob_walton_political_2024_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "Americans for Prosperity",
+      "amount_usd": 2000000,
+      "source_type": "news_article",
+      "source_url": "https://www.theguardian.com/sport/2024/nov/05/us-sports-team-political-donations-database",
+      "confidence": "high",
+      "extraction_note": "Rob Walton made a $2m contribution to Americans for Prosperity, a conservative/libertarian Super PAC.",
+      "extraction_evidence": "two separate contributions of $5m and $2m to Americans for Prosperity",
+      "regen_query": "\"Rob Walton\" FEC OR PAC contribution",
+      "event_id": "rob_walton_political_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -676,6 +980,234 @@
       "source_url": "https://en.wikipedia.org/wiki/S._Robson_Walton",
       "retrieved_at": "2026-04-23",
       "dedup_note": "Transfer INTO WFF, not grant_out. Per dedup rule #2, we count WFF's grants_out, not the transfers in. This row is provenance-only; not added to observable_giving."
+    },
+    {
+      "event_role": "announcement",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 525000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Walton_Family_Foundation",
+      "confidence": "high",
+      "extraction_note": "The foundation gave a total of $525 million in 2019.",
+      "extraction_evidence": "The foundation gave a total of $525 million in 2019.",
+      "regen_query": "\"Rob Walton\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "rob_walton_announcement_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2020,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Walton Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 745900000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Walton_Family_Foundation",
+      "confidence": "high",
+      "extraction_note": "In 2020, the foundation donated $745.9 million to social and environmental causes.",
+      "extraction_evidence": "the foundation said it donated $745.9 million to social and environmental causes",
+      "regen_query": "\"Rob Walton\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "rob_walton_announcement_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "Arizona State University",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://frontdoorsmedia.com/news/asu-names-new-science-technology-building-after-longtime-donors-rob-melani-walton/",
+      "confidence": "medium",
+      "extraction_note": "ASU named a new Planetary Health Center after Rob and Melani Walton in recognition of their multiple investments for sustainable solutions.",
+      "extraction_evidence": "Rob and Melani Walton have made multiple investments for ASU to develop and deploy sustainable solutions",
+      "regen_query": "\"Rob and Melani Walton Foundation\" Arizona \"quality of life\" OR \"ASU\" OR \"sustainability\" 2022 2023 2024",
+      "event_id": "rob_walton_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob Walton",
+      "recipient": "Arizona State University",
+      "amount_usd": 115000000,
+      "source_type": "other",
+      "source_url": "https://grantable.co/funders/the-rob-walton-foundation-morg_1b138563502447cda11d64dcdf612e53",
+      "confidence": "high",
+      "extraction_note": "A $115 million gift was announced to establish the Rob Walton School of Conservation Futures at Arizona State University.",
+      "extraction_evidence": "A $115 million gift was announced to establish the Rob Walton School of Conservation Futures at Arizona State University",
+      "regen_query": "\"Rob and Melani Walton Foundation\" 990-PF",
+      "event_id": "rob_walton_announcement_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2021,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Rob and Melani Walton Foundation",
+      "recipient": "African Parks",
+      "amount_usd": 100000000,
+      "source_type": "other",
+      "source_url": "https://issuu.com/rimu751/docs/africa-travel-2021-november_1_/s/14171109",
+      "confidence": "high",
+      "extraction_note": "The Rob and Melani Walton Foundation pledged $100 million to African Parks for wildlife conservation in Africa.",
+      "extraction_evidence": "$100 million pledge is being made by the Rob and Melani Walton Foundation",
+      "regen_query": "\"Rob Walton\" pledges OR commits OR announces",
+      "event_id": "rob_walton_pledge_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Jim Walton",
+      "recipient": "unspecified",
+      "amount_usd": 2000000000,
+      "source_type": "other",
+      "source_url": "https://kids.kiddle.co/Jim_Walton",
+      "confidence": "high",
+      "extraction_note": "Jim Walton pledged approximately $2 billion to a foundation between 2008 and 2013.",
+      "extraction_evidence": "Between 2008 and 2013, he pledged about $2 billion to the foundation",
+      "regen_query": "\"Walton Family Foundation\" \"Rob Walton\" OR \"Jim Walton\" OR \"Alice Walton\" contribution transfer 2008 2009 2010 2011 2012 2013 \"$2 billion\"",
+      "event_id": "rob_walton_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob and Melani Walton Foundation",
+      "recipient": "African Parks",
+      "amount_usd": 100000000,
+      "source_type": "news_article",
+      "source_url": "https://www.afrik21.africa/en/africa-rob-and-melani-walton-foundation-commits-100m-to-wildlife-conservation/",
+      "confidence": "high",
+      "extraction_note": "The Rob and Melani Walton Foundation announced a commitment of $100 million to wildlife conservation in Africa, with funds primarily supporting African Parks.",
+      "extraction_evidence": "The Rob and Melani Walton Foundation will commit $100 million to wildlife conservation in Africa.",
+      "regen_query": "\"Rob Walton\" pledges OR commits OR announces",
+      "event_id": "rob_walton_announcement_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2021,
+      "date": "2021-09-19",
+      "date_precision": "day",
+      "donor_entity": "Rob and Melani Walton Foundation",
+      "recipient": "African Parks",
+      "amount_usd": 100000000,
+      "source_type": "news_article",
+      "source_url": "https://www.billionaires.africa/2021/09/19/u-s-retail-tycoon-rob-walton-commits-100-million-to-johannesburgs-african-parks/",
+      "confidence": "high",
+      "extraction_note": "The Rob and Melani Walton Foundation announced a $100 million donation to African Parks for wildlife conservation in Africa.",
+      "extraction_evidence": "donation of $100 million to the Johannesburg-based African Parks to support wildlife conservation",
+      "regen_query": "\"Rob Walton\" pledges OR commits OR announces",
+      "event_id": "rob_walton_announcement_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rob and Melani Walton Foundation",
+      "recipient": "Arizona State University",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.statepress.com/article/2024/01/scitech-asu-sustainability-steps-2023",
+      "confidence": "medium",
+      "extraction_note": "Rob Walton announced the Rob and Melani Walton Center for Planetary Health at ASU's Tempe campus, highlighting its sustainable design and mission.",
+      "extraction_evidence": "Rob Walton, co-founder of the Rob and Melani Walton Foundation... The Rob and Melani Walton Center for Planetary Health on the Tempe campus",
+      "regen_query": "\"Rob and Melani Walton Foundation\" Arizona \"quality of life\" OR \"ASU\" OR \"sustainability\" 2022 2023 2024",
+      "event_id": "rob_walton_announcement_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2024,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "The Walton Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 548800000,
+      "source_type": "other",
+      "source_url": "https://www.uhnwidata.com/uhnwi-direct/rob-walton",
+      "confidence": "high",
+      "extraction_note": "The Walton Family Foundation disbursed $548.8 million in grants in 2024.",
+      "extraction_evidence": "The Walton Family Foundation, seeded by Sam and Helen Walton, disbursed $548.8 million in grants in 2024",
+      "regen_query": "\"Rob Walton\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "rob_walton_announcement_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Walton Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 250000000,
+      "source_type": "press_release",
+      "source_url": "https://www.waltonfamilyfoundation.org/about-us/newsroom/walton-family-foundation-announces-250-million-commitment-to-ocean-conservation",
+      "confidence": "high",
+      "extraction_note": "Walton Family Foundation announces a five-year, $250 million commitment to ocean conservation and sustainable fisheries.",
+      "extraction_evidence": "Walton Family Foundation announces a five-year, $250 million commitment to support ocean conservation and sustainable fisheries",
+      "regen_query": "\"Rob Walton Foundation\" (site:robwaltonfoundation.org OR site:waltonfamilyfoundation.org) conservation Africa Asia",
+      "event_id": "rob_walton_announcement_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2011,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Walton Family Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 71400000,
+      "source_type": "other",
+      "source_url": "https://www.waltonfamilyfoundation.org/about-us/newsroom/walton-family-foundation-invests-71-4-million-in-environmental-conservation-initiatives-in-2011",
+      "confidence": "high",
+      "extraction_note": "Walton Family Foundation announced $71.4 million investment in environmental conservation initiatives in 2011.",
+      "extraction_evidence": "Walton Family Foundation Invests $71.4 Million in Environmental Conservation Initiatives in 2011",
+      "regen_query": "\"Rob Walton Foundation\" (site:robwaltonfoundation.org OR site:waltonfamilyfoundation.org) conservation Africa Asia",
+      "event_id": "rob_walton_announcement_2011_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -1055,6 +1587,336 @@
       "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-304cb69dcfafbb06"
+    },
+    {
+      "publisher": "biztoc.com",
+      "url": "https://biztoc.com/x/5102a286083617aa",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "broncoswire.usatoday.com",
+      "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2025/09/24/broncos-news-rob-walton-asu-115-million-donation/86308985007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "collegeofglobalfutures.asu.edu",
+      "url": "https://collegeofglobalfutures.asu.edu/teachers-academy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "finance.coin-turk.com",
+      "url": "https://finance.coin-turk.com/rob-walton-donates-115-million-to-arizona-state-university/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "frontdoorsmedia.com",
+      "url": "https://frontdoorsmedia.com/featured/arizona-state-university-launches-rob-walton-school-of-conservation-futures-with-historic-115-million-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "frontdoorsmedia.com",
+      "url": "https://frontdoorsmedia.com/news/asu-names-new-science-technology-building-after-longtime-donors-rob-melani-walton/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "grantable.co",
+      "url": "https://grantable.co/funders/the-rob-walton-foundation-morg_1b138563502447cda11d64dcdf612e53",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "ground.news",
+      "url": "https://ground.news/article/asu-receives-115-million-gift-to-launch-rob-walton-school-of-conservation-futures",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "issuu.com",
+      "url": "https://issuu.com/rimu751/docs/africa-travel-2021-november_1_/s/14171109",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "kids.kiddle.co",
+      "url": "https://kids.kiddle.co/Jim_Walton",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "kids.kiddle.co",
+      "url": "https://kids.kiddle.co/S._Robson_Walton",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "ktar.com",
+      "url": "https://ktar.com/arizona-education/rob-walton-asu-donation/5753629/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/115-million-gift-from-rob-walton-launches-school-of-conservation-futures/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "news.asu.edu",
+      "url": "https://news.asu.edu/20250922-environment-and-sustainability-115M-gift-largest-ever-asu-establishes-walton-school-conservation-futures",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "news.mongabay.com",
+      "url": "https://news.mongabay.com/2021/09/african-parks-secures-100m-for-conservation-in-africa/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "newsroom.asu.edu",
+      "url": "https://newsroom.asu.edu/press-releases/115-million-gift-will-establish-rob-walton-school-conservation-futures-arizona-state",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "observer.com",
+      "url": "https://observer.com/2025/09/walmart-heir-rob-walton-donates-115m-conservation-school/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/arizona-state-university-announces-27.5-million-commitment-from-walmart-chairman",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "robwaltonfoundation.org",
+      "url": "https://robwaltonfoundation.org/news/identifying-keystone-protected-areas-in-africa",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "robwaltonfoundation.org",
+      "url": "https://robwaltonfoundation.org/news/rob-appointed-chair-of-african-parks-foundation-of-america",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "sevalleytimes.com",
+      "url": "https://sevalleytimes.com/rob-walton-donates-115-million-establishing-conservation-futures-school-at-arizona-state-university/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "substack.perfectunion.us",
+      "url": "https://substack.perfectunion.us/p/koch-super-pac-is-spending-big-for",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "translate.google.com",
+      "url": "https://translate.google.com/translate?u=https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving&hl=es&sl=en&tl=es&client=srp",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "www-waltonfamilyfoundation-org.translate.goog",
+      "url": "https://www-waltonfamilyfoundation-org.translate.goog/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "africanparks.org",
+      "url": "https://www.africanparks.org/rob-walton-appointed-chair-board-african-parks-foundation-america",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "africanparks.org",
+      "url": "https://www.africanparks.org/strategic-funding-partners",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "africanparks.org",
+      "url": "https://www.africanparks.org/the-parks/nkhotakota/partners",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "afrik21.africa",
+      "url": "https://www.afrik21.africa/en/africa-rob-and-melani-walton-foundation-commits-100m-to-wildlife-conservation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "azcentral.com",
+      "url": "https://www.azcentral.com/story/news/local/arizona-environment/2025/09/22/asu-launches-rob-walton-school-conservation-futures-115m-donation/86087367007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "aztechcouncil.org",
+      "url": "https://www.aztechcouncil.org/arizona-state-university-receives-record-115m-gift-to-launch-conservation-futures-school/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "billionaires.africa",
+      "url": "https://www.billionaires.africa/2021/09/19/u-s-retail-tycoon-rob-walton-commits-100-million-to-johannesburgs-african-parks/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "caproasia.com",
+      "url": "https://www.caproasia.com/2025/09/25/walmart-billionaire-family-eldest-son-rob-walton-with-130-billion-fortune-rob-walton-foundation-donates-115-million-to-arizona-state-university-asu-to-setup-rob-walton-school-of-conservation-fut/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "exposedbycmd.org",
+      "url": "https://www.exposedbycmd.org/2024/11/05/koch-super-pac-shatters-its-election-spending-record/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "factcheck.org",
+      "url": "https://www.factcheck.org/2024/01/americans-for-prosperity-7/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/michaeltnietzel/2025/09/24/rob-walton-gives-arizona-state-university-115-million-its-largest-gift-ever/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "insidehighered.com",
+      "url": "https://www.insidehighered.com/news/quick-takes/2025/09/24/walmart-heir-gifts-115m-arizona-state-university",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "instrumentl.com",
+      "url": "https://www.instrumentl.com/990-report/walton-family-foundation-inc",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "kjzz.org",
+      "url": "https://www.kjzz.org/education/2025-09-29/arizona-state-university-announces-new-school-of-conservation-thanks-to-115-million-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "newswise.com",
+      "url": "https://www.newswise.com/articles/115m-gift-the-largest-ever-for-asu-to-establish-school-of-conservation-futures",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "opensecrets.org",
+      "url": "https://www.opensecrets.org/federal-lobbying/lobbyists/contributions?cycle=2024&id=Y0000053034L",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "opensecrets.org",
+      "url": "https://www.opensecrets.org/news/2024/01/koch-network-super-pac-ramping-up-political-activity-2024-election/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "opensecrets.org",
+      "url": "https://www.opensecrets.org/orgs/walton-family-foundation/summary?id=D000072017",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/african-parks-rob-und-melani-walton-foundation-leisten-mit-grosszugiger-spende-einen-wichtigen-beitrag-zur-erhaltung-von-30-millionen-hektar-biologischer-vielfalt-und-zur-forderung-der-nachhaltigkeit-in-afrika-801029411.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/asu-receives-115-million-gift-to-launch-rob-walton-school-of-conservation-futures-302561249.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "rawstory.com",
+      "url": "https://www.rawstory.com/koch-network-never-trump/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "statepress.com",
+      "url": "https://www.statepress.com/article/2024/01/scitech-asu-sustainability-steps-2023",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "statepress.com",
+      "url": "https://www.statepress.com/article/2025/09/walton-school-of-conservation-donation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "theguardian.com",
+      "url": "https://www.theguardian.com/sport/2024/nov/05/us-sports-team-political-donations-database",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "uhnwidata.com",
+      "url": "https://www.uhnwidata.com/uhnwi-direct/jim-walton",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "uhnwidata.com",
+      "url": "https://www.uhnwidata.com/uhnwi-direct/rob-walton",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "waltonfamilyfoundation.org",
+      "url": "https://www.waltonfamilyfoundation.org/about-us/newsroom/walton-family-foundation-announces-250-million-commitment-to-ocean-conservation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "waltonfamilyfoundation.org",
+      "url": "https://www.waltonfamilyfoundation.org/about-us/newsroom/walton-family-foundation-invests-71-4-million-in-environmental-conservation-initiatives-in-2011",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "waltonfamilyfoundation.org",
+      "url": "https://www.waltonfamilyfoundation.org/stories/environment/our-250-million-commitment-to-ocean-and-coastal-conservation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "wboy.com",
+      "url": "https://www.wboy.com/business/press-releases/cision/20250922LA77562/asu-receives-115-million-gift-to-launch-rob-walton-school-of-conservation-futures/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
+    },
+    {
+      "publisher": "yahoo.com",
+      "url": "https://www.yahoo.com/news/articles/broncos-co-owner-donates-115-111518188.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-0f4daf477196d710"
     }
   ]
 }

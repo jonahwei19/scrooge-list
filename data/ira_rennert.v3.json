@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Per-billionaire record following larry_ellison.v3.json reference. Every dollar has source_url + retrieved_at. Rennert is a low-profile, privately-held-industrial billionaire; observable giving is dominated by named-chair and institutional gifts (mostly Jewish/Israel-focused) with NO identified private foundation filing a 990-PF under his name. Absence of a 990-PF vehicle is itself the central finding for tier assignment.",
   "generated_at": "2026-04-24",
-  "generated_by": "scrooge v3 manual research run \u2014 Rennert deep research + regen_v3@sha256-abb66de80e9beba8 + regen_v3@sha256-aa76638cadf3507f",
+  "generated_by": "scrooge v3 manual research run \u2014 Rennert deep research + regen_v3@sha256-abb66de80e9beba8 + regen_v3@sha256-aa76638cadf3507f + regen_v3@sha256-6983a77e383a0081",
   "person": {
     "name_display": "Ira Rennert",
     "name_legal": "Ira Leon Rennert",
@@ -268,6 +268,158 @@
       "source_url": "https://en.wikipedia.org/wiki/Ira_Rennert",
       "retrieved_at": "2026-04-24",
       "confidence": "high_for_existence_low_for_amount"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2008,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Ira Rennert",
+      "recipient": "Bar-Ilan University",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.academia.edu/2424326/Shlomo_Lotan_The_Symbolism_of_Jerusalem_and_the_House_of_King_David_in_the_Teutonic_Military_Order_Medieval_Heritage_New_studies_on_Jerusalem_Volume_14_Ingeborg_Rennert_center_for_Jerusalem_studies_Bar_Ilan_University_Ramat_Gan_2008_pp_263_272",
+      "confidence": "medium",
+      "extraction_note": "The snippet references the 'Ingeborg Rennert center for Jerusalem studies' at Bar-Ilan University, suggesting a gift or endowment by Ira Rennert (likely in honor of Ingeborg Rennert) to establish or support this center.",
+      "extraction_evidence": "Ingeborg Rennert center for Jerusalem studies, Bar-Ilan University, Ramat-Gan, 2008",
+      "regen_query": "\"Rennert\" \"Bar-Ilan University\" \"Jerusalem Studies\" 1995 founding gift amount",
+      "event_id": "ira_rennert_direct_gift_2008_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2004,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Ira Rennert",
+      "recipient": "Center for Jewish History in New York",
+      "amount_usd": 1000000,
+      "source_type": "news_article",
+      "source_url": "https://www.buchwaldcapital.com/PDF/Bloomberg_Markets_article_Rennert_0904.pdf",
+      "confidence": "high",
+      "extraction_note": "Ira Rennert donated $1 million to the Center for Jewish History in New York.",
+      "extraction_evidence": "He has donated $1 million to the Center for Jewish History in New York",
+      "regen_query": "\"Ira Rennert\" donates million",
+      "event_id": "ira_rennert_direct_gift_2004_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2004,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Ira Rennert",
+      "recipient": "Barnard College",
+      "amount_usd": 2500000,
+      "source_type": "news_article",
+      "source_url": "https://www.buchwaldcapital.com/PDF/Bloomberg_Markets_article_Rennert_0904.pdf",
+      "confidence": "high",
+      "extraction_note": "Ira Rennert gave $2.5 million to Barnard College to support a professorship in Judaic studies.",
+      "extraction_evidence": "He has given $2.5 million to Barnard College to support a professorship in Judaic studies",
+      "regen_query": "\"Ira Rennert\" donates million",
+      "event_id": "ira_rennert_direct_gift_2004_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2022,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Ira Rennert",
+      "recipient": "Josh Hawley",
+      "amount_usd": 2900,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/michelatindera/2022/01/06/these-billionaires-kept-funding-legislators-who-refused-to-certify-the-election-after-jan-6/",
+      "confidence": "high",
+      "extraction_note": "Ira Rennert gave $2,900 to Missouri Senator Josh Hawley, the maximum individual donation allowed per election.",
+      "extraction_evidence": "Ira Rennert...gave $2,900 to Missouri Senator Josh Hawley\u2014the most an individual can donate directly to a candidate per election.",
+      "regen_query": "\"Ira Rennert\" FEC OR PAC contribution",
+      "event_id": "ira_rennert_political_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2009,
+      "date": "2009-06-04",
+      "date_precision": "day",
+      "donor_entity": "Ira Rennert",
+      "recipient": "Southampton Hospital",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.gettyimages.com/photos/ira-rennert",
+      "confidence": "medium",
+      "extraction_note": "Ira and Ingeborg Rennert hosted a benefit for Southampton Hospital at their estate on June 4, 2009.",
+      "extraction_evidence": "Ira and Ingeborg Rennert Benefit For Southampton Hospital at Rennert Estate on June 4, 2009",
+      "regen_query": "\"Ira Rennert\" OR \"Ingeborg Rennert\" \"Jewish Communal Fund\" DAF donor-advised",
+      "event_id": "ira_rennert_direct_gift_2009_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Ira Rennert",
+      "recipient": "Yeshiva Netiv Aryeh",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.jewishpress.com/news/israel/jerusalem/yeshiva-netiv-aryeh-adds-new-programs-says-terror-cannot-silence-us/2018/10/11/",
+      "confidence": "high",
+      "extraction_note": "Ira Rennert donated Torah scrolls to Yeshiva Netiv Aryeh, including one dedicated in memory of Ari presented to his family.",
+      "extraction_evidence": "Mr. Rennert, with the help of Rav Bina, was able to include an additional Rennert Torah dedicated in memory of Ari",
+      "regen_query": "\"Rennert\" \"Yeshivat Netiv Aryeh\" Jerusalem seminary donation gift",
+      "event_id": "ira_rennert_direct_gift_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2012,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Ira Rennert",
+      "recipient": "Restore Our Future",
+      "amount_usd": 1000000,
+      "source_type": "news_article",
+      "source_url": "https://www.politico.com/story/2012/12/for-megadonors-no-profile-beats-low-profile-84490_Page2.html",
+      "confidence": "high",
+      "extraction_note": "Ira Rennert gave $1 million to Restore Our Future through his company The Renco Group.",
+      "extraction_evidence": "Ira Rennert, investor, miner and industrialist, who gave $1 million to Restore Our Future through his company The Renco Group",
+      "regen_query": "\"Ira Rennert\" FEC OR PAC contribution",
+      "event_id": "ira_rennert_political_2012_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Rennert family",
+      "recipient": "Berkley Center for Entrepreneurship at NYU Stern",
+      "amount_usd": 3000000,
+      "source_type": "university_press",
+      "source_url": "https://www.stern.nyu.edu/portal-partners/alumni/alumni-news-profiles/news/landmark-gift-nyu-entrepreneurs",
+      "confidence": "high",
+      "extraction_note": "The Rennert family, including Ira Rennert, made a $3 million landmark gift to the Berkley Center for Entrepreneurship at NYU Stern.",
+      "extraction_evidence": "Rennert family received a $3 million landmark gift from the Rennert family, where Ira Rennert (MBA '56) and son, Ari Rennert (BS '01).",
+      "regen_query": "\"Ira Rennert\" gift OR donation million",
+      "event_id": "ira_rennert_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "pledges_and_announcements": [
@@ -278,6 +430,25 @@
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-24",
       "notes": "Ira Rennert is NOT on the Giving Pledge signatory list as of April 2026. No public commitment to give majority of wealth to charity has been made. This is a red flag for a 30+ year billionaire with ~$3.8-4.0B net worth."
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Ira Rennert",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.israelnationalnews.com/news/252281",
+      "confidence": "medium",
+      "extraction_note": "Ira Rennert announced he will donate a Torah scroll in memory of Ari Fuld, but this is an announcement of intent rather than a completed gift.",
+      "extraction_evidence": "Philanthropist Ira Rennert has announced that he will donate a Torah scroll for the ilui neshama",
+      "regen_query": "\"Rennert\" \"Yeshivat Netiv Aryeh\" Jerusalem seminary donation gift",
+      "event_id": "ira_rennert_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081",
+      "regen_extractor_model": "claude-haiku-4-5"
     }
   ],
   "political_giving": {
@@ -602,6 +773,120 @@
       "url": "https://baltimorebrew.com/2015/10/12/who-owes-8-million-in-unpaid-water-bills-yup-that-billionaire-ex-owner-of-sparrows-point/",
       "retrieved_at": "2026-04-24",
       "used_for": "$8M unpaid Baltimore water bills at former Sparrows Point steel operation \u2014 not philanthropy, context for environmental/community externalities"
+    },
+    {
+      "publisher": "alchetron.com",
+      "url": "https://alchetron.com/Ira-Rennert",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Fifth_Avenue_Synagogue",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Yeshivat_Netiv_Aryeh",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "il.linkedin.com",
+      "url": "https://il.linkedin.com/company/yeshivat-netiv-aryeh",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "lisa.biu.ac.il",
+      "url": "https://lisa.biu.ac.il/en/node/1446",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "mizrachi.org",
+      "url": "https://mizrachi.org/partners/yeshivat-netiv-aryeh/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "27east.com",
+      "url": "https://www.27east.com/residence/real-estate-news/article_c40bdf7d-5b05-5ff8-9c95-2153d03ddc1f.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "academia.edu",
+      "url": "https://www.academia.edu/2424326/Shlomo_Lotan_The_Symbolism_of_Jerusalem_and_the_House_of_King_David_in_the_Teutonic_Military_Order_Medieval_Heritage_New_studies_on_Jerusalem_Volume_14_Ingeborg_Rennert_center_for_Jerusalem_studies_Bar_Ilan_University_Ramat_Gan_2008_pp_263_272",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "buchwaldcapital.com",
+      "url": "https://www.buchwaldcapital.com/PDF/Bloomberg_Markets_article_Rennert_0904.pdf",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "exposetheenemy.com",
+      "url": "https://www.exposetheenemy.com/dirt-on-ira-rennert",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "gettyimages.com",
+      "url": "https://www.gettyimages.com/photos/ira-rennert",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "israelnationalnews.com",
+      "url": "https://www.israelnationalnews.com/news/124270",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "israelnationalnews.com",
+      "url": "https://www.israelnationalnews.com/news/252281",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "jewage.org",
+      "url": "https://www.jewage.org/wiki/en/Article:Ira_Rennert_-_Biography",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "jewishpress.com",
+      "url": "https://www.jewishpress.com/news/israel/jerusalem/yeshiva-netiv-aryeh-adds-new-programs-says-terror-cannot-silence-us/2018/10/11/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "marketscreener.com",
+      "url": "https://www.marketscreener.com/insider/IRA-RENNERT-A07GK7/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "politico.com",
+      "url": "https://www.politico.com/story/2012/12/for-megadonors-no-profile-beats-low-profile-84490_Page2.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "stern.nyu.edu",
+      "url": "https://www.stern.nyu.edu/portal-partners/alumni/alumni-news-profiles/news/landmark-gift-nyu-entrepreneurs",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
+    },
+    {
+      "publisher": "touristlink.com",
+      "url": "https://www.touristlink.com/united-states/fifth-avenue-synagogue/overview.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-6983a77e383a0081"
     }
   ],
   "summary_150_words": "Ira Rennert, 91, chairs Renco Group \u2014 a wholly private industrial conglomerate (AM General Humvees, Doe Run lead, US Magnesium) worth roughly $3.8B on Forbes' 2026 list (#1137). Over 30 years as a billionaire he has built NO private foundation, signed NO Giving Pledge, and left NO publicly auditable annual giving record. Observable lifetime giving with disclosed dollar amounts totals only ~$13M \u2014 dominated by Jewish and Israel-focused named chairs and buildings (BU Wiesel Center $5M, Barnard Judaic Studies $2.5M, Yeshiva Univ. Entrepreneurial Institute, Bar-Ilan Jerusalem Center, Western Wall Hall of Light, Fifth Avenue Synagogue mikvah). Unverified Bloomberg reporting adds $25.4M to Jerusalem settler orgs. Meanwhile he built Fair Field \u2014 America's largest private residence ($198-500M) \u2014 and was ordered in 2017 to repay $213M for diverting business funds to it. Tier A Verified Low: low-profile religious philanthropy that, even at generous hidden-upper estimates, falls well short of any reasonable expected-giving norm."

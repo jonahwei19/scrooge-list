@@ -17,10 +17,10 @@
 </script>
 <style>
 :root{
-  --paper:#F3ECD9;
-  --paper-mid:#E7DCC1;
-  --paper-deep:#D8C9A4;
-  --paper-shadow:#C9B78A;
+  --paper:#FDFAF2;
+  --paper-mid:#F7F0DC;
+  --paper-deep:#ECDFBE;
+  --paper-shadow:#D8C9A6;
   --ink:#19130B;
   --ink-soft:#3C2F22;
   --ink-fade:#6E5E46;
@@ -63,12 +63,12 @@ body{
 [data-theme="dark"] .tier-ok{color:var(--green,#8fb57a)}
 .grain{
   position:fixed;inset:0;pointer-events:none;z-index:2;
-  opacity:.55;mix-blend-mode:multiply;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.45 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  opacity:.13;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.32 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
 }
 .foxing{
   position:fixed;inset:0;pointer-events:none;z-index:1;
-  opacity:.5;mix-blend-mode:multiply;
+  opacity:.13;mix-blend-mode:multiply;
   background-image:
     radial-gradient(circle at 8% 12%, rgba(140,107,45,.14), transparent 3%),
     radial-gradient(circle at 92% 22%, rgba(115,90,62,.1), transparent 2.5%),

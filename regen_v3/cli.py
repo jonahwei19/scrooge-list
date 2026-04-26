@@ -34,6 +34,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from regen_v3 import queries as queries_mod
+from regen_v3 import queries_llm as queries_llm_mod
 from regen_v3 import search as search_mod
 from regen_v3 import verify as verify_mod
 from regen_v3 import extract as extract_mod
@@ -153,9 +154,17 @@ def run_one(
         + f" (total {len(structured_candidates)})"
     )
 
-    # 1. Plan queries
-    plan = queries_mod.build_query_plan(record)
-    print(f"  queries: {len(plan)}")
+    # 1. Plan queries — deterministic template baseline + LLM-generated
+    #    enrichment, deduped by (role, query). Baseline wins on ties.
+    plan_baseline = queries_mod.build_query_plan(record)
+    try:
+        plan_llm = queries_llm_mod.build_llm_query_plan(record, refresh=refresh)
+    except Exception as e:
+        print(f"    [queries_llm-skip] {type(e).__name__}: {e}")
+        plan_llm = []
+    seen = {(q["role"], q["query"]) for q in plan_baseline}
+    plan = list(plan_baseline) + [q for q in plan_llm if (q["role"], q["query"]) not in seen]
+    print(f"  queries: {len(plan)}  ({len(plan_baseline)} baseline + {len(plan)-len(plan_baseline)} LLM)")
 
     # 2. Search (cached)
     seen_urls: dict[str, dict] = {}  # url -> {role, query, title, snippet}

@@ -2,7 +2,7 @@
   "schema_version": "v3.0.0-draft",
   "schema_notes": "Reference implementation for per-billionaire record. Every dollar has source_url + retrieved_at. Events are canonically scoped by event_role (pledge / payment / grant_out / transfer_in / direct_gift / political / private_investment). Classification for Tier A/B/C happens downstream, not in this file.",
   "generated_at": "2026-04-23",
-  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Schwarzman) + regen_v3@sha256-91a741d107fb10e2 + regen_v3@sha256-8009d87f8e962fd5",
+  "generated_by": "scrooge v3 manual reference run \u2014 single-subject deep research (Schwarzman) + regen_v3@sha256-91a741d107fb10e2 + regen_v3@sha256-8009d87f8e962fd5 + regen_v3@sha256-fa3f7e9aac887346",
   "person": {
     "name_display": "Stephen Schwarzman",
     "name_legal": "Stephen Allen Schwarzman",
@@ -398,6 +398,466 @@
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "unspecified",
+      "amount_usd": 100000000,
+      "source_type": "other",
+      "source_url": "https://achievement.org/achiever/stephen-schwarzman/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman personally donated $100 million to an unspecified charitable effort in China.",
+      "extraction_evidence": "Stephen Schwarzman personally donated $100 million to this effort",
+      "regen_query": "\"Stephen Schwarzman\" donates million",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "MAGA Inc",
+      "amount_usd": 5000000,
+      "source_type": "other",
+      "source_url": "https://americansfortaxfairness.org/billionaire-kingmakers/",
+      "confidence": "high",
+      "extraction_note": "Schwarzman gave $5 million to Trump's MAGA Inc political committee.",
+      "extraction_evidence": "$5 million for Trump's MAGA Inc",
+      "regen_query": "\"Stephen Schwarzman\" FEC OR PAC contribution",
+      "event_id": "stephen_schwarzman_political_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "Congressional Leadership Fund",
+      "amount_usd": 1000000,
+      "source_type": "other",
+      "source_url": "https://americansfortaxfairness.org/billionaire-kingmakers/",
+      "confidence": "high",
+      "extraction_note": "Schwarzman gave $1 million to the Congressional Leadership Fund.",
+      "extraction_evidence": "$1 million for the Congressional Leadership Fund",
+      "regen_query": "\"Stephen Schwarzman\" FEC OR PAC contribution",
+      "event_id": "stephen_schwarzman_political_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "Senate Leadership Fund",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://campaignlegal.org/update/megadonor-access-during-national-crisis-and-other-takeaways-new-fec-reports",
+      "confidence": "high",
+      "extraction_note": "Schwarzman wrote a $10 million check to Senate Leadership Fund, a super PAC aligned with Senate Majority Leader Mitch McConnell, in February according to FEC reports.",
+      "extraction_evidence": "Schwarzman wrote a $10 million check to Senate Leadership Fund, the super PAC closely aligned with Senate Majority leader Mitch McConnell.",
+      "regen_query": "\"Stephen Schwarzman\" FEC OR PAC contribution",
+      "event_id": "stephen_schwarzman_political_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "University of Oxford",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://cherwell.org/2025/10/01/oxford-schwarzman-centre-opens/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman made donations totalling \u00a3185 million to Oxford, including a \u00a3150 million gift described as the University's biggest since the Renaissance.",
+      "extraction_evidence": "made donations totalling \u00a3185 million, including a \u00a3150 million gift",
+      "regen_query": "\"Stephen Schwarzman\" \"Oxford\" \"Schwarzman Centre for the Humanities\" \u00a325 million uplift 2022 additional funding",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "University of Oxford",
+      "amount_usd": 185000000,
+      "source_type": "news_article",
+      "source_url": "https://lifestylesmagazine.com/latest-news/185-million-stephen-a-schwarzman-gift-opens-oxford-centre-signaling-a-multi-billion-dollar-philanthropic-vision-in-motion/",
+      "confidence": "high",
+      "extraction_note": "Stephen A. Schwarzman donated $185 million to fund the University of Oxford's Stephen A. Schwarzman Centre for the Humanities.",
+      "extraction_evidence": "Funded by a record-breaking $185 million donation from Blackstone",
+      "regen_query": "\"Stephen Schwarzman\" gift OR donation million",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2025,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "University",
+      "amount_usd": 233000000,
+      "source_type": "news_article",
+      "source_url": "https://lifestylesmagazine.com/latest-news/233-million-gift-from-philanthropist-stephen-a-schwarzman-to-build-new-institute-for-ethics-in-ai-at-university-by-2025/",
+      "confidence": "high",
+      "extraction_note": "Stephen A. Schwarzman made a $233 million gift to build a new institute for ethics in AI at a university, with the facility opening in 2025.",
+      "extraction_evidence": "$233 million gift from philanthropist Stephen A. Schwarzman to build new institute for ethics in AI",
+      "regen_query": "\"Stephen Schwarzman\" gift OR donation million",
+      "event_id": "stephen_schwarzman_direct_gift_2025_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "unspecified",
+      "amount_usd": 150000000,
+      "source_type": "other",
+      "source_url": "https://listofceo.com/financial-services/blackstone-ceo-email-net-worth-stephen-schwarzman/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman donated $150 million to a university, though the specific university is not named in the snippet.",
+      "extraction_evidence": "He later donated $150 million to the university.",
+      "regen_query": "\"Stephen Allen Schwarzman\" https://www.forbes.com/profile/stephen-schwarzman/",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "unspecified",
+      "amount_usd": 1500000,
+      "source_type": "news_article",
+      "source_url": "https://mainebeacon.com/with-1-5-million-contributed-blackstone-ceo-is-collins-biggest-billionaire-backer/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman donated $1.5 million this year to a Political Action Committee dedicated to Sen. Collins.",
+      "extraction_evidence": "Stephen Schwarzman, founder and CEO of private equity and investment firm The Blackstone Group, donated $1.5 million this year to a Political Action Committee",
+      "regen_query": "\"Stephen Schwarzman\" FEC OR PAC contribution",
+      "event_id": "stephen_schwarzman_political_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "More Jobs, Less Government",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://montanafreepress.org/2024/10/16/pac-spending-on-montanas-u-s-senate-race-approaches-140-million/",
+      "confidence": "high",
+      "extraction_note": "Schwarzman contributed $5 million to More Jobs, Less Government, a PAC involved in Montana's U.S. Senate race.",
+      "extraction_evidence": "Schwarzman has contributed $5 million to More Jobs, Less Government",
+      "regen_query": "\"Stephen Schwarzman\" FEC OR PAC contribution",
+      "event_id": "stephen_schwarzman_political_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "Archdiocese of New York",
+      "amount_usd": 40000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/archdiocese-of-new-york-receives-40-million-gift-for-scholarship-fund",
+      "confidence": "high",
+      "extraction_note": "Stephen A. Schwarzman and Christine Schwarzman made a $40 million gift to the Archdiocese of New York for a scholarship fund for underprivileged children in Catholic schools.",
+      "extraction_evidence": "$40 million gift from Christine and Stephen A. Schwarzman to launch a scholarship fund",
+      "regen_query": "\"Stephen Schwarzman\" donates million",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "University of Oxford",
+      "amount_usd": 32640000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/university-of-oxford-receives-32.64-million-from-stephen-schwarzman",
+      "confidence": "high",
+      "extraction_note": "University of Oxford announced a \u00a325 million ($32.64 million) gift from Stephen A. Schwarzman for the humanities center.",
+      "extraction_evidence": "The University of Oxford has announced a \u00a325 million ($32.64 million) gift from Stephen A. Schwarzman",
+      "regen_query": "\"Stephen Schwarzman\" \"Oxford\" \"Schwarzman Centre for the Humanities\" \u00a325 million uplift 2022 additional funding",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "unspecified",
+      "amount_usd": 400000,
+      "source_type": "news_article",
+      "source_url": "https://readsludge.com/2024/04/11/billionaires-fund-the-gops-senate-takeover-attempt-with-tax-cuts-at-stake/",
+      "confidence": "high",
+      "extraction_note": "Schwarzman, CEO of Blackstone, contributed $400,000 to a super PAC funding GOP Senate efforts.",
+      "extraction_evidence": "Schwarzman, CEO of Blackstone, one of the largest private equity firms in the world, contributed $400,000",
+      "regen_query": "\"Stephen Schwarzman\" FEC Form 3X OR Form 5 2020 2021 2022 2023 2024 2025 super-PAC contributions",
+      "event_id": "stephen_schwarzman_political_2024_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "National Library of Israel",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://stljewishlight.org/world-news/billionaire-stephen-schwarzman-donates-10-million-to-israels-national-library/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman donated $10 million to the National Library of Israel, described as his first major donation in the country.",
+      "extraction_evidence": "Stephen Schwarzman, an economic consultant to President Donald Trump, has given $10 million to the National Library of Israel",
+      "regen_query": "\"Stephen Schwarzman\" \"National Library of Israel\" OR \"Biblioteca Leumit\" 2018 gift $10 million",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen7",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen and Christine Schwarzman",
+      "recipient": "Schwarzman Animal Medical Center",
+      "amount_usd": 25000000,
+      "source_type": "other",
+      "source_url": "https://www.amcny.org/schwarzman-animal-medical-center-achieves-100-million-capital-campaign-fundraising-goal/",
+      "confidence": "high",
+      "extraction_note": "Stephen and Christine Schwarzman made a $25 million gift to the Animal Medical Center, described as the largest in the institution's 113-year history.",
+      "extraction_evidence": "Stephen and Christine Schwarzman\u2013whose record-setting $25 million gift was the largest in AMC's 113-year history",
+      "regen_query": "\"Stephen Schwarzman\" \"Animal Medical Center\" OR \"Schwarzman Animal Medical Center\" 2021 $25 million endowment",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen8",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2007,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "New York Public Library",
+      "amount_usd": 100000000,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/susanadams/2018/04/24/stephen-schwarzmans-high-school-forces-him-to-rewrite-the-terms-of-his-25-million-gift/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman donated $100 million to the New York Public Library in 2007, which renamed its Fifth Avenue building after him.",
+      "extraction_evidence": "In 2007 the New York Public Library renamed its grand structure on Fifth Avenue the Stephen A. Schwarzman Building after he donated $100 million",
+      "regen_query": "\"Stephen Schwarzman\" \"Abington High School\" OR \"Abington Senior High School\" stadium 2004 donation amount",
+      "event_id": "stephen_schwarzman_direct_gift_2007_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "Abington School District",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://www.inquirer.com/education/abington-school-board-stephen-schwarzman-gift-20191129.html",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman made a $25 million gift to the Abington School District.",
+      "extraction_evidence": "$25 million gift from billionaire Stephen Schwarzman",
+      "regen_query": "\"Stephen Schwarzman\" \"Abington High School\" OR \"Abington Senior High School\" stadium 2004 donation amount",
+      "event_id": "stephen_schwarzman_direct_gift_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2022,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen A Schwarzman Education Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 1191603,
+      "source_type": "990-PF",
+      "source_url": "https://www.instrumentl.com/990-report/stephen-a-schwarzman-education-foundation",
+      "confidence": "high",
+      "extraction_note": "The Stephen A Schwarzman Education Foundation contributed $1,191,603 in grants during 2022.",
+      "extraction_evidence": "contributed $1,191,603 in grants during 2022",
+      "regen_query": "\"Stephen A Schwarzman Education Foundation\" 990-PF",
+      "event_id": "stephen_schwarzman_grant_out_2022_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2018,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Stephen A Schwarzman Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 211796548,
+      "source_type": "other",
+      "source_url": "https://www.intellispect.co/organizations/474634539-stephen-a-schwarzman-foundation",
+      "confidence": "high",
+      "extraction_note": "Stephen A Schwarzman Foundation awarded 48 individual grants totaling $211,796,548 since 2018.",
+      "extraction_evidence": "Since 2018, Stephen A Schwarzman Foundation has awarded 48 individual grants totaling $211,796,548",
+      "regen_query": "\"Stephen A Schwarzman Foundation\" grants",
+      "event_id": "stephen_schwarzman_grant_out_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "National Library of Israel",
+      "amount_usd": 9072000,
+      "source_type": "news_article",
+      "source_url": "https://www.jewishnews.co.uk/american-billionaire-stephen-schwarzman-donates-7m-to-israels-national-library/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman donated \u00a37.2m to the National Library of Israel, reportedly his first major donation in the country.",
+      "extraction_evidence": "Stephen Schwarzman, an economic consultant to President Donald Trump, has given \u00a37.2m to the National Library of Israel",
+      "regen_query": "\"Stephen Schwarzman\" \"National Library of Israel\" OR \"Biblioteca Leumit\" 2018 gift $10 million",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen9",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "Schwarzman Centre for the Humanities",
+      "amount_usd": 232500000,
+      "source_type": "other",
+      "source_url": "https://www.schwarzmancentre.ox.ac.uk/in-conversation-with-stephen-schwarzman-rjg7",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman made a \u00a3185 million gift to establish the Schwarzman Centre for the Humanities at Oxford University.",
+      "extraction_evidence": "Stephen A. Schwarzman's record \u00a3185 million gift made the Schwarzman Centre possible",
+      "regen_query": "\"Stephen Schwarzman\" \"Oxford\" \"Schwarzman Centre for the Humanities\" \u00a325 million uplift 2022 additional funding",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen10",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "Massachusetts Institute of Technology (MIT)",
+      "amount_usd": 350000000,
+      "source_type": "news_article",
+      "source_url": "https://www.science.org/content/article/mit-use-350-million-gift-bolster-computer-sciences",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman made a $350 million gift to MIT to support computer science education.",
+      "extraction_evidence": "$350 million gift from investment banker Stephen Schwarzman will allow the Massachusetts Institute of Technology (MIT)",
+      "regen_query": "\"Stephen Schwarzman\" gift OR donation million",
+      "event_id": "stephen_schwarzman_direct_gift_x_regen11",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.theblock.co/post/397681/super-pac-8-million-sherrod-brown",
+      "confidence": "medium",
+      "extraction_note": "Snippet indicates Schwarzman provided funding to a super PAC opposing Sherrod Brown, but does not specify the amount he contributed.",
+      "extraction_evidence": "Blackstone CEO Stephen Schwarzman and Fisher Investments Chairman Kenneth Fisher, per the FEC",
+      "regen_query": "\"Stephen Schwarzman\" FEC OR PAC contribution",
+      "event_id": "stephen_schwarzman_political_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
     }
   ],
   "pledges_and_announcements": [
@@ -447,6 +907,266 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "Likely to flow through SASCHF; already captured in 2024 grant totals.",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen A. Schwarzman Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 1000000000,
+      "source_type": "other",
+      "source_url": "https://billionairereporter.com/stephen-schwarzman-create-biggest-foundation/",
+      "confidence": "high",
+      "extraction_note": "The Stephen A. Schwarzman Foundation has committed more than $1 billion in gifts to various institutions.",
+      "extraction_evidence": "His Stephen A. Schwarzman Foundation has committed more than $1 billion in gifts",
+      "regen_query": "\"Stephen Schwarzman\" \"Yale\" \"Schwarzman Center\" $150 million 2015 additional gifts OR endowment growth",
+      "event_id": "stephen_schwarzman_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "Schwarzman Foundation",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://dnyuz.com/2026/02/16/blackstone-mogul-warned-of-urgent-need-for-ai-preparedness-now-hes-turning-his-48-billion-fortune-into-a-top-philanthropic-foundation/",
+      "confidence": "high",
+      "extraction_note": "Schwarzman plans to transfer a substantial majority of his fortune to his foundation upon his death.",
+      "extraction_evidence": "plans to transfer a \"substantial majority\" of his fortune to his foundation upon his death",
+      "regen_query": "\"Stephen Schwarzman\" \"Giving Pledge\" 2020 letter \"substantial majority\" OR \"majority of wealth\" fulfillment status 2024 2025",
+      "event_id": "stephen_schwarzman_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "India",
+      "amount_usd": 5000000,
+      "source_type": "news_article",
+      "source_url": "https://economictimes.indiatimes.com/industry/banking/finance/blackstone-chief-schwarzman-commits-usd-5-mn-to-india-in-pandemic-aid/articleshow/82288733.cms",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman announced USD 5 million in pandemic aid to India to help fight the coronavirus pandemic.",
+      "extraction_evidence": "announced a USD 5-million aid to help India to fight the raging coronavirus pandemic",
+      "regen_query": "\"Stephen Schwarzman\" pledges OR commits OR announces",
+      "event_id": "stephen_schwarzman_announcement_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Blackstone Group",
+      "recipient": "Israel",
+      "amount_usd": 7000000,
+      "source_type": "news_article",
+      "source_url": "https://ejewishphilanthropy.com/blackstone-group-pledges-7-million-in-aid-to-israel/",
+      "confidence": "high",
+      "extraction_note": "Blackstone Group pledged approximately $7 million in aid to Israel following Hamas terror attacks.",
+      "extraction_evidence": "Blackstone pledged approximately $7 million to aid for Israel",
+      "regen_query": "\"Stephen Schwarzman\" pledges OR commits OR announces",
+      "event_id": "stephen_schwarzman_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2018,
+      "date": "2018-02-15",
+      "date_precision": "day",
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "Abington Senior High School",
+      "amount_usd": 25000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Abington_Senior_High_School",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman announced a $25 million donation to Abington Senior High School on February 15, 2018.",
+      "extraction_evidence": "Stephen A. Schwarzman, announced a $25 million donation to the high school on February 15, 2018",
+      "regen_query": "\"Stephen Schwarzman\" \"Abington High School\" OR \"Abington Senior High School\" stadium 2004 donation amount",
+      "event_id": "stephen_schwarzman_announcement_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "unspecified",
+      "amount_usd": 48000000000,
+      "source_type": "news_article",
+      "source_url": "https://timesofindia.indiatimes.com/world/us/blackstone-founder-stephen-schwarzman-plans-to-donate-his-entire-48-billion-fortune-to-a-major-philanthropic-foundation/articleshow/128482163.cms",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman pledged to donate his entire $48 billion fortune to a major philanthropic foundation.",
+      "extraction_evidence": "Blackstone founder Stephen Schwarzman plans to donate his entire $48 billion fortune to a major philanthropic foundation",
+      "regen_query": "\"Stephen Schwarzman\" \"giving pledge\"",
+      "event_id": "stephen_schwarzman_pledge_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "The Animal Medical Center",
+      "amount_usd": 25000000,
+      "source_type": "other",
+      "source_url": "https://www.amcny.org/capital-campaign/",
+      "confidence": "high",
+      "extraction_note": "Stephen and Christine Schwarzman announced a $25 million commitment to The Animal Medical Center's hospital renovation and expansion.",
+      "extraction_evidence": "$25 million commitment from Stephen and Christine Schwarzman",
+      "regen_query": "\"Stephen Schwarzman\" \"Animal Medical Center\" OR \"Schwarzman Animal Medical Center\" 2021 $25 million endowment",
+      "event_id": "stephen_schwarzman_pledge_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2018,
+      "date": "2018-10",
+      "date_precision": "month",
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "MIT",
+      "amount_usd": 350000000,
+      "source_type": "other",
+      "source_url": "https://www.blackstone.com/the-firm/our-people/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman announced a $350 million gift to establish the MIT Schwarzman College of Computing in October 2018.",
+      "extraction_evidence": "In October 2018, he announced a foundational $350 million gift to establish the MIT Schwarzman College of Computing",
+      "regen_query": "\"Stephen Schwarzman\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "stephen_schwarzman_announcement_2018_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "Abington high school",
+      "amount_usd": 25000000,
+      "source_type": "news_article",
+      "source_url": "https://www.cbsnews.com/news/abington-stephen-schwarzman-gift-allowed-to-add-name/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman agreed to donate $25 million to his former high school in Abington, Pennsylvania.",
+      "extraction_evidence": "billionaire investor Stephen Schwarzman had agreed to donate $25 million to his former high school",
+      "regen_query": "\"Stephen Schwarzman\" \"Abington High School\" OR \"Abington Senior High School\" stadium 2004 donation amount",
+      "event_id": "stephen_schwarzman_announcement_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2019,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "unspecified",
+      "amount_usd": 188000000,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/jenniferwang/2019/06/22/why-blackstone-cofounder-steve-schwarzman-donated-188-million-to-support-the-humanities-and-ai-ethics/",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman donated $188 million to support the humanities and AI ethics, as indicated in the article title.",
+      "extraction_evidence": "Steve Schwarzman Donated $188 Million To Support The Humanities And AI Ethics",
+      "regen_query": "\"Stephen Schwarzman\" \"MIT\" \"College of Computing\" $350 million multi-year pledge disbursement schedule 2018-2024",
+      "event_id": "stephen_schwarzman_announcement_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Stephen Schwarzman",
+      "recipient": "MIT",
+      "amount_usd": 350000000,
+      "source_type": "news_article",
+      "source_url": "https://www.foxbusiness.com/business-leaders/blackstone-ceo-schwarzmans-350m-mit-gift-to-power-ai-computing",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman committed $350 million to MIT for AI and computing initiatives.",
+      "extraction_evidence": "Stephen Schwarzman, co-founder of global asset management giant Blackstone, has committed $350 million to MIT",
+      "regen_query": "\"Stephen Schwarzman\" \"MIT\" \"College of Computing\" $350 million multi-year pledge disbursement schedule 2018-2024",
+      "event_id": "stephen_schwarzman_announcement_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2020,
+      "date": "2020-12-21",
+      "date_precision": "day",
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.givingpledge.org/pledger/stephen-a-schwarzman/",
+      "confidence": "high",
+      "extraction_note": "Stephen A. Schwarzman joined the Giving Pledge, an announcement of philanthropic commitment.",
+      "extraction_evidence": "Stephen A. Schwarzman joined the Giving Pledge since May 2019",
+      "regen_query": "\"Stephen Schwarzman\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "stephen_schwarzman_announcement_2020_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Stephen A. Schwarzman",
+      "recipient": "The Giving Pledge",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.linkedin.com/posts/stephenschwarzman_the-giving-pledge-activity-6630890803969433600-XhqV",
+      "confidence": "high",
+      "extraction_note": "Stephen Schwarzman announced he joined The Giving Pledge, committing to give away the majority of his wealth to philanthropic causes.",
+      "extraction_evidence": "I'm very pleased to join Bill Gates, Melinda Gates and Warren Buffet's Giving Pledge",
+      "regen_query": "\"Stephen Schwarzman\" \"giving pledge\"",
+      "event_id": "stephen_schwarzman_pledge_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346",
+      "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "pledge"
     }
   ],
@@ -603,8 +1323,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 16154500000,
     "ratio_observable_to_5pct_tenure": 0.0612,
-    "observable_from_events_usd": 1558587950,
-    "observable_drift_pct": 0.479,
+    "observable_from_events_usd": 3263788101,
+    "observable_drift_pct": 2.098,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -799,6 +1519,504 @@
       "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-70-73",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-8009d87f8e962fd5"
+    },
+    {
+      "publisher": "achievement.org",
+      "url": "https://achievement.org/achiever/stephen-schwarzman/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "billionairereporter.com",
+      "url": "https://billionairereporter.com/stephen-schwarzman-create-biggest-foundation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "campaignlegal.org",
+      "url": "https://campaignlegal.org/update/megadonor-access-during-national-crisis-and-other-takeaways-new-fec-reports",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "computing.mit.edu",
+      "url": "https://computing.mit.edu/about/history/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "dianeravitch.net",
+      "url": "https://dianeravitch.net/2019/09/16/how-a-billionaire-bought-the-right-to-put-his-name-on-the-yale-commons/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "dnyuz.com",
+      "url": "https://dnyuz.com/2026/02/16/blackstone-mogul-warned-of-urgent-need-for-ai-preparedness-now-hes-turning-his-48-billion-fortune-into-a-top-philanthropic-foundation/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "economictimes.indiatimes.com",
+      "url": "https://economictimes.indiatimes.com/industry/banking/finance/blackstone-chief-schwarzman-commits-usd-5-mn-to-india-in-pandemic-aid/articleshow/82288733.cms",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "ejewishphilanthropy.com",
+      "url": "https://ejewishphilanthropy.com/blackstone-group-pledges-7-million-in-aid-to-israel/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Abington_Senior_High_School",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "faithinspires.wordpress.com",
+      "url": "https://faithinspires.wordpress.com/tag/christine-and-stephen-schwarzman/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "famousintel.com",
+      "url": "https://famousintel.com/stephen-a-schwarzman/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/news/blackstone-mogul-warned-urgent-ai-091300127.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "finance.yahoo.com",
+      "url": "https://finance.yahoo.com/video/steve-schwarzman-signs-warren-buffetts-193944104.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "inquirer.com",
+      "url": "https://inquirer.com/philly/education/stephen-schwarzman-abington-high-school-name-change-gift-20180328.html?amp=&amp=&amp=&cid=Inquirer+Twitter+Account",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/185-million-stephen-a-schwarzman-gift-opens-oxford-centre-signaling-a-multi-billion-dollar-philanthropic-vision-in-motion/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/188-million-gift-to-universitys-humanities-hub-marks-the-pinnacle-of-stephen-a-schwarzmans-billion-dollar-lifetime-of-transformative-philanthropy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/233-million-gift-from-philanthropist-stephen-a-schwarzman-to-build-new-institute-for-ethics-in-ai-at-university-by-2025/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/a-30-million-new-gift-raises-the-total-to-212-million-to-oxford-u-from-steve-schwarzman/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "listofceo.com",
+      "url": "https://listofceo.com/financial-services/blackstone-ceo-email-net-worth-stephen-schwarzman/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "mainebeacon.com",
+      "url": "https://mainebeacon.com/with-1-5-million-contributed-blackstone-ceo-is-collins-biggest-billionaire-backer/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "montanafreepress.org",
+      "url": "https://montanafreepress.org/2024/10/16/pac-spending-on-montanas-u-s-senate-race-approaches-140-million/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "news.mit.edu",
+      "url": "https://news.mit.edu/2018/faq-mit-stephen-schwarzman-college-of-computing-1015",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/animal-medical-center-receives-25-million-from-schwarzmans",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/archdiocese-of-new-york-receives-40-million-gift-for-scholarship-fund",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/university-of-oxford-receives-32.64-million-from-stephen-schwarzman",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "pitchbook.com",
+      "url": "https://pitchbook.com/news/articles/blackstone-boss-stephen-schwarzman-donates-190m-to-oxford",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "pulse2.com",
+      "url": "https://pulse2.com/stephen-schwarzman-the-giving-pledge/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "qz.com",
+      "url": "https://qz.com/work/1649330/why-stephen-schwarzmans-big-gift-to-oxford-matters-for-everyone-else",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "readsludge.com",
+      "url": "https://readsludge.com/2024/04/11/billionaires-fund-the-gops-senate-takeover-attempt-with-tax-cuts-at-stake/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "realtimebillionaireslist.com",
+      "url": "https://realtimebillionaireslist.com/stephen-schwarzman-net-worth/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "stljewishlight.org",
+      "url": "https://stljewishlight.org/world-news/billionaire-stephen-schwarzman-donates-10-million-to-israels-national-library/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "thecaninereview.com",
+      "url": "https://thecaninereview.com/veterinary-hospital/the-animal-medical-center-nyc/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "timesofindia.indiatimes.com",
+      "url": "https://timesofindia.indiatimes.com/world/us/blackstone-founder-stephen-schwarzman-plans-to-donate-his-entire-48-billion-fortune-to-a-major-philanthropic-foundation/articleshow/128482163.cms",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "amcny.org",
+      "url": "https://www.amcny.org/capital-campaign/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "amcny.org",
+      "url": "https://www.amcny.org/schwarzman-animal-medical-center-achieves-100-million-capital-campaign-fundraising-goal/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "avma.org",
+      "url": "https://www.avma.org/news/animal-medical-center-receives-25m-gift-renovation-project",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "benzinga.com",
+      "url": "https://www.benzinga.com/pressreleases/21/11/n24367216/animal-medical-center-announces-25-million-gift-from-stephen-and-christine-schwarzman",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "blackstone.com",
+      "url": "https://www.blackstone.com/the-firm/our-people/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "cbsnews.com",
+      "url": "https://www.cbsnews.com/news/abington-stephen-schwarzman-gift-allowed-to-add-name/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "cnn.com",
+      "url": "https://www.cnn.com/2020/02/05/business/blackstone-ceo-giving-pledge/index.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "dvm360.com",
+      "url": "https://www.dvm360.com/view/animal-medical-center-bestowed-25-million-donation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/profile/stephen-schwarzman/?list=billionaires",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/daviddawkins/2019/06/19/billionaire-stephen-schwarzman-gifts-188-million-to-oxford-university/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/jenniferwang/2019/06/22/why-blackstone-cofounder-steve-schwarzman-donated-188-million-to-support-the-humanities-and-ai-ethics/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/russellflannery/2013/05/02/hats-off-to-billionaire-stephen-schwarzmans-elite-china-scholarships-but-what-can-everyone-else-do/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/susanadams/2018/02/15/steve-schwarzman-makes-the-biggest-ever-donation-to-a-public-high-school/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/susanadams/2018/04/24/stephen-schwarzmans-high-school-forces-him-to-rewrite-the-terms-of-his-25-million-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/susanadams/2018/10/15/stephen-schwarzman-makes-anchor-gift-for-new-1-billion-school-of-artificial-intelligence-at-m-i-t/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "foxbusiness.com",
+      "url": "https://www.foxbusiness.com/business-leaders/blackstone-ceo-schwarzmans-350m-mit-gift-to-power-ai-computing",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "foxbusiness.com",
+      "url": "https://www.foxbusiness.com/business-leaders/stephen-schwarzman-blackstone-philanthropy",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "influencewatch.org",
+      "url": "https://www.influencewatch.org/person/stephen-allen-schwarzman/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "inkl.com",
+      "url": "https://www.inkl.com/news/blackstone-mogul-warned-of-urgent-need-for-ai-preparedness-now-he-s-turning-his-48-billion-fortune-into-a-top-philanthropic-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "innercityscholarshipfund.org",
+      "url": "https://www.innercityscholarshipfund.org/media/press-releases/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "innercityscholarshipfund.org",
+      "url": "https://www.innercityscholarshipfund.org/wp-content/uploads/2020/01/20171204_kids_are_our_capital.pdf",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "innercityscholarshipfund.org",
+      "url": "https://www.innercityscholarshipfund.org/wp-content/uploads/2020/01/20171206_cny.pdf",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "inquirer.com",
+      "url": "https://www.inquirer.com/education/abington-school-board-stephen-schwarzman-gift-20191129.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "instrumentl.com",
+      "url": "https://www.instrumentl.com/990-report/stephen-a-schwarzman-education-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "intellispect.co",
+      "url": "https://www.intellispect.co/organizations/474634539-stephen-a-schwarzman-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "jewishledger.com",
+      "url": "https://www.jewishledger.com/2018/02/trump-adviser-stephen-schwarzman-donates-10-million-israeli-library/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "jewishnews.co.uk",
+      "url": "https://www.jewishnews.co.uk/american-billionaire-stephen-schwarzman-donates-7m-to-israels-national-library/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "jpost.com",
+      "url": "https://www.jpost.com/israel-news/billionaire-stephen-schwarzman-donates-10-million-to-the-national-library-542177",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "jta.org",
+      "url": "https://www.jta.org/2018/02/08/united-states/billionaire-stephen-schwarzman-a-trump-adviser-donates-10-million-to-israels-national-library",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "linkedin.com",
+      "url": "https://www.linkedin.com/posts/stephenschwarzman_the-giving-pledge-activity-6630890803969433600-XhqV",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2018/04/13/business/steven-schwarzman-blackstone-abington-pennsylvania.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2018/05/05/style/stephen-schwarzman-catholic-church-met-gala.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "oxfordmail.co.uk",
+      "url": "https://www.oxfordmail.co.uk/news/19987907.stephen-schwarzman-gifts-another-25m-university-oxford-building/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "palmbeachdailynews.com",
+      "url": "https://www.palmbeachdailynews.com/story/news/local/2018/02/20/stephen-schwarzman-gives-10-million/9693438007/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/giving-pledge-adds-stephen-schwarzman-william-gross-and-11-other-billionaires",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/the-path-to-a-better-life/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "philanthropyroundtable.org",
+      "url": "https://www.philanthropyroundtable.org/almanac/a-record-for-catholic-school-scholarships/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/animal-medical-center-announces-25-million-gift-from-stephen-and-christine-schwarzman-301434279.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/schwarzman-animal-medical-center-achieves-100-million-capital-campaign-fundraising-goal-301724169.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "schwarzmancentre.ox.ac.uk",
+      "url": "https://www.schwarzmancentre.ox.ac.uk/in-conversation-with-stephen-schwarzman-rjg7",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "science.org",
+      "url": "https://www.science.org/content/article/mit-use-350-million-gift-bolster-computer-sciences",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "tatler.com",
+      "url": "https://www.tatler.com/article/american-billionaire-grants-150-million-to-oxford-university",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "theblock.co",
+      "url": "https://www.theblock.co/post/397681/super-pac-8-million-sherrod-brown",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "theguardian.com",
+      "url": "https://www.theguardian.com/education/2019/jun/19/oxford-receive-biggest-single-donation-stephen-schwarzman",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "timeshighereducation.com",
+      "url": "https://www.timeshighereducation.com/news/oxford-receives-ps150-million-gift-study-humanities-and-ai",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "wral.com",
+      "url": "https://www.wral.com/blackstone-ceo-pledges-to-donate-the-majority-of-his-wealth-to-charity/18933527/?version=amp",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "yaledailynews.com",
+      "url": "https://yaledailynews.com/articles/schwarzman-facilitating-trump-harvard-talks-new-york-times-reports",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "yaledailynews.com",
+      "url": "https://yaledailynews.com/blog/2018/10/16/schwarzman-donates-350-million-to-mit/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "yaledailynews.com",
+      "url": "https://yaledailynews.com/blog/2019/02/20/schwarzman-gift-to-mit-draws-criticism/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
+    },
+    {
+      "publisher": "yaledailynews.com",
+      "url": "https://yaledailynews.com/blog/2019/10/01/schwarzman-donation-to-oxford-draws-criticism/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-fa3f7e9aac887346"
     }
   ],
   "_source_file": "stephen_schwarzman.v3.json"
