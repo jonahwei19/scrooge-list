@@ -702,9 +702,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-013d4d72cab48772",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "abby_giving_pledge_status",
       "event_role": "pledge_status_check",
@@ -713,7 +711,9 @@
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-24",
       "notes": "Neither Abigail Johnson nor any Johnson-family member associated with Fidelity appears on the Giving Pledge signatory list. The Johnson family is historically private and has made no public pledge comparable to Gates/Buffett/Ellison 95% commitments. Absence of a pledge means NO pledge-breach penalty, but also no public-commitment anchor for expected giving."
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_role": "announcement",
       "year": 2023,

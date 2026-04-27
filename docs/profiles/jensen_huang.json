@@ -222,23 +222,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_id": "huang_sfopera_5m_annual_2025",
-      "event_role": "pledge",
-      "year": 2025,
-      "date_precision": "month",
-      "date": "2025-11",
-      "donor_entity": "Jensen and Lori Huang",
-      "recipient": "San Francisco Opera",
-      "amount_usd": 5000000,
-      "pledged_amount_note": "$5M/year multi-year commitment (duration not publicly disclosed). Initial 2025 tranche announced at Monkey King premiere event.",
-      "source_type": "news",
-      "source_url": "https://www.sfopera.com/press/press-releases/Huang-commitment-to-SFO/",
-      "retrieved_at": "2026-04-23",
-      "confidence": "high",
-      "dedup_note": "Treat 2025 tranche as pledged (not yet verifiable in 990-PF). Will show in 2025 JHLHF 990-PF when filed. Multi-year tail is future commitment, not observable.",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_id": "huang_trust_to_foundation_2025",
       "event_role": "transfer_in",
       "year": 2025,
@@ -591,9 +574,7 @@
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "direct_gift"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "huang_giving_pledge_status",
       "event_role": "pledge_not_signed",
@@ -605,6 +586,25 @@
       "notes": "Neither Jensen Huang nor Lori Huang appears on the Giving Pledge signer roster as of April 2026. Lifestyles Magazine Sept 2025 explicitly confirms: Huang has 'eschewed formal affiliations with the Giving Pledge and steered clear of major philanthropic conferences.' NOT a PLEDGE_UNFULFILLED red flag (never signed).",
       "secondary_source_url": "https://lifestylesmagazine.com/latest-news/10-7-billion-is-currently-earmarked-for-future-philanthropic-giving-by-jensen-and-lori-huangs-nonprofit/",
       "event_role_canonical": "no_pledge"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "huang_sfopera_5m_annual_2025",
+      "event_role": "pledge",
+      "year": 2025,
+      "date_precision": "month",
+      "date": "2025-11",
+      "donor_entity": "Jensen and Lori Huang",
+      "recipient": "San Francisco Opera",
+      "amount_usd": 5000000,
+      "pledged_amount_note": "$5M/year multi-year commitment (duration not publicly disclosed). Initial 2025 tranche announced at Monkey King premiere event.",
+      "source_type": "news",
+      "source_url": "https://www.sfopera.com/press/press-releases/Huang-commitment-to-SFO/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "Treat 2025 tranche as pledged (not yet verifiable in 990-PF). Will show in 2025 JHLHF 990-PF when filed. Multi-year tail is future commitment, not observable.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_id": "huang_osu_pledge_2022",

@@ -919,7 +919,7 @@
       "amount_usd": 1000000000,
       "source_type": "other",
       "source_url": "https://billionairereporter.com/stephen-schwarzman-create-biggest-foundation/",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "The Stephen A. Schwarzman Foundation has committed more than $1 billion in gifts to various institutions.",
       "extraction_evidence": "His Stephen A. Schwarzman Foundation has committed more than $1 billion in gifts",
       "regen_query": "\"Stephen Schwarzman\" \"Yale\" \"Schwarzman Center\" $150 million 2015 additional gifts OR endowment growth",
@@ -927,6 +927,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "announcement"
     },
     {

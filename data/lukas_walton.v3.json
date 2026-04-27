@@ -736,9 +736,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-28c02a91d5f071ac",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "lukas_gp_status",
       "event_role": "pledge_NOT_SIGNED",
@@ -748,7 +746,9 @@
       "retrieved_at": "2026-04-24",
       "brief_correction_note": "CRITICAL CORRECTION: Jonah's research brief stated 'Giving Pledge \u2014 Lukas Walton SIGNED (2020)' and described him as 'the notable Walton-family Giving Pledge signer.' This appears to be incorrect. Verification:\n(1) Official Giving Pledge pledger list (https://www.givingpledge.org/pledger-list/): no Walton entries.\n(2) Dec 21, 2020 Giving Pledge announcement of 13 new signatories (https://www.givingpledge.org/the-giving-pledge-welcomes-13-new-signatories/): Lukas Walton is NOT on the list. The 13 new 2020 signatories were Arsenault, Barton, Conway, Gross, Hartman, Huo/Fang, King, Neves, Pattison, Richison, Rothschild, Schwarzman, Weekley.\n(3) Dec 14, 2021 announcement of 14 additional signatories: Lukas Walton also not named.\n(4) Walton Family Foundation's own 2021 article on 3rd-generation giving explicitly describes the family as having 'chosen not to' sign (Rob Walton quote extends to family).\n(5) Wikipedia's Lukas Walton article makes no mention of Giving Pledge signature.\n(6) Inside Philanthropy's deep 2024 retrospective on Builders Vision (three years since public launch) does not mention a Giving Pledge signature.\n(7) The single source claiming Christy and Lukas signed in 2011 is FasterCapital, a low-quality AI-generated content farm; no corroboration in any primary source.\nConclusion: Lukas Walton has NOT signed the Giving Pledge as of 2026-04. Flag the brief for correction. Under scrooge methodology this removes the GIVING_PLEDGE_UNFULFILLED risk but does not itself add a red flag (declining is more honest than signing-and-not-fulfilling; same framing as Rob/Alice records).",
       "notes": "If evidence emerges that Lukas has signed (e.g., in a forthcoming 2026 batch announcement), reclassify to signatory and evaluate against his documented giving."
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_id": "lukas_bv_2b_commitment_2019_2021",
       "event_role": "pledge",

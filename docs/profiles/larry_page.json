@@ -277,35 +277,6 @@
       "event_role_canonical": "transfer_in"
     },
     {
-      "event_id": "page_ebola_2014",
-      "event_role": "pledge",
-      "year": 2014,
-      "pledged_amount_usd": 15000000,
-      "recipient": "Ebola relief (via CVPMF)",
-      "source_type": "announcement",
-      "source_url": "https://philanthropynewsdigest.org/news/google-larry-page-pledge-30-million-for-ebola-relief-efforts",
-      "retrieved_at": "2026-04-23",
-      "confidence": "medium",
-      "dedup_note": "$15M from CVPMF (personal foundation) + $10M Google.org match + $5M from Google (corporate, not personal). Only the $15M from CVPMF is counted toward Page's personal philanthropy; should already be captured in CVPMF grants-out in 2014 or 2015 990-PF.",
-      "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "page_xmas_donations_2015_2017",
-      "event_role": "announcement",
-      "year_range": [
-        2015,
-        2017
-      ],
-      "donor_entity": "The Carl Victor Page Memorial Foundation",
-      "amount_usd": 400000000,
-      "source_type": "news",
-      "source_url": "https://www.vox.com/recode/2019/12/18/21010108/larry-page-philanthropy-foundation-donor-advised-fund-christmas",
-      "retrieved_at": "2026-04-23",
-      "confidence": "medium",
-      "dedup_note": "Widely reported ~$400M in 'Christmastime donations 2015-2017' \u2014 but per Vox / NCRP / Common Dreams, NONE went directly to operating charities; all were DAF transfers. Already captured inside CVPMF 990-PF grants-out totals for those years (2015=$99M, plus 2016 & 2017 not yet retrieved from ProPublica summary). DO NOT double-count as additional direct giving.",
-      "event_role_canonical": "announcement"
-    },
-    {
       "event_role": "grant_out",
       "year": 2019,
       "date_precision": "year",
@@ -652,7 +623,7 @@
       "amount_usd": 180000000,
       "source_type": "news_article",
       "source_url": "https://www.celebritynetworth.com/articles/billionaire-news/google-billionaire-larry-page-has-given-billions-to-his-foundation-but-almost-none-of-it-has-gone-directly-to-charity/",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "In 2017, $180 million was contributed to various causes in Christmas gifts from Page's foundation.",
       "extraction_evidence": "In 2017, $180 million was contributed to various causes in Christmas gifts from Page's foundation.",
       "regen_query": "\"Larry Page\" gift OR donation million",
@@ -660,6 +631,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-35089ce2a2f19099",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "transfer_in"
     },
     {
@@ -801,9 +773,7 @@
       "regen_run_id": "sha256-35089ce2a2f19099",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "transfer_in"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "page_giving_pledge_NOT_SIGNED",
       "event_role": "pledge_absence",
@@ -814,6 +784,37 @@
       "retrieved_at": "2026-04-23",
       "notes": "Neither Larry Page nor Sergey Brin has signed the Giving Pledge. This is notable because both are 20+ year centibillionaires, contemporaries of Zuckerberg (signed), Gates (co-founded), Buffett (co-founded), and Musk (signed). Eric Schmidt, the other major Google principal, HAS signed. Pledge absence is itself diagnostic: Page has never publicly committed to give away any specific fraction of his wealth.",
       "event_role_canonical": "no_pledge"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "page_ebola_2014",
+      "event_role": "pledge",
+      "year": 2014,
+      "pledged_amount_usd": 15000000,
+      "recipient": "Ebola relief (via CVPMF)",
+      "source_type": "announcement",
+      "source_url": "https://philanthropynewsdigest.org/news/google-larry-page-pledge-30-million-for-ebola-relief-efforts",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "$15M from CVPMF (personal foundation) + $10M Google.org match + $5M from Google (corporate, not personal). Only the $15M from CVPMF is counted toward Page's personal philanthropy; should already be captured in CVPMF grants-out in 2014 or 2015 990-PF.",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_id": "page_xmas_donations_2015_2017",
+      "event_role": "announcement",
+      "year_range": [
+        2015,
+        2017
+      ],
+      "donor_entity": "The Carl Victor Page Memorial Foundation",
+      "amount_usd": 400000000,
+      "source_type": "news",
+      "source_url": "https://www.vox.com/recode/2019/12/18/21010108/larry-page-philanthropy-foundation-donor-advised-fund-christmas",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "Widely reported ~$400M in 'Christmastime donations 2015-2017' \u2014 but per Vox / NCRP / Common Dreams, NONE went directly to operating charities; all were DAF transfers. Already captured inside CVPMF 990-PF grants-out totals for those years (2015=$99M, plus 2016 & 2017 not yet retrieved from ProPublica summary). DO NOT double-count as additional direct giving.",
+      "event_role_canonical": "announcement"
     },
     {
       "event_role": "announcement",

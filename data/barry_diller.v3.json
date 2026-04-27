@@ -145,24 +145,6 @@
       "dedup_note": "CRITICAL dedup: Pier55 Inc 990s show contributions of $25.2M (2015) + $9.0M (2017) + $25.0M (2018) + $39.6M (2019) + $61.6M (2021) + $35.6M (2024) = $196.0M observable contributions-in through 2024. Some portion (exactly $13.4M confirmed in 2021) came through The Diller Foundation grants-out and is ALSO counted in diller_oldfdn_2021 above. To avoid double-counting, we count: (A) the Diller Foundation grants-out total in diller_oldfdn_* events, and (B) Pier55 contributions-in NET of that foundation pass-through. Construction cost $231.3M and Pier55 receipts through 2024 are consistent if Diller contributed directly to Pier55 in amounts not passing through the foundation. We classify this as direct_gift for the $231.3M construction spend and apply dedup by subtracting $13.4M (confirmed 2021 foundation pass-through) and any other foundation-to-Pier55 grants from the rollup."
     },
     {
-      "event_id": "diller_littleisland_maintenance",
-      "event_role": "pledge",
-      "year": 2014,
-      "year_range": [
-        2021,
-        2041
-      ],
-      "donor_entity": "Diller-von Furstenberg Family Foundation",
-      "recipient": "Pier55 Inc (Little Island) \u2014 operations/maintenance 20-year commitment",
-      "pledged_amount_usd": 120000000,
-      "status": "PARTIALLY_DISBURSED",
-      "status_note": "Pier55 Inc 2024 receipts of $35.6M in 2024 likely reflect annual draws against this maintenance commitment (~$6M/year average). Remaining commitment: ~$85-100M through 2041.",
-      "source_type": "news",
-      "source_url": "https://en.wikipedia.org/wiki/Little_Island_at_Pier_55",
-      "retrieved_at": "2026-04-24",
-      "confidence": "medium"
-    },
-    {
       "event_id": "diller_highline_2011",
       "event_role": "direct_gift",
       "year": 2011,
@@ -738,6 +720,24 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_id": "diller_littleisland_maintenance",
+      "event_role": "pledge",
+      "year": 2014,
+      "year_range": [
+        2021,
+        2041
+      ],
+      "donor_entity": "Diller-von Furstenberg Family Foundation",
+      "recipient": "Pier55 Inc (Little Island) \u2014 operations/maintenance 20-year commitment",
+      "pledged_amount_usd": 120000000,
+      "status": "PARTIALLY_DISBURSED",
+      "status_note": "Pier55 Inc 2024 receipts of $35.6M in 2024 likely reflect annual draws against this maintenance commitment (~$6M/year average). Remaining commitment: ~$85-100M through 2041.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Little_Island_at_Pier_55",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium"
+    },
     {
       "event_id": "diller_gp_2010",
       "event_role": "pledge",

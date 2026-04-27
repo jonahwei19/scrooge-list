@@ -985,9 +985,7 @@
       "regen_run_id": "sha256-0f4daf477196d710",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "political"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "walton_no_gp",
       "event_role": "pledge_declined",
@@ -998,7 +996,9 @@
       "retrieved_at": "2026-04-23",
       "notes": "Rob Walton (and all living Walton siblings \u2014 Jim, Alice, and late brother John's estate) have explicitly declined to sign the Giving Pledge. This is a deliberate family position, not an oversight. Under the scrooge methodology this is NOT itself a red flag \u2014 declining is more honest than signing-and-not-fulfilling \u2014 but it removes a public accountability hook.",
       "event_role_canonical": "no_pledge"
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_id": "walton_siblings_wff_pledge_2008_2013",
       "event_role": "pledge",

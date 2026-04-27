@@ -1359,7 +1359,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "political",
+      "event_role": "reference_only",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -1375,7 +1375,10 @@
       "event_id": "sergey_brin_political_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5ea2c81aa97b17ff",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
+      "_role_relabeled_from": "political",
+      "_role_relabel_reason": "cumulative_phrase"
     },
     {
       "event_role": "transfer_in",
@@ -1414,9 +1417,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5ea2c81aa97b17ff",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "brin_no_pledge",
       "event_role": "pledge_absent",
@@ -1435,7 +1436,9 @@
       "source_url": "https://www.givingpledge.org/pledgers",
       "retrieved_at": "2026-04-23",
       "notes": "Listed for context only. Anne Wojcicki is not the subject of this record; her pledge does NOT encumber Sergey's assets. If BWF survives under joint control (ProPublica shows ambiguous post-divorce status), pledge dollars might come out of its corpus \u2014 but that's Anne's commitment, not Sergey's."
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_role": "pledge",
       "year": null,

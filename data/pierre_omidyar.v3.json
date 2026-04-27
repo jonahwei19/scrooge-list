@@ -1001,7 +1001,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "grant_out",
+      "event_role": "reference_only",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -1017,7 +1017,10 @@
       "event_id": "pierre_omidyar_grant_out_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
+      "_role_relabeled_from": "grant_out",
+      "_role_relabel_reason": "cumulative_phrase"
     },
     {
       "event_role": "direct_gift",
@@ -1378,7 +1381,8 @@
       "event_id": "pierre_omidyar_pledge_2001_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected"
     },
     {
       "event_role": "pledge",
@@ -1454,7 +1458,8 @@
       "event_id": "pierre_omidyar_pledge_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected"
     },
     {
       "event_role": "announcement",

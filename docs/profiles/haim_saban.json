@@ -160,22 +160,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_id": "saban_academymuseum_2017",
-      "event_role": "pledge",
-      "year": 2017,
-      "date_precision": "month",
-      "donor_entity": "Cheryl and Haim Saban",
-      "recipient": "Academy Museum of Motion Pictures \u2014 May Company Building (renamed Saban Building)",
-      "amount_usd": 50000000,
-      "source_type": "announcement",
-      "source_url": "https://www.oscars.org/news/academy-museum-receives-landmark-50-million-gift-cheryl-and-haim-saban",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "notes": "Forbes profile confirms this was a pledge. Status of disbursement as of 2026-04 not verified from 990-PF detail. Museum opened September 2021. Assume the pledge has been substantially paid by now but specific SFF grant lines to Academy Museum not verified in current pull.",
-      "dedup_note": "Pledge likely paid through SFF 2017-2021 990-PFs (currently uncaptured years 2011-2018) and/or personal. Some portion plausibly sits inside the 2019-2021 SFF grants already in rollup \u2014 cannot verify without recipient-level SFF data. Flag for partial double-count risk.",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_id": "saban_fidf_lifetime_pre2018",
       "event_role": "direct_gift",
       "year_range": [
@@ -986,9 +970,36 @@
       "regen_run_id": "sha256-34c9c5d13461c792",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "political"
+    },
+    {
+      "event_id": "saban_giving_pledge_NOT_signed",
+      "event_role": "pledge_status",
+      "status": "NOT_SIGNED",
+      "source_type": "registry",
+      "source_url": "https://www.givingpledge.org/pledger/haim-saban/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Direct URL at Giving Pledge registry returns 404. Wikipedia and Hollywood Reporter 2019 profile do not mention Saban signing. Verified NOT on the 256-name pledger list as of 2026-04.",
+      "source_verification_status": "dead_link_never_existed_not_signer",
+      "event_role_canonical": "pledge"
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_id": "saban_academymuseum_2017",
+      "event_role": "pledge",
+      "year": 2017,
+      "date_precision": "month",
+      "donor_entity": "Cheryl and Haim Saban",
+      "recipient": "Academy Museum of Motion Pictures \u2014 May Company Building (renamed Saban Building)",
+      "amount_usd": 50000000,
+      "source_type": "announcement",
+      "source_url": "https://www.oscars.org/news/academy-museum-receives-landmark-50-million-gift-cheryl-and-haim-saban",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Forbes profile confirms this was a pledge. Status of disbursement as of 2026-04 not verified from 990-PF detail. Museum opened September 2021. Assume the pledge has been substantially paid by now but specific SFF grant lines to Academy Museum not verified in current pull.",
+      "dedup_note": "Pledge likely paid through SFF 2017-2021 990-PFs (currently uncaptured years 2011-2018) and/or personal. Some portion plausibly sits inside the 2019-2021 SFF grants already in rollup \u2014 cannot verify without recipient-level SFF data. Flag for partial double-count risk.",
+      "event_role_canonical": "pledge"
+    },
     {
       "event_role": "pledge",
       "year": 2017,
@@ -1009,17 +1020,6 @@
       "regen_extractor_model": "claude-haiku-4-5",
       "_role_relabeled_from": "direct_gift",
       "_role_relabel_reason": "matched pledge_phrases",
-      "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "saban_giving_pledge_NOT_signed",
-      "event_role": "pledge_status",
-      "status": "NOT_SIGNED",
-      "source_type": "registry",
-      "source_url": "https://www.givingpledge.org/pledger/haim-saban/",
-      "retrieved_at": "2026-04-24",
-      "notes": "Direct URL at Giving Pledge registry returns 404. Wikipedia and Hollywood Reporter 2019 profile do not mention Saban signing. Verified NOT on the 256-name pledger list as of 2026-04.",
-      "source_verification_status": "dead_link_never_existed_not_signer",
       "event_role_canonical": "pledge"
     },
     {

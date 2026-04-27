@@ -744,6 +744,28 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_id": "dell_giving_pledge_status",
+      "event_role": "pledge_status",
+      "status": "NOT_SIGNED",
+      "notes": "Michael Dell has NOT signed the Giving Pledge. Multiple sources confirm: Vox (2019) lists Dell as a conspicuous tech-billionaire absentee alongside Page/Brin/Ballmer; Inside Philanthropy (Nov 2025) explicitly states 'the Dells themselves' have not signed; IBTimes lists him among richest non-signers. The Dells' philanthropy proceeds without a formal public lifetime-giving commitment.",
+      "source_urls": [
+        "https://www.vox.com/2019/4/22/18491577/founders-giving-pledge-tech-philanthropy-billionaires",
+        "https://www.insidephilanthropy.com/home/sign-of-the-times-the-dells-grow-their-foundation-by-a-cool-5-billion",
+        "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315"
+      ],
+      "retrieved_at": "2026-04-23"
+    },
+    {
+      "event_id": "dell_lifetime_giving_quote",
+      "event_role": "self_reported_lifetime",
+      "year": 2025,
+      "amount_usd_self_reported": 3000000000,
+      "notes": "Susan Dell stated in 2025: the Dells have 'given away over $3 billion over the past 26 years, mostly to children's causes.' This self-report is a rough upper bound claim. Our MSDF 990-PF sum 2019-2024 alone = $1.064B; pre-2019 MSDF 990-PF data not yet pulled. The $3B self-report is roughly consistent with cumulative MSDF grants_out 1999-2024 given lower annual grantmaking in the 2000s-2010s.",
+      "source_url": "https://en.wikipedia.org/wiki/Michael_Dell",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium"
     }
   ],
   "pledges_and_announcements": [
@@ -767,18 +789,6 @@
       "regen_extractor_model": "claude-haiku-4-5",
       "_role_relabeled_from": "direct_gift",
       "_role_relabel_reason": "matched pledge_phrases"
-    },
-    {
-      "event_id": "dell_giving_pledge_status",
-      "event_role": "pledge_status",
-      "status": "NOT_SIGNED",
-      "notes": "Michael Dell has NOT signed the Giving Pledge. Multiple sources confirm: Vox (2019) lists Dell as a conspicuous tech-billionaire absentee alongside Page/Brin/Ballmer; Inside Philanthropy (Nov 2025) explicitly states 'the Dells themselves' have not signed; IBTimes lists him among richest non-signers. The Dells' philanthropy proceeds without a formal public lifetime-giving commitment.",
-      "source_urls": [
-        "https://www.vox.com/2019/4/22/18491577/founders-giving-pledge-tech-philanthropy-billionaires",
-        "https://www.insidephilanthropy.com/home/sign-of-the-times-the-dells-grow-their-foundation-by-a-cool-5-billion",
-        "https://www.ibtimes.com/richest-people-world-who-havent-signed-giving-pledge-3641315"
-      ],
-      "retrieved_at": "2026-04-23"
     },
     {
       "event_id": "dell_ut_austin_750m_2026",
@@ -813,16 +823,6 @@
       "confidence": "high",
       "classification_note": "AMBIGUOUS_CLASSIFICATION: Trump Accounts are private investment accounts in the child's name (not a 501(c)(3) recipient). Forbes (Erb, Dec 2025) analyzed the tax treatment: the contribution is likely structured as gifts to individual minor accounts, NOT a charitable deduction to a 501(c)(3). Under strict Forbes/IPS/Chronicle methodology, transfers into individual investment accounts do NOT count as charitable giving. However, the recipient-selection logic (low-income ZIP codes, children) has a charitable flavor. Conservative treatment: EXCLUDE from observable charitable giving pending clarification of IRS/legal structure. Flag for reclassification when disbursement mechanism is clarified (could route through a 501(c)(3) 'Invest America Foundation' or similar, in which case it would count).",
       "tax_source_url": "https://www.forbes.com/sites/kellyphillipserb/2025/12/05/is-it-deductible-the-tax-rules-around-the-dells-625-billion-contribution-to-trump-accounts/"
-    },
-    {
-      "event_id": "dell_lifetime_giving_quote",
-      "event_role": "self_reported_lifetime",
-      "year": 2025,
-      "amount_usd_self_reported": 3000000000,
-      "notes": "Susan Dell stated in 2025: the Dells have 'given away over $3 billion over the past 26 years, mostly to children's causes.' This self-report is a rough upper bound claim. Our MSDF 990-PF sum 2019-2024 alone = $1.064B; pre-2019 MSDF 990-PF data not yet pulled. The $3B self-report is roughly consistent with cumulative MSDF grants_out 1999-2024 given lower annual grantmaking in the 2000s-2010s.",
-      "source_url": "https://en.wikipedia.org/wiki/Michael_Dell",
-      "retrieved_at": "2026-04-23",
-      "confidence": "medium"
     },
     {
       "event_role": "announcement",
@@ -898,7 +898,8 @@
       "event_id": "michael_dell_pledge_2026_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected"
     },
     {
       "event_role": "announcement",

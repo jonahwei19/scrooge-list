@@ -1058,7 +1058,7 @@
       "event_role_canonical": "grant_out"
     },
     {
-      "event_role": "grant_out",
+      "event_role": "reference_only",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -1075,7 +1075,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
       "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "grant_out"
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
+      "_role_relabeled_from": "grant_out",
+      "_role_relabel_reason": "cumulative_phrase",
+      "event_role_canonical": "reference_only"
     },
     {
       "event_role": "direct_gift",
@@ -1455,6 +1458,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
       "event_role_canonical": "pledge"
     },
     {
@@ -1535,6 +1539,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
       "event_role_canonical": "pledge"
     },
     {
@@ -1854,8 +1859,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 6162000000,
     "ratio_observable_to_5pct_tenure": 0.245,
-    "observable_from_events_usd": 5563804630,
-    "observable_drift_pct": 1.782,
+    "observable_from_events_usd": 3623804630,
+    "observable_drift_pct": 0.812,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {

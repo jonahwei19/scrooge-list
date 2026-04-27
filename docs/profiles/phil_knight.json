@@ -290,23 +290,6 @@
       "event_role_canonical": "transfer_in"
     },
     {
-      "event_id": "knight_ohsu_2b_2025",
-      "event_role": "pledge",
-      "year": 2025,
-      "date_precision": "day",
-      "date": "2025-08-13",
-      "donor_entity": "Phil & Penny Knight (personal)",
-      "recipient": "OHSU Knight Cancer Institute",
-      "amount_usd": 2000000000,
-      "source_type": "announcement",
-      "source_url": "https://news.ohsu.edu/2025/08/14/ohsu-knight-cancer-institute-receives-record-2-billion-commitment-from-phil-and-penny-knight",
-      "retrieved_at": "2026-04-23",
-      "confidence": "high",
-      "status": "ANNOUNCED_DISBURSEMENT_SCHEDULE_NOT_PUBLIC",
-      "notes": "Largest single donation ever to a U.S. university/academic health center, exceeding Bloomberg's $1.8B to Johns Hopkins (2018). Announced as 'commitment' \u2014 disbursement schedule not disclosed. Knight is 88; a multi-year pledge with him as primary donor has age-compression risk. Classified as pledge until tranche-level disbursements appear in 990-PF or OHSU 990 Schedule B. Top Chronicle of Philanthropy 2025 gift.",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_role": "grant_out",
       "year": 2019,
       "date_precision": "year",
@@ -1125,9 +1108,36 @@
       "regen_run_id": "sha256-4084095d969af886",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "private_investment"
+    },
+    {
+      "event_id": "knight_giving_pledge_NOT_SIGNED",
+      "event_role": "pledge_status",
+      "status": "NOT_SIGNED",
+      "source_type": "news",
+      "source_url": "https://www.insidephilanthropy.com/home/2020-1-22-the-quiet-billionaire-how-phil-knights-giving-flies-under-the-radar",
+      "retrieved_at": "2026-04-23",
+      "notes": "Knight has NOT signed the Giving Pledge. Inside Philanthropy (Jan 2020): 'Knight hasn't signed the Gates-Buffett Giving Pledge, but he has said many times that he plans to give away most of his wealth during his lifetime.' This is an important signal: absence of a formal pledge letter, combined with actual giving cadence ($2.4B+ over last decade, $2B pledge in 2025), means Knight shouldn't be penalized under 'pledge_breach' criteria but also lacks a documented 95% / majority commitment. Score Knight on observable giving only.",
+      "event_role_canonical": "pledge"
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_id": "knight_ohsu_2b_2025",
+      "event_role": "pledge",
+      "year": 2025,
+      "date_precision": "day",
+      "date": "2025-08-13",
+      "donor_entity": "Phil & Penny Knight (personal)",
+      "recipient": "OHSU Knight Cancer Institute",
+      "amount_usd": 2000000000,
+      "source_type": "announcement",
+      "source_url": "https://news.ohsu.edu/2025/08/14/ohsu-knight-cancer-institute-receives-record-2-billion-commitment-from-phil-and-penny-knight",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "status": "ANNOUNCED_DISBURSEMENT_SCHEDULE_NOT_PUBLIC",
+      "notes": "Largest single donation ever to a U.S. university/academic health center, exceeding Bloomberg's $1.8B to Johns Hopkins (2018). Announced as 'commitment' \u2014 disbursement schedule not disclosed. Knight is 88; a multi-year pledge with him as primary donor has age-compression risk. Classified as pledge until tranche-level disbursements appear in 990-PF or OHSU 990 Schedule B. Top Chronicle of Philanthropy 2025 gift.",
+      "event_role_canonical": "pledge"
+    },
     {
       "event_role": "pledge",
       "year": 2023,
@@ -1148,16 +1158,6 @@
       "regen_extractor_model": "claude-haiku-4-5",
       "_role_relabeled_from": "grant_out",
       "_role_relabel_reason": "matched pledge_phrases",
-      "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "knight_giving_pledge_NOT_SIGNED",
-      "event_role": "pledge_status",
-      "status": "NOT_SIGNED",
-      "source_type": "news",
-      "source_url": "https://www.insidephilanthropy.com/home/2020-1-22-the-quiet-billionaire-how-phil-knights-giving-flies-under-the-radar",
-      "retrieved_at": "2026-04-23",
-      "notes": "Knight has NOT signed the Giving Pledge. Inside Philanthropy (Jan 2020): 'Knight hasn't signed the Gates-Buffett Giving Pledge, but he has said many times that he plans to give away most of his wealth during his lifetime.' This is an important signal: absence of a formal pledge letter, combined with actual giving cadence ($2.4B+ over last decade, $2B pledge in 2025), means Knight shouldn't be penalized under 'pledge_breach' criteria but also lacks a documented 95% / majority commitment. Score Knight on observable giving only.",
       "event_role_canonical": "pledge"
     },
     {

@@ -858,6 +858,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c51b78a5faf3b082",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1019,9 +1020,7 @@
       "regen_run_id": "sha256-c51b78a5faf3b082",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "anschutz_gp_status",
       "event_role": "pledge_absence",
@@ -1031,7 +1030,9 @@
       "verification_method": "Manual check of givingpledge.org signatory list \u2014 Philip Anschutz does NOT appear. No press record of a pledge signing exists in 2010-2026 window. Anschutz is notoriously privacy-focused; the absence is consistent with his public posture.",
       "notes": "CRITICAL for methodology: Anschutz is NOT a Giving Pledge signatory. He cannot be flagged as GIVING_PLEDGE_UNFULFILLED. Absence of pledge means there is no explicit self-declared target to measure against; he is measured only against the 10% liquid-wealth norm.",
       "event_role_canonical": "no_pledge"
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_role": "pledge",
       "year": 2018,

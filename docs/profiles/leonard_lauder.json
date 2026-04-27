@@ -207,41 +207,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_id": "lauder_penn_nursing_2022",
-      "event_role": "direct_gift",
-      "year": 2022,
-      "date_precision": "day",
-      "date": "2022-02-14",
-      "donor_entity": "Leonard A. Lauder (personal or via foundation \u2014 not specified in announcement)",
-      "recipient": "University of Pennsylvania School of Nursing \u2014 Leonard A. Lauder Community Care Nurse Practitioner Program",
-      "amount_usd": 125000000,
-      "source_type": "announcement",
-      "source_url": "https://almanac.upenn.edu/articles/125-million-gift-from-leonard-a-lauder-for-tuition-free-program-to-prepare-nurse-practitioners-to-provide-primary-care-in-underserved-us-communities",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "note": "Largest-ever gift to an American nursing school. Structured for ~140 tuition-free fellows by 2027, two-year commitment to underserved communities. Structure (endowed professorship + ongoing operating support) suggests this was likely a multi-year pledge; disbursement schedule not in public announcement.",
-      "event_role_canonical": "direct_gift"
-    },
-    {
-      "event_id": "lauder_addf_family_2023",
-      "event_role": "pledge",
-      "year": 2023,
-      "date_precision": "day",
-      "date": "2023-04-04",
-      "donor_entity": "Lauder Family (Leonard A. Lauder, Ronald S. Lauder, and third generation: William, Gary, Aerin, Jane)",
-      "recipient": "Alzheimer's Drug Discovery Foundation (ADDF)",
-      "amount_usd": 200000000,
-      "amount_usd_leonard_attributed": 75000000,
-      "amount_attribution_method": "Jonah-assumption: attribute ~3/8 to Leonard (eldest of two founding brothers plus four third-gen contributors). Announcement gives family total only; individual shares not disclosed. DEDUP RISK: some portion of Leonard's share may have already flowed through Lauder Foundation Inc 2023 grants ($1.5M) \u2014 likely not, given scale. Larger risk: the $200M is a COMMITMENT to be funded over time, not a lump disbursement.",
-      "source_type": "announcement",
-      "source_url": "https://www.alzdiscovery.org/news-room/announcements/lauder-gift",
-      "retrieved_at": "2026-04-24",
-      "confidence": "medium",
-      "status": "COMMITTED_PARTIALLY_DISBURSED",
-      "note": "ADDF was co-founded 1998 by Leonard and Ronald Lauder in honor of their mother Est\u00e9e's Alzheimer's. The $200M (April 2023) is described as 'committed' \u2014 funding schedule unclear. Lauder brothers + family have given smaller amounts over 25 years.",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_id": "lauder_lifetime_ballpark_obituary",
       "event_role": "contextual_total_not_counted",
       "year_range": [
@@ -740,9 +705,57 @@
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "political"
+    },
+    {
+      "event_id": "lauder_giving_pledge_nonsigner",
+      "event_role": "pledge_nonsigner",
+      "year": null,
+      "status": "NOT_SIGNED",
+      "status_source": "Direct URL check: https://www.givingpledge.org/pledger/leonard-lauder returns 404. Same for https://www.givingpledge.org/pledger/ronald-lauder. No Lauder family member found in Giving Pledge signatory lists by Brave Search or Wikipedia pledger-list cross-check.",
+      "source_url": "https://www.givingpledge.org/pledger/leonard-lauder",
+      "retrieved_at": "2026-04-24",
+      "note": "Verified not a Giving Pledge signatory. His brother Ronald Lauder also has not signed. This is POSITIVE for Leonard's record relative to the pledge-breach penalty: he did not make a public 50% promise and therefore cannot be scored as having broken one. He should NOT receive the PLEDGE_UNFULFILLED red flag.",
+      "event_role_canonical": "no_pledge"
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_id": "lauder_penn_nursing_2022",
+      "event_role": "pledge",
+      "year": 2022,
+      "date_precision": "day",
+      "date": "2022-02-14",
+      "donor_entity": "Leonard A. Lauder (personal or via foundation \u2014 not specified in announcement)",
+      "recipient": "University of Pennsylvania School of Nursing \u2014 Leonard A. Lauder Community Care Nurse Practitioner Program",
+      "amount_usd": 125000000,
+      "source_type": "announcement",
+      "source_url": "https://almanac.upenn.edu/articles/125-million-gift-from-leonard-a-lauder-for-tuition-free-program-to-prepare-nurse-practitioners-to-provide-primary-care-in-underserved-us-communities",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Largest-ever gift to an American nursing school. Structured for ~140 tuition-free fellows by 2027, two-year commitment to underserved communities. Structure (endowed professorship + ongoing operating support) suggests this was likely a multi-year pledge; disbursement schedule not in public announcement.",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_id": "lauder_addf_family_2023",
+      "event_role": "pledge",
+      "year": 2023,
+      "date_precision": "day",
+      "date": "2023-04-04",
+      "donor_entity": "Lauder Family (Leonard A. Lauder, Ronald S. Lauder, and third generation: William, Gary, Aerin, Jane)",
+      "recipient": "Alzheimer's Drug Discovery Foundation (ADDF)",
+      "amount_usd": 200000000,
+      "amount_usd_leonard_attributed": 75000000,
+      "amount_attribution_method": "Jonah-assumption: attribute ~3/8 to Leonard (eldest of two founding brothers plus four third-gen contributors). Announcement gives family total only; individual shares not disclosed. DEDUP RISK: some portion of Leonard's share may have already flowed through Lauder Foundation Inc 2023 grants ($1.5M) \u2014 likely not, given scale. Larger risk: the $200M is a COMMITMENT to be funded over time, not a lump disbursement.",
+      "source_type": "announcement",
+      "source_url": "https://www.alzdiscovery.org/news-room/announcements/lauder-gift",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "status": "COMMITTED_PARTIALLY_DISBURSED",
+      "note": "ADDF was co-founded 1998 by Leonard and Ronald Lauder in honor of their mother Est\u00e9e's Alzheimer's. The $200M (April 2023) is described as 'committed' \u2014 funding schedule unclear. Lauder brothers + family have given smaller amounts over 25 years.",
+      "event_role_canonical": "pledge"
+    },
     {
       "event_role": "pledge",
       "year": 2013,
@@ -764,17 +777,6 @@
       "_role_relabeled_from": "direct_gift",
       "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "lauder_giving_pledge_nonsigner",
-      "event_role": "pledge_nonsigner",
-      "year": null,
-      "status": "NOT_SIGNED",
-      "status_source": "Direct URL check: https://www.givingpledge.org/pledger/leonard-lauder returns 404. Same for https://www.givingpledge.org/pledger/ronald-lauder. No Lauder family member found in Giving Pledge signatory lists by Brave Search or Wikipedia pledger-list cross-check.",
-      "source_url": "https://www.givingpledge.org/pledger/leonard-lauder",
-      "retrieved_at": "2026-04-24",
-      "note": "Verified not a Giving Pledge signatory. His brother Ronald Lauder also has not signed. This is POSITIVE for Leonard's record relative to the pledge-breach penalty: he did not make a public 50% promise and therefore cannot be scored as having broken one. He should NOT receive the PLEDGE_UNFULFILLED red flag.",
-      "event_role_canonical": "no_pledge"
     },
     {
       "event_role": "announcement",
@@ -1064,8 +1066,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 2901503098,
     "ratio_observable_to_5pct_tenure": 0.3353,
-    "observable_from_events_usd": 6229879087,
-    "observable_drift_pct": 3.257,
+    "observable_from_events_usd": 6104879087,
+    "observable_drift_pct": 3.171,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {

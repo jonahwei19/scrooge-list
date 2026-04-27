@@ -126,20 +126,6 @@
       "event_role_canonical": "grant_out"
     },
     {
-      "event_id": "kravis_mjhkf_2019",
-      "event_role": "grant_out",
-      "year": 2019,
-      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
-      "donor_ein": "13-3341521",
-      "amount_usd": 72722159,
-      "source_type": "990-PF",
-      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/202002889349100305/full",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "note": "Largest single-year grants_out in window \u2014 likely corresponds to a major pledge payment.",
-      "event_role_canonical": "grant_out"
-    },
-    {
       "event_id": "kravis_mjhkf_2018",
       "event_role": "grant_out",
       "year": 2018,
@@ -831,9 +817,7 @@
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "kravis_gp_status",
       "event_role": "pledge_status_check",
@@ -858,6 +842,24 @@
         }
       ],
       "correction_note": "IMPORTANT CORRECTION TO TASK BRIEF: The initial task stated Kravis 'SIGNED (June 2010)' the Giving Pledge. Based on direct verification against givingpledge.org (404 on Kravis profile URL), Wikipedia's signer list, and the givingpledge.org/about page, this appears FALSE. Kravis does not appear to be a Giving Pledge signer. He is a prolific observable giver, but his philanthropy is structured through a family foundation, not a public pledge commitment. This materially changes the tier analysis: with NO pledge, there can be no 'pledge breach' penalty, only observation vs expected.",
+      "event_role_canonical": "pledge"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "kravis_mjhkf_2019",
+      "event_role": "pledge",
+      "year": 2019,
+      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
+      "donor_ein": "13-3341521",
+      "amount_usd": 72722159,
+      "source_type": "990-PF",
+      "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/202002889349100305/full",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "note": "Largest single-year grants_out in window \u2014 likely corresponds to a major pledge payment.",
+      "_role_relabeled_from": "grant_out",
+      "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
     },
     {
@@ -1152,8 +1154,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 8863644069,
     "ratio_observable_to_5pct_tenure": 0.0658,
-    "observable_from_events_usd": 1851761317,
-    "observable_drift_pct": 1.968,
+    "observable_from_events_usd": 1779039158,
+    "observable_drift_pct": 1.852,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {

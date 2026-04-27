@@ -173,7 +173,7 @@
       "notes": "Largest single gift in NPR's history from a living donor. Announced in context of $1.1B federal public-broadcasting cuts under Trump. Connie Ballmer is former NPR Foundation board member. This gift is AFTER the Forbes $4.99B lifetime total (which was through Dec 2023), so it IS additive."
     },
     {
-      "event_role": "transfer_in",
+      "event_role": "reference_only",
       "year": 2024,
       "date_precision": "year",
       "donor_entity": "Steve Ballmer",
@@ -188,7 +188,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-eae67171dcb5ad33",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
+      "_role_relabeled_from": "transfer_in",
+      "_role_relabel_reason": "cumulative_phrase"
     },
     {
       "event_role": "direct_gift",
@@ -295,14 +298,15 @@
       "amount_usd": 16000000,
       "source_type": "wikipedia",
       "source_url": "https://en.wikipedia.org/wiki/Ballmer_Group",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Ballmer Group donated $16 million to 18 nonprofits in southeast Michigan.",
       "extraction_evidence": "donated $16 million to 18 nonprofits in southeast Michigan",
       "regen_query": "\"Steve Ballmer\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
       "event_id": "steve_ballmer_direct_gift_2018_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "grant_out",
@@ -968,9 +972,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "ballmer_giving_pledge_unsigned",
       "event_role": "pledge_not_signed",
@@ -999,7 +1001,9 @@
         }
       ],
       "notes": "CRITICAL: Ballmer has NOT signed the Giving Pledge, despite being in the top 15 richest people. CNBC 2022 notes Ballmer said he and Gates 'drifted apart' after 2014 retirement \u2014 this is his own explanation for the absence. He and Connie have stated intent to give most of wealth to philanthropy but have never made a formal pledge. This is relevant because PLEDGE_UNFULFILLED red flag does NOT apply. He is 'pledged nothing; delivering some.'"
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_id": "ballmer_childrens_mental_health_425m",
       "event_role": "pledge",

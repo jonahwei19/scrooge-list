@@ -262,23 +262,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_id": "cooperman_stbarnabas_2021",
-      "event_role": "pledge",
-      "year": 2021,
-      "date_precision": "month",
-      "date": "2021-09",
-      "donor_entity": "Leon and Toby Cooperman Family Foundation",
-      "recipient": "Saint Barnabas Medical Center \u2014 renamed Cooperman Barnabas Medical Center",
-      "amount_usd": 100000000,
-      "source_type": "announcement",
-      "source_url": "https://www.rwjbh.org/blog/2021/september/saint-barnabas-medical-center-receives-100-milli/",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "dedup_note": "Largest gift ever from Coopermans, largest hospital gift in NJ history. LTCFF 2021 990-PF shows only $22.2M grants_out \u2014 so the $100M is either a multi-year pledge or was partly paid via Cooperman personal assets outside LTCFF. EXCLUDED from observable rollup as a pledge rather than confirmed-paid; will be counted as it appears in future 990-PFs.",
-      "status": "ANNOUNCED_PARTIAL_PAYMENT",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_id": "cooperman_college_scholars_2015",
       "event_role": "direct_gift",
       "year": 2015,
@@ -700,9 +683,38 @@
       "regen_run_id": "sha256-399fe61e3e4177e4",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_id": "cooperman_give_it_all_statement",
+      "event_role": "pledge_informal",
+      "year": 2020,
+      "date_precision": "year",
+      "source_type": "media",
+      "source_url": "https://jewishstandard.timesofisrael.com/the-coopermans-put-millions-into-philanthropy/",
+      "retrieved_at": "2026-04-24",
+      "quote_paraphrased": "Cooperman has stated he will give away half of his wealth in his lifetime and the other half to his children to form a foundation as his legacy.",
+      "notes": "Prompt flags Cooperman's 'give away ALL' intent as watchable. Jewish Standard reporting indicates the more precise framing is: half in lifetime, half through a family foundation that continues giving after death. Functionally, 100% of wealth eventually goes to charitable purposes under this plan \u2014 but the downstream-foundation-for-kids model has historically been a structure where heirs retain de facto control and compensation, so this is not equivalent to a clean 100% charitable commitment. Watchable but not counted above 50% floor.",
+      "event_role_canonical": "pledge"
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_id": "cooperman_stbarnabas_2021",
+      "event_role": "pledge",
+      "year": 2021,
+      "date_precision": "month",
+      "date": "2021-09",
+      "donor_entity": "Leon and Toby Cooperman Family Foundation",
+      "recipient": "Saint Barnabas Medical Center \u2014 renamed Cooperman Barnabas Medical Center",
+      "amount_usd": 100000000,
+      "source_type": "announcement",
+      "source_url": "https://www.rwjbh.org/blog/2021/september/saint-barnabas-medical-center-receives-100-milli/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "Largest gift ever from Coopermans, largest hospital gift in NJ history. LTCFF 2021 990-PF shows only $22.2M grants_out \u2014 so the $100M is either a multi-year pledge or was partly paid via Cooperman personal assets outside LTCFF. EXCLUDED from observable rollup as a pledge rather than confirmed-paid; will be counted as it appears in future 990-PFs.",
+      "status": "ANNOUNCED_PARTIAL_PAYMENT",
+      "event_role_canonical": "pledge"
+    },
     {
       "event_role": "pledge",
       "year": null,
@@ -742,18 +754,6 @@
       "source_url": "https://givingpledge.org/pledger?pledgerId=182",
       "retrieved_at": "2026-04-24",
       "notes": "Signed in 2010, the Giving Pledge's inaugural year. One of the smaller-net-worth Giving Pledgers, which makes the ratio-to-wealth more favorable than mega-billionaire peers. Cooperman has publicly stated an intent to 'give it all away' (Jewish Standard reporting) but formal Giving Pledge commitment is the standard majority-of-wealth. Has been one of the most publicly vocal defenders of billionaire philanthropy as a substitute for wealth tax.",
-      "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "cooperman_give_it_all_statement",
-      "event_role": "pledge_informal",
-      "year": 2020,
-      "date_precision": "year",
-      "source_type": "media",
-      "source_url": "https://jewishstandard.timesofisrael.com/the-coopermans-put-millions-into-philanthropy/",
-      "retrieved_at": "2026-04-24",
-      "quote_paraphrased": "Cooperman has stated he will give away half of his wealth in his lifetime and the other half to his children to form a foundation as his legacy.",
-      "notes": "Prompt flags Cooperman's 'give away ALL' intent as watchable. Jewish Standard reporting indicates the more precise framing is: half in lifetime, half through a family foundation that continues giving after death. Functionally, 100% of wealth eventually goes to charitable purposes under this plan \u2014 but the downstream-foundation-for-kids model has historically been a structure where heirs retain de facto control and compensation, so this is not equivalent to a clean 100% charitable commitment. Watchable but not counted above 50% floor.",
       "event_role_canonical": "pledge"
     },
     {

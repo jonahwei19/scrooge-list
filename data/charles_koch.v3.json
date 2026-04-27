@@ -989,14 +989,15 @@
       "amount_usd": 81700000,
       "source_type": "news_article",
       "source_url": "https://www.exposedbycmd.org/2022/11/28/charles-koch-distributes-82-million-to-140-colleges-and-universities/",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Charles Koch's personal foundation disclosed $81.7 million in grants to 140 colleges and universities in its 2021 IRS filing.",
       "extraction_evidence": "Charles Koch's personal foundation disclosed $81.7 million in grants to 140 colleges and universities in its 2021 IRS filing.",
       "regen_query": "\"Charles Koch\" donates million",
       "event_id": "charles_koch_grant_out_2021_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-38f5854399e7df59",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "grant_out",
@@ -1141,14 +1142,15 @@
       "amount_usd": 5000000000,
       "source_type": "news_article",
       "source_url": "https://www.forbes.com/sites/mattdurot/2023/10/10/exclusive-charles-koch-koch-industries-has-given-more-than-5-billion-of-his-koch-industries-stock-to-two-nonprofits/",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Charles Koch transferred more than $5 billion of Koch Industries stock to two nonprofits (Believe in People and CCKc4).",
       "extraction_evidence": "Charles Koch Koch Industries has given more than $5 billion of his Koch Industries stock to two nonprofits",
       "regen_query": "\"Charles Koch\" donates million",
       "event_id": "charles_koch_transfer_in_2022_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-38f5854399e7df59",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "political",
@@ -1434,9 +1436,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-38f5854399e7df59",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "koch_no_giving_pledge",
       "event_role": "pledge_absent",
@@ -1495,7 +1495,9 @@
       "source_url": "https://www.insidephilanthropy.com/home/as-charles-koch-looks-to-his-legacy-heres-a-look-at-his-stand-together-foundation",
       "retrieved_at": "2026-04-23",
       "dedup_note": "STF received $491M in contributions across 2019-2023 but disbursed only $166M in grants during the same period. Per dedup rule, count grants OUT (already captured in koch_stf_estimated_rollup_2019_2023) \u2014 this transfer_in row is NOT additive. Flagged because contributor attribution to Charles Koch personally is not confirmed (could be pooled Seminar Network donors)."
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_role": "pledge",
       "year": null,

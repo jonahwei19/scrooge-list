@@ -803,7 +803,7 @@
       "amount_usd": 122000000,
       "source_type": "other",
       "source_url": "https://kinderfoundation.org/persons-of-the-year-philanthropy-richard-kinder/",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Richard Kinder invested $122M in the Black Community across multiple organizations including Defender Buffalo Soldiers National Museum, EEDC, Emancipation Park, and others.",
       "extraction_evidence": "Kinders invest $122M in the Black Community\u2014Defender Buffalo Soldiers National Museum, EEDC, Emancipation Park, Kinder Institute for Urban Research, Law Harrington Senior Living Center, MacGregor Park, PRH Preservation, Project Row Houses, The Lawson Academy",
       "regen_query": "\"Richard Kinder\" estate plan bequest Kinder Foundation will trust 2024 2025 disclosed",
@@ -811,6 +811,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -843,7 +844,7 @@
       "amount_usd": 506900000,
       "source_type": "other",
       "source_url": "https://mabumbe.com/people/richard-d-kinder-age-net-worth-family-and-career-highlights/",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "The Kinder Foundation, associated with Richard and Nancy Kinder, has donated over $506.9 million to various causes including urban green spaces, education, and quality of life initiatives in Houston.",
       "extraction_evidence": "Through the Kinder Foundation, Richard and Nancy Kinder have donated over $506.9 million to various causes",
       "regen_query": "\"Richard Kinder\" donates million",
@@ -851,6 +852,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -931,6 +933,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1212,6 +1215,21 @@
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_id": "kinder_houston_10b_2025",
+      "event_role": "pledge_reaffirmation",
+      "year": 2025,
+      "date_precision": "month",
+      "date": "2025-10",
+      "pledged_amount_usd": 10000000000,
+      "status": "ANNOUNCED",
+      "recipient": "Houston-area charities (parks, arts, education, quality of life)",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/10/21/houston-billionaire-couple-nancy-rich-kinder-donating-95-percent-fortune/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Oct 2025 announcement at Emancipation Park groundbreaking: Kinders committed $10B (95% of then-$11.2B net worth) to Houston charities, with bulk expected to pass via Kinder Foundation bequest. Reaffirmation of 2011 Giving Pledge with explicit geographic focus.",
+      "event_role_canonical": "pledge"
     }
   ],
   "pledges_and_announcements": [
@@ -1231,21 +1249,6 @@
       "source_url": "https://www.givingpledge.org/pledger/rich-and-nancy-kinder/",
       "retrieved_at": "2026-04-24",
       "notes": "RESEARCH BRIEF CORRECTION: User prompt cited 2014 signing; actual year is 2011 per Giving Pledge website and multiple independent sources. Wealth at 2011 signing ~$5B (pre-Kinder Morgan IPO consolidation). 95% target at signing ~$4.75B. Current net worth $13B; 95% target now ~$12.35B. Gap between observable foundation giving (~$850M through 2024) and 95% target is ~$11.5B \u2014 but pledge is lifetime-OR-estate, so bulk can land at death via Kinder Foundation bequest.",
-      "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "kinder_houston_10b_2025",
-      "event_role": "pledge_reaffirmation",
-      "year": 2025,
-      "date_precision": "month",
-      "date": "2025-10",
-      "pledged_amount_usd": 10000000000,
-      "status": "ANNOUNCED",
-      "recipient": "Houston-area charities (parks, arts, education, quality of life)",
-      "source_type": "news",
-      "source_url": "https://fortune.com/2025/10/21/houston-billionaire-couple-nancy-rich-kinder-donating-95-percent-fortune/",
-      "retrieved_at": "2026-04-24",
-      "notes": "Oct 2025 announcement at Emancipation Park groundbreaking: Kinders committed $10B (95% of then-$11.2B net worth) to Houston charities, with bulk expected to pass via Kinder Foundation bequest. Reaffirmation of 2011 Giving Pledge with explicit geographic focus.",
       "event_role_canonical": "pledge"
     },
     {
@@ -1306,6 +1309,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
       "event_role_canonical": "pledge"
     },
     {

@@ -209,6 +209,34 @@ _TRANSFER_TO_OWN_PHRASES = _re_guards.compile(
     _re_guards.IGNORECASE,
 )
 
+# Cardinality red flags: extraction claims a single-recipient gift but the
+# evidence text says "across N", "split among N", "to N nonprofits", etc.
+# Pattern: number followed by a plural-recipient noun phrase.
+_MULTI_RECIPIENT_PHRASES = _re_guards.compile(
+    r"\b(across|split\s+among|distributed\s+to|spread\s+across|to|among)\s+"
+    r"(\d+|two|three|four|five|six|seven|eight|nine|ten|several|multiple|various|many)\s+"
+    r"(universities|colleges|schools|nonprofits|charities|organizations|institutions|"
+    r"recipients|groups|causes|hospitals|grantees|partners|projects)\b",
+    _re_guards.IGNORECASE,
+)
+
+# Cumulative-not-transactional language. The Warren Buffett "$43B cumulative
+# giving" article was extracted as a single 2024 event; same risk for any
+# "total since X", "lifetime giving", "to date" framing.
+_CUMULATIVE_PHRASES = _re_guards.compile(
+    # Drops "to date" alone (false-positives on "largest gift to date").
+    # Only matches phrases unambiguously denoting a cumulative figure.
+    r"\b(cumulative\s+(giving|donations|contributions|total)|"
+    r"lifetime\s+(giving|donations|contributions|total)|"
+    r"(?:given|donated|contributed)\s+(?:so\s+far|over\s+his\s+lifetime)|"
+    r"bringing\s+(?:his|her|their|the)\s+total\s+(?:giving|donations|contributions)|"
+    r"since\s+\d{4}\s+(?:has|have)\s+(?:given|donated|contributed)|"
+    r"over\s+the\s+(?:past|last)\s+\d+\s+years\s+(?:has|have)\s+(?:given|donated)|"
+    r"running\s+total|all-?time\s+(?:giving|donations|contributions)|"
+    r"total\s+(?:giving|donations|contributions)\s+(?:since|of\s+\$?\d))\b",
+    _re_guards.IGNORECASE,
+)
+
 
 def _maybe_relabel(event: dict[str, Any]) -> dict[str, Any]:
     """Apply pattern guards to re-label role if the LLM mis-categorized.
@@ -245,6 +273,27 @@ def _maybe_relabel(event: dict[str, Any]) -> dict[str, Any]:
         event["_role_relabeled_from"] = role
         event["_role_relabel_reason"] = reason
         event["event_role"] = new_role
+
+    # 4. Cardinality guard: claims single-recipient gift but evidence says many.
+    #    Don't drop — downgrade confidence and flag so reviewer can split.
+    if _MULTI_RECIPIENT_PHRASES.search(text_blobs):
+        event["_cardinality_flag"] = "multi_recipient_phrase_detected"
+        if event.get("confidence") in ("high", None):
+            event["confidence"] = "medium"
+
+    # 5. Cumulative-not-transactional guard: drop the event entirely if the
+    #    snippet is reporting a lifetime or cumulative figure rather than a
+    #    single discrete gift. Cumulative figures double-count when summed
+    #    with the underlying transactions.
+    if _CUMULATIVE_PHRASES.search(text_blobs):
+        event["_cumulative_flag"] = "cumulative_or_lifetime_phrase_detected"
+        # Demote to reference_only so it doesn't add to dollar totals,
+        # but preserve the URL as a citation.
+        if event.get("event_role") not in {"pledge", "no_pledge", "reference_only"}:
+            event["_role_relabeled_from"] = event.get("event_role")
+            event["_role_relabel_reason"] = "cumulative_phrase"
+            event["event_role"] = "reference_only"
+
     return event
 
 

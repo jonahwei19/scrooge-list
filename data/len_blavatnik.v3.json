@@ -214,22 +214,6 @@
       "dedup_note": "Predates BFF (est. 2017/2018). Given through Blavatnik Family Trust/Foundation UK vehicle \u2014 does NOT appear in US 990-PF filings. Treat as additive to 990-PF totals. No double-count risk against 81-2444350."
     },
     {
-      "event_id": "blavatnik_oxford_bsg_trust_29m",
-      "event_role": "pledge",
-      "year": 2014,
-      "date_precision": "year",
-      "donor_entity": "Leonard Blavatnik (via associated trust)",
-      "recipient": "University of Oxford \u2014 Blavatnik School of Government (operating support)",
-      "amount_gbp": 29000000,
-      "amount_usd_approx": 48000000,
-      "status": "PARTIALLY_DISBURSED",
-      "source_type": "news",
-      "source_url": "https://en.wikipedia.org/wiki/Blavatnik_School_of_Government",
-      "retrieved_at": "2026-04-24",
-      "confidence": "medium",
-      "notes": "Reported as a \u00a329M operating-support commitment over 10 years beyond the founding \u00a375M. Disbursement schedule not public."
-    },
-    {
       "event_id": "blavatnik_tate_2011",
       "event_role": "direct_gift",
       "year": 2011,
@@ -244,22 +228,6 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "UK-domiciled gift; not in US 990-PF. Additive."
-    },
-    {
-      "event_id": "blavatnik_harvard_hms_2018",
-      "event_role": "pledge",
-      "year": 2018,
-      "date_precision": "month",
-      "date": "2018-11",
-      "donor_entity": "Blavatnik Family Foundation",
-      "donor_ein": "81-2444350",
-      "recipient": "Harvard Medical School \u2014 Blavatnik Institute at HMS + Blavatnik Harvard Life Lab",
-      "amount_usd": 200000000,
-      "source_type": "announcement",
-      "source_url": "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "dedup_note": "CRITICAL: This $200M was pledged through BFF. Expected to be disbursed over multiple years and already partially reflected in BFF 990-PF grant_out lines 2019 ($158.9M) and 2020 ($137.2M). To avoid double-counting, we DO NOT add this event separately to observable_giving \u2014 it is captured inside the 2017-2024 BFF 990-PF totals. Kept in record for narrative completeness."
     },
     {
       "event_id": "blavatnik_harvard_2013",
@@ -382,23 +350,6 @@
       "confidence": "high",
       "notes": "Received protest letter from 56 former US national security officials/academics alleging the gift was part of a reputation-laundering campaign. CFR president Richard Haass refused to return the donation. Documented here without judgment; see red_flags.",
       "dedup_note": "Likely captured in 2019 BFF 990-PF ($158.9M). NOT added to observable separately."
-    },
-    {
-      "event_id": "blavatnik_wmg_2020_pledge",
-      "event_role": "pledge",
-      "year": 2020,
-      "date_precision": "month",
-      "date": "2020-06",
-      "donor_entity": "Warner Music Group + Blavatnik Family Foundation (joint)",
-      "recipient": "Social justice and anti-racism causes + music industry diversity (100+ grantees)",
-      "pledged_amount_usd": 100000000,
-      "pledge_horizon_years": 10,
-      "status": "SIGNIFICANTLY_UNDERDISBURSED",
-      "source_type": "announcement",
-      "source_url": "https://www.musicbusinessworldwide.com/warner-music-group-and-len-blavatnik-to-give-100m-to/",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "notes": "Per 990-PF data for the dedicated SJF entity (EIN 85-3060424), only ~$3.6M disbursed 2020-2025 against the $100M 10-year target. Even accounting for pass-throughs via WMG corporate rather than the 501(c)(3), observable disbursement pace is well below the stated trajectory. Attribution to Blavatnik personally vs. WMG corporate is mixed."
     },
     {
       "event_id": "blavatnik_harvard_pause_2023",
@@ -756,7 +707,8 @@
       "event_id": "len_blavatnik_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c2620f2fab593204",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "private_investment",
@@ -901,14 +853,15 @@
       "amount_usd": 191500,
       "source_type": "other",
       "source_url": "https://impala.digital/public/profiles/85-3060424/overview",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Foundation awarded a total of $191.5K to four grantees in 2024 in the social justice sector.",
       "extraction_evidence": "awarded a total of $191.5K to four grantees in 2024",
       "regen_query": "\"Warner Music Group\" \"Blavatnik Family Foundation Social Justice Fund\" EIN 85-3060424 recipients 2020 2021 2022",
       "event_id": "len_blavatnik_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c2620f2fab593204",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "political",
@@ -1441,9 +1394,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c2620f2fab593204",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "blavatnik_no_giving_pledge",
       "event_role": "pledge_status",
@@ -1462,6 +1413,57 @@
       "alternate_source_quote": "Over the past decade, the Blavatnik Family Foundation has contributed more than $1 billion to over 250 organizations.",
       "alternate_source_url": "https://blavatnikfoundation.org/about-us/",
       "classification_note": "Self-reported. Our observable sum from BFF (81-2444350) 2017-2024 alone is ~$556M, plus BFF-2020 (85-1345780) 2021-2022 is ~$175.8M. Combined ~$732M in the 2017-2024 window. Consistent with the foundation's own $700M-$1B claim once pre-2017 UK gifts (Oxford \u00a375M, Tate \u00a350M, Harvard 2013 $50M, Yale 2013 $10M) are included. No large gap between claim and evidence."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "blavatnik_oxford_bsg_trust_29m",
+      "event_role": "pledge",
+      "year": 2014,
+      "date_precision": "year",
+      "donor_entity": "Leonard Blavatnik (via associated trust)",
+      "recipient": "University of Oxford \u2014 Blavatnik School of Government (operating support)",
+      "amount_gbp": 29000000,
+      "amount_usd_approx": 48000000,
+      "status": "PARTIALLY_DISBURSED",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Blavatnik_School_of_Government",
+      "retrieved_at": "2026-04-24",
+      "confidence": "medium",
+      "notes": "Reported as a \u00a329M operating-support commitment over 10 years beyond the founding \u00a375M. Disbursement schedule not public."
+    },
+    {
+      "event_id": "blavatnik_harvard_hms_2018",
+      "event_role": "pledge",
+      "year": 2018,
+      "date_precision": "month",
+      "date": "2018-11",
+      "donor_entity": "Blavatnik Family Foundation",
+      "donor_ein": "81-2444350",
+      "recipient": "Harvard Medical School \u2014 Blavatnik Institute at HMS + Blavatnik Harvard Life Lab",
+      "amount_usd": 200000000,
+      "source_type": "announcement",
+      "source_url": "https://news.harvard.edu/gazette/story/2018/11/a-gift-to-harvard-to-turn-medical-discoveries-into-treatments/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "dedup_note": "CRITICAL: This $200M was pledged through BFF. Expected to be disbursed over multiple years and already partially reflected in BFF 990-PF grant_out lines 2019 ($158.9M) and 2020 ($137.2M). To avoid double-counting, we DO NOT add this event separately to observable_giving \u2014 it is captured inside the 2017-2024 BFF 990-PF totals. Kept in record for narrative completeness."
+    },
+    {
+      "event_id": "blavatnik_wmg_2020_pledge",
+      "event_role": "pledge",
+      "year": 2020,
+      "date_precision": "month",
+      "date": "2020-06",
+      "donor_entity": "Warner Music Group + Blavatnik Family Foundation (joint)",
+      "recipient": "Social justice and anti-racism causes + music industry diversity (100+ grantees)",
+      "pledged_amount_usd": 100000000,
+      "pledge_horizon_years": 10,
+      "status": "SIGNIFICANTLY_UNDERDISBURSED",
+      "source_type": "announcement",
+      "source_url": "https://www.musicbusinessworldwide.com/warner-music-group-and-len-blavatnik-to-give-100m-to/",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Per 990-PF data for the dedicated SJF entity (EIN 85-3060424), only ~$3.6M disbursed 2020-2025 against the $100M 10-year target. Even accounting for pass-throughs via WMG corporate rather than the 501(c)(3), observable disbursement pace is well below the stated trajectory. Attribution to Blavatnik personally vs. WMG corporate is mixed."
     },
     {
       "event_role": "announcement",

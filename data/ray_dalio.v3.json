@@ -201,52 +201,6 @@
       "dedup_note": "Likely captured within 2020 Dalio Foundation grant_out ($33.6M) if paid from the foundation, but more likely spread across multiple years or paid from a separate personal/family-fund vehicle. Leave as standalone direct_gift and flag for dedup when Dalio Foundation 2020 grant recipient list is parsed. If double-counted, subtract from direct_gifts."
     },
     {
-      "event_id": "dalio_oceanx_bloomberg_2018",
-      "event_role": "pledge",
-      "year": 2018,
-      "date_precision": "year",
-      "donor_entity": "Dalio Philanthropies + Bloomberg Philanthropies (joint)",
-      "recipient": "OceanX ocean exploration + ocean-mapping initiative",
-      "amount_usd_joint_total": 185000000,
-      "amount_usd_dalio_share_estimate": 92500000,
-      "amount_usd_dalio_share_note": "Assume 50% split absent disclosure of the actual ratio; standalone event until the joint-pledge share is verified.",
-      "source_type": "announcement",
-      "source_url": "https://www.cnbc.com/2018/06/05/ray-dalio-james-cameron-launch-oceanx.html",
-      "retrieved_at": "2026-04-23",
-      "confidence": "medium",
-      "dedup_note": "Joint with Bloomberg. Dalio share likely recorded through Dalio Foundation grants in subsequent years. Currently flagged as a pledge; roll into grants_out when specific payment years are identified."
-    },
-    {
-      "event_id": "dalio_ct_partnership_2019",
-      "event_role": "pledge",
-      "year": 2019,
-      "date_precision": "year",
-      "donor_entity": "Dalio Philanthropies",
-      "recipient": "Partnership for Connecticut (joint with State of Connecticut)",
-      "pledged_amount_usd": 100000000,
-      "status": "DISSOLVED_2020",
-      "status_note": "Partnership dissolved June 2020 less than one year after formation due to governance/transparency issues and leadership crisis. Reported that Dalio had contributed ~$20M at dissolution time, which was refunded or returned to foundation per some reporting. Actual disbursement to partnership uncertain.",
-      "source_type": "announcement",
-      "source_url": "https://ctmirror.org/2020/06/03/ct-and-dalio-philanthropies-to-formally-dissolve-education-partnership-on-friday/",
-      "retrieved_at": "2026-04-23",
-      "confidence": "high"
-    },
-    {
-      "event_id": "dalio_ct_trump_accounts_2025",
-      "event_role": "pledge",
-      "year": 2025,
-      "date": "2025-12-17",
-      "donor_entity": "Dalio Philanthropies",
-      "recipient": "~300,000 Connecticut children \u2014 seeding federal Trump Account child investment accounts with $250 each",
-      "pledged_amount_usd": 75000000,
-      "status": "ANNOUNCED",
-      "source_type": "announcement",
-      "source_url": "https://www.businesswire.com/news/home/20251217847942/en/Dalios-Double-Down-on-Connecticuts-Youth",
-      "retrieved_at": "2026-04-23",
-      "confidence": "high",
-      "classification_note": "Press framed as philanthropy \u2014 Dalio Philanthropies seeded children's investment accounts. CNBC/CT Mirror note the accounts were created by the 2025 Trump administration legislation; they are tax-advantaged savings accounts for children, not partisan gifts. Count under observable pledges once payment starts. For now, pledge only."
-    },
-    {
       "event_id": "dalio_woods_hole_2012",
       "event_role": "direct_gift",
       "year": 2012,
@@ -558,7 +512,8 @@
       "event_id": "ray_dalio_direct_gift_2003_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "direct_gift",
@@ -847,6 +802,52 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_id": "dalio_oceanx_bloomberg_2018",
+      "event_role": "pledge",
+      "year": 2018,
+      "date_precision": "year",
+      "donor_entity": "Dalio Philanthropies + Bloomberg Philanthropies (joint)",
+      "recipient": "OceanX ocean exploration + ocean-mapping initiative",
+      "amount_usd_joint_total": 185000000,
+      "amount_usd_dalio_share_estimate": 92500000,
+      "amount_usd_dalio_share_note": "Assume 50% split absent disclosure of the actual ratio; standalone event until the joint-pledge share is verified.",
+      "source_type": "announcement",
+      "source_url": "https://www.cnbc.com/2018/06/05/ray-dalio-james-cameron-launch-oceanx.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "medium",
+      "dedup_note": "Joint with Bloomberg. Dalio share likely recorded through Dalio Foundation grants in subsequent years. Currently flagged as a pledge; roll into grants_out when specific payment years are identified."
+    },
+    {
+      "event_id": "dalio_ct_partnership_2019",
+      "event_role": "pledge",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "Dalio Philanthropies",
+      "recipient": "Partnership for Connecticut (joint with State of Connecticut)",
+      "pledged_amount_usd": 100000000,
+      "status": "DISSOLVED_2020",
+      "status_note": "Partnership dissolved June 2020 less than one year after formation due to governance/transparency issues and leadership crisis. Reported that Dalio had contributed ~$20M at dissolution time, which was refunded or returned to foundation per some reporting. Actual disbursement to partnership uncertain.",
+      "source_type": "announcement",
+      "source_url": "https://ctmirror.org/2020/06/03/ct-and-dalio-philanthropies-to-formally-dissolve-education-partnership-on-friday/",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high"
+    },
+    {
+      "event_id": "dalio_ct_trump_accounts_2025",
+      "event_role": "pledge",
+      "year": 2025,
+      "date": "2025-12-17",
+      "donor_entity": "Dalio Philanthropies",
+      "recipient": "~300,000 Connecticut children \u2014 seeding federal Trump Account child investment accounts with $250 each",
+      "pledged_amount_usd": 75000000,
+      "status": "ANNOUNCED",
+      "source_type": "announcement",
+      "source_url": "https://www.businesswire.com/news/home/20251217847942/en/Dalios-Double-Down-on-Connecticuts-Youth",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "classification_note": "Press framed as philanthropy \u2014 Dalio Philanthropies seeded children's investment accounts. CNBC/CT Mirror note the accounts were created by the 2025 Trump administration legislation; they are tax-advantaged savings accounts for children, not partisan gifts. Count under observable pledges once payment starts. For now, pledge only."
+    },
     {
       "event_role": "pledge",
       "year": null,

@@ -356,7 +356,8 @@
       "event_id": "rupert_murdoch_direct_gift_2012_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a478ab9bce64efff",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "political",
@@ -509,9 +510,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a478ab9bce64efff",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "murdoch_giving_pledge_NOT_SIGNED",
       "event_role": "pledge_absence_verified",
@@ -535,6 +534,7 @@
       "classification_note": "This is an intra-family wealth transfer to settle a trust-control lawsuit, NOT charitable giving. Included here for context because Inside Philanthropy has suggested the payouts may boost downstream family philanthropy (James/Kathryn Quadrivium has a precedent of redeploying such proceeds). Rupert's personal philanthropy was not altered by the deal. NOT counted in observable giving."
     }
   ],
+  "pledges_and_announcements": [],
   "political_giving": {
     "classification": "POLITICAL_MODERATE",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33/$1. Note: News Corp / Fox Corp editorial influence is arguably the larger political vehicle here but is not tallied as personal political spending.",

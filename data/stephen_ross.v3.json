@@ -226,22 +226,6 @@
       "dedup_note": "If any portion was paid through SMRF foundation (EIN 387104084), 2020 SMRF grant_out $3.0M would need to be checked against this; unlikely given WRI's $63.5M far exceeds SMRF's 2020 disbursement."
     },
     {
-      "event_id": "ross_rise_2020_13m",
-      "event_role": "pledge",
-      "year": 2020,
-      "date_precision": "day",
-      "date": "2020-06-26",
-      "donor_entity": "Stephen Ross (personal)",
-      "recipient": "Ross Initiative in Sports for Equality (RISE)",
-      "amount_usd": 13000000,
-      "pledge_period_years": 4,
-      "source_type": "announcement",
-      "source_url": "https://philanthropynewsdigest.org/news/stephen-ross-pledges-13-million-to-help-end-racism-through-sports",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "notes": "Four-year commitment announced post-George Floyd. Brings total RISE commitments to $30M since 2015 founding."
-    },
-    {
       "event_role": "grant_out",
       "year": 2015,
       "date_precision": "year",
@@ -643,6 +627,22 @@
   ],
   "pledges_and_announcements": [
     {
+      "event_id": "ross_rise_2020_13m",
+      "event_role": "pledge",
+      "year": 2020,
+      "date_precision": "day",
+      "date": "2020-06-26",
+      "donor_entity": "Stephen Ross (personal)",
+      "recipient": "Ross Initiative in Sports for Equality (RISE)",
+      "amount_usd": 13000000,
+      "pledge_period_years": 4,
+      "source_type": "announcement",
+      "source_url": "https://philanthropynewsdigest.org/news/stephen-ross-pledges-13-million-to-help-end-racism-through-sports",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "notes": "Four-year commitment announced post-George Floyd. Brings total RISE commitments to $30M since 2015 founding."
+    },
+    {
       "event_role": "pledge",
       "year": 2019,
       "date": "2019-08-15",
@@ -652,7 +652,7 @@
       "amount_usd": 1000000,
       "source_type": "news_article",
       "source_url": "https://www.cnbc.com/2019/08/15/equinox-chief-im-sorry-for-the-impact-of-trump-fundraiser-on-our-community.html",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Equinox announced a $1 million donation to five charities supporting veterans' rights, LGBTQ+ rights and other causes.",
       "extraction_evidence": "Equinox will donate $1 million to five charities, supporting veterans' rights, LGBTQ+ rights and other causes",
       "regen_query": "\"Stephen Ross\" \"Equinox\" OR \"SoulCycle\" foundation OR charitable OR community benefit 2019 2020 2021",
@@ -661,7 +661,8 @@
       "regen_run_id": "sha256-c1bc09186839c523",
       "regen_extractor_model": "claude-haiku-4-5",
       "_role_relabeled_from": "direct_gift",
-      "_role_relabel_reason": "matched pledge_phrases"
+      "_role_relabel_reason": "matched pledge_phrases",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_id": "ross_gp_2013",

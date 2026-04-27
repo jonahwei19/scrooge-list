@@ -181,7 +181,7 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "transfer_in",
+      "event_role": "reference_only",
       "year": 2024,
       "date_precision": "year",
       "donor_entity": "Steve Ballmer",
@@ -197,7 +197,10 @@
       "regen_run_id": "sha256-eae67171dcb5ad33",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "transfer_in"
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
+      "_role_relabeled_from": "transfer_in",
+      "_role_relabel_reason": "cumulative_phrase",
+      "event_role_canonical": "reference_only"
     },
     {
       "event_role": "direct_gift",
@@ -309,7 +312,7 @@
       "amount_usd": 16000000,
       "source_type": "wikipedia",
       "source_url": "https://en.wikipedia.org/wiki/Ballmer_Group",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Ballmer Group donated $16 million to 18 nonprofits in southeast Michigan.",
       "extraction_evidence": "donated $16 million to 18 nonprofits in southeast Michigan",
       "regen_query": "\"Steve Ballmer\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
@@ -317,6 +320,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1018,9 +1022,7 @@
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "direct_gift"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "ballmer_giving_pledge_unsigned",
       "event_role": "pledge_not_signed",
@@ -1050,7 +1052,9 @@
       ],
       "notes": "CRITICAL: Ballmer has NOT signed the Giving Pledge, despite being in the top 15 richest people. CNBC 2022 notes Ballmer said he and Gates 'drifted apart' after 2014 retirement \u2014 this is his own explanation for the absence. He and Connie have stated intent to give most of wealth to philanthropy but have never made a formal pledge. This is relevant because PLEDGE_UNFULFILLED red flag does NOT apply. He is 'pledged nothing; delivering some.'",
       "event_role_canonical": "no_pledge"
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_id": "ballmer_childrens_mental_health_425m",
       "event_role": "pledge",

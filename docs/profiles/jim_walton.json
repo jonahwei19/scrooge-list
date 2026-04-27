@@ -266,22 +266,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_id": "walton_siblings_wff_pledge_2008_2013_jim_prorata",
-      "event_role": "pledge",
-      "year_range": [
-        2008,
-        2013
-      ],
-      "pledged_amount_usd_sibling_collective": 2000000000,
-      "pledged_amount_usd_jim_prorata": 666666667,
-      "status": "FULFILLED",
-      "status_note": "Per Wikipedia, Jim and siblings collectively pledged ~$2B to WFF between 2008-2013. Pledge was a transfer_in to the family foundation, which has since disbursed well above that amount. Pro-rata 1/3 imputed to Jim.",
-      "source_url": "https://en.wikipedia.org/wiki/Jim_Walton",
-      "retrieved_at": "2026-04-23",
-      "dedup_note": "Transfer INTO WFF, not grant_out. Per dedup rule #2, we count WFF's grants_out, not the transfers in. Provenance only; not added to observable_giving.",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_role": "grant_out",
       "year": 2015,
       "date_precision": "year",
@@ -1020,9 +1004,7 @@
       "regen_run_id": "sha256-20b687105fd19fde",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "private_investment"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "jim_walton_no_gp",
       "event_role": "pledge_declined",
@@ -1033,6 +1015,24 @@
       "retrieved_at": "2026-04-23",
       "notes": "Jim Walton has not signed the Giving Pledge. No members of the Walton family (Jim, Rob, Alice, late brother John's estate) have signed. This is a deliberate family position per 2010 reporting ('no one in state signed up, so far' \u2014 NW Arkansas Online Aug 2010). Under scrooge methodology, declining is NOT a red flag per se \u2014 more honest than signing-and-not-fulfilling \u2014 but it removes a public accountability hook.",
       "event_role_canonical": "no_pledge"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "walton_siblings_wff_pledge_2008_2013_jim_prorata",
+      "event_role": "pledge",
+      "year_range": [
+        2008,
+        2013
+      ],
+      "pledged_amount_usd_sibling_collective": 2000000000,
+      "pledged_amount_usd_jim_prorata": 666666667,
+      "status": "FULFILLED",
+      "status_note": "Per Wikipedia, Jim and siblings collectively pledged ~$2B to WFF between 2008-2013. Pledge was a transfer_in to the family foundation, which has since disbursed well above that amount. Pro-rata 1/3 imputed to Jim.",
+      "source_url": "https://en.wikipedia.org/wiki/Jim_Walton",
+      "retrieved_at": "2026-04-23",
+      "dedup_note": "Transfer INTO WFF, not grant_out. Per dedup rule #2, we count WFF's grants_out, not the transfers in. Provenance only; not added to observable_giving.",
+      "event_role_canonical": "pledge"
     },
     {
       "event_role": "pledge",

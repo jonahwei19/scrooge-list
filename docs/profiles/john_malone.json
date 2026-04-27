@@ -334,22 +334,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_id": "malone_future_land_trust_intent",
-      "event_role": "pledge",
-      "year": 2023,
-      "date_precision": "approximate",
-      "donor_entity": "John Malone (personal \u2014 statement of intent)",
-      "recipient": "Unspecified future conservation trust",
-      "amount_usd_note": "Malones have stated intention that most of their 2.2M acres will enter a trust to be 'preserved forever as open space.' Land value alone likely $1B-$3B+ (based on per-acre ranch prices $500-$2000/acre x 2.2M acres); easement value would be a fraction. No dollar pledge, no binding instrument identified.",
-      "status": "INTENT_STATED_NOT_EXECUTED",
-      "source_type": "news",
-      "source_url": "https://landreport.com/john-malone-born-to-be-wired-excerpt",
-      "retrieved_at": "2026-04-24",
-      "confidence": "low",
-      "classification_note": "NOT counted in observable. Represents a statement of intent similar in nature to Ellison's trust disclosure \u2014 meaningful upper bound but no legal commitment yet.",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_role": "grant_out",
       "year": 2015,
       "date_precision": "year",
@@ -619,7 +603,7 @@
       "amount_usd": 2000000,
       "source_type": "other",
       "source_url": "https://bbk12e1-cdn.myschoolcdn.com/ftpimages/123/misc/misc_281726.pdf",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Malone Family Foundation gave $2 million to Fort Worth Country Day in spring 2004 to establish an endowment.",
       "extraction_evidence": "In spring 2004, Fort Worth Country Day was chosen from among 50 schools nationwide to receive a gift of $2 million to establish an endowment",
       "regen_query": "\"Malone Family Foundation\" \"Malone Scholars Program\" private secondary schools endowment list",
@@ -627,6 +611,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "grant_out"
     },
     {
@@ -868,9 +853,36 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_id": "malone_no_giving_pledge",
+      "event_role": "pledge_status",
+      "status": "NOT_SIGNED",
+      "source_type": "official_pledgers_list_absence",
+      "source_url": "https://givingpledge.org/pledgers",
+      "retrieved_at": "2026-04-24",
+      "notes": "John Malone has not signed the Giving Pledge. His name does not appear on the official pledger list. Press coverage (Chronicle of Philanthropy, Inside Philanthropy) consistently notes that he has stated 'most of my wealth will go to philanthropy' but has not made a formal pledge. Red flag NO_GIVING_PLEDGE_SIGNATURE applies.",
+      "confidence": "high",
+      "event_role_canonical": "pledge"
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_id": "malone_future_land_trust_intent",
+      "event_role": "pledge",
+      "year": 2023,
+      "date_precision": "approximate",
+      "donor_entity": "John Malone (personal \u2014 statement of intent)",
+      "recipient": "Unspecified future conservation trust",
+      "amount_usd_note": "Malones have stated intention that most of their 2.2M acres will enter a trust to be 'preserved forever as open space.' Land value alone likely $1B-$3B+ (based on per-acre ranch prices $500-$2000/acre x 2.2M acres); easement value would be a fraction. No dollar pledge, no binding instrument identified.",
+      "status": "INTENT_STATED_NOT_EXECUTED",
+      "source_type": "news",
+      "source_url": "https://landreport.com/john-malone-born-to-be-wired-excerpt",
+      "retrieved_at": "2026-04-24",
+      "confidence": "low",
+      "classification_note": "NOT counted in observable. Represents a statement of intent similar in nature to Ellison's trust disclosure \u2014 meaningful upper bound but no legal commitment yet.",
+      "event_role_canonical": "pledge"
+    },
     {
       "event_role": "pledge",
       "year": 2011,
@@ -891,17 +903,6 @@
       "regen_extractor_model": "claude-haiku-4-5",
       "_role_relabeled_from": "direct_gift",
       "_role_relabel_reason": "matched pledge_phrases",
-      "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "malone_no_giving_pledge",
-      "event_role": "pledge_status",
-      "status": "NOT_SIGNED",
-      "source_type": "official_pledgers_list_absence",
-      "source_url": "https://givingpledge.org/pledgers",
-      "retrieved_at": "2026-04-24",
-      "notes": "John Malone has not signed the Giving Pledge. His name does not appear on the official pledger list. Press coverage (Chronicle of Philanthropy, Inside Philanthropy) consistently notes that he has stated 'most of my wealth will go to philanthropy' but has not made a formal pledge. Red flag NO_GIVING_PLEDGE_SIGNATURE applies.",
-      "confidence": "high",
       "event_role_canonical": "pledge"
     },
     {

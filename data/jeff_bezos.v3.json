@@ -999,7 +999,7 @@
     },
     {
       "amount_usd": 102500000,
-      "confidence": "high",
+      "confidence": "medium",
       "date": "2025-12-02",
       "date_precision": "day",
       "donor_entity": "Jeff Bezos and Lauren S\u00e1nchez Bezos",
@@ -1014,7 +1014,8 @@
       "event_id": "jeff_bezos_direct_gift_2025_regen10",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "direct_gift",
@@ -1454,7 +1455,7 @@
     },
     {
       "amount_usd": 102500000,
-      "confidence": "high",
+      "confidence": "medium",
       "date": null,
       "date_precision": null,
       "donor_entity": "Jeff Bezos",
@@ -1469,7 +1470,8 @@
       "event_id": "jeff_bezos_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "amount_usd": 10000000000,
@@ -1717,6 +1719,20 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_id": "bezos_majority_wealth_interview_2022",
+      "event_role": "public_statement_not_pledge",
+      "year": 2022,
+      "date_precision": "month",
+      "date": "2022-11",
+      "donor_entity": "Jeff Bezos",
+      "source_type": "interview",
+      "source_url": "https://www.ft.com/content/6a1b87d8-696c-4259-b30a-e140e49bbfd4",
+      "retrieved_at": "2026-04-23",
+      "quote_paraphrased": "Bezos told CNN in Nov 2022 he intends to give away 'the majority' of his wealth during his lifetime, acknowledging the difficulty of doing so effectively.",
+      "corroborating_source": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/",
+      "classification_note": "NOT a Giving Pledge signature. No legally binding or publicly documented commitment beyond 'majority' verbal intent. Inside Philanthropy and Fortune both characterize it as less formal than the Giving Pledge."
     }
   ],
   "pledges_and_announcements": [
@@ -1770,20 +1786,6 @@
       "source_url": "https://people.com/bezos-day-1-families-fund-announces-2023-grantees-8404924",
       "retrieved_at": "2026-04-23",
       "notes": "The $2B launch commitment covers both Families Fund and Academies Fund jointly. Bezos Academy operates ~40+ tuition-free preschools across the US as of 2025, funded via Day 1 Academies Fund \u2014 spend exact figure not publicly disclosed."
-    },
-    {
-      "event_id": "bezos_majority_wealth_interview_2022",
-      "event_role": "public_statement_not_pledge",
-      "year": 2022,
-      "date_precision": "month",
-      "date": "2022-11",
-      "donor_entity": "Jeff Bezos",
-      "source_type": "interview",
-      "source_url": "https://www.ft.com/content/6a1b87d8-696c-4259-b30a-e140e49bbfd4",
-      "retrieved_at": "2026-04-23",
-      "quote_paraphrased": "Bezos told CNN in Nov 2022 he intends to give away 'the majority' of his wealth during his lifetime, acknowledging the difficulty of doing so effectively.",
-      "corroborating_source": "https://fortune.com/2026/04/15/jeff-bezos-10-billion-climate-change-pledge-2030-lauren-sanchez-bezos/",
-      "classification_note": "NOT a Giving Pledge signature. No legally binding or publicly documented commitment beyond 'majority' verbal intent. Inside Philanthropy and Fortune both characterize it as less formal than the Giving Pledge."
     },
     {
       "amount_usd": null,

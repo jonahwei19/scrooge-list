@@ -1033,6 +1033,19 @@
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_id": "schmidt_sciences_launch_2024",
+      "event_role": "vehicle_announcement",
+      "year": 2024,
+      "pledged_amount_usd": null,
+      "pledged_amount_note": "Multiple sources report Schmidt Sciences FY2024 gave $228.7M with $1.59B in assets (overlap with EWSFSI figures suggests Schmidt Sciences operates as a program of EWSFSI or is reporting on EWSFSI assets). Task brief's '$5B in commitments' figure NOT verified in public sources \u2014 the largest verified commitments are the 2019 $1B (Schmidt Futures) and $125M AI2050. The cumulative Schmidt Sciences + Schmidt Futures + SFF lifetime disbursement exceeds $2B (observable) but $5B is not publicly corroborated.",
+      "source_type": "announcement",
+      "source_url": "https://en.wikipedia.org/wiki/Schmidt_Sciences",
+      "retrieved_at": "2026-04-24",
+      "notes": "Schmidt Sciences was established in 2024 as a spin-off of Schmidt Futures' scientific arm. Stuart Feldman is co-CEO of both. This is the PRIMARY science-giving vehicle going forward.",
+      "brief_correction_note": "Task brief claimed Schmidt Sciences has 'received ~$5B in commitments' \u2014 could not corroborate. Public sources document $1B+ cumulative disbursed, $125M AI2050, $10M AI safety (2025), plus ocean/astronomy/biosciences programs of unquantified size. A $5B lifetime cumulative number is plausible IF counting all Schmidt-affiliated vehicle spending since 2006, but not specifically to Schmidt Sciences.",
+      "event_role_canonical": "announcement"
     }
   ],
   "pledges_and_announcements": [
@@ -1074,19 +1087,6 @@
       "event_role_canonical": "pledge"
     },
     {
-      "event_id": "schmidt_sciences_launch_2024",
-      "event_role": "vehicle_announcement",
-      "year": 2024,
-      "pledged_amount_usd": null,
-      "pledged_amount_note": "Multiple sources report Schmidt Sciences FY2024 gave $228.7M with $1.59B in assets (overlap with EWSFSI figures suggests Schmidt Sciences operates as a program of EWSFSI or is reporting on EWSFSI assets). Task brief's '$5B in commitments' figure NOT verified in public sources \u2014 the largest verified commitments are the 2019 $1B (Schmidt Futures) and $125M AI2050. The cumulative Schmidt Sciences + Schmidt Futures + SFF lifetime disbursement exceeds $2B (observable) but $5B is not publicly corroborated.",
-      "source_type": "announcement",
-      "source_url": "https://en.wikipedia.org/wiki/Schmidt_Sciences",
-      "retrieved_at": "2026-04-24",
-      "notes": "Schmidt Sciences was established in 2024 as a spin-off of Schmidt Futures' scientific arm. Stuart Feldman is co-CEO of both. This is the PRIMARY science-giving vehicle going forward.",
-      "brief_correction_note": "Task brief claimed Schmidt Sciences has 'received ~$5B in commitments' \u2014 could not corroborate. Public sources document $1B+ cumulative disbursed, $125M AI2050, $10M AI safety (2025), plus ocean/astronomy/biosciences programs of unquantified size. A $5B lifetime cumulative number is plausible IF counting all Schmidt-affiliated vehicle spending since 2006, but not specifically to Schmidt Sciences.",
-      "event_role_canonical": "announcement"
-    },
-    {
       "event_id": "schmidt_ocean_institute_falkor_too",
       "event_role": "announcement",
       "year_range": [
@@ -1118,6 +1118,7 @@
       "regen_run_id": "sha256-c614129485c149d1",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
       "event_role_canonical": "pledge"
     },
     {

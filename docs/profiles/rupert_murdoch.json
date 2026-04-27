@@ -374,6 +374,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a478ab9bce64efff",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -535,9 +536,7 @@
       "regen_run_id": "sha256-a478ab9bce64efff",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "transfer_in"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "murdoch_giving_pledge_NOT_SIGNED",
       "event_role": "pledge_absence_verified",
@@ -563,6 +562,7 @@
       "event_role_canonical": "private_investment"
     }
   ],
+  "pledges_and_announcements": [],
   "political_giving": {
     "classification": "POLITICAL_MODERATE",
     "substitution_note": "Not counted as philanthropy. NBER W26616 estimates political giving displaces charitable giving at ~$0.33/$1. Note: News Corp / Fox Corp editorial influence is arguably the larger political vehicle here but is not tallied as personal political spending.",

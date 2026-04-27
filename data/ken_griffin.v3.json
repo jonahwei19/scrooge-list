@@ -285,7 +285,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "transfer_in",
+      "event_role": "reference_only",
       "year": 2023,
       "date_precision": "year",
       "donor_entity": "Ken Griffin",
@@ -300,7 +300,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-28a6e385ab5bf311",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
+      "_role_relabeled_from": "transfer_in",
+      "_role_relabel_reason": "cumulative_phrase"
     },
     {
       "event_role": "direct_gift",
@@ -1063,9 +1066,7 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-18eeecdf0bde04c0",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "griffin_no_giving_pledge",
       "event_role": "pledge_refusal",
@@ -1099,7 +1100,9 @@
       "source_url": "https://www.griffincatalyst.org/about/",
       "retrieved_at": "2026-04-23",
       "notes": "Griffin Catalyst's own About page claims 'Ken has donated more than $2.5 billion to advance initiatives with the power to transform lives.' Forbes 2023 list cited $1.56B; Reuters Sept 2023 said 'more than $2 billion.' Inside Philanthropy March 2025 cited Forbes figure of '$2.3 billion and counting.' We use this as an UPPER BOUND self-reported total \u2014 not as observable_giving \u2014 because the composition of this $2.5B (direct 501(c)(3) gifts vs. Charitable-Fund-internal transfers vs. political vs. personal-use art purchases) is not independently verifiable."
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_role": "announcement",
       "year": 2022,

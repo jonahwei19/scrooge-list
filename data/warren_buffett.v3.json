@@ -48,28 +48,6 @@
   },
   "cited_events": [
     {
-      "event_id": "buffett_2006_pledge_commitment",
-      "event_role": "pledge",
-      "year": 2006,
-      "date_precision": "day",
-      "date": "2006-06-26",
-      "donor_entity": "Warren Buffett (personal)",
-      "pledged_shares_A": 474998,
-      "pledged_amount_usd_at_signing": 43000000000,
-      "pledged_pct_net_worth": 98,
-      "pledged_recipients": [
-        "Bill & Melinda Gates Foundation (primary, ~5x share of family foundations combined)",
-        "Susan Thompson Buffett Foundation",
-        "Sherwood Foundation (daughter Susan Alice Buffett)",
-        "Howard G. Buffett Foundation (son Howard)",
-        "NoVo Foundation (son Peter + Jennifer Buffett)"
-      ],
-      "source_type": "announcement",
-      "source_url": "https://www.nytimes.com/2006/06/25/business/26buffettcnd.html",
-      "retrieved_at": "2026-04-23",
-      "notes": "Original commitment June 2006: gift 85% of Berkshire stock via annual installments to five foundations. Mechanism: convert Class A to Class B, then annual gifts of B shares decreasing by 5%/yr from initial pledged share counts (i.e. each year's gift = 0.95^n \u00d7 initial annual amount, so infinite-series total \u2248 20\u00d7 first-year gift). Gates Foundation initially received the largest share."
-    },
-    {
       "event_id": "buffett_gift_2006",
       "event_role": "direct_gift",
       "year": 2006,
@@ -1000,14 +978,15 @@
       "amount_usd": 5300000000,
       "source_type": "news_article",
       "source_url": "https://www.entrepreneur.com/business-news/warren-buffett-changes-his-will-gates-foundation-donations/476367",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Warren Buffett donated approximately $5.3 billion worth of Berkshire Hathaway shares to five organizations including the Bill & Melinda Gates Foundation.",
       "extraction_evidence": "Buffett also donated about $5.3 billion worth of Berkshire Hathaway shares to five organizations on Friday",
       "regen_query": "\"Bill & Melinda Gates Foundation\" 990-PF \"Warren Buffett\" contributions received $43 billion cumulative",
       "event_id": "warren_buffett_direct_gift_x_regen8",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "political",
@@ -1095,14 +1074,15 @@
       "amount_usd": null,
       "source_type": "news_article",
       "source_url": "https://www.nytimes.com/2020/07/08/business/dealbook/warren-buffett-donations.html",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Warren Buffett gave shares in Berkshire Hathaway to the Bill and Melinda Gates Foundation and four other organizations.",
       "extraction_evidence": "he had given shares in Berkshire Hathaway to five organizations: the Bill and Melinda Gates Foundation",
       "regen_query": "\"Warren Buffett\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
       "event_id": "warren_buffett_direct_gift_2020_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "direct_gift",
@@ -1152,14 +1132,15 @@
       "amount_usd": 3600000000,
       "source_type": "news_article",
       "source_url": "https://www.reuters.com/article/us-buffett-charities/warren-buffett-donates-3-6-billion-to-gates-and-family-charities-idUSKCN1TW307/",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "Warren Buffett is donating roughly $3.6 billion of Berkshire Hathaway stock to five charities, including the Bill & Melinda Gates Foundation.",
       "extraction_evidence": "Warren Buffett is donating roughly $3.6 billion of Berkshire Hathaway Inc stock to five charities, including the Bill & Melinda Gates Foundation",
       "regen_query": "\"Warren Buffett\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
       "event_id": "warren_buffett_direct_gift_x_regen12",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "direct_gift",
@@ -1217,25 +1198,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
-    {
-      "event_id": "buffett_gp_2010",
-      "event_role": "pledge",
-      "year": 2010,
-      "date_precision": "day",
-      "date": "2010-12-09",
-      "pledged_pct_wealth": 99,
-      "pledged_amount_usd_at_signing_estimate": 47000000000,
-      "status": "ON_TRACK / EFFECTIVELY_FULFILLED_FOR_GIVEN_YEAR_METHOD",
-      "status_source": "IPS Giving Pledge at 15 (July 2025) \u2014 Buffett is a co-founder of the Giving Pledge. IPS report identifies only 9 of 256 signers as having fulfilled, with Laura and John Arnold as the sole living 2010 signers categorized as fully fulfilled. Buffett's classification in IPS terms is NOT 'fulfilled' under IPS's strict gave-away-half-of-current-wealth metric because his net worth has grown faster than his giving. However, under Forbes/Chronicle methodology (cumulative giving exceeding 50% of baseline-at-pledge wealth), Buffett's $60B+ out-the-door vs $43B at 2006 commitment is ~140% of original baseline \u2014 fulfilled by that measure.",
-      "pledge_letter_quote": "More than 99% of my wealth will go to philanthropy during my lifetime or at death. Measured by dollars, this commitment is large. In a comparison with most families, however, it requires no sacrifice. ... The reaction of my family and me to our extraordinary good fortune is not guilt, but rather gratitude.",
-      "source_url": "https://www.givingpledge.org/pledger/warren-buffett/",
-      "retrieved_at": "2026-04-23",
-      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
-      "notes": "Co-founder (with Bill Gates and Melinda French Gates). Wealth at 2010 signing ~$47B. 99% target in 2010 dollars = ~$46.5B. Current net worth ~$149B; 99% target now = ~$147.5B. Lifetime giving $60B+ exceeds 2010 pledge baseline but is ~40% of current-NW target \u2014 tension because net worth compounded faster than giving.",
-      "methodology_note_for_dedup": "Two legitimate framings exist. (A) BASELINE-FIXED: pledger committed to give half of wealth-at-signing; $60B giving vs $47B signing NW = fulfilled. (B) FLOATING: pledger committed to give half of wealth-at-death; current gap is ($147B - $60B) = $87B to go with finite remaining time. Forbes/Chronicle use (A); IPS uses (B). Publish both framings side-by-side for Buffett."
     },
     {
       "event_id": "buffett_estate_trust_2024",
@@ -1277,6 +1239,69 @@
       "source_url": "https://www.cnbc.com/2021/06/23/warren-buffett-gives-away-another-4point1-billion-resigns-as-trustee-at-gates-foundation.html",
       "retrieved_at": "2026-04-23",
       "notes": "Buffett resigned as Gates Foundation trustee June 2021 \u2014 giving continued but governance role ended. In April 2026 reporting (CNBC) Buffett signaled possible end to Gates donations entirely citing Bill Gates's Epstein ties; already formalized in Nov 2024 will update."
+    },
+    {
+      "event_role": "reference_only",
+      "year": 2020,
+      "date": "2020-07-08",
+      "date_precision": "day",
+      "donor_entity": "Warren Buffett",
+      "recipient": "unspecified",
+      "amount_usd": 2900000000,
+      "source_type": "news_article",
+      "source_url": "https://www.cnbc.com/2020/07/08/warren-buffett-giving-away-another-2point9-billion-bring-total-donations-since-2006-to-37-billion.html",
+      "confidence": "high",
+      "extraction_note": "Warren Buffett announced he is giving away another $2.9 billion, bringing his total donations since 2006 to $37 billion.",
+      "extraction_evidence": "Warren Buffett giving away another $2.9 billion, bringing total donations since 2006 to $37 billion",
+      "regen_query": "\"Warren Buffett\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "warren_buffett_announcement_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-69d8f07a859faae6",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
+      "_role_relabeled_from": "announcement",
+      "_role_relabel_reason": "cumulative_phrase"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "buffett_2006_pledge_commitment",
+      "event_role": "pledge",
+      "year": 2006,
+      "date_precision": "day",
+      "date": "2006-06-26",
+      "donor_entity": "Warren Buffett (personal)",
+      "pledged_shares_A": 474998,
+      "pledged_amount_usd_at_signing": 43000000000,
+      "pledged_pct_net_worth": 98,
+      "pledged_recipients": [
+        "Bill & Melinda Gates Foundation (primary, ~5x share of family foundations combined)",
+        "Susan Thompson Buffett Foundation",
+        "Sherwood Foundation (daughter Susan Alice Buffett)",
+        "Howard G. Buffett Foundation (son Howard)",
+        "NoVo Foundation (son Peter + Jennifer Buffett)"
+      ],
+      "source_type": "announcement",
+      "source_url": "https://www.nytimes.com/2006/06/25/business/26buffettcnd.html",
+      "retrieved_at": "2026-04-23",
+      "notes": "Original commitment June 2006: gift 85% of Berkshire stock via annual installments to five foundations. Mechanism: convert Class A to Class B, then annual gifts of B shares decreasing by 5%/yr from initial pledged share counts (i.e. each year's gift = 0.95^n \u00d7 initial annual amount, so infinite-series total \u2248 20\u00d7 first-year gift). Gates Foundation initially received the largest share."
+    },
+    {
+      "event_id": "buffett_gp_2010",
+      "event_role": "pledge",
+      "year": 2010,
+      "date_precision": "day",
+      "date": "2010-12-09",
+      "pledged_pct_wealth": 99,
+      "pledged_amount_usd_at_signing_estimate": 47000000000,
+      "status": "ON_TRACK / EFFECTIVELY_FULFILLED_FOR_GIVEN_YEAR_METHOD",
+      "status_source": "IPS Giving Pledge at 15 (July 2025) \u2014 Buffett is a co-founder of the Giving Pledge. IPS report identifies only 9 of 256 signers as having fulfilled, with Laura and John Arnold as the sole living 2010 signers categorized as fully fulfilled. Buffett's classification in IPS terms is NOT 'fulfilled' under IPS's strict gave-away-half-of-current-wealth metric because his net worth has grown faster than his giving. However, under Forbes/Chronicle methodology (cumulative giving exceeding 50% of baseline-at-pledge wealth), Buffett's $60B+ out-the-door vs $43B at 2006 commitment is ~140% of original baseline \u2014 fulfilled by that measure.",
+      "pledge_letter_quote": "More than 99% of my wealth will go to philanthropy during my lifetime or at death. Measured by dollars, this commitment is large. In a comparison with most families, however, it requires no sacrifice. ... The reaction of my family and me to our extraordinary good fortune is not guilt, but rather gratitude.",
+      "source_url": "https://www.givingpledge.org/pledger/warren-buffett/",
+      "retrieved_at": "2026-04-23",
+      "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
+      "notes": "Co-founder (with Bill Gates and Melinda French Gates). Wealth at 2010 signing ~$47B. 99% target in 2010 dollars = ~$46.5B. Current net worth ~$149B; 99% target now = ~$147.5B. Lifetime giving $60B+ exceeds 2010 pledge baseline but is ~40% of current-NW target \u2014 tension because net worth compounded faster than giving.",
+      "methodology_note_for_dedup": "Two legitimate framings exist. (A) BASELINE-FIXED: pledger committed to give half of wealth-at-signing; $60B giving vs $47B signing NW = fulfilled. (B) FLOATING: pledger committed to give half of wealth-at-death; current gap is ($147B - $60B) = $87B to go with finite remaining time. Forbes/Chronicle use (A); IPS uses (B). Publish both framings side-by-side for Buffett."
     },
     {
       "event_role": "announcement",
@@ -1426,25 +1451,6 @@
       "extraction_evidence": "Warren Buffett's yet-to-be-named charitable trust will be 100% effective from day one",
       "regen_query": "\"Warren Buffett\" pledges OR commits OR announces",
       "event_id": "warren_buffett_announcement_2024_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-69d8f07a859faae6",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "announcement",
-      "year": 2020,
-      "date": "2020-07-08",
-      "date_precision": "day",
-      "donor_entity": "Warren Buffett",
-      "recipient": "unspecified",
-      "amount_usd": 2900000000,
-      "source_type": "news_article",
-      "source_url": "https://www.cnbc.com/2020/07/08/warren-buffett-giving-away-another-2point9-billion-bring-total-donations-since-2006-to-37-billion.html",
-      "confidence": "high",
-      "extraction_note": "Warren Buffett announced he is giving away another $2.9 billion, bringing his total donations since 2006 to $37 billion.",
-      "extraction_evidence": "Warren Buffett giving away another $2.9 billion, bringing total donations since 2006 to $37 billion",
-      "regen_query": "\"Warren Buffett\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "warren_buffett_announcement_2020_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5"

@@ -335,14 +335,15 @@
       "amount_usd": 3900000000,
       "source_type": "news_article",
       "source_url": "https://theconversation.com/how-mackenzie-scotts-12-billion-in-gifts-to-charity-reflect-an-uncommon-trust-in-the-groups-she-supports-173496",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "MacKenzie Scott disclosed on March 23, 2022 that she had given $3.9 billion to 465 nonprofits in the previous nine months.",
       "extraction_evidence": "she had given US$3.9 billion to 465 nonprofits in the previous nine months",
       "regen_query": "site:theconversation.com OR site:insidephilanthropy.com \"MacKenzie Scott\" \"safe is empty\" pledge fulfillment",
       "event_id": "mackenzie_scott_direct_gift_2022_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "direct_gift",
@@ -658,14 +659,15 @@
       "amount_usd": 2000000000,
       "source_type": "news_article",
       "source_url": "https://philanthropynewsdigest.org/news/mackenzie-scott-s-yield-giving-announces-2-billion-in-grants-in-2024",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "MacKenzie Scott announced that Yield Giving awarded more than $2 billion in grants to 199 organizations in 2024.",
       "extraction_evidence": "Yield Giving, her philanthropic vehicle, has awarded more than $2 billion in grants to 199 organizations in 2024",
       "regen_query": "\"MacKenzie Scott\" pledges OR commits OR announces",
       "event_id": "mackenzie_scott_announcement_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "pledge",
@@ -677,14 +679,15 @@
       "amount_usd": 640000000,
       "source_type": "news_article",
       "source_url": "https://thetexan.news/state/texas-state-news/billionaire-philanthropist-mackenzie-scott-pledges-millions-to-nonprofits-in-texas/article_549a2878-e6f8-11ee-ad00-fb7cc08b1ffa.html",
-      "confidence": "high",
+      "confidence": "medium",
       "extraction_note": "MacKenzie Scott and Yield Giving pledged $640 million to 361 organizations across the country, including nonprofits in Texas.",
       "extraction_evidence": "MacKenzie Scott and her Yield Giving philanthropy group have pledged $640 million for 361 organizations across the country",
       "regen_query": "\"MacKenzie Scott\" pledges OR commits OR announces",
       "event_id": "mackenzie_scott_pledge_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_cardinality_flag": "multi_recipient_phrase_detected"
     },
     {
       "event_role": "pledge",

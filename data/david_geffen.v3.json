@@ -216,24 +216,6 @@
       "naming_right": "Geffen Academy at UCLA"
     },
     {
-      "event_id": "geffen_lacma_2017",
-      "event_role": "pledge",
-      "year": 2017,
-      "date_precision": "month",
-      "date": "2017-10",
-      "donor_entity": "David Geffen / David Geffen Foundation",
-      "recipient": "Los Angeles County Museum of Art (LACMA) \u2014 Zumthor-designed building",
-      "amount_usd": 150000000,
-      "amount_usd_note": "Pledged Oct 2017; building (David Geffen Galleries) opened May 2026.",
-      "source_type": "announcement",
-      "source_url": "https://www.lacma.org/press/david-geffen-pledges-historic-150-million-building-lacma-campaign",
-      "secondary_source_url": "https://unframed.lacma.org/2026/04/23/join-day-free-family-fun-celebrate-lacma-david-geffen-galleries",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "naming_right": "David Geffen Galleries (LACMA)",
-      "dedup_note": "$150M multi-year pledge; disbursements likely flowed through DGF 2017-2026. Verify against DGF Part XV grantee lists for LACMA."
-    },
-    {
       "event_id": "geffen_ucla_med_2019",
       "event_role": "direct_gift",
       "year": 2019,
@@ -658,29 +640,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5"
-    }
-  ],
-  "pledges_and_announcements": [
-    {
-      "event_role": "pledge",
-      "year": 2023,
-      "date": "2023-12-12",
-      "date_precision": "day",
-      "donor_entity": "David Geffen",
-      "recipient": "Memorial Sloan Kettering Cancer Center",
-      "amount_usd": 200000000,
-      "source_type": "news_article",
-      "source_url": "https://abc17news.com/news/national-world/cnn-national/2024/02/02/david-geffen-fast-facts-3/",
-      "confidence": "high",
-      "extraction_note": "David Geffen and Ken Griffin announced a combined $400 million donation to Memorial Sloan Kettering Cancer Center on December 12, 2023. Geffen's share is estimated at $200 million (half of the total).",
-      "extraction_evidence": "Geffen and Ken Griffin will donate $400 million to Memorial Sloan Kettering Cancer Center",
-      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
-      "event_id": "david_geffen_direct_gift_2023_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-36f866aa59289a7b",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "_role_relabeled_from": "direct_gift",
-      "_role_relabel_reason": "matched pledge_phrases"
     },
     {
       "event_id": "geffen_gp_NOT_SIGNED",
@@ -704,6 +663,47 @@
       "source_url": "https://en.wikipedia.org/wiki/David_Geffen",
       "retrieved_at": "2026-04-24",
       "notes": "Self-statement via Forbes reporting, not a formal Giving Pledge. Cannot be tracked or enforced. Included for completeness only."
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "geffen_lacma_2017",
+      "event_role": "pledge",
+      "year": 2017,
+      "date_precision": "month",
+      "date": "2017-10",
+      "donor_entity": "David Geffen / David Geffen Foundation",
+      "recipient": "Los Angeles County Museum of Art (LACMA) \u2014 Zumthor-designed building",
+      "amount_usd": 150000000,
+      "amount_usd_note": "Pledged Oct 2017; building (David Geffen Galleries) opened May 2026.",
+      "source_type": "announcement",
+      "source_url": "https://www.lacma.org/press/david-geffen-pledges-historic-150-million-building-lacma-campaign",
+      "secondary_source_url": "https://unframed.lacma.org/2026/04/23/join-day-free-family-fun-celebrate-lacma-david-geffen-galleries",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "naming_right": "David Geffen Galleries (LACMA)",
+      "dedup_note": "$150M multi-year pledge; disbursements likely flowed through DGF 2017-2026. Verify against DGF Part XV grantee lists for LACMA."
+    },
+    {
+      "event_role": "pledge",
+      "year": 2023,
+      "date": "2023-12-12",
+      "date_precision": "day",
+      "donor_entity": "David Geffen",
+      "recipient": "Memorial Sloan Kettering Cancer Center",
+      "amount_usd": 200000000,
+      "source_type": "news_article",
+      "source_url": "https://abc17news.com/news/national-world/cnn-national/2024/02/02/david-geffen-fast-facts-3/",
+      "confidence": "high",
+      "extraction_note": "David Geffen and Ken Griffin announced a combined $400 million donation to Memorial Sloan Kettering Cancer Center on December 12, 2023. Geffen's share is estimated at $200 million (half of the total).",
+      "extraction_evidence": "Geffen and Ken Griffin will donate $400 million to Memorial Sloan Kettering Cancer Center",
+      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
+      "event_id": "david_geffen_direct_gift_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
     },
     {
       "event_role": "pledge",

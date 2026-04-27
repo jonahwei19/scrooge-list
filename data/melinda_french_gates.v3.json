@@ -699,6 +699,29 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_id": "mfg_gp_update_2022",
+      "event_role": "pledge_amendment",
+      "year": 2022,
+      "date_precision": "day",
+      "date": "2022-02-02",
+      "source_type": "announcement",
+      "source_url": "https://fortune.com/2022/02/02/melinda-french-gates-gates-foundation-giving-pledge/",
+      "retrieved_at": "2026-04-24",
+      "notes": "Feb 2022 pledge-letter update: dropped language specifying Gates Foundation as destination of bulk of her wealth. Signaled intent to deploy outside the joint foundation \u2014 which materialized two years later with her May 2024 resignation.",
+      "classification_note": "Amendment preserves 50% commitment but unbundles destination from Gates Foundation."
+    },
+    {
+      "event_id": "mfg_gp_ips_critique_2025",
+      "event_role": "public_statement",
+      "year": 2025,
+      "date_precision": "day",
+      "date": "2025-12-04",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/12/04/melinda-french-gates-rips-billionaire-class-giving-pledge/",
+      "retrieved_at": "2026-04-24",
+      "notes": "December 2025 Fortune interview: French Gates publicly stated Giving Pledge has 'fallen short' and urged fellow billionaires to deploy more aggressively. As one of three co-founders of the pledge, her public critique is consequential for the credibility of the entire Giving Pledge norm. Supports classifying her own giving as ON_TRACK rather than laggard."
     }
   ],
   "pledges_and_announcements": [
@@ -758,18 +781,6 @@
       "notes": "Wealth at signing (2010): joint-and-co-held with Bill Gates, not separately enumerated. Updated her pledge letter in 2022 to remove sole-Gates-Foundation destination language (see next event)."
     },
     {
-      "event_id": "mfg_gp_update_2022",
-      "event_role": "pledge_amendment",
-      "year": 2022,
-      "date_precision": "day",
-      "date": "2022-02-02",
-      "source_type": "announcement",
-      "source_url": "https://fortune.com/2022/02/02/melinda-french-gates-gates-foundation-giving-pledge/",
-      "retrieved_at": "2026-04-24",
-      "notes": "Feb 2022 pledge-letter update: dropped language specifying Gates Foundation as destination of bulk of her wealth. Signaled intent to deploy outside the joint foundation \u2014 which materialized two years later with her May 2024 resignation.",
-      "classification_note": "Amendment preserves 50% commitment but unbundles destination from Gates Foundation."
-    },
-    {
       "event_id": "mfg_1b_women_2024",
       "event_role": "pledge",
       "year": 2024,
@@ -810,17 +821,6 @@
       "retrieved_at": "2026-04-24",
       "status": "ANNOUNCED",
       "notes": "Programs start 2026. Duplicates mfg_wellcome_leap_2025 (cited_events) \u2014 this row is the announcement/pledge, the other is the grant classification."
-    },
-    {
-      "event_id": "mfg_gp_ips_critique_2025",
-      "event_role": "public_statement",
-      "year": 2025,
-      "date_precision": "day",
-      "date": "2025-12-04",
-      "source_type": "news",
-      "source_url": "https://fortune.com/2025/12/04/melinda-french-gates-rips-billionaire-class-giving-pledge/",
-      "retrieved_at": "2026-04-24",
-      "notes": "December 2025 Fortune interview: French Gates publicly stated Giving Pledge has 'fallen short' and urged fellow billionaires to deploy more aggressively. As one of three co-founders of the pledge, her public critique is consequential for the credibility of the entire Giving Pledge norm. Supports classifying her own giving as ON_TRACK rather than laggard."
     },
     {
       "event_role": "pledge",

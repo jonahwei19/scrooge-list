@@ -1321,6 +1321,20 @@
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_id": "musk_wfp_2021",
+      "event_role": "pledge_response_to_challenge",
+      "year": 2021,
+      "pledged_amount_usd": 6000000000,
+      "status": "NOT_DELIVERED_AS_CHALLENGED",
+      "context": "WFP Director David Beasley challenged Musk in Oct 2021 to use $6B to help solve world hunger for 42 million people. Musk responded on X that he would sell Tesla stock and do it 'right now' if WFP could show exactly how $6B would solve world hunger.",
+      "outcome": "Musk instead transferred $5.7B Tesla stock to his OWN Musk Foundation in Nov 2021 \u2014 not to WFP. Subsequent foundation grants-out (2021-2024 total ~$1.03B) have gone primarily to Musk-affiliated entities (The Foundation school, XPrize) and Fidelity Charitable DAF, not to WFP or global hunger programs.",
+      "source_type": "news",
+      "source_url": "https://en.wikipedia.org/wiki/Musk_Foundation",
+      "retrieved_at": "2026-04-23",
+      "classification_note": "This is documented as evidence of the pattern where a public 'philanthropic moment' (WFP challenge) was resolved via a transfer_in to a Musk-controlled vehicle rather than arm's-length giving. Do not count as pledge; count as context for red_flag FOUNDATION_TO_SELF.",
+      "event_role_canonical": "pledge"
     }
   ],
   "pledges_and_announcements": [
@@ -1339,20 +1353,6 @@
       "retrieved_at": "2026-04-23",
       "notes": "Wealth at 2012 signing ~$2.2B (Forbes 2012). 50% target in 2012 dollars = ~$1.1B. Current net worth ~$811B; 50% target is now ~$405B. Gap between observable out-the-door giving (~$500M per Forbes Durot April 2026) and pledge target: ~$405B. IPS classified Musk as unfulfilled in July 2025 'Giving Pledge at 15' report.",
       "ips_source_url": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf",
-      "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "musk_wfp_2021",
-      "event_role": "pledge_response_to_challenge",
-      "year": 2021,
-      "pledged_amount_usd": 6000000000,
-      "status": "NOT_DELIVERED_AS_CHALLENGED",
-      "context": "WFP Director David Beasley challenged Musk in Oct 2021 to use $6B to help solve world hunger for 42 million people. Musk responded on X that he would sell Tesla stock and do it 'right now' if WFP could show exactly how $6B would solve world hunger.",
-      "outcome": "Musk instead transferred $5.7B Tesla stock to his OWN Musk Foundation in Nov 2021 \u2014 not to WFP. Subsequent foundation grants-out (2021-2024 total ~$1.03B) have gone primarily to Musk-affiliated entities (The Foundation school, XPrize) and Fidelity Charitable DAF, not to WFP or global hunger programs.",
-      "source_type": "news",
-      "source_url": "https://en.wikipedia.org/wiki/Musk_Foundation",
-      "retrieved_at": "2026-04-23",
-      "classification_note": "This is documented as evidence of the pattern where a public 'philanthropic moment' (WFP challenge) was resolved via a transfer_in to a Musk-controlled vehicle rather than arm's-length giving. Do not count as pledge; count as context for red_flag FOUNDATION_TO_SELF.",
       "event_role_canonical": "pledge"
     },
     {

@@ -666,6 +666,29 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5972ff791bd5b2e6",
       "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_id": "ellison_gp_amendment_2025",
+      "event_role": "pledge_amendment",
+      "year": 2025,
+      "date_precision": "month",
+      "source_type": "social_media_post",
+      "source_url": "https://www.insidephilanthropy.com/home/larry-ellison-wants-for-profits-to-solve-big-problems-heres-what-that-mindset-overlooks",
+      "retrieved_at": "2026-04-23",
+      "quote_paraphrased_by_ip": "I believed and continue to believe that practicing philanthropy by giving to nonprofit organizations that pursue public good is important. But there are additional ways that I would like to invest my time and resources in giving back to the world we share.",
+      "notes": "Inside Philanthropy describes this as Ellison 'amending' his 2010 Giving Pledge to include for-profit ventures through Ellison Institute of Technology. Standard Forbes/Chronicle/IPS methodology does not count for-profit investment as philanthropy."
+    },
+    {
+      "event_id": "ellison_paramount_2025",
+      "event_role": "private_investment_not_charity",
+      "year": 2025,
+      "date": "2025-12-23",
+      "pledged_amount_usd": 40000000000,
+      "recipient": "Paramount\u2013Skydance merger (private, for-profit)",
+      "source_type": "news",
+      "source_url": "https://fortune.com/2025/12/23/larry-ellison-40-billion-pledge-son-paramount-philanthropy-capitalism/",
+      "retrieved_at": "2026-04-23",
+      "classification_note": "Fortune explicitly: 'not a charitable donation in the classic sense.' Included here for context on where Ellison's capital is being deployed; NOT counted as philanthropy."
     }
   ],
   "pledges_and_announcements": [
@@ -688,7 +711,8 @@
       "regen_run_id": "sha256-5972ff791bd5b2e6",
       "regen_extractor_model": "claude-haiku-4-5",
       "_role_relabeled_from": "grant_out",
-      "_role_relabel_reason": "matched pledge_phrases"
+      "_role_relabel_reason": "matched pledge_phrases",
+      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected"
     },
     {
       "event_role": "pledge",
@@ -726,17 +750,6 @@
       "ips_source": "https://ips-dc.org/wp-content/uploads/2025/07/report_giving_pledge_at_15.pdf"
     },
     {
-      "event_id": "ellison_gp_amendment_2025",
-      "event_role": "pledge_amendment",
-      "year": 2025,
-      "date_precision": "month",
-      "source_type": "social_media_post",
-      "source_url": "https://www.insidephilanthropy.com/home/larry-ellison-wants-for-profits-to-solve-big-problems-heres-what-that-mindset-overlooks",
-      "retrieved_at": "2026-04-23",
-      "quote_paraphrased_by_ip": "I believed and continue to believe that practicing philanthropy by giving to nonprofit organizations that pursue public good is important. But there are additional ways that I would like to invest my time and resources in giving back to the world we share.",
-      "notes": "Inside Philanthropy describes this as Ellison 'amending' his 2010 Giving Pledge to include for-profit ventures through Ellison Institute of Technology. Standard Forbes/Chronicle/IPS methodology does not count for-profit investment as philanthropy."
-    },
-    {
       "event_id": "ellison_eit_oxford_1p3b",
       "event_role": "pledge",
       "year": 2025,
@@ -759,18 +772,6 @@
       "retrieved_at": "2026-04-23",
       "confidence": "low",
       "classification_note": "Same for-profit hybrid concern as ellison_eit_oxford_1p3b"
-    },
-    {
-      "event_id": "ellison_paramount_2025",
-      "event_role": "private_investment_not_charity",
-      "year": 2025,
-      "date": "2025-12-23",
-      "pledged_amount_usd": 40000000000,
-      "recipient": "Paramount\u2013Skydance merger (private, for-profit)",
-      "source_type": "news",
-      "source_url": "https://fortune.com/2025/12/23/larry-ellison-40-billion-pledge-son-paramount-philanthropy-capitalism/",
-      "retrieved_at": "2026-04-23",
-      "classification_note": "Fortune explicitly: 'not a charitable donation in the classic sense.' Included here for context on where Ellison's capital is being deployed; NOT counted as philanthropy."
     },
     {
       "event_role": "announcement",

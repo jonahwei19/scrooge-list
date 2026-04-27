@@ -267,21 +267,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_id": "cohen_cvn_launch_2016",
-      "event_role": "pledge",
-      "year": 2016,
-      "donor_entity": "Steve Cohen (personal commitment)",
-      "recipient": "Cohen Veterans Network (then-new charity)",
-      "amount_usd": 275000000,
-      "source_type": "announcement",
-      "source_url": "https://www.propublica.org/article/steve-cohen-privatized-ptsd-veterans-clinic",
-      "retrieved_at": "2026-04-24",
-      "confidence": "high",
-      "status": "LARGELY_FULFILLED",
-      "status_note": "2016 announcement pledged $275M to stand up a national network of free mental-health clinics for veterans. CVN revenue 2015-2024 aggregate (from 990s): ~$342M \u2014 the pledge has been funded and then some. Counting mechanics: the flows into CVN show up as grants_out from SACF (primary funder), so already captured in SACF rollup. NOT double-counted here.",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_id": "cohen_robin_hood_cumulative",
       "event_role": "direct_gift",
       "year_range": [
@@ -818,9 +803,7 @@
       "regen_run_id": "sha256-2e4172fe0f6a7d86",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "direct_gift"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "cohen_giving_pledge_NOT_SIGNED",
       "event_role": "pledge_NOT_SIGNED",
@@ -830,18 +813,6 @@
       "retrieved_at": "2026-04-24",
       "notes": "Cohen has NOT signed the Giving Pledge. Red flag NO_GIVING_PLEDGE_SIGNATURE applies \u2014 but note this flag is weaker than PLEDGE_UNFULFILLED (e.g., Ellison), because Cohen has not made the 50%+ commitment at all. Interpret in context: his lifetime giving posture ($1.5B+ SACF cumulative per foundation website) is higher than most Giving Pledge signatories' realized giving, so the absence of a pledge is more accurately 'did not overcommit' than 'underperforming the commitment.'",
       "event_role_canonical": "no_pledge"
-    },
-    {
-      "event_id": "cohen_lifetime_giving_claim",
-      "event_role": "announcement",
-      "status": "SELF_REPORTED",
-      "donor_entity": "Steven & Alexandra Cohen Foundation",
-      "amount_usd_claimed": 1500000000,
-      "source_type": "foundation_website",
-      "source_url": "https://www.steveandalex.org/",
-      "retrieved_at": "2026-04-24",
-      "note": "Foundation website claims 'over $1.5B' in cumulative grantmaking since 2001. Reconciliation against 990-PF data: sum of available disbursements 2011-2024 = ~$1.021B. Adding pre-2011 giving (foundation existed from 2001 but at smaller scale) and 2015-2018 gap years (990 data shown in fetch covers 2011-2015 + 2019-2024 as visible rows) plausibly bridges to $1.5B claim. Credible self-report; not counted additive.",
-      "event_role_canonical": "announcement"
     },
     {
       "event_id": "cohen_mets_2020",
@@ -857,6 +828,35 @@
       "retrieved_at": "2026-04-24",
       "classification_note": "NOT philanthropy. Included for context on liquid-wealth deployment. Per standard Forbes/IPS methodology, for-profit sports franchise purchase does not count as charitable giving. Also notable: this $2.4B is ~10% of current net worth tied up in an illiquid asset \u2014 relevant to liquidity calculation.",
       "event_role_canonical": "private_investment"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_id": "cohen_cvn_launch_2016",
+      "event_role": "pledge",
+      "year": 2016,
+      "donor_entity": "Steve Cohen (personal commitment)",
+      "recipient": "Cohen Veterans Network (then-new charity)",
+      "amount_usd": 275000000,
+      "source_type": "announcement",
+      "source_url": "https://www.propublica.org/article/steve-cohen-privatized-ptsd-veterans-clinic",
+      "retrieved_at": "2026-04-24",
+      "confidence": "high",
+      "status": "LARGELY_FULFILLED",
+      "status_note": "2016 announcement pledged $275M to stand up a national network of free mental-health clinics for veterans. CVN revenue 2015-2024 aggregate (from 990s): ~$342M \u2014 the pledge has been funded and then some. Counting mechanics: the flows into CVN show up as grants_out from SACF (primary funder), so already captured in SACF rollup. NOT double-counted here.",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_id": "cohen_lifetime_giving_claim",
+      "event_role": "announcement",
+      "status": "SELF_REPORTED",
+      "donor_entity": "Steven & Alexandra Cohen Foundation",
+      "amount_usd_claimed": 1500000000,
+      "source_type": "foundation_website",
+      "source_url": "https://www.steveandalex.org/",
+      "retrieved_at": "2026-04-24",
+      "note": "Foundation website claims 'over $1.5B' in cumulative grantmaking since 2001. Reconciliation against 990-PF data: sum of available disbursements 2011-2024 = ~$1.021B. Adding pre-2011 giving (foundation existed from 2001 but at smaller scale) and 2015-2018 gap years (990 data shown in fetch covers 2011-2015 + 2019-2024 as visible rows) plausibly bridges to $1.5B claim. Credible self-report; not counted additive.",
+      "event_role_canonical": "announcement"
     },
     {
       "event_role": "pledge",

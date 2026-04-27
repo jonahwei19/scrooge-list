@@ -344,23 +344,6 @@
       "event_role_canonical": "grant_out"
     },
     {
-      "event_id": "awf_mercy_700m_2024",
-      "event_role": "pledge",
-      "year": 2024,
-      "date_precision": "day",
-      "date": "2024-09-24",
-      "donor_entity": "Alice L. Walton Foundation",
-      "recipient": "Mercy Health System (30-year specialty-care affiliation)",
-      "amount_usd": 350000000,
-      "amount_note": "Alice L. Walton Foundation side of a $700M total 30-year agreement. Mercy commits the other $350M. Alice's $350M funds outpatient center of excellence for specialty care + cardiac services + virtual care + physician recruitment in Bentonville.",
-      "source_type": "announcement",
-      "source_url": "https://www.prnewswire.com/news-releases/alice-l-walton-foundation-mercy-heartland-whole-health-institute-and-cleveland-clinic-collaborate-to-bring-world-class-health-care-to-the-heartland-302256066.html",
-      "retrieved_at": "2026-04-23",
-      "confidence": "high",
-      "dedup_note": "DEDUP FLAG: $350M pledge over 30 years. Will disburse through Alice L Walton Foundation 990-PF filings in future years as annual grants. DO NOT add this pledge row on top of future ALWF grants_out totals. Listed here as a pledge for provenance. Also note classification ambiguity: Mercy is a 501(c)(3) hospital system, so this IS charity; but it funds a joint-operated facility that advances ALWF's own Alice L. Walton School of Medicine ecosystem \u2014 arm's-length but related-party-adjacent.",
-      "event_role_canonical": "pledge"
-    },
-    {
       "event_id": "artbridges_40m_accessforall_2023",
       "event_role": "direct_gift",
       "year": 2023,
@@ -1472,9 +1455,37 @@
       "regen_run_id": "sha256-a4b7cc4d93dfa8b2",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
+    },
+    {
+      "event_id": "walton_no_gp_alice",
+      "event_role": "pledge_declined",
+      "year": null,
+      "status": "EXPLICITLY_DECLINED",
+      "quote": "Per Walton Family Foundation communications, no members of the Walton family \u2014 including Alice \u2014 have signed the Giving Pledge. The position has been explicitly stated by Rob Walton ('We have chosen not to do that and to go our own way with our philanthropy') and extends to his siblings.",
+      "source_url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving",
+      "retrieved_at": "2026-04-23",
+      "notes": "Alice Walton has never signed the Giving Pledge \u2014 the position is a family consensus, not individual. Under scrooge methodology this is NOT a red flag \u2014 declining is more honest than signing-and-not-fulfilling \u2014 but it removes a public accountability hook.",
+      "event_role_canonical": "no_pledge"
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_id": "awf_mercy_700m_2024",
+      "event_role": "pledge",
+      "year": 2024,
+      "date_precision": "day",
+      "date": "2024-09-24",
+      "donor_entity": "Alice L. Walton Foundation",
+      "recipient": "Mercy Health System (30-year specialty-care affiliation)",
+      "amount_usd": 350000000,
+      "amount_note": "Alice L. Walton Foundation side of a $700M total 30-year agreement. Mercy commits the other $350M. Alice's $350M funds outpatient center of excellence for specialty care + cardiac services + virtual care + physician recruitment in Bentonville.",
+      "source_type": "announcement",
+      "source_url": "https://www.prnewswire.com/news-releases/alice-l-walton-foundation-mercy-heartland-whole-health-institute-and-cleveland-clinic-collaborate-to-bring-world-class-health-care-to-the-heartland-302256066.html",
+      "retrieved_at": "2026-04-23",
+      "confidence": "high",
+      "dedup_note": "DEDUP FLAG: $350M pledge over 30 years. Will disburse through Alice L Walton Foundation 990-PF filings in future years as annual grants. DO NOT add this pledge row on top of future ALWF grants_out totals. Listed here as a pledge for provenance. Also note classification ambiguity: Mercy is a 501(c)(3) hospital system, so this IS charity; but it funds a joint-operated facility that advances ALWF's own Alice L. Walton School of Medicine ecosystem \u2014 arm's-length but related-party-adjacent.",
+      "event_role_canonical": "pledge"
+    },
     {
       "event_role": "pledge",
       "year": 2023,
@@ -1496,17 +1507,6 @@
       "_role_relabeled_from": "direct_gift",
       "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
-    },
-    {
-      "event_id": "walton_no_gp_alice",
-      "event_role": "pledge_declined",
-      "year": null,
-      "status": "EXPLICITLY_DECLINED",
-      "quote": "Per Walton Family Foundation communications, no members of the Walton family \u2014 including Alice \u2014 have signed the Giving Pledge. The position has been explicitly stated by Rob Walton ('We have chosen not to do that and to go our own way with our philanthropy') and extends to his siblings.",
-      "source_url": "https://www.waltonfamilyfoundation.org/stories/foundation/3rd-generation-of-walton-family-makes-sharp-turn-in-giving",
-      "retrieved_at": "2026-04-23",
-      "notes": "Alice Walton has never signed the Giving Pledge \u2014 the position is a family consensus, not individual. Under scrooge methodology this is NOT a red flag \u2014 declining is more honest than signing-and-not-fulfilling \u2014 but it removes a public accountability hook.",
-      "event_role_canonical": "no_pledge"
     },
     {
       "event_id": "walton_siblings_wff_pledge_2008_2013_alice",

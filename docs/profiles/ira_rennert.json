@@ -441,9 +441,7 @@
       "regen_run_id": "sha256-6983a77e383a0081",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "direct_gift"
-    }
-  ],
-  "pledges_and_announcements": [
+    },
     {
       "event_id": "rennert_giving_pledge_unsigned",
       "event_role": "pledge_absent",
@@ -452,7 +450,9 @@
       "retrieved_at": "2026-04-24",
       "notes": "Ira Rennert is NOT on the Giving Pledge signatory list as of April 2026. No public commitment to give majority of wealth to charity has been made. This is a red flag for a 30+ year billionaire with ~$3.8-4.0B net worth.",
       "event_role_canonical": "no_pledge"
-    },
+    }
+  ],
+  "pledges_and_announcements": [
     {
       "event_role": "announcement",
       "year": null,
