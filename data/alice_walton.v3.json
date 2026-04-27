@@ -1055,25 +1055,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
-      "year": 2023,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Alice Walton",
-      "recipient": "St. Louis Art Museum",
-      "amount_usd": 1650000,
-      "source_type": "news_article",
-      "source_url": "https://observer.com/2023/10/walmart-heiress-alice-walton-has-pledged-40m-to-u-s-museums/",
-      "confidence": "high",
-      "extraction_note": "Alice Walton pledged $1.65 million to St. Louis Art Museum as part of a broader $40M pledge to U.S. museums.",
-      "extraction_evidence": "St. Louis Art Museum, the latter of which will receive $1.65 million.",
-      "regen_query": "\"Alice Walton\" gift OR donation million",
-      "event_id": "alice_walton_direct_gift_2023_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-a4b7cc4d93dfa8b2",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "grant_out",
       "year": null,
       "date": null,
@@ -1417,6 +1398,27 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Alice Walton",
+      "recipient": "St. Louis Art Museum",
+      "amount_usd": 1650000,
+      "source_type": "news_article",
+      "source_url": "https://observer.com/2023/10/walmart-heiress-alice-walton-has-pledged-40m-to-u-s-museums/",
+      "confidence": "high",
+      "extraction_note": "Alice Walton pledged $1.65 million to St. Louis Art Museum as part of a broader $40M pledge to U.S. museums.",
+      "extraction_evidence": "St. Louis Art Museum, the latter of which will receive $1.65 million.",
+      "regen_query": "\"Alice Walton\" gift OR donation million",
+      "event_id": "alice_walton_direct_gift_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-a4b7cc4d93dfa8b2",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
+    },
     {
       "event_id": "walton_no_gp_alice",
       "event_role": "pledge_declined",

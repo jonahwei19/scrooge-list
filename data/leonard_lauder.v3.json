@@ -531,7 +531,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
+      "event_role": "political",
       "year": 2020,
       "date": null,
       "date_precision": null,
@@ -547,7 +547,9 @@
       "event_id": "leonard_lauder_direct_gift_2020_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
       "event_role": "direct_gift",
@@ -583,25 +585,6 @@
       "extraction_evidence": "Lauder's American Contemporary Art Foundation was responsible for the largest single group of art in that gift, including major works by Mark Rothko, Franz Kline, Warhol and Pollock",
       "regen_query": "\"Leonard Lauder\" \"American Contemporary Art Foundation\" Whitney 2008",
       "event_id": "leonard_lauder_direct_gift_2008_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
-      "year": 2013,
-      "date": "2013-04-10",
-      "date_precision": "day",
-      "donor_entity": "Leonard A. Lauder",
-      "recipient": "Metropolitan Museum of Art",
-      "amount_usd": null,
-      "source_type": "news_article",
-      "source_url": "https://www.nytimes.com/2013/04/10/arts/design/leonard-lauder-is-giving-his-cubist-collection-to-the-met.html",
-      "confidence": "high",
-      "extraction_note": "Leonard Lauder will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art.",
-      "extraction_evidence": "Leonard A. Lauder, the cosmetics tycoon, will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art",
-      "regen_query": "\"Leonard Lauder\" \"Cubist collection\" Met 2013 2014 2015 transfer completion",
-      "event_id": "leonard_lauder_direct_gift_2013_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
       "regen_extractor_model": "claude-haiku-4-5"
@@ -722,6 +705,27 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2013,
+      "date": "2013-04-10",
+      "date_precision": "day",
+      "donor_entity": "Leonard A. Lauder",
+      "recipient": "Metropolitan Museum of Art",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.nytimes.com/2013/04/10/arts/design/leonard-lauder-is-giving-his-cubist-collection-to-the-met.html",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art.",
+      "extraction_evidence": "Leonard A. Lauder, the cosmetics tycoon, will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art",
+      "regen_query": "\"Leonard Lauder\" \"Cubist collection\" Met 2013 2014 2015 transfer completion",
+      "event_id": "leonard_lauder_direct_gift_2013_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
+    },
     {
       "event_id": "lauder_giving_pledge_nonsigner",
       "event_role": "pledge_nonsigner",

@@ -974,7 +974,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "corporate_gift",
+      "event_role": "political",
       "year": 2019,
       "date": "2019-01",
       "date_precision": "month",
@@ -990,7 +990,9 @@
       "event_id": "elon_musk_corporate_gift_2019_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "corporate_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
       "event_role": "direct_gift",

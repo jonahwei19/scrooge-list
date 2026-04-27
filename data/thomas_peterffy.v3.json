@@ -368,7 +368,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
+      "event_role": "political",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -384,7 +384,9 @@
       "event_id": "thomas_peterffy_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d6ca3fbb37698209",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
       "event_role": "political",

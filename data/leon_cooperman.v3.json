@@ -625,25 +625,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Leon Cooperman",
-      "recipient": "Jewish Federation of South Palm Beach County",
-      "amount_usd": 10000000,
-      "source_type": "news_article",
-      "source_url": "https://philanthropynewsdigest.org/news/jewish-federation-of-south-palm-beach-receives-10-million-gift",
-      "confidence": "high",
-      "extraction_note": "Leon Cooperman (with spouse Toby) made a $10 million endowment gift to the Jewish Federation of South Palm Beach County.",
-      "extraction_evidence": "$10 million endowment gift from Boca Raton philanthropists and Giving Pledge signatories Toby and Leon Cooperman.",
-      "regen_query": "\"Leon Cooperman\" pledges OR commits OR announces",
-      "event_id": "leon_cooperman_direct_gift_x_regen9",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-399fe61e3e4177e4",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "transfer_in",
       "year": 2005,
       "date": null,
@@ -683,6 +664,27 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Leon Cooperman",
+      "recipient": "Jewish Federation of South Palm Beach County",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/jewish-federation-of-south-palm-beach-receives-10-million-gift",
+      "confidence": "high",
+      "extraction_note": "Leon Cooperman (with spouse Toby) made a $10 million endowment gift to the Jewish Federation of South Palm Beach County.",
+      "extraction_evidence": "$10 million endowment gift from Boca Raton philanthropists and Giving Pledge signatories Toby and Leon Cooperman.",
+      "regen_query": "\"Leon Cooperman\" pledges OR commits OR announces",
+      "event_id": "leon_cooperman_direct_gift_x_regen9",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-399fe61e3e4177e4",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
+    },
     {
       "event_id": "cooperman_gp_2010",
       "event_role": "pledge",

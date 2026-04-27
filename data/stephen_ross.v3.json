@@ -451,25 +451,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
-      "year": 2019,
-      "date": "2019-08-15",
-      "date_precision": "day",
-      "donor_entity": "Equinox",
-      "recipient": "unspecified",
-      "amount_usd": 1000000,
-      "source_type": "news_article",
-      "source_url": "https://www.cnbc.com/2019/08/15/equinox-chief-im-sorry-for-the-impact-of-trump-fundraiser-on-our-community.html",
-      "confidence": "high",
-      "extraction_note": "Equinox announced a $1 million donation to five charities supporting veterans' rights, LGBTQ+ rights and other causes.",
-      "extraction_evidence": "Equinox will donate $1 million to five charities, supporting veterans' rights, LGBTQ+ rights and other causes",
-      "regen_query": "\"Stephen Ross\" \"Equinox\" OR \"SoulCycle\" foundation OR charitable OR community benefit 2019 2020 2021",
-      "event_id": "stephen_ross_direct_gift_2019_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-c1bc09186839c523",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "political",
       "year": 2021,
       "date": null,
@@ -661,6 +642,27 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2019,
+      "date": "2019-08-15",
+      "date_precision": "day",
+      "donor_entity": "Equinox",
+      "recipient": "unspecified",
+      "amount_usd": 1000000,
+      "source_type": "news_article",
+      "source_url": "https://www.cnbc.com/2019/08/15/equinox-chief-im-sorry-for-the-impact-of-trump-fundraiser-on-our-community.html",
+      "confidence": "high",
+      "extraction_note": "Equinox announced a $1 million donation to five charities supporting veterans' rights, LGBTQ+ rights and other causes.",
+      "extraction_evidence": "Equinox will donate $1 million to five charities, supporting veterans' rights, LGBTQ+ rights and other causes",
+      "regen_query": "\"Stephen Ross\" \"Equinox\" OR \"SoulCycle\" foundation OR charitable OR community benefit 2019 2020 2021",
+      "event_id": "stephen_ross_direct_gift_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-c1bc09186839c523",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
+    },
     {
       "event_id": "ross_gp_2013",
       "event_role": "pledge",

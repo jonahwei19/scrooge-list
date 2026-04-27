@@ -621,7 +621,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "corporate_gift",
+      "event_role": "political",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -637,10 +637,12 @@
       "event_id": "miriam_adelson_corporate_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-6c87af8f2c345b34",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "corporate_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
-      "event_role": "direct_gift",
+      "event_role": "political",
       "year": 2021,
       "date": null,
       "date_precision": "year",
@@ -656,7 +658,9 @@
       "event_id": "miriam_adelson_direct_gift_2021_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-6c87af8f2c345b34",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
       "event_role": "political",

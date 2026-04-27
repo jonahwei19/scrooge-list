@@ -552,7 +552,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
+      "event_role": "political",
       "year": 2015,
       "date": null,
       "date_precision": "year",
@@ -568,7 +568,9 @@
       "event_id": "haim_saban_direct_gift_2015_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
       "event_role": "political",
@@ -590,7 +592,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
+      "event_role": "political",
       "year": 2016,
       "date": null,
       "date_precision": null,
@@ -606,7 +608,9 @@
       "event_id": "haim_saban_direct_gift_2016_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
       "event_role": "direct_gift",
@@ -623,25 +627,6 @@
       "extraction_evidence": "he donated $2 million each year to the FIDF's \"Lone Soldier Program \u2013 Soldier Aliyah Fund\" in 2012 and 2013",
       "regen_query": "\"Saban\" \"Friends of the Israel Defense Forces\" FIDF gala 2014 OR 2015 OR 2016 OR 2017 \"lone soldiers\" center",
       "event_id": "haim_saban_direct_gift_2012_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
-      "year": 2017,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Haim Saban",
-      "recipient": "Academy Museum of Motion Pictures",
-      "amount_usd": 50000000,
-      "source_type": "news_article",
-      "source_url": "https://variety.com/2017/biz/news/academy-museum-haim-saban-1202574352/",
-      "confidence": "high",
-      "extraction_note": "Haim and Cheryl Saban will donate $50 million to the Academy Museum of Motion Pictures, described as the largest contribution the project has received to date.",
-      "extraction_evidence": "Haim and Cheryl Saban will donate $50 million to the Academy Museum of Motion Pictures",
-      "regen_query": "\"Haim Saban\" gift OR donation million",
-      "event_id": "haim_saban_direct_gift_2017_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
       "regen_extractor_model": "claude-haiku-4-5"
@@ -742,7 +727,7 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
+      "event_role": "political",
       "year": 2022,
       "date": null,
       "date_precision": null,
@@ -758,7 +743,9 @@
       "event_id": "haim_saban_direct_gift_2022_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
       "event_role": "corporate_gift",
@@ -952,6 +939,27 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2017,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Haim Saban",
+      "recipient": "Academy Museum of Motion Pictures",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://variety.com/2017/biz/news/academy-museum-haim-saban-1202574352/",
+      "confidence": "high",
+      "extraction_note": "Haim and Cheryl Saban will donate $50 million to the Academy Museum of Motion Pictures, described as the largest contribution the project has received to date.",
+      "extraction_evidence": "Haim and Cheryl Saban will donate $50 million to the Academy Museum of Motion Pictures",
+      "regen_query": "\"Haim Saban\" gift OR donation million",
+      "event_id": "haim_saban_direct_gift_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-34c9c5d13461c792",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
+    },
     {
       "event_id": "saban_giving_pledge_NOT_signed",
       "event_role": "pledge_status",

@@ -560,7 +560,7 @@
       "event_role_canonical": "private_investment"
     },
     {
-      "event_role": "direct_gift",
+      "event_role": "political",
       "year": 2020,
       "date": null,
       "date_precision": null,
@@ -577,7 +577,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
       "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "direct_gift"
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases",
+      "event_role_canonical": "political"
     },
     {
       "event_role": "direct_gift",
@@ -614,26 +616,6 @@
       "extraction_evidence": "Lauder's American Contemporary Art Foundation was responsible for the largest single group of art in that gift, including major works by Mark Rothko, Franz Kline, Warhol and Pollock",
       "regen_query": "\"Leonard Lauder\" \"American Contemporary Art Foundation\" Whitney 2008",
       "event_id": "leonard_lauder_direct_gift_2008_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "direct_gift"
-    },
-    {
-      "event_role": "direct_gift",
-      "year": 2013,
-      "date": "2013-04-10",
-      "date_precision": "day",
-      "donor_entity": "Leonard A. Lauder",
-      "recipient": "Metropolitan Museum of Art",
-      "amount_usd": null,
-      "source_type": "news_article",
-      "source_url": "https://www.nytimes.com/2013/04/10/arts/design/leonard-lauder-is-giving-his-cubist-collection-to-the-met.html",
-      "confidence": "high",
-      "extraction_note": "Leonard Lauder will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art.",
-      "extraction_evidence": "Leonard A. Lauder, the cosmetics tycoon, will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art",
-      "regen_query": "\"Leonard Lauder\" \"Cubist collection\" Met 2013 2014 2015 transfer completion",
-      "event_id": "leonard_lauder_direct_gift_2013_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
       "regen_extractor_model": "claude-haiku-4-5",
@@ -761,6 +743,28 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2013,
+      "date": "2013-04-10",
+      "date_precision": "day",
+      "donor_entity": "Leonard A. Lauder",
+      "recipient": "Metropolitan Museum of Art",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.nytimes.com/2013/04/10/arts/design/leonard-lauder-is-giving-his-cubist-collection-to-the-met.html",
+      "confidence": "high",
+      "extraction_note": "Leonard Lauder will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art.",
+      "extraction_evidence": "Leonard A. Lauder, the cosmetics tycoon, will donate his collection of 78 pieces of Cubist art to the Metropolitan Museum of Art",
+      "regen_query": "\"Leonard Lauder\" \"Cubist collection\" Met 2013 2014 2015 transfer completion",
+      "event_id": "leonard_lauder_direct_gift_2013_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-7aaa8dffbe5c10cf",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases",
+      "event_role_canonical": "pledge"
+    },
     {
       "event_id": "lauder_giving_pledge_nonsigner",
       "event_role": "pledge_nonsigner",
@@ -1060,7 +1064,7 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 2901503098,
     "ratio_observable_to_5pct_tenure": 0.3353,
-    "observable_from_events_usd": 6229979087,
+    "observable_from_events_usd": 6229879087,
     "observable_drift_pct": 3.257,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },

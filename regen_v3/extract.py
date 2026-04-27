@@ -184,8 +184,75 @@ def _build_user_prompt(
     )
 
 
+# Pattern guards: catch role mis-labels the LLM commonly produces.
+# Each pattern is checked against the event's `extraction_evidence` (verbatim
+# snippet) + `extraction_note` (LLM 1-liner) + recipient + note. If the LLM
+# emitted role X but the text matches pattern Y, re-label to Y's canonical role.
+import re as _re_guards
+_PLEDGE_PHRASES = _re_guards.compile(
+    r"\b(pledge|pledged|pledges|will\s+(give|donate|commit)|commits?\s+to\s+give|"
+    r"plans?\s+to\s+(donate|give)|promises?\s+to\s+(donate|give)|"
+    r"announc(es|ed)?\s+(a|the)?\s*\$?[\d,.]+\s*(million|billion|m|b)?\s+(pledge|commitment))\b",
+    _re_guards.IGNORECASE,
+)
+_POLITICAL_PHRASES = _re_guards.compile(
+    r"\b(super\s*PAC|PAC\b|political\s+action\s+committee|campaign\s+committee|"
+    r"FEC|federal\s+election|Trump\s+campaign|Biden\s+campaign|Harris\s+campaign|"
+    r"Republican\s+(National|party|candidates?)|Democratic\s+(National|party|candidates?)|"
+    r"presidential\s+(campaign|inauguration)|2024\s+(election|race)|midterm)\b",
+    _re_guards.IGNORECASE,
+)
+_TRANSFER_TO_OWN_PHRASES = _re_guards.compile(
+    r"\b(contributed?\s+to\s+(his|her|their|the)\s+(own|family)?\s*foundation|"
+    r"funded\s+(his|her|their|the)\s+foundation|moved\s+\$?[\d,.]+\s*\w*\s+into\s+"
+    r"(his|her|their|the)\s+foundation)\b",
+    _re_guards.IGNORECASE,
+)
+
+
+def _maybe_relabel(event: dict[str, Any]) -> dict[str, Any]:
+    """Apply pattern guards to re-label role if the LLM mis-categorized.
+    Mutates event in place (sets `_role_relabeled_from` for audit)."""
+    role = event.get("event_role")
+    text_blobs = " | ".join(
+        str(event.get(k) or "") for k in ("extraction_evidence", "extraction_note", "note")
+    )
+    new_role = role
+    reason = None
+
+    # 1. PAC / FEC language → political (catches: $200M America PAC labeled corporate_gift)
+    if role in {"direct_gift", "grant_out", "corporate_gift", "private_investment"}:
+        if _POLITICAL_PHRASES.search(text_blobs) or _POLITICAL_PHRASES.search(
+            str(event.get("recipient") or "")
+        ):
+            new_role = "political"
+            reason = "matched political_phrases"
+
+    # 2. Pledge / will-give language → pledge (catches: $10B Earth Fund stored as grant_out)
+    if role == "grant_out" or role == "direct_gift":
+        if _PLEDGE_PHRASES.search(text_blobs):
+            new_role = "pledge"
+            reason = "matched pledge_phrases"
+
+    # 3. Transfer-to-own-foundation → transfer_in (catches: 1.5M-share gift to own
+    #    foundation labeled as direct_gift instead of transfer_in)
+    if role == "direct_gift":
+        if _TRANSFER_TO_OWN_PHRASES.search(text_blobs):
+            new_role = "transfer_in"
+            reason = "matched transfer_to_own_phrases"
+
+    if new_role != role:
+        event["_role_relabeled_from"] = role
+        event["_role_relabel_reason"] = reason
+        event["event_role"] = new_role
+    return event
+
+
 def _validate_event(event: dict[str, Any], expected_url: str) -> dict[str, Any] | None:
     """Return the event if valid; else None."""
+    # Pattern-based role re-labeling BEFORE canonical-role check, since the
+    # guards may convert e.g. "corporate_gift" -> "political".
+    _maybe_relabel(event)
     role = event.get("event_role")
     if role not in CANONICAL_EVENT_ROLES:
         logger.warning("dropping event with non-canonical event_role=%r", role)

@@ -1681,25 +1681,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "amount_usd": 118000000,
-      "confidence": "high",
-      "date": "2023-11-21",
-      "date_precision": "day",
-      "donor_entity": "Jeff Bezos",
-      "event_role": "direct_gift",
-      "extraction_evidence": "Jeff Bezos...will give $118 million to nonprofit groups helping families experiencing homelessness",
-      "extraction_note": "Jeff Bezos announced a donation of $118 million to nonprofit groups helping families experiencing homelessness.",
-      "recipient": "nonprofit groups helping families experiencing homelessness",
-      "source_type": "news_article",
-      "source_url": "https://www.forbes.com/sites/phoebeliu/2023/11/21/jeff-bezos-announces-hes-donated-nearly-120-million-to-help-families-experiencing-homelessness/",
-      "year": 2023,
-      "regen_query": "\"Jeff Bezos\" donates million",
-      "event_id": "jeff_bezos_direct_gift_2023_regen11",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-733b6a11645c0037",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "amount_usd": 500000,
       "confidence": "high",
       "date": null,
@@ -1739,6 +1720,27 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "amount_usd": 118000000,
+      "confidence": "high",
+      "date": "2023-11-21",
+      "date_precision": "day",
+      "donor_entity": "Jeff Bezos",
+      "event_role": "pledge",
+      "extraction_evidence": "Jeff Bezos...will give $118 million to nonprofit groups helping families experiencing homelessness",
+      "extraction_note": "Jeff Bezos announced a donation of $118 million to nonprofit groups helping families experiencing homelessness.",
+      "recipient": "nonprofit groups helping families experiencing homelessness",
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/phoebeliu/2023/11/21/jeff-bezos-announces-hes-donated-nearly-120-million-to-help-families-experiencing-homelessness/",
+      "year": 2023,
+      "regen_query": "\"Jeff Bezos\" donates million",
+      "event_id": "jeff_bezos_direct_gift_2023_regen11",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-733b6a11645c0037",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
+    },
     {
       "event_id": "bezos_earth_fund_pledge_2020",
       "event_role": "pledge",

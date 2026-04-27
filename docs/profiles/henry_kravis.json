@@ -616,7 +616,7 @@
       "date": null,
       "date_precision": "year",
       "donor_entity": "Henry Kravis",
-      "event_role": "direct_gift",
+      "event_role": "political",
       "extraction_evidence": "contributed $1 million to President Donald Trump's presidential inauguration",
       "extraction_note": "Henry Kravis contributed $1 million to President Donald Trump's presidential inauguration.",
       "recipient": "Donald Trump presidential inauguration",
@@ -628,7 +628,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "direct_gift"
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases",
+      "event_role_canonical": "political"
     },
     {
       "amount_usd": 75000000,
@@ -1150,8 +1152,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 8863644069,
     "ratio_observable_to_5pct_tenure": 0.0658,
-    "observable_from_events_usd": 1852761317,
-    "observable_drift_pct": 1.97,
+    "observable_from_events_usd": 1851761317,
+    "observable_drift_pct": 1.968,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {

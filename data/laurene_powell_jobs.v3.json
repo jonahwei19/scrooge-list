@@ -578,25 +578,6 @@
     },
     {
       "event_role": "direct_gift",
-      "year": 2019,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Laurene Powell Jobs",
-      "recipient": "New York City",
-      "amount_usd": 10000000,
-      "source_type": "news_article",
-      "source_url": "https://www.chalkbeat.org/2019/10/3/21108930/3-things-to-know-about-xq-the-laurene-powell-jobs-backed-group-set-to-help-create-new-schools-in-nyc/",
-      "confidence": "high",
-      "extraction_note": "XQ, backed by Laurene Powell Jobs, will give New York City $10 million to support 10 new or restructured district high schools.",
-      "extraction_evidence": "will give New York City $10 million to support 10 new or restructured district high schools",
-      "regen_query": "\"XQ Institute\" \"Laurene Powell Jobs\" OR \"Emerson Collective\" grants 2015 2016 2017 2018 2019",
-      "event_id": "laurene_powell_jobs_direct_gift_2019_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
       "year": 2015,
       "date": null,
       "date_precision": "year",
@@ -787,6 +768,27 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Laurene Powell Jobs",
+      "recipient": "New York City",
+      "amount_usd": 10000000,
+      "source_type": "news_article",
+      "source_url": "https://www.chalkbeat.org/2019/10/3/21108930/3-things-to-know-about-xq-the-laurene-powell-jobs-backed-group-set-to-help-create-new-schools-in-nyc/",
+      "confidence": "high",
+      "extraction_note": "XQ, backed by Laurene Powell Jobs, will give New York City $10 million to support 10 new or restructured district high schools.",
+      "extraction_evidence": "will give New York City $10 million to support 10 new or restructured district high schools",
+      "regen_query": "\"XQ Institute\" \"Laurene Powell Jobs\" OR \"Emerson Collective\" grants 2015 2016 2017 2018 2019",
+      "event_id": "laurene_powell_jobs_direct_gift_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-54895526dd34f797",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
+    },
     {
       "event_id": "lpj_no_giving_pledge",
       "event_role": "pledge",

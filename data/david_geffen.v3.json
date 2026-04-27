@@ -319,25 +319,6 @@
     },
     {
       "event_role": "direct_gift",
-      "year": 2023,
-      "date": "2023-12-12",
-      "date_precision": "day",
-      "donor_entity": "David Geffen",
-      "recipient": "Memorial Sloan Kettering Cancer Center",
-      "amount_usd": 200000000,
-      "source_type": "news_article",
-      "source_url": "https://abc17news.com/news/national-world/cnn-national/2024/02/02/david-geffen-fast-facts-3/",
-      "confidence": "high",
-      "extraction_note": "David Geffen and Ken Griffin announced a combined $400 million donation to Memorial Sloan Kettering Cancer Center on December 12, 2023. Geffen's share is estimated at $200 million (half of the total).",
-      "extraction_evidence": "Geffen and Ken Griffin will donate $400 million to Memorial Sloan Kettering Cancer Center",
-      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
-      "event_id": "david_geffen_direct_gift_2023_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-36f866aa59289a7b",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -680,6 +661,27 @@
     }
   ],
   "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2023,
+      "date": "2023-12-12",
+      "date_precision": "day",
+      "donor_entity": "David Geffen",
+      "recipient": "Memorial Sloan Kettering Cancer Center",
+      "amount_usd": 200000000,
+      "source_type": "news_article",
+      "source_url": "https://abc17news.com/news/national-world/cnn-national/2024/02/02/david-geffen-fast-facts-3/",
+      "confidence": "high",
+      "extraction_note": "David Geffen and Ken Griffin announced a combined $400 million donation to Memorial Sloan Kettering Cancer Center on December 12, 2023. Geffen's share is estimated at $200 million (half of the total).",
+      "extraction_evidence": "Geffen and Ken Griffin will donate $400 million to Memorial Sloan Kettering Cancer Center",
+      "regen_query": "\"David Geffen\" \"Memorial Sloan Kettering\" \"Ken Griffin\" $400 million share split 2023 2024",
+      "event_id": "david_geffen_direct_gift_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-36f866aa59289a7b",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases"
+    },
     {
       "event_id": "geffen_gp_NOT_SIGNED",
       "event_role": "pledge_status",

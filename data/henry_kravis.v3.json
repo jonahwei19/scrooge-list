@@ -582,7 +582,7 @@
       "date": null,
       "date_precision": "year",
       "donor_entity": "Henry Kravis",
-      "event_role": "direct_gift",
+      "event_role": "political",
       "extraction_evidence": "contributed $1 million to President Donald Trump's presidential inauguration",
       "extraction_note": "Henry Kravis contributed $1 million to President Donald Trump's presidential inauguration.",
       "recipient": "Donald Trump presidential inauguration",
@@ -593,7 +593,9 @@
       "event_id": "henry_kravis_direct_gift_2017_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases"
     },
     {
       "amount_usd": 75000000,

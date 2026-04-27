@@ -355,26 +355,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "direct_gift",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Reed Hastings",
-      "recipient": "Bowdoin College",
-      "amount_usd": 50000000,
-      "source_type": "news_article",
-      "source_url": "https://philanthropynewsdigest.org/news/bowdoin-college-receives-50-million-from-reed-hastings",
-      "confidence": "high",
-      "extraction_note": "Reed Hastings made a $50 million gift to Bowdoin College for an AI-focused initiative.",
-      "extraction_evidence": "$50 million gift from alumnus, Netflix co-founder, and Giving Pledge signatory Reed Hastings",
-      "regen_query": "Reed Hastings Bowdoin College 1983 alumni fund OR capital campaign OR reunion gift",
-      "event_id": "reed_hastings_direct_gift_x_regen4",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "direct_gift"
-    },
-    {
       "event_role": "grant_out",
       "year": null,
       "date": null,
@@ -777,6 +757,28 @@
   ],
   "pledges_and_announcements": [
     {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Reed Hastings",
+      "recipient": "Bowdoin College",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/bowdoin-college-receives-50-million-from-reed-hastings",
+      "confidence": "high",
+      "extraction_note": "Reed Hastings made a $50 million gift to Bowdoin College for an AI-focused initiative.",
+      "extraction_evidence": "$50 million gift from alumnus, Netflix co-founder, and Giving Pledge signatory Reed Hastings",
+      "regen_query": "Reed Hastings Bowdoin College 1983 alumni fund OR capital campaign OR reunion gift",
+      "event_id": "reed_hastings_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-853c935b2898ca54",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched pledge_phrases",
+      "event_role_canonical": "pledge"
+    },
+    {
       "event_id": "hastings_gp_2012",
       "event_role": "pledge",
       "year": 2012,
@@ -1055,7 +1057,7 @@
     "tier_published_caveat": "Hastings is the canonical 'DAF-heavy Giving Pledger' \u2014 publicly committed, structurally liquid, and has moved large dollar amounts out of his personal balance sheet into a charitable vehicle. Readers should know that $1.7B has been committed but only ~$200M has been verifiably delivered to end recipients as of 2026-04. The DAF may be disbursing at a healthy rate; we simply can't see it. This is a transparency concern, not (necessarily) a generosity concern.",
     "expected_5pct_tenure_usd": 2842000000,
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
-    "observable_from_events_usd": 4569750000
+    "observable_from_events_usd": 4519750000
   },
   "scrooge_legacy_score_internal_only": {
     "value_inflows_method": 22.5,

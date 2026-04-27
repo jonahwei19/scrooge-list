@@ -821,7 +821,7 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "direct_gift",
+      "event_role": "political",
       "year": 2024,
       "date": null,
       "date_precision": null,
@@ -838,7 +838,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-18eeecdf0bde04c0",
       "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "direct_gift"
+      "_role_relabeled_from": "direct_gift",
+      "_role_relabel_reason": "matched political_phrases",
+      "event_role_canonical": "political"
     },
     {
       "event_role": "direct_gift",
