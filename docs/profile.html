@@ -439,13 +439,6 @@ function render(rec) {
     }
   }
 
-  if (rollup.tier_reasoning || rollup.tier_published_caveat) {
-    html += `<div class="callout ${tierInfo.cls === 'ontrack' ? 'green' : ''}">
-      <strong>Tier reasoning</strong>
-      <p>${esc(rollup.tier_reasoning || rollup.tier_published_caveat)}</p>
-    </div>`;
-  }
-
   // Per-year giving timeline (only if we have multi-year grant_out data)
   html += renderTimeline(rec);
 

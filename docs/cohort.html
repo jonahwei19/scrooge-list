@@ -245,9 +245,9 @@ function renderCohort(bs) {
       <span><span class="sw c"></span>Tier C · Claimed but unverified (${tierCounts[2]})</span>
       <span><span class="sw ok"></span>On Track (${tierCounts[3]})</span>
     </div>
-    <div class="callout"><strong>What this says</strong>${globalRatio >= 1
-      ? ' Combined documented giving across all 51 billionaires <em>exceeds</em> the benchmark — because the On Track people (Buffett, Scott, Bloomberg) have given so much that they mask the individual gaps.'
-      : ' Combined documented giving across all 51 billionaires <em>falls short</em> of the benchmark.'} The typical billionaire has given only <strong>${(medianRatio * 100).toFixed(0)}%</strong> of what they could reasonably have given — well below the line, even when the combined total isn't.</div>`;
+    <p style="margin:18px 0 24px;color:var(--ink-soft)">${globalRatio >= 1
+      ? 'Combined documented giving across all 51 billionaires exceeds the benchmark, because the On Track people (Buffett, Scott, Bloomberg) have given so much that they mask the individual gaps.'
+      : 'Combined documented giving across all 51 billionaires falls short of the benchmark.'} The typical billionaire has given <strong>${(medianRatio * 100).toFixed(0)}%</strong> of what they could reasonably have given.</p>`;
 
   html += `<h2>Most common red flags</h2>
     <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Number of billionaires with each flag. Bar width = share of all 51.</p>`;
