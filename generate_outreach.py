@@ -68,6 +68,41 @@ def subject_slug(rec: dict) -> str:
     return p.get("name_display", "unknown").lower().replace(" ", "_")
 
 
+# Press / foundation contacts discovered by the press-contact agent.
+# Loaded once at module init. Subjects with no entry fall back to placeholder.
+_CONTACTS_FILE = HERE / "outreach" / "contacts.json"
+_CONTACTS: dict = {}
+if _CONTACTS_FILE.exists():
+    try:
+        _CONTACTS = json.loads(_CONTACTS_FILE.read_text())
+    except Exception:
+        _CONTACTS = {}
+
+
+def contact_for(sid: str, name: str) -> tuple[str, str]:
+    """Return (To-line, contact-note) for a subject. Falls back to placeholder
+    if no entry in contacts.json."""
+    c = _CONTACTS.get(sid) or {}
+    primary = c.get("primary_contact")
+    conf = c.get("confidence", "unknown")
+    role = c.get("primary_role", "")
+    if not primary:
+        return (
+            f"To: [press/foundation contact for {name} — UNKNOWN, see contacts.json]",
+            "Contact: not yet discovered. Confidence: unknown.",
+        )
+    if primary.startswith("http"):
+        # It's a contact form, not an email.
+        return (
+            f"To: [submit via {primary}]",
+            f"Contact: {role or 'web form'} (confidence: {conf}).",
+        )
+    return (
+        f"To: {primary}",
+        f"Contact: {role or 'press inbox'} (confidence: {conf}).",
+    )
+
+
 def tier_of(rec: dict) -> str:
     """Mirror of normalize_tier in aggregate_v3.py — keep in sync."""
     import re
@@ -110,15 +145,18 @@ def build_email(rec: dict, deadline: date) -> str:
 
     name = p.get("name_display", "[Subject]")
     tier = tier_of(rec)
+    sid = subject_slug(rec)
+    to_line, contact_note = contact_for(sid, name)
 
     # body composition
     lines = []
     lines.append(f"Subject: Pre-publication inquiry — your inclusion in The Scrooge List")
     lines.append("")
-    lines.append(f"To: [press/foundation contact for {name}]")
+    lines.append(to_line)
     lines.append(f"From: [editor]")
     lines.append(f"Date: {date.today().isoformat()}")
     lines.append(f"Response deadline: {deadline.isoformat()}")
+    lines.append(f"# {contact_note}")
     lines.append("")
     lines.append("=" * 78)
     lines.append("")
