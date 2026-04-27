@@ -44,6 +44,7 @@ from regen_v3 import sec as sec_mod
 from regen_v3 import fec as fec_mod
 from regen_v3 import leaks as leaks_mod
 from regen_v3 import dafs as dafs_mod
+from regen_v3 import dafs_downstream as dafs_downstream_mod
 from regen_v3 import llcs as llcs_mod
 from regen_v3 import state_charities as state_charities_mod
 from regen_v3 import recipient_verify as recipient_verify_mod
@@ -136,6 +137,7 @@ def run_one(
     for src_name, src_mod in (
         ("propublica", propublica_mod),
         ("dafs", dafs_mod),
+        ("dafs_downstream", dafs_downstream_mod),
         ("sec", sec_mod),
         ("fec", fec_mod),
         ("leaks", leaks_mod),
