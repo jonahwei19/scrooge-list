@@ -934,7 +934,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected",
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "recipient placeholder ('Multiple organizations') \u2014 no entity to look up",
@@ -981,7 +980,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected",
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
@@ -1074,7 +1072,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected",
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
@@ -1495,7 +1492,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
       "event_role_canonical": "pledge"
     },
     {

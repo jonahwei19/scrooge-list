@@ -835,8 +835,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_role_relabeled_from": "grant_out",
-      "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
     },
     {
@@ -857,8 +855,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_role_relabeled_from": "direct_gift",
-      "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
     },
     {

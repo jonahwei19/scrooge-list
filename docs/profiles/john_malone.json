@@ -704,7 +704,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected",
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/751085363",
       "recipient_verification_note": "no 990 on file for Fort Worth Country Day School Inc (EIN 751085363) within \u00b11 yr of 2004",
@@ -1024,8 +1023,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_role_relabeled_from": "direct_gift",
-      "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
     },
     {

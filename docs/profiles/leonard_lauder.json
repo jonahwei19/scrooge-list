@@ -614,8 +614,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_role_relabeled_from": "direct_gift",
-      "_role_relabel_reason": "matched political_phrases",
       "event_role_canonical": "political"
     },
     {
@@ -823,8 +821,6 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "note": "Largest-ever gift to an American nursing school. Structured for ~140 tuition-free fellows by 2027, two-year commitment to underserved communities. Structure (endowed professorship + ongoing operating support) suggests this was likely a multi-year pledge; disbursement schedule not in public announcement.",
-      "_role_relabeled_from": "direct_gift",
-      "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
     },
     {
@@ -864,8 +860,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_role_relabeled_from": "direct_gift",
-      "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
     },
     {

@@ -445,12 +445,40 @@ def annotate_with_canonical(rec: dict) -> dict:
     return rec
 
 
+# Internal audit fields stamped by extract.py / merge.py guards. Useful in
+# the master records for auditing why an event was relabeled, but they look
+# like noise on the public profile JSONs. Stripped here.
+_INTERNAL_AUDIT_FIELDS = (
+    "_role_relabeled_from",
+    "_role_relabel_reason",
+    "_cardinality_flag",
+    "_cumulative_flag",
+)
+
+
+def _strip_audit(rec: dict) -> dict:
+    """Return a deep-copyish view of `rec` with internal _ fields removed
+    from each event. Mutates a shallow copy; doesn't touch the master record."""
+    import copy as _c
+    out = _c.deepcopy(rec)
+    for fld in ("cited_events", "pledges_and_announcements", "sources_all"):
+        items = out.get(fld) or []
+        for ev in items:
+            if isinstance(ev, dict):
+                for k in _INTERNAL_AUDIT_FIELDS:
+                    ev.pop(k, None)
+    return out
+
+
 def copy_profiles(records: list[dict]):
     """Copy each v3 record into docs/profiles/<id>.json so the static site can fetch them.
     Necessary because GitHub Pages serves docs/ as the site root — relative ../data paths don't resolve.
 
     Adds canonical event_role annotations and the 5%/yr-tenure benchmark so profile pages
     can display the derived numbers without recomputing client-side.
+
+    Strips internal `_role_relabeled_from` / `_cardinality_flag` audit fields
+    so the public JSON doesn't carry the audit trail (kept in master records).
     """
     PROFILES_DIR.mkdir(exist_ok=True, parents=True)
     # wipe stale files first
@@ -460,6 +488,7 @@ def copy_profiles(records: list[dict]):
         p = rec.get("person", {})
         pid = p.get("name_display", "unknown").lower().replace(" ", "_")
         annotated = annotate_with_canonical(rec)
+        annotated = _strip_audit(annotated)
         out = PROFILES_DIR / f"{pid}.json"
         with out.open("w") as f:
             json.dump(annotated, f, indent=2, default=str)

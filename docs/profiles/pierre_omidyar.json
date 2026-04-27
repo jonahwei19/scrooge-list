@@ -1237,9 +1237,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
-      "_role_relabeled_from": "grant_out",
-      "_role_relabel_reason": "cumulative_phrase",
       "event_role_canonical": "reference_only"
     },
     {
@@ -1653,7 +1650,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
       "event_role_canonical": "pledge"
     },
     {
@@ -1734,7 +1730,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
       "event_role_canonical": "pledge"
     },
     {

@@ -872,8 +872,6 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "note": "Foundation established 2016 (501(c)(3) Nov 2016); early years' grants small. Named 'Emerson Collective Foundation' in some databases; renamed/rebranded to 'Waverley Street Foundation' around 2021 climate pledge. Same EIN.",
-      "_role_relabeled_from": "grant_out",
-      "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
     },
     {
@@ -911,8 +909,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_role_relabeled_from": "direct_gift",
-      "_role_relabel_reason": "matched pledge_phrases",
       "event_role_canonical": "pledge"
     },
     {

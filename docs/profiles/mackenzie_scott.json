@@ -394,7 +394,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected",
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "no IRS filing found for recipient '465 nonprofits'",
@@ -771,7 +770,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "announcement"
     },
     {
@@ -792,7 +790,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected",
       "event_role_canonical": "pledge"
     },
     {

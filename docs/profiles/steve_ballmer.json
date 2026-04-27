@@ -221,9 +221,6 @@
       "regen_run_id": "sha256-eae67171dcb5ad33",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
-      "_role_relabeled_from": "transfer_in",
-      "_role_relabel_reason": "cumulative_phrase",
       "event_role_canonical": "reference_only"
     },
     {
@@ -356,7 +353,6 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected",
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
