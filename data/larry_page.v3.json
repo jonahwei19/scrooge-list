@@ -814,25 +814,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "pledge",
-      "year": 2014,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Larry Page",
-      "recipient": "unspecified",
-      "amount_usd": 25000000,
-      "source_type": "other",
-      "source_url": "https://technewsjunkies.com/dossier/larry-page/",
-      "confidence": "high",
-      "extraction_note": "Larry Page pledged $25 million for vaccine logistics and relief flights during West Africa's Ebola crisis in 2014.",
-      "extraction_evidence": "he pledges $25 million for vaccine logistics and charters relief flights",
-      "regen_query": "\"Larry Page\" pledges OR commits OR announces",
-      "event_id": "larry_page_pledge_2014_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-35089ce2a2f19099",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "announcement",
       "year": 2013,
       "date": null,
@@ -1422,12 +1403,6 @@
     {
       "publisher": "nonprofitquarterly.org",
       "url": "https://nonprofitquarterly.org/larry-page-makes-a-good-case-for-the-regulation-of-donor-advised-funds/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-35089ce2a2f19099"
-    },
-    {
-      "publisher": "technewsjunkies.com",
-      "url": "https://technewsjunkies.com/dossier/larry-page/",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-35089ce2a2f19099"
     },

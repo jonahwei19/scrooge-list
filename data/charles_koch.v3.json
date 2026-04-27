@@ -733,25 +733,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "political",
-      "year": 2024,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Charles Koch",
-      "recipient": "Americans for Prosperity super PAC",
-      "amount_usd": 40000000,
-      "source_type": "news_article",
-      "source_url": "https://dnyuz.com/2025/12/20/koch-political-operation-spent-nearly-550-million-during-2024-cycle/",
-      "confidence": "high",
-      "extraction_note": "Charles Koch's company gave the super PAC an additional $40 million during the 2024 cycle.",
-      "extraction_evidence": "Charles Koch's company also gave the super PAC an additional $40 million.",
-      "regen_query": "\"Americans for Prosperity\" \"Koch Industries\" $40 million 2023 2024 super PAC",
-      "event_id": "charles_koch_political_2024_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-38f5854399e7df59",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "direct_gift",
       "year": 2008,
       "date": null,
@@ -785,44 +766,6 @@
       "extraction_evidence": "Following a $6 million",
       "regen_query": "\"Charles Koch\" \"Wichita State University\" gift 2002 2014 capital campaign",
       "event_id": "charles_koch_direct_gift_x_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-38f5854399e7df59",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
-      "year": 2000,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Koch Industries",
-      "recipient": "Wichita State University",
-      "amount_usd": 6000000,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Charles_Koch_Arena",
-      "confidence": "high",
-      "extraction_note": "Koch Industries donated $6 million in 2000 to Wichita State University, described as the largest single gift in the university's history at that time.",
-      "extraction_evidence": "Koch Industries, which donated $6 million in 2000\u2014the largest single gift in Wichita State University history",
-      "regen_query": "\"Charles Koch\" \"Wichita State University\" gift 2002 2014 capital campaign",
-      "event_id": "charles_koch_direct_gift_2000_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-38f5854399e7df59",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Charles Koch",
-      "recipient": "Believe in People",
-      "amount_usd": 4300000000,
-      "source_type": "news_article",
-      "source_url": "https://newstral.com/en/article/en/1244770128/exclusive-charles-koch-has-given-more-than-5-billion-of-his-stock-to-two-nonprofits",
-      "confidence": "high",
-      "extraction_note": "Charles Koch gave $4.3 billion in stock to Believe in People, a 501(c)4 nonprofit.",
-      "extraction_evidence": "His previously unreported $4.3 billion gift to Believe in People is now the largest publicly disclosed donation to a 501(c)4",
-      "regen_query": "\"Believe in People\" \"Charles Koch\" $4.3 billion 501c4 stock transfer 2022",
-      "event_id": "charles_koch_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-38f5854399e7df59",
       "regen_extractor_model": "claude-haiku-4-5"
@@ -1538,20 +1481,6 @@
       "classification_note": "CCKc4 founded 2018 as CAKC4, renamed 2019. Part of the aggregate $5.3B 501(c)(4) transfer over 2019-2023 reported by Forbes. Excluded from observable charitable giving for the same reason as Believe in People."
     },
     {
-      "event_id": "koch_c4_rollup_2019_2023",
-      "event_role": "transfer_in_political_not_charity",
-      "year_range": [
-        2019,
-        2023
-      ],
-      "pledged_amount_usd": 5300000000,
-      "recipient": "Believe in People + CCKc4 (both 501(c)(4))",
-      "source_type": "news",
-      "source_url": "https://newstral.com/en/article/en/1244770128/exclusive-charles-koch-has-given-more-than-5-billion-of-his-stock-to-two-nonprofits",
-      "retrieved_at": "2026-04-23",
-      "notes": "Forbes exclusive (2023): Koch transferred $5.3B of nonvoting Koch Industries stock to two affiliated 501(c)(4)s over four years. This is the dominant story in Koch's late-life 'philanthropy' but is classified as political advocacy under Forbes/Chronicle/IPS methodology. Sum of the $4.3B BIP + $975M CCKc4 events above rounds to $5.275B \u2248 $5.3B, so these events are the same transfers at different points in the disclosure record."
-    },
-    {
       "event_id": "koch_stf_cumulative_contributions_2019_2023",
       "event_role": "transfer_in",
       "year_range": [
@@ -1953,11 +1882,6 @@
       "used_for": "$4.3B Believe in People c4 transfer, largest c4 donation in history"
     },
     {
-      "url": "https://newstral.com/en/article/en/1244770128/exclusive-charles-koch-has-given-more-than-5-billion-of-his-stock-to-two-nonprofits",
-      "retrieved_at": "2026-04-23",
-      "used_for": "Forbes $5.3B aggregate c4 transfer figure, BIP + CCKc4"
-    },
-    {
       "url": "https://www.sourcewatch.org/index.php?title=CCKC4",
       "retrieved_at": "2026-04-23",
       "used_for": "CCKc4 history, 2020 $975M transfer, Chase Koch leadership"
@@ -2124,12 +2048,6 @@
       "regen_run_id": "sha256-6557a1b5d04b85aa"
     },
     {
-      "publisher": "dnyuz.com",
-      "url": "https://dnyuz.com/2025/12/20/koch-political-operation-spent-nearly-550-million-during-2024-cycle/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-38f5854399e7df59"
-    },
-    {
       "publisher": "en.wikipedia.org",
       "url": "https://en.wikipedia.org/wiki/Charles_Koch_Arena",
       "provenance": "regen_v3",
@@ -2138,12 +2056,6 @@
     {
       "publisher": "foundation.wichita.edu",
       "url": "https://foundation.wichita.edu/three-donors-with-a-big-impact/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-38f5854399e7df59"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Charles_Koch_Arena",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-38f5854399e7df59"
     },

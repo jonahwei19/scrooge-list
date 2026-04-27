@@ -697,26 +697,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "private_investment",
-      "year": 2016,
-      "date": "2016-06",
-      "date_precision": "month",
-      "donor_entity": "Chan Zuckerberg Initiative",
-      "recipient": "Andela",
-      "amount_usd": null,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Chan_Zuckerberg_Initiative",
-      "confidence": "high",
-      "extraction_note": "Chan Zuckerberg Initiative made an early equity stake investment in Andela, a tech training firm, in June 2016.",
-      "extraction_evidence": "early stake in Andela, a tech training firm, in June 2016",
-      "regen_query": "\"Chan Zuckerberg Initiative\" ventures for-profit equity investments list 2024",
-      "event_id": "mark_zuckerberg_private_investment_2016_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "private_investment"
-    },
-    {
       "event_role": "direct_gift",
       "year": null,
       "date": null,
@@ -1932,12 +1912,6 @@
     {
       "publisher": "finance.yahoo.com",
       "url": "https://finance.yahoo.com/news/billionaire-philanthropy-growing-divide-mark-181737765.html",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-b3d62565f4dc49d0"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Chan_Zuckerberg_Initiative",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0"
     },

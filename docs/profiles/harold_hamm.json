@@ -399,26 +399,6 @@
     },
     {
       "event_role": "direct_gift",
-      "year": 2021,
-      "date": "2021-12",
-      "date_precision": "month",
-      "donor_entity": "Harold Hamm Foundation",
-      "recipient": "Oklahoma State University",
-      "amount_usd": 25000000,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Harold_Hamm",
-      "confidence": "high",
-      "extraction_note": "Harold Hamm Foundation donated $25 million to Oklahoma State University in December 2021 to establish the Hamm Institute for American Energy.",
-      "extraction_evidence": "Harold Hamm Foundation and Continental Resources donated a combined $50 million to Oklahoma State University, with $25 million contributed by each entity.",
-      "regen_query": "\"Harold Hamm\" assets contributed \"The Harold Hamm Foundation\"",
-      "event_id": "harold_hamm_direct_gift_2021_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "direct_gift"
-    },
-    {
-      "event_role": "direct_gift",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -966,8 +946,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 1449800000,
     "ratio_observable_to_5pct_tenure": 0.0524,
-    "observable_from_events_usd": 2330215619,
-    "observable_drift_pct": 28.055,
+    "observable_from_events_usd": 2305215619,
+    "observable_drift_pct": 27.743,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -1225,12 +1205,6 @@
     {
       "publisher": "governorswindenergycoalition.org",
       "url": "https://governorswindenergycoalition.org/in-oklahoma-a-war-over-wind-power/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5c8469de1ebb3f89"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Harold_Hamm",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89"
     },

@@ -512,26 +512,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "grant_out",
-      "year": 2010,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Michael Bloomberg",
-      "recipient": "unspecified",
-      "amount_usd": 279000000,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Bloomberg_Philanthropies",
-      "confidence": "high",
-      "extraction_note": "By 2010, Bloomberg Philanthropies' annual giving had reached $279 million across arts, urban innovation, civic institutions, environment, education, and government initiatives.",
-      "extraction_evidence": "By 2010, annual giving had reached $279 million, laying groundwork for broader initiatives",
-      "regen_query": "\"Bloomberg L.P.\" corporate philanthropy OR \"corporate giving\" profits \"Bloomberg Philanthropies\" annual",
-      "event_id": "michael_bloomberg_grant_out_2010_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-fb3ba2c2fb28e217",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "grant_out"
-    },
-    {
       "event_role": "direct_gift",
       "year": null,
       "date": null,
@@ -1686,8 +1666,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 3425000000,
     "ratio_observable_to_5pct_tenure": 0.8603,
-    "observable_from_events_usd": 37706714186,
-    "observable_drift_pct": 0.787,
+    "observable_from_events_usd": 37427714186,
+    "observable_drift_pct": 0.774,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -2005,18 +1985,6 @@
     {
       "publisher": "gizmodo.com",
       "url": "https://gizmodo.com/michael-bloomberg-500-million-shut-down-coal-plants-1850861082",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-fb3ba2c2fb28e217"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Bloomberg_Philanthropies",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-fb3ba2c2fb28e217"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/bloomberg_center_for_cities_at_harvard_university",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fb3ba2c2fb28e217"
     },

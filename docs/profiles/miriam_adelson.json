@@ -617,26 +617,6 @@
       "event_role_canonical": "political"
     },
     {
-      "event_role": "grant_out",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Adelson Family Foundation",
-      "recipient": "Birthright Israel",
-      "amount_usd": 500000000,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Miriam_Adelson",
-      "confidence": "high",
-      "extraction_note": "Adelson Family Foundation contributed nearly $500 million to Birthright Israel between 1999 and 2022.",
-      "extraction_evidence": "Through the Adelson Family Foundation, Miriam Adelson and her late husband Sheldon contributed nearly $500 million to Birthright Israel",
-      "regen_query": "\"Miriam Adelson\" assets contributed \"Adelson Family Foundation\"",
-      "event_id": "miriam_adelson_grant_out_x_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-6c87af8f2c345b34",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "grant_out"
-    },
-    {
       "event_role": "direct_gift",
       "year": 2011,
       "date": "2011-12-05",
@@ -1380,8 +1360,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 2223334891,
     "ratio_observable_to_5pct_tenure": 0.274,
-    "observable_from_events_usd": 3034964814,
-    "observable_drift_pct": 2.617,
+    "observable_from_events_usd": 2534964814,
+    "observable_drift_pct": 2.021,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -1609,12 +1589,6 @@
     {
       "publisher": "forward.com",
       "url": "https://forward.com/fast-forward/665095/miriam-adelson-donates-100m-to-trump-campaign-making-good-on-reported-promise/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-6c87af8f2c345b34"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Miriam_Adelson",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-6c87af8f2c345b34"
     },

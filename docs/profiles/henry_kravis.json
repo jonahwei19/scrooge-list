@@ -491,46 +491,6 @@
       "event_role_canonical": "political"
     },
     {
-      "amount_usd": 500000,
-      "confidence": "high",
-      "date": "2020-12-03",
-      "date_precision": "day",
-      "donor_entity": "Henry Kravis",
-      "event_role": "political",
-      "extraction_evidence": "$500,000 to the Senate Leadership Fund PAC on December 3, 2020, supporting GOP Senate candidates",
-      "extraction_note": "Henry Kravis donated $500,000 to the Senate Leadership Fund PAC on December 3, 2020, supporting GOP Senate candidates.",
-      "recipient": "Senate Leadership Fund PAC",
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Henry_Kravis",
-      "year": 2020,
-      "regen_query": "\"Henry Kravis\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "henry_kravis_political_2020_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-4fc43709be8c748d",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "political"
-    },
-    {
-      "amount_usd": 100000,
-      "confidence": "high",
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation",
-      "event_role": "grant_out",
-      "extraction_evidence": "$100,000 contribution to the Hudson Institute in 2016",
-      "extraction_note": "The Marie-Jos\u00e9e and Henry R. Kravis Foundation made a $100,000 contribution to the Hudson Institute in 2016.",
-      "recipient": "Hudson Institute",
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Marie-Jos%C3%A9e_Kravis",
-      "year": 2016,
-      "regen_query": "\"Henry Kravis\" assets contributed \"The Marie-Jos\u00e9e and Henry R. Kravis Foundation\"",
-      "event_id": "henry_kravis_grant_out_2016_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-4fc43709be8c748d",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "grant_out"
-    },
-    {
       "amount_usd": 574400,
       "confidence": "high",
       "date": "2015-04-23",
@@ -1210,7 +1170,7 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 8863644069,
     "ratio_observable_to_5pct_tenure": 0.0658,
-    "observable_from_events_usd": 1852861317,
+    "observable_from_events_usd": 1852761317,
     "observable_drift_pct": 1.97,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
@@ -1464,18 +1424,6 @@
     {
       "publisher": "eu.usatoday.com",
       "url": "https://eu.usatoday.com/story/opinion/2021/09/08/tracking-media-owners-political-donations/5719743001/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-4fc43709be8c748d"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Henry_Kravis",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-4fc43709be8c748d"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Marie-Jos%C3%A9e_Kravis",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d"
     },

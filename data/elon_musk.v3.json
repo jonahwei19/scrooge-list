@@ -519,25 +519,6 @@
     },
     {
       "event_role": "grant_out",
-      "year": 2025,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Musk Foundation",
-      "recipient": "unspecified",
-      "amount_usd": 18400000,
-      "source_type": "other",
-      "source_url": "https://elonmskgrantdonations.org/",
-      "confidence": "high",
-      "extraction_note": "The Musk Foundation deployed $18.4M across 47 new grants in 2025.",
-      "extraction_evidence": "$18.4M deployed across 47 new grants in 2025",
-      "regen_query": "\"Musk Foundation\" grants",
-      "event_id": "elon_musk_grant_out_2025_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-e439a3e8fff7e075",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "grant_out",
       "year": 2022,
       "date": null,
       "date_precision": null,
@@ -627,25 +608,6 @@
       "extraction_evidence": "Elon Musk's super PAC spent around $200 million to help elect Donald Trump",
       "regen_query": "\"Elon Musk\" FEC OR PAC contribution",
       "event_id": "elon_musk_political_2024_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-e439a3e8fff7e075",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "transfer_in",
-      "year": 2024,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Elon Musk",
-      "recipient": "The Foundation (X Foundation)",
-      "amount_usd": null,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Musk_Foundation",
-      "confidence": "medium",
-      "extraction_note": "Snippet indicates Elon Musk made a transfer to The Foundation (X Foundation) in 2024, which funds Ad Astra Montessori school and STEM initiatives.",
-      "extraction_evidence": "2024 to The Foundation (also known as the X Foundation), which funds a separate Ad Astra Montessori school",
-      "regen_query": "\"Musk Foundation\" \"The X Foundation\" 2022 rebranding school nonprofit",
-      "event_id": "elon_musk_transfer_in_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5"
@@ -1904,12 +1866,6 @@
       "regen_run_id": "sha256-e439a3e8fff7e075"
     },
     {
-      "publisher": "elonmskgrantdonations.org",
-      "url": "https://elonmskgrantdonations.org/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-e439a3e8fff7e075"
-    },
-    {
       "publisher": "en.wikipedia.org",
       "url": "https://en.wikipedia.org/wiki/Texas_Institute_of_Technology_and_Science",
       "provenance": "regen_v3",
@@ -1942,12 +1898,6 @@
     {
       "publisher": "gizmodo.com",
       "url": "https://gizmodo.com/elon-musk-donated-5-7-billion-in-tesla-shares-to-unnam-1848538463",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-e439a3e8fff7e075"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Musk_Foundation",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075"
     },

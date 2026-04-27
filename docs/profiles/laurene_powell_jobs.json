@@ -447,26 +447,6 @@
       "event_role_canonical": "political"
     },
     {
-      "event_role": "political",
-      "year": 2018,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Laurene Powell Jobs",
-      "recipient": "Amy Klobuchar",
-      "amount_usd": 2700,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Laurene_Powell_Jobs",
-      "confidence": "high",
-      "extraction_note": "Laurene Powell Jobs contributed $2,700 to Senator Amy Klobuchar's reelection in 2018.",
-      "extraction_evidence": "By 2018, she contributed $2,700 to Senator Amy Klobuchar's reelection",
-      "regen_query": "\"Laurene Powell Jobs\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "laurene_powell_jobs_political_2018_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "political"
-    },
-    {
       "event_role": "direct_gift",
       "year": null,
       "date": null,
@@ -1564,12 +1544,6 @@
     {
       "publisher": "finance.yahoo.com",
       "url": "https://finance.yahoo.com/news/laurene-powell-jobs-one-kamala-083400779.html",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-54895526dd34f797"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Laurene_Powell_Jobs",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797"
     },

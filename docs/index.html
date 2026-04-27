@@ -429,17 +429,17 @@ body.saint-view .section-head h2{color:var(--green)}
   <section class="distribution ledger-chart">
     <div class="dist-caption">
       <span class="dist-title">The ledger of the ungiven</span>
-      <span class="dist-sub">Each row is one subject. The track is what their wealth and tenure say they could have given by now (5% of liquid wealth per year as a billionaire). The fill is what we can find. Sorted worst-first by absolute dollar shortfall. Click a row for the evidence chain.</span>
+      <span class="dist-sub">Each row is one billionaire. The full track is what they could reasonably have given by now — 5% of their accessible wealth, every year since becoming a billionaire. The fill is what they actually gave. Sorted worst-first by dollars not given. Click a row for the receipts.</span>
     </div>
     <div class="ledger-bars" id="ledgerBars" role="list">
       <!-- populated by JS -->
     </div>
     <div class="dist-legend">
-      <span><span class="swatch tier-a"></span>Tier A · Verified Low</span>
-      <span><span class="swatch tier-b"></span>Tier B · Probably Low</span>
-      <span><span class="swatch tier-c"></span>Tier C · Claimed (not audited)</span>
-      <span><span class="swatch ontrack"></span>On Track · ≥ benchmark</span>
-      <span class="legend-rule"><span class="rule-mark"></span>Capacity benchmark · 100%</span>
+      <span><span class="swatch tier-a"></span>Tier A · Verified low giving</span>
+      <span><span class="swatch tier-b"></span>Tier B · Probably low giving</span>
+      <span><span class="swatch tier-c"></span>Tier C · Claimed but unverified</span>
+      <span><span class="swatch ontrack"></span>On track · giving as much as they reasonably could</span>
+      <span class="legend-rule"><span class="rule-mark"></span>100% line · everything they could have given</span>
     </div>
   </section>
 
@@ -784,14 +784,14 @@ function renderDistribution(bs) {
   });
 
   let html = `<div class="ledger-row ledger-head" aria-hidden="true">
-    <span class="ledger-name">Subject</span>
+    <span class="ledger-name">Name</span>
     <span class="ledger-rank">#</span>
     <span class="ledger-track-axis">
-      <span class="axis-tick l">0%</span>
-      <span class="axis-label">Observable giving ÷ (5% × liquid × tenure) capacity</span>
-      <span class="axis-tick r">100% · benchmark</span>
+      <span class="axis-tick l">$0</span>
+      <span class="axis-label">What they have given, as a share of what they reasonably could have</span>
+      <span class="axis-tick r">100% · everything they could have</span>
     </span>
-    <span class="ledger-pct">% of cap</span>
+    <span class="ledger-pct">% given of could&#8209;have</span>
     <span class="ledger-meta">Flag</span>
   </div>`;
   let lastTier = null;

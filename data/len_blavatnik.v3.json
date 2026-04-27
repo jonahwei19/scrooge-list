@@ -1519,25 +1519,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "pledge",
-      "year": 2010,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Len Blavatnik",
-      "recipient": "University of Oxford",
-      "amount_usd": null,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Len_Blavatnik",
-      "confidence": "high",
-      "extraction_note": "Len Blavatnik pledged \u00a375 million to the University of Oxford in 2010 to enable creation of the Blavatnik School of Government.",
-      "extraction_evidence": "In 2010, Blavatnik pledged \u00a375 million to the University of Oxford, enabling the creation of the Blavatnik School of Government",
-      "regen_query": "\"Len Blavatnik\" pledges OR commits OR announces",
-      "event_id": "len_blavatnik_pledge_2010_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-c2620f2fab593204",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "no_pledge",
       "year": 2023,
       "date": null,
@@ -2340,12 +2321,6 @@
     {
       "publisher": "globalwitness.org",
       "url": "https://globalwitness.org/en/campaigns/oil-gas-and-mining/setting-the-record-straight/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-c2620f2fab593204"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Len_Blavatnik",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c2620f2fab593204"
     },

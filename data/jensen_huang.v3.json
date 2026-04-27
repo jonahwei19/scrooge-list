@@ -617,25 +617,6 @@
       "retrieved_at": "2026-04-23"
     },
     {
-      "event_role": "announcement",
-      "year": 2025,
-      "date": "2025-12-01",
-      "date_precision": "day",
-      "donor_entity": "Jensen Huang",
-      "recipient": "San Francisco Opera",
-      "amount_usd": 5000000,
-      "source_type": "news_article",
-      "source_url": "https://dnyuz.com/2025/12/01/san-francisco-opera-has-a-hit-with-huang-ruos-spectacular-monkey-king/",
-      "confidence": "high",
-      "extraction_note": "Jensen Huang and his wife announced a $5 million gift to San Francisco Opera to help fund the production of the 'Monkey King.'",
-      "extraction_evidence": "Jensen Huang, and his wife, Lori Huang, announced a $5-million gift to San Francisco Opera",
-      "regen_query": "\"Jensen Huang\" \"San Francisco Opera\" \"Monkey King\" $5 million 2025",
-      "event_id": "jensen_huang_announcement_2025_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-1fbba143ceeff3ce",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "pledge",
       "year": null,
       "date": "2025-11-20",
@@ -1166,12 +1147,6 @@
     {
       "publisher": "billionairenetworth.com",
       "url": "https://billionairenetworth.com/billionaires/jensen-huang",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-1fbba143ceeff3ce"
-    },
-    {
-      "publisher": "dnyuz.com",
-      "url": "https://dnyuz.com/2025/12/01/san-francisco-opera-has-a-hit-with-huang-ruos-spectacular-monkey-king/",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce"
     },

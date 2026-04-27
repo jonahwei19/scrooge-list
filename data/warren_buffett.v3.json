@@ -839,25 +839,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "private_investment",
-      "year": 2025,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Warren Buffett",
-      "recipient": "data-centre venture",
-      "amount_usd": 10000000000,
-      "source_type": "news_article",
-      "source_url": "https://technewsjunkies.com/dossier/warren-buffett/",
-      "confidence": "high",
-      "extraction_note": "Warren Buffett commits $10 billion to a data-centre venture in 2025.",
-      "extraction_evidence": "2025 \u2014 Commits $10 billion to a data-centre venture",
-      "regen_query": "\"Warren Buffett\" pledges OR commits OR announces",
-      "event_id": "warren_buffett_private_investment_2025_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-69d8f07a859faae6",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "direct_gift",
       "year": 2024,
       "date": null,
@@ -2038,12 +2019,6 @@
     {
       "publisher": "techcrunch.com",
       "url": "https://techcrunch.com/2026/03/15/the-billionaires-made-a-promise-now-some-want-out/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-69d8f07a859faae6"
-    },
-    {
-      "publisher": "technewsjunkies.com",
-      "url": "https://technewsjunkies.com/dossier/warren-buffett/",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6"
     },

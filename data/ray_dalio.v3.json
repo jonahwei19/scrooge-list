@@ -467,25 +467,6 @@
     },
     {
       "event_role": "direct_gift",
-      "year": 2025,
-      "date": "2025-12-17",
-      "date_precision": "day",
-      "donor_entity": "Ray Dalio",
-      "recipient": "Trump Accounts",
-      "amount_usd": 75000000,
-      "source_type": "news_article",
-      "source_url": "https://dnyuz.com/2025/12/17/ray-dalio-donates-75-million-to-trump-accounts-as-scott-bessent-leads-50-state-challenge-to-invest-in-americas-kids/",
-      "confidence": "high",
-      "extraction_note": "Ray Dalio and his family committed $75 million to Trump Accounts to help put children on a path toward financial independence.",
-      "extraction_evidence": "The Dalios' $75 million commitment",
-      "regen_query": "\"Ray Dalio\" donates million",
-      "event_id": "ray_dalio_direct_gift_2025_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-cacb90a665509486",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -1509,12 +1490,6 @@
     {
       "publisher": "apnews.com",
       "url": "https://apnews.com/article/trump-accounts-ray-dalio-086e4ec76806711d88c6499961c37e71",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-cacb90a665509486"
-    },
-    {
-      "publisher": "dnyuz.com",
-      "url": "https://dnyuz.com/2025/12/17/ray-dalio-donates-75-million-to-trump-accounts-as-scott-bessent-leads-50-state-challenge-to-invest-in-americas-kids/",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486"
     },

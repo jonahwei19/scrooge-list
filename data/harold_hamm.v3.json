@@ -379,25 +379,6 @@
     },
     {
       "event_role": "direct_gift",
-      "year": 2021,
-      "date": "2021-12",
-      "date_precision": "month",
-      "donor_entity": "Harold Hamm Foundation",
-      "recipient": "Oklahoma State University",
-      "amount_usd": 25000000,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Harold_Hamm",
-      "confidence": "high",
-      "extraction_note": "Harold Hamm Foundation donated $25 million to Oklahoma State University in December 2021 to establish the Hamm Institute for American Energy.",
-      "extraction_evidence": "Harold Hamm Foundation and Continental Resources donated a combined $50 million to Oklahoma State University, with $25 million contributed by each entity.",
-      "regen_query": "\"Harold Hamm\" assets contributed \"The Harold Hamm Foundation\"",
-      "event_id": "harold_hamm_direct_gift_2021_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -1178,12 +1159,6 @@
     {
       "publisher": "governorswindenergycoalition.org",
       "url": "https://governorswindenergycoalition.org/in-oklahoma-a-war-over-wind-power/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5c8469de1ebb3f89"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Harold_Hamm",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89"
     },

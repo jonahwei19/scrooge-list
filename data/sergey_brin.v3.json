@@ -600,25 +600,6 @@
     },
     {
       "event_role": "political",
-      "year": 2026,
-      "date": "2026-01-29",
-      "date_precision": "day",
-      "donor_entity": "Sergey Brin",
-      "recipient": "unspecified",
-      "amount_usd": 20000000,
-      "source_type": "news_article",
-      "source_url": "https://dnyuz.com/2026/01/29/google-co-founder-seeds-billionaire-political-effort-amid-wealth-tax-debate/",
-      "confidence": "high",
-      "extraction_note": "Sergey Brin is donating $20 million to a new California political drive.",
-      "extraction_evidence": "Sergey Brin, a Google co-founder and one of the wealthiest people in the world, is donating $20 million to a new California political drive",
-      "regen_query": "\"Sergey Brin\" California housing ballot measure 2026 \"wealth tax\" political spending",
-      "event_id": "sergey_brin_political_2026_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5ea2c81aa97b17ff",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "political",
       "year": 2012,
       "date": null,
       "date_precision": "year",
@@ -689,25 +670,6 @@
       "extraction_evidence": "Sergey Brin's recent gift of Alphabet stock worth almost $700 million went to his nonprofit called Catalyst4",
       "regen_query": "\"Sergey Brin\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
       "event_id": "sergey_brin_transfer_in_x_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5ea2c81aa97b17ff",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "direct_gift",
-      "year": 2025,
-      "date": null,
-      "date_precision": "month",
-      "donor_entity": "Sergey Brin",
-      "recipient": "Catalyst4",
-      "amount_usd": 1100000000,
-      "source_type": "other",
-      "source_url": "https://www.caproasia.com/2026/04/26/billionaire-google-alphabet-co-founder-sergey-brin-age-52-with-270-billion-fortune-family-office-bayshore-global-management-integrates-200-million-brain-technology-venture-capital-firm-nexus/",
-      "confidence": "high",
-      "extraction_note": "Sergey Brin donated $1.1 billion in Alphabet shares to charities, with the majority going to his non-profit Catalyst4.",
-      "extraction_evidence": "In 2025 December, Sergey Brin donated $1.1 billion Alphabet shares to charities with majority of the donation to his non-profit Catalyst4",
-      "regen_query": "\"Sergey Brin\" donates million",
-      "event_id": "sergey_brin_direct_gift_2025_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5ea2c81aa97b17ff",
       "regen_extractor_model": "claude-haiku-4-5"
@@ -1495,25 +1457,6 @@
     },
     {
       "event_role": "pledge",
-      "year": 2023,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Sergey Brin",
-      "recipient": "Parkinson's gene-therapy trials",
-      "amount_usd": 250000000,
-      "source_type": "other",
-      "source_url": "https://technewsjunkies.com/dossier/sergey-brin/",
-      "confidence": "high",
-      "extraction_note": "Sergey Brin committed $250 million over five years to Parkinson's gene-therapy trials in 2023.",
-      "extraction_evidence": "He commits $250 million over five years to Parkinson's gene-therapy trials",
-      "regen_query": "\"Sergey Brin\" pledges OR commits OR announces",
-      "event_id": "sergey_brin_pledge_2023_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5ea2c81aa97b17ff",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "pledge",
       "year": 2009,
       "date": null,
       "date_precision": "year",
@@ -2094,12 +2037,6 @@
       "regen_run_id": "sha256-5ea2c81aa97b17ff"
     },
     {
-      "publisher": "dnyuz.com",
-      "url": "https://dnyuz.com/2026/01/29/google-co-founder-seeds-billionaire-political-effort-amid-wealth-tax-debate/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5ea2c81aa97b17ff"
-    },
-    {
       "publisher": "en.wikipedia.org",
       "url": "https://en.wikipedia.org/wiki/Sergey_Brin",
       "provenance": "regen_v3",
@@ -2190,12 +2127,6 @@
       "regen_run_id": "sha256-5ea2c81aa97b17ff"
     },
     {
-      "publisher": "technewsjunkies.com",
-      "url": "https://technewsjunkies.com/dossier/sergey-brin/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5ea2c81aa97b17ff"
-    },
-    {
       "publisher": "theconversation.com",
       "url": "https://theconversation.com/gifts-from-top-50-us-philanthropists-jumped-to-22-4b-in-2025-mike-bloomberg-bill-gates-and-the-estate-of-paul-allen-lead-a-list-of-the-biggest-givers-276825",
       "provenance": "regen_v3",
@@ -2234,12 +2165,6 @@
     {
       "publisher": "businessinsider.com",
       "url": "https://www.businessinsider.com/sergey-brin-alphabet-stock-donation-nonprofit-foundations-2025-5",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5ea2c81aa97b17ff"
-    },
-    {
-      "publisher": "caproasia.com",
-      "url": "https://www.caproasia.com/2026/04/26/billionaire-google-alphabet-co-founder-sergey-brin-age-52-with-270-billion-fortune-family-office-bayshore-global-management-integrates-200-million-brain-technology-venture-capital-firm-nexus/",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5ea2c81aa97b17ff"
     },

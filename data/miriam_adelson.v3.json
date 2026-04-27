@@ -583,25 +583,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "grant_out",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Adelson Family Foundation",
-      "recipient": "Birthright Israel",
-      "amount_usd": 500000000,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Miriam_Adelson",
-      "confidence": "high",
-      "extraction_note": "Adelson Family Foundation contributed nearly $500 million to Birthright Israel between 1999 and 2022.",
-      "extraction_evidence": "Through the Adelson Family Foundation, Miriam Adelson and her late husband Sheldon contributed nearly $500 million to Birthright Israel",
-      "regen_query": "\"Miriam Adelson\" assets contributed \"Adelson Family Foundation\"",
-      "event_id": "miriam_adelson_grant_out_x_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-6c87af8f2c345b34",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "direct_gift",
       "year": 2011,
       "date": "2011-12-05",
@@ -1540,12 +1521,6 @@
     {
       "publisher": "forward.com",
       "url": "https://forward.com/fast-forward/665095/miriam-adelson-donates-100m-to-trump-campaign-making-good-on-reported-promise/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-6c87af8f2c345b34"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Miriam_Adelson",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-6c87af8f2c345b34"
     },

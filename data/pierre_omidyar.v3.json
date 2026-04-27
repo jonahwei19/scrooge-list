@@ -983,25 +983,6 @@
     },
     {
       "event_role": "grant_out",
-      "year": 2004,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Omidyar Network",
-      "recipient": "unspecified",
-      "amount_usd": 1940000000,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Omidyar_Network",
-      "confidence": "high",
-      "extraction_note": "Omidyar Network has committed over $1.94 billion since its inception in 2004 across economic inclusion, governance, and digital infrastructure sectors.",
-      "extraction_evidence": "this model has committed over $1.94 billion across sectors like economic inclusion, governance, and digital infrastructure",
-      "regen_query": "\"Omidyar Network\" cumulative \"$1.94 billion\" OR \"$2 billion\" awarded 2004-2025",
-      "event_id": "pierre_omidyar_grant_out_2004_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-efcc998f56b58cf8",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
-      "event_role": "grant_out",
       "year": 2017,
       "date": null,
       "date_precision": "year",
@@ -2066,18 +2047,6 @@
     {
       "publisher": "grantexec.com",
       "url": "https://grantexec.com/foundations/201173866",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-efcc998f56b58cf8"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Omidyar_Network",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-efcc998f56b58cf8"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/omidyar_tufts_microfinance_fund",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8"
     },

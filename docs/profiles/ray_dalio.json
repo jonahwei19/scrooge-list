@@ -494,26 +494,6 @@
     },
     {
       "event_role": "direct_gift",
-      "year": 2025,
-      "date": "2025-12-17",
-      "date_precision": "day",
-      "donor_entity": "Ray Dalio",
-      "recipient": "Trump Accounts",
-      "amount_usd": 75000000,
-      "source_type": "news_article",
-      "source_url": "https://dnyuz.com/2025/12/17/ray-dalio-donates-75-million-to-trump-accounts-as-scott-bessent-leads-50-state-challenge-to-invest-in-americas-kids/",
-      "confidence": "high",
-      "extraction_note": "Ray Dalio and his family committed $75 million to Trump Accounts to help put children on a path toward financial independence.",
-      "extraction_evidence": "The Dalios' $75 million commitment",
-      "regen_query": "\"Ray Dalio\" donates million",
-      "event_id": "ray_dalio_direct_gift_2025_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-cacb90a665509486",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "direct_gift"
-    },
-    {
-      "event_role": "direct_gift",
       "year": null,
       "date": null,
       "date_precision": null,
@@ -1414,8 +1394,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": 9216500000,
     "ratio_observable_to_5pct_tenure": 0.0595,
-    "observable_from_events_usd": 8430323608,
-    "observable_drift_pct": 13.448,
+    "observable_from_events_usd": 8355323608,
+    "observable_drift_pct": 13.319,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {
@@ -1581,12 +1561,6 @@
     {
       "publisher": "apnews.com",
       "url": "https://apnews.com/article/trump-accounts-ray-dalio-086e4ec76806711d88c6499961c37e71",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-cacb90a665509486"
-    },
-    {
-      "publisher": "dnyuz.com",
-      "url": "https://dnyuz.com/2025/12/17/ray-dalio-donates-75-million-to-trump-accounts-as-scott-bessent-leads-50-state-challenge-to-invest-in-americas-kids/",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486"
     },

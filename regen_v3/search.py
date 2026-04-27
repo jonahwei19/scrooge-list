@@ -86,6 +86,13 @@ BLOCKLIST_DOMAINS: frozenset[str] = frozenset({
     "insidephilanthropy.com",
     "nationaltoday.com",
     "heartlandforward.org",
+    # Audit-flagged 2026-04-26: aggregator / wiki-clone / unverified-news / typosquat
+    "caproasia.com",         # rewrites of other outlets, no editorial verification
+    "grokipedia.com",        # AI-generated wiki clone
+    "dnyuz.com",             # NYT republisher / aggregator
+    "newstral.com",          # German news aggregator scraping other outlets
+    "technewsjunkies.com",   # low-editorial tech aggregator
+    "elonmskgrantdonations.org",  # TYPOSQUAT (missing 'u' in 'musk') — fake domain
 })
 
 # Re-exported from `_fabricated` so search.py and merge.py share one

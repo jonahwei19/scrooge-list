@@ -324,26 +324,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "transfer_in",
-      "year": 2019,
-      "date": "2019-08-23",
-      "date_precision": "day",
-      "donor_entity": "David H. Koch Estate",
-      "recipient": "Julia Koch",
-      "amount_usd": null,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Julia_Koch",
-      "confidence": "high",
-      "extraction_note": "Julia Koch inherited approximately 42% ownership stake in Koch Industries upon her husband David H. Koch's death on August 23, 2019.",
-      "extraction_evidence": "Julia Koch and their three sons inherited his approximately 42% ownership stake in Koch Industries",
-      "regen_query": "\"Julia Koch\" \"Koch Industries\" 42% stake inheritance 2019 estate plan structure dynasty trust",
-      "event_id": "julia_koch_transfer_in_2019_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "transfer_in"
-    },
-    {
       "event_role": "political",
       "year": 2018,
       "date": "2018-04-19",
@@ -1115,12 +1095,6 @@
     {
       "publisher": "floridamedspace.com",
       "url": "https://floridamedspace.com/julia-koch-gives-75-million-for-new-west-palm-beach-medical-center/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-2c25736a3e0d953b"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Julia_Koch",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b"
     },

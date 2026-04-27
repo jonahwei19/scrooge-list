@@ -483,25 +483,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "grant_out",
-      "year": 2010,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Michael Bloomberg",
-      "recipient": "unspecified",
-      "amount_usd": 279000000,
-      "source_type": "other",
-      "source_url": "https://grokipedia.com/page/Bloomberg_Philanthropies",
-      "confidence": "high",
-      "extraction_note": "By 2010, Bloomberg Philanthropies' annual giving had reached $279 million across arts, urban innovation, civic institutions, environment, education, and government initiatives.",
-      "extraction_evidence": "By 2010, annual giving had reached $279 million, laying groundwork for broader initiatives",
-      "regen_query": "\"Bloomberg L.P.\" corporate philanthropy OR \"corporate giving\" profits \"Bloomberg Philanthropies\" annual",
-      "event_id": "michael_bloomberg_grant_out_2010_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-fb3ba2c2fb28e217",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "direct_gift",
       "year": null,
       "date": null,
@@ -1916,18 +1897,6 @@
     {
       "publisher": "gizmodo.com",
       "url": "https://gizmodo.com/michael-bloomberg-500-million-shut-down-coal-plants-1850861082",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-fb3ba2c2fb28e217"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/Bloomberg_Philanthropies",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-fb3ba2c2fb28e217"
-    },
-    {
-      "publisher": "grokipedia.com",
-      "url": "https://grokipedia.com/page/bloomberg_center_for_cities_at_harvard_university",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fb3ba2c2fb28e217"
     },
