@@ -416,9 +416,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "low",
       "dedup_note": "Amount unknown \u2014 excluded from observable rollup.",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/980391928",
-      "recipient_verification_note": "recipient Tel Aviv University (EIN 980391928) filed FY2023 990; amount not provided in event so no dollar match attempted",
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Tel Aviv University (EIN 980391928) filed FY2023 990; amount not provi)",
       "event_role_canonical": "direct_gift"
     },
     {

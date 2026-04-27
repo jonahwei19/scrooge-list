@@ -1048,9 +1048,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-efcc998f56b58cf8",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/465051755",
-      "recipient_verification_note": "recipient Democracy Fund Voice Inc (EIN 465051755) filed FY2014 990; amount not provided in event so no dollar match attempted"
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Democracy Fund Voice Inc (EIN 465051755) filed FY2014 990; amount not )"
     },
     {
       "event_role": "grant_out",

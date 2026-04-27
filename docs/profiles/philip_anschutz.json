@@ -987,9 +987,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c51b78a5faf3b082",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/840442429",
-      "recipient_verification_note": "recipient Colorado Christian University (EIN 840442429) filed FY2017 990; amount not provided in event so no dollar match attempted",
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Colorado Christian University (EIN 840442429) filed FY2017 990; amount)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1010,9 +1010,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c51b78a5faf3b082",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/541660459",
-      "recipient_verification_note": "recipient Alliance Defending Freedom (EIN 541660459) filed FY2016 990; amount not provided in event so no dollar match attempted",
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Alliance Defending Freedom (EIN 541660459) filed FY2016 990; amount no)",
       "event_role_canonical": "grant_out"
     },
     {

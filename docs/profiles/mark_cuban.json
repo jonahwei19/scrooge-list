@@ -416,9 +416,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/43091431",
-      "recipient_verification_note": "recipient Electronic Frontier Foundation Inc (EIN 43091431) filed FY2012 990; amount not provided in event so no dollar match attempted",
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Electronic Frontier Foundation Inc (EIN 43091431) filed FY2012 990; am)",
       "event_role_canonical": "direct_gift"
     },
     {

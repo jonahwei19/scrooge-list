@@ -509,9 +509,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237089143",
-      "recipient_verification_note": "recipient Morgan State University Foundation Incorporated (EIN 237089143) filed FY2020 990; amount not provided in event so no dollar match attempted",
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Morgan State University Foundation Incorporated (EIN 237089143) filed )",
       "event_role_canonical": "direct_gift"
     },
     {

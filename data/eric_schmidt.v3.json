@@ -270,9 +270,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "low",
       "dedup_note": "Likely inside SFF or EWSFSI grant totals. Flag pending recipient parsing.",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/210634501",
-      "recipient_verification_note": "recipient Princeton University (EIN 210634501) filed FY2019 990; amount not provided in event so no dollar match attempted"
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Princeton University (EIN 210634501) filed FY2019 990; amount not prov)"
     },
     {
       "event_id": "schmidt_chronicle_2021_contrib",

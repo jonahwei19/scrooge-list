@@ -1317,9 +1317,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/476032365",
-      "recipient_verification_note": "recipient The Susan Thompson Buffett Foundation (EIN 476032365) filed FY2023 990; amount not provided in event so no dollar match attempted"
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient The Susan Thompson Buffett Foundation (EIN 476032365) filed FY2023 990)"
     },
     {
       "event_role": "direct_gift",

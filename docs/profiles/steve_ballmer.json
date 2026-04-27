@@ -1080,9 +1080,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/474325738",
-      "recipient_verification_note": "recipient Golden State Opportunity Foundation (EIN 474325738) filed FY2023 990; amount not provided in event so no dollar match attempted",
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Golden State Opportunity Foundation (EIN 474325738) filed FY2023 990; )",
       "event_role_canonical": "direct_gift"
     },
     {

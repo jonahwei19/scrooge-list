@@ -823,9 +823,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/411420915",
-      "recipient_verification_note": "recipient Mounds Park Academy (EIN 411420915) filed FY2023 990; amount not provided in event so no dollar match attempted"
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Mounds Park Academy (EIN 411420915) filed FY2023 990; amount not provi)"
     },
     {
       "event_role": "grant_out",

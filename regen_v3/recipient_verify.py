@@ -255,9 +255,13 @@ def _verify_event(event: dict, *, refresh: bool = False) -> dict:
     org_name = snap.get("org_name", "")
 
     if amount <= 0:
-        return {"verified": "true", "filing_url": filing_url,
-                "note": (f"recipient {org_name} (EIN {ein9}) filed FY{fy} 990; "
-                         f"amount not provided in event so no dollar match attempted")}
+        # Without an amount we can't actually verify the gift — recipient
+        # filed a 990, but that proves only that the org exists, not that
+        # the gift landed. Mark unverifiable, NOT "true".
+        return {"verified": "unverifiable", "filing_url": filing_url,
+                "note": (f"recipient {org_name} (EIN {ein9}) filed FY{fy} 990, "
+                         f"but event has no amount → cannot dollar-check. "
+                         f"Existence of recipient ≠ existence of gift.")}
     if pool >= amount:
         confidence = "verified" if role in _FOUNDATION_TRANSFER_ROLES else "circumstantial"
         return {"verified": "true", "filing_url": filing_url,

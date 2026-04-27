@@ -618,9 +618,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-18eeecdf0bde04c0",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/201359710",
-      "recipient_verification_note": "recipient Crystal Bridges Museum Of American Art Inc (EIN 201359710) filed FY2021 990; amount not provided in event so no dollar match attempted"
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Crystal Bridges Museum Of American Art Inc (EIN 201359710) filed FY202)"
     },
     {
       "event_role": "direct_gift",

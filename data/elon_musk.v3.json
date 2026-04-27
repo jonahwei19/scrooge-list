@@ -1379,9 +1379,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "unverifiable",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/261544963",
-      "recipient_verification_note": "recipient Khan Academy Inc (EIN 261544963) filed FY2023 990; amount not provided in event so no dollar match attempted"
+      "recipient_verification_note": "demoted: amount missing, cannot dollar-check (was: recipient Khan Academy Inc (EIN 261544963) filed FY2023 990; amount not provided)"
     },
     {
       "event_id": "musk_wfp_2021",

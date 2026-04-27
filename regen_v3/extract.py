@@ -179,8 +179,18 @@ def _build_user_prompt(
         "Extract any concrete giving events the SUBJECT made that the snippet "
         "describes. Use the role_hint as a prior, but override it if the snippet "
         "clearly indicates a different canonical role. Echo the URL into "
-        "source_url verbatim. Return events: [] if the snippet does not describe "
-        "a concrete giving action by the subject."
+        "source_url verbatim.\n\n"
+        "YEAR IS REQUIRED. Infer it aggressively from any of: "
+        "(a) explicit dates in the snippet/title, (b) the URL slug "
+        "(e.g. '2023-01-15-...' or '/2024/03/...'), (c) phrasing like "
+        "'last year' or 'in 2022' or 'this past June'. Only return year=null "
+        "if NO temporal signal exists anywhere in title+url+snippet. A wrong "
+        "year is worse than null, but null without trying is worse than both.\n\n"
+        "AMOUNT: only emit a number if the snippet explicitly states one for "
+        "this single transaction. NEVER emit cumulative / lifetime / 'total since "
+        "X' figures as a single event. NEVER multiply or aggregate amounts.\n\n"
+        "Return events: [] if the snippet does not describe a concrete giving "
+        "action by the subject."
     )
 
 
