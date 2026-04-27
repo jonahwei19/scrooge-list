@@ -326,14 +326,22 @@ function render(rec) {
   document.getElementById('navName').textContent = (p.name_display || '').toUpperCase();
   document.title = (p.name_display || 'Profile') + ' — The Scrooge List';
 
-  const observable = rollup.observable_giving_usd || 0;
+  // Headline observable: prefer the rollup judgment, but if it's zero AND we
+  // have a non-zero strict event sum, use the event sum (the graph below pulls
+  // from the same field — they should agree). This prevents the contradiction
+  // where the summary says "$0 given" while the graph plots $2B in bars.
+  const rollupObs = rollup.observable_giving_usd || 0;
+  const fromEventsObs = rollup.observable_from_events_usd || 0;
+  const observable = (rollupObs > 0) ? rollupObs : fromEventsObs;
   // Prefer the aggregator-derived 5%-per-year benchmark (canonical for v3 ranking);
   // fall back to the agent-written legacy field for any record that missed the refresh.
   const expected = rollup.expected_5pct_tenure_usd
     || rollup.expected_giving_usd_10pct_liquid_weighted_by_tenure
     || rollup.expected_giving_usd
     || 0;
-  const shortfall = (rollup.shortfall_5pct_usd != null)
+  // Recompute shortfall when we substituted the event sum, so the headline
+  // shortfall agrees with the displayed observable.
+  const shortfall = (rollupObs > 0 && rollup.shortfall_5pct_usd != null)
     ? rollup.shortfall_5pct_usd
     : (expected ? Math.max(0, expected - observable) : null);
   const ratio = rollup.ratio_observable_to_5pct_tenure
@@ -410,16 +418,25 @@ function render(rec) {
   }
 
   // Reconciliation: when the agent's rollup diverges materially from the
-  // event-sum, surface it. Transparency over hiding.
+  // strict event sum, surface it. Transparency over hiding.
+  // Special case: when rollup says 0 but events have real dollars, we already
+  // substituted the event sum into `observable` above; surface that here too.
   const fromEvents = rollup.observable_from_events_usd;
-  const drift = rollup.observable_drift_pct;
-  if (fromEvents && observable && drift != null && drift >= 0.20) {
-    const direction = fromEvents > observable ? 'higher' : 'lower';
+  if (rollupObs === 0 && fromEvents > 0) {
     html += `<div class="callout">
-      <strong>Why two numbers don't match</strong>
-      <p>The headline documented giving figure (<strong>${fmtUsd(observable)}</strong>) is what we publish as theirs personally. Adding up only the individual grants and direct gifts listed below totals <strong>${fmtUsd(fromEvents)}</strong> — ${direction} by ${(drift*100).toFixed(0)}%.</p>
-      <p style="font-style:italic;color:var(--ink-fade);font-size:.9rem">A gap usually means lifetime totals cited in sources but not broken down into discrete events (headline &gt; event sum), or family-foundation portions we excluded from their personal share (headline &lt; event sum). The event list below is the trail you can audit.</p>
+      <strong>Why the headline = the event sum</strong>
+      <p>The agent's rollup judgment recorded <strong>$0</strong> as the personal observable figure (typically because the giving routes through DAFs or other opaque vehicles where the agent can't attribute disbursement). The strict sum of cited grants and direct gifts below totals <strong>${fmtUsd(fromEvents)}</strong> — we use the event sum as the headline so the displayed number agrees with the timeline graph.</p>
     </div>`;
+  } else {
+    const drift = rollup.observable_drift_pct;
+    if (fromEvents && observable && drift != null && drift >= 0.20) {
+      const direction = fromEvents > observable ? 'higher' : 'lower';
+      html += `<div class="callout">
+        <strong>Why two numbers don't match</strong>
+        <p>The headline documented giving figure (<strong>${fmtUsd(observable)}</strong>) is what we publish as theirs personally. Adding up only the individual grants and direct gifts listed below totals <strong>${fmtUsd(fromEvents)}</strong> — ${direction} by ${(drift*100).toFixed(0)}%.</p>
+        <p style="font-style:italic;color:var(--ink-fade);font-size:.9rem">A gap usually means lifetime totals cited in sources but not broken down into discrete events (headline &gt; event sum), or family-foundation portions we excluded from their personal share (headline &lt; event sum). The event list below is the trail you can audit.</p>
+      </div>`;
+    }
   }
 
   if (rollup.tier_reasoning || rollup.tier_published_caveat) {
