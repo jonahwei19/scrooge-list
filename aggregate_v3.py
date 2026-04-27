@@ -407,15 +407,33 @@ def annotate_with_canonical(rec: dict) -> dict:
             rollup["ratio_observable_to_5pct_tenure"] = None
 
     # Reconciliation figures — see extract_summary() for rationale.
+    # Year=None events are EXCLUDED (can't be deduped — risk of 2-3× counting).
     event_sum = 0.0
+    unyear_excluded = 0.0
     for ev in (rec.get("cited_events") or []):
         if not isinstance(ev, dict):
             continue
         if canonical_role(ev.get("event_role")) in OBSERVABLE_ROLES:
             amt = ev.get("amount_usd")
             if isinstance(amt, (int, float)) and amt > 0:
-                event_sum += amt
+                if ev.get("year") is None:
+                    unyear_excluded += amt
+                else:
+                    event_sum += amt
     rollup["observable_from_events_usd"] = int(event_sum) if event_sum > 0 else 0
+    rollup["unyear_dollars_excluded_usd"] = int(unyear_excluded) if unyear_excluded > 0 else 0
+
+    # Sanity check: if observable_from_events exceeds the subject's net worth,
+    # something is double-counted (a real person can't give more than they have).
+    # Stamp a flag so it's visible on the public profile and we can audit.
+    nw_b = rec.get("person", {}).get("net_worth_best_usd_b")
+    if nw_b and event_sum > float(nw_b) * 1e9:
+        rollup["sanity_flag_observable_exceeds_networth"] = (
+            f"observable_from_events_usd ${event_sum/1e9:.1f}B > "
+            f"net_worth ${float(nw_b):.1f}B — possible double-count from "
+            f"cumulative-figure events not yet caught by extract.py guards."
+        )
+
     if obs and event_sum > 0:
         rollup["observable_drift_pct"] = round(abs(event_sum - obs) / obs, 3)
         rollup["observable_reconciliation_note"] = (

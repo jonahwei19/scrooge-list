@@ -1057,7 +1057,8 @@
     "tier_published_caveat": "Hastings is the canonical 'DAF-heavy Giving Pledger' \u2014 publicly committed, structurally liquid, and has moved large dollar amounts out of his personal balance sheet into a charitable vehicle. Readers should know that $1.7B has been committed but only ~$200M has been verifiably delivered to end recipients as of 2026-04. The DAF may be disbursing at a healthy rate; we simply can't see it. This is a transparency concern, not (necessarily) a generosity concern.",
     "expected_5pct_tenure_usd": 2842000000,
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
-    "observable_from_events_usd": 4519750000
+    "observable_from_events_usd": 2142250000,
+    "unyear_dollars_excluded_usd": 2377500000
   },
   "scrooge_legacy_score_internal_only": {
     "value_inflows_method": 22.5,
