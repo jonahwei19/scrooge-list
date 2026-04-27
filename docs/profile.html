@@ -130,11 +130,14 @@ a:hover{background:rgba(139,46,31,.08)}
 .todo-list li::marker{color:var(--gilt)}
 
 .cibar{margin:18px 0 48px;font-family:var(--display);position:relative}
-.cibar-legend{display:flex;gap:20px;flex-wrap:wrap;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-fade);margin-bottom:10px;font-variation-settings:"opsz" 9,"SOFT" 50}
-.cibar-legend .sw{display:inline-block;width:14px;height:12px;vertical-align:middle;margin-right:6px}
-.cibar-legend .sw.obs{background:var(--rust)}
-.cibar-legend .sw.hidden{background:repeating-linear-gradient(45deg,rgba(139,46,31,.2) 0 4px,transparent 4px 8px);border:1px dashed var(--rust)}
-.cibar-legend .sw.cap{border:2px dashed var(--gilt);background:transparent}
+.cibar-legend{display:flex;gap:24px;flex-wrap:wrap;font-size:.74rem;letter-spacing:.04em;text-transform:none;color:var(--ink-soft);margin-bottom:14px;font-variation-settings:"opsz" 14,"SOFT" 50;font-style:italic;align-items:center}
+.cibar-legend .lg{display:inline-flex;align-items:center;gap:8px}
+.cibar-legend .sw{display:inline-block;flex:none}
+.cibar-legend .sw.obs{width:22px;height:14px;background:var(--rust);border:1px solid var(--paper-shadow)}
+.cibar-legend .sw.hidden{width:22px;height:14px;background:repeating-linear-gradient(45deg,rgba(139,46,31,.22) 0 4px,transparent 4px 8px);border:1px solid var(--paper-shadow)}
+[data-theme="dark"] .cibar-legend .sw.hidden{background:repeating-linear-gradient(45deg,rgba(209,74,50,.32) 0 4px,transparent 4px 8px)}
+.cibar-legend .sw.cap{width:6px;height:20px;background:transparent;border-left:2px dashed var(--gilt);border-right:none;border-top:none;border-bottom:none}
+.cibar-legend strong{font-style:normal;color:var(--ink);font-weight:600}
 .cibar-track{position:relative;height:34px;background:var(--paper-mid);border:1px solid var(--paper-shadow);overflow:hidden}
 .cibar-track .obs{position:absolute;left:0;top:0;bottom:0;min-width:5px;background:var(--rust);transition:width .6s ease}
 .cibar-track .hidden{position:absolute;left:0;top:0;bottom:0;background:repeating-linear-gradient(45deg,rgba(139,46,31,.18) 0 4px,transparent 4px 8px);transition:width .6s ease}
@@ -387,9 +390,9 @@ function render(rec) {
     };
     html += `<div class="cibar">
       <div class="cibar-legend">
-        <span><span class="sw obs"></span>Documented giving</span>
-        <span><span class="sw hidden"></span>Most they could be giving in secret</span>
-        <span><span class="sw cap"></span>What they could reasonably have given</span>
+        <span class="lg"><span class="sw obs"></span>Solid bar = <strong>what they actually gave</strong></span>
+        <span class="lg"><span class="sw hidden"></span>Hatched extension = <strong>what they could plausibly be giving in secret</strong></span>
+        <span class="lg"><span class="sw cap"></span>Dashed line = <strong>the benchmark</strong> (what they could reasonably have given)</span>
       </div>
       <div class="cibar-track" id="cibarTrack" data-payload='${esc(JSON.stringify(cibarPayload))}'>
         <div class="hidden" data-zone="hidden" tabindex="0" style="width:${totalWidth}%"></div>
