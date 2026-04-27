@@ -15,7 +15,11 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=fallback" rel="stylesheet">
+<style>
+@font-face{font-family:'FrauncesFallback';src:local('Georgia');size-adjust:97%;ascent-override:96%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:'NewsreaderFallback';src:local('Georgia');size-adjust:103%;ascent-override:92%;descent-override:24%;line-gap-override:0%}
+</style>
 <script>
 (function(){try{var t=localStorage.getItem('scrooge-theme');if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){}})();
 </script>
@@ -27,8 +31,8 @@
   --gilt:#8C6B2D;--sepia:#735A3E;--rule:#22180E;
   --green:#4a6e3a;
   --row-alt:rgba(216,201,164,.12);--row-hover:rgba(139,46,31,.06);
-  --display:"Fraunces",ui-serif,"Times New Roman",Georgia,serif;
-  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  --display:"Fraunces","FrauncesFallback",Georgia,"Times New Roman",serif;
+  --body:"Newsreader","NewsreaderFallback",Georgia,"Times New Roman",serif;
 }
 [data-theme="dark"]{
   --paper:#1F1409;--paper-mid:#29180D;--paper-deep:#332113;--paper-shadow:#5A452B;
@@ -53,6 +57,8 @@ body.saint-view{
 }
 body.saint-view .grain{opacity:.13;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.32 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+h2,h3,.section-head,[id^="tier-"],[id$="-section"]{scroll-margin-top:32px}
 html,body{
   background:var(--paper);color:var(--ink);
   font-family:var(--body);font-optical-sizing:auto;font-size:17px;line-height:1.6;
@@ -161,10 +167,16 @@ body{
 .stat-value.tier-a{color:var(--rust)}
 .stat-label{font-family:var(--display);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-fade);margin-top:10px}
 
-.section-head{display:flex;align-items:baseline;gap:18px;margin:0 0 10px}
+.section-head{display:flex;align-items:baseline;gap:18px;margin:56px 0 12px;scroll-margin-top:28px}
 .section-head::after{content:"";flex:1;height:1px;background:var(--rule);opacity:.35;transform:translateY(-6px)}
 .section-head h2{font-family:var(--display);font-weight:500;font-variation-settings:"opsz" 72,"SOFT" 55;font-size:clamp(1.5rem,2.3vw,2rem);letter-spacing:-.008em;color:var(--ink);white-space:nowrap;line-height:1}
 .section-sub{font-family:var(--body);color:var(--ink-fade);margin:0 0 26px;font-size:.98rem;max-width:720px;line-height:1.55}
+.section-sub a{color:var(--rust);text-decoration:none;border-bottom:1px solid rgba(139,46,31,.4)}
+.section-sub a:hover{background:rgba(139,46,31,.08);border-bottom-color:var(--rust)}
+[data-theme="dark"] .section-sub a{border-bottom-color:rgba(229,90,64,.5)}
+.how-to-read p a,.how-to-read ol a{color:var(--rust);text-decoration:none;border-bottom:1px solid rgba(139,46,31,.4)}
+.how-to-read p a:hover,.how-to-read ol a:hover{background:rgba(139,46,31,.08)}
+[data-theme="dark"] .how-to-read p a,[data-theme="dark"] .how-to-read ol a{border-bottom-color:rgba(229,90,64,.5)}
 
 .frontispiece-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);margin-bottom:64px}
 .offender{padding:32px 26px;border-right:1px solid var(--paper-shadow);min-height:280px;cursor:pointer;transition:background .2s;text-decoration:none;color:inherit;display:block}
@@ -520,17 +532,17 @@ body.saint-view .section-head h2{color:var(--green)}
   </div>
 
   <div class="saint-hero">
-    <h2>The Saints — billionaires above the benchmark</h2>
-    <p>Same group, inverted frame. These billionaires' documented giving exceeds what they could reasonably have given by now, backed by foundation tax filings or published LLC grant databases. Sorted by total documented giving (largest first). For the Scrooges, flip the toggle above.</p>
+    <h2>The Saints</h2>
+    <p>Same 51 billionaires, opposite end. These ones cleared the benchmark. Sorted by total documented giving, largest first. Toggle above to see the Scrooges.</p>
   </div>
 
   <div class="tiers-scrooge">
     <div class="section-head" id="tier-a-section"><h2>Tier A · Verified low giving</h2></div>
-    <p class="section-sub">Ranked 1, 2, 3 by <strong>total dollars not given</strong> versus what they reasonably could have given (see <a href="methodology.html">methodology</a>). Low documented giving, and no anonymous account that could plausibly close the gap.</p>
+    <p class="section-sub">Ranked by <strong>total dollars not given</strong>. We can't find an anonymous account or private fund that would plausibly close their gap. (<a href="methodology.html">how we sort</a>)</p>
     <div class="frontispiece-grid" id="tierA"></div>
 
     <div class="section-head" id="tier-b-section"><h2>Tier B · Probably low giving</h2></div>
-    <p class="section-sub">Documented giving is low compared to what they reasonably could have given, but at least one anonymous account exists. Sorted by dollars not given.</p>
+    <p class="section-sub">Documented giving is low, but at least one anonymous account exists somewhere in their structure. Sorted by dollars not given.</p>
     <table class="tier-table sortable" id="tierB">
       <thead><tr>
         <th data-sort="name">Name</th>
@@ -543,7 +555,7 @@ body.saint-view .section-head h2{color:var(--green)}
     </table>
 
     <div class="section-head" id="tier-c-section"><h2>Tier C · Claimed but unverified</h2></div>
-    <p class="section-sub">An LLC, anonymous account, or private fund sits between the donor and any disclosed giving — so the numbers below are <em>what they claim</em>, not what we can verify. The "dollars not given" figure is a minimum; the real number could be higher.</p>
+    <p class="section-sub">A private LLC or anonymous account sits between this person and any disclosed giving. The numbers below are what they claim, not what we can prove. The gap shown is a floor; the real number could be larger.</p>
     <table class="tier-table sortable tier-c-table" id="tierC">
       <thead><tr>
         <th data-sort="name">Name</th>
@@ -556,8 +568,8 @@ body.saint-view .section-head h2{color:var(--green)}
     </table>
   </div>
 
-  <div class="section-head"><h2>On Track · For comparison</h2></div>
-  <p class="section-sub">Shown for comparison — these are not Scrooges. Their documented giving meets or beats what they could reasonably have given, verified through foundation tax filings or published LLC grant databases.</p>
+  <div class="section-head" id="ontrack-section"><h2>On Track</h2></div>
+  <p class="section-sub">Not Scrooges. Their documented giving clears the benchmark, verified through foundation tax filings or published LLC grant databases. Shown so you can see where the line is.</p>
   <table class="tier-table sortable" id="tierOnTrack">
     <thead><tr>
       <th data-sort="name">Name</th>

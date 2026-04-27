@@ -7,16 +7,18 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=fallback" rel="stylesheet">
 <script>
 (function(){try{var t=localStorage.getItem('scrooge-theme');if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){}})();
 </script>
 <style>
+@font-face{font-family:'FrauncesFallback';src:local('Georgia');size-adjust:97%;ascent-override:96%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:'NewsreaderFallback';src:local('Georgia');size-adjust:103%;ascent-override:92%;descent-override:24%;line-gap-override:0%}
 :root{
   --paper:#FDFAF2;--paper-mid:#F7F0DC;--paper-deep:#ECDFBE;--paper-shadow:#D8C9A6;
   --ink:#19130B;--ink-soft:#3C2F22;--ink-fade:#6E5E46;--ink-ghost:#9F8E70;
   --rust:#8B2E1F;--rust-dark:#5D1C12;--gilt:#8C6B2D;--sepia:#735A3E;--rule:#22180E;--green:#4a6e3a;
-  --display:"Fraunces",ui-serif,serif;--body:"Newsreader",Georgia,serif;
+  --display:"Fraunces","FrauncesFallback",Georgia,serif;--body:"Newsreader","NewsreaderFallback",Georgia,serif;
 }
 [data-theme="dark"]{
   --paper:#1F1409;--paper-mid:#29180D;--paper-deep:#332113;--paper-shadow:#5A452B;
@@ -24,6 +26,8 @@
   --rust:#E55A40;--rust-dark:#B33A24;--gilt:#DCAA38;--sepia:#A88B5C;--rule:#7A6843;--green:#9FC086;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+h2,h3,.section-head,.year-anchor{scroll-margin-top:32px}
 html,body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.7;font-feature-settings:"onum","liga","kern";-webkit-font-smoothing:antialiased}
 body{
   background:radial-gradient(ellipse 800px 400px at 15% 5%, rgba(139,46,31,.045), transparent 70%),radial-gradient(ellipse 900px 500px at 90% 95%, rgba(140,107,45,.055), transparent 70%),var(--paper);

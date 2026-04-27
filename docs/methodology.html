@@ -11,11 +11,13 @@
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=fallback" rel="stylesheet">
 <script>
 (function(){try{var t=localStorage.getItem('scrooge-theme');if(!t)t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light';document.documentElement.dataset.theme=t;}catch(e){}})();
 </script>
 <style>
+@font-face{font-family:'FrauncesFallback';src:local('Georgia');size-adjust:97%;ascent-override:96%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:'NewsreaderFallback';src:local('Georgia');size-adjust:103%;ascent-override:92%;descent-override:24%;line-gap-override:0%}
 :root{
   --paper:#FDFAF2;
   --paper-mid:#F7F0DC;
@@ -30,8 +32,8 @@
   --gilt:#8C6B2D;
   --sepia:#735A3E;
   --rule:#22180E;
-  --display:"Fraunces",ui-serif,"Times New Roman",Georgia,serif;
-  --body:"Newsreader",Georgia,"Times New Roman",serif;
+  --display:"Fraunces","FrauncesFallback",Georgia,"Times New Roman",serif;
+  --body:"Newsreader","NewsreaderFallback",Georgia,"Times New Roman",serif;
 }
 [data-theme="dark"]{
   --paper:#1F1409;--paper-mid:#29180D;--paper-deep:#332113;--paper-shadow:#5A452B;
@@ -39,6 +41,8 @@
   --rust:#E55A40;--rust-dark:#B33A24;--gilt:#DCAA38;--sepia:#A88B5C;--rule:#7A6843;
 }
 *{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+h2,h3,.section-head,.year-anchor{scroll-margin-top:32px}
 html,body{
   background:var(--paper);color:var(--ink);
   font-family:var(--body);font-optical-sizing:auto;
