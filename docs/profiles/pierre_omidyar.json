@@ -1220,26 +1220,6 @@
       "event_role_canonical": "grant_out"
     },
     {
-      "event_role": "reference_only",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Pierre Omidyar",
-      "recipient": "unspecified",
-      "amount_usd": 1940000000,
-      "source_type": "other",
-      "source_url": "https://omidyar.com/frequently-asked-questions/",
-      "confidence": "medium",
-      "extraction_note": "Omidyar Network states it has committed more than $1.94 billion to initiatives sharing its vision, representing cumulative giving to date.",
-      "extraction_evidence": "To date, we have committed more than $1.94 billion to initiatives that share our vision",
-      "regen_query": "\"Omidyar Network\" cumulative \"$1.94 billion\" OR \"$2 billion\" awarded 2004-2025",
-      "event_id": "pierre_omidyar_grant_out_x_regen5",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-efcc998f56b58cf8",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "reference_only"
-    },
-    {
       "event_role": "direct_gift",
       "year": null,
       "date": null,

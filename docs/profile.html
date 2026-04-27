@@ -378,7 +378,7 @@ function render(rec) {
         <div class="tick cap" data-zone="cap" tabindex="0" style="left:${capPos}%"><span class="tick-label" style="left:${capPos}%">100% · Benchmark</span></div>
       </div>
       <div class="tt-tip" id="cibarTip" role="tooltip" aria-hidden="true"></div>
-      <p class="cibar-caption">Documented giving is <strong>${fmtRatio(ratio)}</strong> of what they could reasonably have given by now (${fmtUsd(expected)} — 5% of their spendable wealth each year since becoming a billionaire). The gap is <strong>${fmtUsd(shortfall)}</strong>. The hatched zone shows up to <strong>${fmtUsd(hiddenUpper)}</strong> they could be giving in secret without contradicting public evidence. <em>Hover any segment for details.</em></p>
+      <p class="cibar-caption">Documented giving is <strong>${fmtRatio(ratio)}</strong> of what they could reasonably have given by now (${fmtUsd(expected)} — 5% of their spendable wealth each year since becoming a billionaire). The gap is <strong>${fmtUsd(shortfall)}</strong>.${hiddenUpper > 0 ? ` The hatched zone shows up to <strong>${fmtUsd(hiddenUpper)}</strong> they could be giving in secret without contradicting public evidence.` : ' We could not identify any anonymous account or private fund that could plausibly be hiding meaningful giving.'} <em>Hover any segment for details.</em></p>
     </div>`;
   }
 

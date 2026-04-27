@@ -1530,28 +1530,6 @@
       "recipient_verification_note": "no IRS filing found for recipient 'Michael J. Fox Foundation'"
     },
     {
-      "event_role": "reference_only",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Sergey Brin",
-      "recipient": "unspecified",
-      "amount_usd": 2000000,
-      "source_type": "news_article",
-      "source_url": "https://www.newsbytesapp.com/news/business/google-s-sergey-brin-spends-45m-to-fight-california-s-billionaire-tax/story",
-      "confidence": "high",
-      "extraction_note": "Sergey Brin made a $2 million contribution to a PAC opposing California's billionaire tax.",
-      "extraction_evidence": "Brin has also donated to the ... California with a $2 million contribution, bringing his total donations to the PAC just over $3 million",
-      "regen_query": "\"Sergey Brin\" FEC OR PAC contribution",
-      "event_id": "sergey_brin_political_x_regen4",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-5ea2c81aa97b17ff",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
-      "_role_relabeled_from": "political",
-      "_role_relabel_reason": "cumulative_phrase"
-    },
-    {
       "event_role": "transfer_in",
       "year": null,
       "date": null,

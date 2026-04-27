@@ -31,14 +31,42 @@ from regen_v3.extract import _maybe_relabel  # noqa: E402
 from regen_v3.merge import _is_protected, _route_for  # noqa: E402
 
 
+def _to_sources_entry(ev: dict) -> dict:
+    """Convert a demoted-to-reference_only event into a sources_all
+    bibliography entry. Keeps URL + provenance + note; drops the
+    role/amount/year framing that no longer applies."""
+    from urllib.parse import urlparse
+    url = ev.get("source_url") or ""
+    publisher = ""
+    try:
+        publisher = (urlparse(url).hostname or "").lower().removeprefix("www.")
+    except Exception:
+        pass
+    out = {
+        "publisher": publisher,
+        "url": url,
+        "provenance": ev.get("provenance") or "regen_v3",
+    }
+    for k in ("retrieved_at", "regen_run_id", "regen_extractor_model",
+              "source_verification_status", "_role_relabeled_from",
+              "_role_relabel_reason", "_cumulative_flag", "_cardinality_flag"):
+        if k in ev:
+            out[k] = ev[k]
+    note = ev.get("note") or ev.get("extraction_note") or ""
+    if note:
+        out["note"] = note[:200]
+    return out
+
+
 def relabel_record(rec: dict) -> tuple[int, list[str]]:
     """Mutate rec in place. Returns (n_relabeled, log_lines)."""
     log: list[str] = []
     n = 0
 
-    # Walk both lists, re-label, then re-route to correct list if needed.
     new_cited: list = []
     new_pledges: list = []
+    sources_all = list(rec.get("sources_all") or [])
+    existing_urls = {s.get("url") for s in sources_all if isinstance(s, dict) and s.get("url")}
 
     src_cited = rec.get("cited_events") or []
     src_pledges = rec.get("pledges_and_announcements") or []
@@ -52,7 +80,7 @@ def relabel_record(rec: dict) -> tuple[int, list[str]]:
                 (new_cited if fld_name == "cited_events" else new_pledges).append(ev)
                 continue
             old_role = ev.get("event_role")
-            ev_copy = dict(ev)  # _maybe_relabel mutates in place
+            ev_copy = dict(ev)
             _maybe_relabel(ev_copy)
             new_role = ev_copy.get("event_role")
             if new_role != old_role:
@@ -62,19 +90,22 @@ def relabel_record(rec: dict) -> tuple[int, list[str]]:
                     f"(${(ev.get('amount_usd') or 0)/1e6:.0f}M, {ev.get('year')}, "
                     f"{ev.get('recipient','')[:40]})"
                 )
-            # Route by new role
             route = _route_for(new_role)
             if route == "pledges_and_announcements":
                 new_pledges.append(ev_copy)
             elif route == "sources_all":
-                # reference_only events shouldn't have been events in the first place;
-                # leave them where they are to avoid losing data
-                (new_cited if fld_name == "cited_events" else new_pledges).append(ev_copy)
+                # MOVE to sources_all (was: leave in cited_events).
+                # Don't double-add if the URL is already cited.
+                url = ev_copy.get("source_url")
+                if url and url not in existing_urls:
+                    sources_all.append(_to_sources_entry(ev_copy))
+                    existing_urls.add(url)
             else:
                 new_cited.append(ev_copy)
 
     rec["cited_events"] = new_cited
     rec["pledges_and_announcements"] = new_pledges
+    rec["sources_all"] = sources_all
     return (n, log)
 
 

@@ -336,27 +336,6 @@
       "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
-      "event_role": "reference_only",
-      "year": 2023,
-      "date_precision": "year",
-      "donor_entity": "Ken Griffin",
-      "recipient": "Griffin Catalyst",
-      "amount_usd": 2500000000.0,
-      "source_type": "philanthropic_llc_commitment",
-      "source_url": "https://www.griffincatalyst.org/about/",
-      "confidence": "medium",
-      "note": "Griffin Catalyst (est. Sep 2023) is the umbrella label for Ken Griffin's philanthropic and civic activity; described as a 'civic engagement initiative,' not a formal grantmaker. Self-reported lifetime giving >$2.5B. Structure ambiguous \u2014 sits over multiple underlying vehicles.",
-      "regen_source": "llcs",
-      "event_id": "ken_griffin_transfer_in_2023_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-28a6e385ab5bf311",
-      "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
-      "_role_relabeled_from": "transfer_in",
-      "_role_relabel_reason": "cumulative_phrase"
-    },
-    {
       "event_role": "direct_gift",
       "year": null,
       "date": null,

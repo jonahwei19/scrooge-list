@@ -197,27 +197,6 @@
       "recipient_verification_note": "nonspecific or aggregate recipient"
     },
     {
-      "event_role": "reference_only",
-      "year": 2024,
-      "date_precision": "year",
-      "donor_entity": "Steve Ballmer",
-      "recipient": "Ballmer Group LLC",
-      "amount_usd": 4000000000.0,
-      "source_type": "philanthropic_llc_commitment",
-      "source_url": "https://en.wikipedia.org/wiki/Ballmer_Group",
-      "confidence": "medium",
-      "note": "Ballmer Group LLC self-reported cumulative giving of \u2248$4B since 2015 founding (\u2248$767M in 2024 alone per its own annual update). 501(c)(4) + DAF blend; LLC structure opaque \u2014 figure is donor self-disclosure, not a 990 audit number.",
-      "regen_source": "llcs",
-      "event_id": "steve_ballmer_transfer_in_2024_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-eae67171dcb5ad33",
-      "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
-      "_role_relabeled_from": "transfer_in",
-      "_role_relabel_reason": "cumulative_phrase"
-    },
-    {
       "event_role": "direct_gift",
       "year": 2026,
       "date": "2026-04-07",
