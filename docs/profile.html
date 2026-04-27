@@ -24,9 +24,9 @@
   --mono:"JetBrains Mono",ui-monospace,monospace;
 }
 [data-theme="dark"]{
-  --paper:#14110A;--paper-mid:#1C1811;--paper-deep:#261F14;--paper-shadow:#4A3D27;
-  --ink:#EEDCBA;--ink-soft:#C4AF82;--ink-fade:#8B7951;--ink-ghost:#605335;
-  --rust:#D14A32;--rust-dark:#A93220;--gilt:#D4A032;--sepia:#A38456;--rule:#75633F;--green:#8fb57a;
+  --paper:#1F1409;--paper-mid:#29180D;--paper-deep:#332113;--paper-shadow:#5A452B;
+  --ink:#F2DEB8;--ink-soft:#CDB489;--ink-fade:#9C835A;--ink-ghost:#6E5C3A;
+  --rust:#E55A40;--rust-dark:#B33A24;--gilt:#DCAA38;--sepia:#A88B5C;--rule:#7A6843;--green:#9FC086;
   --row-alt:rgba(238,220,186,.04);
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -390,9 +390,9 @@ function render(rec) {
     };
     html += `<div class="cibar">
       <div class="cibar-legend">
-        <span class="lg"><span class="sw obs"></span>Solid bar = <strong>what they actually gave</strong></span>
-        <span class="lg"><span class="sw hidden"></span>Hatched extension = <strong>what they could plausibly be giving in secret</strong></span>
-        <span class="lg"><span class="sw cap"></span>Dashed line = <strong>the benchmark</strong> (what they could reasonably have given)</span>
+        <span class="lg"><span class="sw obs"></span><strong>What they gave</strong> (we can prove it)</span>
+        <span class="lg"><span class="sw hidden"></span><strong>Could be giving in secret</strong> (upper bound)</span>
+        <span class="lg"><span class="sw cap"></span><strong>The benchmark</strong>: what they could've given</span>
       </div>
       <div class="cibar-track" id="cibarTrack" data-payload='${esc(JSON.stringify(cibarPayload))}'>
         <div class="hidden" data-zone="hidden" tabindex="0" style="width:${totalWidth}%"></div>
@@ -400,7 +400,7 @@ function render(rec) {
         <div class="tick cap" data-zone="cap" tabindex="0" style="left:${capPos}%"><span class="tick-label" style="left:${capPos}%">100% · Benchmark</span></div>
       </div>
       <div class="tt-tip" id="cibarTip" role="tooltip" aria-hidden="true"></div>
-      <p class="cibar-caption">Documented giving is <strong>${fmtRatio(ratio)}</strong> of what they could reasonably have given by now. The benchmark — <strong>${fmtUsd(expected)}</strong> — is 5% of their spendable wealth each year since becoming a billionaire. The gap between what they gave and the benchmark is <strong>${fmtUsd(shortfall)}</strong>.${hiddenUpper >= 1e7 ? ` The hatched zone shows up to <strong>${fmtUsd(hiddenUpper)}</strong> they could be giving in secret without contradicting public evidence.` : ' We could not identify any anonymous account or private fund that could plausibly be hiding meaningful giving.'}</p>
+      <p class="cibar-caption">They've given <strong>${fmtRatio(ratio)}</strong> of the benchmark. The benchmark is <strong>${fmtUsd(expected)}</strong>: 5% of their spendable wealth, every year since they became a billionaire. The shortfall is <strong>${fmtUsd(shortfall)}</strong>.${hiddenUpper >= 1e7 ? ` Up to <strong>${fmtUsd(hiddenUpper)}</strong> could be hidden in private vehicles we can't see into.` : ` We couldn't find any private vehicles where meaningful giving might be hiding.`}</p>
       <p class="cibar-caption" style="margin-top:8px;font-size:.78rem;font-style:normal;letter-spacing:.04em;color:var(--ink-fade)"><em>Hover any segment for details.</em></p>
     </div>`;
   }

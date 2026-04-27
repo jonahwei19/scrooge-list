@@ -31,13 +31,27 @@
   --body:"Newsreader",Georgia,"Times New Roman",serif;
 }
 [data-theme="dark"]{
-  --paper:#14110A;--paper-mid:#1C1811;--paper-deep:#261F14;--paper-shadow:#4A3D27;
-  --ink:#EEDCBA;--ink-soft:#C4AF82;--ink-fade:#8B7951;--ink-ghost:#605335;
-  --rust:#D14A32;--rust-dark:#A93220;--rust-ink:#F07055;
-  --gilt:#D4A032;--sepia:#A38456;--rule:#75633F;
-  --green:#8fb57a;
-  --row-alt:rgba(238,220,186,.04);--row-hover:rgba(209,74,50,.08);
+  --paper:#1F1409;--paper-mid:#29180D;--paper-deep:#332113;--paper-shadow:#5A452B;
+  --ink:#F2DEB8;--ink-soft:#CDB489;--ink-fade:#9C835A;--ink-ghost:#6E5C3A;
+  --rust:#E55A40;--rust-dark:#B33A24;--rust-ink:#F58566;
+  --gilt:#DCAA38;--sepia:#A88B5C;--rule:#7A6843;
+  --green:#9FC086;
+  --row-alt:rgba(238,220,186,.05);--row-hover:rgba(229,90,64,.10);
 }
+body.saint-view[data-theme="dark"],
+body.saint-view{
+  --paper:#FDFAF2;--paper-mid:#F7F0DC;--paper-deep:#ECDFBE;--paper-shadow:#D8C9A6;
+  --ink:#19130B;--ink-soft:#3C2F22;--ink-fade:#6E5E46;--ink-ghost:#9F8E70;
+  --rust:#8B2E1F;--rust-dark:#5D1C12;--rust-ink:#4A1409;
+  --gilt:#8C6B2D;--sepia:#735A3E;--rule:#22180E;
+  --green:#4a6e3a;
+  --row-alt:rgba(216,201,164,.12);--row-hover:rgba(139,46,31,.06);
+  background:
+    radial-gradient(ellipse 800px 400px at 15% 5%, rgba(74,110,58,.08), transparent 70%),
+    radial-gradient(ellipse 900px 500px at 90% 95%, rgba(140,107,45,.07), transparent 70%),
+    var(--paper) !important;
+}
+body.saint-view .grain{opacity:.13;mix-blend-mode:multiply;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.88' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.10 0 0 0 0 0.075 0 0 0 0 0.05 0 0 0 0.32 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>")}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{
   background:var(--paper);color:var(--ink);
@@ -556,15 +570,15 @@ body.saint-view .section-head h2{color:var(--green)}
   </table>
 
   <div class="callout">
-    <strong>What this list does not claim</strong>
-    <p>These are <em>estimates of documented giving</em> — the narrowest honest measure. Research from the Institute for Policy Studies, Boston College's Forum on Philanthropy, and the National Philanthropic Trust suggests we can document only 40–70% of someone's true lifetime giving. A high bucket means we cannot find evidence of generosity at scale — not that none exists.</p>
-    <p><a href="methodology.html">Read the full methodology →</a></p>
+    <strong>What this list doesn't claim</strong>
+    <p>We can verify roughly 40 to 70% of what a billionaire actually gives. The rest happens through anonymous accounts, private LLCs, and offshore trusts that don't have to disclose. So a high bucket means: we couldn't find the giving. It doesn't mean it isn't there.</p>
+    <p><a href="methodology.html">Full methodology →</a></p>
   </div>
 
   <div class="callout green">
-    <strong>Corrections welcome</strong>
-    <p>Every Tier A and Tier B subject is contacted before publication and given a one-week window to respond. Responses are published verbatim on individual profiles. If you can document giving we have missed — with a source we can link — we will update the record and acknowledge it.</p>
-    <p>Submit via <a href="https://github.com/jonahwei19/scrooge-list/issues/new">GitHub issues</a> (preferred) or open a pull request against the profile JSON. Please include the citation URL.</p>
+    <strong>Found something we missed?</strong>
+    <p>We contact every Tier A and Tier B billionaire before publishing and give them a week to reply. Replies go on their profile, unedited. If you can show us giving we missed and link a source, we'll fix it.</p>
+    <p><a href="https://github.com/jonahwei19/scrooge-list/issues/new">Open an issue on GitHub</a>. Include the URL.</p>
   </div>
 
   <footer class="colophon">
