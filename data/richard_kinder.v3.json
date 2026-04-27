@@ -904,25 +904,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "grant_out",
-      "year": 2010,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Kinder Foundation",
-      "recipient": "Rice University",
-      "amount_usd": 15000000,
-      "source_type": "other",
-      "source_url": "https://www.celebritynetworth.com/richest-businessmen/richest-billionaires/richard-kinder-net-worth/",
-      "confidence": "high",
-      "extraction_note": "The Kinder Foundation donated $15 million in 2010 for the launch of the Kinder Institute for Urban Research at Rice University.",
-      "extraction_evidence": "In 2010, the Foundation donated $15 million for the launch of the Kinder Institute for Urban Research at Rice University",
-      "regen_query": "\"Richard Kinder\" donates million",
-      "event_id": "richard_kinder_grant_out_2010_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "direct_gift",
       "year": null,
       "date": null,

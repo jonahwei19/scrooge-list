@@ -1365,26 +1365,6 @@
       "event_role_canonical": "political"
     },
     {
-      "event_role": "direct_gift",
-      "year": 2016,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Dustin Moskovitz",
-      "recipient": "For Our Future",
-      "amount_usd": 5000000,
-      "source_type": "news_article",
-      "source_url": "https://www.the-independent.com/news/world/americas/us-politics/facebook-cofounder-dustin-moskovitz-donates-20-million-stop-donald-trump-a7234441.html",
-      "confidence": "high",
-      "extraction_note": "Dustin Moskovitz donated $5 million to the union-led For Our Future super PAC.",
-      "extraction_evidence": "another $5m of his would go to the union-led For Our Future super PAC",
-      "regen_query": "\"Dustin Moskovitz\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "dustin_moskovitz_direct_gift_2016_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "direct_gift"
-    },
-    {
       "event_role": "grant_out",
       "year": 2018,
       "date": "2018-07",
@@ -1802,8 +1782,8 @@
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "shortfall_5pct_usd": -792500000,
     "ratio_observable_to_5pct_tenure": 1.1884,
-    "observable_from_events_usd": 14436213101,
-    "observable_drift_pct": 1.887,
+    "observable_from_events_usd": 14431213101,
+    "observable_drift_pct": 1.886,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },
   "scrooge_legacy_score_internal_only": {

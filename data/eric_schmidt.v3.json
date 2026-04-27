@@ -943,25 +943,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "grant_out",
-      "year": 2020,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Eric and Wendy Schmidt",
-      "recipient": "NPR",
-      "amount_usd": 4700000,
-      "source_type": "news_article",
-      "source_url": "https://www.npr.org/2024/07/10/g-s1-9085/5-5-million-grant-from-eric-and-wendy-schmidt-to-expand-npr-collaborative-journalism-network",
-      "confidence": "high",
-      "extraction_note": "The snippet describes a $4.7 million gift from Eric and Wendy Schmidt to NPR in 2020 that created regional newsrooms in the Collaborative Journalism Network.",
-      "extraction_evidence": "$4.7 million gift from Eric and Wendy Schmidt in 2020, which created two regional newsrooms",
-      "regen_query": "\"Eric Schmidt\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "eric_schmidt_grant_out_2020_regen4",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-a0687caf156cdd95",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "direct_gift",
       "year": null,
       "date": null,

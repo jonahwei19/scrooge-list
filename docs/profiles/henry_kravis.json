@@ -829,26 +829,6 @@
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "grant_out"
-    },
-    {
-      "amount_usd": 1000000,
-      "confidence": "high",
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Henry Kravis",
-      "event_role": "political",
-      "extraction_evidence": "He also contributed $1 million to the presidential inauguration of Donald Trump in 2017.",
-      "extraction_note": "Henry Kravis contributed $1 million to the presidential inauguration of Donald Trump in 2017.",
-      "recipient": "Donald Trump presidential inauguration",
-      "source_type": "other",
-      "source_url": "https://www.thefamouspeople.com/profiles/henry-kravis-50237.php",
-      "year": 2017,
-      "regen_query": "\"Henry Kravis\" \"Republican Leadership Council\" 1997 Lewis Eisenberg co-founder",
-      "event_id": "henry_kravis_political_2017_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-4fc43709be8c748d",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "political"
     }
   ],
   "pledges_and_announcements": [

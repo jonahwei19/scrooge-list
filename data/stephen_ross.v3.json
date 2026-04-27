@@ -432,25 +432,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
-      "year": 2020,
-      "date": "2020-06-26",
-      "date_precision": "day",
-      "donor_entity": "Stephen Ross",
-      "recipient": "Ross Initiative in Sports for Equality (RISE)",
-      "amount_usd": 13000000,
-      "source_type": "news_article",
-      "source_url": "https://profootballtalk.nbcsports.com/2020/06/26/stephen-ross-commits-another-13-million-to-combat-racism/",
-      "confidence": "high",
-      "extraction_note": "Stephen Ross committed an additional $13 million over four years to combat systemic racism through RISE.",
-      "extraction_evidence": "He will donate $13 million over four years, bringing his total commitment",
-      "regen_query": "\"Stephen Ross\" \"Ross Initiative in Sports for Equality\" OR \"RISE\" 2021 2022 2023 2024 funding OR grant",
-      "event_id": "stephen_ross_direct_gift_2020_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-c1bc09186839c523",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "political",
       "year": null,
       "date": null,

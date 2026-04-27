@@ -830,25 +830,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
-      "year": 2024,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Miriam Adelson",
-      "recipient": "Preserve America",
-      "amount_usd": 100000000,
-      "source_type": "news_article",
-      "source_url": "https://www.nytimes.com/2024/10/24/us/politics/miriam-adelson-trump-donors.html",
-      "confidence": "high",
-      "extraction_note": "Miriam Adelson contributed $100 million to her pro-Trump super PAC, Preserve America, in 2024.",
-      "extraction_evidence": "has put $100 million into her pro-Trump super PAC, Preserve America, this year",
-      "regen_query": "\"Miriam Adelson\" donates million",
-      "event_id": "miriam_adelson_direct_gift_2024_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-6c87af8f2c345b34",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "political",
       "year": null,
       "date": null,

@@ -1297,25 +1297,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "direct_gift",
-      "year": 2016,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Dustin Moskovitz",
-      "recipient": "For Our Future",
-      "amount_usd": 5000000,
-      "source_type": "news_article",
-      "source_url": "https://www.the-independent.com/news/world/americas/us-politics/facebook-cofounder-dustin-moskovitz-donates-20-million-stop-donald-trump-a7234441.html",
-      "confidence": "high",
-      "extraction_note": "Dustin Moskovitz donated $5 million to the union-led For Our Future super PAC.",
-      "extraction_evidence": "another $5m of his would go to the union-led For Our Future super PAC",
-      "regen_query": "\"Dustin Moskovitz\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "dustin_moskovitz_direct_gift_2016_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "event_role": "grant_out",
       "year": 2018,
       "date": "2018-07",

@@ -1700,25 +1700,6 @@
       "regen_extractor_model": "claude-haiku-4-5"
     },
     {
-      "event_role": "grant_out",
-      "year": 2020,
-      "date": "2020-02",
-      "date_precision": "month",
-      "donor_entity": "Jeff Bezos",
-      "recipient": "Bezos Earth Fund",
-      "amount_usd": 10000000000,
-      "source_type": "other",
-      "source_url": "https://www.influencewatch.org/person/tom-taylor/",
-      "confidence": "high",
-      "extraction_note": "Bezos seeded the Bezos Earth Fund with a $10 billion endowment in February 2020 to be disbursed over a decade for environmentalist projects.",
-      "extraction_evidence": "Bezos seeded the project with an endowment of $10 billion to be disbursed over the course of a decade",
-      "regen_query": "\"Tom Taylor\" \"Bezos Earth Fund\" CEO 2025 acceleration disbursement pace",
-      "event_id": "jeff_bezos_grant_out_2020_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-733b6a11645c0037",
-      "regen_extractor_model": "claude-haiku-4-5"
-    },
-    {
       "amount_usd": 500000,
       "confidence": "high",
       "date": null,

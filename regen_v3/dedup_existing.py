@@ -1,0 +1,133 @@
+"""Retroactively dedupe existing v3 records using the improved key.
+
+Catches cross-role duplicates that slipped through earlier merges (when
+the dedupe key only used (year, role, amount_bucket) but not recipient).
+Codex flagged these:
+  * Bezos $10B Earth Fund counted twice (direct_gift + grant_out)
+  * Buffett 1.5M-share counted twice (transfer_in + direct_gift)
+  * Melinda $1B counted three times across roles
+
+Algorithm: for each subject, walk cited_events + pledges_and_announcements,
+group by (year, recipient_normalized, amount_bucket). If a group has
+multiple entries, keep the one with highest confidence (then prefer
+manual provenance over regen_v3, then prefer earlier index).
+
+Manual entries are still NEVER displaced — only regen_v3 entries.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+from pathlib import Path
+
+HERE = Path(__file__).parent
+ROOT = HERE.parent
+DATA_DIR = ROOT / "data"
+
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from regen_v3.merge import _amount_bucket, _normalize_recipient, _is_protected, _confidence_rank  # noqa: E402
+
+
+def _crosskey(entry: dict) -> tuple | None:
+    """Cross-role dedupe key: (year, recipient_norm, amount_bucket).
+    Returns None if entry is too generic to dedupe by."""
+    year = entry.get("year") if isinstance(entry.get("year"), int) else None
+    if year is None:
+        return None
+    recipient = _normalize_recipient(entry.get("recipient"))
+    if recipient is None:
+        return None
+    bucket = _amount_bucket(entry.get("amount_usd"))
+    if bucket is None:
+        return None
+    return (year, recipient, bucket)
+
+
+def dedupe_record(rec: dict) -> tuple[int, list[str]]:
+    """Mutate rec in place. Returns (n_removed, removed_descriptions)."""
+    removed_total = 0
+    removed_log: list[str] = []
+
+    for fld in ("cited_events", "pledges_and_announcements"):
+        entries = rec.get(fld) or []
+        # Group by cross-role key
+        groups: dict[tuple, list[int]] = {}
+        for i, e in enumerate(entries):
+            if not isinstance(e, dict):
+                continue
+            k = _crosskey(e)
+            if k is None:
+                continue
+            groups.setdefault(k, []).append(i)
+
+        # Find groups with collisions
+        to_remove: set[int] = set()
+        for k, idxs in groups.items():
+            if len(idxs) <= 1:
+                continue
+            # Pick winner: manual first, then highest confidence, then earliest
+            def rank(i: int) -> tuple:
+                e = entries[i]
+                is_manual = _is_protected(e)
+                conf = _confidence_rank(e)
+                return (-int(is_manual), -conf, i)
+            idxs_sorted = sorted(idxs, key=rank)
+            winner = idxs_sorted[0]
+            losers = idxs_sorted[1:]
+            for li in losers:
+                # Refuse to drop a manual entry (defense in depth)
+                if _is_protected(entries[li]):
+                    continue
+                to_remove.add(li)
+                e = entries[li]
+                removed_log.append(
+                    f'{fld}[{li}] {e.get("event_role","?")} ${(e.get("amount_usd") or 0)/1e6:.0f}M '
+                    f'{e.get("year")} {e.get("recipient","")[:40]} -> kept [{winner}]'
+                )
+
+        if to_remove:
+            rec[fld] = [e for i, e in enumerate(entries) if i not in to_remove]
+            removed_total += len(to_remove)
+
+    return (removed_total, removed_log)
+
+
+def main(argv: list[str] | None = None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--all", action="store_true")
+    g.add_argument("--subject")
+    ap.add_argument("--dry-run", action="store_true")
+    args = ap.parse_args(argv)
+
+    files = sorted(DATA_DIR.glob("*.v3.json")) if args.all else [DATA_DIR / f"{args.subject}.v3.json"]
+    grand = 0
+    touched: list[str] = []
+    for fp in files:
+        sid = fp.name.replace(".v3.json", "")
+        rec = json.loads(fp.read_text())
+        n, log = dedupe_record(rec)
+        if n == 0:
+            continue
+        if not args.dry_run:
+            tmp = fp.with_suffix(fp.suffix + ".tmp")
+            tmp.write_text(json.dumps(rec, indent=2))
+            os.replace(tmp, fp)
+        touched.append(f"{sid}: -{n}")
+        grand += n
+        if args.dry_run or args.subject:
+            for line in log[:5]:
+                print(f"  {line}")
+
+    print(f"\nTotal cross-role duplicates removed: {grand}")
+    for line in touched:
+        print(f"  {line}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

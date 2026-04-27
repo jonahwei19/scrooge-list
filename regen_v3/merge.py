@@ -34,6 +34,7 @@ See SPEC.md for the broader pipeline design.
 from __future__ import annotations
 
 import copy
+import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -121,12 +122,47 @@ def _within_tolerance(a: float | None, b: float | None, pct: float = 0.05) -> bo
     return diff <= max(abs(a), abs(b)) * pct
 
 
-def _dedupe_key(entry: dict) -> tuple[int | None, str | None, int | None]:
-    """Return the (year, canonical_role, amount_bucket) tuple for dedupe."""
+_RECIPIENT_NOISE_RE = re.compile(r"\b(the|inc|inc\.|llc|foundation|fund|trust|charitable|family|center|university|college|school|institute|hospital)\b", re.IGNORECASE)
+
+
+def _normalize_recipient(name: str | None) -> str | None:
+    """Return a token-bag string for fuzzy recipient matching in dedupe.
+
+    Keeps the meaningful tokens (drops articles, common org-suffix noise),
+    lowercases, and sorts so word-order doesn't matter. Empty / generic
+    placeholders ("various", "unspecified", "multiple") return None so they
+    don't false-positive collide.
+    """
+    if not isinstance(name, str):
+        return None
+    s = name.strip().lower()
+    if not s:
+        return None
+    # Generic placeholders — don't dedupe by these.
+    if s in {"various", "unspecified", "multiple", "n/a", "unknown"}:
+        return None
+    # Strip common noise tokens, keep distinctive ones.
+    s = _RECIPIENT_NOISE_RE.sub(" ", s)
+    tokens = [t for t in re.split(r"[^a-z0-9]+", s) if len(t) >= 3]
+    if not tokens:
+        return None
+    return " ".join(sorted(set(tokens)))
+
+
+def _dedupe_key(entry: dict) -> tuple[int | None, str | None, int | None, str | None]:
+    """Return (year, role, amount_bucket, recipient_norm) for dedupe.
+
+    Adding recipient_norm catches two extracts of the same gift that
+    landed in different roles (e.g., a Bezos $10B Earth Fund event
+    extracted once as `direct_gift` and once as `grant_out`). When
+    recipient is generic / missing, falls back to the prior 3-tuple
+    behavior so we don't over-collide unrelated events.
+    """
     year = entry.get("year") if isinstance(entry.get("year"), int) else None
     role = canonical_role(entry.get("event_role"))
     bucket = _amount_bucket(entry.get("amount_usd"))
-    return (year, role, bucket)
+    recipient = _normalize_recipient(entry.get("recipient"))
+    return (year, role, bucket, recipient)
 
 
 def _has_regen_provenance(entry: dict) -> bool:
@@ -326,13 +362,33 @@ def merge_candidates(
         # Tolerance-based collisions: same year + same role, amount within +/- 5%.
         if collision is None and cand_amt is not None:
             for ek, items in existing_index.items():
-                ek_year, ek_role, _ek_bucket = ek
+                ek_year, ek_role, _ek_bucket, _ek_recipient = ek
                 if ek_year != key[0] or ek_role != key[1]:
                     continue
                 for idx, existing_entry, list_name in items:
                     if _within_tolerance(existing_entry.get("amount_usd"), cand_amt):
                         collision = (idx, existing_entry, list_name)
                         break
+                if collision is not None:
+                    break
+
+        # Cross-role collision: same (year, recipient_normalized, amount-bucket)
+        # but different roles — catches the case Codex flagged where the same
+        # gift gets extracted under both `direct_gift` and `grant_out`.
+        if collision is None and key[3] is not None and key[2] is not None:
+            for ek, items in existing_index.items():
+                if ek[0] != key[0] or ek[3] != key[3]:
+                    continue
+                if cand_amt is None:
+                    if ek[2] == key[2]:  # exact bucket match
+                        for idx, existing_entry, list_name in items:
+                            collision = (idx, existing_entry, list_name)
+                            break
+                else:
+                    for idx, existing_entry, list_name in items:
+                        if _within_tolerance(existing_entry.get("amount_usd"), cand_amt):
+                            collision = (idx, existing_entry, list_name)
+                            break
                 if collision is not None:
                     break
 

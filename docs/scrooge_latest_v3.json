@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T02:23:15.080146Z",
+  "generated_at": "2026-04-27T02:27:12.229107Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal, ranked by $ shortfall vs. 5%-per-year-of-tenure capacity benchmark, uncapped), B_PROBABLY_LOW, C_OPAQUE, ON_TRACK. See docs/methodology.html.",
@@ -510,8 +510,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.55,
       "observable_usd": 3450000000,
-      "observable_from_events_usd": 29635048096,
-      "observable_drift_pct": 7.59,
+      "observable_from_events_usd": 19635048096,
+      "observable_drift_pct": 4.691,
       "unyear_dollars_excluded_usd": 14207700000,
       "expected_usd": 13167000000,
       "expected_5pct_tenure_usd": 184338000000,
@@ -540,7 +540,7 @@
         "dafs_detected": false
       },
       "sources_count": 168,
-      "event_count": 118,
+      "event_count": 117,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "jeff_bezos.v3.json",
       "tier_rank": null
@@ -560,8 +560,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.35,
       "observable_usd": 338000000,
-      "observable_from_events_usd": 1136397856,
-      "observable_drift_pct": 2.362,
+      "observable_from_events_usd": 1131397856,
+      "observable_drift_pct": 2.347,
       "unyear_dollars_excluded_usd": 350500000,
       "expected_usd": 5355000000,
       "expected_5pct_tenure_usd": 26775000000,
@@ -590,7 +590,7 @@
         "dafs_detected": true
       },
       "sources_count": 83,
-      "event_count": 39,
+      "event_count": 38,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "jensen_huang.v3.json",
       "tier_rank": null
@@ -871,8 +871,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.35,
       "observable_usd": 839165109,
-      "observable_from_events_usd": 1411964814,
-      "observable_drift_pct": 0.683,
+      "observable_from_events_usd": 1311964814,
+      "observable_drift_pct": 0.563,
       "unyear_dollars_excluded_usd": 1123000000,
       "expected_usd": 612500000,
       "expected_5pct_tenure_usd": 3062500000,
@@ -904,7 +904,7 @@
         "dafs_detected": false
       },
       "sources_count": 69,
-      "event_count": 61,
+      "event_count": 60,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "miriam_adelson.v3.json",
       "tier_rank": null
@@ -978,8 +978,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.2,
       "observable_usd": 1521149148,
-      "observable_from_events_usd": 8684461957,
-      "observable_drift_pct": 4.709,
+      "observable_from_events_usd": 8584461957,
+      "observable_drift_pct": 4.643,
       "unyear_dollars_excluded_usd": 142500000,
       "expected_usd": 2862000000,
       "expected_5pct_tenure_usd": 50085000000,
@@ -1010,7 +1010,7 @@
         "dafs_detected": false
       },
       "sources_count": 90,
-      "event_count": 66,
+      "event_count": 64,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "rob_walton.v3.json",
       "tier_rank": null
@@ -1082,8 +1082,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.25,
       "observable_usd": 665716850,
-      "observable_from_events_usd": 880218701,
-      "observable_drift_pct": 0.322,
+      "observable_from_events_usd": 867218701,
+      "observable_drift_pct": 0.303,
       "unyear_dollars_excluded_usd": 1043000000,
       "expected_usd": 425000000,
       "expected_5pct_tenure_usd": 3825000000,
@@ -1115,7 +1115,7 @@
         "dafs_detected": false
       },
       "sources_count": 101,
-      "event_count": 52,
+      "event_count": 51,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "stephen_ross.v3.json",
       "tier_rank": null
@@ -1521,7 +1521,7 @@
         "dafs_detected": false
       },
       "sources_count": 137,
-      "event_count": 96,
+      "event_count": 95,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "len_blavatnik.v3.json",
       "tier_rank": null
@@ -1695,8 +1695,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.55,
       "observable_usd": 5000000000,
-      "observable_from_events_usd": 4553860101,
-      "observable_drift_pct": 0.089,
+      "observable_from_events_usd": 4548860101,
+      "observable_drift_pct": 0.09,
       "unyear_dollars_excluded_usd": 9882353000,
       "expected_usd": 841500000,
       "expected_5pct_tenure_usd": 4207500000,
@@ -1722,7 +1722,7 @@
         "dafs_detected": false
       },
       "sources_count": 88,
-      "event_count": 82,
+      "event_count": 81,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "dustin_moskovitz.v3.json",
       "tier_rank": null
@@ -1742,8 +1742,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.55,
       "observable_usd": 2094975540,
-      "observable_from_events_usd": 3411800210,
-      "observable_drift_pct": 0.629,
+      "observable_from_events_usd": 3407100210,
+      "observable_drift_pct": 0.626,
       "unyear_dollars_excluded_usd": 187100000,
       "expected_usd": 1980000000,
       "expected_5pct_tenure_usd": 17820000000,
@@ -1774,7 +1774,7 @@
         "dafs_detected": false
       },
       "sources_count": 98,
-      "event_count": 67,
+      "event_count": 66,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "eric_schmidt.v3.json",
       "tier_rank": null
@@ -1871,7 +1871,7 @@
         "dafs_detected": false
       },
       "sources_count": 78,
-      "event_count": 55,
+      "event_count": 54,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "henry_kravis.v3.json",
       "tier_rank": null
@@ -2233,8 +2233,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.35,
       "observable_usd": 1064200000,
-      "observable_from_events_usd": 19123556245,
-      "observable_drift_pct": 16.97,
+      "observable_from_events_usd": 18983556245,
+      "observable_drift_pct": 16.838,
       "unyear_dollars_excluded_usd": 14680000000,
       "expected_usd": 4725000000,
       "expected_5pct_tenure_usd": 80325000000,
@@ -2264,7 +2264,7 @@
         "dafs_detected": true
       },
       "sources_count": 98,
-      "event_count": 54,
+      "event_count": 53,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "michael_dell.v3.json",
       "tier_rank": null
@@ -2486,8 +2486,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.55,
       "observable_usd": 858403683,
-      "observable_from_events_usd": 4745653683,
-      "observable_drift_pct": 4.528,
+      "observable_from_events_usd": 4730653683,
+      "observable_drift_pct": 4.511,
       "unyear_dollars_excluded_usd": 1729600000,
       "expected_usd": 715000000,
       "expected_5pct_tenure_usd": 7150000000,
@@ -2512,7 +2512,7 @@
         "dafs_detected": false
       },
       "sources_count": 107,
-      "event_count": 82,
+      "event_count": 81,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "richard_kinder.v3.json",
       "tier_rank": null
