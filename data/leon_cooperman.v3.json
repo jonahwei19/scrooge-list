@@ -272,9 +272,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Largest gift ever to Hunter College at the time. Likely routed through LTCFF \u2014 inside 2013-2018 LTCFF payouts of ~$95M across those 5 years. EXCLUDED from observable rollup to avoid double-count with LTCFF grants_out.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/133598671",
-      "recipient_verification_note": "recipient Hunter College Foundation Inc (EIN 133598671) FY2014 990 reports $48.7M in contributions/revenue \u2265 event $25.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient hunter college foundation inc (ein 133598671) fy2014 990 reports $48.7m in contributions/r"
     },
     {
       "event_id": "cooperman_stbarnabas_2014",
@@ -322,9 +322,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "Likely paid via LTCFF. EXCLUDED from observable rollup to avoid double-count.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/134092050",
-      "recipient_verification_note": "recipient Birthright Israel Foundation (EIN 134092050) FY2011 990 reports $46.9M in contributions/revenue \u2265 event $5.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient birthright israel foundation (ein 134092050) fy2011 990 reports $46.9m in contributions/re"
     },
     {
       "event_id": "cooperman_jcf_metrowest_2024",
@@ -536,9 +536,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-399fe61e3e4177e4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/221714130",
-      "recipient_verification_note": "recipient Jewish Community Foundation Of Greater Metrowest Nj (EIN 221714130) FY2012 990 reports $32.3M in contributions/revenue \u2265 event $20.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient jewish community foundation of greater metrowest nj (ein 221714130) fy2012 990 reports $32"
     },
     {
       "event_role": "direct_gift",

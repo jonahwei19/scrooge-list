@@ -263,11 +263,25 @@ def _verify_event(event: dict, *, refresh: bool = False) -> dict:
                          f"but event has no amount → cannot dollar-check. "
                          f"Existence of recipient ≠ existence of gift.")}
     if pool >= amount:
-        confidence = "verified" if role in _FOUNDATION_TRANSFER_ROLES else "circumstantial"
-        return {"verified": "true", "filing_url": filing_url,
+        # CODEX ROUND 6: recipient_verified="true" was overstating certainty.
+        # An envelope-fit on aggregate contributions != donor-specific match.
+        # Especially weak for huge sponsors like NPT/Fidelity where ANY $X
+        # gift "fits inside" their multi-billion contribution total.
+        # Reserve "true" only for foundation→foundation transfers where
+        # Schedule I disclosure may name the donor (still circumstantial,
+        # but better than envelope-only). Everything else gets a new
+        # tier: "envelope_fit" (visible but weaker than "true").
+        is_huge_sponsor = pool > 1e9  # $1B+ in receipts; envelope is meaningless
+        if role in _FOUNDATION_TRANSFER_ROLES and not is_huge_sponsor:
+            return {"verified": "true", "filing_url": filing_url,
+                    "note": (f"recipient {org_name} (EIN {ein9}) FY{fy} 990 reports "
+                             f"${pool/1e6:.1f}M in contributions/revenue ≥ event "
+                             f"${amount/1e6:.1f}M (foundation transfer, envelope fit)")}
+        return {"verified": "envelope_fit", "filing_url": filing_url,
                 "note": (f"recipient {org_name} (EIN {ein9}) FY{fy} 990 reports "
                          f"${pool/1e6:.1f}M in contributions/revenue ≥ event "
-                         f"${amount/1e6:.1f}M ({confidence})")}
+                         f"${amount/1e6:.1f}M — envelope fits but does NOT "
+                         f"confirm a specific donor-side match.")}
     return {"verified": "false", "filing_url": filing_url,
             "note": (f"recipient {org_name} (EIN {ein9}) FY{fy} 990 reports only "
                      f"${pool/1e6:.1f}M in contributions/revenue; event claims "

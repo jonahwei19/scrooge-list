@@ -115,9 +115,9 @@ h2::before{content:"";display:block;width:36px;height:2px;background:var(--rust)
   </nav>
 
   <header class="pmast">
-    <div class="kicker">Cohort Dashboard · Volume I</div>
-    <h1>What the Numbers Show</h1>
-    <p class="subtitle">Aggregate statistics across the 51-subject launch cohort.</p>
+    <div class="kicker">Group statistics · April 2026</div>
+    <h1>What the numbers show</h1>
+    <p class="subtitle">Combined statistics across the 51 billionaires on the list.</p>
   </header>
 
   <div id="content">
@@ -214,13 +214,13 @@ function renderCohort(bs) {
   let html = '';
 
   html += `<div class="stat-grid">
-    <div class="stat-cell"><div class="big">${n}</div><div class="label">Subjects Researched</div></div>
-    <div class="stat-cell"><div class="big">$${totalNw.toFixed(0)}B</div><div class="label">Combined Net Worth</div></div>
-    <div class="stat-cell"><div class="big gilt">$${totalObs.toFixed(0)}B</div><div class="label">Combined Observable Giving</div></div>
-    <div class="stat-cell"><div class="big rust">$${scroogeShortfall.toFixed(0)}B</div><div class="label">Scrooge-Tier Shortfall (A+B+C)</div></div>
+    <div class="stat-cell"><div class="big">${n}</div><div class="label">Billionaires on the list</div></div>
+    <div class="stat-cell"><div class="big">$${totalNw.toFixed(0)}B</div><div class="label">Combined net worth</div></div>
+    <div class="stat-cell"><div class="big gilt">$${totalObs.toFixed(0)}B</div><div class="label">Combined documented giving</div></div>
+    <div class="stat-cell"><div class="big rust">$${scroogeShortfall.toFixed(0)}B</div><div class="label">Total dollars not given (Scrooge tiers)</div></div>
   </div>`;
 
-  html += `<h2>Tier Distribution</h2>
+  html += `<h2>How they break down by bucket</h2>
     <div class="tier-bar">
       ${tierCounts[0] ? `<div class="seg a" style="flex:${tierCounts[0]}">${tierCounts[0]}</div>` : ''}
       ${tierCounts[1] ? `<div class="seg b" style="flex:${tierCounts[1]}">${tierCounts[1]}</div>` : ''}
@@ -228,17 +228,17 @@ function renderCohort(bs) {
       ${tierCounts[3] ? `<div class="seg ok" style="flex:${tierCounts[3]}">${tierCounts[3]}</div>` : ''}
     </div>
     <div class="tier-legend">
-      <span><span class="sw a"></span>Tier A Verified Low (${tierCounts[0]})</span>
-      <span><span class="sw b"></span>Tier B Probably Low (${tierCounts[1]})</span>
-      <span><span class="sw c"></span>Tier C Opaque (${tierCounts[2]})</span>
+      <span><span class="sw a"></span>Tier A · Verified low giving (${tierCounts[0]})</span>
+      <span><span class="sw b"></span>Tier B · Probably low (${tierCounts[1]})</span>
+      <span><span class="sw c"></span>Tier C · Claimed but unverified (${tierCounts[2]})</span>
       <span><span class="sw ok"></span>On Track (${tierCounts[3]})</span>
     </div>
-    <div class="callout"><strong>Reading this</strong>${globalRatio >= 1
-      ? ' Aggregate observable giving across the cohort <em>exceeds</em> the 5%-per-year benchmark — because On Track subjects (Buffett, Scott, Bloomberg) carry huge out-the-door totals that mask the individual gaps.'
-      : ' Aggregate observable giving <em>falls short</em> of the 5%-per-year-of-tenure benchmark.'} Median subject ratio is <strong>${(medianRatio * 100).toFixed(0)}%</strong> of benchmark — the typical subject is well below the norm even when the aggregate isn\'t.</div>`;
+    <div class="callout"><strong>What this says</strong>${globalRatio >= 1
+      ? ' Combined documented giving across all 51 billionaires <em>exceeds</em> the benchmark — because the On Track people (Buffett, Scott, Bloomberg) have given so much that they mask the individual gaps.'
+      : ' Combined documented giving across all 51 billionaires <em>falls short</em> of the benchmark.'} The typical billionaire has given only <strong>${(medianRatio * 100).toFixed(0)}%</strong> of what they could reasonably have given — well below the line, even when the combined total isn't.</div>`;
 
-  html += `<h2>Most Common Red Flags</h2>
-    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Count of subjects with each flag. Bar width = share of 51-subject cohort.</p>`;
+  html += `<h2>Most common red flags</h2>
+    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Number of billionaires with each flag. Bar width = share of all 51.</p>`;
   for (const [flag, count] of flagSorted) {
     const pct = (count / n) * 100;
     html += `<div class="flag-bar">
@@ -248,10 +248,10 @@ function renderCohort(bs) {
     </div>`;
   }
 
-  html += `<h2>Biggest Undisbursed Capacity</h2>
-    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Subjects whose observable giving falls furthest short of the 5%-per-year-of-tenure capacity benchmark in absolute dollars. This is the published v3 ranking basis — scale matters.</p>
+  html += `<h2>Biggest dollars-not-given</h2>
+    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">The billionaires with the biggest gap, in dollars, between what they could reasonably have given and what they actually gave. This is the basis of the published ranking — scale matters.</p>
     <table class="data-table">
-      <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Benchmark</th><th class="num">Shortfall</th></tr></thead>
+      <thead><tr><th>Name</th><th class="num">Net worth</th><th class="num">Documented giving</th><th class="num">What they could have</th><th class="num">Dollars not given</th></tr></thead>
       <tbody>`;
   for (const b of biggestGaps) {
     html += `<tr onclick="location.href='profile.html?id=${b.id}'" style="cursor:pointer">
@@ -265,9 +265,9 @@ function renderCohort(bs) {
   html += `</tbody></table>`;
 
   html += `<h2>Overachievers</h2>
-    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Highest ratio of observable to expected giving in the cohort. These subjects disprove the premise for themselves.</p>
+    <p style="font-style:italic;color:var(--ink-fade);font-size:.92rem">Highest documented giving as a share of what they could reasonably have given. These billionaires disprove the premise for themselves.</p>
     <table class="data-table">
-      <thead><tr><th>Name</th><th class="num">Net Worth</th><th class="num">Observable</th><th class="num">Ratio</th></tr></thead>
+      <thead><tr><th>Name</th><th class="num">Net worth</th><th class="num">Documented giving</th><th class="num">% of what they could have</th></tr></thead>
       <tbody>`;
   for (const b of overachievers) {
     const r = b.ratio_observable_to_5pct_tenure;

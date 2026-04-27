@@ -330,9 +330,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Likely captured within 2023 BFF 990-PF grants_out ($70.1M). NOT added separately to observable.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/60646973",
-      "recipient_verification_note": "recipient Yale University (EIN 60646973) FY2023 990 reports $6315.0M in contributions/revenue \u2265 event $40.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient yale university (ein 60646973) fy2023 990 reports $6315.0m in contributions/revenue \u2265 even",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -347,9 +347,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "notes": "Press cited original Yale fund as ~$10M in 2013. Some sources confuse this with the $40M 2023 gift \u2014 we treat them as separate events. Predates BFF, additive.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/60646973",
-      "recipient_verification_note": "recipient Yale University (EIN 60646973) FY2013 990 reports $3688.5M in contributions/revenue \u2265 event $10.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient yale university (ein 60646973) fy2013 990 reports $3688.5m in contributions/revenue \u2265 even",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -380,9 +380,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Pre-dates 81-2444350 990 window; additive.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/980391928",
-      "recipient_verification_note": "recipient Tel Aviv University (EIN 980391928) FY2014 990 reports $667.7M in contributions/revenue \u2265 event $20.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient tel aviv university (ein 980391928) fy2014 990 reports $667.7m in contributions/revenue \u2265 ",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -398,9 +398,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Within 2018 BFF 990-PF grants_out ($51.8M) \u2014 NOT added separately to observable.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/980391928",
-      "recipient_verification_note": "recipient Tel Aviv University (EIN 980391928) FY2018 990 reports $729.7M in contributions/revenue \u2265 event $16.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient tel aviv university (ein 980391928) fy2018 990 reports $729.7m in contributions/revenue \u2265 ",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -434,9 +434,9 @@
       "confidence": "high",
       "notes": "Received protest letter from 56 former US national security officials/academics alleging the gift was part of a reputation-laundering campaign. CFR president Richard Haass refused to return the donation. Documented here without judgment; see red_flags.",
       "dedup_note": "Likely captured in 2019 BFF 990-PF ($158.9M). NOT added to observable separately.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/131628168",
-      "recipient_verification_note": "recipient Council On Foreign Relations Inc (EIN 131628168) FY2019 990 reports $140.1M in contributions/revenue \u2265 event $12.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient council on foreign relations inc (ein 131628168) fy2019 990 reports $140.1m in contributio",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -696,9 +696,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c2620f2fab593204",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/42103552",
-      "recipient_verification_note": "recipient Brandeis University (EIN 42103552) FY2023 990 reports $478.7M in contributions/revenue \u2265 event $6.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient brandeis university (ein 42103552) fy2023 990 reports $478.7m in contributions/revenue \u2265 e",
       "event_role_canonical": "direct_gift"
     },
     {

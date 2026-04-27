@@ -430,9 +430,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/912154267",
-      "recipient_verification_note": "recipient Memorial Sloan Kettering Cancer Center (EIN 912154267) FY2014 990 reports $3602.0M in contributions/revenue \u2265 event $100.0M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient memorial sloan kettering cancer center (ein 912154267) fy2014 990 reports $3602.0m in cont",
       "event_role_canonical": "grant_out"
     },
     {

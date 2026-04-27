@@ -288,9 +288,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Captured inside tbf_2019 990-PF grants_out total. Do not double-count. Listed for provenance \u2014 confirms Jim has supported Alice's museum, though modestly vs. WFF's $800M Crystal Bridges endowment.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/201359710",
-      "recipient_verification_note": "recipient Crystal Bridges Museum Of American Art Inc (EIN 201359710) FY2019 990 reports $117.1M in contributions/revenue \u2265 event $11.5M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient crystal bridges museum of american art inc (ein 201359710) fy2019 990 reports $117.1m in c"
     },
     {
       "event_role": "grant_out",
@@ -552,9 +552,9 @@
       "regen_run_id": "sha256-0b450cfe7f7407a5",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2020 990 reports $12252.8M in contributions/revenue \u2265 event $5.7M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2020 990 reports $12252.8m in "
     },
     {
       "event_role": "grant_out",
@@ -574,9 +574,9 @@
       "regen_run_id": "sha256-0b450cfe7f7407a5",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2021 990 reports $18558.6M in contributions/revenue \u2265 event $3.6M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2021 990 reports $18558.6m in "
     },
     {
       "event_role": "grant_out",
@@ -596,9 +596,9 @@
       "regen_run_id": "sha256-0b450cfe7f7407a5",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2022 990 reports $19858.2M in contributions/revenue \u2265 event $11.0M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2022 990 reports $19858.2m in "
     },
     {
       "event_role": "grant_out",
@@ -618,9 +618,9 @@
       "regen_run_id": "sha256-0b450cfe7f7407a5",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
-      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2022 990 reports $3015.3M in contributions/revenue \u2265 event $0.0M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient silicon valley community foundation (ein 205205488) fy2022 990 reports $3015.3m in contrib"
     },
     {
       "event_role": "grant_out",
@@ -640,9 +640,9 @@
       "regen_run_id": "sha256-0b450cfe7f7407a5",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2023 990 reports $14732.6M in contributions/revenue \u2265 event $19.4M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2023 990 reports $14732.6m in "
     },
     {
       "event_role": "grant_out",
@@ -662,9 +662,9 @@
       "regen_run_id": "sha256-0b450cfe7f7407a5",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2023 990 reports $10050.0M in contributions/revenue \u2265 event $2.4M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2023 990 reports $10050.0m in contributions"
     },
     {
       "event_role": "grant_out",
@@ -684,9 +684,9 @@
       "regen_run_id": "sha256-0b450cfe7f7407a5",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2023 990 reports $14732.6M in contributions/revenue \u2265 event $7.4M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2023 990 reports $14732.6m in "
     },
     {
       "event_role": "grant_out",
@@ -706,9 +706,9 @@
       "regen_run_id": "sha256-0b450cfe7f7407a5",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2023 990 reports $10050.0M in contributions/revenue \u2265 event $9.7M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2023 990 reports $10050.0m in contributions"
     },
     {
       "event_role": "direct_gift",

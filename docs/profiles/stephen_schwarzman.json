@@ -216,9 +216,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Announced May 2015; SASCHF was formed in July 2015. Unclear whether disbursement flowed through SASCHF or was direct. TODO: pull SASCHF 2015/2016 990-PF recipient list to verify. If through SASCHF, subtract to avoid double-count.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/60646973",
-      "recipient_verification_note": "recipient Yale University (EIN 60646973) FY2015 990 reports $5461.7M in contributions/revenue \u2265 event $150.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient yale university (ein 60646973) fy2015 990 reports $5461.7m in contributions/revenue \u2265 even",
       "event_role_canonical": "direct_gift"
     },
     {

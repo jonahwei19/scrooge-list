@@ -354,9 +354,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/470824753",
-      "recipient_verification_note": "recipient Novo Foundation (EIN 470824753) FY2023 990 reports $373.9M in contributions/revenue \u2265 event $144.7M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient novo foundation (ein 470824753) fy2023 990 reports $373.9m in contributions/revenue \u2265 even"
     },
     {
       "event_role": "direct_gift",
@@ -419,9 +419,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/476032365",
-      "recipient_verification_note": "recipient The Susan Thompson Buffett Foundation (EIN 476032365) FY2023 990 reports $1270.5M in contributions/revenue \u2265 event $716.1M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient the susan thompson buffett foundation (ein 476032365) fy2023 990 reports $1270.5m in contr"
     },
     {
       "event_role": "direct_gift",

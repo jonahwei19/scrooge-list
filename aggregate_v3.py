@@ -425,8 +425,9 @@ def annotate_with_canonical(rec: dict) -> dict:
 
     # Sanity check: if observable_from_events exceeds the subject's net worth,
     # something is double-counted (a real person can't give more than they have).
-    # Stamp a flag so it's visible on the public profile and we can audit.
-    nw_b = rec.get("person", {}).get("net_worth_best_usd_b")
+    # The schema key is `net_worth.best_estimate_usd_billions`, NOT
+    # `person.net_worth_best_usd_b` — codex round 6 caught this.
+    nw_b = (rec.get("net_worth") or {}).get("best_estimate_usd_billions")
     if nw_b and event_sum > float(nw_b) * 1e9:
         rollup["sanity_flag_observable_exceeds_networth"] = (
             f"observable_from_events_usd ${event_sum/1e9:.1f}B > "

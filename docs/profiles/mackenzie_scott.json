@@ -923,6 +923,7 @@
     "ratio_observable_to_5pct_tenure": 2.3264,
     "observable_from_events_usd": 51840000000,
     "unyear_dollars_excluded_usd": 41510000000,
+    "sanity_flag_observable_exceeds_networth": "observable_from_events_usd $51.8B > net_worth $38.0B \u2014 possible double-count from cumulative-figure events not yet caught by extract.py guards.",
     "observable_drift_pct": 0.971,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },

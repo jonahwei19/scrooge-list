@@ -402,9 +402,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/951690977",
-      "recipient_verification_note": "recipient Childrens Hospital Los Angeles (EIN 951690977) FY2012 990 reports $822.5M in contributions/revenue \u2265 event $5.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient childrens hospital los angeles (ein 951690977) fy2012 990 reports $822.5m in contributions",
       "event_role_canonical": "direct_gift"
     },
     {

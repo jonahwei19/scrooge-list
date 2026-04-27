@@ -238,9 +238,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "This $1B gift is disbursed through Bloomberg Philanthropies umbrella. Any portion flowing through BFF 990-PF in 2024 ($1.47B total grants) may be partially captured in bloomberg_bff_2024 \u2014 but BFF grants-out is LESS than the single announced JHU gift, so the majority of this $1B must have flowed via non-BFF channels (direct, corporate Bloomberg L.P., or other charitable vehicles). Flag for deduplication: DO NOT simply add $1B + $1.47B for 2024; the Chronicle $3.7B 2024 headline figure is the de-facto consolidated total and should be treated as the ceiling for 2024 observable.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/520595110",
-      "recipient_verification_note": "recipient Johns Hopkins University (EIN 520595110) FY2023 990 reports $10226.0M in contributions/revenue \u2265 event $1000.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient johns hopkins university (ein 520595110) fy2023 990 reports $10226.0m in contributions/rev",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -258,9 +258,9 @@
       "confidence": "high",
       "notes": "Largest single gift ever to a U.S. academic institution at time of announcement. NPR corroboration: https://www.npr.org/2018/11/18/669047641/michael-bloomberg-gives-1-8-billion-to-financial-aid-at-johns-hopkins-university",
       "dedup_note": "BFF 2018 990-PF not pulled yet. If this gift flowed through BFF, it should appear in BFF grants-out for 2018 (TODO). If flowed personally or via Bloomberg L.P., it is additive to BFF. Hub JHU citation uses phrasing 'Bloomberg Philanthropies' which is umbrella, not specifically BFF.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/520595110",
-      "recipient_verification_note": "recipient Johns Hopkins University (EIN 520595110) FY2018 990 reports $7050.1M in contributions/revenue \u2265 event $1800.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient johns hopkins university (ein 520595110) fy2018 990 reports $7050.1m in contributions/reve",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -426,9 +426,9 @@
       "regen_run_id": "sha256-af45ceb083e9c8a7",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2020 990 reports $5359.9M in contributions/revenue \u2265 event $20.0M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2020 990 reports $5359.9m in contributions/",
       "event_role_canonical": "grant_out"
     },
     {
@@ -449,9 +449,9 @@
       "regen_run_id": "sha256-af45ceb083e9c8a7",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2021 990 reports $9451.8M in contributions/revenue \u2265 event $20.0M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2021 990 reports $9451.8m in contributions/",
       "event_role_canonical": "grant_out"
     },
     {
@@ -472,9 +472,9 @@
       "regen_run_id": "sha256-af45ceb083e9c8a7",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2022 990 reports $14381.8M in contributions/revenue \u2265 event $10.0M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2022 990 reports $14381.8m in contributions",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1178,9 +1178,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fb3ba2c2fb28e217",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/620488046",
-      "recipient_verification_note": "recipient Meharry Medical College (EIN 620488046) FY2023 990 reports $209.4M in contributions/revenue \u2265 event $200.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient meharry medical college (ein 620488046) fy2023 990 reports $209.4m in contributions/revenu",
       "event_role_canonical": "direct_gift"
     },
     {

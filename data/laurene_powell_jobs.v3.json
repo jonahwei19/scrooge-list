@@ -253,9 +253,9 @@
       "regen_run_id": "sha256-21de1b7e12eeb870",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
-      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2020 990 reports $2636.0M in contributions/revenue \u2265 event $10.0M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient silicon valley community foundation (ein 205205488) fy2020 990 reports $2636.0m in contrib"
     },
     {
       "event_role": "transfer_in",

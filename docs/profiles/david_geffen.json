@@ -178,9 +178,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "naming_right": "David Geffen Medical Scholarship Fund",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/952250801",
-      "recipient_verification_note": "recipient The Ucla Foundation (EIN 952250801) FY2012 990 reports $279.0M in contributions/revenue \u2265 event $100.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient the ucla foundation (ein 952250801) fy2012 990 reports $279.0m in contributions/revenue \u2265 ",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -239,9 +239,9 @@
       "confidence": "high",
       "naming_right": "David Geffen Wing (three floors of galleries)",
       "dedup_note": "If disbursed through DGF, captured in 2016-2019 Part XV. Possible double-count with DGF grants_out totals.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/131624100",
-      "recipient_verification_note": "recipient Museum Of Modern Art (EIN 131624100) FY2016 990 reports $408.4M in contributions/revenue \u2265 event $100.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient museum of modern art (ein 131624100) fy2016 990 reports $408.4m in contributions/revenue \u2265",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -258,9 +258,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "naming_right": "Geffen Academy at UCLA",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/952250801",
-      "recipient_verification_note": "recipient The Ucla Foundation (EIN 952250801) FY2015 990 reports $385.3M in contributions/revenue \u2265 event $100.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient the ucla foundation (ein 952250801) fy2015 990 reports $385.3m in contributions/revenue \u2265 ",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -569,9 +569,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/952250801",
-      "recipient_verification_note": "recipient The Ucla Foundation (EIN 952250801) FY2017 990 reports $440.2M in contributions/revenue \u2265 event $100.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient the ucla foundation (ein 952250801) fy2017 990 reports $440.2m in contributions/revenue \u2265 ",
       "event_role_canonical": "direct_gift"
     },
     {

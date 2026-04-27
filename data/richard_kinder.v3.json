@@ -258,9 +258,9 @@
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/741109655",
-      "recipient_verification_note": "recipient Museum Of Fine Arts Houston (EIN 741109655) FY2015 990 reports $215.6M in contributions/revenue \u2265 event $50.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient museum of fine arts houston (ein 741109655) fy2015 990 reports $215.6m in contributions/re"
     },
     {
       "event_id": "kinder_missouri_democracy_2015",
@@ -408,9 +408,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/741109655",
-      "recipient_verification_note": "recipient Museum Of Fine Arts Houston (EIN 741109655) FY2018 990 reports $166.3M in contributions/revenue \u2265 event $25.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient museum of fine arts houston (ein 741109655) fy2018 990 reports $166.3m in contributions/re"
     },
     {
       "event_role": "grant_out",
@@ -672,9 +672,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/820946654",
-      "recipient_verification_note": "recipient Good Reason Houston Inc (EIN 820946654) FY2018 990 reports $8.8M in contributions/revenue \u2265 event $4.2M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient good reason houston inc (ein 820946654) fy2018 990 reports $8.8m in contributions/revenue "
     },
     {
       "event_role": "direct_gift",

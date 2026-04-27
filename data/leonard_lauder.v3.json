@@ -329,9 +329,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/231352685",
-      "recipient_verification_note": "recipient Trustees Of The University Of Pennsylvania (EIN 231352685) FY2020 990 reports $7624.5M in contributions/revenue \u2265 event $125.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient trustees of the university of pennsylvania (ein 231352685) fy2020 990 reports $7624.5m in "
     },
     {
       "event_role": "direct_gift",
@@ -458,9 +458,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7aaa8dffbe5c10cf",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/742245072",
-      "recipient_verification_note": "recipient Texas A&M Foundation (EIN 742245072) FY2023 990 reports $293.3M in contributions/revenue \u2265 event $25.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient texas a&m foundation (ein 742245072) fy2023 990 reports $293.3m in contributions/revenue \u2265"
     },
     {
       "event_role": "direct_gift",

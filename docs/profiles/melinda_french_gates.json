@@ -231,9 +231,9 @@
       "regen_run_id": "sha256-34657245e50c2f07",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2023 990 reports $14732.6M in contributions/revenue \u2265 event $3.0M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2023 990 reports $14732.6m in ",
       "event_role_canonical": "grant_out"
     },
     {
@@ -254,9 +254,9 @@
       "regen_run_id": "sha256-34657245e50c2f07",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2023 990 reports $10050.0M in contributions/revenue \u2265 event $257.5M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2023 990 reports $10050.0m in contributions",
       "event_role_canonical": "grant_out"
     },
     {

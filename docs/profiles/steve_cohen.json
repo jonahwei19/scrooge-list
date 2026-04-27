@@ -292,9 +292,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Gift given THROUGH SACF per Art News and Bloomberg \u2014 therefore rolled into SACF grants_out. Not additive. Cohen joined MoMA trustee board in 2016; gift surfaced a year later. Named Steven and Alexandra Cohen Center for Special Exhibitions (sixth-floor gallery).",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/131624100",
-      "recipient_verification_note": "recipient Museum Of Modern Art (EIN 131624100) FY2017 990 reports $454.4M in contributions/revenue \u2265 event $50.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient museum of modern art (ein 131624100) fy2017 990 reports $454.4m in contributions/revenue \u2265",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -692,9 +692,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e4172fe0f6a7d86",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/10649794",
-      "recipient_verification_note": "recipient Hackensack Meridian Health Inc (EIN 10649794) FY2023 990 reports $7466.8M in contributions/revenue \u2265 event $10.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient hackensack meridian health inc (ein 10649794) fy2023 990 reports $7466.8m in contributions",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -873,9 +873,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e4172fe0f6a7d86",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/60646917",
-      "recipient_verification_note": "recipient Stamford Hospital (EIN 60646917) FY2016 990 reports $583.9M in contributions/revenue \u2265 event $20.0M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient stamford hospital (ein 60646917) fy2016 990 reports $583.9m in contributions/revenue \u2265 eve",
       "event_role_canonical": "direct_gift"
     },
     {

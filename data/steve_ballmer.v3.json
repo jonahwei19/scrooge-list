@@ -90,9 +90,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Multi-year pledge. Included in Forbes $4.99B lifetime figure \u2014 DO NOT add separately to rollup to avoid double-count. Listed here for descriptive purposes only.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/936015767",
-      "recipient_verification_note": "recipient University Of Oregon Foundation (EIN 936015767) FY2022 990 reports $431.5M in contributions/revenue \u2265 event $425.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient university of oregon foundation (ein 936015767) fy2022 990 reports $431.5m in contribution"
     },
     {
       "event_id": "ballmer_uo_2014",
@@ -105,9 +105,9 @@
       "source_url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/936015767",
-      "recipient_verification_note": "recipient University Of Oregon Foundation (EIN 936015767) FY2014 990 reports $107.2M in contributions/revenue \u2265 event $50.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient university of oregon foundation (ein 936015767) fy2014 990 reports $107.2m in contribution"
     },
     {
       "event_id": "ballmer_harvard_2013",

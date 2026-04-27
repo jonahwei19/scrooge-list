@@ -154,9 +154,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "TODO: verify whether this $200M was paid through LEF (in which case it would be inside the 2016 LEF 990-PF grant total, not additive) or from personal assets. LEF 2016 data not yet retrieved. If through LEF, this event would be rolled into ellison_lef_2016 once that year's 990 is pulled. If personal, it is additive.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/951642394",
-      "recipient_verification_note": "recipient University Of Southern California (EIN 951642394) FY2016 990 reports $4895.4M in contributions/revenue \u2265 event $200.0M (circumstantial)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient university of southern california (ein 951642394) fy2016 990 reports $4895.4m in contribut"
     },
     {
       "event_id": "ellison_emf_transfers_1997_2013",
@@ -215,9 +215,9 @@
       "regen_run_id": "sha256-d462da735667ca27",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2018 990 reports $2946.6M in contributions/revenue \u2265 event $20.0M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2018 990 reports $2946.6m in contributions/"
     },
     {
       "event_role": "grant_out",
@@ -237,9 +237,9 @@
       "regen_run_id": "sha256-d462da735667ca27",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2019 990 reports $2858.6M in contributions/revenue \u2265 event $0.4M (verified)"
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2019 990 reports $2858.6m in contributions/"
     },
     {
       "event_role": "grant_out",

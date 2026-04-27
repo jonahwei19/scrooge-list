@@ -243,9 +243,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "low",
       "dedup_note": "TODO: verify whether this $11.25M routed through CKF (in which case already captured in 2014 CKF 990-PF \u2014 not yet pulled) or from personal assets. Pre-2015 CKF data not yet retrieved.",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/486121167",
-      "recipient_verification_note": "recipient Wichita State University Foundation (EIN 486121167) FY2014 990 reports $23.4M in contributions/revenue \u2265 event $11.2M (circumstantial)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient wichita state university foundation (ein 486121167) fy2014 990 reports $23.4m in contribut",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -795,9 +795,9 @@
       "regen_run_id": "sha256-6557a1b5d04b85aa",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2016 990 reports $4780.9M in contributions/revenue \u2265 event $3.4M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2016 990 reports $4780.9m in c",
       "event_role_canonical": "grant_out"
     },
     {
@@ -818,9 +818,9 @@
       "regen_run_id": "sha256-6557a1b5d04b85aa",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2017 990 reports $7357.4M in contributions/revenue \u2265 event $2.0M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2017 990 reports $7357.4m in c",
       "event_role_canonical": "grant_out"
     },
     {
@@ -841,9 +841,9 @@
       "regen_run_id": "sha256-6557a1b5d04b85aa",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2018 990 reports $10031.9M in contributions/revenue \u2265 event $1.6M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2018 990 reports $10031.9m in ",
       "event_role_canonical": "grant_out"
     },
     {
@@ -864,9 +864,9 @@
       "regen_run_id": "sha256-6557a1b5d04b85aa",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
-      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2019 990 reports $9937.0M in contributions/revenue \u2265 event $1.0M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient fidelity investments charitable gift fund (ein 110303001) fy2019 990 reports $9937.0m in c",
       "event_role_canonical": "grant_out"
     },
     {
@@ -887,9 +887,9 @@
       "regen_run_id": "sha256-6557a1b5d04b85aa",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "true",
+      "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
-      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2022 990 reports $14381.8M in contributions/revenue \u2265 event $6.5M (verified)",
+      "recipient_verification_note": "demoted from \"true\" to \"envelope_fit\" \u2014 recipient size makes envelope check non-specific. Original: recipient national philanthropic trust (ein 237825575) fy2022 990 reports $14381.8m in contributions",
       "event_role_canonical": "grant_out"
     },
     {

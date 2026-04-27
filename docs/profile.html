@@ -174,8 +174,10 @@ a:hover{background:rgba(139,46,31,.08)}
 .tt-tip .rcpt-amt{color:var(--ink);font-variant-numeric:tabular-nums oldstyle-nums;font-weight:600;white-space:nowrap}
 .tt-tip .rcpt-verify{display:inline-block;font-size:.7rem;font-weight:700;width:1.1em;text-align:center;border-radius:50%;margin-left:4px;cursor:help}
 .tt-tip .rcpt-verify.ok{color:#1e7f3e;background:rgba(30,127,62,.12)}
+.tt-tip .rcpt-verify.env{color:#8C6B2D;background:rgba(140,107,45,.12)}
 .tt-tip .rcpt-verify.bad{color:#a93220;background:rgba(169,50,32,.12)}
 [data-theme="dark"] .tt-tip .rcpt-verify.ok{color:#8fb57a;background:rgba(143,181,122,.12)}
+[data-theme="dark"] .tt-tip .rcpt-verify.env{color:#D4A032;background:rgba(212,160,50,.12)}
 [data-theme="dark"] .tt-tip .rcpt-verify.bad{color:#d14a32;background:rgba(209,74,50,.12)}
 .tt-tip .tt-more{margin-top:6px;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-fade);font-style:italic}
 [data-theme="dark"] .tt-tip{box-shadow:0 6px 22px rgba(0,0,0,.6)}
@@ -565,9 +567,13 @@ function wireTimelineClicks() {
       const flow = kind === 'transfer' && it.donor
         ? `${esc(it.donor)} ${arrow} ${esc(target)}`
         : `${arrow} ${esc(target)}`;
-      // Recipient-side cross-check badge: ✓ verified | × unverifiable | ! false
+      // Recipient-side cross-check badge:
+      //   ✓ true            — foundation transfer with envelope fit (strongest)
+      //   ◯ envelope_fit    — recipient could absorb gift but no donor-specific match
+      //   ! false           — recipient 990 says contributions < gift amount
       let badge = '';
-      if (it.verified === 'true') badge = ' <span class="rcpt-verify ok" title="Recipient 990 confirms gift fits inside reported total contributions">✓</span>';
+      if (it.verified === 'true') badge = ' <span class="rcpt-verify ok" title="Foundation→foundation transfer; recipient 990 reports total contributions ≥ this gift">✓</span>';
+      else if (it.verified === 'envelope_fit') badge = ' <span class="rcpt-verify env" title="Recipient 990 contributions could absorb this gift, but does NOT confirm a donor-specific match (especially weak for DAF sponsors / billion-dollar charities)">◯</span>';
       else if (it.verified === 'false') badge = ' <span class="rcpt-verify bad" title="Recipient 990 contributions less than gift amount — likely timing lag or mis-extraction">!</span>';
       return `<li><span class="rcpt">${flow}${badge}</span><span class="rcpt-amt">${fmtUsd(it.amount)}</span></li>`;
     }).join('');
