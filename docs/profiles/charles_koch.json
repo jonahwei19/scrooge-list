@@ -962,26 +962,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "transfer_in",
-      "year": 2022,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Charles Koch",
-      "recipient": "Believe in People",
-      "amount_usd": 4300000000,
-      "source_type": "news_article",
-      "source_url": "https://popular.info/p/charles-kochs-5-billion-tax-loophole",
-      "confidence": "high",
-      "extraction_note": "Charles Koch donated $4.3 billion in Koch Industries stock to Believe in People, a 501(c)4 nonprofit, in 2022.",
-      "extraction_evidence": "Koch donated $4.3 billion in Koch Industries stock to Believe in People",
-      "regen_query": "\"Believe in People\" \"Charles Koch\" $4.3 billion 501c4 stock transfer 2022",
-      "event_id": "charles_koch_transfer_in_2022_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-38f5854399e7df59",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "transfer_in"
-    },
-    {
       "event_role": "political",
       "year": null,
       "date": null,

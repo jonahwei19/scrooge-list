@@ -677,28 +677,6 @@
       "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
-      "event_role": "direct_gift",
-      "year": 2021,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Lukas Walton",
-      "recipient": "unspecified",
-      "amount_usd": 3000000000,
-      "source_type": "other",
-      "source_url": "https://www.forbes.com/profile/lukas-walton/?list=billionaires",
-      "confidence": "medium",
-      "extraction_note": "Builders Vision, founded by Lukas Walton, has distributed more than $3 billion since its 2021 launch.",
-      "extraction_evidence": "a sustainability-focused philanthropic and impact-investing platform that has doled out more than $3 billion since launching in 2021",
-      "regen_query": "\"Builders Vision\" site:forbes.com OR site:bloomberg.com \"$3 billion deployed\" OR \"$2 billion\" 2022 2023 2024",
-      "event_id": "lukas_walton_direct_gift_2021_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-28c02a91d5f071ac",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "unverifiable",
-      "recipient_filing_url": "",
-      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
-    },
-    {
       "event_role": "grant_out",
       "year": 2023,
       "date": null,

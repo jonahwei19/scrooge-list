@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T02:51:27.506498Z",
+  "generated_at": "2026-04-27T02:53:36.809753Z",
   "generator": "aggregate_v3.py",
   "cohort": "US Tier A launch cohort",
   "schema_note": "Published tiers: A_VERIFIED_LOW (ordinal, ranked by $ shortfall vs. 5%-per-year-of-tenure capacity benchmark, uncapped), B_PROBABLY_LOW, C_OPAQUE, ON_TRACK. See docs/methodology.html.",
@@ -438,7 +438,7 @@
         "dafs_detected": false
       },
       "sources_count": 81,
-      "event_count": 83,
+      "event_count": 82,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "charles_koch.v3.json",
       "tier_rank": null
@@ -610,7 +610,7 @@
       "net_worth_as_of": "2026-02",
       "liquidity_estimate_pct": 0.2,
       "observable_usd": 1350009518,
-      "observable_from_events_usd": 10368397869,
+      "observable_from_events_usd": 10368372269,
       "observable_drift_pct": 6.68,
       "unyear_dollars_excluded_usd": 1647700000,
       "expected_usd": 2848000000,
@@ -643,7 +643,7 @@
         "dafs_detected": false
       },
       "sources_count": 72,
-      "event_count": 60,
+      "event_count": 59,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "jim_walton.v3.json",
       "tier_rank": null
@@ -1576,7 +1576,7 @@
         "dafs_detected": true
       },
       "sources_count": 87,
-      "event_count": 74,
+      "event_count": 73,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "mark_zuckerberg.v3.json",
       "tier_rank": null
@@ -1625,7 +1625,7 @@
         "dafs_detected": false
       },
       "sources_count": 99,
-      "event_count": 49,
+      "event_count": 48,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "david_geffen.v3.json",
       "tier_rank": null
@@ -2038,8 +2038,8 @@
       "net_worth_as_of": "2026-04",
       "liquidity_estimate_pct": 0.25,
       "observable_usd": 339864000,
-      "observable_from_events_usd": 7663511640,
-      "observable_drift_pct": 21.549,
+      "observable_from_events_usd": 4663511640,
+      "observable_drift_pct": 12.722,
       "unyear_dollars_excluded_usd": 16190000000,
       "expected_usd": 2000000000,
       "expected_5pct_tenure_usd": 10000000000,
@@ -2069,7 +2069,7 @@
         "dafs_detected": true
       },
       "sources_count": 63,
-      "event_count": 45,
+      "event_count": 44,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "lukas_walton.v3.json",
       "tier_rank": null
@@ -2133,8 +2133,8 @@
       "net_worth_as_of": "2026-02",
       "liquidity_estimate_pct": 0.85,
       "observable_usd": 543000000,
-      "observable_from_events_usd": 11963690333,
-      "observable_drift_pct": 21.033,
+      "observable_from_events_usd": 10963690333,
+      "observable_drift_pct": 19.191,
       "unyear_dollars_excluded_usd": 2596500000,
       "expected_usd": 1292000000,
       "expected_5pct_tenure_usd": 6460000000,
@@ -2167,7 +2167,7 @@
         "dafs_detected": true
       },
       "sources_count": 113,
-      "event_count": 60,
+      "event_count": 58,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "melinda_french_gates.v3.json",
       "tier_rank": null
@@ -2367,7 +2367,7 @@
         "dafs_detected": false
       },
       "sources_count": 89,
-      "event_count": 86,
+      "event_count": 85,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "pierre_omidyar.v3.json",
       "tier_rank": null
@@ -2602,7 +2602,7 @@
         "dafs_detected": false
       },
       "sources_count": 108,
-      "event_count": 78,
+      "event_count": 77,
       "right_of_reply_status": "not_yet_requested",
       "_source_file": "warren_buffett.v3.json",
       "tier_rank": null

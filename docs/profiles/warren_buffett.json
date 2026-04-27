@@ -1449,29 +1449,6 @@
       "retrieved_at": "2026-04-23",
       "notes": "Buffett resigned as Gates Foundation trustee June 2021 \u2014 giving continued but governance role ended. In April 2026 reporting (CNBC) Buffett signaled possible end to Gates donations entirely citing Bill Gates's Epstein ties; already formalized in Nov 2024 will update.",
       "event_role_canonical": "pledge"
-    },
-    {
-      "event_role": "reference_only",
-      "year": 2020,
-      "date": "2020-07-08",
-      "date_precision": "day",
-      "donor_entity": "Warren Buffett",
-      "recipient": "unspecified",
-      "amount_usd": 2900000000,
-      "source_type": "news_article",
-      "source_url": "https://www.cnbc.com/2020/07/08/warren-buffett-giving-away-another-2point9-billion-bring-total-donations-since-2006-to-37-billion.html",
-      "confidence": "high",
-      "extraction_note": "Warren Buffett announced he is giving away another $2.9 billion, bringing his total donations since 2006 to $37 billion.",
-      "extraction_evidence": "Warren Buffett giving away another $2.9 billion, bringing total donations since 2006 to $37 billion",
-      "regen_query": "\"Warren Buffett\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "warren_buffett_announcement_2020_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-69d8f07a859faae6",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "_cumulative_flag": "cumulative_or_lifetime_phrase_detected",
-      "_role_relabeled_from": "announcement",
-      "_role_relabel_reason": "cumulative_phrase",
-      "event_role_canonical": "reference_only"
     }
   ],
   "pledges_and_announcements": [

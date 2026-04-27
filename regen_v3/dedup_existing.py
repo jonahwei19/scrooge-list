@@ -47,6 +47,24 @@ def _crosskey(entry: dict) -> tuple | None:
     return (year, recipient, bucket)
 
 
+def _generic_crosskey(entry: dict) -> tuple | None:
+    """Looser cross-role key for events with generic/empty recipient.
+    Same gift extracted twice with `unspecified` recipient under different
+    roles (e.g. Lukas Walton's $3B Builders Vision total) — collide them.
+    Requires year + amount; ignores recipient.
+    """
+    year = entry.get("year") if isinstance(entry.get("year"), int) else None
+    if year is None:
+        return None
+    recipient = _normalize_recipient(entry.get("recipient"))
+    if recipient is not None:
+        return None  # only fires when recipient is generic
+    bucket = _amount_bucket(entry.get("amount_usd"))
+    if bucket is None:
+        return None
+    return ("__generic__", year, bucket)
+
+
 def dedupe_record(rec: dict) -> tuple[int, list[str]]:
     """Mutate rec in place. Returns (n_removed, removed_descriptions)."""
     removed_total = 0
@@ -54,15 +72,18 @@ def dedupe_record(rec: dict) -> tuple[int, list[str]]:
 
     for fld in ("cited_events", "pledges_and_announcements"):
         entries = rec.get(fld) or []
-        # Group by cross-role key
+        # Group by both keys: strict cross-role (with recipient) AND generic
+        # cross-role (when recipient is generic/missing).
         groups: dict[tuple, list[int]] = {}
         for i, e in enumerate(entries):
             if not isinstance(e, dict):
                 continue
             k = _crosskey(e)
-            if k is None:
-                continue
-            groups.setdefault(k, []).append(i)
+            if k is not None:
+                groups.setdefault(k, []).append(i)
+            gk = _generic_crosskey(e)
+            if gk is not None:
+                groups.setdefault(gk, []).append(i)
 
         # Find groups with collisions
         to_remove: set[int] = set()

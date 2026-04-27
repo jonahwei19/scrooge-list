@@ -429,7 +429,7 @@ body.saint-view .section-head h2{color:var(--green)}
   <section class="distribution ledger-chart">
     <div class="dist-caption">
       <span class="dist-title">The ledger of the ungiven</span>
-      <span class="dist-sub">Each row is one billionaire. The full track is what they could reasonably have given by now — 5% of their accessible wealth, every year since becoming a billionaire. The fill is what they actually gave. Sorted worst-first by dollars not given. Click a row for the receipts.</span>
+      <span class="dist-sub">Each row is one billionaire. The full track is what they could reasonably have given by now — 5% of their spendable wealth, every year since becoming a billionaire (5% matches the legal minimum private foundations must give out annually). The fill is what they have actually given. Sorted worst-first by dollars not given. Click a row for the receipts.</span>
     </div>
     <div class="ledger-bars" id="ledgerBars" role="list">
       <!-- populated by JS -->
@@ -466,64 +466,65 @@ body.saint-view .section-head h2{color:var(--green)}
   <div class="pattern-filters" id="patternFilters" aria-label="Filter by pattern">
     <span class="pf-label">Filter by pattern:</span>
     <button class="pf-btn active" data-pattern="">All</button>
-    <button class="pf-btn" data-pattern="GIVING_PLEDGE_UNFULFILLED">Pledge unmet</button>
-    <button class="pf-btn" data-pattern="NO_GIVING_PLEDGE_SIGNATURE">No pledge</button>
-    <button class="pf-btn" data-pattern="POLITICAL">Political-heavy</button>
-    <button class="pf-btn" data-pattern="LLC_OPACITY">LLC opaque</button>
-    <button class="pf-btn" data-pattern="FOR_PROFIT">For-profit pivot</button>
-    <button class="pf-btn" data-pattern="DAF">DAF-heavy</button>
-    <button class="pf-btn" data-pattern="LOW_PAYOUT">Low payout</button>
+    <button class="pf-btn" data-pattern="GIVING_PLEDGE_UNFULFILLED" title="Signed the Giving Pledge — a public promise to give half their wealth — but haven't kept it.">Promised half but hasn't</button>
+    <button class="pf-btn" data-pattern="NO_GIVING_PLEDGE_SIGNATURE">Never made any pledge</button>
+    <button class="pf-btn" data-pattern="POLITICAL" title="Spends more on politics than charity. Research shows political giving crowds out charitable giving (NBER 2020).">Politics over charity</button>
+    <button class="pf-btn" data-pattern="LLC_OPACITY" title="Holds charitable money in a private LLC, which doesn't have to disclose what it does.">Money parked in private LLC</button>
+    <button class="pf-btn" data-pattern="FOR_PROFIT">Charity routed through for-profit</button>
+    <button class="pf-btn" data-pattern="DAF" title="Most giving goes through a donor-advised fund — an anonymous account that doesn't have to give the money out on any timeline.">Mostly anonymous accounts</button>
+    <button class="pf-btn" data-pattern="LOW_PAYOUT" title="Their foundation gives out less than the 5% legal minimum each year.">Foundation hoards money</button>
   </div>
 
   <div class="how-to-read">
     <h3>How to read this</h3>
+    <p style="margin:0 0 14px;color:var(--ink-soft);font-size:.95rem"><strong>The benchmark:</strong> 5% of someone's spendable wealth (cash + tradable stock), each year since they became a billionaire. This is what they could reasonably have given by now. The 5% rate matches the legal minimum private foundations are required to give out annually under US tax law.</p>
     <ol>
-      <li><strong>Tier A is the strong claim.</strong> Each subject has low observable giving AND we could not identify an opaque vehicle (DAF, LLC, offshore trust) that would plausibly close the gap. Click through for the evidence chain.</li>
-      <li><strong>Tier B is a softer claim.</strong> Observable giving is low, but at least one opaque vehicle exists. We cannot prove hidden generosity is absent — only that we cannot find it in public records.</li>
-      <li><strong>Tier C is "we cannot say."</strong> Most giving here flows through an LLC or DAF that does not require public disclosure.</li>
-      <li><strong>On Track is calibration.</strong> Observable giving clears the 5%-of-liquid-wealth-per-year benchmark — they are not Scrooges, and we show them to make the tier boundaries legible.</li>
+      <li><strong>Tier A — we're confident they've given little.</strong> Documented giving is low AND we could not find any anonymous account (donor-advised fund), private LLC, or offshore trust that would plausibly close the gap. Click through for the evidence.</li>
+      <li><strong>Tier B — probably low.</strong> Documented giving is low, but at least one place where money could be held in secret exists. We cannot prove they're not giving in private — only that public records don't show it.</li>
+      <li><strong>Tier C — we can't say for sure.</strong> Most of their giving flows through a private LLC or anonymous account that doesn't have to disclose anything publicly.</li>
+      <li><strong>On Track — these aren't Scrooges.</strong> Their documented giving meets or exceeds the benchmark. Shown so you can see where the line is.</li>
     </ol>
   </div>
 
   <div class="saint-hero">
-    <h2>The Saints — subjects above the benchmark</h2>
-    <p>Same cohort, inverted frame. These subjects' observable giving clears the 5%-per-year capacity benchmark, with 990-PF filings or published LLC grant databases to back it up. Sorted by total observable giving (largest first). For the Scrooges, flip the toggle above.</p>
+    <h2>The Saints — billionaires above the benchmark</h2>
+    <p>Same group, inverted frame. These billionaires' documented giving exceeds what they could reasonably have given by now, backed by foundation tax filings or published LLC grant databases. Sorted by total documented giving (largest first). For the Scrooges, flip the toggle above.</p>
   </div>
 
   <div class="tiers-scrooge">
-    <div class="section-head" id="tier-a-section"><h2>Tier A · Verified Low</h2></div>
-    <p class="section-sub">Ranked ordinally by <strong>absolute dollar shortfall</strong> vs. the 5%-per-year capacity benchmark (see <a href="methodology.html">methodology</a>). Low observable giving, and no opaque vehicle that could plausibly close the gap.</p>
+    <div class="section-head" id="tier-a-section"><h2>Tier A · Verified low giving</h2></div>
+    <p class="section-sub">Ranked 1, 2, 3 by <strong>total dollars not given</strong> versus what they reasonably could have given (see <a href="methodology.html">methodology</a>). Low documented giving, and no anonymous account that could plausibly close the gap.</p>
     <div class="frontispiece-grid" id="tierA"></div>
 
-    <div class="section-head" id="tier-b-section"><h2>Tier B · Probably Low</h2></div>
-    <p class="section-sub">Observable giving is low relative to capacity, but at least one opaque vehicle exists. Sorted by dollar shortfall, not ranked ordinally.</p>
+    <div class="section-head" id="tier-b-section"><h2>Tier B · Probably low giving</h2></div>
+    <p class="section-sub">Documented giving is low compared to what they reasonably could have given, but at least one anonymous account exists. Sorted by dollars not given.</p>
     <table class="tier-table sortable" id="tierB">
       <thead><tr>
         <th data-sort="name">Name</th>
         <th class="num" data-sort="net_worth">Net Worth</th>
-        <th class="num" data-sort="observable">Observable</th>
-        <th class="num" data-sort="shortfall">Shortfall</th>
+        <th class="num" data-sort="observable">Documented</th>
+        <th class="num" data-sort="shortfall">Dollars not given</th>
         <th>Pattern</th>
       </tr></thead>
       <tbody></tbody>
     </table>
 
-    <div class="section-head" id="tier-c-section"><h2>Tier C · Opaque</h2></div>
-    <p class="section-sub">An LLC, DAF, or private vehicle sits between the donor and any disclosed giving — so the numbers below are <em>claimed by the vehicle</em>, not auditable from public filings. A Tier C shortfall is a floor, not a ceiling.</p>
+    <div class="section-head" id="tier-c-section"><h2>Tier C · Claimed but unverified</h2></div>
+    <p class="section-sub">An LLC, anonymous account, or private fund sits between the donor and any disclosed giving — so the numbers below are <em>what they claim</em>, not what we can verify. The "dollars not given" figure is a minimum; the real number could be higher.</p>
     <table class="tier-table sortable tier-c-table" id="tierC">
       <thead><tr>
         <th data-sort="name">Name</th>
         <th class="num" data-sort="net_worth">Net Worth</th>
         <th class="num" data-sort="observable">Claimed giving</th>
-        <th class="num" data-sort="shortfall">Apparent shortfall</th>
-        <th>Opaque vehicle</th>
+        <th class="num" data-sort="shortfall">Apparent gap</th>
+        <th>Where it's hidden</th>
       </tr></thead>
       <tbody></tbody>
     </table>
   </div>
 
-  <div class="section-head"><h2>On Track · Calibration reference</h2></div>
-  <p class="section-sub">Shown for calibration — these are not Scrooges. Observable giving is near or above the 5%-per-year capacity benchmark, confirmed through 990-PFs or published LLC grant databases.</p>
+  <div class="section-head"><h2>On Track · For comparison</h2></div>
+  <p class="section-sub">Shown for comparison — these are not Scrooges. Their documented giving meets or beats what they could reasonably have given, verified through foundation tax filings or published LLC grant databases.</p>
   <table class="tier-table sortable" id="tierOnTrack">
     <thead><tr>
       <th data-sort="name">Name</th>
@@ -711,10 +712,10 @@ function renderStats(data) {
     (typeof f === 'string' ? f : f.flag || '') === 'GIVING_PLEDGE_UNFULFILLED')).length;
 
   strip.innerHTML = `
-    <a class="stat" href="#tier-a-section" data-stat="tier-a"><div class="stat-value tier-a">${tierACount}</div><div class="stat-label">Tier A · Verified Low</div></a>
-    <a class="stat" href="#tier-b-section" data-stat="tier-b"><div class="stat-value">${tierBCount}</div><div class="stat-label">Tier B · Probably Low</div></a>
-    <a class="stat" href="#tier-a-section" data-stat="shortfall"><div class="stat-value">$${(totalShortfall/1e9).toFixed(0)}B</div><div class="stat-label">Undisbursed Shortfall · Tier A–C</div></a>
-    <a class="stat" href="#pattern-pledge" data-stat="pledge"><div class="stat-value">${pledgeUnfulfilled}</div><div class="stat-label">Giving Pledge Unmet</div></a>
+    <a class="stat" href="#tier-a-section" data-stat="tier-a"><div class="stat-value tier-a">${tierACount}</div><div class="stat-label">Verified low giving</div></a>
+    <a class="stat" href="#tier-b-section" data-stat="tier-b"><div class="stat-value">${tierBCount}</div><div class="stat-label">Probably low giving</div></a>
+    <a class="stat" href="#tier-a-section" data-stat="shortfall"><div class="stat-value">$${(totalShortfall/1e9).toFixed(0)}B</div><div class="stat-label">Total dollars not given (lifetime, all on this list)</div></a>
+    <a class="stat" href="#pattern-pledge" data-stat="pledge"><div class="stat-value">${pledgeUnfulfilled}</div><div class="stat-label">Signed the Giving Pledge but haven't kept it</div></a>
   `;
 
   // Clicking the pledge stat activates the pattern filter too
@@ -741,10 +742,10 @@ function renderDistribution(bs) {
   const tierOrder = { 'A_VERIFIED_LOW': 0, 'B_PROBABLY_LOW': 1, 'C_OPAQUE': 2, 'ON_TRACK': 3 };
 
   const tierLabel = t => ({
-    'A_VERIFIED_LOW': 'Tier A · Verified Low',
-    'B_PROBABLY_LOW': 'Tier B · Probably Low',
-    'C_OPAQUE': 'Tier C · Opaque (claimed not audited)',
-    'ON_TRACK': 'On Track · ≥ benchmark',
+    'A_VERIFIED_LOW': 'Tier A · Verified low giving',
+    'B_PROBABLY_LOW': 'Tier B · Probably low giving',
+    'C_OPAQUE': 'Tier C · Claimed but unverified',
+    'ON_TRACK': 'On Track · meets the benchmark',
   }[t] || 'Unclassified');
 
   const flagLabels = {

@@ -1482,26 +1482,6 @@
       "event_role_canonical": "announcement"
     },
     {
-      "event_role": "announcement",
-      "year": 2015,
-      "date": "2015-12-02",
-      "date_precision": "day",
-      "donor_entity": "Mark Zuckerberg",
-      "recipient": "unspecified",
-      "amount_usd": 45000000000,
-      "source_type": "news_article",
-      "source_url": "https://www.forbes.com/sites/katevinton/2015/12/02/what-you-should-know-about-mark-zuckerbergs-big-gift-news/",
-      "confidence": "medium",
-      "extraction_note": "Mark Zuckerberg announced a charitable gift of Facebook stock currently worth $45 billion.",
-      "extraction_evidence": "Facebook stock is a huge gift--currently worth $45 billion",
-      "regen_query": "\"Mark Zuckerberg\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "mark_zuckerberg_announcement_2015_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "announcement"
-    },
-    {
       "event_role": "pledge",
       "year": 2015,
       "date": "2015-12-02",

@@ -1758,26 +1758,6 @@
       "event_role_canonical": "announcement"
     },
     {
-      "event_role": "announcement",
-      "year": 2017,
-      "date": "2017-04-05",
-      "date_precision": "day",
-      "donor_entity": "Pierre Omidyar",
-      "recipient": "unspecified",
-      "amount_usd": 100000000,
-      "source_type": "news_article",
-      "source_url": "https://www.forbes.com/sites/katevinton/2017/04/05/billionaire-pierre-omidyars-foundation-commits-100-million-to-support-investigative-journalism/",
-      "confidence": "high",
-      "extraction_note": "Pierre Omidyar's philanthropic investment firm announced a $100 million commitment to support investigative reporting and fight hate speech.",
-      "extraction_evidence": "$100 million commitment to support investigative reporting and fight hate speech",
-      "regen_query": "\"Pierre Omidyar\" pledges OR commits OR announces",
-      "event_id": "pierre_omidyar_announcement_2017_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-efcc998f56b58cf8",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "announcement"
-    },
-    {
       "event_role": "pledge",
       "year": 2010,
       "date": "2010-09-21",
