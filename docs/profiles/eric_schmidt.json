@@ -70,6 +70,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (includes 11th Hour Project gran') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -83,6 +86,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -96,6 +102,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -109,6 +118,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -122,6 +134,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -135,6 +150,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/204170342",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -150,6 +168,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "THIS IS THE OPERATIONAL 501(c)(3) BEHIND SCHMIDT SCIENCES / SCHMIDT FUTURES / SCSP. Officers include Stuart Feldman (President Schmidt Sciences, $683K comp) and Michael Gable (EVP SCSP, $419K comp). Grants OUT from this entity include payments to Schmidt-affiliated recipient entities; risk of intra-family recycling deserves audit if full 990-PF recipient list is parsed.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -163,6 +184,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -176,6 +200,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -189,6 +216,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -202,6 +232,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -215,6 +248,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/463460261",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -230,6 +266,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "TODO: verify which foundation wrote the check. If from EWSFSI or SFF, it is already inside the 2021 grants_out totals and must not be double-counted. Leave flagged pending full 990-PF grant recipient parsing.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Broad Institute of MIT and Harvard'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -244,6 +283,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "low",
       "dedup_note": "Likely inside SFF or EWSFSI grant totals. Flag pending recipient parsing.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/210634501",
+      "recipient_verification_note": "recipient Princeton University (EIN 210634501) filed FY2019 990; amount not provided in event so no dollar match attempted",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -292,6 +334,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -312,6 +357,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -332,6 +380,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -352,6 +403,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -372,6 +426,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -392,6 +449,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -412,6 +472,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -432,6 +495,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -452,6 +518,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -472,6 +541,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -492,6 +564,9 @@
       "regen_run_id": "sha256-6786f3cfdfad08fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -512,6 +587,9 @@
       "regen_run_id": "sha256-c614129485c149d1",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/431152398",
+      "recipient_verification_note": "recipient Greater Kansas City Community Foundation (EIN 431152398) FY2019 990 reports $372.3M in contributions/revenue \u2265 event $0.2M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -532,6 +610,9 @@
       "regen_run_id": "sha256-c614129485c149d1",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/431152398",
+      "recipient_verification_note": "recipient Greater Kansas City Community Foundation (EIN 431152398) FY2020 990 reports $350.8M in contributions/revenue \u2265 event $0.5M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -552,6 +633,9 @@
       "regen_run_id": "sha256-c614129485c149d1",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/431152398",
+      "recipient_verification_note": "recipient Greater Kansas City Community Foundation (EIN 431152398) FY2022 990 reports $540.7M in contributions/revenue \u2265 event $0.7M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -572,6 +656,9 @@
       "regen_run_id": "sha256-c614129485c149d1",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/431152398",
+      "recipient_verification_note": "recipient Greater Kansas City Community Foundation (EIN 431152398) FY2023 990 reports $462.1M in contributions/revenue \u2265 event $0.3M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -592,6 +679,9 @@
       "regen_run_id": "sha256-c614129485c149d1",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/431152398",
+      "recipient_verification_note": "recipient Greater Kansas City Community Foundation (EIN 431152398) FY2023 990 reports $462.1M in contributions/revenue \u2265 event $0.3M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -612,6 +702,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -632,6 +725,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Consiglio Nazionale della Ricerche'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -652,6 +748,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -672,6 +771,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -692,6 +794,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/480566683",
+      "recipient_verification_note": "recipient Cedars Inc (EIN 480566683) FY2018 990 reports only $11.7M in contributions/revenue; event claims $50.0M (gap $38.3M)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -712,6 +817,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/263630378",
+      "recipient_verification_note": "recipient Marine Science And Technology Foundation (EIN 263630378) FY2011 990 reports $12.3M in contributions/revenue \u2265 event $1.0M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -772,6 +880,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -792,6 +903,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/844278182",
+      "recipient_verification_note": "recipient Regenerative Agriculture Foundation (EIN 844278182) FY2023 990 reports only $5.3M in contributions/revenue; event claims $50.0M (gap $44.7M)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -812,6 +926,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -832,6 +949,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -872,6 +992,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "nonspecific or aggregate recipient",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -952,6 +1075,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Schmidt Special Competitive Studies Project'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -972,6 +1098,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Human Rights Watch, Inc'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -992,6 +1121,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/942487469",
+      "recipient_verification_note": "recipient Monterey Bay Aquarium Foundation (EIN 942487469) FY2021 990 reports $114.5M in contributions/revenue \u2265 event $3.0M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1012,6 +1144,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1032,6 +1167,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-a0687caf156cdd95",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'European Organization for Nuclear Research'",
       "event_role_canonical": "direct_gift"
     },
     {

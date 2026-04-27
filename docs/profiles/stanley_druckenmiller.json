@@ -68,6 +68,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (Blue Meridian, NYU Langone, MSK') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -81,6 +84,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -94,6 +100,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -107,6 +116,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -120,6 +132,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -133,6 +148,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133735187",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -164,6 +182,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Paid from Druckenmiller Foundation. If 2009 990-PF grants_out are later pulled, this $100M will be inside that total \u2014 do NOT double-count. Current observable rollup (2019-2024) does not include 2009, so this adds to direct_gifts.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'NYU Langone Medical Center'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -181,6 +202,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Paid from Druckenmiller Foundation. This $100M IS inside the 2022 grants_out total of $173.9M. DO NOT add separately \u2014 keeping this event for provenance, but it is a subset of druck_found_2022.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Memorial Sloan Kettering'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -199,6 +223,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Inside Philanthropy confirmed $151M from Druckenmillers to Blue Meridian between 2017-2021. This IS inside the foundation's 2017-2021 grants_out \u2014 do not double-count against foundation totals. Kept for provenance. Druckenmiller is the current Blue Meridian board chair.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -217,6 +244,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "$48M additional NYU support 2017-2021 per Inside Philanthropy. Inside 2017-2021 foundation grants_out. Do not double-count.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -235,6 +265,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "Mix of foundation-paid and personal. Portion within 2019-2024 foundation window IS inside grants_out. Earlier portion adds to cumulative giving.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -255,6 +288,9 @@
       "regen_run_id": "sha256-09b1c02b37684e76",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -275,6 +311,9 @@
       "regen_run_id": "sha256-09b1c02b37684e76",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -315,6 +354,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-09b1c02b37684e76",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'foundations supporting medical research, education, and anti'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -335,6 +377,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-09b1c02b37684e76",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -355,6 +400,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-09b1c02b37684e76",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {

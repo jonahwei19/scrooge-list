@@ -61,6 +61,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "First annual gift under the 2006 commitment. Reuters: '$1.93 billion in 2006'.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -74,6 +77,9 @@
       "source_url": "https://www.reuters.com/article/buffett-berkshire-donations-idUSN0224010620100702/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -87,6 +93,9 @@
       "source_url": "https://www.reuters.com/article/buffett-berkshire-donations-idUSN0224010620100702/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -100,6 +109,9 @@
       "source_url": "https://www.reuters.com/article/buffett-berkshire-donations-idUSN0224010620100702/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -114,6 +126,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "Per Reuters 2010 article announcing the July 2010 $1.93B gift.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -132,6 +147,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "CRITICAL: This event is a roll-up placeholder to represent 2011-2020 annual gifts. It is NOT additive with buffett_gift_2006/2007/2008/2009/2010 (those are itemized). Downstream rollup must use either: (a) itemized 2006-2010 + this 2011-2020 cumulative + itemized 2021+; OR (b) use the 'buffett_cumulative_through_2025' anchor ($60B+) as a single authoritative number and ignore individual events. Do NOT sum both.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -148,6 +166,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "Buffett announced he had given ~50% of his original Berkshire shares by this point; also resigned as trustee of the Gates Foundation on the same date.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -164,6 +185,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "June 2023 gift: ~$5B. Buffett had gifted the equivalent of 257,000 A-shares since 2006, leaving ~219,000 shares after this gift.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -188,6 +212,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "June 2024 annual gift \u2014 at the time, 'biggest annual donation since he began making them in 2006'. Per-recipient $ figures from QZ (sourced from Berkshire press release).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -206,6 +233,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "A second 2024 gift \u2014 Thanksgiving timing. Converted 1,600 Class A into 2.4M Class B (worth ~$1.14B) distributed only to the four family foundations. Accompanied by letter re-emphasizing 'I never wished to create a dynasty' and announcing revised will directing post-death wealth to a new charitable trust run by his three children.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Four family foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -228,6 +258,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "Largest annual gift yet \u2014 $6B, 12.36M Class B shares. Pushed cumulative lifetime giving past $60B.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five foundations'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -269,6 +302,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -288,6 +324,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -307,6 +346,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -327,6 +369,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/470824753",
+      "recipient_verification_note": "recipient Novo Foundation (EIN 470824753) FY2023 990 reports $373.9M in contributions/revenue \u2265 event $144.7M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -347,6 +392,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Howard G. Buffett Foundation'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -366,6 +414,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -386,6 +437,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/476032365",
+      "recipient_verification_note": "recipient The Susan Thompson Buffett Foundation (EIN 476032365) FY2023 990 reports $1270.5M in contributions/revenue \u2265 event $716.1M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -405,6 +459,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -424,6 +481,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -443,6 +503,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -462,6 +525,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -481,6 +547,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -500,6 +569,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -519,6 +591,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -538,6 +613,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -557,6 +635,9 @@
       "regen_run_id": "sha256-02ea543480d7485a",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -597,6 +678,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -657,6 +741,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -677,6 +764,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'family charities'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -697,6 +787,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bill & Melinda Gates Foundation Trust'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -717,6 +810,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "4 candidates, none with revenue data",
       "event_role_canonical": "grant_out"
     },
     {
@@ -797,6 +893,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -817,6 +916,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -837,6 +939,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -857,6 +962,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -877,6 +985,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Howard G Buffett Foundation, Sherwood Foundation, NoVo Foundation'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -917,6 +1028,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'four foundations associated with his family'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1038,6 +1152,9 @@
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
       "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1078,6 +1195,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1098,6 +1218,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1139,6 +1262,9 @@
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
       "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bill and Melinda Gates Foundation'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1159,6 +1285,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1179,6 +1308,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'foundations run by others'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1200,6 +1332,9 @@
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
       "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1220,6 +1355,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bill & Melinda Gates Foundation'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1240,6 +1378,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/476032365",
+      "recipient_verification_note": "recipient The Susan Thompson Buffett Foundation (EIN 476032365) filed FY2023 990; amount not provided in event so no dollar match attempted",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1260,6 +1401,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-69d8f07a859faae6",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bill & Melinda Gates Foundation'",
       "event_role_canonical": "direct_gift"
     },
     {

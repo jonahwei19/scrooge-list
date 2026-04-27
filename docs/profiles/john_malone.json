@@ -61,6 +61,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Charitable disbursements figure. Top-2 named grants sum to $2.05M per CauseIQ; balance is smaller grants including Malone Scholars Program scholarships to private secondary schools.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Top recipients: Boothbay Region YMCA , Global Down Syndrome Foundation'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -75,6 +78,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Unusually large disbursement year \u2014 10x normal. Likely a one-time large grant (recipient not disclosed in ProPublica summary). TODO: pull 990-PF Part XV to identify the ~$25M+ grant.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -88,6 +94,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -101,6 +110,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -114,6 +126,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -127,6 +142,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/841408520",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -141,6 +159,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "classification_note": "This is a land-preservation operating foundation \u2014 Malone is President/Treasurer (zero comp). Disbursements largely fund internal land-stewardship operations (ranch hands, managers) rather than out-the-door grants to external 501(c)(3)s. Classification is arguable: IRS treats as charitable, but the land stays in the Malone family's effective control. See methodology_note on conservation easements.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -154,6 +175,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -167,6 +191,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -180,6 +207,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -193,6 +223,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -206,6 +239,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/481306827",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -222,6 +258,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Pre-2019 event, not captured in our 2019-2024 990-PF window. Vehicle (personal vs. Malone Family Foundation) not specified in press \u2014 2011 MFF grants-out not yet pulled to deduplicate. Retained in observable sum as direct_gift since MFF 2011 assets/grant level (~$80M) could not absorb a $50M gift without being visible as a spike.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Yale School of Engineering & Applied Science'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -236,6 +275,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "Pre-foundation-era for most purposes. Confidence medium \u2014 Wikipedia-sourced, original Yale press release not re-verified in this pull.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Yale'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -250,6 +292,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "May overlap with MFF 2011 giving; foundation assets $80M+ in 2011 could not easily absorb both Yale ($50M) and Hopkins ($30M) the same year without major pre-2019 grant spike. Tentatively treat as additive to MFF.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Johns Hopkins Whiting School of Engineering'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -263,6 +308,9 @@
       "source_url": "https://source.colostate.edu/malone/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237098397",
+      "recipient_verification_note": "recipient Colorado State University Foundation (EIN 237098397) FY2014 990 reports $75.9M in contributions/revenue \u2265 event $42.5M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -279,6 +327,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "low",
       "dedup_note": "Year approximate \u2014 Wikipedia does not pin date precisely. Hopkins School (New Haven) \u2260 Johns Hopkins University; distinct event from malone_johnshopkins_2011. Low confidence on exact amount and year; not re-verified.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Hopkins School'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -295,6 +346,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "2021 MFF grants-out ($6.6M) could not contain a $25M gift. Treated as additive / personal.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/10211494",
+      "recipient_verification_note": "recipient Central Maine Medical Center (EIN 10211494) FY2021 990 reports $415.8M in contributions/revenue \u2265 event $25.0M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -351,6 +405,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -371,6 +428,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -391,6 +451,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -411,6 +474,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -431,6 +497,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -451,6 +520,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -471,6 +543,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -491,6 +566,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -511,6 +589,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -531,6 +612,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -551,6 +635,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -571,6 +658,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -591,6 +681,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -612,6 +705,9 @@
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
       "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/751085363",
+      "recipient_verification_note": "no 990 on file for Fort Worth Country Day School Inc (EIN 751085363) within \u00b11 yr of 2004",
       "event_role_canonical": "grant_out"
     },
     {
@@ -632,6 +728,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -652,6 +751,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -672,6 +774,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Overlake School'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -692,6 +797,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Park School of Baltimore'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -712,6 +820,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -752,6 +863,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/411420915",
+      "recipient_verification_note": "recipient Mounds Park Academy (EIN 411420915) filed FY2023 990; amount not provided in event so no dollar match attempted",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -772,6 +886,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/160973557",
+      "recipient_verification_note": "recipient Manlius Pebble Hill School (EIN 160973557) FY2011 990 reports $9.0M in contributions/revenue \u2265 event $2.0M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -792,6 +909,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'NewsHour'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -852,6 +972,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-3cc6b17a1dcca91d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {

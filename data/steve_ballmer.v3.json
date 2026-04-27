@@ -71,7 +71,10 @@
       "source_url_secondary": "https://www.forbes.com/sites/kylemullins/2024/10/20/how-steve-ballmer-has-spent-100-million-in-a-new-twist-on-political-giving/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "confidence_note": "CRITICAL METHODOLOGY CAVEAT: Ballmer Group is an LLC, not a 501(c)(3). It does NOT file 990s. This $4.99B figure is self-reported by the Ballmer family to Forbes (which then independently verified to the extent it could). Under strict 'out-the-door to 501(c)(3)' methodology, some of this may be: (a) to for-profit impact investments (LLC grants to for-profits are NOT charity under IRS or Forbes methodology when tracked strictly); (b) to intermediaries/DAFs (e.g. documented $50M grant to Amalgamated Charitable Foundation as DAF sponsor for Growing Justice); (c) double-counted pledges vs disbursements. We cannot independently verify the breakdown because there is no 990."
+      "confidence_note": "CRITICAL METHODOLOGY CAVEAT: Ballmer Group is an LLC, not a 501(c)(3). It does NOT file 990s. This $4.99B figure is self-reported by the Ballmer family to Forbes (which then independently verified to the extent it could). Under strict 'out-the-door to 501(c)(3)' methodology, some of this may be: (a) to for-profit impact investments (LLC grants to for-profits are NOT charity under IRS or Forbes methodology when tracked strictly); (b) to intermediaries/DAFs (e.g. documented $50M grant to Amalgamated Charitable Foundation as DAF sponsor for Growing Justice); (c) double-counted pledges vs disbursements. We cannot independently verify the breakdown because there is no 990.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "ballmer_uo_2022",
@@ -86,7 +89,10 @@
       "source_url": "https://www.forbes.com/sites/forbeswealthteam/2023/01/23/americas-top-givers-2023-the-25-most-philanthropic-billionaires/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Multi-year pledge. Included in Forbes $4.99B lifetime figure \u2014 DO NOT add separately to rollup to avoid double-count. Listed here for descriptive purposes only."
+      "dedup_note": "Multi-year pledge. Included in Forbes $4.99B lifetime figure \u2014 DO NOT add separately to rollup to avoid double-count. Listed here for descriptive purposes only.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/936015767",
+      "recipient_verification_note": "recipient University Of Oregon Foundation (EIN 936015767) FY2022 990 reports $431.5M in contributions/revenue \u2265 event $425.0M (circumstantial)"
     },
     {
       "event_id": "ballmer_uo_2014",
@@ -98,7 +104,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/936015767",
+      "recipient_verification_note": "recipient University Of Oregon Foundation (EIN 936015767) FY2014 990 reports $107.2M in contributions/revenue \u2265 event $50.0M (circumstantial)"
     },
     {
       "event_id": "ballmer_harvard_2013",
@@ -113,7 +122,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Steve_Ballmer",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "notes": "Pre-Ballmer Group gift. Likely NOT double-counted in Forbes lifetime figure if that figure starts from 2014 Ballmer Group founding; uncertain \u2014 flag for dedup."
+      "notes": "Pre-Ballmer Group gift. Likely NOT double-counted in Forbes lifetime figure if that figure starts from 2014 Ballmer Group founding; uncertain \u2014 flag for dedup.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Harvard University'"
     },
     {
       "event_id": "ballmer_cis_2023",
@@ -126,7 +138,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Ballmer_Group",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Inside Forbes $4.99B lifetime \u2014 not additive."
+      "dedup_note": "Inside Forbes $4.99B lifetime \u2014 not additive.",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/581289174",
+      "recipient_verification_note": "recipient Communities In Schools Inc (EIN 581289174) FY2023 990 reports only $36.0M in contributions/revenue; event claims $165.0M (gap $129.0M)"
     },
     {
       "event_id": "ballmer_strivetogether_2018",
@@ -140,7 +155,10 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Inside Forbes $4.99B lifetime.",
-      "source_verification_status": "dead_link_rotted"
+      "source_verification_status": "dead_link_rotted",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/813380647",
+      "recipient_verification_note": "recipient Strivetogether Inc (EIN 813380647) FY2018 990 reports only $12.5M in contributions/revenue; event claims $60.0M (gap $47.5M)"
     },
     {
       "event_id": "ballmer_climate_2023",
@@ -154,7 +172,10 @@
       "source_url": "https://www.insidephilanthropy.com/home/2023-11-16-with-new-commitments-of-431-million-the-ballmers-are-now-a-top-funder-of-climate-action",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside Forbes $4.99B lifetime. CRITICAL: contains DAF transfer to Amalgamated Charitable Foundation \u2014 a known DAF sponsor. See red_flag_daf_transfers."
+      "dedup_note": "Inside Forbes $4.99B lifetime. CRITICAL: contains DAF transfer to Amalgamated Charitable Foundation \u2014 a known DAF sponsor. See red_flag_daf_transfers.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Climate-change portfolio (multiple; larg') \u2014 no entity to look up"
     },
     {
       "event_id": "connie_npr_2026",
@@ -170,7 +191,10 @@
       "source_url_secondary": "https://www.bloomberg.com/news/articles/2026-04-16/connie-ballmer-gives-80-million-to-npr-amid-trump-funding-cuts",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Largest single gift in NPR's history from a living donor. Announced in context of $1.1B federal public-broadcasting cuts under Trump. Connie Ballmer is former NPR Foundation board member. This gift is AFTER the Forbes $4.99B lifetime total (which was through Dec 2023), so it IS additive."
+      "notes": "Largest single gift in NPR's history from a living donor. Announced in context of $1.1B federal public-broadcasting cuts under Trump. Connie Ballmer is former NPR Foundation board member. This gift is AFTER the Forbes $4.99B lifetime total (which was through Dec 2023), so it IS additive.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "nonspecific or aggregate recipient"
     },
     {
       "event_role": "reference_only",
@@ -210,7 +234,10 @@
       "event_id": "steve_ballmer_direct_gift_2026_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -229,7 +256,10 @@
       "event_id": "steve_ballmer_grant_out_2020_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -248,7 +278,10 @@
       "event_id": "steve_ballmer_grant_out_2024_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Child Welfare Playbook'"
     },
     {
       "event_role": "direct_gift",
@@ -267,7 +300,10 @@
       "event_id": "steve_ballmer_direct_gift_2025_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/391906153",
+      "recipient_verification_note": "no 990 on file for Affordable Housing Development Fund Inc (EIN 391906153) within \u00b11 yr of 2025"
     },
     {
       "event_role": "private_investment",
@@ -306,7 +342,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected"
+      "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -325,7 +364,10 @@
       "event_id": "steve_ballmer_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "private_investment",
@@ -363,7 +405,10 @@
       "event_id": "steve_ballmer_direct_gift_2014_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Harvard University'"
     },
     {
       "event_role": "direct_gift",
@@ -382,7 +427,10 @@
       "event_id": "steve_ballmer_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -420,7 +468,10 @@
       "event_id": "steve_ballmer_direct_gift_2014_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Harvard University'"
     },
     {
       "event_role": "direct_gift",
@@ -439,7 +490,10 @@
       "event_id": "steve_ballmer_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -458,7 +512,10 @@
       "event_id": "steve_ballmer_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -477,7 +534,10 @@
       "event_id": "steve_ballmer_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -496,7 +556,10 @@
       "event_id": "steve_ballmer_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -515,7 +578,10 @@
       "event_id": "steve_ballmer_direct_gift_2022_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/813380647",
+      "recipient_verification_note": "recipient Strivetogether Inc (EIN 813380647) FY2022 990 reports only $24.5M in contributions/revenue; event claims $175.0M (gap $150.5M)"
     },
     {
       "event_role": "political",
@@ -553,7 +619,10 @@
       "event_id": "steve_ballmer_grant_out_2023_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/232222874",
+      "recipient_verification_note": "recipient Communities In Schools Of Eastern Pennsylvania Inc (EIN 232222874) FY2023 990 reports only $6.3M in contributions/revenue; event claims $13.0M (gap $6.7M)"
     },
     {
       "event_role": "direct_gift",
@@ -572,7 +641,10 @@
       "event_id": "steve_ballmer_direct_gift_2019_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/813380647",
+      "recipient_verification_note": "recipient Strivetogether Inc (EIN 813380647) FY2019 990 reports only $16.2M in contributions/revenue; event claims $60.0M (gap $43.8M)"
     },
     {
       "event_role": "private_investment",
@@ -648,7 +720,10 @@
       "event_id": "steve_ballmer_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -667,7 +742,10 @@
       "event_id": "steve_ballmer_direct_gift_x_regen7",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -743,7 +821,10 @@
       "event_id": "steve_ballmer_direct_gift_2025_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'wildfire relief'"
     },
     {
       "event_role": "political",
@@ -781,7 +862,10 @@
       "event_id": "steve_ballmer_grant_out_2025_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'LIIF'"
     },
     {
       "event_role": "direct_gift",
@@ -800,7 +884,10 @@
       "event_id": "steve_ballmer_direct_gift_2013_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Seattle'"
     },
     {
       "event_role": "transfer_in",
@@ -838,7 +925,10 @@
       "event_id": "steve_ballmer_direct_gift_2025_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -857,7 +947,10 @@
       "event_id": "steve_ballmer_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -876,7 +969,10 @@
       "event_id": "steve_ballmer_grant_out_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -895,7 +991,10 @@
       "event_id": "steve_ballmer_grant_out_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "private_investment",
@@ -933,7 +1032,10 @@
       "event_id": "steve_ballmer_grant_out_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -952,7 +1054,10 @@
       "event_id": "steve_ballmer_direct_gift_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/474325738",
+      "recipient_verification_note": "recipient Golden State Opportunity Foundation (EIN 474325738) filed FY2023 990; amount not provided in event so no dollar match attempted"
     },
     {
       "event_role": "direct_gift",
@@ -971,7 +1076,10 @@
       "event_id": "steve_ballmer_direct_gift_x_regen8",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-d5a7b741f35a6d1c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "ballmer_giving_pledge_unsigned",

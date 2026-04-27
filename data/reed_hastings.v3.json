@@ -103,7 +103,10 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Largest single HBCU individual gift on record at announcement. Task description said '$100M to UNCF + HBCUs' \u2014 correct amount is $120M total, split 3 ways. Press language ambiguous on vehicle; most likely flowed from Hastings Fund DAF (this is how their grants typically route per Chronicle of Philanthropy). If so, this is a DAF-outflow and is additive to DAF-inflow rows only if we don't also count the inflows. CONSERVATIVE CHOICE: count this $120M as observable-direct AND treat DAF inflows as committed-but-not-disbursed \u2014 no double-counting because the $100M 2016 founding inflow predates this outflow and $1.1B/$500M 2024 inflows postdate it.",
-      "classification_note": "NOT the same as 'Netflix Fund for Black Community' ($100M corporate Netflix Inc. treasury initiative in 2020 \u2014 separate entity, not Hastings personal)."
+      "classification_note": "NOT the same as 'Netflix Fund for Black Community' ($100M corporate Netflix Inc. treasury initiative in 2020 \u2014 separate entity, not Hastings personal).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'UNCF + Morehouse College + Spelman College'"
     },
     {
       "event_id": "hastings_bowdoin_ai_2025",
@@ -118,7 +121,10 @@
       "source_url": "https://www.bowdoin.edu/news/2025/03/announcing-the-hastings-initiative-for-ai-and-humanity.html",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Largest gift in Bowdoin's 231-year history. Announced March 2025. Funds ten new faculty + AI ethics research. Probably sourced from Hastings Fund DAF balance \u2014 if so, this is a pass-through from the 2024 $1.6B inflows, not additive."
+      "dedup_note": "Largest gift in Bowdoin's 231-year history. Announced March 2025. Funds ten new faculty + AI ethics research. Probably sourced from Hastings Fund DAF balance \u2014 if so, this is a pass-through from the 2024 $1.6B inflows, not additive.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/10215213",
+      "recipient_verification_note": "no 990 on file for Bowdoin College (EIN 10215213) within \u00b11 yr of 2025"
     },
     {
       "event_id": "hastings_gavi_2020",
@@ -133,7 +139,10 @@
       "source_url": "https://www.gavi.org/news/media-room/reed-hastings-and-patty-quillin-support-gavi-us-30-million-donation",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "First private-sector gift in Gavi's COVID drive. Likely DAF-sourced."
+      "dedup_note": "First private-sector gift in Gavi's COVID drive. Likely DAF-sourced.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Gavi, the Vaccine Alliance'"
     },
     {
       "event_id": "hastings_total_2024_chronicle",
@@ -183,7 +192,10 @@
       "event_id": "reed_hastings_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -221,7 +233,10 @@
       "event_id": "reed_hastings_direct_gift_2020_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/580566243",
+      "recipient_verification_note": "recipient Spelman College (EIN 580566243) FY2020 990 reports $195.0M in contributions/revenue \u2265 event $40.0M (circumstantial)"
     },
     {
       "event_role": "political",
@@ -259,7 +274,10 @@
       "event_id": "reed_hastings_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "transfer_in",
@@ -316,7 +334,10 @@
       "event_id": "reed_hastings_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -335,7 +356,10 @@
       "event_id": "reed_hastings_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -354,7 +378,10 @@
       "event_id": "reed_hastings_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -392,7 +419,10 @@
       "event_id": "reed_hastings_grant_out_2016_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/131624241",
+      "recipient_verification_note": "recipient United Negro College Fund Inc (EIN 131624241) FY2016 990 reports $250.3M in contributions/revenue \u2265 event $0.8M (verified)"
     },
     {
       "event_role": "direct_gift",
@@ -411,7 +441,10 @@
       "event_id": "reed_hastings_direct_gift_2021_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'UNCF, Spelman College and Morehouse College'"
     },
     {
       "event_role": "direct_gift",
@@ -430,7 +463,10 @@
       "event_id": "reed_hastings_direct_gift_2022_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/640303093",
+      "recipient_verification_note": "recipient Tougaloo College (EIN 640303093) FY2022 990 reports $43.3M in contributions/revenue \u2265 event $10.0M (circumstantial)"
     },
     {
       "event_role": "direct_gift",
@@ -449,7 +485,10 @@
       "event_id": "reed_hastings_direct_gift_2023_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/462589747",
+      "recipient_verification_note": "recipient Minerva University (EIN 462589747) FY2023 990 reports $49.8M in contributions/revenue \u2265 event $20.0M (circumstantial)"
     },
     {
       "event_role": "direct_gift",
@@ -468,7 +507,10 @@
       "event_id": "reed_hastings_direct_gift_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2023 990 reports $1598.5M in contributions/revenue \u2265 event $500.0M (circumstantial)"
     },
     {
       "event_role": "grant_out",
@@ -487,7 +529,10 @@
       "event_id": "reed_hastings_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2023 990 reports $1598.5M in contributions/revenue \u2265 event $1100.0M (verified)"
     },
     {
       "event_role": "direct_gift",
@@ -506,7 +551,10 @@
       "event_id": "reed_hastings_direct_gift_2026_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'White Stork'"
     },
     {
       "event_role": "direct_gift",
@@ -525,7 +573,10 @@
       "event_id": "reed_hastings_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -582,7 +633,10 @@
       "event_id": "reed_hastings_direct_gift_2020_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Morehouse College, Spelman College, UNCF'"
     },
     {
       "event_role": "direct_gift",
@@ -601,7 +655,10 @@
       "event_id": "reed_hastings_direct_gift_2016_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/131624241",
+      "recipient_verification_note": "recipient United Negro College Fund Inc (EIN 131624241) FY2016 990 reports $250.3M in contributions/revenue \u2265 event $1.5M (circumstantial)"
     },
     {
       "event_role": "political",
@@ -639,7 +696,10 @@
       "event_id": "reed_hastings_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -658,7 +718,10 @@
       "event_id": "reed_hastings_direct_gift_x_regen7",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -677,7 +740,10 @@
       "event_id": "reed_hastings_grant_out_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -696,7 +762,10 @@
       "event_id": "reed_hastings_direct_gift_x_regen8",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -715,7 +784,10 @@
       "event_id": "reed_hastings_direct_gift_2020_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-853c935b2898ca54",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/640303093",
+      "recipient_verification_note": "recipient Tougaloo College (EIN 640303093) FY2020 990 reports $29.9M in contributions/revenue \u2265 event $5.0M (circumstantial)"
     }
   ],
   "pledges_and_announcements": [

@@ -65,7 +65,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various social entrepreneurship organiza') \u2014 no entity to look up"
     },
     {
       "event_id": "skoll_foundation_2023",
@@ -77,7 +80,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "skoll_foundation_2022",
@@ -89,7 +95,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "skoll_foundation_2021",
@@ -101,7 +110,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "skoll_foundation_2020",
@@ -114,7 +126,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "2020 elevated relative to trend due to COVID-19 response giving ($20M January + $100M April announced for pandemic response)."
+      "notes": "2020 elevated relative to trend due to COVID-19 response giving ($20M January + $100M April announced for pandemic response).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "skoll_foundation_2019",
@@ -126,7 +141,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "skoll_fund_2019_2024_sister_entity",
@@ -143,7 +161,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/770528216",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "CRITICAL: The Skoll Fund (EIN 77-0528216) and Skoll Foundation (EIN 11-3659133) share staff, officers, and offices but are legally distinct entities (Fund is a public charity, Foundation is a private foundation). Skoll Foundation regularly makes transfers INTO the Skoll Fund. Some portion of this expense total overlaps with Skoll Foundation grant_out receipts. Per dedup rule, count Skoll Foundation grant_outs (which may include transfers to Skoll Fund) AND Skoll Fund grant_outs to ultimate recipients, but subtract the intra-family transfer. Exact deduplication requires parsing Schedule I grant recipient lists \u2014 pending. Conservative approach: count only Skoll Foundation grants_out 2019-2024 ($568.6M total) in observable rollup; treat Skoll Fund as potential uplift."
+      "dedup_note": "CRITICAL: The Skoll Fund (EIN 77-0528216) and Skoll Foundation (EIN 11-3659133) share staff, officers, and offices but are legally distinct entities (Fund is a public charity, Foundation is a private foundation). Skoll Foundation regularly makes transfers INTO the Skoll Fund. Some portion of this expense total overlaps with Skoll Foundation grant_out receipts. Per dedup rule, count Skoll Foundation grant_outs (which may include transfers to Skoll Fund) AND Skoll Fund grant_outs to ultimate recipients, but subtract the intra-family transfer. Exact deduplication requires parsing Schedule I grant recipient lists \u2014 pending. Conservative approach: count only Skoll Foundation grants_out 2019-2024 ($568.6M total) in observable rollup; treat Skoll Fund as potential uplift.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "skoll_gtf_2009_2018_lifetime",
@@ -166,7 +187,10 @@
         "2015": 17824973,
         "2018": 2036352,
         "note": "Only 2014, 2015, 2018 charitable disbursements extractable from ProPublica. Other years implied from total $100M budget deployed."
-      }
+      },
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "skoll_covid_2020_announcement",
@@ -181,7 +205,10 @@
       "source_url": "https://www.forbes.com/sites/kerryadolan/2020/06/24/how-the-billionaire-behind-the-movie-contagion-is-working-to-stop-this-pandemic-and-the-next-one/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Counted INSIDE skoll_foundation_2020 ($131.4M grant_out). Do not add separately."
+      "dedup_note": "Counted INSIDE skoll_foundation_2020 ($131.4M grant_out). Do not add separately.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('COVID-19 pandemic response (multiple rec') \u2014 no entity to look up"
     },
     {
       "event_id": "skoll_oxford_skoll_centre_2003",
@@ -194,7 +221,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Skoll_Foundation",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Founding endowment for Skoll Centre at Oxford, which hosts the Skoll World Forum. Additional operational support since. Pre-window (2003); not in 2019-2024 observable rollup."
+      "notes": "Founding endowment for Skoll Centre at Oxford, which hosts the Skoll World Forum. Additional operational support since. Pre-window (2003); not in 2019-2024 observable rollup.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Oxford Sa\u00efd Business School'"
     },
     {
       "event_id": "skoll_ebay_foundation_pre_ipo",
@@ -244,7 +274,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -263,7 +296,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -282,7 +318,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -301,7 +340,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -320,7 +362,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -339,7 +384,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -358,7 +406,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -377,7 +428,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -396,7 +450,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -415,7 +472,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -434,7 +494,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -453,7 +516,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -472,7 +538,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -491,7 +560,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -510,7 +582,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -529,7 +604,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -548,7 +626,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -567,7 +648,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-37d84811710986cd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -586,7 +670,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-7c338e5f62b94e89",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
+      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2023 990 reports $10050.0M in contributions/revenue \u2265 event $0.0M (verified)"
     },
     {
       "event_role": "direct_gift",
@@ -605,7 +692,10 @@
       "event_id": "jeff_skoll_direct_gift_2020_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "recipient_verification_note": "recipient Skoll Foundation (EIN 113659133) FY2020 990 reports $379.7M in contributions/revenue \u2265 event $20.0M (circumstantial)"
     },
     {
       "event_role": "direct_gift",
@@ -624,7 +714,10 @@
       "event_id": "jeff_skoll_direct_gift_2020_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "recipient_verification_note": "recipient Skoll Foundation (EIN 113659133) FY2020 990 reports $379.7M in contributions/revenue \u2265 event $100.0M (circumstantial)"
     },
     {
       "event_role": "grant_out",
@@ -643,7 +736,10 @@
       "event_id": "jeff_skoll_grant_out_2020_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'African Field Epidemiology Network'"
     },
     {
       "event_role": "private_investment",
@@ -681,7 +777,10 @@
       "event_id": "jeff_skoll_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -700,7 +799,10 @@
       "event_id": "jeff_skoll_direct_gift_2002_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Skoll Community Fund'"
     },
     {
       "event_role": "grant_out",
@@ -719,7 +821,10 @@
       "event_id": "jeff_skoll_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -738,7 +843,10 @@
       "event_id": "jeff_skoll_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -757,7 +865,10 @@
       "event_id": "jeff_skoll_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -795,7 +906,10 @@
       "event_id": "jeff_skoll_direct_gift_2014_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'UCLA School of Theater, Film and Television'"
     },
     {
       "event_role": "grant_out",
@@ -814,7 +928,10 @@
       "event_id": "jeff_skoll_grant_out_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -833,7 +950,10 @@
       "event_id": "jeff_skoll_grant_out_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -852,7 +972,10 @@
       "event_id": "jeff_skoll_grant_out_2023_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -871,7 +994,10 @@
       "event_id": "jeff_skoll_grant_out_2023_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -890,7 +1016,10 @@
       "event_id": "jeff_skoll_direct_gift_1999_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5adaf2b02d9cfdf3",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/113659133",
+      "recipient_verification_note": "no 990 on file for Skoll Foundation (EIN 113659133) within \u00b11 yr of 1999"
     }
   ],
   "pledges_and_announcements": [

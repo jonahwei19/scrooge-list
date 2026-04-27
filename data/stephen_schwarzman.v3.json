@@ -63,7 +63,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (18 grants 2024, range $11K-$24.') \u2014 no entity to look up"
     },
     {
       "event_id": "schwarzman_saschf_2023",
@@ -75,7 +78,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "schwarzman_saschf_2022",
@@ -87,7 +93,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "schwarzman_saschf_2021",
@@ -99,7 +108,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "schwarzman_saschf_2020",
@@ -111,7 +123,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "schwarzman_saschf_2019",
@@ -123,7 +138,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "schwarzman_saschf_2018",
@@ -135,7 +153,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/474634539",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "schwarzman_nypl_2008",
@@ -149,7 +170,10 @@
       "source_url": "https://www.philanthropy.com/news/financier-pledges-100-million-gift-to-help-new-york-public-library-expand/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Made before SASCHF was established (2015). Personal gift, additive to later foundation activity."
+      "dedup_note": "Made before SASCHF was established (2015). Personal gift, additive to later foundation activity.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'New York Public Library'"
     },
     {
       "event_id": "schwarzman_tsinghua_2013",
@@ -164,7 +188,10 @@
       "source_url": "https://philanthropynewsdigest.org/news/private-equity-tycoon-gives-100-million-to-establish-china-scholarship-fund",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Made before SASCHF was established (2015). Personal gift. Endowment total since grown past $600M with additional Schwarzman + other donor contributions; counted only at Schwarzman's personal $100M founding gift."
+      "dedup_note": "Made before SASCHF was established (2015). Personal gift. Endowment total since grown past $600M with additional Schwarzman + other donor contributions; counted only at Schwarzman's personal $100M founding gift.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Tsinghua University'"
     },
     {
       "event_id": "schwarzman_yale_2015",
@@ -179,7 +206,10 @@
       "source_url": "https://news.yale.edu/2015/05/11/150-million-gift-stephen-schwarzman-establish-first-its-kind-campus-center-yale-universit",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Announced May 2015; SASCHF was formed in July 2015. Unclear whether disbursement flowed through SASCHF or was direct. TODO: pull SASCHF 2015/2016 990-PF recipient list to verify. If through SASCHF, subtract to avoid double-count."
+      "dedup_note": "Announced May 2015; SASCHF was formed in July 2015. Unclear whether disbursement flowed through SASCHF or was direct. TODO: pull SASCHF 2015/2016 990-PF recipient list to verify. If through SASCHF, subtract to avoid double-count.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/60646973",
+      "recipient_verification_note": "recipient Yale University (EIN 60646973) FY2015 990 reports $5461.7M in contributions/revenue \u2265 event $150.0M (circumstantial)"
     },
     {
       "event_id": "schwarzman_icsf_2015",
@@ -194,7 +224,10 @@
       "source_url": "https://www.prnewswire.com/news-releases/the-archdiocese-of-new-york-announces-record-gift-of-40-million-from-christine--stephen-a-schwarzman-for-inner-city-scholarship-funds-new-endowment-campaign-300146053.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Announced Sept 2015; SASCHF was formed July 2015. Potential overlap with SASCHF 2015-2018 grants. TODO: verify from 990-PF recipients."
+      "dedup_note": "Announced Sept 2015; SASCHF was formed July 2015. Potential overlap with SASCHF 2015-2018 grants. TODO: verify from 990-PF recipients.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Archdiocese of New York'"
     },
     {
       "event_id": "schwarzman_mit_2018",
@@ -209,7 +242,10 @@
       "source_url": "https://news.mit.edu/2018/mit-reshapes-itself-stephen-schwarzman-college-of-computing-1015",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "MIT gift is multi-year pledge. SASCHF 990-PFs 2018-2024 total $413M in grants out \u2014 the MIT disbursement schedule almost certainly flows partially through SASCHF. Marking as direct_gift pledge for headline; the SASCHF grant_out rows are the actual flow. DO NOT sum both for observable giving \u2014 pick one bucket. We use SASCHF 990-PF totals as the observable flow and treat this $350M as announced but already captured in 2018-2024 grants_out rollup."
+      "dedup_note": "MIT gift is multi-year pledge. SASCHF 990-PFs 2018-2024 total $413M in grants out \u2014 the MIT disbursement schedule almost certainly flows partially through SASCHF. Marking as direct_gift pledge for headline; the SASCHF grant_out rows are the actual flow. DO NOT sum both for observable giving \u2014 pick one bucket. We use SASCHF 990-PF totals as the observable flow and treat this $350M as announced but already captured in 2018-2024 grants_out rollup.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "nonspecific or aggregate recipient"
     },
     {
       "event_id": "schwarzman_oxford_2019",
@@ -224,7 +260,10 @@
       "source_url": "https://www.ox.ac.uk/news/2019-06-19-university-announces-unprecedented-investment-humanities",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Multi-year pledge; disbursement via SASCHF is likely (SASCHF grants paid 2019-2024 ~$413M). Same bucket issue as MIT \u2014 treat pledge as announcement headline, SASCHF 990-PF rows as the actual flow. Do not double-count."
+      "dedup_note": "Multi-year pledge; disbursement via SASCHF is likely (SASCHF grants paid 2019-2024 ~$413M). Same bucket issue as MIT \u2014 treat pledge as announcement headline, SASCHF 990-PF rows as the actual flow. Do not double-count.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Oxford University'"
     },
     {
       "event_id": "schwarzman_abington_2018",
@@ -237,7 +276,10 @@
       "source_url": "https://www.inquirer.com/philly/education/stephen-schwarzman-25m-gift-abington-high-school-original-agreement-demands-20180411.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "Controversial gift \u2014 originally conditioned on renaming school 'Abington Schwarzman High School' + portraits + naming across 6 campus sites. After public outcry, Schwarzman withdrew most demands."
+      "notes": "Controversial gift \u2014 originally conditioned on renaming school 'Abington Schwarzman High School' + portraits + naming across 6 campus sites. After public outcry, Schwarzman withdrew most demands.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Abington Senior High School'"
     },
     {
       "event_id": "schwarzman_amc_2021",
@@ -249,7 +291,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Stephen_A._Schwarzman",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Animal Medical Center of New York'"
     },
     {
       "event_id": "schwarzman_natlibisrael_2018",
@@ -261,7 +306,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Stephen_A._Schwarzman",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'National Library of Israel'"
     },
     {
       "event_role": "grant_out",
@@ -280,7 +328,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-91a741d107fb10e2",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -299,7 +350,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-91a741d107fb10e2",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -318,7 +372,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-91a741d107fb10e2",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -337,7 +394,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-91a741d107fb10e2",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -356,7 +416,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-91a741d107fb10e2",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -375,7 +438,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-91a741d107fb10e2",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -394,7 +460,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -470,7 +539,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -489,7 +561,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -508,7 +583,10 @@
       "event_id": "stephen_schwarzman_direct_gift_2025_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'University'"
     },
     {
       "event_role": "direct_gift",
@@ -527,7 +605,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -584,7 +665,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -603,7 +687,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -641,7 +728,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen7",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -660,7 +750,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen8",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -679,7 +772,10 @@
       "event_id": "stephen_schwarzman_direct_gift_2007_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'New York Public Library'"
     },
     {
       "event_role": "direct_gift",
@@ -698,7 +794,10 @@
       "event_id": "stephen_schwarzman_direct_gift_2019_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/232728083",
+      "recipient_verification_note": "recipient Abington School District Educational Foundation (EIN 232728083) FY2019 990 reports only $0.0M in contributions/revenue; event claims $25.0M (gap $25.0M)"
     },
     {
       "event_role": "grant_out",
@@ -717,7 +816,10 @@
       "event_id": "stephen_schwarzman_grant_out_2022_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -736,7 +838,10 @@
       "event_id": "stephen_schwarzman_grant_out_2018_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -755,7 +860,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen9",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -774,7 +882,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen10",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -793,7 +904,10 @@
       "event_id": "stephen_schwarzman_direct_gift_x_regen11",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fa3f7e9aac887346",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",

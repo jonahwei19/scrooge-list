@@ -59,7 +59,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (not disclosed at summary level)') \u2014 no entity to look up"
     },
     {
       "event_id": "saban_sff_2023",
@@ -71,7 +74,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "saban_sff_2022",
@@ -83,7 +89,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "saban_sff_2021",
@@ -95,7 +104,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "saban_sff_2020",
@@ -107,7 +119,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "saban_sff_2019",
@@ -119,7 +134,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954769273",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "saban_chla_2003",
@@ -134,7 +152,10 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "CHLA states this was 'the largest single gift of its kind to a children's hospital in North America' at the time. Research building and Smith Research Tower provide 150,000+ sq ft of lab space.",
-      "dedup_note": "This $40M may be partially captured in SFF 990-PFs 2003+; pre-2011 SFF 990-PF data not in current pull. Flag: potential partial double-count with SFF aggregate if later years' Saban-lifetime totals include this. For the 2019-2024 SFF window used in rollup, there is no overlap \u2014 gift predates the window."
+      "dedup_note": "This $40M may be partially captured in SFF 990-PFs 2003+; pre-2011 SFF 990-PF data not in current pull. Flag: potential partial double-count with SFF aggregate if later years' Saban-lifetime totals include this. For the 2019-2024 SFF window used in rollup, there is no overlap \u2014 gift predates the window.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/951690977",
+      "recipient_verification_note": "no 990 on file for Childrens Hospital Los Angeles (EIN 951690977) within \u00b11 yr of 2003"
     },
     {
       "event_id": "saban_brookings_2002",
@@ -149,7 +170,10 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Described as the largest donation in Brookings history at the time. Plus additional pledged funds. In 2014 Brookings dropped 'Saban' from the center's official name (now simply Center for Middle East Policy); Saban Forum continued through 2017 before pausing in 2018.",
-      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window \u2014 no overlap."
+      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window \u2014 no overlap.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/530196577",
+      "recipient_verification_note": "no 990 on file for Brookings Institution (EIN 530196577) within \u00b11 yr of 2002"
     },
     {
       "event_id": "saban_fidf_lifetime_pre2018",
@@ -166,7 +190,10 @@
       "source_url": "https://www.hollywoodreporter.com/movies/movie-features/haim-cheryl-saban-talk-power-philanthropy-israel-2020-presidential-race-1222856/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Figure spans ~2 decades, overlapping partially with SFF 2019 grants in rollup. Saban has chaired record-breaking FIDF galas (2014 $33M raised; 2015 $34M; 2017 $53.8M Beverly Hills gala). Large fraction of this figure is pre-2019, so minimal overlap with the 2019-2024 SFF window \u2014 but some recurring annual giving likely continues inside the window and is captured in SFF grants."
+      "dedup_note": "Figure spans ~2 decades, overlapping partially with SFF 2019 grants in rollup. Saban has chaired record-breaking FIDF galas (2014 $33M raised; 2015 $34M; 2017 $53.8M Beverly Hills gala). Large fraction of this figure is pre-2019, so minimal overlap with the 2019-2024 SFF window \u2014 but some recurring annual giving likely continues inside the window and is captured in SFF grants.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "saban_soroka_2007",
@@ -179,7 +206,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Haim_Saban",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window \u2014 no overlap."
+      "dedup_note": "Pre-2011 SFF 990-PF data not in pull. Gift predates 2019-2024 rollup window \u2014 no overlap.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Soroka Medical Center'"
     },
     {
       "event_id": "saban_lifetime_self_reported_2019",
@@ -211,7 +241,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f8ad4fb442a67760",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "political",
@@ -249,7 +282,10 @@
       "event_id": "haim_saban_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -268,7 +304,10 @@
       "event_id": "haim_saban_direct_gift_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Television Academy'"
     },
     {
       "event_role": "political",
@@ -344,7 +383,10 @@
       "event_id": "haim_saban_direct_gift_2012_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/951690977",
+      "recipient_verification_note": "recipient Childrens Hospital Los Angeles (EIN 951690977) FY2012 990 reports $822.5M in contributions/revenue \u2265 event $5.0M (circumstantial)"
     },
     {
       "event_role": "political",
@@ -382,7 +424,10 @@
       "event_id": "haim_saban_direct_gift_2008_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Soroka Medical Center'"
     },
     {
       "event_role": "political",
@@ -439,7 +484,10 @@
       "event_id": "haim_saban_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -458,7 +506,10 @@
       "event_id": "haim_saban_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -477,7 +528,10 @@
       "event_id": "haim_saban_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -496,7 +550,10 @@
       "event_id": "haim_saban_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -614,7 +671,10 @@
       "event_id": "haim_saban_direct_gift_2012_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'FIDF'"
     },
     {
       "event_role": "direct_gift",
@@ -633,7 +693,10 @@
       "event_id": "haim_saban_direct_gift_2018_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Academy Museum of Motion Pictures'"
     },
     {
       "event_role": "private_investment",
@@ -671,7 +734,10 @@
       "event_id": "haim_saban_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -690,7 +756,10 @@
       "event_id": "haim_saban_direct_gift_2019_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '1,000 causes and organizations'"
     },
     {
       "event_role": "direct_gift",
@@ -709,7 +778,10 @@
       "event_id": "haim_saban_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -749,7 +821,10 @@
       "event_id": "haim_saban_corporate_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -768,7 +843,10 @@
       "event_id": "haim_saban_grant_out_2023_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -787,7 +865,10 @@
       "event_id": "haim_saban_direct_gift_x_regen7",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -882,7 +963,10 @@
       "event_id": "haim_saban_direct_gift_x_regen8",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -901,7 +985,10 @@
       "event_id": "haim_saban_direct_gift_x_regen9",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-34c9c5d13461c792",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",

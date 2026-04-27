@@ -56,6 +56,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954085811",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (full grant list requires 990-PF') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -70,6 +73,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "MSK Griffin co-gift ($400M total, halves not disclosed) announced Dec 2023. Geffen's share likely flows through DGF in 2023 or 2024 filings. Treat MSK separately as direct_gift to avoid double-count; verify via 2023 and 2024 Part XV grantee list.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -83,6 +89,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954085811",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -97,6 +106,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "Yale Drama $150M pledge announced June 2021. If disbursed through DGF, will appear in this year's or subsequent years' Part XV. Treat as direct_gift pending 990 line-item verification.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -110,6 +122,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954085811",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -123,6 +138,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954085811",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -141,6 +159,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "naming_right": "David Geffen School of Medicine at UCLA (in perpetuity)",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'UCLA School of Medicine'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -157,6 +178,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "naming_right": "David Geffen Medical Scholarship Fund",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/952250801",
+      "recipient_verification_note": "recipient The Ucla Foundation (EIN 952250801) FY2012 990 reports $279.0M in contributions/revenue \u2265 event $100.0M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -172,6 +196,9 @@
       "confidence": "high",
       "naming_right": "David Geffen Theater",
       "dedup_note": "Granted through DGF \u2014 will be inside DGF 2013 Part XV. Do NOT add on top of DGF grants_out total for that year once 2013 990 is retrieved.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Academy Museum of Motion Pictures'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -191,6 +218,9 @@
       "confidence": "high",
       "naming_right": "David Geffen Hall (in perpetuity)",
       "dedup_note": "If installments flow through DGF, portions are inside DGF grants_out 2015-2023. Yet this was announced as Geffen's personal pledge. Need 990 Part XV confirmation to avoid double-count.",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/320230230",
+      "recipient_verification_note": "recipient Lincoln Center Foundation Inc (EIN 320230230) FY2015 990 reports only $0.1M in contributions/revenue; event claims $100.0M (gap $99.9M)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -209,6 +239,9 @@
       "confidence": "high",
       "naming_right": "David Geffen Wing (three floors of galleries)",
       "dedup_note": "If disbursed through DGF, captured in 2016-2019 Part XV. Possible double-count with DGF grants_out totals.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/131624100",
+      "recipient_verification_note": "recipient Museum Of Modern Art (EIN 131624100) FY2016 990 reports $408.4M in contributions/revenue \u2265 event $100.0M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -225,6 +258,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "naming_right": "Geffen Academy at UCLA",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/952250801",
+      "recipient_verification_note": "recipient The Ucla Foundation (EIN 952250801) FY2015 990 reports $385.3M in contributions/revenue \u2265 event $100.0M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -241,6 +277,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "If through DGF, inside 2019 ($41.4M) or 2020 ($67.3M) grants_out. DGF 2019 grants_out is LESS than this single gift, implying this was personal/other-vehicle or multi-year payable. Needs Part XV verification.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'UCLA David Geffen Medical Scholarship Fund'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -260,6 +299,9 @@
       "confidence": "high",
       "naming_right": "David Geffen School of Drama at Yale (in perpetuity)",
       "dedup_note": "Likely captured within DGF 2021 ($108.3M) or 2022 ($90.8M) grants_out totals. Do NOT add on top; pending Part XV verification.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Yale'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -274,6 +316,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "Reported by Wikipedia; primary announcement source not confirmed in this research pass. Verify.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Columbia Business School'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -294,6 +339,9 @@
       "confidence": "medium",
       "naming_right": "David H. Koch Center \u2014 specific naming TBD (gift funds expansion of research/clinical programs)",
       "dedup_note": "Geffen's share may already be inside DGF 2023 grants_out ($130M) or 2024 ($112.8M). HIGH DEDUP RISK. Part XV parse required.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/912154267",
+      "recipient_verification_note": "recipient Memorial Sloan Kettering Cancer Center (EIN 912154267) filed FY2023 990; amount not provided in event so no dollar match attempted",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -314,6 +362,9 @@
       "regen_run_id": "sha256-c436ad2c7d5a29e0",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -334,6 +385,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -354,6 +408,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -374,6 +431,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -394,6 +454,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/952250801",
+      "recipient_verification_note": "recipient The Ucla Foundation (EIN 952250801) FY2023 990 reports $902.8M in contributions/revenue \u2265 event $0.3M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -414,6 +477,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -434,6 +500,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -454,6 +523,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Columbia Business School'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -474,6 +546,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -494,6 +569,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/952250801",
+      "recipient_verification_note": "recipient The Ucla Foundation (EIN 952250801) FY2017 990 reports $440.2M in contributions/revenue \u2265 event $100.0M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -514,6 +592,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Los Angeles County Museum of Art'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -534,6 +615,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Memorial Sloan Kettering Hospital'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -554,6 +638,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'David Geffen School of Drama at Yale'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -574,6 +661,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -594,6 +684,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Geffen Academy at UCLA'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -614,6 +707,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -634,6 +730,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'LACMA'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -654,6 +753,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-36f866aa59289a7b",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {

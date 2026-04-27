@@ -74,7 +74,10 @@
       "source_type": "990",
       "source_url": "https://www.instrumentl.com/990-report/george-kaiser-family-foundation-3b47c134-fe33-49af-95d1-b2300f5ca101",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kaiser_gkff_expenses_2024",
@@ -167,7 +170,10 @@
       "source_url": "https://philanthropynewsdigest.org/news/george-kaiser-family-foundation-partners-give-350-million-for-park",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This $200M is captured WITHIN GKFF's 2013-2018 annual expenses already counted above. Do NOT add to rollup as separate additive event. Included here for event-level visibility only."
+      "dedup_note": "CRITICAL: This $200M is captured WITHIN GKFF's 2013-2018 annual expenses already counted above. Do NOT add to rollup as separate additive event. Included here for event-level visibility only.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'A Gathering Place'"
     },
     {
       "event_id": "kaiser_bob_dylan_archive_2016",
@@ -181,7 +187,10 @@
       "source_url": "https://forward.com/culture/501368/bob-dylan-archives-tulsa-oklahoma-jewish-george-kaiser-woody-guthrie/",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Captured within GKFF 2016 expenses \u2014 do NOT add separately to rollup."
+      "dedup_note": "Captured within GKFF 2016 expenses \u2014 do NOT add separately to rollup.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bob Dylan Archive \u2192 Bob Dylan Center'"
     },
     {
       "event_id": "kaiser_ou_tulsa_medicine_pre2015",
@@ -197,7 +206,10 @@
       "source_url": "https://en.wikipedia.org/wiki/George_Kaiser",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Captured within GKFF historical expenses \u2014 do NOT add separately to rollup."
+      "dedup_note": "Captured within GKFF historical expenses \u2014 do NOT add separately to rollup.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kaiser_tulsa_remote_program_ongoing",
@@ -233,7 +245,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -252,7 +267,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -271,7 +289,10 @@
       "event_id": "george_kaiser_direct_gift_2016_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bob Dylan Center'"
     },
     {
       "event_role": "political",
@@ -328,7 +349,10 @@
       "event_id": "george_kaiser_direct_gift_2013_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Woody Guthrie Center'"
     },
     {
       "event_role": "grant_out",
@@ -347,7 +371,10 @@
       "event_id": "george_kaiser_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -366,7 +393,10 @@
       "event_id": "george_kaiser_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '19 community organizations and nonprofits'"
     },
     {
       "event_role": "direct_gift",
@@ -385,7 +415,10 @@
       "event_id": "george_kaiser_direct_gift_2008_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Oklahoma State University, University of Oklahoma'"
     },
     {
       "event_role": "private_investment",
@@ -423,7 +456,10 @@
       "event_id": "george_kaiser_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -442,7 +478,10 @@
       "event_id": "george_kaiser_grant_out_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -461,7 +500,10 @@
       "event_id": "george_kaiser_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -480,7 +522,10 @@
       "event_id": "george_kaiser_grant_out_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -499,7 +544,10 @@
       "event_id": "george_kaiser_direct_gift_2008_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/736091755",
+      "recipient_verification_note": "no 990 on file for University Of Oklahoma Foundation Inc (EIN 736091755) within \u00b11 yr of 2008"
     },
     {
       "event_role": "grant_out",
@@ -518,7 +566,10 @@
       "event_id": "george_kaiser_grant_out_2018_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Tulsa Remote'"
     },
     {
       "event_role": "direct_gift",
@@ -537,7 +588,10 @@
       "event_id": "george_kaiser_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "transfer_in",
@@ -575,7 +629,10 @@
       "event_id": "george_kaiser_direct_gift_2018_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "4 candidates, none with revenue data"
     },
     {
       "event_role": "direct_gift",
@@ -594,7 +651,10 @@
       "event_id": "george_kaiser_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -613,7 +673,10 @@
       "event_id": "george_kaiser_direct_gift_2014_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/731386151",
+      "recipient_verification_note": "recipient River Parks Foundation (EIN 731386151) FY2014 990 reports only $1.6M in contributions/revenue; event claims $350.0M (gap $348.4M)"
     },
     {
       "event_role": "political",
@@ -651,7 +714,10 @@
       "event_id": "george_kaiser_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -670,7 +736,10 @@
       "event_id": "george_kaiser_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2a705f1ba3105bbd",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     }
   ],
   "pledges_and_announcements": [

@@ -64,6 +64,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "Charitable disbursements from Dalio Foundation Inc 2024 990-PF.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (recipients not fully itemized i') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -77,6 +80,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -90,6 +96,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -103,6 +112,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -116,6 +128,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -129,6 +144,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -142,6 +160,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -155,6 +176,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -168,6 +192,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -181,6 +208,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -194,6 +224,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/431965846",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -210,6 +243,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Likely captured within 2020 Dalio Foundation grant_out ($33.6M) if paid from the foundation, but more likely spread across multiple years or paid from a separate personal/family-fund vehicle. Leave as standalone direct_gift and flag for dedup when Dalio Foundation 2020 grant recipient list is parsed. If double-counted, subtract from direct_gifts.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'NewYork'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -224,6 +260,9 @@
       "source_url": "https://en.wikipedia.org/wiki/OceanX",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/42105850",
+      "recipient_verification_note": "recipient Woods Hole Oceanographic Institution (EIN 42105850) FY2012 990 reports $285.2M in contributions/revenue \u2265 event $5.0M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -261,6 +300,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -281,6 +323,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -301,6 +346,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -321,6 +369,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -341,6 +392,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -361,6 +415,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -381,6 +438,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -401,6 +461,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -421,6 +484,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -441,6 +507,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -461,6 +530,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -481,6 +553,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -501,6 +576,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -542,6 +620,9 @@
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
       "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -562,6 +643,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'TisBest'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -582,6 +666,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -602,6 +689,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/261269358",
+      "recipient_verification_note": "recipient Healthcorps Inc (EIN 261269358) FY2019 990 reports $4.0M in contributions/revenue \u2265 event $0.1M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -622,6 +712,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/841931601",
+      "recipient_verification_note": "recipient Partnership For Connecticut Inc (EIN 841931601) FY2020 990 reports only $20.0M in contributions/revenue; event claims $200.0M (gap $180.0M)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -642,6 +735,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Connecticut education partnership'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -662,6 +758,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Connecticut schools'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -682,6 +781,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -722,6 +824,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -762,6 +867,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -802,6 +910,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -822,6 +933,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-cacb90a665509486",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {

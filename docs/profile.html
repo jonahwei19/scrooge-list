@@ -54,7 +54,7 @@ body{
 .pmast{text-align:left;padding:36px 0 26px;border-top:2px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:40px;position:relative}
 .pmast::before{content:"";position:absolute;left:0;right:0;height:1px;background:var(--rule);top:3px}
 .pmast .kicker{font-family:var(--display);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--rust);margin-bottom:14px;font-variation-settings:"opsz" 9,"SOFT" 60}
-.pmast h1{font-family:var(--display);font-weight:800;font-variation-settings:"opsz" 144,"SOFT" 30;font-size:clamp(2.4rem,5vw,3.6rem);line-height:.98;letter-spacing:-.015em;color:var(--ink);margin-bottom:14px}
+.pmast h1{font-family:var(--display);font-weight:800;font-variation-settings:"opsz" 72,"SOFT" 30;font-size:clamp(2.4rem,5vw,3.6rem);line-height:.98;letter-spacing:-.015em;color:var(--ink);margin-bottom:14px}
 .pmast .subtitle{font-family:var(--display);font-style:italic;font-size:1.05rem;line-height:1.5;color:var(--ink-fade);font-variation-settings:"opsz" 24,"SOFT" 80;max-width:780px}
 
 .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:64px}
@@ -68,7 +68,7 @@ body{
 .summary-cell .value.ontrack{color:var(--green)}
 .summary-cell .sub{font-size:.78rem;color:var(--ink-fade);margin-top:6px;font-style:italic;line-height:1.4}
 
-h2{font-family:var(--display);font-style:italic;font-weight:500;font-variation-settings:"opsz" 72,"SOFT" 60;font-size:1.75rem;margin:72px 0 6px;color:var(--ink);letter-spacing:-.005em;padding-top:20px;border-top:1px solid var(--rule);position:relative}
+h2{font-family:var(--display);font-style:italic;font-weight:500;font-variation-settings:"opsz" 72,"SOFT" 60;font-size:1.75rem;margin:54px 0 6px;color:var(--ink);letter-spacing:-.005em;padding-top:20px;border-top:1px solid var(--rule);position:relative}
 h2:first-of-type{margin-top:48px}
 h2::before{content:"";display:block;width:36px;height:2px;background:var(--rust);margin:-21px 0 16px}
 h3{font-family:var(--display);font-weight:600;font-size:1.05rem;margin:30px 0 8px;color:var(--ink)}
@@ -266,6 +266,16 @@ const fmtUsd = (usd) => {
 const fmtNw = b => b == null ? '—' : '$' + (b >= 100 ? b.toFixed(0) : b.toFixed(1)) + 'B';
 const fmtRatio = r => r == null ? '—' : (r >= 1 ? r.toFixed(1) + '×' : (r * 100).toFixed(0) + '%');
 const esc = s => String(s || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ROLE_LABELS = {
+  grant_out: 'Grant',
+  direct_gift: 'Direct gift',
+  transfer_in: 'Transfer in',
+  pledge: 'Pledge',
+  pledge_amendment: 'Pledge update',
+  political: 'Political',
+  private_investment_not_charity: 'Private investment',
+};
+const roleLabel = r => ROLE_LABELS[r] || (r ? String(r).replace(/_/g, ' ') : '');
 
 async function loadProfile(id) {
   try {
@@ -318,17 +328,17 @@ function render(rec) {
         <div class="sub">${nwRange ? 'Range $' + nwRange[0] + '–' + nwRange[1] + 'B' : ''}</div>
       </div>
       <div class="summary-cell">
-        <div class="label">Observable Giving</div>
+        <div class="label">Documented giving</div>
         <div class="value">${fmtUsd(observable)}</div>
-        <div class="sub">${rollup.observable_giving_method ? 'sum of cited events' : ''}</div>
+        <div class="sub">${rollup.observable_giving_method ? 'lifetime, sourced and verified' : ''}</div>
       </div>
       <div class="summary-cell">
-        <div class="label">Undisbursed Shortfall</div>
+        <div class="label">Dollars not given</div>
         <div class="value">${fmtUsd(shortfall)}</div>
-        <div class="sub">vs. 5%/yr × liquid × tenure</div>
+        <div class="sub">vs. what they could reasonably have given</div>
       </div>
       <div class="summary-cell">
-        <div class="label">Tier</div>
+        <div class="label">Bucket</div>
         <div class="value ${tierInfo.cls}">${esc((tierInfo.label.split('·')[0] || '').trim())}</div>
         <div class="sub">${esc((tierInfo.label.split('·')[1] || '').trim())}</div>
       </div>
@@ -358,9 +368,9 @@ function render(rec) {
     };
     html += `<div class="cibar">
       <div class="cibar-legend">
-        <span><span class="sw obs"></span>Observable</span>
-        <span><span class="sw hidden"></span>Hidden upper bound</span>
-        <span><span class="sw cap"></span>Capacity (5%/yr × liquid × tenure)</span>
+        <span><span class="sw obs"></span>Documented giving</span>
+        <span><span class="sw hidden"></span>Most they could be giving in secret</span>
+        <span><span class="sw cap"></span>What they could reasonably have given</span>
       </div>
       <div class="cibar-track" id="cibarTrack" data-payload='${esc(JSON.stringify(cibarPayload))}'>
         <div class="hidden" data-zone="hidden" tabindex="0" style="width:${totalWidth}%"></div>
@@ -368,7 +378,7 @@ function render(rec) {
         <div class="tick cap" data-zone="cap" tabindex="0" style="left:${capPos}%"><span class="tick-label" style="left:${capPos}%">100% · Benchmark</span></div>
       </div>
       <div class="tt-tip" id="cibarTip" role="tooltip" aria-hidden="true"></div>
-      <p class="cibar-caption">Observable giving equals <strong>${fmtRatio(ratio)}</strong> of the 5%-per-year-of-tenure capacity benchmark (${fmtUsd(expected)}). The dollar shortfall is <strong>${fmtUsd(shortfall)}</strong>. Hidden upper bound adds ${fmtUsd(hiddenUpper)} — the maximum we think could plausibly be flowing through opaque vehicles without contradicting public evidence. <em>Hover any segment for the breakdown.</em></p>
+      <p class="cibar-caption">Documented giving is <strong>${fmtRatio(ratio)}</strong> of what they could reasonably have given by now (${fmtUsd(expected)} — 5% of their spendable wealth each year since becoming a billionaire). The gap is <strong>${fmtUsd(shortfall)}</strong>. The hatched zone shows up to <strong>${fmtUsd(hiddenUpper)}</strong> they could be giving in secret without contradicting public evidence. <em>Hover any segment for details.</em></p>
     </div>`;
   }
 
@@ -379,9 +389,9 @@ function render(rec) {
   if (fromEvents && observable && drift != null && drift >= 0.20) {
     const direction = fromEvents > observable ? 'higher' : 'lower';
     html += `<div class="callout">
-      <strong>Reconciliation note</strong>
-      <p>Published observable giving (<strong>${fmtUsd(observable)}</strong>) is the published attribution figure. The strict sum of canonical <em>grant_out</em> + <em>direct_gift</em> events listed below is <strong>${fmtUsd(fromEvents)}</strong> — ${direction} by ${(drift*100).toFixed(0)}%.</p>
-      <p style="font-style:italic;color:var(--ink-fade);font-size:.9rem">A gap in either direction is usually attribution judgment: lifetime totals cited in sources but not decomposed into discrete events (rollup &gt; events), or family-foundation portions excluded from personal attribution (rollup &lt; events). The event list below is the auditable trail.</p>
+      <strong>Why two numbers don't match</strong>
+      <p>The headline documented giving figure (<strong>${fmtUsd(observable)}</strong>) is what we publish as theirs personally. Adding up only the individual grants and direct gifts listed below totals <strong>${fmtUsd(fromEvents)}</strong> — ${direction} by ${(drift*100).toFixed(0)}%.</p>
+      <p style="font-style:italic;color:var(--ink-fade);font-size:.9rem">A gap usually means lifetime totals cited in sources but not broken down into discrete events (headline &gt; event sum), or family-foundation portions we excluded from their personal share (headline &lt; event sum). The event list below is the trail you can audit.</p>
     </div>`;
   }
 
@@ -402,7 +412,7 @@ function render(rec) {
   const events = (rec.cited_events || []).concat(rec.pledges_and_announcements || []);
   if (events.length) {
     html += `<h2>Cited Events</h2>`;
-    html += '<p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Every dollar of observable giving (and every pledge/promise) with its source. Roles: <code>grant_out</code> and <code>direct_gift</code> count as observable; <code>transfer_in</code> is NOT counted to avoid double-counting with foundation grant-outs; <code>pledge</code> is a promise not a payment.</p>';
+    html += '<p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Every documented dollar of giving (and every promise) with its source. <strong>Grant</strong> and <strong>Direct gift</strong> count toward documented giving. <strong>Transfer in</strong> is money moving into their own foundation or fund — not counted, to avoid double-counting when that foundation later makes its own grants. <strong>Pledge</strong> is a promise, not a payment.</p>';
     html += `<div class="events">`;
     const sorted = [...events].sort((a, b) => {
       const ay = a.year || (a.date ? a.date.substring(0,4) : 0);
@@ -426,7 +436,7 @@ function render(rec) {
       html += `${anchor}<div class="event"${yearAttr}>
         <div class="when">${esc(when)}</div>
         <div class="what">
-          <span class="role ${esc(roleCls)}">${esc(role)}</span>
+          <span class="role ${esc(roleCls)}">${esc(roleLabel(role))}</span>
           ${esc(donor)}${donor && recipient ? ' → ' : ''}<span class="recipient">${esc(recipient)}</span>
           ${note ? '<div style="font-size:.88rem;color:var(--ink-fade);margin-top:4px;font-style:italic">' + esc(note) + '</div>' : ''}
         </div>
@@ -640,39 +650,39 @@ function wireCibarHover() {
       const d = payload.obs;
       const pct = (d.pctOfCap || 0).toFixed(1);
       return `
-        <div class="tt-row1"><span class="tt-year">Observable</span><span class="tt-kind k-out">documented giving</span></div>
+        <div class="tt-row1"><span class="tt-year">Documented giving</span><span class="tt-kind k-out">verified</span></div>
         <div class="tt-total">${fmtUsd(d.amount)}</div>
         <ul class="tt-list">
-          <li><span class="rcpt">% of capacity benchmark</span><span class="rcpt-amt">${pct}%</span></li>
+          <li><span class="rcpt">Of what they could have given</span><span class="rcpt-amt">${pct}%</span></li>
         </ul>
-        <div class="tt-more">Cited grants, foundation 990s, announced gifts</div>`;
+        <div class="tt-more">Cited grants, foundation tax filings, announced gifts</div>`;
     }
     if (zone === 'hidden') {
       const d = payload.hidden;
       const pct = (d.pctOfCap || 0).toFixed(1);
       return `
-        <div class="tt-row1"><span class="tt-year">Hidden upper bound</span><span class="tt-kind k-xfer">opaque vehicles</span></div>
+        <div class="tt-row1"><span class="tt-year">Possible secret giving</span><span class="tt-kind k-xfer">unverifiable</span></div>
         <div class="tt-total">${fmtUsd(d.amount)}</div>
         <ul class="tt-list">
-          <li><span class="rcpt">% of capacity benchmark</span><span class="rcpt-amt">${pct}%</span></li>
+          <li><span class="rcpt">Of what they could have given</span><span class="rcpt-amt">${pct}%</span></li>
         </ul>
-        <div class="tt-more">DAFs, LLCs, dynasty trusts &mdash; max plausible without contradicting evidence</div>`;
+        <div class="tt-more">Anonymous accounts (DAFs), LLCs, family trusts &mdash; the most they could plausibly be giving without it showing up</div>`;
     }
     if (zone === 'cap') {
       const d = payload.cap;
-      const tenure = d.tenure != null ? `${d.tenure} yrs` : '—';
+      const tenure = d.tenure != null ? `${d.tenure} years` : '—';
       const liquid = d.liquidPct != null ? `${(d.liquidPct*100).toFixed(0)}%` : '—';
       const nw = d.nw ? fmtUsd(d.nw) : '—';
       return `
-        <div class="tt-row1"><span class="tt-year">Capacity</span><span class="tt-kind k-pledge">benchmark</span></div>
+        <div class="tt-row1"><span class="tt-year">What they could have given</span><span class="tt-kind k-pledge">reasonable target</span></div>
         <div class="tt-total">${fmtUsd(d.amount)}</div>
         <ul class="tt-list">
           <li><span class="rcpt">Net worth</span><span class="rcpt-amt">${nw}</span></li>
-          <li><span class="rcpt">Liquid share</span><span class="rcpt-amt">${liquid}</span></li>
-          <li><span class="rcpt">Tenure as billionaire</span><span class="rcpt-amt">${tenure}</span></li>
-          <li><span class="rcpt">Shortfall vs. observable</span><span class="rcpt-amt">${fmtUsd(payload.shortfall)}</span></li>
+          <li><span class="rcpt">Spendable share</span><span class="rcpt-amt">${liquid}</span></li>
+          <li><span class="rcpt">Years as a billionaire</span><span class="rcpt-amt">${tenure}</span></li>
+          <li><span class="rcpt">Gap vs. documented</span><span class="rcpt-amt">${fmtUsd(payload.shortfall)}</span></li>
         </ul>
-        <div class="tt-more">5% of liquid net worth × tenure</div>`;
+        <div class="tt-more">5% of spendable wealth, every year as a billionaire</div>`;
     }
     return '';
   }
@@ -819,20 +829,22 @@ function renderTimeline(rec) {
   }
 
   return `<h2>Giving Timeline</h2>
-    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Per-year sum of cited events. Out-the-door giving (grants, direct gifts) in rust; transfers into intermediaries in gold; pledges in faded. <strong>Hover</strong> a bar for the recipients; <strong>click</strong> to jump to that year's evidence.</p>
+    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Total giving each year. Money that actually reached charities (grants, direct gifts) in rust; money moved into their own foundation or fund in gold; pledges in faded. <strong>Hover</strong> a bar for recipients; <strong>click</strong> to jump to that year's evidence.</p>
     <div class="timeline">
       <svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="xMidYMid meet">${inner}</svg>
       <div class="tt-tip" id="tlTip" role="tooltip" aria-hidden="true"></div>
       <div class="timeline-legend">
-        <span><span class="sw grant_out"></span>Observable out</span>
-        <span><span class="sw transfer_in"></span>Transfer in</span>
+        <span><span class="sw grant_out"></span>Reached charities</span>
+        <span><span class="sw transfer_in"></span>Moved to own fund</span>
         <span><span class="sw pledge"></span>Pledge announced</span>
       </div>
     </div>`;
 }
 
 function renderVehicles(v) {
-  let html = `<h2>Detected Vehicles</h2><div class="vehicle-list">`;
+  let html = `<h2>Where the money lives</h2>
+    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic;margin:0 0 18px">Foundations, LLCs, and other accounts where this person holds or moves charitable money. Public foundations file an annual tax form (the IRS Form 990); LLCs do not, so we can see less of what they do.</p>
+    <div class="vehicle-list">`;
   let any = false;
 
   for (const f of (v.foundations_active || [])) {

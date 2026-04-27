@@ -84,6 +84,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "$474M includes ~$35M to Fidelity Charitable DAF (transfer into DAF, not verified disbursement to end charity). Also includes large slice to 'The Foundation' (Musk-controlled K-12 school nonprofit in Bastrop, TX \u2014 arm's-length charitable status questioned by InsidePhilanthropy/Alan Cantor). Net out-the-door to non-Musk-affiliated 501(c)(3)s is materially lower than headline $474M.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder (\"Multiple; largest recipients include 'Th\") \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -119,6 +122,9 @@
         }
       ],
       "dedup_note": "2023 grants inflated by self-affiliated giving: 57.8% ($137M) went to 'The Foundation' which is Musk-controlled; another $25M (10.6%) went into Fidelity Charitable DAF. Combined self-affiliated + DAF = 68% of 2023 'grants'. Arm's-length charitable impact is materially smaller.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -155,6 +161,9 @@
         }
       ],
       "dedup_note": "~85% of 2022 'grants' went to Musk-affiliated nonprofit or DAF.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -179,6 +188,9 @@
         }
       ],
       "payout_note": "Mother Jones: 2.7% payout rate \u2014 foundation received $5.7B Tesla transfer in 2021, gave out $160M (2.7% of Tesla-boosted year-end assets).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -192,6 +204,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/852133087",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -258,6 +273,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "Recipient NOT disclosed. Could be Musk Foundation (in which case this would be musk_mf_transfer_2024 and should be excluded from rollup as transfer_in) OR genuine arm's-length charities. Historical pattern suggests Musk Foundation is likely recipient (Bloomberg identified 2021 $5.7B 'mystery gift' as going to Musk Foundation 13 months after the fact). Mark confidence as medium; exclude from observable until verified. Value range: $108M (Reuters, based on pre-close price) to $112M (Bloomberg, based on closing price).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"Unnamed 'certain charities'\"",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -278,6 +296,9 @@
       "regen_run_id": "sha256-c03f28227d371b81",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -298,6 +319,9 @@
       "regen_run_id": "sha256-c03f28227d371b81",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -318,6 +342,9 @@
       "regen_run_id": "sha256-c03f28227d371b81",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -338,6 +365,9 @@
       "regen_run_id": "sha256-c03f28227d371b81",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -358,6 +388,9 @@
       "regen_run_id": "sha256-c03f28227d371b81",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -378,6 +411,9 @@
       "regen_run_id": "sha256-c03f28227d371b81",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -398,6 +434,9 @@
       "regen_run_id": "sha256-dea08d37d3d3d232",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/232888152",
+      "recipient_verification_note": "recipient Vanguard Charitable Endowment Program (EIN 232888152) FY2017 990 reports $1698.9M in contributions/revenue \u2265 event $37.8M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -418,6 +457,9 @@
       "regen_run_id": "sha256-dea08d37d3d3d232",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2020 990 reports $12252.8M in contributions/revenue \u2265 event $20.7M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -438,6 +480,9 @@
       "regen_run_id": "sha256-dea08d37d3d3d232",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2021 990 reports $18558.6M in contributions/revenue \u2265 event $1.4M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -458,6 +503,9 @@
       "regen_run_id": "sha256-dea08d37d3d3d232",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2022 990 reports $19858.2M in contributions/revenue \u2265 event $36.1M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -478,6 +526,9 @@
       "regen_run_id": "sha256-dea08d37d3d3d232",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2023 990 reports $14732.6M in contributions/revenue \u2265 event $25.0M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -498,6 +549,9 @@
       "regen_run_id": "sha256-dea08d37d3d3d232",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2023 990 reports $14732.6M in contributions/revenue \u2265 event $35.0M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -518,6 +572,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -558,6 +615,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Foundation'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -578,6 +638,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Foundation'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -598,6 +661,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -658,6 +724,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -698,6 +767,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -738,6 +810,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -858,6 +933,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -878,6 +956,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Foundation'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -918,6 +999,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -938,6 +1022,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -998,6 +1085,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1060,6 +1150,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1080,6 +1173,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1120,6 +1216,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1140,6 +1239,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'ACLU'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1160,6 +1262,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'ACLU'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1220,6 +1325,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1240,6 +1348,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"St. Jude Children's Research Hospital\"",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1260,6 +1371,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1280,6 +1394,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/521876879",
+      "recipient_verification_note": "recipient X Prize Foundation Inc (EIN 521876879) FY2023 990 reports only $31.4M in contributions/revenue; event claims $54.0M (gap $22.6M)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1300,6 +1417,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1320,6 +1440,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e439a3e8fff7e075",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/261544963",
+      "recipient_verification_note": "recipient Khan Academy Inc (EIN 261544963) filed FY2023 990; amount not provided in event so no dollar match attempted",
       "event_role_canonical": "grant_out"
     },
     {

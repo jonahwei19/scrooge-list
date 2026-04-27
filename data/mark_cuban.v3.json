@@ -61,7 +61,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (ProPublica summary does not ite') \u2014 no entity to look up"
     },
     {
       "event_id": "cuban_mcf_2023",
@@ -73,7 +76,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "cuban_mcf_2022",
@@ -85,7 +91,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "cuban_mcf_2021",
@@ -97,7 +106,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "cuban_mcf_2020",
@@ -109,7 +121,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "cuban_mcf_2019",
@@ -121,7 +136,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "cuban_mcf_2011_2018_cumulative",
@@ -147,7 +165,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/260063142",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "MCF grants-out 2011-2018 aggregated from ProPublica year-by-year financial summary. Pre-2011 data not retrieved (foundation tax-exempt since April 2003; 2003-2010 period is a TODO)."
+      "notes": "MCF grants-out 2011-2018 aggregated from ProPublica year-by-year financial summary. Pre-2011 data not retrieved (foundation tax-exempt since April 2003; 2003-2010 period is a TODO).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "cuban_heroes_rec_2022_2024",
@@ -168,7 +189,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/872356979",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Small operational recreational-center foundation (separate EIN from main MCF). Tax-exempt since March 2023. Operates Heroes Basketball center in Southern Dallas (remodeled former YWCA). Immaterial dollar amount but included for completeness."
+      "notes": "Small operational recreational-center foundation (separate EIN from main MCF). Tax-exempt since March 2023. Operates Heroes Basketball center in Southern Dallas (remodeled former YWCA). Immaterial dollar amount but included for completeness.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "cuban_iu_media_tech_2015",
@@ -183,7 +207,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "NOT YET verified whether paid through MCF 2015 990-PF (2015 MCF grants_out only $1.3M, suggesting this gift was personal/direct \u2014 likely additive, not double-counted). Flag for future verification."
+      "dedup_note": "NOT YET verified whether paid through MCF 2015 990-PF (2015 MCF grants_out only $1.3M, suggesting this gift was personal/direct \u2014 likely additive, not double-counted). Flag for future verification.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Indiana University Bloomington'"
     },
     {
       "event_id": "cuban_iu_rugby_2024",
@@ -196,7 +223,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "MCF 2024 grants_out total $3.4M; $6M rugby gift exceeds that and is directly tied to Indiana athletics (a non-501c3 university athletic program may receive gifts through university foundation \u2014 still classifies as charitable). Treat as additive direct_gift. CAVEAT: athletic/NIL-adjacent giving sits in a gray zone \u2014 some analysts would exclude this from 'public benefit' philanthropy."
+      "dedup_note": "MCF 2024 grants_out total $3.4M; $6M rugby gift exceeds that and is directly tied to Indiana athletics (a non-501c3 university athletic program may receive gifts through university foundation \u2014 still classifies as charitable). Treat as additive direct_gift. CAVEAT: athletic/NIL-adjacent giving sits in a gray zone \u2014 some analysts would exclude this from 'public benefit' philanthropy.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Indiana University rugby program'"
     },
     {
       "event_id": "cuban_iu_athletics_2025",
@@ -210,7 +240,10 @@
       "source_url": "https://www.cnbc.com/2026/01/18/mark-cuban-indiana-football-donor-how-to-build-successful-teams.html",
       "retrieved_at": "2026-04-24",
       "confidence": "low",
-      "classification_note": "NIL-directed giving is contested as 'philanthropy.' NCAA NIL collectives are often 501(c)(3) pass-throughs to athletes; IRS revoked exempt status for several such collectives in 2023. If amount later disclosed, re-evaluate classification."
+      "classification_note": "NIL-directed giving is contested as 'philanthropy.' NCAA NIL collectives are often 501(c)(3) pass-throughs to athletes; IRS revoked exempt status for several such collectives in 2023. If amount later disclosed, re-evaluate classification.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Indiana University athletics / NIL funding'"
     },
     {
       "event_id": "cuban_eff_2012",
@@ -224,7 +257,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/43091431",
+      "recipient_verification_note": "recipient Electronic Frontier Foundation Inc (EIN 43091431) FY2012 990 reports $7.9M in contributions/revenue \u2265 event $0.2M (circumstantial)"
     },
     {
       "event_id": "cuban_fallen_patriot_2003_match",
@@ -251,7 +287,10 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Cuban",
       "retrieved_at": "2026-04-24",
-      "confidence": "low"
+      "confidence": "low",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Delonte West'"
     },
     {
       "event_role": "grant_out",
@@ -270,7 +309,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-61107f461e1c4e07",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -289,7 +331,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-61107f461e1c4e07",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -308,7 +353,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-61107f461e1c4e07",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -327,7 +375,10 @@
       "event_id": "mark_cuban_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -346,7 +397,10 @@
       "event_id": "mark_cuban_direct_gift_2012_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/43091431",
+      "recipient_verification_note": "recipient Electronic Frontier Foundation Inc (EIN 43091431) filed FY2012 990; amount not provided in event so no dollar match attempted"
     },
     {
       "event_role": "direct_gift",
@@ -365,7 +419,10 @@
       "event_id": "mark_cuban_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "private_investment",
@@ -403,7 +460,10 @@
       "event_id": "mark_cuban_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -422,7 +482,10 @@
       "event_id": "mark_cuban_direct_gift_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Indiana University rugby club'"
     },
     {
       "event_role": "direct_gift",
@@ -441,7 +504,10 @@
       "event_id": "mark_cuban_direct_gift_2013_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Electronic Frontier Foundation'"
     },
     {
       "event_role": "direct_gift",
@@ -460,7 +526,10 @@
       "event_id": "mark_cuban_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -479,7 +548,10 @@
       "event_id": "mark_cuban_direct_gift_2020_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/521266959",
+      "recipient_verification_note": "recipient National Association Of Black Journalists (EIN 521266959) FY2020 990 reports $3.7M in contributions/revenue \u2265 event $0.1M (circumstantial)"
     },
     {
       "event_role": "direct_gift",
@@ -498,7 +570,10 @@
       "event_id": "mark_cuban_direct_gift_2021_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Dallas County mental health program'"
     },
     {
       "event_role": "direct_gift",
@@ -517,7 +592,10 @@
       "event_id": "mark_cuban_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -555,7 +633,10 @@
       "event_id": "mark_cuban_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "corporate_gift",
@@ -574,7 +655,10 @@
       "event_id": "mark_cuban_corporate_gift_2020_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Mavericks employees and employees of his other companies'"
     },
     {
       "event_role": "direct_gift",
@@ -593,7 +677,10 @@
       "event_id": "mark_cuban_direct_gift_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/356018940",
+      "recipient_verification_note": "recipient Indiana University Foundation (EIN 356018940) FY2015 990 reports $294.6M in contributions/revenue \u2265 event $6.0M (circumstantial)"
     },
     {
       "event_role": "direct_gift",
@@ -612,7 +699,10 @@
       "event_id": "mark_cuban_direct_gift_2025_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237042320",
+      "recipient_verification_note": "no 990 on file for University Of Southern Indiana Foundation Inc (EIN 237042320) within \u00b11 yr of 2025"
     },
     {
       "event_role": "direct_gift",
@@ -631,7 +721,10 @@
       "event_id": "mark_cuban_direct_gift_2026_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Indiana'"
     },
     {
       "event_role": "direct_gift",
@@ -650,7 +743,10 @@
       "event_id": "mark_cuban_direct_gift_2018_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2e0b5aeb80885fb1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'organizations that help those affected by domestic violence and encourage the hiring of women in leadership roles'"
     }
   ],
   "pledges_and_announcements": [

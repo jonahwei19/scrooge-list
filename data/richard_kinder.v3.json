@@ -65,7 +65,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Total charitable disbursements per ProPublica summary of Kinder Foundation 990-PF."
+      "notes": "Total charitable disbursements per ProPublica summary of Kinder Foundation 990-PF.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kinder_kf_2023",
@@ -77,7 +80,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kinder_kf_2022",
@@ -89,7 +95,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kinder_kf_2021",
@@ -101,7 +110,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kinder_kf_2020",
@@ -113,7 +125,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kinder_kf_2019",
@@ -125,7 +140,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kinder_kf_2015",
@@ -137,7 +155,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/760519073",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "kinder_rice_kinder_institute_2026",
@@ -152,7 +173,10 @@
       "source_url": "https://news.rice.edu/news/2026/rices-kinder-institute-secures-future-and-advances-solutions-houston-55m-kinder",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "March 2026 announcement; will appear in Kinder Foundation 2026 990-PF when filed. Will be captured in kinder_kf_2026 grant_out total (not yet filed). Listed here separately as direct_gift for event granularity. DO NOT double-count if and when 2026 990-PF data is added."
+      "dedup_note": "March 2026 announcement; will appear in Kinder Foundation 2026 990-PF when filed. Will be captured in kinder_kf_2026 grant_out total (not yet filed). Listed here separately as direct_gift for event granularity. DO NOT double-count if and when 2026 990-PF data is added.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Rice University'"
     },
     {
       "event_id": "kinder_md_anderson_tch_2025",
@@ -168,7 +192,10 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "One of the largest philanthropic gifts to an American pediatric hospital.",
-      "dedup_note": "Will be captured in 2025 Kinder Foundation 990-PF when filed (likely 2026-07 onward). Disbursement may span multiple years. When kinder_kf_2025 row is added, this event must be netted out to avoid double-counting."
+      "dedup_note": "Will be captured in 2025 Kinder Foundation 990-PF when filed (likely 2026-07 onward). Disbursement may span multiple years. When kinder_kf_2025 row is added, this event must be netted out to avoid double-counting.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"UT MD Anderson Cancer Center + Texas Children's Hospital\""
     },
     {
       "event_id": "kinder_buffalo_bayou_east_2022",
@@ -184,7 +211,10 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Largest single donation in Houston parks history. Already captured in kinder_kf_2022 grant_out total ($55.8M); NOTE the 2022 Kinder Foundation 990-PF total ($55.8M) is LOWER than this single announcement ($100M), which indicates the $100M is a multi-year pledge/pass-through via Buffalo Bayou Partnership, not disbursed all in 2022.",
-      "dedup_note": "KEEP as announcement-level event. Do NOT add $100M to the 2022 rollup total \u2014 the 2022 990-PF grants-out of $55.8M is what actually left the foundation. $100M is the multi-year commitment."
+      "dedup_note": "KEEP as announcement-level event. Do NOT add $100M to the 2022 rollup total \u2014 the 2022 990-PF grants-out of $55.8M is what actually left the foundation. $100M is the multi-year commitment.",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/760183954",
+      "recipient_verification_note": "recipient Buffalo Bayou Partnership (EIN 760183954) FY2022 990 reports only $40.2M in contributions/revenue; event claims $100.0M (gap $59.8M)"
     },
     {
       "event_id": "kinder_rice_kinder_institute_2022",
@@ -197,7 +227,10 @@
       "source_url": "https://news.rice.edu/news/2022/50m-kinder-foundation-grant-will-expand-kinder-institutes-work-solve-challenges-facing",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Already captured in kinder_kf_2022 990-PF grant_out total or paid multi-year. Listed separately for event-level visibility."
+      "dedup_note": "Already captured in kinder_kf_2022 990-PF grant_out total or paid multi-year. Listed separately for event-level visibility.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Rice University'"
     },
     {
       "event_id": "kinder_memorial_park_2018",
@@ -209,7 +242,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/760655841",
+      "recipient_verification_note": "recipient Memorial Park Conservancy Inc (EIN 760655841) FY2018 990 reports only $22.3M in contributions/revenue; event claims $70.0M (gap $47.7M)"
     },
     {
       "event_id": "kinder_mfah_2015",
@@ -221,7 +257,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/741109655",
+      "recipient_verification_note": "recipient Museum Of Fine Arts Houston (EIN 741109655) FY2015 990 reports $215.6M in contributions/revenue \u2265 event $50.0M (circumstantial)"
     },
     {
       "event_id": "kinder_missouri_democracy_2015",
@@ -233,7 +272,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/431181566",
+      "recipient_verification_note": "recipient University Of Central Missouri Foundation (EIN 431181566) FY2015 990 reports only $6.5M in contributions/revenue; event claims $25.0M (gap $18.5M)"
     },
     {
       "event_id": "kinder_bayou_greenways_2013",
@@ -245,7 +287,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/741860046",
+      "recipient_verification_note": "recipient Houston Parks Board (EIN 741860046) FY2013 990 reports only $8.8M in contributions/revenue; event claims $50.0M (gap $41.2M)"
     },
     {
       "event_id": "kinder_buffalo_bayou_park_2010",
@@ -257,7 +302,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Kinder_Foundation",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/760183954",
+      "recipient_verification_note": "recipient Buffalo Bayou Partnership (EIN 760183954) FY2011 990 reports only $9.7M in contributions/revenue; event claims $30.0M (gap $20.3M)"
     },
     {
       "event_id": "kinder_rice_cumulative",
@@ -293,7 +341,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -312,7 +363,10 @@
       "event_id": "richard_kinder_grant_out_2016_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Cristo Rey Jesuit College Preparatory School'"
     },
     {
       "event_role": "grant_out",
@@ -331,7 +385,10 @@
       "event_id": "richard_kinder_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Cristo Rey Jesuit College Preparatory School'"
     },
     {
       "event_role": "direct_gift",
@@ -350,7 +407,10 @@
       "event_id": "richard_kinder_direct_gift_2018_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/741109655",
+      "recipient_verification_note": "recipient Museum Of Fine Arts Houston (EIN 741109655) FY2018 990 reports $166.3M in contributions/revenue \u2265 event $25.0M (circumstantial)"
     },
     {
       "event_role": "grant_out",
@@ -369,7 +429,10 @@
       "event_id": "richard_kinder_grant_out_2026_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"Rice University's Kinder Institute for Urban Research\""
     },
     {
       "event_role": "direct_gift",
@@ -388,7 +451,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -407,7 +473,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -426,7 +495,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -445,7 +517,10 @@
       "event_id": "richard_kinder_grant_out_2022_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/760183954",
+      "recipient_verification_note": "recipient Buffalo Bayou Partnership (EIN 760183954) FY2022 990 reports only $40.2M in contributions/revenue; event claims $100.0M (gap $59.8M)"
     },
     {
       "event_role": "direct_gift",
@@ -464,7 +539,10 @@
       "event_id": "richard_kinder_direct_gift_2010_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Rice University'"
     },
     {
       "event_role": "grant_out",
@@ -483,7 +561,10 @@
       "event_id": "richard_kinder_grant_out_2024_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Houston projects'"
     },
     {
       "event_role": "direct_gift",
@@ -502,7 +583,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -521,7 +605,10 @@
       "event_id": "richard_kinder_direct_gift_2012_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/741109655",
+      "recipient_verification_note": "recipient Museum Of Fine Arts Houston (EIN 741109655) FY2012 990 reports only $76.4M in contributions/revenue; event claims $450.0M (gap $373.6M)"
     },
     {
       "event_role": "grant_out",
@@ -540,7 +627,10 @@
       "event_id": "richard_kinder_grant_out_2025_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"Texas Children's Hospital and UT MD Anderson\""
     },
     {
       "event_role": "grant_out",
@@ -559,7 +649,10 @@
       "event_id": "richard_kinder_grant_out_2024_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -578,7 +671,10 @@
       "event_id": "richard_kinder_direct_gift_2018_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/820946654",
+      "recipient_verification_note": "recipient Good Reason Houston Inc (EIN 820946654) FY2018 990 reports $8.8M in contributions/revenue \u2265 event $4.2M (circumstantial)"
     },
     {
       "event_role": "direct_gift",
@@ -597,7 +693,10 @@
       "event_id": "richard_kinder_direct_gift_2012_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/741860046",
+      "recipient_verification_note": "recipient Houston Parks Board (EIN 741860046) filed FY2012 990; amount not provided in event so no dollar match attempted"
     },
     {
       "event_role": "grant_out",
@@ -616,7 +715,10 @@
       "event_id": "richard_kinder_grant_out_2019_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/820946654",
+      "recipient_verification_note": "recipient Good Reason Houston Inc (EIN 820946654) FY2019 990 reports only $10.5M in contributions/revenue; event claims $20.0M (gap $9.5M)"
     },
     {
       "event_role": "grant_out",
@@ -635,7 +737,10 @@
       "event_id": "richard_kinder_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -654,7 +759,10 @@
       "event_id": "richard_kinder_grant_out_2010_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Buffalo Bayou Park'"
     },
     {
       "event_role": "grant_out",
@@ -673,7 +781,10 @@
       "event_id": "richard_kinder_grant_out_2023_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/201951465",
+      "recipient_verification_note": "recipient Discovery Green Conservancy (EIN 201951465) FY2023 990 reports $10.5M in contributions/revenue \u2265 event $2.0M (verified)"
     },
     {
       "event_role": "grant_out",
@@ -692,7 +803,10 @@
       "event_id": "richard_kinder_grant_out_2025_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/201951465",
+      "recipient_verification_note": "no 990 on file for Discovery Green Conservancy (EIN 201951465) within \u00b11 yr of 2025"
     },
     {
       "event_role": "grant_out",
@@ -711,7 +825,10 @@
       "event_id": "richard_kinder_grant_out_2016_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'SPARK Parks'"
     },
     {
       "event_role": "grant_out",
@@ -730,7 +847,10 @@
       "event_id": "richard_kinder_grant_out_2024_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Cristo Rey Jesuit College Preparatory School'"
     },
     {
       "event_role": "grant_out",
@@ -749,7 +869,10 @@
       "event_id": "richard_kinder_grant_out_2023_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'BIPOC Arts Network and Fund'"
     },
     {
       "event_role": "direct_gift",
@@ -769,7 +892,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected"
+      "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Multiple organizations') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -788,7 +914,10 @@
       "event_id": "richard_kinder_direct_gift_2024_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Kinder Institute for Urban Research at Rice University'"
     },
     {
       "event_role": "direct_gift",
@@ -808,7 +937,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected"
+      "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -827,7 +959,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen7",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -846,7 +981,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen8",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -865,7 +1003,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen9",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -885,7 +1026,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected"
+      "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -904,7 +1048,10 @@
       "event_id": "richard_kinder_grant_out_2025_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Emancipation Park'"
     },
     {
       "event_role": "direct_gift",
@@ -923,7 +1070,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen10",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "corporate_gift",
@@ -942,7 +1092,10 @@
       "event_id": "richard_kinder_corporate_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -961,7 +1114,10 @@
       "event_id": "richard_kinder_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -980,7 +1136,10 @@
       "event_id": "richard_kinder_direct_gift_2022_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -999,7 +1158,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen11",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -1018,7 +1180,10 @@
       "event_id": "richard_kinder_direct_gift_2024_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -1037,7 +1202,10 @@
       "event_id": "richard_kinder_grant_out_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -1056,7 +1224,10 @@
       "event_id": "richard_kinder_grant_out_2026_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"Rice University's Kinder Institute\""
     },
     {
       "event_role": "grant_out",
@@ -1075,7 +1246,10 @@
       "event_id": "richard_kinder_grant_out_2025_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Emancipation Park'"
     },
     {
       "event_role": "direct_gift",
@@ -1094,7 +1268,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen12",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -1113,7 +1290,10 @@
       "event_id": "richard_kinder_direct_gift_x_regen13",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -1132,7 +1312,10 @@
       "event_id": "richard_kinder_grant_out_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -1151,7 +1334,10 @@
       "event_id": "richard_kinder_direct_gift_2026_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-f0a9361eb7f330b4",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"Texas Children's Hospital and UT MD Anderson\""
     },
     {
       "event_id": "kinder_houston_10b_2025",

@@ -66,7 +66,10 @@
       "source_url": "https://www.grantmakers.io/profiles/v0/461256191-harold-hamm-foundation/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Grantmakers.io: 10 grants, median $5K, max $4M. Total distributions $4.5M vs assets $16M \u2192 28% payout rate. Minor red flag: America First Policy Institute grant ($497K) is a 501(c)(3) but explicitly political-aligned think tank \u2014 blurs the political/charitable line."
+      "notes": "Grantmakers.io: 10 grants, median $5K, max $4M. Total distributions $4.5M vs assets $16M \u2192 28% payout rate. Minor red flag: America First Policy Institute grant ($497K) is a 501(c)(3) but explicitly political-aligned think tank \u2014 blurs the political/charitable line.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various \u2014 top recipient OU Foundation (~') \u2014 no entity to look up"
     },
     {
       "event_id": "hamm_hhf_2024_propublica",
@@ -79,7 +82,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "CONFLICT with hamm_hhf_2024 ($4.5M per Grantmakers.io vs $2.64M per ProPublica). Difference likely reflects different 990-PF line items (grants paid vs. total charitable disbursements including program expenses, or different fiscal-year cutoffs). For rollup use the Grantmakers.io figure of $4.5M as it matches the listed grant-recipient sum; flag for manual 990-PF verification."
+      "dedup_note": "CONFLICT with hamm_hhf_2024 ($4.5M per Grantmakers.io vs $2.64M per ProPublica). Difference likely reflects different 990-PF line items (grants paid vs. total charitable disbursements including program expenses, or different fiscal-year cutoffs). For rollup use the Grantmakers.io figure of $4.5M as it matches the listed grant-recipient sum; flag for manual 990-PF verification.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "hamm_hhf_2023",
@@ -91,7 +97,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "hamm_hhf_2022",
@@ -104,7 +113,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "notes": "Large 2022 spike. Likely drivers: (a) final disbursement of pledged $34M 2018 gift to Harold Hamm Diabetes Center ($3.4M/yr over 10 yr would only be $3.4M, so this is not explained by that alone); (b) $12M gift to University of Mary for Hamm School of Engineering announced Feb 2022; (c) possible one-time contribution tied to Continental Resources take-private transaction. Recipient breakdown not yet retrieved at year-level from ProPublica; manual 990-PF parse required."
+      "notes": "Large 2022 spike. Likely drivers: (a) final disbursement of pledged $34M 2018 gift to Harold Hamm Diabetes Center ($3.4M/yr over 10 yr would only be $3.4M, so this is not explained by that alone); (b) $12M gift to University of Mary for Hamm School of Engineering announced Feb 2022; (c) possible one-time contribution tied to Continental Resources take-private transaction. Recipient breakdown not yet retrieved at year-level from ProPublica; manual 990-PF parse required.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "hamm_hhf_2021",
@@ -116,7 +128,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "hamm_hhf_2020",
@@ -128,7 +143,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461256191",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "hamm_ou_diabetes_2007",
@@ -142,7 +160,10 @@
       "source_url": "https://www.ou.edu/web/news_events/articles/news_2018/the-harold-hamm-foundation-donates--34m-to-harold-hamm-diabetes-",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Personal gift predating Harold Hamm Foundation (established 2013). Additive to foundation totals, not double-counted."
+      "dedup_note": "Personal gift predating Harold Hamm Foundation (established 2013). Additive to foundation totals, not double-counted.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'University of Oklahoma Health Sciences Center'"
     },
     {
       "event_id": "hamm_und_2012",
@@ -158,7 +179,10 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "Private $10M portion of a $14M total (with $4M from ND Industrial Commission/Oil & Gas Research Program). Largest non-alumnus gift in UND history at the time. Predates Harold Hamm Foundation \u2014 personal/corporate money.",
-      "source_verification_status": "dead_link_rotted"
+      "source_verification_status": "dead_link_rotted",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237083282",
+      "recipient_verification_note": "recipient Fellows Of The University Of North Dakota Inc (EIN 237083282) FY2012 990 reports only $0.1M in contributions/revenue; event claims $10.0M (gap $9.9M)"
     },
     {
       "event_id": "hamm_hhf_ou_2018",
@@ -174,7 +198,10 @@
       "source_url": "https://www.ou.edu/web/news_events/articles/news_2018/the-harold-hamm-foundation-donates--34m-to-harold-hamm-diabetes-",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL: This $34M gift was paid THROUGH the Harold Hamm Foundation over 10 years. It is therefore spread across hamm_hhf_2018 through hamm_hhf_2027 annual grants_out \u2014 do NOT add it on top of the 990-PF grant totals. Included here for narrative/traceability; excluded from observable rollup to avoid double-count."
+      "dedup_note": "CRITICAL: This $34M gift was paid THROUGH the Harold Hamm Foundation over 10 years. It is therefore spread across hamm_hhf_2018 through hamm_hhf_2027 annual grants_out \u2014 do NOT add it on top of the 990-PF grant totals. Included here for narrative/traceability; excluded from observable rollup to avoid double-count.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Harold Hamm Diabetes Center at OU Medicine'"
     },
     {
       "event_id": "hamm_umary_2022",
@@ -189,7 +216,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Harold_Hamm",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "Likely a component of the 2022 HHF grants_out spike ($37.8M). If paid through HHF, already counted in hamm_hhf_2022. If Continental Resources corporate contribution, additive. Split not yet confirmed; mark for verification."
+      "dedup_note": "Likely a component of the 2022 HHF grants_out spike ($37.8M). If paid through HHF, already counted in hamm_hhf_2022. If Continental Resources corporate contribution, additive. Split not yet confirmed; mark for verification.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/450273403",
+      "recipient_verification_note": "recipient University Of Mary (EIN 450273403) FY2022 990 reports $103.8M in contributions/revenue \u2265 event $12.0M (circumstantial)"
     },
     {
       "event_id": "hamm_ou_gala_2025",
@@ -204,7 +234,10 @@
       "source_url": "https://www.ou.edu/news/articles/2025/october/gala-raises-millions-for-ou-health-harold-hamm-diabetes-center",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "The $4.7M was raised by the gala from many donors, NOT a direct Hamm gift. Hamm received the inaugural Crystal Seed Sower Award (recognition for cumulative $25M+ to OU). Included for context only. NOT counted as Hamm giving \u2014 risk of misattribution by published lists."
+      "dedup_note": "The $4.7M was raised by the gala from many donors, NOT a direct Hamm gift. Hamm received the inaugural Crystal Seed Sower Award (recognition for cumulative $25M+ to OU). Included for context only. NOT counted as Hamm giving \u2014 risk of misattribution by published lists.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'OU Health Harold Hamm Diabetes Center'"
     },
     {
       "event_role": "grant_out",
@@ -223,7 +256,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b718f51f2d3b76b9",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -242,7 +278,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b718f51f2d3b76b9",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -261,7 +300,10 @@
       "event_id": "harold_hamm_direct_gift_2022_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bismarck university'"
     },
     {
       "event_role": "direct_gift",
@@ -280,7 +322,10 @@
       "event_id": "harold_hamm_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -299,7 +344,10 @@
       "event_id": "harold_hamm_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "corporate_gift",
@@ -318,7 +366,10 @@
       "event_id": "harold_hamm_corporate_gift_2021_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -337,7 +388,10 @@
       "event_id": "harold_hamm_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "transfer_in",
@@ -394,7 +448,10 @@
       "event_id": "harold_hamm_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -413,7 +470,10 @@
       "event_id": "harold_hamm_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -432,7 +492,10 @@
       "event_id": "harold_hamm_direct_gift_2021_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/736097060",
+      "recipient_verification_note": "recipient Oklahoma State University Foundation (EIN 736097060) FY2021 990 reports $191.0M in contributions/revenue \u2265 event $50.0M (circumstantial)"
     },
     {
       "event_role": "political",
@@ -508,7 +571,10 @@
       "event_id": "harold_hamm_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -527,7 +593,10 @@
       "event_id": "harold_hamm_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -546,7 +615,10 @@
       "event_id": "harold_hamm_direct_gift_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-5c8469de1ebb3f89",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Sue Ann Arnall'"
     },
     {
       "event_role": "political",

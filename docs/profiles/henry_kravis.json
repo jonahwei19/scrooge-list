@@ -70,6 +70,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "note": "Charitable disbursements per ProPublica summary of fiscal-year 2024 filing; assets EoY $68.2M; total expenses $46.3M.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (recipients not extracted; 990-P') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -84,6 +87,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "note": "Assets EoY $47.0M; Instrumentl cites $54.97M grants (minor differ \u2014 using ProPublica summary value).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -97,6 +103,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/202312899349100846/full",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -110,6 +119,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/202320349349100107/full",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -123,6 +135,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -136,6 +151,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201922879349100317/full",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -149,6 +167,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201802849349100625/full",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -162,6 +183,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201602789349100410/full",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -175,6 +199,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201502759349100210/full",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -188,6 +215,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521/201410919349100111/full",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -201,6 +231,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -214,6 +247,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/133341521",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -394,6 +430,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/912154267",
+      "recipient_verification_note": "recipient Memorial Sloan Kettering Cancer Center (EIN 912154267) FY2014 990 reports $3602.0M in contributions/revenue \u2265 event $100.0M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -414,6 +453,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Sloan Kettering Institute'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -434,6 +476,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -454,6 +499,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -514,6 +562,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -554,6 +605,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -594,6 +648,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Columbia University Business School'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -636,6 +693,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/951664101",
+      "recipient_verification_note": "no 990 on file for Claremont Mckenna College (EIN 951664101) within \u00b11 yr of 2008",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -656,6 +716,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -676,6 +739,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/131624086",
+      "recipient_verification_note": "no 990 on file for The Metropolitan Museum Of Art (EIN 131624086) within \u00b11 yr of 1990",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -696,6 +762,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -716,6 +785,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -736,6 +808,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -756,6 +831,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Rockefeller University'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -796,6 +874,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -816,6 +897,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-4fc43709be8c748d",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {

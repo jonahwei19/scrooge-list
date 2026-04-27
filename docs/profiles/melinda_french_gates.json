@@ -62,6 +62,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "FLAG: $257.5M went to National Philanthropic Trust \u2014 this is a major DAF sponsor. Per v3 dedup rules, grants into DAFs should be flagged as DAF_TRANSFER and not credited as end-of-pipeline charitable giving until NPT disburses. That $257.5M is ~53% of PPF's 2024 grants. This is a significant DAF-intermediated portion.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Multiple \u2014 including National Philanthro') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -75,6 +78,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -89,6 +95,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "notes": "PPF established Oct 2022 \u2014 partial-year activity.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -153,6 +162,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
       "dedup_note": "TODO: verify whether this $50M Pivotal contribution appears inside PPF 2025 990-PF (expected Nov 2026) \u2014 if so, do not double-count. For now flagged as ANNOUNCED, not yet visible in ProPublica 2025 data.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/845192069",
+      "recipient_verification_note": "no 990 on file for Wellcome Leap Inc (EIN 845192069) within \u00b11 yr of 2025",
       "event_role_canonical": "grant_out"
     },
     {
@@ -173,6 +185,9 @@
       "regen_run_id": "sha256-e734f00e32f712b1",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -193,6 +208,9 @@
       "regen_run_id": "sha256-e734f00e32f712b1",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -213,6 +231,9 @@
       "regen_run_id": "sha256-34657245e50c2f07",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2023 990 reports $14732.6M in contributions/revenue \u2265 event $3.0M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -233,6 +254,9 @@
       "regen_run_id": "sha256-34657245e50c2f07",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
+      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2023 990 reports $10050.0M in contributions/revenue \u2265 event $257.5M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -253,6 +277,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -273,6 +300,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -293,6 +323,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -313,6 +346,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -333,6 +369,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/560532129",
+      "recipient_verification_note": "no 990 on file for Duke University (EIN 560532129) within \u00b11 yr of 1998",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -353,6 +392,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Democratic causes'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -393,6 +435,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/845192069",
+      "recipient_verification_note": "no 990 on file for Wellcome Leap Inc (EIN 845192069) within \u00b11 yr of 2025",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -413,6 +458,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -453,6 +501,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/882918646",
+      "recipient_verification_note": "recipient Pivotal Philanthropies Foundation (EIN 882918646) FY2023 990 reports only $12.3M in contributions/revenue; event claims $7900.0M (gap $7887.7M)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -473,6 +524,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bill & Melinda Gates Foundation'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -513,6 +567,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -533,6 +590,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -593,6 +653,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/521213010",
+      "recipient_verification_note": "recipient National Womens Law Center (EIN 521213010) filed FY2023 990; amount not provided in event so no dollar match attempted",
       "event_role_canonical": "grant_out"
     },
     {
@@ -653,6 +716,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -673,6 +739,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -693,6 +762,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -713,6 +785,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -733,6 +808,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-c9fcc3bcf90e14f5",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {

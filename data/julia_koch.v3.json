@@ -69,7 +69,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Julia is listed as Director/President/Secretary on 2024 filing. Attributable to Julia's post-2019 decision-making."
+      "note": "Julia is listed as Director/President/Secretary on 2024 filing. Attributable to Julia's post-2019 decision-making.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (per 990-PF Part XV)') \u2014 no entity to look up"
     },
     {
       "event_id": "dhkcf_2023",
@@ -81,7 +84,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "dhkcf_2022",
@@ -93,7 +99,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "dhkcf_2021",
@@ -105,7 +114,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "dhkcf_2020",
@@ -117,7 +129,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "dhkcf_2019",
@@ -130,7 +145,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/480926946",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "attribution_note": "2019 was David's death year (Aug 23). Giving was essentially zero \u2014 foundation was dormant during transition."
+      "attribution_note": "2019 was David's death year (Aug 23). Giving was essentially zero \u2014 foundation was dormant during transition.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "jkff_nyu_langone_2024",
@@ -147,7 +165,10 @@
       "source_url": "https://nyulangone.org/news/julia-koch-family-foundation-gives-transformative-75-million-gift-new-state-art-nyu-langone-health-ambulatory-care-center-west-palm-beach",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "classification_note": "NYU Langone IS a 501(c)(3). Even though the Julia Koch Family Foundation is organized as a 501(c)(4), this is a documented out-the-door grant to a charitable recipient \u2014 countable as observable charity. However, (c)(4) structure means giving is NOT deductible to the donor and the foundation is not obligated to disclose grants on a 990-PF. Confirmed via NYU press release, not by a 990 grants list."
+      "classification_note": "NYU Langone IS a 501(c)(3). Even though the Julia Koch Family Foundation is organized as a 501(c)(4), this is a documented out-the-door grant to a charitable recipient \u2014 countable as observable charity. However, (c)(4) structure means giving is NOT deductible to the donor and the foundation is not obligated to disclose grants on a 990-PF. Confirmed via NYU press release, not by a 990 grants list.",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/472613531",
+      "recipient_verification_note": "recipient Nyu Langone Health System (EIN 472613531) FY2023 990 reports only $15.1M in contributions/revenue; event claims $75.0M (gap $59.9M)"
     },
     {
       "event_id": "jkpf_contributions_in_2023",
@@ -247,7 +268,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-95784f6d18e6eba1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -266,7 +290,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-95784f6d18e6eba1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -285,7 +312,10 @@
       "event_id": "julia_koch_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -304,7 +334,10 @@
       "event_id": "julia_koch_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -342,7 +375,10 @@
       "event_id": "julia_koch_grant_out_2023_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/472613531",
+      "recipient_verification_note": "recipient Nyu Langone Health System (EIN 472613531) FY2023 990 reports only $15.1M in contributions/revenue; event claims $75.0M (gap $59.9M)"
     },
     {
       "event_role": "grant_out",
@@ -361,7 +397,10 @@
       "event_id": "julia_koch_grant_out_2011_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -380,7 +419,10 @@
       "event_id": "julia_koch_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -399,7 +441,10 @@
       "event_id": "julia_koch_grant_out_2023_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -418,7 +463,10 @@
       "event_id": "julia_koch_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "private_investment",
@@ -456,7 +504,10 @@
       "event_id": "julia_koch_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -494,7 +545,10 @@
       "event_id": "julia_koch_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -513,7 +567,10 @@
       "event_id": "julia_koch_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -532,7 +589,10 @@
       "event_id": "julia_koch_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -589,7 +649,10 @@
       "event_id": "julia_koch_direct_gift_2016_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"Lucile Packard Children's Hospital at Stanford University\""
     },
     {
       "event_id": "julia_koch_gp_status",

@@ -62,7 +62,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "Waverley Street is the 501(c)(3) arm of Laurene Powell Jobs's philanthropy. Its grants_out are observable. Emerson Collective LLC (the parent) gives separately and is NOT observable \u2014 see hidden_upper."
+      "dedup_note": "Waverley Street is the 501(c)(3) arm of Laurene Powell Jobs's philanthropy. Its grants_out are observable. Emerson Collective LLC (the parent) gives separately and is NOT observable \u2014 see hidden_upper.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various climate grantees (144 grants in ') \u2014 no entity to look up"
     },
     {
       "event_id": "lpj_waverley_2023",
@@ -75,7 +78,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "note": "Inside Philanthropy reported $424M figure for 2023; ProPublica summary extracted $237.5M. Discrepancy may reflect IP including qualifying distributions vs. strict grants-paid. Use 990-PF figure as conservative."
+      "note": "Inside Philanthropy reported $424M figure for 2023; ProPublica summary extracted $237.5M. Discrepancy may reflect IP including qualifying distributions vs. strict grants-paid. Use 990-PF figure as conservative.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "lpj_waverley_2022",
@@ -87,7 +93,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "lpj_waverley_2021",
@@ -99,7 +108,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "lpj_waverley_2020",
@@ -111,7 +123,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/813242506",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "lpj_xq_100m_2015_2016",
@@ -127,7 +142,10 @@
       "source_url": "https://philanthropynewsdigest.org/news/winners-of-100-million-xq-super-school-project-announced",
       "retrieved_at": "2026-04-24",
       "confidence": "medium",
-      "dedup_note": "XQ Institute is a separate 501(c)(3); these grants may be inside XQ's 990 filings (not pulled here) OR may be direct LLC-to-school gifts. Since XQ itself is an Emerson creature, this $100M is reported as an announced commitment. Wikipedia says XQ total giving is 'at least $200M' cumulative as of ~2019-2022. Not double-counted with Waverley grants (different pipelines \u2014 XQ pre-dates Waverley)."
+      "dedup_note": "XQ Institute is a separate 501(c)(3); these grants may be inside XQ's 990 filings (not pulled here) OR may be direct LLC-to-school gifts. Since XQ itself is an Emerson creature, this $100M is reported as an announced commitment. Wikipedia says XQ total giving is 'at least $200M' cumulative as of ~2019-2022. Not double-counted with Waverley grants (different pipelines \u2014 XQ pre-dates Waverley).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -146,7 +164,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-aac882a077cc4e7d",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -165,7 +186,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-aac882a077cc4e7d",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -184,7 +208,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-aac882a077cc4e7d",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -203,7 +230,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-aac882a077cc4e7d",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -222,7 +252,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-21de1b7e12eeb870",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2020 990 reports $2636.0M in contributions/revenue \u2265 event $10.0M (verified)"
     },
     {
       "event_role": "transfer_in",
@@ -279,7 +312,10 @@
       "event_id": "laurene_powell_jobs_grant_out_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Chalkbeat'"
     },
     {
       "event_role": "political",
@@ -336,7 +372,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "private_investment",
@@ -412,7 +451,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -469,7 +511,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -507,7 +552,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -526,7 +574,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -545,7 +596,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -564,7 +618,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "nonspecific or aggregate recipient"
     },
     {
       "event_role": "political",
@@ -621,7 +678,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_2017_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Atlantic'"
     },
     {
       "event_role": "grant_out",
@@ -640,7 +700,10 @@
       "event_id": "laurene_powell_jobs_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -659,7 +722,10 @@
       "event_id": "laurene_powell_jobs_grant_out_2023_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -678,7 +744,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_2016_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "transfer_in",
@@ -716,7 +785,10 @@
       "event_id": "laurene_powell_jobs_direct_gift_2019_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "political",

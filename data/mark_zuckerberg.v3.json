@@ -73,7 +73,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "notes": "CZI Foundation 2024 filing: total expenses $323.0M; charitable disbursements $388.7M; total contributions received (transfer_in) $690.5M."
+      "notes": "CZI Foundation 2024 filing: total expenses $323.0M; charitable disbursements $388.7M; total contributions received (transfer_in) $690.5M.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (recipients not disclosed in Pro') \u2014 no entity to look up"
     },
     {
       "event_id": "zuck_czif_2023",
@@ -85,7 +88,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "zuck_czif_2022",
@@ -97,7 +103,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "zuck_czif_2021",
@@ -109,7 +118,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "zuck_czif_2020",
@@ -121,7 +133,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "zuck_czif_2019",
@@ -133,7 +148,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "zuck_czif_2018",
@@ -145,7 +163,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "zuck_czif_2017",
@@ -157,7 +178,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/455002209",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "zuck_czif_transfers_in_2017_2024",
@@ -199,7 +223,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Silicon_Valley_Community_Foundation",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "This is a transfer INTO a DAF (SVCF). Under v3 methodology this is a transfer_in-equivalent for the Zuckerberg CZI DAF bucket \u2014 the DAF receives it but grants-out from SVCF Zuckerberg DAF accounts are donor-opaque. We record as direct_gift because it left Zuckerberg's control AND is tax-deductible, but the ultimate disbursement path is not publicly traceable."
+      "dedup_note": "This is a transfer INTO a DAF (SVCF). Under v3 methodology this is a transfer_in-equivalent for the Zuckerberg CZI DAF bucket \u2014 the DAF receives it but grants-out from SVCF Zuckerberg DAF accounts are donor-opaque. We record as direct_gift because it left Zuckerberg's control AND is tax-deductible, but the ultimate disbursement path is not publicly traceable.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2012 990 reports $997.8M in contributions/revenue \u2265 event $500.0M (circumstantial)"
     },
     {
       "event_id": "zuck_svcf_2013",
@@ -215,7 +242,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Same as zuck_svcf_2012 \u2014 transfer into DAF. Counted as direct_gift (tax-deductible transfer out of personal holdings) but grants-out-of-DAF are opaque."
+      "dedup_note": "Same as zuck_svcf_2012 \u2014 transfer into DAF. Counted as direct_gift (tax-deductible transfer out of personal holdings) but grants-out-of-DAF are opaque.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2013 990 reports $1474.0M in contributions/revenue \u2265 event $990.0M (circumstantial)"
     },
     {
       "event_id": "zuck_newark_2010",
@@ -230,7 +260,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "classification_note": "Pre-CZI gift. Widely criticized ex-post for poor outcomes but documented at announcement."
+      "classification_note": "Pre-CZI gift. Widely criticized ex-post for poor outcomes but documented at announcement.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/393413743",
+      "recipient_verification_note": "no 990 on file for Newark Public Schools Foundation (EIN 393413743) within \u00b11 yr of 2010"
     },
     {
       "event_id": "zuck_ebola_2014",
@@ -242,7 +275,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/751326866",
+      "recipient_verification_note": "recipient Cdc Foundation (EIN 751326866) FY2014 990 reports only $0.1M in contributions/revenue; event claims $25.0M (gap $24.9M)"
     },
     {
       "event_id": "zuck_sf_general_2015",
@@ -255,7 +291,10 @@
       "source_type": "announcement",
       "source_url": "https://en.wikipedia.org/wiki/Mark_Zuckerberg",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/943189424",
+      "recipient_verification_note": "recipient San Francisco General Hospital Foundation (EIN 943189424) FY2015 990 reports $109.7M in contributions/revenue \u2265 event $75.0M (circumstantial)"
     },
     {
       "event_id": "zuck_ctcl_2020",
@@ -268,7 +307,10 @@
       "source_url": "https://www.latimes.com/opinion/story/2024-05-30/election-mark-zuckerberg-priscilla-chan-donation-grants",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "classification_note": "The so-called 'Zuckerbucks'. Both recipients are 501(c)(3) nonpartisan nonprofits \u2014 counts as charitable under Forbes/Chronicle methodology despite political framing in partisan press. Zuckerberg discontinued this category post-2020."
+      "classification_note": "The so-called 'Zuckerbucks'. Both recipients are 501(c)(3) nonpartisan nonprofits \u2014 counts as charitable under Forbes/Chronicle methodology despite political framing in partisan press. Zuckerberg discontinued this category post-2020.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Center for Tech and Civic Life + Center for Election Innovation & Research'"
     },
     {
       "event_id": "zuck_sacramento_2026",
@@ -283,7 +325,10 @@
       "source_url": "https://fortune.com/2026/02/09/mark-zuckerberg-meta-50-million-donation-sacramento-tech-talent-pipeline-stem-facilities/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "classification_note": "Joint gift with Meta corporate \u2014 Zuckerberg's personal share not disclosed. If we assume 50/50 split, personal credit ~$25M. Conservative: count $25M to Zuckerberg personal."
+      "classification_note": "Joint gift with Meta corporate \u2014 Zuckerberg's personal share not disclosed. If we assume 50/50 split, personal credit ~$25M. Conservative: count $25M to Zuckerberg personal.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Sacramento tech talent pipeline / STEM campus'"
     },
     {
       "event_role": "grant_out",
@@ -302,7 +347,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-919ca20254936788",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -321,7 +369,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-919ca20254936788",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -340,7 +391,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-919ca20254936788",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -359,7 +413,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-919ca20254936788",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -378,7 +435,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-919ca20254936788",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -397,7 +457,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-80dea5cd898db9ac",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2020 990 reports $2636.0M in contributions/revenue \u2265 event $0.9M (verified)"
     },
     {
       "event_role": "grant_out",
@@ -416,7 +479,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-80dea5cd898db9ac",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2021 990 reports $5613.4M in contributions/revenue \u2265 event $2.0M (verified)"
     },
     {
       "event_role": "direct_gift",
@@ -434,7 +500,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-80dea5cd898db9ac",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -452,7 +521,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-80dea5cd898db9ac",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -470,7 +542,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-80dea5cd898db9ac",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -488,7 +563,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-80dea5cd898db9ac",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -506,7 +584,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-80dea5cd898db9ac",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -525,7 +606,10 @@
       "event_id": "mark_zuckerberg_direct_gift_2020_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'local election offices'"
     },
     {
       "event_role": "direct_gift",
@@ -544,7 +628,10 @@
       "event_id": "mark_zuckerberg_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -563,7 +650,10 @@
       "event_id": "mark_zuckerberg_grant_out_2018_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'AJAF'"
     },
     {
       "event_role": "direct_gift",
@@ -582,7 +672,10 @@
       "event_id": "mark_zuckerberg_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -601,7 +694,10 @@
       "event_id": "mark_zuckerberg_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -620,7 +716,10 @@
       "event_id": "mark_zuckerberg_grant_out_2021_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -639,7 +738,10 @@
       "event_id": "mark_zuckerberg_direct_gift_2017_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/942942470",
+      "recipient_verification_note": "no 990 on file for Newark Schools Foundation Inc (EIN 942942470) within \u00b11 yr of 2017"
     },
     {
       "event_role": "direct_gift",
@@ -658,7 +760,10 @@
       "event_id": "mark_zuckerberg_direct_gift_2012_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'public schools in Newark, New Jersey'"
     },
     {
       "event_role": "direct_gift",
@@ -677,7 +782,10 @@
       "event_id": "mark_zuckerberg_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -696,7 +804,10 @@
       "event_id": "mark_zuckerberg_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -734,7 +845,10 @@
       "event_id": "mark_zuckerberg_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -753,7 +867,10 @@
       "event_id": "mark_zuckerberg_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -772,7 +889,10 @@
       "event_id": "mark_zuckerberg_grant_out_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -791,7 +911,10 @@
       "event_id": "mark_zuckerberg_direct_gift_2020_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Center for Tech and Civic Life'"
     },
     {
       "event_role": "corporate_gift",
@@ -810,7 +933,10 @@
       "event_id": "mark_zuckerberg_corporate_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -829,7 +955,10 @@
       "event_id": "mark_zuckerberg_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -848,7 +977,10 @@
       "event_id": "mark_zuckerberg_direct_gift_2020_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Center for Tech and Civic Life'"
     },
     {
       "event_role": "grant_out",
@@ -867,7 +999,10 @@
       "event_id": "mark_zuckerberg_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -886,7 +1021,10 @@
       "event_id": "mark_zuckerberg_grant_out_2020_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "private_investment",
@@ -924,7 +1062,10 @@
       "event_id": "mark_zuckerberg_direct_gift_2020_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'nonprofit'"
     },
     {
       "event_role": "direct_gift",
@@ -943,7 +1084,10 @@
       "event_id": "mark_zuckerberg_direct_gift_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/393413743",
+      "recipient_verification_note": "no 990 on file for Newark Public Schools Foundation (EIN 393413743) within \u00b11 yr of 2015"
     },
     {
       "event_role": "direct_gift",
@@ -962,7 +1106,10 @@
       "event_id": "mark_zuckerberg_direct_gift_2020_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/813815137",
+      "recipient_verification_note": "recipient Center For Election Innovation And Research Inc (EIN 813815137) FY2020 990 reports only $1.1M in contributions/revenue; event claims $69.6M (gap $68.5M)"
     },
     {
       "event_role": "corporate_gift",
@@ -981,7 +1128,10 @@
       "event_id": "mark_zuckerberg_corporate_gift_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"Trump's inaugural fund\""
     },
     {
       "event_role": "political",
@@ -1019,7 +1169,10 @@
       "event_id": "mark_zuckerberg_direct_gift_x_regen7",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -1038,7 +1191,10 @@
       "event_id": "mark_zuckerberg_grant_out_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     }
   ],
   "pledges_and_announcements": [

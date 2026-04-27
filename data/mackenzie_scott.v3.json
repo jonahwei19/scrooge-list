@@ -98,7 +98,10 @@
           "retrieved_at": "2026-04-23"
         }
       ],
-      "methodology_note": "Announced via quiet edit to the fourth paragraph of a mid-October 2025 blog post. Scott self-publishes totals on Yield Giving website and Medium; she does not confirm to press. Dec 2025 round = 186 grants. Panorama Global notes ~45% of Dec 2025 grants had undisclosed amounts on Yield Giving database \u2014 Scott totals are publisher-declared but not individually reconciled."
+      "methodology_note": "Announced via quiet edit to the fourth paragraph of a mid-October 2025 blog post. Scott self-publishes totals on Yield Giving website and Medium; she does not confirm to press. Dec 2025 round = 186 grants. Panorama Global notes ~45% of Dec 2025 grants had undisclosed amounts on Yield Giving database \u2014 Scott totals are publisher-declared but not individually reconciled.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '225+ organizations / 120+ organizations'"
     },
     {
       "event_id": "scott_yield_2024",
@@ -110,7 +113,10 @@
       "source_type": "announcement_arithmetic",
       "source_url": "https://people.com/since-jeff-bezos-divorce-mackenzie-scott-given-away-over-19-billion-11709699",
       "retrieved_at": "2026-04-23",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "scott_yield_2023",
@@ -121,7 +127,10 @@
       "source_type": "announcement",
       "source_url": "https://www.forbes.com/sites/phoebeliu/2023/12/08/mackenzie-scott-has-donated-22-billion-to-charity-this-year/",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "scott_yield_2019_2022",
@@ -136,7 +145,10 @@
       "source_type": "announcement_arithmetic",
       "source_url": "https://www.cnbc.com/2025/12/13/mackenzie-scott-revealed-her-total-charitable-donations-for-2025.html",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "scott_cumulative_headline_2026",
@@ -190,7 +202,10 @@
       "event_id": "mackenzie_scott_direct_gift_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -209,7 +224,10 @@
       "event_id": "mackenzie_scott_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -228,7 +246,10 @@
       "event_id": "mackenzie_scott_direct_gift_2025_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -247,7 +268,10 @@
       "event_id": "mackenzie_scott_grant_out_2026_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/953234551",
+      "recipient_verification_note": "no 990 on file for The Foundation For Santa Barbara City College (EIN 953234551) within \u00b11 yr of 2026"
     },
     {
       "event_role": "direct_gift",
@@ -266,7 +290,10 @@
       "event_id": "mackenzie_scott_direct_gift_2025_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -285,7 +312,10 @@
       "event_id": "mackenzie_scott_direct_gift_2026_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237115345",
+      "recipient_verification_note": "no 990 on file for Elizabeth City State University Foundation (EIN 237115345) within \u00b11 yr of 2026"
     },
     {
       "event_role": "direct_gift",
@@ -304,7 +334,10 @@
       "event_id": "mackenzie_scott_direct_gift_2026_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237447812",
+      "recipient_verification_note": "no 990 on file for Meals On Wheels America (EIN 237447812) within \u00b11 yr of 2026"
     },
     {
       "event_role": "direct_gift",
@@ -323,7 +356,10 @@
       "event_id": "mackenzie_scott_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -343,7 +379,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
       "regen_extractor_model": "claude-haiku-4-5",
-      "_cardinality_flag": "multi_recipient_phrase_detected"
+      "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '465 nonprofits'"
     },
     {
       "event_role": "direct_gift",
@@ -362,7 +401,10 @@
       "event_id": "mackenzie_scott_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -381,7 +423,10 @@
       "event_id": "mackenzie_scott_grant_out_2025_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/880702719",
+      "recipient_verification_note": "no 990 on file for Historically Black Colleges And Universities Wrestling Initiative (EIN 880702719) within \u00b11 yr of 2025"
     },
     {
       "event_role": "direct_gift",
@@ -400,7 +445,10 @@
       "event_id": "mackenzie_scott_direct_gift_2020_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'colleges and universities'"
     },
     {
       "event_role": "direct_gift",
@@ -419,7 +467,10 @@
       "event_id": "mackenzie_scott_direct_gift_2026_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -438,7 +489,10 @@
       "event_id": "mackenzie_scott_direct_gift_2020_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237089143",
+      "recipient_verification_note": "recipient Morgan State University Foundation Incorporated (EIN 237089143) filed FY2020 990; amount not provided in event so no dollar match attempted"
     },
     {
       "event_role": "direct_gift",
@@ -457,7 +511,10 @@
       "event_id": "mackenzie_scott_direct_gift_2025_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '18 historically Black colleges'"
     },
     {
       "event_role": "direct_gift",
@@ -476,7 +533,10 @@
       "event_id": "mackenzie_scott_direct_gift_2020_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '23 HBCUs nationwide'"
     },
     {
       "event_role": "direct_gift",
@@ -495,7 +555,10 @@
       "event_id": "mackenzie_scott_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -514,7 +577,10 @@
       "event_id": "mackenzie_scott_direct_gift_2020_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237089143",
+      "recipient_verification_note": "recipient Morgan State University Foundation Incorporated (EIN 237089143) FY2020 990 reports only $10.3M in contributions/revenue; event claims $40.0M (gap $29.7M)"
     },
     {
       "event_role": "direct_gift",
@@ -533,7 +599,10 @@
       "event_id": "mackenzie_scott_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -552,7 +621,10 @@
       "event_id": "mackenzie_scott_direct_gift_2025_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Winston'"
     }
   ],
   "pledges_and_announcements": [

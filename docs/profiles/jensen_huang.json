@@ -70,6 +70,9 @@
       "confidence": "high",
       "daf_transfer_amount_usd": 82500000,
       "daf_transfer_note": "~$82.5M of the $126.3M grants_out went to the GeForce Fund DAF at Schwab Charitable (DAFgiving360) \u2014 a DAF controlled by the Huangs themselves. Per IPS / Inside Philanthropy methodology, intra-vehicle transfers to a donor's own DAF should NOT be counted as out-the-door giving for tier calculation. Net of DAF: ~$43.8M in 2024 went to external 501(c)(3)s.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various \u2014 ~67% to GeForce Fund DAF at DA') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -84,6 +87,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "daf_transfer_note": "Fortune Nov 2024 notes 'vast majority' of 2023 foundation grants went to GeForce Fund DAF (same DAF). Exact split not disclosed in available summaries. Assume ~70% DAF = ~$42M DAF-routed, ~$18M net external.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -98,6 +104,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "2022 OSU $50M pledge announced this year \u2014 likely booked partially or wholly through this foundation grant total. Treat OSU $50M as INSIDE foundation grants to avoid double-count; do not add as separate direct gift.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -111,6 +120,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -124,6 +136,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/261551239",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -141,6 +156,9 @@
       "source_url": "https://www.investmentnews.com/ria-news/nvidia-ceo-huangs-multibillion-dollar-charitable-windfall-puts-philanthropic-strategy-in-focus/254856",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -157,6 +175,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "2008 gift predates foundation growth. Gift was made personally or via early foundation grants. Treat as outside the 2020-2024 grant_out window \u2014 additive but PRE-billionaire-era.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Stanford University'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -171,6 +192,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "PLEDGED in 2022; disbursement schedule unclear. Groundbreaking April 2024, building opens 2026. This $50M is very likely captured INSIDE the 2022-2024 JHLHF grants_out totals \u2014 DO NOT add separately to observable_giving to avoid double-counting.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/936022772",
+      "recipient_verification_note": "recipient Oregon State University Foundation (EIN 936022772) FY2022 990 reports $272.2M in contributions/revenue \u2265 event $50.0M (circumstantial)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -189,6 +213,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "Inside 990-PF grants history. Captured in huang_jhlhf_2007_2019_cumulative. Do not double-count.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -203,6 +230,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "Inside 990-PF 2019 grants. Captured in huang_jhlhf_2007_2019_cumulative.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/610479627",
+      "recipient_verification_note": "no 990 on file for Oneida Baptist Institute (EIN 610479627) within \u00b11 yr of 2019",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -219,6 +249,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "This gift will be booked in JHLHF 2025 990-PF (not yet filed/available as of 2026-04). Add as 2025 direct_gift pending 2025 990-PF verification.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/941156485",
+      "recipient_verification_note": "no 990 on file for California College Of The Arts (EIN 941156485) within \u00b11 yr of 2025",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -273,6 +306,9 @@
       "regen_run_id": "sha256-99da3c801e8db2fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -293,6 +329,9 @@
       "regen_run_id": "sha256-99da3c801e8db2fe",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -313,6 +352,9 @@
       "regen_run_id": "sha256-5a6a8a1a9b600621",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2017 990 reports $2418.0M in contributions/revenue \u2265 event $0.3M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -333,6 +375,9 @@
       "regen_run_id": "sha256-5a6a8a1a9b600621",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Schwab Charitable Fund'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -353,6 +398,9 @@
       "regen_run_id": "sha256-5a6a8a1a9b600621",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Schwab Charitable Fund'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -373,6 +421,9 @@
       "regen_run_id": "sha256-5a6a8a1a9b600621",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Schwab Charitable Fund'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -393,6 +444,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -413,6 +467,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -433,6 +490,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "nonspecific or aggregate recipient",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -453,6 +513,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -473,6 +536,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/936022772",
+      "recipient_verification_note": "recipient Oregon State University Foundation (EIN 936022772) FY2023 990 reports only $137.9M in contributions/revenue; event claims $213.0M (gap $75.1M)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -493,6 +559,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -513,6 +582,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -533,6 +605,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -553,6 +628,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -573,6 +651,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-1fbba143ceeff3ce",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {

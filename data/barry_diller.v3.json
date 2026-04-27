@@ -60,7 +60,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (recipient list not fully disclo') \u2014 no entity to look up"
     },
     {
       "event_id": "diller_dvfff_2023",
@@ -72,7 +75,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "diller_dvfff_2022",
@@ -84,7 +90,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461581956",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "diller_oldfdn_2021",
@@ -98,7 +107,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "diller_oldfdn_2020",
@@ -110,7 +122,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "diller_oldfdn_2019",
@@ -124,7 +139,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/954081892",
       "retrieved_at": "2026-04-24",
-      "confidence": "medium"
+      "confidence": "medium",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "diller_littleisland_direct_construction",
@@ -142,7 +160,10 @@
       "source_url": "https://en.wikipedia.org/wiki/Little_Island_at_Pier_55",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "dedup_note": "CRITICAL dedup: Pier55 Inc 990s show contributions of $25.2M (2015) + $9.0M (2017) + $25.0M (2018) + $39.6M (2019) + $61.6M (2021) + $35.6M (2024) = $196.0M observable contributions-in through 2024. Some portion (exactly $13.4M confirmed in 2021) came through The Diller Foundation grants-out and is ALSO counted in diller_oldfdn_2021 above. To avoid double-counting, we count: (A) the Diller Foundation grants-out total in diller_oldfdn_* events, and (B) Pier55 contributions-in NET of that foundation pass-through. Construction cost $231.3M and Pier55 receipts through 2024 are consistent if Diller contributed directly to Pier55 in amounts not passing through the foundation. We classify this as direct_gift for the $231.3M construction spend and apply dedup by subtracting $13.4M (confirmed 2021 foundation pass-through) and any other foundation-to-Pier55 grants from the rollup."
+      "dedup_note": "CRITICAL dedup: Pier55 Inc 990s show contributions of $25.2M (2015) + $9.0M (2017) + $25.0M (2018) + $39.6M (2019) + $61.6M (2021) + $35.6M (2024) = $196.0M observable contributions-in through 2024. Some portion (exactly $13.4M confirmed in 2021) came through The Diller Foundation grants-out and is ALSO counted in diller_oldfdn_2021 above. To avoid double-counting, we count: (A) the Diller Foundation grants-out total in diller_oldfdn_* events, and (B) Pier55 contributions-in NET of that foundation pass-through. Construction cost $231.3M and Pier55 receipts through 2024 are consistent if Diller contributed directly to Pier55 in amounts not passing through the foundation. We classify this as direct_gift for the $231.3M construction spend and apply dedup by subtracting $13.4M (confirmed 2021 foundation pass-through) and any other foundation-to-Pier55 grants from the rollup.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "diller_highline_2011",
@@ -157,7 +178,10 @@
       "source_url": "https://www.philanthropy.com/article/20-million-gift-to-support-n-y-s-high-line-park/",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
-      "cumulative_note": "Prior gifts ($15M across 2 earlier donations) per Huffington Post and Philanthropy News Digest \u2014 likely already captured within older Diller Foundation 990-PF grants_out pre-2019."
+      "cumulative_note": "Prior gifts ($15M across 2 earlier donations) per Huffington Post and Philanthropy News Digest \u2014 likely already captured within older Diller Foundation 990-PF grants_out pre-2019.",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/311734086",
+      "recipient_verification_note": "recipient Friends Of The High Line Inc (EIN 311734086) FY2011 990 reports $25.5M in contributions/revenue \u2265 event $20.0M (circumstantial)"
     },
     {
       "event_id": "diller_mptf_2012",
@@ -171,7 +195,10 @@
       "source_type": "news",
       "source_url": "https://www.hollywoodreporter.com/news/general-news/barry-diller-donation-mptf-333259/",
       "retrieved_at": "2026-04-24",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/951652916",
+      "recipient_verification_note": "recipient Motion Picture And Television Fund (EIN 951652916) FY2012 990 reports $110.1M in contributions/revenue \u2265 event $30.0M (circumstantial)"
     },
     {
       "event_id": "diller_sol_museum",
@@ -187,7 +214,10 @@
       "source_type": "donor_registry",
       "source_url": "https://www.statueofliberty.org/statue-of-liberty/statue-of-liberty-museum/major-donors-6/",
       "retrieved_at": "2026-04-24",
-      "confidence": "low"
+      "confidence": "low",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "diller_shed_arts",
@@ -203,7 +233,10 @@
       "source_type": "news",
       "source_url": "https://en.wikipedia.org/wiki/The_Shed_(arts_center)",
       "retrieved_at": "2026-04-24",
-      "confidence": "low"
+      "confidence": "low",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -222,7 +255,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -241,7 +277,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -260,7 +299,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -279,7 +321,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -298,7 +343,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -317,7 +365,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -336,7 +387,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/237825575",
+      "recipient_verification_note": "recipient National Philanthropic Trust (EIN 237825575) FY2018 990 reports $2946.6M in contributions/revenue \u2265 event $0.1M (verified)"
     },
     {
       "event_role": "grant_out",
@@ -355,7 +409,10 @@
       "event_id": "barry_diller_grant_out_2010_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'DvF Awards recipients'"
     },
     {
       "event_role": "political",
@@ -412,7 +469,10 @@
       "event_id": "barry_diller_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -431,7 +491,10 @@
       "event_id": "barry_diller_grant_out_1999_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/311655715",
+      "recipient_verification_note": "no 990 on file for The Helen Diller Family Foundation (EIN 311655715) within \u00b11 yr of 1999"
     },
     {
       "event_role": "direct_gift",
@@ -450,7 +513,10 @@
       "event_id": "barry_diller_direct_gift_2021_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Little Island'"
     },
     {
       "event_role": "direct_gift",
@@ -469,7 +535,10 @@
       "event_id": "barry_diller_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -488,7 +557,10 @@
       "event_id": "barry_diller_grant_out_2022_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/954782503",
+      "recipient_verification_note": "recipient A New Way Of Life Reentry Project (EIN 954782503) FY2022 990 reports $15.6M in contributions/revenue \u2265 event $0.0M (verified)"
     },
     {
       "event_role": "direct_gift",
@@ -507,7 +579,10 @@
       "event_id": "barry_diller_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -526,7 +601,10 @@
       "event_id": "barry_diller_direct_gift_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -564,7 +642,10 @@
       "event_id": "barry_diller_direct_gift_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "transfer_in",
@@ -621,7 +702,10 @@
       "event_id": "barry_diller_grant_out_2010_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -640,7 +724,10 @@
       "event_id": "barry_diller_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "direct_gift",
@@ -659,7 +746,10 @@
       "event_id": "barry_diller_direct_gift_2011_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'High Line Park'"
     },
     {
       "event_role": "direct_gift",
@@ -678,7 +768,10 @@
       "event_id": "barry_diller_direct_gift_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/61546019",
+      "recipient_verification_note": "no 990 on file for Hudson River Park Trust (EIN 61546019) within \u00b11 yr of 2015"
     },
     {
       "event_role": "direct_gift",
@@ -697,7 +790,10 @@
       "event_id": "barry_diller_direct_gift_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -716,7 +812,10 @@
       "event_id": "barry_diller_direct_gift_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-fe59536b645f08b1",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     }
   ],
   "pledges_and_announcements": [

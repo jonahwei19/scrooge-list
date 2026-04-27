@@ -73,6 +73,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "notes": "Charitable disbursements per 990-PF. Inside Philanthropy reports 2024 grantmaking of ~$308M (different definition possibly including DAF sub-granting); reconcile before publish.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (ProPublica summary; recipients ') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -86,6 +89,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -99,6 +105,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -112,6 +121,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -125,6 +137,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -138,6 +153,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/364336415",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -198,6 +216,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Likely flows through MSDF 2013 990-PF; pre-2019 990-PF data not yet pulled. Would be captured in MSDF pre-2019 grants_out. Flag for dedup once MSDF 2013 990-PF is retrieved.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "2 candidates, none with revenue data",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -213,6 +234,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "Likely flows through MSDF pre-2019 grants.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -228,6 +252,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "Likely captured in MSDF grants_out; pull MSDF historical 990-PF to dedup.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -242,6 +269,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Within MSDF 2024 $218.9M grants_out per 990-PF. Do NOT add separately.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'US charter schools'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -262,6 +292,9 @@
       "regen_run_id": "sha256-3cf3e20805caa5c8",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -282,6 +315,9 @@
       "regen_run_id": "sha256-3cf3e20805caa5c8",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -302,6 +338,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -362,6 +401,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Trump Accounts'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -382,6 +424,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -402,6 +447,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "2 candidates, none with revenue data",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -422,6 +470,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -482,6 +533,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -582,6 +636,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -602,6 +659,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -622,6 +682,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -682,6 +745,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -702,6 +768,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient \"Dell's private family foundation\"",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -722,6 +791,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'UT Austin'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -762,6 +834,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -782,6 +857,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-0f34d5a3d4add8b0",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {

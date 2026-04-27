@@ -59,7 +59,10 @@
       "secondary_source_url": "https://www.instrumentl.com/990-report/good-ventures-foundation",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "2024 total charitable disbursements from Good Ventures Foundation 990-PF per Instrumentl parse. Fortune Nov 2025 independently cites 'over $600M in 2025 alone' and '$593M in 2024 through Open Philanthropy recommendations' \u2014 the difference between $593M OP-recommended grants and $357.5M GVF 990-PF grants is accounted for by OP-recommended grants that flow through other vehicles (Coefficient Giving Advisors 501(c)(3), donor-advised funds, OP Action Fund 501(c)(4))."
+      "note": "2024 total charitable disbursements from Good Ventures Foundation 990-PF per Instrumentl parse. Fortune Nov 2025 independently cites 'over $600M in 2025 alone' and '$593M in 2024 through Open Philanthropy recommendations' \u2014 the difference between $593M OP-recommended grants and $357.5M GVF 990-PF grants is accounted for by OP-recommended grants that flow through other vehicles (Coefficient Giving Advisors 501(c)(3), donor-advised funds, OP Action Fund 501(c)(4)).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (491 grants in 2024 per Instrume') \u2014 no entity to look up"
     },
     {
       "event_id": "moskovitz_gvf_2022",
@@ -72,7 +75,10 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "note": "Per secondary reporting citing GVF 990-PF filings."
+      "note": "Per secondary reporting citing GVF 990-PF filings.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "moskovitz_gvf_2021",
@@ -84,7 +90,10 @@
       "source_type": "990-PF",
       "source_url": "https://projects.propublica.org/nonprofits/organizations/461008520",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "moskovitz_op_directed_cumulative_2014_2025",
@@ -102,7 +111,10 @@
       "secondary_source_url": "https://en.wikipedia.org/wiki/Coefficient_Giving",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "This is the umbrella cumulative figure. Do NOT double-add it to the annual GVF grant_out rows above. The cumulative $4B directed by OP/CG materially OVERLAPS with GVF 990-PF totals since GVF is OP's primary funder. In rollup we use the org-published cumulative ($5B Good Ventures since 2011 per goodventures.org + $4B OP directed) as the observable figure rather than summing annual rows."
+      "dedup_note": "This is the umbrella cumulative figure. Do NOT double-add it to the annual GVF grant_out rows above. The cumulative $4B directed by OP/CG materially OVERLAPS with GVF 990-PF totals since GVF is OP's primary funder. In rollup we use the org-published cumulative ($5B Good Ventures since 2011 per goodventures.org + $4B OP directed) as the observable figure rather than summing annual rows.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "moskovitz_gv_cumulative_5b",
@@ -119,7 +131,10 @@
       "source_url": "https://www.goodventures.org/our-giving/",
       "secondary_source_url": "https://en.wikipedia.org/wiki/Good_Ventures",
       "retrieved_at": "2026-04-23",
-      "confidence": "high"
+      "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "moskovitz_malaria_consortium_cumulative",
@@ -136,7 +151,10 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside the $5B cumulative above. Not additive; documented here for program-level specificity."
+      "dedup_note": "Inside the $5B cumulative above. Not additive; documented here for program-level specificity.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "moskovitz_evidence_action_cumulative",
@@ -152,7 +170,10 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside the $5B cumulative above. Not additive."
+      "dedup_note": "Inside the $5B cumulative above. Not additive.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "moskovitz_helen_keller_cumulative",
@@ -168,7 +189,10 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside the $5B cumulative above. Not additive."
+      "dedup_note": "Inside the $5B cumulative above. Not additive.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_id": "moskovitz_openai_nonprofit_2017",
@@ -181,7 +205,10 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
-      "dedup_note": "Inside the $5B cumulative. Notable because OpenAI has since reorganized; historically counted as charitable at time of grant."
+      "dedup_note": "Inside the $5B cumulative. Notable because OpenAI has since reorganized; historically counted as charitable at time of grant.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'OpenAI nonprofit)'"
     },
     {
       "event_id": "moskovitz_anthropic_stake_to_nonprofit",
@@ -195,7 +222,10 @@
       "source_url": "https://fortune.com/2025/11/10/meet-the-millennial-meta-cofounder-and-his-wife-who-are-giving-away-20-billion/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
-      "dedup_note": "Likely additive to the $5B Good Ventures cumulative, since it's a 2025 personal transaction not necessarily booked inside GVF's grant totals. Flag for deduplication when 2025 GVF 990-PF is published."
+      "dedup_note": "Likely additive to the $5B Good Ventures cumulative, since it's a 2025 personal transaction not necessarily booked inside GVF's grant totals. Flag for deduplication when 2025 GVF 990-PF is published.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Nonprofit entity holding Anthropic stake'"
     },
     {
       "event_id": "moskovitz_gvf_endowment_transfer",
@@ -231,7 +261,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -250,7 +283,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -269,7 +305,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -288,7 +327,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -307,7 +349,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -326,7 +371,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -345,7 +393,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -364,7 +415,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -383,7 +437,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -402,7 +459,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -421,7 +481,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -440,7 +503,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-e0166fa3b7d0190c",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -459,7 +525,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-222e43ee7cddf173",
       "regen_query": "",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/205205488",
+      "recipient_verification_note": "recipient Silicon Valley Community Foundation (EIN 205205488) FY2015 990 reports $1555.4M in contributions/revenue \u2265 event $7.6M (verified)"
     },
     {
       "event_role": "transfer_in",
@@ -496,7 +565,10 @@
       "event_id": "dustin_moskovitz_grant_out_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -515,7 +587,10 @@
       "event_id": "dustin_moskovitz_grant_out_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -534,7 +609,10 @@
       "event_id": "dustin_moskovitz_grant_out_2021_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'GiveWell Top Charities'"
     },
     {
       "event_role": "grant_out",
@@ -553,7 +631,10 @@
       "event_id": "dustin_moskovitz_grant_out_x_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -629,7 +710,10 @@
       "event_id": "dustin_moskovitz_grant_out_2022_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/900874591",
+      "recipient_verification_note": "recipient Evidence Action Inc (EIN 900874591) FY2022 990 reports $130.2M in contributions/revenue \u2265 event $48.8M (verified)"
     },
     {
       "event_role": "grant_out",
@@ -648,7 +732,10 @@
       "event_id": "dustin_moskovitz_grant_out_2022_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/900874591",
+      "recipient_verification_note": "recipient Evidence Action Inc (EIN 900874591) FY2022 990 reports $130.2M in contributions/revenue \u2265 event $14.0M (verified)"
     },
     {
       "event_role": "political",
@@ -686,7 +773,10 @@
       "event_id": "dustin_moskovitz_direct_gift_2025_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
     },
     {
       "event_role": "grant_out",
@@ -705,7 +795,10 @@
       "event_id": "dustin_moskovitz_grant_out_2019_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/364684978",
+      "recipient_verification_note": "recipient Animal Charity Evaluators (EIN 364684978) FY2019 990 reports $3.4M in contributions/revenue \u2265 event $0.7M (verified)"
     },
     {
       "event_role": "political",
@@ -743,7 +836,10 @@
       "event_id": "dustin_moskovitz_grant_out_x_regen4",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -762,7 +858,10 @@
       "event_id": "dustin_moskovitz_direct_gift_x_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "political",
@@ -838,7 +937,10 @@
       "event_id": "dustin_moskovitz_direct_gift_2015_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Deworm the World Initiative'"
     },
     {
       "event_role": "political",
@@ -876,7 +978,10 @@
       "event_id": "dustin_moskovitz_grant_out_2017_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/810861541",
+      "recipient_verification_note": "recipient Openai Inc (EIN 810861541) FY2017 990 reports $33.2M in contributions/revenue \u2265 event $30.0M (verified)"
     },
     {
       "event_role": "private_investment",
@@ -952,7 +1057,10 @@
       "event_id": "dustin_moskovitz_grant_out_2019_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/135562162",
+      "recipient_verification_note": "recipient Helen Keller International (EIN 135562162) FY2019 990 reports $88.2M in contributions/revenue \u2265 event $7.2M (verified)"
     },
     {
       "event_role": "grant_out",
@@ -971,7 +1079,10 @@
       "event_id": "dustin_moskovitz_grant_out_2020_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/135562162",
+      "recipient_verification_note": "recipient Helen Keller International (EIN 135562162) FY2020 990 reports $81.8M in contributions/revenue \u2265 event $7.2M (verified)"
     },
     {
       "event_role": "direct_gift",
@@ -990,7 +1101,10 @@
       "event_id": "dustin_moskovitz_direct_gift_2017_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Malaria Consortium'"
     },
     {
       "event_role": "grant_out",
@@ -1009,7 +1123,10 @@
       "event_id": "dustin_moskovitz_grant_out_x_regen5",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -1028,7 +1145,10 @@
       "event_id": "dustin_moskovitz_grant_out_2024_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/900874591",
+      "recipient_verification_note": "recipient Evidence Action Inc (EIN 900874591) FY2023 990 reports $56.4M in contributions/revenue \u2265 event $4.4M (verified)"
     },
     {
       "event_role": "grant_out",
@@ -1047,7 +1167,10 @@
       "event_id": "dustin_moskovitz_grant_out_2018_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/135562162",
+      "recipient_verification_note": "recipient Helen Keller International (EIN 135562162) FY2018 990 reports $77.9M in contributions/revenue \u2265 event $6.5M (verified)"
     },
     {
       "event_role": "grant_out",
@@ -1066,7 +1189,10 @@
       "event_id": "dustin_moskovitz_grant_out_x_regen6",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "grant_out",
@@ -1085,7 +1211,10 @@
       "event_id": "dustin_moskovitz_grant_out_2016_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The END Fund'"
     },
     {
       "event_role": "political",
@@ -1142,7 +1271,10 @@
       "event_id": "dustin_moskovitz_direct_gift_2016_regen1",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/474596232",
+      "recipient_verification_note": "recipient Priorities Usa (EIN 474596232) FY2016 990 reports $17.0M in contributions/revenue \u2265 event $6.0M (circumstantial)"
     },
     {
       "event_role": "political",
@@ -1218,7 +1350,10 @@
       "event_id": "dustin_moskovitz_grant_out_x_regen7",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "direct_gift",
@@ -1237,7 +1372,10 @@
       "event_id": "dustin_moskovitz_direct_gift_x_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
     },
     {
       "event_role": "transfer_in",
@@ -1275,7 +1413,10 @@
       "event_id": "dustin_moskovitz_grant_out_2017_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Malaria Consortium'"
     },
     {
       "event_role": "political",
@@ -1313,7 +1454,10 @@
       "event_id": "dustin_moskovitz_grant_out_2018_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/900874591",
+      "recipient_verification_note": "recipient Evidence Action Inc (EIN 900874591) FY2018 990 reports $35.8M in contributions/revenue \u2265 event $5.1M (verified)"
     },
     {
       "event_role": "direct_gift",
@@ -1332,7 +1476,10 @@
       "event_id": "dustin_moskovitz_direct_gift_2016_regen3",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-ce62b9d12c9b1d9c",
-      "regen_extractor_model": "claude-haiku-4-5"
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Democratic organizations'"
     },
     {
       "event_role": "political",

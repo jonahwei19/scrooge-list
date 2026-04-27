@@ -63,6 +63,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "attribution_note": "Abigail P. Johnson is one of several Johnson-family directors; she receives $0 compensation. Full amount is a FAMILY foundation grant, not Abigail-personal. For the Scrooge rollup we attribute the full grant_out to the Johnson-family observable (single-subject view) but flag fractional attribution if comparing to Abby-only personal resources.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (arts, culture, historic preserv') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -76,6 +79,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -89,6 +95,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -102,6 +111,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -116,6 +128,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "note": "Anomalously low year (likely timing of large grants made in 2015 and 2022; ECJF's grant pattern is lumpy rather than annuitized).",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -129,6 +144,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46108344",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -144,6 +162,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "attribution_note": "CRITICAL CAVEAT: The Fidelity Foundation is funded historically by Fidelity Investments (the company) plus Johnson family contributions. Trustees include Abigail P. Johnson (unpaid), Elizabeth L. Johnson, Edward C. Johnson IV, Ross E. Sherbrooke. Classifying the full $167.8M as Abigail-personal overstates her individual generosity; it is primarily company-funded institutional philanthropy that she helps govern. Fractional attribution (~15-25% of total) may be appropriate for single-subject personal scoring. We include the full amount here for the Johnson-family observable and flag the attribution for downstream scoring.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (3,099 awards 2024; education, h') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -157,6 +178,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -170,6 +194,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -183,6 +210,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -196,6 +226,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -209,6 +242,9 @@
       "source_url": "https://projects.propublica.org/nonprofits/organizations/46131201",
       "retrieved_at": "2026-04-24",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -225,6 +261,9 @@
       "retrieved_at": "2026-04-24",
       "confidence": "high",
       "dedup_note": "POSSIBLE DOUBLE-COUNT if pre-2019 ECJF 990-PFs are later pulled: this $29.7M gift would appear in ECJF's 2015 grants_out and we would need to subtract from this direct-gift row. As of now, we have not pulled ECJF 2015 990 \u2014 flag for verification. Boston Globe notes the family declined comment and NPF staff declined to comment (confirming family preference for privacy).",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/521086761",
+      "recipient_verification_note": "recipient National Park Foundation (EIN 521086761) FY2015 990 reports $74.9M in contributions/revenue \u2265 event $29.7M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -260,6 +299,9 @@
       "regen_run_id": "sha256-9058cfcb46a4b2ca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -280,6 +322,9 @@
       "regen_run_id": "sha256-9058cfcb46a4b2ca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -300,6 +345,9 @@
       "regen_run_id": "sha256-9058cfcb46a4b2ca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -320,6 +368,9 @@
       "regen_run_id": "sha256-9058cfcb46a4b2ca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -340,6 +391,9 @@
       "regen_run_id": "sha256-9058cfcb46a4b2ca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -360,6 +414,9 @@
       "regen_run_id": "sha256-9058cfcb46a4b2ca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -380,6 +437,9 @@
       "regen_run_id": "sha256-9058cfcb46a4b2ca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -400,6 +460,9 @@
       "regen_run_id": "sha256-9058cfcb46a4b2ca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -420,6 +483,9 @@
       "regen_run_id": "sha256-2b49f7b433c7deca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2019 990 reports $9937.0M in contributions/revenue \u2265 event $0.3M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -440,6 +506,9 @@
       "regen_run_id": "sha256-2b49f7b433c7deca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2020 990 reports $12252.8M in contributions/revenue \u2265 event $0.3M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -460,6 +529,9 @@
       "regen_run_id": "sha256-2b49f7b433c7deca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2021 990 reports $18558.6M in contributions/revenue \u2265 event $0.2M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -480,6 +552,9 @@
       "regen_run_id": "sha256-2b49f7b433c7deca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2022 990 reports $19858.2M in contributions/revenue \u2265 event $0.2M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -500,6 +575,9 @@
       "regen_run_id": "sha256-2b49f7b433c7deca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2023 990 reports $14732.6M in contributions/revenue \u2265 event $0.2M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -520,6 +598,9 @@
       "regen_run_id": "sha256-2b49f7b433c7deca",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/110303001",
+      "recipient_verification_note": "recipient Fidelity Investments Charitable Gift Fund (EIN 110303001) FY2023 990 reports $14732.6M in contributions/revenue \u2265 event $0.2M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
@@ -580,6 +661,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-013d4d72cab48772",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "corporate_gift"
     },
     {
@@ -600,6 +684,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-013d4d72cab48772",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -620,6 +707,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-013d4d72cab48772",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -640,6 +730,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-013d4d72cab48772",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -740,6 +833,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-013d4d72cab48772",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Ole Miss'",
       "event_role_canonical": "direct_gift"
     },
     {

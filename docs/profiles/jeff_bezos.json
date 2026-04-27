@@ -59,6 +59,9 @@
       "source_url": "https://www.nytimes.com/2021/09/20/business/jeff-bezos-earth-fund.html",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '16 environmental nonprofits including WWF, Nature Conservancy, EDF, NRDC, World Resources Institute'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -76,6 +79,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
       "dedup_note": "May overlap with later 'cumulative disbursed' figures. Use cumulative_disbursed_2026 (~$2.3B) as canonical rollup, NOT additive sum of announcements.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Land and food systems commitments including restoration of African landscapes; announced at COP26 Glasgow'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -89,6 +95,9 @@
       "source_url": "https://www.seattletimes.com/business/bezos-earth-fund-announces-nearly-204-million-in-additional-donations-with-focus-on-grassroots-climate-groups/",
       "retrieved_at": "2026-04-23",
       "confidence": "medium",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Grassroots climate justice groups'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -102,6 +111,9 @@
       "source_url": "https://www.forbes.com/sites/mollybohannon/2024/03/12/bezos-earth-fund-invests-60-million-in-centers-to-improve-alternative-meats/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Bezos Centers for Sustainable Protein'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -133,6 +145,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "CRITICAL: This $13.9M is the FOUNDATION (501(c)(3)) arm, which only became tax-exempt in Jan 2024 and reports $223K in total assets. The $2.3B cumulative Earth Fund disbursement runs through the LLC (Fellowship Ventures LLC) which does not file public 990s. The $13.9M 990-PF figure is INCLUDED within the $2.3B cumulative total; do NOT additively sum.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -146,6 +161,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "note": "24 organizations, inaugural year",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -159,6 +177,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "note": "32 organizations",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -172,6 +193,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "note": "38 organizations from 23 states, DC, and Puerto Rico",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -187,6 +211,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "note": "40 organizations",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -200,6 +227,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "note": "32 recipients from 20 states, DC, and Guam \u2014 eighth annual round",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -251,6 +281,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Courage & Civility is NOT an endowment \u2014 it's a direct gift from Bezos/S\u00e1nchez personally to the recipient who then regrants. Counted as observable direct_gift because recipient is explicitly charitable. Do not dedupe against Earth Fund or D1FF.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Dolly Parton (to disburse to charities o') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -264,6 +297,9 @@
       "source_url": "https://www.forbes.com/sites/kenrickcai/2021/07/20/jeff-bezos-says-hell-give-away-200-million-in-new-philanthropic-initiative-for-leaders-with-civility/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Van Jones + Jos\u00e9 Andr\u00e9s'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -277,6 +313,9 @@
       "source_url": "https://fortune.com/2026/04/21/jeff-bezos-gave-eva-longoria-admiral-behind-osama-bin-laden-capture-100-million-you-dont-need-wealth-to-give-back/",
       "retrieved_at": "2026-04-23",
       "confidence": "high",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/454345954",
+      "recipient_verification_note": "recipient Eva Longoria Foundation (EIN 454345954) FY2023 990 reports only $0.1M in contributions/revenue; event claims $50.0M (gap $49.9M)",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -291,6 +330,9 @@
       "retrieved_at": "2026-04-23",
       "confidence": "high",
       "dedup_note": "Fortune April 2026 frames Longoria + McRaven as the 'two $50M Courage & Civility Awards in 2024'; article title's '$100M' refers to the combined 2024 prize pool.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Admiral William McRaven'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -308,6 +350,9 @@
       "confidence": "medium",
       "note": "Financial Post: Bezos 'given away nearly 930,000 shares to nonprofits in 2025' with ~$60M March tranche. Likely flows to Bezos Earth Fund Foundation and/or Day 1 Fund structures.",
       "dedup_note": "POTENTIAL DOUBLE-COUNT against Earth Fund cumulative or D1FF cumulative \u2014 the stock gifts may be the funding mechanism, not incremental outlays. Flag for SEC Form 4 direct parse in Phase 1.2.",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Undisclosed 501(c)(3) charities') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -328,6 +373,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Various (990-PF aggregate; recipient det') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -347,6 +395,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -366,6 +417,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -385,6 +439,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -404,6 +461,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -423,6 +483,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -442,6 +505,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -461,6 +527,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -480,6 +549,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -499,6 +571,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -518,6 +593,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -537,6 +615,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -556,6 +637,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -575,6 +659,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -594,6 +681,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -613,6 +703,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -632,6 +725,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -651,6 +747,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -670,6 +769,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -689,6 +791,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -708,6 +813,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -727,6 +835,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -746,6 +857,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -765,6 +879,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -784,6 +901,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -804,6 +924,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/860903111",
+      "recipient_verification_note": "no 990 on file for Maui Inc (EIN 860903111) within \u00b11 yr of 2023",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -823,6 +946,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -842,6 +968,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -861,6 +990,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -880,6 +1012,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -899,6 +1034,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -918,6 +1056,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -937,6 +1078,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -956,6 +1100,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -975,6 +1122,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -994,6 +1144,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1014,6 +1167,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Five educators'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1033,6 +1189,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1052,6 +1211,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1073,6 +1235,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
       "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '32 nonprofits combatting homelessness'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1092,6 +1257,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_query": "",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('Foundation (unspecified)') \u2014 no entity to look up",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1112,6 +1280,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1132,6 +1303,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1152,6 +1326,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient '24 grantees'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1192,6 +1369,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1212,6 +1392,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1232,6 +1415,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1252,6 +1438,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'park rangers, coastal communities, and local organizations'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1272,6 +1461,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1292,6 +1484,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1312,6 +1507,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/931868994",
+      "recipient_verification_note": "no 990 on file for Bezos Earth Fund Foundation (EIN 931868994) within \u00b11 yr of 2020",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1332,6 +1530,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/882498170",
+      "recipient_verification_note": "no 990 on file for North Carolina State University (EIN 882498170) within \u00b11 yr of 2024",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1352,6 +1553,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1372,6 +1576,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'AI Grand Challenge for Climate and Nature project teams'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1392,6 +1599,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1412,6 +1622,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1432,6 +1645,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1452,6 +1668,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "nonspecific or aggregate recipient",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1472,6 +1691,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'David Flink'",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1492,6 +1714,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1532,6 +1757,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Flink'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1553,6 +1781,9 @@
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
       "_cardinality_flag": "multi_recipient_phrase_detected",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1573,6 +1804,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1593,6 +1827,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1613,6 +1850,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1633,6 +1873,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1653,6 +1896,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1673,6 +1919,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1693,6 +1942,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1733,6 +1985,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Day One Fund'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1753,6 +2008,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/931868994",
+      "recipient_verification_note": "no 990 on file for Bezos Earth Fund Foundation (EIN 931868994) within \u00b11 yr of 2020",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1773,6 +2031,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Dolly Parton'",
       "event_role_canonical": "grant_out"
     },
     {
@@ -1793,6 +2054,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -1813,6 +2077,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-733b6a11645c0037",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "true",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/412237951",
+      "recipient_verification_note": "recipient Travis Manion Foundation (EIN 412237951) FY2024 990 reports $12.9M in contributions/revenue \u2265 event $0.2M (verified)",
       "event_role_canonical": "grant_out"
     },
     {
