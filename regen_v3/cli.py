@@ -46,6 +46,7 @@ from regen_v3 import leaks as leaks_mod
 from regen_v3 import dafs as dafs_mod
 from regen_v3 import llcs as llcs_mod
 from regen_v3 import state_charities as state_charities_mod
+from regen_v3 import recipient_verify as recipient_verify_mod
 from validate_v3 import check as validate_check  # noqa: E402
 
 
@@ -282,6 +283,15 @@ def run_one(
         f"{len(diff['skipped_fabricated'])} fab / "
         f"{len(diff['skipped_unknown_role'])} unknown"
     )
+
+    # 5b. Two-sided recipient cross-check: stamp recipient_verified /
+    #     _filing_url / _verification_note onto every direct_gift /
+    #     corporate_gift / grant_out event whose recipient + year are
+    #     populated. Mutates in place. Doesn't affect validation; informational.
+    try:
+        recipient_verify_mod.annotate_record(new_record, refresh=refresh)
+    except Exception as e:
+        print(f"    [recipient_verify-skip] {type(e).__name__}: {e}")
 
     # 6. Validate
     errs, warns = validate_check(new_record, fp)
