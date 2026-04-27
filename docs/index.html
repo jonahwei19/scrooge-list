@@ -352,8 +352,17 @@ body.saint-view .section-head h2{color:var(--green)}
 .dist-legend .legend-rule .rule-mark{display:inline-block;width:14px;height:0;border-top:1.5px dashed var(--rust);vertical-align:middle;margin-right:7px}
 
 @media (max-width:900px){
-  .ledger-row{grid-template-columns:120px 36px 1fr 70px;gap:10px}
+  .ledger-row{grid-template-columns:140px 36px 1fr 70px;gap:10px}
   .ledger-meta{display:none}
+}
+@media (max-width:560px){
+  .ledger-row{grid-template-columns:1fr 50px;grid-template-areas:"name pct" "track track";gap:6px 10px;padding:10px 6px}
+  .ledger-row .ledger-name{grid-area:name;font-size:.9rem}
+  .ledger-row .ledger-pct{grid-area:pct;text-align:right;font-size:.9rem}
+  .ledger-row .ledger-track{grid-area:track;height:10px}
+  .ledger-row .ledger-rank,.ledger-row.ledger-head .ledger-rank,.ledger-row.ledger-head .ledger-track-axis{display:none}
+  .ledger-row.ledger-head{grid-template-columns:1fr 50px}
+  .ledger-row.ledger-head .ledger-name,.ledger-row.ledger-head .ledger-pct{font-size:.6rem}
 }
 
 .how-to-read{
@@ -399,6 +408,16 @@ body.saint-view .section-head h2{color:var(--green)}
   .offender:last-child{border-bottom:none}
   .tier-table{font-size:.88rem}
   .tier-table td,.tier-table thead th{padding:10px 8px}
+}
+@media (max-width:560px){
+  .sheet{padding:30px 18px 60px}
+  .deck{font-size:1.4rem}
+  .stat{padding:14px 8px}
+  .stat-label{font-size:.58rem;letter-spacing:.14em}
+  .stat-value{font-size:1.5rem}
+  .pattern-filters{gap:6px}
+  .pattern-filters .pf-btn{padding:5px 10px;font-size:.7rem}
+  .how-to-read{padding:20px 18px}
 }
 </style>
 </head>

@@ -60,8 +60,13 @@ def check(rec: dict, path: Path) -> tuple[list[str], list[str]]:
         url = s.get("url") if isinstance(s, dict) else None
         if not url or not URL_RE.match(url):
             errors.append(f"sources_all[{i}] invalid url: {url!r}")
-        if not (isinstance(s, dict) and s.get("retrieved_at")):
-            warnings.append(f"sources_all[{i}] missing retrieved_at")
+        # `retrieved_at` is required for manually-added sources; regen_v3
+        # entries with hash-form run_ids omit it by design (see
+        # regen_v3/merge.py:_retrieved_at_from_run_id), so don't warn on
+        # those — the run_id itself is the canonical retrieval handle.
+        if isinstance(s, dict):
+            if not s.get("retrieved_at") and s.get("provenance") != "regen_v3":
+                warnings.append(f"sources_all[{i}] missing retrieved_at")
         # Dead-link annotations (written by check_urls.py / manual triage).
         if isinstance(s, dict):
             status = s.get("source_verification_status") or ""

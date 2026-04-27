@@ -149,6 +149,7 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   font-variation-settings:"opsz" 144,"SOFT" 10;
   font-size:5rem;line-height:.82;margin:6px 12px -6px 0;color:var(--rust);
 }
+[data-theme="dark"] .dropcap::first-letter{color:var(--gilt)}
 .formula{
   background:var(--paper-mid);border-left:3px solid var(--rust);
   padding:22px 26px;margin:24px 0 30px;
@@ -203,7 +204,14 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
 @media (max-width:700px){
   .sheet{padding:32px 22px 60px}
   .data-table{font-size:.9rem}
-  .data-table td,.data-table thead th{padding:10px 10px}
+  .data-table td,.data-table thead th{padding:10px 10px;white-space:normal}
+  .source-list{grid-template-columns:1fr}
+}
+@media (max-width:480px){
+  .masthead h1{font-size:2.4rem}
+  .masthead .deck{font-size:1rem}
+  .data-table{font-size:.82rem}
+  .data-table td,.data-table thead th{padding:8px 6px}
 }
 </style>
 </head>

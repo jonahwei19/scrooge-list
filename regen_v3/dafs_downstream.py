@@ -1,41 +1,23 @@
 """DAF downstream attribution for regen_v3.
 
-`dafs.py` detects when a subject's foundation transferred TO a DAF
-sponsor (Fidelity Charitable, Vanguard Charitable, NPT, …). The amount
-is visible; the eventual recipient is not. This module recovers a
-portion of those eventual recipients by parsing the SPONSOR's own
-Schedule I (Form 990, not 990-PF) and matching grants back to the
-donor in two ways:
+Companion to `dafs.py`: the latter spots foundation→DAF transfers
+(visible). This one parses the SPONSOR's Schedule I (Form 990, not
+990-PF) to recover the eventual end-charity for each transfer.
 
-  1. **Donor-advisor match (verified, "medium" confidence).** A handful
-     of sponsors disclose a "donor advisor" string on each grant line
-     (often inside `RecipientRelationshipTxt` or `PurposeOfGrantTxt`).
-     If that string contains the subject's name OR the foundation's
-     name, the attribution is direct. *Empirically (April 2026) none
-     of Fidelity/Vanguard/Schwab/NPT/SVCF render this field on
-     ProPublica.* The matcher is left in place so attribution kicks
-     in automatically if any sponsor starts disclosing.
+Two attribution modes:
+  1. Donor-advisor match (confidence='medium'). Match if the sponsor
+     discloses a donor-advisor string and it contains a subject-name
+     token. Empirically (April 2026) NONE of Fidelity / Vanguard /
+     Schwab / NPT / SVCF render this on ProPublica — the matcher
+     is plumbed in so it activates if any sponsor starts disclosing.
+  2. Statistical amount match (confidence='low'). For each transfer
+     T (donor→sponsor, year Y, amount A), accept a downstream grant
+     iff EXACTLY ONE grant line in sponsor FY Y or Y+1 has
+     |grant−A|/A ≤ 0.10 (sponsors' FYs often close mid-CY). Multiple
+     hits → ambiguous → skipped.
 
-  2. **Statistical amount match (probable, "low" confidence).** For
-     each `dafs` transfer T (donor → sponsor, year Y, amount A), we
-     look at the sponsor's Schedule I for FY Y AND FY Y+1 (sponsor
-     fiscal years often end mid-calendar). We accept a candidate
-     downstream grant only if EXACTLY ONE grant line in that window
-     has |grant_amount − A| / A ≤ 0.10. Multiple matches → ambiguous
-     → skipped (no attribution).
-
-Anti-double-count: every emitted candidate carries `regen_source =
-"dafs_downstream"` and references the source `dafs` candidate's ein +
-year + amount in the note. The eventual `merge.py` dedupe key is
-(year, recipient, amount, donor_ein) so an emitted downstream grant
-will NOT collide with the original `dafs` transfer (different
-recipient).
-
-Cache: regen_v3/cache/dafs_downstream/<sponsor_ein>_<fy>.json
-  -> [{"recipient", "recipient_ein", "amount_usd", "purpose",
-       "donor_advisor"}]
-The Schedule I parse runs once per (sponsor_ein, fy) — files are
-80-280MB and parsing takes 10-30s.
+Cache: regen_v3/cache/dafs_downstream/<sponsor_ein>_<fy>.json. Sch I
+files are 1-280MB; cache is mandatory for a re-run to be cheap.
 """
 from __future__ import annotations
 
@@ -54,7 +36,6 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from categories.foundations import normalize_ein  # noqa: E402
 from regen_v3.dafs import (  # noqa: E402
     DAF_SPONSORS,
     _discover_filings,
@@ -78,23 +59,18 @@ _FY_OFFSETS = (0, 1)  # sponsor FY may close mid-CY; widen to Y..Y+1
 
 # --- Schedule I parser --------------------------------------------------
 
-# Single-pass tokenizer: one regex finds every interesting span, captures
-# (idx, field_name, value). We then bucket per idx in one O(N) sweep.
-# This avoids the N*M cost of running per-row re.search across an 80-280MB
-# document (Fidelity 2023 has 72k rows; the naive pattern was unusable).
+# Single-pass tokenizer over the rendered HTML. One regex captures
+# (row_idx, field_name, value) for every interesting span; we bucket
+# per row in one O(N) sweep. The naive per-row re.search approach is
+# O(N*M) and was unusable on Fidelity Sch I (280MB, 72k rows).
 _SPAN_RE = re.compile(
     r'IRS990ScheduleI\[1\]/RecipientTable\[(\d+)\]/'
-    r'(?:RecipientBusinessName\[1\]/BusinessNameLine1Txt\[1\]'
-    r'|CashGrantAmt\[1\]'
-    r'|RecipientEIN\[1\]'
-    r'|PurposeOfGrantTxt\[1\]'
-    r'|DonorAdvisorTxt\[1\]'
-    r'|GrantorAdvisorTxt\[1\]'
-    r'|RecipientRelationshipTxt\[1\])'
-    r'"[^>]*>([^<]*)</span>'
+    r'(?:RecipientBusinessName\[1\]/)?'
+    r'(BusinessNameLine1Txt|CashGrantAmt|RecipientEIN|PurposeOfGrantTxt'
+    r'|DonorAdvisorTxt|GrantorAdvisorTxt|RecipientRelationshipTxt)'
+    r'\[1\]"[^>]*>([^<]*)</span>'
 )
-# Map raw xpath suffix → row dict key.
-_FIELD_KEYS = {
+_FIELD_KEY = {
     "BusinessNameLine1Txt": "recipient",
     "CashGrantAmt": "_cash_raw",
     "RecipientEIN": "recipient_ein",
@@ -103,10 +79,6 @@ _FIELD_KEYS = {
     "GrantorAdvisorTxt": "donor_advisor",
     "RecipientRelationshipTxt": "donor_advisor",
 }
-_FIELD_FROM_MATCH = re.compile(
-    r'/(BusinessNameLine1Txt|CashGrantAmt|RecipientEIN|PurposeOfGrantTxt'
-    r'|DonorAdvisorTxt|GrantorAdvisorTxt|RecipientRelationshipTxt)\[1\]'
-)
 
 
 def _parse_amount(s: str) -> float:
@@ -114,38 +86,25 @@ def _parse_amount(s: str) -> float:
 
 
 def _parse_schedule_i(html: str) -> list[dict]:
-    """Single-pass extractor over rendered Schedule I HTML. Returns one
-    dict per RecipientTable[idx] with a positive cash grant amount."""
+    """One dict per RecipientTable[idx] with a positive cash grant."""
     by_idx: dict[int, dict] = {}
     for m in _SPAN_RE.finditer(html):
-        idx = int(m.group(1))
-        value = (m.group(2) or "").strip()
-        # The field name is embedded in the matched substring; pull it back.
-        sub = m.group(0)
-        f_m = _FIELD_FROM_MATCH.search(sub)
-        if not f_m:
+        value = (m.group(3) or "").strip()
+        if not value:
             continue
-        key = _FIELD_KEYS.get(f_m.group(1))
-        if not key or not value:
+        key = _FIELD_KEY.get(m.group(2))
+        if not key:
             continue
-        slot = by_idx.setdefault(idx, {})
-        # First-write wins (the 990 only has [1] anyway).
-        slot.setdefault(key, value)
+        by_idx.setdefault(int(m.group(1)), {}).setdefault(key, value)
 
     rows: list[dict] = []
     for idx in sorted(by_idx):
         row = by_idx[idx]
-        cash_raw = row.get("_cash_raw")
-        if not cash_raw:
-            continue
-        amount = _parse_amount(cash_raw)
-        if amount <= 0:
-            continue
-        recipient = row.get("recipient") or ""
-        if not recipient:
+        amount = _parse_amount(row.get("_cash_raw") or "0")
+        if amount <= 0 or not row.get("recipient"):
             continue
         rows.append({
-            "recipient": recipient,
+            "recipient": row["recipient"],
             "recipient_ein": row.get("recipient_ein", ""),
             "amount_usd": amount,
             "purpose": row.get("purpose", ""),
