@@ -31,7 +31,7 @@
   --body:"Newsreader",Georgia,"Times New Roman",serif;
 }
 [data-theme="dark"]{
-  --paper:#14110A;--paper-mid:#1C1811;--paper-deep:#261F14;--paper-shadow:#3B3121;
+  --paper:#14110A;--paper-mid:#1C1811;--paper-deep:#261F14;--paper-shadow:#4A3D27;
   --ink:#EEDCBA;--ink-soft:#C4AF82;--ink-fade:#8B7951;--ink-ghost:#605335;
   --rust:#D14A32;--rust-dark:#A93220;--rust-ink:#F07055;
   --gilt:#D4A032;--sepia:#A38456;--rule:#75633F;
@@ -96,7 +96,7 @@ body{
 .wordmark::after{
   content:"";display:block;width:52px;height:1px;background:var(--ink-fade);opacity:.5;margin-top:16px;
 }
-.wordmark .article{font-weight:400;font-style:italic;font-variation-settings:"opsz" 36,"SOFT" 80;color:var(--ink-fade);margin-right:.24em}
+.wordmark .article{font-weight:400;font-style:italic;font-variation-settings:"opsz" 36,"SOFT" 40;color:var(--ink-fade);margin-right:.24em}
 .deck{
   font-family:var(--display);
   font-variation-settings:"opsz" 72,"SOFT" 50;
@@ -529,8 +529,8 @@ body.saint-view .section-head h2{color:var(--green)}
     <thead><tr>
       <th data-sort="name">Name</th>
       <th class="num" data-sort="net_worth">Net Worth</th>
-      <th class="num" data-sort="observable">Observable</th>
-      <th class="num" data-sort="shortfall">Shortfall</th>
+      <th class="num" data-sort="observable">Documented giving</th>
+      <th class="num" data-sort="shortfall">vs. benchmark</th>
       <th>Notes</th>
     </tr></thead>
     <tbody></tbody>
@@ -538,7 +538,7 @@ body.saint-view .section-head h2{color:var(--green)}
 
   <div class="callout">
     <strong>What this list does not claim</strong>
-    <p>These are <em>estimates of observable giving</em> — the narrowest honest measure. Research across IPS, Boston College's Forum on Philanthropy, and the National Philanthropic Trust suggests observable figures capture 40–70% of true lifetime giving. A high tier means we cannot find evidence of generosity at scale — not that none exists.</p>
+    <p>These are <em>estimates of documented giving</em> — the narrowest honest measure. Research from the Institute for Policy Studies, Boston College's Forum on Philanthropy, and the National Philanthropic Trust suggests we can document only 40–70% of someone's true lifetime giving. A high bucket means we cannot find evidence of generosity at scale — not that none exists.</p>
     <p><a href="methodology.html">Read the full methodology →</a></p>
   </div>
 

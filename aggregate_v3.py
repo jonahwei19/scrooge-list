@@ -236,6 +236,28 @@ def extract_summary(rec: dict) -> dict:
     else:
         observable_drift_pct = None
 
+    # Per-year sanity flag: surface if any single year's grant_out+direct_gift
+    # exceeds 20% of net worth (likely double-count from same-gift extraction).
+    sanity_flag_yearly = None
+    nw_b = nw.get("best_estimate_usd_billions")
+    if nw_b:
+        nw_usd = float(nw_b) * 1e9
+        by_year: dict = {}
+        for ev in (rec.get("cited_events") or []):
+            if not isinstance(ev, dict):
+                continue
+            if canonical_role(ev.get("event_role")) in OBSERVABLE_ROLES:
+                amt = ev.get("amount_usd")
+                yr = ev.get("year")
+                if isinstance(amt, (int, float)) and amt > 0 and yr:
+                    by_year[yr] = by_year.get(yr, 0) + amt
+        bad_years = {y: amt for y, amt in by_year.items() if amt > 0.20 * nw_usd}
+        if bad_years:
+            details = "; ".join(f"{y}: ${amt/1e9:.1f}B" for y, amt in sorted(bad_years.items()))
+            sanity_flag_yearly = (
+                f"Single-year observable giving > 20% of NW (${nw_usd/1e9:.1f}B): {details}"
+            )
+
     return {
         "id": p.get("name_display", "unknown").lower().replace(" ", "_"),
         "name_display": p.get("name_display"),
@@ -256,6 +278,7 @@ def extract_summary(rec: dict) -> dict:
         "observable_from_events_usd": observable_from_events_usd,
         "observable_drift_pct": observable_drift_pct,
         "unyear_dollars_excluded_usd": unyear_dollars_excluded_usd,
+        "sanity_flag_yearly_giving_exceeds_20pct_nw": sanity_flag_yearly,
         # Legacy per-record 10%-of-liquid-weighted-by-tenure expected figure (from agent JSON).
         # Preserved for back-compat and comparison; not used for ranking.
         "expected_usd": expected_usd,
@@ -423,15 +446,33 @@ def annotate_with_canonical(rec: dict) -> dict:
     rollup["observable_from_events_usd"] = int(event_sum) if event_sum > 0 else 0
     rollup["unyear_dollars_excluded_usd"] = int(unyear_excluded) if unyear_excluded > 0 else 0
 
-    # Sanity check: if observable_from_events exceeds the subject's net worth,
-    # something is double-counted (a real person can't give more than they have).
-    # The schema key is `net_worth.best_estimate_usd_billions`, NOT
-    # `person.net_worth_best_usd_b` — codex round 6 caught this.
+    # Per-year sanity: sum observable events PER YEAR. If any single year
+    # exceeds 20% of the subject's net worth, mark probable double-count.
     nw_b = (rec.get("net_worth") or {}).get("best_estimate_usd_billions")
-    if nw_b and event_sum > float(nw_b) * 1e9:
+    nw_usd = float(nw_b) * 1e9 if nw_b else 0
+    by_year: dict = {}
+    for ev in (rec.get("cited_events") or []):
+        if not isinstance(ev, dict):
+            continue
+        if canonical_role(ev.get("event_role")) in OBSERVABLE_ROLES:
+            amt = ev.get("amount_usd")
+            yr = ev.get("year")
+            if isinstance(amt, (int, float)) and amt > 0 and yr:
+                by_year[yr] = by_year.get(yr, 0) + amt
+    if nw_usd > 0 and by_year:
+        bad_years = {y: amt for y, amt in by_year.items() if amt > 0.20 * nw_usd}
+        if bad_years:
+            details = "; ".join(f"{y}: ${amt/1e9:.1f}B" for y, amt in sorted(bad_years.items()))
+            rollup["sanity_flag_yearly_giving_exceeds_20pct_nw"] = (
+                f"Single-year observable giving > 20% of net worth (${nw_usd/1e9:.1f}B): "
+                f"{details}. Likely double-count from same-gift extracted multiple times."
+            )
+
+    # Cohort-level sanity: if observable_from_events exceeds net worth at all.
+    if nw_usd > 0 and event_sum > nw_usd:
         rollup["sanity_flag_observable_exceeds_networth"] = (
             f"observable_from_events_usd ${event_sum/1e9:.1f}B > "
-            f"net_worth ${float(nw_b):.1f}B — possible double-count from "
+            f"net_worth ${nw_usd/1e9:.1f}B — possible double-count from "
             f"cumulative-figure events not yet caught by extract.py guards."
         )
 
