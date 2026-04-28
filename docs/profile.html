@@ -376,7 +376,26 @@ function render(rec) {
   `;
 
   // Confidence-interval bar — Observable | Hidden upper | Capacity
-  const hiddenUpper = ((rollup.hidden_upper_usd || {}).total_usd) || 0;
+  const hiddenUpperObj = (rollup.hidden_upper_usd || {});
+  const hiddenUpper = hiddenUpperObj.total_usd || 0;
+  // Extract the named components so we can show the breakdown in the tooltip.
+  // These come straight from the source v3 record (hand-curated per subject).
+  const hiddenComponents = [];
+  const componentMap = [
+    ['daf_uplift_usd', 'DAFs (donor-advised funds — opaque downstream)'],
+    ['llc_uplift_usd', 'Philanthropic LLCs (no 990 filing requirement)'],
+    ['offshore_uplift_usd', 'Offshore vehicles'],
+    ['anonymous_cohort_uplift_usd', 'Anonymous giving (cohort estimate)'],
+    ['religious_cohort_uplift_usd', 'Religious giving (tithing-norm estimate)'],
+    ['trust_outcome_uncertainty_usd', 'Charitable trust uncertainty envelope'],
+    ['the_foundation_school_uplift_usd', '"The Foundation" school uplift'],
+    ['pre_2019_msdf_backfill_usd', 'Pre-2019 historical 990-PF backfill'],
+    ['gates_foundation_tenure_attribution_usd', 'Gates Foundation tenure attribution'],
+  ];
+  for (const [key, label] of componentMap) {
+    const v = hiddenUpperObj[key];
+    if (typeof v === 'number' && v > 0) hiddenComponents.push({ key, label, amount: v });
+  }
   if (expected > 0) {
     // Scale: benchmark (expected) sits at 100. Show up to 120 for overshoot.
     const obsPct = Math.min(100, (observable / expected) * 100);
@@ -392,7 +411,8 @@ function render(rec) {
     const nwBest = rec.net_worth_best_usd_b ? rec.net_worth_best_usd_b * 1e9 : null;
     const cibarPayload = {
       obs:    { amount: observable, pct: obsPct,    pctOfCap: (observable/expected)*100 },
-      hidden: { amount: hiddenUpper, pct: hiddenPct, pctOfCap: (hiddenUpper/expected)*100 },
+      hidden: { amount: hiddenUpper, pct: hiddenPct, pctOfCap: (hiddenUpper/expected)*100,
+                components: hiddenComponents },
       cap:    { amount: expected, pct: 100, tenure: tenureYrs, liquidPct: liquidPct, nw: nwBest },
       shortfall: shortfall, ratio: ratio,
     };
@@ -433,6 +453,21 @@ function render(rec) {
         <p style="font-style:italic;color:var(--ink-fade);font-size:.9rem">A gap usually means lifetime totals cited in sources but not broken down into discrete events (headline &gt; event sum), or family-foundation portions we excluded from their personal share (headline &lt; event sum). The event list below is the trail you can audit.</p>
       </div>`;
     }
+  }
+
+  // Hidden-upper breakdown: surface the components that make up the
+  // "could be giving in secret" upper bound so the reader can see how it
+  // was derived (was previously a single opaque number).
+  if (hiddenUpper > 0 && hiddenComponents.length > 0) {
+    const rows = hiddenComponents.map(c =>
+      `<li><span class="rcpt">${esc(c.label)}</span><span class="rcpt-amt">${fmtUsd(c.amount)}</span></li>`
+    ).join('');
+    html += `<div class="callout">
+      <strong>How the "could be giving in secret" upper bound was built</strong>
+      <p style="font-size:.92rem;margin-bottom:8px">${fmtUsd(hiddenUpper)} total, summed from hand-estimated upper bounds for each opaque channel:</p>
+      <ul class="tt-list" style="font-size:.9rem;margin:8px 0">${rows}</ul>
+      <p style="font-style:italic;color:var(--ink-fade);font-size:.85rem">Each component is a per-subject judgment by the research agent (methodology notes in the source record under <code>hidden_upper_usd</code>). It's an upper bound — the most plausible giving via that channel — not a measurement.</p>
+    </div>`;
   }
 
   // Per-year sanity tripwire: if any single year exceeded 20% of net worth,
@@ -723,13 +758,15 @@ function wireCibarHover() {
     if (zone === 'hidden') {
       const d = payload.hidden;
       const pct = (d.pctOfCap || 0).toFixed(1);
+      const comps = d.components || [];
+      const compRows = comps.length
+        ? comps.map(c => `<li><span class="rcpt">${esc(c.label)}</span><span class="rcpt-amt">${fmtUsd(c.amount)}</span></li>`).join('')
+        : `<li><span class="rcpt">No itemized components on this subject</span><span class="rcpt-amt">—</span></li>`;
       return `
         <div class="tt-row1"><span class="tt-year">Possible secret giving</span><span class="tt-kind k-xfer">unverifiable</span></div>
         <div class="tt-total">${fmtUsd(d.amount)}</div>
-        <ul class="tt-list">
-          <li><span class="rcpt">Of what they could have given</span><span class="rcpt-amt">${pct}%</span></li>
-        </ul>
-        <div class="tt-more">Anonymous accounts (DAFs), LLCs, family trusts &mdash; the most they could plausibly be giving without it showing up</div>`;
+        <ul class="tt-list">${compRows}</ul>
+        <div class="tt-more">Each component is a hand-estimated upper bound for one channel of opaque giving. Methodology in the source record's <code>hidden_upper_usd</code>; we sum them.</div>`;
     }
     if (zone === 'cap') {
       const d = payload.cap;
