@@ -258,6 +258,26 @@ def extract_summary(rec: dict) -> dict:
                 f"Single-year observable giving > 20% of NW (${nw_usd/1e9:.1f}B): {details}"
             )
 
+    # Tier-consistency tripwire: ON_TRACK with observable < 10% of expected
+    # is a contradiction. The tier label says "good citizen", the numbers say
+    # "barely giving". Likely the tier was set qualitatively (DAF-heavy, LLC,
+    # etc.) but the math doesn't support it.
+    tier_raw_str = (rollup.get("tier") or "").lower()
+    sanity_flag_tier_inconsistent = None
+    obs_for_check = observable_usd if observable_usd > 0 else observable_from_events_usd
+    if (("on_track" in tier_raw_str or "on track" in tier_raw_str)
+            and expected_5pct_tenure_usd
+            and obs_for_check
+            and obs_for_check < 0.10 * expected_5pct_tenure_usd):
+        pct = (obs_for_check / expected_5pct_tenure_usd) * 100
+        sanity_flag_tier_inconsistent = (
+            f"Tier label is ON_TRACK, but observable giving "
+            f"(${obs_for_check/1e9:.2f}B) is only {pct:.1f}% of the "
+            f"5%/year-of-tenure benchmark (${expected_5pct_tenure_usd/1e9:.1f}B). "
+            f"The tier may have been assigned based on qualitative factors "
+            f"(DAF-heavy, LLC opacity, etc.) rather than the math."
+        )
+
     return {
         "id": p.get("name_display", "unknown").lower().replace(" ", "_"),
         "name_display": p.get("name_display"),
@@ -279,6 +299,7 @@ def extract_summary(rec: dict) -> dict:
         "observable_drift_pct": observable_drift_pct,
         "unyear_dollars_excluded_usd": unyear_dollars_excluded_usd,
         "sanity_flag_yearly_giving_exceeds_20pct_nw": sanity_flag_yearly,
+        "sanity_flag_tier_inconsistent": sanity_flag_tier_inconsistent,
         # Legacy per-record 10%-of-liquid-weighted-by-tenure expected figure (from agent JSON).
         # Preserved for back-compat and comparison; not used for ranking.
         "expected_usd": expected_usd,

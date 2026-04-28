@@ -447,6 +447,16 @@ function render(rec) {
     </div>`;
   }
 
+  // Tier-consistency tripwire: if the tier label says "ON_TRACK" but the
+  // numbers say <10% of expected, surface the contradiction.
+  const sanityTier = rollup.sanity_flag_tier_inconsistent;
+  if (sanityTier) {
+    html += `<div class="callout">
+      <strong>Tier vs. math discrepancy</strong>
+      <p style="font-size:.92rem">${esc(sanityTier)}</p>
+    </div>`;
+  }
+
   // Per-year giving timeline (only if we have multi-year grant_out data)
   html += renderTimeline(rec);
 
