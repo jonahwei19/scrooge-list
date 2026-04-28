@@ -421,7 +421,7 @@ function render(rec) {
   if (rollupObs === 0 && fromEvents > 0) {
     html += `<div class="callout">
       <strong>Why the headline = the event sum</strong>
-      <p>The agent's rollup judgment recorded <strong>$0</strong> as the personal observable figure (typically because the giving routes through DAFs or other opaque vehicles where the agent can't attribute disbursement). The strict sum of cited grants and direct gifts below totals <strong>${fmtUsd(fromEvents)}</strong> — we use the event sum as the headline so the displayed number agrees with the timeline graph.</p>
+      <p>Our research record listed <strong>$0</strong> as the personal headline figure, usually because the giving routes through DAFs or other opaque vehicles where individual disbursements can't be traced. The cited grants and direct gifts below total <strong>${fmtUsd(fromEvents)}</strong>, so we use that event sum as the headline to match the timeline below.</p>
     </div>`;
   } else {
     const drift = rollup.observable_drift_pct;
@@ -435,6 +435,18 @@ function render(rec) {
     }
   }
 
+  // Per-year sanity tripwire: if any single year exceeded 20% of net worth,
+  // surface the warning. Almost always means the LLM extracted a cumulative
+  // figure as a single-year transaction. Visible to the reader.
+  const sanityYear = rollup.sanity_flag_yearly_giving_exceeds_20pct_nw;
+  if (sanityYear) {
+    html += `<div class="callout">
+      <strong>Possible double-count: single-year giving exceeds 20% of net worth</strong>
+      <p style="font-size:.92rem">${esc(sanityYear)}</p>
+      <p style="font-style:italic;color:var(--ink-fade);font-size:.85rem">A real billionaire rarely gives more than 20% of their net worth in a single year. When this fires, it almost always means a press article cited a lifetime or cumulative figure that the extractor recorded as a single-year transaction. We surface it here rather than silently inflating the headline.</p>
+    </div>`;
+  }
+
   // Per-year giving timeline (only if we have multi-year grant_out data)
   html += renderTimeline(rec);
 
@@ -445,7 +457,7 @@ function render(rec) {
   const events = (rec.cited_events || []).concat(rec.pledges_and_announcements || []);
   if (events.length) {
     html += `<h2>Cited Events</h2>`;
-    html += '<p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Every documented dollar of giving (and every promise) with its source. <strong>Grant</strong> and <strong>Direct gift</strong> count toward documented giving. <strong>Transfer in</strong> is money moving into their own foundation or fund — not counted, to avoid double-counting when that foundation later makes its own grants. <strong>Pledge</strong> is a promise, not a payment.</p>';
+    html += '<p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Every documented dollar of giving (and every promise) with its source. <strong>Grant</strong> and <strong>Direct gift</strong> count toward documented giving. <strong>Transfer in</strong> is money moving into their own foundation or fund; we don\'t count it, to avoid double-counting when that foundation later makes its own grants. A <strong>Pledge</strong> only counts once the money actually moves.</p>';
     html += `<div class="events">`;
     const sorted = [...events].sort((a, b) => {
       const ay = a.year || (a.date ? a.date.substring(0,4) : 0);
@@ -512,7 +524,7 @@ function render(rec) {
 
   const notPresent = rec.red_flags_not_present || [];
   if (notPresent.length) {
-    html += `<div class="callout green"><strong>Absent flags (for fairness)</strong>`;
+    html += `<div class="callout green"><strong>Flags we considered but didn't apply</strong>`;
     html += '<ul style="margin-top:6px">';
     for (const np of notPresent) html += `<li>${esc(np)}</li>`;
     html += '</ul></div>';
@@ -522,7 +534,7 @@ function render(rec) {
   html += `<h2>Right of Reply</h2>
     <div class="ror-box">
       <div class="ror-status">Status · ${esc((ror.status || 'not_yet_requested').replace(/_/g, ' '))}</div>
-      <div class="ror-text">${ror.response_text ? esc(ror.response_text) : 'No response has been received. The subject is invited to respond — see the methodology page for details on our pre-publication outreach and correction process.'}</div>
+      <div class="ror-text">${ror.response_text ? esc(ror.response_text) : 'No response yet. We email each Tier A and Tier B billionaire before publishing and post their reply here, unedited. See the <a href="methodology.html">methodology</a> for how we contact people.'}</div>
       ${ror.response_received_date ? '<div style="font-size:.82rem;color:var(--ink-fade);margin-top:8px">Received ' + esc(ror.response_received_date) + '</div>' : ''}
     </div>`;
 
@@ -530,7 +542,7 @@ function render(rec) {
   const todos = rec.verification_todos_before_publish || [];
   if (todos.length) {
     html += `<h2>Open Verification Items</h2>
-    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Known gaps in our research, disclosed up front.</p>
+    <p style="font-size:.92rem;color:var(--ink-fade);font-style:italic">Things we still need to check on this profile.</p>
     <ol class="todo-list">`;
     for (const t of todos) html += `<li>${esc(t)}</li>`;
     html += `</ol>`;

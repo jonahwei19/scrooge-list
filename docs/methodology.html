@@ -7,7 +7,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:site_name" content="The Scrooge List">
 <meta property="og:title" content="Methodology — The Scrooge List">
-<meta property="og:description" content="How the Scrooge List is built, what it can see, what it cannot, and why it is tiered rather than ranked.">
+<meta property="og:description" content="How the Scrooge List is built, where it's blind, and why it sorts into buckets instead of ranking one through fifty.">
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -230,14 +230,9 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   </header>
 
   <h2>What this list measures</h2>
-  <p class="dropcap">The Scrooge List estimates <strong>documented giving</strong> — money we can verify reached registered charities — as a share of what the person could reasonably have given by now. That is the narrowest honest measure of billionaire philanthropy, and it is the only one that survives the available data. This list does <strong>not</strong> claim to measure total generosity. It cannot, because much of billionaire giving passes through accounts and structures that do not publicly disclose.</p>
+  <p class="dropcap">The Scrooge List estimates <strong>documented giving</strong> — money we can verify reached registered charities — as a share of what the person could reasonably have given by now. We don't claim to measure total generosity, because much of billionaire giving runs through accounts and structures that don't have to disclose anything publicly.</p>
 
-  <p>Every dollar we cite is linked to a source — a foundation tax filing (Form 990-PF, the annual return private foundations are required to file with the IRS), a charity-side announcement, a regulatory filing, or a reputable press report. We do not estimate where we cannot see. Where giving is invisible, we say so.</p>
-
-  <div class="callout">
-    <strong>The language we use</strong>
-    <p>We write "<em>we identified $X in documented giving</em>," never "<em>they have given only $X</em>." A low documented figure means our sources could not verify more — not that more does not exist.</p>
-  </div>
+  <p>Every dollar we cite is linked to a source: a foundation tax filing (Form 990-PF, the annual return private foundations file with the IRS), a charity-side announcement, a regulatory filing, or a reputable press report. We don't estimate beyond what's documented. A low documented figure means our sources couldn't verify more; it doesn't mean more doesn't exist.</p>
 
   <h2>Buckets, not a strict ranking</h2>
   <p>Ranking the Forbes 3,000 one-by-one — who is #47 stingiest vs. #48 — would require precision our data doesn't support. Documented giving is a minimum (the real number could be higher); net worth varies by 10–25% across credible sources; and what's hidden is, by definition, unknowable. We therefore sort people into four buckets:</p>
@@ -252,7 +247,7 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
     </tbody>
   </table>
 
-  <p>This is the approach Bloomberg uses for <em>wealth</em> (a 1–5 star confidence rating) and that the Chronicle of Philanthropy uses for its Philanthropy 50 (it simply declines to rank anyone who won't disclose). We adopt the same discipline, inverted: where we can't see, we don't rank.</p>
+  <p>Bloomberg uses a 1–5 star confidence rating for <em>wealth</em>; the Chronicle of Philanthropy declines to rank anyone in its Philanthropy 50 who won't disclose. We follow the same logic: a strict rank requires data we don't have for everyone, so we don't fake one.</p>
 
   <h2>What they could reasonably have given (the benchmark)</h2>
   <div class="formula">
@@ -262,12 +257,12 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
     <span class="bullet">•</span> The headline ranking is <strong>dollars not given</strong> = what they could have given − what they actually did, <em>not</em> a percentage.
   </div>
 
-  <p>The 5%-per-year rate is deliberately conservative. It matches the IRS legal minimum that private foundations are required to give out each year (also 5%). It is well below the Giving Pledge's lifetime promise (give half your wealth, which works out to roughly 2.5% per year over 20 years). And it approximates what a fund could safely give out forever without depleting itself. Giving 5% of your spendable wealth each year is the gentlest version of the giving ethic.</p>
+  <p>The 5%-per-year rate is conservative on purpose. It matches the IRS legal minimum that private foundations must give out each year. It's well below the Giving Pledge's lifetime promise (give half your wealth — roughly 2.5% per year over 20 years). And it's close to what a fund could give out forever without depleting itself.</p>
 
   <h2>Why we use dollars, not a percentage</h2>
   <p>An earlier draft ranked Tier A people by the percentage of their benchmark they had given. That gave strange results. Ira Rennert (<em>$3.8B</em> net worth, <em>30 years</em> as a billionaire, <em>$13M</em> documented giving) ranked <em>above</em> Elon Musk (<em>$811B</em>, <em>14 years</em>, <em>$500M</em> documented) because Rennert's percentage was marginally lower.</p>
 
-  <p>Percentages flatten scale. A $500M gift from someone worth $811B is not the same charitable act as a $500M gift from someone worth $2B — and a <em>$170B</em> gap is not the same as a <em>$2B</em> gap. The dollar gap is what matters to the underlying question: how much charitable capital is being left undeployed?</p>
+  <p>Percentages flatten scale. A $500M gift from someone worth $811B is not the same charitable act as a $500M gift from someone worth $2B, and a $170B gap is not the same as a $2B gap. The question we care about is how many dollars are sitting on the sidelines, so we rank in dollars.</p>
 
   <div class="callout">
     <strong>Worked example.</strong> Under this methodology:
@@ -280,16 +275,16 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
     Percentage figures are still shown on each profile for comparison, but the published ranking is by dollars.
   </div>
 
-  <h2>What we can't see — the honest error bar</h2>
+  <h2>What we can't see</h2>
   <div class="callout">
     <strong>Documented ≠ Total</strong>
-    <p>Research across the Institute for Policy Studies (IPS), Boston College's Forum on Philanthropy, and the National Philanthropic Trust suggests that what we can verify (from foundation tax filings and announced gifts) is only about <strong>40–70% of someone's true lifetime giving</strong>. The rest is real and large. Putting someone in a high Scrooge bucket does not say "this person is ungenerous" — it says "we cannot find evidence of generosity at the scale their wealth would allow."</p>
+    <p>Work from the Institute for Policy Studies, Boston College's Forum on Philanthropy, and the National Philanthropic Trust estimates that documented giving (foundation tax filings + announced gifts) is roughly <strong>40–70% of someone's true lifetime giving</strong>. A high Scrooge bucket means we couldn't find evidence of generosity at the scale their wealth would allow — not that the person is ungenerous.</p>
   </div>
 
   <p>Places where the money becomes invisible:</p>
   <ul>
     <li><strong>Donor-advised funds (DAFs)</strong> — anonymous accounts held at companies like Fidelity Charitable. $326B held at US sponsors as of 2025; on average they give out only 25.3% per year; 27% of all US individual giving now flows through them. The donor's name is not disclosed when the money eventually goes out.</li>
-    <li><strong>Philanthropic LLCs</strong> — private companies set up to do charity. The Chan Zuckerberg Initiative (Zuckerberg), Emerson Collective (Powell Jobs), Ballmer Group, the Bezos Earth Fund's parent (Fellowship Ventures), and Good Ventures (Moskovitz) are all LLCs and don't have to file annual tax returns showing what they did. Some (Moskovitz) publish extensively anyway; others (Chan Zuckerberg Initiative) publish selectively. Transparency is a <em>choice</em>, not a requirement.</li>
+    <li><strong>Philanthropic LLCs</strong> — private companies set up to do charity. The Chan Zuckerberg Initiative (Zuckerberg), Emerson Collective (Powell Jobs), Ballmer Group, the Bezos Earth Fund's parent (Fellowship Ventures), and Good Ventures (Moskovitz) are all LLCs and don't have to file annual tax returns showing what they did. Some publish anyway (Moskovitz); some publish selectively (CZI); others don't publish at all.</li>
     <li><strong>Dynasty trusts</strong> — family money locked in trusts that can run for centuries. $360B+ sits in South Dakota alone (per the International Consortium of Investigative Journalists' Pandora Papers leak); there's no public registry.</li>
     <li><strong>501(c)(4) advocacy organizations</strong> — these are the IRS category for tax-exempt groups that lobby and engage in politics. They are not charities and we don't count them. Charles Koch's <em>Believe in People</em> alone received $4.3B in 2022.</li>
     <li><strong>Anonymous giving</strong> — per the 2024 Bank of America / Indiana University Lilly School of Philanthropy study, 69% of older high-net-worth donors say they give anonymously at least sometimes.</li>
