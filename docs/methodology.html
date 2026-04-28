@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Methodology — The Scrooge List</title>
+<title>Methodology: The Scrooge List</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta property="og:site_name" content="The Scrooge List">
-<meta property="og:title" content="Methodology — The Scrooge List">
+<meta property="og:title" content="Methodology: The Scrooge List">
 <meta property="og:description" content="How the Scrooge List is built, where it's blind, and why it sorts into buckets instead of ranking one through fifty.">
 <meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -230,19 +230,19 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   </header>
 
   <h2>What this list measures</h2>
-  <p class="dropcap">The Scrooge List estimates <strong>documented giving</strong> — money we can verify reached registered charities — as a share of what the person could reasonably have given by now. We don't claim to measure total generosity, because much of billionaire giving runs through accounts and structures that don't have to disclose anything publicly.</p>
+  <p class="dropcap">The Scrooge List estimates <strong>documented giving</strong> (money we can verify reached registered charities) as a share of what the person could reasonably have given by now. We don't claim to measure total generosity, because much of billionaire giving runs through accounts and structures that don't have to disclose anything publicly.</p>
 
   <p>Every dollar we cite is linked to a source: a foundation tax filing (Form 990-PF, the annual return private foundations file with the IRS), a charity-side announcement, a regulatory filing, or a reputable press report. We don't estimate beyond what's documented. A low documented figure means our sources couldn't verify more; it doesn't mean more doesn't exist.</p>
 
   <h2>Buckets, not a strict ranking</h2>
-  <p>Ranking the Forbes 3,000 one-by-one — who is #47 stingiest vs. #48 — would require precision our data doesn't support. Documented giving is a minimum (the real number could be higher); net worth varies by 10–25% across credible sources; and what's hidden is, by definition, unknowable. We therefore sort people into four buckets:</p>
+  <p>Ranking the Forbes 3,000 one-by-one (who is #47 stingiest vs. #48) would require precision our data doesn't support. Documented giving is a minimum (the real number could be higher); net worth varies by 10–25% across credible sources; and what's hidden is, by definition, unknowable. We therefore sort people into four buckets:</p>
 
   <table class="data-table">
     <thead><tr><th>Bucket</th><th>Who belongs</th><th>How they're shown</th></tr></thead>
     <tbody>
-      <tr><td><span class="tier-a">A — Verified low giving</span></td><td>Low documented giving AND we couldn't find any anonymous account, private LLC, or offshore trust that could plausibly close the gap.</td><td>Ranked 1, 2, 3 — by dollars not given (vs. what they could reasonably have given).</td></tr>
-      <tr><td><span class="tier-b">B — Probably low</span></td><td>Low documented giving, but at least one place where money could be held in secret exists, so hidden giving is possible.</td><td>Sorted by dollars not given; no strict 1, 2, 3 rank.</td></tr>
-      <tr><td><span class="tier-c">C — Claimed but unverified</span></td><td>Most giving flows through private LLCs or anonymous accounts that don't have to disclose. The figure shown is a minimum — real giving could be higher.</td><td>Sorted by dollars not given; no strict rank.</td></tr>
+      <tr><td><span class="tier-a">A: Verified low giving</span></td><td>Low documented giving AND we couldn't find any anonymous account, private LLC, or offshore trust that could plausibly close the gap.</td><td>Ranked 1, 2, 3 by dollars not given (vs. what they could reasonably have given).</td></tr>
+      <tr><td><span class="tier-b">B: Probably low</span></td><td>Low documented giving, but at least one place where money could be held in secret exists, so hidden giving is possible.</td><td>Sorted by dollars not given; no strict 1, 2, 3 rank.</td></tr>
+      <tr><td><span class="tier-c">C: Claimed but unverified</span></td><td>Most giving flows through private LLCs or anonymous accounts that don't have to disclose. The figure shown is a minimum; real giving could be higher.</td><td>Sorted by dollars not given; no strict rank.</td></tr>
       <tr><td><span class="tier-ok">On Track</span></td><td>Documented giving meets or exceeds the benchmark.</td><td>Shown for comparison. Not Scrooges.</td></tr>
     </tbody>
   </table>
@@ -257,7 +257,7 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
     <span class="bullet">•</span> The headline ranking is <strong>dollars not given</strong> = what they could have given − what they actually did, <em>not</em> a percentage.
   </div>
 
-  <p>The 5%-per-year rate is conservative on purpose. It matches the IRS legal minimum that private foundations must give out each year. It's well below the Giving Pledge's lifetime promise (give half your wealth — roughly 2.5% per year over 20 years). And it's close to what a fund could give out forever without depleting itself.</p>
+  <p>The 5%-per-year rate is conservative on purpose. It matches the IRS legal minimum that private foundations must give out each year. It's well below the Giving Pledge's lifetime promise (give half your wealth, roughly 2.5% per year over 20 years). And it's close to what a fund could give out forever without depleting itself.</p>
 
   <h2>Why we use dollars, not a percentage</h2>
   <p>An earlier draft ranked Tier A people by the percentage of their benchmark they had given. That gave strange results. Ira Rennert (<em>$3.8B</em> net worth, <em>30 years</em> as a billionaire, <em>$13M</em> documented giving) ranked <em>above</em> Elon Musk (<em>$811B</em>, <em>14 years</em>, <em>$500M</em> documented) because Rennert's percentage was marginally lower.</p>
@@ -267,10 +267,10 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   <div class="callout">
     <strong>Worked example.</strong> Under this methodology:
     <ul>
-      <li><strong>Larry Page</strong> — $269B net worth, ~33% spendable, 20 years → benchmark ≈ <strong>$89B</strong>; documented $1.8B → dollars not given <strong>~$87B</strong>. Ranks #1.</li>
-      <li><strong>Elon Musk</strong> — $811B net worth, ~21% spendable, 14 years → benchmark ≈ <strong>$85B</strong>; documented $500M → dollars not given <strong>~$85B</strong>. Ranks #2.</li>
-      <li><strong>Thomas Peterffy</strong> — $83B net worth, mostly spendable, ~40 years → benchmark ≈ <strong>$29B</strong>; documented $49M → dollars not given <strong>~$29B</strong>. Ranks #3.</li>
-      <li><strong>Ira Rennert</strong> — $3.8B, mostly locked up, 30 years → benchmark ≈ <strong>$0.9B</strong>; documented $13M → dollars not given <strong>~$0.8B</strong>. Last in Tier A.</li>
+      <li><strong>Larry Page:</strong> $269B net worth, ~33% spendable, 20 years → benchmark ≈ <strong>$89B</strong>; documented $1.8B → dollars not given <strong>~$87B</strong>. Ranks #1.</li>
+      <li><strong>Elon Musk:</strong> $811B net worth, ~21% spendable, 14 years → benchmark ≈ <strong>$85B</strong>; documented $500M → dollars not given <strong>~$85B</strong>. Ranks #2.</li>
+      <li><strong>Thomas Peterffy:</strong> $83B net worth, mostly spendable, ~40 years → benchmark ≈ <strong>$29B</strong>; documented $49M → dollars not given <strong>~$29B</strong>. Ranks #3.</li>
+      <li><strong>Ira Rennert:</strong> $3.8B, mostly locked up, 30 years → benchmark ≈ <strong>$0.9B</strong>; documented $13M → dollars not given <strong>~$0.8B</strong>. Last in Tier A.</li>
     </ul>
     Percentage figures are still shown on each profile for comparison, but the published ranking is by dollars.
   </div>
@@ -278,18 +278,18 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   <h2>What we can't see</h2>
   <div class="callout">
     <strong>Documented ≠ Total</strong>
-    <p>Work from the Institute for Policy Studies, Boston College's Forum on Philanthropy, and the National Philanthropic Trust estimates that documented giving (foundation tax filings + announced gifts) is roughly <strong>40–70% of someone's true lifetime giving</strong>. A high Scrooge bucket means we couldn't find evidence of generosity at the scale their wealth would allow — not that the person is ungenerous.</p>
+    <p>Work from the Institute for Policy Studies, Boston College's Forum on Philanthropy, and the National Philanthropic Trust estimates that documented giving (foundation tax filings + announced gifts) is roughly <strong>40–70% of someone's true lifetime giving</strong>. A high Scrooge bucket means we couldn't find evidence of generosity at the scale their wealth would allow. It does not mean the person is ungenerous.</p>
   </div>
 
   <p>Places where the money becomes invisible:</p>
   <ul>
-    <li><strong>Donor-advised funds (DAFs)</strong> — anonymous accounts held at companies like Fidelity Charitable. $326B held at US sponsors as of 2025; on average they give out only 25.3% per year; 27% of all US individual giving now flows through them. The donor's name is not disclosed when the money eventually goes out.</li>
-    <li><strong>Philanthropic LLCs</strong> — private companies set up to do charity. The Chan Zuckerberg Initiative (Zuckerberg), Emerson Collective (Powell Jobs), Ballmer Group, the Bezos Earth Fund's parent (Fellowship Ventures), and Good Ventures (Moskovitz) are all LLCs and don't have to file annual tax returns showing what they did. Some publish anyway (Moskovitz); some publish selectively (CZI); others don't publish at all.</li>
-    <li><strong>Dynasty trusts</strong> — family money locked in trusts that can run for centuries. $360B+ sits in South Dakota alone (per the International Consortium of Investigative Journalists' Pandora Papers leak); there's no public registry.</li>
-    <li><strong>501(c)(4) advocacy organizations</strong> — these are the IRS category for tax-exempt groups that lobby and engage in politics. They are not charities and we don't count them. Charles Koch's <em>Believe in People</em> alone received $4.3B in 2022.</li>
-    <li><strong>Anonymous giving</strong> — per the 2024 Bank of America / Indiana University Lilly School of Philanthropy study, 69% of older high-net-worth donors say they give anonymously at least sometimes.</li>
-    <li><strong>Religious giving</strong> — churches are exempt from filing the IRS Form 990. 39% of affluent donors' dollars go to religion (Bank of America / Lilly, 2025).</li>
-    <li><strong>Foreign giving</strong> — no country discloses donor names in bulk. Non-US giving by US billionaires (and the reverse) is largely invisible.</li>
+    <li><strong>Donor-advised funds (DAFs):</strong> anonymous accounts held at companies like Fidelity Charitable. $326B held at US sponsors as of 2025; on average they give out only 25.3% per year; 27% of all US individual giving now flows through them. The donor's name is not disclosed when the money eventually goes out.</li>
+    <li><strong>Philanthropic LLCs:</strong> private companies set up to do charity. The Chan Zuckerberg Initiative (Zuckerberg), Emerson Collective (Powell Jobs), Ballmer Group, the Bezos Earth Fund's parent (Fellowship Ventures), and Good Ventures (Moskovitz) are all LLCs and don't have to file annual tax returns showing what they did. Some publish anyway (Moskovitz); some publish selectively (CZI); others don't publish at all.</li>
+    <li><strong>Dynasty trusts:</strong> family money locked in trusts that can run for centuries. $360B+ sits in South Dakota alone (per the International Consortium of Investigative Journalists' Pandora Papers leak); there's no public registry.</li>
+    <li><strong>501(c)(4) advocacy organizations:</strong> the IRS category for tax-exempt groups that lobby and engage in politics. They are not charities and we don't count them. Charles Koch's <em>Believe in People</em> alone received $4.3B in 2022.</li>
+    <li><strong>Anonymous giving:</strong> per the 2024 Bank of America / Indiana University Lilly School of Philanthropy study, 69% of older high-net-worth donors say they give anonymously at least sometimes.</li>
+    <li><strong>Religious giving:</strong> churches are exempt from filing the IRS Form 990. 39% of affluent donors' dollars go to religion (Bank of America / Lilly, 2025).</li>
+    <li><strong>Foreign giving:</strong> no country discloses donor names in bulk. Non-US giving by US billionaires (and the reverse) is largely invisible.</li>
   </ul>
 
   <h2>How we avoid double-counting</h2>
@@ -299,7 +299,7 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
     <thead><tr><th>Rule</th><th>What it does</th></tr></thead>
     <tbody>
       <tr><td>Pledge ≠ payment</td><td>A 2010 $10B promise and a 2024 $500M actual payment are different events. Promises are tracked but don't count as documented giving until the money actually moves.</td></tr>
-      <tr><td>Into ≠ out of</td><td>When a billionaire moves stock into their own foundation, that's a <strong>transfer in</strong>. When the foundation later gives that money to actual charities, that's a <strong>grant out</strong>. Only the second counts as documented giving — to avoid counting the same dollar twice. (Forbes does it the opposite way, which the Institute for Policy Studies has criticized.)</td></tr>
+      <tr><td>Into ≠ out of</td><td>When a billionaire moves stock into their own foundation, that's a <strong>transfer in</strong>. When the foundation later gives that money to actual charities, that's a <strong>grant out</strong>. Only the second counts as documented giving, to avoid counting the same dollar twice. (Forbes does it the opposite way, which the Institute for Policy Studies has criticized.)</td></tr>
       <tr><td>Announcement + tax filing</td><td>If a $200M gift was announced in the press AND appears in that year's foundation tax filing, it's one event, not two.</td></tr>
       <tr><td>Anonymous account (DAF) gift made public</td><td>If the donor publicly says "we gave $10M to X through our DAF," that counts as a direct gift, not as DAF opacity.</td></tr>
       <tr><td>Multi-year promises</td><td>Counted in the year paid, not the year announced. (The Chronicle of Philanthropy does it the other way; we note both.)</td></tr>
@@ -313,7 +313,7 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
     <li><strong>Private investments framed as philanthropy.</strong> Ellison's December 2025 $40B commitment to the Paramount–Skydance merger was described by Fortune as <em>"not a charitable donation in the classic sense."</em></li>
     <li><strong>501(c)(4) advocacy contributions.</strong> Political advocacy, including to "social welfare" organizations that function as adjuncts to super-PACs.</li>
     <li><strong>Political contributions.</strong> Federal, state, and super-PAC giving. We track these separately and flag people who spend heavily on politics, because research (NBER Working Paper 26616) shows every $1 of political giving reduces charitable giving by about $0.33.</li>
-    <li><strong>Sports team ownership, political campaigns, and commercial real estate</strong> — even when described as philanthropic.</li>
+    <li><strong>Sports team ownership, political campaigns, and commercial real estate</strong>, even when described as philanthropic.</li>
   </ul>
 
   <h2>Sources</h2>
@@ -324,17 +324,17 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
       <tr><th>Type of finding</th><th>Where we get it</th><th>How confident</th></tr>
     </thead>
     <tbody>
-      <tr><td>Private foundations</td><td>IRS Form 990-PF (the annual return private foundations file) — accessed via ProPublica's Nonprofit Explorer</td><td class="tier-ok">High</td></tr>
+      <tr><td>Private foundations</td><td>IRS Form 990-PF (the annual return private foundations file), accessed via ProPublica's Nonprofit Explorer</td><td class="tier-ok">High</td></tr>
       <tr><td>Public charities (donor-side gifts)</td><td>IRS Form 990 (the standard charity tax filing) via ProPublica + charity website</td><td class="tier-ok">High</td></tr>
       <tr><td>Announced gifts</td><td>Press releases from the receiving institution, the Chronicle of Philanthropy, reputable news</td><td class="tier-b">Medium</td></tr>
-      <tr><td>Stock gifts</td><td>SEC Form 4 (the SEC filing where company insiders disclose stock transactions) — code "G" for gifts</td><td class="tier-b">Medium</td></tr>
+      <tr><td>Stock gifts</td><td>SEC Form 4 (the SEC filing where company insiders disclose stock transactions), code "G" for gifts</td><td class="tier-b">Medium</td></tr>
       <tr><td>Giving Pledge</td><td>Official givingpledge.org + the Institute for Policy Studies' <em>Giving Pledge at 15</em> report (July 2025)</td><td class="tier-ok">High</td></tr>
       <tr><td>Political giving</td><td>Federal Election Commission OpenData + OpenSecrets.org</td><td class="tier-ok">High</td></tr>
       <tr><td>LLC giving</td><td>Self-published grant databases (where they exist); press where they don't</td><td class="tier-c">Low–Medium</td></tr>
-      <tr><td>Offshore entities</td><td>ICIJ (International Consortium of Investigative Journalists) OffshoreLeaks — matched against billionaire names and their foundations</td><td class="tier-c">Low</td></tr>
+      <tr><td>Offshore entities</td><td>ICIJ (International Consortium of Investigative Journalists) OffshoreLeaks, matched against billionaire names and their foundations</td><td class="tier-c">Low</td></tr>
       <tr><td>State charity registrations</td><td>California Attorney General's Registry of Charitable Trusts + New York Charities Bureau</td><td class="tier-b">Medium</td></tr>
-      <tr><td>Anonymous account (DAF) transfers</td><td>Foundation tax filings (Schedule I) — when a foundation's grants go to a known DAF holder (Fidelity Charitable, Vanguard Charitable, Schwab Charitable, etc.). We can see the transfer; what happens after is invisible.</td><td class="tier-b">Medium for the transfer; very low for what happens after</td></tr>
-      <tr><td>Recipient-side double-check</td><td>For gifts to named charities, we look up that charity's tax filing to confirm the gift size fits within reported total contributions. <strong>172 events</strong> currently cross-confirmed (green ✓ badge on each event in the profile timeline). Events where the receiving charity's reported total is LESS than the gift get a red ! badge (usually a timing lag — 2024 gifts not yet on the recipient's most recent filing). Events without a single named recipient ("16 nonprofits including...") can't be cross-checked.</td><td class="tier-b">Medium where it applies</td></tr>
+      <tr><td>Anonymous account (DAF) transfers</td><td>Foundation tax filings (Schedule I), when a foundation's grants go to a known DAF holder (Fidelity Charitable, Vanguard Charitable, Schwab Charitable, etc.). We can see the transfer; what happens after is invisible.</td><td class="tier-b">Medium for the transfer; very low for what happens after</td></tr>
+      <tr><td>Recipient-side double-check</td><td>For gifts to named charities, we look up that charity's tax filing to confirm the gift size fits within reported total contributions. <strong>172 events</strong> currently cross-confirmed (green ✓ badge on each event in the profile timeline). Events where the receiving charity's reported total is LESS than the gift get a red ! badge (usually a timing lag, with 2024 gifts not yet on the recipient's most recent filing). Events without a single named recipient ("16 nonprofits including...") can't be cross-checked.</td><td class="tier-b">Medium where it applies</td></tr>
       <tr><td>Wills / trusts</td><td>Will filings, press, pledge-letter text</td><td class="tier-c">Very low</td></tr>
     </tbody>
   </table>
@@ -342,21 +342,21 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   <h2>How the data is built</h2>
   <p>The data is regenerated by a reproducible pipeline (<code>regen_v3/</code> in the repo) that pulls from seven structured sources plus an open-source-intelligence layer (web search + automated extraction) and merges them into one set of records:</p>
   <ul>
-    <li><strong>propublica.py</strong> — IRS Form 990-PF aggregates by EIN (filings, grants paid, payout rate)</li>
-    <li><strong>dafs.py</strong> — Schedule I parsing → detects foundation→DAF transfers</li>
-    <li><strong>sec.py</strong> + <strong>sec_pricing.py</strong> — Form 4 G-transactions; gifts valued at issuer closing price on transaction date via yfinance (since Form 4 reports $0/share for gifts)</li>
-    <li><strong>fec.py</strong> — federal political contributions (requires FEC API key)</li>
-    <li><strong>leaks.py</strong> — ICIJ Offshore Leaks bulk-CSV name match (no API)</li>
-    <li><strong>llcs.py</strong> — curated catalog of philanthropic-LLC commitments (CZI, Ballmer, Emerson, Schmidt Futures, etc.)</li>
-    <li><strong>state_charities.py</strong> — CA AG + NY Charities Bureau search</li>
-    <li><strong>queries.py + queries_llm.py + search.py + extract.py</strong> — Brave Search query plan (template baseline + per-subject Claude-generated queries) → URL liveness check (with archive.org fallback) → Claude extraction with structured tool use → strict role-relabel guards</li>
-    <li><strong>recipient_verify.py</strong> — two-sided 990 cross-check on every named-recipient gift</li>
-    <li><strong>merge.py</strong> — content-hash <code>run_id</code> for reproducibility, recipient-aware dedupe with cross-role tolerance, manual entries always preserved</li>
+    <li><strong>propublica.py:</strong> IRS Form 990-PF aggregates by EIN (filings, grants paid, payout rate)</li>
+    <li><strong>dafs.py:</strong> Schedule I parsing → detects foundation→DAF transfers</li>
+    <li><strong>sec.py + sec_pricing.py:</strong> Form 4 G-transactions; gifts valued at issuer closing price on transaction date via yfinance (since Form 4 reports $0/share for gifts)</li>
+    <li><strong>fec.py:</strong> federal political contributions (requires FEC API key)</li>
+    <li><strong>leaks.py:</strong> ICIJ Offshore Leaks bulk-CSV name match (no API)</li>
+    <li><strong>llcs.py:</strong> curated catalog of philanthropic-LLC commitments (CZI, Ballmer, Emerson, Schmidt Futures, etc.)</li>
+    <li><strong>state_charities.py:</strong> CA AG + NY Charities Bureau search</li>
+    <li><strong>queries.py + queries_llm.py + search.py + extract.py:</strong> Brave Search query plan (template baseline + per-subject Claude-generated queries) → URL liveness check (with archive.org fallback) → Claude extraction with structured tool use → strict role-relabel guards</li>
+    <li><strong>recipient_verify.py:</strong> two-sided 990 cross-check on every named-recipient gift</li>
+    <li><strong>merge.py:</strong> content-hash <code>run_id</code> for reproducibility, recipient-aware dedupe with cross-role tolerance, manual entries always preserved</li>
   </ul>
   <p>Pipeline is reproducible: same record + same caches ⇒ byte-identical output. Code is at <a href="https://github.com/jonahwei19/scrooge-list/tree/main/regen_v3">github.com/jonahwei19/scrooge-list/regen_v3</a>.</p>
 
   <h2>Red flags</h2>
-  <p>Patterns we surface on individual profiles — each one has a source for the specific person:</p>
+  <p>Patterns we surface on individual profiles. Each one has a source for the specific person:</p>
 
   <table class="data-table">
     <thead><tr><th>Flag</th><th>What triggers it</th><th>What it means</th></tr></thead>
@@ -364,32 +364,32 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
       <tr><td>Promised half but hasn't</td><td>Signed the Giving Pledge (a public promise to give half their wealth) but documented giving is low compared to that promise.</td><td>The public promise hasn't been matched by money actually moving. Per the Institute for Policy Studies' <em>Giving Pledge at 15</em> (2025), only 9 of 256 signers have fulfilled.</td></tr>
       <tr><td>Politics over charity</td><td>Political giving is close to or exceeds charitable giving over recent election cycles.</td><td>Research shows political giving crowds out charitable giving (NBER 2020).</td></tr>
       <tr><td>Foundation hoards money</td><td>Their private foundation gives out less than the 5% legal minimum each year, or barely above it.</td><td>Wealth parked in foundation but not actually being deployed to charities.</td></tr>
-      <tr><td>Recycles into anonymous account</td><td>A large share of their foundation's grants go to the donor's own donor-advised fund (DAF) — an anonymous account with no payout requirement.</td><td>Money leaves the foundation (so it shows as "given") but lands in a holding account with no obligation to give it out.</td></tr>
-      <tr><td>Money parked in private LLC</td><td>Most of their giving runs through a private LLC, which doesn't have to disclose what it does.</td><td>The documented figure is a minimum; the real number could be much higher or much lower — we can't verify either way.</td></tr>
+      <tr><td>Recycles into anonymous account</td><td>A large share of their foundation's grants go to the donor's own donor-advised fund (DAF), an anonymous account with no payout requirement.</td><td>Money leaves the foundation (so it shows as "given") but lands in a holding account with no obligation to give it out.</td></tr>
+      <tr><td>Money parked in private LLC</td><td>Most of their giving runs through a private LLC, which doesn't have to disclose what it does.</td><td>The documented figure is a minimum; the real number could be much higher or much lower, and we can't verify either way.</td></tr>
       <tr><td>Charity routed through for-profit</td><td>Giving Pledge promise was redirected to for-profit "impact" ventures.</td><td>Money leaves the charity column under standard methodology.</td></tr>
       <tr><td>Will give it after death</td><td>Their pledge letter commits the bulk of their giving to happen after they die.</td><td>The capacity to give is sitting unused while they're alive.</td></tr>
-      <tr><td>Never made any pledge</td><td>Has never signed the Giving Pledge.</td><td>Informational only — you can't break a promise you never made.</td></tr>
+      <tr><td>Never made any pledge</td><td>Has never signed the Giving Pledge.</td><td>Informational only. You can't break a promise you never made.</td></tr>
     </tbody>
   </table>
 
   <h2>Subject's response</h2>
   <div class="callout info">
     <strong>We contact each person before publication; current status is on their profile.</strong>
-    <p>Each profile shows whether we've contacted the person: <em>not yet requested</em>, <em>contacted, response window open</em>, <em>responded — see above</em>, or <em>declined</em>. We email their known press or foundation contact a plain-text message stating the specific numbers and bucket we intend to publish, and offer a one-week response window.</p>
-    <p>As of <strong>April 2026</strong>: <strong>1 of 51</strong> people has been contacted. Outreach to the rest is being scheduled. People in the highest-confidence bucket (Tier A) who haven't yet been contacted are flagged on their profile pages — we don't pretend the process is finished when it isn't.</p>
+    <p>Each profile shows whether we've contacted the person: <em>not yet requested</em>, <em>contacted, response window open</em>, <em>responded (see above)</em>, or <em>declined</em>. We email their known press or foundation contact a plain-text message stating the specific numbers and bucket we intend to publish, and offer a one-week response window.</p>
+    <p>As of <strong>April 2026</strong>: <strong>1 of 51</strong> people has been contacted. Outreach to the rest is being scheduled. People in the highest-confidence bucket (Tier A) who haven't yet been contacted are flagged on their profile pages.</p>
     <p>This is standard practice at Forbes, Bloomberg, and the Chronicle of Philanthropy. It's also the single most effective defense under US defamation law's "actual malice" standard for public figures.</p>
   </div>
 
   <h2>Corrections</h2>
-  <p>We maintain a public changelog. If you can document giving we have missed — with a source we can link — send it and we will update the record. Preferred: foundation tax-filing line items, recipient-side press releases, SEC filings, pledge letters. We don't update on a claim alone.</p>
+  <p>We maintain a public changelog. If you can document giving we missed (with a source we can link), send it and we'll update the record. Preferred: foundation tax-filing line items, recipient-side press releases, SEC filings, pledge letters. We don't update on a claim alone.</p>
 
   <h2>What we know we don't catch</h2>
   <div class="callout">
     <ul>
-      <li><strong>US-only for now.</strong> This first release covers US-resident billionaires, where foundation tax filings and SEC stock filings let us verify giving. Non-US billionaires (and the registries that would cover them — UK, Canadian, Australian, Hurun, ICIJ leaks) are deferred to a future release.</li>
+      <li><strong>US-only for now.</strong> This first release covers US-resident billionaires, where foundation tax filings and SEC stock filings let us verify giving. Non-US billionaires (and the registries that would cover them: UK, Canadian, Australian, Hurun, ICIJ leaks) are deferred to a future release.</li>
       <li><strong>Tax filings lag.</strong> Foundation tax filings come out 6–18 months after the year they cover. Big gifts in 2025 or 2026 may have been announced in the press but not yet appear in any foundation's filing.</li>
       <li><strong>Net worth varies by source.</strong> Forbes and Bloomberg disagree by 10–25% for people whose wealth is mostly tied up in one private company. We publish a range rather than a single number.</li>
-      <li><strong>Name matching is imperfect.</strong> Small foundations may be missed. Namesakes can collide — e.g., there are two <em>Knight Foundation</em>s (one Phil Knight, one Miami journalism) — and we flag those manually.</li>
+      <li><strong>Name matching is imperfect.</strong> Small foundations may be missed. Namesakes can collide (e.g., there are two <em>Knight Foundation</em>s: one Phil Knight, one Miami journalism), and we flag those manually.</li>
       <li><strong>We measure giving, not impact.</strong> A $100M gift to a high-impact charity and a $100M gift to a vanity building project look identical in our data. This list measures what was given, not what the giving achieved.</li>
       <li><strong>Pre-billionaire giving.</strong> Gifts made before the person became a billionaire are generally not tracked.</li>
     </ul>
@@ -399,15 +399,15 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
   <p>Every Tier A and Tier B profile shows:</p>
   <ol>
     <li>Best-estimate net worth, range across credible sources, and the date it was last updated.</li>
-    <li>Documented giving — every dollar linked to its source URL.</li>
-    <li>Where the money lives — foundations active and closed, LLCs, offshore entities, trusts of interest.</li>
-    <li>Pledge status — did they sign the Giving Pledge? What does their letter say? Have they fulfilled it?</li>
+    <li>Documented giving, every dollar linked to its source URL.</li>
+    <li>Where the money lives: foundations active and closed, LLCs, offshore entities, trusts of interest.</li>
+    <li>Pledge status: did they sign the Giving Pledge? What does their letter say? Have they fulfilled it?</li>
     <li>Minimum political giving + source.</li>
     <li>Red flags with citations.</li>
     <li>A range: from what we can verify, up to the most they could plausibly be giving in secret.</li>
-    <li>Subject's response — their reply, or "no response yet, requested on date X."</li>
+    <li>Subject's response: their reply, or "no response yet, requested on date X."</li>
     <li>Full source log with the dates we retrieved each source.</li>
-    <li>What we still need to check — open verification items.</li>
+    <li>What we still need to check: open verification items.</li>
   </ol>
 
   <h2>Sources &amp; benchmarks</h2>
@@ -415,11 +415,11 @@ ol li::marker{color:var(--rust);font-family:var(--display);font-weight:600}
     <div class="source-card"><h4>Forbes Real-Time Billionaires</h4><p>Net worth and rankings, updated daily.</p></div>
     <div class="source-card"><h4>Bloomberg Billionaires Index</h4><p>Alternate valuation, 1–5 star confidence rating.</p></div>
     <div class="source-card"><h4>ProPublica Nonprofit Explorer</h4><p>Charity tax filings (IRS Form 990 and 990-PF).</p></div>
-    <div class="source-card"><h4>SEC EDGAR</h4><p>Form 4 — stock gifts by company insiders (transaction code G).</p></div>
+    <div class="source-card"><h4>SEC EDGAR</h4><p>Form 4: stock gifts by company insiders (transaction code G).</p></div>
     <div class="source-card"><h4>Federal Election Commission</h4><p>Federal political contributions.</p></div>
     <div class="source-card"><h4>OpenSecrets</h4><p>Aggregated political donor profiles.</p></div>
     <div class="source-card"><h4>Giving Pledge</h4><p>Signer list + verbatim pledge letters.</p></div>
-    <div class="source-card"><h4>IPS — <em>Giving Pledge at 15</em></h4><p>Institute for Policy Studies' fulfillment study (July 2025).</p></div>
+    <div class="source-card"><h4>IPS: <em>Giving Pledge at 15</em></h4><p>Institute for Policy Studies' fulfillment study (July 2025).</p></div>
     <div class="source-card"><h4>NPT DAF Report</h4><p>National Philanthropic Trust's annual donor-advised-fund report.</p></div>
     <div class="source-card"><h4>BofA / Lilly HNW Study</h4><p>Bank of America / Indiana University Lilly School of Philanthropy survey of high-net-worth giving (anonymous + religious rates).</p></div>
     <div class="source-card"><h4>Chronicle of Philanthropy</h4><p>Philanthropy 50 rankings and methodology.</p></div>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profile — The Scrooge List</title>
+<title>Profile: The Scrooge List</title>
 <meta property="og:site_name" content="The Scrooge List">
 <meta property="og:type" content="profile">
 <meta name="twitter:card" content="summary">
@@ -320,7 +320,7 @@ function render(rec) {
   const tierInfo = TIER_LABEL[tier] || { label: rollup.tier || 'Unknown', cls: '' };
 
   document.getElementById('navName').textContent = (p.name_display || '').toUpperCase();
-  document.title = (p.name_display || 'Profile') + ' — The Scrooge List';
+  document.title = (p.name_display || 'Profile') + ': The Scrooge List';
 
   // Headline observable: prefer the rollup judgment, but if it's zero AND we
   // have a non-zero strict event sum, use the event sum (the graph below pulls
@@ -382,7 +382,7 @@ function render(rec) {
   // These come straight from the source v3 record (hand-curated per subject).
   const hiddenComponents = [];
   const componentMap = [
-    ['daf_uplift_usd', 'DAFs (donor-advised funds — opaque downstream)'],
+    ['daf_uplift_usd', 'DAFs (donor-advised funds, opaque downstream)'],
     ['llc_uplift_usd', 'Philanthropic LLCs (no 990 filing requirement)'],
     ['offshore_uplift_usd', 'Offshore vehicles'],
     ['anonymous_cohort_uplift_usd', 'Anonymous giving (cohort estimate)'],
@@ -449,7 +449,7 @@ function render(rec) {
       const direction = fromEvents > observable ? 'higher' : 'lower';
       html += `<div class="callout">
         <strong>Why two numbers don't match</strong>
-        <p>The headline documented giving figure (<strong>${fmtUsd(observable)}</strong>) is what we publish as theirs personally. Adding up only the individual grants and direct gifts listed below totals <strong>${fmtUsd(fromEvents)}</strong> — ${direction} by ${(drift*100).toFixed(0)}%.</p>
+        <p>The headline documented giving figure (<strong>${fmtUsd(observable)}</strong>) is what we publish as theirs personally. Adding up only the individual grants and direct gifts listed below totals <strong>${fmtUsd(fromEvents)}</strong>, ${direction} by ${(drift*100).toFixed(0)}%.</p>
         <p style="font-style:italic;color:var(--ink-fade);font-size:.9rem">A gap usually means lifetime totals cited in sources but not broken down into discrete events (headline &gt; event sum), or family-foundation portions we excluded from their personal share (headline &lt; event sum). The event list below is the trail you can audit.</p>
       </div>`;
     }
@@ -466,7 +466,7 @@ function render(rec) {
       <strong>How the "could be giving in secret" upper bound was built</strong>
       <p style="font-size:.92rem;margin-bottom:8px">${fmtUsd(hiddenUpper)} total, summed from hand-estimated upper bounds for each opaque channel:</p>
       <ul class="tt-list" style="font-size:.9rem;margin:8px 0">${rows}</ul>
-      <p style="font-style:italic;color:var(--ink-fade);font-size:.85rem">Each component is a per-subject judgment by the research agent (methodology notes in the source record under <code>hidden_upper_usd</code>). It's an upper bound — the most plausible giving via that channel — not a measurement.</p>
+      <p style="font-style:italic;color:var(--ink-fade);font-size:.85rem">Each component is a per-subject judgment from the source record (notes under <code>hidden_upper_usd</code>). It's an upper bound on plausible giving via that channel, not a measurement.</p>
     </div>`;
   }
 
@@ -657,14 +657,14 @@ function wireTimelineClicks() {
       let badge = '';
       if (it.verified === 'true') badge = ' <span class="rcpt-verify ok" title="Foundation→foundation transfer; recipient 990 reports total contributions ≥ this gift">✓</span>';
       else if (it.verified === 'envelope_fit') badge = ' <span class="rcpt-verify env" title="Recipient 990 contributions could absorb this gift, but does NOT confirm a donor-specific match (especially weak for DAF sponsors / billion-dollar charities)">◯</span>';
-      else if (it.verified === 'false') badge = ' <span class="rcpt-verify bad" title="Recipient 990 contributions less than gift amount — likely timing lag or mis-extraction">!</span>';
+      else if (it.verified === 'false') badge = ' <span class="rcpt-verify bad" title="Recipient 990 contributions less than gift amount; likely timing lag or mis-extraction">!</span>';
       return `<li><span class="rcpt">${flow}${badge}</span><span class="rcpt-amt">${fmtUsd(it.amount)}</span></li>`;
     }).join('');
     return `
       <div class="tt-row1"><span class="tt-year">${year}</span><span class="tt-kind ${kindCls}">${kindLabel}</span></div>
       <div class="tt-total">${fmtUsd(d.total)}</div>
       <ul class="tt-list">${listHtml}</ul>
-      ${more > 0 ? `<div class="tt-more">+${more} more — click for full evidence</div>` : '<div class="tt-more">Click to jump to evidence</div>'}
+      ${more > 0 ? `<div class="tt-more">+${more} more · click for full evidence</div>` : '<div class="tt-more">Click to jump to evidence</div>'}
     `;
   }
 
@@ -972,7 +972,7 @@ function renderVehicles(v) {
     any = true;
     html += `<div class="vehicle opaque">
       <div class="vname">${esc(l.name)} <span style="color:var(--ink-fade);font-weight:400">· LLC</span></div>
-      <div class="vdetail">${esc(l.classification || l.status || 'LLC — no 990 filing requirement')}</div>
+      <div class="vdetail">${esc(l.classification || l.status || 'LLC, no 990 filing requirement')}</div>
     </div>`;
   }
 
