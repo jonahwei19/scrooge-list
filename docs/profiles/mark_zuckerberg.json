@@ -1422,26 +1422,6 @@
       "event_role_canonical": "pledge"
     },
     {
-      "event_role": "announcement",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Mark Zuckerberg",
-      "recipient": "unspecified",
-      "amount_usd": 600000000000,
-      "source_type": "news_article",
-      "source_url": "https://techstory.in/at-least-600-billion-zuckerberg-pledges-massive-us-investments-to-trump/",
-      "confidence": "medium",
-      "extraction_note": "Zuckerberg pledges over $600 billion in US investments to President Trump, focusing on AI, job creation, and economic growth.",
-      "extraction_evidence": "Zuckerberg commits over $600 billion in US investments to President Trump",
-      "regen_query": "\"Mark Zuckerberg\" pledges OR commits OR announces",
-      "event_id": "mark_zuckerberg_announcement_x_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-b3d62565f4dc49d0",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "announcement"
-    },
-    {
       "event_role": "pledge",
       "year": null,
       "date": null,
@@ -2103,12 +2083,6 @@
     {
       "publisher": "rollcall.com",
       "url": "https://rollcall.com/2024/02/07/lawmakers-clash-over-zuckerbucks-and-how-to-stop-private-election-funding/",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-b3d62565f4dc49d0"
-    },
-    {
-      "publisher": "techstory.in",
-      "url": "https://techstory.in/at-least-600-billion-zuckerberg-pledges-massive-us-investments-to-trump/",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-b3d62565f4dc49d0"
     },

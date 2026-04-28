@@ -93,6 +93,7 @@ BLOCKLIST_DOMAINS: frozenset[str] = frozenset({
     "newstral.com",          # German news aggregator scraping other outlets
     "technewsjunkies.com",   # low-editorial tech aggregator
     "elonmskgrantdonations.org",  # TYPOSQUAT (missing 'u' in 'musk') — fake domain
+    "techstory.in",          # low-editorial Indian tech aggregator
 })
 
 # Re-exported from `_fabricated` so search.py and merge.py share one
