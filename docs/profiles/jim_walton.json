@@ -768,26 +768,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "transfer_in",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Jim Walton",
-      "recipient": "Walton Family Foundation",
-      "amount_usd": 2000000000,
-      "source_type": "wikipedia",
-      "source_url": "https://en.wikipedia.org/wiki/Jim_Walton",
-      "confidence": "medium",
-      "extraction_note": "Jim Walton pledged approximately $2 billion to the Walton Family Foundation along with his siblings between 2008 and 2013.",
-      "extraction_evidence": "pledged about $2 billion to the Walton Family Foundation along with his siblings from 2008 to 2013",
-      "regen_query": "\"Jim Walton\" donates million",
-      "event_id": "jim_walton_transfer_in_x_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-20b687105fd19fde",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "transfer_in"
-    },
-    {
       "event_role": "direct_gift",
       "year": 2019,
       "date": null,

@@ -269,26 +269,6 @@
       "event_role_canonical": "grant_out"
     },
     {
-      "event_role": "transfer_in",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Laurene Powell Jobs",
-      "recipient": "donor-advised fund",
-      "amount_usd": 185000000,
-      "source_type": "news_article",
-      "source_url": "https://apnews.com/article/climate-change-business-environment-and-nature-philanthropy-apple-inc-70233d6b5dd94ad989e885f0db426860",
-      "confidence": "high",
-      "extraction_note": "Between 2017 and 2019, Powell Jobs' foundation transferred $185 million into a donor-advised fund.",
-      "extraction_evidence": "Between 2017 and 2019, the foundation funneled $185 million into a donor-advised fund",
-      "regen_query": "\"Laurene Powell Jobs\" gift OR donation million",
-      "event_id": "laurene_powell_jobs_transfer_in_x_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-54895526dd34f797",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "transfer_in"
-    },
-    {
       "event_role": "political",
       "year": 2014,
       "date": null,

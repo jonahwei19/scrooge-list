@@ -230,28 +230,6 @@
       "recipient_verification_note": "missing recipient name or year"
     },
     {
-      "event_role": "direct_gift",
-      "year": 2025,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "MacKenzie Scott",
-      "recipient": "unspecified",
-      "amount_usd": 19250000000,
-      "source_type": "news_article",
-      "source_url": "https://fortune.com/2025/11/07/mackenzie-scott-19-billion-charitable-donations-amazon-shares-net-worth/",
-      "confidence": "high",
-      "extraction_note": "MacKenzie Scott has donated $19.25 billion through charitable giving.",
-      "extraction_evidence": "having donated $19.25 billion through her",
-      "regen_query": "\"MacKenzie Scott\" Amazon shares liquidation 2019 2020 2021 2022 2023 2024 2025 arc",
-      "event_id": "mackenzie_scott_direct_gift_2025_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-907f30c88727e2e2",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "unverifiable",
-      "recipient_filing_url": "",
-      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
-    },
-    {
       "event_role": "grant_out",
       "year": 2026,
       "date": null,

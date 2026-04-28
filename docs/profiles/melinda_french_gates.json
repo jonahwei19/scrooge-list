@@ -616,26 +616,6 @@
       "event_role_canonical": "political"
     },
     {
-      "event_role": "transfer_in",
-      "year": 2018,
-      "date": null,
-      "date_precision": "year",
-      "donor_entity": "Melinda French Gates",
-      "recipient": "Bill & Melinda Gates Foundation",
-      "amount_usd": 36000000000,
-      "source_type": "news_article",
-      "source_url": "https://www.firstpost.com/explainers/melinda-french-gates-bill-gates-foundation-philanthropy-13770637.html/amp",
-      "confidence": "high",
-      "extraction_note": "Melinda and Bill Gates donated more than $36 billion of their own wealth from 1994 to 2018 to the Gates Foundation.",
-      "extraction_evidence": "Melinda and Bill have donated more than $36 billion of their own wealth from 1994 to 2018 to the nonprofit",
-      "regen_query": "\"Melinda French Gates\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
-      "event_id": "melinda_french_gates_transfer_in_2018_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-c9fcc3bcf90e14f5",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "transfer_in"
-    },
-    {
       "event_role": "grant_out",
       "year": 2024,
       "date": null,

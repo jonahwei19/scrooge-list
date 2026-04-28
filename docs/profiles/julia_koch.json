@@ -334,29 +334,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "direct_gift",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Julia Koch",
-      "recipient": "unspecified",
-      "amount_usd": 63000000,
-      "source_type": "wikipedia",
-      "source_url": "https://en.wikipedia.org/wiki/Julia_Koch",
-      "confidence": "medium",
-      "extraction_note": "Koch and spouse donated an average of $63 million annually between 2007 and 2017 to arts and medical research.",
-      "extraction_evidence": "Between 2007 and 2017, Koch and her spouse donated an average of $63 million annually",
-      "regen_query": "\"Julia Koch\" donates million",
-      "event_id": "julia_koch_direct_gift_x_regen2",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-2c25736a3e0d953b",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "recipient_verified": "unverifiable",
-      "recipient_filing_url": "",
-      "recipient_verification_note": "missing recipient name or year",
-      "event_role_canonical": "direct_gift"
-    },
-    {
       "event_role": "political",
       "year": 2018,
       "date": "2018-04-19",
@@ -949,7 +926,7 @@
     "shortfall_5pct_usd": 4178539751,
     "ratio_observable_to_5pct_tenure": 0.0198,
     "observable_from_events_usd": 324063057,
-    "unyear_dollars_excluded_usd": 166400000,
+    "unyear_dollars_excluded_usd": 103400000,
     "observable_drift_pct": 2.837,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."
   },

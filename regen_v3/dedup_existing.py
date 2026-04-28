@@ -85,6 +85,35 @@ def dedupe_record(rec: dict) -> tuple[int, list[str]]:
             if gk is not None:
                 groups.setdefault(gk, []).append(i)
 
+        # Generic-recipient TOLERANCE pass: catch the case where two events
+        # have the same year, generic recipient, and amounts within ±5%
+        # (e.g. Scott 2025 $7.0B + $7.1B were the same gift quoted with
+        # different rounding across two articles). The strict bucket check
+        # above misses these because round(7e9/1e6)=7000 vs round(7.1e9/1e6)=7100.
+        for i, ei in enumerate(entries):
+            if not isinstance(ei, dict):
+                continue
+            if _normalize_recipient(ei.get("recipient")) is not None:
+                continue  # only fire for generic recipients
+            yi = ei.get("year") if isinstance(ei.get("year"), int) else None
+            ai = ei.get("amount_usd")
+            if yi is None or not isinstance(ai, (int, float)) or ai <= 0:
+                continue
+            for j in range(i + 1, len(entries)):
+                ej = entries[j]
+                if not isinstance(ej, dict):
+                    continue
+                if _normalize_recipient(ej.get("recipient")) is not None:
+                    continue
+                yj = ej.get("year") if isinstance(ej.get("year"), int) else None
+                aj = ej.get("amount_usd")
+                if yi != yj or not isinstance(aj, (int, float)) or aj <= 0:
+                    continue
+                if abs(ai - aj) <= 0.05 * max(ai, aj):
+                    # Treat as collision via shared synthetic key
+                    key = ("__tol__", yi, round(min(ai, aj) / 1e8))
+                    groups.setdefault(key, []).extend([i, j])
+
         # Find groups with collisions
         to_remove: set[int] = set()
         for k, idxs in groups.items():

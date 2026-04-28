@@ -243,7 +243,17 @@ _CUMULATIVE_PHRASES = _re_guards.compile(
     r"since\s+\d{4}\s+(?:has|have)\s+(?:given|donated|contributed)|"
     r"over\s+the\s+(?:past|last)\s+\d+\s+years\s+(?:has|have)\s+(?:given|donated)|"
     r"running\s+total|all-?time\s+(?:giving|donations|contributions)|"
-    r"total\s+(?:giving|donations|contributions)\s+(?:since|of\s+\$?\d))\b",
+    r"total\s+(?:giving|donations|contributions)\s+(?:since|of\s+\$?\d)|"
+    # New patterns from Buffett 2024 audit:
+    r"as\s+of\s+\w+\s+\d{4},?\s+(?:he|she|they)\s+(?:had|has)\s+(?:given|donated|contributed)|"
+    r"between\s+\d{4}\s+and\s+\d{4}|"
+    r"from\s+\d{4}\s+(?:to|through)\s+\d{4}|"
+    r"received\s+more\s+than\s+\$[\d.]+\s*(?:billion|million)|"
+    r"has\s+(?:received|been\s+given|been\s+gifted)\s+(?:roughly\s+)?\$[\d.]+\s*(?:billion|million)\s+(?:from|by)|"
+    # MacKenzie Scott 2025 audit additions:
+    r"having\s+(?:given|donated|contributed|distributed)\s+\$?[\d.]+\s*(?:billion|million)|"
+    r"in\s+total,?\s+(?:he|she|they)\s+(?:has|have|had)\s+(?:given|donated|contributed)|"
+    r"(?:total|all)\s+(?:she|he|they|her|his|their)\s+(?:has|have|had)\s+(?:given|donated|contributed))\b",
     _re_guards.IGNORECASE,
 )
 

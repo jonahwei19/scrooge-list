@@ -884,26 +884,6 @@
       "event_role_canonical": "direct_gift"
     },
     {
-      "event_role": "transfer_in",
-      "year": null,
-      "date": null,
-      "date_precision": null,
-      "donor_entity": "Rob Walton",
-      "recipient": "Walton Family Foundation",
-      "amount_usd": 2000000000,
-      "source_type": "other",
-      "source_url": "https://kids.kiddle.co/S._Robson_Walton",
-      "confidence": "high",
-      "extraction_note": "Rob Walton and his siblings donated approximately $2 billion to the Walton Family Foundation between 2008 and 2013.",
-      "extraction_evidence": "Between 2008 and 2013, they donated about $2 billion to help different causes",
-      "regen_query": "\"Walton Family Foundation\" \"Rob Walton\" OR \"Jim Walton\" OR \"Alice Walton\" contribution transfer 2008 2009 2010 2011 2012 2013 \"$2 billion\"",
-      "event_id": "rob_walton_transfer_in_x_regen1",
-      "provenance": "regen_v3",
-      "regen_run_id": "sha256-0f4daf477196d710",
-      "regen_extractor_model": "claude-haiku-4-5",
-      "event_role_canonical": "transfer_in"
-    },
-    {
       "event_role": "grant_out",
       "year": null,
       "date": null,
