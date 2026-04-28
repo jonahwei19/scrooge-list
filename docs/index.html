@@ -135,8 +135,7 @@ body{
 .subdeck a:hover{color:var(--rust);border-bottom-color:var(--rust)}
 
 .marley{
-  margin:0 0 50px;padding:18px 0 18px 28px;
-  border-left:2px solid var(--rust);
+  margin:0 0 50px;padding:0;
   max-width:780px;
 }
 .marley p{
@@ -152,7 +151,6 @@ body{
   text-transform:uppercase;color:var(--ink-fade);
 }
 .marley cite em{font-style:italic;text-transform:none;letter-spacing:0;color:var(--ink-soft)}
-[data-theme="dark"] .marley{border-left-color:var(--rust)}
 
 .ledger-strip{
   display:grid;grid-template-columns:repeat(4,1fr);
@@ -243,7 +241,7 @@ body.saint-view .how-to-read,body.saint-view .pattern-filters,body.saint-view .d
 body.saint-view #tierOnTrack thead th[data-sort="observable"]{color:var(--green)}
 body.saint-view .section-head h2{color:var(--green)}
 
-.saint-hero{margin:0 0 20px;padding:18px 22px;border:1px solid var(--green);background:rgba(74,110,58,.06);border-left:4px solid var(--green)}
+.saint-hero{margin:0 0 28px;padding:0;max-width:760px}
 .saint-hero h2{font-family:var(--display);font-weight:400;font-style:italic;font-variation-settings:"opsz" 72,"SOFT" 70;font-size:clamp(1.5rem,2.3vw,2rem);margin:0 0 6px;color:var(--ink)}
 .saint-hero p{font-family:var(--serif,var(--display));font-size:.95rem;color:var(--ink-soft);line-height:1.55;margin:0;max-width:760px}
 
@@ -392,8 +390,7 @@ body.saint-view .section-head h2{color:var(--green)}
 }
 
 .how-to-read{
-  margin:0 0 56px;padding:28px 32px;
-  background:var(--paper-mid);border-left:3px solid var(--rust);
+  margin:0 0 56px;padding:0;
 }
 .how-to-read h3{
   font-family:var(--display);font-style:italic;
@@ -410,9 +407,7 @@ body.saint-view .section-head h2{color:var(--green)}
 .chip.gilt{color:var(--gilt)}
 .chip.sepia{color:var(--sepia)}
 
-.callout{padding:20px 24px;margin:24px 0 48px;border-left:3px solid var(--rust);background:rgba(139,46,31,.04)}
-[data-theme="dark"] .callout{background:rgba(209,74,50,.08)}
-.callout.green{border-left-color:var(--green);background:rgba(74,110,58,.05)}
+.callout{margin:32px 0 48px}
 .callout > strong{font-family:var(--display);color:var(--ink);display:block;margin-bottom:8px;font-size:1rem}
 .callout p{color:var(--ink-soft);margin-bottom:8px}
 .callout p:last-child{margin-bottom:0}
