@@ -159,9 +159,33 @@ def _atomic_write_json(path: Path, payload: dict[str, Any]) -> None:
 # enforce the 1 req/sec rate limit only when we actually hit the network.
 _last_live_call_ts: float = 0.0
 
+# Shared cross-worker rate-limit state when running under multiprocessing.
+# batch_runner.py installs an mp.Value (timestamp) + mp.Lock via the pool
+# initializer so all workers share a single Brave 1-req/sec budget. Falls
+# through to the local global when workers=1.
+_shared_ts = None  # type: ignore
+_shared_lock = None  # type: ignore
+
+
+def install_shared_rate_limiter(ts_value, lock) -> None:
+    """Called by parent via Pool initializer. Workers atomically read+update
+    the shared mp.Value timestamp instead of the local global."""
+    global _shared_ts, _shared_lock
+    _shared_ts = ts_value
+    _shared_lock = lock
+
 
 def _rate_limit() -> None:
     global _last_live_call_ts
+    if _shared_ts is not None and _shared_lock is not None:
+        # Cross-worker: lock + read shared ts + sleep + update.
+        with _shared_lock:
+            now = time.monotonic()
+            elapsed = now - _shared_ts.value
+            if _shared_ts.value > 0 and elapsed < RATE_LIMIT_SECONDS:
+                time.sleep(RATE_LIMIT_SECONDS - elapsed)
+            _shared_ts.value = time.monotonic()
+        return
     now = time.monotonic()
     elapsed = now - _last_live_call_ts
     if _last_live_call_ts > 0 and elapsed < RATE_LIMIT_SECONDS:

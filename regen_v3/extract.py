@@ -37,6 +37,22 @@ _MAX_EXTRACT_CALLS = int(os.environ.get("MAX_EXTRACT_CALLS", "10000"))
 _live_call_count = 0
 _cap_warned = False
 
+# Shared cross-worker counter when running under multiprocessing. The pool
+# initializer (in batch_runner.py) calls install_shared_counter() with an
+# mp.Value, and workers atomically increment THAT instead of the local global.
+# Falls through to the local global when workers=1 / non-parallel runs.
+_shared_counter = None  # type: ignore  # set via install_shared_counter
+_shared_lock = None     # type: ignore
+
+
+def install_shared_counter(counter, lock) -> None:
+    """Called by the parent process via multiprocessing.Pool initializer
+    to give each worker a handle on the shared mp.Value counter + Lock.
+    After install, _do_extract() increments the SHARED counter."""
+    global _shared_counter, _shared_lock
+    _shared_counter = counter
+    _shared_lock = lock
+
 ALLOWED_SOURCE_TYPES = {
     "press_release",
     "news_article",
@@ -437,18 +453,34 @@ def extract_events(
     # Cost cap: bail before making the LLM call if the per-process budget
     # is exhausted. Counts only LIVE calls; cache hits are free above.
     global _live_call_count, _cap_warned
-    if _live_call_count >= _MAX_EXTRACT_CALLS:
-        if not _cap_warned:
-            logger.warning(
-                "MAX_EXTRACT_CALLS=%d reached; remaining LLM extracts will be "
-                "skipped (returns []). Override via env var.",
-                _MAX_EXTRACT_CALLS,
-            )
-            _cap_warned = True
-        return []
+    # Use shared mp.Value counter when running under multiprocessing.Pool;
+    # falls through to the local global when workers=1 / non-parallel.
+    if _shared_counter is not None and _shared_lock is not None:
+        with _shared_lock:
+            cur = _shared_counter.value
+            if cur >= _MAX_EXTRACT_CALLS:
+                if not _cap_warned:
+                    logger.warning(
+                        "MAX_EXTRACT_CALLS=%d reached (shared across workers); "
+                        "remaining LLM extracts will be skipped.",
+                        _MAX_EXTRACT_CALLS,
+                    )
+                    _cap_warned = True
+                return []
+            _shared_counter.value = cur + 1
+    else:
+        if _live_call_count >= _MAX_EXTRACT_CALLS:
+            if not _cap_warned:
+                logger.warning(
+                    "MAX_EXTRACT_CALLS=%d reached; remaining LLM extracts will be "
+                    "skipped (returns []). Override via env var.",
+                    _MAX_EXTRACT_CALLS,
+                )
+                _cap_warned = True
+            return []
+        _live_call_count += 1
 
     try:
-        _live_call_count += 1
         raw_events = _call_anthropic(
             subject_name=subject_name,
             role_hint=role_hint,

@@ -48,6 +48,8 @@ from regen_v3 import dafs_downstream as dafs_downstream_mod
 from regen_v3 import llcs as llcs_mod
 from regen_v3 import state_charities as state_charities_mod
 from regen_v3 import recipient_verify as recipient_verify_mod
+from regen_v3 import llm_hidden_upper as hidden_upper_mod
+from regen_v3 import llm_tier_reasoning as tier_reasoning_mod
 from validate_v3 import check as validate_check  # noqa: E402
 
 
@@ -294,6 +296,23 @@ def run_one(
         recipient_verify_mod.annotate_record(new_record, refresh=refresh)
     except Exception as e:
         print(f"    [recipient_verify-skip] {type(e).__name__}: {e}")
+
+    # 5c. LLM-generate hidden_upper_usd components (only if not already
+    #     hand-curated). Preserves existing dicts; populates empty/None.
+    try:
+        hidden_upper_mod.generate_hidden_upper(new_record, refresh=refresh)
+    except Exception as e:
+        print(f"    [hidden_upper-skip] {type(e).__name__}: {e}")
+
+    # 5d. LLM-generate tier_reasoning paragraph (only if not already set).
+    try:
+        rollup = new_record.setdefault("rollup", {})
+        if not (rollup.get("tier_reasoning") or rollup.get("tier_published_caveat")):
+            para = tier_reasoning_mod.generate_tier_reasoning(new_record)
+            if para:
+                rollup["tier_reasoning"] = para
+    except Exception as e:
+        print(f"    [tier_reasoning-skip] {type(e).__name__}: {e}")
 
     # 6. Validate
     errs, warns = validate_check(new_record, fp)
