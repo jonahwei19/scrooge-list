@@ -74,9 +74,16 @@ logger = logging.getLogger(__name__)
 SYSTEM_PROMPT = (
     "You extract one or more philanthropic-giving events from a news snippet. "
     "Be conservative: only emit an event if the snippet states a concrete giving "
-    "action by the named subject. Use the canonical event_role enum. If amount "
-    "is missing, set amount_usd=null. If you can't extract anything, return "
-    "events: []. Never invent numbers."
+    "action by the named subject. Use the canonical event_role enum.\n\n"
+    "GROUNDING RULE — most important: every event you emit MUST be supported by a "
+    "verbatim substring in the snippet+title. Copy that substring EXACTLY into "
+    "extraction_evidence (no paraphrasing, no extra words). The substring must "
+    "contain the recipient name AND, if you set amount_usd, the dollar amount in "
+    "some surface form ('$25M', '$25 million', '25,000,000'). If you cannot find "
+    "such a substring, do not emit the event — return events: [] for that input.\n\n"
+    "If amount is missing from the snippet, set amount_usd=null (don't guess). "
+    "Never invent or estimate numbers. Never extract from your training-data "
+    "knowledge of the subject; ground every claim in the snippet text only."
 )
 
 
@@ -341,8 +348,104 @@ def _maybe_relabel(event: dict[str, Any]) -> dict[str, Any]:
     return event
 
 
-def _validate_event(event: dict[str, Any], expected_url: str) -> dict[str, Any] | None:
-    """Return the event if valid; else None."""
+def _normalize_text(s: str) -> str:
+    """Lowercase, collapse whitespace, strip outer punctuation. Used for the
+    `extraction_evidence` substring check — LLMs occasionally tweak case,
+    spacing, or trailing punctuation when 'quoting' a snippet, so a strict
+    `in` check produces too many false drops."""
+    if not isinstance(s, str):
+        return ""
+    s = s.lower()
+    # Collapse whitespace (including newlines).
+    s = _re_guards.sub(r"\s+", " ", s).strip()
+    return s
+
+
+def _amount_variants(amount_int: int) -> list[str]:
+    """Surface forms an LLM might find an amount in: $25M, $25 million, 25,000,000,
+    25 million, etc. The check passes if ANY variant appears in the evidence/snippet."""
+    out: list[str] = []
+    if amount_int <= 0:
+        return out
+    # Plain integer with commas + bare integer.
+    out.append(f"{amount_int:,}")
+    out.append(str(amount_int))
+    if amount_int >= 1_000_000_000:
+        b = amount_int / 1_000_000_000
+        # 1.5b, $1.5b, 1.5 billion, $1.5 billion (also handle whole-number 10b)
+        whole = abs(b - round(b)) < 0.05
+        if whole:
+            out += [f"{round(b)} billion", f"${round(b)} billion",
+                    f"{round(b)}b", f"${round(b)}b",
+                    f"{round(b)}bn", f"${round(b)}bn"]
+        out += [f"{b:.1f} billion", f"${b:.1f} billion",
+                f"{b:.1f}b", f"${b:.1f}b",
+                f"{b:.2f} billion", f"${b:.2f} billion"]
+    if amount_int >= 1_000_000:
+        m = amount_int / 1_000_000
+        whole = abs(m - round(m)) < 0.05
+        if whole:
+            out += [f"{round(m)} million", f"${round(m)} million",
+                    f"{round(m)}m", f"${round(m)}m",
+                    f"{round(m)} mil", f"${round(m)} mil"]
+        out += [f"{m:.1f} million", f"${m:.1f} million",
+                f"{m:.1f}m", f"${m:.1f}m"]
+    if amount_int >= 1_000:
+        k = amount_int / 1_000
+        whole = abs(k - round(k)) < 0.05
+        if whole:
+            out += [f"{round(k)},000", f"${round(k)},000",
+                    f"{round(k)}k", f"${round(k)}k"]
+    # Lowercase everything so the haystack-matching is case-insensitive.
+    return [v.lower() for v in out]
+
+
+def _evidence_anchored(evidence: str, haystack: str, *, min_match_words: int = 4) -> bool:
+    """Whether `evidence` appears in `haystack`, allowing for minor LLM tweaks.
+
+    Strategy: split evidence into 4-word windows; require at least one window
+    to appear in haystack. This is loose enough to tolerate paraphrasing of
+    the boundaries but strict enough to catch fabrication (an evidence string
+    invented from whole cloth has no 4-word run that appears verbatim in the
+    snippet)."""
+    e = _normalize_text(evidence)
+    h = _normalize_text(haystack)
+    if not e or not h:
+        return False
+    # Quick win: full evidence is a substring.
+    if e in h:
+        return True
+    words = e.split()
+    if len(words) < min_match_words:
+        # Evidence too short to do a window check — just require literal substring.
+        return False
+    # Try longest run that's still meaningfully specific.
+    span = max(min_match_words, min(8, len(words)))
+    for i in range(len(words) - span + 1):
+        window = " ".join(words[i:i + span])
+        if window in h:
+            return True
+    return False
+
+
+def _validate_event(
+    event: dict[str, Any],
+    expected_url: str,
+    *,
+    snippet: str | None = None,
+    title: str | None = None,
+) -> dict[str, Any] | None:
+    """Return the event if valid; else None.
+
+    When `snippet` and `title` are passed, also runs *grounded-evidence*
+    checks that drop events whose `extraction_evidence` doesn't appear in
+    the snippet+title (i.e. the LLM fabricated the supporting text) or
+    whose stated `amount_usd` doesn't appear in any common surface form
+    (e.g. "$25M", "25 million", "25,000,000"). These are deterministic,
+    no-LLM-cost checks intended to catch the most common extraction
+    hallucination mode: the LLM emits a clean structured event whose
+    numbers / recipient bear no relation to what the snippet actually said.
+    """
     # Pattern-based role re-labeling BEFORE canonical-role check, since the
     # guards may convert e.g. "corporate_gift" -> "political".
     _maybe_relabel(event)
@@ -384,6 +487,41 @@ def _validate_event(event: dict[str, Any], expected_url: str) -> dict[str, Any] 
 
     if event.get("date_precision") not in ALLOWED_DATE_PRECISION:
         event["date_precision"] = None
+
+    # ---- Grounded-evidence checks (only when caller passed snippet/title) ----
+    if snippet is not None or title is not None:
+        haystack = " ".join(s for s in (title or "", snippet or "") if s)
+        evidence = event.get("extraction_evidence") or ""
+
+        # 1. Evidence must be anchored in the snippet.
+        if evidence and not _evidence_anchored(evidence, haystack):
+            event["_grounded_check"] = "evidence_not_in_snippet"
+            event["confidence"] = "low"
+            # If the LLM also asserted a non-trivial dollar amount, drop the
+            # event entirely — no anchored evidence + a fabricated amount is
+            # the exact pattern deep QA caught (Henry Samueli $30M-vs-$200M,
+            # John Doerr $255M, John Mars Smithsonian $5M, Bernard Marcus
+            # Autism Speaks $25M).
+            if isinstance(event.get("amount_usd"), int) and event["amount_usd"] >= 1_000_000:
+                logger.warning(
+                    "dropping event: evidence not anchored in snippet and amount=$%s",
+                    f"{event['amount_usd']:,}",
+                )
+                return None
+
+        # 2. Stated amount must appear in some surface form in evidence + snippet.
+        amt = event.get("amount_usd")
+        if isinstance(amt, int) and amt >= 1_000_000:
+            haystack_lower = haystack.lower()
+            evidence_lower = (evidence or "").lower()
+            variants = _amount_variants(amt)
+            found = any(v in haystack_lower or v in evidence_lower for v in variants)
+            if not found:
+                logger.warning(
+                    "dropping event: amount $%s not found in any surface form in snippet",
+                    f"{amt:,}",
+                )
+                return None
 
     return event
 
@@ -499,7 +637,7 @@ def extract_events(
     for ev in raw_events:
         if not isinstance(ev, dict):
             continue
-        ok = _validate_event(ev, expected_url=url)
+        ok = _validate_event(ev, expected_url=url, snippet=snippet, title=title)
         if ok is not None:
             validated.append(ok)
 
