@@ -27,9 +27,12 @@ CANONICAL_EVENT_ROLES: frozenset[str] = frozenset({
 })
 
 # Roles that every plan must include at least once.
+# pledge and no_pledge are MUTUALLY EXCLUSIVE — when a subject is a known
+# Giving Pledge signer, no_pledge query is omitted (would be misleading).
+# When unknown / not signed, pledge + no_pledge both appear. So the
+# validator must NOT require both — instead, require at least one of them
+# (handled in build_query_plan via REQUIRED_PLEDGE_GROUP).
 REQUIRED_ROLES: frozenset[str] = frozenset({
-    "pledge",
-    "no_pledge",
     "grant_out",
     "direct_gift",
     "announcement",
@@ -37,6 +40,7 @@ REQUIRED_ROLES: frozenset[str] = frozenset({
     "political",
     "reference_only",
 })
+REQUIRED_PLEDGE_GROUP: frozenset[str] = frozenset({"pledge", "no_pledge"})
 
 # Forbes profile slug used for the reference_only query.
 FORBES_PROFILE_BASE = "https://www.forbes.com/profile/"
@@ -626,6 +630,14 @@ def build_query_plan(record: dict) -> list[dict]:
     if missing:
         raise AssertionError(
             f"build_query_plan: required roles missing {sorted(missing)} "
+            f"for subject {name_display!r}"
+        )
+    # pledge / no_pledge are mutually exclusive (signers don't get a
+    # "did not sign" query, non-signers don't get a "signed in YYYY" query).
+    # Require at least ONE of them.
+    if not (REQUIRED_PLEDGE_GROUP & roles_present):
+        raise AssertionError(
+            f"build_query_plan: neither pledge nor no_pledge query generated "
             f"for subject {name_display!r}"
         )
     for item in deduped:
