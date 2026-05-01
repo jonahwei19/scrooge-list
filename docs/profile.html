@@ -360,7 +360,7 @@ function render(rec) {
       <div class="summary-cell">
         <div class="label">Documented giving</div>
         <div class="value">${fmtUsd(observable)}</div>
-        <div class="sub">${rollup.observable_giving_method ? 'lifetime, sourced and verified' : ''}</div>
+        <div class="sub">${tier === 'C_OPAQUE' ? 'mostly self-reported (see below)' : (rollup.observable_giving_method ? 'lifetime, sourced and verified' : '')}</div>
       </div>
       <div class="summary-cell">
         <div class="label">Dollars not given</div>
@@ -374,6 +374,29 @@ function render(rec) {
       </div>
     </div>
   `;
+
+  // Tier C explainer: spell out, in this subject's specific terms, why the
+  // headline figure is "claimed but unverified."
+  if (tier === 'C_OPAQUE') {
+    const v = vehicles || {};
+    const llcNames = (v.llcs_philanthropic || []).map(l => l.name).filter(Boolean);
+    const hybridNames = (v.for_profit_hybrid_vehicles || []).map(h => h.name).filter(Boolean);
+    const opaqueVehicles = [...llcNames, ...hybridNames];
+    const dafActive = !!v.dafs_detected;
+    const subjectName = (p.name_display || 'This person').split(' ')[0] === 'The'
+      ? (p.name_display || 'This person')
+      : (p.name_display || 'This person');
+    const vehiclePhrase = opaqueVehicles.length === 1 ? opaqueVehicles[0]
+      : opaqueVehicles.length === 2 ? `${opaqueVehicles[0]} and ${opaqueVehicles[1]}`
+      : opaqueVehicles.length > 2 ? `${opaqueVehicles.slice(0, -1).join(', ')}, and ${opaqueVehicles.slice(-1)[0]}`
+      : 'a private vehicle';
+    const dafLine = dafActive ? ' We can also see disclosed transfers into a donor-advised fund (DAF), but DAFs don\'t disclose what flows out the other side.' : '';
+    html += `<div class="callout">
+      <strong>What "claimed but unverified" means here</strong>
+      <p>Most of ${esc(subjectName)}'s giving runs through ${esc(vehiclePhrase)}${opaqueVehicles.length ? ', a private structure that doesn\'t file public tax returns the way a foundation does.' : '.'} The <strong>${fmtUsd(observable)}</strong> figure above is reconstructed from a mix of sources: any private foundation 990s, announced gifts, and amounts the LLC has self-reported. We can't independently confirm it against IRS filings the way we can for a foundation-only giver.${dafLine}</p>
+      <p>So the figure is best read as <em>at minimum</em> what they've given. The real number could be higher (more hidden giving) or lower (some self-reported "philanthropy" turns out to be for-profit investment). The bucket says we can't tell.</p>
+    </div>`;
+  }
 
   // Confidence-interval bar — Observable | Hidden upper | Capacity
   const hiddenUpperObj = (rollup.hidden_upper_usd || {});
@@ -763,10 +786,10 @@ function wireCibarHover() {
         ? comps.map(c => `<li><span class="rcpt">${esc(c.label)}</span><span class="rcpt-amt">${fmtUsd(c.amount)}</span></li>`).join('')
         : `<li><span class="rcpt">No itemized components on this subject</span><span class="rcpt-amt">—</span></li>`;
       return `
-        <div class="tt-row1"><span class="tt-year">Possible secret giving</span><span class="tt-kind k-xfer">unverifiable</span></div>
+        <div class="tt-row1"><span class="tt-year">Could be hidden in private accounts</span><span class="tt-kind k-xfer">upper bound</span></div>
         <div class="tt-total">${fmtUsd(d.amount)}</div>
         <ul class="tt-list">${compRows}</ul>
-        <div class="tt-more">Each component is a hand-estimated upper bound for one channel of opaque giving. Methodology in the source record's <code>hidden_upper_usd</code>; we sum them.</div>`;
+        <div class="tt-more">The most this person could plausibly be giving in places we can't see (DAFs, LLCs, etc.). It's a ceiling, not a measurement; actual hidden giving could be anywhere from $0 to this total.</div>`;
     }
     if (zone === 'cap') {
       const d = payload.cap;
