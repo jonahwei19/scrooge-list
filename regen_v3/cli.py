@@ -288,6 +288,20 @@ def run_one(
         f"{len(diff['skipped_unknown_role'])} unknown"
     )
 
+    # 5a. Multi-source corroboration: high-stakes events ($5M+) cited by
+    #     only one source domain get confidence demoted to 'low' and a
+    #     _corroboration flag. Structured sources (ProPublica/SEC/FEC/leaks)
+    #     are exempt — they're institutional-grade signals.
+    try:
+        merge_mod.annotate_corroboration(new_record)
+        flagged = (new_record.get("rollup") or {}).get(
+            "corroboration_single_source_high_stakes_count"
+        )
+        if flagged:
+            print(f"  corroborate: {flagged} high-stakes events flagged single_source")
+    except Exception as e:
+        print(f"    [corroborate-skip] {type(e).__name__}: {e}")
+
     # 5b. Two-sided recipient cross-check: stamp recipient_verified /
     #     _filing_url / _verification_note onto every direct_gift /
     #     corporate_gift / grant_out event whose recipient + year are

@@ -218,6 +218,22 @@ def _publisher_for(url: str) -> str:
         return ""
 
 
+def _add_corroborating_url(kept: dict, candidate_url: str | None) -> None:
+    """Record the dedup-skipped candidate's URL on the kept event so the
+    multi-source corroboration check in `annotate_corroboration` can see
+    it. Without this, every event looks single-sourced — dedup keeps the
+    highest-confidence candidate's URL and discards the rest, even when
+    they're independent confirmations from different domains."""
+    if not isinstance(candidate_url, str) or not candidate_url:
+        return
+    kept_url = kept.get("source_url")
+    if candidate_url == kept_url:
+        return
+    bag = kept.setdefault("_corroborating_urls", [])
+    if candidate_url not in bag:
+        bag.append(candidate_url)
+
+
 def _stamp_provenance(entry: dict, *, run_id: str, extractor_model: str) -> dict:
     """Add the regen_v3 provenance fields to a fresh candidate dict."""
     entry["provenance"] = "regen_v3"
@@ -395,6 +411,9 @@ def merge_candidates(
         if collision is not None:
             idx, existing_entry, list_name = collision
             if _is_protected(existing_entry):
+                # Manual entry wins, but still record the regen URL as
+                # corroboration so the source diversity is visible.
+                _add_corroborating_url(existing_entry, url)
                 diff_report["skipped_duplicate"].append({
                     "why": f"manual/unprovenanced entry wins on key {key}",
                     "candidate": cand,
@@ -411,11 +430,18 @@ def merge_candidates(
                     run_id=run_id,
                     extractor_model=extractor_model,
                 )
+                # Carry over the displaced event's URL + any prior
+                # corroborating URLs so the dedup'd evidence isn't lost.
+                _add_corroborating_url(replacement, existing_entry.get("source_url"))
+                for u in (existing_entry.get("_corroborating_urls") or []):
+                    _add_corroborating_url(replacement, u)
                 new_record[list_name][idx] = replacement
                 # Refresh index entry for this key with the new dict.
                 existing_index[key] = [(idx, replacement, list_name)]
                 # Don't increment add counters — this is a swap, not an add.
                 continue
+            # Existing wins; record the candidate URL as a corroborator.
+            _add_corroborating_url(existing_entry, url)
             diff_report["skipped_duplicate"].append({
                 "why": (
                     f"regen_v3 entry already at key {key} with confidence "
@@ -445,10 +471,16 @@ def merge_candidates(
                     # doesn't drift when we swap a same-run candidate.
                     reuse_event_id=prior_entry.get("event_id"),
                 )
+                # Preserve the displaced candidate's URL + any prior corroborators.
+                _add_corroborating_url(replacement, prior_entry.get("source_url"))
+                for u in (prior_entry.get("_corroborating_urls") or []):
+                    _add_corroborating_url(replacement, u)
                 new_record[prior_list][prior_idx] = replacement
                 accepted_by_key[key] = (prior_idx, replacement, prior_list)
                 existing_index[key] = [(prior_idx, replacement, prior_list)]
             else:
+                # Prior wins; record the candidate URL on the prior entry.
+                _add_corroborating_url(prior_entry, url)
                 diff_report["skipped_duplicate"].append({
                     "why": f"another candidate already accepted at key {key}",
                     "candidate": cand,
@@ -526,6 +558,118 @@ def merge_candidates(
         new_record["generated_by"] = f"regen_v3@{run_id}"
 
     return new_record, diff_report
+
+
+# ---------------------------------------------------------------------------
+# Multi-source corroboration
+# ---------------------------------------------------------------------------
+
+# Sources we trust without external corroboration. ProPublica is IRS-filed
+# 990 data; SEC is XBRL Form 4; FEC is donor-record API; ICIJ is the leak
+# DB; state_charities is registrant filings. None require press
+# corroboration to be believed.
+_TRUSTED_REGEN_SOURCES = frozenset({
+    "propublica", "sec", "dafs", "llcs", "fec", "leaks",
+    "state_charities", "candid",
+})
+
+# Threshold above which a single-source claim becomes a release-blocking
+# audit signal. Below this, single-source events stay in the record but
+# don't flip confidence — too noisy.
+CORROBORATION_AMOUNT_FLOOR_USD = 5_000_000
+
+
+def annotate_corroboration(record: dict) -> dict:
+    """Mutate `record` in place: for high-stakes cited_events ($5M+) cited
+    by only ONE source domain, set confidence='low' and add a
+    `_corroboration` flag so QA / aggregator can see them.
+
+    Trust-level structured sources (ProPublica 990-PFs, SEC Form 4, FEC,
+    ICIJ leaks, etc.) are exempt — they're institutional-grade signals
+    that don't need press corroboration.
+
+    Returns the same record (mutated). Intended to run after merge_candidates
+    and before validate_v3.
+
+    Diff report: counts of events flagged.
+    """
+    events = record.get("cited_events") or []
+    if not isinstance(events, list):
+        return record
+
+    # Group LLM-extracted events by (year, recipient_norm, amount_bucket).
+    # Structured-source events join their group too — they count toward
+    # "distinct domain" so a press event corroborated by a 990-PF is
+    # still well-supported.
+    groups: dict[tuple, list[dict]] = {}
+    for ev in events:
+        if not isinstance(ev, dict):
+            continue
+        amt = ev.get("amount_usd")
+        if not isinstance(amt, (int, float)) or amt < CORROBORATION_AMOUNT_FLOOR_USD:
+            continue
+        key = (
+            ev.get("year") if isinstance(ev.get("year"), int) else None,
+            _normalize_recipient(ev.get("recipient")),
+            _amount_bucket(amt),
+        )
+        groups.setdefault(key, []).append(ev)
+
+    flagged = 0
+    for key, group_events in groups.items():
+        # Count distinct source domains across the group + structured-source
+        # corroboration flag.
+        domains: set[str] = set()
+        has_structured = False
+        for ev in group_events:
+            url = ev.get("source_url")
+            if isinstance(url, str) and url:
+                d = _publisher_for(url)
+                if d:
+                    domains.add(d)
+            # Dedup-skipped duplicates whose URLs the merger preserved as
+            # corroborators on the kept event.
+            for u in (ev.get("_corroborating_urls") or []):
+                if isinstance(u, str) and u:
+                    d2 = _publisher_for(u)
+                    if d2:
+                        domains.add(d2)
+            # Other URLs the merger collated.
+            for src in (ev.get("sources") or []):
+                if isinstance(src, dict):
+                    u = src.get("url") or src.get("source_url")
+                    if isinstance(u, str) and u:
+                        d3 = _publisher_for(u)
+                        if d3:
+                            domains.add(d3)
+            if ev.get("regen_source") in _TRUSTED_REGEN_SOURCES:
+                has_structured = True
+
+        if has_structured or len(domains) >= 2:
+            # Well-corroborated: explicit positive flag for downstream
+            # consumers that want to up-rank these.
+            for ev in group_events:
+                if ev.get("regen_source") in _TRUSTED_REGEN_SOURCES:
+                    continue
+                ev["_corroboration"] = "multi_source" if len(domains) >= 2 else "structured_source"
+                ev["_corroboration_domains"] = sorted(domains)
+            continue
+
+        # Single-source high-stakes event — demote confidence + flag.
+        for ev in group_events:
+            ev["_corroboration"] = "single_source"
+            ev["_corroboration_domains"] = sorted(domains)
+            # Only demote confidence if not already low; never upgrade.
+            if ev.get("confidence") in ("high", "medium", None):
+                ev["_confidence_pre_corroboration"] = ev.get("confidence")
+                ev["confidence"] = "low"
+            flagged += 1
+
+    if flagged:
+        rollup = record.setdefault("rollup", {})
+        rollup["corroboration_single_source_high_stakes_count"] = flagged
+
+    return record
 
 
 def _build_event_from_candidate(
