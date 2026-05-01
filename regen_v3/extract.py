@@ -29,6 +29,14 @@ MODEL = "claude-haiku-4-5"
 MAX_TOKENS = 2048
 TEMPERATURE = 0.0
 
+# Per-process cost cap. Counts only LIVE LLM calls (cache hits free).
+# Default 10,000 = ~$45 at $0.0045/call (claude-haiku-4-5 with our snippet
+# size). Override via env. Once exceeded, extract_events() returns [] for
+# all uncached URLs and prints a one-line skip notice.
+_MAX_EXTRACT_CALLS = int(os.environ.get("MAX_EXTRACT_CALLS", "10000"))
+_live_call_count = 0
+_cap_warned = False
+
 ALLOWED_SOURCE_TYPES = {
     "press_release",
     "news_article",
@@ -426,7 +434,21 @@ def extract_events(
         if cached is not None:
             return cached.get("events", [])
 
+    # Cost cap: bail before making the LLM call if the per-process budget
+    # is exhausted. Counts only LIVE calls; cache hits are free above.
+    global _live_call_count, _cap_warned
+    if _live_call_count >= _MAX_EXTRACT_CALLS:
+        if not _cap_warned:
+            logger.warning(
+                "MAX_EXTRACT_CALLS=%d reached; remaining LLM extracts will be "
+                "skipped (returns []). Override via env var.",
+                _MAX_EXTRACT_CALLS,
+            )
+            _cap_warned = True
+        return []
+
     try:
+        _live_call_count += 1
         raw_events = _call_anthropic(
             subject_name=subject_name,
             role_hint=role_hint,
