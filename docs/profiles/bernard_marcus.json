@@ -250,7 +250,7 @@
       "amount_usd": 32000000,
       "source_type": "press_release",
       "source_url": "https://baptisthealth.net/newsroom/press-release/bernie-and-billi-marcus-commit-a-$32-million-grant-to-boca-raton-regional-hospital",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "Title indicates Bernie and Billi Marcus committed a $32 million grant to Boca Raton Regional Hospital.",
       "extraction_evidence": "Bernie and Billi Marcus Commit a $32 Million Grant to Boca Raton Regional Hospital",
       "regen_query": "Bernard Marcus pledge commitment 2021 2022 2023 2024 announced",
@@ -261,6 +261,11 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "baptisthealth.net"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "grant_out"
     },
     {
@@ -273,7 +278,7 @@
       "amount_usd": 250000000,
       "source_type": "news_article",
       "source_url": "https://ejewishphilanthropy.com/he-didnt-do-anything-small-remembering-bernard-marcus-larger-than-life-businessman-and-philanthropist/",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "Bernard Marcus donated $250 million to create the Georgia Aquarium, the largest aquarium in the United States.",
       "extraction_evidence": "he donated $250 million to create the Georgia Aquarium, the largest aquarium in the United States",
       "regen_query": "\"Bernard Marcus\" donates million",
@@ -284,6 +289,11 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "ejewishphilanthropy.com"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -296,7 +306,7 @@
       "amount_usd": 25000000,
       "source_type": "wikipedia",
       "source_url": "https://en.wikipedia.org/wiki/Bernard_Marcus",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "Bernard Marcus founded and donated $25 million to Autism Speaks for autism research.",
       "extraction_evidence": "Marcus founded and donated $25 million to Autism Speaks to spearhead its efforts to raise money for research",
       "regen_query": "\"Bernard Marcus\" donates million",
@@ -307,6 +317,11 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "en.wikipedia.org"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -330,6 +345,10 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroborating_urls": [
+        "https://www.geni.com/people/Bernard-Marcus/6000000007993357412",
+        "https://www.jewage.org/wiki/en/Article:Bernard_Marcus_-_Biography"
+      ],
       "event_role_canonical": "direct_gift"
     },
     {
@@ -342,7 +361,7 @@
       "amount_usd": 7000000,
       "source_type": "news_article",
       "source_url": "https://fortune.com/2024/11/05/bernard-marcus-home-depot-republican-mega-donor-billionaire-trump-supporter-dies/",
-      "confidence": "medium",
+      "confidence": "low",
       "extraction_note": "Bernard Marcus and his wife Billi donated $7 million, though the recipient is cut off in the snippet.",
       "extraction_evidence": "He and his wife, Billi, donated $7 million to ...",
       "regen_query": "\"Bernard Marcus\" donates million",
@@ -353,6 +372,11 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "fortune.com"
+      ],
+      "_confidence_pre_corroboration": "medium",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -373,6 +397,10 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://njjewishnews.timesofisrael.com/bernie-marcus-1929-2024/",
+        "https://www.jta.org/2024/11/05/obituaries/bernie-marcus-home-depot-founder-who-gave-to-republicans-and-israel-dies-at-95"
+      ],
       "event_role_canonical": "political"
     },
     {
@@ -396,6 +424,18 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroborating_urls": [
+        "https://lifestylesmagazine.com/latest-news/13-2-million-gift-from-bernie-and-billi-marcus-to-support-a-clinical-trial-at-yale-that-could-mark-a-first-step-toward-a-preventive-treatment-for-parkinsons-disease/",
+        "https://parkinsonsnewstoday.com/news/yale-trial-may-mark-1st-step-preventive-treatment-parkinsons/",
+        "https://philanthropynewsdigest.org/news/yale-school-of-medicine-receives-13.2-million-from-marcus-foundation"
+      ],
+      "_corroboration": "multi_source",
+      "_corroboration_domains": [
+        "lifestylesmagazine.com",
+        "medicine.yale.edu",
+        "parkinsonsnewstoday.com",
+        "philanthropynewsdigest.org"
+      ],
       "event_role_canonical": "grant_out"
     },
     {
@@ -416,6 +456,14 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://militarist-monitor.org/profile/bernard-marcus/"
+      ],
+      "_corroboration": "multi_source",
+      "_corroboration_domains": [
+        "militarist-monitor.org",
+        "publicintegrity.org"
+      ],
       "event_role_canonical": "political"
     },
     {
@@ -479,6 +527,18 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroborating_urls": [
+        "https://news.cuanschutz.edu/news-stories/landmark-gift-makes-cu-anschutz-national-leader-veterans-health-care",
+        "https://www.cu.edu/cu-advocates/news/38-million-gift-launches-marcus-institute-brain-health-cu-anschutz",
+        "https://www.uchealth.org/today/new-cu-institute-helps-veterans-retired-athletes-overcome-brain-injuries/"
+      ],
+      "_corroboration": "multi_source",
+      "_corroboration_domains": [
+        "cu.edu",
+        "news.cuanschutz.edu",
+        "philanthropynewsdigest.org",
+        "uchealth.org"
+      ],
       "event_role_canonical": "direct_gift"
     },
     {
@@ -522,6 +582,16 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroborating_urls": [
+        "https://www.forbes.com/profile/bernard-marcus/",
+        "https://www.healthcarefinancenews.com/news/piedmont-healthcare-awarded-75-million-marcus-foundation-establish-vascular-center"
+      ],
+      "_corroboration": "multi_source",
+      "_corroboration_domains": [
+        "atlantajewishtimes.com",
+        "forbes.com",
+        "healthcarefinancenews.com"
+      ],
       "event_role_canonical": "direct_gift"
     },
     {
@@ -557,7 +627,7 @@
       "amount_usd": 20000000,
       "source_type": "news_article",
       "source_url": "https://www.beckershospitalreview.com/capital/19-largest-gifts-from-individuals-to-hospitals-healthcare-organizations-in-2021/",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "Bernard Marcus donated $20 million to Gary Sinise Foundation in 2021.",
       "extraction_evidence": "$20 million to Gary Sinise Foundation (Los Angeles) Donor: Bernard Marcus",
       "regen_query": "Bernard Marcus healthcare hospital donation medical research",
@@ -568,6 +638,11 @@
       "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/800587086",
       "recipient_verification_note": "recipient Gary Sinise Foundation (EIN 800587086) FY2021 990 reports $58.1M in contributions/revenue \u2265 event $20.0M \u2014 envelope fits but does NOT confirm a specific donor-side match.",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "beckershospitalreview.com"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -580,7 +655,7 @@
       "amount_usd": 7000000,
       "source_type": "news_article",
       "source_url": "https://www.businessinsider.com/home-depot-bernie-marcus-donate-fortune-trump-2019-7",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "Bernard Marcus gave $7 million to Trump's campaign through outside groups in 2016.",
       "extraction_evidence": "Marcus was one of Trump's largest donors in 2016, giving $7 million to Trump's campaign through outside groups",
       "regen_query": "\"Bernard Marcus\" gift OR donation million",
@@ -588,6 +663,11 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "businessinsider.com"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "political"
     },
     {
@@ -631,6 +711,18 @@
       "recipient_verified": "envelope_fit",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/580566213",
       "recipient_verification_note": "recipient Piedmont Healthcare Inc (EIN 580566213) FY2012 990 reports $756.1M in contributions/revenue \u2265 event $20.0M \u2014 envelope fits but does NOT confirm a specific donor-side match.",
+      "_corroborating_urls": [
+        "https://philanthropynewsdigest.org/news/marcus-foundation-awards-75-million-to-piedmont-healthcare",
+        "https://www.healthcarefinancenews.com/news/piedmont-healthcare-awarded-75-million-marcus-foundation-establish-vascular-center",
+        "https://www.prnewswire.com/news-releases/marcus-foundation-makes-75-million-commitment-to-piedmonts-future-300238316.html"
+      ],
+      "_corroboration": "multi_source",
+      "_corroboration_domains": [
+        "celebritynetworth.com",
+        "healthcarefinancenews.com",
+        "philanthropynewsdigest.org",
+        "prnewswire.com"
+      ],
       "event_role_canonical": "direct_gift"
     },
     {
@@ -706,7 +798,7 @@
       "amount_usd": 250000000,
       "source_type": "news_article",
       "source_url": "https://www.forbes.com/sites/lisettevoytko/2019/07/01/billionaire-bernie-marcus-promises-fortune-to-charity-and-some-to-trump/",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "Bernie Marcus donated $250 million to the Georgia Aquarium.",
       "extraction_evidence": "Bernie Marcus donated $250 million to the Georgia Aquarium",
       "regen_query": "\"Bernard Marcus\" gift OR donation million",
@@ -717,6 +809,11 @@
       "recipient_verified": "false",
       "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/582574918",
       "recipient_verification_note": "recipient Georgia Aquarium Inc (EIN 582574918) FY2019 990 reports only $102.5M in contributions/revenue; event claims $250.0M (gap $147.5M)",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "forbes.com"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -740,6 +837,14 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "no IRS filing found for recipient 'Atlanta Hospital'",
+      "_corroborating_urls": [
+        "https://www.mdjonline.com/neighbor_newspapers/northside_sandy_springs/marcus-donates-75m-to-piedmont-healthcare-for-center/article_0ce42678-f048-11e5-824f-13bbc26f4adb.html"
+      ],
+      "_corroboration": "multi_source",
+      "_corroboration_domains": [
+        "forbes.com",
+        "mdjonline.com"
+      ],
       "event_role_canonical": "direct_gift"
     },
     {
@@ -775,7 +880,7 @@
       "amount_usd": 25000000,
       "source_type": "other",
       "source_url": "https://www.marcus.org/news/the-marcus-foundation",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "The Marcus Foundation awarded a $25 million grant to Marcus Autism Center for autism research and Feeding Program expansion.",
       "extraction_evidence": "Marcus Autism Center received a $25 million grant from The Marcus Foundation to support autism research and the expansion of its Feeding Program.",
       "regen_query": "\"Marcus Foundation\" grants",
@@ -786,6 +891,11 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "marcus.org"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "grant_out"
     },
     {
@@ -798,7 +908,7 @@
       "amount_usd": 172000000,
       "source_type": "news_article",
       "source_url": "https://www.philanthropy.com/article/billionaire-bernie-marcus-to-rich-people-get-off-your-rear-ends-and-do-something-good",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "The Marcus Foundation gave out nearly $172 million in 2021, the most recent year for which data was available.",
       "extraction_evidence": "The foundation gave out nearly $172 million in 2021, the most recent year for which a tax",
       "regen_query": "\"Bernard Marcus\" gift OR donation million",
@@ -809,6 +919,11 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "philanthropy.com"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "grant_out"
     },
     {
@@ -821,7 +936,7 @@
       "amount_usd": 14000000,
       "source_type": "news_article",
       "source_url": "https://www.yahoo.com/news/bernie-marcus-home-depot-co-160508369.html",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "Bernard Marcus gave $14 million to Birthright Israel during an unspecified period.",
       "extraction_evidence": "he also gave some $14 million to Birthright Israel",
       "regen_query": "Bernard Marcus Jewish philanthropy Israel donations Birthright",
@@ -832,6 +947,11 @@
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "yahoo.com"
+      ],
+      "_confidence_pre_corroboration": "high",
       "event_role_canonical": "direct_gift"
     },
     {
@@ -844,7 +964,7 @@
       "amount_usd": 10000000,
       "source_type": "news_article",
       "source_url": "https://www.yahoo.com/news/bernie-marcus-home-depot-co-160508369.html",
-      "confidence": "high",
+      "confidence": "low",
       "extraction_note": "Bernard Marcus gave nearly $10 million to ImpactIsrael, which supports Yemin Orde.",
       "extraction_evidence": "nearly $10 million to ImpactIsrael, which supports Yemin Orde",
       "regen_query": "Bernard Marcus Jewish philanthropy Israel donations Birthright",
@@ -852,6 +972,268 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "yahoo.com"
+      ],
+      "_confidence_pre_corroboration": "high",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2005,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "Aquarium",
+      "amount_usd": 250000000,
+      "source_type": "other",
+      "source_url": "https://alchetron.com/Bernard-Marcus",
+      "confidence": "high",
+      "extraction_note": "Bernard Marcus made a US$250M donation for the Aquarium, which was cited by The Chronicle of Philanthropy in 2005.",
+      "extraction_evidence": "Based mostly on the US$250M million donation for the Aquarium, Marcus and his wife, Billi, were listed among the top charitable donors in the country by The Chronicle of Philanthropy in 2005.",
+      "regen_query": "\"Bernard Marcus\" \"Marcus Institute\" developmental disabilities children adolescents founded",
+      "event_id": "bernard_marcus_direct_gift_2005_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://ballotpedia.org/Bernard_Marcus"
+      ],
+      "_corroboration": "multi_source",
+      "_corroboration_domains": [
+        "alchetron.com",
+        "ballotpedia.org"
+      ],
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Aquarium'",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2003,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Bernard Marcus",
+      "recipient": "Centers for Disease Control",
+      "amount_usd": 2000000,
+      "source_type": "other",
+      "source_url": "https://ballotpedia.org/Bernard_Marcus",
+      "confidence": "high",
+      "extraction_note": "In 2003, Marcus and his foundation donated over $2 million to the Centers for Disease Control to establish an emergency operations facility.",
+      "extraction_evidence": "In 2003, Marcus and his foundation donated over $2 million to the Centers for Disease Control",
+      "regen_query": "\"Bernard Marcus\" donates million",
+      "event_id": "bernard_marcus_direct_gift_2003_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Centers for Disease Control'",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "United Democracy Project",
+      "amount_usd": 3000000,
+      "source_type": "other",
+      "source_url": "https://factually.co/fact-checks/politics/united-democracy-project-top-donors-2024-amounts-c72c8d",
+      "confidence": "high",
+      "extraction_note": "Bernard Marcus, Home Depot co-founder, donated $3 million to United Democracy Project in the 2024 cycle.",
+      "extraction_evidence": "Home Depot co\u2011founder Bernard Marcus ($3 million",
+      "regen_query": "\"Bernard Marcus\" \"United Democracy Project\" AIPAC July 2024 $1 million",
+      "event_id": "bernard_marcus_political_2024_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "The Marcus Foundation",
+      "recipient": "Baylor College of Medicine",
+      "amount_usd": 14400000,
+      "source_type": "other",
+      "source_url": "https://grantable.co/funders/the-marcus-foundation-inc-morg_398ec8fb0e80419c96da051a9a27b9ef",
+      "confidence": "high",
+      "extraction_note": "The Marcus Foundation awarded $14.4 million to Baylor College of Medicine's Center for Aortic Surgery to establish the Marcus VITAL Laboratory.",
+      "extraction_evidence": "$14.4 million to Baylor College of Medicine's Center for Aortic Surgery to establish the Marcus VITAL Laboratory",
+      "regen_query": "\"The Marcus Foundation\" 990-PF",
+      "event_id": "bernard_marcus_grant_out_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://www.bestinscience.com/nanotechnology/news/407-marcus-nanotechnology-building-formally-dedicated",
+        "https://www.nanotech-now.com/news.cgi?story_id=33043"
+      ],
+      "_corroboration": "multi_source",
+      "_corroboration_domains": [
+        "bestinscience.com",
+        "grantable.co",
+        "nanotech-now.com"
+      ],
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "Yale School of Medicine",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://medicine.yale.edu/profile/jesse-cedarbaum/",
+      "confidence": "low",
+      "extraction_note": "The snippet title references 'Yale School of Medicine Receives Grant From The Marcus Foundation to Treat Parkinson's Disease' but the snippet text itself contains only technical terminology about Parkinson's disease assessments with no explicit grant details, amount, or date.",
+      "extraction_evidence": "Yale School of Medicine Receives Grant From The Marcus Foundation to Treat Parkinson's Disease",
+      "regen_query": "\"Marcus Foundation\" \"Yale School of Medicine\" Parkinson's disease clinical trial $13.2 million",
+      "event_id": "bernard_marcus_grant_out_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2011,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "The Marcus Institute",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://web.archive.org/web/20110817022331/http:/www.worldretailcongress.com/hall-of-fame-member-detail.cfm?id=174",
+      "confidence": "medium",
+      "extraction_note": "Bernard Marcus funded and founded The Marcus Institute, a centre for children and adolescents with developmental disabilities.",
+      "extraction_evidence": "Marcus almost single-handedly funded ... funded and founded The Marcus Institute",
+      "regen_query": "\"Bernard Marcus\" \"Marcus Institute\" developmental disabilities children adolescents founded",
+      "event_id": "bernard_marcus_direct_gift_2011_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'The Marcus Institute'",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "pro-Israel political action committee",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.jns.org/campaign-spending-at-pro-israel-political-action-committees-up-in-2024/",
+      "confidence": "medium",
+      "extraction_note": "Bernard Marcus made a seven-figure donation to a pro-Israel super PAC in 2024, though the exact amount and specific recipient PAC are not named.",
+      "extraction_evidence": "the late Home Depot co-founder Bernard Marcus and hedge fund manager Paul Singer, the seventh-biggest donor to outside groups in 2024",
+      "regen_query": "\"Bernard Marcus\" \"United Democracy Project\" AIPAC July 2024 $1 million",
+      "event_id": "bernard_marcus_political_2024_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "grant_out",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "RootOne",
+      "amount_usd": 20000000,
+      "source_type": "news_article",
+      "source_url": "https://www.philanthropy.com/article/billionaire-bernie-marcus-gives-20-million-for-new-effort-for-jewish-teens-gifts-roundup",
+      "confidence": "low",
+      "extraction_note": "Bernard Marcus gave $20 million through his Marcus Foundation to establish RootOne, a new program for Jewish teens seeking connection to Israel and their Jewish identity.",
+      "extraction_evidence": "Billionaire Bernie Marcus gave $20 million through his Marcus Foundation to establish RootOne",
+      "regen_query": "site:philanthropy.com OR site:insidephilanthropy.com \"Bernard Marcus\" foundation giving strategy",
+      "event_id": "bernard_marcus_grant_out_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "philanthropy.com"
+      ],
+      "_confidence_pre_corroboration": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Marcus Foundation",
+      "recipient": "Marcus Heart Valve Center",
+      "amount_usd": 20000000,
+      "source_type": "other",
+      "source_url": "https://www.slideshare.net/slideshow/piedmontar13final/61592237",
+      "confidence": "low",
+      "extraction_note": "The Marcus Foundation made a $20 million gift to establish the Marcus Heart Valve Center.",
+      "extraction_evidence": "$20 million gift from the Marcus Foundation",
+      "regen_query": "\"Marcus Foundation\" \"Piedmont Healthcare\" \"Marcus Heart Valve Center\" 2012 gift",
+      "event_id": "bernard_marcus_direct_gift_x_regen8",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "slideshare.net"
+      ],
+      "_confidence_pre_corroboration": "high",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "Georgia Aquarium",
+      "amount_usd": 290000000,
+      "source_type": "other",
+      "source_url": "https://www.yumpu.com/en/document/view/4429264/georgia-aquarium-staff-bios",
+      "confidence": "low",
+      "extraction_note": "Bernard Marcus donated $290 million to create the Georgia Aquarium, dedicated to the people of Georgia and Home Depot stakeholders.",
+      "extraction_evidence": "$290 million dollar attraction is dedicated to the people of Georgia and the associates, customers and shareholders of The Home Depot",
+      "regen_query": "\"Bernard Marcus\" \"Marcus Foundation\" 2001 2002 2003 aquarium announcement Atlanta",
+      "event_id": "bernard_marcus_direct_gift_x_regen9",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "_corroboration": "single_source",
+      "_corroboration_domains": [
+        "yumpu.com"
+      ],
+      "_confidence_pre_corroboration": "high",
       "recipient_verified": "unverifiable",
       "recipient_filing_url": "",
       "recipient_verification_note": "missing recipient name or year",
@@ -877,6 +1259,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://kids.kiddle.co/Bernard_Marcus"
+      ],
       "event_role_canonical": "pledge"
     },
     {
@@ -937,6 +1322,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://www.govinfo.gov/content/pkg/CRECB-2001-pt17/html/CRECB-2001-pt17-Pg23782.htm"
+      ],
       "event_role_canonical": "announcement"
     },
     {
@@ -977,6 +1365,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://www.cdcfoundation.org/pr/2002/six-months-after-anthrax-marcus-foundation-commits-39-million-cdc-emergency-response-center"
+      ],
       "event_role_canonical": "pledge"
     },
     {
@@ -997,6 +1388,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://www.timesofisrael.com/bernie-marcus-home-depot-cofounder-who-gave-to-republicans-and-israel-dies-at-95/"
+      ],
       "event_role_canonical": "pledge"
     },
     {
@@ -1017,6 +1411,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://www.ntd.com/billionaire-pledges-to-support-president-trumps-2020-reelection-campaign_350419.html"
+      ],
       "event_role_canonical": "pledge"
     },
     {
@@ -1037,6 +1434,9 @@
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
       "regen_extractor_model": "claude-haiku-4-5",
+      "_corroborating_urls": [
+        "https://www.forbes.com/sites/kerryadolan/2024/11/05/billionaire-home-depot-cofounder-bernard-marcus-dies-at-age-95/"
+      ],
       "event_role_canonical": "pledge"
     },
     {
@@ -1056,6 +1456,66 @@
       "event_id": "bernard_marcus_pledge_2020_regen2",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 1989,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "The Giving Pledge",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://fconline.foundationcenter.org/fdo-grantmaker-profile/?key=MARC047",
+      "confidence": "high",
+      "extraction_note": "Bernard Marcus pledged to give away at least half of his wealth to philanthropy through The Giving Pledge.",
+      "extraction_evidence": "Bernard and Billi Marcus have committed to The Giving Pledge, and have pledged to give away at least half of their wealth to philanthropy",
+      "regen_query": "\"Bernard Marcus\" \"giving pledge\" 2010",
+      "event_id": "bernard_marcus_pledge_1989_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2005,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Bernie Marcus",
+      "recipient": "Georgia Aquarium",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.ajc.com/news/billionaire-business-leader-philanthropist-had-major-impact-on-atlanta/2DDWR6S7G5H2LLRSYMDO7WOBV4/",
+      "confidence": "high",
+      "extraction_note": "Bernie Marcus announced at a 2005 news conference that the Georgia Aquarium, which he benefactored, would open as the largest in the world.",
+      "extraction_evidence": "Bernie Marcus, benefactor of the Georgia Aquarium, announces that the aquarium will open as the largest in the world",
+      "regen_query": "\"Bernard Marcus\" \"Marcus Foundation\" 2001 2002 2003 aquarium announcement Atlanta",
+      "event_id": "bernard_marcus_announcement_2005_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Bernard Marcus",
+      "recipient": "The Giving Pledge",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.fox5atlanta.com/news/bernard-marcus-cofounder-home-depot-dies",
+      "confidence": "high",
+      "extraction_note": "Bernard Marcus and his wife Billi joined The Giving Pledge, a commitment to give away most of their money during their lives.",
+      "extraction_evidence": "his wife Billi joined The Giving Pledge, a commitment led by billionaire Warren Buffett to give away most of their money during their lives",
+      "regen_query": "\"Bernard Marcus\" \"giving pledge\" 2010",
+      "event_id": "bernard_marcus_pledge_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22",
       "regen_extractor_model": "claude-haiku-4-5",
       "event_role_canonical": "pledge"
     }
@@ -1495,6 +1955,168 @@
       "url": "https://www.yahoo.com/news/bernie-marcus-home-depot-co-160508369.html",
       "provenance": "regen_v3",
       "regen_run_id": "sha256-97fdc7e5874d6557"
+    },
+    {
+      "publisher": "alchetron.com",
+      "url": "https://alchetron.com/Bernard-Marcus",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "factually.co",
+      "url": "https://factually.co/fact-checks/politics/united-democracy-project-top-donors-2024-amounts-c72c8d",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "grantable.co",
+      "url": "https://grantable.co/funders/the-marcus-foundation-inc-morg_398ec8fb0e80419c96da051a9a27b9ef",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "lifestylesmagazine.com",
+      "url": "https://lifestylesmagazine.com/latest-news/13-2-million-gift-from-bernie-and-billi-marcus-to-support-a-clinical-trial-at-yale-that-could-mark-a-first-step-toward-a-preventive-treatment-for-parkinsons-disease/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "medicine.yale.edu",
+      "url": "https://medicine.yale.edu/profile/jesse-cedarbaum/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "news.cuanschutz.edu",
+      "url": "https://news.cuanschutz.edu/news-stories/landmark-gift-makes-cu-anschutz-national-leader-veterans-health-care",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "parkinsonsnewstoday.com",
+      "url": "https://parkinsonsnewstoday.com/news/yale-trial-may-mark-1st-step-preventive-treatment-parkinsons/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/marcus-foundation-awards-75-million-to-piedmont-healthcare",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/yale-school-of-medicine-receives-13.2-million-from-marcus-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "web.archive.org",
+      "url": "https://web.archive.org/web/20110817022331/http:/www.worldretailcongress.com/hall-of-fame-member-detail.cfm?id=174",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "ajc.com",
+      "url": "https://www.ajc.com/news/billionaire-business-leader-philanthropist-had-major-impact-on-atlanta/2DDWR6S7G5H2LLRSYMDO7WOBV4/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "bestinscience.com",
+      "url": "https://www.bestinscience.com/nanotechnology/news/407-marcus-nanotechnology-building-formally-dedicated",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "cdcfoundation.org",
+      "url": "https://www.cdcfoundation.org/pr/2002/six-months-after-anthrax-marcus-foundation-commits-39-million-cdc-emergency-response-center",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "cu.edu",
+      "url": "https://www.cu.edu/cu-advocates/news/38-million-gift-launches-marcus-institute-brain-health-cu-anschutz",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "geni.com",
+      "url": "https://www.geni.com/people/Bernard-Marcus/6000000007993357412",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "govinfo.gov",
+      "url": "https://www.govinfo.gov/content/pkg/CRECB-2001-pt17/html/CRECB-2001-pt17-Pg23782.htm",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "healthcarefinancenews.com",
+      "url": "https://www.healthcarefinancenews.com/news/piedmont-healthcare-awarded-75-million-marcus-foundation-establish-vascular-center",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "jewage.org",
+      "url": "https://www.jewage.org/wiki/en/Article:Bernard_Marcus_-_Biography",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "jns.org",
+      "url": "https://www.jns.org/campaign-spending-at-pro-israel-political-action-committees-up-in-2024/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "jta.org",
+      "url": "https://www.jta.org/2024/11/05/obituaries/bernie-marcus-home-depot-founder-who-gave-to-republicans-and-israel-dies-at-95",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "mdjonline.com",
+      "url": "https://www.mdjonline.com/neighbor_newspapers/northside_sandy_springs/marcus-donates-75m-to-piedmont-healthcare-for-center/article_0ce42678-f048-11e5-824f-13bbc26f4adb.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "nanotech-now.com",
+      "url": "https://www.nanotech-now.com/news.cgi?story_id=33043",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/billionaire-bernie-marcus-gives-20-million-for-new-effort-for-jewish-teens-gifts-roundup",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/marcus-foundation-makes-75-million-commitment-to-piedmonts-future-300238316.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "slideshare.net",
+      "url": "https://www.slideshare.net/slideshow/piedmontar13final/61592237",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "uchealth.org",
+      "url": "https://www.uchealth.org/today/new-cu-institute-helps-veterans-retired-athletes-overcome-brain-injuries/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
+    },
+    {
+      "publisher": "yumpu.com",
+      "url": "https://www.yumpu.com/en/document/view/4429264/georgia-aquarium-staff-bios",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-edb870fe54b6ac22"
     }
   ],
   "rollup": {
@@ -1513,15 +2135,16 @@
       "religious_cohort_uplift_usd": 0,
       "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero uplift.",
       "trust_outcome_uncertainty_usd": 1000000000,
-      "trust_outcome_method": "Giving Pledge signed 2010; $9B net worth suggests potential 10-year charitable disbursement envelope of ~$1B as uncertainty bound on pledged charitable portion.",
+      "trust_outcome_method": "Giving Pledge signed 2010; Marcus Foundation active since 1989. Conservative uncertainty envelope: $1B reflects potential 10-year charitable trust disbursement uncertainty for $9B net worth pledger with established foundation vehicle.",
       "total_usd": 1405000000,
       "total_method": "anonymous + trust (daf/llc/offshore/religious zero)"
     },
     "tier_reasoning": "Marcus signed the Giving Pledge in 2010 and maintains an active foundation, but observable charitable giving figures are not yet available in the pipeline\u2014making a tier judgment premature. With ~$4 billion in estimated liquid wealth and three decades as a billionaire, the 5%-of-liquid-by-tenure benchmark would suggest cumulative giving in the $200 million range; the Marcus Foundation's grant history will determine whether he has met, exceeded, or fallen short of that norm. Until those figures surface, his tier remains pending.",
+    "corroboration_single_source_high_stakes_count": 14,
     "expected_5pct_tenure_usd": 6075000000,
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
-    "observable_from_events_usd": 548531150,
-    "unyear_dollars_excluded_usd": 482200000
+    "observable_from_events_usd": 800531150,
+    "unyear_dollars_excluded_usd": 826600000
   },
   "_source_file": "bernard_marcus.v3.json"
 }
