@@ -63,6 +63,11 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 ICIJ_DIR = HERE / "data" / "icij"
 ICIJ_DIR.mkdir(parents=True, exist_ok=True)
 
+try:
+    from regen_v3._atomic import atomic_write_json  # type: ignore
+except Exception:  # pragma: no cover - in-package fallback
+    from _atomic import atomic_write_json  # type: ignore
+
 DOWNLOAD_URL = "https://offshoreleaks-data.icij.org/offshoreleaks/csv/full-oldb.LATEST.zip"
 ZIP_PATH = ICIJ_DIR / "full-oldb.zip"
 OFFICERS_CSV = ICIJ_DIR / "nodes-officers.csv"
@@ -361,8 +366,11 @@ def _load_cache(name: str) -> list[dict] | None:
 
 
 def _save_cache(name: str, matches: list[dict]) -> None:
-    _cache_path(name).write_text(
-        json.dumps({"name": name, "matches": matches}, indent=2)
+    # Atomic write: parent/child or husband/wife pairs hashing to the
+    # same surname-anchored key can race on this cache.
+    atomic_write_json(
+        _cache_path(name),
+        {"name": name, "matches": matches},
     )
 
 

@@ -88,6 +88,11 @@ if str(ROOT) not in sys.path:
 
 from categories.foundations import normalize_ein  # noqa: E402
 
+try:
+    from regen_v3._atomic import atomic_write_json  # type: ignore
+except Exception:  # pragma: no cover - in-package fallback
+    from _atomic import atomic_write_json  # type: ignore
+
 # ---------------------------------------------------------------------------
 # HTTP
 # ---------------------------------------------------------------------------
@@ -139,7 +144,9 @@ def _load_cache(state: str, term: str) -> dict | None:
 
 
 def _save_cache(state: str, term: str, payload: dict) -> None:
-    _cache_path(state, term).write_text(json.dumps(payload, indent=2))
+    # Atomic write: cache key is sha(state|term); two subjects sharing
+    # a surname or org-prefix search term will race here.
+    atomic_write_json(_cache_path(state, term), payload)
 
 
 # ---------------------------------------------------------------------------

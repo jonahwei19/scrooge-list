@@ -40,6 +40,11 @@ from categories.securities import (  # noqa: E402
     parse_form4_for_gifts,
 )
 
+try:
+    from regen_v3._atomic import atomic_write_json  # type: ignore
+except Exception:  # pragma: no cover - in-package fallback
+    from _atomic import atomic_write_json  # type: ignore
+
 # Price lookup for Form 4 G-transactions (which report $0/share).
 # Self-contained: if yfinance / network are unavailable, value_gift()
 # returns None and we keep the legacy `reference_only` behavior.
@@ -70,7 +75,9 @@ def _load_cache(cik: str) -> list[dict] | None:
 
 
 def _save_cache(cik: str, gifts: list[dict]) -> None:
-    _cache_path(cik).write_text(json.dumps(gifts, indent=2))
+    # Atomic write: two subjects who share a CIK (co-founders, family
+    # members at the same issuer) can race on this cache.
+    atomic_write_json(_cache_path(cik), gifts)
 
 
 def _resolve_cik(record: dict) -> str | None:

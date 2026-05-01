@@ -33,6 +33,11 @@ CACHE_DIR.mkdir(parents=True, exist_ok=True)
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+try:
+    from regen_v3._atomic import atomic_write_json  # type: ignore
+except Exception:  # pragma: no cover - in-package fallback
+    from _atomic import atomic_write_json  # type: ignore
+
 # Default election cycles to query. Override per-call if needed.
 DEFAULT_CYCLES = (2024, 2022, 2020, 2018, 2016)
 
@@ -61,11 +66,17 @@ def _load_cache(name: str, cycles: tuple[int, ...]) -> list[dict] | None:
 
 
 def _save_cache(name: str, cycles: tuple[int, ...], contributions: list[dict]) -> None:
-    _cache_path(name, cycles).write_text(json.dumps({
-        "name": name,
-        "cycles": list(cycles),
-        "contributions": contributions,
-    }, indent=2))
+    # Atomic write: cache key is sha(name|cycles); two subjects with the
+    # same legal-name string (rare but possible — e.g. shared family
+    # display names) would collide here.
+    atomic_write_json(
+        _cache_path(name, cycles),
+        {
+            "name": name,
+            "cycles": list(cycles),
+            "contributions": contributions,
+        },
+    )
 
 
 def _names_to_search(record: dict) -> list[str]:

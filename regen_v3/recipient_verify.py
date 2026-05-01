@@ -35,6 +35,11 @@ from categories.foundations import (  # noqa: E402
     name_similarity, normalize_ein, search_propublica,
 )
 
+try:
+    from regen_v3._atomic import atomic_write_json  # type: ignore
+except Exception:  # pragma: no cover - in-package fallback
+    from _atomic import atomic_write_json  # type: ignore
+
 _GIFT_ROLES = {"direct_gift", "corporate_gift"}
 _FOUNDATION_TRANSFER_ROLES = {"grant_out"}
 _VERIFIABLE_ROLES = _GIFT_ROLES | _FOUNDATION_TRANSFER_ROLES
@@ -78,7 +83,10 @@ def _load(p: Path):
 
 
 def _save(p: Path, data) -> None:
-    p.write_text(json.dumps(data, indent=2))
+    # Atomic write: many subjects share recipient names (Harvard,
+    # Stanford, Red Cross) and EIN-by-name lookups, so the
+    # name_<sha>.json and <ein>_<year>.json caches both see contention.
+    atomic_write_json(p, data)
 
 
 # ---------------------------------------------------------------------------

@@ -36,6 +36,11 @@ from categories.foundations import (  # noqa: E402
     normalize_ein,
 )
 
+try:
+    from regen_v3._atomic import atomic_write_json  # type: ignore
+except Exception:  # pragma: no cover - in-package fallback
+    from _atomic import atomic_write_json  # type: ignore
+
 
 def _ein_digits(ein: str) -> str:
     return normalize_ein(ein).replace("-", "")
@@ -56,7 +61,9 @@ def _load_cache(ein: str) -> list[dict] | None:
 
 
 def _save_cache(ein: str, filings: list[dict]) -> None:
-    _cache_path(ein).write_text(json.dumps(filings, indent=2))
+    # Atomic write: two workers sharing an EIN (e.g. Walton family) can
+    # race here. tmp + os.replace prevents half-written cache files.
+    atomic_write_json(_cache_path(ein), filings)
 
 
 _RECIPIENT_PHRASES = (
