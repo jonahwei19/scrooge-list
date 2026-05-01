@@ -348,13 +348,20 @@ def _maybe_relabel(event: dict[str, Any]) -> dict[str, Any]:
     return event
 
 
+_HTML_TAG_RE = _re_guards.compile(r"<[^>]+>")
+_HTML_ENTITY_RE = _re_guards.compile(r"&(?:quot|amp|lt|gt|nbsp|apos|#\d+|#x[\da-fA-F]+);")
+
+
 def _normalize_text(s: str) -> str:
-    """Lowercase, collapse whitespace, strip outer punctuation. Used for the
-    `extraction_evidence` substring check — LLMs occasionally tweak case,
-    spacing, or trailing punctuation when 'quoting' a snippet, so a strict
-    `in` check produces too many false drops."""
+    """Lowercase, strip HTML tags + entities, collapse whitespace. Used for
+    the `extraction_evidence` substring check — Brave search descriptions
+    arrive with raw `<strong>` tags and `&quot;` entities, while the LLM
+    usually emits clean text in extraction_evidence. Without normalization,
+    a tag inserted between two words breaks the 4-word window check."""
     if not isinstance(s, str):
         return ""
+    s = _HTML_TAG_RE.sub(" ", s)
+    s = _HTML_ENTITY_RE.sub(" ", s)
     s = s.lower()
     # Collapse whitespace (including newlines).
     s = _re_guards.sub(r"\s+", " ", s).strip()
@@ -490,7 +497,12 @@ def _validate_event(
 
     # ---- Grounded-evidence checks (only when caller passed snippet/title) ----
     if snippet is not None or title is not None:
-        haystack = " ".join(s for s in (title or "", snippet or "") if s)
+        # The LLM prompt feeds url + title + snippet, and URL slugs are a
+        # legitimate source of facts (e.g., '/2024/marcus-foundation-awards-
+        # 38-million-...'). Include the URL in the haystack so we don't
+        # false-drop events whose evidence comes from the slug.
+        url_text = (expected_url or "").replace("/", " ").replace("-", " ").replace("_", " ")
+        haystack = " ".join(s for s in (title or "", snippet or "", url_text) if s)
         evidence = event.get("extraction_evidence") or ""
 
         # 1. Evidence must be anchored in the snippet.
