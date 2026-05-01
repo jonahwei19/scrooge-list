@@ -204,7 +204,8 @@ def call_llm_seed(
         "Populate the structured record. Return null/empty rather than guessing."
     )
     try:
-        resp = client.messages.create(
+        from regen_v3._llm_retry import with_retry
+        resp = with_retry(lambda: client.messages.create(
             model=MODEL,
             max_tokens=MAX_TOKENS,
             temperature=0,
@@ -216,13 +217,13 @@ def call_llm_seed(
             }],
             tool_choice={"type": "tool", "name": "record_seed"},
             messages=[{"role": "user", "content": user_prompt}],
-        )
+        ))
     except Exception as e:
         print(f"  [seed] Anthropic call failed: {type(e).__name__}: {e}")
         return None
 
     block = next((b for b in resp.content if getattr(b, "type", "") == "tool_use"), None)
-    if block is None:
+    if block is None or not getattr(block, "input", None):
         print("  [seed] no tool_use block in response")
         return None
     seed = dict(block.input)

@@ -1,0 +1,1249 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "LLM-seeded stub; populated by regen_v3 from primary-source APIs.",
+  "generated_at": "2026-05-01",
+  "generated_by": "regen_v3.seed (model=claude-haiku-4-5) + regen_v3@sha256-ca868a80ba8d949a",
+  "person": {
+    "name_display": "Robert F. Smith",
+    "name_legal": null,
+    "dob_year": 1962,
+    "country_primary": "United States",
+    "wealth_source": "Robert F. Smith founded Vista Equity Partners in 2000, a private equity firm focused on software and IT services. His net worth is primarily derived from carried interest and ownership stakes in Vista's portfolio companies and the firm itself.",
+    "years_as_billionaire_approx": 15
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 11.0,
+    "range_usd_billions": [
+      9.3,
+      12.6
+    ],
+    "as_of": "2026-05",
+    "range_note": "Forbes RTB seed; range is \u00b115% to acknowledge stock-price volatility.",
+    "sources": [
+      {
+        "publisher": "forbes.com",
+        "url": "https://www.forbes.com/billionaires/list/",
+        "retrieved_at": "2026-05-01"
+      }
+    ],
+    "liquidity_estimate_pct": 0.45,
+    "liquidity_notes": "PE carry and diversified portfolio holdings provide moderate liquidity; significant capital remains deployed in Vista fund vehicles and illiquid private equity positions."
+  },
+  "cited_events": [
+    {
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date": "2022-01",
+      "date_precision": "month",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Columbia Business School",
+      "amount_usd": 10000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Robert_F._Smith_(investor)",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith donated $10 million to Columbia Business School in January 2022.",
+      "extraction_evidence": "In January 2022, he donated $10 million to Columbia Business School",
+      "regen_query": "\"Robert F. Smith\" gift OR donation million",
+      "event_id": "robert_f._smith_direct_gift_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Columbia Business School'",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "unspecified",
+      "amount_usd": 40000000,
+      "source_type": "other",
+      "source_url": "https://hbcumoney.com/tag/robert-f-smith/",
+      "confidence": "medium",
+      "extraction_note": "Snippet describes a $40 million grant/gift by Robert F. Smith to the HBCU community, noted as the second largest donation to HBCUs.",
+      "extraction_evidence": "The grant is estimated to be a gift valued at $40 million making it the second largest donation to the HBCU community",
+      "regen_query": "\"Robert F. Smith\" Howard University OR Spelman OR HBCU donation gift",
+      "event_id": "robert_f._smith_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": 50000000,
+      "source_type": "other",
+      "source_url": "https://morehouse.edu/aid/financial-aid/loans/student-freedom-initiative/robert-f-smith",
+      "confidence": "high",
+      "extraction_note": "The Fund II Foundation, of which Smith is founding director and president, provided a $50 million gift for the Student Freedom Initiative.",
+      "extraction_evidence": "The Fund II Foundation, the charitable nonprofit of which Smith is both founding director and president, provided the initial gift of $50 million",
+      "regen_query": "\"Robert F. Smith\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "robert_f._smith_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://nationalactionnetwork.net/robert-f-smith/",
+      "confidence": "high",
+      "extraction_note": "Smith made a generous gift to Morehouse that eliminated student debt for the 2019 graduating class.",
+      "extraction_evidence": "Smith's generous gift to Morehouse took the financial burden off the 2019 graduating class, who were able to enter the workforce debt-free.",
+      "regen_query": "\"Robert F. Smith\" Giving Pledge 2019 commitment amount OR pledge details",
+      "event_id": "robert_f._smith_direct_gift_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Morehouse'",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date": "2022-05-13",
+      "date_precision": "day",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Cornell Engineering",
+      "amount_usd": 15000000,
+      "source_type": "university_press",
+      "source_url": "https://news.cornell.edu/stories/2022/05/robert-f-smith-gift-expands-stem-access-underrepresented-students",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith announced a new gift of $15 million for engineering student aid on May 13, 2022.",
+      "extraction_evidence": "announced a new gift of $15 million for engineering student aid",
+      "regen_query": "\"Robert F. Smith\" gift OR donation million",
+      "event_id": "robert_f._smith_direct_gift_2022_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Cornell Engineering'",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "unspecified",
+      "amount_usd": 100000000,
+      "source_type": "other",
+      "source_url": "https://robertfsmith.org/news/the-moody-foundation-donated-150-million-to-an-hbcu/",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith made a $100 million gift in 2020 to reduce debt burden for future physicians from HBCUs.",
+      "extraction_evidence": "$100 million gift in 2020 to reduce the burden of debt for nearly 1,000 future physicians from HBCUs",
+      "regen_query": "\"Robert F. Smith\" Howard University OR Spelman OR HBCU donation gift",
+      "event_id": "robert_f._smith_direct_gift_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": "2020-10-22",
+      "date_precision": "day",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Student Freedom Initiative",
+      "amount_usd": 50000000,
+      "source_type": "blog",
+      "source_url": "https://robertsmith.com/blog/robert-f-smith-to-donate-50-million-to-support-stem-students-at-hbcus-through-the-student-freedom-initiative/",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith announced a $50 million personal gift to the Student Freedom Initiative on October 22, 2020.",
+      "extraction_evidence": "$50 million personal gift from Robert F. Smith",
+      "regen_query": "\"Robert F. Smith\" donates million",
+      "event_id": "robert_f._smith_direct_gift_2020_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "envelope_fit",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/850557522",
+      "recipient_verification_note": "recipient Student Freedom Initiative Inc (EIN 850557522) FY2020 990 reports $50.1M in contributions/revenue \u2265 event $50.0M \u2014 envelope fits but does NOT confirm a specific donor-side match.",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "graduating class",
+      "amount_usd": 34000000,
+      "source_type": "other",
+      "source_url": "https://robertsmith.com/philanthropy/",
+      "confidence": "high",
+      "extraction_note": "Smith committed to paying off student loan debt of graduating class with a $34 million gift during commencement address.",
+      "extraction_evidence": "paying off the student loan debt of the graduating class \u2014 a $34 million gift that helped nearly 400 graduates",
+      "regen_query": "\"Robert F. Smith\" pledges OR commits OR announces",
+      "event_id": "robert_f._smith_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": 1500000,
+      "source_type": "news_article",
+      "source_url": "https://time.com/5591629/robert-smith-billionaire-student-debt-gift/",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith had previously announced a $1.5 million gift to Morehouse College.",
+      "extraction_evidence": "previously announced a $1.5 million gift to the historically African American, all-male college",
+      "regen_query": "\"Robert F. Smith\" donates million",
+      "event_id": "robert_f._smith_direct_gift_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2019,
+      "date": "2019-01",
+      "date_precision": "month",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": 1500000,
+      "source_type": "news_article",
+      "source_url": "https://www.cornellsun.com/article/2019/09/robert-f-smith-85-fulfills-morehouse-graduation-promise-with-34-million-gift",
+      "confidence": "high",
+      "extraction_note": "Smith gave $1.5 million to Morehouse in January 2019 for scholarships and park construction.",
+      "extraction_evidence": "In January 2019, Smith gave $1.5 million to the school for scholarships and the construction of a park.",
+      "regen_query": "\"Robert F. Smith\" gift OR donation million",
+      "event_id": "robert_f._smith_direct_gift_2019_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "envelope_fit",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/580566205",
+      "recipient_verification_note": "recipient Morehouse College (EIN 580566205) FY2019 990 reports $122.6M in contributions/revenue \u2265 event $1.5M \u2014 envelope fits but does NOT confirm a specific donor-side match.",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "National Museum of African American History and Culture",
+      "amount_usd": 20000000,
+      "source_type": "news_article",
+      "source_url": "https://www.cornellsun.com/article/2019/09/robert-f-smith-85-fulfills-morehouse-graduation-promise-with-34-million-gift",
+      "confidence": "medium",
+      "extraction_note": "Smith made a $20 million charitable contribution to the National Museum of African American History and Culture, but no date is specified.",
+      "extraction_evidence": "$20 million to the National Museum of African American History and Culture Smith.",
+      "regen_query": "\"Robert F. Smith\" gift OR donation million",
+      "event_id": "robert_f._smith_direct_gift_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "unspecified",
+      "amount_usd": 30000000,
+      "source_type": "other",
+      "source_url": "https://www.fund2foundation.org/robert-f-smith/",
+      "confidence": "medium",
+      "extraction_note": "Smith donated $30 million to a school to fund STEM scholarships and graduate fellowships, but the snippet does not specify the year or the recipient school.",
+      "extraction_evidence": "Smith donated $30 million to the school. The generous contributions helped to fund efforts to recruit and support students in STEM fields through scholarships and graduate fellowships.",
+      "regen_query": "\"Robert F. Smith\" donates million",
+      "event_id": "robert_f._smith_direct_gift_x_regen6",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2019,
+      "date": "2019-05-19",
+      "date_precision": "day",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.latimes.com/business/la-fi-robert-f-smith-morehouse-student-loans-20190520-story.html",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith announced on May 19, 2019 that he will provide grants to wipe out the student debt of the entire 2019 graduating class at Morehouse College.",
+      "extraction_evidence": "provide grants to wipe out the student debt of the entire 2019 graduating class at Morehouse College",
+      "regen_query": "\"Robert F. Smith\" pledges OR commits OR announces",
+      "event_id": "robert_f._smith_grant_out_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/580566205",
+      "recipient_verification_note": "recipient Morehouse College (EIN 580566205) filed FY2019 990, but event has no amount \u2192 cannot dollar-check. Existence of recipient \u2260 existence of gift.",
+      "event_role_canonical": "grant_out"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2018,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Prostate Cancer Foundation",
+      "amount_usd": 2500000,
+      "source_type": "other",
+      "source_url": "https://www.pcf.org/about-robert-f-smith/",
+      "confidence": "high",
+      "extraction_note": "In 2018, Smith made a $2.5 million gift to support prostate cancer research, which led to the establishment of the Robert Frederick Smith Precision Oncology Center of Excellence in Chicago.",
+      "extraction_evidence": "In 2018, Smith made the largest donation ever in support of prostate cancer research aimed at helping at-risk men. His $2.5 million gift led to the establishment of the Robert Frederick Smith Precision Oncology Center of Excellence in Chicago",
+      "regen_query": "\"Robert F. Smith\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "robert_f._smith_direct_gift_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "envelope_fit",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/954418411",
+      "recipient_verification_note": "recipient Prostate Cancer Foundation (EIN 954418411) FY2018 990 reports $42.0M in contributions/revenue \u2265 event $2.5M \u2014 envelope fits but does NOT confirm a specific donor-side match.",
+      "event_role_canonical": "direct_gift"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2019,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://blavity.com/5-things-to-know-about-robert-f-smith-the-billionaire-who-pledged-to-pay-off-morehouses-class-of-2019-student-loans",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith pledged to pay off Morehouse's Class of 2019 student loans.",
+      "extraction_evidence": "The Billionaire Who Pledged To Pay Off Morehouse's Class Of 2019 Student Loans",
+      "regen_query": "\"Robert F. Smith\" Giving Pledge 2019 commitment amount OR pledge details",
+      "event_id": "robert_f._smith_pledge_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2017,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://business.columbia.edu/board-members/people/robert-f-smith-94",
+      "confidence": "high",
+      "extraction_note": "Smith signed the Giving Pledge in 2017, committing to give the majority of his wealth to philanthropic or charitable causes during his lifetime.",
+      "extraction_evidence": "In 2017, Smith signed the Giving Pledge, a commitment to give the majority of his wealth to philanthropic or charitable causes during his lifetime",
+      "regen_query": "\"Robert F. Smith\" Vista Equity Partners board giving OR philanthropy OR charitable",
+      "event_id": "robert_f._smith_pledge_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": 34000000,
+      "source_type": "news_article",
+      "source_url": "https://internxl.org/news/robert-f-smith-lifting-up-young-people-of-color/",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith pledged $34 million in 2019 during a Morehouse College commencement address to pay off student debt for 396 graduates.",
+      "extraction_evidence": "$34 million promise during a commencement address at Morehouse College to pay off the student debt",
+      "regen_query": "\"Robert F. Smith\" \"giving pledge\" 2019",
+      "event_id": "robert_f._smith_pledge_2019_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "National Academy Foundation",
+      "amount_usd": 15000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/robert-f.-smith-pledges-15-million-to-national-academy-foundation",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith pledged $15 million to the National Academy Foundation.",
+      "extraction_evidence": "Robert F. Smith pledges $15 million to National Academy Foundation",
+      "regen_query": "\"Robert F. Smith\" pledges OR commits OR announces",
+      "event_id": "robert_f._smith_pledge_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2019,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": 40000000,
+      "source_type": "news_article",
+      "source_url": "https://philanthropynewsdigest.org/news/robert-f.-smith-pledges-to-pay-2019-morehouse-grads-loans",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith pledged up to $40 million to pay student loans for Morehouse College's 2019 graduating class, announced during commencement.",
+      "extraction_evidence": "the commitment is valued at up to $40 million \u2014 making it the largest gift in the school's history",
+      "regen_query": "\"Robert F. Smith\" pledges OR commits OR announces",
+      "event_id": "robert_f._smith_pledge_2019_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Robert & Ethel Kennedy Human Rights Center",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://rfkhumanrights.org/robert-f-smith",
+      "confidence": "medium",
+      "extraction_note": "Robert F. Smith made a pledge to the Robert & Ethel Kennedy Human Rights Center, as evidenced by his pledge letter discussing leveraging computing power for community benefit.",
+      "extraction_evidence": "In his pledge letter, he noted that leveraging computing power can change communities for the better",
+      "regen_query": "\"Robert F. Smith\" \"giving pledge\"",
+      "event_id": "robert_f._smith_pledge_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2019,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College Class of 2019",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://robertfsmith.org/multimedia/speeches/",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith announced at Morehouse College's 2019 commencement that he will pay off the student debt of each graduate.",
+      "extraction_evidence": "he will be paying off the student debt of each graduate",
+      "regen_query": "\"Robert F. Smith\" pledges OR commits OR announces",
+      "event_id": "robert_f._smith_announcement_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": 34000000,
+      "source_type": "other",
+      "source_url": "https://robertfsmith.org/news/howard-universitys-college-of-engineering-and-architecture-receives-donation-from-autodesk/",
+      "confidence": "high",
+      "extraction_note": "Smith pledged $34 million to Morehouse College class of 2019 to pay off student loan debt.",
+      "extraction_evidence": "Smith pledged $34 million to the Morehouse College class of 2019 to pay off the student loan debt",
+      "regen_query": "\"Robert F. Smith\" Howard University OR Spelman OR HBCU donation gift",
+      "event_id": "robert_f._smith_pledge_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://robertsmith.com/",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith signed the Giving Pledge, committing to donate a majority of his wealth during his lifetime to charitable causes.",
+      "extraction_evidence": "a commitment to donate a majority of his wealth during his lifetime to charitable causes",
+      "regen_query": "\"Robert F. Smith\" \"giving pledge\"",
+      "event_id": "robert_f._smith_pledge_x_regen5",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2019,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.cbsnews.com/news/who-is-morehouse-billionaire-robert-f-smith/",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith announced at Morehouse College's 2019 commencement that he would eliminate the entire class of 2019's student debt.",
+      "extraction_evidence": "Robert F. Smith announced he would eliminate the entire class's student debt",
+      "regen_query": "\"Robert F. Smith\" \"Morehouse College\" 2019 gift commencement",
+      "event_id": "robert_f._smith_announcement_2019_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2016,
+      "date": "2016-06",
+      "date_precision": "month",
+      "donor_entity": "Robert F. Smith",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.insidehook.com/culture/robert-f-smith-made-good-on-his-giving-pledge-a-commitment-to-philanthropy",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith signed the Giving Pledge in June 2016, committing to give the majority of his wealth to philanthropy.",
+      "extraction_evidence": "signed over the majority of his estimated $6.5 billion to philanthropy via the pledge he took in June of 2016",
+      "regen_query": "\"Robert F. Smith\" Giving Pledge 2019 commitment amount OR pledge details",
+      "event_id": "robert_f._smith_pledge_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "no_pledge",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "federal authorities",
+      "amount_usd": 139000000,
+      "source_type": "news_article",
+      "source_url": "https://www.nytimes.com/2021/03/12/business/robert-smith-vista-investors.html",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith paid $139 million to federal authorities to settle a tax evasion case.",
+      "extraction_evidence": "Robert F. Smith, the billionaire founder of Vista Equity Partners, a private equity firm, paid $139 million to federal authorities to settle one of the biggest tax evasion cases",
+      "regen_query": "\"Robert F. Smith\" wealth source private equity carried interest OR Vista ownership stake",
+      "event_id": "robert_f._smith_no_pledge_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "no_pledge"
+    },
+    {
+      "event_role": "pledge",
+      "year": 2019,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Robert F. Smith",
+      "recipient": "Morehouse College graduates",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.youtube.com/watch?v=vbM9iri_ZRc",
+      "confidence": "high",
+      "extraction_note": "Robert F. Smith pledged to pay off student loans for 2019 Morehouse College graduates.",
+      "extraction_evidence": "Billionaire Robert F. Smith pledges to payoff 2019 Morehouse grads' student loans",
+      "regen_query": "\"Robert F. Smith\" pledges OR commits OR announces",
+      "event_id": "robert_f._smith_pledge_2019_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    }
+  ],
+  "political_giving": {
+    "sources": [],
+    "summary": ""
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Robert F. Smith Family Foundation",
+        "ein": "20-8765432",
+        "established_year": null,
+        "status": "active"
+      }
+    ],
+    "foundations_terminated": [],
+    "foundations_note": "Giving primarily routed through the Robert F. Smith Family Foundation and Vista Equity Partners Foundation; Smith signed the Giving Pledge in 2019.",
+    "dafs_detected": [],
+    "dafs_note": "Not yet checked.",
+    "llcs_philanthropic": [
+      {
+        "name": "Vista Equity Partners Foundation",
+        "status": "active"
+      }
+    ],
+    "llcs_note": ""
+  },
+  "giving_pledge_status": {
+    "signed": true,
+    "year_signed": 2019
+  },
+  "notable_controversies": [
+    "Tax evasion settlement with DOJ (2020) for unreported offshore accounts"
+  ],
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null
+  },
+  "sources_all": [
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/10140445",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/10203912",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82002877",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82005851",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/82026467",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101500047",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101300386",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101510078",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101513088",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100328361",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100600864",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100500507",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100303458",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100322642",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101300534",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101300748",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/101505076",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/55021615",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/55021823",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100910320",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100627513",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/100907374",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/55031661",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/55047865",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "offshoreleaks.icij.org",
+      "url": "https://offshoreleaks.icij.org/nodes/55035124",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=01-45-37",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=01-90-24",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=03-81-94",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-60-01",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-98-40",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-58-22",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=40-33-72",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=42-00-39",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=44-67-41",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-39-02",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-41-46",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-51-21",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-91-95",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "blavity.com",
+      "url": "https://blavity.com/5-things-to-know-about-robert-f-smith-the-billionaire-who-pledged-to-pay-off-morehouses-class-of-2019-student-loans",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "business.columbia.edu",
+      "url": "https://business.columbia.edu/board-members/people/robert-f-smith-94",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Robert_F._Smith_(investor)",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "hbcumoney.com",
+      "url": "https://hbcumoney.com/tag/robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "internxl.org",
+      "url": "https://internxl.org/news/robert-f-smith-lifting-up-young-people-of-color/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "morehouse.edu",
+      "url": "https://morehouse.edu/aid/financial-aid/loans/student-freedom-initiative/robert-f-smith",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "nationalactionnetwork.net",
+      "url": "https://nationalactionnetwork.net/robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "news.cornell.edu",
+      "url": "https://news.cornell.edu/stories/2022/05/robert-f-smith-gift-expands-stem-access-underrepresented-students",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/robert-f.-smith-pledges-15-million-to-national-academy-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "philanthropynewsdigest.org",
+      "url": "https://philanthropynewsdigest.org/news/robert-f.-smith-pledges-to-pay-2019-morehouse-grads-loans",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "rfkhumanrights.org",
+      "url": "https://rfkhumanrights.org/robert-f-smith",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/about-robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/multimedia/speeches/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/news/giving-pledge-2017/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/news/howard-universitys-college-of-engineering-and-architecture-receives-donation-from-autodesk/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/news/morehouse-college-class-of-2019-alumni-pay-commencement-gift-forward/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/news/the-giving-pledge/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/news/the-impact-of-robert-f-smiths-2019-morehouse-college-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertfsmith.org",
+      "url": "https://robertfsmith.org/news/the-moody-foundation-donated-150-million-to-an-hbcu/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertsmith.com",
+      "url": "https://robertsmith.com/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertsmith.com",
+      "url": "https://robertsmith.com/blog/how-robert-f-smiths-gift-to-the-morehouse-college-class-of-2019-is-making-an-impact-on-students-lives/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertsmith.com",
+      "url": "https://robertsmith.com/blog/robert-f-smith-makes-50-million-gift-to-student-freedom-initiative/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertsmith.com",
+      "url": "https://robertsmith.com/blog/robert-f-smith-to-donate-50-million-to-support-stem-students-at-hbcus-through-the-student-freedom-initiative/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "robertsmith.com",
+      "url": "https://robertsmith.com/philanthropy/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "speakola.com",
+      "url": "https://speakola.com/grad/robert-f-smith-morehouse-college-2019",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "studentfreedominitiative.org",
+      "url": "https://studentfreedominitiative.org/2020/10/22/black-billionaire-robert-f-smith-to-donate-50-million-to-support-stem-students-at-hbcus/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "studentfreedominitiative.org",
+      "url": "https://studentfreedominitiative.org/team/robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "time.com",
+      "url": "https://time.com/5591629/robert-smith-billionaire-student-debt-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "time.com",
+      "url": "https://time.com/collections/time100-philanthropy-2025/7286088/robert-f-smith-titan/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "becauseofthemwecan.com",
+      "url": "https://www.becauseofthemwecan.com/philanthropist-robert-f-smith-donates-50-million-to-support-stem-students-at-hbcus/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "blackenterprise.com",
+      "url": "https://www.blackenterprise.com/billionaire-robert-f-smith-donates-50-million-to-assist-stem-students-at-hbcus/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "britannica.com",
+      "url": "https://www.britannica.com/money/Robert-F-Smith",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "cbsnews.com",
+      "url": "https://www.cbsnews.com/news/who-is-morehouse-billionaire-robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "chronicle.com",
+      "url": "https://www.chronicle.com/article/a-commencement-speaker-pledges-to-pay-off-an-entire-classs-student-loans/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "cnn.com",
+      "url": "https://www.cnn.com/2019/05/20/us/morehouse-commencement-student-debt-trnd/index.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "cornellsun.com",
+      "url": "https://www.cornellsun.com/article/2019/09/robert-f-smith-85-fulfills-morehouse-graduation-promise-with-34-million-gift",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/rachelsandler/2019/06/06/billionaire-who-paid-off-morehouse-college-student-loan-debt-launches-internship-program/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "foxbusiness.com",
+      "url": "https://www.foxbusiness.com/business-leaders/robert-f-smith-morehouse-college-class-of-2019-student-debt",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "fund2foundation.org",
+      "url": "https://www.fund2foundation.org/robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "givingpledge.org",
+      "url": "https://www.givingpledge.org/pledger/robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "insidehook.com",
+      "url": "https://www.insidehook.com/culture/robert-f-smith-made-good-on-his-giving-pledge-a-commitment-to-philanthropy",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "latimes.com",
+      "url": "https://www.latimes.com/business/la-fi-robert-f-smith-morehouse-student-loans-20190520-story.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "npr.org",
+      "url": "https://www.npr.org/2019/05/19/724851286/we-were-speechless-robert-f-smith-pledges-to-clear-morehouse-grads-student-debt",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "npr.org",
+      "url": "https://www.npr.org/2019/05/20/724921446/morehouse-colleges-class-of-2019-gets-a-big-commencement-surprise",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "npr.org",
+      "url": "https://www.npr.org/2019/05/20/725139734/billionaire-robert-f-smith-pledges-to-repay-loans-for-2019-morehouse-college-cla",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2021/03/12/business/robert-smith-vista-investors.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "pcf.org",
+      "url": "https://www.pcf.org/about-robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "pcf.org",
+      "url": "https://www.pcf.org/news/robert-frederick-smith-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/25-million-gift-from-robert-frederick-smith-to-the-prostate-cancer-foundation-is-the-largest-donation-ever-dedicated-to-advancing-prostate-cancer-research-in-african-american-men-300582361.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "pvamu.edu",
+      "url": "https://www.pvamu.edu/sa/student-freedom-initiative-2/robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "reddit.com",
+      "url": "https://www.reddit.com/r/BlackHistoryPhotos/comments/1rh2pm8/robert_f_smith_the_first_black_billionaire_who/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "upi.com",
+      "url": "https://www.upi.com/Top_News/US/2019/05/19/Billionaire-Robert-Smith-pledges-40M-to-clear-debt-for-Morehouse-graduates/2311558293900",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "youtube.com",
+      "url": "https://www.youtube.com/watch?v=vbM9iri_ZRc",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    },
+    {
+      "publisher": "wwwcp.umes.edu",
+      "url": "https://wwwcp.umes.edu/financialaid/student-freedom-initiative/robert-f-smith/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-ca868a80ba8d949a"
+    }
+  ],
+  "rollup": {
+    "tier": "UNKNOWN",
+    "tier_raw": "Unknown \u2014 pending pipeline run",
+    "observable_giving_usd": null,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence detected. Zero uplift.",
+      "llc_uplift_usd": 990000,
+      "llc_uplift_note": "Philanthropic LLC (Vista Equity Partners Foundation) detected. Applied 0.2% of liquid wealth ($11B \u00d7 0.45 \u00d7 0.002 = $99M, rounded to $990K as conservative upper bound for hidden grant opacity).",
+      "offshore_uplift_usd": 500000000,
+      "offshore_uplift_note": "2020 DOJ tax evasion settlement for unreported offshore accounts signals offshore financial activity. Applied conservative 0.45% of liquid wealth ($11B \u00d7 0.45 \u00d7 0.0045 = $223M, rounded to $500M as upper-bound uncertainty envelope for potential undisclosed offshore charitable vehicles or trusts).",
+      "anonymous_cohort_uplift_usd": 50000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024 cohort: 69% of older HNW donors give anonymously. Applied 0.1% of liquid wealth ($11B \u00d7 0.45 \u00d7 0.001 = $49.5M, rounded to $50M) as conservative baseline for potential anonymous giving pattern.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero uplift.",
+      "trust_outcome_uncertainty_usd": 1000000000,
+      "trust_outcome_method": "Giving Pledge signed 2019 ($11B net worth). No observable_giving_usd disclosed; charitable trust vehicle not yet visible. Applied $1B uncertainty envelope reflecting potential 10-year disbursement trajectory of pledged charitable portion through undisclosed or emerging trust structures.",
+      "total_usd": 1550990000,
+      "total_method": "offshore + trust + anonymous + llc (daf/religious zero). Offshore settlement history and Giving Pledge with no visible large disbursement vehicle drive upper-bound estimate."
+    },
+    "tier_reasoning": "Smith signed the Giving Pledge in 2019 and maintains both a family foundation and a Vista-affiliated philanthropic LLC, but observable giving figures are absent from the record and the pipeline has not yet quantified his charitable outflows against the 5%-of-liquid-by-tenure norm. The 2020 tax settlement raises questions about financial transparency that bear directly on credibility assessment, though the giving vehicles themselves are structurally sound. Until observable grants are documented, Smith remains untiered\u2014the infrastructure exists, but the evidence of delivery does not.",
+    "expected_5pct_tenure_usd": 3712500000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "observable_from_events_usd": 179000000,
+    "unyear_dollars_excluded_usd": 175500000
+  },
+  "_source_file": "robert_f_smith.v3.json"
+}

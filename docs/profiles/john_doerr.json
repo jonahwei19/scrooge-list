@@ -1,0 +1,807 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "LLM-seeded stub; populated by regen_v3 from primary-source APIs.",
+  "generated_at": "2026-05-01",
+  "generated_by": "regen_v3.seed (model=claude-haiku-4-5) + regen_v3@sha256-b64b183936e855a5",
+  "person": {
+    "name_display": "John Doerr",
+    "name_legal": null,
+    "dob_year": 1951,
+    "country_primary": "United States",
+    "wealth_source": "John Doerr is a legendary venture capitalist and partner at Kleiner Perkins Caufield & Byers (KPCB), founded in 1972. His wealth derives from early-stage equity stakes in transformative tech companies including Amazon, Google, Netscape, and Sun Microsystems, combined with carried interest from decades of venture fund management.",
+    "years_as_billionaire_approx": 25
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 14.0,
+    "range_usd_billions": [
+      11.9,
+      16.1
+    ],
+    "as_of": "2026-05",
+    "range_note": "Forbes RTB seed; range is \u00b115% to acknowledge stock-price volatility.",
+    "sources": [
+      {
+        "publisher": "forbes.com",
+        "url": "https://www.forbes.com/billionaires/list/",
+        "retrieved_at": "2026-05-01"
+      }
+    ],
+    "liquidity_estimate_pct": 0.5,
+    "liquidity_notes": "Doerr holds a mix of public equities (Google, Amazon) and illiquid venture fund interests; estimated 50% reasonably liquid given public holdings and fund distributions."
+  },
+  "cited_events": [
+    {
+      "event_role": "political",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 193200.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2014",
+      "confidence": "high",
+      "note": "FEC aggregate of 27 contributions in 2015 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$48k, PAC=$44k, PARTY=$101k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2016,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 1092000.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2016",
+      "confidence": "high",
+      "note": "FEC aggregate of 25 contributions in 2016 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$30k, PAC=$252k, PARTY=$311k, SUPER_PAC=$500k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2017,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 168400.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2016",
+      "confidence": "high",
+      "note": "FEC aggregate of 35 contributions in 2017 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$76k, PAC=$25k, PARTY=$68k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2018,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 507500.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2018",
+      "confidence": "high",
+      "note": "FEC aggregate of 41 contributions in 2018 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$62k, OTHER=$5k, PAC=$188k, PARTY=$252k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 235000.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2018",
+      "confidence": "high",
+      "note": "FEC aggregate of 41 contributions in 2019 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$82k, PAC=$82k, PARTY=$71k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 998300.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2020",
+      "confidence": "high",
+      "note": "FEC aggregate of 59 contributions in 2020 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$118k, OTHER=$3k, PAC=$393k, PARTY=$485k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 731800.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2020",
+      "confidence": "high",
+      "note": "FEC aggregate of 47 contributions in 2021 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$61k, OTHER=$71k, PAC=$180k, PARTY=$420k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 1232200.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2022",
+      "confidence": "high",
+      "note": "FEC aggregate of 53 contributions in 2022 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$38k, OTHER=$102k, PAC=$306k, PARTY=$786k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 1850100.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2022",
+      "confidence": "high",
+      "note": "FEC aggregate of 33 contributions in 2023 matched to 'John Doerr' (min $1k filter). Breakdown: CANDIDATE=$7k, OTHER=$132k, PAC=$720k, PARTY=$991k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 2748300.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2024",
+      "confidence": "high",
+      "note": "FEC aggregate of 67 contributions in 2024 matched to 'John Doerr' (min $1k filter). Breakdown: OTHER=$20k, PAC=$1237k, PARTY=$1491k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_doerr_political_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2022,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr and Ann Doerr",
+      "recipient": "Stanford University",
+      "amount_usd": 1100000000,
+      "source_type": "news_article",
+      "source_url": "https://apicciano.commons.gc.cuny.edu/2022/05/05/stanford-university-receives-1-billion-donation-from-john-and-ann-doerr-to-launch-new-school-on-climate-change/",
+      "confidence": "high",
+      "extraction_note": "Stanford University received a $1.1 billion gift from John and Ann Doerr to launch a new school on climate change.",
+      "extraction_evidence": "$1.1 billion gift from billionaire venture capitalist John Doerr and his wife, Ann",
+      "regen_query": "\"John Doerr\" OR \"Doerr Foundation\" education OR school OR university grant 2022 2023 2024",
+      "event_id": "john_doerr_direct_gift_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Stanford University'",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 2014,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr",
+      "recipient": "Mayday PAC",
+      "amount_usd": 250000,
+      "source_type": "other",
+      "source_url": "https://ballotpedia.org/John_Doerr",
+      "confidence": "high",
+      "extraction_note": "John Doerr contributed $250,000 to Mayday PAC in 2014.",
+      "extraction_evidence": "In 2014, Doerr contributed $250,000 to the Mayday PAC",
+      "regen_query": "\"John Doerr\" FEC OR PAC contribution",
+      "event_id": "john_doerr_political_2014_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "political",
+      "year": 2014,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr",
+      "recipient": "Senate Majority PAC",
+      "amount_usd": 750000,
+      "source_type": "other",
+      "source_url": "https://ballotpedia.org/John_Doerr",
+      "confidence": "high",
+      "extraction_note": "John Doerr contributed $750,000 to Senate Majority PAC in 2014.",
+      "extraction_evidence": "In 2014, Doerr contributed $750,000 to the Senate Majority PAC",
+      "regen_query": "\"John Doerr\" FEC OR PAC contribution",
+      "event_id": "john_doerr_political_2014_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2024,
+      "date": "2024-05-04",
+      "date_precision": "day",
+      "donor_entity": "John Doerr",
+      "recipient": "Stanford University",
+      "amount_usd": 1100000000,
+      "source_type": "news_article",
+      "source_url": "https://manhassetmedia.org/showcase/john-doerr-donates-1-1-billion-to-stanford-university-for-a-new-climate-school/",
+      "confidence": "high",
+      "extraction_note": "John Doerr and his wife Ann donated $1.1 billion to Stanford University on May 4th to establish a climate school.",
+      "extraction_evidence": "on May 4th, Doerr and his wife, Ann, donated a whopping $1.1 billion to Stanford University",
+      "regen_query": "\"John Doerr\" pandemic OR COVID-19 donation OR grant announcement 2020 2021",
+      "event_id": "john_doerr_direct_gift_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Stanford University'",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr",
+      "recipient": "Stanford University",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://sustainability.stanford.edu/foundational-launch-partners",
+      "confidence": "high",
+      "extraction_note": "John Doerr (with Ann Doerr) made a historic gift to Stanford that resulted in naming the Stanford Doerr School of Sustainability.",
+      "extraction_evidence": "historic gift from Ann and John Doerr. Their commitment, together with gifts from other generous lead donors",
+      "regen_query": "\"John Doerr\" Stanford OR UC Berkeley OR MIT donation OR endowment OR capital campaign",
+      "event_id": "john_doerr_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr",
+      "recipient": "Stanford University",
+      "amount_usd": 1100000000,
+      "source_type": "news_article",
+      "source_url": "https://thebusinessdownload.com/john-doerr-gifts-1-1b-to-stanford-for-climate-change-studies/",
+      "confidence": "high",
+      "extraction_note": "John Doerr donated $1.1 billion to Stanford University to fund a school devoted to climate change solutions.",
+      "extraction_evidence": "John Doerr donated $1.1 billion to Stanford University to fund a school devoted to climate change solutions",
+      "regen_query": "\"John Doerr\" gift OR donation million",
+      "event_id": "john_doerr_direct_gift_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr",
+      "recipient": "Joe Biden",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.axios.com/pro/climate-deals/2024/07/01/breakthrough-energy-summit-bill-gates-john-doerr",
+      "confidence": "medium",
+      "extraction_note": "Doerr stated that investing to reelect Joe Biden is the best climate investment, indicating a political investment/donation intent.",
+      "extraction_evidence": "Investing to reelect Joe Biden is the best climate investment we can make",
+      "regen_query": "\"John Doerr\" \"Measure\" OR \"Breakthrough Energy\" OR climate venture announcement",
+      "event_id": "john_doerr_political_2024_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "political"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr",
+      "recipient": "Rice University",
+      "amount_usd": 50000000,
+      "source_type": "news_article",
+      "source_url": "https://www.philanthropy.com/article/rice-u-receives-50-million-to-launch-leadership-center/",
+      "confidence": "high",
+      "extraction_note": "John Doerr, venture capitalist and Rice alumnus, made a $50 million gift to Rice University to develop a leadership institute.",
+      "extraction_evidence": "The gift from venture capitalist and Rice alumnus John Doerr to develop an institute",
+      "regen_query": "site:chronicle.org OR site:philanthropy.com \"John Doerr\" gift OR donation",
+      "event_id": "john_doerr_direct_gift_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year",
+      "event_role_canonical": "direct_gift"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2016,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "John Doerr",
+      "recipient": "his foundation",
+      "amount_usd": 255000000,
+      "source_type": "news_article",
+      "source_url": "https://www.philanthropy.com/news/has-the-giving-pledge-changed-giving/",
+      "confidence": "high",
+      "extraction_note": "In 2016, John Doerr made a $255 million gift to his foundation, his first significant gift since the foundation's 2002 launch.",
+      "extraction_evidence": "In 2016, the Tesla co-founder made his first significant gift \u2014 $255 million \u2014 to his foundation since its 2002 launch.",
+      "regen_query": "site:chronicle.org OR site:philanthropy.com \"John Doerr\" gift OR donation",
+      "event_id": "john_doerr_direct_gift_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/916512367",
+      "recipient_verification_note": "recipient His Foundation (EIN 916512367) FY2015 990 reports only $0.3M in contributions/revenue; event claims $255.0M (gap $254.7M)",
+      "event_role_canonical": "direct_gift"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2010,
+      "date": null,
+      "date_precision": "month",
+      "donor_entity": "John Doerr",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://grizzlybulls.com/billionaires/john-doerr",
+      "confidence": "high",
+      "extraction_note": "John Doerr signed the Giving Pledge in August 2010, committing to donate his fortune to charitable causes within his lifetime.",
+      "extraction_evidence": "Signed the Giving Pledge in August 2010, committing to donate his fortune to charitable causes within his lifetime.",
+      "regen_query": "\"John Doerr\" \"giving pledge\" 2010",
+      "event_id": "john_doerr_pledge_2010_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "pledge"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr",
+      "recipient": "unspecified",
+      "amount_usd": 100000000,
+      "source_type": "other",
+      "source_url": "https://www.goodreturns.in/john-doerr-net-worth-and-biography-blnr182.html",
+      "confidence": "medium",
+      "extraction_note": "Doerr announces the Kleiner Perkins $100 million iFund with Steve Jobs, declaring the iPhone's significance.",
+      "extraction_evidence": "Doerr announces the Kleiner Perkins $100 million iFund with Steve Jobs",
+      "regen_query": "\"John Doerr\" pledges OR commits OR announces",
+      "event_id": "john_doerr_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Doerr",
+      "recipient": "Stanford University",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://www.linkedin.com/in/john-doerr-03248211/",
+      "confidence": "medium",
+      "extraction_note": "John Doerr and Ann announce collaboration with Stanford University to create its first new school in 70 years, The Stanford Doerr school.",
+      "extraction_evidence": "Ann and I are thrilled to announce our collaboration with Stanford University to create its first new school in 70 years \u2013 The Stanford Doerr",
+      "regen_query": "\"John Doerr\" Kleiner Perkins KPCB venture fund climate OR education OR pandemic",
+      "event_id": "john_doerr_announcement_x_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "event_role_canonical": "announcement"
+    }
+  ],
+  "political_giving": {
+    "sources": [],
+    "summary": ""
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "The Doerr Foundation",
+        "ein": "94-3017815",
+        "established_year": 1996,
+        "status": "active"
+      }
+    ],
+    "foundations_terminated": [],
+    "foundations_note": "Primary giving vehicle is The Doerr Foundation (established 1996); also operates through family foundation structures. Known for climate, education, and pandemic-response giving.",
+    "dafs_detected": [],
+    "dafs_note": "Not yet checked.",
+    "llcs_philanthropic": [
+      {
+        "name": "Doerr Family Foundation",
+        "status": "active"
+      }
+    ],
+    "llcs_note": ""
+  },
+  "giving_pledge_status": {
+    "signed": true,
+    "year_signed": 2010
+  },
+  "notable_controversies": [],
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null
+  },
+  "sources_all": [
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2014",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2016",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2018",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2020",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2022",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Doerr&two_year_transaction_period=2024",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "apicciano.commons.gc.cuny.edu",
+      "url": "https://apicciano.commons.gc.cuny.edu/2022/05/05/stanford-university-receives-1-billion-donation-from-john-and-ann-doerr-to-launch-new-school-on-climate-change/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "apnews.com",
+      "url": "https://apnews.com/article/climate-technology-business-education-philanthropy-7cdea8ba31f5e96b071b0925d09b2823",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "ballotpedia.org",
+      "url": "https://ballotpedia.org/John_Doerr",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/John_Doerr",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "grizzlybulls.com",
+      "url": "https://grizzlybulls.com/billionaires/john-doerr",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "manhassetmedia.org",
+      "url": "https://manhassetmedia.org/showcase/john-doerr-donates-1-1-billion-to-stanford-university-for-a-new-climate-school/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "philanthropicpeople.com",
+      "url": "https://philanthropicpeople.com/2022/05/09/john-doerr-donates-1-1b-to-stanford/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "phys.org",
+      "url": "https://phys.org/news/2022-05-stanford-1b-climate-school-john.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "sophisticatedinvestor.com",
+      "url": "https://sophisticatedinvestor.com/john-doerr-net-worth-companies-full-bio-investor-profile-2022-update/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "stanforddaily.com",
+      "url": "https://stanforddaily.com/2022/05/06/school-of-sustainability-receives-1-1-billion-donation-from-john-doerr/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "sustainability.stanford.edu",
+      "url": "https://sustainability.stanford.edu/foundational-launch-partners",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "thebusinessdownload.com",
+      "url": "https://thebusinessdownload.com/john-doerr-gifts-1-1b-to-stanford-for-climate-change-studies/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "axios.com",
+      "url": "https://www.axios.com/pro/climate-deals/2024/07/01/breakthrough-energy-summit-bill-gates-john-doerr",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "bloomberg.com",
+      "url": "https://www.bloomberg.com/news/articles/2022-05-04/john-doerr-donates-1-1-billion-for-stanford-climate-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "citimuzik.com",
+      "url": "https://www.citimuzik.com/2024/02/john-doerr-net-worth.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "commandeducation.com",
+      "url": "https://www.commandeducation.com/stanford-receives-1-1-billion-gift/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/dereksaul/2022/05/04/venture-capitalist-john-doerr-gives-11-billion-to-stanford-to-fund-climate-research/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/michaeltnietzel/2022/05/04/stanford-university-announces-largest-gift-in-its-history11-billion-from-john-and-ann-doerr/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "givingpledge.org",
+      "url": "https://www.givingpledge.org/pledger/ann-and-john-doerr/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "goodreturns.in",
+      "url": "https://www.goodreturns.in/john-doerr-net-worth-and-biography-blnr182.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "greenmatters.com",
+      "url": "https://www.greenmatters.com/p/john-doerr",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "kleinerperkins.com",
+      "url": "https://www.kleinerperkins.com/people/john-doerr/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "latimes.com",
+      "url": "https://www.latimes.com/california/story/2022-05-04/stanford-gets-1-1-billion-john-doer-gift-for-climate-crisis-and-sustainability-school",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "linkedin.com",
+      "url": "https://www.linkedin.com/in/john-doerr-03248211/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "mercurynews.com",
+      "url": "https://www.mercurynews.com/2022/05/04/john-doerr-gives-1-1-billion-to-stanford-for-new-climate-school-largest-gift-in-stanford-history/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2006/02/16/business/venture-capitalists-are-investing-in-educational-reform.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2016/02/17/business/dealbook/university-of-chicago-to-get-50-million-from-venture-capitalist.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2022/05/04/climate/john-doerr-stanford-climate.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "nytimes.com",
+      "url": "https://www.nytimes.com/2022/06/13/opinion/sway-kara-swisher-john-doerr.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/rice-u-receives-50-million-to-launch-leadership-center/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/article/top-10-donations-of-2022-totaled-9-3-billion",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/news/has-the-giving-pledge-changed-giving/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/news/john-and-ann-doerr-are-giving-1-1-billion-to-stanford-u-to-create-a-school-for-sustainability/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "philanthropy.com",
+      "url": "https://www.philanthropy.com/news/shaping-the-future-in-an-old-fashioned-way/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "philanthropyroundtable.org",
+      "url": "https://www.philanthropyroundtable.org/almanac/building-real-world-leadership-in-every-student/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "rcelconnect.org",
+      "url": "https://www.rcelconnect.org/houston-university-receives-largest-donation-in-history/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    },
+    {
+      "publisher": "theinformation.com",
+      "url": "https://www.theinformation.com/briefings/stanford-announces-sustainability-school-funded-by-kleiner-perkins-chairman-john-doerr",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-b64b183936e855a5"
+    }
+  ],
+  "rollup": {
+    "tier": "UNKNOWN",
+    "tier_raw": "Unknown \u2014 pending pipeline run",
+    "observable_giving_usd": null,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence detected. Zero uplift.",
+      "llc_uplift_usd": 1400000,
+      "llc_uplift_note": "Philanthropic LLC (Doerr Family Foundation) detected. Applied 0.2% of liquid wealth ($14B \u00d7 0.5 \u00d7 0.002 = $1.4M) as opacity uplift for potential hidden grants.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 700000,
+      "anonymous_cohort_method": "BofA/Lilly 2024 cohort heuristic: 0.1% of liquid wealth ($14B \u00d7 0.5 \u00d7 0.001 = $700K). Doerr is a publicly-branded philanthropist (climate, education focus) but venture capitalists often maintain privacy in giving; conservative mid-range estimate.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero uplift.",
+      "trust_outcome_uncertainty_usd": 2000000,
+      "trust_outcome_method": "Giving Pledge signed 2010. No disclosed charitable trust vehicle commensurate with pledge commitment. Conservative uncertainty envelope: ~$2M reflects potential 10-year disbursement uncertainty given $14B net worth and pledge status, scaled down due to active foundation giving already visible.",
+      "total_usd": 4100000,
+      "total_method": "llc + anonymous + trust (daf/offshore/religious zero)"
+    },
+    "tier_reasoning": "Doerr signed the Giving Pledge in 2010 and maintains an active foundation, but observable giving figures are not yet available in the pipeline\u2014making a tier judgment premature. With ~25 years as a billionaire and a 0.5% liquidity estimate (typical for venture-backed wealth), the expected 5%-of-liquid-by-tenure benchmark cannot be calculated without grant data from The Doerr Foundation's 990-PF filings. The structure is sound; the verdict awaits documentation.",
+    "expected_5pct_tenure_usd": 8750000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "observable_from_events_usd": 2455000000,
+    "unyear_dollars_excluded_usd": 1150000000
+  },
+  "_source_file": "john_doerr.v3.json"
+}

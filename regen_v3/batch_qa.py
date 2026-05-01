@@ -174,9 +174,12 @@ def _check_aggregate_sanity(rec: dict) -> list[dict]:
 # --------------------------------------------------------------------------- #
 
 def _llm_extracted_events(rec: dict) -> list[dict]:
-    """Events from the LLM-from-search path (provenance regen_v3,
-    regen_source not in propublica/sec/dafs/llcs)."""
-    structured = {"propublica", "sec", "dafs", "llcs"}
+    """Events from the LLM-from-search path (provenance regen_v3, regen_source
+    NOT in any structured source). Structured sources have deterministic
+    search URLs that don't render data via plain WebFetch (FEC and ICIJ both
+    require JS); checking them produces false-positive hallucination flags."""
+    structured = {"propublica", "sec", "dafs", "llcs", "fec", "leaks",
+                  "state_charities", "candid"}
     out: list[dict] = []
     for ev in (rec.get("cited_events") or []):
         if not isinstance(ev, dict):

@@ -311,15 +311,6 @@ body.saint-view .section-head h2{color:var(--green)}
   content:"";display:block;border-top:1px solid var(--rule);opacity:.4;
   position:absolute;left:0;right:0;top:50%;z-index:-1;
 }
-.ledger-row.ledger-overflow{
-  display:block;text-align:center;padding:14px 16px;
-  font-family:var(--display);font-style:italic;font-size:.88rem;
-  color:var(--ink-fade);text-decoration:none;border-bottom:none;
-  background:rgba(216,201,164,.08);transition:background .2s;
-}
-.ledger-row.ledger-overflow:hover{background:rgba(216,201,164,.18);color:var(--rust)}
-[data-theme="dark"] .ledger-row.ledger-overflow{background:rgba(238,220,186,.04)}
-[data-theme="dark"] .ledger-row.ledger-overflow:hover{background:rgba(238,220,186,.08)}
 .ledger-name{
   font-family:var(--display);font-weight:600;
   font-variation-settings:"opsz" 36,"SOFT" 40;
@@ -832,23 +823,6 @@ function renderDistribution(bs) {
     return (b.shortfall_5pct_usd || 0) - (a.shortfall_5pct_usd || 0);
   });
 
-  // Per-tier visualization caps. The ledger is the editorial headline,
-  // not an encyclopedia: the full long tail lives in the tier tables below.
-  // Tier A gets the most room because that's the editorial focus; Tier C
-  // is the "we can't see it anyway" bucket and gets the smallest cap.
-  const TIER_CAP = {
-    'A_VERIFIED_LOW': 20,
-    'B_PROBABLY_LOW': 15,
-    'C_OPAQUE': 15,
-    'ON_TRACK': 10,
-  };
-
-  // Group rows by tier (rows is already sorted: tier asc, then shortfall desc).
-  const byTier = {};
-  for (const b of rows) {
-    (byTier[b.tier] = byTier[b.tier] || []).push(b);
-  }
-
   let html = `<div class="ledger-row ledger-head" aria-hidden="true">
     <span class="ledger-name">Name</span>
     <span class="ledger-rank">#</span>
@@ -860,48 +834,34 @@ function renderDistribution(bs) {
     <span class="ledger-pct">% given of could&#8209;have</span>
     <span class="ledger-meta">Flag</span>
   </div>`;
-
-  for (const tier of ['A_VERIFIED_LOW', 'B_PROBABLY_LOW', 'C_OPAQUE', 'ON_TRACK']) {
-    const tierRows = byTier[tier] || [];
-    if (!tierRows.length) continue;
-    const cap = TIER_CAP[tier] ?? Infinity;
-    const shown = tierRows.slice(0, cap);
-    const hidden = tierRows.length - shown.length;
-
-    html += `<div class="ledger-row divider"><span>${tierLabel(tier)}</span></div>`;
-
-    shown.forEach((b, i) => {
-      const tierRank = i + 1;
-      const cls = tierClass(b.tier);
-      const r = b.ratio_observable_to_5pct_tenure || 0;
-      const fillPct = Math.min(100, Math.max(0.6, r * 100));
-      const ratioStr = r >= 1 ? r.toFixed(2) + '×' : (r * 100).toFixed(1) + '%';
-      const overflow = r > 1.05;
-      const meta = summarize(b);
-      const isC = b.tier === 'C_OPAQUE';
-      const rowExtra = isC ? ' tier-c-row' : '';
-      html += `<a href="${profileLink(b.id)}" class="ledger-row${rowExtra}" data-id="${escHtml(b.id)}">
-        <span class="ledger-name">${escHtml(b.name_display)}</span>
-        <span class="ledger-rank">${ordinalPlain(tierRank)}</span>
-        <span class="ledger-track">
-          <span class="ledger-fill ${cls}" style="width:${fillPct}%"></span>
-          ${overflow ? `<span class="over-mark">${ratioStr}</span>` : ''}
-        </span>
-        <span class="ledger-pct">${overflow ? '≥100%' : ratioStr}</span>
-        <span class="ledger-meta">${escHtml(meta)}</span>
-      </a>`;
-    });
-
-    if (hidden > 0) {
-      const anchorMap = {
-        'A_VERIFIED_LOW': 'tier-a-section',
-        'B_PROBABLY_LOW': 'tier-b-section',
-        'C_OPAQUE': 'tier-c-section',
-        'ON_TRACK': 'ontrack-section',
-      };
-      html += `<a href="#${anchorMap[tier]}" class="ledger-row ledger-overflow"><span>+ ${hidden} more in this bucket — see the full table below</span></a>`;
+  let lastTier = null;
+  let tierRank = 0;
+  rows.forEach(b => {
+    if (b.tier !== lastTier) {
+      html += `<div class="ledger-row divider"><span>${tierLabel(b.tier)}</span></div>`;
+      lastTier = b.tier;
+      tierRank = 0;
     }
-  }
+    tierRank += 1;
+    const cls = tierClass(b.tier);
+    const r = b.ratio_observable_to_5pct_tenure || 0;
+    const fillPct = Math.min(100, Math.max(0.6, r * 100));
+    const ratioStr = r >= 1 ? r.toFixed(2) + '×' : (r * 100).toFixed(1) + '%';
+    const overflow = r > 1.05;
+    const meta = summarize(b);
+    const isC = b.tier === 'C_OPAQUE';
+    const rowExtra = isC ? ' tier-c-row' : '';
+    html += `<a href="${profileLink(b.id)}" class="ledger-row${rowExtra}" data-id="${escHtml(b.id)}">
+      <span class="ledger-name">${escHtml(b.name_display)}</span>
+      <span class="ledger-rank">${ordinalPlain(tierRank)}</span>
+      <span class="ledger-track">
+        <span class="ledger-fill ${cls}" style="width:${fillPct}%"></span>
+        ${overflow ? `<span class="over-mark">${ratioStr}</span>` : ''}
+      </span>
+      <span class="ledger-pct">${overflow ? '≥100%' : ratioStr}</span>
+      <span class="ledger-meta">${escHtml(meta)}</span>
+    </a>`;
+  });
 
   host.innerHTML = html;
 }
@@ -914,13 +874,7 @@ function escHtml(s) { return String(s || '').replace(/[<>&"']/g, c => ({'<':'&lt
 function renderTierA(list) {
   const grid = document.getElementById('tierA');
   if (!list.length) { grid.innerHTML = '<p class="section-sub" style="grid-column:1/-1;padding:40px">No Tier A subjects identified in current cohort.</p>'; return; }
-  // Hero treatment for the top of Tier A; the rest fall through to a compact
-  // table so the page doesn't become a wall of identical cards when the
-  // cohort grows from 51 to 700.
-  const HERO_CAP = 12;
-  const hero = list.slice(0, HERO_CAP);
-  const tail = list.slice(HERO_CAP);
-  let cardsHtml = hero.map((b, i) => {
+  grid.innerHTML = list.map((b, i) => {
     const rank = b.tier_rank || (i + 1);
     const shortfall = b.shortfall_5pct_usd;
     const expected = b.expected_5pct_tenure_usd;
@@ -938,35 +892,6 @@ function renderTierA(list) {
       </dl>
     </a>`;
   }).join('');
-
-  if (tail.length) {
-    const tailRows = tail.map((b, i) => {
-      const rank = b.tier_rank || (HERO_CAP + i + 1);
-      return `<tr onclick="location.href='${profileLink(b.id)}'">
-        <td class="num rank-cell">${rank}</td>
-        <td class="name">${escHtml(b.name_display)}</td>
-        <td class="num">${fmtNw(b.net_worth_best_usd_b)}</td>
-        <td class="num">${fmtUsd(b.observable_usd)}</td>
-        <td class="num shortfall">${fmtUsd(b.shortfall_5pct_usd)}</td>
-        <td class="flags">${patternChips(b) || '—'}</td>
-      </tr>`;
-    }).join('');
-    cardsHtml += `<div class="tier-a-tail" style="grid-column:1/-1">
-      <p class="section-sub" style="margin:32px 0 8px">${tail.length} more in Tier A:</p>
-      <table class="tier-table">
-        <thead><tr>
-          <th class="num">#</th>
-          <th>Name</th>
-          <th class="num">Net Worth</th>
-          <th class="num">Documented</th>
-          <th class="num">Dollars not given</th>
-          <th>Pattern</th>
-        </tr></thead>
-        <tbody>${tailRows}</tbody>
-      </table>
-    </div>`;
-  }
-  grid.innerHTML = cardsHtml;
 }
 
 const SORT_KEYS = {

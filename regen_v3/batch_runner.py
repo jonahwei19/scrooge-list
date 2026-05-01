@@ -114,9 +114,19 @@ def _worker(args: tuple) -> dict:
             status = "skipped"
     except FileNotFoundError as e:
         err = f"FileNotFoundError: {e}"
-    except Exception as e:
+    except KeyboardInterrupt:
+        # Let Ctrl-C propagate so the parent pool can tear down cleanly.
+        raise
+    except BaseException as e:
+        # Catch BaseException (not just Exception) so SystemExit / pydantic
+        # ValidationError / SDK-internal exceptions can't escape and force
+        # multiprocessing.Pool to try pickling a live exception object —
+        # which historically hung the parent on the result queue.
         err = f"{type(e).__name__}: {e}"
-        traceback.print_exc()
+        try:
+            traceback.print_exc()
+        except Exception:
+            pass
     finally:
         sys.stdout, sys.stderr = old_out, old_err
         log_fh.close()

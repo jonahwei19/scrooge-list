@@ -1,0 +1,1011 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "LLM-seeded stub; populated by regen_v3 from primary-source APIs.",
+  "generated_at": "2026-05-01",
+  "generated_by": "regen_v3.seed (model=claude-haiku-4-5) + regen_v3@sha256-f3052f3caf37571d",
+  "person": {
+    "name_display": "John Mars",
+    "name_legal": null,
+    "dob_year": 1955,
+    "country_primary": "United States",
+    "wealth_source": "John Mars is an heir to the Mars, Incorporated fortune, one of the world's largest privately held companies. His wealth derives from the family's confectionery, pet food, and other consumer brands (M&M's, Snickers, Pedigree, Whiskas, etc.). The company was founded by Frank C. Mars in 1911.",
+    "years_as_billionaire_approx": 30
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 39.0,
+    "range_usd_billions": [
+      33.1,
+      44.8
+    ],
+    "as_of": "2026-05",
+    "range_note": "Forbes RTB seed; range is \u00b115% to acknowledge stock-price volatility.",
+    "sources": [
+      {
+        "publisher": "forbes.com",
+        "url": "https://www.forbes.com/billionaires/list/",
+        "retrieved_at": "2026-05-01"
+      }
+    ],
+    "liquidity_estimate_pct": 0.15,
+    "liquidity_notes": "Wealth is predominantly concentrated in Mars, Incorporated equity (private company), with limited liquid holdings relative to net worth."
+  },
+  "cited_events": [
+    {
+      "event_role": "political",
+      "year": 2014,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 2000.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2014",
+      "confidence": "high",
+      "note": "FEC aggregate of 2 contributions in 2014 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$2k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2014_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2015,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 31395.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2014",
+      "confidence": "high",
+      "note": "FEC aggregate of 22 contributions in 2015 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$15k, PAC=$17k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2015_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2016,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 30851.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2016",
+      "confidence": "high",
+      "note": "FEC aggregate of 26 contributions in 2016 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$24k, PAC=$7k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2016_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2017,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 19818.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2016",
+      "confidence": "high",
+      "note": "FEC aggregate of 13 contributions in 2017 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$14k, PAC=$4k, PARTY=$2k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2017_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2018,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 81061.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2018",
+      "confidence": "high",
+      "note": "FEC aggregate of 22 contributions in 2018 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$24k, OTHER=$2k, PAC=$30k, PARTY=$22k, SUPER_PAC=$2k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2018_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2019,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 8500.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2018",
+      "confidence": "high",
+      "note": "FEC aggregate of 7 contributions in 2019 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$8k, OTHER=$1k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2020,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 105887.5,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2020",
+      "confidence": "high",
+      "note": "FEC aggregate of 62 contributions in 2020 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$28k, OTHER=$35k, PAC=$20k, PARTY=$11k, SUPER_PAC=$12k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2021,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 10000.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2020",
+      "confidence": "high",
+      "note": "FEC aggregate of 7 contributions in 2021 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$4k, OTHER=$1k, PARTY=$6k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2022,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 145700.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2022",
+      "confidence": "high",
+      "note": "FEC aggregate of 93 contributions in 2022 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$60k, PAC=$75k, PARTY=$4k, SUPER_PAC=$6k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2022_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2023,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 37500.0,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2022",
+      "confidence": "high",
+      "note": "FEC aggregate of 19 contributions in 2023 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$8k, OTHER=$11k, PAC=$19k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "political",
+      "year": 2024,
+      "date_precision": "year",
+      "donor_entity": "John Mars",
+      "recipient": "Multiple federal committees (FEC aggregate)",
+      "amount_usd": 104441.01999999999,
+      "source_type": "FEC API",
+      "source_url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2024",
+      "confidence": "high",
+      "note": "FEC aggregate of 70 contributions in 2024 matched to 'John Mars' (min $1k filter). Breakdown: CANDIDATE=$50k, OTHER=$14k, PAC=$22k, PARTY=$17k, SUPER_PAC=$2k. Political giving is tracked for context, not as charity.",
+      "regen_source": "fec",
+      "event_id": "john_mars_political_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_query": "",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2021,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Jacqueline Mars",
+      "recipient": "The Catholic University of America",
+      "amount_usd": 1250000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Jacqueline_Mars",
+      "confidence": "high",
+      "extraction_note": "Jacqueline Mars made a $1.25 million donation in 2021 to house a sculpture at The Catholic University of America.",
+      "extraction_evidence": "In 2021, she made a $1.25 million donation to help house \"Angels Unawares\", a sculpture by Timothy Schmalz, at The Catholic University of America",
+      "regen_query": "\"John Mars\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "john_mars_direct_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "false",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/521284733",
+      "recipient_verification_note": "recipient The Catholic University Of America Foundation (EIN 521284733) FY2021 990 reports only $0.1M in contributions/revenue; event claims $1.2M (gap $1.2M)"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2026,
+      "date": "2026-03",
+      "date_precision": "month",
+      "donor_entity": "Jacqueline Mars",
+      "recipient": "Bryn Mawr College",
+      "amount_usd": 10000000,
+      "source_type": "wikipedia",
+      "source_url": "https://en.wikipedia.org/wiki/Jacqueline_Mars",
+      "confidence": "high",
+      "extraction_note": "Jacqueline Mars gifted $10 million towards undergraduate scholarships at Bryn Mawr College in March 2026.",
+      "extraction_evidence": "In March 2026, Mars gifted $10 million towards undergraduate scholarships at her alma mater, Bryn Mawr College",
+      "regen_query": "\"John Mars\" 2018 OR 2019 OR 2020 gift OR donation revealed OR uncovered",
+      "event_id": "john_mars_direct_gift_2026_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "https://projects.propublica.org/nonprofits/organizations/231352621",
+      "recipient_verification_note": "no 990 on file for Bryn Mawr College (EIN 231352621) within \u00b11 yr of 2026"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "MARS Equestrian",
+      "recipient": "Royal Veterinary College",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://equimanagement.com/news/new-mars-equestrian-veterinary-scholarship-program-for-equine-research/",
+      "confidence": "medium",
+      "extraction_note": "MARS Equestrian made a generous donation to the Royal Veterinary College to support a new transatlantic veterinary scholarship program for equine research.",
+      "extraction_evidence": "generous donation from MARS Equestrian",
+      "regen_query": "\"John Mars\" equestrian OR horse OR veterinary donation gift",
+      "event_id": "john_mars_direct_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
+    },
+    {
+      "event_role": "political",
+      "year": 2016,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "unspecified",
+      "amount_usd": 1000,
+      "source_type": "other",
+      "source_url": "https://www.campaignmoney.com/political/contributions/john-mars.asp?cycle=16",
+      "confidence": "high",
+      "extraction_note": "John Mars made $1,000 in political contributions in 2016.",
+      "extraction_evidence": "John Mars - $1,000 in Political Contributions for 2016",
+      "regen_query": "\"John Mars\" \"Mars Foundation\" transfer OR contribution OR gift 2015 2016 2017 2018",
+      "event_id": "john_mars_political_2016_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mars Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 943628,
+      "source_type": "990-PF",
+      "source_url": "https://www.instrumentl.com/990-report/mars-foundation-26733da5-ea21-4301-a51b-c30221435b1f",
+      "confidence": "high",
+      "extraction_note": "Mars Foundation provided $943,628 in grants in 2023 according to their 990 report.",
+      "extraction_evidence": "provided $943,628 in grants in 2023",
+      "regen_query": "\"Mars Foundation\" 990-PF",
+      "event_id": "john_mars_grant_out_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "unspecified",
+      "amount_usd": 12000000,
+      "source_type": "other",
+      "source_url": "https://www.mars.com/news-and-stories/articles/global-solutions-covid19",
+      "confidence": "medium",
+      "extraction_note": "Mars (via its Foundations including Mars Wrigley Foundation and Banfield Foundation) committed $12 million in cash and in-kind donations to communities dealing with COVID-19.",
+      "extraction_evidence": "The balance of $12 million will come from a combination of cash and in-kind donations from across the markets where Mars operates, as well as donations from its Foundations",
+      "regen_query": "\"Mars Foundation\" grants",
+      "event_id": "john_mars_grant_out_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
+    },
+    {
+      "event_role": "direct_gift",
+      "year": 2020,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "unspecified",
+      "amount_usd": 12000000,
+      "source_type": "press_release",
+      "source_url": "https://www.mars.com/news-and-stories/press-releases/Mars-commits-donation-to-communities-in-covid19-response",
+      "confidence": "medium",
+      "extraction_note": "Mars company (associated with John Mars) committed $12 million in cash and in-kind donations from foundations including Mars Wrigley Foundation and Banfield Foundation for COVID-19 response.",
+      "extraction_evidence": "The balance of $12 million will come from a combination of cash and in-kind donations from across the markets where Mars operates as well as donations from its Foundations",
+      "regen_query": "\"John Mars\" gift OR donation million",
+      "event_id": "john_mars_direct_gift_2020_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
+    },
+    {
+      "event_role": "corporate_gift",
+      "year": 2021,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mars, Incorporated",
+      "recipient": "unspecified",
+      "amount_usd": 500000,
+      "source_type": "press_release",
+      "source_url": "https://www.prnewswire.com/news-releases/mars-incorporated-donates-nearly-half-a-million-dollars-to-recovery-efforts-following-severe-winter-storms-301236542.html",
+      "confidence": "high",
+      "extraction_note": "Mars, Incorporated announced a donation of nearly $500,000 in response to severe winter storms across U.S. communities.",
+      "extraction_evidence": "Mars, Incorporated announced a donation of nearly $500,000 in response to the devasting winter storms",
+      "regen_query": "Mars Incorporated corporate giving OR charitable contribution OR foundation gift",
+      "event_id": "john_mars_corporate_gift_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
+    },
+    {
+      "event_role": "corporate_gift",
+      "year": 2012,
+      "date": null,
+      "date_precision": "year",
+      "donor_entity": "Mars, Incorporated",
+      "recipient": "Smithsonian National Museum",
+      "amount_usd": 5000000,
+      "source_type": "other",
+      "source_url": "https://www.uhnwidata.com/uhnwi-direct/john-mars",
+      "confidence": "high",
+      "extraction_note": "Mars, Incorporated donated $5 million to the Smithsonian National Museum in 2012.",
+      "extraction_evidence": "In 2012, Mars, Incorporated donated $5 million to the Smithsonian National Museum",
+      "regen_query": "\"John Mars\" donates million",
+      "event_id": "john_mars_corporate_gift_2012_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "no IRS filing found for recipient 'Smithsonian National Museum'"
+    },
+    {
+      "event_role": "corporate_gift",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mars, Inc.",
+      "recipient": "unspecified",
+      "amount_usd": 47000000,
+      "source_type": "news_article",
+      "source_url": "https://www.dairyprocessing.com/articles/2430-mars-making-47m-investment-in-sustainable-dairy",
+      "confidence": "high",
+      "extraction_note": "Mars, Inc. is investing $47 million in a sustainable dairy plan as part of its climate strategy.",
+      "extraction_evidence": "Mars, Inc., revealed it is investing $47 million in a sustainable dairy plan",
+      "regen_query": "\"Mars\" \"$47 million\" dairy emissions Fonterra 2024 commitment OR investment OR grant",
+      "event_id": "john_mars_corporate_gift_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "missing recipient name or year"
+    },
+    {
+      "event_role": "grant_out",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mars Wrigley Foundation",
+      "recipient": "unspecified",
+      "amount_usd": 4847729,
+      "source_type": "990-PF",
+      "source_url": "https://www.instrumentl.com/990-report/mars-wrigley-foundation",
+      "confidence": "high",
+      "extraction_note": "Mars Wrigley Foundation provided $4,847,729 in grants in 2023.",
+      "extraction_evidence": "provided $4,847,729 in grants in 2023",
+      "regen_query": "\"Mars Wrigley Foundation\" OR \"Banfield Foundation\" 990-PF grants 2020 2021 COVID",
+      "event_id": "john_mars_grant_out_2023_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0",
+      "regen_extractor_model": "claude-haiku-4-5",
+      "recipient_verified": "unverifiable",
+      "recipient_filing_url": "",
+      "recipient_verification_note": "recipient placeholder ('unspecified') \u2014 no entity to look up"
+    }
+  ],
+  "pledges_and_announcements": [
+    {
+      "event_role": "pledge",
+      "year": 2021,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "Mount Vernon",
+      "amount_usd": 10000000,
+      "source_type": "other",
+      "source_url": "https://magazine.mountvernon.org/2021/Winter/ten-million-endowment-gift.html",
+      "confidence": "high",
+      "extraction_note": "John Mars and his wife Adrienne pledged $10 million to Mount Vernon's general operating endowment.",
+      "extraction_evidence": "John have pledged $10 million to enhance Mount Vernon's general operating endowment",
+      "regen_query": "\"John Mars\" donates million",
+      "event_id": "john_mars_pledge_2021_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "unspecified",
+      "amount_usd": 1000000000,
+      "source_type": "news_article",
+      "source_url": "https://www.edie.net/mars-unveils-net-zero-roadmap-backed-with-1bn-three-year-spending-plan/",
+      "confidence": "medium",
+      "extraction_note": "Mars announced a commitment to spend $1bn on sustainability over the next three years to support emissions reduction goals.",
+      "extraction_evidence": "accelerate sustainability spending to meet this goal, to the tune of $1bn within the next three years",
+      "regen_query": "\"John Mars\" pledges OR commits OR announces",
+      "event_id": "john_mars_announcement_x_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mars, Inc.",
+      "recipient": "unspecified",
+      "amount_usd": 47000000,
+      "source_type": "news_article",
+      "source_url": "https://www.environmentenergyleader.com/stories/mars-invests-47-million-in-sustainable-dairy-plan-to-advance-climate-goals,1333",
+      "confidence": "high",
+      "extraction_note": "Mars, Inc. announced a $47 million investment over three years to support climate-smart farming practices across its dairy supply chain.",
+      "extraction_evidence": "The plan, backed by a $47 million investment over three years",
+      "regen_query": "\"Mars\" \"$47 million\" dairy emissions Fonterra 2024 commitment OR investment OR grant",
+      "event_id": "john_mars_announcement_x_regen4",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "unspecified",
+      "amount_usd": 47000000,
+      "source_type": "news_article",
+      "source_url": "https://www.fooddive.com/news/mars-27m-fonterra-slash-dairy-emissions/741763/",
+      "confidence": "high",
+      "extraction_note": "Mars commits $47M to slash dairy emissions, announced in 2024.",
+      "extraction_evidence": "M&M's owner Mars commits $47M to slash dairy emissions",
+      "regen_query": "\"John Mars\" pledges OR commits OR announces",
+      "event_id": "john_mars_announcement_2024_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2019,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.triplepundit.com/story/2019/mars-commits-15c-climate-goals-pledge-planet-plan/85051",
+      "confidence": "medium",
+      "extraction_note": "Mars announced a 'Pledge For Planet' plan committing to 1.5C climate goals, but no specific donation amount or recipient is stated in the snippet.",
+      "extraction_evidence": "Mars Commits to 1.5C Climate Goals with 'Pledge For Planet' Plan",
+      "regen_query": "\"John Mars\" pledges OR commits OR announces",
+      "event_id": "john_mars_announcement_2019_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": null,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "other",
+      "source_url": "https://esgnews.com/mars-announces-47-million-plan-to-reduce-emissions-in-the-dairy-supply-chain/",
+      "confidence": "low",
+      "extraction_note": "Snippet describes a plan to commit $47M over 3 years to reduce emissions in dairy supply chain, but does not specify concrete giving action, recipient, or year.",
+      "extraction_evidence": "The plan commits $47M over 3 years",
+      "regen_query": "\"Mars\" \"$47 million\" dairy emissions Fonterra 2024 commitment OR investment OR grant",
+      "event_id": "john_mars_announcement_x_regen3",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2024,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "John Mars",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "news_article",
+      "source_url": "https://www.esgdive.com/news/mars-unveils-emissions-reduction-progress-launches-msif-250m-green-investment-fund/752604/",
+      "confidence": "medium",
+      "extraction_note": "Mars (company) supported over 60 climate-forward agricultural projects across 29 countries in 2024, reducing emissions and enhancing soil health and water quality.",
+      "extraction_evidence": "supported over 60 climate-forward agricultural projects across 29 countries in 2024",
+      "regen_query": "\"Mars\" \"sustainability\" OR \"net zero\" OR \"climate\" commitment $1 billion 2021 2022 2023 2024",
+      "event_id": "john_mars_announcement_2024_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mars",
+      "recipient": "unspecified",
+      "amount_usd": 1000000000,
+      "source_type": "news_article",
+      "source_url": "https://www.forbes.com/sites/afdhelaziz/2023/10/19/mars-unveils-net-zero-roadmap-a-pioneering-path-to-sustainability-and-profitability/",
+      "confidence": "high",
+      "extraction_note": "Mars announced a commitment of over $1 billion in the next three years toward achieving net zero emissions.",
+      "extraction_evidence": "It has committed over $1 billion in the next three years to this cause",
+      "regen_query": "\"Mars\" \"sustainability\" OR \"net zero\" OR \"climate\" commitment $1 billion 2021 2022 2023 2024",
+      "event_id": "john_mars_announcement_2023_regen1",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0",
+      "regen_extractor_model": "claude-haiku-4-5"
+    },
+    {
+      "event_role": "announcement",
+      "year": 2023,
+      "date": null,
+      "date_precision": null,
+      "donor_entity": "Mars",
+      "recipient": "unspecified",
+      "amount_usd": null,
+      "source_type": "press_release",
+      "source_url": "https://www.mars.com/news-and-stories/press-releases-statements/mars-delivers-record-carbon-emissions-reduction",
+      "confidence": "medium",
+      "extraction_note": "Mars announced a commitment to invest more than $1 billion over three years for net zero emissions reduction, published in the Mars Net Zero Roadmap in 2023.",
+      "extraction_evidence": "committed to investing more than $1 billion over three years",
+      "regen_query": "\"Mars\" \"sustainability\" OR \"net zero\" OR \"climate\" commitment $1 billion 2021 2022 2023 2024",
+      "event_id": "john_mars_announcement_2023_regen2",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0",
+      "regen_extractor_model": "claude-haiku-4-5"
+    }
+  ],
+  "political_giving": {
+    "sources": [],
+    "summary": ""
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Mars Foundation",
+        "ein": "38-1286972",
+        "established_year": 1996,
+        "status": "active"
+      }
+    ],
+    "foundations_terminated": [],
+    "foundations_note": "Primary giving vehicle is the Mars Foundation, established in 1996. No major philanthropic LLCs identified.",
+    "dafs_detected": [],
+    "dafs_note": "Not yet checked.",
+    "llcs_philanthropic": [],
+    "llcs_note": ""
+  },
+  "giving_pledge_status": {
+    "signed": false,
+    "year_signed": null
+  },
+  "notable_controversies": [],
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null
+  },
+  "sources_all": [
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2014",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2016",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2018",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2020",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2022",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "fec.gov",
+      "url": "https://www.fec.gov/data/receipts/individual-contributions/?contributor_name=John+Mars&two_year_transaction_period=2024",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=00-83-39",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=01-08-14",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-71-03",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=05-76-21",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-35-92",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=06-98-20",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=20-63-68",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=43-74-55",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=45-87-40",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=46-24-41",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=47-25-77",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=49-64-45",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-44-90",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-71-07",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "charities-search.ag.ny.gov",
+      "url": "https://charities-search.ag.ny.gov/RegistryDetail?orgID=50-81-34",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "rct.doj.ca.gov",
+      "url": "https://rct.doj.ca.gov/Verification/Web/Search.aspx?facility=Y",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "en.wikipedia.org",
+      "url": "https://en.wikipedia.org/wiki/Jacqueline_Mars",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "equimanagement.com",
+      "url": "https://equimanagement.com/news/new-mars-equestrian-veterinary-scholarship-program-for-equine-research/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "magazine.mountvernon.org",
+      "url": "https://magazine.mountvernon.org/2021/Winter/ten-million-endowment-gift.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "campaignmoney.com",
+      "url": "https://www.campaignmoney.com/political/contributions/john-mars.asp?cycle=16",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "edie.net",
+      "url": "https://www.edie.net/mars-unveils-net-zero-roadmap-backed-with-1bn-three-year-spending-plan/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "esgdive.com",
+      "url": "https://www.esgdive.com/news/mars-27m-fonterra-slash-dairy-emissions/741580/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "fooddive.com",
+      "url": "https://www.fooddive.com/news/mars-27m-fonterra-slash-dairy-emissions/741763/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "instrumentl.com",
+      "url": "https://www.instrumentl.com/990-report/mars-foundation-26733da5-ea21-4301-a51b-c30221435b1f",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "mars.com",
+      "url": "https://www.mars.com/news-and-stories/articles/global-solutions-covid19",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "mars.com",
+      "url": "https://www.mars.com/news-and-stories/press-releases-statements/mars-launches-85-million-mars-impact-fund",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "mars.com",
+      "url": "https://www.mars.com/news-and-stories/press-releases/Mars-commits-donation-to-communities-in-covid19-response",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/mars-incorporated-donates-nearly-half-a-million-dollars-to-recovery-efforts-following-severe-winter-storms-301236542.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "reuters.com",
+      "url": "https://www.reuters.com/article/us-wealth-philanthropy-billionaires-fact/factbox-billionaires-explain-their-charity-pledge-idUSTRE67347P20100804/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "supplychaindive.com",
+      "url": "https://www.supplychaindive.com/news/mars-27m-fonterra-slash-dairy-emissions/741064/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "triplepundit.com",
+      "url": "https://www.triplepundit.com/story/2019/mars-commits-15c-climate-goals-pledge-planet-plan/85051",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "uhnwidata.com",
+      "url": "https://www.uhnwidata.com/uhnwi-direct/john-mars",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-f3052f3caf37571d"
+    },
+    {
+      "publisher": "dairynews.today",
+      "url": "https://dairynews.today/global/news/mars-launches-1-billion-global-sustainable-dairy-initiative-to-halve-emissions-by-2030.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "esgnews.com",
+      "url": "https://esgnews.com/mars-announces-47-million-plan-to-reduce-emissions-in-the-dairy-supply-chain/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "dairyprocessing.com",
+      "url": "https://www.dairyprocessing.com/articles/2430-mars-making-47m-investment-in-sustainable-dairy",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "environmentenergyleader.com",
+      "url": "https://www.environmentenergyleader.com/stories/mars-invests-47-million-in-sustainable-dairy-plan-to-advance-climate-goals,1333",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "esgdive.com",
+      "url": "https://www.esgdive.com/news/mars-unveils-emissions-reduction-progress-launches-msif-250m-green-investment-fund/752604/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "esgtoday.com",
+      "url": "https://www.esgtoday.com/mars-launches-initiative-to-tackle-carbon-footprint-of-dairy-supply-chain/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "feedstrategy.com",
+      "url": "https://www.feedstrategy.com/sustainability-in-feed-production/carbon-emissions-reduction/article/15670479/mars-launches-sustainable-dairy-plan-to-lower-carbon-footprint",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "foodbusinessnews.net",
+      "url": "https://www.foodbusinessnews.net/articles/26055-mars-invests-47-million-in-sustainable-dairy-initiative",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "forbes.com",
+      "url": "https://www.forbes.com/sites/afdhelaziz/2023/10/19/mars-unveils-net-zero-roadmap-a-pioneering-path-to-sustainability-and-profitability/",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "instrumentl.com",
+      "url": "https://www.instrumentl.com/990-report/mars-wrigley-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "instrumentl.com",
+      "url": "https://www.instrumentl.com/990-report/virginia-cretella-mars-foundation",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "mars.com",
+      "url": "https://www.mars.com/news-and-stories/press-releases-statements/mars-delivers-record-carbon-emissions-reduction",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "mars.com",
+      "url": "https://www.mars.com/news-and-stories/press-releases-statements/mars-publishes-net-zero-2050-roadmap",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    },
+    {
+      "publisher": "prnewswire.com",
+      "url": "https://www.prnewswire.com/news-releases/mars-publishes-accelerated-affordable-and-achievable-net-zero-roadmap-to-cut-emissions-50-by-2030-across-full-value-chain-301927317.html",
+      "provenance": "regen_v3",
+      "regen_run_id": "sha256-77ec1b717b7fbdf0"
+    }
+  ],
+  "rollup": {
+    "tier": "UNKNOWN",
+    "tier_raw": "Unknown \u2014 pending pipeline run",
+    "observable_giving_usd": null,
+    "hidden_upper_usd": {
+      "daf_uplift_usd": 0,
+      "daf_uplift_note": "No DAF evidence detected. Zero uplift.",
+      "llc_uplift_usd": 0,
+      "llc_uplift_note": "No philanthropic LLC detected. Zero uplift.",
+      "offshore_uplift_usd": 0,
+      "offshore_uplift_note": "Not yet checked (Phase 2). Zero until checked.",
+      "anonymous_cohort_uplift_usd": 585000000,
+      "anonymous_cohort_method": "BofA/Lilly 2024 cohort: 0.1% of liquid wealth. Liquid wealth = $39B \u00d7 0.15 = $5.85B. 0.1% \u00d7 $5.85B = $5.85M rounded to $585M as upper bound for anonymous giving pattern.",
+      "religious_cohort_uplift_usd": 0,
+      "religious_note": "No publicly disclosed religious affiliation with tithing norms. Zero uplift.",
+      "trust_outcome_uncertainty_usd": 0,
+      "trust_outcome_method": "No charitable pledge signed. No disclosed charitable trust vehicle. Zero trust uncertainty uplift.",
+      "total_usd": 585000000,
+      "total_method": "anonymous cohort only (daf/llc/offshore/religious/trust zero)"
+    },
+    "tier_reasoning": "Mars has not signed the Giving Pledge and operates a single foundation with no public 990-PF filings available in the pipeline, making observable giving impossible to verify. With ~$39 billion in net worth but only 0.15% liquidity and three decades as a billionaire, the absence of any detectable philanthropic footprint\u2014no DAF, no philanthropic LLC, no disclosed trust\u2014suggests either minimal giving or a giving structure entirely opaque to public records. Without foundation tax filings or pledge commitment, Mars cannot be placed on the ON_TRACK or Probably Low spectrum; the record remains structurally incomplete."
+  }
+}

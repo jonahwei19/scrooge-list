@@ -25,10 +25,22 @@ churning every existing cache file on next run.
 """
 from __future__ import annotations
 
+import itertools
 import json
 import os
+import threading
 from pathlib import Path
 from typing import Any
+
+# Per-process counter so two threads in one process can't collide either.
+_tmp_counter = itertools.count()
+_tmp_counter_lock = threading.Lock()
+
+
+def _next_tmp_suffix() -> str:
+    with _tmp_counter_lock:
+        n = next(_tmp_counter)
+    return f".pid{os.getpid()}.t{threading.get_ident()}.{n}.tmp"
 
 
 def atomic_write_json(
@@ -40,15 +52,26 @@ def atomic_write_json(
 ) -> None:
     """Write `payload` as JSON to `path` atomically.
 
-    Creates parent directories if needed, writes to `<path>.tmp`, then
-    `os.replace`s the temp file onto the final path. Two concurrent
-    callers writing the same path will each produce a complete file;
-    the last `os.replace` wins, but no reader ever sees a partial write.
+    Creates parent directories if needed, writes to a per-writer temp file,
+    then `os.replace`s onto the final path. The temp filename embeds pid +
+    thread id + a process-local counter so two concurrent writers (multi-
+    proc + multi-threaded) cannot share a tmp path and clobber each other's
+    in-progress bytes. The last `os.replace` wins; readers see either the
+    old file or a fully-written new file, never a partial write.
     """
     path.parent.mkdir(parents=True, exist_ok=True)
-    tmp = path.with_suffix(path.suffix + ".tmp")
-    tmp.write_text(
-        json.dumps(payload, indent=indent, sort_keys=sort_keys),
-        encoding="utf-8",
-    )
-    os.replace(tmp, path)
+    tmp = path.with_suffix(path.suffix + _next_tmp_suffix())
+    try:
+        tmp.write_text(
+            json.dumps(payload, indent=indent, sort_keys=sort_keys),
+            encoding="utf-8",
+        )
+        os.replace(tmp, path)
+    finally:
+        # In the rare error path (e.g. disk full mid-replace), make sure we
+        # don't leave a stray .pid*.tmp file lying around.
+        if tmp.exists():
+            try:
+                tmp.unlink()
+            except OSError:
+                pass
