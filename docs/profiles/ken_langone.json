@@ -1,0 +1,78 @@
+{
+  "schema_version": "v3.0.0-draft",
+  "schema_notes": "LLM-seeded stub; populated by regen_v3 from primary-source APIs.",
+  "generated_at": "2026-05-01",
+  "generated_by": "regen_v3.seed (model=claude-haiku-4-5)",
+  "person": {
+    "name_display": "Ken Langone",
+    "name_legal": null,
+    "dob_year": 1935,
+    "country_primary": "United States",
+    "wealth_source": "Ken Langone co-founded Home Depot in 1978 and served as chairman; his net worth is primarily concentrated in Home Depot stock and real estate holdings.",
+    "years_as_billionaire_approx": 30
+  },
+  "net_worth": {
+    "best_estimate_usd_billions": 8.0,
+    "range_usd_billions": [
+      6.8,
+      9.2
+    ],
+    "as_of": "2026-05",
+    "range_note": "Forbes RTB seed; range is \u00b115% to acknowledge stock-price volatility.",
+    "sources": [
+      {
+        "publisher": "forbes.com",
+        "url": "https://www.forbes.com/billionaires/list/",
+        "retrieved_at": "2026-05-01"
+      }
+    ],
+    "liquidity_estimate_pct": 0.45,
+    "liquidity_notes": "Significant Home Depot stock holdings (illiquid concentration risk) offset by diversified real estate and some liquid securities."
+  },
+  "cited_events": [],
+  "pledges_and_announcements": [],
+  "political_giving": {
+    "sources": [],
+    "summary": ""
+  },
+  "detected_vehicles": {
+    "foundations_active": [
+      {
+        "name": "Langone Medical Research Foundation",
+        "status": "active",
+        "ein": null,
+        "established_year": null
+      }
+    ],
+    "foundations_terminated": [],
+    "foundations_note": "Primary giving vehicle appears to be the Langone Medical Research Foundation; no major philanthropic LLC identified.",
+    "dafs_detected": [],
+    "dafs_note": "Not yet checked.",
+    "llcs_philanthropic": [],
+    "llcs_note": ""
+  },
+  "giving_pledge_status": {
+    "signed": false,
+    "year_signed": null
+  },
+  "notable_controversies": [],
+  "right_of_reply": {
+    "status": "not_yet_requested",
+    "scheduled_outreach_date": null,
+    "response_deadline": null,
+    "response_text": null
+  },
+  "sources_all": [],
+  "rollup": {
+    "tier": "UNKNOWN",
+    "tier_raw": "Unknown \u2014 pending pipeline run",
+    "observable_giving_usd": null,
+    "expected_5pct_tenure_usd": 5400000000,
+    "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
+    "observable_from_events_usd": 0,
+    "unyear_dollars_excluded_usd": 0,
+    "donor_outflow_from_events_usd": 0,
+    "donor_outflow_unyear_excluded_usd": 0
+  },
+  "_source_file": "ken_langone.v3.json"
+}

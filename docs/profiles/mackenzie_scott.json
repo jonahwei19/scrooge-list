@@ -900,6 +900,8 @@
     "ratio_observable_to_5pct_tenure": 2.3264,
     "observable_from_events_usd": 32590000000,
     "unyear_dollars_excluded_usd": 41510000000,
+    "donor_outflow_from_events_usd": 82487000000,
+    "donor_outflow_unyear_excluded_usd": 210000000,
     "sanity_flag_yearly_giving_exceeds_20pct_nw": "Single-year observable giving > 20% of net worth ($38.0B): 2025: $15.7B. Likely double-count from same-gift extracted multiple times.",
     "observable_drift_pct": 0.239,
     "observable_reconciliation_note": "Published `observable_giving_usd` reflects agent judgment about attributable giving. `observable_from_events_usd` is the strict sum of canonical grant_out + direct_gift event amounts. A gap can mean self-reported lifetime figures beyond cited events (rollup > sum) or exclusion of inherited-foundation / family-foundation portions (rollup < sum)."

@@ -24,12 +24,16 @@ if str(ROOT) not in sys.path:
 from regen_v3.extract import _cache_key, _validate_event  # noqa: E402
 
 
-def load_search_meta_for_subject(record: dict) -> dict[str, dict]:
-    """Build url -> {title, snippet} from every search-cache file.
+def load_search_meta_for_subject(record: dict) -> dict[str, list[dict]]:
+    """Build url -> [{title, snippet}, ...] from every search-cache file.
 
-    The search cache isn't keyed by subject, so we just walk all files.
-    Same URL appearing in multiple queries gets the longest snippet wins."""
-    meta: dict[str, dict] = {}
+    The search cache isn't keyed by subject, so we walk all files. Brave
+    returns *query-tailored* snippets, so the same URL can appear with
+    several different snippet texts depending on which query surfaced it.
+    The LLM extractor saw ONE specific snippet at extraction time; we
+    don't know which, so we check the evidence against ALL of them and
+    accept if any matches."""
+    meta: dict[str, list[dict]] = {}
     for fp in SEARCH_CACHE.glob("*.json"):
         try:
             d = json.loads(fp.read_text())
@@ -43,8 +47,7 @@ def load_search_meta_for_subject(record: dict) -> dict[str, dict]:
                 continue
             title = r.get("title") or ""
             snippet = r.get("description") or ""
-            if url not in meta or len(snippet) > len(meta[url]["snippet"]):
-                meta[url] = {"title": title, "snippet": snippet}
+            meta.setdefault(url, []).append({"title": title, "snippet": snippet})
     return meta
 
 
@@ -90,23 +93,30 @@ def main(argv=None) -> int:
     no_meta = 0
     for ev in events:
         url = ev.get("source_url")
-        meta = url_meta.get(url)
-        if not meta:
+        meta_list = url_meta.get(url) or []
+        if not meta_list:
             no_meta += 1
             continue
-        # Run the new validator with the recovered snippet.
-        before_conf = ev.get("confidence")
-        ev_copy = dict(ev)
-        ev_copy.pop("_grounded_check", None)  # clear in case run before
-        # source_url must match expected_url for validate to accept.
-        ev_copy["source_url"] = url
-        result = _validate_event(
-            ev_copy,
-            expected_url=url,
-            snippet=meta["snippet"],
-            title=meta["title"],
-        )
-        if result is None:
+        # Try each (title, snippet) variant; keep the result of the first
+        # one that passes (i.e. union over all snippets the LLM might have
+        # actually seen for this URL).
+        best_result = None
+        for meta in meta_list:
+            ev_copy = dict(ev)
+            ev_copy.pop("_grounded_check", None)
+            ev_copy["source_url"] = url
+            result = _validate_event(
+                ev_copy,
+                expected_url=url,
+                snippet=meta["snippet"],
+                title=meta["title"],
+            )
+            if result is not None and not result.get("_grounded_check"):
+                best_result = result
+                break
+            if result is not None and best_result is None:
+                best_result = result  # demoted but kept
+        if best_result is None:
             dropped += 1
             amt = ev.get("amount_usd") or 0
             recip = (ev.get("recipient") or "")[:40]
@@ -114,7 +124,7 @@ def main(argv=None) -> int:
             print(f"  DROP: ${amt/1e6:.0f}M  {year}  {recip!r}  {url[:80]}")
         else:
             kept += 1
-            if result.get("_grounded_check"):
+            if best_result.get("_grounded_check"):
                 demoted_no_drop += 1
 
     print()

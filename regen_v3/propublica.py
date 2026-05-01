@@ -218,38 +218,98 @@ def fetch_filings(ein: str, *, refresh: bool = False) -> list[dict]:
     return serial
 
 
+def _subject_display_name(record: dict) -> str:
+    person = record.get("person") or {}
+    return (
+        person.get("name_display")
+        or person.get("name_legal")
+        or "Subject"
+    )
+
+
 def collect_candidates(record: dict, *, refresh: bool = False) -> list[dict]:
     """Return regen_v3 candidate events for every 990-PF filing attached to
-    the subject's EINs. One candidate per (EIN, fiscal_year)."""
+    the subject's EINs.
+
+    Two events per (EIN, fiscal_year):
+      - `grant_out`: foundation → external charities (existing)
+      - `transfer_in`: subject → foundation (NEW)
+
+    The two views aren't summed together — they're the same dollar at
+    different stages. `grant_out` is the conservative "money arrived at
+    public charities" measure; `transfer_in` is the more generous
+    "donor moved money out of personal balance sheet into a charitable
+    vehicle" measure. The aggregator surfaces them under different
+    rollup fields so consumers can pick the framing that fits.
+    """
     candidates: list[dict] = []
+    subject_name = _subject_display_name(record)
 
     for ein, fname in _eins_for_subject(record):
         filings = fetch_filings(ein, refresh=refresh)
         for f in filings:
-            grants = f.get("grants_paid") or 0
             year = f.get("fiscal_year")
-            if not year or grants <= 0:
+            if not year:
                 continue
-            candidates.append({
-                "event_role": "grant_out",
-                "year": int(year),
-                "date_precision": "year",
-                "donor_entity": f.get("name") or fname,
-                "donor_ein": normalize_ein(ein),
-                "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
-                "amount_usd": float(grants),
-                "source_type": "990-PF",
-                "source_url": f.get("source_url"),
-                "confidence": "high",
-                "note": (
-                    f"ProPublica 990-PF aggregate for fiscal-year {year}; "
-                    f"end-year assets ${(f.get('total_assets') or 0)/1e6:.1f}M; "
-                    f"payout rate {f.get('payout_rate') or 0:.1f}%."
-                ),
-                "regen_source": "propublica",
-            })
+            year_int = int(year)
+            assets = (f.get("total_assets") or 0)
+            payout = f.get("payout_rate") or 0
+            source_url = f.get("source_url")
+            foundation_name = f.get("name") or fname
 
-    candidates.sort(key=lambda c: (c["donor_ein"], c["year"]))
+            # 1. Foundation → external charities (existing role).
+            grants = f.get("grants_paid") or 0
+            if grants > 0:
+                candidates.append({
+                    "event_role": "grant_out",
+                    "year": year_int,
+                    "date_precision": "year",
+                    "donor_entity": foundation_name,
+                    "donor_ein": normalize_ein(ein),
+                    "recipient": "Various (990-PF aggregate; recipient detail not parsed)",
+                    "amount_usd": float(grants),
+                    "source_type": "990-PF",
+                    "source_url": source_url,
+                    "confidence": "high",
+                    "note": (
+                        f"ProPublica 990-PF aggregate for fiscal-year {year_int}; "
+                        f"end-year assets ${assets/1e6:.1f}M; "
+                        f"payout rate {payout:.1f}%."
+                    ),
+                    "regen_source": "propublica",
+                })
+
+            # 2. Donor → foundation (NEW). Captures the "money out of
+            #    personal balance sheet" view that grant_out misses. The
+            #    contributions_received line on Form 990-PF is reported by
+            #    the foundation, but the substantive donor is the
+            #    subject (whose net worth funded it). We attribute it to
+            #    the subject by name in donor_entity; the foundation is
+            #    the recipient.
+            contribs = f.get("contributions_received") or 0
+            if contribs > 0:
+                candidates.append({
+                    "event_role": "transfer_in",
+                    "year": year_int,
+                    "date_precision": "year",
+                    "donor_entity": subject_name,
+                    "recipient": foundation_name,
+                    "recipient_ein": normalize_ein(ein),
+                    "amount_usd": float(contribs),
+                    "source_type": "990-PF",
+                    "source_url": source_url,
+                    "confidence": "high",
+                    "note": (
+                        f"ProPublica 990-PF Part I contributions received in fiscal-year "
+                        f"{year_int}: ${contribs/1e6:.1f}M moved into "
+                        f"{foundation_name}. This is donor → foundation flow (top-line "
+                        f"outflow from personal balance sheet); the foundation's outbound "
+                        f"grants for the same year are tracked separately as grant_out."
+                    ),
+                    "regen_source": "propublica",
+                })
+
+    candidates.sort(key=lambda c: (c.get("donor_ein") or c.get("recipient_ein") or "", c["year"], c["event_role"]))
     return candidates
 
 

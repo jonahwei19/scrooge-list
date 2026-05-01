@@ -858,7 +858,9 @@
     "expected_5pct_tenure_usd": 8775000000,
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "observable_from_events_usd": 12650000,
-    "unyear_dollars_excluded_usd": 11425000
+    "unyear_dollars_excluded_usd": 11425000,
+    "donor_outflow_from_events_usd": 12650000,
+    "donor_outflow_unyear_excluded_usd": 11425000
   },
   "_source_file": "jacqueline_mars.v3.json"
 }

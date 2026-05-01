@@ -117,6 +117,15 @@ def canonical_role(raw):
 # Everything else (transfers in, pledges, announcements, political, private, corporate, reference) is excluded.
 OBSERVABLE_ROLES = {"grant_out", "direct_gift"}
 
+# Donor-side outflow: dollars known to have left the subject's personal
+# balance sheet, regardless of whether they've reached a public charity yet.
+# transfer_in (donor → own foundation/vehicle) is the key addition vs.
+# OBSERVABLE_ROLES — for foundation-heavy donors building up endowment,
+# this is materially larger than what the foundation distributes year-over-year.
+# Counting both transfer_in AND grant_out for the same dollar would
+# double-count, so we expose them as separate rollup fields.
+DONOR_OUTFLOW_ROLES = {"transfer_in", "direct_gift"}
+
 
 def compute_expected_5pct_tenure(rec) -> int | None:
     """Canonical capacity benchmark:
@@ -218,18 +227,32 @@ def extract_summary(rec: dict) -> dict:
     # separately as `unyear_dollars_excluded_usd` so the gap is visible.
     event_sum = 0.0
     unyear_excluded = 0.0
+    donor_outflow_sum = 0.0
+    donor_outflow_unyear_excluded = 0.0
     for ev in (rec.get("cited_events") or []):
         if not isinstance(ev, dict):
             continue
-        if canonical_role(ev.get("event_role")) in OBSERVABLE_ROLES:
-            amt = ev.get("amount_usd")
-            if isinstance(amt, (int, float)) and amt > 0:
-                if ev.get("year") is None:
-                    unyear_excluded += amt
-                else:
-                    event_sum += amt
+        canon = canonical_role(ev.get("event_role"))
+        amt = ev.get("amount_usd")
+        if not isinstance(amt, (int, float)) or amt <= 0:
+            continue
+        is_unyear = ev.get("year") is None
+        if canon in OBSERVABLE_ROLES:
+            if is_unyear:
+                unyear_excluded += amt
+            else:
+                event_sum += amt
+        if canon in DONOR_OUTFLOW_ROLES:
+            if is_unyear:
+                donor_outflow_unyear_excluded += amt
+            else:
+                donor_outflow_sum += amt
     observable_from_events_usd = int(event_sum) if event_sum > 0 else 0
     unyear_dollars_excluded_usd = int(unyear_excluded) if unyear_excluded > 0 else 0
+    donor_outflow_from_events_usd = int(donor_outflow_sum) if donor_outflow_sum > 0 else 0
+    donor_outflow_unyear_excluded_usd = (
+        int(donor_outflow_unyear_excluded) if donor_outflow_unyear_excluded > 0 else 0
+    )
     if observable_usd and observable_from_events_usd:
         drift_abs = abs(observable_from_events_usd - observable_usd)
         observable_drift_pct = round(drift_abs / observable_usd, 3)
@@ -298,6 +321,14 @@ def extract_summary(rec: dict) -> dict:
         "observable_from_events_usd": observable_from_events_usd,
         "observable_drift_pct": observable_drift_pct,
         "unyear_dollars_excluded_usd": unyear_dollars_excluded_usd,
+        # Donor-side outflow: total dollars known to have left the
+        # subject's personal balance sheet (transfers to own foundation/
+        # vehicle + direct gifts to charity). For foundation-heavy donors
+        # this exceeds observable_from_events_usd because the foundation
+        # is a holding tank: $50M moved in this year + $10M paid out =
+        # donor_outflow $50M, observable $10M.
+        "donor_outflow_from_events_usd": donor_outflow_from_events_usd,
+        "donor_outflow_unyear_excluded_usd": donor_outflow_unyear_excluded_usd,
         "sanity_flag_yearly_giving_exceeds_20pct_nw": sanity_flag_yearly,
         "sanity_flag_tier_inconsistent": sanity_flag_tier_inconsistent,
         # Legacy per-record 10%-of-liquid-weighted-by-tenure expected figure (from agent JSON).
@@ -454,18 +485,32 @@ def annotate_with_canonical(rec: dict) -> dict:
     # Year=None events are EXCLUDED (can't be deduped — risk of 2-3× counting).
     event_sum = 0.0
     unyear_excluded = 0.0
+    donor_outflow_sum = 0.0
+    donor_outflow_unyear_excluded = 0.0
     for ev in (rec.get("cited_events") or []):
         if not isinstance(ev, dict):
             continue
-        if canonical_role(ev.get("event_role")) in OBSERVABLE_ROLES:
-            amt = ev.get("amount_usd")
-            if isinstance(amt, (int, float)) and amt > 0:
-                if ev.get("year") is None:
-                    unyear_excluded += amt
-                else:
-                    event_sum += amt
+        canon = canonical_role(ev.get("event_role"))
+        amt = ev.get("amount_usd")
+        if not isinstance(amt, (int, float)) or amt <= 0:
+            continue
+        is_unyear = ev.get("year") is None
+        if canon in OBSERVABLE_ROLES:
+            if is_unyear:
+                unyear_excluded += amt
+            else:
+                event_sum += amt
+        if canon in DONOR_OUTFLOW_ROLES:
+            if is_unyear:
+                donor_outflow_unyear_excluded += amt
+            else:
+                donor_outflow_sum += amt
     rollup["observable_from_events_usd"] = int(event_sum) if event_sum > 0 else 0
     rollup["unyear_dollars_excluded_usd"] = int(unyear_excluded) if unyear_excluded > 0 else 0
+    rollup["donor_outflow_from_events_usd"] = int(donor_outflow_sum) if donor_outflow_sum > 0 else 0
+    rollup["donor_outflow_unyear_excluded_usd"] = (
+        int(donor_outflow_unyear_excluded) if donor_outflow_unyear_excluded > 0 else 0
+    )
 
     # Per-year sanity: sum observable events PER YEAR. If any single year
     # exceeds 20% of the subject's net worth, mark probable double-count.

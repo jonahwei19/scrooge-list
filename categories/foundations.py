@@ -153,10 +153,20 @@ def get_990_data(ein: str) -> List[FoundationFiling]:
         raw_filings = data.get("filings_with_data", [])
 
         for f in raw_filings[:6]:  # Last 6 years
-            # Extract financial data - try multiple field names
+            # Extract financial data - try multiple field names. Private
+            # foundations file 990-PF, where the contribution / gift fields
+            # are named differently than the regular 990. Try both.
             total_assets = float(f.get("totassetsend") or f.get("totassetseoy") or 0)
             grants_paid = float(f.get("grsrcptspublicuse") or f.get("totgrantsetc") or 0)
-            contributions = float(f.get("totcntrbs") or f.get("contriamtrptd") or 0)
+            contributions = float(
+                # 990-PF: contributions and gifts received
+                f.get("grscontrgifts")
+                or f.get("totcntrbgfts")
+                # Regular 990 fallbacks
+                or f.get("totcntrbs")
+                or f.get("contriamtrptd")
+                or 0
+            )
             expenses = float(f.get("totfuncexpns") or f.get("totexpns") or 0)
 
             # If grants_paid is 0 but expenses exist, use expenses as proxy

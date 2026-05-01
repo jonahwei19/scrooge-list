@@ -1041,7 +1041,9 @@
     "expected_5pct_tenure_usd": 8775000000,
     "expected_5pct_tenure_method": "5% \u00d7 net_worth_best \u00d7 liquidity_pct \u00d7 years_as_billionaire (uncapped tenure); computed by aggregate_v3.py",
     "observable_from_events_usd": 41041357,
-    "unyear_dollars_excluded_usd": 0
+    "unyear_dollars_excluded_usd": 0,
+    "donor_outflow_from_events_usd": 23250000,
+    "donor_outflow_unyear_excluded_usd": 0
   },
   "_source_file": "john_mars.v3.json"
 }
