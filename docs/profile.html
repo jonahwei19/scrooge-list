@@ -54,6 +54,10 @@ body{
 .nav a{color:var(--rust);text-decoration:none;border-bottom:1px solid var(--rust);padding-bottom:1px}
 .nav button{background:none;border:none;cursor:pointer;font:inherit;color:inherit;letter-spacing:.22em}
 .nav button:hover{color:var(--rust)}
+.nav-right{display:flex;align-items:baseline;gap:18px}
+.nav .correction{font-style:italic;font-size:.72rem;letter-spacing:.18em;border-bottom:1px dotted var(--rust);padding-bottom:1px;color:var(--rust);text-transform:uppercase}
+.nav .correction:hover{background:rgba(139,46,31,.08);border-bottom-style:solid}
+@media(max-width:560px){.nav-right{gap:12px}.nav .correction{font-size:.65rem;letter-spacing:.14em}}
 
 .pmast{text-align:left;padding:36px 0 26px;border-top:2px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:40px;position:relative}
 .pmast::before{content:"";position:absolute;left:0;right:0;height:1px;background:var(--rule);top:3px}
@@ -240,7 +244,10 @@ a:hover{background:rgba(139,46,31,.08)}
   <nav class="nav">
     <a href="index.html">← The Ledger</a>
     <span id="navName"></span>
-    <button id="themeToggle" type="button">Mode ◐</button>
+    <span class="nav-right">
+      <a id="correctionLink" class="correction" href="https://github.com/jonahwei19/scrooge-list/issues/new" target="_blank" rel="noopener" title="Open a GitHub issue with the correction. Please include a source URL.">Got this wrong?</a>
+      <button id="themeToggle" type="button">Mode ◐</button>
+    </span>
   </nav>
 
   <div id="content">
@@ -320,6 +327,17 @@ function render(rec) {
   const tierInfo = TIER_LABEL[tier] || { label: rollup.tier || 'Unknown', cls: '' };
 
   document.getElementById('navName').textContent = (p.name_display || '').toUpperCase();
+  const correctionLink = document.getElementById('correctionLink');
+  if (correctionLink && p.name_display) {
+    const title = encodeURIComponent(`Correction: ${p.name_display}`);
+    const body = encodeURIComponent(
+      `Profile: ${p.name_display}\n` +
+      `URL: ${location.href}\n\n` +
+      `What's wrong:\n\n\n` +
+      `Source URL (required — we don't update on a claim alone):\n\n`
+    );
+    correctionLink.href = `https://github.com/jonahwei19/scrooge-list/issues/new?title=${title}&body=${body}`;
+  }
   document.title = (p.name_display || 'Profile') + ': The Scrooge List';
 
   // Headline observable: prefer the rollup judgment, but if it's zero AND we
